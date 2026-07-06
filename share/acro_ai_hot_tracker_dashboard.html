@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACRO AI Hot Tracker</title>
+    <style>
+:root {
+  color-scheme: light;
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #eef2f4;
+  --text: #1d252c;
+  --muted: #66737f;
+  --line: #d9e0e5;
+  --teal: #087f8c;
+  --teal-soft: #dff3f4;
+  --coral: #c95d42;
+  --coral-soft: #fae7df;
+  --gold: #a36d00;
+  --gold-soft: #fff1ca;
+  --blue: #345f9f;
+  --shadow: 0 18px 40px rgba(34, 48, 64, 0.08);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  display: grid;
+  grid-template-columns: 272px minmax(0, 1fr);
+}
+
+a {
+  color: inherit;
+}
+
+.sidebar {
+  min-height: 100vh;
+  background: #172027;
+  color: #f7fbfc;
+  padding: 24px 18px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: #d8f3f3;
+  color: #17363a;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand span {
+  display: block;
+}
+
+.brand span {
+  color: #9bb0bd;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.nav {
+  display: grid;
+  gap: 4px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #b8c7d1;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.nav a.active,
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.sidebar-panel {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.sidebar-panel p {
+  margin: 8px 0 0;
+  color: #b8c7d1;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.label,
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar .label {
+  color: #8fd7d8;
+}
+
+.shell {
+  min-width: 0;
+  padding: 28px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button,
+select {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 7px;
+  height: 38px;
+  font: inherit;
+}
+
+select {
+  padding: 0 34px 0 12px;
+}
+
+.icon-button {
+  width: 38px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.metric {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.metric span,
+.metric small {
+  color: var(--muted);
+}
+
+.metric strong {
+  display: block;
+  font-size: 30px;
+  margin: 8px 0 6px;
+}
+
+.metric.accent {
+  border-color: #9edfe1;
+  background: var(--teal-soft);
+}
+
+.metric.warn {
+  border-color: #eec195;
+  background: var(--gold-soft);
+}
+
+.metric.quiet {
+  border-color: #efd1c5;
+  background: var(--coral-soft);
+}
+
+.decision-band {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 22px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+
+.decision-band p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.decision-list {
+  display: grid;
+  gap: 8px;
+}
+
+.decision-list div {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface-2);
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.decision-list span {
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+  align-items: start;
+}
+
+.feed,
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.feed {
+  padding: 18px;
+}
+
+.panel {
+  padding: 16px;
+}
+
+.insights {
+  display: grid;
+  gap: 14px;
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.section-head.compact {
+  align-items: center;
+}
+
+.timestamp,
+.section-head span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.signal-list {
+  display: grid;
+  gap: 10px;
+}
+
+.signal-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.signal-top {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.signal-title {
+  font-weight: 750;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.signal-title:hover {
+  color: var(--teal);
+}
+
+.score {
+  min-width: 46px;
+  text-align: center;
+  background: var(--teal-soft);
+  color: #075f69;
+  border-radius: 7px;
+  padding: 5px 8px;
+  font-weight: 800;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: #44515c;
+  font-size: 12px;
+}
+
+.tag.daily {
+  background: var(--teal-soft);
+  color: #075f69;
+}
+
+.tag.immediate {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.tag.archive {
+  background: var(--coral-soft);
+  color: var(--coral);
+}
+
+.summary {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.reason-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #51606b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.bars,
+.source-list {
+  display: grid;
+  gap: 10px;
+}
+
+.bar-row {
+  display: grid;
+  gap: 5px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  color: #3b4750;
+  font-size: 13px;
+}
+
+.bar-track {
+  height: 8px;
+  background: var(--surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--teal);
+}
+
+.source-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #3d4a54;
+  font-size: 13px;
+}
+
+.source-item span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-list,
+.capability-list,
+.api-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.action-list label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: #43515c;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.capability-list div {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  background: var(--surface-2);
+  border-radius: 7px;
+}
+
+.capability-list strong {
+  color: #26333b;
+  font-size: 14px;
+}
+
+.capability-list span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.api-list a {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--surface-2);
+  border-radius: 7px;
+  color: #264b78;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.api-list a:hover {
+  color: var(--teal);
+}
+
+.empty {
+  padding: 20px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    min-height: auto;
+  }
+
+  .summary-grid,
+  .decision-band,
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+  }
+
+  .toolbar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .shell {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .summary-grid {
+    gap: 10px;
+  }
+
+  .toolbar select {
+    width: 100%;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <div class="brand-mark">AH</div>
+        <div>
+          <strong>AI Hot Tracker</strong>
+          <span>Market Intelligence</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="#overview">总览</a>
+        <a href="#signals">精选信号</a>
+        <a href="#topics">主题热度</a>
+        <a href="#workflow">工作流</a>
+      </nav>
+      <div class="sidebar-panel">
+        <span class="label">MVP 标本</span>
+        <strong>ACROBiosystems / 百普赛斯</strong>
+        <p>面向市场部与管理层的行业热点、竞品动态和行动建议 dashboard。</p>
+      </div>
+    </aside>
+
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">老板视角 Dashboard</p>
+          <h1>目标公司与行业热点雷达</h1>
+        </div>
+        <div class="toolbar" aria-label="Dashboard controls">
+          <button class="icon-button" id="refreshButton" type="button" title="刷新数据" aria-label="刷新数据">
+            <span aria-hidden="true">↻</span>
+          </button>
+          <select id="tierFilter" aria-label="按推送分层筛选">
+            <option value="all">全部分层</option>
+            <option value="immediate">即时提醒</option>
+            <option value="daily" selected>进入日报</option>
+            <option value="archive">归档观察</option>
+          </select>
+          <select id="companyFilter" aria-label="按公司筛选">
+            <option value="all">全部公司</option>
+          </select>
+          <select id="categoryFilter" aria-label="按主题筛选">
+            <option value="all">全部主题</option>
+          </select>
+        </div>
+      </header>
+
+      <section class="summary-grid" id="overview" aria-label="Summary metrics">
+        <article class="metric">
+          <span>新候选</span>
+          <strong id="metricCandidates">--</strong>
+          <small>公开来源抓取后去重</small>
+        </article>
+        <article class="metric accent">
+          <span>建议推送</span>
+          <strong id="metricDaily">--</strong>
+          <small>高相关，进入市场日报</small>
+        </article>
+        <article class="metric warn">
+          <span>即时提醒</span>
+          <strong id="metricImmediate">--</strong>
+          <small>重大合作、产品或监管信号</small>
+        </article>
+        <article class="metric quiet">
+          <span>噪音压制</span>
+          <strong id="metricArchive">--</strong>
+          <small>归档但不打扰团队</small>
+        </article>
+      </section>
+
+      <section class="decision-band" aria-label="Executive brief">
+        <div>
+          <p class="eyebrow">当前判断</p>
+          <h2>先做每日情报工作台，再开放即时推送</h2>
+          <p>
+            借鉴 AIhot 的精选流、日报、主题和 Agent 接入思路，但 ACRO 场景要多一层业务解释：
+            这条动态对产品宣传、竞品观察、日本市场和销售线索意味着什么。
+          </p>
+        </div>
+        <div class="decision-list">
+          <div><span>频率</span>当前建议每天 1 次，工作日上午生成</div>
+          <div><span>节奏</span>日报默认，重大信号再即时提醒</div>
+          <div><span>成本</span>公开来源先筛噪，AI 只处理高分候选</div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <div class="feed" id="signals">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">精选信号</p>
+              <h2>今日需要市场部看的动态</h2>
+            </div>
+            <span id="updatedAt" class="timestamp">加载中</span>
+          </div>
+          <div id="signalList" class="signal-list" aria-live="polite"></div>
+        </div>
+
+        <aside class="insights" aria-label="Dashboard insights">
+          <section class="panel" id="topics">
+            <div class="section-head compact">
+              <h2>主题热度</h2>
+              <span id="windowDays">-- 天</span>
+            </div>
+            <div id="topicBars" class="bars"></div>
+          </section>
+
+          <section class="panel">
+            <div class="section-head compact">
+              <h2>来源构成</h2>
+              <span id="sourceCount">-- sources</span>
+            </div>
+            <div id="sourceList" class="source-list"></div>
+          </section>
+
+          <section class="panel" id="workflow">
+            <h2>市场部动作队列</h2>
+            <div class="action-list">
+              <label><input type="checkbox" checked /> 先确认日报分类是否符合业务直觉</label>
+              <label><input type="checkbox" /> 补充休假前目标公司名单</label>
+              <label><input type="checkbox" /> 为 ADC / CGT / GMP 建立竞品关键词组</label>
+              <label><input type="checkbox" /> 决定哪些信号要进入老板即时提醒</label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>现阶段能解决什么</h2>
+            <div class="capability-list">
+              <div>
+                <strong>减少噪音</strong>
+                <span>把公开来源里的弱相关、旧新闻和金融噪音压到归档。</span>
+              </div>
+              <div>
+                <strong>给市场部选题</strong>
+                <span>把 CGT、GMP、合作、监管等信号整理成可读列表。</span>
+              </div>
+              <div>
+                <strong>给老板看趋势</strong>
+                <span>用指标、主题热度和来源构成快速判断今天有没有要关注的事。</span>
+              </div>
+              <div>
+                <strong>验证公司名单</strong>
+                <span>先用 ACRO 跑通规则，再批量接入目标公司和竞品。</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>AIhot 式接入</h2>
+            <div class="api-list">
+              <a href="../api/public/daily.json">日报 JSON</a>
+              <a href="../api/public/items.json">全部动态 JSON</a>
+              <a href="../api/public/topics.json">主题 JSON</a>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script>
+const state = {
+  payload: null,
+  tier: "daily",
+  company: "all",
+  category: "all",
+};
+
+const fallbackPayload = {
+  generated_at: new Date().toISOString(),
+  window_days: 45,
+  summary: {
+    new_candidates: 43,
+    immediate: 0,
+    daily: 3,
+    archive: 40,
+    errors: 0,
+    companies: 1,
+    sources: 5,
+  },
+  category_mix: {
+    partnership: 6,
+    finance: 3,
+    regulatory: 1,
+    company: 33,
+  },
+  source_mix: {
+    "Google News RSS - ACROBiosystems": 36,
+    "ACROBiosystems official news": 5,
+    "ACROBiosystems Japan official site": 2,
+  },
+  items: [
+    {
+      id: "sample-cgt",
+      company: "ACROBiosystems / 百普赛斯",
+      source_label: "Google News RSS - ACROBiosystems",
+      source_trust: "aggregator",
+      title: "Driving Innovation, Empowering Partners: ACROBiosystems Showcases Comprehensive CGT Solutions Anchored by GMP Capabilities at Bio Korea 2026",
+      url: "#",
+      published: "2026-06-01",
+      summary: "ACRO 展示围绕 CGT 与 GMP 能力的综合解决方案，适合作为市场部观察亚太活动传播和产品线表达的样本。",
+      score: 65,
+      tier: "daily",
+      category: "partnership",
+      reasons: ["公司别名命中: ACROBiosystems", "战略主题命中: CGT, GMP", "业务动作命中: partner"],
+      age_days: 35,
+    },
+    {
+      id: "sample-ipo",
+      company: "ACROBiosystems / 百普赛斯",
+      source_label: "Google News RSS - ACROBiosystems",
+      source_trust: "aggregator",
+      title: "IPO News | ACROBiosystems Plans Hong Kong IPO",
+      url: "#",
+      published: "2026-05-29",
+      summary: "资本市场信号不一定直接给市场部使用，但对老板视角的公司动态和品牌阶段判断有参考价值。",
+      score: 45,
+      tier: "daily",
+      category: "regulatory",
+      reasons: ["公司别名命中: ACROBiosystems"],
+      age_days: 38,
+    },
+  ],
+};
+
+const els = {
+  metricCandidates: document.querySelector("#metricCandidates"),
+  metricDaily: document.querySelector("#metricDaily"),
+  metricImmediate: document.querySelector("#metricImmediate"),
+  metricArchive: document.querySelector("#metricArchive"),
+  updatedAt: document.querySelector("#updatedAt"),
+  signalList: document.querySelector("#signalList"),
+  topicBars: document.querySelector("#topicBars"),
+  sourceList: document.querySelector("#sourceList"),
+  sourceCount: document.querySelector("#sourceCount"),
+  windowDays: document.querySelector("#windowDays"),
+  tierFilter: document.querySelector("#tierFilter"),
+  categoryFilter: document.querySelector("#categoryFilter"),
+  companyFilter: document.querySelector("#companyFilter"),
+  refreshButton: document.querySelector("#refreshButton"),
+};
+
+async function loadData() {
+  try {
+    let response = await fetch("../data/latest_run.json", { cache: "no-store" });
+    if (!response.ok) {
+      response = await fetch("./data/latest_run.json", { cache: "no-store" });
+    }
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    state.payload = await response.json();
+  } catch (error) {
+    state.payload = fallbackPayload;
+  }
+  hydrateFilters();
+  render();
+}
+
+function hydrateFilters() {
+  const categories = [...new Set(state.payload.items.map((item) => item.category))].sort();
+  const companies = [...new Set(state.payload.items.map((item) => item.company))].sort();
+  const current = els.categoryFilter.value;
+  const currentCompany = els.companyFilter.value;
+  els.categoryFilter.innerHTML = '<option value="all">全部主题</option>';
+  for (const category of categories) {
+    const option = document.createElement("option");
+    option.value = category;
+    option.textContent = labelCategory(category);
+    els.categoryFilter.appendChild(option);
+  }
+  els.categoryFilter.value = categories.includes(current) ? current : "all";
+
+  els.companyFilter.innerHTML = '<option value="all">全部公司</option>';
+  for (const company of companies) {
+    const option = document.createElement("option");
+    option.value = company;
+    option.textContent = company;
+    els.companyFilter.appendChild(option);
+  }
+  els.companyFilter.value = companies.includes(currentCompany) ? currentCompany : "all";
+}
+
+function render() {
+  const { payload } = state;
+  els.metricCandidates.textContent = payload.summary.new_candidates;
+  els.metricDaily.textContent = payload.summary.daily;
+  els.metricImmediate.textContent = payload.summary.immediate;
+  els.metricArchive.textContent = payload.summary.archive;
+  els.windowDays.textContent = `${payload.window_days} 天`;
+  els.sourceCount.textContent = `${payload.summary.sources} sources`;
+  els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
+
+  renderSignals();
+  renderBars(els.topicBars, payload.category_mix, labelCategory);
+  renderSources();
+}
+
+function renderSignals() {
+  const filtered = state.payload.items
+    .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => state.company === "all" || item.company === state.company)
+    .filter((item) => state.category === "all" || item.category === state.category)
+    .sort((a, b) => b.score - a.score);
+
+  els.signalList.innerHTML = "";
+  if (!filtered.length) {
+    els.signalList.innerHTML = '<div class="empty">当前筛选条件下没有需要展示的信号。</div>';
+    return;
+  }
+
+  for (const item of filtered) {
+    const card = document.createElement("article");
+    card.className = "signal-card";
+    card.innerHTML = `
+      <div class="signal-top">
+        <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
+        <span class="score">${item.score}</span>
+      </div>
+      <div class="meta-row">
+        <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
+        <span class="tag">${labelCategory(item.category)}</span>
+        <span class="tag">${escapeHtml(item.company)}</span>
+        <span class="tag">${escapeHtml(item.published || "no date")}</span>
+      </div>
+      <p class="summary">${escapeHtml(item.summary || "暂无摘要，建议回原文核对。")}</p>
+      <ul class="reason-list">
+        ${item.reasons.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
+      </ul>
+    `;
+    els.signalList.appendChild(card);
+  }
+}
+
+function renderBars(container, data, labeler) {
+  const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
+  const max = Math.max(...entries.map(([, value]) => value), 1);
+  container.innerHTML = entries
+    .map(([key, value]) => {
+      const width = Math.max(8, Math.round((value / max) * 100));
+      return `
+        <div class="bar-row">
+          <div class="bar-label"><span>${escapeHtml(labeler(key))}</span><strong>${value}</strong></div>
+          <div class="bar-track"><div class="bar-fill" style="width: ${width}%"></div></div>
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderSources() {
+  const entries = Object.entries(state.payload.source_mix).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  els.sourceList.innerHTML = entries
+    .map(([name, count]) => `<div class="source-item"><span>${escapeHtml(name)}</span><strong>${count}</strong></div>`)
+    .join("");
+}
+
+function labelTier(tier) {
+  return {
+    immediate: "即时提醒",
+    daily: "进入日报",
+    archive: "归档观察",
+  }[tier] || tier;
+}
+
+function labelCategory(category) {
+  return {
+    partnership: "合作 / 伙伴",
+    product: "产品 / 技术",
+    event: "展会 / 活动",
+    regulatory: "监管 / 申报",
+    finance: "资本 / 财务",
+    award: "奖项 / 认可",
+    market: "市场扩张",
+    company: "公司动态",
+    uncategorized: "未分类",
+  }[category] || category;
+}
+
+function formatDateTime(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(date);
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function escapeAttr(value) {
+  return escapeHtml(value).replaceAll("'", "&#39;");
+}
+
+els.tierFilter.addEventListener("change", (event) => {
+  state.tier = event.target.value;
+  renderSignals();
+});
+
+els.categoryFilter.addEventListener("change", (event) => {
+  state.category = event.target.value;
+  renderSignals();
+});
+
+els.companyFilter.addEventListener("change", (event) => {
+  state.company = event.target.value;
+  renderSignals();
+});
+
+els.refreshButton.addEventListener("click", loadData);
+
+loadData();
+
+    </script>
+  </body>
+</html>

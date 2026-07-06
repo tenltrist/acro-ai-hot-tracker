@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACRO AI Hot Tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <div class="brand-mark">AH</div>
+        <div>
+          <strong>AI Hot Tracker</strong>
+          <span>Market Intelligence</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="#overview">总览</a>
+        <a href="#signals">精选信号</a>
+        <a href="#topics">主题热度</a>
+        <a href="#workflow">工作流</a>
+      </nav>
+      <div class="sidebar-panel">
+        <span class="label">MVP 标本</span>
+        <strong>ACROBiosystems / 百普赛斯</strong>
+        <p>面向市场部与管理层的行业热点、竞品动态和行动建议 dashboard。</p>
+      </div>
+    </aside>
+
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">老板视角 Dashboard</p>
+          <h1>目标公司与行业热点雷达</h1>
+        </div>
+        <div class="toolbar" aria-label="Dashboard controls">
+          <button class="icon-button" id="refreshButton" type="button" title="刷新数据" aria-label="刷新数据">
+            <span aria-hidden="true">↻</span>
+          </button>
+          <select id="tierFilter" aria-label="按推送分层筛选">
+            <option value="all">全部分层</option>
+            <option value="immediate">即时提醒</option>
+            <option value="daily" selected>进入日报</option>
+            <option value="archive">归档观察</option>
+          </select>
+          <select id="companyFilter" aria-label="按公司筛选">
+            <option value="all">全部公司</option>
+          </select>
+          <select id="categoryFilter" aria-label="按主题筛选">
+            <option value="all">全部主题</option>
+          </select>
+        </div>
+      </header>
+
+      <section class="summary-grid" id="overview" aria-label="Summary metrics">
+        <article class="metric">
+          <span>新候选</span>
+          <strong id="metricCandidates">--</strong>
+          <small>公开来源抓取后去重</small>
+        </article>
+        <article class="metric accent">
+          <span>建议推送</span>
+          <strong id="metricDaily">--</strong>
+          <small>高相关，进入市场日报</small>
+        </article>
+        <article class="metric warn">
+          <span>即时提醒</span>
+          <strong id="metricImmediate">--</strong>
+          <small>重大合作、产品或监管信号</small>
+        </article>
+        <article class="metric quiet">
+          <span>噪音压制</span>
+          <strong id="metricArchive">--</strong>
+          <small>归档但不打扰团队</small>
+        </article>
+      </section>
+
+      <section class="decision-band" aria-label="Executive brief">
+        <div>
+          <p class="eyebrow">当前判断</p>
+          <h2>先做每日情报工作台，再开放即时推送</h2>
+          <p>
+            借鉴 AIhot 的精选流、日报、主题和 Agent 接入思路，但 ACRO 场景要多一层业务解释：
+            这条动态对产品宣传、竞品观察、日本市场和销售线索意味着什么。
+          </p>
+        </div>
+        <div class="decision-list">
+          <div><span>频率</span>当前建议每天 1 次，工作日上午生成</div>
+          <div><span>节奏</span>日报默认，重大信号再即时提醒</div>
+          <div><span>成本</span>公开来源先筛噪，AI 只处理高分候选</div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <div class="feed" id="signals">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">精选信号</p>
+              <h2>今日需要市场部看的动态</h2>
+            </div>
+            <span id="updatedAt" class="timestamp">加载中</span>
+          </div>
+          <div id="signalList" class="signal-list" aria-live="polite"></div>
+        </div>
+
+        <aside class="insights" aria-label="Dashboard insights">
+          <section class="panel" id="topics">
+            <div class="section-head compact">
+              <h2>主题热度</h2>
+              <span id="windowDays">-- 天</span>
+            </div>
+            <div id="topicBars" class="bars"></div>
+          </section>
+
+          <section class="panel">
+            <div class="section-head compact">
+              <h2>来源构成</h2>
+              <span id="sourceCount">-- sources</span>
+            </div>
+            <div id="sourceList" class="source-list"></div>
+          </section>
+
+          <section class="panel" id="workflow">
+            <h2>市场部动作队列</h2>
+            <div class="action-list">
+              <label><input type="checkbox" checked /> 先确认日报分类是否符合业务直觉</label>
+              <label><input type="checkbox" /> 补充休假前目标公司名单</label>
+              <label><input type="checkbox" /> 为 ADC / CGT / GMP 建立竞品关键词组</label>
+              <label><input type="checkbox" /> 决定哪些信号要进入老板即时提醒</label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>现阶段能解决什么</h2>
+            <div class="capability-list">
+              <div>
+                <strong>减少噪音</strong>
+                <span>把公开来源里的弱相关、旧新闻和金融噪音压到归档。</span>
+              </div>
+              <div>
+                <strong>给市场部选题</strong>
+                <span>把 CGT、GMP、合作、监管等信号整理成可读列表。</span>
+              </div>
+              <div>
+                <strong>给老板看趋势</strong>
+                <span>用指标、主题热度和来源构成快速判断今天有没有要关注的事。</span>
+              </div>
+              <div>
+                <strong>验证公司名单</strong>
+                <span>先用 ACRO 跑通规则，再批量接入目标公司和竞品。</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>AIhot 式接入</h2>
+            <div class="api-list">
+              <a href="../api/public/daily.json">日报 JSON</a>
+              <a href="../api/public/items.json">全部动态 JSON</a>
+              <a href="../api/public/topics.json">主题 JSON</a>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

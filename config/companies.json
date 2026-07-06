@@ -1,0 +1,136 @@
+{
+  "companies": [
+    {
+      "id": "acro",
+      "display_name": "ACROBiosystems / 百普赛斯",
+      "aliases": [
+        "ACROBiosystems",
+        "ACRO Biosystems",
+        "ACROBiosystems Group",
+        "ACROBiosystems Inc.",
+        "百普赛斯",
+        "アクロバイオシステムズ"
+      ],
+      "markets": [
+        "global",
+        "japan",
+        "china"
+      ],
+      "strategic_topics": [
+        "ADC",
+        "antibody",
+        "bispecific",
+        "CD20",
+        "B7-H3",
+        "cell and gene therapy",
+        "CGT",
+        "GMP",
+        "organoid",
+        "HEK293",
+        "recombinant protein",
+        "assay kit",
+        "exosome",
+        "immuno-oncology",
+        "webinar",
+        "conference",
+        "exhibition",
+        "Japan",
+        "日本"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partner",
+        "MOU",
+        "license",
+        "award",
+        "FDA",
+        "EMA",
+        "PMDA",
+        "clinical",
+        "manufacturing",
+        "GMP-grade",
+        "expansion"
+      ],
+      "noise_terms": [
+        "coupon",
+        "promo code",
+        "job posting",
+        "linkedin repost",
+        "directory listing",
+        "company profile",
+        "price target",
+        "forecast",
+        "price to sales",
+        "TradingView"
+      ]
+    },
+    {
+      "id": "thermo_fisher",
+      "display_name": "Thermo Fisher Scientific",
+      "aliases": [
+        "Thermo Fisher",
+        "Thermo Fisher Scientific",
+        "ThermoFisher",
+        "Thermo Scientific",
+        "Invitrogen",
+        "Applied Biosystems",
+        "Gibco",
+        "Patheon",
+        "PPD"
+      ],
+      "markets": [
+        "global",
+        "japan",
+        "biopharma"
+      ],
+      "strategic_topics": [
+        "CDMO",
+        "clinical development",
+        "manufacturing",
+        "AI-enabled research",
+        "cell and gene therapy",
+        "CGT",
+        "GMP",
+        "companion diagnostic",
+        "Oncomine",
+        "bioproduction",
+        "analytical instruments",
+        "pharma services",
+        "clinical trials",
+        "Japan",
+        "日本"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "FDA",
+        "PMDA",
+        "clinical",
+        "manufacturing"
+      ],
+      "noise_terms": [
+        "stock falls",
+        "stock rises",
+        "price target",
+        "forecast",
+        "analyst rating",
+        "dividend history",
+        "earnings conference call",
+        "conference call",
+        "financial results",
+        "quarterly results",
+        "stock",
+        "job posting",
+        "coupon",
+        "directory listing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "id": "acro_official_news",
+      "label": "ACROBiosystems official news",
+      "type": "html_links",
+      "url": "https://www.acrobiosystems.com/news",
+      "company_id": "acro",
+      "trust": "owned",
+      "include_url_terms": [
+        "/news"
+      ]
+    },
+    {
+      "id": "acro_japan_official",
+      "label": "ACROBiosystems Japan official site",
+      "type": "html_links",
+      "url": "https://jp.acrobiosystems.com/",
+      "company_id": "acro",
+      "trust": "owned",
+      "include_url_terms": [
+        "news",
+        "event",
+        "webinar"
+      ]
+    },
+    {
+      "id": "google_news_acro",
+      "label": "Google News RSS - ACROBiosystems",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=ACROBiosystems%20OR%20%22ACRO%20Biosystems%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF&hl=en-US&gl=US&ceid=US:en",
+      "company_id": "acro",
+      "trust": "aggregator"
+    },
+    {
+      "id": "google_news_acro_jp",
+      "label": "Google News RSS - ACROBiosystems Japan",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=ACROBiosystems%20Japan%20OR%20%E3%82%A2%E3%82%AF%E3%83%AD%E3%83%90%E3%82%A4%E3%82%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA&hl=ja&gl=JP&ceid=JP:ja",
+      "company_id": "acro",
+      "trust": "aggregator"
+    },
+    {
+      "id": "google_news_acro_prnewswire",
+      "label": "Google News RSS - ACROBiosystems PR Newswire",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=ACROBiosystems%20site%3Aprnewswire.com&hl=en-US&gl=US&ceid=US:en",
+      "company_id": "acro",
+      "trust": "wire"
+    },
+    {
+      "id": "thermo_official_rss",
+      "label": "Thermo Fisher official press releases RSS",
+      "type": "rss",
+      "url": "https://ir.thermofisher.com/rss/pressrelease.aspx",
+      "company_id": "thermo_fisher",
+      "trust": "owned"
+    },
+    {
+      "id": "thermo_newsroom",
+      "label": "Thermo Fisher newsroom",
+      "type": "html_links",
+      "url": "https://newsroom.thermofisher.com/newsroom/press-releases/",
+      "company_id": "thermo_fisher",
+      "trust": "owned",
+      "include_url_terms": [
+        "newsroom",
+        "press-releases",
+        "news-releases"
+      ]
+    },
+    {
+      "id": "google_news_thermo",
+      "label": "Google News RSS - Thermo Fisher",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Thermo%20Fisher%20Scientific%22%20OR%20%22Thermo%20Fisher%22&hl=en-US&gl=US&ceid=US:en",
+      "company_id": "thermo_fisher",
+      "trust": "aggregator"
+    },
+    {
+      "id": "google_news_thermo_jp",
+      "label": "Google News RSS - Thermo Fisher Japan",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Thermo%20Fisher%22%20Japan%20OR%20%22Thermo%20Fisher%22%20%E6%97%A5%E6%9C%AC&hl=ja&gl=JP&ceid=JP:ja",
+      "company_id": "thermo_fisher",
+      "trust": "aggregator"
+    }
+  ]
+}

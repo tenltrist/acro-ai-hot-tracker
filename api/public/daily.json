@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-07-06T17:56:58",
+  "window_days": 45,
+  "summary": {
+    "new_candidates": 203,
+    "immediate": 0,
+    "daily": 2,
+    "archive": 201,
+    "errors": 1,
+    "companies": 2,
+    "sources": 6
+  },
+  "selected": [
+    {
+      "id": "51ab3505df2cdc93",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMEFKdVJsR3d2aDdKUUZ1SzUwSjlicWRoT0ktMUFtcTl2U1ZyRE9kam5wRWxIRlNIMlpVU1NfYmZIMDRZN21lXzgxVlI0T1gxcF95eWNLWDIzTVR4T2VpSXZtZjdmR3kzZDNGZFd4OG54Y25QODRzY2ZUQ0Ffa1dlM1ZiaFFwaU9JV1k5TmZ0dWhxekN1dEpYdFJfZmVHTUlySkE2cGtWWHdEODU0?oc=5",
+      "published": "2026-06-22",
+      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 Yahoo Finance",
+      "score": 70,
+      "tier": "daily",
+      "category": "regulatory",
+      "reasons": [
+        "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
+        "战略主题命中: clinical development, manufacturing, AI-enabled research, CGT",
+        "业务动作命中: clinical, manufacturing"
+      ],
+      "age_days": 14
+    },
+    {
+      "id": "80c199ea0f31d139",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "google_news_acro",
+      "source_label": "Google News RSS - ACROBiosystems",
+      "source_trust": "aggregator",
+      "title": "Driving Innovation, Empowering Partners: ACROBiosystems Showcases Comprehensive CGT Solutions Anchored by GMP Capabilities at Bio Korea 2026 - acrofan.com",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5OQ2tkRW1iTzVkOG9SNnlSYURLMzhSS0hOOVR2M3hwMlAzQXVEREJYNFVlY3dDVVNTUXRRZEJaZ0duajh2Y09RN2xrZnZEM0E0ZG9YZ2VtT04xampm?oc=5",
+      "published": "2026-06-01",
+      "summary": "Driving Innovation, Empowering Partners: ACROBiosystems Showcases Comprehensive CGT Solutions Anchored by GMP Capabilities at Bio Korea 2026 acrofan.com",
+      "score": 50,
+      "tier": "daily",
+      "category": "partnership",
+      "reasons": [
+        "公司别名命中: ACROBiosystems",
+        "战略主题命中: CGT, GMP",
+        "业务动作命中: partner"
+      ],
+      "age_days": 35
+    }
+  ]
+}

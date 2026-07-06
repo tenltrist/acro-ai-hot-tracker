@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-07-06T17:56:58",
+  "category_mix": {
+    "company": 133,
+    "finance": 7,
+    "partnership": 22,
+    "regulatory": 17,
+    "product": 6,
+    "market": 9,
+    "event": 9
+  },
+  "source_mix": {
+    "Google News RSS - ACROBiosystems": 36,
+    "Google News RSS - ACROBiosystems Japan": 1,
+    "Google News RSS - ACROBiosystems PR Newswire": 6,
+    "Thermo Fisher official press releases RSS": 10,
+    "Google News RSS - Thermo Fisher": 100,
+    "Google News RSS - Thermo Fisher Japan": 50
+  },
+  "companies": [
+    {
+      "id": "acro",
+      "display_name": "ACROBiosystems / 百普赛斯",
+      "markets": [
+        "global",
+        "japan",
+        "china"
+      ],
+      "strategic_topics": [
+        "ADC",
+        "antibody",
+        "bispecific",
+        "CD20",
+        "B7-H3",
+        "cell and gene therapy",
+        "CGT",
+        "GMP",
+        "organoid",
+        "HEK293",
+        "recombinant protein",
+        "assay kit",
+        "exosome",
+        "immuno-oncology",
+        "webinar",
+        "conference",
+        "exhibition",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "thermo_fisher",
+      "display_name": "Thermo Fisher Scientific",
+      "markets": [
+        "global",
+        "japan",
+        "biopharma"
+      ],
+      "strategic_topics": [
+        "CDMO",
+        "clinical development",
+        "manufacturing",
+        "AI-enabled research",
+        "cell and gene therapy",
+        "CGT",
+        "GMP",
+        "companion diagnostic",
+        "Oncomine",
+        "bioproduction",
+        "analytical instruments",
+        "pharma services",
+        "clinical trials",
+        "Japan",
+        "日本"
+      ]
+    }
+  ]
+}

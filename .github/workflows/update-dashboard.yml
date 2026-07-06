@@ -1,0 +1,28 @@
+name: Update AI Hot Tracker Dashboard
+
+on:
+  schedule:
+    - cron: "0 0 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate dashboard data
+        run: python3 scripts/run_daily.py --days 45
+
+      - name: Build share page
+        run: python3 scripts/build_share_page.py
+
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update AI Hot Tracker dashboard data"
+          file_pattern: "data/*.json api/public/*.json reports/*.md share/*.html"
