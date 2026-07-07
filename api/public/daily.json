@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-06T17:56:58",
+  "generated_at": "2026-07-07T02:26:46",
   "window_days": 45,
   "summary": {
-    "new_candidates": 203,
+    "new_candidates": 215,
     "immediate": 0,
-    "daily": 2,
-    "archive": 201,
-    "errors": 1,
+    "daily": 4,
+    "archive": 211,
+    "errors": 0,
     "companies": 2,
-    "sources": 6
+    "sources": 7
   },
   "selected": [
     {
@@ -30,7 +30,7 @@
         "战略主题命中: clinical development, manufacturing, AI-enabled research, CGT",
         "业务动作命中: clinical, manufacturing"
       ],
-      "age_days": 14
+      "age_days": 15
     },
     {
       "id": "80c199ea0f31d139",
@@ -51,7 +51,49 @@
         "战略主题命中: CGT, GMP",
         "业务动作命中: partner"
       ],
-      "age_days": 35
+      "age_days": 36
+    },
+    {
+      "id": "f0dfba484c6dcb92",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_newsroom",
+      "source_label": "Thermo Fisher newsroom",
+      "source_trust": "owned",
+      "title": "Skip to main content",
+      "url": "https://newsroom.thermofisher.com/newsroom/press-releases/#main-content",
+      "published": "",
+      "summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "reasons": [
+        "公司别名命中: ThermoFisher",
+        "公司自有来源",
+        "业务动作命中: release"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "45aa1ac4da9a536e",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_newsroom",
+      "source_label": "Thermo Fisher newsroom",
+      "source_trust": "owned",
+      "title": "Press Releases",
+      "url": "https://newsroom.thermofisher.com/newsroom/press-releases/default.aspx",
+      "published": "",
+      "summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "reasons": [
+        "公司别名命中: ThermoFisher",
+        "公司自有来源",
+        "业务动作命中: release"
+      ],
+      "age_days": null
     }
   ]
 }
