@@ -1,99 +1,36 @@
 {
-  "generated_at": "2026-07-07T02:26:46",
+  "generated_at": "2026-07-08T02:00:59",
   "window_days": 45,
   "summary": {
-    "new_candidates": 215,
+    "new_candidates": 23,
     "immediate": 0,
-    "daily": 4,
-    "archive": 211,
+    "daily": 1,
+    "archive": 22,
     "errors": 0,
     "companies": 2,
-    "sources": 7
+    "sources": 3
   },
   "selected": [
     {
-      "id": "51ab3505df2cdc93",
+      "id": "888c139d5cd72870",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMEFKdVJsR3d2aDdKUUZ1SzUwSjlicWRoT0ktMUFtcTl2U1ZyRE9kam5wRWxIRlNIMlpVU1NfYmZIMDRZN21lXzgxVlI0T1gxcF95eWNLWDIzTVR4T2VpSXZtZjdmR3kzZDNGZFd4OG54Y25QODRzY2ZUQ0Ffa1dlM1ZiaFFwaU9JV1k5TmZ0dWhxekN1dEpYdFJfZmVHTUlySkE2cGtWWHdEODU0?oc=5",
+      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZTU1OEVUNDBCZXJRR0duVHN5cmtIM1BJZzBiRkh6eS10UUJlR3VrVTc0MGFjUy1mdjl1aWluNzBkdHhLWXlEejlnakNSeTBmX2EzYmJqd0pRNzItSjJhdTRsS1VzTU5BbEg3cldXRnZVZk92R2luMU5QRHc3MHJNV0ViemRCM05sSXVRV053NFJXUmxZNy1JRks4UGdPWW41RlJnbFQxZVh4MnVmay1udS1EdDdIUTREbERJdXZObGgtRmtDLXU2dUV1NFVYdmZpNy1NWTVsclh6Xzc4WWp6UURMSFU2V0JnR01pOE5SajJkN3BqOXA1SW9mNnlTVXNLVWt0NjNTR3hUN1E4ZlpIVVoxN0tYNnlrZkxiZWhpYVZIQlNLMzB3?oc=5",
       "published": "2026-06-22",
-      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 Yahoo Finance",
-      "score": 70,
+      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 Business Wire",
+      "score": 64,
       "tier": "daily",
       "category": "regulatory",
       "reasons": [
         "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-        "战略主题命中: clinical development, manufacturing, AI-enabled research, CGT",
+        "战略主题命中: clinical development, manufacturing, AI-enabled research",
         "业务动作命中: clinical, manufacturing"
       ],
-      "age_days": 15
-    },
-    {
-      "id": "80c199ea0f31d139",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "source_id": "google_news_acro",
-      "source_label": "Google News RSS - ACROBiosystems",
-      "source_trust": "aggregator",
-      "title": "Driving Innovation, Empowering Partners: ACROBiosystems Showcases Comprehensive CGT Solutions Anchored by GMP Capabilities at Bio Korea 2026 - acrofan.com",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5OQ2tkRW1iTzVkOG9SNnlSYURLMzhSS0hOOVR2M3hwMlAzQXVEREJYNFVlY3dDVVNTUXRRZEJaZ0duajh2Y09RN2xrZnZEM0E0ZG9YZ2VtT04xampm?oc=5",
-      "published": "2026-06-01",
-      "summary": "Driving Innovation, Empowering Partners: ACROBiosystems Showcases Comprehensive CGT Solutions Anchored by GMP Capabilities at Bio Korea 2026 acrofan.com",
-      "score": 50,
-      "tier": "daily",
-      "category": "partnership",
-      "reasons": [
-        "公司别名命中: ACROBiosystems",
-        "战略主题命中: CGT, GMP",
-        "业务动作命中: partner"
-      ],
-      "age_days": 36
-    },
-    {
-      "id": "f0dfba484c6dcb92",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "source_id": "thermo_newsroom",
-      "source_label": "Thermo Fisher newsroom",
-      "source_trust": "owned",
-      "title": "Skip to main content",
-      "url": "https://newsroom.thermofisher.com/newsroom/press-releases/#main-content",
-      "published": "",
-      "summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "reasons": [
-        "公司别名命中: ThermoFisher",
-        "公司自有来源",
-        "业务动作命中: release"
-      ],
-      "age_days": null
-    },
-    {
-      "id": "45aa1ac4da9a536e",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "source_id": "thermo_newsroom",
-      "source_label": "Thermo Fisher newsroom",
-      "source_trust": "owned",
-      "title": "Press Releases",
-      "url": "https://newsroom.thermofisher.com/newsroom/press-releases/default.aspx",
-      "published": "",
-      "summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "reasons": [
-        "公司别名命中: ThermoFisher",
-        "公司自有来源",
-        "业务动作命中: release"
-      ],
-      "age_days": null
+      "age_days": 16
     }
   ]
 }

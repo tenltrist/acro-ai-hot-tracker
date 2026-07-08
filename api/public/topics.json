@@ -1,22 +1,16 @@
 {
-  "generated_at": "2026-07-07T02:26:46",
+  "generated_at": "2026-07-08T02:00:59",
   "category_mix": {
-    "company": 140,
-    "finance": 7,
-    "partnership": 22,
-    "regulatory": 19,
-    "product": 8,
-    "market": 10,
-    "event": 9
+    "product": 2,
+    "company": 14,
+    "partnership": 5,
+    "regulatory": 1,
+    "award": 1
   },
   "source_mix": {
-    "Google News RSS - ACROBiosystems": 36,
-    "Google News RSS - ACROBiosystems Japan": 1,
-    "Google News RSS - ACROBiosystems PR Newswire": 6,
-    "Thermo Fisher official press releases RSS": 10,
-    "Thermo Fisher newsroom": 12,
-    "Google News RSS - Thermo Fisher": 100,
-    "Google News RSS - Thermo Fisher Japan": 50
+    "Google News RSS - ACROBiosystems": 1,
+    "Google News RSS - Thermo Fisher": 20,
+    "Google News RSS - Thermo Fisher Japan": 2
   },
   "companies": [
     {
