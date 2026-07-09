@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-07-08T02:00:59",
+  "generated_at": "2026-07-09T02:13:12",
   "category_mix": {
-    "product": 2,
-    "company": 14,
-    "partnership": 5,
-    "regulatory": 1,
-    "award": 1
+    "partnership": 2,
+    "company": 16,
+    "product": 1,
+    "market": 2
   },
   "source_mix": {
-    "Google News RSS - ACROBiosystems": 1,
-    "Google News RSS - Thermo Fisher": 20,
-    "Google News RSS - Thermo Fisher Japan": 2
+    "Google News RSS - ACROBiosystems PR Newswire": 1,
+    "Google News RSS - Thermo Fisher": 16,
+    "Google News RSS - Thermo Fisher Japan": 4
   },
   "companies": [
     {
