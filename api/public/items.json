@@ -1,415 +1,505 @@
 [
   {
-    "id": "5507903220532419",
+    "id": "76bfdaf0f5e8014d",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "thermo_official_rss",
+    "source_label": "Thermo Fisher official press releases RSS",
+    "source_trust": "owned",
+    "title": "Thermo Fisher Scientific Announces Quarterly Dividend",
+    "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Announces-Quarterly-Dividend-3dcda308b/default.aspx",
+    "published": "2026-07-09",
+    "summary": "",
+    "score": 40,
+    "tier": "archive",
+    "category": "event",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
+      "公司自有来源"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "0ac3843ca9d019ac",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo",
     "source_label": "Google News RSS - Thermo Fisher",
     "source_trust": "aggregator",
-    "title": "Cell Culture Media Market worth $12.9 billion by 2033: Biologics Manufacturing and Cell Therapy Expansion Accelerate Growth for Avantor, Thermo Fisher Scientific, and Lonza Group AG - The AI Journal",
-    "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNQXl0TzNId2x4OVBBQWdMNmp1UmVZc214dmtYclFxeXFER3BZbTk2Sk5TcE1xQjJoQVhXWXZpNy16cWJIV3M0dFhzb25jRlE0WWxWZHhjN0FGNllmclkyNWwzdnEyWTRrMHRRZldGUE5Rb0RVUjdxZjEtZnZrdnVmQ1FzbEo0Y2EtMUJXV3VUanZYT2RVa1ExMURUbUZGSnA5N3QwNlNvNjZiSkUzVDM3aEhRXzBuVUpCdEQzX2lfOXBGdGR1UDJ4TlZMVnJKRlN4TlFtMmlGcnZjR2NLaUJRblpfYzh6MXJWUmdUcGxIdFZ1a1I0bmprcHkzLXI1UUFzT2JWSHg1SF9pM3NyZ1l2bTZWSkRMdC1kQkJmSk1aczBCNGFL?oc=5",
-    "published": "2026-07-08",
-    "summary": "Cell Culture Media Market worth $12.9 billion by 2033: Biologics Manufacturing and Cell Therapy Expansion Accelerate Growth for Avantor, Thermo Fisher Scientific, and Lonza Group AG The AI Journal",
-    "score": 52,
-    "tier": "daily",
+    "title": "Thermo Fisher Scientific Announces Quarterly Dividend - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZm8xa3pXcFR4YlVocmNiZjZfZzQ1NmRzN29oMmpTaTNMYkd0U29yYlZFcC1YM2hvd1lGeUxDc0RrV2x5MlJSZnBPd1MtNFJZUGNFZ1VFVndxbEtrQXpkZzJobUVNNndxU2xzcVVVUnU1V3pTb1hqenVBWWFWYnhCVFozWXV3b1BJNnlLYUd6Yy1jQndMU1hsc0dybWYxRmlaRERIODlfazRZT09IT1E?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher Scientific Announces Quarterly Dividend Yahoo Finance",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "9d90191805104ca2",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher Scientific to lay off 69 - In Business Madison",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6YXhBTGNzazgxWl9ReUJZTlR4aXg2RUNJVTJmbFNCVkFMY0tkb2duOVIwWmprWHZxeS1YMzVydEJNWHkydkZ2S2FIc2xaeTlHSWVPYUNCdk9MdmZ4bzVwbHpmY1JwS04yUHhmUDVyWQ?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher Scientific to lay off 69 In Business Madison",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "df9d013a61de9872",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "State filing reveals new details on Thermo Fisher Scientific layoffs - WKOW",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUDAwWk01RDFZV2xzdm5leFpYaDRtWGkxOUV2QWxuaGloUWhRZE8xN3ZmSzQyS0hCaG95SGZMMGJ4elF3LVhBTUo4azFKTVV6OFdRSGl4OURIdy04WkRZckx0T2s0TFBwYmFmUUxNV3MwOU1TVW1iQjJ6SS1KMDFBODZqaEdsNDdveUdTUFY0TnZENGRlRlA3TnVMcVlUUDcwaFpGUVpkYm82ZU1HTFdpcXRYTDNLQVAxUWQtaDlabEt4d29jUl91aEJjWUFkTnREYi04ZEpuTUZUN2N3?oc=5",
+    "published": "2026-07-09",
+    "summary": "State filing reveals new details on Thermo Fisher Scientific layoffs WKOW",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "4edf8a6e21d03de4",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher is moving 70 Middleton jobs out of state - Wisconsin State Journal",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXN1T2FsT3lUZkprNEFYLThZMWc4STlXZVRFSjlvTl9oQmI4MXhpeURWc3RqNXNKQWQ5WDFjOXd2YUdRb1BKTy1ZRWRUSHdfOXRwNkdPMGQyWmVfaWNzTlljR0VzN1BELWxVYkNkT0pNakNTVFkwOEkyWGhibi1lVEYyaGVOZzdyVGs0Zno4TFZ3aVU?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher is moving 70 Middleton jobs out of state Wisconsin State Journal",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "702d7527b5cd958c",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher Q2 Preview: Buy Before The Recovery (NYSE:TMO) - Seeking Alpha",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMEgxd2lITDVROHlOMHhyWDFVS3oyT25fcE1LVERySEV3V3lpSWE2UVZqVWRkN2w3T1JXaEJEanBsQkp2c1l0aEpmSUdDM2V6Ujl2SXlUQmg2SGxjSW93WTlYMXAzNG5CU2g4YmtncFp1aWllMVBaUktwUzZYVHlObzFTRmRiamVWZG5lMWFlN1RvWEhRWTZTWA?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher Q2 Preview: Buy Before The Recovery (NYSE:TMO) Seeking Alpha",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "5d5a5076ba474476",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher Scientific Inc. Announces Quarterly Dividend, Payable on October 15, 2026 - marketscreener.com",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdlR5aFQ3V3Y5LVJ4LVdMdWJHYTRjdEllMWJGdVRZcWM1THdURXg0cWc5SDRiY29BZ1BQTDF4NFBmUTFwdmxfekZEYl90NldsR0lfZjRDLUVnUHZFNXNnOUJyakNEeE1EcWI2UzM0N2VqN2VTRi0yUkNYWmE5X09pZ3RWSHV3bVZnRllHOUdhZjZsUVhlVXo3QVRZWWxwc3Y1YUNqcXgzR0lxdGRFZ294TGZ3SkRERFFxQXhIY2tyeWJCaDlFWFRRSEhFZVRkYWhNdktv?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher Scientific Inc. Announces Quarterly Dividend, Payable on October 15, 2026 marketscreener.com",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "f1ab023225e3f71f",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher declares $0.47 quarterly dividend By Investing.com - Investing.com Australia",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFlPNm5kaGQzb1F5c2VNZzRsbEgyYy16by1zbzVlQXNZSndMSmEyUmdCT1ltYWVPM25mNDdVNjlTUHJYOE5Yc0I0NEFjcXlzNjFfYjdmNmlLMWhORlRxSGtRUnNfS0sxczc3WFpNaF9Nci1pTTBmOFdqNkVvSHNpV19kVnh1Y0VyNXd6WDctZUdmYVZYVkIyOC1meDlsWnkwa0xtZmtJMy1NZw?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher declares $0.47 quarterly dividend By Investing.com Investing.com Australia",
+    "score": 30,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "公司别名命中: Thermo Fisher"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "0c9f2ef8948d284d",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher Scientific strengthens its life science platform as demand for lab tools stays resilie - Ad-hoc-news.de",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQWpoSkdGNFh6OWNiaE5rMjNsS3pLeVZhcUI4WXl1QmNfX19iY3NKOWd1SlEyYU9mcjQzbU5UcVlNMV9LaWI0NUx6UjA0ZFphTlRGemM1OUpyTVNlcXFxUmlqWENiZVJfUzRvd01YZHR0VC1DVjd5bWNTY0VZcC1IbjlwdFQtYjZjblBkOUU4T0tQTTBEdjZlWFBkbHN3SmFPdjBGZUthMmdBVWNhYnBhUHVGWDhZNkx1aVF2TkhLTGQzb1RLSGpYNldWZw?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher Scientific strengthens its life science platform as demand for lab tools stays resilie Ad-hoc-news.de",
+    "score": 30,
+    "tier": "archive",
+    "category": "regulatory",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "bee856b891a659e6",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Thermo Fisher Sci. steady after recent updates. Investors focus on healthcare demand - Ad-hoc-news.de",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNRVlkbmFfcGlncVdqMG44WklpS2NJMmcxNFkzRUtmYWxZU0NEaUUwbjVtRnZDMWwxX3ZMX3FhYlhXVTFjYThlWjZVWmlXTFdCc05yX3lHWGpYWTdPVzVWS00tSzFTd1JDbjI4ZkJTdndVMVdMSUFKNnd3OHlvSHFkcjVLbjFQOW1QR3hYWWlidENycFdRSDBuOG4tc2JIekxOYVFJYkJaVC15eE5QNTBta1hWcHJJZktVWjRPUnpXbVo?oc=5",
+    "published": "2026-07-09",
+    "summary": "Thermo Fisher Sci. steady after recent updates. Investors focus on healthcare demand Ad-hoc-news.de",
+    "score": 30,
+    "tier": "archive",
+    "category": "regulatory",
+    "reasons": [
+      "公司别名命中: Thermo Fisher"
+    ],
+    "age_days": 1
+  },
+  {
+    "id": "d0ac1be77c1e4154",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Latham Advises Astorg in Acquisition of Thermo Fisher Scientific Global Microbiology Business - Latham & Watkins LLP",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZlc4RzRvSFA1WDhfelY0T3c5OG53SjdZVUt4czA2X1k3LWh2WWFIUlNkMGRXMGpGNnZMXzQyVlVaS09GNmtoSnI2b3ZCTkpjTDBxUGpmbWE0NDRDaldqeWVIZm9SY0hycjJjWDNiY0lsZmpuMkZfYVpIM2xlZnA1U0V3WURQTGc2UUM2UHRWSG9ZRmpaZGZyblUzRDdFYS1fQ1hzRkZwU3VieFBVQVpFaW5HaDFhRTVTWlFMcjYteU15YVl4QUVJ?oc=5",
+    "published": "2026-04-27",
+    "summary": "Latham Advises Astorg in Acquisition of Thermo Fisher Scientific Global Microbiology Business Latham & Watkins LLP",
+    "score": 25,
+    "tier": "archive",
     "category": "market",
     "reasons": [
       "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "战略主题命中: manufacturing",
-      "业务动作命中: expansion, manufacturing"
+      "业务动作命中: acquisition",
+      "超过默认时效窗口: 74 天前"
     ],
-    "age_days": 1
+    "age_days": 74
   },
   {
-    "id": "36bbd66cb057831d",
+    "id": "078b453fb02d386e",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo",
     "source_label": "Google News RSS - Thermo Fisher",
     "source_trust": "aggregator",
-    "title": "Thermo Fisher's Patheon becomes exclusive third-party CDMO for KinetiSol technology - Manufacturing Chemist",
-    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUHhYcWVhRTVMV1h3SERUUHN2M3JiMzBJbUpnYUdqLW5kTG1BaDlPcWxISE5PM3ZON3ZmbWR5WnpVRVc3MDdJT1V2N3Ffb1ZwazJMNHBkRzhfOS1UWEJFMHYxcWM2VnFLMVIzbVZVRzF3SnBTQXI4T1MtQUhrd2E4b2RBdkswdURRaDJ5ZUZoSTlVSFN4ZXc?oc=5",
-    "published": "2026-07-08",
-    "summary": "Thermo Fisher's Patheon becomes exclusive third-party CDMO for KinetiSol technology Manufacturing Chemist",
-    "score": 50,
-    "tier": "daily",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Patheon",
-      "战略主题命中: CDMO, manufacturing",
-      "业务动作命中: manufacturing"
-    ],
-    "age_days": 1
-  },
-  {
-    "id": "c13165325af0f9f1",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series - Food Safety Magazine",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVMxeThTcHlUWW13YTNkT01MSl83S1RrWC1YS09xTUxTWVlXNE9ZSVVRX213cEU0NTBZaTB3eW1oWXg1eU9pZEpDWThLR2RoeTE5YVhnX2kyX2k0bWdobVh2YUdCUUc5WHZvWG95WUhHbTRMMWtwbjM4c19LWWJaZlM0Qm01bEZPU09ERS1PNVJyWHozNHhjR1JTVnhXNjc5eDhsbGxFbFJGSEJSaHRrRGg3bm1qOV90TjVwTDkySVU?oc=5",
-    "published": "2026-07-08",
-    "summary": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series Food Safety Magazine",
-    "score": 38,
-    "tier": "archive",
-    "category": "product",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "业务动作命中: launch"
-    ],
-    "age_days": 1
-  },
-  {
-    "id": "872db77858dc3b7d",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "AustinPx Expands KinetiSol™ Technology Commercial Access through Thermo Fisher Scientific Collaboration - BioSpace",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSWtYSE56SkE1WGpqeWhuSWJXZ3ZqQ2tET0FWUHh2UEpULVRueS1uNFNFcnNmbXNOSkhUQkZFVHlCeWtRMDc5ZTVXVVJPYTlMbk9hZ2pvU0F2VnBOeVIzTUxsTEtGNnRubENOS0EyVDhCc1Ztd3VyOFlaOEFaTnVXQ2dWaDFCd3NyeGxSRGJ3RjdsX1BFTDloUWozTFZ1ZGg3TjNHak5MY1lldlFkcjVGR19GVThXUGNFMTg5VFBRcjZiZl9jZndIN1J2bzM1elVyRU14dFdNbnBRZw?oc=5",
-    "published": "2026-06-30",
-    "summary": "AustinPx Expands KinetiSol™ Technology Commercial Access through Thermo Fisher Scientific Collaboration BioSpace",
-    "score": 38,
-    "tier": "archive",
-    "category": "partnership",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "业务动作命中: collaboration"
-    ],
-    "age_days": 9
-  },
-  {
-    "id": "ddffad6bb1ff5e56",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific to eliminate 70 Middleton positions - WKOW",
-    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaF9JN2FVSmhZNmNPZjZVVkwtbEZubDZxSTAxRmR3RzNIOHQxWnh2RmVqOHBhTnRZTGNOVlFPM3ZickZOdF9jNzdKMmN1M1l4OFZWaTJQQmQ1ZnAtVVdmUjhtMVg0LTdmVkVLVVB4TWVUUGdVbUJDWGxVNEdiUEhpVUZKZ1F3TklneTRDYktKS1VYd2FkcVdnRkN3SG1sVmlDd1Ziamw2RlpXaTg3TDFlUGtrZk5WQ0RvOXZsYi14LUg5cGVPN1BDN1JXX2wtWU94VEE?oc=5",
-    "published": "2026-07-09",
-    "summary": "Thermo Fisher Scientific to eliminate 70 Middleton positions WKOW",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
-    ],
-    "age_days": 0
-  },
-  {
-    "id": "4896c9b8154151ea",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific lays off 70 in Middleton - Channel 3000",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMkhYVzBnTmh0b1RXcEMyblJnMTJja3lZU3NraVBGRjJEdkppNW5Ib19oLUEzZGU3MjNPa2tCMndsVVdmY3BNcWpGXzgxZWZRSGlEVGhPZ3hDNDJmTlZlQm1weTlmY0t6aXVGeHc5TWJ3d3hFdElPTUVLd21qX19HcnRDMGNiVjhXTV9kMEJFVnJEdVBhVkxrdE5vMmNNa3MyNjgxTEZRbjhlU0RmXzU2WW01ZE9ZTjkwdTZBVzUzT3hUUjJUbi01VmdWb08?oc=5",
-    "published": "2026-07-08",
-    "summary": "Thermo Fisher Scientific lays off 70 in Middleton Channel 3000",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
-    ],
-    "age_days": 1
-  },
-  {
-    "id": "4290b643271e3f02",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles Eligible for National CODIS Searches - Yahoo Finance",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb3RFbjI0bHdnMEFVWlJmVUhuSVh0SmdmWncwSHYwbG5tRFlJcVFGVm1CWlJCV1dXOWxxMW9qbDdLSDdDSWQ5S20yVUcwM2hiZDFubnI3aFd0S2Z4NkR5RVpVSHZEZl9ueWtmY3NsbkRJY1RhREZQdnV2aGdpVFNnR1RGdVk4eDVZUmdZWkxYVzNZNVB5MXUwcm0zaUYxd0VaWnc?oc=5",
-    "published": "2026-07-07",
-    "summary": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles Eligible for National CODIS Searches Yahoo Finance",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific"
-    ],
-    "age_days": 2
-  },
-  {
-    "id": "8e9ea670884717fc",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Krebs 7th grader named Thermo Fisher Junior Innovaters Challenge nominee - McAlester News-Capital",
-    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNZ29OU1BRR1ZpT0lXREoyNDR4clhtbEkyNUhWX1phNmhiU2NOckVYRkFNUlFMN0xCa2hXWm5rNnRWMkttY3dxRXJpVTEydm5yWTItSXdNTktPbmN6OFJjUXhYUVdMYlZZUl9oU2s5dlBydUN6VWdSWUNhOGd0TXFBSVUwbVRqSm96NXNjR3hqV1hCRmVPVUc3TlFZSmJ5akMwMzZNNFFEdGQ5S2Q4NnlrRkpNY1hhZXhwcmlwWnhKWXFKQjN3eThKU0hlWlhFMDBtMEJoTDFzVEpJRlBoTHVvbXNjREFTQzRtZ0xR?oc=5",
-    "published": "2026-07-07",
-    "summary": "Krebs 7th grader named Thermo Fisher Junior Innovaters Challenge nominee McAlester News-Capital",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher"
-    ],
-    "age_days": 2
-  },
-  {
-    "id": "c51def530cb9aaa4",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Adds AustinPx KinetiSol Technology - Technology Networks",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQzRlc1Fnb2d6QmJta1BzWkM0V1FxQzBXY2dwdFJwN1U1aHMyNG9TZW8zcjJham5DY3J1bVR0d254MmY4VlRfWHpPVnlrWFNfVlRsbklrSnhfTnJPTWNMME5KM0dQZDhrN2NBVzhlTHJXUG5ReklqZkhiN1p1dVJHTVdfYi1uY2xMNXRuenBNdGpjOUw2THN0eFlLb194VThab01IYTY2SnRLdTdETUhtaDdWcFdtdWNlUFE?oc=5",
-    "published": "2026-07-04",
-    "summary": "Thermo Fisher Adds AustinPx KinetiSol Technology Technology Networks",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher"
-    ],
-    "age_days": 5
-  },
-  {
-    "id": "34b116260328fcc0",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher expands its scientific footprint as investors assess long-term growth - AD HOC NEWS",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR1RZNWtoVmtrY0lVSFRxNVVvejltRWdxM3RxMFc1QUJFSzN5bWlyd3puNi0xVzNVU25SY0RHWmd4MVQ0ck44M2E3RVhXY2g0eDhJd3dxdGxxbmJLT2hyczhxb2FNMlNWRmNvUEVld2MzNDdoODcxOWlvTmthUE8zRjdoa2Z0QlZVRm1kd2RTdDZULUhMYW82MHFTQ2Z1dkJPY0lLZGJFWGNOem5CT3lTdUtac1hNejFIUldVSWloVVhSWW8?oc=5",
-    "published": "2026-07-08",
-    "summary": "Thermo Fisher expands its scientific footprint as investors assess long-term growth AD HOC NEWS",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher"
-    ],
-    "age_days": 1
-  },
-  {
-    "id": "261478644ec2a4f4",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Tests SpheriCal Calibration As Potential Edge In Mass Spectrometry - Yahoo Finance",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdm9YNEdISXdkWTNTZVp6X1ZqVnRLanhELUVNbUlDcHZlSWhtOUt4b3JaSU1wLVVHTHh1T3c2bjRSajRMaEliWW1OSWtOMVBySkVwM0xVSlh3YzRqR25WQWdNOWNXNXdfWEo2ZUhUbFJVVFVrNDV2QU13TENTWUJlSmZQdlZHMVRJc2s0Z3hqN0JkbWprYzd6T1BUYUd6LXlqek9HczJHelBmZUxudmJz?oc=5",
-    "published": "2026-06-12",
-    "summary": "Thermo Fisher Tests SpheriCal Calibration As Potential Edge In Mass Spectrometry Yahoo Finance",
-    "score": 30,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher"
-    ],
-    "age_days": 27
-  },
-  {
-    "id": "9ccca7c3a5f7110b",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific Opens U.S. Flagship Bioprocess Design Center to Accelerate the Delivery of Life-changing Therapies - BioSpace",
-    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPOGtNQS1OZlRYWTZuZVNaOUs2R2FfUF81dElxU1VqVWw0YVZ0MFAxZUNFUlRKTGVXc29oX3ZESmc3S21fMjkzR3FCMDNNOUxfV0hhZjFfMEdCM2Jxc213SlZabDFPdGZjSTFHXzhVeG5OVTF0bnhoSGZWbnkxSnhUNEU3NHlrMlNic2djX3pJN0FLR3Y0cm45SlVFV01TdjN3WTRtWkhkUUhvVy02alpYclRDZmdDTkRnSUdpTkhHbFFpUTJadHM5bFJtRi00R19GNGhNSHdQUE8tZmJySkVWMG8yZ2pybGJsV2MxSm5SczIybGFF?oc=5",
-    "published": "2026-04-28",
-    "summary": "Thermo Fisher Scientific Opens U.S. Flagship Bioprocess Design Center to Accelerate the Delivery of Life-changing Therapies BioSpace",
+    "title": "Thermo Fisher Scientific to Sell Microbiology Biz to Astrog - Medical Device and Diagnostic industry",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORmxUaUc3eTFaeF83TGcwdHRaZkxfZVNlMWFXN2haX2hVY1NnTDM0SVpLVElHUnlNSHVvSVROaTRTR0ZneWRvWk1mLXVTLXFHX2RESUlWRTczNHU5UTB4TVI2RjgzXzh5RjJpTjFNaHFzTlFDbU1NaTN0d1ZqWWFBaC1QcDdXVHBfZDRpQk5PLXA2TXNXSWNDeEVnMA?oc=5",
+    "published": "2026-04-27",
+    "summary": "Thermo Fisher Scientific to Sell Microbiology Biz to Astrog Medical Device and Diagnostic industry",
     "score": 25,
     "tier": "archive",
     "category": "company",
     "reasons": [
       "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "超过默认时效窗口: 72 天前"
+      "超过默认时效窗口: 74 天前"
     ],
-    "age_days": 72
+    "age_days": 74
   },
   {
-    "id": "bf85b1a8618ee1a0",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific and SHL Medical Collaborate to Deliver Fully Integrated Drug-Device Solutions - BioSpace",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVlNYVEFzZV8yQWMweldUdm1jSTdKdWdTT19KMUpfYktwa2xPWTBQcE9DQ3BuTF9ycV9CNmpPU2V3OEwtN3Q3bk91RXRSTVJOTFRHZi0xaklvc3ZWMDlpQ3VMUnZoZlRUb1g1WlhGcWJfTDd5c1NlUE95Wndqdld5dUx5M2tiQnRGZTJGU0VPM2RfeTJGSzlzd1JnYkVUbEpxSTQyS3Z3aGZsV1pEVE1uYWhzVDF5NzJIRnU0WW9HcHRlVU5feWV4M2ZtaXNJendoY2M2TUR1OXZMUQ?oc=5",
-    "published": "2026-03-25",
-    "summary": "Thermo Fisher Scientific and SHL Medical Collaborate to Deliver Fully Integrated Drug-Device Solutions BioSpace",
-    "score": 25,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "超过默认时效窗口: 106 天前"
-    ],
-    "age_days": 106
-  },
-  {
-    "id": "d1b2ea812b58b1be",
-    "company_id": "thermo_fisher",
-    "company": "Thermo Fisher Scientific",
-    "source_id": "google_news_thermo",
-    "source_label": "Google News RSS - Thermo Fisher",
-    "source_trust": "aggregator",
-    "title": "2025 Thermo Fisher Scientific Junior Innovators Challenge Finalists - Society for Science",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE03STJ3YVphaWtNaVh3NjNROEZ0MkRWVWR4bWxLYlA0d3o4TlRFeXRWbXVqZFNjMkYyZkxyQlN3OVB3UnBSdVgxekpxMnB5b0ota1huRUdBU2RDM21VTGRDQTU3TQ?oc=5",
-    "published": "2025-09-17",
-    "summary": "2025 Thermo Fisher Scientific Junior Innovators Challenge Finalists Society for Science",
-    "score": 25,
-    "tier": "archive",
-    "category": "company",
-    "reasons": [
-      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "超过默认时效窗口: 295 天前"
-    ],
-    "age_days": 295
-  },
-  {
-    "id": "6c4b99bc5f218d1e",
+    "id": "8c2799b4749695bd",
     "company_id": "acro",
     "company": "ACROBiosystems / 百普赛斯",
-    "source_id": "google_news_acro_prnewswire",
-    "source_label": "Google News RSS - ACROBiosystems PR Newswire",
-    "source_trust": "wire",
-    "title": "On the Eve of BIO 2026, Chinese Innovative Assets Trigger a New Wave of Global Collaborations - PR Newswire",
-    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPeF9vU2JTTmtJU1BRNGY2NGRBbVIwOUVUcy1mdW9OOFVOa0pZd3VfRC1JaFBoRmdQMzZtT21lNmRtQ3QyR1hBaWxUNXdUQzhZVXFQcUs2bDRFUloyTEV4T3JCUGNOcmJnTjRRMnNfSDY2WDU5S1ZZWVZWSGMxYkhjN2x0NmJPLVJidUFCdkVNN2cxXzUxMWt6dVo0T0xoMGptdnl4RENyNTc5STdNemNLc0xxTVRTZlJZMW11MWRsVERZWHpjdW9NREJLSjVjSF9adVZvUzRrSFhROENLUWdCRTVR?oc=5",
+    "source_id": "google_news_acro",
+    "source_label": "Google News RSS - ACROBiosystems",
+    "source_trust": "aggregator",
+    "title": "On the Eve of BIO 2026, Chinese Innovative Assets Trigger a New Wave of Global Collaborations - Thailand Business News",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPenRoWGhFVVRSQUJsSXAwM1d1cTktR3JicDlsSlh0eGdjTzNmYmFaYlNBazB0aVVQSGJ0eUc0Rlc4UWhNY1dsZ3JlTk9Bb0Q2cUJRNWw3b2w3X29KRXI0OFRnNXZMMWV2WURqOXZJTldPcEZESXRmdnBiN29XX3hheDJoTXEzMjVkWFFycldReWtqZmEtS2lHUENQXzRRcDUwU1VnUVVDN2FYQkFUNVVaMUVfX0RrVEhSX19pRFUwQzduZjlJZmMxWmN3dXpPN0lSYllCV3p3?oc=5",
     "published": "2026-07-08",
-    "summary": "On the Eve of BIO 2026, Chinese Innovative Assets Trigger a New Wave of Global Collaborations PR Newswire",
+    "summary": "On the Eve of BIO 2026, Chinese Innovative Assets Trigger a New Wave of Global Collaborations Thailand Business News",
     "score": 8,
     "tier": "archive",
     "category": "partnership",
     "reasons": [
       "业务动作命中: collaboration"
     ],
-    "age_days": 1
+    "age_days": 2
   },
   {
-    "id": "d0684c84ec0f4ba3",
+    "id": "67d86f94a0915683",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo_jp",
     "source_label": "Google News RSS - Thermo Fisher Japan",
     "source_trust": "aggregator",
-    "title": "半導体用温度制御チラーの世界と日本市場動向：トップ企業の競争優位性と将来戦略2026 - アットプレス",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaUhMdGZLRHBneU9kZUpEWHFvSnZDX0tqNE94VzVmakoyOUVSWFlScVRnSWhXRzl3TThvUlBxWF8xbDRXcFllb1RoMlFLVk9nTzE3M0tzNzZhLXQ3ekZyVnVGaGN4aHozcV9VNE5OdGNUeENtSEVEd2R2Yl9pTW9maHc1dGN6SUFRcTJWVGJmbS12RHRmc3BiMWlOSWNUZUZxUFh1eFRaLWh0Z05TSmV0NXl4QU9wLVBhQnRsNEh3emlnV3dTSkE?oc=5",
-    "published": "2026-05-14",
-    "summary": "半導体用温度制御チラーの世界と日本市場動向：トップ企業の競争優位性と将来戦略2026 アットプレス",
+    "title": "サーモフィッシャーサイエンティフィック、 最新のキャピラリー電気泳動テクノロジー SeqStudio Genetic Analyzerを日本で販売開始 - newscast.jp",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4yNFVYNlMtSjhNRHpzZ2pyMDVFZE11Y3NkY1EtOUVXWFE1VnE5eTRBYnZCT0lyRzQ4ckFyelpqRURMRTJhZnVNdnpXWXRFa0U?oc=5",
+    "published": "2017-09-27",
+    "summary": "サーモフィッシャーサイエンティフィック、 最新のキャピラリー電気泳動テクノロジー SeqStudio Genetic Analyzerを日本で販売開始 newscast.jp",
     "score": 6,
     "tier": "archive",
     "category": "market",
     "reasons": [
       "战略主题命中: 日本",
-      "超过默认时效窗口: 56 天前"
+      "超过默认时效窗口: 3208 天前"
     ],
-    "age_days": 56
+    "age_days": 3208
   },
   {
-    "id": "56bede56e6aac25a",
+    "id": "b6f18ae6315cfb31",
+    "company_id": "acro",
+    "company": "ACROBiosystems / 百普赛斯",
+    "source_id": "google_news_acro",
+    "source_label": "Google News RSS - ACROBiosystems",
+    "source_trust": "aggregator",
+    "title": "Master Folder - the-scientist.com",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB6ZTlGM1F2S0JPTnlYblFBOC05ZlBvTXlObU9Ib2tnb2NHamVZX3o2Nm90dVNmY0NUTFpMR1JuWnp3UWlPRUlmazhoUVBpX1J5bFJ2R1FwWGhSX1FneWc?oc=5",
+    "published": "2024-02-13",
+    "summary": "Master Folder the-scientist.com",
+    "score": 0,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "超过默认时效窗口: 878 天前"
+    ],
+    "age_days": 878
+  },
+  {
+    "id": "76b9131a2ff6d481",
+    "company_id": "acro",
+    "company": "ACROBiosystems / 百普赛斯",
+    "source_id": "google_news_acro",
+    "source_label": "Google News RSS - ACROBiosystems",
+    "source_trust": "aggregator",
+    "title": "Why Might Cells Die or Fail to Thrive in Culture? - the-scientist.com",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjlhUEo0R3Z2dkMwdnpkM2p6S05jZFJNNkI4NEh6ZmlYX3pCUktUbzRmVWRrNDhPTUVGX0d1dWpTOC0xWUxmRlFCNE9CYnBUUzJmcHQtSlE2RU14QmU0NEJGZzdjZnRITGh4STUyVVlpeTloaTcyVl9DeFdVOXZIRjZYZlhLeTlOSXRnQg?oc=5",
+    "published": "2023-06-01",
+    "summary": "Why Might Cells Die or Fail to Thrive in Culture? the-scientist.com",
+    "score": 0,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "超过默认时效窗口: 1135 天前"
+    ],
+    "age_days": 1135
+  },
+  {
+    "id": "ca382ffbffedd93f",
+    "company_id": "acro",
+    "company": "ACROBiosystems / 百普赛斯",
+    "source_id": "google_news_acro",
+    "source_label": "Google News RSS - ACROBiosystems",
+    "source_trust": "aggregator",
+    "title": "Extracellular Vesicles: Applications and Potential - the-scientist.com",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRVZoaWRPU2FBYndVQ0JpVkhFR1lpNS1MZ3NaWVVSUDhYYndBX2lYQUFheUx6TjhCNUwwN3ZKd1JCcVZWNFhKQ0gyUjZKNXByYkI2VExOaERDakNndHpnblN6UlN6cnlqX1NBMXBvZjlJN1JXeGEyeFplQ2RySEE1cDUtVUVlQ09zQTZPcS1R?oc=5",
+    "published": "2023-06-05",
+    "summary": "Extracellular Vesicles: Applications and Potential the-scientist.com",
+    "score": 0,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "超过默认时效窗口: 1131 天前"
+    ],
+    "age_days": 1131
+  },
+  {
+    "id": "b8d96d8ac9fb979b",
+    "company_id": "acro",
+    "company": "ACROBiosystems / 百普赛斯",
+    "source_id": "google_news_acro",
+    "source_label": "Google News RSS - ACROBiosystems",
+    "source_trust": "aggregator",
+    "title": "Important Players for a Successful PCR - the-scientist.com",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94dXVUQ2NCNTMxU3lTYld4VGI3S0JBTEhyVE1iNVhZaGNRYUl6aGxaMEw4ZGpEdzBwZmtMTXR5blpoLWdrQjV0VGZIdkUtUUtyQkl4cW1nbDBwSXh6dVFvbldlOVZJdXVMZEFCRE5CcFBGWm1OaGt5WUxfb01CMHc?oc=5",
+    "published": "2024-02-12",
+    "summary": "Important Players for a Successful PCR the-scientist.com",
+    "score": 0,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "超过默认时效窗口: 879 天前"
+    ],
+    "age_days": 879
+  },
+  {
+    "id": "975ca336f0162e42",
+    "company_id": "acro",
+    "company": "ACROBiosystems / 百普赛斯",
+    "source_id": "google_news_acro",
+    "source_label": "Google News RSS - ACROBiosystems",
+    "source_trust": "aggregator",
+    "title": "Gene Therapy Workflow from Production to Quality Control - the-scientist.com",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORFkzb0xCYlJWS1VMaFdzbGpRZnNIZUd1dUh4aDU0T2xYR294SXJNRTg0b1NFVENvOE9KV2R5aHZTZzNBTGZkQlRTWmZZYjhweGpOZXo3MUVnRVVZekszSG9tY2VTZDF0YWllTUQ4TnRablp0NlFBbl9lbUlIWmJuckZWNDJ0X3B3NzZSWEhaWVpwMXZicF9B?oc=5",
+    "published": "2020-10-14",
+    "summary": "Gene Therapy Workflow from Production to Quality Control the-scientist.com",
+    "score": 0,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "超过默认时效窗口: 2095 天前"
+    ],
+    "age_days": 2095
+  },
+  {
+    "id": "f7b440b6c43bad09",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo",
     "source_label": "Google News RSS - Thermo Fisher",
     "source_trust": "aggregator",
-    "title": "Thermo Fisher posts quarterly results beat as lab products, biopharma services grow - Yahoo Finance",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT044NFMyQ1E0RjlVSHRJOVlNcHpFcVFiR3ltZ3BWdjlIRlg2aDRkeVk1XzkyR2JnR1Q2YTZIRUctb1dIRTVRN05UUGgxeXU2ZzE4WnVnaThmc1hJaGRhaS03UHBHNVdVbFhTNjJ2UG1jdld4N01tdTg4M2pWSVBPbzRZRDhhX0JfYmFTemZQX3U1c1RwVWdaaFBxR2RFMVRHeUFFYnNmWmhsUQ?oc=5",
+    "title": "Thermo Fisher Scientific to Hold Earnings Conference Call on Thursday, July 23, 2026 - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPakNSWl9pa0pxQlBURUZMWG16UzBhS3Q2dmEtSkFqQk1ZZC1vVFlhYjY5c2RBUnN2YVI2RGl1WkprUDNZd1hRMnZ2T0hRVjVELUVCVC00SkpVYjZUR3pfNkhreDNaWDJNWnJlNjZFQkNwT0FDcTFTcTZEUmVKTnB1dFZMNmQwNURpby1FQjZMREk5RDY4eHBqaHFoeTVhdDEtbDlTcm1n?oc=5",
+    "published": "2026-07-01",
+    "summary": "Thermo Fisher Scientific to Hold Earnings Conference Call on Thursday, July 23, 2026 Yahoo Finance",
+    "score": 0,
+    "tier": "archive",
+    "category": "event",
+    "reasons": [
+      "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
+      "噪音词命中: earnings conference call, conference call"
+    ],
+    "age_days": 9
+  },
+  {
+    "id": "a36c1dc9d0bb4459",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo",
+    "source_label": "Google News RSS - Thermo Fisher",
+    "source_trust": "aggregator",
+    "title": "Why Thermo Fisher (TMO) Stock Is Nosediving - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZk9YS3owbzg2MjVOYmRKN3ZOQmowQzk4SjV5bUFOTl84azIyeGF6WnBOMy1pNVRVcHZBcU8ySmtEa05pV3VXS1VSNXdtbDY5Q0RYTnVHem5FUjduYnkxd2VOWW9vaS10NUMxMzlraURUSWhramZpSk5QcEV5OGZXSXE2N3lRbkVueHprM0VIVUxiSDVtR0g0?oc=5",
     "published": "2026-04-23",
-    "summary": "Thermo Fisher posts quarterly results beat as lab products, biopharma services grow Yahoo Finance",
-    "score": 1,
+    "summary": "Why Thermo Fisher (TMO) Stock Is Nosediving Yahoo Finance",
+    "score": 0,
     "tier": "archive",
     "category": "company",
     "reasons": [
       "公司别名命中: Thermo Fisher",
-      "战略主题命中: pharma services",
-      "噪音词命中: quarterly results",
-      "超过默认时效窗口: 77 天前"
+      "噪音词命中: stock",
+      "超过默认时效窗口: 78 天前"
     ],
-    "age_days": 77
+    "age_days": 78
   },
   {
-    "id": "7fcf844cbdfed4c7",
+    "id": "40336ec8d9391721",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo",
     "source_label": "Google News RSS - Thermo Fisher",
     "source_trust": "aggregator",
-    "title": "Thermo Fisher Scientific Inc. stock falls Wednesday, underperforms market - MarketWatch",
-    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSlNHYkVSUGJ6dDcxOFVNWUEyVXJyTUc0b1pibmtrYmM3N3J1VDhOUlU2NHRJZzEyQjZMcm5Nb3dTUHpaMXcyelZ4bTlud19GVGhkMTNUMUc5NnQtaDg4d093VTlWd3BLN0wxM0ZRN1hDUWxlaG5OU0NnTFhfYVl3MmJQRWJhdG5ZZ19jMzdmZ01nbG96MHVNMlVRSm9UOF90YndTanNZS2d1VWc0cHZDSjZZYWpmOWh4a2VuTXUyMnJoZ2ZnYnE4dFVEemJ5Z0dQRmMxR1lDYmE1X1pEZ0liQnhPMA?oc=5",
-    "published": "2026-07-08",
-    "summary": "Thermo Fisher Scientific Inc. stock falls Wednesday, underperforms market MarketWatch",
+    "title": "Is Thermo Fisher Scientific Stock Underperforming the S&P 500? - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcXVscUVmWTVYTGwyR3hyd3BYWkRvUUU4ZFpEMURnX0xLV3FnN0lHWkJLWnRISGdKZkFPSHlSaHdEaGdYaUNpZjI0Z1pzczdKa21BM0h4cFVCdTZyODBXRjlRa2l0aWphWUE2dk5WSUwzeU1nTHhVbW9HbGhuZTVPMEFrUzFMQ0JSNDAwNElpU21HZ3E0b3RqdnRMc2ZieWJyelFsQjFFYnlfVkdpXzVnaQ?oc=5",
+    "published": "2026-05-29",
+    "summary": "Is Thermo Fisher Scientific Stock Underperforming the S&P 500? Yahoo Finance",
     "score": 0,
     "tier": "archive",
     "category": "company",
     "reasons": [
       "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-      "噪音词命中: stock falls, stock"
+      "噪音词命中: stock"
     ],
-    "age_days": 1
+    "age_days": 42
   },
   {
-    "id": "3d0b2583d6475eeb",
+    "id": "baa3a1eed8c55a78",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo_jp",
     "source_label": "Google News RSS - Thermo Fisher Japan",
     "source_trust": "aggregator",
-    "title": "サーモ・フィッシャーサイエンティフィック | 4：インサイダー売買報告書-取締役 SPERLING SCOTT M - Moomoo",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQUxscjFmTDVNZFZUWExSS1FHT2NqR3dCRXQxYjliVlBuSG94V3U5S19pbUN4QWFRX3ZhUTZ3SFQ1bmlTNVZnaUNwQjhTTHNkc3h5QjQwSDcxLUduT3Bxdm5kZ2N0dE5haEl5Z1NfdktERnZLYlM0YUVRRGdHWGM3TEZrdnZLWFd4X0VaSmpFYzhoQmhlbTBlS1h2VkQ2YXdBVGdETjlXblM1OEFYVkdGSE5TbUtoWjBIc3BJ?oc=5",
-    "published": "2026-06-30",
-    "summary": "サーモ・フィッシャーサイエンティフィック | 4：インサイダー売買報告書-取締役 SPERLING SCOTT M Moomoo",
+    "title": "リバノバ【LIVN】の株価・業績 - 四季報オンライン",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBzdUlYUjZ5RFo5a1RQZ1ZWWDNiTElmNElUcUtDNEZfWXJoVU5Gal9sUTlLTGVKaWY4bjNqLWdJZGswSE1DRS1jRG9nV1Fna0E?oc=5",
+    "published": "2023-12-01",
+    "summary": "リバノバ【LIVN】の株価・業績 四季報オンライン",
     "score": 0,
     "tier": "archive",
     "category": "company",
     "reasons": [
-      "未命中强规则，默认归档"
+      "超过默认时效窗口: 952 天前"
     ],
-    "age_days": 9
+    "age_days": 952
   },
   {
-    "id": "ed0aae086967562f",
+    "id": "df426b870f15b733",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo_jp",
     "source_label": "Google News RSS - Thermo Fisher Japan",
     "source_trust": "aggregator",
-    "title": "サーモフィッシャーに聞く、スモールパネルとCGP検査の4つの違い - 日経バイオテクONLINE",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5kTXBwLWZRcVlUUnVGNGlKWVJtNy1wUDNoLWZHMEdXOUlZSGw2YW1QOGxQNnozWGZDcXNvWjk2eElZTkJnLWwweU9qQWZ1MTg5aXItTmNOUk1ZSjllLV9nclNsSXdqUQ?oc=5",
-    "published": "2024-11-25",
-    "summary": "サーモフィッシャーに聞く、スモールパネルとCGP検査の4つの違い 日経バイオテクONLINE",
+    "title": "体外診断用医療機器の世界市場調査レポート2024 - アットプレス",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ydGFrUzI5S1Q0Um5zcFZySXhWYmE0dUVBT0hCVFhiLUVidWMyZnZwYXVJb2xIVW1OSnRMbzBLMEhfTXlZOG9TVmxGLTdUSnc?oc=5",
+    "published": "2024-11-30",
+    "summary": "体外診断用医療機器の世界市場調査レポート2024 アットプレス",
     "score": 0,
     "tier": "archive",
     "category": "company",
     "reasons": [
-      "超过默认时效窗口: 591 天前"
+      "超过默认时效窗口: 587 天前"
     ],
-    "age_days": 591
+    "age_days": 587
   },
   {
-    "id": "fb9e34820445be97",
+    "id": "c59bac7900e57819",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "source_id": "google_news_thermo_jp",
     "source_label": "Google News RSS - Thermo Fisher Japan",
     "source_trust": "aggregator",
-    "title": "サーモフィッシャー、NGSを用いる初のコンパニオン診断薬が保険適用へ - 日経バイオテクONLINE",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5neWNwb3hPdVBYT1d6MS1HdEFLVXVtQ1c1cG1GM1pyTlNFQWFXUkJPcUxneTNHLVpaYWM0S0cxUV84Um8zWlV0X0l5SmRoa01TWGUyNDUtT2lGeDFuM2RETnItVWVGdw?oc=5",
-    "published": "2018-11-19",
-    "summary": "サーモフィッシャー、NGSを用いる初のコンパニオン診断薬が保険適用へ 日経バイオテクONLINE",
+    "title": "世界のポリメラーゼ市場洞察、業界ランキング、主要メーカー2025-2031 - newscast.jp",
+    "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBZRmltLVdxVlJPVWxGbGU5V3FSaVBUdGdRRmtpem9ZUDlOa2xSQ3hXU093R2lVVmpZclhhcW53MzllMjFraGVZ?oc=5",
+    "published": "2025-01-29",
+    "summary": "世界のポリメラーゼ市場洞察、業界ランキング、主要メーカー2025-2031 newscast.jp",
     "score": 0,
     "tier": "archive",
     "category": "company",
     "reasons": [
-      "超过默认时效窗口: 2789 天前"
+      "超过默认时效窗口: 527 天前"
     ],
-    "age_days": 2789
+    "age_days": 527
+  },
+  {
+    "id": "e6b0959e369472fc",
+    "company_id": "thermo_fisher",
+    "company": "Thermo Fisher Scientific",
+    "source_id": "google_news_thermo_jp",
+    "source_label": "Google News RSS - Thermo Fisher Japan",
+    "source_trust": "aggregator",
+    "title": "世界のtert-ブタノール市場規模、シェア、傾向とメーカーレポート洞察と将来予測調査 2037年 - SDKI Analytics",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BeDMwSE9HdWtRRWNkdm9HSWVHODQwUnE5VGNHaWVuZmFsMU5ZWHhfX0tFWkRma0ZEd0VZeF9oSEJMWTNRT3p1VXI1NVlLUG96SW9kOTRQTFRvNEI2aWhpSW1Xak4?oc=5",
+    "published": "2021-01-29",
+    "summary": "世界のtert-ブタノール市場規模、シェア、傾向とメーカーレポート洞察と将来予測調査 2037年 SDKI Analytics",
+    "score": 0,
+    "tier": "archive",
+    "category": "company",
+    "reasons": [
+      "超过默认时效窗口: 1988 天前"
+    ],
+    "age_days": 1988
   }
 ]

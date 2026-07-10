@@ -1,57 +1,14 @@
 {
-  "generated_at": "2026-07-09T02:13:12",
+  "generated_at": "2026-07-10T02:13:02",
   "window_days": 45,
   "summary": {
-    "new_candidates": 21,
+    "new_candidates": 26,
     "immediate": 0,
-    "daily": 2,
-    "archive": 19,
+    "daily": 0,
+    "archive": 26,
     "errors": 0,
     "companies": 2,
-    "sources": 3
+    "sources": 4
   },
-  "selected": [
-    {
-      "id": "5507903220532419",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_trust": "aggregator",
-      "title": "Cell Culture Media Market worth $12.9 billion by 2033: Biologics Manufacturing and Cell Therapy Expansion Accelerate Growth for Avantor, Thermo Fisher Scientific, and Lonza Group AG - The AI Journal",
-      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNQXl0TzNId2x4OVBBQWdMNmp1UmVZc214dmtYclFxeXFER3BZbTk2Sk5TcE1xQjJoQVhXWXZpNy16cWJIV3M0dFhzb25jRlE0WWxWZHhjN0FGNllmclkyNWwzdnEyWTRrMHRRZldGUE5Rb0RVUjdxZjEtZnZrdnVmQ1FzbEo0Y2EtMUJXV3VUanZYT2RVa1ExMURUbUZGSnA5N3QwNlNvNjZiSkUzVDM3aEhRXzBuVUpCdEQzX2lfOXBGdGR1UDJ4TlZMVnJKRlN4TlFtMmlGcnZjR2NLaUJRblpfYzh6MXJWUmdUcGxIdFZ1a1I0bmprcHkzLXI1UUFzT2JWSHg1SF9pM3NyZ1l2bTZWSkRMdC1kQkJmSk1aczBCNGFL?oc=5",
-      "published": "2026-07-08",
-      "summary": "Cell Culture Media Market worth $12.9 billion by 2033: Biologics Manufacturing and Cell Therapy Expansion Accelerate Growth for Avantor, Thermo Fisher Scientific, and Lonza Group AG The AI Journal",
-      "score": 52,
-      "tier": "daily",
-      "category": "market",
-      "reasons": [
-        "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
-        "战略主题命中: manufacturing",
-        "业务动作命中: expansion, manufacturing"
-      ],
-      "age_days": 1
-    },
-    {
-      "id": "36bbd66cb057831d",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher's Patheon becomes exclusive third-party CDMO for KinetiSol technology - Manufacturing Chemist",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUHhYcWVhRTVMV1h3SERUUHN2M3JiMzBJbUpnYUdqLW5kTG1BaDlPcWxISE5PM3ZON3ZmbWR5WnpVRVc3MDdJT1V2N3Ffb1ZwazJMNHBkRzhfOS1UWEJFMHYxcWM2VnFLMVIzbVZVRzF3SnBTQXI4T1MtQUhrd2E4b2RBdkswdURRaDJ5ZUZoSTlVSFN4ZXc?oc=5",
-      "published": "2026-07-08",
-      "summary": "Thermo Fisher's Patheon becomes exclusive third-party CDMO for KinetiSol technology Manufacturing Chemist",
-      "score": 50,
-      "tier": "daily",
-      "category": "company",
-      "reasons": [
-        "公司别名命中: Thermo Fisher, Patheon",
-        "战略主题命中: CDMO, manufacturing",
-        "业务动作命中: manufacturing"
-      ],
-      "age_days": 1
-    }
-  ]
+  "selected": []
 }
