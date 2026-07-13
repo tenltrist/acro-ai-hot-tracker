@@ -1,14 +1,36 @@
 {
-  "generated_at": "2026-07-10T02:13:02",
+  "generated_at": "2026-07-13T02:04:07",
   "window_days": 45,
   "summary": {
-    "new_candidates": 26,
+    "new_candidates": 60,
     "immediate": 0,
-    "daily": 0,
-    "archive": 26,
+    "daily": 1,
+    "archive": 59,
     "errors": 0,
     "companies": 2,
-    "sources": 4
+    "sources": 5
   },
-  "selected": []
+  "selected": [
+    {
+      "id": "aaa9dca935c1153f",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - BioSpace",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
+      "published": "2026-06-22",
+      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 BioSpace",
+      "score": 64,
+      "tier": "daily",
+      "category": "regulatory",
+      "reasons": [
+        "公司别名命中: Thermo Fisher, Thermo Fisher Scientific",
+        "战略主题命中: clinical development, manufacturing, AI-enabled research",
+        "业务动作命中: clinical, manufacturing"
+      ],
+      "age_days": 21
+    }
+  ]
 }
