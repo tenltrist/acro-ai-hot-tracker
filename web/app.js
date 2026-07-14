@@ -152,6 +152,11 @@ const pageMeta = {
   questions: ["Open Questions", "待确认事项"],
 };
 
+const companyIdToDisplayName = {
+  acro: "ACROBiosystems / 百普赛斯",
+  thermo_fisher: "Thermo Fisher Scientific",
+};
+
 const fallbackPayload = {
   generated_at: new Date().toISOString(),
   window_days: 90,
@@ -241,6 +246,16 @@ const els = {
 };
 
 async function loadData() {
+  if (window.AIHOT_EMBEDDED_PAYLOAD) {
+    state.payload = window.AIHOT_EMBEDDED_PAYLOAD;
+    state.history = window.AIHOT_EMBEDDED_HISTORY || null;
+    hydrateFilters();
+    render();
+    renderSourceHealth();
+    renderTrend();
+    return;
+  }
+
   try {
     let response = await fetch("../data/latest_run.json", { cache: "no-store" });
     if (!response.ok) {
@@ -675,26 +690,32 @@ document.querySelectorAll(".metric.clickable").forEach((card) => {
 document.querySelectorAll("[data-filter-company]").forEach((chip) => {
   chip.addEventListener("click", () => {
     const companyId = chip.dataset.filterCompany;
-    // Navigate to overview
     state.page = "overview";
     renderPage();
-    // Apply company filter
+
     if (companyId === "all") {
       state.company = "all";
       els.companyFilter.value = "all";
     } else {
-      const companyName = state.payload?.companies?.find((c) => c.id === companyId)?.display_name || companyId;
+      const companyName =
+        state.payload?.companies?.find((c) => c.id === companyId)?.display_name ||
+        companyIdToDisplayName[companyId] ||
+        companyId;
       state.company = companyName;
-      // Update dropdown to match
+      let matched = false;
       for (const opt of els.companyFilter.options) {
         if (opt.textContent === companyName) {
           els.companyFilter.value = companyName;
+          matched = true;
           break;
         }
       }
+      if (!matched) {
+        state.company = "all";
+        els.companyFilter.value = "all";
+      }
     }
     renderSignals();
-    // Update chip active states
     document.querySelectorAll("[data-filter-company]").forEach((c) => {
       c.classList.toggle("active", c.dataset.filterCompany === companyId);
     });
@@ -720,8 +741,11 @@ els.categoryFilter.addEventListener("change", (event) => {
 
 els.companyFilter.addEventListener("change", (event) => {
   state.company = event.target.value;
-  // Sync sidebar company chips
-  const selectedCompany = state.payload?.companies?.find((c) => c.display_name === state.company);
+  const selectedCompany =
+    state.payload?.companies?.find((c) => c.display_name === state.company) ||
+    Object.entries(companyIdToDisplayName)
+      .map(([id, display_name]) => ({ id, display_name }))
+      .find((c) => c.display_name === state.company);
   const companyId = selectedCompany?.id || "all";
   document.querySelectorAll("[data-filter-company]").forEach((c) => {
     c.classList.toggle("active", c.dataset.filterCompany === companyId);
