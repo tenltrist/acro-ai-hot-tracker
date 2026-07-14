@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-10",
+  "summary": {
+    "new_candidates": 0,
+    "immediate": 0,
+    "daily": 32,
+    "archive": 175,
+    "errors": 1,
+    "companies": 2,
+    "sources": 6
+  },
+  "category_mix": {
+    "company": 140,
+    "finance": 5,
+    "partnership": 21,
+    "regulatory": 14,
+    "product": 8,
+    "market": 10,
+    "event": 9
+  },
+  "source_mix": {
+    "Google News RSS - ACROBiosystems": 38,
+    "Google News RSS - ACROBiosystems Japan": 1,
+    "Google News RSS - ACROBiosystems PR Newswire": 7,
+    "Thermo Fisher official press releases RSS": 10,
+    "Google News RSS - Thermo Fisher": 100,
+    "Google News RSS - Thermo Fisher Japan": 51
+  }
+}

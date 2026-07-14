@@ -114,6 +114,60 @@ def fetch_text(url: str) -> str:
         return resp.read().decode(charset, errors="replace")
 
 
+def generate_ai_summary(item: Candidate, company_name: str) -> str:
+    """Generate a Chinese business-oriented summary for a candidate item.
+
+    Requires ANTHROPIC_API_KEY env var. Returns empty string if unavailable or on error.
+    """
+    import os
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        return ""
+
+    prompt = (
+        f"你是企业市场部的竞争情报分析助手。请用2-3句简洁的中文总结以下新闻，"
+        f"并指出它对公司市场部的业务意义（产品宣传/竞品观察/日本市场/BD线索/内容选题）。"
+        f"不需要重复标题。\n\n"
+        f"公司：{company_name}\n"
+        f"标题：{item.title}\n"
+        f"来源：{item.source_label}\n"
+        f"发布日期：{item.published or '未知'}\n"
+        f"原文摘要：{item.summary[:500] if item.summary else '无'}\n"
+        f"分类：{item.category}\n"
+        f"分数：{item.score}\n"
+    )
+
+    body = json.dumps({
+        "model": "claude-sonnet-5",
+        "max_tokens": 200,
+        "temperature": 0.3,
+        "messages": [
+            {"role": "user", "content": prompt}
+        ],
+    })
+
+    try:
+        req = urllib.request.Request(
+            "https://api.anthropic.com/v1/messages",
+            data=body.encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "x-api-key": api_key,
+                "anthropic-version": "2025-01-01",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            content = result.get("content", [])
+            if content and isinstance(content, list):
+                return content[0].get("text", "").strip()
+    except Exception:
+        pass
+
+    return ""
+
+
 def clean_text(value: str) -> str:
     value = html.unescape(value or "")
     if "<" in value and ">" in value:
@@ -165,6 +219,74 @@ def age_days(value: str) -> int | None:
     return (dt.date.today() - published).days
 
 
+HTML_NOISE_TITLES = {
+    "skip to main content",
+    "skip to content",
+    "press releases",
+    "news releases",
+    "press release",
+    "newsroom",
+    "home",
+    "back to top",
+    "subscribe",
+    "rss feed",
+    "contact us",
+    "about us",
+    "news",
+    "events",
+    "webinars",
+    "resources",
+    "blog",
+    "search",
+    "menu",
+    "close",
+    "next",
+    "previous",
+    "load more",
+    "view all",
+    "read more",
+    "learn more",
+}
+
+
+def is_html_noise(title: str) -> bool:
+    cleaned = title.strip().lower()
+    if cleaned in HTML_NOISE_TITLES:
+        return True
+    if len(cleaned) < 15:
+        return True
+    if cleaned.startswith(("share on", "follow us on", "cookie", "accept cookies")):
+        return True
+    return False
+
+
+def extract_meaningful_summary(raw_description: str, title: str) -> str:
+    """Clean RSS description: strip HTML, remove title duplication, return first 2-3 sentences."""
+    text = clean_text(raw_description)
+    if not text:
+        return ""
+
+    # Remove common prefixes that just repeat the title
+    title_clean = clean_text(title)
+    if text.startswith(title_clean):
+        text = text[len(title_clean):].strip()
+
+    # Remove leading separators
+    text = re.sub(r"^[\s\-\|\.]+", "", text).strip()
+
+    # Truncate to reasonable length
+    if len(text) > 300:
+        # Try to break at sentence boundary
+        truncated = text[:300]
+        last_period = max(truncated.rfind("。"), truncated.rfind(". "), truncated.rfind("！"))
+        if last_period > 100:
+            text = text[: last_period + 1]
+        else:
+            text = truncated + "..."
+
+    return text
+
+
 def parse_rss(source: dict[str, Any]) -> list[Candidate]:
     text = fetch_text(source["url"])
     root = ET.fromstring(text)
@@ -172,8 +294,9 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
     for item in root.findall(".//item"):
         title = clean_text(item.findtext("title", ""))
         link = clean_text(item.findtext("link", ""))
-        if not title or not link:
+        if not title or not link or is_html_noise(title):
             continue
+        raw_desc = item.findtext("description", "")
         items.append(
             Candidate(
                 company_id=source["company_id"],
@@ -183,7 +306,7 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
                 title=title,
                 url=link,
                 published=parse_date(item.findtext("pubDate", "")),
-                summary=clean_text(item.findtext("description", "")),
+                summary=extract_meaningful_summary(raw_desc, title),
             )
         )
     return items
@@ -201,7 +324,7 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
         if include_terms and not any(term in absolute.lower() for term in include_terms):
             continue
         title = link["text"] or absolute
-        if len(title) < 4:
+        if len(title) < 4 or is_html_noise(title):
             continue
         items.append(
             Candidate(
@@ -255,7 +378,7 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
         reasons.append("公司别名命中: " + ", ".join(alias_hits[:3]))
 
     if item.source_trust == "owned":
-        score += 10
+        score += 15
         reasons.append("公司自有来源")
 
     topic_hits = [term for term in company["strategic_topics"] if term.lower() in blob]
@@ -273,15 +396,35 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
         score -= 35
         reasons.append("噪音词命中: " + ", ".join(noise_hits[:3]))
 
+    item.category = classify_item(blob)
+
+    # Category bonus: high-value signal types get extra points
+    category_bonus = {
+        "partnership": 10,
+        "product": 10,
+        "regulatory": 8,
+        "market": 8,
+        "event": 5,
+    }
+    bonus = category_bonus.get(item.category, 0)
+    if bonus:
+        score += bonus
+        reasons.append(f"高价值分类加成 +{bonus}: {item.category}")
+
     item_age = age_days(item.published)
+    has_action = bool(action_hits)
     if item_age is not None and item_age > max_age_days:
-        score = min(score, 25)
-        reasons.append(f"超过默认时效窗口: {item_age} 天前")
+        if has_action and score >= 40:
+            # Business-action items with solid base score survive age degradation
+            score = max(score - 10, 40)
+            reasons.append(f"超过时效窗口 {item_age}天，因业务动作匹配保留")
+        else:
+            score = min(score, 25)
+            reasons.append(f"超过默认时效窗口: {item_age} 天前")
 
     item.score = max(0, score)
     item.reasons = reasons or ["未命中强规则，默认归档"]
-    item.category = classify_item(blob)
-    item.tier = classify_tier(item.score, item.source_trust)
+    item.tier = classify_tier(item.score, item.source_trust, has_action)
     return item
 
 
@@ -301,12 +444,14 @@ def classify_item(blob: str) -> str:
     return "company"
 
 
-def classify_tier(score: int, trust: str) -> str:
+def classify_tier(score: int, trust: str, has_action: bool = False) -> str:
     if score >= 80:
         return "immediate"
     if score >= 50:
         return "daily"
-    if trust == "owned" and score >= 45:
+    if trust == "owned" and score >= 40:
+        return "daily"
+    if has_action and score >= 45:
         return "daily"
     return "archive"
 
@@ -317,7 +462,9 @@ def build_report(
     seen: dict[str, Any],
     company_lookup: dict[str, dict[str, Any]],
     max_age_days: int,
+    ai_summaries: dict[str, str] | None = None,
 ) -> str:
+    ai_summaries = ai_summaries or {}
     today = dt.datetime.now().strftime("%Y-%m-%d %H:%M")
     new_items = [item for item in candidates if item.key not in seen]
     immediate = [item for item in new_items if item.tier == "immediate"]
@@ -334,13 +481,13 @@ def build_report(
         f"- 进入日报：{len(daily)} 条",
         f"- 归档不推送：{len(archive)} 条",
         "",
-        f"机制说明：默认不实时推送，默认时效窗口为 {max_age_days} 天。只有 `immediate` 才适合接微信、邮件或 Slack 这类即时提醒；`daily` 进入每日简报；`archive` 只保留，不打扰。",
+        f"机制说明：默认不实时推送，默认时效窗口为 {max_age_days} 天。只有 `immediate` 才适合接微信、邮件或 Slack 这类即时提醒；`daily` 进入每日简报；`archive` 只保留，不打扰。高价值分类（合作、产品、监管、市场）和业务动作匹配内容在时效上给予一定宽容度。",
         "",
     ]
 
-    lines.extend(render_section("即时提醒候选", immediate, company_lookup))
-    lines.extend(render_section("今日简报", daily, company_lookup))
-    lines.extend(render_section("归档 / 暂不推送", archive[:15], company_lookup))
+    lines.extend(render_section("即时提醒候选", immediate, company_lookup, ai_summaries))
+    lines.extend(render_section("今日简报", daily, company_lookup, ai_summaries))
+    lines.extend(render_section("归档 / 暂不推送", archive[:15], company_lookup, ai_summaries))
 
     if errors:
         lines.extend(["", "## 抓取错误", ""])
@@ -365,16 +512,18 @@ def build_dashboard_payload(
     seen: dict[str, Any],
     company_lookup: dict[str, dict[str, Any]],
     max_age_days: int,
+    ai_summaries: dict[str, str] | None = None,
 ) -> dict[str, Any]:
+    ai_summaries = ai_summaries or {}
     new_items = [item for item in candidates if item.key not in seen]
     tiers = {
-        "immediate": [item for item in new_items if item.tier == "immediate"],
-        "daily": [item for item in new_items if item.tier == "daily"],
-        "archive": [item for item in new_items if item.tier == "archive"],
+        "immediate": [item for item in candidates if item.tier == "immediate"],
+        "daily": [item for item in candidates if item.tier == "daily"],
+        "archive": [item for item in candidates if item.tier == "archive"],
     }
     categories: dict[str, int] = {}
     sources: dict[str, int] = {}
-    for item in new_items:
+    for item in candidates:
         categories[item.category] = categories.get(item.category, 0) + 1
         sources[item.source_label] = sources.get(item.source_label, 0) + 1
 
@@ -387,8 +536,8 @@ def build_dashboard_payload(
             "daily": len(tiers["daily"]),
             "archive": len(tiers["archive"]),
             "errors": len(errors),
-            "companies": len({item.company_id for item in new_items}),
-            "sources": len({item.source_id for item in new_items}),
+            "companies": len({item.company_id for item in candidates}),
+            "sources": len({item.source_id for item in candidates}),
         },
         "source_mix": sources,
         "category_mix": categories,
@@ -413,13 +562,14 @@ def build_dashboard_payload(
                 "url": item.url,
                 "published": item.published,
                 "summary": item.summary,
+                "ai_summary": ai_summaries.get(item.key, ""),
                 "score": item.score,
                 "tier": item.tier,
                 "category": item.category,
                 "reasons": item.reasons,
                 "age_days": age_days(item.published),
             }
-            for item in sorted(new_items, key=lambda x: (x.tier != "immediate", -x.score))
+            for item in sorted(candidates, key=lambda x: (x.tier != "immediate", -x.score))
         ],
         "errors": errors,
         "market_brief": {
@@ -455,7 +605,9 @@ def render_section(
     title: str,
     items: list[Candidate],
     company_lookup: dict[str, dict[str, Any]],
+    ai_summaries: dict[str, str] | None = None,
 ) -> list[str]:
+    ai_summaries = ai_summaries or {}
     lines = ["", f"## {title}", ""]
     if not items:
         lines.append("暂无。")
@@ -476,6 +628,9 @@ def render_section(
         )
         if item.summary:
             lines.append(f"   - 摘要：{clean_text(item.summary)[:220]}")
+        ai_text = ai_summaries.get(item.key, "")
+        if ai_text:
+            lines.append(f"   - 🤖 AI 业务摘要：{ai_text}")
         lines.append("")
     return lines
 
@@ -483,8 +638,9 @@ def render_section(
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Do not update seen state.")
-    parser.add_argument("--days", type=int, default=45, help="Recency window for daily push candidates.")
+    parser.add_argument("--days", type=int, default=90, help="Recency window for daily push candidates.")
     parser.add_argument("--strict-errors", action="store_true", help="Exit non-zero when any source fails.")
+    parser.add_argument("--ai-summary", action="store_true", help="Generate AI Chinese summaries for daily/immediate items (needs ANTHROPIC_API_KEY).")
     args = parser.parse_args()
 
     companies = load_json(CONFIG_DIR / "companies.json")["companies"]
@@ -500,13 +656,38 @@ def main() -> int:
         if item.company_id in company_lookup
     ]
 
-    report = build_report(scored, errors, seen, company_lookup, args.days)
+    # AI summary for daily/immediate items
+    ai_summaries: dict[str, str] = {}
+    if args.ai_summary:
+        summary_candidates = [item for item in scored if item.tier in {"immediate", "daily"}]
+        for item in summary_candidates:
+            company_name = company_lookup.get(item.company_id, {}).get("display_name", item.company_id)
+            ai_text = generate_ai_summary(item, company_name)
+            if ai_text:
+                ai_summaries[item.key] = ai_text
+
+    report = build_report(scored, errors, seen, company_lookup, args.days, ai_summaries)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = REPORT_DIR / f"daily-{dt.date.today().isoformat()}.md"
     out_path.write_text(report, encoding="utf-8")
-    payload = build_dashboard_payload(scored, errors, seen, company_lookup, args.days)
+    payload = build_dashboard_payload(scored, errors, seen, company_lookup, args.days, ai_summaries)
     save_json(LATEST_RUN_PATH, payload)
     write_static_api(payload)
+
+    # Save history snapshot for trend tracking
+    history_dir = DATA_DIR / "history"
+    history_dir.mkdir(parents=True, exist_ok=True)
+    save_json(history_dir / f"{dt.date.today().isoformat()}.json", {
+        "date": dt.date.today().isoformat(),
+        "summary": payload["summary"],
+        "category_mix": payload["category_mix"],
+        "source_mix": payload["source_mix"],
+    })
+
+    # Keep only last 90 days of history
+    all_history = sorted(history_dir.glob("*.json"))
+    for old_file in all_history[:-90]:
+        old_file.unlink()
 
     if not args.dry_run:
         for item in scored:

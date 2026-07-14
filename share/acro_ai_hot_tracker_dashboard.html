@@ -86,18 +86,71 @@ a {
   gap: 4px;
 }
 
-.nav a {
+.nav button {
   text-decoration: none;
   color: #b8c7d1;
   padding: 10px 12px;
   border-radius: 7px;
   font-size: 14px;
+  height: auto;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
 }
 
-.nav a.active,
-.nav a:hover {
+.nav button.active,
+.nav button:hover {
   background: rgba(255, 255, 255, 0.1);
   color: white;
+}
+
+.company-dock {
+  display: grid;
+  gap: 8px;
+}
+
+.dock-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.dock-head strong {
+  color: #d8f3f3;
+  font-size: 12px;
+}
+
+.company-chip {
+  min-height: 48px;
+  height: auto;
+  display: grid;
+  gap: 3px;
+  justify-items: start;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #dce8ee;
+  cursor: pointer;
+}
+
+.company-chip.active,
+.company-chip:hover {
+  background: rgba(216, 243, 243, 0.14);
+  border-color: rgba(216, 243, 243, 0.24);
+}
+
+.company-chip span {
+  font-weight: 750;
+}
+
+.company-chip small {
+  color: #9bb0bd;
+}
+
+.company-chip.muted {
+  opacity: 0.76;
 }
 
 .sidebar-panel {
@@ -162,6 +215,7 @@ h2 {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 button,
@@ -183,6 +237,10 @@ select {
   display: grid;
   place-items: center;
   cursor: pointer;
+}
+
+.page-panel[hidden] {
+  display: none !important;
 }
 
 .summary-grid {
@@ -226,6 +284,30 @@ select {
   background: var(--coral-soft);
 }
 
+.metric.clickable {
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  user-select: none;
+}
+
+.metric.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(34, 48, 64, 0.14);
+}
+
+.metric.clickable:active {
+  transform: translateY(0);
+}
+
+.metric.clickable small {
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.metric.clickable:hover small {
+  opacity: 1;
+}
+
 .decision-band {
   background: #ffffff;
   border: 1px solid var(--line);
@@ -263,6 +345,467 @@ select {
 .decision-list span {
   color: var(--teal);
   font-weight: 800;
+}
+
+.rules-section,
+.profile-section,
+.companies-section,
+.pipeline-section,
+.questions-section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+
+.company-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.company-summary-grid article,
+.pipeline-grid article {
+  display: grid;
+  gap: 8px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.company-summary-grid span,
+.pipeline-grid span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.company-summary-grid p,
+.pipeline-grid p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.company-table {
+  display: grid;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.company-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+  gap: 10px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  color: #3b4750;
+  font-size: 14px;
+}
+
+.company-row:first-child {
+  border-top: 0;
+}
+
+.company-row.header {
+  background: var(--surface-2);
+  color: #26333b;
+  font-weight: 800;
+}
+
+.company-row.muted {
+  color: var(--muted);
+}
+
+.rule-story {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.story-step {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 8px 12px;
+  align-items: center;
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.story-step span {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--teal);
+  color: white;
+  font-weight: 850;
+  grid-row: span 2;
+}
+
+.story-step strong {
+  font-size: 16px;
+}
+
+.story-step p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.rule-principle {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 48px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  color: #43515c;
+}
+
+.rule-principle strong {
+  color: var(--teal);
+  white-space: nowrap;
+}
+
+.rule-board {
+  display: grid;
+  gap: 14px;
+}
+
+.rule-lane {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.decision-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.decision-matrix div {
+  display: grid;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.decision-matrix span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.decision-matrix p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.rule-lane.official,
+.rule-lane.aggregator {
+  border-color: #9edfe1;
+  background: #f5fbfb;
+}
+
+.rule-lane.wire_media,
+.rule-lane.market_channel {
+  border-color: #efd59c;
+  background: #fffaf0;
+}
+
+.rule-lane.social_content,
+.rule-lane.research_regulatory {
+  border-color: #cbd8ef;
+  background: #f7f9fe;
+}
+
+.rule-lane.restricted {
+  border-color: #efcfc5;
+  background: #fff8f5;
+}
+
+.rule-lane.paid_later {
+  border-color: #dac9e6;
+  background: #fbf8fd;
+}
+
+.rule-lane-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.rule-lane-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lane-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--teal);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.rule-lane-head h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.lane-summary {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.rule-lane-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* ── source grid & cards ── */
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.source-card {
+  border: 1px solid rgba(108, 125, 140, 0.18);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: grid;
+  gap: 8px;
+  background: var(--surface);
+}
+
+.source-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.source-card-top strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.source-card-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.source-card-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* ── status pills ── */
+
+.status-pill {
+  min-width: 56px;
+  min-height: 22px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 750;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.status-pill.enabled {
+  background: var(--teal-soft);
+  color: #075f69;
+}
+
+.status-pill.trial {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.status-pill.watchlist {
+  background: #e8edf8;
+  color: var(--blue);
+}
+
+.status-pill.manual {
+  background: #f0ede6;
+  color: #6b5e3e;
+}
+
+.status-pill.blocked {
+  background: var(--coral-soft);
+  color: var(--coral);
+}
+
+.status-pill.paid_later {
+  background: #eee8f4;
+  color: #624176;
+}
+
+/* ── trust badge ── */
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.trust-badge.trust-a {
+  background: #dff3f4;
+  color: #075f69;
+}
+
+.trust-badge.trust-b {
+  background: #e0ecf5;
+  color: #2a5082;
+}
+
+.trust-badge.trust-c {
+  background: #fff1ca;
+  color: #7a5200;
+}
+
+.trust-badge.trust-d {
+  background: #f5eee0;
+  color: #6b5e3e;
+}
+
+.trust-badge.trust- {
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+/* ── method tag ── */
+
+.method-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.url-hint {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: #f0f3f5;
+  color: #7d8b96;
+  font-size: 11px;
+  font-family: "SF Mono", SFMono-Regular, ui-monospace, monospace;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.profile-block {
+  display: grid;
+  gap: 8px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.profile-block span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.profile-block strong {
+  line-height: 1.35;
+}
+
+.profile-block p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.question-list {
+  display: grid;
+  gap: 10px;
+}
+
+.question-list div {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 12px 14px;
+  background: var(--surface-2);
+  border-radius: 8px;
+}
+
+.question-list strong {
+  color: #26333b;
+}
+
+.question-list span {
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .layout {
@@ -493,6 +1036,204 @@ select {
   color: var(--teal);
 }
 
+.feedback-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-top: 8px;
+  margin-top: 4px;
+  border-top: 1px dashed var(--line);
+}
+
+.feedback-label {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.fb-btn {
+  min-height: 28px;
+  height: auto;
+  padding: 3px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.fb-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.fb-btn.active {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+  color: #075f69;
+  font-weight: 700;
+}
+
+.fb-thanks {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.voted-down .fb-thanks {
+  color: var(--coral);
+}
+
+/* ── search input ── */
+
+#searchInput {
+  min-width: 180px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+}
+
+#searchInput::placeholder {
+  color: var(--muted);
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(8, 127, 140, 0.12);
+}
+
+#exportCsvButton {
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 44px;
+  cursor: pointer;
+}
+
+#exportCsvButton:hover {
+  background: var(--teal-soft);
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+/* ── source health ── */
+
+.health-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.health-ok {
+  padding: 10px;
+  background: var(--teal-soft);
+  border-radius: 7px;
+  color: #075f69;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.health-item {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  background: var(--coral-soft);
+  border-radius: 7px;
+  border-left: 3px solid var(--coral);
+}
+
+.health-item.error {
+  background: #fef3ee;
+  border-left-color: var(--coral);
+}
+
+.health-source {
+  font-weight: 700;
+  color: var(--coral);
+  font-size: 12px;
+  font-family: "SF Mono", SFMono-Regular, ui-monospace, monospace;
+}
+
+.health-msg {
+  color: #5a3a30;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.health-note {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* ── trend comparison ── */
+
+.trend-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.trend-empty {
+  padding: 10px;
+  background: var(--surface-2);
+  border-radius: 7px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.trend-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--surface-2);
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.trend-label {
+  min-width: 52px;
+  color: var(--muted);
+}
+
+.trend-curr {
+  font-weight: 800;
+  min-width: 28px;
+  text-align: right;
+}
+
+.trend-delta {
+  min-width: 32px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.trend-up {
+  color: var(--teal);
+}
+
+.trend-down {
+  color: var(--coral);
+}
+
+.trend-flat {
+  color: var(--muted);
+}
+
+.trend-prev {
+  color: var(--muted);
+  font-size: 11px;
+}
+
 .empty {
   padding: 20px;
   background: var(--surface-2);
@@ -512,7 +1253,17 @@ select {
 
   .summary-grid,
   .decision-band,
-  .layout {
+  .layout,
+  .rule-story,
+  .decision-matrix,
+  .rule-lane-head,
+  .source-grid,
+  .rule-lane-list,
+  .profile-grid,
+  .company-summary-grid,
+  .company-row,
+  .pipeline-grid,
+  .question-list div {
     grid-template-columns: 1fr;
   }
 
@@ -523,6 +1274,10 @@ select {
   .toolbar {
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .rule-toggle {
+    justify-content: flex-start;
   }
 }
 
@@ -555,29 +1310,49 @@ select {
           <span>Market Intelligence</span>
         </div>
       </div>
-      <nav class="nav">
-        <a class="active" href="#overview">总览</a>
-        <a href="#signals">精选信号</a>
-        <a href="#topics">主题热度</a>
-        <a href="#workflow">工作流</a>
+      <nav class="nav" aria-label="页面导航">
+        <button class="active" type="button" data-page-target="overview">📊 总览</button>
+        <button type="button" data-page-target="companies">🏢 公司池</button>
+        <button type="button" data-page-target="sources">🗺️ 数据源地图</button>
+        <button type="button" data-page-target="acro">📋 ACRO 档案</button>
+        <button type="button" data-page-target="pipeline">⚙️ 系统链路</button>
+        <button type="button" data-page-target="questions">❓ 待确认</button>
       </nav>
+
+      <div class="company-dock" aria-label="快捷筛选">
+        <div class="dock-head">
+          <span class="label">公司筛选</span>
+          <strong>点击切换</strong>
+        </div>
+        <button class="company-chip active" type="button" data-filter-company="all">
+          <span>全部公司</span>
+          <small>显示所有动态</small>
+        </button>
+        <button class="company-chip" type="button" data-filter-company="acro">
+          <span>ACRO</span>
+          <small>百普赛斯</small>
+        </button>
+        <button class="company-chip" type="button" data-filter-company="thermo_fisher">
+          <span>Thermo Fisher</span>
+          <small>竞品样本</small>
+        </button>
+      </div>
+
       <div class="sidebar-panel">
-        <span class="label">MVP 标本</span>
-        <strong>ACROBiosystems / 百普赛斯</strong>
-        <p>面向市场部与管理层的行业热点、竞品动态和行动建议 dashboard。</p>
+        <span class="label">当前阶段</span>
+        <strong>MVP 验证中</strong>
+        <p>用 ACRO + Thermo Fisher 跑通方法，再批量接入公司名单。</p>
       </div>
     </aside>
 
     <main class="shell">
       <header class="topbar">
         <div>
-          <p class="eyebrow">老板视角 Dashboard</p>
-          <h1>目标公司与行业热点雷达</h1>
+          <p class="eyebrow" id="pageEyebrow">老板视角 Dashboard</p>
+          <h1 id="pageTitle">目标公司与行业热点雷达</h1>
         </div>
         <div class="toolbar" aria-label="Dashboard controls">
-          <button class="icon-button" id="refreshButton" type="button" title="刷新数据" aria-label="刷新数据">
-            <span aria-hidden="true">↻</span>
-          </button>
+          <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
           <select id="tierFilter" aria-label="按推送分层筛选">
             <option value="all">全部分层</option>
             <option value="immediate">即时提醒</option>
@@ -590,33 +1365,37 @@ select {
           <select id="categoryFilter" aria-label="按主题筛选">
             <option value="all">全部主题</option>
           </select>
+          <button class="icon-button" id="exportCsvButton" type="button" title="导出CSV" aria-label="导出CSV">CSV</button>
+          <button class="icon-button" id="refreshButton" type="button" title="刷新数据" aria-label="刷新数据">
+            <span aria-hidden="true">↻</span>
+          </button>
         </div>
       </header>
 
-      <section class="summary-grid" id="overview" aria-label="Summary metrics">
-        <article class="metric">
+      <section class="summary-grid page-panel" data-page="overview" id="overview" aria-label="Summary metrics">
+        <article class="metric clickable" data-tier="all" title="点击查看全部动态">
           <span>新候选</span>
           <strong id="metricCandidates">--</strong>
-          <small>公开来源抓取后去重</small>
+          <small>点击查看全部 →</small>
         </article>
-        <article class="metric accent">
+        <article class="metric accent clickable" data-tier="daily" title="点击只看日报级内容">
           <span>建议推送</span>
           <strong id="metricDaily">--</strong>
-          <small>高相关，进入市场日报</small>
+          <small>点击查看日报 →</small>
         </article>
-        <article class="metric warn">
+        <article class="metric warn clickable" data-tier="immediate" title="点击只看即时提醒">
           <span>即时提醒</span>
           <strong id="metricImmediate">--</strong>
-          <small>重大合作、产品或监管信号</small>
+          <small>点击查看提醒 →</small>
         </article>
-        <article class="metric quiet">
+        <article class="metric quiet clickable" data-tier="archive" title="点击查看归档内容">
           <span>噪音压制</span>
           <strong id="metricArchive">--</strong>
-          <small>归档但不打扰团队</small>
+          <small>点击查看归档 →</small>
         </article>
       </section>
 
-      <section class="decision-band" aria-label="Executive brief">
+      <section class="decision-band page-panel" data-page="overview" aria-label="Executive brief">
         <div>
           <p class="eyebrow">当前判断</p>
           <h2>先做每日情报工作台，再开放即时推送</h2>
@@ -632,7 +1411,145 @@ select {
         </div>
       </section>
 
-      <section class="layout">
+      <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">公司池</p>
+            <h2>先用 ACRO 跑通方法，再批量接入竞品/客户/合作方</h2>
+          </div>
+          <span class="timestamp">MVP 阶段：2 家样本</span>
+        </div>
+        <div class="company-summary-grid">
+          <article>
+            <span>标本公司</span>
+            <strong>ACROBiosystems / 百普赛斯</strong>
+            <p>用于验证数据源档案、抓取、筛选、展示的完整链路。</p>
+          </article>
+          <article>
+            <span>竞品样本</span>
+            <strong>Thermo Fisher Scientific</strong>
+            <p>用于测试大型公司官方 RSS、官网新闻和聚合新闻的差异。</p>
+          </article>
+          <article>
+            <span>下一步</span>
+            <strong>休假前公司名单</strong>
+            <p>按竞品、客户、合作伙伴、行业标杆、潜在客户分组接入。</p>
+          </article>
+        </div>
+        <div class="company-table">
+          <div class="company-row header">
+            <span>公司</span>
+            <span>对象类型</span>
+            <span>档案状态</span>
+            <span>当前用途</span>
+          </div>
+          <div class="company-row">
+            <span>ACROBiosystems / 百普赛斯</span>
+            <span>自家公司 / 标本</span>
+            <span>已建第一版</span>
+            <span>验证 MVP 全链路</span>
+          </div>
+          <div class="company-row">
+            <span>Thermo Fisher Scientific</span>
+            <span>竞品 / 行业标杆</span>
+            <span>基础配置</span>
+            <span>验证官方 RSS 与聚合源</span>
+          </div>
+          <div class="company-row muted">
+            <span>后续公司名单</span>
+            <span>待分类</span>
+            <span>待导入</span>
+            <span>扩展到 10-30 家</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="rules-section page-panel" data-page="sources" id="source-rules" aria-label="Data source rules">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">数据源地图</p>
+            <h2>先看“信息从哪里来”，再决定“怎么接入系统”</h2>
+          </div>
+          <span class="timestamp">规则展示，不等于全部自动抓取</span>
+        </div>
+
+        <div class="rule-story">
+          <div class="story-step">
+            <span>1</span>
+            <strong>先记录全</strong>
+            <p>官网、RSS、媒体、LinkedIn、微信、展会、数据库都进入公司档案。</p>
+          </div>
+          <div class="story-step">
+            <span>2</span>
+            <strong>再做风险判断</strong>
+            <p>看它是否公开、稳定、低成本、合规、能长期维护。</p>
+          </div>
+          <div class="story-step">
+            <span>3</span>
+            <strong>最后决定怎么处理</strong>
+            <p>能自动的进 MVP；不适合自动的先人工、暂缓或后期付费。</p>
+          </div>
+        </div>
+
+        <div class="rule-principle">
+          <strong>一句话</strong>
+          <span>数据源地图负责“看全”，接入决策负责“取舍”，真正运行的只是其中低风险的一部分。</span>
+        </div>
+
+        <div class="decision-matrix">
+          <div>
+            <span>优先自动接入</span>
+            <strong>公开 + 结构化 + 稳定</strong>
+            <p>RSS、新闻稿平台、少量稳定官网页面。</p>
+          </div>
+          <div>
+            <span>先人工观察</span>
+            <strong>价值高 + 自动化限制多</strong>
+            <p>LinkedIn、微信公众号、展会、视频平台。</p>
+          </div>
+          <div>
+            <span>暂缓/付费评估</span>
+            <strong>高风险或高成本</strong>
+            <p>登录平台、反爬页面、付费墙、商业数据库。</p>
+          </div>
+        </div>
+
+        <div class="rule-board" id="ruleGrid"></div>
+      </section>
+
+      <section class="profile-section page-panel" data-page="acro" id="acro-profile" aria-label="ACRO source profile">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">ACRO 样本档案</p>
+            <h2>同一家公司先建档，再决定哪些源进入 MVP</h2>
+          </div>
+          <span class="timestamp">样本公司：ACROBiosystems / 百普赛斯</span>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-block">
+            <span>当前自动运行</span>
+            <strong>Google News RSS / 定向新闻稿搜索</strong>
+            <p>用于免费补漏，配合关键词、去重和评分控制噪音。</p>
+          </div>
+          <div class="profile-block">
+            <span>试运行观察</span>
+            <strong>ACRO 官网 News / 日本官网</strong>
+            <p>官方价值高，但需要观察页面结构、防护脚本和抓取稳定性。</p>
+          </div>
+          <div class="profile-block">
+            <span>记录但不自动抓</span>
+            <strong>LinkedIn / 微信公众号 / 展会 / 视频</strong>
+            <p>有业务信号，但第一阶段用人工复核或后续半自动方式处理。</p>
+          </div>
+          <div class="profile-block">
+            <span>暂缓或后期评估</span>
+            <strong>登录平台 / 反爬网站 / 付费数据库</strong>
+            <p>等 MVP 验证价值后，再决定 API、商业数据服务或内部部署。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout page-panel" data-page="overview">
         <div class="feed" id="signals">
           <div class="section-head">
             <div>
@@ -693,6 +1610,22 @@ select {
             </div>
           </section>
 
+          <section class="panel" id="sourceHealth">
+            <div class="section-head compact">
+              <h2>来源健康</h2>
+              <span id="healthStatus">--</span>
+            </div>
+            <div id="healthList" class="health-list"></div>
+          </section>
+
+          <section class="panel" id="trendPanel">
+            <div class="section-head compact">
+              <h2>日期间对比</h2>
+              <span id="trendDays">vs 昨日</span>
+            </div>
+            <div id="trendList" class="trend-list"></div>
+          </section>
+
           <section class="panel">
             <h2>AIhot 式接入</h2>
             <div class="api-list">
@@ -703,27 +1636,222 @@ select {
           </section>
         </aside>
       </section>
+
+      <section class="pipeline-section page-panel" data-page="pipeline" aria-label="System pipeline">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">系统链路</p>
+            <h2>这不是一个新闻列表，而是一条可维护的信息处理链</h2>
+          </div>
+          <span class="timestamp">MVP 到稳定版的路线</span>
+        </div>
+        <div class="pipeline-grid">
+          <article>
+            <span>01</span>
+            <strong>数据获取</strong>
+            <p>RSS、Google News、官网公开页、人工补充入口。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>数据处理</strong>
+            <p>去重、关键词命中、噪音过滤、相关性评分、分层。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>数据存储</strong>
+            <p>MVP 先用 GitHub JSON；稳定版再考虑数据库和历史检索。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>数据展现</strong>
+            <p>Dashboard、公司页、日报、主题热度、API / Agent 接入。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="questions-section page-panel" data-page="questions" aria-label="Open questions">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">待确认事项</p>
+            <h2>给领导确认的不是技术细节，而是边界和优先级</h2>
+          </div>
+        </div>
+        <div class="question-list">
+          <div><strong>公司范围</strong><span>第一批是 ACRO + 竞品，还是也包含客户、合作伙伴、潜在客户？</span></div>
+          <div><strong>推送标准</strong><span>什么内容要即时提醒，什么只进日报，什么只归档？</span></div>
+          <div><strong>数据边界</strong><span>LinkedIn、微信、登录平台是人工看，还是后续申请付费/API？</span></div>
+          <div><strong>公开性</strong><span>公司名单和结果能否放 GitHub Pages，还是需要内部部署？</span></div>
+          <div><strong>展示语言</strong><span>中文、英文、日文，还是给日本团队做双语？</span></div>
+        </div>
+      </section>
     </main>
 
     <script>
+const FEEDBACK_STORE_KEY = "aihot_feedback";
+
+function loadFeedback() {
+  try {
+    return JSON.parse(localStorage.getItem(FEEDBACK_STORE_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveFeedback(id, value) {
+  const fb = loadFeedback();
+  if (value === null) {
+    delete fb[id];
+  } else {
+    fb[id] = { value, ts: new Date().toISOString() };
+  }
+  localStorage.setItem(FEEDBACK_STORE_KEY, JSON.stringify(fb));
+  return fb;
+}
+
 const state = {
   payload: null,
   tier: "daily",
   company: "all",
   category: "all",
+  searchQuery: "",
+  page: "overview",
+  feedback: loadFeedback(),
+  history: null,
+};
+
+const sourceInventory = [
+  {
+    layer: "official",
+    number: "01",
+    title: "官方自有来源",
+    subtitle: "公司自己确认发布的产品、活动、合作、财务和区域动态。优先进入 MVP，但 HTML 页面要观察稳定性。",
+    sources: [
+      { name: "ACRO 全球官网 News", status: "trial", trust: "A", method: "HTML 抓取", note: "价值最高，需监控页面结构变化和防护脚本", url: "acrobiosystems.com/news" },
+      { name: "ACRO 日本官网", status: "trial", trust: "A", method: "HTML 抓取", note: "区域市场信号，需筛选 news/event/webinar 链接", url: "jp.acrobiosystems.com" },
+      { name: "Thermo Fisher IR RSS", status: "enabled", trust: "A", method: "RSS", note: "官方新闻稿 RSS，稳定可用", url: "ir.thermofisher.com/rss/pressrelease.aspx" },
+      { name: "Thermo Fisher newsroom", status: "trial", trust: "A", method: "HTML 抓取", note: "返回 403，需评估是否切到 RSS 或放弃" },
+      { name: "IR 页 / 财报 / 公告", status: "watchlist", trust: "A", method: "RSS / HTML", note: "上市公司公告；后续按公司补充" },
+      { name: "产品页 / Blog / 资源库", status: "watchlist", trust: "A", method: "HTML 抓取", note: "内容营销和技术文章，先记录不自动抓" },
+    ],
+  },
+  {
+    layer: "wire_media",
+    number: "02",
+    title: "新闻稿与行业媒体",
+    subtitle: "竞品发布、融资、合作、会议传播和行业热点。优先找 RSS，注意重复转载和弱相关内容。",
+    sources: [
+      { name: "PR Newswire（via Google News site）", status: "enabled", trust: "B", method: "site 搜索 RSS", note: "定向补漏新闻稿，已在 ACRO 来源中配置" },
+      { name: "Business Wire", status: "watchlist", trust: "B", method: "site 搜索 RSS", note: "后续为每家目标公司补充 site 查询" },
+      { name: "GlobeNewswire", status: "watchlist", trust: "B", method: "site 搜索 RSS", note: "同上，后续批量配置" },
+      { name: "BioSpace", status: "watchlist", trust: "B", method: "RSS", note: "生物医药行业动态，频率和噪音待评估" },
+      { name: "Fierce Biotech / Fierce Pharma", status: "watchlist", trust: "B", method: "RSS", note: "行业热点覆盖面好，后期作为通用背景源" },
+      { name: "GEN / Technology Networks / Labiotech", status: "watchlist", trust: "B", method: "RSS", note: "技术与行业内容，可作为主题增强模块" },
+      { name: "日文 / 中文行业媒体", status: "watchlist", trust: "B", method: "待调研", note: "日本和中国市场信号，需先确认有哪些可用源" },
+    ],
+  },
+  {
+    layer: "aggregator",
+    number: "03",
+    title: "聚合搜索补漏",
+    subtitle: "免费、覆盖广，快速发现散落在不同媒体里的公开新闻。MVP 可用，但必须配合去重、评分和归档控制噪音。",
+    sources: [
+      { name: "Google News RSS — ACRO 全球", status: "enabled", trust: "C", method: "RSS", note: "主要补漏源，噪音较高但配合评分后可用" },
+      { name: "Google News RSS — ACRO 日本", status: "enabled", trust: "C", method: "RSS", note: "日文/日本区域动态，命中少但价值高" },
+      { name: "Google News RSS — ACRO + PR Newswire", status: "enabled", trust: "B", method: "site 搜索 RSS", note: "定向新闻稿平台，比泛搜质量高" },
+      { name: "Google News RSS — Thermo Fisher 全球", status: "enabled", trust: "C", method: "RSS", note: "量大（100条/次），噪音占比高，需强力过滤" },
+      { name: "Google News RSS — Thermo Fisher 日本", status: "enabled", trust: "C", method: "RSS", note: "日本区域动态" },
+      { name: "Bing News / 其他聚合搜索", status: "watchlist", trust: "C", method: "待调研", note: "备选补漏，等 Google News 稳定后再评估" },
+    ],
+  },
+  {
+    layer: "social_content",
+    number: "04",
+    title: "社交与内容平台",
+    subtitle: "很有业务信号——活动传播、招聘、产品内容、区域市场声量。但自动化和合规限制多，MVP 先人工观察。",
+    sources: [
+      { name: "LinkedIn 公司主页", status: "manual", trust: "D", method: "人工查看", note: "产品/活动/招聘动态价值高，但不自动抓取" },
+      { name: "LinkedIn 员工 / 管理层账号", status: "manual", trust: "D", method: "不抓取", note: "可能有早期信号，但隐私和合规风险高" },
+      { name: "微信公众号", status: "manual", trust: "D", method: "人工查看", note: "中国市场重要来源，自动化门槛高" },
+      { name: "X / Twitter", status: "watchlist", trust: "D", method: "人工查看", note: "海外会议和活动传播，后续可评估 API" },
+      { name: "YouTube / Bilibili", status: "watchlist", trust: "D", method: "人工查看", note: "Webinar 和产品视频，内容营销观察用" },
+    ],
+  },
+  {
+    layer: "market_channel",
+    number: "05",
+    title: "市场活动与渠道",
+    subtitle: "观察展会、Webinar、经销商和合作伙伴动作，捕捉市场推广节奏和销售线索。先记录重点来源，重要事件人工录入。",
+    sources: [
+      { name: "展会官网参展商页面", status: "watchlist", trust: "B", method: "人工查看", note: "判断参展、赞助、主题方向；可建展会日历" },
+      { name: "Webinar 报名平台", status: "watchlist", trust: "B", method: "人工查看", note: "主题方向和客户教育内容" },
+      { name: "经销商 / 代理商新闻页", status: "watchlist", trust: "D", method: "人工查看", note: "区域市场动作和转载信号" },
+      { name: "合作伙伴新闻页", status: "watchlist", trust: "C", method: "人工查看", note: "合作和联合推广信号" },
+      { name: "客户案例 / 应用笔记", status: "watchlist", trust: "B", method: "人工查看", note: "商业落地证据，但通常不频繁更新" },
+    ],
+  },
+  {
+    layer: "research_regulatory",
+    number: "06",
+    title: "研发监管与组织信号",
+    subtitle: "技术方向、临床/监管进展、组织扩张和区域投入。价值高，但更适合做后续专题模块，不放进当前自动抓取。",
+    sources: [
+      { name: "PubMed / Google Scholar", status: "watchlist", trust: "B", method: "API / 搜索", note: "论文发表和引用，技术影响力信号" },
+      { name: "ClinicalTrials.gov / jRCT / EU CTIS", status: "watchlist", trust: "A", method: "API / 搜索", note: "临床项目关联，对 CGT/CDMO 尤其重要" },
+      { name: "专利数据库", status: "watchlist", trust: "B", method: "API / 搜索", note: "技术布局和产品方向" },
+      { name: "FDA / EMA / PMDA", status: "watchlist", trust: "A", method: "RSS / API", note: "监管批准和指南更新" },
+      { name: "招聘网站", status: "watchlist", trust: "D", method: "人工查看", note: "组织扩张、区域布局、技术方向信号" },
+      { name: "财报 / SEC / EDINET", status: "watchlist", trust: "A", method: "RSS / 人工", note: "战略和风险披露，上市公司可自动获取" },
+    ],
+  },
+  {
+    layer: "restricted",
+    number: "07",
+    title: "高风险受限来源",
+    subtitle: "可能有价值，但权限、合规、版权和稳定性风险高。记录存在，MVP 不抓取，不绕过限制。",
+    sources: [
+      { name: "需要登录的平台", status: "blocked", trust: "—", method: "不抓取", note: "权限和账号合规问题" },
+      { name: "反爬严重网站", status: "blocked", trust: "—", method: "不抓取", note: "稳定性、成本、合规三重风险" },
+      { name: "付费墙内容", status: "blocked", trust: "—", method: "不抓取", note: "版权和授权限制" },
+      { name: "私域社群 / 群聊", status: "blocked", trust: "—", method: "不抓取", note: "非公开内容，不应进入系统" },
+      { name: "个人账号内容", status: "blocked", trust: "—", method: "不抓取", note: "隐私、误读和噪音风险" },
+      { name: "robots.txt 禁止路径", status: "blocked", trust: "—", method: "不抓取", note: "遵守 robots 协议，不强行绕过" },
+    ],
+  },
+  {
+    layer: "paid_later",
+    number: "08",
+    title: "商业数据服务",
+    subtitle: "覆盖更稳定、更全面。等 MVP 证明价值后再申请预算评估，不在一开始烧钱。",
+    sources: [
+      { name: "新闻 API（NewsAPI / GNews / Mediastack）", status: "paid_later", trust: "A", method: "API", note: "稳定性和覆盖率比 RSS 好，月费可控" },
+      { name: "商业情报数据库", status: "paid_later", trust: "A", method: "API / 导出", note: "企业、产品、管线数据，适合竞品深度分析" },
+      { name: "LinkedIn 官方 API", status: "paid_later", trust: "B", method: "API", note: "合规获取公司动态和招聘信号" },
+      { name: "微信生态监控服务", status: "paid_later", trust: "B", method: "第三方服务", note: "合规监测公众号和视频号内容" },
+      { name: "专利 / 临床数据库订阅", status: "paid_later", trust: "A", method: "API / 批量导出", note: "研发和监管信号的结构化数据" },
+    ],
+  },
+];
+
+const pageMeta = {
+  overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
+  companies: ["Company Pool", "目标公司池"],
+  sources: ["Source Map", "数据源地图与接入边界"],
+  acro: ["Company Profile", "ACRO 样本档案"],
+  pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
+  questions: ["Open Questions", "待确认事项"],
 };
 
 const fallbackPayload = {
   generated_at: new Date().toISOString(),
-  window_days: 45,
+  window_days: 90,
   summary: {
     new_candidates: 43,
     immediate: 0,
-    daily: 3,
-    archive: 40,
+    daily: 5,
+    archive: 38,
     errors: 0,
-    companies: 1,
-    sources: 5,
+    companies: 2,
+    sources: 7,
   },
   category_mix: {
     partnership: 6,
@@ -745,11 +1873,12 @@ const fallbackPayload = {
       title: "Driving Innovation, Empowering Partners: ACROBiosystems Showcases Comprehensive CGT Solutions Anchored by GMP Capabilities at Bio Korea 2026",
       url: "#",
       published: "2026-06-01",
+      ai_summary: "ACRO在Bio Korea 2026展示了CGT与GMP综合方案，突出其亚太市场活动传播能力。建议市场部关注该活动的后续报道，可作为LinkedIn和Newsletter选题。",
       summary: "ACRO 展示围绕 CGT 与 GMP 能力的综合解决方案，适合作为市场部观察亚太活动传播和产品线表达的样本。",
       score: 65,
       tier: "daily",
       category: "partnership",
-      reasons: ["公司别名命中: ACROBiosystems", "战略主题命中: CGT, GMP", "业务动作命中: partner"],
+      reasons: ["公司别名命中: ACROBiosystems", "战略主题命中: CGT, GMP", "业务动作命中: partner", "高价值分类加成 +10: partnership"],
       age_days: 35,
     },
     {
@@ -760,11 +1889,12 @@ const fallbackPayload = {
       title: "IPO News | ACROBiosystems Plans Hong Kong IPO",
       url: "#",
       published: "2026-05-29",
+      ai_summary: "ACRO香港IPO进展涉及境外投资监管合规，属于公司级战略信号。对市场部而言，可用于判断公司品牌阶段和资本市场动态。",
       summary: "资本市场信号不一定直接给市场部使用，但对老板视角的公司动态和品牌阶段判断有参考价值。",
-      score: 45,
+      score: 48,
       tier: "daily",
       category: "regulatory",
-      reasons: ["公司别名命中: ACROBiosystems"],
+      reasons: ["公司别名命中: ACROBiosystems", "高价值分类加成 +8: regulatory"],
       age_days: 38,
     },
   ],
@@ -784,7 +1914,19 @@ const els = {
   tierFilter: document.querySelector("#tierFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
   companyFilter: document.querySelector("#companyFilter"),
+  searchInput: document.querySelector("#searchInput"),
+  exportCsvButton: document.querySelector("#exportCsvButton"),
   refreshButton: document.querySelector("#refreshButton"),
+  healthStatus: document.querySelector("#healthStatus"),
+  healthList: document.querySelector("#healthList"),
+  trendList: document.querySelector("#trendList"),
+  trendDays: document.querySelector("#trendDays"),
+  pageEyebrow: document.querySelector("#pageEyebrow"),
+  pageTitle: document.querySelector("#pageTitle"),
+  toolbar: document.querySelector(".toolbar"),
+  ruleGrid: document.querySelector("#ruleGrid"),
+  pagePanels: document.querySelectorAll("[data-page]"),
+  pageButtons: document.querySelectorAll("[data-page-target]"),
 };
 
 async function loadData() {
@@ -798,8 +1940,26 @@ async function loadData() {
   } catch (error) {
     state.payload = fallbackPayload;
   }
+
+  // Try loading yesterday's snapshot for trend comparison
+  try {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const ymd = yesterday.toISOString().slice(0, 10);
+    const histResp = await fetch(`../data/history/${ymd}.json`, { cache: "no-store" });
+    if (histResp.ok) {
+      state.history = await histResp.json();
+    } else {
+      state.history = null;
+    }
+  } catch {
+    state.history = null;
+  }
+
   hydrateFilters();
   render();
+  renderSourceHealth();
+  renderTrend();
 }
 
 function hydrateFilters() {
@@ -839,24 +1999,102 @@ function render() {
   renderSignals();
   renderBars(els.topicBars, payload.category_mix, labelCategory);
   renderSources();
+  renderRules();
+  renderPage();
+}
+
+function renderRules() {
+  els.ruleGrid.innerHTML = sourceInventory
+    .map(
+      (cat) => `
+        <section class="rule-lane ${cat.layer}">
+          <div class="rule-lane-head">
+            <div class="rule-lane-title">
+              <span class="lane-number">${cat.number}</span>
+              <h3>${escapeHtml(cat.title)}</h3>
+              <span class="lane-summary">${summaryForCategory(cat)}</span>
+            </div>
+            <p>${escapeHtml(cat.subtitle)}</p>
+          </div>
+          <div class="source-grid">
+            ${cat.sources
+              .map(
+                (src) => `
+                  <article class="source-card">
+                    <div class="source-card-top">
+                      <strong>${escapeHtml(src.name)}</strong>
+                      <span class="status-pill ${src.status}">${labelStatus(src.status)}</span>
+                    </div>
+                    <div class="source-card-meta">
+                      <span class="trust-badge trust-${src.trust.toLowerCase().replace(/[^a-e]/g, "")}">可信 ${src.trust}</span>
+                      <span class="method-tag">${escapeHtml(src.method)}</span>
+                      ${src.url ? `<span class="url-hint">${escapeHtml(src.url)}</span>` : ""}
+                    </div>
+                    <p class="source-card-note">${escapeHtml(src.note)}</p>
+                  </article>
+                `,
+              )
+              .join("")}
+          </div>
+        </section>
+      `,
+    )
+    .join("");
+}
+
+function summaryForCategory(cat) {
+  const counts = {};
+  for (const src of cat.sources) {
+    counts[src.status] = (counts[src.status] || 0) + 1;
+  }
+  const parts = [];
+  if (counts.enabled) parts.push(`${counts.enabled} 已启用`);
+  if (counts.trial) parts.push(`${counts.trial} 试运行`);
+  if (counts.watchlist) parts.push(`${counts.watchlist} 观察中`);
+  if (counts.manual) parts.push(`${counts.manual} 人工`);
+  if (counts.blocked) parts.push(`${counts.blocked} 受限`);
+  if (counts.paid_later) parts.push(`${counts.paid_later} 后期付费`);
+  return parts.join(" · ");
+}
+
+function renderPage() {
+  const [eyebrow, title] = pageMeta[state.page] || pageMeta.overview;
+  els.pageEyebrow.textContent = eyebrow;
+  els.pageTitle.textContent = title;
+  els.toolbar.hidden = state.page !== "overview";
+  els.pagePanels.forEach((panel) => {
+    panel.hidden = panel.dataset.page !== state.page;
+  });
+  els.pageButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.pageTarget === state.page);
+  });
 }
 
 function renderSignals() {
+  const query = state.searchQuery.toLowerCase().trim();
   const filtered = state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter((item) => state.company === "all" || item.company === state.company)
     .filter((item) => state.category === "all" || item.category === state.category)
+    .filter((item) => {
+      if (!query) return true;
+      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${item.reasons.join(" ")}`.toLowerCase();
+      return haystack.includes(query);
+    })
     .sort((a, b) => b.score - a.score);
 
   els.signalList.innerHTML = "";
+  const countSuffix = query ? `（搜索"${escapeHtml(state.searchQuery)}"，共 ${filtered.length} 条）` : "";
   if (!filtered.length) {
-    els.signalList.innerHTML = '<div class="empty">当前筛选条件下没有需要展示的信号。</div>';
+    els.signalList.innerHTML = `<div class="empty">当前筛选条件下没有需要展示的信号。${countSuffix}</div>`;
     return;
   }
 
   for (const item of filtered) {
     const card = document.createElement("article");
     card.className = "signal-card";
+    const fb = state.feedback[item.id];
+    const fbClass = fb ? `voted-${fb.value}` : "";
     card.innerHTML = `
       <div class="signal-top">
         <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
@@ -868,13 +2106,32 @@ function renderSignals() {
         <span class="tag">${escapeHtml(item.company)}</span>
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
       </div>
-      <p class="summary">${escapeHtml(item.summary || "暂无摘要，建议回原文核对。")}</p>
+      <p class="summary">${escapeHtml(item.ai_summary || item.summary || "暂无摘要，建议回原文核对。")}</p>
       <ul class="reason-list">
         ${item.reasons.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
       </ul>
+      <div class="feedback-row ${fbClass}">
+        <span class="feedback-label">这条有用吗？</span>
+        <button class="fb-btn fb-up${fb && fb.value === "up" ? " active" : ""}" data-id="${item.id}" data-action="up" title="有用">👍 有用</button>
+        <button class="fb-btn fb-down${fb && fb.value === "down" ? " active" : ""}" data-id="${item.id}" data-action="down" title="无用">👎 无用</button>
+        ${fb ? '<span class="fb-thanks">已反馈，谢谢！</span>' : ""}
+      </div>
     `;
     els.signalList.appendChild(card);
   }
+
+  // Bind feedback button events after DOM is built
+  els.signalList.querySelectorAll(".fb-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.id;
+      const action = btn.dataset.action;
+      const current = state.feedback[id];
+      // Toggle off if clicking same action again
+      const newValue = current && current.value === action ? null : action;
+      state.feedback = saveFeedback(id, newValue);
+      renderSignals(); // re-render to update UI
+    });
+  });
 }
 
 function renderBars(container, data, labeler) {
@@ -898,6 +2155,17 @@ function renderSources() {
   els.sourceList.innerHTML = entries
     .map(([name, count]) => `<div class="source-item"><span>${escapeHtml(name)}</span><strong>${count}</strong></div>`)
     .join("");
+}
+
+function labelStatus(status) {
+  return {
+    enabled: "已启用",
+    trial: "试运行",
+    watchlist: "观察中",
+    manual: "人工",
+    blocked: "受限",
+    paid_later: "后期付费",
+  }[status] || status;
 }
 
 function labelTier(tier) {
@@ -945,6 +2213,190 @@ function escapeAttr(value) {
   return escapeHtml(value).replaceAll("'", "&#39;");
 }
 
+function renderSourceHealth() {
+  const errors = state.payload.errors || [];
+  const sourceNames = new Set(state.payload.items.map((item) => item.source_label));
+  const allActiveSources = [...sourceNames];
+
+  const total = allActiveSources.length;
+  const errorCount = errors.length;
+  els.healthStatus.textContent = errorCount > 0 ? `${errorCount} 异常 / ${total} 来源` : `${total} 来源正常`;
+
+  if (errors.length === 0) {
+    els.healthList.innerHTML = '<div class="health-ok">所有来源运行正常 ✓</div>';
+    return;
+  }
+
+  els.healthList.innerHTML = errors
+    .map((err) => {
+      const parts = err.split(": ");
+      const sourceId = parts[0];
+      const message = parts.slice(1).join(": ");
+      const source = sourceInventory
+        .flatMap((cat) => cat.sources)
+        .find((s) => s.name.toLowerCase().includes(sourceId.replace(/_/g, " ").toLowerCase()));
+      const note = source ? source.note : "";
+      return `<div class="health-item error">
+        <span class="health-source">${escapeHtml(sourceId)}</span>
+        <span class="health-msg">${escapeHtml(message)}</span>
+        ${note ? `<span class="health-note">${escapeHtml(note)}</span>` : ""}
+      </div>`;
+    })
+    .join("");
+}
+
+function renderTrend() {
+  if (!state.history) {
+    els.trendList.innerHTML = '<div class="trend-empty">暂无历史数据对比</div>';
+    els.trendDays.textContent = "vs 昨日";
+    return;
+  }
+
+  const prev = state.history.summary;
+  const curr = state.payload.summary;
+  const daysAgo = Math.round(
+    (new Date(state.payload.generated_at) - new Date(state.history.date)) / 86400000
+  );
+  els.trendDays.textContent = `vs ${daysAgo || 1} 天前`;
+
+  const rows = [
+    { label: "新候选", curr: curr.new_candidates, prev: prev.new_candidates },
+    { label: "进入日报", curr: curr.daily, prev: prev.daily },
+    { label: "即时提醒", curr: curr.immediate, prev: prev.immediate },
+    { label: "噪音压制", curr: curr.archive, prev: prev.archive },
+  ];
+
+  els.trendList.innerHTML = rows
+    .map((row) => {
+      const delta = row.curr - row.prev;
+      let deltaStr = "";
+      let deltaClass = "";
+      if (delta > 0) {
+        deltaStr = `↑${delta}`;
+        deltaClass = "trend-up";
+      } else if (delta < 0) {
+        deltaStr = `↓${Math.abs(delta)}`;
+        deltaClass = "trend-down";
+      } else {
+        deltaStr = "→";
+        deltaClass = "trend-flat";
+      }
+      return `<div class="trend-row">
+        <span class="trend-label">${row.label}</span>
+        <span class="trend-curr">${row.curr}</span>
+        <span class="trend-delta ${deltaClass}">${deltaStr}</span>
+        <span class="trend-prev">(${row.prev})</span>
+      </div>`;
+    })
+    .join("");
+}
+
+function exportCsv() {
+  const filtered = getFilteredItems();
+  if (!filtered.length) {
+    alert("当前没有可导出的数据。");
+    return;
+  }
+
+  const headers = ["标题", "公司", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
+  const rows = [headers.join(",")];
+  for (const item of filtered) {
+    rows.push(
+      [
+        csvCell(item.title),
+        csvCell(item.company),
+        csvCell(item.source_label),
+        csvCell(item.published || ""),
+        item.score,
+        csvCell(labelTier(item.tier)),
+        csvCell(labelCategory(item.category)),
+        csvCell(item.reasons.slice(0, 3).join("; ")),
+        csvCell(item.ai_summary || item.summary || ""),
+        item.url,
+      ].join(",")
+    );
+  }
+
+  const bom = "﻿";
+  const blob = new Blob([bom + rows.join("\n")], { type: "text/csv;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `ai-hot-tracker-export-${new Date().toISOString().slice(0, 10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function csvCell(value) {
+  const escaped = String(value).replace(/"/g, '""');
+  return `"${escaped}"`;
+}
+
+function getFilteredItems() {
+  const query = state.searchQuery.toLowerCase().trim();
+  return state.payload.items
+    .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => state.company === "all" || item.company === state.company)
+    .filter((item) => state.category === "all" || item.category === state.category)
+    .filter((item) => {
+      if (!query) return true;
+      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${item.reasons.join(" ")}`.toLowerCase();
+      return haystack.includes(query);
+    })
+    .sort((a, b) => b.score - a.score);
+}
+
+// ── Event listeners ──
+
+// Metric cards: click to filter signals by tier
+document.querySelectorAll(".metric.clickable").forEach((card) => {
+  card.addEventListener("click", () => {
+    const tier = card.dataset.tier;
+    state.page = "overview";
+    state.tier = tier;
+    els.tierFilter.value = tier;
+    renderPage();
+    renderSignals();
+  });
+});
+
+// Sidebar company chips: filter overview by company
+document.querySelectorAll("[data-filter-company]").forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const companyId = chip.dataset.filterCompany;
+    // Navigate to overview
+    state.page = "overview";
+    renderPage();
+    // Apply company filter
+    if (companyId === "all") {
+      state.company = "all";
+      els.companyFilter.value = "all";
+    } else {
+      const companyName = state.payload?.companies?.find((c) => c.id === companyId)?.display_name || companyId;
+      state.company = companyName;
+      // Update dropdown to match
+      for (const opt of els.companyFilter.options) {
+        if (opt.textContent === companyName) {
+          els.companyFilter.value = companyName;
+          break;
+        }
+      }
+    }
+    renderSignals();
+    // Update chip active states
+    document.querySelectorAll("[data-filter-company]").forEach((c) => {
+      c.classList.toggle("active", c.dataset.filterCompany === companyId);
+    });
+  });
+});
+
+els.searchInput.addEventListener("input", (event) => {
+  state.searchQuery = event.target.value;
+  renderSignals();
+});
+
+els.exportCsvButton.addEventListener("click", exportCsv);
+
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;
   renderSignals();
@@ -957,10 +2409,23 @@ els.categoryFilter.addEventListener("change", (event) => {
 
 els.companyFilter.addEventListener("change", (event) => {
   state.company = event.target.value;
+  // Sync sidebar company chips
+  const selectedCompany = state.payload?.companies?.find((c) => c.display_name === state.company);
+  const companyId = selectedCompany?.id || "all";
+  document.querySelectorAll("[data-filter-company]").forEach((c) => {
+    c.classList.toggle("active", c.dataset.filterCompany === companyId);
+  });
   renderSignals();
 });
 
 els.refreshButton.addEventListener("click", loadData);
+
+els.pageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    state.page = button.dataset.pageTarget;
+    renderPage();
+  });
+});
 
 loadData();
 

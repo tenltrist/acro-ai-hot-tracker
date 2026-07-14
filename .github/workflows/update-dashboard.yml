@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate dashboard data
-        run: python3 scripts/run_daily.py --days 45
+        run: python3 scripts/run_daily.py --days 90
 
       - name: Build share page
         run: python3 scripts/build_share_page.py

@@ -101,6 +101,10 @@ ai_hot_tracker/share/acro_ai_hot_tracker_dashboard.html
 - `config/companies.json`
 - `config/sources.json`
 
+先为每家公司建立完整的数据源档案，再决定哪些来源进入自动抓取：
+
+- `docs/data_source_profile_template.md`
+
 建议先为每家公司配置：
 
 - 公司别名
