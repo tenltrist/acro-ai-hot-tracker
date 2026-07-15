@@ -343,10 +343,11 @@ const els = {
   healthStatus: document.querySelector("#healthStatus"),
   healthList: document.querySelector("#healthList"),
   healthGeneratedAt: document.querySelector("#healthGeneratedAt"),
+  healthMetricTracked: document.querySelector("#healthMetricTracked"),
   healthMetricProducing: document.querySelector("#healthMetricProducing"),
   healthMetricSelected: document.querySelector("#healthMetricSelected"),
-  healthMetricQuiet: document.querySelector("#healthMetricQuiet"),
   healthMetricAttention: document.querySelector("#healthMetricAttention"),
+  healthAttentionDetail: document.querySelector("#healthAttentionDetail"),
   healthCompanyFilter: document.querySelector("#healthCompanyFilter"),
   healthStatusFilter: document.querySelector("#healthStatusFilter"),
   healthRowCount: document.querySelector("#healthRowCount"),
@@ -815,10 +816,14 @@ function renderSourceHealthPage() {
   els.healthCompanyFilter.value = state.healthCompany;
 
   els.healthGeneratedAt.textContent = `本轮运行 ${formatDateTime(state.payload.generated_at)}`;
+  els.healthMetricTracked.textContent = rows.length;
   els.healthMetricProducing.textContent = rows.filter((row) => row.total > 0).length;
   els.healthMetricSelected.textContent = rows.filter((row) => row.immediate + row.daily > 0).length;
-  els.healthMetricQuiet.textContent = rows.filter((row) => row.status === "quiet").length;
-  els.healthMetricAttention.textContent = rows.filter((row) => ["pending", "error"].includes(row.status)).length;
+  const quietCount = rows.filter((row) => row.status === "quiet").length;
+  const pendingCount = rows.filter((row) => row.status === "pending").length;
+  const errorCount = rows.filter((row) => row.status === "error").length;
+  els.healthMetricAttention.textContent = quietCount + pendingCount + errorCount;
+  els.healthAttentionDetail.textContent = `${quietCount} 个暂无内容 · ${pendingCount} 个待配置 · ${errorCount} 个异常`;
 
   const visible = rows
     .filter((row) => state.healthCompany === "all" || row.company === state.healthCompany)
@@ -828,7 +833,7 @@ function renderSourceHealthPage() {
       return (order[a.status] ?? 9) - (order[b.status] ?? 9) || b.total - a.total;
     });
 
-  els.healthRowCount.textContent = `显示 ${visible.length} / ${rows.length} 个运行入口`;
+  els.healthRowCount.textContent = `显示 ${visible.length} / ${rows.length} 个运行入口 · 需处理的来源优先排在前面`;
   if (!visible.length) {
     els.healthTableBody.innerHTML = '<div class="health-table-empty">当前筛选下没有数据源。</div>';
     return;

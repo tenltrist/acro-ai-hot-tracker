@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260715d" />
+    <link rel="stylesheet" href="./styles.css?v=20260715e" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -427,7 +427,12 @@
 
         <div class="health-summary-grid">
           <article>
-            <span>实际产出来源</span>
+            <span>已登记运行入口</span>
+            <strong id="healthMetricTracked">--</strong>
+            <small>包含运行中、暂无内容和待配置来源</small>
+          </article>
+          <article>
+            <span>本轮有产出</span>
             <strong id="healthMetricProducing">--</strong>
             <small>本轮有内容进入数据集</small>
           </article>
@@ -437,14 +442,9 @@
             <small>至少有 1 条进入日报或提醒</small>
           </article>
           <article>
-            <span>暂无新内容</span>
-            <strong id="healthMetricQuiet">--</strong>
-            <small>接口正常，但时效窗口内为空</small>
-          </article>
-          <article>
-            <span>待处理</span>
+            <span>需关注</span>
             <strong id="healthMetricAttention">--</strong>
-            <small>待配置或抓取异常</small>
+            <small id="healthAttentionDetail">暂无内容、待配置或抓取异常</small>
           </article>
         </div>
 
@@ -492,6 +492,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=20260715d"></script>
+    <script src="./app.js?v=20260715e"></script>
   </body>
 </html>
