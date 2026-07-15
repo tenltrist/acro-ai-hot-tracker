@@ -35,14 +35,62 @@ const sourceInventory = [
     layer: "official",
     number: "01",
     title: "官方自有来源",
-    subtitle: "公司自己确认发布的产品、活动、合作、财务和区域动态。优先进入 MVP，但 HTML 页面要观察稳定性。",
+    subtitle: "这 6 类已经逐一实测。能用免费 RSS 的直接接入；官网直抓遇到验证码或 403 时，改用公开索引 RSS，不绕过网站限制。",
     sources: [
-      { name: "ACRO 全球官网 News", status: "trial", trust: "A", method: "HTML 抓取", note: "价值最高，需监控页面结构变化和防护脚本", url: "acrobiosystems.com/news" },
-      { name: "ACRO 日本官网", status: "trial", trust: "A", method: "HTML 抓取", note: "区域市场信号，需筛选 news/event/webinar 链接", url: "jp.acrobiosystems.com" },
-      { name: "Thermo Fisher IR RSS", status: "enabled", trust: "A", method: "RSS", note: "官方新闻稿 RSS，稳定可用", url: "ir.thermofisher.com/rss/pressrelease.aspx" },
-      { name: "Thermo Fisher newsroom", status: "trial", trust: "A", method: "HTML 抓取", note: "返回 403，需评估是否切到 RSS 或放弃" },
-      { name: "IR 页 / 财报 / 公告", status: "watchlist", trust: "A", method: "RSS / HTML", note: "上市公司公告；后续按公司补充" },
-      { name: "产品页 / Blog / 资源库", status: "watchlist", trust: "A", method: "HTML 抓取", note: "内容营销和技术文章，先记录不自动抓" },
+      {
+        name: "ACRO 全球官网 News",
+        status: "enabled",
+        trust: "A",
+        method: "官网定向 RSS",
+        note: "官网直抓会进入滑块验证，现用 Google News 的 site 定向 RSS 获取官网已收录新闻。",
+        result: "近 90 天命中 1 条，PMDA 相关内容质量高",
+        url: "acrobiosystems.com/news",
+      },
+      {
+        name: "ACRO Events / Webinar",
+        status: "enabled",
+        trust: "A",
+        method: "官网定向 RSS",
+        note: "监控官网 activities 栏目，并在抓取前排除礼品、问卷、优惠和免费样品等营销噪音。",
+        result: "清洗后保留 4 条活动，空标题和促销内容已排除",
+        url: "acrobiosystems.com/activities",
+      },
+      {
+        name: "ACRO 日本官网",
+        status: "enabled",
+        trust: "A",
+        method: "日文站定向 RSS",
+        note: "日本站同样有滑块验证；改用 jp 域名定向 RSS，并限制在 180 天内。",
+        result: "180 天内命中 2 条，当前以日本产品页更新为主",
+        url: "jp.acrobiosystems.com",
+      },
+      {
+        name: "Thermo Fisher IR / Press Release",
+        status: "enabled",
+        trust: "A",
+        method: "官方 RSS",
+        note: "直接读取官方结构化新闻稿，日期、标题和链接完整，是当前最稳定的官方来源。",
+        result: "实测返回 10 条，HTTP 200，结构稳定",
+        url: "ir.thermofisher.com/rss/pressrelease.aspx",
+      },
+      {
+        name: "Thermo Fisher Newsroom",
+        status: "covered",
+        trust: "A",
+        method: "IR RSS 替代",
+        note: "Newsroom HTML 直抓返回 403，不单独抓取；同一批新闻稿由官方 IR RSS 覆盖，避免重复。",
+        result: "HTML 不可用，但内容链路没有缺口",
+        url: "newsroom.thermofisher.com",
+      },
+      {
+        name: "产品 / Blog / 资源库",
+        status: "enabled",
+        trust: "A",
+        method: "RSS + 定向 RSS",
+        note: "接入 Thermo Biotech at Scale 官方 RSS，以及 ACRO Insights 的主题定向 RSS；只保留 180 天内内容。",
+        result: "Thermo 3 个 Blog RSS 均可用，优先选最贴近生物医药的一条",
+        url: "thermofisher.com/blog/biotechnology",
+      },
     ],
   },
   {
@@ -357,6 +405,7 @@ function renderRules() {
                       ${src.url ? `<span class="url-hint">${escapeHtml(src.url)}</span>` : ""}
                     </div>
                     <p class="source-card-note">${escapeHtml(src.note)}</p>
+                    ${src.result ? `<div class="source-card-result"><span>实测</span>${escapeHtml(src.result)}</div>` : ""}
                   </article>
                 `,
               )
@@ -375,6 +424,7 @@ function summaryForCategory(cat) {
   }
   const parts = [];
   if (counts.enabled) parts.push(`${counts.enabled} 已启用`);
+  if (counts.covered) parts.push(`${counts.covered} 已覆盖`);
   if (counts.trial) parts.push(`${counts.trial} 试运行`);
   if (counts.watchlist) parts.push(`${counts.watchlist} 观察中`);
   if (counts.manual) parts.push(`${counts.manual} 人工`);
@@ -486,6 +536,7 @@ function renderSources() {
 function labelStatus(status) {
   return {
     enabled: "已启用",
+    covered: "已覆盖",
     trial: "试运行",
     watchlist: "观察中",
     manual: "人工",

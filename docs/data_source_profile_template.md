@@ -372,8 +372,9 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 
 本周 Demo 的数据源边界建议保持克制：
 
-- `enabled`：Google News RSS、官方 RSS、新闻稿平台可访问 RSS。
-- `trial`：ACRO 官网新闻页、区域官网新闻/活动页。
+- `enabled`：Google News RSS、官方 RSS、官网定向 RSS、新闻稿平台可访问 RSS。
+- `covered`：HTML 直抓失败、但同一内容已由官方 RSS 覆盖的页面。
+- `trial`：公开 sitemap 变化监控等可访问但尚未证明内容质量的方式。
 - `manual`：LinkedIn、微信公众号、重要展会页。
 - `blocked`：登录平台、反爬严重网站、付费墙、私域内容。
 - `paid_later`：商业新闻 API、企业情报数据库、LinkedIn 官方 API、微信生态监控服务。
@@ -381,3 +382,16 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 这样对外表达时可以说：
 
 > 第一阶段已经建立完整的数据源档案，但自动化抓取只启用低风险公开来源。LinkedIn、微信公众号、登录平台和反爬严重网站会进入情报地图，不会在 MVP 阶段强行自动抓取。后续会根据价值、稳定性、合规和预算，决定人工、半自动、API 或付费接入方式。
+
+### 11.1 2026-07-15 官方自有来源实测
+
+| 官方来源 | 实测结果 | 当前处理 |
+| --- | --- | --- |
+| ACRO 全球官网 News | HTTP 200，但返回阿里云滑块验证页，简单 HTML 抓取为 0 条 | 使用 `site:acrobiosystems.com/news` 的 Google News RSS |
+| ACRO Events / Webinar | 直抓同样触发滑块验证 | 使用 activities 定向 RSS，并过滤礼品、问卷、优惠等噪音 |
+| ACRO 日本官网 | 直抓同样触发滑块验证 | 使用 `site:jp.acrobiosystems.com` 日文定向 RSS，限制 180 天 |
+| Thermo Fisher IR / Press Release | 官方 RSS 返回 HTTP 200，单次 10 条，结构完整 | 直接启用 |
+| Thermo Fisher Newsroom | HTML 返回 403 | 不直接抓；新闻稿由 IR RSS 覆盖 |
+| 产品 / Blog / 资源库 | Thermo 的 3 个官方 Blog RSS 均返回 10 条；ACRO Insights 可被定向 RSS 收录 | 启用 Biotech at Scale RSS + ACRO Insights 定向 RSS |
+
+补充测试：ACRO 公开 sitemap 可以免费访问，英文约 9,267 个 URL、日文约 8,666 个 URL，但大量页面共享同一个 `lastmod` 日期，不适合直接当作“当天新内容”。现阶段只把 sitemap 作为栏目发现和未来新增 URL 监控候选，不把几千个页面灌入日报。

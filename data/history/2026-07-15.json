@@ -1,30 +1,34 @@
 {
   "date": "2026-07-15",
   "summary": {
-    "new_candidates": 9,
+    "new_candidates": 0,
     "immediate": 0,
-    "daily": 33,
-    "archive": 163,
+    "daily": 34,
+    "archive": 180,
     "errors": 0,
     "companies": 2,
-    "sources": 7
+    "sources": 11
   },
   "category_mix": {
-    "product": 12,
-    "market": 11,
-    "company": 129,
-    "finance": 3,
-    "partnership": 20,
-    "regulatory": 12,
-    "event": 9
+    "product": 24,
+    "partnership": 21,
+    "event": 6,
+    "regulatory": 15,
+    "company": 133,
+    "market": 9,
+    "finance": 6
   },
   "source_mix": {
-    "Google News RSS - ACROBiosystems": 21,
+    "ACRO official News - indexed RSS": 2,
+    "ACRO official Events and Webinars - indexed RSS": 4,
+    "ACRO official Insights - indexed RSS": 7,
+    "ACRO Japan official pages - indexed RSS": 2,
+    "Google News RSS - ACROBiosystems": 20,
     "Google News RSS - ACROBiosystems Japan": 1,
-    "Google News RSS - ACROBiosystems PR Newswire": 13,
-    "Thermo Fisher official press releases RSS": 10,
-    "Thermo Fisher newsroom": 1,
-    "Google News RSS - Thermo Fisher": 100,
+    "Google News RSS - ACROBiosystems PR Newswire": 11,
+    "Thermo Fisher official press releases RSS": 9,
+    "Thermo Fisher Biotech at Scale RSS": 10,
+    "Google News RSS - Thermo Fisher": 98,
     "Google News RSS - Thermo Fisher Japan": 50
   }
 }

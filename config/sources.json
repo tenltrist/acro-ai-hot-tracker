@@ -1,27 +1,62 @@
 {
   "sources": [
     {
-      "id": "acro_official_news",
-      "label": "ACROBiosystems official news",
-      "type": "html_links",
-      "url": "https://www.acrobiosystems.com/news",
+      "id": "acro_official_news_index",
+      "label": "ACRO official News - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aacrobiosystems.com%2Fnews&hl=en-US&gl=US&ceid=US:en",
       "company_id": "acro",
       "trust": "owned",
-      "include_url_terms": [
-        "/news"
+      "max_age_days": 365,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "acrobiosystems - acrobiosystems",
+        "qr code for surprises"
       ]
     },
     {
-      "id": "acro_japan_official",
-      "label": "ACROBiosystems Japan official site",
-      "type": "html_links",
-      "url": "https://jp.acrobiosystems.com/",
+      "id": "acro_official_activities_index",
+      "label": "ACRO official Events and Webinars - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aacrobiosystems.com%2Factivities&hl=en-US&gl=US&ceid=US:en",
       "company_id": "acro",
       "trust": "owned",
-      "include_url_terms": [
-        "news",
-        "event",
-        "webinar"
+      "category_hint": "event",
+      "max_age_days": 180,
+      "max_items": 30,
+      "exclude_text_terms": [
+        "acrobiosystems - acrobiosystems",
+        "llama",
+        "gift",
+        "coupon",
+        "promotion",
+        "questionnaire",
+        "survey",
+        "free sample"
+      ]
+    },
+    {
+      "id": "acro_official_insights_index",
+      "label": "ACRO official Insights - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aacrobiosystems.com%2Finsights%20%28ADC%20OR%20CGT%20OR%20GMP%20OR%20organoid%20OR%20antibody%29&hl=en-US&gl=US&ceid=US:en",
+      "company_id": "acro",
+      "trust": "owned",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "acro_japan_official_index",
+      "label": "ACRO Japan official pages - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Ajp.acrobiosystems.com&hl=ja&gl=JP&ceid=JP:ja",
+      "company_id": "acro",
+      "trust": "owned",
+      "max_age_days": 180,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "certificate of analysis",
+        "download"
       ]
     },
     {
@@ -57,17 +92,14 @@
       "trust": "owned"
     },
     {
-      "id": "thermo_newsroom",
-      "label": "Thermo Fisher newsroom",
-      "type": "html_links",
-      "url": "https://newsroom.thermofisher.com/newsroom/press-releases/",
+      "id": "thermo_biotech_blog_rss",
+      "label": "Thermo Fisher Biotech at Scale RSS",
+      "type": "rss",
+      "url": "https://www.thermofisher.com/blog/biotechnology/feed/",
       "company_id": "thermo_fisher",
       "trust": "owned",
-      "include_url_terms": [
-        "newsroom",
-        "press-releases",
-        "news-releases"
-      ]
+      "max_age_days": 180,
+      "max_items": 15
     },
     {
       "id": "google_news_thermo",

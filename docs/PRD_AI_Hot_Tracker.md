@@ -135,7 +135,7 @@ AI Hot Tracker 不是普通新闻聚合站，也不是实时舆情系统。
 - 归档观察：201 条
 - 公司数量：2 家
 - 来源数量：6 个
-- 已知抓取警告：Thermo Fisher newsroom HTML 页面返回 403，但官方 RSS 和 Google News 来源可用。
+- 已知抓取边界：ACRO 官网直抓触发滑块验证，Thermo Fisher newsroom HTML 返回 403；当前分别使用官网定向 RSS 和官方 IR RSS，不绕过网站限制。
 
 ### 5.3 当前不能解决的问题
 

@@ -50,6 +50,7 @@ class Candidate:
     score: int = 0
     tier: str = "archive"
     category: str = "uncategorized"
+    category_hint: str = ""
     reasons: list[str] = field(default_factory=list)
 
     @property
@@ -289,7 +290,7 @@ def extract_meaningful_summary(raw_description: str, title: str) -> str:
 
 def parse_rss(source: dict[str, Any]) -> list[Candidate]:
     text = fetch_text(source["url"])
-    root = ET.fromstring(text)
+    root = ET.fromstring(text.lstrip())
     items: list[Candidate] = []
     for item in root.findall(".//item"):
         title = clean_text(item.findtext("title", ""))
@@ -297,19 +298,41 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
         if not title or not link or is_html_noise(title):
             continue
         raw_desc = item.findtext("description", "")
-        items.append(
-            Candidate(
-                company_id=source["company_id"],
-                source_id=source["id"],
-                source_label=source["label"],
-                source_trust=source.get("trust", "unknown"),
-                title=title,
-                url=link,
-                published=parse_date(item.findtext("pubDate", "")),
-                summary=extract_meaningful_summary(raw_desc, title),
-            )
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "unknown"),
+            title=title,
+            url=link,
+            published=parse_date(item.findtext("pubDate", "")),
+            summary=extract_meaningful_summary(raw_desc, title),
+            category_hint=source.get("category_hint", ""),
         )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
     return items
+
+
+def source_allows_candidate(source: dict[str, Any], item: Candidate) -> bool:
+    """Apply source-specific quality gates before global scoring."""
+    blob = f"{item.title} {item.summary} {item.url}".lower()
+    include_terms = [term.lower() for term in source.get("include_text_terms", [])]
+    exclude_terms = [term.lower() for term in source.get("exclude_text_terms", [])]
+
+    if include_terms and not any(term in blob for term in include_terms):
+        return False
+    if exclude_terms and any(term in blob for term in exclude_terms):
+        return False
+
+    source_age_limit = source.get("max_age_days")
+    item_age = age_days(item.published)
+    if source_age_limit is not None and item_age is not None and item_age > source_age_limit:
+        return False
+    return True
 
 
 def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
@@ -334,6 +357,7 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
                 source_trust=source.get("trust", "unknown"),
                 title=title,
                 url=absolute,
+                category_hint=source.get("category_hint", ""),
             )
         )
     return items
@@ -356,15 +380,25 @@ def collect_candidates(sources: list[dict[str, Any]]) -> tuple[list[Candidate], 
 
 
 def dedupe(candidates: list[Candidate]) -> list[Candidate]:
-    seen: set[str] = set()
+    seen_urls: set[str] = set()
+    seen_titles: set[str] = set()
     unique: list[Candidate] = []
     for item in candidates:
-        key = normalize_url(item.url)
-        if key in seen:
+        url_key = normalize_url(item.url)
+        title_key = normalize_title(item.title)
+        if url_key in seen_urls or (len(title_key) >= 30 and title_key in seen_titles):
             continue
-        seen.add(key)
+        seen_urls.add(url_key)
+        if len(title_key) >= 30:
+            seen_titles.add(title_key)
         unique.append(item)
     return unique
+
+
+def normalize_title(value: str) -> str:
+    # Google News appends the publisher after the final " - ".
+    headline = re.sub(r"\s+-\s+[^-]{2,80}$", "", clean_text(value))
+    return re.sub(r"[^\w]+", "", headline, flags=re.UNICODE).lower()
 
 
 def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int) -> Candidate:
@@ -374,8 +408,9 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
 
     alias_hits = [alias for alias in company["aliases"] if alias.lower() in blob]
     if alias_hits:
-        score += 30
-        reasons.append("公司别名命中: " + ", ".join(alias_hits[:3]))
+        alias_score = 15 if item.source_trust == "owned" else 30
+        score += alias_score
+        reasons.append(f"公司别名命中 +{alias_score}: " + ", ".join(alias_hits[:3]))
 
     if item.source_trust == "owned":
         score += 15
@@ -396,7 +431,7 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
         score -= 35
         reasons.append("噪音词命中: " + ", ".join(noise_hits[:3]))
 
-    item.category = classify_item(blob)
+    item.category = item.category_hint or classify_item(item.title.lower())
 
     # Category bonus: high-value signal types get extra points
     category_bonus = {
@@ -404,7 +439,7 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
         "product": 10,
         "regulatory": 8,
         "market": 8,
-        "event": 5,
+        "event": 10,
     }
     bonus = category_bonus.get(item.category, 0)
     if bonus:
@@ -414,7 +449,10 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
     item_age = age_days(item.published)
     has_action = bool(action_hits)
     if item_age is not None and item_age > max_age_days:
-        if has_action and score >= 40:
+        if item_age > max_age_days * 2:
+            score = min(score, 25)
+            reasons.append(f"超过硬性时效上限: {item_age} 天前")
+        elif has_action and score >= 40:
             # Business-action items with solid base score survive age degradation
             score = max(score - 10, 40)
             reasons.append(f"超过时效窗口 {item_age}天，因业务动作匹配保留")
@@ -431,10 +469,10 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
 def classify_item(blob: str) -> str:
     category_terms = [
         ("partnership", ["collaboration", "partner", "mou", "agreement"]),
-        ("product", ["launch", "release", "gmp-grade", "kit", "protein", "antibody"]),
-        ("event", ["webinar", "conference", "exhibition", "summit", "event"]),
+        ("product", ["launch", "release", "unveil", "introduce", "platform", "technology", "analyzer", "spectrometer", "bioreactor", "centrifuge", "gmp-grade", "kit", "protein", "antibody"]),
+        ("event", ["webinar", "conference", "exhibition", "summit", "event", "meeting"]),
         ("regulatory", ["fda", "ema", "pmda", "regulatory", "clinical"]),
-        ("finance", ["ipo", "buyback", "price target", "forecast", "tradingview"]),
+        ("finance", ["ipo", "buyback", "dividend", "investor day", "quarter results", "price target", "forecast", "tradingview"]),
         ("award", ["award", "recognition"]),
         ("market", ["japan", "日本", "global", "expansion"])
     ]

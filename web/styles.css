@@ -626,6 +626,23 @@ select {
   line-height: 1.45;
 }
 
+.source-card-result {
+  display: flex;
+  gap: 7px;
+  align-items: flex-start;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.source-card-result span {
+  color: var(--teal);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 /* ── status pills ── */
 
 .status-pill {
@@ -645,6 +662,11 @@ select {
 .status-pill.enabled {
   background: var(--teal-soft);
   color: #075f69;
+}
+
+.status-pill.covered {
+  background: #e8edf8;
+  color: var(--blue);
 }
 
 .status-pill.trial {
