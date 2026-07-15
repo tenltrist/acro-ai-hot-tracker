@@ -740,6 +740,7 @@ def build_dashboard_payload(
     errors: list[str],
     seen: dict[str, Any],
     company_lookup: dict[str, dict[str, Any]],
+    source_config: list[dict[str, Any]],
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
 ) -> dict[str, Any]:
@@ -758,6 +759,51 @@ def build_dashboard_payload(
         sources[item.source_label] = sources.get(item.source_label, 0) + 1
         signal_types[item.signal_type] = signal_types.get(item.signal_type, 0) + 1
 
+    errors_by_source: dict[str, str] = {}
+    for error in errors:
+        source_id, _, message = error.partition(": ")
+        errors_by_source[source_id] = message or error
+
+    source_health: list[dict[str, Any]] = []
+    for source in source_config:
+        source_items = [item for item in candidates if item.source_id == source["id"]]
+        tier_counts = {
+            tier: sum(1 for item in source_items if item.tier == tier)
+            for tier in ("immediate", "daily", "archive")
+        }
+        enabled = source.get("enabled", True) is not False
+        if not enabled:
+            status = "pending"
+        elif source["id"] in errors_by_source:
+            status = "error"
+        elif source_items:
+            status = "productive" if tier_counts["immediate"] + tier_counts["daily"] else "archive_only"
+        else:
+            status = "quiet"
+        dated_items = [item.published for item in source_items if item.published]
+        source_health.append(
+            {
+                "source_id": source["id"],
+                "source_label": source["label"],
+                "company_id": source["company_id"],
+                "company": company_lookup.get(source["company_id"], {}).get("display_name", source["company_id"]),
+                "source_type": source["type"],
+                "signal_type": source.get("signal_type", "news"),
+                "enabled": enabled,
+                "status": status,
+                "total": len(source_items),
+                "immediate": tier_counts["immediate"],
+                "daily": tier_counts["daily"],
+                "archive": tier_counts["archive"],
+                "selected_rate": round(
+                    ((tier_counts["immediate"] + tier_counts["daily"]) / len(source_items)) * 100
+                ) if source_items else 0,
+                "last_published": max(dated_items) if dated_items else "",
+                "error": errors_by_source.get(source["id"], ""),
+                "note": source.get("disabled_reason", ""),
+            }
+        )
+
     return {
         "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
         "window_days": max_age_days,
@@ -773,6 +819,7 @@ def build_dashboard_payload(
         "source_mix": sources,
         "category_mix": categories,
         "signal_type_mix": signal_types,
+        "source_health": source_health,
         "companies": [
             {
                 "id": company["id"],
@@ -906,7 +953,7 @@ def main() -> int:
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = REPORT_DIR / f"daily-{dt.date.today().isoformat()}.md"
     out_path.write_text(report, encoding="utf-8")
-    payload = build_dashboard_payload(scored, errors, seen, company_lookup, args.days, ai_summaries)
+    payload = build_dashboard_payload(scored, errors, seen, company_lookup, sources, args.days, ai_summaries)
     save_json(LATEST_RUN_PATH, payload)
     write_static_api(payload)
 

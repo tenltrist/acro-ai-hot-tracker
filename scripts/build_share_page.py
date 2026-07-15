@@ -27,9 +27,9 @@ def main() -> int:
     if history_files:
         history_payload = json.dumps(json.loads(history_files[-1].read_text(encoding="utf-8")), ensure_ascii=False, indent=2)
 
-    html = html.replace('    <link rel="stylesheet" href="./styles.css?v=20260715b" />', f"    <style>\n{css}\n    </style>")
+    html = html.replace('    <link rel="stylesheet" href="./styles.css?v=20260715c" />', f"    <style>\n{css}\n    </style>")
     embedded = f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\nwindow.AIHOT_EMBEDDED_HISTORY = {history_payload};"
-    html = html.replace('    <script src="./app.js?v=20260715b"></script>', f"    <script>\n{embedded}\n    </script>\n    <script>\n{js}\n    </script>")
+    html = html.replace('    <script src="./app.js?v=20260715c"></script>', f"    <script>\n{embedded}\n    </script>\n    <script>\n{js}\n    </script>")
 
     SHARE_DIR.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(html, encoding="utf-8")

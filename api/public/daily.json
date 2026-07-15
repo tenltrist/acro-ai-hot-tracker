@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-15T16:41:17",
+  "generated_at": "2026-07-15T17:01:04",
   "window_days": 90,
   "summary": {
-    "new_candidates": 5,
+    "new_candidates": 6,
     "immediate": 0,
-    "daily": 38,
-    "archive": 204,
+    "daily": 39,
+    "archive": 201,
     "errors": 0,
     "companies": 2,
     "sources": 15
@@ -162,14 +162,14 @@
       "age_days": 47
     },
     {
-      "id": "e48cf246036e807e",
+      "id": "bb35aa8eb5e34e23",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "source_id": "bing_news_thermo_backup",
       "source_label": "Bing News RSS - Thermo Fisher backup",
       "source_trust": "aggregator",
       "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3dd312447db61c25cd773a0011&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
       "published": "2026-06-29",
       "summary": "Genedrive (LSE:GDR) has entered into a collaboration agreement with Thermo Fisher Scientific to develop the Genedrive CYP2C19 HT Kit, a high-throughput pharmacogenetic in vitro diagnostic test ...",
       "ai_summary": "",
@@ -234,6 +234,31 @@
         "高价值分类加成 +10: partnership"
       ],
       "age_days": 4
+    },
+    {
+      "id": "6e9ac55b265d023b",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Clinical Trials Arena",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
+      "published": "2026-07-03",
+      "summary": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial Clinical Trials Arena",
+      "ai_summary": "",
+      "score": 54,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: Thermo Fisher",
+        "战略主题命中: clinical trials",
+        "业务动作命中: clinical",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 12
     },
     {
       "id": "a77ead977ed02666",
@@ -390,14 +415,14 @@
       "age_days": 154
     },
     {
-      "id": "0de448d42361844e",
+      "id": "7dd44d60090ed144",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "source_id": "bing_news_acro_backup",
       "source_label": "Bing News RSS - ACROBiosystems backup",
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab8964ac3858405f86f5ce0f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3b4af748a99fe684b0edbfbd82&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "東京およびデラウェア州ニューアーク、2026年4月30日 /PRNewswire/ -- 世界のバイオ医薬品・ヘルスケア産業の礎となることを ...",
       "ai_summary": "",
@@ -414,14 +439,14 @@
       "age_days": 69
     },
     {
-      "id": "b7ebe26e2653a95a",
+      "id": "9c9bbfabcc62f2f5",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "source_id": "bing_news_acro_backup",
       "source_label": "Bing News RSS - ACROBiosystems backup",
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab8964ac3858405f86f5ce0f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3b4af748a99fe684b0edbfbd82&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "東京、2026年5月11日 /PRNewswire/ -- ACROBiosystemsは、機能性HEK293細胞株のグローバル・ライセンス・ソリューションの大幅な ...",
       "ai_summary": "",
@@ -754,14 +779,14 @@
       "age_days": 57
     },
     {
-      "id": "afc6e7fe98d317d6",
+      "id": "1a4b7b8b4134ef71",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "source_id": "bing_news_thermo_backup",
       "source_label": "Bing News RSS - Thermo Fisher backup",
       "source_trust": "aggregator",
       "title": "Arcturus Therapeutics Announces Strategic Collaboration with Thermo Fisher Scientific to ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3dd312447db61c25cd773a0011&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
       "published": "2026-07-02",
       "summary": "Arcturus Therapeutics Holdings Inc. (\"Arcturus\", Nasdaq: ARCT), a messenger RNA medicines company focused on the development of liver and respiratory rare disease therapeutics, today announced a ...",
       "ai_summary": "",

@@ -27,6 +27,8 @@ const state = {
   category: "all",
   searchQuery: "",
   page: "overview",
+  healthCompany: "all",
+  healthStatus: "all",
   feedback: loadFeedback(),
   history: null,
 };
@@ -237,6 +239,7 @@ const pageMeta = {
   acro: ["Company Profile", "ACRO 样本档案"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
   questions: ["Open Questions", "待确认事项"],
+  "source-health": ["Source Operations", "数据源健康与产出质量"],
 };
 
 const companyIdToDisplayName = {
@@ -323,6 +326,15 @@ const els = {
   refreshButton: document.querySelector("#refreshButton"),
   healthStatus: document.querySelector("#healthStatus"),
   healthList: document.querySelector("#healthList"),
+  healthGeneratedAt: document.querySelector("#healthGeneratedAt"),
+  healthMetricProducing: document.querySelector("#healthMetricProducing"),
+  healthMetricSelected: document.querySelector("#healthMetricSelected"),
+  healthMetricQuiet: document.querySelector("#healthMetricQuiet"),
+  healthMetricAttention: document.querySelector("#healthMetricAttention"),
+  healthCompanyFilter: document.querySelector("#healthCompanyFilter"),
+  healthStatusFilter: document.querySelector("#healthStatusFilter"),
+  healthRowCount: document.querySelector("#healthRowCount"),
+  healthTableBody: document.querySelector("#healthTableBody"),
   trendList: document.querySelector("#trendList"),
   trendDays: document.querySelector("#trendDays"),
   pageEyebrow: document.querySelector("#pageEyebrow"),
@@ -340,6 +352,7 @@ async function loadData() {
     hydrateFilters();
     render();
     renderSourceHealth();
+    renderSourceHealthPage();
     renderTrend();
     return;
   }
@@ -373,6 +386,7 @@ async function loadData() {
   hydrateFilters();
   render();
   renderSourceHealth();
+  renderSourceHealthPage();
   renderTrend();
 }
 
@@ -701,6 +715,115 @@ function renderSourceHealth() {
     .join("");
 }
 
+function getSourceHealthRows() {
+  if (Array.isArray(state.payload.source_health)) return state.payload.source_health;
+  const grouped = {};
+  for (const item of state.payload.items || []) {
+    const id = item.source_id || item.source_label;
+    if (!grouped[id]) {
+      grouped[id] = {
+        source_id: id,
+        source_label: item.source_label,
+        company_id: item.company_id || "",
+        company: item.company,
+        source_type: "unknown",
+        signal_type: item.signal_type || "news",
+        status: "archive_only",
+        total: 0,
+        immediate: 0,
+        daily: 0,
+        archive: 0,
+        selected_rate: 0,
+        last_published: "",
+        error: "",
+        note: "",
+      };
+    }
+    const row = grouped[id];
+    row.total += 1;
+    row[item.tier] = (row[item.tier] || 0) + 1;
+    if (item.published && item.published > row.last_published) row.last_published = item.published;
+  }
+  return Object.values(grouped).map((row) => {
+    const selected = row.immediate + row.daily;
+    row.selected_rate = row.total ? Math.round((selected / row.total) * 100) : 0;
+    row.status = selected ? "productive" : "archive_only";
+    return row;
+  });
+}
+
+function renderSourceHealthPage() {
+  const rows = getSourceHealthRows();
+  const companies = [...new Set(rows.map((row) => row.company).filter(Boolean))].sort();
+  const previousCompany = els.healthCompanyFilter.value || state.healthCompany;
+  els.healthCompanyFilter.innerHTML = '<option value="all">全部公司</option>';
+  for (const company of companies) {
+    const option = document.createElement("option");
+    option.value = company;
+    option.textContent = company;
+    els.healthCompanyFilter.appendChild(option);
+  }
+  state.healthCompany = companies.includes(previousCompany) ? previousCompany : "all";
+  els.healthCompanyFilter.value = state.healthCompany;
+
+  els.healthGeneratedAt.textContent = `本轮运行 ${formatDateTime(state.payload.generated_at)}`;
+  els.healthMetricProducing.textContent = rows.filter((row) => row.total > 0).length;
+  els.healthMetricSelected.textContent = rows.filter((row) => row.immediate + row.daily > 0).length;
+  els.healthMetricQuiet.textContent = rows.filter((row) => row.status === "quiet").length;
+  els.healthMetricAttention.textContent = rows.filter((row) => ["pending", "error"].includes(row.status)).length;
+
+  const visible = rows
+    .filter((row) => state.healthCompany === "all" || row.company === state.healthCompany)
+    .filter((row) => state.healthStatus === "all" || row.status === state.healthStatus)
+    .sort((a, b) => {
+      const order = { error: 0, pending: 1, quiet: 2, archive_only: 3, productive: 4 };
+      return (order[a.status] ?? 9) - (order[b.status] ?? 9) || b.total - a.total;
+    });
+
+  els.healthRowCount.textContent = `显示 ${visible.length} / ${rows.length} 个运行入口`;
+  if (!visible.length) {
+    els.healthTableBody.innerHTML = '<div class="health-table-empty">当前筛选下没有数据源。</div>';
+    return;
+  }
+
+  els.healthTableBody.innerHTML = visible
+    .map((row) => {
+      const selected = row.immediate + row.daily;
+      const detail = row.error || row.note || healthStatusDescription(row.status);
+      return `<div class="health-table-row" role="row">
+        <span class="health-name"><strong>${escapeHtml(row.source_label)}</strong><small>${escapeHtml(row.company || row.company_id)}</small></span>
+        <span><span class="health-type">${escapeHtml(labelSignalType(row.signal_type))}</span><small>${escapeHtml(row.source_type)}</small></span>
+        <strong>${row.total}</strong>
+        <strong class="health-selected">${selected}</strong>
+        <span>${row.archive}</span>
+        <span>${row.selected_rate}%</span>
+        <span>${escapeHtml(row.last_published || "—")}</span>
+        <span class="health-status-cell"><span class="health-state ${row.status}">${healthStatusLabel(row.status)}</span><small title="${escapeAttr(detail)}">${escapeHtml(detail)}</small></span>
+      </div>`;
+    })
+    .join("");
+}
+
+function healthStatusLabel(status) {
+  return {
+    productive: "有效产出",
+    archive_only: "仅归档",
+    quiet: "暂无内容",
+    pending: "待配置",
+    error: "抓取异常",
+  }[status] || status;
+}
+
+function healthStatusDescription(status) {
+  return {
+    productive: "本轮有内容进入日报",
+    archive_only: "本轮产出均为归档观察",
+    quiet: "时效窗口内暂无新内容",
+    pending: "需完成配置后再启用",
+    error: "本轮请求失败",
+  }[status] || "";
+}
+
 function renderTrend() {
   if (!state.history) {
     els.trendList.innerHTML = '<div class="trend-empty">暂无历史数据对比</div>';
@@ -891,6 +1014,16 @@ els.companyFilter.addEventListener("change", (event) => {
 });
 
 els.refreshButton.addEventListener("click", loadData);
+
+els.healthCompanyFilter.addEventListener("change", (event) => {
+  state.healthCompany = event.target.value;
+  renderSourceHealthPage();
+});
+
+els.healthStatusFilter.addEventListener("change", (event) => {
+  state.healthStatus = event.target.value;
+  renderSourceHealthPage();
+});
 
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {

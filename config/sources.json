@@ -180,7 +180,7 @@
       ],
       "max_age_days": 365,
       "max_items": 12,
-      "disabled_reason": "SEC requires a descriptive User-Agent with a real contact email; parser is ready but collection stays off until that contact is configured."
+      "disabled_reason": "SEC 要求 User-Agent 包含真实联系邮箱；解析器已完成，配置联系方式前保持关闭。"
     },
     {
       "id": "thermo_openfda_monitor",

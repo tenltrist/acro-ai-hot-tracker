@@ -3523,5 +3523,104 @@
     "tier": "daily",
     "score": 56,
     "signal_type": "news"
+  },
+  "b5a4b87a110734e6": {
+    "first_seen": "2026-07-15T16:58:23",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573d9c5a3545f5841430fb03888a3c&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "57dd8738b6a0e15a": {
+    "first_seen": "2026-07-15T16:58:23",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573d9c5a3545f5841430fb03888a3c&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "4d738aefb7793cf5": {
+    "first_seen": "2026-07-15T16:58:23",
+    "title": "Arcturus Therapeutics Announces Strategic Collaboration with Thermo Fisher Scientific to ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573d9c0ca8433f9a3d2a1fec302812&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "6328efd0828bcf8c": {
+    "first_seen": "2026-07-15T16:58:23",
+    "title": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573d9c0ca8433f9a3d2a1fec302812&url=https%3A%2F%2Fwww.gazettextra.com%2Fnews%2Fnation_world%2Fthermo-fisher-scientific-receives-first-fbi-approval-for-rapid-dna-crime-scene-profiles-eligible-for%2Farticle_e2e50a92-6aa5-5a94-8b87-4f97a5bce2fb.html&c=6217577270852605628&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "292e091c10aee920": {
+    "first_seen": "2026-07-15T16:58:23",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573d9c0ca8433f9a3d2a1fec302812&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "7dd44d60090ed144": {
+    "first_seen": "2026-07-15T17:01:04",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3b4af748a99fe684b0edbfbd82&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "9c9bbfabcc62f2f5": {
+    "first_seen": "2026-07-15T17:01:04",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3b4af748a99fe684b0edbfbd82&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "1a4b7b8b4134ef71": {
+    "first_seen": "2026-07-15T17:01:04",
+    "title": "Arcturus Therapeutics Announces Strategic Collaboration with Thermo Fisher Scientific to ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3dd312447db61c25cd773a0011&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "f4a2bd61e303a434": {
+    "first_seen": "2026-07-15T17:01:04",
+    "title": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3dd312447db61c25cd773a0011&url=https%3A%2F%2Fwww.gazettextra.com%2Fnews%2Fnation_world%2Fthermo-fisher-scientific-receives-first-fbi-approval-for-rapid-dna-crime-scene-profiles-eligible-for%2Farticle_e2e50a92-6aa5-5a94-8b87-4f97a5bce2fb.html&c=6217577270852605628&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "bb35aa8eb5e34e23": {
+    "first_seen": "2026-07-15T17:01:04",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3dd312447db61c25cd773a0011&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "669ec69c55ae9a11": {
+    "first_seen": "2026-07-15T17:01:04",
+    "title": "After financial incentives pass, Thermo Fisher to invest in existing Middleton campus",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a573e3dd312447db61c25cd773a0011&url=https%3A%2F%2Fmadison.com%2Fnews%2Flocal%2Fbusiness%2Farticle_d92265c3-771a-4e2d-af49-5e84f3ef78a5.html&c=7958804077440604534&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260715b" />
+    <link rel="stylesheet" href="./styles.css?v=20260715c" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -22,6 +22,7 @@
         <button type="button" data-page-target="acro">📋 ACRO 档案</button>
         <button type="button" data-page-target="pipeline">⚙️ 系统链路</button>
         <button type="button" data-page-target="questions">❓ 待确认</button>
+        <button type="button" data-page-target="source-health">数据源健康</button>
       </nav>
 
       <div class="company-dock" aria-label="快捷筛选">
@@ -397,8 +398,83 @@
           <div><strong>展示语言</strong><span>中文、英文、日文，还是给日本团队做双语？</span></div>
         </div>
       </section>
+
+      <section class="source-health-section page-panel" data-page="source-health" aria-label="Source health dashboard">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">数据源健康</p>
+            <h2>用真实产出判断哪些来源值得继续维护</h2>
+          </div>
+          <span class="timestamp" id="healthGeneratedAt">加载中</span>
+        </div>
+
+        <div class="health-summary-grid">
+          <article>
+            <span>实际产出来源</span>
+            <strong id="healthMetricProducing">--</strong>
+            <small>本轮有内容进入数据集</small>
+          </article>
+          <article>
+            <span>日报贡献来源</span>
+            <strong id="healthMetricSelected">--</strong>
+            <small>至少有 1 条进入日报或提醒</small>
+          </article>
+          <article>
+            <span>暂无新内容</span>
+            <strong id="healthMetricQuiet">--</strong>
+            <small>接口正常，但时效窗口内为空</small>
+          </article>
+          <article>
+            <span>待处理</span>
+            <strong id="healthMetricAttention">--</strong>
+            <small>待配置或抓取异常</small>
+          </article>
+        </div>
+
+        <div class="health-legend" aria-label="健康状态说明">
+          <div><span class="health-dot productive"></span><strong>有效产出</strong><small>有内容进入日报</small></div>
+          <div><span class="health-dot archive-only"></span><strong>仅归档</strong><small>有内容，但目前没有达到推送阈值</small></div>
+          <div><span class="health-dot quiet"></span><strong>暂无内容</strong><small>可访问，但时效窗口内没有新记录</small></div>
+          <div><span class="health-dot pending"></span><strong>待配置</strong><small>规则已记录，目前不发起请求</small></div>
+        </div>
+
+        <div class="health-controls" aria-label="数据源健康筛选">
+          <select id="healthCompanyFilter" aria-label="按公司筛选数据源">
+            <option value="all">全部公司</option>
+          </select>
+          <select id="healthStatusFilter" aria-label="按健康状态筛选">
+            <option value="all">全部状态</option>
+            <option value="productive">有效产出</option>
+            <option value="archive_only">仅归档</option>
+            <option value="quiet">暂无内容</option>
+            <option value="pending">待配置</option>
+            <option value="error">抓取异常</option>
+          </select>
+          <span id="healthRowCount">--</span>
+        </div>
+
+        <div class="health-table" role="table" aria-label="数据源运行成绩">
+          <div class="health-table-row header" role="row">
+            <span>数据源</span>
+            <span>类型</span>
+            <span>候选</span>
+            <span>日报</span>
+            <span>归档</span>
+            <span>入选率</span>
+            <span>最后内容</span>
+            <span>状态</span>
+          </div>
+          <div id="healthTableBody"></div>
+        </div>
+
+        <div class="health-decisions">
+          <div><span>当前保留</span><strong>官方 RSS + 官网定向 RSS</strong><p>稳定、可解释，是 MVP 的核心来源。</p></div>
+          <div><span>备用补漏</span><strong>Bing News RSS</strong><p>只保留 Google News 没有覆盖的事件，避免重复转载。</p></div>
+          <div><span>下一个测试</span><strong>官网 Sitemap 新 URL 差分</strong><p>不依赖不准确的 lastmod，只监控新增页面。</p></div>
+        </div>
+      </section>
     </main>
 
-    <script src="./app.js?v=20260715b"></script>
+    <script src="./app.js?v=20260715c"></script>
   </body>
 </html>
