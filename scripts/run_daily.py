@@ -33,7 +33,7 @@ API_DIR = ROOT / "api" / "public"
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "AIHotTrackerMVP/0.1"
+    "AIHotTrackerMVP/0.2 (+https://github.com/tenltrist/acro-ai-hot-tracker)"
 )
 
 
@@ -51,6 +51,7 @@ class Candidate:
     tier: str = "archive"
     category: str = "uncategorized"
     category_hint: str = ""
+    signal_type: str = "news"
     reasons: list[str] = field(default_factory=list)
 
     @property
@@ -210,6 +211,19 @@ def parse_date(value: str) -> str:
     return parsed.astimezone().date().isoformat()
 
 
+def normalize_source_date(value: str) -> str:
+    """Normalize ISO, YYYYMMDD, and API date variants to YYYY-MM-DD."""
+    cleaned = clean_text(value)
+    if not cleaned:
+        return ""
+    if re.fullmatch(r"\d{8}", cleaned):
+        return f"{cleaned[:4]}-{cleaned[4:6]}-{cleaned[6:8]}"
+    match = re.match(r"(\d{4})[/-](\d{2})[/-](\d{2})", cleaned)
+    if match:
+        return "-".join(match.groups())
+    return parse_date(cleaned)
+
+
 def age_days(value: str) -> int | None:
     if not value:
         return None
@@ -308,6 +322,153 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
             published=parse_date(item.findtext("pubDate", "")),
             summary=extract_meaningful_summary(raw_desc, title),
             category_hint=source.get("category_hint", ""),
+            signal_type=source.get("signal_type", "news"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
+def parse_atom(source: dict[str, Any]) -> list[Candidate]:
+    text = fetch_text(source["url"])
+    root = ET.fromstring(text.lstrip())
+    atom = "{http://www.w3.org/2005/Atom}"
+    media = "{http://search.yahoo.com/mrss/}"
+    items: list[Candidate] = []
+    for entry in root.findall(f"{atom}entry"):
+        title = clean_text(entry.findtext(f"{atom}title", ""))
+        link_node = entry.find(f"{atom}link")
+        link = link_node.get("href", "") if link_node is not None else ""
+        description = clean_text(entry.findtext(f"{media}group/{media}description", ""))
+        if not title or not link or is_html_noise(title):
+            continue
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "unknown"),
+            title=title,
+            url=link,
+            published=normalize_source_date(entry.findtext(f"{atom}published", "")),
+            summary=description[:300].rstrip(),
+            category_hint=source.get("category_hint", ""),
+            signal_type=source.get("signal_type", "video"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
+def parse_sec_submissions(source: dict[str, Any]) -> list[Candidate]:
+    data = json.loads(fetch_text(source["url"]))
+    recent = data["filings"]["recent"]
+    include_forms = set(source.get("include_forms", []))
+    cik = str(data.get("cik", "")).lstrip("0")
+    items: list[Candidate] = []
+    for idx, form in enumerate(recent.get("form", [])):
+        if include_forms and form not in include_forms:
+            continue
+        accession = recent["accessionNumber"][idx]
+        primary_document = recent["primaryDocument"][idx]
+        description = clean_text(recent.get("primaryDocDescription", [""] * len(recent["form"]))[idx])
+        published = normalize_source_date(recent["filingDate"][idx])
+        url = (
+            f"https://www.sec.gov/Archives/edgar/data/{cik}/"
+            f"{accession.replace('-', '')}/{primary_document}"
+        )
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "regulator"),
+            title=f"Thermo Fisher SEC filing: {form} - {published}",
+            url=url,
+            published=published,
+            summary=f"SEC {form} filing. {description or primary_document}",
+            category_hint=source.get("category_hint", "finance"),
+            signal_type=source.get("signal_type", "filing"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
+def parse_openfda(source: dict[str, Any]) -> list[Candidate]:
+    data = json.loads(fetch_text(source["url"]))
+    items: list[Candidate] = []
+    for result in data.get("results", []):
+        firm = clean_text(result.get("recalling_firm", ""))
+        product = clean_text(result.get("product_description", ""))
+        recall_number = clean_text(result.get("recall_number", ""))
+        published = normalize_source_date(
+            result.get("report_date", "") or result.get("event_date_posted", "")
+        )
+        if not product or not recall_number:
+            continue
+        recall_query = urllib.parse.quote(f'recall_number:"{recall_number}"')
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "regulator"),
+            title=f"FDA recall {recall_number}: {product[:150]}",
+            url=f"https://api.fda.gov/device/enforcement.json?search={recall_query}",
+            published=published,
+            summary=(
+                f"Recalling firm: {firm}. Status: {result.get('status', '')}. "
+                f"Reason: {clean_text(result.get('reason_for_recall', ''))}"
+            )[:300],
+            category_hint=source.get("category_hint", "regulatory"),
+            signal_type=source.get("signal_type", "regulatory"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
+def parse_pubmed(source: dict[str, Any]) -> list[Candidate]:
+    search_data = json.loads(fetch_text(source["url"]))
+    ids = search_data.get("esearchresult", {}).get("idlist", [])
+    if not ids:
+        return []
+    summary_url = (
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+        f"?db=pubmed&id={','.join(ids)}&retmode=json"
+    )
+    summary_data = json.loads(fetch_text(summary_url)).get("result", {})
+    items: list[Candidate] = []
+    for uid in ids:
+        record = summary_data.get(uid, {})
+        title = clean_text(record.get("title", ""))
+        if not title:
+            continue
+        published = normalize_source_date(
+            record.get("sortpubdate", "") or record.get("epubdate", "") or record.get("pubdate", "")
+        )
+        journal = clean_text(record.get("fulljournalname", ""))
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "research"),
+            title=title,
+            url=f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
+            published=published,
+            summary=f"PubMed record associated with ACROBiosystems. Journal: {journal}",
+            category_hint=source.get("category_hint", "research"),
+            signal_type=source.get("signal_type", "research"),
         )
         if not source_allows_candidate(source, candidate):
             continue
@@ -358,6 +519,7 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
                 title=title,
                 url=absolute,
                 category_hint=source.get("category_hint", ""),
+                signal_type=source.get("signal_type", "news"),
             )
         )
     return items
@@ -367,14 +529,32 @@ def collect_candidates(sources: list[dict[str, Any]]) -> tuple[list[Candidate], 
     candidates: list[Candidate] = []
     errors: list[str] = []
     for source in sources:
+        if source.get("enabled", True) is False:
+            continue
         try:
             if source["type"] == "rss":
                 candidates.extend(parse_rss(source))
+            elif source["type"] == "atom":
+                candidates.extend(parse_atom(source))
+            elif source["type"] == "sec_submissions":
+                candidates.extend(parse_sec_submissions(source))
+            elif source["type"] == "openfda":
+                candidates.extend(parse_openfda(source))
+            elif source["type"] == "pubmed":
+                candidates.extend(parse_pubmed(source))
             elif source["type"] == "html_links":
                 candidates.extend(parse_html_links(source))
             else:
                 errors.append(f"{source['id']}: unsupported source type {source['type']}")
-        except (urllib.error.URLError, TimeoutError, ET.ParseError, OSError) as exc:
+        except (
+            urllib.error.URLError,
+            TimeoutError,
+            ET.ParseError,
+            OSError,
+            json.JSONDecodeError,
+            KeyError,
+            ValueError,
+        ) as exc:
             errors.append(f"{source['id']}: {exc}")
     return candidates, errors
 
@@ -415,6 +595,12 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
     if item.source_trust == "owned":
         score += 15
         reasons.append("公司自有来源")
+    elif item.source_trust == "regulator":
+        score += 20
+        reasons.append("监管机构结构化来源")
+    elif item.source_trust == "research":
+        score += 10
+        reasons.append("科研数据库结构化来源")
 
     topic_hits = [term for term in company["strategic_topics"] if term.lower() in blob]
     if topic_hits:
@@ -440,6 +626,8 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
         "regulatory": 8,
         "market": 8,
         "event": 10,
+        "video": 5,
+        "research": 5,
     }
     bonus = category_bonus.get(item.category, 0)
     if bonus:
@@ -463,6 +651,9 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
     item.score = max(0, score)
     item.reasons = reasons or ["未命中强规则，默认归档"]
     item.tier = classify_tier(item.score, item.source_trust, has_action)
+    if item.signal_type in {"video", "research"}:
+        item.tier = "archive"
+        item.reasons.append("专题信号：不进入默认新闻日报")
     return item
 
 
@@ -561,9 +752,11 @@ def build_dashboard_payload(
     }
     categories: dict[str, int] = {}
     sources: dict[str, int] = {}
+    signal_types: dict[str, int] = {}
     for item in candidates:
         categories[item.category] = categories.get(item.category, 0) + 1
         sources[item.source_label] = sources.get(item.source_label, 0) + 1
+        signal_types[item.signal_type] = signal_types.get(item.signal_type, 0) + 1
 
     return {
         "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
@@ -579,6 +772,7 @@ def build_dashboard_payload(
         },
         "source_mix": sources,
         "category_mix": categories,
+        "signal_type_mix": signal_types,
         "companies": [
             {
                 "id": company["id"],
@@ -604,6 +798,8 @@ def build_dashboard_payload(
                 "score": item.score,
                 "tier": item.tier,
                 "category": item.category,
+                "signal_type": item.signal_type,
+                "is_new": item.key not in seen,
                 "reasons": item.reasons,
                 "age_days": age_days(item.published),
             }
@@ -635,6 +831,7 @@ def write_static_api(payload: dict[str, Any]) -> None:
         "generated_at": payload["generated_at"],
         "category_mix": payload["category_mix"],
         "source_mix": payload["source_mix"],
+        "signal_type_mix": payload["signal_type_mix"],
         "companies": payload["companies"],
     })
 
@@ -661,6 +858,7 @@ def render_section(
                 f"   - 来源：{item.source_label}{date_suffix}",
                 f"   - 分数 / 分层：{item.score} / `{item.tier}`",
                 f"   - 分类：`{item.category}`",
+                f"   - 情报类型：`{item.signal_type}`",
                 f"   - 理由：{'; '.join(item.reasons)}",
             ]
         )
@@ -738,6 +936,7 @@ def main() -> int:
                     "company_id": item.company_id,
                     "tier": item.tier,
                     "score": item.score,
+                    "signal_type": item.signal_type,
                 },
             )
         save_json(SEEN_PATH, seen)

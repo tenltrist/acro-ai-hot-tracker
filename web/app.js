@@ -22,6 +22,7 @@ function saveFeedback(id, value) {
 const state = {
   payload: null,
   tier: "daily",
+  signalType: "news",
   company: "all",
   category: "all",
   searchQuery: "",
@@ -119,7 +120,14 @@ const sourceInventory = [
       { name: "Google News RSS — ACRO + PR Newswire", status: "enabled", trust: "B", method: "site 搜索 RSS", note: "定向新闻稿平台，比泛搜质量高" },
       { name: "Google News RSS — Thermo Fisher 全球", status: "enabled", trust: "C", method: "RSS", note: "量大（100条/次），噪音占比高，需强力过滤" },
       { name: "Google News RSS — Thermo Fisher 日本", status: "enabled", trust: "C", method: "RSS", note: "日本区域动态" },
-      { name: "Bing News / 其他聚合搜索", status: "watchlist", trust: "C", method: "待调研", note: "备选补漏，等 Google News 稳定后再评估" },
+      {
+        name: "Bing News RSS — ACRO / Thermo",
+        status: "backup",
+        trust: "C",
+        method: "RSS 备用源",
+        note: "只补 Google News 未覆盖的标题，跨来源标题去重后再进入新闻流。",
+        result: "ACRO 7 条、Thermo 10 条；重复转载较多，适合作为备用而非主源",
+      },
     ],
   },
   {
@@ -132,7 +140,16 @@ const sourceInventory = [
       { name: "LinkedIn 员工 / 管理层账号", status: "manual", trust: "D", method: "不抓取", note: "可能有早期信号，但隐私和合规风险高" },
       { name: "微信公众号", status: "manual", trust: "D", method: "人工查看", note: "中国市场重要来源，自动化门槛高" },
       { name: "X / Twitter", status: "watchlist", trust: "D", method: "人工查看", note: "海外会议和活动传播，后续可评估 API" },
-      { name: "YouTube / Bilibili", status: "watchlist", trust: "D", method: "人工查看", note: "Webinar 和产品视频，内容营销观察用" },
+      {
+        name: "Thermo Fisher 官方 YouTube",
+        status: "enabled",
+        trust: "A",
+        method: "Atom RSS",
+        note: "免费订阅官方频道更新，作为独立视频信号，不混入默认新闻流。",
+        result: "实测返回最新 15 条视频，无需 API Key",
+        url: "youtube.com/@thermofisher",
+      },
+      { name: "ACRO YouTube / Bilibili", status: "watchlist", trust: "D", method: "待确认频道", note: "先确认官方频道 ID，再按同一方式接入" },
     ],
   },
   {
@@ -152,14 +169,36 @@ const sourceInventory = [
     layer: "research_regulatory",
     number: "06",
     title: "研发监管与组织信号",
-    subtitle: "技术方向、临床/监管进展、组织扩张和区域投入。价值高，但更适合做后续专题模块，不放进当前自动抓取。",
+    subtitle: "技术方向、监管风险和公司公告已经按独立类型接入；默认新闻流不展示这些专题信号。",
     sources: [
-      { name: "PubMed / Google Scholar", status: "watchlist", trust: "B", method: "API / 搜索", note: "论文发表和引用，技术影响力信号" },
-      { name: "ClinicalTrials.gov / jRCT / EU CTIS", status: "watchlist", trust: "A", method: "API / 搜索", note: "临床项目关联，对 CGT/CDMO 尤其重要" },
+      {
+        name: "PubMed — ACRO",
+        status: "trial",
+        trust: "B",
+        method: "E-utilities API",
+        note: "单独进入论文信号；只保留一年内与 ACROBiosystems 查询关联的记录。",
+        result: "当前总命中 19 条，试运行抓取最近 10 条",
+      },
+      { name: "ClinicalTrials.gov", status: "watchlist", trust: "A", method: "公开 API", note: "ACRO 命中 0；Thermo 多为试验中使用其设备，相关性不足，暂不接入", result: "接口可用，但公司情报价值低" },
       { name: "专利数据库", status: "watchlist", trust: "B", method: "API / 搜索", note: "技术布局和产品方向" },
-      { name: "FDA / EMA / PMDA", status: "watchlist", trust: "A", method: "RSS / API", note: "监管批准和指南更新" },
+      {
+        name: "openFDA — Thermo 召回监控",
+        status: "trial",
+        trust: "A",
+        method: "公开 API",
+        note: "只显示两年内新增记录；历史命中不灌入页面，未来有新召回时自动出现。",
+        result: "接口命中 15 条 enforcement 记录，但最新为 2021 年，当前展示 0 条",
+      },
       { name: "招聘网站", status: "watchlist", trust: "D", method: "人工查看", note: "组织扩张、区域布局、技术方向信号" },
-      { name: "财报 / SEC / EDINET", status: "watchlist", trust: "A", method: "RSS / 人工", note: "战略和风险披露，上市公司可自动获取" },
+      {
+        name: "SEC EDGAR — Thermo",
+        status: "trial",
+        trust: "A",
+        method: "官方 JSON API（待配置）",
+        note: "解析规则已完成，将只保留 8-K、10-Q、10-K；当前不发请求。",
+        result: "SEC 要求 User-Agent 包含真实联系邮箱，待配置后再启用",
+        url: "data.sec.gov/submissions",
+      },
     ],
   },
   {
@@ -276,6 +315,7 @@ const els = {
   sourceCount: document.querySelector("#sourceCount"),
   windowDays: document.querySelector("#windowDays"),
   tierFilter: document.querySelector("#tierFilter"),
+  signalTypeFilter: document.querySelector("#signalTypeFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
   companyFilter: document.querySelector("#companyFilter"),
   searchInput: document.querySelector("#searchInput"),
@@ -362,19 +402,38 @@ function hydrateFilters() {
 
 function render() {
   const { payload } = state;
-  els.metricCandidates.textContent = payload.summary.new_candidates;
-  els.metricDaily.textContent = payload.summary.daily;
-  els.metricImmediate.textContent = payload.summary.immediate;
-  els.metricArchive.textContent = payload.summary.archive;
   els.windowDays.textContent = `${payload.window_days} 天`;
-  els.sourceCount.textContent = `${payload.summary.sources} sources`;
   els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
 
-  renderSignals();
-  renderBars(els.topicBars, payload.category_mix, labelCategory);
-  renderSources();
+  renderOverviewScope();
   renderRules();
   renderPage();
+}
+
+function getSignalTypeItems() {
+  return state.payload.items.filter(
+    (item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType,
+  );
+}
+
+function renderOverviewScope() {
+  const scoped = getSignalTypeItems();
+  const hasNewFlags = scoped.some((item) => typeof item.is_new === "boolean");
+  els.metricCandidates.textContent = hasNewFlags
+    ? scoped.filter((item) => item.is_new).length
+    : state.payload.summary.new_candidates;
+  els.metricDaily.textContent = scoped.filter((item) => item.tier === "daily").length;
+  els.metricImmediate.textContent = scoped.filter((item) => item.tier === "immediate").length;
+  els.metricArchive.textContent = scoped.filter((item) => item.tier === "archive").length;
+  els.sourceCount.textContent = `${new Set(scoped.map((item) => item.source_id || item.source_label)).size} sources`;
+
+  const categoryMix = {};
+  for (const item of scoped) {
+    categoryMix[item.category] = (categoryMix[item.category] || 0) + 1;
+  }
+  renderSignals();
+  renderBars(els.topicBars, categoryMix, labelCategory);
+  renderSources(scoped);
 }
 
 function renderRules() {
@@ -424,6 +483,7 @@ function summaryForCategory(cat) {
   }
   const parts = [];
   if (counts.enabled) parts.push(`${counts.enabled} 已启用`);
+  if (counts.backup) parts.push(`${counts.backup} 备用`);
   if (counts.covered) parts.push(`${counts.covered} 已覆盖`);
   if (counts.trial) parts.push(`${counts.trial} 试运行`);
   if (counts.watchlist) parts.push(`${counts.watchlist} 观察中`);
@@ -450,6 +510,7 @@ function renderSignals() {
   const query = state.searchQuery.toLowerCase().trim();
   const filtered = state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter((item) => state.company === "all" || item.company === state.company)
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
@@ -478,6 +539,7 @@ function renderSignals() {
       </div>
       <div class="meta-row">
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
+        <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
         <span class="tag">${labelCategory(item.category)}</span>
         <span class="tag">${escapeHtml(item.company)}</span>
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
@@ -526,8 +588,12 @@ function renderBars(container, data, labeler) {
     .join("");
 }
 
-function renderSources() {
-  const entries = Object.entries(state.payload.source_mix).sort((a, b) => b[1] - a[1]).slice(0, 6);
+function renderSources(items = getSignalTypeItems()) {
+  const sourceMix = {};
+  for (const item of items) {
+    sourceMix[item.source_label] = (sourceMix[item.source_label] || 0) + 1;
+  }
+  const entries = Object.entries(sourceMix).sort((a, b) => b[1] - a[1]).slice(0, 6);
   els.sourceList.innerHTML = entries
     .map(([name, count]) => `<div class="source-item"><span>${escapeHtml(name)}</span><strong>${count}</strong></div>`)
     .join("");
@@ -536,6 +602,7 @@ function renderSources() {
 function labelStatus(status) {
   return {
     enabled: "已启用",
+    backup: "备用",
     covered: "已覆盖",
     trial: "试运行",
     watchlist: "观察中",
@@ -563,8 +630,20 @@ function labelCategory(category) {
     award: "奖项 / 认可",
     market: "市场扩张",
     company: "公司动态",
+    video: "视频 / Webinar",
+    research: "论文 / 研究",
     uncategorized: "未分类",
   }[category] || category;
+}
+
+function labelSignalType(type) {
+  return {
+    news: "新闻",
+    video: "视频",
+    filing: "公司公告",
+    regulatory: "监管风险",
+    research: "论文研究",
+  }[type] || type;
 }
 
 function formatDateTime(value) {
@@ -675,13 +754,14 @@ function exportCsv() {
     return;
   }
 
-  const headers = ["标题", "公司", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
+  const headers = ["标题", "公司", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
     rows.push(
       [
         csvCell(item.title),
         csvCell(item.company),
+        csvCell(labelSignalType(item.signal_type || "news")),
         csvCell(item.source_label),
         csvCell(item.published || ""),
         item.score,
@@ -713,6 +793,7 @@ function getFilteredItems() {
   const query = state.searchQuery.toLowerCase().trim();
   return state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter((item) => state.company === "all" || item.company === state.company)
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
@@ -783,6 +864,11 @@ els.exportCsvButton.addEventListener("click", exportCsv);
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;
   renderSignals();
+});
+
+els.signalTypeFilter.addEventListener("change", (event) => {
+  state.signalType = event.target.value;
+  renderOverviewScope();
 });
 
 els.categoryFilter.addEventListener("change", (event) => {

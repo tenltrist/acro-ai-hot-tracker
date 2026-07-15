@@ -664,9 +664,20 @@ select {
   color: #075f69;
 }
 
+.status-pill.backup {
+  background: #e8edf8;
+  color: var(--blue);
+}
+
 .status-pill.covered {
   background: #e8edf8;
   color: var(--blue);
+}
+
+.type-tag {
+  border-color: #cbd8ef;
+  background: #f1f5fb;
+  color: #264b78;
 }
 
 .status-pill.trial {

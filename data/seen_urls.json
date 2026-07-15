@@ -3190,5 +3190,338 @@
     "company_id": "thermo_fisher",
     "tier": "archive",
     "score": 0
+  },
+  "015a783eae7a6bc2": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Vaccines World Summit 2026 - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1uQkVPTjlFQTFSbHVOMG9RWW43cXNqTmgzRmRoMzRLZjFITy1MTkdsZGx4ckhXc2NhZGdoTWxrUVN5U2xtakEzbnlWdmZ4ZHhiV3dCaFhSV2hDN01xRWZrM2RIdERFM0xR?oc=5",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "dcbd0b61c1331716": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Overcoming the LER Challenge: Mechanistic Insights and Mitigation Strategies for LER - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TR0loZ092bkFPTWpBTEt6NUdGc3ZhYWU5b292Wlc5Mk9IOG1FQ0l5ekY3anp4ZmdMZlpOeFBONE9pSUQ1QkhXOHNVSVZwN3FQakczSDN2bw?oc=5",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "79d9de2d60e2fb23": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Q1 Earnings Highlights: Thermo Fisher (NYSE:TMO) Vs The Rest Of The Research Tools & Consumables Stocks - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcTRCeFlubF9SX1FGNEtkU1A5SVU5WWtKVWxkS1B5am9uamVQblFydHFYeVdMS3pTMUM2aThETFFtWE40NVZtM1VNWkZRcTFGclFSNF8xSmdmR1hWM2xORmhlNEdLY0t0WXZxa3hqOW4wc0xQMS02QnpJMFlob0l2WFJEUGoxMWp2NWowN3FfOFdobmdYbmUtTmVCMmJWeWNVcEE0?oc=5",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "af59fbe4eab77a3e": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "ベアードは、サーモ・フィッシャー・サイエンティフィックの株価目標を639ドルから652ドルに修正し、アウトパフォーム（推奨）レーティングを維持しました。 - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTFBpMldmUkNDaUo5S195TzFESjZ6Y1doWnZyZmlNY3NfUGhCazQyLWJ6NWVoMEtWbVRnTk9oNlBRRzVJd3FiM1l6cTFSTV9zVFRBdVpINHUxUi0zQW5fTU9UcXVCS1A5b1l2TnFnZk96Nzh4eHgwMmJlWG9reWplMm40TjU3TzVWbE9meEk5bExwUXBPclB3d3p2aGE1RDdrby1NNmk5SGthQQ?oc=5",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "e9611bb8a2ac7dfc": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "PCRキット市場規模、シェア、成長率、分析、レポート（2034年まで） - Straits Research",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE85SERjdFRhMm93b2NJd3BDRG1OOEh2UlcyOW9WakFsc0prZERCcTREdHZsUjBRMzVDUjVla1ZRYk0zS3BnczZKaDRxRUZyVzZHU2dBbkF0V2ZIUjBoa19QaVNB?oc=5",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "e6481699716289de": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57394a0a5542769fc25e226d386c47&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "65bb8838c5206e54": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57394a0a5542769fc25e226d386c47&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "3d226a56fc2d487c": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Arcturus Therapeutics Announces Strategic Collaboration with Thermo Fisher Scientific to ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57394af0dd42f3b9bdf60160aae1a5&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "5231a154d164aea9": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57394af0dd42f3b9bdf60160aae1a5&url=https%3A%2F%2Fwww.gazettextra.com%2Fnews%2Fnation_world%2Fthermo-fisher-scientific-receives-first-fbi-approval-for-rapid-dna-crime-scene-profiles-eligible-for%2Farticle_e2e50a92-6aa5-5a94-8b87-4f97a5bce2fb.html&c=6217577270852605628&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ac4b5006476b07af": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57394af0dd42f3b9bdf60160aae1a5&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "9573ca86734d037e": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Thermo Fisher Scientific Canada Customer Experience Center",
+    "url": "https://www.youtube.com/watch?v=EBP9behVWD8",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "c66a695b225c2221": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "SMS Updates Built for Scientists",
+    "url": "https://www.youtube.com/watch?v=b4-AlRJD2aU",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "9c18c57f262ce567": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Are you prioritizing the right PGx oncology targets?",
+    "url": "https://www.youtube.com/watch?v=zTdiSgXWfno",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "f4252fde50fbb3dc": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "When mAbs go mAd tame them with the right resins",
+    "url": "https://www.youtube.com/watch?v=P55C17qG4mk",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "7c97a101e7508572": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Thermo Fisher Scientific service plans",
+    "url": "https://www.youtube.com/watch?v=HEAbAlNixYo",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "ba1890a06a4dca02": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "How NGS can Rapidly Deliver Key Insights for Myeloid Neoplasms",
+    "url": "https://www.youtube.com/watch?v=5aqgTtHI7D0",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "80fa7691ac3275f1": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "How Rapid NGS Is Changing AML Care",
+    "url": "https://www.youtube.com/watch?v=-IAR8SnWxIQ",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "8b1629a5c31bdbcb": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Why Every Hour Matters in AML: Rapid NGS Testing for Faster, More Informed Treatment Decisions",
+    "url": "https://www.youtube.com/watch?v=j2zUiRaQHsQ",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "video"
+  },
+  "0527793a67fbbab5": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "How Next-Generation Sequencing Is Transforming AML Diagnosis and Treatment",
+    "url": "https://www.youtube.com/watch?v=gdWtIPaIkxI",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "66ec2f4fe3d3a786": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Beyond the Stochastic Threshold: A Transparent, Deterministic Approach to Probabilistic Genotyping",
+    "url": "https://www.youtube.com/watch?v=ozaFqBacJok",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "bf42e70021391c88": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Science of Hiring | Data Science Edition",
+    "url": "https://www.youtube.com/watch?v=b4VGE5qlD48",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "f8317dabe51aba4e": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Number of Contributors: More Than Counting Peaks? | Probabilistic DNA Mixture Interpretation",
+    "url": "https://www.youtube.com/watch?v=QmFc30XvlmU",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 41,
+    "signal_type": "video"
+  },
+  "cad25194edf6a1c7": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "We are creating what matters – Lucia Gömzsik’s Story",
+    "url": "https://www.youtube.com/watch?v=FImDm6Qx0VU",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "54ed116347e0f88c": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "We are transforming with purpose – Ibrahim Nassif’s Story",
+    "url": "https://www.youtube.com/watch?v=4Efz64yMoqA",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "942c1ca0a75ed988": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "We are growing together – Andrea Bensó-Sugár’s Story",
+    "url": "https://www.youtube.com/watch?v=3_58xmddmMY",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "7dd40653cf4cd1b7": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Generative AI in antibody engineering: emerging concepts and translational bottlenecks in lung cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42438781",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 51,
+    "signal_type": "research"
+  },
+  "eb33d0c7d246adec": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Concentration of DNA at the Cell Surface Dictates Transfection Efficacy: A Hyperbranched Poly(β-Amino Ester) Mediated Strategy for Enhanced Lentivirus Production.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42122643",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "33e0ee53556c4515": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Organoid Modeling and Single-Cell Profiling Reveal Smooth Muscle Cell Migration in Moyamoya Disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41501150",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "research"
+  },
+  "028c379ffc5e0264": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Engineered T cell therapy for the treatment of cardiac fibrosis during chronic phase of myocarditis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41356193",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "research"
+  },
+  "400620bd45fafc62": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Single-Cell Transcriptome Profiling Reveals Dynamic Cell Populations and Immune Infiltration in Moyamoya Disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40913267",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "research"
+  },
+  "ea5c414fdcb15c0a": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "Computational refinement and multivalent engineering of complementarity-determining region-grafted nanobodies on a humanized scaffold for retaining antiviral efficacy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40966656",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "research"
+  },
+  "37b494e22f7dddf0": {
+    "first_seen": "2026-07-15T16:39:56",
+    "title": "A monoclonal antibody targeting conserved regions of pre-fusion protein cross-neutralizes Nipah and Hendra virus variants.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40541691",
+    "company_id": "acro",
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "research"
+  },
+  "0de448d42361844e": {
+    "first_seen": "2026-07-15T16:41:17",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab8964ac3858405f86f5ce0f4&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "b7ebe26e2653a95a": {
+    "first_seen": "2026-07-15T16:41:17",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab8964ac3858405f86f5ce0f4&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "afc6e7fe98d317d6": {
+    "first_seen": "2026-07-15T16:41:17",
+    "title": "Arcturus Therapeutics Announces Strategic Collaboration with Thermo Fisher Scientific to ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "ef257a4ed1e73dbe": {
+    "first_seen": "2026-07-15T16:41:17",
+    "title": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3A%2F%2Fwww.gazettextra.com%2Fnews%2Fnation_world%2Fthermo-fisher-scientific-receives-first-fbi-approval-for-rapid-dna-crime-scene-profiles-eligible-for%2Farticle_e2e50a92-6aa5-5a94-8b87-4f97a5bce2fb.html&c=6217577270852605628&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e48cf246036e807e": {
+    "first_seen": "2026-07-15T16:41:17",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
   }
 }

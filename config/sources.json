@@ -116,6 +116,95 @@
       "url": "https://news.google.com/rss/search?q=%22Thermo%20Fisher%22%20Japan%20OR%20%22Thermo%20Fisher%22%20%E6%97%A5%E6%9C%AC&hl=ja&gl=JP&ceid=JP:ja",
       "company_id": "thermo_fisher",
       "trust": "aggregator"
+    },
+    {
+      "id": "bing_news_acro_backup",
+      "label": "Bing News RSS - ACROBiosystems backup",
+      "type": "rss",
+      "url": "https://www.bing.com/news/search?q=ACROBiosystems&format=rss",
+      "company_id": "acro",
+      "trust": "aggregator",
+      "signal_type": "news",
+      "max_age_days": 180,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "financial summary",
+        "investing.com"
+      ]
+    },
+    {
+      "id": "bing_news_thermo_backup",
+      "label": "Bing News RSS - Thermo Fisher backup",
+      "type": "rss",
+      "url": "https://www.bing.com/news/search?q=%22Thermo%20Fisher%22&format=rss",
+      "company_id": "thermo_fisher",
+      "trust": "aggregator",
+      "signal_type": "news",
+      "max_age_days": 180,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "earnings preview",
+        "shareholders reject",
+        "wide-moat leader"
+      ]
+    },
+    {
+      "id": "thermo_youtube_official",
+      "label": "Thermo Fisher official YouTube RSS",
+      "type": "atom",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfUs2fCDhx07fkszsJ0jOcA",
+      "company_id": "thermo_fisher",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 180,
+      "max_items": 15
+    },
+    {
+      "id": "thermo_sec_filings",
+      "label": "SEC EDGAR - Thermo Fisher filings",
+      "type": "sec_submissions",
+      "url": "https://data.sec.gov/submissions/CIK0000097745.json",
+      "company_id": "thermo_fisher",
+      "enabled": false,
+      "trust": "regulator",
+      "signal_type": "filing",
+      "category_hint": "finance",
+      "include_forms": [
+        "8-K",
+        "8-K/A",
+        "10-Q",
+        "10-Q/A",
+        "10-K",
+        "10-K/A"
+      ],
+      "max_age_days": 365,
+      "max_items": 12,
+      "disabled_reason": "SEC requires a descriptive User-Agent with a real contact email; parser is ready but collection stays off until that contact is configured."
+    },
+    {
+      "id": "thermo_openfda_monitor",
+      "label": "openFDA - Thermo Fisher recall monitor",
+      "type": "openfda",
+      "url": "https://api.fda.gov/device/enforcement.json?search=recalling_firm:%22Thermo%20Fisher%22&sort=report_date:desc&limit=20",
+      "company_id": "thermo_fisher",
+      "trust": "regulator",
+      "signal_type": "regulatory",
+      "category_hint": "regulatory",
+      "max_age_days": 730,
+      "max_items": 10
+    },
+    {
+      "id": "acro_pubmed_research",
+      "label": "PubMed - ACROBiosystems research signals",
+      "type": "pubmed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ACROBiosystems&sort=pub%20date&retmode=json&retmax=10",
+      "company_id": "acro",
+      "trust": "research",
+      "signal_type": "research",
+      "category_hint": "research",
+      "max_age_days": 365,
+      "max_items": 10
     }
   ]
 }

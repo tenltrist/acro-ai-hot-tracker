@@ -671,9 +671,20 @@ select {
   color: #075f69;
 }
 
+.status-pill.backup {
+  background: #e8edf8;
+  color: var(--blue);
+}
+
 .status-pill.covered {
   background: #e8edf8;
   color: var(--blue);
+}
+
+.type-tag {
+  border-color: #cbd8ef;
+  background: #f1f5fb;
+  color: #264b78;
 }
 
 .status-pill.trial {
@@ -1375,6 +1386,14 @@ select {
         </div>
         <div class="toolbar" aria-label="Dashboard controls">
           <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
+          <select id="signalTypeFilter" aria-label="按情报类型筛选">
+            <option value="news" selected>新闻</option>
+            <option value="video">视频</option>
+            <option value="filing">公司公告</option>
+            <option value="regulatory">监管风险</option>
+            <option value="research">论文研究</option>
+            <option value="all">全部类型</option>
+          </select>
           <select id="tierFilter" aria-label="按推送分层筛选">
             <option value="all">全部分层</option>
             <option value="immediate">即时提醒</option>
@@ -1710,38 +1729,49 @@ select {
 
     <script>
 window.AIHOT_EMBEDDED_PAYLOAD = {
-  "generated_at": "2026-07-15T15:56:33",
+  "generated_at": "2026-07-15T16:41:17",
   "window_days": 90,
   "summary": {
-    "new_candidates": 0,
+    "new_candidates": 5,
     "immediate": 0,
-    "daily": 34,
-    "archive": 180,
+    "daily": 38,
+    "archive": 204,
     "errors": 0,
     "companies": 2,
-    "sources": 11
+    "sources": 15
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 2,
-    "ACRO official Events and Webinars - indexed RSS": 4,
-    "ACRO official Insights - indexed RSS": 7,
+    "ACRO official Events and Webinars - indexed RSS": 5,
+    "ACRO official Insights - indexed RSS": 8,
     "ACRO Japan official pages - indexed RSS": 2,
-    "Google News RSS - ACROBiosystems": 20,
+    "Google News RSS - ACROBiosystems": 19,
     "Google News RSS - ACROBiosystems Japan": 1,
     "Google News RSS - ACROBiosystems PR Newswire": 11,
     "Thermo Fisher official press releases RSS": 9,
     "Thermo Fisher Biotech at Scale RSS": 10,
     "Google News RSS - Thermo Fisher": 98,
-    "Google News RSS - Thermo Fisher Japan": 50
+    "Google News RSS - Thermo Fisher Japan": 50,
+    "Bing News RSS - ACROBiosystems backup": 2,
+    "Bing News RSS - Thermo Fisher backup": 3,
+    "Thermo Fisher official YouTube RSS": 15,
+    "PubMed - ACROBiosystems research signals": 7
   },
   "category_mix": {
     "product": 24,
-    "partnership": 21,
-    "event": 6,
+    "partnership": 23,
+    "event": 7,
     "regulatory": 15,
-    "company": 133,
+    "company": 136,
     "market": 9,
-    "finance": 6
+    "finance": 6,
+    "video": 15,
+    "research": 7
+  },
+  "signal_type_mix": {
+    "news": 220,
+    "video": 15,
+    "research": 7
   },
   "companies": [
     {
@@ -1817,6 +1847,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 72,
       "tier": "daily",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: clinical development, manufacturing, AI-enabled research",
@@ -1840,6 +1872,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 62,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -1864,6 +1898,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 62,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "战略主题命中: HEK293",
@@ -1887,6 +1923,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 58,
       "tier": "daily",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -1911,6 +1949,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 56,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: introduce, clinical",
@@ -1933,12 +1973,38 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 56,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: launch, clinical",
         "高价值分类加成 +10: product"
       ],
       "age_days": 47
+    },
+    {
+      "id": "e48cf246036e807e",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
+      "source_trust": "aggregator",
+      "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+      "published": "2026-06-29",
+      "summary": "Genedrive (LSE:GDR) has entered into a collaboration agreement with Thermo Fisher Scientific to develop the Genedrive CYP2C19 HT Kit, a high-throughput pharmacogenetic in vitro diagnostic test ...",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "业务动作命中: collaboration, agreement",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 16
     },
     {
       "id": "15a227861898f286",
@@ -1955,6 +2021,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 54,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "战略主题命中: CD20",
@@ -1978,6 +2046,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 54,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Patheon",
         "战略主题命中: CDMO",
@@ -2001,6 +2071,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 52,
       "tier": "daily",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -2025,6 +2097,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 52,
       "tier": "daily",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源",
@@ -2048,6 +2122,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 52,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, PPD",
         "战略主题命中: clinical trials",
@@ -2056,6 +2132,32 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过时效窗口 93天，因业务动作匹配保留"
       ],
       "age_days": 93
+    },
+    {
+      "id": "7dd40653cf4cd1b7",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "Generative AI in antibody engineering: emerging concepts and translational bottlenecks in lung cancer.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42438781/",
+      "published": "2026-07-11",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: In silico pharmacology",
+      "ai_summary": "",
+      "score": 51,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "战略主题命中: antibody",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 4
     },
     {
       "id": "594760e6348b8e2f",
@@ -2072,6 +2174,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 50,
       "tier": "daily",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源",
@@ -2095,6 +2199,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 50,
       "tier": "daily",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "战略主题命中: clinical trials",
@@ -2119,6 +2225,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 50,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "战略主题命中: clinical development, clinical trials",
@@ -2127,6 +2235,54 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过时效窗口 154天，因业务动作匹配保留"
       ],
       "age_days": 154
+    },
+    {
+      "id": "0de448d42361844e",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "bing_news_acro_backup",
+      "source_label": "Bing News RSS - ACROBiosystems backup",
+      "source_trust": "aggregator",
+      "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab8964ac3858405f86f5ce0f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "published": "2026-05-07",
+      "summary": "東京およびデラウェア州ニューアーク、2026年4月30日 /PRNewswire/ -- 世界のバイオ医薬品・ヘルスケア産業の礎となることを ...",
+      "ai_summary": "",
+      "score": 50,
+      "tier": "daily",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "战略主题命中: CD20, Japan",
+        "业务动作命中: release"
+      ],
+      "age_days": 69
+    },
+    {
+      "id": "b7ebe26e2653a95a",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "bing_news_acro_backup",
+      "source_label": "Bing News RSS - ACROBiosystems backup",
+      "source_trust": "aggregator",
+      "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab8964ac3858405f86f5ce0f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "published": "2026-05-11",
+      "summary": "東京、2026年5月11日 /PRNewswire/ -- ACROBiosystemsは、機能性HEK293細胞株のグローバル・ライセンス・ソリューションの大幅な ...",
+      "ai_summary": "",
+      "score": 50,
+      "tier": "daily",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "战略主题命中: HEK293, Japan",
+        "业务动作命中: release"
+      ],
+      "age_days": 65
     },
     {
       "id": "f934f57e25353f69",
@@ -2143,6 +2299,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "event",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -2166,6 +2324,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -2189,6 +2349,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -2212,6 +2374,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源",
@@ -2235,6 +2399,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: launch",
@@ -2257,6 +2423,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: partnership",
@@ -2279,6 +2447,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: partnership",
@@ -2301,6 +2471,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
@@ -2323,6 +2495,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
@@ -2345,6 +2519,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: clinical",
@@ -2367,6 +2543,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific, Gibco",
         "业务动作命中: introduce",
@@ -2389,6 +2567,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "业务动作命中: introduce",
@@ -2411,12 +2591,38 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 48,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
       "age_days": 57
+    },
+    {
+      "id": "afc6e7fe98d317d6",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
+      "source_trust": "aggregator",
+      "title": "Arcturus Therapeutics Announces Strategic Collaboration with Thermo Fisher Scientific to ...",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2farcturus-therapeutics-announces-strategic-collaboration-110000280.html&c=7448826973314751446&mkt=ja-jp",
+      "published": "2026-07-02",
+      "summary": "Arcturus Therapeutics Holdings Inc. (\"Arcturus\", Nasdaq: ARCT), a messenger RNA medicines company focused on the development of liver and respiratory rare disease therapeutics, today announced a ...",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "业务动作命中: collaboration",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 13
     },
     {
       "id": "327f37f80b9fda7b",
@@ -2433,6 +2639,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 46,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "战略主题命中: HEK293",
@@ -2455,6 +2663,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 46,
       "tier": "daily",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源",
@@ -2477,6 +2687,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 46,
       "tier": "daily",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: acquisition",
@@ -2499,12 +2711,39 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 46,
       "tier": "daily",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory"
       ],
       "age_days": 78
+    },
+    {
+      "id": "eb33d0c7d246adec",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "Concentration of DNA at the Cell Surface Dictates Transfection Efficacy: A Hyperbranched Poly(β-Amino Ester) Mediated Strategy for Enhanced Lentivirus Production.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42122643/",
+      "published": "2026-04-22",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: Polymers",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 84
     },
     {
       "id": "ac5eb74389317355",
@@ -2521,6 +2760,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 42,
       "tier": "daily",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -2546,6 +2787,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 42,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: clinical trials",
@@ -2554,6 +2797,32 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过时效窗口 112天，因业务动作匹配保留"
       ],
       "age_days": 112
+    },
+    {
+      "id": "f8317dabe51aba4e",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Number of Contributors: More Than Counting Peaks? | Probabilistic DNA Mixture Interpretation",
+      "url": "https://www.youtube.com/watch?v=QmFc30XvlmU",
+      "published": "2026-06-26",
+      "summary": "HIDS 365Ep2 Mike Coble, PhD, & Tim Kalafut, PhD, discuss best practices estimating number of contributors (NOC) in complex DNA mixtures. Learn more: https://www.thermofisher.com/GMPG",
+      "ai_summary": "",
+      "score": 41,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: ThermoFisher",
+        "公司自有来源",
+        "战略主题命中: GMP",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 19
     },
     {
       "id": "2c5ba74c71c5e550",
@@ -2570,6 +2839,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "daily",
       "category": "event",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -2592,6 +2863,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "daily",
       "category": "event",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -2616,6 +2889,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "业务动作命中: partner",
@@ -2639,6 +2914,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "daily",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -2663,6 +2940,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "高价值分类加成 +10: product"
@@ -2684,6 +2963,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "高价值分类加成 +10: product"
@@ -2705,6 +2986,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: clinical",
@@ -2728,6 +3011,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 40,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "业务动作命中: clinical",
@@ -2751,6 +3036,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 38,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -2773,6 +3060,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 38,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "高价值分类加成 +8: market"
@@ -2794,6 +3083,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 38,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -2816,6 +3107,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 38,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "高价值分类加成 +8: regulatory"
@@ -2837,6 +3130,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 38,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "高价值分类加成 +8: regulatory"
@@ -2858,6 +3153,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 36,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源",
@@ -2880,11 +3177,163 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 36,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "战略主题命中: CDMO"
       ],
       "age_days": 19
+    },
+    {
+      "id": "9573ca86734d037e",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Thermo Fisher Scientific Canada Customer Experience Center",
+      "url": "https://www.youtube.com/watch?v=EBP9behVWD8",
+      "published": "2026-07-13",
+      "summary": "Discover how automation, digital technologies, and connected workflows can help transform your laboratory operations. Thermo Fisher Scientific Customer Experience Centers in Canada and South Korea provide an immersive environment where you can explore integrated solutions, engage with experts, and s",
+      "ai_summary": "",
+      "score": 35,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 2
+    },
+    {
+      "id": "9c18c57f262ce567",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Are you prioritizing the right PGx oncology targets?",
+      "url": "https://www.youtube.com/watch?v=zTdiSgXWfno",
+      "published": "2026-07-07",
+      "summary": "How do you know if you're prioritizing the right PGx targets for oncology? Explore a tiered framework with considerations for testing strategy, test design and implementation planning. Explore a broader approach to oncology PGx at thermofisher.com/pgxeducation-oncology, or learn more about PGx at th",
+      "ai_summary": "",
+      "score": 35,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: ThermoFisher",
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 8
+    },
+    {
+      "id": "f4252fde50fbb3dc",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "When mAbs go mAd tame them with the right resins",
+      "url": "https://www.youtube.com/watch?v=P55C17qG4mk",
+      "published": "2026-07-03",
+      "summary": "See what happens when a group of misbehaving mAbs invades the lab. Then explore Thermo Scientific resins designed to help address purification challenges across a range of mAb molecules",
+      "ai_summary": "",
+      "score": 35,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: Thermo Scientific",
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 12
+    },
+    {
+      "id": "7c97a101e7508572",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Thermo Fisher Scientific service plans",
+      "url": "https://www.youtube.com/watch?v=HEAbAlNixYo",
+      "published": "2026-06-30",
+      "summary": "Discover the many reasons why Thermo Fisher Scientific service plans help your lab compared to third-party service plans.",
+      "ai_summary": "",
+      "score": 35,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 15
+    },
+    {
+      "id": "bf42e70021391c88",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Science of Hiring | Data Science Edition",
+      "url": "https://www.youtube.com/watch?v=b4VGE5qlD48",
+      "published": "2026-06-26",
+      "summary": "If you’re exploring a career in Data Science at Thermo Fisher Scientific, this video offers an authentic look into the work, culture, and growth opportunities that define the role.",
+      "ai_summary": "",
+      "score": 35,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 19
+    },
+    {
+      "id": "54ed116347e0f88c",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "We are transforming with purpose – Ibrahim Nassif’s Story",
+      "url": "https://www.youtube.com/watch?v=4Efz64yMoqA",
+      "published": "2026-06-25",
+      "summary": "Transformation starts with purpose. Ibrahim shares his journey from academia to the corporate world, navigating uncertainty, relocation and growth. By embracing curiosity and learning from challenges, he found not only his place – but his path to leadership. At Thermo Fisher Scientific, transforming",
+      "ai_summary": "",
+      "score": 35,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 20
     },
     {
       "id": "bed8ef1e162fdc8e",
@@ -2901,6 +3350,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源"
@@ -2922,6 +3373,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源"
@@ -2943,6 +3396,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源"
@@ -2964,6 +3419,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems"
       ],
@@ -2984,6 +3441,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems"
       ],
@@ -3004,6 +3463,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源"
@@ -3025,6 +3486,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源"
@@ -3046,6 +3509,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源"
@@ -3067,6 +3532,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ThermoFisher",
         "公司自有来源"
@@ -3088,6 +3555,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3108,6 +3577,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3128,6 +3599,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3148,6 +3621,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3168,6 +3643,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3188,6 +3665,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3208,6 +3687,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3228,6 +3709,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3248,6 +3731,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3268,6 +3753,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3288,6 +3775,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3308,6 +3797,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3328,6 +3819,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3348,6 +3841,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3368,6 +3863,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3388,6 +3885,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3408,6 +3907,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3428,6 +3929,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3448,6 +3951,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3468,6 +3973,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3488,6 +3995,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3508,6 +4017,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3528,6 +4039,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3548,6 +4061,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3568,6 +4083,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3588,6 +4105,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3608,6 +4127,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3628,6 +4149,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3648,6 +4171,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3668,6 +4193,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3688,6 +4215,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3708,6 +4237,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3728,6 +4259,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3748,6 +4281,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3768,6 +4303,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3788,6 +4325,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3808,6 +4347,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3828,6 +4369,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3848,6 +4391,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3868,6 +4413,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
@@ -3888,6 +4435,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3908,6 +4457,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3928,6 +4479,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3948,6 +4501,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3968,6 +4523,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -3988,6 +4545,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -4008,6 +4567,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
@@ -4028,10 +4589,59 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 30,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher"
       ],
       "age_days": 47
+    },
+    {
+      "id": "ef257a4ed1e73dbe",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific Receives First FBI Approval for Rapid DNA Crime Scene Profiles ...",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57399ab3964df794c24a416354b1da&url=https%3a%2f%2fwww.gazettextra.com%2fnews%2fnation_world%2fthermo-fisher-scientific-receives-first-fbi-approval-for-rapid-dna-crime-scene-profiles-eligible-for%2farticle_e2e50a92-6aa5-5a94-8b87-4f97a5bce2fb.html&c=6217577270852605628&mkt=ja-jp",
+      "published": "2026-07-07",
+      "summary": "Thermo Fisher Scientific, the world leader in serving science, today announced that the Applied Biosystems™ RapidINTEL™ Plus Cartridge has received approval from the Federal Bureau of Investigation ...",
+      "ai_summary": "",
+      "score": 30,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific, Applied Biosystems"
+      ],
+      "age_days": 8
+    },
+    {
+      "id": "8b1629a5c31bdbcb",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Why Every Hour Matters in AML: Rapid NGS Testing for Faster, More Informed Treatment Decisions",
+      "url": "https://www.youtube.com/watch?v=j2zUiRaQHsQ",
+      "published": "2026-06-29",
+      "summary": "Intended for US healthcare and laboratory professionals. For educational purposes only. Acute myeloid leukemia (AML) is a medical emergency where timely genetic insights can be lifesaving. In this interview, experts Dr. Rajeev Gupta, Clinical Lead for Hematology and Rob Baker, Molecular Hematology O",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 16
     },
     {
       "id": "3765402a3bceeac1",
@@ -4048,6 +4658,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -4073,6 +4685,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "event",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -4080,6 +4694,55 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过默认时效窗口: 180 天前"
       ],
       "age_days": 180
+    },
+    {
+      "id": "015a783eae7a6bc2",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_official_activities_index",
+      "source_label": "ACRO official Events and Webinars - indexed RSS",
+      "source_trust": "owned",
+      "title": "Vaccines World Summit 2026 - ACROBiosystems",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1uQkVPTjlFQTFSbHVOMG9RWW43cXNqTmgzRmRoMzRLZjFITy1MTkdsZGx4ckhXc2NhZGdoTWxrUVN5U2xtakEzbnlWdmZ4ZHhiV3dCaFhSV2hDN01xRWZrM2RIdERFM0xR?oc=5",
+      "published": "2026-01-19",
+      "summary": "Vaccines World Summit 2026 ACROBiosystems",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 177 天前"
+      ],
+      "age_days": 177
+    },
+    {
+      "id": "dcbd0b61c1331716",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_official_insights_index",
+      "source_label": "ACRO official Insights - indexed RSS",
+      "source_trust": "owned",
+      "title": "Overcoming the LER Challenge: Mechanistic Insights and Mitigation Strategies for LER - ACROBiosystems",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TR0loZ092bkFPTWpBTEt6NUdGc3ZhYWU5b292Wlc5Mk9IOG1FQ0l5ekY3anp4ZmdMZlpOeFBONE9pSUQ1QkhXOHNVSVZwN3FQakczSDN2bw?oc=5",
+      "published": "2026-02-02",
+      "summary": "Overcoming the LER Challenge: Mechanistic Insights and Mitigation Strategies for LER ACROBiosystems",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "超过默认时效窗口: 163 天前"
+      ],
+      "age_days": 163
     },
     {
       "id": "8192802f09426f33",
@@ -4096,6 +4759,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -4119,6 +4784,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: ACROBiosystems",
         "公司自有来源",
@@ -4127,6 +4794,29 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过默认时效窗口: 131 天前"
       ],
       "age_days": 131
+    },
+    {
+      "id": "d72d90d54612d235",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "google_news_acro",
+      "source_label": "Google News RSS - ACROBiosystems",
+      "source_trust": "aggregator",
+      "title": "ACROBiosystems and the Fight Against COVID-19 - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcklNQXEwZFZ3QUZsUC1YeE4zRUR5c3JQODl0QmFYRnhsaEZETG1EVFkwV0RWbURpYi1Zb3pRcDRKb2w4SVhMTDhZTEdQSVEzeGJNMVpycFoyN2QxSFp3OWNFLUt2bWRIQjhXT05jcEg5d25kV0xSdWJpRTR1cm5OUWZFU1hxcVF1TXdKTmFTd3R0eUNEekRoTw?oc=5",
+      "published": "2020-10-23",
+      "summary": "ACROBiosystems and the Fight Against COVID-19 News-Medical",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "超过硬性时效上限: 2091 天前"
+      ],
+      "age_days": 2091
     },
     {
       "id": "609702fa3147d56e",
@@ -4143,6 +4833,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "超过硬性时效上限: 2942 天前"
@@ -4164,6 +4856,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "高价值分类加成 +10: partnership",
@@ -4186,6 +4880,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过默认时效窗口: 91 天前"
@@ -4207,6 +4903,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过默认时效窗口: 126 天前"
@@ -4228,6 +4926,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "高价值分类加成 +8: market",
@@ -4250,6 +4950,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "业务动作命中: launch, clinical",
@@ -4273,6 +4975,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "战略主题命中: clinical trials",
@@ -4297,6 +5001,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过默认时效窗口: 161 天前"
@@ -4318,6 +5024,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过默认时效窗口: 142 天前"
@@ -4339,6 +5047,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过默认时效窗口: 104 天前"
@@ -4360,6 +5070,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
@@ -4383,6 +5095,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "高价值分类加成 +10: product",
@@ -4405,6 +5119,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过默认时效窗口: 112 天前"
@@ -4426,6 +5142,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过硬性时效上限: 300 天前"
@@ -4447,6 +5165,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过默认时效窗口: 163 天前"
@@ -4468,6 +5188,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过默认时效窗口: 163 天前"
@@ -4489,6 +5211,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过默认时效窗口: 95 天前"
@@ -4510,6 +5234,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过硬性时效上限: 307 天前"
@@ -4531,6 +5257,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: Japan",
@@ -4554,6 +5282,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过硬性时效上限: 1414 天前"
@@ -4575,6 +5305,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过硬性时效上限: 1440 天前"
@@ -4596,6 +5328,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过硬性时效上限: 505 天前"
@@ -4617,6 +5351,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "超过硬性时效上限: 4543 天前"
@@ -4638,6 +5374,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, PPD",
         "超过硬性时效上限: 1909 天前"
@@ -4659,6 +5397,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "超过硬性时效上限: 1356 天前"
@@ -4680,6 +5420,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Scientific",
         "战略主题命中: 日本",
@@ -4703,11 +5445,145 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 25,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: PPD",
         "超过硬性时效上限: 4852 天前"
       ],
       "age_days": 4852
+    },
+    {
+      "id": "33e0ee53556c4515",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "Organoid Modeling and Single-Cell Profiling Reveal Smooth Muscle Cell Migration in Moyamoya Disease.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41501150/",
+      "published": "2026-01-07",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: Communications biology",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "战略主题命中: organoid",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 189 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 189
+    },
+    {
+      "id": "028c379ffc5e0264",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "Engineered T cell therapy for the treatment of cardiac fibrosis during chronic phase of myocarditis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41356193/",
+      "published": "2026-01-01",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: Theranostics",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 195 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 195
+    },
+    {
+      "id": "400620bd45fafc62",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "Single-Cell Transcriptome Profiling Reveals Dynamic Cell Populations and Immune Infiltration in Moyamoya Disease.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40913267/",
+      "published": "2025-09-16",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: Journal of the American Heart Association",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 302 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 302
+    },
+    {
+      "id": "ea5c414fdcb15c0a",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "Computational refinement and multivalent engineering of complementarity-determining region-grafted nanobodies on a humanized scaffold for retaining antiviral efficacy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40966656/",
+      "published": "2025-08-31",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: Briefings in bioinformatics",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 318 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 318
+    },
+    {
+      "id": "37b494e22f7dddf0",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "source_id": "acro_pubmed_research",
+      "source_label": "PubMed - ACROBiosystems research signals",
+      "source_trust": "research",
+      "title": "A monoclonal antibody targeting conserved regions of pre-fusion protein cross-neutralizes Nipah and Hendra virus variants.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40541691/",
+      "published": "2025-08-01",
+      "summary": "PubMed record associated with ACROBiosystems. Journal: Antiviral research",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司别名命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "战略主题命中: antibody",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 348 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 348
     },
     {
       "id": "ff0b6035b58960ca",
@@ -4724,6 +5600,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 24,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: organoid",
         "业务动作命中: unveil",
@@ -4747,12 +5625,182 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 20,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: CGT, GMP",
         "业务动作命中: manufacturing",
         "超过硬性时效上限: 190 天前"
       ],
       "age_days": 190
+    },
+    {
+      "id": "c66a695b225c2221",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "SMS Updates Built for Scientists",
+      "url": "https://www.youtube.com/watch?v=b4-AlRJD2aU",
+      "published": "2026-07-10",
+      "summary": "",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 5
+    },
+    {
+      "id": "ba1890a06a4dca02",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "How NGS can Rapidly Deliver Key Insights for Myeloid Neoplasms",
+      "url": "https://www.youtube.com/watch?v=5aqgTtHI7D0",
+      "published": "2026-06-29",
+      "summary": "Intended for US healthcare and laboratory professionals. For educational purposes only. For Research Use Only. Not for use in diagnostic procedures. Explore how next-generation sequencing (NGS) is advancing myeloid genomic profiling and measurable residual disease (MRD) research. In this webinar, Dr",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 16
+    },
+    {
+      "id": "80fa7691ac3275f1",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "How Rapid NGS Is Changing AML Care",
+      "url": "https://www.youtube.com/watch?v=-IAR8SnWxIQ",
+      "published": "2026-06-29",
+      "summary": "Intended for US healthcare and laboratory professionals. For educational purposes only. Acute myeloid leukemia (AML) is a medical emergency where every hour counts. In this interview, Dr. Amir Fathi, Director of the Leukemia Program, and Dr. Valentina Nardi, Associate Director of Hematological Molec",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 16
+    },
+    {
+      "id": "0527793a67fbbab5",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "How Next-Generation Sequencing Is Transforming AML Diagnosis and Treatment",
+      "url": "https://www.youtube.com/watch?v=gdWtIPaIkxI",
+      "published": "2026-06-29",
+      "summary": "Intended for US healthcare and laboratory professionals. For educational purposes only. Acute myeloid leukemia (AML) treatment begins with an accurate molecular diagnosis. In this interview, Dr. Alexander Mackinnon, Chief of the Genomic Diagnostics & Informatics Division at the University of Alabama",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 16
+    },
+    {
+      "id": "66ec2f4fe3d3a786",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "Beyond the Stochastic Threshold: A Transparent, Deterministic Approach to Probabilistic Genotyping",
+      "url": "https://www.youtube.com/watch?v=ozaFqBacJok",
+      "published": "2026-06-26",
+      "summary": "Probabilistic genotyping explained: number of contributors, mixture deconvolution & likelihood ratios for forensic DNA analysts. Watch now.",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 19
+    },
+    {
+      "id": "cad25194edf6a1c7",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "We are creating what matters – Lucia Gömzsik’s Story",
+      "url": "https://www.youtube.com/watch?v=FImDm6Qx0VU",
+      "published": "2026-06-25",
+      "summary": "What does it mean to create what matters? In this story, Lucia shares how teamwork, agility and commitment came together to support a hospital with an urgent request during the holiday season. What would normally take days was resolved in just minutes – demonstrating how we go above and beyond to su",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 20
+    },
+    {
+      "id": "942c1ca0a75ed988",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "source_id": "thermo_youtube_official",
+      "source_label": "Thermo Fisher official YouTube RSS",
+      "source_trust": "owned",
+      "title": "We are growing together – Andrea Bensó-Sugár’s Story",
+      "url": "https://www.youtube.com/watch?v=3_58xmddmMY",
+      "published": "2026-06-25",
+      "summary": "Growth takes many forms. Andrea shares her journey of stepping out of her comfort zone and gaining international experience early in her career. From working in the UK to collaborating with diverse customers across emerging markets, she highlights how support, trust and opportunity enabled her to gr",
+      "ai_summary": "",
+      "score": 20,
+      "tier": "archive",
+      "category": "video",
+      "signal_type": "video",
+      "is_new": false,
+      "reasons": [
+        "公司自有来源",
+        "高价值分类加成 +5: video",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 20
     },
     {
       "id": "ea035c4e9af18b39",
@@ -4769,6 +5817,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: release",
         "高价值分类加成 +10: product",
@@ -4791,6 +5841,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership",
@@ -4813,6 +5865,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: release",
         "高价值分类加成 +10: product",
@@ -4835,6 +5889,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
@@ -4856,6 +5912,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: release",
         "高价值分类加成 +10: product",
@@ -4878,6 +5936,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: release",
         "高价值分类加成 +10: product",
@@ -4900,6 +5960,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 18,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: release",
         "高价值分类加成 +10: product",
@@ -4922,6 +5984,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 16,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory",
@@ -4944,6 +6008,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 16,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "业务动作命中: EMA",
         "高价值分类加成 +8: regulatory",
@@ -4966,6 +6032,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 16,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: 日本",
         "高价值分类加成 +10: product",
@@ -4988,6 +6056,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 14,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: 日本",
         "高价值分类加成 +8: market",
@@ -5010,6 +6080,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 14,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: Japan",
         "高价值分类加成 +8: market",
@@ -5032,6 +6104,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 14,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: 日本",
         "高价值分类加成 +8: market"
@@ -5053,6 +6127,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 14,
       "tier": "archive",
       "category": "market",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: 日本",
         "高价值分类加成 +8: market",
@@ -5075,6 +6151,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 13,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: launch",
@@ -5098,6 +6176,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 10,
       "tier": "archive",
       "category": "product",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "高价值分类加成 +10: product",
         "超过硬性时效上限: 826 天前"
@@ -5119,6 +6199,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 8,
       "tier": "archive",
       "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "高价值分类加成 +8: regulatory"
       ],
@@ -5139,53 +6221,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 6,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "战略主题命中: ADC",
         "超过默认时效窗口: 176 天前"
       ],
       "age_days": 176
-    },
-    {
-      "id": "13118f403a41abbf",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "source_id": "google_news_acro",
-      "source_label": "Google News RSS - ACROBiosystems",
-      "source_trust": "aggregator",
-      "title": "Complete ADC conjugation in just 3 hours: Speed without compromise - News-Medical",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSWs0bFRGMUxpU1pWd1VHclJ0UWhISTRMZ0RWQlR6Y1B1VF9lSDdWOUY4ODYwNjVEZERSc1pIU2NjQy15VGIxNEwzZGVicmphclh2dndIT3BUOUNhTlNJRUJDSVNyQ0FsMVExeHgxSTYteTZPb29hVTFrYnUxc1o2QjJNQk5xSzJGdUlVSFdGenUwU2l3THRBei0yYTlNMEUwZmhLcjN3ZmVYX2xlamc5V1QwdXF1VWlqNGRR?oc=5",
-      "published": "2026-01-19",
-      "summary": "Complete ADC conjugation in just 3 hours: Speed without compromise News-Medical",
-      "ai_summary": "",
-      "score": 6,
-      "tier": "archive",
-      "category": "company",
-      "reasons": [
-        "战略主题命中: ADC",
-        "超过默认时效窗口: 177 天前"
-      ],
-      "age_days": 177
-    },
-    {
-      "id": "b963e77ead18ac1c",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "source_id": "google_news_acro",
-      "source_label": "Google News RSS - ACROBiosystems",
-      "source_trust": "aggregator",
-      "title": "Enabling large-scale iPSC-derived islet differentiation with GMP activin A and KGF - News-Medical",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcldieDlQRlN2Tkh2VHBXRzhZb2dnRkxKNWJ2eU5mUnZkUHhXWTU1VmY1ZmtLa0dUQ3ZkRS1LZFJLbmRKTHE1dGd3bmRhWU1GRkJadVY1cE1hSzBaM1dfMkN6ZWtOSDk2OUZqQmE1MDV3ZW9GTTFTUXBwNnFldlh4LW51SFp5U2UxclJKYkhCQW9aQ1B5dWl4V01SV1U1SGNTUmpFdDVLcVI4X1FQNXViMzh4eWRSMVJwQU9pRnpCN19UcEloQ3JyZGRiZmpzemRYclE?oc=5",
-      "published": "2026-01-22",
-      "summary": "Enabling large-scale iPSC-derived islet differentiation with GMP activin A and KGF News-Medical",
-      "ai_summary": "",
-      "score": 6,
-      "tier": "archive",
-      "category": "company",
-      "reasons": [
-        "战略主题命中: GMP",
-        "超过默认时效窗口: 174 天前"
-      ],
-      "age_days": 174
     },
     {
       "id": "79062e63c29782c2",
@@ -5202,6 +6244,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 5,
       "tier": "archive",
       "category": "event",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -5225,6 +6269,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 5,
       "tier": "archive",
       "category": "event",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -5249,6 +6295,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 3,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: FDA",
@@ -5271,6 +6319,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 1,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "战略主题命中: pharma services",
@@ -5293,6 +6343,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: ACROBiosystems",
         "噪音词命中: TradingView"
@@ -5314,6 +6366,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过默认时效窗口: 176 天前"
       ],
@@ -5334,6 +6388,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 181 天前"
       ],
@@ -5354,6 +6410,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过默认时效窗口: 176 天前"
       ],
@@ -5374,6 +6432,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过默认时效窗口: 177 天前"
       ],
@@ -5394,6 +6454,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 190 天前"
       ],
@@ -5414,6 +6476,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -5434,6 +6498,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 740 天前"
       ],
@@ -5454,6 +6520,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 822 天前"
       ],
@@ -5474,6 +6542,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -5496,6 +6566,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -5518,6 +6590,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -5540,6 +6614,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
@@ -5562,6 +6638,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -5582,6 +6660,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "噪音词命中: forecast, stock"
@@ -5603,6 +6683,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "噪音词命中: stock rises, stock"
@@ -5624,6 +6706,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "噪音词命中: stock"
@@ -5645,6 +6729,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "噪音词命中: stock"
@@ -5666,6 +6752,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "噪音词命中: stock"
@@ -5687,6 +6775,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "噪音词命中: stock"
@@ -5708,6 +6798,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -5728,6 +6820,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -5748,6 +6842,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过默认时效窗口: 159 天前"
       ],
@@ -5768,6 +6864,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "噪音词命中: stock"
@@ -5789,6 +6887,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 1388 天前"
       ],
@@ -5809,6 +6909,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "噪音词命中: stock falls, stock"
@@ -5830,6 +6932,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "噪音词命中: stock",
@@ -5852,6 +6956,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "公司别名命中 +30: Thermo Fisher",
         "噪音词命中: investor day"
@@ -5873,6 +6979,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 1024 天前"
       ],
@@ -5893,6 +7001,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 2795 天前"
       ],
@@ -5913,6 +7023,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -5933,6 +7045,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 5236 天前"
       ],
@@ -5953,6 +7067,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 5193 天前"
       ],
@@ -5973,6 +7089,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 351 天前"
       ],
@@ -5993,6 +7111,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 240 天前"
       ],
@@ -6013,6 +7133,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 4361 天前"
       ],
@@ -6033,6 +7155,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 533 天前"
       ],
@@ -6053,6 +7177,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 219 天前"
       ],
@@ -6073,6 +7199,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -6093,6 +7221,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 4687 天前"
       ],
@@ -6113,6 +7243,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 252 天前"
       ],
@@ -6133,6 +7265,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 957 天前"
       ],
@@ -6153,6 +7287,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 5315 天前"
       ],
@@ -6173,6 +7309,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 1189 天前"
       ],
@@ -6193,6 +7331,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 767 天前"
       ],
@@ -6213,6 +7353,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过默认时效窗口: 149 天前"
       ],
@@ -6233,6 +7375,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 532 天前"
       ],
@@ -6253,6 +7397,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -6273,6 +7419,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "未命中强规则，默认归档"
       ],
@@ -6293,6 +7441,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 1189 天前"
       ],
@@ -6313,6 +7463,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 1938 天前"
       ],
@@ -6333,6 +7485,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "score": 0,
       "tier": "archive",
       "category": "company",
+      "signal_type": "news",
+      "is_new": false,
       "reasons": [
         "超过硬性时效上限: 2218 天前"
       ],
@@ -6353,35 +7507,41 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
 window.AIHOT_EMBEDDED_HISTORY = {
   "date": "2026-07-15",
   "summary": {
-    "new_candidates": 0,
+    "new_candidates": 5,
     "immediate": 0,
-    "daily": 34,
-    "archive": 180,
+    "daily": 38,
+    "archive": 204,
     "errors": 0,
     "companies": 2,
-    "sources": 11
+    "sources": 15
   },
   "category_mix": {
     "product": 24,
-    "partnership": 21,
-    "event": 6,
+    "partnership": 23,
+    "event": 7,
     "regulatory": 15,
-    "company": 133,
+    "company": 136,
     "market": 9,
-    "finance": 6
+    "finance": 6,
+    "video": 15,
+    "research": 7
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 2,
-    "ACRO official Events and Webinars - indexed RSS": 4,
-    "ACRO official Insights - indexed RSS": 7,
+    "ACRO official Events and Webinars - indexed RSS": 5,
+    "ACRO official Insights - indexed RSS": 8,
     "ACRO Japan official pages - indexed RSS": 2,
-    "Google News RSS - ACROBiosystems": 20,
+    "Google News RSS - ACROBiosystems": 19,
     "Google News RSS - ACROBiosystems Japan": 1,
     "Google News RSS - ACROBiosystems PR Newswire": 11,
     "Thermo Fisher official press releases RSS": 9,
     "Thermo Fisher Biotech at Scale RSS": 10,
     "Google News RSS - Thermo Fisher": 98,
-    "Google News RSS - Thermo Fisher Japan": 50
+    "Google News RSS - Thermo Fisher Japan": 50,
+    "Bing News RSS - ACROBiosystems backup": 2,
+    "Bing News RSS - Thermo Fisher backup": 3,
+    "Thermo Fisher official YouTube RSS": 15,
+    "PubMed - ACROBiosystems research signals": 7
   }
 };
     </script>
@@ -6410,6 +7570,7 @@ function saveFeedback(id, value) {
 const state = {
   payload: null,
   tier: "daily",
+  signalType: "news",
   company: "all",
   category: "all",
   searchQuery: "",
@@ -6507,7 +7668,14 @@ const sourceInventory = [
       { name: "Google News RSS — ACRO + PR Newswire", status: "enabled", trust: "B", method: "site 搜索 RSS", note: "定向新闻稿平台，比泛搜质量高" },
       { name: "Google News RSS — Thermo Fisher 全球", status: "enabled", trust: "C", method: "RSS", note: "量大（100条/次），噪音占比高，需强力过滤" },
       { name: "Google News RSS — Thermo Fisher 日本", status: "enabled", trust: "C", method: "RSS", note: "日本区域动态" },
-      { name: "Bing News / 其他聚合搜索", status: "watchlist", trust: "C", method: "待调研", note: "备选补漏，等 Google News 稳定后再评估" },
+      {
+        name: "Bing News RSS — ACRO / Thermo",
+        status: "backup",
+        trust: "C",
+        method: "RSS 备用源",
+        note: "只补 Google News 未覆盖的标题，跨来源标题去重后再进入新闻流。",
+        result: "ACRO 7 条、Thermo 10 条；重复转载较多，适合作为备用而非主源",
+      },
     ],
   },
   {
@@ -6520,7 +7688,16 @@ const sourceInventory = [
       { name: "LinkedIn 员工 / 管理层账号", status: "manual", trust: "D", method: "不抓取", note: "可能有早期信号，但隐私和合规风险高" },
       { name: "微信公众号", status: "manual", trust: "D", method: "人工查看", note: "中国市场重要来源，自动化门槛高" },
       { name: "X / Twitter", status: "watchlist", trust: "D", method: "人工查看", note: "海外会议和活动传播，后续可评估 API" },
-      { name: "YouTube / Bilibili", status: "watchlist", trust: "D", method: "人工查看", note: "Webinar 和产品视频，内容营销观察用" },
+      {
+        name: "Thermo Fisher 官方 YouTube",
+        status: "enabled",
+        trust: "A",
+        method: "Atom RSS",
+        note: "免费订阅官方频道更新，作为独立视频信号，不混入默认新闻流。",
+        result: "实测返回最新 15 条视频，无需 API Key",
+        url: "youtube.com/@thermofisher",
+      },
+      { name: "ACRO YouTube / Bilibili", status: "watchlist", trust: "D", method: "待确认频道", note: "先确认官方频道 ID，再按同一方式接入" },
     ],
   },
   {
@@ -6540,14 +7717,36 @@ const sourceInventory = [
     layer: "research_regulatory",
     number: "06",
     title: "研发监管与组织信号",
-    subtitle: "技术方向、临床/监管进展、组织扩张和区域投入。价值高，但更适合做后续专题模块，不放进当前自动抓取。",
+    subtitle: "技术方向、监管风险和公司公告已经按独立类型接入；默认新闻流不展示这些专题信号。",
     sources: [
-      { name: "PubMed / Google Scholar", status: "watchlist", trust: "B", method: "API / 搜索", note: "论文发表和引用，技术影响力信号" },
-      { name: "ClinicalTrials.gov / jRCT / EU CTIS", status: "watchlist", trust: "A", method: "API / 搜索", note: "临床项目关联，对 CGT/CDMO 尤其重要" },
+      {
+        name: "PubMed — ACRO",
+        status: "trial",
+        trust: "B",
+        method: "E-utilities API",
+        note: "单独进入论文信号；只保留一年内与 ACROBiosystems 查询关联的记录。",
+        result: "当前总命中 19 条，试运行抓取最近 10 条",
+      },
+      { name: "ClinicalTrials.gov", status: "watchlist", trust: "A", method: "公开 API", note: "ACRO 命中 0；Thermo 多为试验中使用其设备，相关性不足，暂不接入", result: "接口可用，但公司情报价值低" },
       { name: "专利数据库", status: "watchlist", trust: "B", method: "API / 搜索", note: "技术布局和产品方向" },
-      { name: "FDA / EMA / PMDA", status: "watchlist", trust: "A", method: "RSS / API", note: "监管批准和指南更新" },
+      {
+        name: "openFDA — Thermo 召回监控",
+        status: "trial",
+        trust: "A",
+        method: "公开 API",
+        note: "只显示两年内新增记录；历史命中不灌入页面，未来有新召回时自动出现。",
+        result: "接口命中 15 条 enforcement 记录，但最新为 2021 年，当前展示 0 条",
+      },
       { name: "招聘网站", status: "watchlist", trust: "D", method: "人工查看", note: "组织扩张、区域布局、技术方向信号" },
-      { name: "财报 / SEC / EDINET", status: "watchlist", trust: "A", method: "RSS / 人工", note: "战略和风险披露，上市公司可自动获取" },
+      {
+        name: "SEC EDGAR — Thermo",
+        status: "trial",
+        trust: "A",
+        method: "官方 JSON API（待配置）",
+        note: "解析规则已完成，将只保留 8-K、10-Q、10-K；当前不发请求。",
+        result: "SEC 要求 User-Agent 包含真实联系邮箱，待配置后再启用",
+        url: "data.sec.gov/submissions",
+      },
     ],
   },
   {
@@ -6664,6 +7863,7 @@ const els = {
   sourceCount: document.querySelector("#sourceCount"),
   windowDays: document.querySelector("#windowDays"),
   tierFilter: document.querySelector("#tierFilter"),
+  signalTypeFilter: document.querySelector("#signalTypeFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
   companyFilter: document.querySelector("#companyFilter"),
   searchInput: document.querySelector("#searchInput"),
@@ -6750,19 +7950,38 @@ function hydrateFilters() {
 
 function render() {
   const { payload } = state;
-  els.metricCandidates.textContent = payload.summary.new_candidates;
-  els.metricDaily.textContent = payload.summary.daily;
-  els.metricImmediate.textContent = payload.summary.immediate;
-  els.metricArchive.textContent = payload.summary.archive;
   els.windowDays.textContent = `${payload.window_days} 天`;
-  els.sourceCount.textContent = `${payload.summary.sources} sources`;
   els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
 
-  renderSignals();
-  renderBars(els.topicBars, payload.category_mix, labelCategory);
-  renderSources();
+  renderOverviewScope();
   renderRules();
   renderPage();
+}
+
+function getSignalTypeItems() {
+  return state.payload.items.filter(
+    (item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType,
+  );
+}
+
+function renderOverviewScope() {
+  const scoped = getSignalTypeItems();
+  const hasNewFlags = scoped.some((item) => typeof item.is_new === "boolean");
+  els.metricCandidates.textContent = hasNewFlags
+    ? scoped.filter((item) => item.is_new).length
+    : state.payload.summary.new_candidates;
+  els.metricDaily.textContent = scoped.filter((item) => item.tier === "daily").length;
+  els.metricImmediate.textContent = scoped.filter((item) => item.tier === "immediate").length;
+  els.metricArchive.textContent = scoped.filter((item) => item.tier === "archive").length;
+  els.sourceCount.textContent = `${new Set(scoped.map((item) => item.source_id || item.source_label)).size} sources`;
+
+  const categoryMix = {};
+  for (const item of scoped) {
+    categoryMix[item.category] = (categoryMix[item.category] || 0) + 1;
+  }
+  renderSignals();
+  renderBars(els.topicBars, categoryMix, labelCategory);
+  renderSources(scoped);
 }
 
 function renderRules() {
@@ -6812,6 +8031,7 @@ function summaryForCategory(cat) {
   }
   const parts = [];
   if (counts.enabled) parts.push(`${counts.enabled} 已启用`);
+  if (counts.backup) parts.push(`${counts.backup} 备用`);
   if (counts.covered) parts.push(`${counts.covered} 已覆盖`);
   if (counts.trial) parts.push(`${counts.trial} 试运行`);
   if (counts.watchlist) parts.push(`${counts.watchlist} 观察中`);
@@ -6838,6 +8058,7 @@ function renderSignals() {
   const query = state.searchQuery.toLowerCase().trim();
   const filtered = state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter((item) => state.company === "all" || item.company === state.company)
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
@@ -6866,6 +8087,7 @@ function renderSignals() {
       </div>
       <div class="meta-row">
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
+        <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
         <span class="tag">${labelCategory(item.category)}</span>
         <span class="tag">${escapeHtml(item.company)}</span>
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
@@ -6914,8 +8136,12 @@ function renderBars(container, data, labeler) {
     .join("");
 }
 
-function renderSources() {
-  const entries = Object.entries(state.payload.source_mix).sort((a, b) => b[1] - a[1]).slice(0, 6);
+function renderSources(items = getSignalTypeItems()) {
+  const sourceMix = {};
+  for (const item of items) {
+    sourceMix[item.source_label] = (sourceMix[item.source_label] || 0) + 1;
+  }
+  const entries = Object.entries(sourceMix).sort((a, b) => b[1] - a[1]).slice(0, 6);
   els.sourceList.innerHTML = entries
     .map(([name, count]) => `<div class="source-item"><span>${escapeHtml(name)}</span><strong>${count}</strong></div>`)
     .join("");
@@ -6924,6 +8150,7 @@ function renderSources() {
 function labelStatus(status) {
   return {
     enabled: "已启用",
+    backup: "备用",
     covered: "已覆盖",
     trial: "试运行",
     watchlist: "观察中",
@@ -6951,8 +8178,20 @@ function labelCategory(category) {
     award: "奖项 / 认可",
     market: "市场扩张",
     company: "公司动态",
+    video: "视频 / Webinar",
+    research: "论文 / 研究",
     uncategorized: "未分类",
   }[category] || category;
+}
+
+function labelSignalType(type) {
+  return {
+    news: "新闻",
+    video: "视频",
+    filing: "公司公告",
+    regulatory: "监管风险",
+    research: "论文研究",
+  }[type] || type;
 }
 
 function formatDateTime(value) {
@@ -7063,13 +8302,14 @@ function exportCsv() {
     return;
   }
 
-  const headers = ["标题", "公司", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
+  const headers = ["标题", "公司", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
     rows.push(
       [
         csvCell(item.title),
         csvCell(item.company),
+        csvCell(labelSignalType(item.signal_type || "news")),
         csvCell(item.source_label),
         csvCell(item.published || ""),
         item.score,
@@ -7101,6 +8341,7 @@ function getFilteredItems() {
   const query = state.searchQuery.toLowerCase().trim();
   return state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter((item) => state.company === "all" || item.company === state.company)
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
@@ -7171,6 +8412,11 @@ els.exportCsvButton.addEventListener("click", exportCsv);
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;
   renderSignals();
+});
+
+els.signalTypeFilter.addEventListener("change", (event) => {
+  state.signalType = event.target.value;
+  renderOverviewScope();
 });
 
 els.categoryFilter.addEventListener("change", (event) => {

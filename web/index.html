@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260715a" />
+    <link rel="stylesheet" href="./styles.css?v=20260715b" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -58,6 +58,14 @@
         </div>
         <div class="toolbar" aria-label="Dashboard controls">
           <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
+          <select id="signalTypeFilter" aria-label="按情报类型筛选">
+            <option value="news" selected>新闻</option>
+            <option value="video">视频</option>
+            <option value="filing">公司公告</option>
+            <option value="regulatory">监管风险</option>
+            <option value="research">论文研究</option>
+            <option value="all">全部类型</option>
+          </select>
           <select id="tierFilter" aria-label="按推送分层筛选">
             <option value="all">全部分层</option>
             <option value="immediate">即时提醒</option>
@@ -391,6 +399,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=20260715a"></script>
+    <script src="./app.js?v=20260715b"></script>
   </body>
 </html>
