@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260715c" />
+    <link rel="stylesheet" href="./styles.css?v=20260715d" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -190,42 +190,59 @@
         <div class="rule-story">
           <div class="story-step">
             <span>1</span>
-            <strong>先记录全</strong>
-            <p>官网、RSS、媒体、LinkedIn、微信、展会、数据库都进入公司档案。</p>
+            <strong>分类保留</strong>
+            <p>官方、媒体、聚合、社交、市场、研发监管等板块回答“信息从哪里来”。</p>
           </div>
           <div class="story-step">
             <span>2</span>
-            <strong>再做风险判断</strong>
-            <p>看它是否公开、稳定、低成本、合规、能长期维护。</p>
+            <strong>阶段更新</strong>
+            <p>每个来源只标记正在使用、可用待接、未来开发、人工观察或不接入。</p>
           </div>
           <div class="story-step">
             <span>3</span>
-            <strong>最后决定怎么处理</strong>
-            <p>能自动的进 MVP；不适合自动的先人工、暂缓或后期付费。</p>
+            <strong>运行看健康</strong>
+            <p>地图说明建设阶段；产出数、日报贡献和异常统一去“数据源健康”查看。</p>
           </div>
         </div>
 
         <div class="rule-principle">
           <strong>一句话</strong>
-          <span>数据源地图负责“看全”，接入决策负责“取舍”，真正运行的只是其中低风险的一部分。</span>
+          <span>分类板块继续负责“看全”，阶段标签说明“现在做到哪里”，两者不再混在一起。</span>
         </div>
 
         <div class="decision-matrix">
           <div>
-            <span>优先自动接入</span>
-            <strong>公开 + 结构化 + 稳定</strong>
-            <p>官方 RSS、官网定向 RSS、新闻稿平台 RSS。</p>
+            <span>现在在用</span>
+            <strong>已进入自动抓取</strong>
+            <p>卡片下方直接显示本轮候选、日报、归档和最后内容日期。</p>
           </div>
           <div>
-            <span>先人工观察</span>
-            <strong>价值高 + 自动化限制多</strong>
-            <p>LinkedIn、微信公众号、展会、视频平台。</p>
+            <span>可用待接</span>
+            <strong>方法已验证</strong>
+            <p>因联系方式、相关性或当前优先级尚未启用。</p>
           </div>
           <div>
-            <span>暂缓/付费评估</span>
-            <strong>高风险或高成本</strong>
-            <p>登录平台、反爬页面、付费墙、商业数据库。</p>
+            <span>未来开发</span>
+            <strong>有价值，但还没开工</strong>
+            <p>Sitemap 差分、Crossref、专利、展会日历、合作伙伴页面。</p>
           </div>
+        </div>
+
+        <div class="source-map-controls">
+          <div>
+            <strong>保留 8 个信息类别</strong>
+            <span id="sourceStageCount">显示全部来源</span>
+          </div>
+          <select id="sourceStageFilter" aria-label="按建设阶段筛选数据源">
+            <option value="all">全部阶段</option>
+            <option value="active">现在在用</option>
+            <option value="available">可用待接</option>
+            <option value="planned">未来开发</option>
+            <option value="manual">人工观察</option>
+            <option value="covered">已有其他来源覆盖</option>
+            <option value="blocked">不接入</option>
+            <option value="paid">付费候选</option>
+          </select>
         </div>
 
         <div class="rule-board" id="ruleGrid"></div>
@@ -475,6 +492,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=20260715c"></script>
+    <script src="./app.js?v=20260715d"></script>
   </body>
 </html>

@@ -745,6 +745,32 @@ select {
   margin-bottom: 0;
 }
 
+.source-map-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.source-map-controls div {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.source-map-controls span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.source-map-controls select {
+  min-width: 190px;
+}
+
 .rule-lane.official,
 .rule-lane.aggregator {
   border-color: #9edfe1;
@@ -898,6 +924,21 @@ select {
   color: #075f69;
 }
 
+.status-pill.active {
+  background: var(--teal-soft);
+  color: #075f69;
+}
+
+.status-pill.available {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.status-pill.planned {
+  background: #e8edf8;
+  color: var(--blue);
+}
+
 .status-pill.backup {
   background: #e8edf8;
   color: var(--blue);
@@ -935,6 +976,11 @@ select {
 }
 
 .status-pill.paid_later {
+  background: #eee8f4;
+  color: #624176;
+}
+
+.status-pill.paid {
   background: #eee8f4;
   color: #624176;
 }
@@ -1550,6 +1596,16 @@ select {
   .health-controls span {
     width: 100%;
     margin-left: 0;
+  }
+
+  .source-map-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .source-map-controls select {
+    width: 100%;
+    min-width: 0;
   }
 
   .topbar {

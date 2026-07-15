@@ -752,6 +752,32 @@ select {
   margin-bottom: 0;
 }
 
+.source-map-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.source-map-controls div {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.source-map-controls span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.source-map-controls select {
+  min-width: 190px;
+}
+
 .rule-lane.official,
 .rule-lane.aggregator {
   border-color: #9edfe1;
@@ -905,6 +931,21 @@ select {
   color: #075f69;
 }
 
+.status-pill.active {
+  background: var(--teal-soft);
+  color: #075f69;
+}
+
+.status-pill.available {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.status-pill.planned {
+  background: #e8edf8;
+  color: var(--blue);
+}
+
 .status-pill.backup {
   background: #e8edf8;
   color: var(--blue);
@@ -942,6 +983,11 @@ select {
 }
 
 .status-pill.paid_later {
+  background: #eee8f4;
+  color: #624176;
+}
+
+.status-pill.paid {
   background: #eee8f4;
   color: #624176;
 }
@@ -1559,6 +1605,16 @@ select {
     margin-left: 0;
   }
 
+  .source-map-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .source-map-controls select {
+    width: 100%;
+    min-width: 0;
+  }
+
   .topbar {
     flex-direction: column;
   }
@@ -1777,42 +1833,59 @@ select {
         <div class="rule-story">
           <div class="story-step">
             <span>1</span>
-            <strong>先记录全</strong>
-            <p>官网、RSS、媒体、LinkedIn、微信、展会、数据库都进入公司档案。</p>
+            <strong>分类保留</strong>
+            <p>官方、媒体、聚合、社交、市场、研发监管等板块回答“信息从哪里来”。</p>
           </div>
           <div class="story-step">
             <span>2</span>
-            <strong>再做风险判断</strong>
-            <p>看它是否公开、稳定、低成本、合规、能长期维护。</p>
+            <strong>阶段更新</strong>
+            <p>每个来源只标记正在使用、可用待接、未来开发、人工观察或不接入。</p>
           </div>
           <div class="story-step">
             <span>3</span>
-            <strong>最后决定怎么处理</strong>
-            <p>能自动的进 MVP；不适合自动的先人工、暂缓或后期付费。</p>
+            <strong>运行看健康</strong>
+            <p>地图说明建设阶段；产出数、日报贡献和异常统一去“数据源健康”查看。</p>
           </div>
         </div>
 
         <div class="rule-principle">
           <strong>一句话</strong>
-          <span>数据源地图负责“看全”，接入决策负责“取舍”，真正运行的只是其中低风险的一部分。</span>
+          <span>分类板块继续负责“看全”，阶段标签说明“现在做到哪里”，两者不再混在一起。</span>
         </div>
 
         <div class="decision-matrix">
           <div>
-            <span>优先自动接入</span>
-            <strong>公开 + 结构化 + 稳定</strong>
-            <p>官方 RSS、官网定向 RSS、新闻稿平台 RSS。</p>
+            <span>现在在用</span>
+            <strong>已进入自动抓取</strong>
+            <p>卡片下方直接显示本轮候选、日报、归档和最后内容日期。</p>
           </div>
           <div>
-            <span>先人工观察</span>
-            <strong>价值高 + 自动化限制多</strong>
-            <p>LinkedIn、微信公众号、展会、视频平台。</p>
+            <span>可用待接</span>
+            <strong>方法已验证</strong>
+            <p>因联系方式、相关性或当前优先级尚未启用。</p>
           </div>
           <div>
-            <span>暂缓/付费评估</span>
-            <strong>高风险或高成本</strong>
-            <p>登录平台、反爬页面、付费墙、商业数据库。</p>
+            <span>未来开发</span>
+            <strong>有价值，但还没开工</strong>
+            <p>Sitemap 差分、Crossref、专利、展会日历、合作伙伴页面。</p>
           </div>
+        </div>
+
+        <div class="source-map-controls">
+          <div>
+            <strong>保留 8 个信息类别</strong>
+            <span id="sourceStageCount">显示全部来源</span>
+          </div>
+          <select id="sourceStageFilter" aria-label="按建设阶段筛选数据源">
+            <option value="all">全部阶段</option>
+            <option value="active">现在在用</option>
+            <option value="available">可用待接</option>
+            <option value="planned">未来开发</option>
+            <option value="manual">人工观察</option>
+            <option value="covered">已有其他来源覆盖</option>
+            <option value="blocked">不接入</option>
+            <option value="paid">付费候选</option>
+          </select>
         </div>
 
         <div class="rule-board" id="ruleGrid"></div>
@@ -8169,6 +8242,7 @@ const state = {
   category: "all",
   searchQuery: "",
   page: "overview",
+  sourceStage: "all",
   healthCompany: "all",
   healthStatus: "all",
   feedback: loadFeedback(),
@@ -8179,62 +8253,77 @@ const sourceInventory = [
   {
     layer: "official",
     number: "01",
-    title: "官方自有来源",
-    subtitle: "这 6 类已经逐一实测。能用免费 RSS 的直接接入；官网直抓遇到验证码或 403 时，改用公开索引 RSS，不绕过网站限制。",
+    title: "官方自有内容",
+    subtitle: "公司自己发布的新闻、活动、技术内容和区域动态。官网直抓受限时，只使用公开索引结果，不绕过验证。",
     sources: [
       {
-        name: "ACRO 全球官网 News",
-        status: "enabled",
+        name: "ACRO 官网 News",
+        status: "active",
         trust: "A",
-        method: "官网定向 RSS",
-        note: "官网直抓会进入滑块验证，现用 Google News 的 site 定向 RSS 获取官网已收录新闻。",
-        result: "近 90 天命中 1 条，PMDA 相关内容质量高",
+        method: "官网索引 RSS",
+        note: "官网直抓会进入滑块验证；当前监控公开搜索已收录的官方 News 页。",
+        sourceIds: ["acro_official_news_index"],
         url: "acrobiosystems.com/news",
       },
       {
         name: "ACRO Events / Webinar",
-        status: "enabled",
+        status: "active",
         trust: "A",
-        method: "官网定向 RSS",
-        note: "监控官网 activities 栏目，并在抓取前排除礼品、问卷、优惠和免费样品等营销噪音。",
-        result: "清洗后保留 4 条活动，空标题和促销内容已排除",
+        method: "Activities 索引 RSS",
+        note: "监控 activities 栏目，并排除礼品、问卷、优惠和免费样品等促销噪音。",
+        sourceIds: ["acro_official_activities_index"],
         url: "acrobiosystems.com/activities",
       },
       {
+        name: "ACRO Insights / 技术内容",
+        status: "active",
+        trust: "A",
+        method: "Insights 索引 RSS",
+        note: "监控官方技术解读、应用文章和产品主题，属于内容与产品信号。",
+        sourceIds: ["acro_official_insights_index"],
+        url: "acrobiosystems.com/insights",
+      },
+      {
         name: "ACRO 日本官网",
-        status: "enabled",
+        status: "active",
         trust: "A",
         method: "日文站定向 RSS",
-        note: "日本站同样有滑块验证；改用 jp 域名定向 RSS，并限制在 180 天内。",
-        result: "180 天内命中 2 条，当前以日本产品页更新为主",
+        note: "用 jp 域名定向 RSS 观察日本市场页面；当前产出较少，但区域价值高。",
+        sourceIds: ["acro_japan_official_index"],
         url: "jp.acrobiosystems.com",
       },
       {
         name: "Thermo Fisher IR / Press Release",
-        status: "enabled",
+        status: "active",
         trust: "A",
         method: "官方 RSS",
         note: "直接读取官方结构化新闻稿，日期、标题和链接完整，是当前最稳定的官方来源。",
-        result: "实测返回 10 条，HTTP 200，结构稳定",
+        sourceIds: ["thermo_official_rss"],
         url: "ir.thermofisher.com/rss/pressrelease.aspx",
+      },
+      {
+        name: "Thermo Fisher Biotech at Scale Blog",
+        status: "active",
+        trust: "A",
+        method: "官方 Blog RSS",
+        note: "技术、CDMO、制造和行业活动内容，单独作为内容营销信号。",
+        sourceIds: ["thermo_biotech_blog_rss"],
+        url: "thermofisher.com/blog/biotechnology",
       },
       {
         name: "Thermo Fisher Newsroom",
         status: "covered",
         trust: "A",
-        method: "IR RSS 替代",
-        note: "Newsroom HTML 直抓返回 403，不单独抓取；同一批新闻稿由官方 IR RSS 覆盖，避免重复。",
-        result: "HTML 不可用，但内容链路没有缺口",
+        method: "IR RSS 已覆盖",
+        note: "Newsroom HTML 直抓返回 403；主要新闻稿已由官方 IR RSS 覆盖，不再重复接入。",
         url: "newsroom.thermofisher.com",
       },
       {
-        name: "产品 / Blog / 资源库",
-        status: "enabled",
+        name: "官网 Sitemap 新 URL 差分",
+        status: "planned",
         trust: "A",
-        method: "RSS + 定向 RSS",
-        note: "接入 Thermo Biotech at Scale 官方 RSS，以及 ACRO Insights 的主题定向 RSS；只保留 180 天内内容。",
-        result: "Thermo 3 个 Blog RSS 均可用，优先选最贴近生物医药的一条",
-        url: "thermofisher.com/blog/biotechnology",
+        method: "URL 清单对比",
+        note: "已确认 ACRO sitemap 可访问；未来只对比新增 URL，不依赖不准确的 lastmod。",
       },
     ],
   },
@@ -8242,35 +8331,33 @@ const sourceInventory = [
     layer: "wire_media",
     number: "02",
     title: "新闻稿与行业媒体",
-    subtitle: "竞品发布、融资、合作、会议传播和行业热点。优先找 RSS，注意重复转载和弱相关内容。",
+    subtitle: "外部新闻稿、行业媒体和区域媒体。用于补充官方来源，但需要跨来源去重和事件归并。",
     sources: [
-      { name: "PR Newswire（via Google News site）", status: "enabled", trust: "B", method: "site 搜索 RSS", note: "定向补漏新闻稿，已在 ACRO 来源中配置" },
-      { name: "Business Wire", status: "watchlist", trust: "B", method: "site 搜索 RSS", note: "后续为每家目标公司补充 site 查询" },
-      { name: "GlobeNewswire", status: "watchlist", trust: "B", method: "site 搜索 RSS", note: "同上，后续批量配置" },
-      { name: "BioSpace", status: "watchlist", trust: "B", method: "RSS", note: "生物医药行业动态，频率和噪音待评估" },
-      { name: "Fierce Biotech / Fierce Pharma", status: "watchlist", trust: "B", method: "RSS", note: "行业热点覆盖面好，后期作为通用背景源" },
-      { name: "GEN / Technology Networks / Labiotech", status: "watchlist", trust: "B", method: "RSS", note: "技术与行业内容，可作为主题增强模块" },
-      { name: "日文 / 中文行业媒体", status: "watchlist", trust: "B", method: "待调研", note: "日本和中国市场信号，需先确认有哪些可用源" },
+      { name: "PR Newswire - ACRO", status: "active", trust: "B", method: "Google News site RSS", note: "定向补漏 ACRO 新闻稿，已进入当前抓取流。", sourceIds: ["google_news_acro_prnewswire"] },
+      { name: "Business Wire 公司定向查询", status: "available", trust: "B", method: "site 搜索 RSS", note: "方法可用，但尚未按公司批量配置；等目标公司池稳定后接入。" },
+      { name: "GlobeNewswire 公司定向查询", status: "available", trust: "B", method: "site 搜索 RSS", note: "方法可用，当前没有证明对 ACRO 比 PR Newswire 更有价值。" },
+      { name: "BioSpace / Fierce / GEN", status: "planned", trust: "B", method: "RSS / 定向查询", note: "作为行业背景和竞品报道增强层，需先测试噪音率和重复率。" },
+      { name: "日文行业媒体", status: "planned", trust: "B", method: "媒体清单 + RSS", note: "为日本市场信号单独建源，不与全球新闻混在一起。" },
+      { name: "中文行业媒体", status: "planned", trust: "B", method: "媒体清单 + 人工复核", note: "先建立白名单，避免采集低质量转载和 SEO 页面。" },
     ],
   },
   {
     layer: "aggregator",
     number: "03",
     title: "聚合搜索补漏",
-    subtitle: "免费、覆盖广，快速发现散落在不同媒体里的公开新闻。MVP 可用，但必须配合去重、评分和归档控制噪音。",
+    subtitle: "作为补漏层覆盖分散公开新闻。它们是发现入口，不是事实来源，必须经过去重、相关性评分和原文核对。",
     sources: [
-      { name: "Google News RSS — ACRO 全球", status: "enabled", trust: "C", method: "RSS", note: "主要补漏源，噪音较高但配合评分后可用" },
-      { name: "Google News RSS — ACRO 日本", status: "enabled", trust: "C", method: "RSS", note: "日文/日本区域动态，命中少但价值高" },
-      { name: "Google News RSS — ACRO + PR Newswire", status: "enabled", trust: "B", method: "site 搜索 RSS", note: "定向新闻稿平台，比泛搜质量高" },
-      { name: "Google News RSS — Thermo Fisher 全球", status: "enabled", trust: "C", method: "RSS", note: "量大（100条/次），噪音占比高，需强力过滤" },
-      { name: "Google News RSS — Thermo Fisher 日本", status: "enabled", trust: "C", method: "RSS", note: "日本区域动态" },
+      { name: "Google News - ACRO 全球", status: "active", trust: "C", method: "RSS", note: "ACRO 主要外部补漏源，有效内容比例不高，但能发现媒体和合作方报道。", sourceIds: ["google_news_acro"] },
+      { name: "Google News - ACRO 日本", status: "active", trust: "C", method: "日文 RSS", note: "命中少，本轮只进归档；保留用于日文区域补漏。", sourceIds: ["google_news_acro_jp"] },
+      { name: "Google News - Thermo Fisher 全球", status: "active", trust: "C", method: "RSS", note: "产出量最大，同时也是归档噪音最多的来源，必须保留强过滤。", sourceIds: ["google_news_thermo"] },
+      { name: "Google News - Thermo Fisher 日本", status: "active", trust: "C", method: "日文 RSS", note: "本轮数量高但全部归档，说明查询词过宽；下一步要收紧日本市场关键词。", sourceIds: ["google_news_thermo_jp"] },
       {
         name: "Bing News RSS — ACRO / Thermo",
-        status: "backup",
+        status: "active",
         trust: "C",
         method: "RSS 备用源",
         note: "只补 Google News 未覆盖的标题，跨来源标题去重后再进入新闻流。",
-        result: "ACRO 7 条、Thermo 10 条；重复转载较多，适合作为备用而非主源",
+        sourceIds: ["bing_news_acro_backup", "bing_news_thermo_backup"],
       },
     ],
   },
@@ -8278,71 +8365,73 @@ const sourceInventory = [
     layer: "social_content",
     number: "04",
     title: "社交与内容平台",
-    subtitle: "很有业务信号——活动传播、招聘、产品内容、区域市场声量。但自动化和合规限制多，MVP 先人工观察。",
+    subtitle: "观察内容传播、活动、招聘和区域声量。只有公开且结构化的官方频道自动接入，其他平台保留人工观察。",
     sources: [
       { name: "LinkedIn 公司主页", status: "manual", trust: "D", method: "人工查看", note: "产品/活动/招聘动态价值高，但不自动抓取" },
-      { name: "LinkedIn 员工 / 管理层账号", status: "manual", trust: "D", method: "不抓取", note: "可能有早期信号，但隐私和合规风险高" },
       { name: "微信公众号", status: "manual", trust: "D", method: "人工查看", note: "中国市场重要来源，自动化门槛高" },
-      { name: "X / Twitter", status: "watchlist", trust: "D", method: "人工查看", note: "海外会议和活动传播，后续可评估 API" },
+      { name: "X / Twitter", status: "manual", trust: "D", method: "人工查看", note: "海外会议和活动传播，目前不申请付费 API" },
       {
         name: "Thermo Fisher 官方 YouTube",
-        status: "enabled",
+        status: "active",
         trust: "A",
         method: "Atom RSS",
         note: "免费订阅官方频道更新，作为独立视频信号，不混入默认新闻流。",
-        result: "实测返回最新 15 条视频，无需 API Key",
+        sourceIds: ["thermo_youtube_official"],
         url: "youtube.com/@thermofisher",
       },
-      { name: "ACRO YouTube / Bilibili", status: "watchlist", trust: "D", method: "待确认频道", note: "先确认官方频道 ID，再按同一方式接入" },
+      { name: "ACRO 官方 YouTube", status: "planned", trust: "A", method: "待确认 Channel ID", note: "确认官方频道后可使用同样的 Atom RSS 免费接入。" },
+      { name: "Bilibili", status: "manual", trust: "D", method: "人工观察", note: "先作为中国市场内容渠道观察，不进入 MVP 自动抓取。" },
     ],
   },
   {
     layer: "market_channel",
     number: "05",
     title: "市场活动与渠道",
-    subtitle: "观察展会、Webinar、经销商和合作伙伴动作，捕捉市场推广节奏和销售线索。先记录重点来源，重要事件人工录入。",
+    subtitle: "观察展会、Webinar、经销商、合作伙伴和客户案例。这一类信号业务价值高，但来源分散，需按公司建白名单。",
     sources: [
-      { name: "展会官网参展商页面", status: "watchlist", trust: "B", method: "人工查看", note: "判断参展、赞助、主题方向；可建展会日历" },
-      { name: "Webinar 报名平台", status: "watchlist", trust: "B", method: "人工查看", note: "主题方向和客户教育内容" },
-      { name: "经销商 / 代理商新闻页", status: "watchlist", trust: "D", method: "人工查看", note: "区域市场动作和转载信号" },
-      { name: "合作伙伴新闻页", status: "watchlist", trust: "C", method: "人工查看", note: "合作和联合推广信号" },
-      { name: "客户案例 / 应用笔记", status: "watchlist", trust: "B", method: "人工查看", note: "商业落地证据，但通常不频繁更新" },
+      { name: "重点展会日历", status: "planned", trust: "B", method: "白名单 + 日历", note: "为目标展会建立主办方、日期、参展商和主题记录，不抓全网展会。" },
+      { name: "Webinar 报名平台", status: "manual", trust: "B", method: "人工复核", note: "页面结构不一且常有表单，先用人工记录重要事件。" },
+      { name: "经销商 / 代理商新闻页", status: "planned", trust: "C", method: "公司白名单", note: "等公司池完成分类后，只接入重点区域经销商的公开页。" },
+      { name: "合作伙伴新闻页", status: "planned", trust: "B", method: "定向 RSS / 新 URL", note: "用于补齐合作另一方的表述，并与 ACRO 事件归并。" },
+      { name: "客户案例 / 应用笔记", status: "planned", trust: "B", method: "新页面监控", note: "商业落地价值高，但更新频率低，适合低频检查。" },
     ],
   },
   {
     layer: "research_regulatory",
     number: "06",
     title: "研发监管与组织信号",
-    subtitle: "技术方向、监管风险和公司公告已经按独立类型接入；默认新闻流不展示这些专题信号。",
+    subtitle: "论文、监管、公司申报、专利和组织变化。这些信号与新闻分开展示，避免用论文或历史监管记录撑大日报。",
     sources: [
       {
         name: "PubMed — ACRO",
-        status: "trial",
+        status: "active",
         trust: "B",
         method: "E-utilities API",
-        note: "单独进入论文信号；只保留一年内与 ACROBiosystems 查询关联的记录。",
-        result: "当前总命中 19 条，试运行抓取最近 10 条",
+        note: "单独进入论文信号；不进默认新闻日报。",
+        sourceIds: ["acro_pubmed_research"],
       },
-      { name: "ClinicalTrials.gov", status: "watchlist", trust: "A", method: "公开 API", note: "ACRO 命中 0；Thermo 多为试验中使用其设备，相关性不足，暂不接入", result: "接口可用，但公司情报价值低" },
-      { name: "专利数据库", status: "watchlist", trust: "B", method: "API / 搜索", note: "技术布局和产品方向" },
+      { name: "Crossref 科研元数据", status: "planned", trust: "B", method: "REST API", note: "作为 PubMed 之外的免费补充，需配置真实联系邮箱并做本地缓存。" },
+      { name: "ClinicalTrials.gov", status: "available", trust: "A", method: "公开 API", note: "接口已验证可用；ACRO 命中 0，Thermo 多为试验中使用设备，相关性不足，暂不运行。" },
       {
         name: "openFDA — Thermo 召回监控",
-        status: "trial",
+        status: "active",
         trust: "A",
         method: "公开 API",
-        note: "只显示两年内新增记录；历史命中不灌入页面，未来有新召回时自动出现。",
-        result: "接口命中 15 条 enforcement 记录，但最新为 2021 年，当前展示 0 条",
+        note: "监控任务正在运行，但只显示两年内记录；历史召回不灌入页面。",
+        sourceIds: ["thermo_openfda_monitor"],
       },
-      { name: "招聘网站", status: "watchlist", trust: "D", method: "人工查看", note: "组织扩张、区域布局、技术方向信号" },
       {
         name: "SEC EDGAR — Thermo",
-        status: "trial",
+        status: "available",
         trust: "A",
         method: "官方 JSON API（待配置）",
         note: "解析规则已完成，将只保留 8-K、10-Q、10-K；当前不发请求。",
-        result: "SEC 要求 User-Agent 包含真实联系邮箱，待配置后再启用",
+        sourceIds: ["thermo_sec_filings"],
         url: "data.sec.gov/submissions",
       },
+      { name: "EPO OPS 专利信号", status: "planned", trust: "A", method: "OAuth API", note: "免费额度足够 MVP，但需注册、OAuth 和公司名称归一，放在第二阶段。" },
+      { name: "EDINET / PMDA 日本公开信号", status: "planned", trust: "A", method: "API / 公开索引", note: "为日本市场建立公司公告和监管专题，不与日文新闻混用。" },
+      { name: "招聘网站", status: "manual", trust: "D", method: "人工复核", note: "用于观察组织扩张、区域布局和技术方向，暂不自动抓取。" },
     ],
   },
   {
@@ -8365,11 +8454,11 @@ const sourceInventory = [
     title: "商业数据服务",
     subtitle: "覆盖更稳定、更全面。等 MVP 证明价值后再申请预算评估，不在一开始烧钱。",
     sources: [
-      { name: "新闻 API（NewsAPI / GNews / Mediastack）", status: "paid_later", trust: "A", method: "API", note: "稳定性和覆盖率比 RSS 好，月费可控" },
-      { name: "商业情报数据库", status: "paid_later", trust: "A", method: "API / 导出", note: "企业、产品、管线数据，适合竞品深度分析" },
-      { name: "LinkedIn 官方 API", status: "paid_later", trust: "B", method: "API", note: "合规获取公司动态和招聘信号" },
-      { name: "微信生态监控服务", status: "paid_later", trust: "B", method: "第三方服务", note: "合规监测公众号和视频号内容" },
-      { name: "专利 / 临床数据库订阅", status: "paid_later", trust: "A", method: "API / 批量导出", note: "研发和监管信号的结构化数据" },
+      { name: "新闻 API（NewsAPI / GNews / Mediastack）", status: "paid", trust: "A", method: "API", note: "等免费来源证明价值后，再用预算换覆盖率和稳定性。" },
+      { name: "商业情报数据库", status: "paid", trust: "A", method: "API / 导出", note: "企业、产品、管线和融资数据，用于竞品深度分析而不是日常新闻。" },
+      { name: "LinkedIn 官方 API", status: "paid", trust: "B", method: "API", note: "只在公司明确需要社交和招聘信号时评估。" },
+      { name: "微信生态监控服务", status: "paid", trust: "B", method: "第三方服务", note: "合规获取公众号和视频号内容，不自建绕过平台的抓取器。" },
+      { name: "专利 / 临床数据库订阅", status: "paid", trust: "A", method: "API / 批量导出", note: "免费专利与临床接口不能满足稳定性后再考虑。" },
     ],
   },
 ];
@@ -8483,6 +8572,8 @@ const els = {
   pageTitle: document.querySelector("#pageTitle"),
   toolbar: document.querySelector(".toolbar"),
   ruleGrid: document.querySelector("#ruleGrid"),
+  sourceStageFilter: document.querySelector("#sourceStageFilter"),
+  sourceStageCount: document.querySelector("#sourceStageCount"),
   pagePanels: document.querySelectorAll("[data-page]"),
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
@@ -8593,22 +8684,36 @@ function renderOverviewScope() {
 }
 
 function renderRules() {
+  const allSources = sourceInventory.flatMap((cat) => cat.sources);
+  const visibleCount = allSources.filter(
+    (source) => state.sourceStage === "all" || source.status === state.sourceStage,
+  ).length;
+  els.sourceStageCount.textContent = state.sourceStage === "all"
+    ? `共 ${allSources.length} 个来源入口`
+    : `显示 ${visibleCount} / ${allSources.length} 个来源入口`;
+
   els.ruleGrid.innerHTML = sourceInventory
-    .map(
-      (cat) => `
+    .map((cat) => {
+      const visibleSources = cat.sources.filter(
+        (source) => state.sourceStage === "all" || source.status === state.sourceStage,
+      );
+      if (!visibleSources.length) return "";
+      return `
         <section class="rule-lane ${cat.layer}">
           <div class="rule-lane-head">
             <div class="rule-lane-title">
               <span class="lane-number">${cat.number}</span>
               <h3>${escapeHtml(cat.title)}</h3>
-              <span class="lane-summary">${summaryForCategory(cat)}</span>
+              <span class="lane-summary">${summaryForCategory(visibleSources)}</span>
             </div>
             <p>${escapeHtml(cat.subtitle)}</p>
           </div>
           <div class="source-grid">
-            ${cat.sources
+            ${visibleSources
               .map(
-                (src) => `
+                (src) => {
+                  const result = liveSourceResult(src);
+                  return `
                   <article class="source-card">
                     <div class="source-card-top">
                       <strong>${escapeHtml(src.name)}</strong>
@@ -8620,33 +8725,50 @@ function renderRules() {
                       ${src.url ? `<span class="url-hint">${escapeHtml(src.url)}</span>` : ""}
                     </div>
                     <p class="source-card-note">${escapeHtml(src.note)}</p>
-                    ${src.result ? `<div class="source-card-result"><span>实测</span>${escapeHtml(src.result)}</div>` : ""}
-                  </article>
-                `,
+                    ${result ? `<div class="source-card-result"><span>${src.status === "active" ? "本轮" : "依据"}</span>${escapeHtml(result)}</div>` : ""}
+                  </article>`;
+                },
               )
               .join("")}
           </div>
         </section>
-      `,
-    )
+      `;
+    })
     .join("");
 }
 
-function summaryForCategory(cat) {
+function summaryForCategory(sources) {
   const counts = {};
-  for (const src of cat.sources) {
+  for (const src of sources) {
     counts[src.status] = (counts[src.status] || 0) + 1;
   }
   const parts = [];
-  if (counts.enabled) parts.push(`${counts.enabled} 已启用`);
-  if (counts.backup) parts.push(`${counts.backup} 备用`);
-  if (counts.covered) parts.push(`${counts.covered} 已覆盖`);
-  if (counts.trial) parts.push(`${counts.trial} 试运行`);
-  if (counts.watchlist) parts.push(`${counts.watchlist} 观察中`);
+  if (counts.active) parts.push(`${counts.active} 现在在用`);
+  if (counts.available) parts.push(`${counts.available} 可用待接`);
+  if (counts.planned) parts.push(`${counts.planned} 未来开发`);
   if (counts.manual) parts.push(`${counts.manual} 人工`);
-  if (counts.blocked) parts.push(`${counts.blocked} 受限`);
-  if (counts.paid_later) parts.push(`${counts.paid_later} 后期付费`);
+  if (counts.covered) parts.push(`${counts.covered} 已覆盖`);
+  if (counts.blocked) parts.push(`${counts.blocked} 不接入`);
+  if (counts.paid) parts.push(`${counts.paid} 付费候选`);
   return parts.join(" · ");
+}
+
+function liveSourceResult(source) {
+  if (!source.sourceIds?.length || !Array.isArray(state.payload?.source_health)) {
+    return source.result || "";
+  }
+  const rows = state.payload.source_health.filter((row) => source.sourceIds.includes(row.source_id));
+  if (!rows.length) return source.result || "";
+  const pending = rows.find((row) => row.status === "pending");
+  if (pending) return pending.note || "解析规则已准备，配置完成前不发起请求。";
+  const errors = rows.filter((row) => row.status === "error");
+  if (errors.length) return `抓取异常：${errors.map((row) => row.error).join("; ")}`;
+  const total = rows.reduce((sum, row) => sum + row.total, 0);
+  const selected = rows.reduce((sum, row) => sum + row.immediate + row.daily, 0);
+  const archive = rows.reduce((sum, row) => sum + row.archive, 0);
+  const latest = rows.map((row) => row.last_published).filter(Boolean).sort().at(-1) || "暂无";
+  if (!total) return `监控正在运行，时效窗口内 0 条，最后内容：${latest}`;
+  return `候选 ${total} 条 · 日报 ${selected} 条 · 归档 ${archive} 条 · 最后内容 ${latest}`;
 }
 
 function renderPage() {
@@ -8757,14 +8879,13 @@ function renderSources(items = getSignalTypeItems()) {
 
 function labelStatus(status) {
   return {
-    enabled: "已启用",
-    backup: "备用",
+    active: "现在在用",
+    available: "可用待接",
+    planned: "未来开发",
     covered: "已覆盖",
-    trial: "试运行",
-    watchlist: "观察中",
-    manual: "人工",
-    blocked: "受限",
-    paid_later: "后期付费",
+    manual: "人工观察",
+    blocked: "不接入",
+    paid: "付费候选",
   }[status] || status;
 }
 
@@ -9156,6 +9277,11 @@ els.companyFilter.addEventListener("change", (event) => {
 });
 
 els.refreshButton.addEventListener("click", loadData);
+
+els.sourceStageFilter.addEventListener("change", (event) => {
+  state.sourceStage = event.target.value;
+  renderRules();
+});
 
 els.healthCompanyFilter.addEventListener("change", (event) => {
   state.healthCompany = event.target.value;
