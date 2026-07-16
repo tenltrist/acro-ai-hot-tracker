@@ -10,6 +10,13 @@
 
 - ACROBiosystems / 百普赛斯
 - Thermo Fisher Scientific
+- 日本生命科学生态 / 公司发现
+
+当前活动生态来源：
+
+- LINK-J 公开活动列表
+- 近畿生物产业振兴会议官方 RSS
+- 湘南 iPark 新闻与活动公告
 
 ## 核心判断
 
@@ -54,6 +61,8 @@ python3 ai_hot_tracker/scripts/run_daily.py --dry-run
 
 打开本地网站：
 
+在 `ai_hot_tracker` 目录运行：
+
 ```bash
 python3 -m http.server 8765
 ```
@@ -61,7 +70,7 @@ python3 -m http.server 8765
 然后访问：
 
 ```text
-http://127.0.0.1:8765/ai_hot_tracker/web/
+http://127.0.0.1:8765/web/
 ```
 
 部署到 GitHub Pages 后，仓库根目录会自动跳转到：

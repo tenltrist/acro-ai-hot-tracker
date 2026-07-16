@@ -272,6 +272,10 @@ a {
   background: #7fa5de;
 }
 
+.company-dot.ecosystem {
+  background: #65b98a;
+}
+
 .company-chip small {
   padding-left: 15px;
   color: #9bb0bd;
@@ -1135,6 +1139,7 @@ select {
 }
 
 .company-source-tag,
+.role-source-tag,
 .region-source-tag {
   display: inline-flex;
   align-items: center;
@@ -1149,6 +1154,12 @@ select {
 .company-source-tag {
   background: #202f37;
   color: #f7fbfc;
+}
+
+.role-source-tag {
+  border: 1px solid #b9ddc8;
+  background: #eef8f2;
+  color: #21613d;
 }
 
 .region-source-tag {
@@ -1508,6 +1519,16 @@ select {
 .tag.archive {
   background: var(--coral-soft);
   color: var(--coral);
+}
+
+.tag.source-origin {
+  max-width: min(100%, 440px);
+  overflow: hidden;
+  border: 1px solid #dbe3e7;
+  background: #fff;
+  color: #5c6b75;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .summary {

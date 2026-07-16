@@ -54,6 +54,17 @@ class Candidate:
     category_hint: str = ""
     signal_type: str = "news"
     reasons: list[str] = field(default_factory=list)
+    source_ids: list[str] = field(default_factory=list)
+    source_labels: list[str] = field(default_factory=list)
+    related_urls: list[str] = field(default_factory=list)
+
+    def __post_init__(self) -> None:
+        if not self.source_ids:
+            self.source_ids = [self.source_id]
+        if not self.source_labels:
+            self.source_labels = [self.source_label]
+        if not self.related_urls:
+            self.related_urls = [self.url]
 
     @property
     def key(self) -> str:
@@ -67,26 +78,74 @@ class LinkExtractor(HTMLParser):
         self.links: list[dict[str, str]] = []
         self._active_href: str | None = None
         self._active_text: list[str] = []
+        self._active_heading: list[str] = []
+        self._active_time: list[str] = []
+        self._active_image_alt: list[str] = []
+        self._active_title_attr = ""
+        self._inside_heading = False
+        self._inside_time = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag.lower() != "a":
-            return
+        lowered = tag.lower()
         attr_map = {k.lower(): v or "" for k, v in attrs}
-        href = attr_map.get("href")
-        if href:
-            self._active_href = href
-            self._active_text = []
+        if lowered == "a":
+            href = attr_map.get("href")
+            if href:
+                self._active_href = href
+                self._active_text = []
+                self._active_heading = []
+                self._active_time = []
+                self._active_image_alt = []
+                self._active_title_attr = attr_map.get("title", "")
+                self._inside_heading = False
+                self._inside_time = False
+            return
+        if not self._active_href:
+            return
+        if lowered in {"h1", "h2", "h3", "h4"}:
+            self._inside_heading = True
+        elif lowered == "time":
+            self._inside_time = True
+            datetime_value = attr_map.get("datetime", "")
+            if datetime_value:
+                self._active_time.append(datetime_value)
+        elif lowered == "img":
+            alt = attr_map.get("alt", "")
+            if alt:
+                self._active_image_alt.append(alt)
 
     def handle_data(self, data: str) -> None:
         if self._active_href:
             self._active_text.append(data)
+            if self._inside_heading:
+                self._active_heading.append(data)
+            if self._inside_time:
+                self._active_time.append(data)
 
     def handle_endtag(self, tag: str) -> None:
-        if tag.lower() == "a" and self._active_href:
+        lowered = tag.lower()
+        if lowered in {"h1", "h2", "h3", "h4"}:
+            self._inside_heading = False
+        elif lowered == "time":
+            self._inside_time = False
+        elif lowered == "a" and self._active_href:
             text = clean_text(" ".join(self._active_text))
-            self.links.append({"href": self._active_href, "text": text})
+            self.links.append(
+                {
+                    "href": self._active_href,
+                    "text": text,
+                    "heading": clean_text(" ".join(self._active_heading)),
+                    "time": clean_text(" ".join(self._active_time)),
+                    "image_alt": clean_text(" ".join(self._active_image_alt)),
+                    "title_attr": clean_text(self._active_title_attr),
+                }
+            )
             self._active_href = None
             self._active_text = []
+            self._active_heading = []
+            self._active_time = []
+            self._active_image_alt = []
+            self._active_title_attr = ""
 
 
 class TextExtractor(HTMLParser):
@@ -266,6 +325,24 @@ def parse_relative_date(value: str) -> str:
     return (dt.date.today() - dt.timedelta(days=days)).isoformat()
 
 
+def extract_calendar_date(value: str) -> str:
+    cleaned = clean_text(value)
+    match = re.search(
+        r"(?P<year>20\d{2})[./年-](?P<month>\d{1,2})[./月-](?P<day>\d{1,2})日?",
+        cleaned,
+    )
+    if not match:
+        return ""
+    try:
+        return dt.date(
+            int(match.group("year")),
+            int(match.group("month")),
+            int(match.group("day")),
+        ).isoformat()
+    except ValueError:
+        return ""
+
+
 def age_days(value: str) -> int | None:
     if not value:
         return None
@@ -311,6 +388,8 @@ def is_html_noise(title: str) -> bool:
     if cleaned in HTML_NOISE_TITLES:
         return True
     if len(cleaned) < 15:
+        return True
+    if re.fullmatch(r"20\d{2}[./-]\d{1,2}[./-]\d{1,2}(?:\s*\([^)]{1,3}\))?", cleaned):
         return True
     if cleaned.startswith(("share on", "follow us on", "cookie", "accept cookies")):
         return True
@@ -688,26 +767,63 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
     parser.feed(text)
     base_url = source["url"]
     include_terms = [term.lower() for term in source.get("include_url_terms", [])]
-    items: list[Candidate] = []
+    exclude_terms = [term.lower() for term in source.get("exclude_url_terms", [])]
+    rows_by_url: dict[str, dict[str, Any]] = {}
     for link in parser.links:
         absolute = urllib.parse.urljoin(base_url, link["href"])
-        if include_terms and not any(term in absolute.lower() for term in include_terms):
+        lowered_url = absolute.lower()
+        if include_terms and not any(term in lowered_url for term in include_terms):
             continue
-        title = link["text"] or absolute
+        if exclude_terms and any(term in lowered_url for term in exclude_terms):
+            continue
+        title_candidates = [
+            (4, link.get("heading", "")),
+            (3, link.get("title_attr", "")),
+            (2, link.get("image_alt", "")),
+            (1, link.get("text", "")),
+        ]
+        quality, title = next(
+            ((rank, value) for rank, value in title_candidates if value),
+            (0, absolute),
+        )
+        title = re.sub(r"^(?:icon\s+)+", "", title, flags=re.IGNORECASE)
         if len(title) < 4 or is_html_noise(title):
             continue
-        items.append(
-            Candidate(
-                company_id=source["company_id"],
-                source_id=source["id"],
-                source_label=source["label"],
-                source_trust=source.get("trust", "unknown"),
-                title=title,
-                url=absolute,
-                category_hint=source.get("category_hint", ""),
-                signal_type=source.get("signal_type", "news"),
-            )
+        normalized = normalize_url(absolute)
+        published = extract_calendar_date(link.get("time") or link.get("text", ""))
+        existing = rows_by_url.get(normalized)
+        if (
+            not existing
+            or quality > existing["quality"]
+            or (quality == existing["quality"] and len(title) > len(existing["title"]))
+        ):
+            rows_by_url[normalized] = {
+                "title": title,
+                "published": published or (existing or {}).get("published", ""),
+                "quality": quality,
+            }
+        elif published and not existing.get("published"):
+            existing["published"] = published
+
+    items: list[Candidate] = []
+    for absolute, row in rows_by_url.items():
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "unknown"),
+            title=row["title"],
+            url=absolute,
+            published=row["published"],
+            summary=source.get("item_summary", ""),
+            category_hint=source.get("category_hint", ""),
+            signal_type=source.get("signal_type", "news"),
         )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
     return items
 
 
@@ -761,17 +877,36 @@ def collect_candidates(
 
 
 def dedupe(candidates: list[Candidate]) -> list[Candidate]:
-    seen_urls: set[str] = set()
-    seen_titles: set[str] = set()
     unique: list[Candidate] = []
+    url_index: dict[str, int] = {}
+    title_index: dict[str, int] = {}
     for item in candidates:
         url_key = normalize_url(item.url)
         title_key = normalize_title(item.title)
-        if url_key in seen_urls or (len(title_key) >= 30 and title_key in seen_titles):
+        duplicate_index = url_index.get(url_key)
+        if duplicate_index is None and len(title_key) >= 30:
+            duplicate_index = title_index.get(title_key)
+        if duplicate_index is not None:
+            existing = unique[duplicate_index]
+            for source_id in item.source_ids:
+                if source_id not in existing.source_ids:
+                    existing.source_ids.append(source_id)
+            for source_label in item.source_labels:
+                if source_label not in existing.source_labels:
+                    existing.source_labels.append(source_label)
+            for related_url in item.related_urls:
+                normalized_related = normalize_url(related_url)
+                if all(normalize_url(value) != normalized_related for value in existing.related_urls):
+                    existing.related_urls.append(related_url)
+            if len(item.summary) > len(existing.summary):
+                existing.summary = item.summary
+            if not existing.published and item.published:
+                existing.published = item.published
             continue
-        seen_urls.add(url_key)
+        index = len(unique)
+        url_index[url_key] = index
         if len(title_key) >= 30:
-            seen_titles.add(title_key)
+            title_index[title_key] = index
         unique.append(item)
     return unique
 
@@ -796,6 +931,9 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
     if item.source_trust == "owned":
         score += 15
         reasons.append("公司自有来源")
+    elif item.source_trust == "ecosystem":
+        score += 12
+        reasons.append("行业生态平台公开来源")
     elif item.source_trust == "regulator":
         score += 20
         reasons.append("监管机构结构化来源")
@@ -881,6 +1019,8 @@ def classify_tier(score: int, trust: str, has_action: bool = False) -> str:
         return "daily"
     if trust == "owned" and score >= 40:
         return "daily"
+    if trust == "ecosystem" and score >= 40:
+        return "daily"
     if has_action and score >= 45:
         return "daily"
     return "archive"
@@ -958,7 +1098,8 @@ def build_dashboard_payload(
     signal_types: dict[str, int] = {}
     for item in candidates:
         categories[item.category] = categories.get(item.category, 0) + 1
-        sources[item.source_label] = sources.get(item.source_label, 0) + 1
+        for source_label in item.source_labels:
+            sources[source_label] = sources.get(source_label, 0) + 1
         signal_types[item.signal_type] = signal_types.get(item.signal_type, 0) + 1
 
     errors_by_source: dict[str, str] = {}
@@ -968,7 +1109,7 @@ def build_dashboard_payload(
 
     source_health: list[dict[str, Any]] = []
     for source in source_config:
-        source_items = [item for item in candidates if item.source_id == source["id"]]
+        source_items = [item for item in candidates if source["id"] in item.source_ids]
         runtime = source_runtime.get(source["id"], {})
         tier_counts = {
             tier: sum(1 for item in source_items if item.tier == tier)
@@ -1043,6 +1184,9 @@ def build_dashboard_payload(
                 "company": company_lookup[item.company_id]["display_name"],
                 "source_id": item.source_id,
                 "source_label": item.source_label,
+                "source_ids": item.source_ids,
+                "source_labels": item.source_labels,
+                "related_urls": item.related_urls,
                 "source_trust": item.source_trust,
                 "title": item.title,
                 "url": item.url,

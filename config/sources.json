@@ -258,6 +258,62 @@
       "max_items": 10
     },
     {
+      "id": "linkj_life_science_events",
+      "label": "LINK-J - life science ecosystem events",
+      "type": "html_links",
+      "url": "https://www.link-j.org/event/",
+      "company_id": "japan_life_science_ecosystem",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "include_url_terms": [
+        "/event/article-",
+        "/member_event/article-"
+      ],
+      "max_items": 40,
+      "item_summary": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
+      "health_note": "公开活动列表可直接读取；同时覆盖 LINK-J 主办活动与特别会员活动，按标题归并跨平台重复。"
+    },
+    {
+      "id": "kinkibio_official_feed",
+      "label": "Kinki Bio - official seminar and ecosystem RSS",
+      "type": "rss",
+      "url": "https://kinkibio.com/feed",
+      "company_id": "japan_life_science_ecosystem",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "max_age_days": 365,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "開催済み"
+      ],
+      "health_note": "官方 WordPress RSS，包含研讨会、产业交流、BioJapan 支援与区域生命科学项目。"
+    },
+    {
+      "id": "shonan_ipark_news_events",
+      "label": "Shonan iPark - official news and event announcements",
+      "type": "html_links",
+      "url": "https://www.shonan-ipark.com/news/",
+      "company_id": "japan_life_science_ecosystem",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "include_url_terms": [
+        "/news/"
+      ],
+      "exclude_url_terms": [
+        "/news/page/",
+        "/news/date/",
+        "/news/2200/",
+        "/news/2533/"
+      ],
+      "max_age_days": 365,
+      "max_items": 20,
+      "item_summary": "湘南 iPark 发布的活动、开放创新、园区企业和生命科学合作动态。",
+      "health_note": "RSS 仅有旧测试内容，因此改读公开 News 列表；活动页以旧海报为主，不作为当前主抓取入口。"
+    },
+    {
       "id": "acro_pubmed_research",
       "label": "PubMed - ACROBiosystems research signals",
       "type": "pubmed",

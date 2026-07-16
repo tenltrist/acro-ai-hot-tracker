@@ -1,39 +1,43 @@
 {
-  "generated_at": "2026-07-16T16:05:12",
+  "generated_at": "2026-07-16T16:35:23",
   "category_mix": {
-    "product": 27,
-    "company": 142,
+    "product": 28,
+    "company": 136,
     "partnership": 23,
-    "event": 10,
-    "regulatory": 15,
+    "event": 53,
+    "regulatory": 16,
     "video": 35,
-    "market": 8,
+    "market": 10,
     "finance": 7,
     "research": 7
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 3,
+    "Google News RSS - ACROBiosystems": 20,
+    "Google News RSS - ACROBiosystems PR Newswire": 11,
     "ACRO official Events and Webinars - indexed RSS": 3,
-    "ACRO official Insights - indexed RSS": 14,
+    "ACRO official Insights - indexed RSS": 11,
     "ACRO Japan official pages - indexed RSS": 3,
     "ACRO official YouTube channel": 20,
-    "Google News RSS - ACROBiosystems": 18,
     "Google News RSS - ACROBiosystems Japan": 1,
-    "Google News RSS - ACROBiosystems PR Newswire": 6,
     "Thermo Fisher official press releases RSS": 9,
+    "Google News RSS - Thermo Fisher": 99,
     "Thermo Fisher Biotech at Scale RSS": 10,
-    "Thermo Fisher official Events and Webinars - indexed RSS": 5,
+    "Thermo Fisher official Events and Webinars - indexed RSS": 7,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
-    "Google News RSS - Thermo Fisher": 97,
-    "Google News RSS - Thermo Fisher Japan": 50,
+    "Bing News RSS - Thermo Fisher backup": 4,
+    "Google News RSS - Thermo Fisher Japan": 51,
     "Bing News RSS - ACROBiosystems backup": 2,
-    "Bing News RSS - Thermo Fisher backup": 2,
     "Thermo Fisher official YouTube RSS": 15,
+    "LINK-J - life science ecosystem events": 28,
+    "Kinki Bio - official seminar and ecosystem RSS": 3,
+    "Shonan iPark - official news and event announcements": 10,
     "PubMed - ACROBiosystems research signals": 7
   },
   "signal_type_mix": {
     "news": 232,
     "video": 35,
+    "event": 41,
     "research": 7
   },
   "companies": [
@@ -91,6 +95,39 @@
         "clinical trials",
         "Japan",
         "日本"
+      ]
+    },
+    {
+      "id": "japan_life_science_ecosystem",
+      "display_name": "日本生命科学生态 / 公司发现",
+      "markets": [
+        "japan",
+        "biopharma",
+        "life-science-ecosystem"
+      ],
+      "strategic_topics": [
+        "ADC",
+        "抗体",
+        "抗体医薬",
+        "創薬",
+        "バイオ医薬",
+        "バイオテクノロジー",
+        "再生医療",
+        "細胞治療",
+        "遺伝子",
+        "iPS細胞",
+        "mRNA",
+        "ワクチン",
+        "GMP",
+        "AI創薬",
+        "オルガノイド",
+        "製薬",
+        "診断薬",
+        "医療機器",
+        "ライフサイエンス",
+        "ウェビナー",
+        "セミナー",
+        "オンライン"
       ]
     }
   ]

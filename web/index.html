@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260716d" />
+    <link rel="stylesheet" href="./styles.css?v=20260716e" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -35,7 +35,7 @@
       <div class="company-dock" aria-label="快捷筛选">
         <div class="dock-head">
           <span class="label">监控对象</span>
-          <strong>2 家已接入</strong>
+          <strong>2 家公司 + 1 个生态池</strong>
         </div>
         <button class="company-chip active" type="button" data-filter-company="all">
           <span class="company-chip-main"><i class="company-dot all"></i><strong>全部公司</strong></span>
@@ -48,6 +48,10 @@
         <button class="company-chip" type="button" data-filter-company="thermo_fisher">
           <span class="company-chip-main"><i class="company-dot thermo"></i><strong>Thermo Fisher</strong></span>
           <small>竞品 · 行业标杆</small>
+        </button>
+        <button class="company-chip" type="button" data-filter-company="japan_life_science_ecosystem">
+          <span class="company-chip-main"><i class="company-dot ecosystem"></i><strong>日本生命科学生态</strong></span>
+          <small>公司发现 · 活动与合作</small>
         </button>
       </div>
 
@@ -68,6 +72,7 @@
           <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
           <select id="signalTypeFilter" aria-label="按情报类型筛选">
             <option value="news" selected>新闻</option>
+            <option value="event">活动 / 生态</option>
             <option value="video">视频</option>
             <option value="filing">公司公告</option>
             <option value="regulatory">监管风险</option>
@@ -138,7 +143,7 @@
             <p class="eyebrow">公司池</p>
             <h2>先用 ACRO 跑通方法，再批量接入竞品/客户/合作方</h2>
           </div>
-          <span class="timestamp">MVP 阶段：2 家样本</span>
+          <span class="timestamp">MVP 阶段：2 家公司样本 + 1 个生态发现池</span>
         </div>
         <div class="company-summary-grid">
           <article>
@@ -152,9 +157,9 @@
             <p>用于测试大型公司官方 RSS、官网新闻和聚合新闻的差异。</p>
           </article>
           <article>
-            <span>下一步</span>
-            <strong>休假前公司名单</strong>
-            <p>按竞品、客户、合作伙伴、行业标杆、潜在客户分组接入。</p>
+            <span>行业发现池</span>
+            <strong>日本生命科学生态</strong>
+            <p>通过 LINK-J、近畿生物和湘南 iPark 发现活动、技术主题、合作项目与新公司。</p>
           </article>
         </div>
         <div class="company-table">
@@ -175,6 +180,12 @@
             <span>竞品 / 行业标杆</span>
             <span>基础配置</span>
             <span>验证官方 RSS 与聚合源</span>
+          </div>
+          <div class="company-row">
+            <span>日本生命科学生态 / 公司发现</span>
+            <span>行业生态观察池</span>
+            <span>3 个公开平台已接入</span>
+            <span>发现公司、活动与合作信号</span>
           </div>
           <div class="company-row muted">
             <span>后续公司名单</span>
@@ -231,7 +242,7 @@
           <div>
             <span>未来开发</span>
             <strong>有价值，但还没开工</strong>
-            <p>Sitemap 差分、Crossref、专利、展会日历、合作伙伴页面。</p>
+            <p>Crossref、专利、重点展会日历、经销商和合作伙伴页面。</p>
           </div>
         </div>
 
@@ -499,7 +510,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260716d"></script>
-    <script src="./app.js?v=20260716d"></script>
+    <script src="./embedded-data.js?v=20260716e"></script>
+    <script src="./app.js?v=20260716e"></script>
   </body>
 </html>

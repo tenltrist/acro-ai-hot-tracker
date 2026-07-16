@@ -313,13 +313,26 @@ notes:
 
 ### 8.5 市场活动与渠道来源
 
-| 来源 | 价值 | 常见获取方式 | 建设阶段建议 |
-| --- | --- | --- | --- |
-| 展会官网参展商页面 | 判断参展、赞助、主题方向 | `manual_review`、白名单页面差分 | `manual` 或 `planned` |
-| Webinar 平台页面 | 主题与潜在客户教育方向 | `manual_review`、`html_link_diff` | `manual` 或 `planned` |
-| 经销商 / 代理商新闻页 | 区域市场动作 | 白名单 RSS、`html_link_diff` | `planned` |
-| 合作伙伴新闻页 | 补齐合作另一方表述 | `indexed_rss`、`html_link_diff` | `planned` |
-| 客户案例页面 | 商业落地和应用信号 | `sitemap_diff`、`html_link_diff` | `planned` |
+这一层不再把所有活动页面都叫作“Webinar 平台”，而是先区分平台在信息链路中的角色：
+
+| 角色 | 回答的问题 | 记录方式 |
+| --- | --- | --- |
+| 发现来源 | 我们最先从哪里看到这条活动或公司信息？ | 保存来源平台、原始页面和发布时间 |
+| 分发渠道 | 哪些行业组织、合作方或地区平台帮助传播？ | 同一事件可保留多个渠道 |
+| 报名承载工具 | 最终在哪里报名或观看？ | 保存 Zoom / EventRegist / Peatix URL 与会议 ID |
+
+同一场 Webinar 可能同时出现在 LINK-J、近畿生物产业振兴会议和湘南 iPark。系统不生成三条重复新闻，而是按标题、活动日期、报名 URL 和 Webinar ID 归并，同时保留全部分发渠道。
+
+| 分类 | 具体来源 | 价值 | 常见获取方式 | 建设阶段建议 |
+| --- | --- | --- | --- | --- |
+| 行业生态与活动平台 | LINK-J | 会员企业活动、技术议题、Webinar、项目和开放创新信号 | 公开活动列表 `html_links` | `active` |
+| 行业生态与活动平台 | 近畿生物产业振兴会议 | 关西研讨会、产业交流、BioJapan 支援和区域项目 | 官方直接 RSS | `active` |
+| 行业生态与活动平台 | 湘南 iPark | 园区企业、活动公告、开放创新、合作及新闻 | News 列表 `html_links` | `active`；旧 RSS 和旧海报活动页不作为主入口 |
+| 展会与专业会议 | 重点展会官网和参展商页面 | 判断参展、赞助、演讲和主题方向 | `manual_review`、白名单页面差分 | `planned` |
+| 合作与商业网络 | 经销商 / 代理商新闻页 | 区域市场动作 | 白名单 RSS、`html_link_diff` | `planned` |
+| 合作与商业网络 | 合作伙伴新闻页 | 补齐合作另一方表述 | `indexed_rss`、`html_link_diff` | `planned` |
+| 合作与商业网络 | 客户案例页面 | 商业落地和应用信号 | `sitemap_diff`、`html_link_diff` | `planned` |
+| 报名承载工具 | Zoom / EventRegist / Peatix | 确认报名、会议编号和活动详情 | 跟随原始活动链接核对 | `covered`；不做全站发现式抓取 |
 
 ### 8.6 研发监管与组织信号
 
@@ -454,6 +467,10 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | `acro_wechat_official` | 社交与内容平台 | 多类型 | 中国 | `manual` | `manual_supplement` | `manual_review` | D | 中国市场重要来源，自动化和合规边界复杂 |
 | `acro_bilibili` | 社交与内容平台 | 视频与回放 | 中国 | `manual` | `manual_supplement` | `manual_review` | D | 中国市场视频内容观察 |
 | `acro_exhibition_pages` | 市场活动与渠道 | 活动与 Webinar | 多地区 | `manual` | `manual_supplement` | `manual_review` | B | 人工记录重点展会的参展、赞助和演讲信息 |
+| `linkj_life_science_events` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 全国 | `active` | `discovery` | `html_link_diff` | B | 读取 LINK-J 主办、共办和特别会员活动，提取技术主题与公司信号 |
+| `kinkibio_official_feed` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 关西 | `active` | `discovery` | `direct_rss` | B | 官方 RSS 直接提供研讨会、产业交流和 BioJapan 支援信息 |
+| `shonan_ipark_news_events` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 湘南 | `active` | `discovery` | `html_link_diff` | B | 读取 News 列表；官方 RSS 仅有旧测试内容，旧活动页不作为主入口 |
+| `event_registration_platforms` | 市场活动与渠道 | 报名承载工具 | 多地区 | `covered` | `verification` | `manual_review` | C | 保存 Zoom 等报名 URL、会议 ID 与渠道参数，不做全站抓取 |
 | `acro_distributors` | 市场活动与渠道 | 公司新闻与公告 | 多地区 | `planned` | `discovery` | `html_link_diff` | C | 观察重点经销商和代理商的区域市场动作 |
 | `acro_partner_news` | 市场活动与渠道 | 公司新闻与公告 | 全球 | `planned` | `verification` | `indexed_rss` | B | 补齐合作另一方表述，并与 ACRO 事件归并 |
 | `acro_pubmed_research` | 研发监管与组织信号 | 研究 | 全球 | `active` | `discovery` | `api` | B | 论文信号单独展示，不进入默认新闻日报 |

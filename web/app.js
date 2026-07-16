@@ -102,6 +102,34 @@ const wireMediaGroups = [
   },
 ];
 
+const marketChannelGroups = [
+  {
+    id: "ecosystem_platform",
+    number: "A",
+    title: "行业生态与活动平台",
+    description: "平台自身聚合生命科学企业、技术主题、会员活动、Webinar 和开放创新项目，是发现信息的入口。",
+  },
+  {
+    id: "conference_exhibition",
+    number: "B",
+    title: "展会与专业会议",
+    description: "围绕重点展会、学术会议和主办方建立白名单，观察参展、演讲、赞助和议题变化。",
+  },
+  {
+    id: "partner_network",
+    number: "C",
+    title: "合作与商业网络",
+    description: "经销商、代理商、合作伙伴和客户案例用于补齐区域动作、合作另一方表述与商业落地信号。",
+  },
+  {
+    id: "registration_infrastructure",
+    number: "＋",
+    title: "报名承载工具",
+    description: "Zoom 等工具承载报名和会议，不是主要发现源；仅用于确认活动详情、追踪渠道和去重。",
+    secondary: true,
+  },
+];
+
 const sourceInventory = [
   {
     layer: "official",
@@ -429,13 +457,94 @@ const sourceInventory = [
     layer: "market_channel",
     number: "05",
     title: "市场活动与渠道",
-    subtitle: "观察展会、Webinar、经销商、合作伙伴和客户案例。这一类信号业务价值高，但来源分散，需按公司建白名单。",
+    subtitle: "先区分行业生态平台、展会会议、合作网络和报名工具。平台负责发现信息，Zoom 只负责承载报名；同一活动按标题、日期和会议 ID 归并。",
     sources: [
-      { name: "重点展会日历", status: "planned", trust: "B", method: "白名单 + 日历", note: "为目标展会建立主办方、日期、参展商和主题记录，不抓全网展会。" },
-      { name: "Webinar 报名平台", status: "manual", trust: "B", method: "人工复核", note: "页面结构不一且常有表单，先用人工记录重要事件。" },
-      { name: "经销商 / 代理商新闻页", status: "planned", trust: "C", method: "公司白名单", note: "等公司池完成分类后，只接入重点区域经销商的公开页。" },
-      { name: "合作伙伴新闻页", status: "planned", trust: "B", method: "定向 RSS / 新 URL", note: "用于补齐合作另一方的表述，并与 ACRO 事件归并。" },
-      { name: "客户案例 / 应用笔记", status: "planned", trust: "B", method: "新页面监控", note: "商业落地价值高，但更新频率低，适合低频检查。" },
+      {
+        name: "LINK-J",
+        marketGroup: "ecosystem_platform",
+        roleTag: "发现源 + 分发渠道",
+        regionTag: "日本 / 全国",
+        status: "active",
+        trust: "B",
+        method: "公开活动列表 HTML",
+        note: "同时读取 LINK-J 主办、共办和特别会员活动，可发现企业 Webinar、技术议题、公司名称和开放创新项目。",
+        sourceIds: ["linkj_life_science_events"],
+        url: "link-j.org/event",
+      },
+      {
+        name: "近畿生物产业振兴会议",
+        marketGroup: "ecosystem_platform",
+        roleTag: "发现源 + 区域生态",
+        regionTag: "日本 / 关西",
+        status: "active",
+        trust: "B",
+        method: "官方直接 RSS",
+        note: "覆盖研讨会、产业交流、BioJapan 支援和关西生命科学项目；RSS 结构稳定，维护成本最低。",
+        sourceIds: ["kinkibio_official_feed"],
+        url: "kinkibio.com/feed",
+      },
+      {
+        name: "湘南 iPark",
+        marketGroup: "ecosystem_platform",
+        roleTag: "发现源 + 园区生态",
+        regionTag: "日本 / 湘南",
+        status: "active",
+        trust: "B",
+        method: "News 列表 HTML",
+        note: "监控园区企业、开放创新、活动公告与合作动态。官方 RSS 是旧测试内容，独立活动页也以旧海报为主，因此改用 News 列表。",
+        sourceIds: ["shonan_ipark_news_events"],
+        url: "shonan-ipark.com/news",
+      },
+      {
+        name: "重点展会与专业会议日历",
+        marketGroup: "conference_exhibition",
+        roleTag: "发现源",
+        regionTag: "多地区",
+        status: "planned",
+        trust: "B",
+        method: "主办方白名单 + 日历",
+        note: "为 BioJapan、SLAS、AACR 等目标会议记录日期、参展商、演讲者和议题，不抓取全网泛展会。",
+      },
+      {
+        name: "经销商 / 代理商公开页",
+        marketGroup: "partner_network",
+        roleTag: "区域验证源",
+        regionTag: "多地区",
+        status: "planned",
+        trust: "C",
+        method: "公司白名单 + 新链接差分",
+        note: "公司池完成区域分类后，只接入重点经销商和代理商的公开新闻、活动及产品页面。",
+      },
+      {
+        name: "合作伙伴新闻页",
+        marketGroup: "partner_network",
+        roleTag: "合作验证源",
+        regionTag: "全球",
+        status: "planned",
+        trust: "B",
+        method: "定向 RSS / 新链接差分",
+        note: "用于补齐合作另一方的表述；系统按标题和事件日期与公司官网、行业平台内容归并。",
+      },
+      {
+        name: "客户案例 / 应用笔记",
+        marketGroup: "partner_network",
+        roleTag: "商业落地源",
+        regionTag: "全球",
+        status: "planned",
+        trust: "B",
+        method: "Sitemap / 新页面监控",
+        note: "更新频率低但业务价值高，适合低频检查并提取客户、应用场景和产品线。",
+      },
+      {
+        name: "Zoom / EventRegist / Peatix",
+        marketGroup: "registration_infrastructure",
+        roleTag: "报名承载工具",
+        regionTag: "多地区",
+        status: "covered",
+        trust: "C",
+        method: "跟随原始活动链接核对",
+        note: "不做全站抓取。只保存报名 URL、Webinar ID 和渠道参数，用于确认详情并合并 LINK-J、近畿生物、湘南 iPark 分发的同一活动。",
+      },
     ],
   },
   {
@@ -518,6 +627,7 @@ const pageMeta = {
 const companyIdToDisplayName = {
   acro: "ACROBiosystems / 百普赛斯",
   thermo_fisher: "Thermo Fisher Scientific",
+  japan_life_science_ecosystem: "日本生命科学生态 / 公司发现",
 };
 
 const fallbackPayload = {
@@ -715,7 +825,9 @@ function renderOverviewScope() {
   els.metricDaily.textContent = scoped.filter((item) => item.tier === "daily").length;
   els.metricImmediate.textContent = scoped.filter((item) => item.tier === "immediate").length;
   els.metricArchive.textContent = scoped.filter((item) => item.tier === "archive").length;
-  els.sourceCount.textContent = `${new Set(scoped.map((item) => item.source_id || item.source_label)).size} sources`;
+  els.sourceCount.textContent = `${
+    new Set(scoped.flatMap((item) => item.source_ids || [item.source_id || item.source_label])).size
+  } sources`;
 
   const categoryMix = {};
   for (const item of scoped) {
@@ -756,6 +868,8 @@ function renderRules() {
               ? renderOfficialSourceGroups(visibleSources)
               : cat.layer === "wire_media"
                 ? renderWireMediaGroups(visibleSources)
+                : cat.layer === "market_channel"
+                  ? renderMarketChannelGroups(visibleSources)
                 : `<div class="source-grid">${visibleSources.map(renderSourceCard).join("")}</div>`
           }
         </section>
@@ -784,6 +898,19 @@ function renderWireMediaGroups(sources) {
     `
       <div><span>主分类</span><strong>来源扮演什么角色</strong><small>新闻稿平台、行业编辑媒体、技术媒体</small></div>
       <div><span>辅助标签</span><strong>监控谁与怎么获取</strong><small>公司、竞品、地区、RSS 或定向查询</small></div>
+    `,
+  );
+}
+
+function renderMarketChannelGroups(sources) {
+  return renderGroupedSources(
+    sources,
+    marketChannelGroups,
+    "marketGroup",
+    `
+      <div><span>发现层</span><strong>从哪里发现活动与公司</strong><small>行业生态平台、展会官网、合作网络</small></div>
+      <div><span>记录层</span><strong>一条活动保留三种角色</strong><small>发现来源、分发渠道、报名承载工具</small></div>
+      <div><span>去重层</span><strong>多个链接合并成一个事件</strong><small>标题、日期、报名 URL 与 Webinar ID</small></div>
     `,
   );
 }
@@ -832,6 +959,7 @@ function renderSourceCard(src) {
       </div>
       <div class="source-card-meta">
         ${src.companyTag ? `<span class="company-source-tag">${escapeHtml(src.companyTag)}</span>` : ""}
+        ${src.roleTag ? `<span class="role-source-tag">${escapeHtml(src.roleTag)}</span>` : ""}
         ${src.regionTag ? `<span class="region-source-tag">${escapeHtml(src.regionTag)}</span>` : ""}
         <span class="trust-badge trust-${src.trust.toLowerCase().replace(/[^a-e]/g, "")}">可信 ${src.trust}</span>
         <span class="method-tag">${escapeHtml(src.method)}</span>
@@ -905,7 +1033,7 @@ function renderSignals() {
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;
-      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${item.reasons.join(" ")}`.toLowerCase();
+      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")}`.toLowerCase();
       return haystack.includes(query);
     })
     .sort((a, b) => b.score - a.score);
@@ -933,6 +1061,7 @@ function renderSignals() {
         <span class="tag">${labelCategory(item.category)}</span>
         <span class="tag">${escapeHtml(item.company)}</span>
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
+        <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
       <p class="summary">${escapeHtml(item.ai_summary || item.summary || "暂无摘要，建议回原文核对。")}</p>
       <ul class="reason-list">
@@ -981,7 +1110,9 @@ function renderBars(container, data, labeler) {
 function renderSources(items = getSignalTypeItems()) {
   const sourceMix = {};
   for (const item of items) {
-    sourceMix[item.source_label] = (sourceMix[item.source_label] || 0) + 1;
+    for (const sourceLabel of item.source_labels || [item.source_label]) {
+      sourceMix[sourceLabel] = (sourceMix[sourceLabel] || 0) + 1;
+    }
   }
   const entries = Object.entries(sourceMix).sort((a, b) => b[1] - a[1]).slice(0, 6);
   els.sourceList.innerHTML = entries
@@ -1028,6 +1159,7 @@ function labelCategory(category) {
 function labelSignalType(type) {
   return {
     news: "新闻",
+    event: "活动 / 生态",
     video: "视频",
     filing: "公司公告",
     regulatory: "监管风险",
@@ -1060,7 +1192,9 @@ function escapeAttr(value) {
 
 function renderSourceHealth() {
   const errors = state.payload.errors || [];
-  const sourceNames = new Set(state.payload.items.map((item) => item.source_label));
+  const sourceNames = new Set(
+    state.payload.items.flatMap((item) => item.source_labels || [item.source_label]),
+  );
   const allActiveSources = [...sourceNames];
 
   const total = allActiveSources.length;
@@ -1264,7 +1398,7 @@ function exportCsv() {
         csvCell(item.title),
         csvCell(item.company),
         csvCell(labelSignalType(item.signal_type || "news")),
-        csvCell(item.source_label),
+        csvCell((item.source_labels || [item.source_label]).join(" + ")),
         csvCell(item.published || ""),
         item.score,
         csvCell(labelTier(item.tier)),
@@ -1300,7 +1434,7 @@ function getFilteredItems() {
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;
-      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${item.reasons.join(" ")}`.toLowerCase();
+      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")}`.toLowerCase();
       return haystack.includes(query);
     })
     .sort((a, b) => b.score - a.score);
