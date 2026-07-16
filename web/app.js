@@ -121,10 +121,11 @@ const sourceInventory = [
         contentGroup: "product_updates",
         companyTag: "ACRO",
         regionTag: "全球站",
-        status: "planned",
+        status: "active",
         trust: "A",
-        method: "Sitemap 新 URL 差分",
-        note: "监控产品、Applications 和 Resources 新增 URL，不依赖不准确的 lastmod。",
+        method: "官方 Sitemap 新 URL 差分",
+        note: "读取 robots.txt 指定的官方 Sitemap；首次建立 6300+ 产品与解决方案 URL 基线，之后只报告新增页面。",
+        sourceIds: ["acro_product_sitemap"],
         url: "acrobiosystems.com/products",
       },
       {
@@ -132,10 +133,11 @@ const sourceInventory = [
         contentGroup: "product_updates",
         companyTag: "Thermo Fisher",
         regionTag: "全球站",
-        status: "planned",
+        status: "covered",
         trust: "A",
-        method: "产品栏目新 URL",
-        note: "按生命科学业务相关产品线建立栏目白名单，不监控整个大型产品目录。",
+        method: "由官方新闻稿 RSS 覆盖",
+        note: "产品目录过大且页面直抓为 403；实测官方新闻稿 RSS 已包含新品发布，单独建产品页源会重复并放大噪音。",
+        sourceIds: ["thermo_official_rss"],
       },
       {
         name: "ACRO Events / Webinar",
@@ -154,10 +156,12 @@ const sourceInventory = [
         contentGroup: "events",
         companyTag: "Thermo Fisher",
         regionTag: "全球站",
-        status: "planned",
+        status: "active",
         trust: "A",
-        method: "活动栏目监控",
-        note: "作为 ACRO Activities 的对标入口，优先识别展会、Webinar 和回放。",
+        method: "活动栏目索引 RSS",
+        note: "活动页直抓仍返回 403；当前通过公开索引监控 Webinar、Conference 和 Summit，并过滤投资者活动。",
+        sourceIds: ["thermo_events_index"],
+        url: "thermofisher.com/us/en/home/events.html",
       },
       {
         name: "ACRO Insights",
@@ -200,10 +204,12 @@ const sourceInventory = [
         contentGroup: "official_video",
         companyTag: "ACRO",
         regionTag: "全球频道",
-        status: "planned",
+        status: "active",
         trust: "A",
-        method: "待确认 Channel ID",
-        note: "确认官方频道后，可使用同样的 Atom RSS 免费接入。",
+        method: "官方频道公开页面",
+        note: "官方频道与 Channel ID 已确认；Atom Feed 实测返回 404，改为读取公开频道页中的最新视频。",
+        sourceIds: ["acro_youtube_official"],
+        url: "youtube.com/@ACROBiosystems",
       },
       {
         name: "ACRO 日本官网补充入口",
@@ -222,10 +228,12 @@ const sourceInventory = [
         contentGroup: "regional_coverage",
         companyTag: "Thermo Fisher",
         regionTag: "日本",
-        status: "planned",
+        status: "active",
         trust: "A",
-        method: "日文栏目定向监控",
-        note: "后续只监控日本市场重点栏目，避免把全球英文内容的日文镜像重复计入。",
+        method: "日本站定向索引 RSS",
+        note: "只查询日本官网的新闻、活动和 Seminar 页面；抓取后继续按内容类型归类，并与泛新闻源去重。",
+        sourceIds: ["thermo_japan_official_index"],
+        url: "thermofisher.com/jp/ja/home",
       },
     ],
   },
@@ -693,6 +701,13 @@ function liveSourceResult(source) {
   const selected = rows.reduce((sum, row) => sum + row.immediate + row.daily, 0);
   const archive = rows.reduce((sum, row) => sum + row.archive, 0);
   const latest = rows.map((row) => row.last_published).filter(Boolean).sort().at(-1) || "暂无";
+  const sitemapRow = rows.find((row) => row.snapshot_count);
+  if (!total && sitemapRow?.initial_snapshot) {
+    return `基线已建立 · 监控 ${sitemapRow.snapshot_count} 个 URL · 本轮新增 0`;
+  }
+  if (!total && sitemapRow) {
+    return `持续监控 ${sitemapRow.snapshot_count} 个 URL · 本轮新增 ${sitemapRow.new_urls || 0}`;
+  }
   if (!total) return `监控正在运行，时效窗口内 0 条，最后内容：${latest}`;
   return `候选 ${total} 条 · 日报 ${selected} 条 · 归档 ${archive} 条 · 最后内容 ${latest}`;
 }

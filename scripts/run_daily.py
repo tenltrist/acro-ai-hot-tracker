@@ -27,6 +27,7 @@ DATA_DIR = ROOT / "data"
 REPORT_DIR = ROOT / "reports"
 SEEN_PATH = DATA_DIR / "seen_urls.json"
 LATEST_RUN_PATH = DATA_DIR / "latest_run.json"
+SOURCE_SNAPSHOTS_PATH = DATA_DIR / "source_snapshots.json"
 API_DIR = ROOT / "api" / "public"
 
 
@@ -224,6 +225,47 @@ def normalize_source_date(value: str) -> str:
     return parse_date(cleaned)
 
 
+def parse_relative_date(value: str) -> str:
+    cleaned = clean_text(value).lower()
+    match = re.search(
+        r"(\d+)\s+(second|minute|hour|day|week|month|year)s?\s+ago",
+        cleaned,
+    )
+    if match:
+        amount = int(match.group(1))
+        unit = match.group(2)
+        days = {
+            "second": 0,
+            "minute": 0,
+            "hour": 0,
+            "day": amount,
+            "week": amount * 7,
+            "month": amount * 30,
+            "year": amount * 365,
+        }[unit]
+    else:
+        jp_match = re.search(
+            r"(\d+)\s*(秒|分|時間|日|週間|か月|ヶ月|月|年)前",
+            cleaned,
+        )
+        if not jp_match:
+            return ""
+        amount = int(jp_match.group(1))
+        unit = jp_match.group(2)
+        days = {
+            "秒": 0,
+            "分": 0,
+            "時間": 0,
+            "日": amount,
+            "週間": amount * 7,
+            "か月": amount * 30,
+            "ヶ月": amount * 30,
+            "月": amount * 30,
+            "年": amount * 365,
+        }[unit]
+    return (dt.date.today() - dt.timedelta(days=days)).isoformat()
+
+
 def age_days(value: str) -> int | None:
     if not value:
         return None
@@ -363,6 +405,150 @@ def parse_atom(source: dict[str, Any]) -> list[Candidate]:
         if len(items) >= source.get("max_items", 1000):
             break
     return items
+
+
+def parse_youtube_channel(source: dict[str, Any]) -> list[Candidate]:
+    text = fetch_text(source["url"])
+    marker = "var ytInitialData = "
+    marker_pos = text.find(marker)
+    if marker_pos < 0:
+        raise ValueError("YouTube channel payload not found")
+    payload, _ = json.JSONDecoder().raw_decode(text[marker_pos + len(marker):])
+    videos: list[dict[str, Any]] = []
+
+    def collect_nodes(node: Any) -> None:
+        if isinstance(node, dict):
+            lockup = node.get("lockupViewModel")
+            if (
+                isinstance(lockup, dict)
+                and lockup.get("contentType") == "LOCKUP_CONTENT_TYPE_VIDEO"
+            ):
+                videos.append(lockup)
+            for value in node.values():
+                collect_nodes(value)
+        elif isinstance(node, list):
+            for value in node:
+                collect_nodes(value)
+
+    collect_nodes(payload)
+    items: list[Candidate] = []
+    seen_video_ids: set[str] = set()
+    for video in videos:
+        video_id = clean_text(video.get("contentId", ""))
+        metadata = video.get("metadata", {}).get("lockupMetadataViewModel", {})
+        title = clean_text(metadata.get("title", {}).get("content", ""))
+        if not video_id or video_id in seen_video_ids or not title or is_html_noise(title):
+            continue
+        seen_video_ids.add(video_id)
+        metadata_rows = (
+            metadata.get("metadata", {})
+            .get("contentMetadataViewModel", {})
+            .get("metadataRows", [])
+        )
+        metadata_parts = metadata_rows[0].get("metadataParts", []) if metadata_rows else []
+        metadata_text = [
+            clean_text(part.get("text", {}).get("content", ""))
+            for part in metadata_parts
+        ]
+        relative_date = next(
+            (
+                value
+                for value in metadata_text
+                if re.search(r"\bago\b", value.lower()) or value.endswith("前")
+            ),
+            "",
+        )
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "owned"),
+            title=title,
+            url=f"https://www.youtube.com/watch?v={video_id}",
+            published=parse_relative_date(relative_date),
+            summary="Official YouTube channel video. " + " · ".join(metadata_text),
+            category_hint=source.get("category_hint", "video"),
+            signal_type=source.get("signal_type", "video"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
+def sitemap_title(url: str) -> str:
+    path = urllib.parse.urlsplit(url).path.rstrip("/")
+    slug = path.rsplit("/", 1)[-1]
+    title = re.sub(r"[-_]+", " ", urllib.parse.unquote(slug)).strip()
+    return title or path
+
+
+def parse_sitemap_urls(
+    source: dict[str, Any],
+    previous_snapshot: dict[str, Any],
+) -> tuple[list[Candidate], dict[str, Any], dict[str, Any]]:
+    text = fetch_text(source["url"])
+    root = ET.fromstring(text.lstrip())
+    namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    include_terms = [term.lower() for term in source.get("include_url_terms", [])]
+    exclude_terms = [term.lower() for term in source.get("exclude_url_terms", [])]
+    current_rows: list[tuple[str, str, str]] = []
+
+    for url_node in root.findall("s:url", namespace):
+        url = clean_text(url_node.findtext("s:loc", "", namespace))
+        if not url:
+            continue
+        normalized = normalize_url(url)
+        lowered = normalized.lower()
+        if include_terms and not any(term in lowered for term in include_terms):
+            continue
+        if exclude_terms and any(term in lowered for term in exclude_terms):
+            continue
+        key = hashlib.sha256(normalized.encode("utf-8")).hexdigest()[:16]
+        last_modified = normalize_source_date(
+            url_node.findtext("s:lastmod", "", namespace)
+        )
+        current_rows.append((key, normalized, last_modified))
+
+    current_keys = {row[0] for row in current_rows}
+    previous_keys = set(previous_snapshot.get("keys", []))
+    initial_snapshot = not previous_keys
+    added_keys = set() if initial_snapshot else current_keys - previous_keys
+    items: list[Candidate] = []
+    for key, url, last_modified in current_rows:
+        if key not in added_keys:
+            continue
+        candidate = Candidate(
+            company_id=source["company_id"],
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "owned"),
+            title=f"{source.get('title_prefix', 'New official page')}: {sitemap_title(url)}",
+            url=url,
+            published=last_modified or dt.date.today().isoformat(),
+            summary="New URL detected in the official sitemap.",
+            category_hint=source.get("category_hint", "product"),
+            signal_type=source.get("signal_type", "news"),
+        )
+        if source_allows_candidate(source, candidate):
+            items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+
+    captured_at = dt.datetime.now().isoformat(timespec="seconds")
+    next_snapshot = {
+        "captured_at": captured_at,
+        "keys": sorted(current_keys),
+    }
+    runtime = {
+        "snapshot_count": len(current_keys),
+        "new_urls": len(added_keys),
+        "initial_snapshot": initial_snapshot,
+        "last_checked": captured_at,
+    }
+    return items, next_snapshot, runtime
 
 
 def parse_sec_submissions(source: dict[str, Any]) -> list[Candidate]:
@@ -525,9 +711,14 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
     return items
 
 
-def collect_candidates(sources: list[dict[str, Any]]) -> tuple[list[Candidate], list[str]]:
+def collect_candidates(
+    sources: list[dict[str, Any]],
+    source_snapshots: dict[str, Any],
+) -> tuple[list[Candidate], list[str], dict[str, Any], dict[str, Any]]:
     candidates: list[Candidate] = []
     errors: list[str] = []
+    snapshot_updates: dict[str, Any] = {}
+    source_runtime: dict[str, Any] = {}
     for source in sources:
         if source.get("enabled", True) is False:
             continue
@@ -536,6 +727,16 @@ def collect_candidates(sources: list[dict[str, Any]]) -> tuple[list[Candidate], 
                 candidates.extend(parse_rss(source))
             elif source["type"] == "atom":
                 candidates.extend(parse_atom(source))
+            elif source["type"] == "youtube_channel":
+                candidates.extend(parse_youtube_channel(source))
+            elif source["type"] == "sitemap_urls":
+                items, snapshot, runtime = parse_sitemap_urls(
+                    source,
+                    source_snapshots.get(source["id"], {}),
+                )
+                candidates.extend(items)
+                snapshot_updates[source["id"]] = snapshot
+                source_runtime[source["id"]] = runtime
             elif source["type"] == "sec_submissions":
                 candidates.extend(parse_sec_submissions(source))
             elif source["type"] == "openfda":
@@ -556,7 +757,7 @@ def collect_candidates(sources: list[dict[str, Any]]) -> tuple[list[Candidate], 
             ValueError,
         ) as exc:
             errors.append(f"{source['id']}: {exc}")
-    return candidates, errors
+    return candidates, errors, snapshot_updates, source_runtime
 
 
 def dedupe(candidates: list[Candidate]) -> list[Candidate]:
@@ -741,6 +942,7 @@ def build_dashboard_payload(
     seen: dict[str, Any],
     company_lookup: dict[str, dict[str, Any]],
     source_config: list[dict[str, Any]],
+    source_runtime: dict[str, Any],
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
 ) -> dict[str, Any]:
@@ -767,6 +969,7 @@ def build_dashboard_payload(
     source_health: list[dict[str, Any]] = []
     for source in source_config:
         source_items = [item for item in candidates if item.source_id == source["id"]]
+        runtime = source_runtime.get(source["id"], {})
         tier_counts = {
             tier: sum(1 for item in source_items if item.tier == tier)
             for tier in ("immediate", "daily", "archive")
@@ -800,7 +1003,11 @@ def build_dashboard_payload(
                 ) if source_items else 0,
                 "last_published": max(dated_items) if dated_items else "",
                 "error": errors_by_source.get(source["id"], ""),
-                "note": source.get("disabled_reason", ""),
+                "note": source.get("disabled_reason", "") or source.get("health_note", ""),
+                "snapshot_count": runtime.get("snapshot_count", 0),
+                "new_urls": runtime.get("new_urls", 0),
+                "initial_snapshot": runtime.get("initial_snapshot", False),
+                "last_checked": runtime.get("last_checked", ""),
             }
         )
 
@@ -930,8 +1137,16 @@ def main() -> int:
     sources = load_json(CONFIG_DIR / "sources.json")["sources"]
     company_lookup = {company["id"]: company for company in companies}
     seen = load_json(SEEN_PATH) if SEEN_PATH.exists() else {}
+    source_snapshots = (
+        load_json(SOURCE_SNAPSHOTS_PATH)
+        if SOURCE_SNAPSHOTS_PATH.exists()
+        else {}
+    )
 
-    candidates, errors = collect_candidates(sources)
+    candidates, errors, snapshot_updates, source_runtime = collect_candidates(
+        sources,
+        source_snapshots,
+    )
     candidates = dedupe(candidates)
     scored = [
         score_candidate(item, company_lookup[item.company_id], args.days)
@@ -953,7 +1168,16 @@ def main() -> int:
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = REPORT_DIR / f"daily-{dt.date.today().isoformat()}.md"
     out_path.write_text(report, encoding="utf-8")
-    payload = build_dashboard_payload(scored, errors, seen, company_lookup, sources, args.days, ai_summaries)
+    payload = build_dashboard_payload(
+        scored,
+        errors,
+        seen,
+        company_lookup,
+        sources,
+        source_runtime,
+        args.days,
+        ai_summaries,
+    )
     save_json(LATEST_RUN_PATH, payload)
     write_static_api(payload)
 
@@ -973,6 +1197,8 @@ def main() -> int:
         old_file.unlink()
 
     if not args.dry_run:
+        source_snapshots.update(snapshot_updates)
+        save_json(SOURCE_SNAPSHOTS_PATH, source_snapshots)
         for item in scored:
             seen.setdefault(
                 item.key,

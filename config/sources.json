@@ -15,6 +15,22 @@
       ]
     },
     {
+      "id": "acro_product_sitemap",
+      "label": "ACRO official product and solution sitemap monitor",
+      "type": "sitemap_urls",
+      "url": "https://console.acrobiosystems.com/sitemap-en.xml",
+      "company_id": "acro",
+      "trust": "owned",
+      "category_hint": "product",
+      "title_prefix": "ACRO new product or solution page",
+      "include_url_terms": [
+        "/products/",
+        "/category/solutions/"
+      ],
+      "max_items": 30,
+      "health_note": "官方 Sitemap 新 URL 差分监控；历史 URL 仅用于基线，日报只接收新增页面。"
+    },
+    {
       "id": "acro_official_activities_index",
       "label": "ACRO official Events and Webinars - indexed RSS",
       "type": "rss",
@@ -60,6 +76,23 @@
       ]
     },
     {
+      "id": "acro_youtube_official",
+      "label": "ACRO official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/@ACROBiosystems/videos?hl=en",
+      "company_id": "acro",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "calendar",
+        "dr. llama"
+      ],
+      "health_note": "官方频道已确认；标准 Atom Feed 返回 404，当前读取公开频道页面。"
+    },
+    {
       "id": "google_news_acro",
       "label": "Google News RSS - ACROBiosystems",
       "type": "rss",
@@ -100,6 +133,36 @@
       "trust": "owned",
       "max_age_days": 180,
       "max_items": 15
+    },
+    {
+      "id": "thermo_events_index",
+      "label": "Thermo Fisher official Events and Webinars - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Athermofisher.com%2Fus%2Fen%2Fhome%2Fevents%20%28webinar%20OR%20conference%20OR%20summit%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "thermo_fisher",
+      "trust": "owned",
+      "category_hint": "event",
+      "max_age_days": 365,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "earnings call",
+        "investor day",
+        "conference call"
+      ]
+    },
+    {
+      "id": "thermo_japan_official_index",
+      "label": "Thermo Fisher Japan official pages - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Athermofisher.com%2Fjp%2Fja%2Fhome%20%28%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9%20OR%20%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%20OR%20%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "thermo_fisher",
+      "trust": "owned",
+      "max_age_days": 180,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "certificate of analysis",
+        "download"
+      ]
     },
     {
       "id": "google_news_thermo",

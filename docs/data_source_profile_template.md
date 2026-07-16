@@ -405,8 +405,8 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | `acro_official_activities_index` | 官方自有 | 活动与 Webinar | 全球 | `active` | `primary` | `indexed_rss` | A | 监控 Activities，并过滤礼品、问卷、优惠和免费样品 |
 | `acro_official_insights_index` | 官方自有 | 技术内容 | 全球 | `active` | `primary` | `indexed_rss` | A | 监控 Insights、技术解读和应用内容 |
 | `acro_japan_official_index` | 官方自有 | 待二次分类 | 日本 | `active` | `discovery` | `indexed_rss` | A | 先发现日本站页面，再归入新闻、产品、活动、技术或视频 |
-| `acro_product_sitemap` | 官方自有 | 产品与解决方案更新 | 全球 | `planned` | `discovery` | `sitemap_diff` | A | 只比较产品、Applications 和 Resources 栏目的新增 URL |
-| `acro_youtube_official` | 官方自有 | 视频与回放 | 全球 | `planned` | `primary` | `atom` | A | 确认官方 Channel ID 后接入 |
+| `acro_product_sitemap` | 官方自有 | 产品与解决方案更新 | 全球 | `active` | `discovery` | `sitemap_diff` | A | 读取 robots.txt 指定的官方 Sitemap；首次建立基线，之后只报告产品与 Solutions 新增 URL |
+| `acro_youtube_official` | 官方自有 | 视频与回放 | 全球 | `active` | `primary` | `html_link_diff` | A | 官方 Channel ID 已确认；Atom Feed 返回 404，改读公开频道页面 |
 | `acro_official_html_direct` | 官方自有 | 多类型 | 全球 / 日本 | `covered` | `verification` | `do_not_fetch` | A | HTML 直抓触发滑块验证，当前由官方页面索引 RSS 覆盖 |
 | `google_news_acro_prnewswire` | 新闻稿与行业媒体 | 公司新闻与公告 | 全球 | `active` | `verification` | `indexed_rss` | B | 定向补漏 PR Newswire 上的 ACRO 新闻稿 |
 | `acro_businesswire` | 新闻稿与行业媒体 | 公司新闻与公告 | 全球 | `available` | `discovery` | `indexed_rss` | B | 方法可用，等公司池和重复控制稳定后接入 |
@@ -454,9 +454,9 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 
 当前 Demo 的数据源边界保持克制：
 
-- `active`：Google News RSS、官方 RSS、官网定向 RSS、YouTube Atom、已验证的免费 API。
+- `active`：Google News RSS、官方 RSS、官网定向 RSS、Sitemap 新 URL 差分、YouTube Atom / 官方频道页、已验证的免费 API。
 - `available`：方法已经验证，但因为配置要求、相关性或优先级暂未运行。
-- `planned`：Sitemap 新 URL 差分、产品页变化、专利、展会日历、合作伙伴页面等未来开发项。
+- `planned`：尚未建立稳定入口的产品页变化、专利、展会日历、合作伙伴页面等未来开发项。
 - `manual`：LinkedIn、微信公众号、重要展会页。
 - `covered`：HTML 直抓失败、但同一内容已由官方 RSS 或索引 RSS 覆盖的页面。
 - `blocked`：登录平台、反爬严重网站、付费墙、私域内容。
@@ -466,20 +466,25 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 
 > 第一阶段已经建立完整的数据源档案，但自动化抓取只启用低风险公开来源。LinkedIn、微信公众号、登录平台和反爬严重网站会进入情报地图，不会在 MVP 阶段强行自动抓取。后续会根据价值、稳定性、合规和预算，决定人工、半自动、API 或付费接入方式。
 
-### 11.1 2026-07-15 官方自有来源实测
+### 11.1 2026-07-16 官方自有来源实测
 
 | 官方来源 | 实测结果 | 当前处理 |
 | --- | --- | --- |
-| ACRO 全球官网 News | HTTP 200，但返回阿里云滑块验证页，简单 HTML 抓取为 0 条 | 公司新闻与公告 · `indexed_rss` · `active` |
+| ACRO robots.txt / 官方 Sitemap | robots.txt 返回 HTTP 200，并明确列出 6 个 `console.acrobiosystems.com` Sitemap；英文 Sitemap 返回约 1.9 MB XML | 产品与解决方案更新 · `sitemap_diff` · `active`；首次建立 6300+ 产品和 Solutions URL 基线 |
+| ACRO 全球官网 News | 首页和 robots.txt 当前可返回 HTTP 200，但具体内容页仍可能进入阿里云 WAF | 公司新闻与公告 · `indexed_rss` · `active` |
 | ACRO Events / Webinar | 直抓同样触发滑块验证 | 活动与 Webinar · `indexed_rss` · `active`，并过滤促销噪音 |
 | ACRO Insights | 直抓同样触发滑块验证，但公开搜索能够收录页面 | 技术内容 · `indexed_rss` · `active` |
 | ACRO 日本官网 | 直抓同样触发滑块验证 | 地区补充入口 · `indexed_rss` · `active`；抓到后再分内容类型 |
+| ACRO 官方 YouTube | 官方频道 `@ACROBiosystems` 与 Channel ID 已确认；标准 Atom Feed 返回 404，频道公开页返回 30 条视频 | 视频与回放 · 公开频道页解析 · `active` |
 | Thermo Fisher IR / Press Release | 官方 RSS 返回 HTTP 200，结构完整 | 公司新闻与公告 · `direct_rss` · `active` |
 | Thermo Fisher Newsroom | HTML 返回 403 | 公司新闻与公告 · `do_not_fetch` · `covered`，由 IR RSS 覆盖 |
 | Thermo Fisher Biotech at Scale Blog | 官方 Blog RSS 可稳定返回 | 技术内容 · `direct_rss` · `active` |
 | Thermo Fisher 官方 YouTube | Atom Feed 稳定返回，无需 API Key | 视频与回放 · `atom` · `active` |
+| Thermo Fisher Events / Webinar | 主活动页直抓返回 403；公开索引可返回 Webinar、Conference 和 Summit 页面 | 活动与 Webinar · `indexed_rss` · `active` |
+| Thermo Fisher 产品更新 | 大型产品目录不适合全量抓取；官方新闻稿 RSS 已包含新品发布，例如 ASMS 2026 新产品与技术 | 产品与解决方案更新 · 由 `thermo_official_rss` 覆盖，不单独重复建源 |
+| Thermo Fisher 日本官网 | 日本站公开索引可返回新闻、活动和 Seminar 页面 | 地区补充入口 · `indexed_rss` · `active`；限制 180 天并与泛新闻源去重 |
 
-补充测试：ACRO 公开 sitemap 可以免费访问，英文约 9,267 个 URL、日文约 8,666 个 URL，但大量页面共享同一个 `lastmod` 日期，不适合直接当作“当天新内容”。现阶段只把 sitemap 作为栏目发现和未来新增 URL 监控候选，不把几千个页面灌入日报。
+补充测试：ACRO 英文 Sitemap 中约有 6302 个产品 URL 和 29 个 Solutions URL，且这些页面共享同一个 `lastmod` 日期，不能把 `lastmod` 当作真实发布时间。系统因此保存 URL 哈希基线，后续只把新增 URL 作为产品更新候选，不回灌历史页面。
 
 ### 11.2 2026-07-15 免费扩展入口实测
 
@@ -493,4 +498,4 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | SEC EDGAR - Thermo | JSON 解析器已完成，可过滤为 8-K、10-Q、10-K | 财务公告 · `api` · `available`，等待配置真实联系邮箱 |
 | GDELT | 重复测试返回 HTTP 429 | 聚合发现 · `api` · `blocked` |
 
-完整跑批结果：本轮 242 条候选、0 个抓取错误、15 个实际产出来源。38 条新闻日报信号。其中视频 15 条、论文 7 条均被隔离到对应专题，不参与默认新闻日报筛选。公开聚合源会实时变动，因此候选总数在不同跑批间可能有小幅波动。
+完整跑批结果：本轮跟踪 21 个入口，18 个入口有内容产出，274 条候选、0 个抓取错误、39 条新闻日报信号。ACRO 产品 Sitemap 持续监控 6331 个 URL，本轮新增 0；ACRO 官方 YouTube 返回 20 条视频并全部隔离到视频专题；Thermo 活动源返回 5 条，Thermo 日本官网入口返回 9 条。公开聚合源会实时变动，因此候选总数在不同跑批间可能有小幅波动。
