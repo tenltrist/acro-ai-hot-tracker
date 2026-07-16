@@ -5837,5 +5837,77 @@
     "tier": "archive",
     "score": 30,
     "signal_type": "news"
+  },
+  "5149066109816a64": {
+    "first_seen": "2026-07-16T17:00:36",
+    "title": "Thermo Fisher Scientific’s Clinical Research Business Named a Leader Among CROs in 2026 ISG Provider Lens™ Report for Use of AI in Clinical Trials - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNRFg3M2txNXRkSnhEVlhnTF8zSEx0UElLb1Q4UEFRdENmeTZfZVA3TkVRZDdCNHZ6TjhaMmZLdHNPU0tKenE5OVFxb1dRSzdPbWFXS280NnZNUGR1U25LT3BaNWZxZWcwaHk1ZTBIeUVFUTU5TTVSbmdJV0ZSWDdMYXdvOFd1eWJ3Wm1LUExaUUs0UGQxUl9WenA4ZHNaM0ktODQ4bmZlMkZsTE5UdEN3S09qU25JT2xYOFdCWkM1eVdOYVhFU0pXOXQ0cFdyX2JTYUhNa0t1UkstdUh2dl9FZkJwQU5IcElhVGE3LUstZGpnT2Jwdms2ZnpBeHBrdWJWYWNoeEo0bGtwVjlkZWY4Y1EyaGFtMVU1RFFrYV85Sm5TTHdrR3c1MQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 72,
+    "signal_type": "news"
+  },
+  "2585393abda7cc2c": {
+    "first_seen": "2026-07-16T17:00:36",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "375c918209a3a70a": {
+    "first_seen": "2026-07-16T17:00:36",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "a2223d4700e6fd97": {
+    "first_seen": "2026-07-16T17:00:36",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f9528a644fb8fde0a0bf02005fa&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "b108d26416cc8fc3": {
+    "first_seen": "2026-07-16T17:00:36",
+    "title": "Arcturus picks Thermo Fisher to support cystic fibrosis therapy",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f9528a644fb8fde0a0bf02005fa&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fscience%2Fbiology%2Farcturus-picks-thermo-fisher-to-support-cystic-fibrosis-therapy%2Far-AA274XBl&c=17935128133380466660&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "296ba57c1049edd4": {
+    "first_seen": "2026-07-16T17:00:36",
+    "title": "Feds Give Thermo Fisher's Rapid DNA Gadget a Crime‑Scene Green Light",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f9528a644fb8fde0a0bf02005fa&url=https%3A%2F%2Fhoodline.com%2F2026%2F07%2Ffeds-give-thermo-fisher-s-rapid-dna-gadget-a-crime-scene-green-light%2F&c=5566975182672021747&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
   }
 }

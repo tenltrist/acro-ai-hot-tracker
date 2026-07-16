@@ -735,49 +735,76 @@ const els = {
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
 
-async function loadData() {
-  if (window.AIHOT_EMBEDDED_PAYLOAD) {
-    state.payload = window.AIHOT_EMBEDDED_PAYLOAD;
-    state.history = window.AIHOT_EMBEDDED_HISTORY || null;
-    hydrateFilters();
-    render();
-    renderSourceHealth();
-    renderSourceHealthPage();
-    renderTrend();
-    return;
-  }
+function liveDataUrl(path) {
+  const url = new URL(path, window.location.href);
+  url.searchParams.set("_refresh", Date.now().toString());
+  return url.toString();
+}
 
-  try {
-    let response = await fetch("../data/latest_run.json", { cache: "no-store" });
-    if (!response.ok) {
-      response = await fetch("./data/latest_run.json", { cache: "no-store" });
-    }
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.payload = await response.json();
-  } catch (error) {
-    state.payload = fallbackPayload;
-  }
+async function fetchJson(path) {
+  const response = await fetch(liveDataUrl(path), {
+    cache: "no-store",
+    headers: { "Cache-Control": "no-cache" },
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
 
-  // Try loading yesterday's snapshot for trend comparison
-  try {
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    const ymd = yesterday.toISOString().slice(0, 10);
-    const histResp = await fetch(`../data/history/${ymd}.json`, { cache: "no-store" });
-    if (histResp.ok) {
-      state.history = await histResp.json();
-    } else {
-      state.history = null;
-    }
-  } catch {
-    state.history = null;
-  }
-
+function renderLoadedData() {
   hydrateFilters();
   render();
   renderSourceHealth();
   renderSourceHealthPage();
   renderTrend();
+}
+
+async function loadData() {
+  const canLoadLiveData = ["http:", "https:"].includes(window.location.protocol);
+  const previousPayload = state.payload;
+  let syncFailed = false;
+  els.refreshButton.disabled = true;
+  els.refreshButton.classList.add("is-loading");
+  els.refreshButton.setAttribute("aria-busy", "true");
+  if (previousPayload) {
+    els.updatedAt.textContent = "正在同步最新抓取结果...";
+    els.healthGeneratedAt.textContent = "正在同步本轮数据源健康...";
+  }
+
+  try {
+    if (canLoadLiveData) {
+      state.payload = await fetchJson("../data/latest_run.json");
+    } else if (window.AIHOT_EMBEDDED_PAYLOAD) {
+      state.payload = window.AIHOT_EMBEDDED_PAYLOAD;
+    } else {
+      state.payload = fallbackPayload;
+    }
+  } catch (error) {
+    syncFailed = true;
+    state.payload = previousPayload || window.AIHOT_EMBEDDED_PAYLOAD || fallbackPayload;
+  }
+
+  if (!canLoadLiveData) {
+    state.history = window.AIHOT_EMBEDDED_HISTORY || null;
+  } else {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const ymd = yesterday.toISOString().slice(0, 10);
+    try {
+      state.history = await fetchJson(`../data/history/${ymd}.json`);
+    } catch {
+      state.history = null;
+    }
+  }
+
+  renderLoadedData();
+  if (syncFailed) {
+    const previousRun = formatDateTime(state.payload.generated_at);
+    els.updatedAt.textContent = `同步失败，仍显示 ${previousRun}`;
+    els.healthGeneratedAt.textContent = `同步失败，仍显示本轮 ${previousRun}`;
+  }
+  els.refreshButton.disabled = false;
+  els.refreshButton.classList.remove("is-loading");
+  els.refreshButton.removeAttribute("aria-busy");
 }
 
 function hydrateFilters() {
@@ -1551,7 +1578,7 @@ els.companyFilter.addEventListener("change", (event) => {
   renderSignals();
 });
 
-els.refreshButton.addEventListener("click", loadData);
+els.refreshButton.addEventListener("click", () => loadData());
 
 els.sourceStageFilter.addEventListener("change", (event) => {
   state.sourceStage = event.target.value;

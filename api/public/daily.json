@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-16T16:54:25",
+  "generated_at": "2026-07-16T17:00:36",
   "window_days": 90,
   "summary": {
-    "new_candidates": 98,
+    "new_candidates": 6,
     "immediate": 1,
     "daily": 63,
-    "archive": 347,
+    "archive": 349,
     "errors": 0,
     "companies": 2,
     "sources": 26
@@ -32,8 +32,7 @@
         "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZTU1OEVUNDBCZXJRR0duVHN5cmtIM1BJZzBiRkh6eS10UUJlR3VrVTc0MGFjUy1mdjl1aWluNzBkdHhLWXlEejlnakNSeTBmX2EzYmJqd0pRNzItSjJhdTRsS1VzTU5BbEg3cldXRnZVZk92R2luMU5QRHc3MHJNV0ViemRCM05sSXVRV053NFJXUmxZNy1JRks4UGdPWW41RlJnbFQxZVh4MnVmay1udS1EdDdIUTREbERJdXZObGgtRmtDLXU2dUV1NFVYdmZpNy1NWTVsclh6Xzc4WWp6UURMSFU2V0JnR01pOE5SajJkN3BqOXA1SW9mNnlTVXNLVWt0NjNTR3hUN1E4ZlpIVVoxN0tYNnlrZkxiZWhpYVZIQlNLMzB3?oc=5",
-        "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5"
+        "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZTU1OEVUNDBCZXJRR0duVHN5cmtIM1BJZzBiRkh6eS10UUJlR3VrVTc0MGFjUy1mdjl1aWluNzBkdHhLWXlEejlnakNSeTBmX2EzYmJqd0pRNzItSjJhdTRsS1VzTU5BbEg3cldXRnZVZk92R2luMU5QRHc3MHJNV0ViemRCM05sSXVRV053NFJXUmxZNy1JRks4UGdPWW41RlJnbFQxZVh4MnVmay1udS1EdDdIUTREbERJdXZObGgtRmtDLXU2dUV1NFVYdmZpNy1NWTVsclh6Xzc4WWp6UURMSFU2V0JnR01pOE5SajJkN3BqOXA1SW9mNnlTVXNLVWt0NjNTR3hUN1E4ZlpIVVoxN0tYNnlrZkxiZWhpYVZIQlNLMzB3?oc=5"
       ],
       "source_trust": "wire",
       "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - Business Wire",
@@ -86,7 +85,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "新闻稿分发平台",
@@ -95,6 +94,47 @@
         "高价值分类加成 +10: product"
       ],
       "age_days": 73
+    },
+    {
+      "id": "5149066109816a64",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "businesswire_company_pool_index",
+      "source_label": "Business Wire - company pool indexed RSS",
+      "source_ids": [
+        "businesswire_company_pool_index"
+      ],
+      "source_labels": [
+        "Business Wire - company pool indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNRFg3M2txNXRkSnhEVlhnTF8zSEx0UElLb1Q4UEFRdENmeTZfZVA3TkVRZDdCNHZ6TjhaMmZLdHNPU0tKenE5OVFxb1dRSzdPbWFXS280NnZNUGR1U25LT3BaNWZxZWcwaHk1ZTBIeUVFUTU5TTVSbmdJV0ZSWDdMYXdvOFd1eWJ3Wm1LUExaUUs0UGQxUl9WenA4ZHNaM0ktODQ4bmZlMkZsTE5UdEN3S09qU25JT2xYOFdCWkM1eVdOYVhFU0pXOXQ0cFdyX2JTYUhNa0t1UkstdUh2dl9FZkJwQU5IcElhVGE3LUstZGpnT2Jwdms2ZnpBeHBrdWJWYWNoeEo0bGtwVjlkZWY4Y1EyaGFtMVU1RFFrYV85Sm5TTHdrR3c1MQ?oc=5"
+      ],
+      "source_trust": "wire",
+      "title": "Thermo Fisher Scientific’s Clinical Research Business Named a Leader Among CROs in 2026 ISG Provider Lens™ Report for Use of AI in Clinical Trials - Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNRFg3M2txNXRkSnhEVlhnTF8zSEx0UElLb1Q4UEFRdENmeTZfZVA3TkVRZDdCNHZ6TjhaMmZLdHNPU0tKenE5OVFxb1dRSzdPbWFXS280NnZNUGR1U25LT3BaNWZxZWcwaHk1ZTBIeUVFUTU5TTVSbmdJV0ZSWDdMYXdvOFd1eWJ3Wm1LUExaUUs0UGQxUl9WenA4ZHNaM0ktODQ4bmZlMkZsTE5UdEN3S09qU25JT2xYOFdCWkM1eVdOYVhFU0pXOXQ0cFdyX2JTYUhNa0t1UkstdUh2dl9FZkJwQU5IcElhVGE3LUstZGpnT2Jwdms2ZnpBeHBrdWJWYWNoeEo0bGtwVjlkZWY4Y1EyaGFtMVU1RFFrYV85Sm5TTHdrR3c1MQ?oc=5",
+      "published": "2026-05-06",
+      "summary": "Thermo Fisher Scientific’s Clinical Research Business Named a Leader Among CROs in 2026 ISG Provider Lens™ Report for Use of AI in Clinical Trials Business Wire",
+      "ai_summary": "",
+      "score": 72,
+      "tier": "daily",
+      "category": "regulatory",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "新闻稿分发平台",
+        "战略主题命中: clinical trials, CRO, clinical trial",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 71
     },
     {
       "id": "5f6aff94aa0a872a",
@@ -127,7 +167,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, Gibco",
         "新闻稿分发平台",
@@ -460,7 +500,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "新闻稿分发平台",
@@ -548,7 +588,7 @@
       "age_days": 48
     },
     {
-      "id": "d58dfc6cac132d36",
+      "id": "a2223d4700e6fd97",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -566,11 +606,11 @@
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2ed095463a8aa36f33275652b8&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f9528a644fb8fde0a0bf02005fa&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2ed095463a8aa36f33275652b8&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f9528a644fb8fde0a0bf02005fa&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
       "published": "2026-06-29",
       "summary": "Genedrive (LSE:GDR) has entered into a collaboration agreement with Thermo Fisher Scientific to develop the Genedrive CYP2C19 HT Kit, a high-throughput pharmacogenetic in vitro diagnostic test ...",
       "ai_summary": "",
@@ -729,7 +769,7 @@
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU051N1JKVVBldEhlSzY3VVBHbU1hdmxsc1RjTXAtNVQ2WDh3Z1BuY3I4ZGsxQXF2YVhxN3VwejF3Rjh6WjlMUWpFYl9qRml1cndYTVR3aXNxUXI3QlIyNHMwa3Q1bU0xcXNDWHcxbFpuVXpraDFMWmgzN2pYLXRiOTk2a2NKaWxVNDFQZThkcy1lUQ?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2ed095463a8aa36f33275652b8&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-set-report-q2-124600867.html&c=11407560408925381686&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f9528a644fb8fde0a0bf02005fa&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-set-report-q2-124600867.html&c=11407560408925381686&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Set to Report Q2 Earnings: What's in the Cards? - Yahoo Finance",
@@ -913,7 +953,7 @@
       "age_days": 155
     },
     {
-      "id": "a98e46c442387ed3",
+      "id": "2585393abda7cc2c",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -931,12 +971,12 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -953,7 +993,7 @@
       "age_days": 70
     },
     {
-      "id": "41442c40ee380d58",
+      "id": "375c918209a3a70a",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -971,13 +1011,13 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588e2e90ba4dcb92cc5daf5fcb7710&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588f95ca7946bab21b7ab27450e798&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -1189,45 +1229,6 @@
         "高价值分类加成 +10: partnership"
       ],
       "age_days": 22
-    },
-    {
-      "id": "c13165325af0f9f1",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVMxeThTcHlUWW13YTNkT01MSl83S1RrWC1YS09xTUxTWVlXNE9ZSVVRX213cEU0NTBZaTB3eW1oWXg1eU9pZEpDWThLR2RoeTE5YVhnX2kyX2k0bWdobVh2YUdCUUc5WHZvWG95WUhHbTRMMWtwbjM4c19LWWJaZlM0Qm01bEZPU09ERS1PNVJyWHozNHhjR1JTVnhXNjc5eDhsbGxFbFJGSEJSaHRrRGg3bm1qOV90TjVwTDkySVU?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series - Food Safety Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVMxeThTcHlUWW13YTNkT01MSl83S1RrWC1YS09xTUxTWVlXNE9ZSVVRX213cEU0NTBZaTB3eW1oWXg1eU9pZEpDWThLR2RoeTE5YVhnX2kyX2k0bWdobVh2YUdCUUc5WHZvWG95WUhHbTRMMWtwbjM4c19LWWJaZlM0Qm01bEZPU09ERS1PNVJyWHozNHhjR1JTVnhXNjc5eDhsbGxFbFJGSEJSaHRrRGg3bm1qOV90TjVwTDkySVU?oc=5",
-      "published": "2026-07-09",
-      "summary": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series Food Safety Magazine",
-      "ai_summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: launch",
-        "高价值分类加成 +10: product"
-      ],
-      "age_days": 7
     },
     {
       "id": "45024b38c814cce9",
@@ -1613,7 +1614,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "新闻稿分发平台",
@@ -1654,7 +1655,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, Thermo Scientific",
         "新闻稿分发平台",
@@ -1994,7 +1995,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: FDA, approval, clinical",
@@ -2029,7 +2030,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: antibody",
@@ -2065,7 +2066,7 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: antibody",
@@ -2101,7 +2102,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: FDA, approval, phase 2",
@@ -2288,7 +2289,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: manufacturing",
@@ -2324,7 +2325,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: manufacturing",
@@ -2360,7 +2361,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: manufacturing",

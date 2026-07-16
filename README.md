@@ -54,6 +54,10 @@ ai_hot_tracker/data/seen_urls.json
 ai_hot_tracker/data/latest_run.json
 ```
 
+每轮运行会在同一个 `latest_run.json` 中同时更新新闻列表、汇总指标和
+`source_health`。网页右上角的同步按钮会重新读取这份最新结果，因此数据源健康与
+日报保持同一轮时间；该按钮只同步已完成的结果，不会直接在静态网页中启动抓取。
+
 如果只是想试跑，不更新已读状态：
 
 ```bash

@@ -393,6 +393,21 @@ select {
   cursor: pointer;
 }
 
+.icon-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.icon-button.is-loading span {
+  animation: refresh-spin 0.8s linear infinite;
+}
+
+@keyframes refresh-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page-panel[hidden] {
   display: none !important;
 }

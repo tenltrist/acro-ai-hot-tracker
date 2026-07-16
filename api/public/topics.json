@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-16T16:54:25",
+  "generated_at": "2026-07-16T17:00:36",
   "category_mix": {
-    "product": 43,
-    "company": 190,
-    "partnership": 29,
+    "product": 42,
+    "company": 195,
+    "partnership": 28,
     "event": 56,
     "regulatory": 30,
     "video": 35,
-    "market": 11,
+    "market": 10,
     "finance": 10,
     "research": 7
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 3,
     "Google News RSS - ACROBiosystems": 20,
-    "Google News RSS - ACROBiosystems PR Newswire": 11,
+    "Google News RSS - ACROBiosystems PR Newswire": 10,
     "ACRO official Events and Webinars - indexed RSS": 3,
-    "ACRO official Insights - indexed RSS": 11,
+    "ACRO official Insights - indexed RSS": 14,
     "ACRO Japan official pages - indexed RSS": 3,
     "ACRO official YouTube channel": 20,
     "Google News RSS - ACROBiosystems Japan": 1,
@@ -40,7 +40,7 @@
     "PubMed - ACROBiosystems research signals": 7
   },
   "signal_type_mix": {
-    "news": 328,
+    "news": 330,
     "video": 35,
     "event": 41,
     "research": 7
