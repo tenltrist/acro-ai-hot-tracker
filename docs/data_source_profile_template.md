@@ -256,8 +256,8 @@ notes:
 | 来源 | 当前能力判断 | 常见获取方式 | 建设阶段 |
 | --- | --- | --- | --- |
 | PR Newswire | ACRO 已有实际命中 | 公司名 + `site:` 索引 RSS | `active` |
-| Business Wire | 官方支持按行业和关键词定制 RSS / Atom，尚未验证公司池增量 | 官方 RSS、关键词查询、`indexed_rss` | `available` |
-| GlobeNewswire | 官方提供 Health、Biotechnology、Partnerships、Product Announcement 等 RSS | 官方分类 RSS、公司关键词 | `available` |
+| Business Wire | 官网拒绝当前自动请求；公司池定向索引已验证可返回 Thermo Fisher 新闻稿 | 公司池 + `site:` 索引 RSS | `active` |
+| GlobeNewswire | Biotechnology 官方 RSS 已验证可直连，需过滤财报、回购和泛市场报告 | 官方分类 RSS | `active` |
 
 #### B. 生物医药行业新闻
 
@@ -265,9 +265,9 @@ notes:
 
 | 来源 | 主要价值 | 常见获取方式 | 建设阶段 |
 | --- | --- | --- | --- |
-| BioSpace | 公司、Deals、Drug Development、FDA 和行业动态 | 官方栏目 RSS | `available` |
-| Fierce Biotech | Biotech、Medtech、CRO、研发交易 | 官方 RSS | `available` |
-| Fierce Pharma | Pharma、Manufacturing、Marketing、Vaccines、Pharma Asia | 官方栏目 RSS | `available` |
+| BioSpace | All News 官方 RSS 已接入；覆盖公司、Deals、Drug Development、FDA 和行业动态 | 官方栏目 RSS | `active` |
+| Fierce Biotech | 官方 RSS 已接入；覆盖 Biotech、CRO、研发、融资和交易 | 官方 RSS | `active` |
+| Fierce Pharma | 官方 RSS 已接入；覆盖 Pharma、Manufacturing、Marketing、监管和商业化 | 官方 RSS | `active` |
 
 #### C. 生命科学技术媒体
 
@@ -460,8 +460,11 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | `acro_youtube_official` | 官方自有 | 视频与回放 | 全球 | `active` | `primary` | `html_link_diff` | A | 官方 Channel ID 已确认；Atom Feed 返回 404，改读公开频道页面 |
 | `acro_official_html_direct` | 官方自有 | 多类型 | 全球 / 日本 | `covered` | `verification` | `do_not_fetch` | A | HTML 直抓触发滑块验证，当前由官方页面索引 RSS 覆盖 |
 | `google_news_acro_prnewswire` | 新闻稿与行业媒体 | 公司新闻与公告 | 全球 | `active` | `verification` | `indexed_rss` | B | 定向补漏 PR Newswire 上的 ACRO 新闻稿 |
-| `acro_businesswire` | 新闻稿与行业媒体 | 公司新闻与公告 | 全球 | `available` | `discovery` | `indexed_rss` | B | 方法可用，等公司池和重复控制稳定后接入 |
-| `acro_globenewswire` | 新闻稿与行业媒体 | 公司新闻与公告 | 全球 | `available` | `discovery` | `indexed_rss` | B | 当前尚未证明比 PR Newswire 更有增量价值 |
+| `businesswire_company_pool_index` | 新闻稿与行业媒体 | 公司新闻与公告 | 全球 | `active` | `verification` | `indexed_rss` | B | 官网拒绝自动请求，使用公司池 + `site:` 免费索引 RSS |
+| `globenewswire_biotechnology_rss` | 新闻稿与行业媒体 | 行业新闻稿 | 全球 | `active` | `discovery` | `direct_rss` | B | 官方 Biotechnology RSS，过滤财报、回购和市场报告 |
+| `biospace_all_news_rss` | 新闻稿与行业媒体 | 行业编辑新闻 | 全球 | `active` | `discovery` | `direct_rss` | B | 官方 All News RSS，抓取后按主题与业务动作筛选 |
+| `fierce_biotech_rss` | 新闻稿与行业媒体 | 行业编辑新闻 | 全球 | `active` | `discovery` | `direct_rss` | B | 官方 RSS，观察研发、融资、合作、CRO 与临床 |
+| `fierce_pharma_rss` | 新闻稿与行业媒体 | 行业编辑新闻 | 全球 / 亚洲 | `active` | `discovery` | `direct_rss` | B | 官方 RSS，观察制药合作、制造、监管与商业化 |
 | `google_news_acro` | 聚合搜索补漏 | 多类型 | 全球 | `active` | `discovery` | `indexed_rss` | C | 免费补漏源，覆盖广但噪音较高 |
 | `google_news_acro_jp` | 聚合搜索补漏 | 多类型 | 日本 | `active` | `discovery` | `indexed_rss` | C | 日文和日本区域外部报道补漏 |
 | `bing_news_acro_backup` | 聚合搜索补漏 | 多类型 | 全球 | `active` | `backup` | `direct_rss` | C | 只保留 Google News 未覆盖的标题 |

@@ -266,7 +266,16 @@ def parse_date(value: str) -> str:
     try:
         parsed = email.utils.parsedate_to_datetime(value)
     except (TypeError, ValueError):
-        return clean_text(value)
+        parsed = None
+        cleaned = clean_text(value)
+        for date_format in ("%b %d, %Y %I:%M%p", "%b %d, %Y %I:%M %p"):
+            try:
+                parsed = dt.datetime.strptime(cleaned, date_format)
+                break
+            except ValueError:
+                continue
+        if parsed is None:
+            return cleaned
     if parsed.tzinfo is None:
         parsed = parsed.replace(tzinfo=dt.timezone.utc)
     return parsed.astimezone().date().isoformat()
@@ -424,13 +433,19 @@ def extract_meaningful_summary(raw_description: str, title: str) -> str:
     return text
 
 
+def xml_node_text(node: ET.Element | None) -> str:
+    if node is None:
+        return ""
+    return clean_text(" ".join(node.itertext()))
+
+
 def parse_rss(source: dict[str, Any]) -> list[Candidate]:
     text = fetch_text(source["url"])
     root = ET.fromstring(text.lstrip())
     items: list[Candidate] = []
     for item in root.findall(".//item"):
-        title = clean_text(item.findtext("title", ""))
-        link = clean_text(item.findtext("link", ""))
+        title = xml_node_text(item.find("title"))
+        link = xml_node_text(item.find("link"))
         if not title or not link or is_html_noise(title):
             continue
         raw_desc = item.findtext("description", "")
@@ -983,6 +998,12 @@ def score_candidate(
     elif item.source_trust == "research":
         score += 10
         reasons.append("科研数据库结构化来源")
+    elif item.source_trust == "wire":
+        score += 8
+        reasons.append("新闻稿分发平台")
+    elif item.source_trust == "media":
+        score += 10
+        reasons.append("行业编辑媒体")
 
     topic_hits = [term for term in profile.get("strategic_topics", []) if term.lower() in blob]
     if topic_hits:
@@ -1063,6 +1084,8 @@ def classify_tier(score: int, trust: str, has_action: bool = False) -> str:
     if trust == "owned" and score >= 40:
         return "daily"
     if trust == "ecosystem" and score >= 40:
+        return "daily"
+    if trust == "media" and score >= 40:
         return "daily"
     if has_action and score >= 45:
         return "daily"

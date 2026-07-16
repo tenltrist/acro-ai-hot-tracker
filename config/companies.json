@@ -199,6 +199,71 @@
         "cookie",
         "プライバシーポリシー"
       ]
+    },
+    {
+      "id": "biopharma_media_monitor",
+      "display_name": "全球生物医药媒体筛选规则",
+      "strategic_topics": [
+        "ADC",
+        "antibody",
+        "bispecific",
+        "cell therapy",
+        "gene therapy",
+        "cell and gene therapy",
+        "mRNA",
+        "vaccine",
+        "protein",
+        "reagent",
+        "CRO",
+        "CDMO",
+        "bioprocessing",
+        "diagnostic",
+        "precision medicine",
+        "biomarker",
+        "organoid",
+        "GMP",
+        "AI drug discovery",
+        "clinical trial",
+        "manufacturing",
+        "omics",
+        "sequencing"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "unveil",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "deal",
+        "license",
+        "funding",
+        "raises",
+        "FDA",
+        "approval",
+        "phase 1",
+        "phase 2",
+        "phase 3",
+        "clinical",
+        "expansion",
+        "manufacturing",
+        "opens"
+      ],
+      "noise_terms": [
+        "financial results",
+        "quarterly results",
+        "earnings",
+        "dividend",
+        "buy-back",
+        "shareholder",
+        "stock",
+        "investor",
+        "class action",
+        "lawsuit",
+        "market report",
+        "researchandmarkets",
+        "price target"
+      ]
     }
   ]
 }

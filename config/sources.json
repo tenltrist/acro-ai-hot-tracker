@@ -117,6 +117,96 @@
       "trust": "wire"
     },
     {
+      "id": "businesswire_company_pool_index",
+      "label": "Business Wire - company pool indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28ACROBiosystems%20OR%20%22Thermo%20Fisher%20Scientific%22%29%20site%3Abusinesswire.com&hl=en-US&gl=US&ceid=US%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "wire",
+      "max_age_days": 365,
+      "max_items": 30,
+      "exclude_text_terms": [
+        "quarterly dividend",
+        "earnings conference call",
+        "financial results",
+        "researchandmarkets"
+      ],
+      "health_note": "Business Wire 官网拒绝当前自动请求；免费 MVP 改用 Google News 的公司池 + site 定向 RSS，属于索引接入，不是官网 RSS 直连。"
+    },
+    {
+      "id": "globenewswire_biotechnology_rss",
+      "label": "GlobeNewswire - Biotechnology official RSS",
+      "type": "rss",
+      "url": "https://www.globenewswire.com/RssFeed/industry/4573-Biotechnology/feedTitle/GlobeNewswire%20-%20Industry%20News%20on%20Biotechnology",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "wire",
+      "max_age_days": 45,
+      "max_items": 30,
+      "exclude_text_terms": [
+        "financial results",
+        "business update",
+        "earnings",
+        "buy-back",
+        "share capital",
+        "researchandmarkets",
+        "DeFi",
+        "perpetual futures",
+        "public offering",
+        "registered direct offering",
+        "board of directors",
+        "investor conference"
+      ],
+      "health_note": "GlobeNewswire 官方 Biotechnology RSS 直连；先取最近 30 条，再用行业主题、业务动作和财务噪音规则筛选。"
+    },
+    {
+      "id": "biospace_all_news_rss",
+      "label": "BioSpace - All News official RSS",
+      "type": "rss",
+      "url": "https://www.biospace.com/all-news.rss",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 25,
+      "exclude_text_terms": [
+        "job searches",
+        "career decisions",
+        "job market update"
+      ],
+      "health_note": "BioSpace 官方 All News RSS；覆盖交易、研发、FDA、制造和公司动态，抓取后按业务价值筛选。"
+    },
+    {
+      "id": "fierce_biotech_rss",
+      "label": "Fierce Biotech - official RSS",
+      "type": "rss",
+      "url": "https://www.fiercebiotech.com/rss/xml",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 25,
+      "health_note": "Fierce Biotech 官方 RSS 直连；重点观察研发、融资、合作、CRO 和临床信号。"
+    },
+    {
+      "id": "fierce_pharma_rss",
+      "label": "Fierce Pharma - official RSS",
+      "type": "rss",
+      "url": "https://www.fiercepharma.com/rss/xml",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 25,
+      "exclude_text_terms": [
+        "earnings",
+        "dividend",
+        "stock"
+      ],
+      "health_note": "Fierce Pharma 官方 RSS 直连；重点观察制药合作、制造、监管、商业化和区域市场信号。"
+    },
+    {
       "id": "thermo_official_rss",
       "label": "Thermo Fisher official press releases RSS",
       "type": "rss",
