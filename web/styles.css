@@ -272,10 +272,6 @@ a {
   background: #7fa5de;
 }
 
-.company-dot.ecosystem {
-  background: #65b98a;
-}
-
 .company-chip small {
   padding-left: 15px;
   color: #9bb0bd;
@@ -1529,6 +1525,22 @@ select {
   color: #5c6b75;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.tag.company-match {
+  border: 1px solid #d8e0e4;
+  background: #fff;
+}
+
+.tag.company-match.matched {
+  border-color: #b8ddc8;
+  background: #eef8f2;
+  color: #21613d;
+}
+
+.tag.company-match.unmatched {
+  border-style: dashed;
+  color: #74838d;
 }
 
 .summary {

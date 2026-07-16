@@ -144,18 +144,12 @@
         "coupon",
         "directory listing"
       ]
-    },
+    }
+  ],
+  "source_profiles": [
     {
-      "id": "japan_life_science_ecosystem",
-      "display_name": "日本生命科学生态 / 公司发现",
-      "aliases": [
-        "日本生命科学生态"
-      ],
-      "markets": [
-        "japan",
-        "biopharma",
-        "life-science-ecosystem"
-      ],
+      "id": "japan_life_science_events",
+      "display_name": "日本生命科学活动筛选规则",
       "strategic_topics": [
         "ADC",
         "抗体",

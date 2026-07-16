@@ -457,7 +457,7 @@ const sourceInventory = [
     layer: "market_channel",
     number: "05",
     title: "市场活动与渠道",
-    subtitle: "先区分行业生态平台、展会会议、合作网络和报名工具。平台负责发现信息，Zoom 只负责承载报名；同一活动按标题、日期和会议 ID 归并。",
+    subtitle: "这一层是跨公司监测来源，不属于公司池。平台负责发现信息，系统再匹配公司池中的 ACRO、竞品或后续对标公司；Zoom 只负责承载报名。",
     sources: [
       {
         name: "LINK-J",
@@ -467,7 +467,7 @@ const sourceInventory = [
         status: "active",
         trust: "B",
         method: "公开活动列表 HTML",
-        note: "同时读取 LINK-J 主办、共办和特别会员活动，可发现企业 Webinar、技术议题、公司名称和开放创新项目。",
+        note: "跨公司读取 LINK-J 主办、共办和特别会员活动；内容出现公司池别名时，自动标记命中的被监测公司。",
         sourceIds: ["linkj_life_science_events"],
         url: "link-j.org/event",
       },
@@ -479,7 +479,7 @@ const sourceInventory = [
         status: "active",
         trust: "B",
         method: "官方直接 RSS",
-        note: "覆盖研讨会、产业交流、BioJapan 支援和关西生命科学项目；RSS 结构稳定，维护成本最低。",
+        note: "跨公司覆盖研讨会、产业交流、BioJapan 支援和关西生命科学项目；再与公司池别名进行匹配。",
         sourceIds: ["kinkibio_official_feed"],
         url: "kinkibio.com/feed",
       },
@@ -491,7 +491,7 @@ const sourceInventory = [
         status: "active",
         trust: "B",
         method: "News 列表 HTML",
-        note: "监控园区企业、开放创新、活动公告与合作动态。官方 RSS 是旧测试内容，独立活动页也以旧海报为主，因此改用 News 列表。",
+        note: "跨公司监控园区企业、开放创新、活动公告与合作动态；命中公司池时归到对应公司，否则保留为行业观察。",
         sourceIds: ["shonan_ipark_news_events"],
         url: "shonan-ipark.com/news",
       },
@@ -627,7 +627,6 @@ const pageMeta = {
 const companyIdToDisplayName = {
   acro: "ACROBiosystems / 百普赛斯",
   thermo_fisher: "Thermo Fisher Scientific",
-  japan_life_science_ecosystem: "日本生命科学生态 / 公司发现",
 };
 
 const fallbackPayload = {
@@ -778,7 +777,9 @@ async function loadData() {
 
 function hydrateFilters() {
   const categories = [...new Set(state.payload.items.map((item) => item.category))].sort();
-  const companies = [...new Set(state.payload.items.map((item) => item.company))].sort();
+  const companies = (state.payload.companies || [])
+    .map((company) => company.display_name)
+    .sort();
   const current = els.categoryFilter.value;
   const currentCompany = els.companyFilter.value;
   els.categoryFilter.innerHTML = '<option value="all">全部主题</option>';
@@ -909,7 +910,7 @@ function renderMarketChannelGroups(sources) {
     "marketGroup",
     `
       <div><span>发现层</span><strong>从哪里发现活动与公司</strong><small>行业生态平台、展会官网、合作网络</small></div>
-      <div><span>记录层</span><strong>一条活动保留三种角色</strong><small>发现来源、分发渠道、报名承载工具</small></div>
+      <div><span>匹配层</span><strong>平台不是公司</strong><small>抓取后再匹配公司池中的公司别名</small></div>
       <div><span>去重层</span><strong>多个链接合并成一个事件</strong><small>标题、日期、报名 URL 与 Webinar ID</small></div>
     `,
   );
@@ -1029,7 +1030,11 @@ function renderSignals() {
   const filtered = state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
-    .filter((item) => state.company === "all" || item.company === state.company)
+    .filter(
+      (item) =>
+        state.company === "all" ||
+        (item.matched_companies || [item.company]).includes(state.company),
+    )
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;
@@ -1059,7 +1064,13 @@ function renderSignals() {
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
         <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
         <span class="tag">${labelCategory(item.category)}</span>
-        <span class="tag">${escapeHtml(item.company)}</span>
+        <span class="tag company-match ${
+          item.matched_companies?.length ? "matched" : "unmatched"
+        }">${escapeHtml(
+          item.matched_companies?.length
+            ? `命中：${item.matched_companies.join(" / ")}`
+            : "未命中公司池",
+        )}</span>
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
         <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
@@ -1235,6 +1246,7 @@ function getSourceHealthRows() {
         source_label: item.source_label,
         company_id: item.company_id || "",
         company: item.company,
+        scope: item.company,
         source_type: "unknown",
         signal_type: item.signal_type || "news",
         status: "archive_only",
@@ -1263,9 +1275,9 @@ function getSourceHealthRows() {
 
 function renderSourceHealthPage() {
   const rows = getSourceHealthRows();
-  const companies = [...new Set(rows.map((row) => row.company).filter(Boolean))].sort();
+  const companies = [...new Set(rows.map((row) => row.scope || row.company).filter(Boolean))].sort();
   const previousCompany = els.healthCompanyFilter.value || state.healthCompany;
-  els.healthCompanyFilter.innerHTML = '<option value="all">全部公司</option>';
+  els.healthCompanyFilter.innerHTML = '<option value="all">全部监测范围</option>';
   for (const company of companies) {
     const option = document.createElement("option");
     option.value = company;
@@ -1286,7 +1298,11 @@ function renderSourceHealthPage() {
   els.healthAttentionDetail.textContent = `${quietCount} 个暂无内容 · ${pendingCount} 个待配置 · ${errorCount} 个异常`;
 
   const visible = rows
-    .filter((row) => state.healthCompany === "all" || row.company === state.healthCompany)
+    .filter(
+      (row) =>
+        state.healthCompany === "all" ||
+        (row.scope || row.company) === state.healthCompany,
+    )
     .filter((row) => state.healthStatus === "all" || row.status === state.healthStatus)
     .sort((a, b) => {
       const order = { error: 0, pending: 1, quiet: 2, archive_only: 3, productive: 4 };
@@ -1304,7 +1320,7 @@ function renderSourceHealthPage() {
       const selected = row.immediate + row.daily;
       const detail = row.error || row.note || healthStatusDescription(row.status);
       return `<div class="health-table-row" role="row">
-        <span class="health-name"><strong>${escapeHtml(row.source_label)}</strong><small>${escapeHtml(row.company || row.company_id)}</small></span>
+        <span class="health-name"><strong>${escapeHtml(row.source_label)}</strong><small>监测范围：${escapeHtml(row.scope || row.company || "跨公司")}</small></span>
         <span><span class="health-type">${escapeHtml(labelSignalType(row.signal_type))}</span><small>${escapeHtml(row.source_type)}</small></span>
         <strong>${row.total}</strong>
         <strong class="health-selected">${selected}</strong>
@@ -1390,7 +1406,7 @@ function exportCsv() {
     return;
   }
 
-  const headers = ["标题", "公司", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
+  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
     rows.push(
@@ -1430,7 +1446,11 @@ function getFilteredItems() {
   return state.payload.items
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
-    .filter((item) => state.company === "all" || item.company === state.company)
+    .filter(
+      (item) =>
+        state.company === "all" ||
+        (item.matched_companies || [item.company]).includes(state.company),
+    )
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;

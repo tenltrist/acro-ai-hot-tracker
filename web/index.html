@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260716e" />
+    <link rel="stylesheet" href="./styles.css?v=20260716f" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -35,7 +35,7 @@
       <div class="company-dock" aria-label="快捷筛选">
         <div class="dock-head">
           <span class="label">监控对象</span>
-          <strong>2 家公司 + 1 个生态池</strong>
+          <strong>2 家公司已接入</strong>
         </div>
         <button class="company-chip active" type="button" data-filter-company="all">
           <span class="company-chip-main"><i class="company-dot all"></i><strong>全部公司</strong></span>
@@ -48,10 +48,6 @@
         <button class="company-chip" type="button" data-filter-company="thermo_fisher">
           <span class="company-chip-main"><i class="company-dot thermo"></i><strong>Thermo Fisher</strong></span>
           <small>竞品 · 行业标杆</small>
-        </button>
-        <button class="company-chip" type="button" data-filter-company="japan_life_science_ecosystem">
-          <span class="company-chip-main"><i class="company-dot ecosystem"></i><strong>日本生命科学生态</strong></span>
-          <small>公司发现 · 活动与合作</small>
         </button>
       </div>
 
@@ -143,7 +139,7 @@
             <p class="eyebrow">公司池</p>
             <h2>先用 ACRO 跑通方法，再批量接入竞品/客户/合作方</h2>
           </div>
-          <span class="timestamp">MVP 阶段：2 家公司样本 + 1 个生态发现池</span>
+          <span class="timestamp">MVP 阶段：2 家公司样本</span>
         </div>
         <div class="company-summary-grid">
           <article>
@@ -157,9 +153,9 @@
             <p>用于测试大型公司官方 RSS、官网新闻和聚合新闻的差异。</p>
           </article>
           <article>
-            <span>行业发现池</span>
-            <strong>日本生命科学生态</strong>
-            <p>通过 LINK-J、近畿生物和湘南 iPark 发现活动、技术主题、合作项目与新公司。</p>
+            <span>下一步</span>
+            <strong>扩展对标公司名单</strong>
+            <p>公司加入监控池后，系统会在官网、新闻源和行业生态平台中识别它的公开信息。</p>
           </article>
         </div>
         <div class="company-table">
@@ -180,12 +176,6 @@
             <span>竞品 / 行业标杆</span>
             <span>基础配置</span>
             <span>验证官方 RSS 与聚合源</span>
-          </div>
-          <div class="company-row">
-            <span>日本生命科学生态 / 公司发现</span>
-            <span>行业生态观察池</span>
-            <span>3 个公开平台已接入</span>
-            <span>发现公司、活动与合作信号</span>
           </div>
           <div class="company-row muted">
             <span>后续公司名单</span>
@@ -474,8 +464,8 @@
         </div>
 
         <div class="health-controls" aria-label="数据源健康筛选">
-          <select id="healthCompanyFilter" aria-label="按公司筛选数据源">
-            <option value="all">全部公司</option>
+          <select id="healthCompanyFilter" aria-label="按监测范围筛选数据源">
+            <option value="all">全部监测范围</option>
           </select>
           <select id="healthStatusFilter" aria-label="按健康状态筛选">
             <option value="all">全部状态</option>
@@ -510,7 +500,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260716e"></script>
-    <script src="./app.js?v=20260716e"></script>
+    <script src="./embedded-data.js?v=20260716f"></script>
+    <script src="./app.js?v=20260716f"></script>
   </body>
 </html>

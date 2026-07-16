@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16T16:35:23",
+  "generated_at": "2026-07-16T16:45:09",
   "window_days": 90,
   "summary": {
-    "new_candidates": 49,
+    "new_candidates": 5,
     "immediate": 0,
     "daily": 51,
-    "archive": 264,
+    "archive": 268,
     "errors": 0,
-    "companies": 3,
+    "companies": 2,
     "sources": 21
   },
   "selected": [
@@ -15,6 +15,12 @@
       "id": "aaa9dca935c1153f",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -38,7 +44,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: clinical development, manufacturing, AI-enabled research",
         "业务动作命中: clinical, manufacturing",
         "高价值分类加成 +8: regulatory"
@@ -49,6 +55,12 @@
       "id": "363331fabbdc2806",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "acro_official_news_index",
       "source_label": "ACRO official News - indexed RSS",
       "source_ids": [
@@ -77,7 +89,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ACROBiosystems",
+        "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
         "战略主题命中: GMP",
         "业务动作命中: PMDA, GMP-grade",
@@ -89,6 +101,12 @@
       "id": "431a6502aa4d8727",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "google_news_acro",
       "source_label": "Google News RSS - ACROBiosystems",
       "source_ids": [
@@ -114,7 +132,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: ACROBiosystems",
+        "公司池命中 +30: ACROBiosystems",
         "战略主题命中: HEK293",
         "业务动作命中: launch, license",
         "高价值分类加成 +10: product"
@@ -125,6 +143,12 @@
       "id": "05e671303cc758f2",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -146,9 +170,9 @@
       "tier": "daily",
       "category": "market",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: manufacturing",
         "业务动作命中: expansion, manufacturing",
         "高价值分类加成 +8: market"
@@ -157,8 +181,10 @@
     },
     {
       "id": "532e64feb8c65cdb",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "kinkibio_official_feed",
       "source_label": "Kinki Bio - official seminar and ecosystem RSS",
       "source_ids": [
@@ -180,7 +206,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: 製薬, 診断薬, 医療機器, ライフサイエンス, セミナー",
@@ -193,6 +219,12 @@
       "id": "2c20d2768e6aedf6",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "acro_official_insights_index",
       "source_label": "ACRO official Insights - indexed RSS",
       "source_ids": [
@@ -216,7 +248,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ACROBiosystems",
+        "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
         "战略主题命中: ADC, CGT",
         "业务动作命中: clinical",
@@ -228,6 +260,12 @@
       "id": "6ee5a70f4e5d4be7",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -251,7 +289,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: introduce, clinical",
         "高价值分类加成 +10: product"
       ],
@@ -261,6 +299,12 @@
       "id": "3b6a27b896719580",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -284,16 +328,22 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: launch, clinical",
         "高价值分类加成 +10: product"
       ],
       "age_days": 48
     },
     {
-      "id": "387d12f11f402992",
+      "id": "73bb646d7e63d16d",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "bing_news_thermo_backup",
       "source_label": "Bing News RSS - Thermo Fisher backup",
       "source_ids": [
@@ -303,11 +353,11 @@
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b87e0c45f2846d0a817965bfd9&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03ac48431596cfacf6c3f3f84d&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b87e0c45f2846d0a817965bfd9&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03ac48431596cfacf6c3f3f84d&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
       "published": "2026-06-29",
       "summary": "Genedrive (LSE:GDR) has entered into a collaboration agreement with Thermo Fisher Scientific to develop the Genedrive CYP2C19 HT Kit, a high-throughput pharmacogenetic in vitro diagnostic test ...",
       "ai_summary": "",
@@ -317,7 +367,7 @@
       "signal_type": "news",
       "is_new": true,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration, agreement",
         "高价值分类加成 +10: partnership"
       ],
@@ -327,6 +377,12 @@
       "id": "15a227861898f286",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "google_news_acro_prnewswire",
       "source_label": "Google News RSS - ACROBiosystems PR Newswire",
       "source_ids": [
@@ -350,7 +406,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: ACROBiosystems",
+        "公司池命中 +30: ACROBiosystems",
         "战略主题命中: CD20",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
@@ -361,6 +417,12 @@
       "id": "447e26fb57557787",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -384,7 +446,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Patheon",
+        "公司池命中 +30: Thermo Fisher, Patheon",
         "战略主题命中: CDMO",
         "业务动作命中: agreement",
         "高价值分类加成 +10: partnership"
@@ -395,6 +457,12 @@
       "id": "a77ead977ed02666",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "acro_official_insights_index",
       "source_label": "ACRO official Insights - indexed RSS",
       "source_ids": [
@@ -418,7 +486,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ACROBiosystems",
+        "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
         "战略主题命中: ADC",
         "业务动作命中: clinical",
@@ -430,6 +498,12 @@
       "id": "ec55e65a5bc00d6f",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_biotech_blog_rss",
       "source_label": "Thermo Fisher Biotech at Scale RSS",
       "source_ids": [
@@ -453,7 +527,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ThermoFisher",
+        "公司池命中 +15: ThermoFisher",
         "公司自有来源",
         "战略主题命中: manufacturing",
         "业务动作命中: collaboration, manufacturing"
@@ -464,6 +538,12 @@
       "id": "3eca720d4917e74e",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -476,7 +556,7 @@
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU051N1JKVVBldEhlSzY3VVBHbU1hdmxsc1RjTXAtNVQ2WDh3Z1BuY3I4ZGsxQXF2YVhxN3VwejF3Rjh6WjlMUWpFYl9qRml1cndYTVR3aXNxUXI3QlIyNHMwa3Q1bU0xcXNDWHcxbFpuVXpraDFMWmgzN2pYLXRiOTk2a2NKaWxVNDFQZThkcy1lUQ?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b87e0c45f2846d0a817965bfd9&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-set-report-q2-124600867.html&c=11407560408925381686&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03ac48431596cfacf6c3f3f84d&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-set-report-q2-124600867.html&c=11407560408925381686&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Set to Report Q2 Earnings: What's in the Cards? - Yahoo Finance",
@@ -490,7 +570,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher",
+        "公司池命中 +30: Thermo Fisher",
         "战略主题命中: bioproduction",
         "业务动作命中: launch, clinical"
       ],
@@ -500,6 +580,12 @@
       "id": "e679a9f142b13fa9",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -523,7 +609,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, PPD",
+        "公司池命中 +30: Thermo Fisher, PPD",
         "战略主题命中: clinical trials",
         "业务动作命中: collaboration, clinical",
         "高价值分类加成 +10: partnership",
@@ -535,6 +621,12 @@
       "id": "594760e6348b8e2f",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_biotech_blog_rss",
       "source_label": "Thermo Fisher Biotech at Scale RSS",
       "source_ids": [
@@ -558,7 +650,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ThermoFisher",
+        "公司池命中 +15: ThermoFisher",
         "公司自有来源",
         "战略主题命中: CDMO, manufacturing",
         "业务动作命中: manufacturing"
@@ -569,6 +661,12 @@
       "id": "955a568e3b9c3d4a",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -592,7 +690,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher",
+        "公司池命中 +30: Thermo Fisher",
         "战略主题命中: clinical trials",
         "业务动作命中: acquisition, clinical",
         "高价值分类加成 +8: regulatory",
@@ -604,6 +702,12 @@
       "id": "7ad4e33344a2f729",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -627,7 +731,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher",
+        "公司池命中 +30: Thermo Fisher",
         "战略主题命中: clinical development, clinical trials",
         "业务动作命中: clinical",
         "高价值分类加成 +10: partnership",
@@ -636,9 +740,15 @@
       "age_days": 155
     },
     {
-      "id": "f6a1aae9564325be",
+      "id": "4e56d623bf81ddae",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "bing_news_acro_backup",
       "source_label": "Bing News RSS - ACROBiosystems backup",
       "source_ids": [
@@ -648,12 +758,12 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -663,16 +773,22 @@
       "signal_type": "news",
       "is_new": true,
       "reasons": [
-        "公司别名命中 +30: ACROBiosystems, ACROBiosystems Group",
+        "公司池命中 +30: ACROBiosystems, ACROBiosystems Group",
         "战略主题命中: CD20, Japan",
         "业务动作命中: release"
       ],
       "age_days": 70
     },
     {
-      "id": "f23a8dc6f63ea12e",
+      "id": "4cc4db49f8de3410",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "bing_news_acro_backup",
       "source_label": "Bing News RSS - ACROBiosystems backup",
       "source_ids": [
@@ -682,13 +798,13 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5889b890f440e0b89ffe25c45b94f4&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -698,7 +814,7 @@
       "signal_type": "news",
       "is_new": true,
       "reasons": [
-        "公司别名命中 +30: ACROBiosystems",
+        "公司池命中 +30: ACROBiosystems",
         "战略主题命中: HEK293, Japan",
         "业务动作命中: release"
       ],
@@ -708,6 +824,12 @@
       "id": "e6b070a3c0cf55d5",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_official_rss",
       "source_label": "Thermo Fisher official press releases RSS",
       "source_ids": [
@@ -731,7 +853,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
+        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
         "业务动作命中: unveil",
         "高价值分类加成 +10: product"
@@ -742,6 +864,12 @@
       "id": "e530be2f2ff78ac6",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_official_rss",
       "source_label": "Thermo Fisher official press releases RSS",
       "source_ids": [
@@ -765,7 +893,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
+        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
         "业务动作命中: agreement",
         "高价值分类加成 +10: partnership"
@@ -776,6 +904,12 @@
       "id": "8944f11a22b96440",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_biotech_blog_rss",
       "source_label": "Thermo Fisher Biotech at Scale RSS",
       "source_ids": [
@@ -799,7 +933,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ThermoFisher",
+        "公司池命中 +15: ThermoFisher",
         "公司自有来源",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
@@ -810,6 +944,12 @@
       "id": "40b6f13d8fbd0307",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -833,7 +973,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: partnership",
         "高价值分类加成 +10: partnership"
       ],
@@ -843,6 +983,12 @@
       "id": "1b1c82872f77b5ce",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -866,7 +1012,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: launch",
         "高价值分类加成 +10: product"
       ],
@@ -876,6 +1022,12 @@
       "id": "d3ee6e6531ea3a0d",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -899,7 +1051,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: partnership",
         "高价值分类加成 +10: partnership"
       ],
@@ -909,6 +1061,12 @@
       "id": "c13165325af0f9f1",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -932,7 +1090,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: launch",
         "高价值分类加成 +10: product"
       ],
@@ -942,6 +1100,12 @@
       "id": "45024b38c814cce9",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -965,7 +1129,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: partnership",
         "高价值分类加成 +10: partnership"
       ],
@@ -975,6 +1139,12 @@
       "id": "45f9eaff4f9b27fb",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -998,7 +1168,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
@@ -1008,6 +1178,12 @@
       "id": "f610ddd76a80d18c",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1031,7 +1207,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
@@ -1041,6 +1217,12 @@
       "id": "abcdaaf811bbfedb",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1064,7 +1246,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: clinical",
         "高价值分类加成 +10: partnership"
       ],
@@ -1074,6 +1256,12 @@
       "id": "79cd73975e955fe6",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1095,9 +1283,9 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher",
+        "公司池命中 +30: Thermo Fisher",
         "业务动作命中: launch",
         "高价值分类加成 +10: product"
       ],
@@ -1107,6 +1295,12 @@
       "id": "f108a57159d1d2f9",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1130,7 +1324,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific, Gibco",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, Gibco",
         "业务动作命中: introduce",
         "高价值分类加成 +10: product"
       ],
@@ -1140,6 +1334,12 @@
       "id": "3ae7bd9d1d748788",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1163,7 +1363,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher",
+        "公司池命中 +30: Thermo Fisher",
         "业务动作命中: introduce",
         "高价值分类加成 +10: product"
       ],
@@ -1173,6 +1373,12 @@
       "id": "42ace94ed7441c1a",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1196,7 +1402,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
@@ -1206,6 +1412,12 @@
       "id": "2a6dab8a135c09ba",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_biotech_blog_rss",
       "source_label": "Thermo Fisher Biotech at Scale RSS",
       "source_ids": [
@@ -1229,7 +1441,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ThermoFisher",
+        "公司池命中 +15: ThermoFisher",
         "公司自有来源",
         "业务动作命中: collaboration, partnership"
       ],
@@ -1239,6 +1451,12 @@
       "id": "d0ac1be77c1e4154",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1262,7 +1480,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: acquisition",
         "高价值分类加成 +8: market"
       ],
@@ -1272,6 +1490,12 @@
       "id": "0666715bc7f5b9ac",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
@@ -1295,7 +1519,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory"
       ],
@@ -1303,8 +1527,10 @@
     },
     {
       "id": "c1f4ab5a52fd7ba2",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "linkj_life_science_events",
       "source_label": "LINK-J - life science ecosystem events",
       "source_ids": [
@@ -1326,7 +1552,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: ウェビナー",
@@ -1337,8 +1563,10 @@
     },
     {
       "id": "122c4bd87dcb18b4",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "linkj_life_science_events",
       "source_label": "LINK-J - life science ecosystem events",
       "source_ids": [
@@ -1360,7 +1588,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: 創薬",
@@ -1371,8 +1599,10 @@
     },
     {
       "id": "b44024f031932fd3",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "kinkibio_official_feed",
       "source_label": "Kinki Bio - official seminar and ecosystem RSS",
       "source_ids": [
@@ -1394,7 +1624,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: セミナー",
@@ -1405,8 +1635,10 @@
     },
     {
       "id": "ac7a0850e5be41b0",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "shonan_ipark_news_events",
       "source_label": "Shonan iPark - official news and event announcements",
       "source_ids": [
@@ -1428,7 +1660,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: 創薬",
@@ -1441,6 +1673,12 @@
       "id": "ac5eb74389317355",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "acro_official_insights_index",
       "source_label": "ACRO official Insights - indexed RSS",
       "source_ids": [
@@ -1464,7 +1702,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ACROBiosystems",
+        "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
         "战略主题命中: ADC",
         "业务动作命中: clinical",
@@ -1475,8 +1713,10 @@
     },
     {
       "id": "102476f2c5e38564",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "linkj_life_science_events",
       "source_label": "LINK-J - life science ecosystem events",
       "source_ids": [
@@ -1498,7 +1738,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: iPS細胞, ウェビナー",
@@ -1509,8 +1749,10 @@
     },
     {
       "id": "008b2987334d4a27",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "linkj_life_science_events",
       "source_label": "LINK-J - life science ecosystem events",
       "source_ids": [
@@ -1532,7 +1774,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: セミナー, オンライン",
@@ -1545,6 +1787,12 @@
       "id": "2c5ba74c71c5e550",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "acro_official_activities_index",
       "source_label": "ACRO official Events and Webinars - indexed RSS",
       "source_ids": [
@@ -1568,7 +1816,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ACROBiosystems",
+        "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
         "高价值分类加成 +10: event"
       ],
@@ -1578,6 +1826,12 @@
       "id": "5f15c7d1650ced9a",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
       "source_id": "acro_official_activities_index",
       "source_label": "ACRO official Events and Webinars - indexed RSS",
       "source_ids": [
@@ -1601,7 +1855,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: ACROBiosystems",
+        "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
         "业务动作命中: manufacturing",
         "高价值分类加成 +10: event",
@@ -1613,6 +1867,12 @@
       "id": "b706ef6c303c6abf",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_official_rss",
       "source_label": "Thermo Fisher official press releases RSS",
       "source_ids": [
@@ -1636,7 +1896,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
+        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific, ThermoFisher",
         "公司自有来源",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership",
@@ -1648,6 +1908,12 @@
       "id": "2c3834e263f50da2",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_events_index",
       "source_label": "Thermo Fisher official Events and Webinars - indexed RSS",
       "source_ids": [
@@ -1671,7 +1937,7 @@
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
         "公司自有来源",
         "高价值分类加成 +10: event"
       ],
@@ -1681,6 +1947,12 @@
       "id": "cd5f8bd28c36d6ec",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
       "source_id": "thermo_events_index",
       "source_label": "Thermo Fisher official Events and Webinars - indexed RSS",
       "source_ids": [
@@ -1702,9 +1974,9 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
-        "公司别名命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
         "公司自有来源",
         "高价值分类加成 +10: event"
       ],
@@ -1712,8 +1984,10 @@
     },
     {
       "id": "a0b93efced34c30b",
-      "company_id": "japan_life_science_ecosystem",
-      "company": "日本生命科学生态 / 公司发现",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
       "source_id": "linkj_life_science_events",
       "source_label": "LINK-J - life science ecosystem events",
       "source_ids": [
@@ -1735,7 +2009,7 @@
       "tier": "daily",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业生态平台公开来源",
         "战略主题命中: 医療機器, セミナー, オンライン",

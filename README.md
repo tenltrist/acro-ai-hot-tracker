@@ -10,13 +10,14 @@
 
 - ACROBiosystems / 百普赛斯
 - Thermo Fisher Scientific
-- 日本生命科学生态 / 公司发现
 
 当前活动生态来源：
 
 - LINK-J 公开活动列表
 - 近畿生物产业振兴会议官方 RSS
 - 湘南 iPark 新闻与活动公告
+
+这三个平台是跨公司的监测数据源，不属于公司池。抓到内容后，系统再用公司别名匹配 ACRO、Thermo Fisher 或后续加入的对标公司。
 
 ## 核心判断
 

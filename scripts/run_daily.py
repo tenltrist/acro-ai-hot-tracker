@@ -57,6 +57,7 @@ class Candidate:
     source_ids: list[str] = field(default_factory=list)
     source_labels: list[str] = field(default_factory=list)
     related_urls: list[str] = field(default_factory=list)
+    matched_company_ids: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
         if not self.source_ids:
@@ -434,7 +435,7 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
             continue
         raw_desc = item.findtext("description", "")
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "unknown"),
@@ -467,7 +468,7 @@ def parse_atom(source: dict[str, Any]) -> list[Candidate]:
         if not title or not link or is_html_noise(title):
             continue
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "unknown"),
@@ -538,7 +539,7 @@ def parse_youtube_channel(source: dict[str, Any]) -> list[Candidate]:
             "",
         )
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "owned"),
@@ -600,7 +601,7 @@ def parse_sitemap_urls(
         if key not in added_keys:
             continue
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "owned"),
@@ -648,7 +649,7 @@ def parse_sec_submissions(source: dict[str, Any]) -> list[Candidate]:
             f"{accession.replace('-', '')}/{primary_document}"
         )
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "regulator"),
@@ -681,7 +682,7 @@ def parse_openfda(source: dict[str, Any]) -> list[Candidate]:
             continue
         recall_query = urllib.parse.quote(f'recall_number:"{recall_number}"')
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "regulator"),
@@ -724,7 +725,7 @@ def parse_pubmed(source: dict[str, Any]) -> list[Candidate]:
         )
         journal = clean_text(record.get("fulljournalname", ""))
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "research"),
@@ -808,7 +809,7 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
     items: list[Candidate] = []
     for absolute, row in rows_by_url.items():
         candidate = Candidate(
-            company_id=source["company_id"],
+            company_id=source.get("company_id", ""),
             source_id=source["id"],
             source_label=source["label"],
             source_trust=source.get("trust", "unknown"),
@@ -917,16 +918,58 @@ def normalize_title(value: str) -> str:
     return re.sub(r"[^\w]+", "", headline, flags=re.UNICODE).lower()
 
 
-def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int) -> Candidate:
+def match_candidate_companies(
+    item: Candidate,
+    company_lookup: dict[str, dict[str, Any]],
+) -> Candidate:
+    if item.company_id in company_lookup:
+        item.matched_company_ids = [item.company_id]
+        return item
+
+    blob = f"{item.title} {item.summary}".lower()
+    matches: list[str] = []
+    for company_id, company in company_lookup.items():
+        if any(alias.lower() in blob for alias in company.get("aliases", [])):
+            matches.append(company_id)
+    item.matched_company_ids = matches
+    item.company_id = matches[0] if matches else ""
+    return item
+
+
+def merge_scoring_profiles(profiles: list[dict[str, Any]]) -> dict[str, Any]:
+    merged: dict[str, Any] = {
+        "strategic_topics": [],
+        "business_actions": [],
+        "noise_terms": [],
+    }
+    for field_name in merged:
+        for profile in profiles:
+            for value in profile.get(field_name, []):
+                if value not in merged[field_name]:
+                    merged[field_name].append(value)
+    return merged
+
+
+def score_candidate(
+    item: Candidate,
+    profile: dict[str, Any],
+    matched_companies: list[dict[str, Any]],
+    max_age_days: int,
+) -> Candidate:
     blob = f"{item.title} {item.summary} {item.url}".lower()
     score = 0
     reasons: list[str] = []
 
-    alias_hits = [alias for alias in company["aliases"] if alias.lower() in blob]
+    alias_hits = [
+        alias
+        for company in matched_companies
+        for alias in company.get("aliases", [])
+        if alias.lower() in blob
+    ]
     if alias_hits:
         alias_score = 15 if item.source_trust == "owned" else 30
         score += alias_score
-        reasons.append(f"公司别名命中 +{alias_score}: " + ", ".join(alias_hits[:3]))
+        reasons.append(f"公司池命中 +{alias_score}: " + ", ".join(alias_hits[:3]))
 
     if item.source_trust == "owned":
         score += 15
@@ -941,17 +984,17 @@ def score_candidate(item: Candidate, company: dict[str, Any], max_age_days: int)
         score += 10
         reasons.append("科研数据库结构化来源")
 
-    topic_hits = [term for term in company["strategic_topics"] if term.lower() in blob]
+    topic_hits = [term for term in profile.get("strategic_topics", []) if term.lower() in blob]
     if topic_hits:
         score += min(30, 6 * len(topic_hits))
         reasons.append("战略主题命中: " + ", ".join(topic_hits[:5]))
 
-    action_hits = [term for term in company["business_actions"] if term.lower() in blob]
+    action_hits = [term for term in profile.get("business_actions", []) if term.lower() in blob]
     if action_hits:
         score += min(25, 8 * len(action_hits))
         reasons.append("业务动作命中: " + ", ".join(action_hits[:4]))
 
-    noise_hits = [term for term in company["noise_terms"] if term.lower() in blob]
+    noise_hits = [term for term in profile.get("noise_terms", []) if term.lower() in blob]
     if noise_hits:
         score -= 35
         reasons.append("噪音词命中: " + ", ".join(noise_hits[:3]))
@@ -1125,12 +1168,19 @@ def build_dashboard_payload(
         else:
             status = "quiet"
         dated_items = [item.published for item in source_items if item.published]
+        source_company_id = source.get("company_id", "")
+        scope_label = (
+            company_lookup.get(source_company_id, {}).get("display_name")
+            if source_company_id
+            else source.get("scope_label", "跨公司监测源")
+        )
         source_health.append(
             {
                 "source_id": source["id"],
                 "source_label": source["label"],
-                "company_id": source["company_id"],
-                "company": company_lookup.get(source["company_id"], {}).get("display_name", source["company_id"]),
+                "company_id": source_company_id,
+                "company": scope_label,
+                "scope": scope_label,
                 "source_type": source["type"],
                 "signal_type": source.get("signal_type", "news"),
                 "enabled": enabled,
@@ -1161,7 +1211,13 @@ def build_dashboard_payload(
             "daily": len(tiers["daily"]),
             "archive": len(tiers["archive"]),
             "errors": len(errors),
-            "companies": len({item.company_id for item in candidates}),
+            "companies": len(
+                {
+                    company_id
+                    for item in candidates
+                    for company_id in item.matched_company_ids
+                }
+            ),
             "sources": len({item.source_id for item in candidates}),
         },
         "source_mix": sources,
@@ -1181,7 +1237,20 @@ def build_dashboard_payload(
             {
                 "id": item.key,
                 "company_id": item.company_id,
-                "company": company_lookup[item.company_id]["display_name"],
+                "company": (
+                    " / ".join(
+                        company_lookup[company_id]["display_name"]
+                        for company_id in item.matched_company_ids
+                        if company_id in company_lookup
+                    )
+                    or "行业观察（未命中公司池）"
+                ),
+                "matched_company_ids": item.matched_company_ids,
+                "matched_companies": [
+                    company_lookup[company_id]["display_name"]
+                    for company_id in item.matched_company_ids
+                    if company_id in company_lookup
+                ],
                 "source_id": item.source_id,
                 "source_label": item.source_label,
                 "source_ids": item.source_ids,
@@ -1247,12 +1316,19 @@ def render_section(
         return lines
 
     for idx, item in enumerate(sorted(items, key=lambda x: x.score, reverse=True), start=1):
-        company = company_lookup[item.company_id]["display_name"]
+        company = (
+            " / ".join(
+                company_lookup[company_id]["display_name"]
+                for company_id in item.matched_company_ids
+                if company_id in company_lookup
+            )
+            or "行业观察（未命中公司池）"
+        )
         date_suffix = f" | {item.published}" if item.published else ""
         lines.extend(
             [
                 f"{idx}. [{item.title}]({item.url})",
-                f"   - 公司：{company}",
+                f"   - 公司命中：{company}",
                 f"   - 来源：{item.source_label}{date_suffix}",
                 f"   - 分数 / 分层：{item.score} / `{item.tier}`",
                 f"   - 分类：`{item.category}`",
@@ -1277,9 +1353,15 @@ def main() -> int:
     parser.add_argument("--ai-summary", action="store_true", help="Generate AI Chinese summaries for daily/immediate items (needs ANTHROPIC_API_KEY).")
     args = parser.parse_args()
 
-    companies = load_json(CONFIG_DIR / "companies.json")["companies"]
+    company_config = load_json(CONFIG_DIR / "companies.json")
+    companies = company_config["companies"]
+    source_profiles = {
+        profile["id"]: profile
+        for profile in company_config.get("source_profiles", [])
+    }
     sources = load_json(CONFIG_DIR / "sources.json")["sources"]
     company_lookup = {company["id"]: company for company in companies}
+    source_lookup = {source["id"]: source for source in sources}
     seen = load_json(SEEN_PATH) if SEEN_PATH.exists() else {}
     source_snapshots = (
         load_json(SOURCE_SNAPSHOTS_PATH)
@@ -1292,18 +1374,37 @@ def main() -> int:
         source_snapshots,
     )
     candidates = dedupe(candidates)
-    scored = [
-        score_candidate(item, company_lookup[item.company_id], args.days)
-        for item in candidates
-        if item.company_id in company_lookup
-    ]
+    scored: list[Candidate] = []
+    for item in candidates:
+        match_candidate_companies(item, company_lookup)
+        matched_companies = [
+            company_lookup[company_id]
+            for company_id in item.matched_company_ids
+            if company_id in company_lookup
+        ]
+        profiles = list(matched_companies)
+        for source_id in item.source_ids:
+            profile_id = source_lookup.get(source_id, {}).get("profile_id", "")
+            if profile_id in source_profiles:
+                profiles.append(source_profiles[profile_id])
+        profile = merge_scoring_profiles(profiles)
+        scored.append(
+            score_candidate(item, profile, matched_companies, args.days)
+        )
 
     # AI summary for daily/immediate items
     ai_summaries: dict[str, str] = {}
     if args.ai_summary:
         summary_candidates = [item for item in scored if item.tier in {"immediate", "daily"}]
         for item in summary_candidates:
-            company_name = company_lookup.get(item.company_id, {}).get("display_name", item.company_id)
+            company_name = (
+                " / ".join(
+                    company_lookup[company_id]["display_name"]
+                    for company_id in item.matched_company_ids
+                    if company_id in company_lookup
+                )
+                or "行业观察"
+            )
             ai_text = generate_ai_summary(item, company_name)
             if ai_text:
                 ai_summaries[item.key] = ai_text
@@ -1351,6 +1452,7 @@ def main() -> int:
                     "title": item.title,
                     "url": normalize_url(item.url),
                     "company_id": item.company_id,
+                    "matched_company_ids": item.matched_company_ids,
                     "tier": item.tier,
                     "score": item.score,
                     "signal_type": item.signal_type,

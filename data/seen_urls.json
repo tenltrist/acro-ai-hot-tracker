@@ -4747,5 +4747,65 @@
     "tier": "archive",
     "score": 22,
     "signal_type": "event"
+  },
+  "4e56d623bf81ddae": {
+    "first_seen": "2026-07-16T16:45:09",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "4cc4db49f8de3410": {
+    "first_seen": "2026-07-16T16:45:09",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03e2594fcd97939b48fb2e136d&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "73bb646d7e63d16d": {
+    "first_seen": "2026-07-16T16:45:09",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03ac48431596cfacf6c3f3f84d&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "fb40a91714307f7e": {
+    "first_seen": "2026-07-16T16:45:09",
+    "title": "Arcturus picks Thermo Fisher to support cystic fibrosis therapy",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03ac48431596cfacf6c3f3f84d&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fscience%2Fbiology%2Farcturus-picks-thermo-fisher-to-support-cystic-fibrosis-therapy%2Far-AA274XBl&c=17935128133380466660&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "00f2695854ff9a5f": {
+    "first_seen": "2026-07-16T16:45:09",
+    "title": "Feds Give Thermo Fisher's Rapid DNA Gadget a Crime‑Scene Green Light",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a588c03ac48431596cfacf6c3f3f84d&url=https%3A%2F%2Fhoodline.com%2F2026%2F07%2Ffeds-give-thermo-fisher-s-rapid-dna-gadget-a-crime-scene-green-light%2F&c=5566975182672021747&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
   }
 }
