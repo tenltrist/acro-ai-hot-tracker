@@ -4,50 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260715e" />
+    <link rel="stylesheet" href="./styles.css?v=20260716a" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
       <div class="brand">
         <div class="brand-mark">AH</div>
-        <div>
+        <div class="brand-copy">
           <strong>AI Hot Tracker</strong>
-          <span>Market Intelligence</span>
+          <span>ACRO Market Intelligence</span>
         </div>
+        <span class="live-badge"><i></i>LIVE</span>
       </div>
       <nav class="nav" aria-label="页面导航">
-        <button class="active" type="button" data-page-target="overview">📊 总览</button>
-        <button type="button" data-page-target="companies">🏢 公司池</button>
-        <button type="button" data-page-target="sources">🗺️ 数据源地图</button>
-        <button type="button" data-page-target="acro">📋 ACRO 档案</button>
-        <button type="button" data-page-target="pipeline">⚙️ 系统链路</button>
-        <button type="button" data-page-target="questions">❓ 待确认</button>
-        <button type="button" data-page-target="source-health">数据源健康</button>
+        <div class="nav-group">
+          <span class="nav-group-label">情报工作台</span>
+          <button class="active" type="button" data-page-target="overview"><span class="nav-icon">⌂</span><span>总览</span></button>
+          <button type="button" data-page-target="companies"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="sources"><span class="nav-icon">◇</span><span>数据源地图</span></button>
+          <button type="button" data-page-target="acro"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
+        </div>
+        <div class="nav-group">
+          <span class="nav-group-label">运行管理</span>
+          <button type="button" data-page-target="source-health"><span class="nav-icon">✓</span><span>数据源健康</span></button>
+          <button type="button" data-page-target="pipeline"><span class="nav-icon">↳</span><span>系统链路</span></button>
+          <button type="button" data-page-target="questions"><span class="nav-icon">?</span><span>待确认</span></button>
+        </div>
       </nav>
 
       <div class="company-dock" aria-label="快捷筛选">
         <div class="dock-head">
-          <span class="label">公司筛选</span>
-          <strong>点击切换</strong>
+          <span class="label">监控对象</span>
+          <strong>2 家已接入</strong>
         </div>
         <button class="company-chip active" type="button" data-filter-company="all">
-          <span>全部公司</span>
-          <small>显示所有动态</small>
+          <span class="company-chip-main"><i class="company-dot all"></i><strong>全部公司</strong></span>
+          <small>联合情报流</small>
         </button>
         <button class="company-chip" type="button" data-filter-company="acro">
-          <span>ACRO</span>
-          <small>百普赛斯</small>
+          <span class="company-chip-main"><i class="company-dot acro"></i><strong>ACRO</strong></span>
+          <small>百普赛斯 · 标本公司</small>
         </button>
         <button class="company-chip" type="button" data-filter-company="thermo_fisher">
-          <span>Thermo Fisher</span>
-          <small>竞品样本</small>
+          <span class="company-chip-main"><i class="company-dot thermo"></i><strong>Thermo Fisher</strong></span>
+          <small>竞品 · 行业标杆</small>
         </button>
       </div>
 
       <div class="sidebar-panel">
-        <span class="label">当前阶段</span>
-        <strong>MVP 验证中</strong>
-        <p>用 ACRO + Thermo Fisher 跑通方法，再批量接入公司名单。</p>
+        <div class="sidebar-status"><i></i><strong>数据链路正常</strong></div>
+        <p>工作日自动更新 · 公开免费来源</p>
+        <span>MVP 阶段</span>
       </div>
     </aside>
 
@@ -492,6 +499,7 @@
       </section>
     </main>
 
-    <script src="./app.js?v=20260715e"></script>
+    <script src="./embedded-data.js?v=20260716a"></script>
+    <script src="./app.js?v=20260716a"></script>
   </body>
 </html>

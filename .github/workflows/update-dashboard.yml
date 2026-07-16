@@ -25,4 +25,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update AI Hot Tracker dashboard data"
-          file_pattern: "data/*.json data/history/*.json api/public/*.json reports/*.md share/*.html"
+          file_pattern: "data/*.json data/history/*.json api/public/*.json reports/*.md share/*.html web/embedded-data.js"

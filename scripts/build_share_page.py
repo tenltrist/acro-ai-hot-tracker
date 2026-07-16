@@ -13,6 +13,7 @@ DATA_PATH = ROOT / "data" / "latest_run.json"
 HISTORY_DIR = ROOT / "data" / "history"
 SHARE_DIR = ROOT / "share"
 OUT_PATH = SHARE_DIR / "acro_ai_hot_tracker_dashboard.html"
+EMBEDDED_DATA_PATH = WEB_DIR / "embedded-data.js"
 
 
 def main() -> int:
@@ -27,12 +28,16 @@ def main() -> int:
     if history_files:
         history_payload = json.dumps(json.loads(history_files[-1].read_text(encoding="utf-8")), ensure_ascii=False, indent=2)
 
-    html = html.replace('    <link rel="stylesheet" href="./styles.css?v=20260715e" />', f"    <style>\n{css}\n    </style>")
-    embedded = f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\nwindow.AIHOT_EMBEDDED_HISTORY = {history_payload};"
-    html = html.replace('    <script src="./app.js?v=20260715e"></script>', f"    <script>\n{embedded}\n    </script>\n    <script>\n{js}\n    </script>")
+    embedded = f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\nwindow.AIHOT_EMBEDDED_HISTORY = {history_payload};\n"
+    EMBEDDED_DATA_PATH.write_text(embedded, encoding="utf-8")
+
+    html = html.replace('    <link rel="stylesheet" href="./styles.css?v=20260716a" />', f"    <style>\n{css}\n    </style>")
+    html = html.replace('    <script src="./embedded-data.js?v=20260716a"></script>', f"    <script>\n{embedded}    </script>")
+    html = html.replace('    <script src="./app.js?v=20260716a"></script>', f"    <script>\n{js}\n    </script>")
 
     SHARE_DIR.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(html, encoding="utf-8")
+    print(EMBEDDED_DATA_PATH)
     print(OUT_PATH)
     return 0
 

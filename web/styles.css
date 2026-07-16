@@ -35,21 +35,26 @@ a {
 }
 
 .sidebar {
-  min-height: 100vh;
-  background: #172027;
+  height: 100vh;
+  min-height: 680px;
+  overflow-y: auto;
+  background: #142027;
   color: #f7fbfc;
-  padding: 24px 18px;
+  padding: 20px 14px 16px;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+  border-right: 1px solid #26343d;
 }
 
 .brand {
-  display: flex;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 10px;
   align-items: center;
+  padding: 0 4px;
 }
 
 .brand-mark {
@@ -63,44 +68,139 @@ a {
   font-weight: 800;
 }
 
-.brand strong,
-.brand span {
+.brand-copy {
+  min-width: 0;
+}
+
+.brand-copy strong,
+.brand-copy span {
   display: block;
 }
 
-.brand span {
+.brand-copy strong {
+  overflow: hidden;
+  color: #f8fbfc;
+  font-size: 15px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brand-copy span {
   color: #9bb0bd;
-  font-size: 12px;
-  margin-top: 2px;
+  font-size: 10px;
+  line-height: 1.35;
+  margin-top: 3px;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #8fd7d8;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.live-badge i,
+.sidebar-status i {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #53c6a2;
+  box-shadow: 0 0 0 3px rgba(83, 198, 162, 0.12);
 }
 
 .nav {
   display: grid;
+  gap: 18px;
+}
+
+.nav-group {
+  display: grid;
   gap: 4px;
 }
 
+.nav-group-label {
+  padding: 0 10px 6px;
+  color: #708590;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .nav button {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
   text-decoration: none;
   color: #b8c7d1;
-  padding: 10px 12px;
+  padding: 6px 10px;
   border-radius: 7px;
   font-size: 14px;
-  height: auto;
+  font-weight: 650;
+  height: 42px;
   background: transparent;
-  border: 0;
+  border: 1px solid transparent;
   text-align: left;
   cursor: pointer;
 }
 
+.nav button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 18px;
+  border-radius: 0 3px 3px 0;
+  background: transparent;
+}
+
 .nav button.active,
 .nav button:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.06);
   color: white;
+}
+
+.nav button.active::before {
+  background: #65cbd0;
+}
+
+.nav button:focus-visible,
+.company-chip:focus-visible {
+  outline: 2px solid #8fd7d8;
+  outline-offset: 2px;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #34454f;
+  border-radius: 6px;
+  color: #8fa3ae;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.nav button.active .nav-icon {
+  border-color: rgba(101, 203, 208, 0.38);
+  background: rgba(101, 203, 208, 0.12);
+  color: #8fe0e3;
 }
 
 .company-dock {
   display: grid;
-  gap: 8px;
+  gap: 6px;
+  padding-top: 16px;
+  border-top: 1px solid #2a3942;
 }
 
 .dock-head {
@@ -111,35 +211,71 @@ a {
 }
 
 .dock-head strong {
-  color: #d8f3f3;
-  font-size: 12px;
+  color: #8296a1;
+  font-size: 10px;
+  font-weight: 650;
 }
 
 .company-chip {
-  min-height: 48px;
+  min-height: 52px;
   height: auto;
   display: grid;
-  gap: 3px;
+  gap: 5px;
   justify-items: start;
-  padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  padding: 9px 11px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
   color: #dce8ee;
+  text-align: left;
   cursor: pointer;
 }
 
 .company-chip.active,
 .company-chip:hover {
-  background: rgba(216, 243, 243, 0.14);
-  border-color: rgba(216, 243, 243, 0.24);
+  background: rgba(216, 243, 243, 0.09);
+  border-color: rgba(143, 215, 216, 0.28);
 }
 
-.company-chip span {
+.company-chip-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.company-chip-main strong {
+  overflow: hidden;
+  font-size: 13px;
   font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.company-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+
+.company-dot.all {
+  background: #8fd7d8;
+}
+
+.company-dot.acro {
+  background: #f0a56e;
+}
+
+.company-dot.thermo {
+  background: #7fa5de;
 }
 
 .company-chip small {
+  padding-left: 15px;
   color: #9bb0bd;
+  font-size: 10px;
 }
 
 .company-chip.muted {
@@ -148,17 +284,38 @@ a {
 
 .sidebar-panel {
   margin-top: auto;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1a292f;
+  border: 1px solid #2c3d45;
   border-radius: 8px;
-  padding: 14px;
+  padding: 12px;
 }
 
 .sidebar-panel p {
-  margin: 8px 0 0;
-  color: #b8c7d1;
-  font-size: 13px;
-  line-height: 1.55;
+  margin: 7px 0 10px;
+  color: #8fa3ae;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.sidebar-panel > span {
+  display: inline-block;
+  padding-top: 8px;
+  border-top: 1px solid #304149;
+  width: 100%;
+  color: #708590;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.sidebar-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-status strong {
+  color: #e1ecef;
+  font-size: 12px;
 }
 
 .label,
@@ -1554,7 +1711,27 @@ select {
 
   .sidebar {
     position: static;
+    height: auto;
     min-height: auto;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .company-dock {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dock-head {
+    grid-column: 1 / -1;
+  }
+
+  .sidebar-panel {
+    display: none;
   }
 
   .summary-grid,
@@ -1623,6 +1800,45 @@ select {
 }
 
 @media (max-width: 620px) {
+  .brand-copy span,
+  .live-badge {
+    display: none;
+  }
+
+  .nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .nav button {
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 5px;
+    padding: 5px 6px;
+    font-size: 12px;
+  }
+
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  .nav-group-label {
+    padding-left: 6px;
+  }
+
+  .company-dock {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .company-dock {
+    padding-top: 12px;
+  }
+
+  .company-chip[data-filter-company="all"] {
+    grid-column: 1 / -1;
+  }
+
   .shell {
     padding: 18px;
   }
