@@ -241,16 +241,52 @@ notes:
 
 ### 8.2 新闻稿与行业媒体来源
 
-| 来源 | 价值 | 常见获取方式 | 建设阶段建议 |
+本板块不能把“媒体是谁”“报道扮演什么角色”“监控哪家公司”“使用什么查询方式”写在同一层。网页采用以下结构：
+
+- 主分类：来源角色。
+- 辅助标签：公司、竞品、地区和获取方式。
+- 抓取后分类：公司新闻、产品、合作、活动、监管、技术主题等内容类型。
+
+“公司定向查询”不是一种数据源。它表示用公司名、别名或 `site:` 条件从某个真实平台中筛选内容，属于第三轴“获取方式”。
+
+#### A. 新闻稿分发平台
+
+这类平台承载公司自行发布的正式新闻稿。它们适合发现和核对公司原始表述，但不能当作独立媒体评价。
+
+| 来源 | 当前能力判断 | 常见获取方式 | 建设阶段 |
 | --- | --- | --- | --- |
-| PR Newswire | 新闻稿补充 | `direct_rss` 或 `indexed_rss` | 有公司命中时可 `active` |
-| Business Wire | 新闻稿补充 | `direct_rss` 或 `indexed_rss` | `available` 或 `planned` |
-| GlobeNewswire | 新闻稿补充 | `direct_rss` 或 `indexed_rss` | `available` 或 `planned` |
-| BioSpace | 生物医药行业动态 | `direct_rss`、`indexed_rss` | 测试重复率后决定 |
-| Fierce Biotech / Fierce Pharma | 行业热点和竞品背景 | `direct_rss`、`indexed_rss` | `planned` |
-| GEN News / Technology Networks / Labiotech | 技术与行业内容 | `direct_rss`、`indexed_rss` | `planned` |
-| 日文行业媒体 | 日本市场信号 | 白名单 RSS、`manual_review` | `planned` 或 `manual` |
-| 中文行业媒体 | 中国市场信号 | 白名单 RSS、`manual_review` | `planned` 或 `manual` |
+| PR Newswire | ACRO 已有实际命中 | 公司名 + `site:` 索引 RSS | `active` |
+| Business Wire | 官方支持按行业和关键词定制 RSS / Atom，尚未验证公司池增量 | 官方 RSS、关键词查询、`indexed_rss` | `available` |
+| GlobeNewswire | 官方提供 Health、Biotechnology、Partnerships、Product Announcement 等 RSS | 官方分类 RSS、公司关键词 | `available` |
+
+#### B. 生物医药行业新闻
+
+这类来源有编辑筛选和报道属性，可补充外部视角、交易背景和竞品信息。
+
+| 来源 | 主要价值 | 常见获取方式 | 建设阶段 |
+| --- | --- | --- | --- |
+| BioSpace | 公司、Deals、Drug Development、FDA 和行业动态 | 官方栏目 RSS | `available` |
+| Fierce Biotech | Biotech、Medtech、CRO、研发交易 | 官方 RSS | `available` |
+| Fierce Pharma | Pharma、Manufacturing、Marketing、Vaccines、Pharma Asia | 官方栏目 RSS | `available` |
+
+#### C. 生命科学技术媒体
+
+这类来源更适合技术趋势、实验工具、应用场景和内容选题，不应与公司新闻稿混在同一个默认推送权重中。
+
+| 来源 | 主要价值 | 常见获取方式 | 建设阶段 |
+| --- | --- | --- | --- |
+| GEN | Drug Discovery、Bioprocessing、OMICS、Gene Editing、Translational Medicine | 栏目索引；稳定 RSS 待确认 | `planned` |
+| Technology Networks | 实验工具、分析技术、科研趋势、Webinar | 栏目索引、Newsletter；自动入口待测试 | `planned` |
+| Labiotech | 欧洲 Biotech 公司、融资、合作和区域产业动态 | RSS / 索引待测试 | `planned` |
+
+#### D. 地区媒体补充
+
+地区只是辅助属性，不是来源类型。不能再用“日文行业媒体”或“中文行业媒体”代表一个虚拟数据源，必须落实到具体媒体、栏目和入口。
+
+| 地区 | 建档要求 | 建设阶段 |
+| --- | --- | --- |
+| 日本 | 逐家记录媒体名、栏目、免费范围、RSS、登录要求和转载比例 | `planned` 或 `manual` |
+| 中国 | 逐家记录媒体名、原文链、转载链、公众号关系和人工复核规则 | `manual`，稳定公开入口确认后再升级 |
 
 ### 8.3 聚合搜索来源
 

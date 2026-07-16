@@ -74,6 +74,34 @@ const officialContentGroups = [
   },
 ];
 
+const wireMediaGroups = [
+  {
+    id: "press_release_distribution",
+    number: "A",
+    title: "新闻稿分发平台",
+    description: "公司自行发布并通过平台分发的正式新闻稿。适合补漏和核对原始表述，但不等于独立媒体报道。",
+  },
+  {
+    id: "biopharma_editorial",
+    number: "B",
+    title: "生物医药行业新闻",
+    description: "由行业编辑部筛选和撰写的公司、交易、研发、监管和市场新闻。",
+  },
+  {
+    id: "science_technology_media",
+    number: "C",
+    title: "生命科学技术媒体",
+    description: "偏技术趋势、实验工具、应用案例和科研产业内容，适合做主题背景和产品方向观察。",
+  },
+  {
+    id: "regional_media",
+    number: "＋",
+    title: "地区媒体补充",
+    description: "地区是辅助标签，不是媒体类型；进入系统后仍按新闻稿、行业新闻或技术内容重新归类。",
+    secondary: true,
+  },
+];
+
 const sourceInventory = [
   {
     layer: "official",
@@ -241,14 +269,128 @@ const sourceInventory = [
     layer: "wire_media",
     number: "02",
     title: "新闻稿与行业媒体",
-    subtitle: "外部新闻稿、行业媒体和区域媒体。用于补充官方来源，但需要跨来源去重和事件归并。",
+    subtitle: "先区分新闻稿分发平台、行业编辑媒体和技术媒体，再用公司、地区与获取方式作标签。新闻稿是公司表述，行业报道是外部观察，两者不能混为同一种证据。",
     sources: [
-      { name: "PR Newswire - ACRO", status: "active", trust: "B", method: "Google News site RSS", note: "定向补漏 ACRO 新闻稿，已进入当前抓取流。", sourceIds: ["google_news_acro_prnewswire"] },
-      { name: "Business Wire 公司定向查询", status: "available", trust: "B", method: "site 搜索 RSS", note: "方法可用，但尚未按公司批量配置；等目标公司池稳定后接入。" },
-      { name: "GlobeNewswire 公司定向查询", status: "available", trust: "B", method: "site 搜索 RSS", note: "方法可用，当前没有证明对 ACRO 比 PR Newswire 更有价值。" },
-      { name: "BioSpace / Fierce / GEN", status: "planned", trust: "B", method: "RSS / 定向查询", note: "作为行业背景和竞品报道增强层，需先测试噪音率和重复率。" },
-      { name: "日文行业媒体", status: "planned", trust: "B", method: "媒体清单 + RSS", note: "为日本市场信号单独建源，不与全球新闻混在一起。" },
-      { name: "中文行业媒体", status: "planned", trust: "B", method: "媒体清单 + 人工复核", note: "先建立白名单，避免采集低质量转载和 SEO 页面。" },
+      {
+        name: "PR Newswire",
+        mediaGroup: "press_release_distribution",
+        companyTag: "ACRO",
+        regionTag: "全球",
+        status: "active",
+        trust: "B",
+        method: "公司名 + site 索引 RSS",
+        note: "当前用于补漏 ACRO 发布到 PR Newswire 的新闻稿；“公司定向”是查询规则，不是来源分类。",
+        sourceIds: ["google_news_acro_prnewswire"],
+        url: "prnewswire.com",
+      },
+      {
+        name: "Business Wire",
+        mediaGroup: "press_release_distribution",
+        companyTag: "公司池",
+        regionTag: "全球",
+        status: "available",
+        trust: "B",
+        method: "官方 RSS / 公司关键词",
+        note: "官方提供可按行业和关键词定制的 RSS / Atom；尚未验证 ACRO 与公司池的增量命中和重复率。",
+        url: "businesswire.com",
+      },
+      {
+        name: "GlobeNewswire",
+        mediaGroup: "press_release_distribution",
+        companyTag: "公司池",
+        regionTag: "全球",
+        status: "available",
+        trust: "B",
+        method: "官方分类 RSS / 公司关键词",
+        note: "官方有 Health、Biotechnology、Partnerships、Product Announcement 等 RSS；接入前先测试公司命中质量。",
+        url: "globenewswire.com",
+      },
+      {
+        name: "BioSpace",
+        mediaGroup: "biopharma_editorial",
+        companyTag: "公司池 / 竞品",
+        regionTag: "全球",
+        status: "available",
+        trust: "B",
+        method: "官方栏目 RSS",
+        note: "有 News、Deals、Drug Development、FDA 等公开 RSS；下一步测试 ACRO、Thermo 和竞品的命中与转载重复。",
+        url: "biospace.com",
+      },
+      {
+        name: "Fierce Biotech",
+        mediaGroup: "biopharma_editorial",
+        companyTag: "公司池 / 竞品",
+        regionTag: "全球",
+        status: "available",
+        trust: "B",
+        method: "官方 RSS",
+        note: "适合生物技术、研发交易和 CRO 观察；已有公开 RSS，但还未进入当前跑批。",
+        url: "fiercebiotech.com",
+      },
+      {
+        name: "Fierce Pharma",
+        mediaGroup: "biopharma_editorial",
+        companyTag: "公司池 / 竞品",
+        regionTag: "全球 / 亚洲",
+        status: "available",
+        trust: "B",
+        method: "官方栏目 RSS",
+        note: "可覆盖 Pharma、Manufacturing、Marketing、Vaccines 和 Pharma Asia；需按业务主题选择栏目，避免全站噪音。",
+        url: "fiercepharma.com",
+      },
+      {
+        name: "GEN",
+        mediaGroup: "science_technology_media",
+        companyTag: "技术主题 / 竞品",
+        regionTag: "全球",
+        status: "planned",
+        trust: "B",
+        method: "栏目索引 / RSS 待确认",
+        note: "覆盖 Drug Discovery、Bioprocessing、OMICS、Gene Editing 和 Translational Medicine；先确认稳定入口再接入。",
+        url: "genengnews.com",
+      },
+      {
+        name: "Technology Networks",
+        mediaGroup: "science_technology_media",
+        companyTag: "技术主题",
+        regionTag: "全球",
+        status: "planned",
+        trust: "B",
+        method: "栏目索引 / Newsletter",
+        note: "适合实验工具、分析技术和科研趋势背景；当前确认有公开内容与 Newsletter，自动入口仍需测试。",
+        url: "technologynetworks.com",
+      },
+      {
+        name: "Labiotech",
+        mediaGroup: "science_technology_media",
+        companyTag: "欧洲竞品 / 交易",
+        regionTag: "欧洲",
+        status: "planned",
+        trust: "B",
+        method: "RSS / 索引待测试",
+        note: "用于补充欧洲 Biotech 公司、融资和合作动态，先评估免费内容比例与重复率。",
+        url: "labiotech.eu",
+      },
+      {
+        name: "日本公开行业媒体白名单",
+        mediaGroup: "regional_media",
+        companyTag: "公司池 / 竞品",
+        regionTag: "日本",
+        status: "planned",
+        trust: "B",
+        method: "媒体白名单 + RSS / 人工",
+        note: "先逐家记录媒体名称、栏目、是否免费、是否有 RSS 和转载比例；不再用“日文媒体”作为一个虚拟数据源。",
+      },
+      {
+        name: "中国公开行业媒体白名单",
+        mediaGroup: "regional_media",
+        companyTag: "公司池 / 竞品",
+        regionTag: "中国",
+        status: "manual",
+        trust: "C",
+        method: "媒体白名单 + 人工复核",
+        note: "来源结构和转载链复杂，先建立具体媒体白名单并人工核对原文，不把中文内容整体视为一种来源。",
+      },
     ],
   },
   {
@@ -609,7 +751,13 @@ function renderRules() {
             </div>
             <p>${escapeHtml(cat.subtitle)}</p>
           </div>
-          ${cat.layer === "official" ? renderOfficialSourceGroups(visibleSources) : `<div class="source-grid">${visibleSources.map(renderSourceCard).join("")}</div>`}
+          ${
+            cat.layer === "official"
+              ? renderOfficialSourceGroups(visibleSources)
+              : cat.layer === "wire_media"
+                ? renderWireMediaGroups(visibleSources)
+                : `<div class="source-grid">${visibleSources.map(renderSourceCard).join("")}</div>`
+          }
         </section>
       `;
     })
@@ -617,17 +765,40 @@ function renderRules() {
 }
 
 function renderOfficialSourceGroups(sources) {
-  const groups = officialContentGroups
+  return renderGroupedSources(
+    sources,
+    officialContentGroups,
+    "contentGroup",
+    `
+      <div><span>主分类</span><strong>内容是什么</strong><small>新闻、产品、活动、技术、视频</small></div>
+      <div><span>辅助标签</span><strong>从哪里获得</strong><small>公司、地区、直接 RSS 或索引 RSS</small></div>
+    `,
+  );
+}
+
+function renderWireMediaGroups(sources) {
+  return renderGroupedSources(
+    sources,
+    wireMediaGroups,
+    "mediaGroup",
+    `
+      <div><span>主分类</span><strong>来源扮演什么角色</strong><small>新闻稿平台、行业编辑媒体、技术媒体</small></div>
+      <div><span>辅助标签</span><strong>监控谁与怎么获取</strong><small>公司、竞品、地区、RSS 或定向查询</small></div>
+    `,
+  );
+}
+
+function renderGroupedSources(sources, groupDefinitions, groupKey, axisContent) {
+  const groups = groupDefinitions
     .map((group) => ({
       ...group,
-      sources: sources.filter((source) => source.contentGroup === group.id),
+      sources: sources.filter((source) => source[groupKey] === group.id),
     }))
     .filter((group) => group.sources.length);
 
   return `
     <div class="official-axis-note">
-      <div><span>主分类</span><strong>内容是什么</strong><small>新闻、产品、活动、技术、视频</small></div>
-      <div><span>辅助标签</span><strong>从哪里获得</strong><small>公司、地区、直接 RSS 或索引 RSS</small></div>
+      ${axisContent}
     </div>
     <div class="official-source-groups">
       ${groups
