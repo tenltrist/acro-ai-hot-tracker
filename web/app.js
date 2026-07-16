@@ -34,15 +34,58 @@ const state = {
   history: null,
 };
 
+const officialContentGroups = [
+  {
+    id: "company_news",
+    number: "A",
+    title: "公司新闻与公告",
+    description: "合作、融资、收购、管理层、公司战略和正式新闻稿。",
+  },
+  {
+    id: "product_updates",
+    number: "B",
+    title: "产品与解决方案更新",
+    description: "新品、新靶点、新试剂盒、新服务和解决方案页面。",
+  },
+  {
+    id: "events",
+    number: "C",
+    title: "活动与 Webinar",
+    description: "展会、会议、Workshop、Webinar、报名和回放状态。",
+  },
+  {
+    id: "technical_content",
+    number: "D",
+    title: "技术内容",
+    description: "Insights、Blog、Application Note、白皮书和 Protocol。",
+  },
+  {
+    id: "official_video",
+    number: "E",
+    title: "视频与回放",
+    description: "官方 YouTube、技术视频和 Webinar Replay。",
+  },
+  {
+    id: "regional_coverage",
+    number: "＋",
+    title: "跨类别地区覆盖",
+    description: "这不是内容分类；地区站抓到内容后，仍要归入上面五类。",
+    secondary: true,
+  },
+];
+
 const sourceInventory = [
   {
     layer: "official",
     number: "01",
     title: "官方自有内容",
-    subtitle: "公司自己发布的新闻、活动、技术内容和区域动态。官网直抓受限时，只使用公开索引结果，不绕过验证。",
+    subtitle: "先按内容类型分组，再用公司、地区和获取方式作标签。官网直抓受限时，只使用公开索引结果，不绕过验证。",
     sources: [
       {
         name: "ACRO 官网 News",
+        contentGroup: "company_news",
+        companyTag: "ACRO",
+        regionTag: "全球站",
         status: "active",
         trust: "A",
         method: "官网索引 RSS",
@@ -51,7 +94,54 @@ const sourceInventory = [
         url: "acrobiosystems.com/news",
       },
       {
+        name: "Thermo Fisher IR / Press Release",
+        contentGroup: "company_news",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球站",
+        status: "active",
+        trust: "A",
+        method: "官方直接 RSS",
+        note: "直接读取官方结构化新闻稿，日期、标题和链接完整，是当前最稳定的官方来源。",
+        sourceIds: ["thermo_official_rss"],
+        url: "ir.thermofisher.com/rss/pressrelease.aspx",
+      },
+      {
+        name: "Thermo Fisher Newsroom",
+        contentGroup: "company_news",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球站",
+        status: "covered",
+        trust: "A",
+        method: "由 IR RSS 覆盖",
+        note: "Newsroom HTML 直抓返回 403；主要新闻稿已由官方 IR RSS 覆盖，不重复接入。",
+        url: "newsroom.thermofisher.com",
+      },
+      {
+        name: "ACRO 产品 / Resources 新页面",
+        contentGroup: "product_updates",
+        companyTag: "ACRO",
+        regionTag: "全球站",
+        status: "planned",
+        trust: "A",
+        method: "Sitemap 新 URL 差分",
+        note: "监控产品、Applications 和 Resources 新增 URL，不依赖不准确的 lastmod。",
+        url: "acrobiosystems.com/products",
+      },
+      {
+        name: "Thermo Fisher 产品更新",
+        contentGroup: "product_updates",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球站",
+        status: "planned",
+        trust: "A",
+        method: "产品栏目新 URL",
+        note: "按生命科学业务相关产品线建立栏目白名单，不监控整个大型产品目录。",
+      },
+      {
         name: "ACRO Events / Webinar",
+        contentGroup: "events",
+        companyTag: "ACRO",
+        regionTag: "全球站",
         status: "active",
         trust: "A",
         method: "Activities 索引 RSS",
@@ -60,7 +150,20 @@ const sourceInventory = [
         url: "acrobiosystems.com/activities",
       },
       {
-        name: "ACRO Insights / 技术内容",
+        name: "Thermo Fisher Events / Webinar",
+        contentGroup: "events",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球站",
+        status: "planned",
+        trust: "A",
+        method: "活动栏目监控",
+        note: "作为 ACRO Activities 的对标入口，优先识别展会、Webinar 和回放。",
+      },
+      {
+        name: "ACRO Insights",
+        contentGroup: "technical_content",
+        companyTag: "ACRO",
+        regionTag: "全球站",
         status: "active",
         trust: "A",
         method: "Insights 索引 RSS",
@@ -69,46 +172,60 @@ const sourceInventory = [
         url: "acrobiosystems.com/insights",
       },
       {
-        name: "ACRO 日本官网",
-        status: "active",
-        trust: "A",
-        method: "日文站定向 RSS",
-        note: "用 jp 域名定向 RSS 观察日本市场页面；当前产出较少，但区域价值高。",
-        sourceIds: ["acro_japan_official_index"],
-        url: "jp.acrobiosystems.com",
-      },
-      {
-        name: "Thermo Fisher IR / Press Release",
-        status: "active",
-        trust: "A",
-        method: "官方 RSS",
-        note: "直接读取官方结构化新闻稿，日期、标题和链接完整，是当前最稳定的官方来源。",
-        sourceIds: ["thermo_official_rss"],
-        url: "ir.thermofisher.com/rss/pressrelease.aspx",
-      },
-      {
         name: "Thermo Fisher Biotech at Scale Blog",
+        contentGroup: "technical_content",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球站",
         status: "active",
         trust: "A",
-        method: "官方 Blog RSS",
-        note: "技术、CDMO、制造和行业活动内容，单独作为内容营销信号。",
+        method: "官方直接 Blog RSS",
+        note: "技术、CDMO、制造和行业活动内容，作为技术内容信号处理。",
         sourceIds: ["thermo_biotech_blog_rss"],
         url: "thermofisher.com/blog/biotechnology",
       },
       {
-        name: "Thermo Fisher Newsroom",
-        status: "covered",
+        name: "Thermo Fisher 官方 YouTube",
+        contentGroup: "official_video",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球频道",
+        status: "active",
         trust: "A",
-        method: "IR RSS 已覆盖",
-        note: "Newsroom HTML 直抓返回 403；主要新闻稿已由官方 IR RSS 覆盖，不再重复接入。",
-        url: "newsroom.thermofisher.com",
+        method: "YouTube Atom RSS",
+        note: "免费订阅官方频道更新，作为独立视频信号，不混入默认新闻流。",
+        sourceIds: ["thermo_youtube_official"],
+        url: "youtube.com/@thermofisher",
       },
       {
-        name: "官网 Sitemap 新 URL 差分",
+        name: "ACRO 官方 YouTube",
+        contentGroup: "official_video",
+        companyTag: "ACRO",
+        regionTag: "全球频道",
         status: "planned",
         trust: "A",
-        method: "URL 清单对比",
-        note: "已确认 ACRO sitemap 可访问；未来只对比新增 URL，不依赖不准确的 lastmod。",
+        method: "待确认 Channel ID",
+        note: "确认官方频道后，可使用同样的 Atom RSS 免费接入。",
+      },
+      {
+        name: "ACRO 日本官网补充入口",
+        contentGroup: "regional_coverage",
+        companyTag: "ACRO",
+        regionTag: "日本",
+        status: "active",
+        trust: "A",
+        method: "日文站定向 RSS",
+        note: "先发现日本站的新页面；抓到后再判断属于新闻、活动、产品还是技术内容。",
+        sourceIds: ["acro_japan_official_index"],
+        url: "jp.acrobiosystems.com",
+      },
+      {
+        name: "Thermo Fisher 日本官网补充入口",
+        contentGroup: "regional_coverage",
+        companyTag: "Thermo Fisher",
+        regionTag: "日本",
+        status: "planned",
+        trust: "A",
+        method: "日文栏目定向监控",
+        note: "后续只监控日本市场重点栏目，避免把全球英文内容的日文镜像重复计入。",
       },
     ],
   },
@@ -155,16 +272,6 @@ const sourceInventory = [
       { name: "LinkedIn 公司主页", status: "manual", trust: "D", method: "人工查看", note: "产品/活动/招聘动态价值高，但不自动抓取" },
       { name: "微信公众号", status: "manual", trust: "D", method: "人工查看", note: "中国市场重要来源，自动化门槛高" },
       { name: "X / Twitter", status: "manual", trust: "D", method: "人工查看", note: "海外会议和活动传播，目前不申请付费 API" },
-      {
-        name: "Thermo Fisher 官方 YouTube",
-        status: "active",
-        trust: "A",
-        method: "Atom RSS",
-        note: "免费订阅官方频道更新，作为独立视频信号，不混入默认新闻流。",
-        sourceIds: ["thermo_youtube_official"],
-        url: "youtube.com/@thermofisher",
-      },
-      { name: "ACRO 官方 YouTube", status: "planned", trust: "A", method: "待确认 Channel ID", note: "确认官方频道后可使用同样的 Atom RSS 免费接入。" },
       { name: "Bilibili", status: "manual", trust: "D", method: "人工观察", note: "先作为中国市场内容渠道观察，不进入 MVP 自动抓取。" },
     ],
   },
@@ -494,33 +601,66 @@ function renderRules() {
             </div>
             <p>${escapeHtml(cat.subtitle)}</p>
           </div>
-          <div class="source-grid">
-            ${visibleSources
-              .map(
-                (src) => {
-                  const result = liveSourceResult(src);
-                  return `
-                  <article class="source-card">
-                    <div class="source-card-top">
-                      <strong>${escapeHtml(src.name)}</strong>
-                      <span class="status-pill ${src.status}">${labelStatus(src.status)}</span>
-                    </div>
-                    <div class="source-card-meta">
-                      <span class="trust-badge trust-${src.trust.toLowerCase().replace(/[^a-e]/g, "")}">可信 ${src.trust}</span>
-                      <span class="method-tag">${escapeHtml(src.method)}</span>
-                      ${src.url ? `<span class="url-hint">${escapeHtml(src.url)}</span>` : ""}
-                    </div>
-                    <p class="source-card-note">${escapeHtml(src.note)}</p>
-                    ${result ? `<div class="source-card-result"><span>${src.status === "active" ? "本轮" : "依据"}</span>${escapeHtml(result)}</div>` : ""}
-                  </article>`;
-                },
-              )
-              .join("")}
-          </div>
+          ${cat.layer === "official" ? renderOfficialSourceGroups(visibleSources) : `<div class="source-grid">${visibleSources.map(renderSourceCard).join("")}</div>`}
         </section>
       `;
     })
     .join("");
+}
+
+function renderOfficialSourceGroups(sources) {
+  const groups = officialContentGroups
+    .map((group) => ({
+      ...group,
+      sources: sources.filter((source) => source.contentGroup === group.id),
+    }))
+    .filter((group) => group.sources.length);
+
+  return `
+    <div class="official-axis-note">
+      <div><span>主分类</span><strong>内容是什么</strong><small>新闻、产品、活动、技术、视频</small></div>
+      <div><span>辅助标签</span><strong>从哪里获得</strong><small>公司、地区、直接 RSS 或索引 RSS</small></div>
+    </div>
+    <div class="official-source-groups">
+      ${groups
+        .map(
+          (group) => `
+            <section class="official-source-group${group.secondary ? " secondary" : ""}">
+              <div class="official-source-group-head">
+                <span>${group.number}</span>
+                <div>
+                  <h4>${escapeHtml(group.title)}</h4>
+                  <p>${escapeHtml(group.description)}</p>
+                </div>
+                <small>${group.sources.length} 个入口</small>
+              </div>
+              <div class="source-grid">
+                ${group.sources.map(renderSourceCard).join("")}
+              </div>
+            </section>`,
+        )
+        .join("")}
+    </div>`;
+}
+
+function renderSourceCard(src) {
+  const result = liveSourceResult(src);
+  return `
+    <article class="source-card">
+      <div class="source-card-top">
+        <strong>${escapeHtml(src.name)}</strong>
+        <span class="status-pill ${src.status}">${labelStatus(src.status)}</span>
+      </div>
+      <div class="source-card-meta">
+        ${src.companyTag ? `<span class="company-source-tag">${escapeHtml(src.companyTag)}</span>` : ""}
+        ${src.regionTag ? `<span class="region-source-tag">${escapeHtml(src.regionTag)}</span>` : ""}
+        <span class="trust-badge trust-${src.trust.toLowerCase().replace(/[^a-e]/g, "")}">可信 ${src.trust}</span>
+        <span class="method-tag">${escapeHtml(src.method)}</span>
+        ${src.url ? `<span class="url-hint">${escapeHtml(src.url)}</span>` : ""}
+      </div>
+      <p class="source-card-note">${escapeHtml(src.note)}</p>
+      ${result ? `<div class="source-card-result"><span>${src.status === "active" ? "本轮" : "依据"}</span>${escapeHtml(result)}</div>` : ""}
+    </article>`;
 }
 
 function summaryForCategory(sources) {
