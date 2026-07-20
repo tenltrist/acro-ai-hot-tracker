@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-20",
+  "summary": {
+    "new_candidates": 48,
+    "immediate": 0,
+    "daily": 24,
+    "archive": 171,
+    "errors": 14,
+    "companies": 2,
+    "sources": 13
+  },
+  "category_mix": {
+    "product": 11,
+    "video": 35,
+    "regulatory": 15,
+    "company": 66,
+    "award": 1,
+    "partnership": 6,
+    "event": 44,
+    "finance": 10,
+    "research": 7
+  },
+  "source_mix": {
+    "ACRO official product and solution sitemap monitor": 8,
+    "ACRO official YouTube channel": 20,
+    "GlobeNewswire - Biotechnology official RSS": 18,
+    "BioSpace - All News official RSS": 20,
+    "Fierce Biotech - official RSS": 24,
+    "Fierce Pharma - official RSS": 24,
+    "Thermo Fisher official press releases RSS": 9,
+    "Thermo Fisher Biotech at Scale RSS": 10,
+    "Thermo Fisher official YouTube RSS": 15,
+    "LINK-J - life science ecosystem events": 28,
+    "Kinki Bio - official seminar and ecosystem RSS": 3,
+    "Shonan iPark - official news and event announcements": 10,
+    "PubMed - ACROBiosystems research signals": 7
+  }
+}
