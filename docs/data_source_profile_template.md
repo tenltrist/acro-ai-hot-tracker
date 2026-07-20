@@ -275,18 +275,27 @@ notes:
 
 | 来源 | 主要价值 | 常见获取方式 | 建设阶段 |
 | --- | --- | --- | --- |
-| GEN | Drug Discovery、Bioprocessing、OMICS、Gene Editing、Translational Medicine | 栏目索引；稳定 RSS 待确认 | `planned` |
-| Technology Networks | 实验工具、分析技术、科研趋势、Webinar | 栏目索引、Newsletter；自动入口待测试 | `planned` |
-| Labiotech | 欧洲 Biotech 公司、融资、合作和区域产业动态 | RSS / 索引待测试 | `planned` |
+| GEN | Drug Discovery、Bioprocessing、OMICS、Gene Editing、Cell Therapy、Translational Medicine | 官方 RSS，实测 10 条且最新至 2026-07-20 | `active` |
+| Technology Networks | 实验工具、分析技术、抗体、细胞治疗、Organoid | 官网自动请求 403；使用技术主题 + `site:` 索引 RSS | `active` |
+| Labiotech | 欧洲 Biotech 公司、融资、合作和区域产业动态 | 官方 RSS，实测 12 条且最新至 2026-07-17 | `active` |
 
 #### D. 地区媒体补充
 
 地区只是辅助属性，不是来源类型。不能再用“日文行业媒体”或“中文行业媒体”代表一个虚拟数据源，必须落实到具体媒体、栏目和入口。
 
-| 地区 | 建档要求 | 建设阶段 |
-| --- | --- | --- |
-| 日本 | 逐家记录媒体名、栏目、免费范围、RSS、登录要求和转载比例 | `planned` 或 `manual` |
-| 中国 | 逐家记录媒体名、原文链、转载链、公众号关系和人工复核规则 | `manual`，稳定公开入口确认后再升级 |
+| 地区 | 具体媒体 | 免费入口与实测 | 建设阶段 |
+| --- | --- | --- | --- |
+| 日本 | AnswersNews | 官方 RSS，实测 10 条；日本制药申报、获批、交易和生产密度高 | `active` |
+| 日本 | ミクスOnline | 官方 RSS，实测至少 30 条；标题摘要可用，部分正文需会员 | `active` |
+| 日本 | 日経バイオテクONLINE | 无公开 RSS、正文订阅；公司池 `site:` 索引可命中 Thermo Fisher | `active`，仅公开标题索引 |
+| 日本 | 日刊薬業 | 会员内容明显；公司池索引仅少量弱命中 | `available` |
+| 日本 | Science Portal | JST 官方 RSS 稳定，但全科学内容多、生命科学业务密度低 | `available` |
+| 中国 | 医药魔方 / ByDrug | 公司池索引命中 ACRO 专访与 Thermo Fisher 合作内容 | `active` |
+| 中国 | 生物谷 | 官网与 Feed 返回 403；索引可用但公司命中噪音高 | `available` |
+| 中国 | 动脉网 | HTTPS 证书异常，公司池索引 0 命中 | `planned` |
+| 中国 | 界面新闻 · 医药健康 | 可命中交易和产业文章，但跨栏目噪音明显 | `available` |
+| 中国 | 36Kr · 医疗健康 | 公司档案、融资周报可用，旧内容和资料页较多 | `available` |
+| 中国 | E药经理人 | 主要通过微信公众号分发 | `manual` |
 
 ### 8.3 聚合搜索来源
 
@@ -465,6 +474,13 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | `biospace_all_news_rss` | 新闻稿与行业媒体 | 行业编辑新闻 | 全球 | `active` | `discovery` | `direct_rss` | B | 官方 All News RSS，抓取后按主题与业务动作筛选 |
 | `fierce_biotech_rss` | 新闻稿与行业媒体 | 行业编辑新闻 | 全球 | `active` | `discovery` | `direct_rss` | B | 官方 RSS，观察研发、融资、合作、CRO 与临床 |
 | `fierce_pharma_rss` | 新闻稿与行业媒体 | 行业编辑新闻 | 全球 / 亚洲 | `active` | `discovery` | `direct_rss` | B | 官方 RSS，观察制药合作、制造、监管与商业化 |
+| `gen_official_rss` | 新闻稿与行业媒体 | 技术媒体 | 全球 | `active` | `discovery` | `direct_rss` | B | GEN 官方 RSS，覆盖基因编辑、细胞治疗、ADC、转化医学和生物工艺 |
+| `technology_networks_topic_index` | 新闻稿与行业媒体 | 技术媒体 | 全球 | `active` | `discovery` | `indexed_rss` | B | 官网请求 403，使用技术主题定向索引并过滤栏目分页 |
+| `labiotech_official_rss` | 新闻稿与行业媒体 | 技术媒体 / 产业 | 欧洲 | `active` | `discovery` | `direct_rss` | B | Labiotech 官方 RSS，补充欧洲公司、融资、合作和临床动态 |
+| `answersnews_official_rss` | 新闻稿与行业媒体 | 地区媒体 | 日本 | `active` | `discovery` | `direct_rss` | B | 日本制药申报、获批、交易和生产动态 |
+| `mixonline_official_rss` | 新闻稿与行业媒体 | 地区媒体 | 日本 | `active` | `discovery` | `direct_rss` | B | 官方 RSS 可读取标题摘要，会员正文不抓取 |
+| `nikkei_biotech_company_pool_index` | 新闻稿与行业媒体 | 地区媒体 | 日本 | `active` | `verification` | `indexed_rss` | B | 公司池定向监测公开标题，付费正文不抓取 |
+| `pharmcube_company_pool_index` | 新闻稿与行业媒体 | 地区媒体 | 中国 | `active` | `verification` | `indexed_rss` | B | 已命中 ACRO 专访和 Thermo Fisher 中国市场合作内容 |
 | `google_news_acro` | 聚合搜索补漏 | 多类型 | 全球 | `active` | `discovery` | `indexed_rss` | C | 免费补漏源，覆盖广但噪音较高 |
 | `google_news_acro_jp` | 聚合搜索补漏 | 多类型 | 日本 | `active` | `discovery` | `indexed_rss` | C | 日文和日本区域外部报道补漏 |
 | `bing_news_acro_backup` | 聚合搜索补漏 | 多类型 | 全球 | `active` | `backup` | `direct_rss` | C | 只保留 Google News 未覆盖的标题 |
@@ -557,3 +573,23 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | GDELT | 重复测试返回 HTTP 429 | 聚合发现 · `api` · `blocked` |
 
 完整跑批结果：本轮跟踪 21 个入口，18 个入口有内容产出，274 条候选、0 个抓取错误、39 条新闻日报信号。ACRO 产品 Sitemap 持续监控 6331 个 URL，本轮新增 0；ACRO 官方 YouTube 返回 20 条视频并全部隔离到视频专题；Thermo 活动源返回 5 条，Thermo 日本官网入口返回 9 条。公开聚合源会实时变动，因此候选总数在不同跑批间可能有小幅波动。
+
+### 11.3 2026-07-20 技术媒体与地区媒体实测
+
+| 入口 | 获取结果 | 候选 / 日报 | 当前处理 |
+| --- | --- | --- | --- |
+| GEN | 官方 RSS 直连，最新内容至 2026-07-19 | 9 / 2 | `active`；过滤 StockWatch 与投资者导向标题 |
+| Technology Networks | 官网自动请求 403，主题定向索引可用 | 23 / 2 | `active`；过滤栏目分页与产品广告 |
+| Labiotech | 官方 RSS 直连，最新内容至 2026-07-17 | 12 / 1 | `active`；作为欧洲产业与技术补充 |
+| AnswersNews | 官方 RSS 直连，日文制药信号密度高 | 10 / 4 | `active`；本轮地区媒体有效率最高 |
+| ミクスOnline | 官方 RSS 直连，部分正文需会员 | 30 / 4 | `active`；只使用公开标题和摘要 |
+| 日経バイオテクONLINE | 无公开 RSS，付费订阅；公司池索引可命中 | 11 / 0 | `active`；只归档公开标题，不抓付费正文 |
+| 医药魔方 / ByDrug | 公司池定向索引命中 ACRO 与 Thermo Fisher | 20 / 4 | `active`；中国地区公司信号补充 |
+| 日刊薬業 | 网站可访问，会员边界明显，定向命中较弱 | - | `available` |
+| Science Portal | JST 官方 RSS 稳定，但生命科学业务密度低 | - | `available` |
+| 生物谷 | 官网与 Feed 请求 403，索引噪音较高 | - | `available` |
+| 动脉网 | HTTPS 证书异常，公司池索引 0 命中 | - | `planned` |
+| 界面新闻 / 36Kr | 可出现公司和产业内容，但跨栏目与资料页噪音高 | - | `available` |
+| E药经理人 | 主要依赖微信公众号分发 | - | `manual` |
+
+本轮 7 个新运行入口全部无抓取错误，共增加 115 条候选和 17 条日报级信号。技术媒体主要服务技术主题和内容选题；地区媒体优先服务日本、中国市场动作与公司池命中，两类来源继续分开评分和展示。

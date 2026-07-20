@@ -207,6 +207,98 @@
       "health_note": "Fierce Pharma 官方 RSS 直连；重点观察制药合作、制造、监管、商业化和区域市场信号。"
     },
     {
+      "id": "gen_official_rss",
+      "label": "GEN - official biotechnology RSS",
+      "type": "rss",
+      "url": "https://www.genengnews.com/feed/",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 20,
+      "exclude_text_terms": [
+        "StockWatch",
+        "analysts and investors"
+      ],
+      "health_note": "GEN 官方 RSS 直连；覆盖 Drug Discovery、OMICS、Gene Editing、Cell Therapy、Bioprocessing 和 Translational Medicine。"
+    },
+    {
+      "id": "technology_networks_topic_index",
+      "label": "Technology Networks - life science topic indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Atechnologynetworks.com%20%28antibody%20OR%20ADC%20OR%20%22cell%20therapy%22%20OR%20bioprocessing%20OR%20organoid%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30,
+      "exclude_text_terms": [
+        "News, Articles | Page",
+        "Product Advertisement"
+      ],
+      "health_note": "官网自动请求返回 403；免费 MVP 使用技术主题 + site 定向 Google News RSS，并过滤栏目分页和产品广告。"
+    },
+    {
+      "id": "labiotech_official_rss",
+      "label": "Labiotech - official European biotech RSS",
+      "type": "rss",
+      "url": "https://www.labiotech.eu/feed/",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "跨公司监测源",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 20,
+      "health_note": "Labiotech 官方 RSS 直连；重点补充欧洲 Biotech 公司、融资、合作、临床和区域产业动态。"
+    },
+    {
+      "id": "answersnews_official_rss",
+      "label": "AnswersNews - official Japan pharma RSS",
+      "type": "rss",
+      "url": "https://answers.and-pro.jp/pharmanews/feed/",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本地区媒体",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 20,
+      "health_note": "AnswersNews 官方 RSS 直连；免费正文和日更汇总适合观察日本制药、申报、获批、交易与生产信号。"
+    },
+    {
+      "id": "mixonline_official_rss",
+      "label": "Mix Online - official Japan pharma RSS",
+      "type": "rss",
+      "url": "https://www.mixonline.jp/DesktopModules/MixOnline_Rss/MixOnlinerss.aspx?rssmode=3",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本地区媒体",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 30,
+      "health_note": "ミクスOnline 官方 RSS 可直连；标题和摘要可用于监测，部分完整正文属于会员内容，不绕过登录。"
+    },
+    {
+      "id": "nikkei_biotech_company_pool_index",
+      "label": "Nikkei Biotech - company pool indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Abio.nikkeibp.co.jp%20%28ACROBiosystems%20OR%20%22Thermo%20Fisher%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF%20OR%20%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本地区媒体",
+      "trust": "media",
+      "max_age_days": 365,
+      "max_items": 20,
+      "health_note": "日经生物技术需要订阅且未发现公开 RSS；仅用公司池 + site 索引监测公开标题和日期，不抓取付费正文。"
+    },
+    {
+      "id": "pharmcube_company_pool_index",
+      "label": "Pharmcube / ByDrug - company pool indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Apharmcube.com%20%28ACROBiosystems%20OR%20%22Thermo%20Fisher%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF%20OR%20%E8%B5%9B%E9%BB%98%E9%A3%9E%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "中国地区媒体",
+      "trust": "media",
+      "max_age_days": 365,
+      "max_items": 20,
+      "health_note": "医药魔方 / ByDrug 公司池定向索引；已命中 ACRO 专访、Thermo Fisher 合作和行业动态，保留公开索引信息。"
+    },
+    {
       "id": "thermo_official_rss",
       "label": "Thermo Fisher official press releases RSS",
       "type": "rss",

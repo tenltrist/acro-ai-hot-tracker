@@ -1062,13 +1062,13 @@ def score_candidate(
 
 def classify_item(blob: str) -> str:
     category_terms = [
-        ("partnership", ["collaboration", "partner", "mou", "agreement"]),
-        ("product", ["launch", "release", "unveil", "introduce", "platform", "technology", "analyzer", "spectrometer", "bioreactor", "centrifuge", "gmp-grade", "kit", "protein", "antibody"]),
-        ("event", ["webinar", "conference", "exhibition", "summit", "event", "meeting"]),
-        ("regulatory", ["fda", "ema", "pmda", "regulatory", "clinical"]),
-        ("finance", ["ipo", "buyback", "dividend", "investor day", "quarter results", "price target", "forecast", "tradingview"]),
+        ("partnership", ["collaboration", "partner", "mou", "agreement", "提携", "共同", "協業", "合作", "联合", "签约"]),
+        ("product", ["launch", "release", "unveil", "introduce", "platform", "technology", "analyzer", "spectrometer", "bioreactor", "centrifuge", "gmp-grade", "kit", "protein", "antibody", "発売", "製品", "新薬", "治療薬", "产品", "新药", "试剂"]),
+        ("event", ["webinar", "conference", "exhibition", "summit", "event", "meeting", "セミナー", "学会", "展示会", "会议", "峰会", "研讨会"]),
+        ("regulatory", ["fda", "ema", "pmda", "regulatory", "clinical", "承認", "申請", "治験", "臨床", "規制", "获批", "申报", "临床", "审批", "nmpa"]),
+        ("finance", ["ipo", "buyback", "dividend", "investor day", "quarter results", "price target", "forecast", "tradingview", "決算", "株価", "财报", "股价"]),
         ("award", ["award", "recognition"]),
-        ("market", ["japan", "日本", "global", "expansion"])
+        ("market", ["japan", "日本", "china", "中国", "global", "expansion", "海外"])
     ]
     for category, terms in category_terms:
         if any(term in blob for term in terms):
