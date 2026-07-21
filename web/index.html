@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260720a" />
+    <link rel="stylesheet" href="./styles.css?v=20260721a" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -35,7 +35,7 @@
       <div class="company-dock" aria-label="快捷筛选">
         <div class="dock-head">
           <span class="label">监控对象</span>
-          <strong>2 家公司已接入</strong>
+          <strong>5 家公司已接入</strong>
         </div>
         <button class="company-chip active" type="button" data-filter-company="all">
           <span class="company-chip-main"><i class="company-dot all"></i><strong>全部公司</strong></span>
@@ -48,6 +48,18 @@
         <button class="company-chip" type="button" data-filter-company="thermo_fisher">
           <span class="company-chip-main"><i class="company-dot thermo"></i><strong>Thermo Fisher</strong></span>
           <small>竞品 · 行业标杆</small>
+        </button>
+        <button class="company-chip" type="button" data-filter-company="merck_life_science">
+          <span class="company-chip-main"><i class="company-dot merck"></i><strong>Merck Life Science</strong></span>
+          <small>默克 · 生命科学</small>
+        </button>
+        <button class="company-chip" type="button" data-filter-company="sartorius">
+          <span class="company-chip-main"><i class="company-dot sartorius"></i><strong>Sartorius</strong></span>
+          <small>赛多利斯 · 生物工艺</small>
+        </button>
+        <button class="company-chip" type="button" data-filter-company="miltenyi_biotec">
+          <span class="company-chip-main"><i class="company-dot miltenyi"></i><strong>Miltenyi Biotec</strong></span>
+          <small>美天旎 · 细胞治疗</small>
         </button>
       </div>
 
@@ -137,9 +149,9 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">公司池</p>
-            <h2>先用 ACRO 跑通方法，再批量接入竞品/客户/合作方</h2>
+            <h2>ACRO 作为标本，向生命科学对标公司扩展</h2>
           </div>
-          <span class="timestamp">MVP 阶段：2 家公司样本</span>
+          <span class="timestamp">MVP 阶段：5 家公司已接入</span>
         </div>
         <div class="company-summary-grid">
           <article>
@@ -153,9 +165,9 @@
             <p>用于测试大型公司官方 RSS、官网新闻和聚合新闻的差异。</p>
           </article>
           <article>
-            <span>下一步</span>
-            <strong>扩展对标公司名单</strong>
-            <p>公司加入监控池后，系统会在官网、新闻源和行业生态平台中识别它的公开信息。</p>
+            <span>本轮新增</span>
+            <strong>默克、Sartorius、美天旎</strong>
+            <p>分别补齐生物工艺、实验室解决方案、细胞分选与细胞治疗领域的对标视角。</p>
           </article>
         </div>
         <div class="company-table">
@@ -177,11 +189,29 @@
             <span>基础配置</span>
             <span>验证官方 RSS 与聚合源</span>
           </div>
+          <div class="company-row">
+            <span>Merck KGaA Life Science / MilliporeSigma</span>
+            <span>竞品 / 平台型公司</span>
+            <span>已接入</span>
+            <span>生物工艺、试剂、检测与 CDMO</span>
+          </div>
+          <div class="company-row">
+            <span>Sartorius / Sartorius Stedim Biotech</span>
+            <span>竞品 / 生物工艺</span>
+            <span>已接入</span>
+            <span>一次性工艺、细胞培养与分析</span>
+          </div>
+          <div class="company-row">
+            <span>Miltenyi Biotec / 美天旎</span>
+            <span>竞品 / 细胞治疗</span>
+            <span>已接入</span>
+            <span>细胞分选、CGT 平台与 CDMO</span>
+          </div>
           <div class="company-row muted">
             <span>后续公司名单</span>
             <span>待分类</span>
             <span>待导入</span>
-            <span>扩展到 10-30 家</span>
+            <span>按同一档案模板扩展到 10-30 家</span>
           </div>
         </div>
       </section>
@@ -500,7 +530,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260720a"></script>
-    <script src="./app.js?v=20260720a"></script>
+    <script src="./embedded-data.js?v=20260721a"></script>
+    <script src="./app.js?v=20260721a"></script>
   </body>
 </html>

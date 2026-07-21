@@ -272,6 +272,18 @@ a {
   background: #7fa5de;
 }
 
+.company-dot.merck {
+  background: #58a477;
+}
+
+.company-dot.sartorius {
+  background: #d5a13c;
+}
+
+.company-dot.miltenyi {
+  background: #c87878;
+}
+
 .company-chip small {
   padding-left: 15px;
   color: #9bb0bd;
@@ -761,7 +773,7 @@ select {
 
 .company-summary-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 12px;
   margin-bottom: 14px;
 }

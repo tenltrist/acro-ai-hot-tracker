@@ -120,7 +120,7 @@
       "id": "businesswire_company_pool_index",
       "label": "Business Wire - company pool indexed RSS",
       "type": "rss",
-      "url": "https://news.google.com/rss/search?q=%28ACROBiosystems%20OR%20%22Thermo%20Fisher%20Scientific%22%29%20site%3Abusinesswire.com&hl=en-US&gl=US&ceid=US%3Aen",
+      "url": "https://news.google.com/rss/search?q=%28ACROBiosystems%20OR%20%22Thermo%20Fisher%20Scientific%22%20OR%20%22Merck%20KGaA%22%20OR%20Sartorius%20OR%20%22Miltenyi%20Biotec%22%29%20site%3Abusinesswire.com&hl=en-US&gl=US&ceid=US%3Aen",
       "profile_id": "biopharma_media_monitor",
       "scope_label": "跨公司监测源",
       "trust": "wire",
@@ -278,7 +278,7 @@
       "id": "nikkei_biotech_company_pool_index",
       "label": "Nikkei Biotech - company pool indexed RSS",
       "type": "rss",
-      "url": "https://news.google.com/rss/search?q=site%3Abio.nikkeibp.co.jp%20%28ACROBiosystems%20OR%20%22Thermo%20Fisher%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF%20OR%20%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "url": "https://news.google.com/rss/search?q=site%3Abio.nikkeibp.co.jp%20%28ACROBiosystems%20OR%20%22Thermo%20Fisher%22%20OR%20%22Merck%20KGaA%22%20OR%20Sartorius%20OR%20%22Miltenyi%20Biotec%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF%20OR%20%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%20OR%20%E3%83%A1%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%20OR%20%E3%82%B6%E3%83%AB%E3%83%88%E3%83%AA%E3%82%A6%E3%82%B9%20OR%20%E3%83%9F%E3%83%AB%E3%83%86%E3%83%8B%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AA%E3%83%86%E3%82%AF%29&hl=ja&gl=JP&ceid=JP%3Aja",
       "profile_id": "regional_life_science_media",
       "scope_label": "日本地区媒体",
       "trust": "media",
@@ -290,13 +290,175 @@
       "id": "pharmcube_company_pool_index",
       "label": "Pharmcube / ByDrug - company pool indexed RSS",
       "type": "rss",
-      "url": "https://news.google.com/rss/search?q=site%3Apharmcube.com%20%28ACROBiosystems%20OR%20%22Thermo%20Fisher%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF%20OR%20%E8%B5%9B%E9%BB%98%E9%A3%9E%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "url": "https://news.google.com/rss/search?q=site%3Apharmcube.com%20%28ACROBiosystems%20OR%20%22Thermo%20Fisher%22%20OR%20%22Merck%20KGaA%22%20OR%20Sartorius%20OR%20%22Miltenyi%20Biotec%22%20OR%20%E7%99%BE%E6%99%AE%E8%B5%9B%E6%96%AF%20OR%20%E8%B5%9B%E9%BB%98%E9%A3%9E%20OR%20%E9%BB%98%E5%85%8B%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%20OR%20%E8%B5%9B%E5%A4%9A%E5%88%A9%E6%96%AF%20OR%20%E7%BE%8E%E5%A4%A9%E6%97%8E%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
       "profile_id": "regional_life_science_media",
       "scope_label": "中国地区媒体",
       "trust": "media",
       "max_age_days": 365,
       "max_items": 20,
       "health_note": "医药魔方 / ByDrug 公司池定向索引；已命中 ACRO 专访、Thermo Fisher 合作和行业动态，保留公开索引信息。"
+    },
+    {
+      "id": "merck_life_science_official_index",
+      "label": "Merck KGaA Life Science official news - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aemdgroup.com%2Fen%2Fnews%20%28MilliporeSigma%20OR%20%22Life%20Science%22%20OR%20BioReliance%20OR%20bioprocessing%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "merck_life_science",
+      "trust": "owned",
+      "max_age_days": 180,
+      "max_items": 30,
+      "include_text_terms": [
+        "MilliporeSigma",
+        "Life Science",
+        "BioReliance",
+        "bioprocess",
+        "laboratory",
+        "chromatography",
+        "HPLC",
+        "Bio-Techne"
+      ],
+      "exclude_text_terms": [
+        "financial results",
+        "quarterly results",
+        "Erbitux",
+        "Bavencio",
+        "Tepmetko",
+        "semiconductor"
+      ],
+      "health_note": "默克集团新闻同时包含医药健康和电子科技；当前仅用公开索引监测 Life Science、MilliporeSigma、BioReliance 与 bioprocessing 内容。"
+    },
+    {
+      "id": "google_news_merck_life_science",
+      "label": "Google News RSS - Merck KGaA Life Science",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28%22Merck%20KGaA%22%20OR%20MilliporeSigma%20OR%20%22Merck%20Life%20Science%22%29%20%28bioprocessing%20OR%20%22life%20science%22%20OR%20laboratory%20OR%20manufacturing%20OR%20collaboration%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "merck_life_science",
+      "trust": "aggregator",
+      "max_age_days": 90,
+      "max_items": 30,
+      "include_text_terms": [
+        "MilliporeSigma",
+        "Merck Life Science",
+        "life science",
+        "BioReliance",
+        "bioprocess",
+        "laboratory",
+        "Bio-Techne"
+      ],
+      "exclude_text_terms": [
+        "Merck & Co.",
+        "MSD",
+        "Keytruda",
+        "semiconductor"
+      ]
+    },
+    {
+      "id": "google_news_merck_life_science_jp",
+      "label": "Google News RSS - Merck Life Science Japan",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28%22%E3%83%A1%E3%83%AB%E3%82%AF%20%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%22%20OR%20MilliporeSigma%20OR%20%22Merck%20KGaA%22%29%20%28%E6%97%A5%E6%9C%AC%20OR%20%E3%83%90%E3%82%A4%E3%82%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%20OR%20%E8%A3%BD%E5%93%81%20OR%20%E6%8F%90%E6%90%BA%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "merck_life_science",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 20,
+      "include_text_terms": [
+        "メルクライフサイエンス",
+        "MilliporeSigma",
+        "ライフサイエンス",
+        "バイオプロセス",
+        "Bio-Techne"
+      ],
+      "exclude_text_terms": [
+        "メルクバイオファーマ",
+        "不妊治療",
+        "株価",
+        "Moomoo"
+      ]
+    },
+    {
+      "id": "sartorius_official_news_index",
+      "label": "Sartorius official Newsroom - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Asartorius.com%2Fen%2Fcompany%2Fnewsroom%20%28biopharma%20OR%20product%20OR%20collaboration%20OR%20expansion%20OR%20%22cell%20therapy%22%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "sartorius",
+      "trust": "owned",
+      "max_age_days": 180,
+      "max_items": 30,
+      "exclude_text_terms": [
+        "financial results",
+        "quarterly results",
+        "bond",
+        "dividend"
+      ],
+      "health_note": "Sartorius Newsroom 公开页面的定向索引；只保留产品、合作、扩产、biopharma 和细胞治疗主题，排除纯财务公告。"
+    },
+    {
+      "id": "google_news_sartorius",
+      "label": "Google News RSS - Sartorius",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28Sartorius%20OR%20%22Sartorius%20Stedim%20Biotech%22%29%20%28bioprocessing%20OR%20%22cell%20therapy%22%20OR%20manufacturing%20OR%20launch%20OR%20collaboration%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "sartorius",
+      "trust": "aggregator",
+      "max_age_days": 90,
+      "max_items": 30,
+      "include_text_terms": [
+        "Sartorius"
+      ],
+      "exclude_text_terms": [
+        "financial results",
+        "quarterly results",
+        "bond",
+        "share price"
+      ]
+    },
+    {
+      "id": "google_news_sartorius_jp",
+      "label": "Google News RSS - Sartorius Japan",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28%E3%82%B6%E3%83%AB%E3%83%88%E3%83%AA%E3%82%A6%E3%82%B9%20OR%20%22Sartorius%20Japan%22%29%20%28%E3%83%90%E3%82%A4%E3%82%AA%20OR%20%E7%B4%B0%E8%83%9E%20OR%20%E8%A3%BD%E9%80%A0%20OR%20%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%20OR%20%E8%A3%BD%E5%93%81%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "sartorius",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 20,
+      "include_text_terms": [
+        "Sartorius",
+        "ザルトリウス"
+      ]
+    },
+    {
+      "id": "miltenyi_official_news_index",
+      "label": "Miltenyi group official news - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28site%3Amiltenyibioindustry.com%20OR%20site%3Amiltenyibiomedicine.com%29%20%28%22Miltenyi%20Biotec%22%20OR%20%22Miltenyi%20Bioindustry%22%20OR%20%22Miltenyi%20Biomedicine%22%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "miltenyi_biotec",
+      "trust": "owned",
+      "max_age_days": 180,
+      "max_items": 30,
+      "health_note": "美天旎主站公开新闻索引较弱；当前联合监测 Miltenyi Bioindustry 与 Miltenyi Biomedicine 的公开新闻和活动页。"
+    },
+    {
+      "id": "google_news_miltenyi",
+      "label": "Google News RSS - Miltenyi Biotec",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Miltenyi%20Biotec%22%20OR%20%22Miltenyi%20Bioindustry%22%20OR%20%22Miltenyi%20Biomedicine%22&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "miltenyi_biotec",
+      "trust": "aggregator",
+      "max_age_days": 90,
+      "max_items": 30,
+      "exclude_text_terms": [
+        "job posting",
+        "career"
+      ]
+    },
+    {
+      "id": "google_news_miltenyi_jp",
+      "label": "Google News RSS - Miltenyi Biotec Japan",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%28%E3%83%9F%E3%83%AB%E3%83%86%E3%83%8B%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AA%E3%83%86%E3%82%AF%20OR%20%22Miltenyi%20Biotec%22%29%20%28%E6%97%A5%E6%9C%AC%20OR%20Japan%20OR%20%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%20OR%20%E8%A3%BD%E5%93%81%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "miltenyi_biotec",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 20
     },
     {
       "id": "thermo_official_rss",

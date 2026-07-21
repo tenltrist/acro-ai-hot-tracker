@@ -1,16 +1,60 @@
 {
-  "generated_at": "2026-07-20T17:14:41",
+  "generated_at": "2026-07-21T17:08:47",
   "window_days": 90,
   "summary": {
-    "new_candidates": 148,
-    "immediate": 1,
-    "daily": 66,
-    "archive": 479,
-    "errors": 0,
-    "companies": 2,
-    "sources": 32
+    "new_candidates": 11,
+    "immediate": 2,
+    "daily": 79,
+    "archive": 545,
+    "errors": 1,
+    "companies": 5,
+    "sources": 40
   },
   "selected": [
+    {
+      "id": "575794215c86e3de",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "gen_official_rss",
+      "source_label": "GEN - official biotechnology RSS",
+      "source_ids": [
+        "gen_official_rss",
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "GEN - official biotechnology RSS",
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://www.genengnews.com/topics/bioprocessing/new-e25-million-bioreliance-testing-facility-opens-at-merck-kgaa-global-headquarters-in-germany/",
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "New €25 Million BioReliance Testing Facility Opens at Merck KGaA Global Headquarters in Germany",
+      "url": "https://www.genengnews.com/topics/bioprocessing/new-e25-million-bioreliance-testing-facility-opens-at-merck-kgaa-global-headquarters-in-germany/",
+      "published": "2026-07-20",
+      "summary": "The 2,000-square-meter BioReliance facility in Darmstadt, Germany, will also offer GMP-compliant stability studies for monoclonal antibodies and cell therapies, addressing the growing demand for biologics testing across Europe.",
+      "ai_summary": "",
+      "score": 88,
+      "tier": "immediate",
+      "category": "market",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA",
+        "行业编辑媒体",
+        "战略主题命中: bioprocessing, GMP, BioReliance, CRO",
+        "业务动作命中: opens, GMP",
+        "高价值分类加成 +8: market"
+      ],
+      "age_days": 1
+    },
     {
       "id": "888c139d5cd72870",
       "company_id": "thermo_fisher",
@@ -32,7 +76,8 @@
         "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZTU1OEVUNDBCZXJRR0duVHN5cmtIM1BJZzBiRkh6eS10UUJlR3VrVTc0MGFjUy1mdjl1aWluNzBkdHhLWXlEejlnakNSeTBmX2EzYmJqd0pRNzItSjJhdTRsS1VzTU5BbEg3cldXRnZVZk92R2luMU5QRHc3MHJNV0ViemRCM05sSXVRV053NFJXUmxZNy1JRks4UGdPWW41RlJnbFQxZVh4MnVmay1udS1EdDdIUTREbERJdXZObGgtRmtDLXU2dUV1NFVYdmZpNy1NWTVsclh6Xzc4WWp6UURMSFU2V0JnR01pOE5SajJkN3BqOXA1SW9mNnlTVXNLVWt0NjNTR3hUN1E4ZlpIVVoxN0tYNnlrZkxiZWhpYVZIQlNLMzB3?oc=5"
+        "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZTU1OEVUNDBCZXJRR0duVHN5cmtIM1BJZzBiRkh6eS10UUJlR3VrVTc0MGFjUy1mdjl1aWluNzBkdHhLWXlEejlnakNSeTBmX2EzYmJqd0pRNzItSjJhdTRsS1VzTU5BbEg3cldXRnZVZk92R2luMU5QRHc3MHJNV0ViemRCM05sSXVRV053NFJXUmxZNy1JRks4UGdPWW41RlJnbFQxZVh4MnVmay1udS1EdDdIUTREbERJdXZObGgtRmtDLXU2dUV1NFVYdmZpNy1NWTVsclh6Xzc4WWp6UURMSFU2V0JnR01pOE5SajJkN3BqOXA1SW9mNnlTVXNLVWt0NjNTR3hUN1E4ZlpIVVoxN0tYNnlrZkxiZWhpYVZIQlNLMzB3?oc=5",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMEFKdVJsR3d2aDdKUUZ1SzUwSjlicWRoT0ktMUFtcTl2U1ZyRE9kam5wRWxIRlNIMlpVU1NfYmZIMDRZN21lXzgxVlI0T1gxcF95eWNLWDIzTVR4T2VpSXZtZjdmR3kzZDNGZFd4OG54Y25QODRzY2ZUQ0Ffa1dlM1ZiaFFwaU9JV1k5TmZ0dWhxekN1dEpYdFJfZmVHTUlySkE2cGtWWHdEODU0?oc=5"
       ],
       "source_trust": "wire",
       "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - Business Wire",
@@ -52,7 +97,7 @@
         "业务动作命中: clinical, manufacturing",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 28
+      "age_days": 29
     },
     {
       "id": "7b485a48b2cec143",
@@ -93,7 +138,7 @@
         "业务动作命中: unveil, manufacturing",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 77
+      "age_days": 78
     },
     {
       "id": "5f6aff94aa0a872a",
@@ -133,9 +178,9 @@
         "战略主题命中: manufacturing, cell therapy",
         "业务动作命中: introduce, manufacturing",
         "高价值分类加成 +10: product",
-        "超过时效窗口 109天，因业务动作匹配保留"
+        "超过时效窗口 110天，因业务动作匹配保留"
       ],
-      "age_days": 109
+      "age_days": 110
     },
     {
       "id": "79cd73975e955fe6",
@@ -150,12 +195,10 @@
       "source_id": "technology_networks_topic_index",
       "source_label": "Technology Networks - life science topic indexed RSS",
       "source_ids": [
-        "technology_networks_topic_index",
-        "google_news_thermo"
+        "technology_networks_topic_index"
       ],
       "source_labels": [
-        "Technology Networks - life science topic indexed RSS",
-        "Google News RSS - Thermo Fisher"
+        "Technology Networks - life science topic indexed RSS"
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbElFQXF0MFY1cndwWWRWTnQ3UUFlYjNtdzFSeXZkaEU2Wl9saGkzVTRQSXRZZTBkQlh0NTRTYVUyNURwSnNGbzB4ZC1Idjh6S2NEVGZJcHBGVkVfbXBYVW9OQUhWaEZQVjZPalpXVFVVSERZTnFobTAwZXJQbHVOWGZ4ajJ5RTlJNWNmd2RveDJ2TzBtenFQS3NZNEdzcFFnRWtkM21jVHlJd09xVWdETGVfYjM?oc=5"
@@ -178,7 +221,7 @@
         "业务动作命中: launch",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 75
+      "age_days": 76
     },
     {
       "id": "adee4a850ff3e7c3",
@@ -211,7 +254,7 @@
       "tier": "daily",
       "category": "partnership",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Patheon, 赛默飞",
         "行业编辑媒体",
@@ -219,7 +262,7 @@
         "业务动作命中: 发布",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 35
+      "age_days": 36
     },
     {
       "id": "363331fabbdc2806",
@@ -265,7 +308,7 @@
         "业务动作命中: PMDA, GMP-grade",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 14
+      "age_days": 15
     },
     {
       "id": "431a6502aa4d8727",
@@ -307,7 +350,7 @@
         "业务动作命中: launch, license",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 72
+      "age_days": 73
     },
     {
       "id": "15a227861898f286",
@@ -348,7 +391,7 @@
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 81
+      "age_days": 82
     },
     {
       "id": "cde6b1ad32e25e6c",
@@ -381,14 +424,97 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 百普赛斯",
         "行业编辑媒体",
         "战略主题命中: 生物医药, 试剂",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 26
+      "age_days": 27
+    },
+    {
+      "id": "234ee17ff6ad0eec",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo",
+        "bing_news_thermo_backup"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher",
+        "Bing News RSS - Thermo Fisher backup"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxPWm92Mk5OQ1JOUHA0cFJHd0ZUeE1iNjd4YlFYbWVGbG9HLW9kX2JERUZiRlByWURBN0pDZmk3SGhLb0pXeWk5R0dLc3cwNzJBMENzQlJfUC1fYklwYkJGZExTaVpBRzlpRERteVQyeHpRbDVpV1ozdDY3U3FDdTBEcWIwYmpvRERfdnY5WW5WMHlSSVdzSjNwR3NNMEZTZw?oc=5",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fgeneral%2fthermo-fisher-arcturus-partner-on-phase-iii-arct-032-cystic-fibrosis-trial%2far-AA279qn4&c=8304642118173661663&mkt=ja-jp"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWm92Mk5OQ1JOUHA0cFJHd0ZUeE1iNjd4YlFYbWVGbG9HLW9kX2JERUZiRlByWURBN0pDZmk3SGhLb0pXeWk5R0dLc3cwNzJBMENzQlJfUC1fYklwYkJGZExTaVpBRzlpRERteVQyeHpRbDVpV1ozdDY3U3FDdTBEcWIwYmpvRERfdnY5WW5WMHlSSVdzSjNwR3NNMEZTZw?oc=5",
+      "published": "2026-07-03",
+      "summary": "Thermo Fisher will provide integrated manufacturing, clinical research and commercial readiness services.",
+      "ai_summary": "",
+      "score": 62,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher",
+        "战略主题命中: manufacturing",
+        "业务动作命中: clinical, manufacturing",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 18
+    },
+    {
+      "id": "e7aa1658aeaca1d2",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "google_news_miltenyi",
+      "source_label": "Google News RSS - Miltenyi Biotec",
+      "source_ids": [
+        "google_news_miltenyi"
+      ],
+      "source_labels": [
+        "Google News RSS - Miltenyi Biotec"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYVQ2N1JHcGhSQ1pESlVjSFdBa2JOWFIyR2FiR3kyLWl6eG1TdnFPN2xSSG5qVUJwcnIwa3dhYmJYRjBfbURVNFVoRGZidUszMHEtZFFuYm1wUUVmT2V2OURQc0ZDWW5ER1BFSVN6Vmx0TXpmSWY1OWJnMVJ3d3lOd1laNkU4Rmc5ZlpjcXR5MW4zM3FLV2c4?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Miltenyi Biotec and CHA Biotech collaborate on BaEV lentiviral vector platform - Manufacturing Chemist",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYVQ2N1JHcGhSQ1pESlVjSFdBa2JOWFIyR2FiR3kyLWl6eG1TdnFPN2xSSG5qVUJwcnIwa3dhYmJYRjBfbURVNFVoRGZidUszMHEtZFFuYm1wUUVmT2V2OURQc0ZDWW5ER1BFSVN6Vmx0TXpmSWY1OWJnMVJ3d3lOd1laNkU4Rmc5ZlpjcXR5MW4zM3FLV2c4?oc=5",
+      "published": "2026-04-27",
+      "summary": "Miltenyi Biotec and CHA Biotech collaborate on BaEV lentiviral vector platform Manufacturing Chemist",
+      "ai_summary": "",
+      "score": 60,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "战略主题命中: viral vector, lentiviral vector",
+        "业务动作命中: manufacturing",
+        "高价值分类加成 +10: product"
+      ],
+      "age_days": 85
     },
     {
       "id": "532e64feb8c65cdb",
@@ -424,7 +550,7 @@
         "业务动作命中: 開催",
         "高价值分类加成 +10: event"
       ],
-      "age_days": 14
+      "age_days": 15
     },
     {
       "id": "2c20d2768e6aedf6",
@@ -465,7 +591,7 @@
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 38
+      "age_days": 39
     },
     {
       "id": "f610ddd76a80d18c",
@@ -507,7 +633,7 @@
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 20
+      "age_days": 21
     },
     {
       "id": "28af198e5ba8e155",
@@ -550,7 +676,7 @@
         "业务动作命中: unveil",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 53
+      "age_days": 54
     },
     {
       "id": "a85354aefa9a6a77",
@@ -583,14 +709,132 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 赛默飞",
         "行业编辑媒体",
         "战略主题命中: 创新药",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 53
+      "age_days": 54
+    },
+    {
+      "id": "b142009799e4474e",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "sartorius_official_news_index",
+      "source_label": "Sartorius official Newsroom - indexed RSS",
+      "source_ids": [
+        "sartorius_official_news_index"
+      ],
+      "source_labels": [
+        "Sartorius official Newsroom - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration - Sartorius",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5",
+      "published": "2026-06-23",
+      "summary": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration Sartorius",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Sartorius",
+        "公司自有来源",
+        "业务动作命中: collaboration, manufacturing",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 28
+    },
+    {
+      "id": "6fede91478efe6b8",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius, LFB Biomanufacturing Expand Collaboration - Contract Pharma",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5",
+      "published": "2026-06-23",
+      "summary": "Sartorius, LFB Biomanufacturing Expand Collaboration Contract Pharma",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: collaboration, manufacturing",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 28
+    },
+    {
+      "id": "448fa7e0ced9f107",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1d6cTQ4dERHMXp4MzU1dWFUQUVLNmlPU1RmNnBuVkhBUE5ocERaTW95WlBUX0hvek1xSndSdzZaX1NYT095RE9pZ1g5a3N6WWdjNGd4WkUtS0stZW5uVWZqWk01T1Y5Snh0ZTJJSjZxMGZ1M3RaUDN4WW1CUTF3SkJEbjk0aDRUMDVCSHpSWndQY093Y1VzZWlXSXczN3hkNk5HRzhFNTNUaG5BOVhRTkhn?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius strengthens collaboration with LFB Biomanufacturing - BioSpectrum Asia",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1d6cTQ4dERHMXp4MzU1dWFUQUVLNmlPU1RmNnBuVkhBUE5ocERaTW95WlBUX0hvek1xSndSdzZaX1NYT095RE9pZ1g5a3N6WWdjNGd4WkUtS0stZW5uVWZqWk01T1Y5Snh0ZTJJSjZxMGZ1M3RaUDN4WW1CUTF3SkJEbjk0aDRUMDVCSHpSWndQY093Y1VzZWlXSXczN3hkNk5HRzhFNTNUaG5BOVhRTkhn?oc=5",
+      "published": "2026-06-23",
+      "summary": "Sartorius strengthens collaboration with LFB Biomanufacturing BioSpectrum Asia",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: collaboration, manufacturing",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 28
     },
     {
       "id": "6ee5a70f4e5d4be7",
@@ -629,7 +873,7 @@
         "业务动作命中: introduce, clinical",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 42
+      "age_days": 43
     },
     {
       "id": "ae65189ef2cf02a2",
@@ -662,13 +906,52 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher",
         "业务动作命中: launch, FDA",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 53
+      "age_days": 54
+    },
+    {
+      "id": "e56477aec398ccdc",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
+      "source_ids": [
+        "bing_news_thermo_backup"
+      ],
+      "source_labels": [
+        "Bing News RSS - Thermo Fisher backup"
+      ],
+      "related_urls": [
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
+      ],
+      "source_trust": "aggregator",
+      "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+      "published": "2026-06-29",
+      "summary": "Genedrive (LSE:GDR) has entered into a collaboration agreement with Thermo Fisher Scientific to develop the Genedrive CYP2C19 HT Kit, a high-throughput pharmacogenetic in vitro diagnostic test ...",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "业务动作命中: collaboration, agreement",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 22
     },
     {
       "id": "447e26fb57557787",
@@ -708,7 +991,42 @@
         "业务动作命中: agreement",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 9
+      "age_days": 10
+    },
+    {
+      "id": "67c9d9e172e547a9",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "mixonline_official_rss",
+      "source_label": "Mix Online - official Japan pharma RSS",
+      "source_ids": [
+        "mixonline_official_rss"
+      ],
+      "source_labels": [
+        "Mix Online - official Japan pharma RSS"
+      ],
+      "related_urls": [
+        "/tabid55.html?artid=80577"
+      ],
+      "source_trust": "media",
+      "title": "米リリー バイオ医薬品企業アタイベックリーを最大38億ドルで買収 「BPL-003」の大型化に期待",
+      "url": "/tabid55.html?artid=80577",
+      "published": "2026-07-21",
+      "summary": "イーライリリー・アンド・カンパニーは7月16日、精神疾患領域で革新的治療薬を開発するバイオ医薬品企業AtaiBeckley（アタイベックリー）を最大38億ドル（初期投資28億ドル）で買収すると発表した。同社は複数の臨床段階プログラムと次世代化合物の創薬パイプラインを有する。特に、「BPL-003」（Mebufotenin benzoate）は、治療抵抗性うつ病（TRD）の治療薬で、潜在患者数は米国だけで約300万〜500万人、世界全体で約1億人との推計もあり、上市後の市場インパクトは極めて大きい。",
+      "ai_summary": "",
+      "score": 52,
+      "tier": "daily",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: バイオ医薬, 創薬, 医薬品",
+        "业务动作命中: 買収, 開発, 上市"
+      ],
+      "age_days": 0
     },
     {
       "id": "ec55e65a5bc00d6f",
@@ -748,49 +1066,7 @@
         "战略主题命中: manufacturing",
         "业务动作命中: collaboration, manufacturing"
       ],
-      "age_days": 24
-    },
-    {
-      "id": "3eca720d4917e74e",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo",
-        "bing_news_thermo_backup"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher",
-        "Bing News RSS - Thermo Fisher backup"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU051N1JKVVBldEhlSzY3VVBHbU1hdmxsc1RjTXAtNVQ2WDh3Z1BuY3I4ZGsxQXF2YVhxN3VwejF3Rjh6WjlMUWpFYl9qRml1cndYTVR3aXNxUXI3QlIyNHMwa3Q1bU0xcXNDWHcxbFpuVXpraDFMWmgzN2pYLXRiOTk2a2NKaWxVNDFQZThkcy1lUQ?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed2e3845d3afe02d6f66a48e4c&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-set-report-q2-124600867.html&c=11407560408925381686&mkt=ja-jp"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Set to Report Q2 Earnings: What's in the Cards? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU051N1JKVVBldEhlSzY3VVBHbU1hdmxsc1RjTXAtNVQ2WDh3Z1BuY3I4ZGsxQXF2YVhxN3VwejF3Rjh6WjlMUWpFYl9qRml1cndYTVR3aXNxUXI3QlIyNHMwa3Q1bU0xcXNDWHcxbFpuVXpraDFMWmgzN2pYLXRiOTk2a2NKaWxVNDFQZThkcy1lUQ?oc=5",
-      "published": "2026-07-15",
-      "summary": "TMO readies for second-quarter 2026 earnings, with growth expected across key segments as bioproduction, clinical research and new launches support results.",
-      "ai_summary": "",
-      "score": 52,
-      "tier": "daily",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "战略主题命中: bioproduction",
-        "业务动作命中: launch, clinical"
-      ],
-      "age_days": 5
+      "age_days": 25
     },
     {
       "id": "e679a9f142b13fa9",
@@ -829,9 +1105,9 @@
         "战略主题命中: clinical trials",
         "业务动作命中: collaboration, clinical",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 98天，因业务动作匹配保留"
+        "超过时效窗口 99天，因业务动作匹配保留"
       ],
-      "age_days": 98
+      "age_days": 99
     },
     {
       "id": "7c814ff39fcb066a",
@@ -860,14 +1136,54 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 製薬",
         "业务动作命中: 申請, 発売, 導入",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 5
+      "age_days": 6
+    },
+    {
+      "id": "6c11d29671d535d3",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "miltenyi_official_news_index",
+      "source_label": "Miltenyi group official news - indexed RSS",
+      "source_ids": [
+        "miltenyi_official_news_index"
+      ],
+      "source_labels": [
+        "Miltenyi group official news - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOUhhWWozMjNUZXh4Q0Y3NVFpMlV1dExiclBrTUtQNUVhTnBwNjE1TE9TUmt4c0FITnJvWGl2eTZxUng3MFNMMkhCQTh3RTdvNDhpX2s0VExEdzBSNzZNNzU5eXl4NzFUazdoSGRmbl9fN2VPUW16TUNhMjJNZ216ZkJSX29pYl9yMGhF?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Cell and Gene Therapy Manufacturing Insights - Miltenyi Bioindustry",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOUhhWWozMjNUZXh4Q0Y3NVFpMlV1dExiclBrTUtQNUVhTnBwNjE1TE9TUmt4c0FITnJvWGl2eTZxUng3MFNMMkhCQTh3RTdvNDhpX2s0VExEdzBSNzZNNzU5eXl4NzFUazdoSGRmbl9fN2VPUW16TUNhMjJNZ216ZkJSX29pYl9yMGhF?oc=5",
+      "published": "2026-06-15",
+      "summary": "Cell and Gene Therapy Manufacturing Insights Miltenyi Bioindustry",
+      "ai_summary": "",
+      "score": 50,
+      "tier": "daily",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Miltenyi Bioindustry",
+        "公司自有来源",
+        "战略主题命中: cell and gene therapy, gene therapy",
+        "业务动作命中: manufacturing"
+      ],
+      "age_days": 36
     },
     {
       "id": "594760e6348b8e2f",
@@ -907,7 +1223,7 @@
         "战略主题命中: CDMO, manufacturing",
         "业务动作命中: manufacturing"
       ],
-      "age_days": 55
+      "age_days": 56
     },
     {
       "id": "955a568e3b9c3d4a",
@@ -946,9 +1262,9 @@
         "战略主题命中: clinical trials",
         "业务动作命中: acquisition, clinical",
         "高价值分类加成 +8: regulatory",
-        "超过时效窗口 118天，因业务动作匹配保留"
+        "超过时效窗口 119天，因业务动作匹配保留"
       ],
-      "age_days": 118
+      "age_days": 119
     },
     {
       "id": "7ad4e33344a2f729",
@@ -987,12 +1303,12 @@
         "战略主题命中: clinical development, clinical trials",
         "业务动作命中: clinical",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 159天，因业务动作匹配保留"
+        "超过时效窗口 160天，因业务动作匹配保留"
       ],
-      "age_days": 159
+      "age_days": 160
     },
     {
-      "id": "78b6a879bbd50434",
+      "id": "400afe275142dac8",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -1010,12 +1326,12 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -1029,10 +1345,10 @@
         "战略主题命中: CD20, Japan",
         "业务动作命中: release"
       ],
-      "age_days": 74
+      "age_days": 75
     },
     {
-      "id": "6fc9b5dbababcb9b",
+      "id": "3a0b6b66b4daeeed",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -1050,13 +1366,13 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed351a4746ac141ddb83d0748e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -1070,7 +1386,7 @@
         "战略主题命中: HEK293, Japan",
         "业务动作命中: release"
       ],
-      "age_days": 70
+      "age_days": 71
     },
     {
       "id": "55da6319486ddc88",
@@ -1099,14 +1415,14 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 医薬品",
         "业务动作命中: 承認, 申請, 開発, 開始",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 3
+      "age_days": 4
     },
     {
       "id": "58d285159d3231a5",
@@ -1135,14 +1451,92 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 製薬",
         "业务动作命中: 承認, 申請, 開始",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 4
+      "age_days": 5
+    },
+    {
+      "id": "a65959e72d194776",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalJWNVNGRkFGbF9nc1JZWjhJRmdZUks5eFRlamlOUE1QcGFaNGFnUXZ2U3RTZVdwaDdIT21qd2UwdWVya2U3MzZHYWZJZGdFNkFVRTFKX3NDNGRqQS02VlRaOG1rc1FVU0ExVGVHVWRvYnFja3NwYVo3WjFwSURRZV9XWUNzWExvZHg0VTZ0RVd5bTM1SlFtVnRHamZjMkFINmx6UnZ1ZXhTUnV4b2xrckY1cWpNZmhjU2Rn?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius launches Cubis® III balances with built-in compliance and connectivity - Drug Discovery News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalJWNVNGRkFGbF9nc1JZWjhJRmdZUks5eFRlamlOUE1QcGFaNGFnUXZ2U3RTZVdwaDdIT21qd2UwdWVya2U3MzZHYWZJZGdFNkFVRTFKX3NDNGRqQS02VlRaOG1rc1FVU0ExVGVHVWRvYnFja3NwYVo3WjFwSURRZV9XWUNzWExvZHg0VTZ0RVd5bTM1SlFtVnRHamZjMkFINmx6UnZ1ZXhTUnV4b2xrckY1cWpNZmhjU2Rn?oc=5",
+      "published": "2026-06-03",
+      "summary": "Sartorius launches Cubis® III balances with built-in compliance and connectivity Drug Discovery News",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product"
+      ],
+      "age_days": 48
+    },
+    {
+      "id": "858bec68d1310112",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance - Lab Manager",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5",
+      "published": "2026-06-04",
+      "summary": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance Lab Manager",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product"
+      ],
+      "age_days": 47
     },
     {
       "id": "e530be2f2ff78ac6",
@@ -1182,7 +1576,7 @@
         "业务动作命中: agreement",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 84
+      "age_days": 85
     },
     {
       "id": "8944f11a22b96440",
@@ -1222,7 +1616,46 @@
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 23
+      "age_days": 24
+    },
+    {
+      "id": "40b6f13d8fbd0307",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPYkFScGNLSTczc1ZaYzlpSXNBSWNiRmFEZmhRbkhTTEF6TTlIOHZnMC1PbU9UMVlHSDFUZEZpVTFNYk9WVDVGWDMtcEFCMlJZSXlfXy1MRUFTOGNKaS14dU94eHp2V1FKcmloM29YdzJzVENsYjNQMGYtZEpjdmZSdWZrZGNwUUQ3MEJnTnVROHZMYzJkXzgyQ2MtQVp0ZE92eml6Undpak0yQ3p5MXBuQVNmRF9LR0M0TXhGbGRiVWI3MWxGUGZxMTRBZzRtX3QtajhaN2l1LWttX04wOXBtaThMUHVhM3dkeUxB0gHwAUFVX3lxTE1felAxRzd6Q3ZVZnNGNDVFTkdBZWVkYlBDaEo0TFNUZTdrOXA4SUl5aTVPOEpqTmMwUkVNZDY3U1ByOGRKMWNQYnZuM1pjejBvV2Y5MUw3R2lVQlNSeHVBTEEyVWhsbU9OY3lRNUFvRDF3NjhCbXI3dlRhRTBya2wzZE5fTEZ2c0JjQXVRMWp6Nm9lT3BZOWFxNTdkTDNmbTk2ZjU2RDJ2VTMwWkhVLS03bExLMXU2QXZTVWk5bkhtWWx2cVA1dDJIVTk1YVZsZElZWVVxTm5NWTFXanVYOFV0NnUxeERBVUJCRFpweEdXZw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "How New Forensics and mRNA Partnerships at Thermo Fisher Scientific (TMO) Have Changed Its Investment Story - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPYkFScGNLSTczc1ZaYzlpSXNBSWNiRmFEZmhRbkhTTEF6TTlIOHZnMC1PbU9UMVlHSDFUZEZpVTFNYk9WVDVGWDMtcEFCMlJZSXlfXy1MRUFTOGNKaS14dU94eHp2V1FKcmloM29YdzJzVENsYjNQMGYtZEpjdmZSdWZrZGNwUUQ3MEJnTnVROHZMYzJkXzgyQ2MtQVp0ZE92eml6Undpak0yQ3p5MXBuQVNmRF9LR0M0TXhGbGRiVWI3MWxGUGZxMTRBZzRtX3QtajhaN2l1LWttX04wOXBtaThMUHVhM3dkeUxB0gHwAUFVX3lxTE1felAxRzd6Q3ZVZnNGNDVFTkdBZWVkYlBDaEo0TFNUZTdrOXA4SUl5aTVPOEpqTmMwUkVNZDY3U1ByOGRKMWNQYnZuM1pjejBvV2Y5MUw3R2lVQlNSeHVBTEEyVWhsbU9OY3lRNUFvRDF3NjhCbXI3dlRhRTBya2wzZE5fTEZ2c0JjQXVRMWp6Nm9lT3BZOWFxNTdkTDNmbTk2ZjU2RDJ2VTMwWkhVLS03bExLMXU2QXZTVWk5bkhtWWx2cVA1dDJIVTk1YVZsZElZWVVxTm5NWTFXanVYOFV0NnUxeERBVUJCRFpweEdXZw?oc=5",
+      "published": "2026-07-16",
+      "summary": "How New Forensics and mRNA Partnerships at Thermo Fisher Scientific (TMO) Have Changed Its Investment Story simplywall.st",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "业务动作命中: partnership",
+        "高价值分类加成 +10: partnership"
+      ],
+      "age_days": 5
     },
     {
       "id": "d3ee6e6531ea3a0d",
@@ -1261,7 +1694,7 @@
         "业务动作命中: partnership",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 26
+      "age_days": 27
     },
     {
       "id": "45024b38c814cce9",
@@ -1300,7 +1733,7 @@
         "业务动作命中: partnership",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 25
+      "age_days": 26
     },
     {
       "id": "45f9eaff4f9b27fb",
@@ -1339,46 +1772,7 @@
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 18
-    },
-    {
-      "id": "abcdaaf811bbfedb",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORG1nOFppc2sySTlmNm5fT0RrUFV4VmJVZUI1eE9kbTNCUUlaWllUMENTOXA0aVBHclFlWk4xUU5QQThuRlNXcl9Xa1NDNzhhZUVRQ05wOVJTeno4Wmk4Z0pIeUQtU3N6WG9CWWZ1Tk9uaDUzQ2Y2ejFwNG52TUdBM2ZpOXQ4VUd3OV9CdUhRaWEtWEloeWZrZ3QxRERzZERvZUkwaTcyeXU?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Saladax Biomedical and Thermo Fisher Scientific Partner on Global Distribution of Drug Monitoring Assays - Clinical Lab Products",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORG1nOFppc2sySTlmNm5fT0RrUFV4VmJVZUI1eE9kbTNCUUlaWllUMENTOXA0aVBHclFlWk4xUU5QQThuRlNXcl9Xa1NDNzhhZUVRQ05wOVJTeno4Wmk4Z0pIeUQtU3N6WG9CWWZ1Tk9uaDUzQ2Y2ejFwNG52TUdBM2ZpOXQ4VUd3OV9CdUhRaWEtWEloeWZrZ3QxRERzZERvZUkwaTcyeXU?oc=5",
-      "published": "2026-04-21",
-      "summary": "Saladax Biomedical and Thermo Fisher Scientific Partner on Global Distribution of Drug Monitoring Assays Clinical Lab Products",
-      "ai_summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "partnership",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: clinical",
-        "高价值分类加成 +10: partnership"
-      ],
-      "age_days": 90
+      "age_days": 19
     },
     {
       "id": "f108a57159d1d2f9",
@@ -1417,7 +1811,7 @@
         "业务动作命中: introduce",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 77
+      "age_days": 78
     },
     {
       "id": "3ae7bd9d1d748788",
@@ -1456,49 +1850,10 @@
         "业务动作命中: introduce",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 46
+      "age_days": 47
     },
     {
-      "id": "42ace94ed7441c1a",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMisAJBVV95cUxOaGo5OXk2aldfS3Y2Rm8tQWpYNjF6TDNsczhEVjFUTFNLTG5MY2RBTzlaV1ZUMlcyZXEtT0p2NWxyY3pwUkN4MmFmelNwVDNWVzJkMGVkR0dqQ25BWU42dFc1QnQ3ZGJfQVpVMXNNVWhramlqZ3lkU0dGUTNQOGFMSHE3UTBWUXZ0bGxDVW1jZk4zYkdRY0pRNHdtN1FRdEJQQzhNRThUdVpnNGVzRkY2Vy1NV0ZWZXFPVjlQZHktbnFwTGNTZS1pNTJ2bWF0bUdWYy1XLUF0VlFsZmJXYzNBaW5oX09PZ2Z6TVlTYy16elFPRk9NOGd5cExLMEtyV2FCY19LSXRNVWhfOW5OaXh3blBtZmF1QVd4RzdkQVZVNnJ0bDFzSXZFT3QwOVlNVGpj?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific expands global biobank leadership through strategic collaboration with PRECISE-SG100K Singapore to advance population-scale proteomics - News-Medical",
-      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOaGo5OXk2aldfS3Y2Rm8tQWpYNjF6TDNsczhEVjFUTFNLTG5MY2RBTzlaV1ZUMlcyZXEtT0p2NWxyY3pwUkN4MmFmelNwVDNWVzJkMGVkR0dqQ25BWU42dFc1QnQ3ZGJfQVpVMXNNVWhramlqZ3lkU0dGUTNQOGFMSHE3UTBWUXZ0bGxDVW1jZk4zYkdRY0pRNHdtN1FRdEJQQzhNRThUdVpnNGVzRkY2Vy1NV0ZWZXFPVjlQZHktbnFwTGNTZS1pNTJ2bWF0bUdWYy1XLUF0VlFsZmJXYzNBaW5oX09PZ2Z6TVlTYy16elFPRk9NOGd5cExLMEtyV2FCY19LSXRNVWhfOW5OaXh3blBtZmF1QVd4RzdkQVZVNnJ0bDFzSXZFT3QwOVlNVGpj?oc=5",
-      "published": "2026-05-19",
-      "summary": "Thermo Fisher Scientific expands global biobank leadership through strategic collaboration with PRECISE-SG100K Singapore to advance population-scale proteomics News-Medical",
-      "ai_summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "partnership",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: collaboration",
-        "高价值分类加成 +10: partnership"
-      ],
-      "age_days": 62
-    },
-    {
-      "id": "acdb356fbf57cf08",
+      "id": "0261488b6795c99e",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -1516,11 +1871,11 @@
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed2e3845d3afe02d6f66a48e4c&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific Launches GENESYS™ G5 Suite of Spectrophotometers, Combining UV ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5dd8ed2e3845d3afe02d6f66a48e4c&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp",
       "published": "2026-07-15",
       "summary": "Thermo Fisher Scientific has launched the Thermo Scientific™GENESYS™ G5 series of Visible and UV-Visible spectrophotometers, designed to help laboratories standardize workflows, simplify routine ...",
       "ai_summary": "",
@@ -1534,7 +1889,7 @@
         "业务动作命中: launch",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 5
+      "age_days": 6
     },
     {
       "id": "e735cfa97567e552",
@@ -1575,7 +1930,7 @@
         "新闻稿分发平台",
         "业务动作命中: approval"
       ],
-      "age_days": 13
+      "age_days": 14
     },
     {
       "id": "926994e0441bedca",
@@ -1614,7 +1969,7 @@
         "新闻稿分发平台",
         "业务动作命中: opens"
       ],
-      "age_days": 83
+      "age_days": 84
     },
     {
       "id": "f733dae8abf1cdf3",
@@ -1653,9 +2008,9 @@
         "新闻稿分发平台",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 140天，因业务动作匹配保留"
+        "超过时效窗口 141天，因业务动作匹配保留"
       ],
-      "age_days": 140
+      "age_days": 141
     },
     {
       "id": "8ca7d4d2e6737ad8",
@@ -1694,45 +2049,206 @@
         "新闻稿分发平台",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 111天，因业务动作匹配保留"
+        "超过时效窗口 112天，因业务动作匹配保留"
       ],
-      "age_days": 111
+      "age_days": 112
     },
     {
-      "id": "d5bf7378ab51ca12",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "gen_official_rss",
-      "source_label": "GEN - official biotechnology RSS",
+      "id": "6e0ca9ccbebfc675",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
       "source_ids": [
-        "gen_official_rss"
+        "google_news_merck_life_science"
       ],
       "source_labels": [
-        "GEN - official biotechnology RSS"
+        "Google News RSS - Merck KGaA Life Science"
       ],
       "related_urls": [
-        "https://www.genengnews.com/topics/bioprocessing/autolomous-and-cellular-origins-expand-cell-therapy-manufacturing-process/"
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjJPY29tb1diSWd6SEtEbEdKajdEdFh4RU5nZUtNQVZlNjc2bk9lOVg5WmZZODdBWVJicjI5VmpmN2puby1HWkFSTVgzaGNZLVJrcWVMQ3hBNXI3QmFMRDVoS3pyUjZTcTg0dDI2THVTOVdNTmFra203NzhuYW92SjU3ZnFSaEpRQVBoeEN1UlVfZUEyNWF5eGx4ZFNkMnJnY05NN3k5WTJ4RVY1MG9UZzM5ZEtERWdhWmZR?oc=5"
       ],
-      "source_trust": "media",
-      "title": "Autolomous and Cellular Origins Expand Cell Therapy Manufacturing Process",
-      "url": "https://www.genengnews.com/topics/bioprocessing/autolomous-and-cellular-origins-expand-cell-therapy-manufacturing-process/",
-      "published": "2026-07-16",
-      "summary": "The combined solution using Constellation and autoloMATE overcomes fragmentation, limited visibility, and the absence of standardized, interoperable data flows without replacing existing processes, enabling manufacturers to scale to commercially viable levels.",
+      "source_trust": "aggregator",
+      "title": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion - Medical Device Network",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjJPY29tb1diSWd6SEtEbEdKajdEdFh4RU5nZUtNQVZlNjc2bk9lOVg5WmZZODdBWVJicjI5VmpmN2puby1HWkFSTVgzaGNZLVJrcWVMQ3hBNXI3QmFMRDVoS3pyUjZTcTg0dDI2THVTOVdNTmFra203NzhuYW92SjU3ZnFSaEpRQVBoeEN1UlVfZUEyNWF5eGx4ZFNkMnJnY05NN3k5WTJ4RVY1MG9UZzM5ZEtERWdhWmZR?oc=5",
+      "published": "2026-06-25",
+      "summary": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion Medical Device Network",
+      "ai_summary": "",
+      "score": 46,
+      "tier": "daily",
+      "category": "market",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA",
+        "业务动作命中: expansion",
+        "高价值分类加成 +8: market"
+      ],
+      "age_days": 26
+    },
+    {
+      "id": "6eb9504bc1181d72",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
+      "source_ids": [
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUmJMdEtUU3l5UUV4ZzR3TnJMQ3JmMFBLbUN1TS13ZUN4UmJuLVRhek10UEpibjY4ZmMyaEwtTW9WR2hCS0laZC1sZEFJN0NoU1FKbGwzOTJpcWg4STNSc2RJREo3U21vMGNnWFg1TERDbDMyeFZwNFFRNER4WlBlYkY4ajAwV01SVFJ2SnJhTm9FUmFXdVVaaDlqakYxck1sT3dIRzE3cGNDT2xEZmhLRU5EemNndlE5dzVNVWE0OXBfQzFHTU5j?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Merck KGaA agrees $11.3bn deal in major life sciences expansion - Life Sciences IP Review",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUmJMdEtUU3l5UUV4ZzR3TnJMQ3JmMFBLbUN1TS13ZUN4UmJuLVRhek10UEpibjY4ZmMyaEwtTW9WR2hCS0laZC1sZEFJN0NoU1FKbGwzOTJpcWg4STNSc2RJREo3U21vMGNnWFg1TERDbDMyeFZwNFFRNER4WlBlYkY4ajAwV01SVFJ2SnJhTm9FUmFXdVVaaDlqakYxck1sT3dIRzE3cGNDT2xEZmhLRU5EemNndlE5dzVNVWE0OXBfQzFHTU5j?oc=5",
+      "published": "2026-06-26",
+      "summary": "Merck KGaA agrees $11.3bn deal in major life sciences expansion Life Sciences IP Review",
+      "ai_summary": "",
+      "score": 46,
+      "tier": "daily",
+      "category": "market",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA",
+        "业务动作命中: expansion",
+        "高价值分类加成 +8: market"
+      ],
+      "age_days": 25
+    },
+    {
+      "id": "b25868e376e6dcab",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
+      "source_ids": [
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiggJBVV95cUxONHgwZTJxTUgwVjBiYlJXSHFHV1prVmhxZzZHMjl1ek00Z3hWNUdsdEFwSi13aVJyeWNmNU1sc0dGMEk1bmJCQTQ0eUhwanlsYVZsVlJEMzJqd3l5b0dFSlM1WFpKVXEzWXFaTEppcU9jRUtIZkwwUjN2d0VfNU1xeUN5YlpPWWUwMzdKV3V5MGhFQWxWaWFLRFE0Y0k1MnVDbUtFbl91TjFZZE9qc0tCSmw4akJpSUhJdTQ4aU1fNGVSNzdZV0hjNG9VMHktZDZTTDVmN3FJeDBlZGU4b1llU3NFT011dDZJem9GUWtSVFZISXZ4bEVsWWNBakJXcjdLakE?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "MilliporeSigma Becomes Sole Testing Provider for Genetix Biotherapeutics’ FDA-Approved Gene Therapies - GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONHgwZTJxTUgwVjBiYlJXSHFHV1prVmhxZzZHMjl1ek00Z3hWNUdsdEFwSi13aVJyeWNmNU1sc0dGMEk1bmJCQTQ0eUhwanlsYVZsVlJEMzJqd3l5b0dFSlM1WFpKVXEzWXFaTEppcU9jRUtIZkwwUjN2d0VfNU1xeUN5YlpPWWUwMzdKV3V5MGhFQWxWaWFLRFE0Y0k1MnVDbUtFbl91TjFZZE9qc0tCSmw4akJpSUhJdTQ4aU1fNGVSNzdZV0hjNG9VMHktZDZTTDVmN3FJeDBlZGU4b1llU3NFT011dDZJem9GUWtSVFZISXZ4bEVsWWNBakJXcjdLakE?oc=5",
+      "published": "2026-05-07",
+      "summary": "MilliporeSigma Becomes Sole Testing Provider for Genetix Biotherapeutics’ FDA-Approved Gene Therapies GlobeNewswire",
+      "ai_summary": "",
+      "score": 46,
+      "tier": "daily",
+      "category": "regulatory",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: MilliporeSigma",
+        "业务动作命中: FDA",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 75
+    },
+    {
+      "id": "9da1ddd5209d7fc5",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "miltenyi_official_news_index",
+      "source_label": "Miltenyi group official news - indexed RSS",
+      "source_ids": [
+        "miltenyi_official_news_index"
+      ],
+      "source_labels": [
+        "Miltenyi group official news - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNalQza2h1UmhFQlVsM3ZXUG1OaVpnSFREdElaelJpWmtrWXlFdEhjNzlkaXdSOWNpZ2JwNmlsNW9HTGRUcHg3UGxFZ0w5U0I0enF2YUF4cEduRW9XcjRZRlZIczJCUXdiY2M0Sy1BaHRwWUFjMXp0cEtrOG1fNFp0RDBFTGYxN1NWTThoeHpTOVZ3aDJLODFlaElOMkJ6bFJYUkpJd2Q5bG5zbmVSaDRPcFlLRjJ4N19mb3pTVVo1Rk9HdTJHSEU4ZWtiTXg3Wlg0VHplMk1GTWlWODYzOEdXOGpZeDhtOEV6d1N0QmZLVGtiRUtpTlR1ZWYyNVc?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Why an experienced CDMO partner is a game changer | Insights - Miltenyi Bioindustry",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNalQza2h1UmhFQlVsM3ZXUG1OaVpnSFREdElaelJpWmtrWXlFdEhjNzlkaXdSOWNpZ2JwNmlsNW9HTGRUcHg3UGxFZ0w5U0I0enF2YUF4cEduRW9XcjRZRlZIczJCUXdiY2M0Sy1BaHRwWUFjMXp0cEtrOG1fNFp0RDBFTGYxN1NWTThoeHpTOVZ3aDJLODFlaElOMkJ6bFJYUkpJd2Q5bG5zbmVSaDRPcFlLRjJ4N19mb3pTVVo1Rk9HdTJHSEU4ZWtiTXg3Wlg0VHplMk1GTWlWODYzOEdXOGpZeDhtOEV6d1N0QmZLVGtiRUtpTlR1ZWYyNVc?oc=5",
+      "published": "2026-07-04",
+      "summary": "Why an experienced CDMO partner is a game changer | Insights Miltenyi Bioindustry",
       "ai_summary": "",
       "score": 46,
       "tier": "daily",
       "category": "partnership",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: cell therapy, bioprocessing, manufacturing",
-        "业务动作命中: manufacturing",
+        "公司池命中 +15: Miltenyi Bioindustry",
+        "公司自有来源",
+        "战略主题命中: CDMO",
         "高价值分类加成 +10: partnership"
       ],
-      "age_days": 4
+      "age_days": 17
+    },
+    {
+      "id": "086846f0fd04601e",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "miltenyi_official_news_index",
+      "source_label": "Miltenyi group official news - indexed RSS",
+      "source_ids": [
+        "miltenyi_official_news_index"
+      ],
+      "source_labels": [
+        "Miltenyi group official news - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNU3Rac0FveEJ4V1dpdUkxdzVYOUsxWUl2elBKTUx3ZV90NmJ0SFZqTF9kcGR5eDN5WWRTczkwZmpNQmNITEhhS3JHbFhRSkhiWnI4Zk1lV1ZWQkN3SHJDdjZvaU0xMFhRY2F3dkpIMWJlUTJBVG5CRVV4N2QzLWV3SkF5bjZWdU1YSXVjWlh3Qno5bHNHQ3BNcEV0RWZEUk1XOGJlMEd2QUNLYzVUUzRJclhFOUtXczROeHh1U2lJNXhtdlhrUDBzeHBVdGVIX0JDby02UXJidlkzZTNKWExfQk1uYV9LdVhHY3c?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Miltenyi Biomedicine Submits Marketing Authorization Application for zamto-cel to the EMA - Miltenyi Biomedicine",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNU3Rac0FveEJ4V1dpdUkxdzVYOUsxWUl2elBKTUx3ZV90NmJ0SFZqTF9kcGR5eDN5WWRTczkwZmpNQmNITEhhS3JHbFhRSkhiWnI4Zk1lV1ZWQkN3SHJDdjZvaU0xMFhRY2F3dkpIMWJlUTJBVG5CRVV4N2QzLWV3SkF5bjZWdU1YSXVjWlh3Qno5bHNHQ3BNcEV0RWZEUk1XOGJlMEd2QUNLYzVUUzRJclhFOUtXczROeHh1U2lJNXhtdlhrUDBzeHBVdGVIX0JDby02UXJidlkzZTNKWExfQk1uYV9LdVhHY3c?oc=5",
+      "published": "2026-05-28",
+      "summary": "Miltenyi Biomedicine Submits Marketing Authorization Application for zamto-cel to the EMA Miltenyi Biomedicine",
+      "ai_summary": "",
+      "score": 46,
+      "tier": "daily",
+      "category": "regulatory",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Miltenyi Biomedicine",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 54
     },
     {
       "id": "2a6dab8a135c09ba",
@@ -1771,46 +2287,7 @@
         "公司自有来源",
         "业务动作命中: collaboration, partnership"
       ],
-      "age_days": 25
-    },
-    {
-      "id": "ae22216f1703c8a3",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdERPbUNYV1JJSVItU1F1aFhYMXYtVDRCTktfaU1RdU0xbnZFak4zbTk3cFU5ZEsySGRIYzFqZF9qcU1NNzhIaHJHOVM0NFpMRDlPZUZBeXJmRXRkc05LV1luOFB1MTlPZXZseWFkLV9iTlk3MDhtYlA1blV6TkJOZXlQbF91OVliYVFLSHVuQ1IyWkh5?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Why is Thermo Fisher Betting Big on Clinical Trial Data - Kavout | AI",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdERPbUNYV1JJSVItU1F1aFhYMXYtVDRCTktfaU1RdU0xbnZFak4zbTk3cFU5ZEsySGRIYzFqZF9qcU1NNzhIaHJHOVM0NFpMRDlPZUZBeXJmRXRkc05LV1luOFB1MTlPZXZseWFkLV9iTlk3MDhtYlA1blV6TkJOZXlQbF91OVliYVFLSHVuQ1IyWkh5?oc=5",
-      "published": "2026-07-16",
-      "summary": "Why is Thermo Fisher Betting Big on Clinical Trial Data Kavout | AI",
-      "ai_summary": "",
-      "score": 46,
-      "tier": "daily",
-      "category": "regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "业务动作命中: clinical",
-        "高价值分类加成 +8: regulatory"
-      ],
-      "age_days": 4
+      "age_days": 26
     },
     {
       "id": "d0ac1be77c1e4154",
@@ -1849,7 +2326,7 @@
         "业务动作命中: acquisition",
         "高价值分类加成 +8: market"
       ],
-      "age_days": 84
+      "age_days": 85
     },
     {
       "id": "0666715bc7f5b9ac",
@@ -1888,7 +2365,7 @@
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 83
+      "age_days": 84
     },
     {
       "id": "f7bdc3e5c84f9cd3",
@@ -1917,13 +2394,55 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: 承認, 申請, 開発",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 4
+      "age_days": 5
+    },
+    {
+      "id": "4beff6cc21d45f28",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "sartorius_official_news_index",
+      "source_label": "Sartorius official Newsroom - indexed RSS",
+      "source_ids": [
+        "sartorius_official_news_index"
+      ],
+      "source_labels": [
+        "Sartorius official Newsroom - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQWlON01xWWRaNXB6TUtDZ0I5WjRnTkg5RFNaeTU0akNpdG5xUGVObEVKSFJDNllTRXRILWhNQ1U4VE01Qzl2RTFjdjRfQ01hSUNFaV9mMkF6a0hYQVl5XzQ3UXlVRGRMZGJ0YWctNnZ3bFlFZnlYM2hsNFRVNEd1WUFzdXBEQVhuY3RIUXJRbUgzSU9kNko4RTNKR0Y0b0JaSXl6bnhiUG50NDNNMWtkRGtkM2c0OGdoX3NlQlZWZ0lucUpOeEJUUlZBODRMRE9QUXdxcXFfbE8tYlkzZlVPajVXTk1TUlJBaWFUMHdiYnA?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Sartorius launches next-generation platform to boost efficiency in cell therapy production - Sartorius",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQWlON01xWWRaNXB6TUtDZ0I5WjRnTkg5RFNaeTU0akNpdG5xUGVObEVKSFJDNllTRXRILWhNQ1U4VE01Qzl2RTFjdjRfQ01hSUNFaV9mMkF6a0hYQVl5XzQ3UXlVRGRMZGJ0YWctNnZ3bFlFZnlYM2hsNFRVNEd1WUFzdXBEQVhuY3RIUXJRbUgzSU9kNko4RTNKR0Y0b0JaSXl6bnhiUG50NDNNMWtkRGtkM2c0OGdoX3NlQlZWZ0lucUpOeEJUUlZBODRMRE9QUXdxcXFfbE8tYlkzZlVPajVXTk1TUlJBaWFUMHdiYnA?oc=5",
+      "published": "2026-03-16",
+      "summary": "Sartorius launches next-generation platform to boost efficiency in cell therapy production Sartorius",
+      "ai_summary": "",
+      "score": 44,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Sartorius",
+        "公司自有来源",
+        "战略主题命中: cell therapy",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product",
+        "超过时效窗口 127天，因业务动作匹配保留"
+      ],
+      "age_days": 127
     },
     {
       "id": "c1f4ab5a52fd7ba2",
@@ -1959,7 +2478,7 @@
         "业务动作命中: 開催, 連携",
         "高价值分类加成 +10: event"
       ],
-      "age_days": 27
+      "age_days": 28
     },
     {
       "id": "122c4bd87dcb18b4",
@@ -1995,7 +2514,7 @@
         "业务动作命中: 提携, 共同",
         "高价值分类加成 +10: event"
       ],
-      "age_days": -3
+      "age_days": -2
     },
     {
       "id": "b44024f031932fd3",
@@ -2031,43 +2550,7 @@
         "业务动作命中: 開催, 連携",
         "高价值分类加成 +10: event"
       ],
-      "age_days": 13
-    },
-    {
-      "id": "ac7a0850e5be41b0",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "shonan_ipark_news_events",
-      "source_label": "Shonan iPark - official news and event announcements",
-      "source_ids": [
-        "shonan_ipark_news_events"
-      ],
-      "source_labels": [
-        "Shonan iPark - official news and event announcements"
-      ],
-      "related_urls": [
-        "https://www.shonan-ipark.com/news/2623"
-      ],
-      "source_trust": "ecosystem",
-      "title": "【Press Release】アイパークインスティチュート、台湾研究機関「工業技術研究院(ITRI)」と ヘルスケア・創薬分野における日台連携強化に関する覚書を締結",
-      "url": "https://www.shonan-ipark.com/news/2623",
-      "published": "2026-04-21",
-      "summary": "湘南 iPark 发布的活动、开放创新、园区企业和生命科学合作动态。",
-      "ai_summary": "",
-      "score": 44,
-      "tier": "daily",
-      "category": "event",
-      "signal_type": "event",
-      "is_new": false,
-      "reasons": [
-        "行业生态平台公开来源",
-        "战略主题命中: 創薬",
-        "业务动作命中: 連携, 覚書",
-        "高价值分类加成 +10: event"
-      ],
-      "age_days": 90
+      "age_days": 14
     },
     {
       "id": "ac5eb74389317355",
@@ -2107,9 +2590,9 @@
         "战略主题命中: ADC",
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory",
-        "超过时效窗口 123天，因业务动作匹配保留"
+        "超过时效窗口 124天，因业务动作匹配保留"
       ],
-      "age_days": 123
+      "age_days": 124
     },
     {
       "id": "cde71702fe3f8b32",
@@ -2138,13 +2621,13 @@
       "tier": "daily",
       "category": "market",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: 導入, 共同, 開発",
         "高价值分类加成 +8: market"
       ],
-      "age_days": 6
+      "age_days": 7
     },
     {
       "id": "008b2987334d4a27",
@@ -2180,7 +2663,7 @@
         "业务动作命中: 開催",
         "高价值分类加成 +10: event"
       ],
-      "age_days": -2
+      "age_days": -1
     },
     {
       "id": "8ccc0c1da9f3dc18",
@@ -2216,7 +2699,7 @@
         "业务动作命中: FDA, manufacturing",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 3
+      "age_days": 4
     },
     {
       "id": "cb47c26b15db474c",
@@ -2252,43 +2735,7 @@
         "业务动作命中: FDA, manufacturing",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 3
-    },
-    {
-      "id": "6bcce3b09517ced4",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "gen_official_rss",
-      "source_label": "GEN - official biotechnology RSS",
-      "source_ids": [
-        "gen_official_rss"
-      ],
-      "source_labels": [
-        "GEN - official biotechnology RSS"
-      ],
-      "related_urls": [
-        "https://www.genengnews.com/topics/cancer/kras-targeted-vaccine-crosses-first-clinical-milestone-in-pancreatic-cancer-prevention/"
-      ],
-      "source_trust": "media",
-      "title": "KRAS-Targeted Vaccine Crosses First Clinical Milestone in Pancreatic Cancer Prevention",
-      "url": "https://www.genengnews.com/topics/cancer/kras-targeted-vaccine-crosses-first-clinical-milestone-in-pancreatic-cancer-prevention/",
-      "published": "2026-07-18",
-      "summary": "A first-in-human KRAS-targeted pancreatic cancer prevention vaccine was found to be safe, elicited durable immune responses in 90% of high-risk participants, and showed encouraging signs of slowing or reversing precancerous lesions.",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "event",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: vaccine, CRO",
-        "业务动作命中: clinical",
-        "高价值分类加成 +10: event"
-      ],
-      "age_days": 2
+      "age_days": 4
     },
     {
       "id": "e26be8cc68c5c940",
@@ -2317,14 +2764,14 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: cell therapy, manufacturing",
         "业务动作命中: manufacturing",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 12
+      "age_days": 13
     },
     {
       "id": "ea959096ce0dc990",
@@ -2353,14 +2800,14 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: mRNA, clinical trial",
         "业务动作命中: clinical",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 3
+      "age_days": 4
     },
     {
       "id": "00071e98ec694cf5",
@@ -2389,50 +2836,14 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 製薬",
         "业务动作命中: 承認, 申請",
         "高价值分类加成 +8: regulatory"
       ],
-      "age_days": 3
-    },
-    {
-      "id": "2dd07858f28f1de5",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "answersnews_official_rss",
-      "source_label": "AnswersNews - official Japan pharma RSS",
-      "source_ids": [
-        "answersnews_official_rss"
-      ],
-      "source_labels": [
-        "AnswersNews - official Japan pharma RSS"
-      ],
-      "related_urls": [
-        "https://answers.and-pro.jp/pharmanews/32794/"
-      ],
-      "source_trust": "media",
-      "title": "Treg用いたGVHD向け細胞治療「Tregzi」や甲状腺眼症薬「Lumvoa」など承認―2026年6月に米FDAが承認した新薬",
-      "url": "https://answers.and-pro.jp/pharmanews/32794/",
-      "published": "2026-07-10",
-      "summary": "（写真：ロイター） 2026年6月に米FDA（食品医薬品局）が承認した主な新薬と適応拡大を、領域別にまとめました。 INDEX 【新薬】経口カルバペネム系抗菌薬「Utebzi」など 【適応拡大",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: 細胞治療, 医薬品",
-        "业务动作命中: 承認",
-        "高价值分类加成 +10: product"
-      ],
-      "age_days": 10
+      "age_days": 4
     },
     {
       "id": "61a41b5e23c21f85",
@@ -2461,14 +2872,14 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 再生医療, 医薬品",
         "业务动作命中: 発売",
         "高价值分类加成 +10: product"
       ],
-      "age_days": 4
+      "age_days": 5
     },
     {
       "id": "9eddb8b83e4d6ea0",
@@ -2501,12 +2912,135 @@
       "tier": "daily",
       "category": "company",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 赛默飞",
         "行业编辑媒体"
       ],
-      "age_days": 82
+      "age_days": 83
+    },
+    {
+      "id": "f33a325948caf65f",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "merck_life_science_official_index",
+      "source_label": "Merck KGaA Life Science official news - indexed RSS",
+      "source_ids": [
+        "merck_life_science_official_index"
+      ],
+      "source_labels": [
+        "Merck KGaA Life Science official news - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NZjNIQ2pRa2tMU01EcHg2NGVMMXc2Wm51WHRYNWRzZUh1NmY0VzdqeGY5bVY1b2ltSHhsYWU3MzhxZngtQWsyS3VzdHNDb2gwZW5KRmQtMnloX2UzVHllaTBER1REYV9rNVhIYXRoLWtaRDFpTnBKN3laUWc?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for HPLC - EMDGroup.com.",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NZjNIQ2pRa2tMU01EcHg2NGVMMXc2Wm51WHRYNWRzZUh1NmY0VzdqeGY5bVY1b2ltSHhsYWU3MzhxZngtQWsyS3VzdHNDb2gwZW5KRmQtMnloX2UzVHllaTBER1REYV9rNVhIYXRoLWtaRDFpTnBKN3laUWc?oc=5",
+      "published": "2026-04-21",
+      "summary": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for HPLC EMDGroup.com.",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: MilliporeSigma",
+        "公司自有来源",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product",
+        "超过时效窗口 91天，因业务动作匹配保留"
+      ],
+      "age_days": 91
+    },
+    {
+      "id": "041ed5fe146fb6cf",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "sartorius_official_news_index",
+      "source_label": "Sartorius official Newsroom - indexed RSS",
+      "source_ids": [
+        "sartorius_official_news_index"
+      ],
+      "source_labels": [
+        "Sartorius official Newsroom - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThQT2JzcDhSSzlzMTFJQ19XYmJhUXQ1Vko0a0UwODYwdm5HVWRMOHVteFJRdllJVW9rWWtac2JZNjdBWVNTZkh0U2hVbklQMk9JMWJIUXF6YWg1LWFGM2N0ZndGZEtGdmd4MVhQcFlVZVlicXBOa2dQVHJXMnVSRzU4TFVIbTh5VnMxSGdxekRQVVJYRGV2Sm9XSUZaaVdLZU5pTVExbk1zYXlsN1R3Y1FKVEJwMVhYaVQ1SXpKZ1JfYkJnOV8zMDQ5Y1VBT2pTRjBzbUxYdklxYUoxZUdkaDJaMTdrOGt4QnpsOHFWS1FqU1pSampqMUFGTQ?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Sartorius launches rational-design CHO host cell line with up to three-fold increase in productivity - Sartorius",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThQT2JzcDhSSzlzMTFJQ19XYmJhUXQ1Vko0a0UwODYwdm5HVWRMOHVteFJRdllJVW9rWWtac2JZNjdBWVNTZkh0U2hVbklQMk9JMWJIUXF6YWg1LWFGM2N0ZndGZEtGdmd4MVhQcFlVZVlicXBOa2dQVHJXMnVSRzU4TFVIbTh5VnMxSGdxekRQVVJYRGV2Sm9XSUZaaVdLZU5pTVExbk1zYXlsN1R3Y1FKVEJwMVhYaVQ1SXpKZ1JfYkJnOV8zMDQ5Y1VBT2pTRjBzbUxYdklxYUoxZUdkaDJaMTdrOGt4QnpsOHFWS1FqU1pSampqMUFGTQ?oc=5",
+      "published": "2026-03-03",
+      "summary": "Sartorius launches rational-design CHO host cell line with up to three-fold increase in productivity Sartorius",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Sartorius",
+        "公司自有来源",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product",
+        "超过时效窗口 140天，因业务动作匹配保留"
+      ],
+      "age_days": 140
+    },
+    {
+      "id": "87eff043d5e9c1cb",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "miltenyi_official_news_index",
+      "source_label": "Miltenyi group official news - indexed RSS",
+      "source_ids": [
+        "miltenyi_official_news_index"
+      ],
+      "source_labels": [
+        "Miltenyi group official news - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTFBERmc1LXM0RGV3QUdNRVVoY3BVekhFcE45eGhaazFWSmdkNHhQY3dWRVhKQy0wc1JRTU9BQzNQYXdjR3BvcXNFdGxFNTZzc0NHZzRuUWtJOGgtY3pLQ3cxN200akh1eVQzY2JLbXJPUkNUVlZIYlFVNXln?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Cell therapy manufacturing services for accelerated IND readiness - Miltenyi Bioindustry",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBERmc1LXM0RGV3QUdNRVVoY3BVekhFcE45eGhaazFWSmdkNHhQY3dWRVhKQy0wc1JRTU9BQzNQYXdjR3BvcXNFdGxFNTZzc0NHZzRuUWtJOGgtY3pLQ3cxN200akh1eVQzY2JLbXJPUkNUVlZIYlFVNXln?oc=5",
+      "published": "2026-03-09",
+      "summary": "Cell therapy manufacturing services for accelerated IND readiness Miltenyi Bioindustry",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Miltenyi Bioindustry",
+        "公司自有来源",
+        "战略主题命中: cell therapy",
+        "业务动作命中: manufacturing",
+        "超过时效窗口 134天，因业务动作匹配保留"
+      ],
+      "age_days": 134
     },
     {
       "id": "b706ef6c303c6abf",
@@ -2545,9 +3079,9 @@
         "公司自有来源",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 102天，因业务动作匹配保留"
+        "超过时效窗口 103天，因业务动作匹配保留"
       ],
-      "age_days": 102
+      "age_days": 103
     },
     {
       "id": "2c3834e263f50da2",
@@ -2586,7 +3120,7 @@
         "公司自有来源",
         "高价值分类加成 +10: event"
       ],
-      "age_days": 50
+      "age_days": 51
     },
     {
       "id": "cd5f8bd28c36d6ec",
@@ -2625,7 +3159,44 @@
         "公司自有来源",
         "高价值分类加成 +10: event"
       ],
-      "age_days": 53
+      "age_days": 54
+    },
+    {
+      "id": "ac7a0850e5be41b0",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "shonan_ipark_news_events",
+      "source_label": "Shonan iPark - official news and event announcements",
+      "source_ids": [
+        "shonan_ipark_news_events"
+      ],
+      "source_labels": [
+        "Shonan iPark - official news and event announcements"
+      ],
+      "related_urls": [
+        "https://www.shonan-ipark.com/news/2623"
+      ],
+      "source_trust": "ecosystem",
+      "title": "【Press Release】アイパークインスティチュート、台湾研究機関「工業技術研究院(ITRI)」と ヘルスケア・創薬分野における日台連携強化に関する覚書を締結",
+      "url": "https://www.shonan-ipark.com/news/2623",
+      "published": "2026-04-21",
+      "summary": "湘南 iPark 发布的活动、开放创新、园区企业和生命科学合作动态。",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": false,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 創薬",
+        "业务动作命中: 連携, 覚書",
+        "高价值分类加成 +10: event",
+        "超过时效窗口 91天，因业务动作匹配保留"
+      ],
+      "age_days": 91
     }
   ]
 }

@@ -4,10 +4,10 @@
 
 - 产品名称：AI Hot Tracker
 - 当前版本：MVP / GitHub Pages 可访问版本
-- 文档日期：2026-07-07
+- 文档日期：2026-07-21
 - 主要用户：ACRO / 百普赛斯市场部、管理层
 - 当前线上地址：https://tenltrist.github.io/acro-ai-hot-tracker/web/
-- 当前样本公司：ACROBiosystems / 百普赛斯、Thermo Fisher Scientific
+- 当前公司池：ACROBiosystems / 百普赛斯、Thermo Fisher Scientific、Merck KGaA Life Science / MilliporeSigma、Sartorius / Sartorius Stedim Biotech、Miltenyi Biotec / 美天旎
 
 ### 1.1 需求来源与讨论脉络
 
@@ -25,6 +25,7 @@
 - `已确认` 老板需要一个 dashboard，而不只是 Markdown 日报或本地脚本输出。
 - `已确认` MVP 先拿 ACRO / 百普赛斯作为标本对象验证机制。
 - `已确认` 现在已加入 Thermo Fisher Scientific 作为第二家公司样本。
+- `已确认` 公司池已进一步扩展默克生命科学、Sartorius 和美天旎，用于验证生物工艺、实验室解决方案与细胞治疗领域的对标监测。
 - `已确认` 需要参考 AIhot 的形态：精选流、日报、主题、API / Agent 接入，而不是普通新闻站。
 
 #### 1.1.2 用户原始思路整理
@@ -109,7 +110,7 @@ AI Hot Tracker 不是普通新闻聚合站，也不是实时舆情系统。
 ### 5.1 已实现能力
 
 - GitHub Pages 线上 dashboard。
-- 公司池：ACROBiosystems / 百普赛斯、Thermo Fisher Scientific。
+- 公司池：ACROBiosystems / 百普赛斯、Thermo Fisher Scientific、Merck KGaA Life Science / MilliporeSigma、Sartorius / Sartorius Stedim Biotech、Miltenyi Biotec / 美天旎。
 - 公开来源抓取：官网 / 官方 RSS / Google News RSS。
 - 候选去重。
 - 规则评分。
@@ -129,12 +130,12 @@ AI Hot Tracker 不是普通新闻聚合站，也不是实时舆情系统。
 
 当前最近一次生成结果：
 
-- 新候选：203 条
-- 进入日报：2 条
-- 即时提醒：0 条
-- 归档观察：201 条
-- 公司数量：2 家
-- 来源数量：6 个
+- 本轮全量候选：626 条
+- 进入日报：79 条
+- 即时提醒候选：2 条
+- 归档观察：545 条
+- 公司数量：5 家
+- 已登记来源：45 个
 - 已知抓取边界：ACRO 官网直抓触发滑块验证，Thermo Fisher newsroom HTML 返回 403；当前分别使用官网定向 RSS 和官方 IR RSS，不绕过网站限制。
 
 ### 5.3 当前不能解决的问题

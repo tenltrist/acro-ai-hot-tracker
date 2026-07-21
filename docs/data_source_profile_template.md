@@ -256,7 +256,7 @@ notes:
 | 来源 | 当前能力判断 | 常见获取方式 | 建设阶段 |
 | --- | --- | --- | --- |
 | PR Newswire | ACRO 已有实际命中 | 公司名 + `site:` 索引 RSS | `active` |
-| Business Wire | 官网拒绝当前自动请求；公司池定向索引已验证可返回 Thermo Fisher 新闻稿 | 公司池 + `site:` 索引 RSS | `active` |
+| Business Wire | 官网拒绝当前自动请求；公司池定向索引已扩展到 5 家公司 | 公司池 + `site:` 索引 RSS | `active` |
 | GlobeNewswire | Biotechnology 官方 RSS 已验证可直连，需过滤财报、回购和泛市场报告 | 官方分类 RSS | `active` |
 
 #### B. 生物医药行业新闻
@@ -287,10 +287,10 @@ notes:
 | --- | --- | --- | --- |
 | 日本 | AnswersNews | 官方 RSS，实测 10 条；日本制药申报、获批、交易和生产密度高 | `active` |
 | 日本 | ミクスOnline | 官方 RSS，实测至少 30 条；标题摘要可用，部分正文需会员 | `active` |
-| 日本 | 日経バイオテクONLINE | 无公开 RSS、正文订阅；公司池 `site:` 索引可命中 Thermo Fisher | `active`，仅公开标题索引 |
+| 日本 | 日経バイオテクONLINE | 无公开 RSS、正文订阅；公司池 `site:` 索引已扩展到 5 家公司 | `active`，仅公开标题索引 |
 | 日本 | 日刊薬業 | 会员内容明显；公司池索引仅少量弱命中 | `available` |
 | 日本 | Science Portal | JST 官方 RSS 稳定，但全科学内容多、生命科学业务密度低 | `available` |
-| 中国 | 医药魔方 / ByDrug | 公司池索引命中 ACRO 专访与 Thermo Fisher 合作内容 | `active` |
+| 中国 | 医药魔方 / ByDrug | 公司池索引已扩展到 ACRO、Thermo Fisher、默克、Sartorius 和美天旎 | `active` |
 | 中国 | 生物谷 | 官网与 Feed 返回 403；索引可用但公司命中噪音高 | `available` |
 | 中国 | 动脉网 | HTTPS 证书异常，公司池索引 0 命中 | `planned` |
 | 中国 | 界面新闻 · 医药健康 | 可命中交易和产业文章，但跨栏目噪音明显 | `available` |
@@ -593,3 +593,15 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | E药经理人 | 主要依赖微信公众号分发 | - | `manual` |
 
 本轮 7 个新运行入口全部无抓取错误，共增加 115 条候选和 17 条日报级信号。技术媒体主要服务技术主题和内容选题；地区媒体优先服务日本、中国市场动作与公司池命中，两类来源继续分开评分和展示。
+
+### 11.4 2026-07-21 公司池扩展实测
+
+本轮新增 Merck KGaA Life Science / MilliporeSigma、Sartorius / Sartorius Stedim Biotech、Miltenyi Biotec / 美天旎三家对标公司。每家都建立公司别名、战略主题、业务动作、噪音词，并接入官方新闻、全球聚合和日本补漏 3 类入口。
+
+| 公司 | 新入口产出 | 公司总候选 / 日报级 | 当前判断 |
+| --- | --- | --- | --- |
+| Merck KGaA Life Science / MilliporeSigma | 官方 8、全球 29、日本 2 | 41 / 5 | 必须强制区分 Merck KGaA 生命科学、默克医药健康与美国 MSD；已加入 Life Science 主题门槛与医药噪音词 |
+| Sartorius / Sartorius Stedim Biotech | 官方 9、全球 29、日本 0 | 39 / 7 | 官方和全球源有效；日本源方法保留，本轮无公司实体命中 |
+| Miltenyi Biotec / 美天旎 | 官方 6、全球 3、日本 1 | 10 / 5 | 数量少但业务相关度高；官方监测联合 Bioindustry 与 Biomedicine 子站 |
+
+三家公司共识别 90 条候选，其中 17 条达到日报或即时提醒门槛。9 个新入口均无抓取错误；本轮唯一运行错误来自既有 Thermo Fisher openFDA 接口的临时 HTTP 500，与新公司无关。

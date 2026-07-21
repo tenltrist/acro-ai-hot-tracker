@@ -148,6 +148,208 @@
         "coupon",
         "directory listing"
       ]
+    },
+    {
+      "id": "merck_life_science",
+      "display_name": "Merck KGaA Life Science / MilliporeSigma",
+      "aliases": [
+        "Merck KGaA",
+        "Merck KGaA, Darmstadt, Germany",
+        "MilliporeSigma",
+        "Merck Life Science",
+        "Merck Millipore",
+        "默克生命科学",
+        "默克密理博",
+        "メルクライフサイエンス"
+      ],
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "biopharma"
+      ],
+      "strategic_topics": [
+        "bioprocessing",
+        "process solutions",
+        "single-use",
+        "cell and gene therapy",
+        "CGT",
+        "mRNA",
+        "viral vector",
+        "GMP",
+        "CDMO",
+        "contract testing",
+        "BioReliance",
+        "Sigma-Aldrich",
+        "Milli-Q",
+        "analytical testing",
+        "reagent",
+        "Japan",
+        "日本"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "investment",
+        "opens",
+        "manufacturing",
+        "GMP",
+        "FDA",
+        "PMDA"
+      ],
+      "noise_terms": [
+        "Merck & Co.",
+        "MSD",
+        "Keytruda",
+        "Erbitux",
+        "Bavencio",
+        "Tepmetko",
+        "patient dosed",
+        "investigational drug",
+        "novel treatments",
+        "therapeutic areas",
+        "rare tumour",
+        "cardiomyopathies",
+        "oncology",
+        "semiconductor",
+        "electronics",
+        "financial results",
+        "quarterly results",
+        "earnings",
+        "dividend",
+        "stock",
+        "job posting",
+        "coupon"
+      ]
+    },
+    {
+      "id": "sartorius",
+      "display_name": "Sartorius / Sartorius Stedim Biotech",
+      "aliases": [
+        "Sartorius",
+        "Sartorius AG",
+        "Sartorius Stedim",
+        "Sartorius Stedim Biotech",
+        "赛多利斯",
+        "ザルトリウス"
+      ],
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "biopharma"
+      ],
+      "strategic_topics": [
+        "bioprocessing",
+        "bioreactor",
+        "single-use",
+        "cell culture",
+        "cell line development",
+        "cell and gene therapy",
+        "cell therapy",
+        "gene therapy",
+        "GMP",
+        "filtration",
+        "chromatography",
+        "lab instruments",
+        "consumables",
+        "Octet",
+        "Intellicyt",
+        "Japan",
+        "日本"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "investment",
+        "opens",
+        "manufacturing",
+        "FDA",
+        "PMDA"
+      ],
+      "noise_terms": [
+        "financial results",
+        "quarterly results",
+        "earnings",
+        "bond",
+        "dividend",
+        "share price",
+        "stock",
+        "investor",
+        "job posting",
+        "coupon"
+      ]
+    },
+    {
+      "id": "miltenyi_biotec",
+      "display_name": "Miltenyi Biotec / 美天旎",
+      "aliases": [
+        "Miltenyi Biotec",
+        "Miltenyi Bioindustry",
+        "Miltenyi Biomedicine",
+        "美天旎",
+        "美天旎生物技术",
+        "ミルテニーバイオテク"
+      ],
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "cell-and-gene-therapy"
+      ],
+      "strategic_topics": [
+        "cell separation",
+        "cell sorting",
+        "cell and gene therapy",
+        "cell therapy",
+        "gene therapy",
+        "CAR-T",
+        "CAR NK",
+        "viral vector",
+        "lentiviral vector",
+        "GMP",
+        "CDMO",
+        "CliniMACS",
+        "MACSQuant",
+        "REAfinity",
+        "Tyto",
+        "flow cytometry",
+        "Japan",
+        "日本"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "agreement",
+        "expansion",
+        "manufacturing",
+        "submission",
+        "approval",
+        "EMA",
+        "FDA",
+        "PMDA",
+        "clinical"
+      ],
+      "noise_terms": [
+        "job posting",
+        "career",
+        "coupon",
+        "directory listing",
+        "used equipment",
+        "protocol citation"
+      ]
     }
   ],
   "source_profiles": [
