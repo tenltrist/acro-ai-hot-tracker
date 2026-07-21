@@ -10609,5 +10609,53 @@
     "tier": "daily",
     "score": 48,
     "signal_type": "news"
+  },
+  "27d3a2d6d0fadc46": {
+    "first_seen": "2026-07-21T17:17:29",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "f416b9680673a46e": {
+    "first_seen": "2026-07-21T17:17:29",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "dbf6b7e7555560a3": {
+    "first_seen": "2026-07-21T17:17:29",
+    "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "67cc0299ca2a2ebb": {
+    "first_seen": "2026-07-21T17:17:29",
+    "title": "Thermo Fisher Scientific Launches GENESYS™ G5 Suite of Spectrophotometers, Combining UV ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3A%2F%2Fwww.azom.com%2Fnews.aspx%3FnewsID%3D65621&c=11914568117397129494&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
   }
 }

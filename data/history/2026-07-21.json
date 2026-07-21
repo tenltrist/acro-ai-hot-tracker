@@ -1,11 +1,11 @@
 {
   "date": "2026-07-21",
   "summary": {
-    "new_candidates": 11,
+    "new_candidates": 4,
     "immediate": 2,
     "daily": 79,
     "archive": 545,
-    "errors": 1,
+    "errors": 0,
     "companies": 5,
     "sources": 40
   },

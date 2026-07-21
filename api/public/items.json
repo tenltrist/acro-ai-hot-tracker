@@ -443,7 +443,7 @@
     ],
     "related_urls": [
       "https://news.google.com/rss/articles/CBMingFBVV95cUxPWm92Mk5OQ1JOUHA0cFJHd0ZUeE1iNjd4YlFYbWVGbG9HLW9kX2JERUZiRlByWURBN0pDZmk3SGhLb0pXeWk5R0dLc3cwNzJBMENzQlJfUC1fYklwYkJGZExTaVpBRzlpRERteVQyeHpRbDVpV1ozdDY3U3FDdTBEcWIwYmpvRERfdnY5WW5WMHlSSVdzSjNwR3NNMEZTZw?oc=5",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fgeneral%2fthermo-fisher-arcturus-partner-on-phase-iii-arct-032-cystic-fibrosis-trial%2far-AA279qn4&c=8304642118173661663&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fgeneral%2fthermo-fisher-arcturus-partner-on-phase-iii-arct-032-cystic-fibrosis-trial%2far-AA279qn4&c=8304642118173661663&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Yahoo Finance",
@@ -903,7 +903,7 @@
     "age_days": 54
   },
   {
-    "id": "e56477aec398ccdc",
+    "id": "dbf6b7e7555560a3",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "matched_company_ids": [
@@ -921,11 +921,11 @@
       "Bing News RSS - Thermo Fisher backup"
     ],
     "related_urls": [
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Genedrive Partners with Thermo Fisher to Expand CYP2C19 Diagnostic Portfolio (GDR)",
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fgenedrive-partners-thermo-fisher-expand-073358620.html&c=355097121989825313&mkt=ja-jp",
     "published": "2026-06-29",
     "summary": "Genedrive (LSE:GDR) has entered into a collaboration agreement with Thermo Fisher Scientific to develop the Genedrive CYP2C19 HT Kit, a high-throughput pharmacogenetic in vitro diagnostic test ...",
     "ai_summary": "",
@@ -1337,7 +1337,7 @@
     "age_days": 160
   },
   {
-    "id": "400afe275142dac8",
+    "id": "27d3a2d6d0fadc46",
     "company_id": "acro",
     "company": "ACROBiosystems / 百普赛斯",
     "matched_company_ids": [
@@ -1355,12 +1355,12 @@
       "Bing News RSS - ACROBiosystems backup"
     ],
     "related_urls": [
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
     "published": "2026-05-07",
     "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
     "ai_summary": "",
@@ -1377,7 +1377,7 @@
     "age_days": 75
   },
   {
-    "id": "3a0b6b66b4daeeed",
+    "id": "f416b9680673a46e",
     "company_id": "acro",
     "company": "ACROBiosystems / 百普赛斯",
     "matched_company_ids": [
@@ -1395,13 +1395,13 @@
       "Bing News RSS - ACROBiosystems backup"
     ],
     "related_urls": [
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290334944141a139d306b118226b&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b106cb041d29ff7518317eacf4e&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
     "published": "2026-05-11",
     "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
     "ai_summary": "",
@@ -1882,7 +1882,7 @@
     "age_days": 47
   },
   {
-    "id": "0261488b6795c99e",
+    "id": "67cc0299ca2a2ebb",
     "company_id": "thermo_fisher",
     "company": "Thermo Fisher Scientific",
     "matched_company_ids": [
@@ -1900,11 +1900,11 @@
       "Bing News RSS - Thermo Fisher backup"
     ],
     "related_urls": [
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Thermo Fisher Scientific Launches GENESYS™ G5 Suite of Spectrophotometers, Combining UV ...",
-    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fwww.azom.com%2fnews.aspx%3fnewsID%3d65621&c=11914568117397129494&mkt=ja-jp",
     "published": "2026-07-15",
     "summary": "Thermo Fisher Scientific has launched the Thermo Scientific™GENESYS™ G5 series of Visible and UV-Visible spectrophotometers, designed to help laboratories standardize workflows, simplify routine ...",
     "ai_summary": "",
@@ -2230,7 +2230,7 @@
     "tier": "daily",
     "category": "regulatory",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "公司池命中 +30: MilliporeSigma",
       "业务动作命中: FDA",
@@ -3689,7 +3689,7 @@
     "tier": "archive",
     "category": "product",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "公司池命中 +30: MilliporeSigma",
       "高价值分类加成 +10: product"
@@ -3995,7 +3995,7 @@
     ],
     "related_urls": [
       "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZDRPY2lVcEI4X3Jrbkl3OXlzcEpFVFFkbXdaQTdiSWtfNlppd3NLcTNyMnVsZ2N1QlBGOGx3eFdPbkhEUWtTZHlydFlsSUN2RUxVSlBMa3R5Yk1ZSFNpUy1aa0dqTkI5YW9Jc2hnQkJmbEJ4VmdPNm1xaFNJOWRPRHpZYndCWU5OQzlZcUVzRWk3TVhOM1YyNG8zX2lSNlVaQWtTV1VZMi1JaHI0M2FiNU9IQjM2Qi1vbndDQUtWRXBmcDVwVUljSQ?oc=5",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.chemistryworld.com%2fnews%2fthermo-fisher-antibody-data-manipulation-is-a-breach-of-trust-say-researchers%2f4023854.article&c=9625489063551667940&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fwww.chemistryworld.com%2fnews%2fthermo-fisher-antibody-data-manipulation-is-a-breach-of-trust-say-researchers%2f4023854.article&c=9625489063551667940&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Thermo Fisher antibody data manipulation is a breach of trust, say researchers - Chemistry World",
@@ -7541,7 +7541,7 @@
     "tier": "archive",
     "category": "finance",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "公司池命中 +30: MilliporeSigma"
     ],
@@ -8017,7 +8017,7 @@
     ],
     "related_urls": [
       "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNkI5bDA1VW9QcXBPYk5sMFZYVTRFX3NkUXFkVko5NG11V3FERDJRUlhDWlJMWHJSZ1IwUFpZSzFxcWkwSG9CZ1JkenRXZjhFblJVTE93dVZGaFB0YU56MTFINHctdFp6eGRlMlpLbGlZWkhuUy14aWU1MlZIZ3hNZG1YbkRnQnBBd082Qk9aMU1rVTBfRkFwUjZhNV9KWFRGUnQ4cHpJX1FDZw?oc=5",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fexploring-analyst-estimates-for-thermo-fisher-tmo-q2-earnings-beyond-revenue-and-eps%2far-AA28idHM&c=13383572764225284357&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fexploring-analyst-estimates-for-thermo-fisher-tmo-q2-earnings-beyond-revenue-and-eps%2far-AA28idHM&c=13383572764225284357&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Exploring Analyst Estimates for Thermo Fisher (TMO) Q2 Earnings, Beyond Revenue and EPS - Yahoo Finance",
@@ -8131,7 +8131,7 @@
     ],
     "related_urls": [
       "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQXhlZGxsSG9BMzRSMVNYZkxrb3ljQUpLRG5JSENDRmRlbVphbzRHVFBBUURGb0prOTN1eFFoNlFYN0Q2bVkzRlV3YVRaTWtSSmdDOGFMc2wyb21fRmN3WThkaWFGeHVGdFZTOG56MzJIRkRqMFBKeXJVSnhSYzg2Mm1ydWxPMFlJcnc3X0syaFI?oc=5",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-tmo-wins-fbi-231157629.html&c=17128272309256381214&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-tmo-wins-fbi-231157629.html&c=17128272309256381214&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Thermo Fisher (TMO) Wins FBI Approval For Rapid DNA Tool In Crime Investigations - Yahoo Finance",
@@ -20571,7 +20571,7 @@
     "tier": "archive",
     "category": "company",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "公司池命中 +30: Merck KGaA",
       "业务动作命中: acquisition",
@@ -21461,7 +21461,7 @@
     "tier": "archive",
     "category": "company",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "未命中强规则，默认归档"
     ],
@@ -21498,7 +21498,7 @@
     "tier": "archive",
     "category": "company",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "公司池命中 +30: Merck KGaA",
       "噪音词命中: stock"
@@ -21650,7 +21650,7 @@
     "tier": "archive",
     "category": "company",
     "signal_type": "news",
-    "is_new": true,
+    "is_new": false,
     "reasons": [
       "公司池命中 +30: Sartorius",
       "噪音词命中: stock"
@@ -21761,7 +21761,7 @@
     ],
     "related_urls": [
       "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeWlkT2FTdmJsdFFGZUZPLXNOOWU1WEV4eXJuYlEyUWVvMzhYZGJhNlp5VDB1ejVvajdyWnJlenNuUDE5U1gteVZIRDNsd3UwbjZjT09zNUxCYjFyV0x6RFhlTFM0TmdraERHLUdYU2hrWHBvNXBqa0VwZUxQZWJxQmJBc0lrV3l6aHRhVnh4V2QwZGR0VlJR?oc=5",
-      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f290322f240ed9d1169cbff606cdf&url=https%3a%2f%2ffinance.yahoo.com%2fmarkets%2fstocks%2farticles%2fthermo-fisher-tmo-stock-may-170756906.html&c=6814286823193124104&mkt=ja-jp"
+      "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a5f2b10233141f09a7b24173e0b3036&url=https%3a%2f%2ffinance.yahoo.com%2fmarkets%2fstocks%2farticles%2fthermo-fisher-tmo-stock-may-170756906.html&c=6814286823193124104&mkt=ja-jp"
     ],
     "source_trust": "aggregator",
     "title": "Thermo Fisher (TMO) Stock May Be Undervalued As Guidance Rises - Yahoo Finance",
