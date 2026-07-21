@@ -1,5 +1,14 @@
 {
-  "generated_at": "2026-07-21T01:59:19",
+  "date": "2026-07-21",
+  "summary": {
+    "new_candidates": 63,
+    "immediate": 1,
+    "daily": 62,
+    "archive": 476,
+    "errors": 0,
+    "companies": 2,
+    "sources": 32
+  },
   "category_mix": {
     "product": 78,
     "company": 246,
@@ -45,69 +54,5 @@
     "Kinki Bio - official seminar and ecosystem RSS": 3,
     "Shonan iPark - official news and event announcements": 10,
     "PubMed - ACROBiosystems research signals": 7
-  },
-  "signal_type_mix": {
-    "news": 456,
-    "video": 35,
-    "event": 41,
-    "research": 7
-  },
-  "companies": [
-    {
-      "id": "acro",
-      "display_name": "ACROBiosystems / 百普赛斯",
-      "markets": [
-        "global",
-        "japan",
-        "china"
-      ],
-      "strategic_topics": [
-        "ADC",
-        "antibody",
-        "bispecific",
-        "CD20",
-        "B7-H3",
-        "cell and gene therapy",
-        "CGT",
-        "GMP",
-        "organoid",
-        "HEK293",
-        "recombinant protein",
-        "assay kit",
-        "exosome",
-        "immuno-oncology",
-        "webinar",
-        "conference",
-        "exhibition",
-        "Japan",
-        "日本"
-      ]
-    },
-    {
-      "id": "thermo_fisher",
-      "display_name": "Thermo Fisher Scientific",
-      "markets": [
-        "global",
-        "japan",
-        "biopharma"
-      ],
-      "strategic_topics": [
-        "CDMO",
-        "clinical development",
-        "manufacturing",
-        "AI-enabled research",
-        "cell and gene therapy",
-        "CGT",
-        "GMP",
-        "companion diagnostic",
-        "Oncomine",
-        "bioproduction",
-        "analytical instruments",
-        "pharma services",
-        "clinical trials",
-        "Japan",
-        "日本"
-      ]
-    }
-  ]
+  }
 }
