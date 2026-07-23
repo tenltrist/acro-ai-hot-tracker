@@ -11397,5 +11397,851 @@
     "tier": "archive",
     "score": 36,
     "signal_type": "event"
+  },
+  "bee591b8bd23d9cf": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Human Chimeric Protein(Control-lytac-7-GFP) Protein, His,GFP Tag - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSi1kZWxjWjZ5TU4zZXFsSGFkUnVmMndCWWI2TVB4cGkwWUp1WTFyelN1RUVlWlF4U0pVTHM4V0p1NTJjelhHazdkQjVOVWt5dnhqT1JrUjc2MW83RFdDbjhBLXpaamZjN01ITHJudlFCYWlSTE1KUjAtMHBIak9Gc25UWTA2aW5HaWUwa0lZTlFERnlQeUhsMDZqTDRCbGRm?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "3653dcacc6bc7eae": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Geron Corporation Reports Inducement Grants Under Nasdaq Listing Rule 5635(c)(4)",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331684/35501/en/Geron-Corporation-Reports-Inducement-Grants-Under-Nasdaq-Listing-Rule-5635-c-4.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "b0684b52e1dfff2c": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Serenity Medical’s River Stent™ Demonstrates Sustained 4- to 5-Year Benefits in Patients with Idiopathic Intracranial Hypertension (IIH), Presented at SNIS Annual Meeting in Late-Breaking Session",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331670/0/en/Serenity-Medical-s-River-Stent-Demonstrates-Sustained-4-to-5-Year-Benefits-in-Patients-with-Idiopathic-Intracranial-Hypertension-IIH-Presented-at-SNIS-Annual-Meeting-in-Late-Breaki.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "f251ed8b8ddf466a": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Valneva publiera ses résultats financiers consolidés du premier semestre le 13 août 2026",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331572/0/fr/Valneva-publiera-ses-r%C3%A9sultats-financiers-consolid%C3%A9s-du-premier-semestre-le-13-ao%C3%BBt-2026.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "6eef2dab2ccaac6b": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Akari Therapeutics CEO Explains Why Growing Industry Demand for Next-Generation ADC Payloads Positions the Company at the Center of a Major Oncology Opportunity",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331364/0/en/Akari-Therapeutics-CEO-Explains-Why-Growing-Industry-Demand-for-Next-Generation-ADC-Payloads-Positions-the-Company-at-the-Center-of-a-Major-Oncology-Opportunity.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "c13eaa33e95668f7": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "New Analysis of Over 50 Studies Showed that All the Non-Prescription CBD Products Researched Fell Short of Therapeutic Efficacy — Reinforcing the Case for Artelo's Optimized ART12.11 CBD Composition",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331363/0/en/New-Analysis-of-Over-50-Studies-Showed-that-All-the-Non-Prescription-CBD-Products-Researched-Fell-Short-of-Therapeutic-Efficacy-Reinforcing-the-Case-for-Artelo-s-Optimized-ART12-11.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "cbf8044371830c13": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "LB Pharmaceuticals Announces Accelerated Timing of Topline Results from the Phase 3 NOVA-2 Trial of LB-102 in Schizophrenia",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331267/0/en/LB-Pharmaceuticals-Announces-Accelerated-Timing-of-Topline-Results-from-the-Phase-3-NOVA-2-Trial-of-LB-102-in-Schizophrenia.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "500c74ff1ded6908": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Unnatural Products Appoints Finance Leader Neera Ravindran, M.D., M.B.A., as Chief Financial Officer",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331272/0/en/Unnatural-Products-Appoints-Finance-Leader-Neera-Ravindran-M-D-M-B-A-as-Chief-Financial-Officer.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 14,
+    "signal_type": "news"
+  },
+  "bdb4563816a35f64": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Veraify Launches Groundbreaking AI-Native Security Platform Built for the AI Workforce Era",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331291/0/en/Veraify-Launches-Groundbreaking-AI-Native-Security-Platform-Built-for-the-AI-Workforce-Era.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "888cf22b7c3d7298": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Healx Announces First Patient Dosed in Phase 1/2 Trial to Evaluate the Effect of HLX-4310 on Metastatic Recurrence and Progression in Sarcomas with a Focus on Osteosarcoma",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331213/0/en/Healx-Announces-First-Patient-Dosed-in-Phase-1-2-Trial-to-Evaluate-the-Effect-of-HLX-4310-on-Metastatic-Recurrence-and-Progression-in-Sarcomas-with-a-Focus-on-Osteosarcoma.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "a641bfd61246afe2": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Avalo Therapeutics to Participate in the BTIG Biotechnology Conference",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331224/0/en/Avalo-Therapeutics-to-Participate-in-the-BTIG-Biotechnology-Conference.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "8ff5fdc31820a9f5": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Tiziana Life Sciences Announces Purchase of Shares by Executive Chairman",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331233/0/en/Tiziana-Life-Sciences-Announces-Purchase-of-Shares-by-Executive-Chairman.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 14,
+    "signal_type": "news"
+  },
+  "49d0a87f850f7352": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Greenwich LifeSciences Announces Approval to Expand FLAMINGO-01 into the United Kingdom",
+    "url": "https://www.globenewswire.com/news-release/2026/07/22/3331163/0/en/Greenwich-LifeSciences-Announces-Approval-to-Expand-FLAMINGO-01-into-the-United-Kingdom.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "8afcc33e7ebc8d2f": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Webinar: From Clinical to Commercial: Talent Strategies for Biopharma Growth",
+    "url": "https://www.biospace.com/events/webinar-from-clinical-to-commercial-talent-strategies-for-biopharma-growth",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "9fca50cc54f5286b": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Summit and Akeso sharpen case for ivonescimab with new Western data",
+    "url": "https://www.biospace.com/drug-development/summit-and-akeso-sharpen-case-for-ivonescimab-with-new-western-data",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "news"
+  },
+  "21db0b133dd704ca": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Arrowhead puts pressure on Ionis with positive data for triglyceride lowering drug",
+    "url": "https://www.biospace.com/drug-development/arrowhead-puts-pressure-on-ionis-with-positive-data-for-triglyceride-lowering-drug",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "5e0edfdb15dab78f": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Repligen strikes $1.5B BioLife buyout to bag cell therapy product pharmas rely on",
+    "url": "https://www.biospace.com/deals/repligen-strikes-1-5b-biolife-buyout-to-bag-cell-therapy-product-pharmas-rely-on",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "496ca03b77f7dbba": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "6 companies hiring in Cambridge now",
+    "url": "https://www.biospace.com/job-trends/6-companies-hiring-in-cambridge-now",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "d463835ea51ca484": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "US ‘eroding’ lead in rare diseases a matter of national security: Report",
+    "url": "https://www.biospace.com/policy/us-eroding-lead-in-rare-diseases-a-matter-of-national-security-report",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "a9f89537af3cc463": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Novartis scraps mid-stage radiopharma asset as Pluvicto soars",
+    "url": "https://www.biospace.com/business/novartis-scraps-mid-stage-radiopharma-asset-as-pluvicto-soars",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "95caca8361f3c54e": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Q2 earnings underway, FDA’s CRL kerfuffle, IPOs full speed ahead in H2",
+    "url": "https://www.biospace.com/drug-development/q2-earnings-underway-fdas-crl-kerfuffle-ipos-full-speed-ahead-in-h2",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "ccb4a121633b993b": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "From Big Pharma to specialty: why moving closer to the patient changes everything",
+    "url": "https://www.biospace.com/career-advice/opinion-why-moving-from-big-pharma-to-specialty-changes-everything",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "f87579bf2a43e389": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "AI data becomes sticking point in biopharma dealmaking",
+    "url": "https://www.biospace.com/business/ai-data-becomes-sticking-point-in-biopharma-dealmaking",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "a00afcf44d0eb352": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Wainua flop narrows AstraZeneca’s path to $80B goal ahead of high-risk readouts",
+    "url": "https://www.biospace.com/business/wainua-flop-narrows-astrazenecas-path-to-80b-goal-ahead-of-high-risk-readouts",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "ce56630e39a24aec": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "NIH joins Trump’s $5B AI mission with biomedical research push",
+    "url": "https://www.fiercebiotech.com/research/hhs-joins-trumps-artificial-intelligence-genesis-mission",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "f01a8b8fa2204ae5": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "House passes bill directing FDA to update animal testing rules",
+    "url": "https://www.fiercebiotech.com/cro/us-house-passes-bill-direct-fda-update-clinical-trial-regulations-and-allow-non-animal-testing",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "466a447cc76773ca": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Royalty Pharma pens $425M deal for slice of sales on AstraZeneca’s ATTR drug",
+    "url": "https://www.fiercebiotech.com/biotech/royalty-pharma-pens-425m-deal-slice-sales-astrazenecas-attr-drug",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "6a57ee7fd0755f44": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Biotech industry leaders file brief backing FDA against ‘malicious’ mifepristone challenge",
+    "url": "https://www.fiercebiotech.com/biotech/biotech-industry-leaders-file-brief-backing-fda-against-malicious-mifepristone-challenge",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "b337aee48176a45b": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Crystalys mines $130M series B to push gout drug through phase 3",
+    "url": "https://www.fiercebiotech.com/biotech/crystalys-mines-130m-series-b-round-de-risked-gout-therapy",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "68478f0e5849aa80": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Celldex ends skin disease program after failing phase 2 test",
+    "url": "https://www.fiercebiotech.com/biotech/celldex-ends-work-skin-disease-after-failing-phase-2-test",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "6d59ad6b558bed49": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "‘We’re moving quickly’: Startup bags rare disease drug as Thiel-backed CEO eyes $50M fundraise",
+    "url": "https://www.fiercebiotech.com/biotech/rare-disease-startup-inks-31m-deal-chinese-drug-thiel-backed-ceo-eyes-50m-fundraise",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "eb2c52b9b46102c4": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "GSK secures first lung cancer approval as FDA clears Jideytro in quick payoff from Nuvalent deal",
+    "url": "https://www.fiercepharma.com/pharma/gsk-secures-first-ever-lung-cancer-fda-approval-jideytro-nuvalent-deal",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 43,
+    "signal_type": "news"
+  },
+  "a22e5954e9f99b2a": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "FDA calls out Sanofi emails for giving 'misleading impression' of Beyfortus use in RSV",
+    "url": "https://www.fiercepharma.com/marketing/fda-untitled-letter-calls-out-sanofi-emails-misleading-impression-beyfortus-indication",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "04c54bd356833a1f": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "What to Expect at PODD 2026",
+    "url": "https://www.fiercepharma.com/partner-content/what-expect-podd-2026-1",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "ffbedfa7140dcc09": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Trump floats countdown to 200% tariffs on generic drugs imported to US",
+    "url": "https://www.fiercepharma.com/pharma/trump-floats-countdown-200-tariff-rate-generic-drugs-imported-us",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "af941a1857ba5412": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Summit Therapeutics updates ivonescimab survival data ahead of FDA decision date",
+    "url": "https://www.fiercepharma.com/pharma/summit-therapeutics-updates-ivonescimab-survival-data-ahead-fda-decision-date",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "31f8b3cefe435938": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Look out Ionis, here comes Arrowhead with promising hypertriglyceridemia data",
+    "url": "https://www.fiercepharma.com/pharma/look-out-ionis-here-comes-rival-arrowhead-competitive-hypertriglyceridemia-data",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "d8c1b5512828d288": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Sanofi reprimanded for disparaging Pfizer’s RSV vaccine",
+    "url": "https://www.fiercepharma.com/marketing/sanofi-reprimanded-disparaging-pfizers-rsv-vaccine",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "96bd433c00cb7249": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Transmissible Cancer Discovered in Freshwater Fish",
+    "url": "https://www.genengnews.com/topics/cancer/transmissible-cancer-discovered-in-freshwater-fish",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "52eb08f68f6b57c7": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Transcripta Bio Raises $24M for AI-Driven Neurological Disease Therapies",
+    "url": "https://www.genengnews.com/topics/artificial-intelligence/transcripta-bio-raises-24m-for-ai-driven-neurological-disease-therapies",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "5c6bcdb9c0741e3d": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "AI Protein Engineering Model Designed for Biomanufacturing",
+    "url": "https://www.genengnews.com/topics/bioprocessing/ai-protein-engineering-model-designed-for-biomanufacturing",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "26d9ac711443ad85": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Cell-Therapy Manufacturers Get Creative on Checking Particulates",
+    "url": "https://www.genengnews.com/topics/bioprocessing/cell-therapy-manufacturers-get-creative-on-checking-particulates",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "f46ee0a2ebb93b38": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Scaling Cell and Gene Therapy Manufacturing",
+    "url": "https://www.genengnews.com/topics/bioprocessing/scaling-manufacturing-of-cell-and-gene-therapies",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "d9ed6092b40a969a": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Hybrid Single-Use and Stainless-Steel Plants the Greener Option",
+    "url": "https://www.genengnews.com/topics/bioprocessing/hybrid-single-use-and-stainless-steel-plants-the-greener-option",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "5d80a3bb7428c579": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Engitix Licenses Lonza’s Technology to Advance ADC Therapies",
+    "url": "https://www.genengnews.com/topics/bioprocessing/engitix-licenses-lonzas-technology-to-advance-adc-therapies",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "36133333af2b2f78": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Therapeutic Antibody Halts Prostate Tumor Growth and Metastasis - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY1QxQ0l3NEdGNzR0aDdzZ3JtWUpKR3d2LWM3UkpBZmNxUHd1RVNmeENZZVVUUzBJMDM1d29nbE4zdHpBRGM3N3RseDRoSWdCWllsWXZVRGlmVDJBUUFfRXVLQzhIY1I2TlhXSUV4eEVva29YWmFLY2hfV3ltWWpHMzNWdGN0UDhDazFJOHdwbEdtajBPV1BXQlhRNVFkaXBVY3FnX29icmZ3UVgzZUtYSUdqWDJzVm0tT1Y2ZXVTWUZkMU0?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "3ac087c792d6d9ad": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Patient-Derived Organoids: A Powerful Tool in Precision Oncology - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQLTlVcTQ5TXlCSHdnNlBjM0FrYTU1MjBhNnd5ZUdpUDNfdVFiWl96YThINmJuNzAyN1NmUGpjY3J5Z19Zbk12Mk5hSktDXzhfVzNtcXlOa2tGSVAxS2dtcTBObjJpX0wzZGl4VTRUUFROazNMRnh2bm5LcGhzZFphdHBjVXFrNjgwVUtnOWM3SERHWjZWQzloOG5VTkhDNE1XNWdCWXlUY2hocF82Z29zTFlnb3FocVdrUW1BRTM2QV95V0RqWXROc2J3?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "f824a1a53018bbc5": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Is an HIV cure possible? The future of HIV therapy",
+    "url": "https://www.labiotech.eu/in-depth/hiv-cure-research",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "1894d1a8c3e1578f": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "田辺ファーマ、ファンド傘下で再生着々…成熟製品や工場を売却、パイプラインに集中",
+    "url": "https://answers.and-pro.jp/pharmanews/32858",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "3ae5fb6c69b3c5a5": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "日本新薬、自社創製の「NS-025」を米社に導出／Axcelead DDP、社員メールに不正アクセス など｜製薬業界きょうのニュースまとめ読み（2026年7月22日）",
+    "url": "https://answers.and-pro.jp/pharmanews/32864",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "74c026630016fd7d": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "日医・松本会長 医療給付費対GDP比数値目標導入「到底容認できない」 骨太方針踏まえキャップ牽制",
+    "url": "/tabid55.html?artid=80589",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "c0ef274ea640de5b": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "日医 供給確保医薬品の原薬国産化や備蓄など安定供給強化へ予算確保を 27年度予算案概算要求で",
+    "url": "/tabid55.html?artid=80590",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "4dec2d73fbba635d": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "PhRMA・EFPIA Japanが骨太方針でコメント 官民協議会での高市首相発言の実効性と議論発展...",
+    "url": "/tabid55.html?artid=80587",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "13dda6b12976330c": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "アクセリードDDP 社員のメールアカウントに不正アクセス確認 個人情報含む機密情報が漏洩した可能性",
+    "url": "/tabid55.html?artid=80588",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "3ce8c76762f4fd02": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "ノボ 郡山工場でCO2排出量実質ゼロを達成 化石燃料の使用撤廃 アンモニアヒートポンプで環境負荷低減",
+    "url": "/tabid55.html?artid=80586",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "9bc61f8910597998": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "社保国民会議・実務者会議 つなぎの消費減税は与野党で隔たり 恒久減税や給付を求める野党は反対",
+    "url": "/tabid55.html?artid=80584",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "c28ecddda25ba4ec": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "日本の創薬の強みをどう生かすか、創薬エコシステムの戦略や課題を産官で議論 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lSE5pQzlISTRDbzlUbHpGM0NUdGVoN0EyNWwwcG1ZRVRkRHRyTlZEUFMtaVNsRzNPZDYtVnM0MGRlQ01IelNDNjR3dXFhZlZKWlRDbnBxYUN3TUNYQnExMGRsZ2pHdw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "7e3e28a366f90a76": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "“裁员潮”仍在加剧？开年第一个月，20家生物医药企业裁员 - ByDrug",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTVN3ellaejZnTTU2NGZKY3dqckdBZ3RiQjh0Wng2OXB0ZjBYWW1lWmlSbVpjXzBZaVEzYnNoNXV5ODdxSXpRWFNCRmVPUGR0dDZ2akhra210dUM4Y0dEUFlJS1VlbGZNSXMybloxb3BSQlVPWlVyME9FVWVobzZBLWRzeVhLdjQz?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "de7cec53c22a63f0": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "FDA再公布CRL，中国生物药出海如何闯过生产关？ - ByDrug",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9KVDZOdTVZNTJjN3JwbmZkSFRyczVzcy11RVhWY3NKZ0FlbW9oNzA5XzdrbUhhbTY0OFh1VGl0SWJkRVFBOEMwS3RoaGZrUC1zemx0eXVSd3ZKY01rNFdndG1uYmlFVHgzN2VxM3JfUXdYTmNrUU9iNWxlSkdhdw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "91be4db09d618590": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "New €25 Million BioReliance Testing Facility Opens at Merck KGaA Global Headquarters in Germany - Genetic Engineering and Biotechnology News",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "daily",
+    "score": 54,
+    "signal_type": "news"
+  },
+  "378c97cc35076b88": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Fighting Cancer Together - Sartorius",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYmFRQ2Z1b1AwbnVicWxlSWlmckxHb2xlZ3c4NGlZVXNlalNyMzhPWHltSFBJV083cmk1Sm9WVnB5SUZhd01PUndqYU9pYUpMZzVuM2dlekdXeV9EQWppa1ZsOFlWYmxzSHFaaHRIV2QxUkVyTVhZRzdpVVcwYm1CM0xRaTBxWmZ5RkVr?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "927906d12e96d83c": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Sartorius stock trades lower as margin pressure and biotech destocking shape outlook - Ad-hoc-news.de",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeUlEY09pTTZaNDVPQTJwbjZsNWMwR05aRlBNVTNFMmVNeWZ1a0E0Yk5kNGkzcWljWUNyLVc0TXV4aUpZNE1BSnNVeV83S1R1NkRVa083d25BNG52ZFNXalNGdjc1WnZRZ2lBVFBFTmRKR1JiSlVWOXl6dENmbHBxQjc4QW04WW82XzJkM0FxdGVHaUQ2Nmk0N0VUNmhsUVFkaG5RbG15enBNMmJNa0t3Z09jZHQ4TGhjVmpnd3RsVU9TRUxFVmRqQQ?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "6ba2e38327ad9df0": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Introducing the Scios 3 FIB-SEM for advanced materials characterization - Thermo Fisher Scientific",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSUtuald5dVA3b0ItT2dkTzMxa1hIdXFoSU9fVXZOOFNkWnljQi05MDZvUG5Bc2lSbnpXdGVnRjlDLXZUbXpHeTczSDM3VEd1XzFWckhVWWR3bnhPTGVVWHk1TlBqRldRMm1SX19pbjhqeG9FNXprS1d4Ym9JSzBBMA?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "fd71ba44c0268486": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Thermo Fisher Scientific (TMO) Wins Kapiglucagon Contract, Is The Stock Still Undervalued? - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdVJhNVhKbGpWQ1loVEl6UXJnbDNoWXRmRkxXREllelN5bGdvX3BiblZEZG9ySXR4TW5zSXpBOE85R3c2aGN1VjhWLVFKNFVoUHQ3YUxhRU84alMyd1RsNzRYUU9rXzFVSzVSOEM2ZkY5NE02SEtlVGJxYkFsU01admRpLXR1ekZEdXNheGQ4YUV2QUdaWGtKdkFvdTJMWU9BMnlGTHNDaGU2V2g3YXJwQUxKMERnbTJ3bTVwSVAtMHYtN0ZQQkR0dlVIVjN5Wm5UcUtQZGQzeXF5TG41WmVUb1lLRnVkZmtlZ2g40gHwAUFVX3lxTE1xYW9vWUgyOWFGYWExQVNCVFo4ZlJwSVVZZ29lQ245UDBqNzZCcmY1Y19xN1BmbTJTc1FjVVRJOVlLNk45SmVNTGpDZ01GOE1VR3Jkd2R4TXN2c1RwWWl4bUdEbHBRWlBabnlvUGZDQ096eVh0THp5a1ZwWk0tT29Mb3hyZHp4Wlo2U1BUYjdjX1lzamtleWhZcklXUTdWN1FwU01YRXRqZWRoY1NKNnZfSXNrbEM0bV8xWjJRTWM2RExJRVdlRGxxcE9DdGprZWs5SXdwcUpaWjVRN1g1dHAyeVRGQjNGaFhSWTBUbmlOeg?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "0dd7c53ed73ae683": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "What Makes Thermo Fisher Scientific (TMO) an Attractive Long-Term Bet? - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVBvdlJuMnJvSDZrUEVfZnRRcmVsY2tjTlBZY3lsejdMRS1rWnNSV2lFTE92NS04eXBXOFVWT01UNVFwclgzSDZBemJtS1NpdEFaWVhzX24yLXVoNFN5cUtRLXJTZy1YOHpfMDlnSVNRQWR0UXlRcDVmeTZldWNuekw4TktNOUdvajdveHRGcDEtYVFpcHY5NmtDdlFTdXhk?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "f073110b92b01f60": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Thermo Fisher to Support ImmuPharma’s Kapiglucagon Program - Contract Pharma",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQS2dvWHViNzNQQlFMeGtrc3hkRmxrZ0ptNV9GWDFrZVZKdVBPTDl5SlFvUnE5ejd6azFYcUZWX2VhLUJnVk5IaEhQZ25XWVFhQUp3Y0FhRW0tNkJvWnhRTldqb0RGT2VTemRQalM2SnJUWXdqanRmZVcyZXQtdWJMaXZmclF6amZLUXZOSmxDRUxtbjhINWFwSXpTMjlEMTl6REdPVWFn?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "53438c69dbaa57e6": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Thermo Fisher Scientific (TMO) Set to Report Q2 Earnings with St - GuruFocus",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSHZJU1dSemZiZ1JYR2xMa2ZsbW15ZmtNU0xWSVJKQUdaQ1YtRC03OTQxYjJfWHN0d0dRRkd6eXF2dDNVVDhNVDJBRGF4akZ4M1BWb3BoWnJHNnVyR1QyVTJPZ2pYYVhGWEdzaDNhSzhPbmc0U1ViT3FfZkFjSEU5VERVVG4xZVNXX3VQUnNvbGpOa2ZKZWZkWGlvTFB4YTQwaXJ3S29leklyUTlsdEpwUVoxbFpiRjFqMFE?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "dd8c90d4816f89b2": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Immupharma Selects Thermo Fisher Scientific As Drug Product CDMO For Kapiglucagon Program - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxObjZGdjVGZ0thZklzQ28yNHhsTTZESlg2cnI4WW9kY0JZNGFDVVNlNW54alp3RGtXVEVlZkY3S3N4Y01FSVNqbFNNZ19ZcTdyZklxZTQ2cDBuYUd2VjM3dndIOVBoUUV4OVZGUnhsRk1OMHF0bnJUV1ZUbi13d0NwTmtGMHl5Y2tiYktjc3FObU53MjUzd1lsR2d2MDlhM3piY3Z3MWhCU3c1ZE9lUVBZb19CR3U3NmdUempDcUtXOEpmRkhkRVhtcExTOEl2RHdJZVFnQXlOS2diNWhMaDkxdExNeElESXZTcHA4aTJITHg?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "fe7e8ca7d8ed8d63": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Earnings To Watch: Thermo Fisher (TMO) Reports Q2 Results Tomorrow - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYjhuQ285MzA3UkxkV2VpN0w1T2NTUk11cE1pV2V0cE52WHNIWlRGV0ZJUDhpY0g4UEN5Yl9OSnJKV0VLakRnb2h4b0lVb2JZd1djeUNhR1hiY0VCSUFvaXc5QTNLWVF3RGtOaFRlU09YdmE4UWdUODdMZ1BybFp1T1R4bDFfTS1LNWFySUpTQ2xPRFYzYmFkOXc1aEp0QQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "df3ee05a300e6a30": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "ImmuPharma appoints Thermo Fisher for drug production - Share Talk",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQM29FRU5mcnRmNlpGSlJDb3dqdWNxSXVWY1FtQ0ZNZmZMUlQ4RUVJSmY4VmRFa1FpbEx6U3VreW9icEl0WnFyenQyNkk3cTgzUnZjbUlPanFqUU96Qjg2RHJVX0s0ZHlLV1ZmbDZMVllFN0plTXhnV1FsbVlJZ3BHT0dOWGx3RC1N?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f16b856ecfbf97a5": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "ImmuPharma : selects Thermo Fisher Scientific drug product CDMO for Kapiglucagon program - marketscreener.com",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSmxmdnFQQVYySnNMOGc1RVIwSWtTZVdqRmV1R2pHU1pwRWthMUh5THd5QmpqRFJBNFVaT0NCYk96YmZtU01HREY0UV9yd2dJbUNicG5VaU8yM0Q3R2g0VllzRGdDVVduSm5ORTIyV3duOFc3cHQ2Q25SVEpEX1VxUWlUd0ozU25FSzBLMnh4R01xdE5SR0pueHNMdjNEMzVGZ2tKQTNOU05kZ2psT3R6Z0c0TVFKN25yempWeVNxTTdlSlBDbXJ0SFRrZTdqVVhqZkpGbmdB?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "77ebdfccac3b9f1e": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "ImmuPharma picks Thermo Fisher to manufacture diabetes drug candidate - Yahoo Finance UK",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSlVYTmN4Q2Q4alRIcWpoYVNmel85ZW8tZndCUmpfdDlkQTZoYmNuY3dfTDlnZU5iWHhxWFFya3djbU8xLUg1YzgwZTNWeWNEdy16d2pLS2dFWW1vVHpDczZwSjlOOERpNi16Z0ltdnVvczBaRnBheUswNUhlYkY2cVdzYWJkeGR4Yk5lX3dZR05TanFnb1E?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "6b06dc34171d668d": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "ImmuPharma appoints Thermo Fisher to produce di... - Pluang",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdVNFbmh2dXdNcWZKSVdBVmxmNEh1aTloel9kN3d1d2dqSjAxQlJPVXdHMnl5Z3FXUHVUUjBEd082TDhLN0lZZzNTaTF1Ym9pZ3BiLXpIdDMxY2dlN3JEMmpwampBaWpuWWxKSF9sVWVfUTFhdEhqbFVOSFhGaWZyZUd0Z3lQcHdsTGlYeEl1NXg?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ffb07a553945ffce": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "サーモフィッシャー株、通期EPSガイダンス上方修正も52週高値から31％下落。何が起きたか - TIKR.com",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQW8wQUE3dnBVN1NjSlVOTTBJblRxaGRDWFktZUhfemx5VE1UVHJ0UnBlMkk2SjFuekRkN3VTcG1ZNnJfRk5FQ1U5R1R6VjlSS0JMdjhHWjQzTUZtZHFtQzJCb3NNQUZIT3pSVnkyVktJaDJQN3JGZE50SHNsN1VsWi1EaTEybWdxVFpGMGxuUVk4SGI5M0ItdHVTOXhnZnpFRWlVWlNRWjFoLTVoUDA5UThNWnFwN3NZNEMxS0F6NlZGaDFpeDBiamoxMnNYdUc3Rml3?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "24084d38c96a05d0": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a6176f8e8a647f98ae39bbbc90eeb27&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fmoney%2Fgeneral%2Fthermo-fisher-arcturus-partner-on-phase-iii-arct-032-cystic-fibrosis-trial%2Far-AA279qn4&c=8304642118173661663&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 62,
+    "signal_type": "news"
+  },
+  "d1b73e834d31ceac": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "Promotion: elevate your gene expression research",
+    "url": "https://www.youtube.com/watch?v=O9ggWrfNyVU",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 35,
+    "signal_type": "video"
+  },
+  "f58de9722c471dd2": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "会社の未来を守るために 今から知っておきたい「事業継承」の話",
+    "url": "https://www.link-j.org/member_event/article-53258.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "717db9f6a8565d45": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "無料セミナー ～ケーススタディで理解する～ 臨床試験 統計解析",
+    "url": "https://www.link-j.org/member_event/article-53190.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "08b3732dbd99a809": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "【7/29開催】産婦人科医が語る、今知っておきたい女性の健康と政策・経営課題 ～自治体・企業・社会で取り組むヘルスケア支援～",
+    "url": "https://www.link-j.org/member_event/article-53121.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "event"
+  },
+  "b5de437d4037c7e8": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "東北メディカル・メガバンク機構シンポジウム「共創するバイオバンクへ」を開催します（7/29）",
+    "url": "https://www.link-j.org/member_event/article-53097.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "event"
+  },
+  "5b6778d5e273a140": {
+    "first_seen": "2026-07-23T02:06:28",
+    "title": "医工連携セミナー｜医療機器開発におけるユーザビリティエンジニアリング ーヒューマンエラーを防ぐために押さえるべきポイントー",
+    "url": "https://www.link-j.org/member_event/article-52991.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 42,
+    "signal_type": "event"
   }
 }
