@@ -13639,5 +13639,1243 @@
     "tier": "archive",
     "score": 22,
     "signal_type": "event"
+  },
+  "48903b214357eabe": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: immune checkpoints",
+    "url": "https://www.acrobiosystems.com/category/solutions/immune-checkpoints",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "c12c356246087fe8": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: beta 2 microglobulin human b2m h8213",
+    "url": "https://www.acrobiosystems.com/products/protein/beta-2-microglobulin-human-b2m-h8213",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "066997153ed29a31": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: cadherin 6 human ca6 h5254",
+    "url": "https://www.acrobiosystems.com/products/protein/cadherin-6-human-ca6-h5254",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "fe1746ea67c39811": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: cd30 mouse cd0 m5253",
+    "url": "https://www.acrobiosystems.com/products/protein/cd30-mouse-cd0-m5253",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "5defad19e400ab79": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: ephrin a4 mouse ea4 m5253",
+    "url": "https://www.acrobiosystems.com/products/protein/ephrin-a4-mouse-ea4-m5253",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "6a5f43d6331942f4": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: insulin r human inr h52h3",
+    "url": "https://www.acrobiosystems.com/products/protein/insulin-r-human-inr-h52h3",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "9244a89633d6cbdf": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: psca human psa hp2h3",
+    "url": "https://www.acrobiosystems.com/products/protein/psca-human-psa-hp2h3",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "067171ab7924ed77": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: psca human psa ha2h3",
+    "url": "https://www.acrobiosystems.com/products/protein/psca-human-psa-ha2h3",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "979ed89e6f3d812b": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: ccr8 human cc8 h52d3",
+    "url": "https://www.acrobiosystems.com/products/protein/ccr8-human-cc8-h52d3",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "d0b499d87f3fef8e": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: steap1 human st1 h52p3",
+    "url": "https://www.acrobiosystems.com/products/protein/steap1-human-st1-h52p3",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "8065e34a8710af09": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: igg control mouse dnp dm487",
+    "url": "https://www.acrobiosystems.com/products/antibody/igg-control-mouse-dnp-dm487",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 62,
+    "signal_type": "news"
+  },
+  "96bf6ed73848e955": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: kanamycin res a132",
+    "url": "https://www.acrobiosystems.com/products/kits/kanamycin-res-a132",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "a01dd4867166e34a": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACRO new product or solution page: cathepsin v human cav h52h3",
+    "url": "https://www.acrobiosystems.com/products/protein/cathepsin-v-human-cav-h52h3",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "bd19f7291e877308": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Camelid VHH - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9UbV9weWhoc1lFdkJnZllENVRMa2tfY2huYTJzc2ZDT191WW5PVEpWRUQzbEpEeVZER1o3Y3pxekc0YzdtZV9iTE5KNkpPNjVwakxFN1o4dVZsZlpuSG5oVzRHaXU3WnZvTkk4VExWZmQwQjg?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "482422e57e3687b9": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "From the Floor at ISCT 2025 - RegMedNet",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9FRzBhMjd2MlRQY05wMTJkb240ekdHRUYwUjNLT2Zncl9hNllBQzdyUlIwZk8xWGtxMU16UFZDdUh6cDZadXhlWFVKYWdKNDVHU0lEdC1hUTNMeWl6bG5KVkVEbjI?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "0664e0626a5a2d9d": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Launches Thermo Scientific™ InstaFlux™ to Help Food Microbiology Labs Simplify Workflows in Pathogen and Environmental Testing - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQR3VUQzg3ejBNMkNmV1d5VmQxbWFwTFJNcXpRNTVrLXYwVVlBRDdYSGdFRHRNOHZHS0xodDVNN3Z1YV9XTWhycHRiaTdlUjF0VHREU1F6UkpzNTBGRWVKczRvcWtScVVLVzRSUzZRSFFnSGpRbEd5SzRxdTNISTFfU2JubE9LNl9DV1Y2VHJjc0t2VDBTQmpjU2NtOVc1MXBheEhDODFQOFAzV09rdkJCNmxscFlqby1MNWx4VXh4cXpXZGd5NzlyZkY2TlRIMGZYWVZyci1seXUzOWF0NTFtdVQ3aFFSZ1kzNklENDhZS3ZTLWNnNkczYnA2dUkzVXBpRnlqRVhHN2JfMng1UFZCdEY3a0JKSDRVTXUxeFNsUkJzMmRfSGVBRGdvUWZlWEU?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 62,
+    "signal_type": "news"
+  },
+  "94fc59c383d9a80b": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Expands Neurodegeneration Research Capabilities with Launch of Olink® Target 48 Neurodegeneration Panel - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNRGZZM2kzNy1ab0M3YXNaeHFUc0RBdTEzdU5VOFNqeTVHb3ljS1JXaG1pV3RkTW5udk9SX1pHcnJxYTN4NHdxNDJ0X2szX3lFRWN2N1MyWTc3bHptbWtJSG9RUjNUUlQ3SG1QQnVHNEJibGtPSnRXbWplZ1BnOTNjOWFyVDZTUGlXVi1oN01mSzU4YkRweVZ2Q0JuZm9wYnUwT1czckJzY0dhc200UkF3UnFVdEVUUTZubmFlUk9hNHJGNndfVlhxZGtZR2RQV2tvTXJNZkM2cDYxQkk1RFRzazJIeWJYOG1NdUpxalQzNERsNVZZSHdRUGRiTXdQeHlOX3FLalR0SnhwbGdMejd0dWZB?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b9b3216f197a8cda": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Opens East Coast Collaboration Center at BioLabs for Advanced Therapeutics to Help Accelerate Cell and Gene Therapy Development - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPOElZMlJ1WXdWSVJDZTNVR1dYTmdDS2JUX3RoWHdVUENXanJFc1J4WTA0M3hrRkdfQ2tXNnJUVFY1YXFfQ1ItR3VQY1VuendTdkpZTjR0ZFotZnBNNUM0UDRqbXZvNmFacUkxLVg5SFNoNlFrUFd0bUNCNmtmUThOMFdDUWYxY29SUndCQ2dKdUlEUGprNnpXMVBQVzVDZjFHaElwcUNxWUVNczQ3NGxDNFdNX05XeXdSaUVxcEl3Q2xCdkV3RTBkNDRhSlVBOUIxUFAtZE9jYUFUcFRkWmhkY1pIR3ZvZUg2YjV3azdVc09kanJ0OGFTN2Z1eTc3eEpVa25fZkp5Zkl0VndFREFoVGota21GSGFhNUUtbWp5TlJENXZDWDVPRHVGYnlGa3U5dnQ4?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "adca9ff31a6206fc": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Biocytogen Enters into Agreement with Merck, KGaA, Darmstadt, Germany to Advance Antibody-Conjugated Lipid-Based Delivery Solutions - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQUnR4eWV5U1NYbGNCcFE2ckFpNU1CUkRVanR4ZUtxSTA3Q0ZRdlhWR2lENEhOTWdJTThLVDkzWU5RUkVsOVEzdGhIc3BVMzBYOUlFdi00bi1jaV9KampMakV5cjc5ZWVvZWwycW9kM1A2U21zNmNkYXBxOEZkRUxIR1dmRnhkX1dLTmFTTXlVV3puUjQtWVp4YjdXYVc1Zi0xTDNYODA3WFVzeDhwS3RydGt1cGprN2R4cVNob2FuMmsyazhTMUtuR1BMcGU3bVFlbmNrUFRNZ3Q3RC1mWmY5Y25YNnFIWENyV1dSYXVCODB1dzdNaXlVc1hLcDNUVUpxZGxwTURoV01aUk1PTVNvNXptTQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "a3eb43de25125429": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Pelthos Therapeutics Announces 2026 Annual Meeting of Stockholders",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3333118/0/en/Pelthos-Therapeutics-Announces-2026-Annual-Meeting-of-Stockholders.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "4d4d8dc96c2b1917": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "NovaBridge Biosciences to Hold Annual General Meeting on September 8, 2026",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3333120/0/en/NovaBridge-Biosciences-to-Hold-Annual-General-Meeting-on-September-8-2026.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "ab629b1325a9d284": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Dyne Therapeutics Reports Inducement Grants Under Nasdaq Listing Rule 5635(c)(4)",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3333093/0/en/Dyne-Therapeutics-Reports-Inducement-Grants-Under-Nasdaq-Listing-Rule-5635-c-4.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "e909e629aca45fa4": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "VERAXA Biotech Shareholders Approve All Proposals at Extraordinary General Meeting, Strengthening Strategic Flexibility for Future Growth",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3333095/0/en/VERAXA-Biotech-Shareholders-Approve-All-Proposals-at-Extraordinary-General-Meeting-Strengthening-Strategic-Flexibility-for-Future-Growth.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "0f5c44004bed7b71": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Immutep Announces Abstract Accepted for Presentation at the European Society for Medical Oncology (ESMO) Congress 2026",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3332815/0/en/Immutep-Announces-Abstract-Accepted-for-Presentation-at-the-European-Society-for-Medical-Oncology-ESMO-Congress-2026.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "9b987b3f154ab33f": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "BiomX Subsidiary Zorronet Expands European Presence Through Two Strategic Collaborations in Europe",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3332798/0/en/BiomX-Subsidiary-Zorronet-Expands-European-Presence-Through-Two-Strategic-Collaborations-in-Europe.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "7e64f0b5d735a0ed": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Dyadic Announces Continued Listing on the Nasdaq Capital Market",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3332791/0/en/Dyadic-Announces-Continued-Listing-on-the-Nasdaq-Capital-Market.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "14708e03984432e1": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Asimov Joins the Genesis Mission, Using Boston University's NSF-Backed Cloud Lab to Power Lab-in-the-Loop AI Models",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3332776/0/en/Asimov-Joins-the-Genesis-Mission-Using-Boston-University-s-NSF-Backed-Cloud-Lab-to-Power-Lab-in-the-Loop-AI-Models.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 14,
+    "signal_type": "news"
+  },
+  "23e3113b2645e344": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Serina Therapeutics to Participate in the BTIG Virtual Biotechnology Conference",
+    "url": "https://www.globenewswire.com/news-release/2026/07/24/3332737/0/en/Serina-Therapeutics-to-Participate-in-the-BTIG-Virtual-Biotechnology-Conference.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "e43f11a1bcff2ab9": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sanofi’s $1.4B Kymab bet falters again as atopic dermatitis trials scrapped",
+    "url": "https://www.biospace.com/drug-development/sanofis-1-4b-kymab-bet-falters-again-as-atopic-dermatitis-trials-scrapped",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "80528d410b059913": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Scribe reels in nearly $129M in rare early-stage IPO for a gene editing biotech",
+    "url": "https://www.biospace.com/business/early-stage-scribe-wants-to-write-ipo-story-even-as-investors-favor-derisked-portfolios",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "ab437fb034b8a2e4": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Amgen deploys patients to defend troubled Tavneos in FDA hearing request",
+    "url": "https://www.biospace.com/business/amgen-deploys-patients-to-defend-troubled-tavneos-in-fda-hearing-request",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "b9c451c2cfea070e": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Lilly’s $3.8B psychedelics bet won’t open the M&A floodgates",
+    "url": "https://www.biospace.com/deals/lillys-3-8b-psychedelics-bet-wont-open-the-m-a-floodgates",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "04f6ec8d3b4faf90": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Summit has less than a year of cash runway left as PD-1/VEGF verdict nears",
+    "url": "https://www.biospace.com/business/summit-has-less-than-a-year-of-cash-runway-left-as-pd-1-vegf-verdict-nears",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "f6e6af9159b3add2": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Roche cans one Carmot obesity asset as another shows best-in-class potential",
+    "url": "https://www.biospace.com/business/roche-cans-one-carmot-obesity-asset-as-another-shows-best-in-class-potential",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "07b4427b32476566": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Amgen sheds around 40 staffers amid continuing struggles",
+    "url": "https://www.fiercebiotech.com/biotech/amgen-sheds-around-40-staffers-struggles-pile-tavneos-pipeline",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "dafb398ac00f2e7e": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Study of Yescarta patients reveals genetic red flags for CAR-T therapy side effects",
+    "url": "https://www.fiercebiotech.com/research/study-yescarta-patients-reveals-genetic-red-flags-car-t-therapy-side-effects",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "42f7518ad84616c0": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Merck stages expanded access to monthly HIV PrEP pill ahead of approval",
+    "url": "https://www.fiercebiotech.com/pharma/merck-prepares-expanded-access-alimatravir-monthly-hiv-prep-pill-ahead-approval",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "70b30c480dd7dc4c": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Chutes & Ladders—Biogen R&D vet gets in Formation",
+    "url": "https://www.fiercebiotech.com/biotech/chutes-ladders-biogen-rd-vet-gets-formation",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "e22cd528423085ba": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sanofi abandons plan to seek approval for eczema drug from $1.1B Kymab buyout",
+    "url": "https://www.fiercebiotech.com/biotech/sanofi-abandons-plan-seek-approval-eczema-drug-11b-kymab-buyout",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "18db5f8af72d4112": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Scribe records upsized $129M IPO to bankroll lipid-lowering genetic meds",
+    "url": "https://www.fiercebiotech.com/biotech/scribe-records-upsized-129m-ipo-latest-biotech-stock-market-debut",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "2cb0f1e40959ffd4": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Gastroenterologists flag clinical remission and its durability as unmet needs in IBD care: survey",
+    "url": "https://www.fiercepharma.com/marketing/gastroenterologists-spot-treatment-gaps-clinical-remission-rates-durability-among-ibd",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "7ebf54e8912f5fa1": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Peptide adcomm Day 2: Emideltide voted down in panel's 1st pushback",
+    "url": "https://www.fiercepharma.com/pharma/peptide-adcomm-day-2-emideltide-voted-down-panels-1st-peptide-pushback",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "36446622483925df": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Another setback for Ipsen's Albireo portfolio as Bylvay flunks phase 3 trial",
+    "url": "https://www.fiercepharma.com/pharma/another-setback-ipsens-albireo-portfolio-bylvay-flunks-phase-3-trial",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "3d8d518a7730c77a": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Amgen hands in data package in hopes of FDA hearing for Tavneos defense",
+    "url": "https://www.fiercepharma.com/pharma/amgen-hands-data-package-hopes-fda-hearing-tavneos-defense",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "5dbb291c7457671f": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Novo escalates Lilly false advertising suit with planned bid to halt comparative ads",
+    "url": "https://www.fiercepharma.com/marketing/novo-turns-heat-lilly-false-advertising-suit-seeking-preliminary-injunction-stop-rivals",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "2c780f741863e640": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "GSK’s first lung cancer approval, a new IPO path and more",
+    "url": "https://www.fiercepharma.com/pharma/gsks-first-lung-cancer-approval-new-ipo-path-and-more",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "a0315a7871251ff2": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Fierce Pharma Asia—Trump’s generic drug tariffs; Samsung Bio’s $1.8B acquisition; An unusual IPO",
+    "url": "https://www.fiercepharma.com/pharma/trump-generic-drug-tariffs-samsung-bio-18b-acquisition-unusual-ipo",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "80d65b29c516610d": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Colorectal Cancer Targeted with Mass-Produced iPSC-Derived Allogeneic T Cells",
+    "url": "https://www.genengnews.com/topics/cancer/colorectal-cancer-targeted-with-mass-produced-ipsc-derived-allogeneic-t-cells",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "fbc3b3e4c3d28413": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Oral Antiviral Blocks Measles-Like Virus Transmission in Ferrets",
+    "url": "https://www.genengnews.com/topics/infectious-diseases/oral-antiviral-blocks-measles-like-virus-transmission-in-ferrets",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "bf45d473f2c95c54": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Therapeutic Antibody Halts Prostate Tumor Growth and Metastasis - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM2c2aWg4OVE4LXAtc1Z1S19yZEZkYUwwZ3pqMFU1dXBkc05VMFlRbVlqc3hUOVJWb0oza3BKVUtocnE4TjE1dlVKcUZLMzdQdEVPQjgzQU1tamJKaEsyR1BQbGxYV0dVbVJfQmF4bk9qUmdxSlhxMElPaWVvMS1ZYklvZkQzQ1Y5MTd4WWRhNEhKRW02VGlNOU1EN3NWa2dreldlcW9NSlJYYXdLZXdwUTI1MkFxVWxvUTJsWWNWUzNNR1NW?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "ebf5468eaff4d90c": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "PAT and Fermentation Monitoring in Food, Beverage, and Industrial Bioprocessing - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeHktdkVQcElPRVNOYUd5ODFDSjBFcXVfcmEzNWgyQmZJa3RqdVlZUUxtZjc1eGVkbnlONlJSN3N5UGt0RzNROHNWQ1BkSFUyLWp2WXRXa01lcndSVXBmd0paeXRrdzZUZmQ3bG9WY2o3eUs0U3c5V2NCbVM0SHFxUHlzM1ZoNHV0dXVYVVZUQWhEcGNkN1lQR3dqMHRPeEZvQ1hRZE40Q25YNTF2SDQ1Z3dnd0xPcGxrU2hHeDQ1MDI2SUJzNU8zWVBRQQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "b9ddde00446e5853": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Episode 2: Detecting and Eliminating Off-Target Binding for Safer Antibody Therapeutics - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPd0xYNmdjNS1pcVJ0TGNONk5jczhBTzNFWWJMVG50THlnaDBkOUxCRGhia3NvbGE0QlVqLWlVckxUU3MxYlY1UFhERmU4RGtlNkF4Sk1NbDVtc01EQk1OT2FtRXFucHgtcWxLeG5qUDRNOFY3VU9GanppZVVlcWdYUWhIYVNvb3hra0Jrd0wxUlFtd3gzUzdqd2xtWDFsbnJETjB3ZmRmRzRDZGJzYnFLaUJSNHhuYXpIMy0xem5BSTZWRDcweXBUMXFDMG1NTnNVYW01dHVDbEd5dUZwM0ZybQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "31b8be7ff90268b4": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Membrane Filtration in Industrial Bioprocessing: From Biopharmaceuticals to Food Ingredients and Biofuels - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNzFhbW80MWVxbXRiTG1MbHEzMzlPQVNRcGRPWEd1TjdvamlWVzNBTFp5TTl3RHhqbXJGekhFaDJzUHJRUWNqZEFZaHRFT2Q4a1pub1JnTFJhU05IaTdnOVBuNnpUM2w1eUdxMnV3M1pJOXdmZ3RMc0RVWmJFNDRwVEc1NDZzQ3pkVlh6dk9qbnpPSWxrTmxjTGVjNTNxX1JxOFY2Q29zSFoyOHZTQ0NGUG90c3lNQXlLaU1OeHZ3MFYxYjNPNjVLUW52eGJfbWJkanNFdUNCdXYtS1cybk9GcUhFT1lXRWQzQ0NNbQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "cb1399aa6c07b97d": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Strengthen CAR T Characterization for More Predictive Cell Therapy Outcomes - Technology Networks",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQYTB6ZUQ4ejJhX1EwOXVzaDItancyQ2liQ2w3cWVtb19JbFd0aWhzVGt0MXdkazg0aGRlY0o2NGxNbGxVRG8yVDA3YVJDdEluVEZmSDkzbjNfaS05MXZaTWZDcFpvSk9Fbk4wQ2ZoQkNyVmNrSW5vVzl5bW1UcjNZOXY3Z21iR3JJdU5odWZyekpqNUtPYzVCZVdkTjNpNmEwd184WWtsNTlrNkZfSlBmY1V1cDlFREh6Q3BVOXNOVGl3NEswSG1ZZUVxV0RUZw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "15e8aa4bfde97adb": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Munich’s biotech hub: Inside one of Europe’s leading life sciences ecosystems",
+    "url": "https://www.labiotech.eu/in-depth/munich-biotech-hub",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "a0fd21c23093a743": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "This nonprofit is building the ecosystem to cure epidermolysis bullosa",
+    "url": "https://www.labiotech.eu/podcast/this-nonprofit-is-building-the-ecosystem-to-cure-epidermolysis-bullosa",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "d2c893bf1f839756": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "国内製薬 2026年12月期2Q決算ハイライト【随時更新】",
+    "url": "https://answers.and-pro.jp/pharmanews/32882",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "1234f529457e02f5": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "中外製薬、1～6月期19.2%最終増益／旭化成セラピューティクス、患者サポートプログラムで個人情報漏洩 など｜製薬業界きょうのニュースまとめ読み（2026年7月24日）",
+    "url": "https://answers.and-pro.jp/pharmanews/32879",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "e6d31c9bdd7bcc65": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "自民党創薬力PT・橋本座長 「創薬政策の国家戦略化は達成」 社会保障費用の財政フレームに踏込む議論へ",
+    "url": "/tabid55.html?artid=80600",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "news"
+  },
+  "b7caf33017c24734": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "JAPhMed 独立医学教育プログラムの第3者認証機関「日本版ACCME」提案 資金提供も商業的影...",
+    "url": "/tabid55.html?artid=80601",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "dfade90bc790f3cc": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "中外製薬・奥田社長CEO 上期増収増益で通期予想達成に意欲 26年は過去最多16件の承認申請を計画",
+    "url": "/tabid55.html?artid=80603",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 5,
+    "signal_type": "news"
+  },
+  "4fffbb857f0bf88f": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "日本ベーリンガー ペットの犬や猫の忌引き休暇を導入 社員が別れに向き合う時間を確保",
+    "url": "/tabid55.html?artid=80599",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "e78b2ba871aa1e7b": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "上野厚労相 「攻めの予防医療」で関連施策を速やかに実施 重点領域にがん・循環器病や認知症",
+    "url": "/tabid55.html?artid=80602",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "2b4d4bb0b616af67": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "投資・行政・社会 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1WQV92QTZGajFHTG1tVHF4WUROaGFZcVRORmdmb0s4b2Q5czdIWXdzQ05taUJsVFpUUl94djFTOG1zblJ2X0tHaTVreVF1X2F3MDlvdXlYV00teV9lY29IV01WUlhyQmNNakVfLVZ3OE9TaDl3TFJHaw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "5f4988ae4b83f329": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "从研发到商业化：赛多利斯“新利器”打通药物生产全链路 - ByDrug",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPdGIwcjFWanJ4UDZ0QnQwbWRNQlVlN1JLbWJhMWh5WmlDdXFLb3JtV1B1YXpoVmRrd2VhWEd3eVNPOEFIUmZjYmVqZHFfUGlZTDNnMDFnV0dfUkM4SHcyc2xSWVB6cW5UZ0dhZld5dmo0VmhjbGtEYTM4di1OUQ?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "259f80398b1a2693": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "中国创新药出海：确定性之路如何走？ - ByDrug",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA4SXB5YTQtTmRvY2pueXhlak5POGVIX2hxbjRWTFBvSkhMYU9Zb1lEZEVXTzg3WlktMFp0NDhrczFtbmIwNGVycWttT2VnekNBTlhNZndQU3c3VWc3R2dmMWRNdXRlbWJ3R282dnBFbkdiVjF2bms3bFd0R2Zxdw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "7f7568d7bb2e1550": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Merck KGaA inks $11.3bn buy of Bio-Techne in largest deal in a decade - BioXconomy",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUkdfNW5qbjhmT0JOMzNaR3pNLTVodXJhTGhHZUhpdTQ1MFA2LTVZdk1MaXNlcGllRExWcEVlSjU2V3N5MDM3TXQ5Q3RKRmZBZzJIZ2VqQW9pdVVFbk8yMTNDa3p2ZDRPbFl3eU01MHNaNDFmdW55dkdqdjVLR3loalEwRXIyZzk1cW5UTzFIeEcyczJFUmFNNExLUk10Z1F2bWlNelpnLXlxZw?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "22e538bb1172e3f7": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Merck Germany Lands Bio-Techne In $11.3 Billion Cash Deal - Benzinga",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNM2d1aUt0cWd5eHZJVENMYXEzZVhFTE8wSW9QLXdLXzljOGdCcGI3bHhLSEJLc0FsYzYwUHdzMk9IRXNPWHNQbldwRnVJQXBVV0R5WWpodVFlVVNFN2gzZ1pWb1pudXpWZC1wUE9saXJ5UUlLOTgyXzBqT05xOWtOa216aVh0SEdNZ0RuYVdyMF9hTkp6RDZsejU3a0F5a0dkUkE?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "14bc4325203d0c54": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sartorius Aktiengesellschaft Q2 Earnings Call Highlights - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb1hrb1oxcjhYNkdONk9ncmF6Zm8zbGZhWUhQeWxjekwtQ2RicllSY01ENTdXZUQ4Q3dSMFRuV2JNYk5obkVfUzEyNHMweHFHbElKaHoteTYwWE4xVWVSU3VXUjR1SEMyZ1hBQkFJNDNCODVZbzd5Si1KMnZDcURTZW01OVVmUWhZZTZQT1lPdkZrT3lmcVltRmFpaHU4Qy1Pc3JKdEdHdlhuLXo1STNPRHUtWVNVZFE?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "3d5df80d26e6f3b9": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sartorius Opens New Competence Center for cell and Gene Therapy Components in Freiburg, Germany - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTkJESDU4VGNEaFFQanA2TWdqdUdXSzFFeVN1TGlnd3I0REJaRmRsMUFMLVZpd0NQTFlYM3dhTGtwaU8yQVF4RE5uSFRoZjlvVkRQdi0xUHliYnpqYkEtNkJrVlRJbC1UZkNkbE02d1ItWGxlazJwaEdON2dwXzBEX3pjRko3Rm9MQzF5cEpDZ0QxMXdFcGw1eDBvWkxaQVV1UDRSbzZLLW8wamM?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "8c9810e498e28ef4": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sartorius Stedim stock trades steady as bioprocessing demand supports margins - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjZxRElrRnRsdUJHZ1VBdUVDNUdESFdPd3d5TnBPNTIxSGJHZklsQUFtNkRHSlZxY1hlNHpSa2hibUN0MTgwby0yZlYzTFhjOVhkZHptaHNOTWhpU0RoZXZWODdJSlQ4U01vTmowaWFuaHhuM29BQ2dBeG4ta29KNVFzQlA1cTZlaDZYSm80bW1oR2FqOEdQa2tDUGIxRXpnbC1fSDEwbkRJM0NaLTdzR2FMU28wRmhDMmMzTEN0SkVLUzVMUDB3?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 9,
+    "signal_type": "news"
+  },
+  "fb4e8be65c4f7ca0": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sartorius stock steadies as investors weigh margin recovery and bioprocess demand - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZTV1aXV6WllTZm4tbFJBa2traFozeklaWHM2SnkxSVAxTVRha0RxbXF0TkxKY2kyRFBZc0otMG4zdlVBcFVXb01Ta2xST3VoNS10b3BiZ2VVcHctN1h5Wnlaa2gwZ3pTRGYwNGVoUFA2bFNUZ0tCYzJUaTRNWTY5MG9kYXU1TlMtaENwUzlxaG9rdk5yZFJtVlhDV3FuUzZtSkVDMnlCSU1xN2Z4SnRUSjNBM2ltMGxRWldjUUtqU0tWbWlQMU5fWXBScDcwUQ?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "04a270393f171db3": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sartorius stock trades steady as investors weigh valuation against recent earnings trends - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0llWE9XdkZoNk5wbTMtbUlBaXhOOHdLVEE0SG5vZXJlNWJXZ0Y4aHBHODdBWGtxd01wTkhYc1l6QkUxNTZ1bkZoZDktalJEYU03YkRuMG95NGV6Q2V1NWQ1ZnJmMzdLNGNJX21rTUp6QVRxeEx1aUJsNXB0WEt6MzRTRUMyYXRVck41SEFNaVY2MFdvSFVNZV9qQ04ybzVrb2hHdXRYNnZFN21qR1p4UFZfcGRwclJ6cjNaRnJiQVVnRWlobFRYYlplWFo?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "e58d7e44e645a44c": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Sartorius Stedim stock stabilizes after 2025 results and guidance update - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSVh4RWlVdzl1cEcyQjQtOGY0YUVXYThod3BGZGFqNWJyMWtzTU5zbUN4aXNVM19iQkF2a1NkaXhZNnN3eTVsZUtGS1NuMGgwMk41bEJuN1dZQ1QyemlSaFF1dTd1bEs3bEpXRFJ1X25xTEh6dzBiV2F1NWtxenZadWVTY0hMQlpCWVhVX3dmS0NDUE5SLV9oTHRCblV2MERQRUxTUGRsLUhpTnNVUExBV0ZuWUdRMEdPM0Y4Y01CLUlEb3U0eEZLX3QySQ?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "bdb4ea0c4fe05cc1": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "【台湾】樂迦再生、竹北10階建て細胞工場が稼働 米独豪企業と提携し1,300億ドル規模のCGT市場へ参入 - BigGo ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Ha3JISzN0WE1Ja1FTeVhtZFpZamFTZGZnblUzVDdqbjlzMEtGTHcyMGJ0WnpObmdIektaTE40bkJxUUN6enJkeTVZdHpBMmhWY09yWlBaTTQ5QVhFZmNV?oc=5",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "34ae631f59627ce2": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Why Thermo Fisher Scientific (TMO) Is Up 6.7% After Q2 Beat, Buyback Completion, And InstaFlux Launch - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPcFEweENHLVFQTFNaVkxKQjMxS3NRMnI5LXpKakgxNmE3Z2FCMkpWSG5GcTlIZ3VZNXV5UFpqX0RZSy1RRWFRVHRWLTdiSWN1X3NNMW1KX0pyLW1ldHNXVm1lMUU0a0FYNVZXYzI5ZGJHalRUbDRVYU9mTGh4TlUzQlhRaUJpQ08tSGUyWHZxMGluZ2ltVjl6bGJzOW5WUEdnZmJ1M3pxZHl6a0ExN21ZQWxDblBGaGtocjFCR1VKZDBmQ2QzUVpKT3FFcnFQNTJhdlNwS3ZrbVlIeklkR0hXcVRWTC1kYkFlRUp30gHwAUFVX3lxTFAweEZJOEpqejd3dGVGLUZWdVFqSnZod2hGYzhYN2ZSNFRRdVp3SjBiRVlkcjVzWHN4TlpjUXV3T0t2ckQ2aGxndWdva3l4ZGtrdUM5amIwY20xbUdqNFphNFdfNk9Gd0ZtWnIyS0NyV25sMEFfRXMyOTZlY3FzRkpndXZBSFFvWDRpbGNSeEVHNXdKbjJQd08yR1RXNW1EcWVfRkRtS0R2QjhUWmNEVlVvcFNKaUtpQlpSd2ZmYmNxZnlGNXJ3RDA1OFNNN05IMXlfN1NHR29VbUY0Qi1MSXZ5a1Q3eEozWnMxTU45SHE0MA?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "763411116dbec188": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Launches a New Spectrophotometer Suite for Water, Food and Life Science Testing - Spectroscopy Online",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWWVzNzFhdzdCM1JrN3hGMTFKOUdWWWtKRy0zR3FPb2tHUnBtZzZsbHA2ajllOWV0dEFfMzJLYnVEZFA2MG83OTk4YThlLXhHdG1yX2lyRlllRFBEUDNfWTRqQ2tUWW1aenF1eHdxOW1JZTNkV0ZpSFVCNTN0bWF3NEVIWDNzdmh2NkNSNE8zYUExV3BoUndBRFF0VElNeXR5NEhyVHgyRElQTWpvd1Z3S3llV1FTVGNzMWh4ekVhNTMxSHl3empMc3JValZRYUFkMHZkUGdOeUVEYnM?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "3b6292ab137b74c5": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher (TMO) Climbs 8.7% on Solid Earnings, Price Target Upgrades - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdTNILU1XaFpHd3g4VGdzUzhydVdYX2lKTU1vSU1OTnZaVHNHZmlWN0ZUZk4wTUVoNnVBZVZ0aWFkQ0NGbnVFRGZXaS1rVmdWR3JuczNmR2loWkVxc281bXZROVNVNG1pQUI5Wmc4N20wZDc0VHVYMjJKT2FXb1RDN0YyeGxiSWJ3QUx3V1BhSlZSenBfcXc?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "a3e4f7fea4856fb9": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher beats quarterly estimates as customer demand improves - 1470 & 100.3 WMBD",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPM0lVd2NFYzhjQ0x4eFAwWi1tOGxVUGN4Zm1QSWlHRERjM1FoUmZhT1A1SS1qZlY0SnBSOF9sZC1PRTNtakFUOG1pbEVuUS11c19LVnBWRFRZcHNNczJoUmFkMHlZa3dCdmFnbzk0OUpiR1dOSGxKWS1NNW1USjI4RTdBM1VMemdCQURQdGRZemhObzRRbDB6dlhkRVBJTkZWRlM4?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "35fcc04b0378efdc": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Inc (TMO) Q2 2026 Earnings Call Highlights: Strong Revenue Growth and ... - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPalhEWWlpQWs0M19zWjBZLWw3V19xOXNzaXBSUGd4aHFoTW5TV20tTXNmazRFZ29XNENKOU1uOVFfU3FITy1oQWpzM2szWmVvOGNieUtYTDZNaFRsc1BOVmkxd09CSENaQ0lHRy1aY0paVC1KQWdLRWg1LVE5U0d5TXUwaEtEM3UzSndZWEs1ZlFTMXpSeWxEazhOYzJLZw?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "56ba9328ef31437c": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific (TMO) Stock Faces Margin Stagnation That Tests Bullish Earnings Narrative - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQNFdha0lhanJaaHBSV0Uwa1lkSXJjcEJtam9ITVM4ZEtaNV9BN05ZSGttTC03T1lOejFtc05IakM0SEN1cTloRWVhb0trTjBJcVh3U2RRTWtEVUdHYW1tT3g2SXl6RGIybXdNeDlidlByWDJQZnlsMWxJdDRaYjczWnZOa0tCb1FlazMzS1FtMkxxbVRva3M3WVRIU0RyVGF6WEtSOFFRTnQ3X2ppaGE0TWZvMDdOck1HU3RfcUNNX0pxV3pCMTVSNE05SW1lMURVN09hQWVSdTBxX2ZOWUZXaUFNWEhDOThubkRZ0gHwAUFVX3lxTFBxUmk4LU1YaXlWbVBqdF90bGxveTAzZjJONHZ5ck5uanpKMllhcmxjU2VYVWhOcmdrZ01EUWs5R0VMdl9Bcm1kZXRDZlNTalZHRkVyckNUWW8walJ2cHJDeUx1WWxxdHVoaUF1dzR4RnlRcjZjLWJSaWUyT2lJa2h6U3NsaWxKOVFtZU1reHotbGt6YmVXWGlwdEhUcnVfWmpNYlhuVlh5UE8yTGZndWViVHM4cERHTFBNdmFMaGYxTDhKVlJQYTJzZ0hiV1Q5aWJlQ3dOODk4Skp0Z0Q1c0ZpWWVpQlpfQ2tadklHRVZwcw?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "3fb8c43b2e1acb32": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Q2 Earnings Call Highlights - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlRVYUpWQmhvV0FqRzJkRHdwclRxd1hVUzJic0tKQVJlRTZUUElCWGtYaUZKQjg5ajR3Nk92dzF0d19OeEFGTlBxMGtSaGI3WjNSZVJzYUtJMHgzejkybm1lTXVvcnJOZDRoMHdtTC04VHhocW1weVc0MXNlVklQb1VLckZWcV9wMlFxMkE3ZFpTWlIxS0lwbUt1VmZqWUJZcFdN?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "8a7f2a7d4bf6680b": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher stock rises 3% on second quarter earnings beat - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORGxic3pZR1J6a3BvMUhiWEhTNjVGa2dHMmtVNDBkQW1sOUNvdG9wVDBxX3RoVUhMQ0hqd2NjUy1rXzBuY0lGdDV3ejkzRGFhZUR1V3AzekN6X0Z1NDdxZmY1UXJwLTJsdDRvby1pZjRXYkJWaUZFaUtoWTEwb2M1TlVtN1RhTFRscFJjRUxjNmM1akFDV25j?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "8e140a5e7b289e1a": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher (TMO) Lands ImmuPharma Kapiglucagon Diabetes Manufacturing Role - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNm9Ybmhick83SGIwbnRHM2o1NzMwR2E5QUxxLXB3SGlkU3JPbExxdE41LTluMHZ1aG1ZMkpNQ1pkZU9CVW5EVF9pTU1uczREd25UZElBdEs4OG0xbXI0bFNuSjJoUldyTEVvTDd3SjZzR1JMZDJnUVR4cW5ILUt4NDR4THU5eUl5aENweUtGQzgtRGIxMTU1U3lVTQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "9ff157cd69aae955": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher raises 2026 outlook after 10% growth in Q2 - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObGFuTW5MM3d5OFc4eklycDdNaDczdWpoeGRmTlB1amgweHVuV1F3M2p0bHRwV2swQTJFa2Z1OExRT0hGLTZQdDJ2c2hiemJOWWhjbDN4NjVyT1NrcURWdHNuWkxkSHlaem9XZUVwelhZNVB2WEFvbTRSZUpXMncyRk5LUDBUNW5veE9IazBpd01jX0xka3VCbDFB?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "6b150544ffb7c802": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher’s (NYSE:TMO) Q2 CY2026 Sales Top Estimates - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM3Y5LUcwelJyTlVxOWd2U2ZmNWY2dVR6TEp0Vlg3c3hKdklfVm5nbVNCLUlhTkpTVUR5LXJVdzJpR3NrS19yRUdSRDkzdUVfT3Y3NFZ4NUxwQjdKcGp6azNzZUZLSEVNTVd5cHZ5R2xPUWxUaTNnU2xNLUtNNFozRER1ZnQ5RC14YWJOVzBDaWNwTWk1?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "b17bf72bdf612bb9": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Raised Full-Year Guidance After a Standout Q2 Earnings Call - TIKR.com",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWWVEMW5obDlHaFRmbThjMDZ6ai1ZVE1fTHBNT1JZb0F0NWh5UkdYWGdsYzQwZmduWG1ZNU4yUGtuaVRDOU9MNHE4aFVtalRoVGIwVE95N3NWNkFhalRKOHJNcEh5MW92Y3pIdW5zSDNXdkkyV3Q2RFJSSk1SSm9fS2I1S1BlVXpCQjFUTERGQmNRam40eFhxYXBxaldKZnYy?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "d0916bca52bc5fbc": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Inc (TMO) Stock Forecasts - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUnplTEtjLVZTMTd1a3RUY09jX3FoU1JZeXJ5VEw0ZGVwYkoyWXpZMTNiUnQ3amxVdGpRcGhpSk82Yl9JeXJoY201aTZlcDdGb2I0eW81cW9WUWZ2aXFfd1Y3VTZrbURVUHBDYThNd2RHc1ZjMUlQYmxxRGpYMXVmN1Fld2ZXZ01DblR3Qg?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "a59b380cce04c107": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher posts strong Q2 2026 with 10% rev... - Pluang",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUlhmSVpWZVpmdEdBRk5Xekk4N3ByMkhvWHVEM2J6eUpuT1VTcDBaLXJXZnFJbGEyRGRIVWdzN3J4TzFNQmFDODkwREZoYUxPdXoyZHo0SjNzWlBHRnUzRkJBam42V09wTGhrcFJCLWtHdGFtUkFjOVdCZktJSTcwVVdZMk1SRF9CblhJR05VY1JHcTRDcUd3c00xeHU?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "591dbba4df4d2bc9": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "TMO Q2 Deep Dive: Broad-Based End Market Growth and Strategic Portfolio Moves - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQUdocTBmVkViNGFsVk5WVnV1WmUxemJDVUNZeDRfejNXX1RidV9sU3VZV0lWV2hkS3RvLXdDcV9fMnQ3Y2loSy05VzN4d1FJbHQwWVh3Q1pIOFVrRjRKbUhYU1Ntemh5MVh3V1Rta3ZDWWFwVHdEMWFKQVFKRXMwRWw0NERhdTVzeHI5S1B1ZmhQVWFfS2FnTk9JS1FhLU9MQS1GQ2hpSVZJVjUxeE45V0FxanFuR0plS0c1d002ZmpjbjlsT2UtQTVxbkpYdWptcHBN?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "8f4e72d8ef70225d": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific (NYSE:TMO) Faces A Margin Test - Kalkine Media",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRVRKQlpuM1FRV0hXaS1yc0w2QmVkTUVraGJvQ080YXU3TVFHcUhPd1dFazRmVWxGWW9oa1lKRjZCNkw5MzA4SUh3cXRuSHoyNEx6VUkwWUR4SktvYXpaeWlxUEdZQkUyY1BidWk2dlA5WnJINVNzb290eUIzRkdEcjQ2R2kwY05jc0Q5WXFHLUxuMGh3dTBxMWpleFZGY2M?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2370444227d86c20": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Inc (TMO) 財務健全性：収益性＆貸借対照表分析 - TradingKey",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfWHVnSHdRQnpDX0RSR1hFR2dfYW05clBCbmUtTll5S0xpbDJMbTVrVVEzLWswY25KNkVLcnRXN0JzYy14M3p6WjlBZ1dVRm43Y2RGVlhyT0hma1drS1M0eXRtendZeGlKM3l3cUlXay1EZVE?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9e81b5ab47cb0cd6": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "TMO|Thermo Fisher Scientific Inc|株価:561.015|変動率:-11.305 - TradingKey",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FRFFOTEoyVm9VdWVVU25lUmE0RVJpbHRvRDdubDFZeDZCeGZfV3FadkFkdE9pNWwxRURIdlRZZ0tPNXoxRTFDSnNxMUgzdTFQNkQ0YTl1Y3I4OXpR?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "0a5375cb28871308": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ライフ サイエンスの主要なリーダーが NVIDIA BioNeMo プラットフォームを採用、AI 駆動の創薬を高速化 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1zenkxajFDZDZfNS1Dd3NIZ21PYS1uNF9GUGNaU29RZ1NsMm5qZlRaSEtKeklYc3poNVpBRGhXSE1sTkVxd1ZNNkdtZVR1ZTVNM1l0aFFKa2ZRb3JDRndrdVFJOTNtcTNnMnc?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "20765e502bf7a148": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ゴールドマン・サックス・グループは、サーモ・フィッシャー・サイエンティフィックの株価目標を570ドルから650ドルに引き上げ、買い推奨を維持しました。 - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQV0EyLVVrWEU1RnBlU0xBTWhsTm9oUjBqdzdRczRNYUZMdFlYWUtEcGRWcUdmeC0zZUxCSlBUOTZUYW9OMjdwQmpqVGRjRmxCQkxtbU05T0dOSXByMFVQU0hmWXRFZ1dSaHExMHlEWFNGajdJN0ZiZHpySkg1bjBLZGs3dkVNWGs4cERob19iaDh2S1VZWExEWEpTS2pvcGhPdG9WamE1YkpxSy1GOFR3SXFlQ0lkWTFFTlkzMHhteXhiRWp5ZEx6R3NQcGxQYkY4RTFNaE1IVHdDZ2Q4Wnc?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "9616e2e585f9dba3": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "RBCは、サーモ・フィッシャー・サイエンティフィックの堅調な第2四半期決算は、下半期の見通しを『有意義に』変更するには不十分と指摘。 - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPelNLUkZtalF4bDBPb0FQQWtDQXY5Sl90VFM3dktsb1cyem9mVVJ4T3N6dEM2LXNCYVJ5eUJZUG9xVFRBWmJBc0J5WG5Vcm9jajJOYVVBYkNZT3N4T0xMbUlUNWdOWUxPTENBcDRLQkxpanMweDU1dk9XcXF5OGZfTmVQOGVRSjA2QVhfLVJkdW9NMXNLZFJMSjdfUjJmUWJSSjFlX1NFVUZPeVJtbU1CV3dEV1RzOERGUXpQVUJ4a3o5Mjh2Y2x1c2dCaFdwb1l5blJLU2NzYjVrR3M?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "d4f8b01cf069dd46": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "TD Cowenはサーモ・フィッシャーサイエンティフィック(TMO.US)のレーティングを強気に据え置き、目標株価を675ドルにした - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbUZJdjhBcWhBbm9FSTFjWFhPczhhNlZNN0xxNDNyTkgtdjlhN0FGNzd1RXYybVktRmtpSVJobmhrdWQyVm1jLTVxYm4ySVktLVlCM0tDVTc1QmdMVXFveU9YU2xsUG42SkhOVlYySFAtd0gzc1BVU1o5RjVYcWZHT0J3MTdCQXZtM3YxS3BuXzBYcTVhUEdVQXR2dFdSb1owNzVudlNxbU8xeVdKVjdF?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "3fbeec6c3fb33f24": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "【レーティング速報】サーモ・フィッシャーサイエンティフィック(TMO.US)のレーティング、最高675ドルまで - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVk81VGxxcW53YnRBcnJ2QXNTLXk0VGZaTHBpSko3azUwMUNjWlhrMlQ4RFY2SGhhZFdodWtkNHphUUc3OW1SZGw1ZEd5N3JaWVExQ19VZHJWU0RBbzlxTWlza1ZianNNdFVMSEVsU29USjBCR3N3OWlJaG1OTFJvMVNjSWFZZ0JhR3BzTnZENmNIMnQtTnhQMWZ3?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "7be48f764625a66b": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "7月23日のDanaher Corp (DHR) 値動きは6.78%上昇：値動きの背後にある事実 - TradingKey",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT3FPY0MtQUFCalJJV1ZNYmRHLVljb2g5X08yTnYxMU5US2QwTm85X2F6M2cyM1k1MEE4NHBBX0FrbGlpX18zdXdOVDg3YTVFMUVXeFhrSXJSdGRaWXA5azR3MVl0M2kzenlMZXJuTUg0MXlxaE1vUVA4SVllX1A4YTVXeE1zd2ZwdldNNlFB?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "118ccda93ff36b53": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "2032年までに米ドル296.19百万から米ドル531.45百万へと拡大が見込まれる日本の世界の水銀分析装置市場、2024年から2032年の予測期間中に6.7%のCAGRで繁栄 - 主要な推進要因と業界動向 | Panorama Data Insights Ltd. - アットプレス",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWElIOVg4RElTNmoxdXF1QlJVM3R5bmx6S1p5RjdkQjY5QlBROWMzMmRGbWZQc3lmT0JkalZmT0FIeG5feUpUd2lLWWtwMUIzWkFFSzNhbUd0OVhVVjhyTFNEMVpGUXVKby00SFlYMHBya3ZELVA1czhXNkdKWmNtUS1Qa3htcTViOUlOQkZxaHlmMW9VTEhEckFGT2M0T0kzUzZYOUFKNklSR2dPc0Nrc09sRQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 14,
+    "signal_type": "news"
+  },
+  "fa2197a91116b17c": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "ACROBiosystems Wins CiteAb Award, Gaining Worldwide Recognition",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a66be841a69481bbd2b0abc7fd7f6ef&url=https%3A%2F%2Ffinance.yahoo.com%2Fsectors%2Fhealthcare%2Farticles%2Facrobiosystems-wins-citeab-award-gaining-150000058.html&c=1574793412241361085&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "5e91a9bf8684edbe": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher extends post-Q2 gains after raising outlook",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a66be844dce4d1f91424b01f83bc468&url=https%3A%2F%2Fseekingalpha.com%2Fnews%2F4617292-thermo-fisher-stock-rebounds-q2-beat&c=11408406609704355142&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "915d94d097d0591d": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Profit, Sales Rise",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a66be844dce4d1f91424b01f83bc468&url=https%3A%2F%2Fwww.marketwatch.com%2Fstory%2Fthermo-fisher-profit-sales-rise-eeacf1cb&c=2202535165504194818&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "23d4f894cf57683f": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Thermo Fisher Scientific Inc. (TMO) Q2 2026 Earnings Call Transcript",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a66be844dce4d1f91424b01f83bc468&url=https%3A%2F%2Fseekingalpha.com%2Farticle%2F4924749-thermo-fisher-scientific-inc-tmo-q2-2026-earnings-call-transcript&c=6185468035384132435&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "f1581129c6d3bd15": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "PCR Technologies and the Stories Behind Modern Molecular Biology | Speaking of Mol Bio",
+    "url": "https://www.youtube.com/watch?v=JctOMDTEGnY",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "d138c221ada59ffa": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Using CRISPRi and MPRA to Explore the Genetics of Psychiatric Disorders | Speaking of Mol Bio",
+    "url": "https://www.youtube.com/watch?v=GwfelHHjCVU",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "23dddfecd0429c0a": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "BCRET実習講習「バイオ医薬品の製造工程の開発 （細胞培養及びハーベスト）」",
+    "url": "https://www.link-j.org/member_event/article-50011.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "a0eff70bb6c96617": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "感染症研究の最前線：宿主–病原体相互作用から革新的治療戦略へ",
+    "url": "https://www.link-j.org/member_event/article-53231.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "2d8882f1a0bc5e25": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "オンラインセミナー「現場の声から読み解くDCT実装のリアル ～臨床試験を変えるDCT Japanの挑戦～」",
+    "url": "https://www.link-j.org/member_event/article-52982.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "event"
+  },
+  "f659db842fb051e3": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "「もっと使いこなす」を体験できる1日◆Tecan Plate Reader ユーザーフォーラム",
+    "url": "https://www.link-j.org/member_event/article-52943.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "2b642f2e83297c1c": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "Out of Box 相談室（7/31製薬担当）：LINK-J主催 研究成果実用化育成支援プログラム",
+    "url": "https://www.link-j.org/event/article-52914.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "68ceee7421f0dc9f": {
+    "first_seen": "2026-07-27T02:12:24",
+    "title": "【無料セミナー】PFN Materialsセミナー2026",
+    "url": "https://www.link-j.org/member_event/article-52690.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
   }
 }
