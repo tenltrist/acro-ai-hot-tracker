@@ -34,7 +34,7 @@ body {
   background: var(--bg);
   color: var(--text);
   display: grid;
-  grid-template-columns: 272px minmax(0, 1fr);
+  grid-template-columns: 256px minmax(0, 1fr);
 }
 
 a {
@@ -381,7 +381,10 @@ a {
 
 .shell {
   min-width: 0;
-  padding: 28px;
+  width: 100%;
+  max-width: 1920px;
+  padding: clamp(18px, 2vw, 32px);
+  overflow-x: clip;
 }
 
 .topbar {
@@ -462,7 +465,7 @@ select {
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 14px;
   margin-bottom: 18px;
 }
@@ -501,6 +504,86 @@ select {
   background: var(--coral-soft);
 }
 
+.metric.regional {
+  border-color: #bed0e2;
+  background: #edf4fa;
+}
+
+.metric.executive {
+  min-width: 0;
+  box-shadow: none;
+}
+
+.metric.executive strong {
+  overflow-wrap: anywhere;
+}
+
+.analysis-controls {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  min-width: 0;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.analysis-controls > small {
+  margin-left: auto;
+  max-width: 280px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.control-group,
+.region-control {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.control-group > span,
+.region-control > span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.segmented-control {
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-2);
+}
+
+.segmented-control button {
+  height: 30px;
+  padding: 0 11px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #61707a;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.segmented-control button.active {
+  background: var(--surface);
+  color: #175a62;
+  box-shadow: 0 1px 4px rgba(34, 48, 64, 0.12);
+}
+
+.region-control select {
+  height: 38px;
+  min-width: 150px;
+}
+
 .metric.clickable {
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
@@ -531,10 +614,76 @@ select {
   border-radius: 8px;
   padding: 18px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
   gap: 22px;
   margin-bottom: 18px;
   box-shadow: var(--shadow);
+}
+
+.dashboard-brief {
+  border-left: 4px solid var(--teal);
+  box-shadow: none;
+}
+
+.brief-copy {
+  min-width: 0;
+}
+
+.executive-points {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.executive-points li {
+  position: relative;
+  padding-left: 17px;
+  color: #4e5d66;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.executive-points li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  background: var(--teal);
+}
+
+.brief-status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  align-content: start;
+}
+
+.brief-status-grid div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-2);
+}
+
+.brief-status-grid span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.brief-status-grid strong {
+  color: #2b3b43;
+  font-size: 12px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .decision-band p {
@@ -1643,6 +1792,260 @@ select {
   align-items: start;
 }
 
+.analytics-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.85fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.analysis-panel {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.analysis-panel .section-head {
+  margin-bottom: 12px;
+}
+
+.analysis-panel .section-head > span {
+  font-size: 11px;
+}
+
+.trend-chart {
+  width: 100%;
+  min-height: 220px;
+}
+
+.trend-svg {
+  display: block;
+  width: 100%;
+  height: 220px;
+  overflow: visible;
+}
+
+.chart-grid-line {
+  stroke: #e4eaed;
+  stroke-width: 1;
+  stroke-dasharray: 4 5;
+}
+
+.chart-axis-label {
+  fill: #81909a;
+  font-size: 11px;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px 12px;
+}
+
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.chart-legend i {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.region-bars,
+.category-bars {
+  display: grid;
+  gap: 11px;
+}
+
+.region-row,
+.category-row {
+  display: grid;
+  gap: 5px;
+}
+
+.region-row > div:first-child,
+.category-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #53616a;
+  font-size: 12px;
+}
+
+.region-row strong,
+.category-row strong {
+  color: #273942;
+}
+
+.region-track,
+.category-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #e9eef0;
+}
+
+.region-track i,
+.category-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #5eb8bc;
+}
+
+.region-track i {
+  background: #7298bd;
+}
+
+.company-topic-matrix {
+  min-width: 0;
+}
+
+.matrix-scroll {
+  min-width: 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.matrix-row {
+  display: grid;
+  min-width: 560px;
+  align-items: stretch;
+  border-top: 1px solid var(--line);
+}
+
+.matrix-row:first-child {
+  border-top: 0;
+}
+
+.matrix-row > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 44px;
+  padding: 7px 8px;
+  border-left: 1px solid var(--line);
+  color: #53616a;
+  font-size: 11px;
+  text-align: center;
+}
+
+.matrix-row > span:first-child {
+  justify-content: flex-start;
+  border-left: 0;
+}
+
+.matrix-header {
+  background: var(--surface-2);
+  font-weight: 800;
+}
+
+.matrix-company {
+  gap: 7px;
+  color: #283a42 !important;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.role-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #7b8790;
+}
+
+.role-dot.role-self {
+  background: var(--teal);
+}
+
+.role-dot.role-competitor {
+  background: var(--coral);
+}
+
+.role-dot.role-customer {
+  background: var(--blue);
+}
+
+.matrix-cell.intensity-0 {
+  color: #a1adb4;
+  background: #fbfcfc;
+}
+
+.matrix-cell.intensity-1 {
+  color: #305f63;
+  background: #e8f4f3;
+}
+
+.matrix-cell.intensity-2 {
+  color: #21555a;
+  background: #c8e7e5;
+}
+
+.matrix-cell.intensity-3 {
+  color: #16494d;
+  background: #91d0ce;
+}
+
+.matrix-cell.intensity-4 {
+  color: #ffffff;
+  background: #287f85;
+  font-weight: 800;
+}
+
+.top-signals,
+.signals-detail-section {
+  min-width: 0;
+  margin-bottom: 18px;
+}
+
+.signals-detail-section {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.top-signals .feed {
+  box-shadow: none;
+}
+
+.text-button {
+  height: 34px;
+  padding: 0 12px;
+  color: #14656d;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.compact-signal-list {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+}
+
+.signal-card.compact {
+  align-content: start;
+  min-width: 0;
+  box-shadow: none;
+}
+
+.signal-card.compact .summary {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .feed,
 .panel {
   background: var(--surface);
@@ -1688,6 +2091,8 @@ select {
 }
 
 .signal-card {
+  min-width: 0;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 14px;
@@ -1696,6 +2101,7 @@ select {
 }
 
 .signal-top {
+  min-width: 0;
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -1703,9 +2109,11 @@ select {
 }
 
 .signal-title {
+  min-width: 0;
   font-weight: 750;
   line-height: 1.35;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .signal-title:hover {
@@ -1762,6 +2170,31 @@ select {
   color: #5c6b75;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.role-tag.role-self {
+  border: 1px solid #a9d8d7;
+  background: #e8f6f5;
+  color: #17666b;
+}
+
+.role-tag.role-competitor {
+  border: 1px solid #ecc2b4;
+  background: #fbede8;
+  color: #99513d;
+}
+
+.role-tag.role-customer {
+  border: 1px solid #b9cce2;
+  background: #edf3f9;
+  color: #345f9f;
+}
+
+.role-tag.role-industry,
+.region-tag {
+  border: 1px solid #d7dfe3;
+  background: #f7f9fa;
+  color: #596871;
 }
 
 .tag.company-match {
@@ -2095,6 +2528,63 @@ select {
   color: var(--muted);
 }
 
+@media (max-width: 1320px) and (min-width: 981px) {
+  body {
+    grid-template-columns: 76px minmax(0, 1fr);
+  }
+
+  .sidebar {
+    padding: 16px 10px;
+    gap: 16px;
+  }
+
+  .brand {
+    grid-template-columns: 42px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .brand-copy,
+  .live-badge,
+  .nav-group-label,
+  .nav button > span:last-child,
+  .company-dock,
+  .sidebar-panel {
+    display: none;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav button {
+    grid-template-columns: 30px;
+    justify-content: center;
+    padding: 6px;
+  }
+
+  .analysis-controls {
+    flex-wrap: wrap;
+  }
+
+  .analysis-controls > small {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1100px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brief-status-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 980px) {
   body {
     grid-template-columns: 1fr;
@@ -2102,6 +2592,9 @@ select {
 
   .sidebar {
     position: static;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    align-items: start;
     height: auto;
     min-height: auto;
     padding: 16px;
@@ -2111,6 +2604,20 @@ select {
   .nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+  }
+
+  .brand {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .brand-copy,
+  .nav button > span:last-child {
+    display: block;
+  }
+
+  .live-badge,
+  .company-dock {
+    display: none;
   }
 
   .company-dock {
@@ -2127,8 +2634,8 @@ select {
     display: none;
   }
 
-  .summary-grid,
   .decision-band,
+  .analytics-grid,
   .layout,
   .rule-story,
   .decision-matrix,
@@ -2144,6 +2651,22 @@ select {
   .health-legend,
   .health-decisions {
     grid-template-columns: 1fr;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .analysis-controls {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .analysis-controls > small {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    text-align: left;
   }
 
   .company-role-summary {
@@ -2213,15 +2736,36 @@ select {
   }
 
   .nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    grid-template-columns: none;
     gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .nav-group {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 5px;
   }
 
   .nav button {
-    grid-template-columns: 26px minmax(0, 1fr);
-    gap: 5px;
-    padding: 5px 6px;
+    grid-template-columns: 26px;
+    width: 38px;
+    gap: 0;
+    padding: 5px;
     font-size: 12px;
+  }
+
+  .nav button > span:last-child,
+  .nav-group-label {
+    display: none;
   }
 
   .nav-icon {
@@ -2250,6 +2794,29 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .summary-grid,
+  .brief-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-controls {
+    display: grid;
+  }
+
+  .segmented-control {
+    width: 100%;
+  }
+
+  .segmented-control button {
+    flex: 1;
+    min-width: 0;
+    padding: 0 6px;
+  }
+
+  .region-control select {
+    width: 100%;
+  }
+
   .official-source-group-head {
     grid-template-columns: 26px minmax(0, 1fr);
   }
@@ -2276,8 +2843,27 @@ select {
     gap: 10px;
   }
 
+  .toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .toolbar select {
     width: 100%;
+  }
+
+  #searchInput {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .chart-legend {
+    justify-content: flex-start;
+  }
+
+  .compact-signal-list {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2296,16 +2882,17 @@ select {
       <nav class="nav" aria-label="页面导航">
         <div class="nav-group">
           <span class="nav-group-label">情报工作台</span>
-          <button class="active" type="button" data-page-target="overview"><span class="nav-icon">⌂</span><span>总览</span></button>
-          <button type="button" data-page-target="companies"><span class="nav-icon">◉</span><span>公司池</span></button>
-          <button type="button" data-page-target="sources"><span class="nav-icon">◇</span><span>数据源地图</span></button>
-          <button type="button" data-page-target="acro"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
+          <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
+          <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
+          <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
+          <button type="button" data-page-target="acro" title="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
         </div>
         <div class="nav-group">
           <span class="nav-group-label">运行管理</span>
-          <button type="button" data-page-target="source-health"><span class="nav-icon">✓</span><span>数据源健康</span></button>
-          <button type="button" data-page-target="pipeline"><span class="nav-icon">↳</span><span>系统链路</span></button>
-          <button type="button" data-page-target="questions"><span class="nav-icon">?</span><span>待确认</span></button>
+          <button type="button" data-page-target="source-health" title="数据源健康"><span class="nav-icon">✓</span><span>数据源健康</span></button>
+          <button type="button" data-page-target="pipeline" title="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
+          <button type="button" data-page-target="questions" title="待确认"><span class="nav-icon">?</span><span>待确认</span></button>
         </div>
       </nav>
 
@@ -2360,13 +2947,13 @@ select {
         <div class="toolbar" aria-label="Dashboard controls">
           <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
           <select id="signalTypeFilter" aria-label="按情报类型筛选">
-            <option value="news" selected>新闻</option>
+            <option value="all" selected>全部类型</option>
+            <option value="news">新闻</option>
             <option value="event">活动 / 生态</option>
             <option value="video">视频</option>
             <option value="filing">公司公告</option>
             <option value="regulatory">监管风险</option>
             <option value="research">论文研究</option>
-            <option value="all">全部类型</option>
           </select>
           <select id="tierFilter" aria-label="按推送分层筛选">
             <option value="all">全部分层</option>
@@ -2387,43 +2974,105 @@ select {
         </div>
       </header>
 
-      <section class="summary-grid page-panel" data-page="overview" id="overview" aria-label="Summary metrics">
-        <article class="metric clickable" data-tier="all" title="点击查看全部动态">
-          <span>新候选</span>
+      <section class="analysis-controls page-panel" data-page="overview" id="overview" aria-label="Dashboard filters">
+        <div class="control-group">
+          <span>观察周期</span>
+          <div class="segmented-control" id="timeRangeControl" aria-label="观察周期">
+            <button type="button" data-time-range="7">7 天</button>
+            <button class="active" type="button" data-time-range="30">30 天</button>
+            <button type="button" data-time-range="90">90 天</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span>公司角色</span>
+          <div class="segmented-control" id="roleControl" aria-label="公司角色">
+            <button class="active" type="button" data-role-filter="all">全部</button>
+            <button type="button" data-role-filter="self">本公司</button>
+            <button type="button" data-role-filter="competitor">竞品</button>
+            <button type="button" data-role-filter="customer">客户</button>
+          </div>
+        </div>
+        <label class="region-control">
+          <span>事件地区</span>
+          <select id="regionFilter" aria-label="按事件地区筛选">
+            <option value="all">全部地区</option>
+            <option value="japan">日本</option>
+            <option value="china">中国</option>
+            <option value="korea">韩国</option>
+            <option value="southeast_asia">东南亚</option>
+            <option value="north_america">北美</option>
+            <option value="europe">欧洲</option>
+            <option value="global">全球 / 未识别</option>
+          </select>
+        </label>
+        <small>地区为标题与摘要规则识别，后续将升级为结构化提取。</small>
+      </section>
+
+      <section class="summary-grid page-panel" data-page="overview" aria-label="Executive metrics">
+        <article class="metric executive">
+          <span>重大信号</span>
           <strong id="metricCandidates">--</strong>
-          <small>点击查看全部 →</small>
+          <small>高分日报与即时提醒</small>
         </article>
-        <article class="metric accent clickable" data-tier="daily" title="点击只看日报级内容">
-          <span>建议推送</span>
+        <article class="metric accent executive">
+          <span>竞品动态</span>
           <strong id="metricDaily">--</strong>
-          <small>点击查看日报 →</small>
+          <small id="metricCompetitorNote">已确认竞品池</small>
         </article>
-        <article class="metric warn clickable" data-tier="immediate" title="点击只看即时提醒">
-          <span>即时提醒</span>
+        <article class="metric warn executive">
+          <span>客户需求信号</span>
           <strong id="metricImmediate">--</strong>
-          <small>点击查看提醒 →</small>
+          <small id="metricCustomerNote">客户池待接入</small>
         </article>
-        <article class="metric quiet clickable" data-tier="archive" title="点击查看归档内容">
-          <span>噪音压制</span>
+        <article class="metric regional executive">
+          <span>亚太地区动态</span>
           <strong id="metricArchive">--</strong>
-          <small>点击查看归档 →</small>
+          <small>日本、中国、韩国与东南亚</small>
         </article>
       </section>
 
-      <section class="decision-band page-panel" data-page="overview" aria-label="Executive brief">
-        <div>
-          <p class="eyebrow">当前判断</p>
-          <h2>先做每日情报工作台，再开放即时推送</h2>
-          <p>
-            借鉴 AIhot 的精选流、日报、主题和 Agent 接入思路，但 ACRO 场景要多一层业务解释：
-            这条动态对产品宣传、竞品观察、日本市场和销售线索意味着什么。
-          </p>
+      <section class="decision-band dashboard-brief page-panel" data-page="overview" aria-label="Executive brief">
+        <div class="brief-copy">
+          <p class="eyebrow">老板摘要</p>
+          <h2 id="executiveHeadline">正在生成本期判断</h2>
+          <ul id="executivePoints" class="executive-points"></ul>
         </div>
-        <div class="decision-list">
-          <div><span>频率</span>当前建议每天 1 次，工作日上午生成</div>
-          <div><span>节奏</span>日报默认，重大信号再即时提醒</div>
-          <div><span>成本</span>公开来源先筛噪，AI 只处理高分候选</div>
+        <div class="brief-status-grid">
+          <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
+          <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
+          <div><span>当前范围</span><strong id="windowDays">30 天</strong></div>
         </div>
+      </section>
+
+      <section class="analytics-grid page-panel" data-page="overview" aria-label="Intelligence analytics">
+        <article class="analysis-panel trend-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">趋势</p><h2>信号走势</h2></div>
+            <div id="trendLegend" class="chart-legend"></div>
+          </div>
+          <div id="signalTrendChart" class="trend-chart" aria-label="信号趋势图"></div>
+        </article>
+        <article class="analysis-panel region-panel" id="regionPanel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">地区</p><h2>地区信号分布</h2></div>
+            <span>规则识别</span>
+          </div>
+          <div id="regionBars" class="region-bars"></div>
+        </article>
+        <article class="analysis-panel matrix-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">公司 × 主题</p><h2>竞品动作矩阵</h2></div>
+            <span>颜色越深，信号越集中</span>
+          </div>
+          <div id="companyTopicMatrix" class="company-topic-matrix"></div>
+        </article>
+        <article class="analysis-panel category-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">结构</p><h2>动作与主题构成</h2></div>
+            <span id="sourceCount">-- 条</span>
+          </div>
+          <div id="categoryBars" class="category-bars"></div>
+        </article>
       </section>
 
       <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
@@ -2540,92 +3189,28 @@ select {
         </div>
       </section>
 
-      <section class="layout page-panel" data-page="overview">
-        <div class="feed" id="signals">
+      <section class="top-signals page-panel" data-page="overview" id="signals">
+        <div class="feed">
           <div class="section-head">
             <div>
-              <p class="eyebrow">精选信号</p>
-              <h2>今日需要市场部看的动态</h2>
+              <p class="eyebrow">决策证据</p>
+              <h2>本期最值得看的 5 条战略事件</h2>
             </div>
-            <span id="updatedAt" class="timestamp">加载中</span>
+            <button class="text-button" id="openSignalDetailButton" type="button">查看全部情报</button>
           </div>
-          <div id="signalList" class="signal-list" aria-live="polite"></div>
+          <div id="topSignalList" class="signal-list compact-signal-list" aria-live="polite"></div>
         </div>
+      </section>
 
-        <aside class="insights" aria-label="Dashboard insights">
-          <section class="panel" id="topics">
-            <div class="section-head compact">
-              <h2>主题热度</h2>
-              <span id="windowDays">-- 天</span>
-            </div>
-            <div id="topicBars" class="bars"></div>
-          </section>
-
-          <section class="panel">
-            <div class="section-head compact">
-              <h2>来源构成</h2>
-              <span id="sourceCount">-- sources</span>
-            </div>
-            <div id="sourceList" class="source-list"></div>
-          </section>
-
-          <section class="panel" id="workflow">
-            <h2>市场部动作队列</h2>
-            <div class="action-list">
-              <label><input type="checkbox" checked /> 先确认日报分类是否符合业务直觉</label>
-              <label><input type="checkbox" /> 补充休假前目标公司名单</label>
-              <label><input type="checkbox" /> 为 ADC / CGT / GMP 建立竞品关键词组</label>
-              <label><input type="checkbox" /> 决定哪些信号要进入老板即时提醒</label>
-            </div>
-          </section>
-
-          <section class="panel">
-            <h2>现阶段能解决什么</h2>
-            <div class="capability-list">
-              <div>
-                <strong>减少噪音</strong>
-                <span>把公开来源里的弱相关、旧新闻和金融噪音压到归档。</span>
-              </div>
-              <div>
-                <strong>给市场部选题</strong>
-                <span>把 CGT、GMP、合作、监管等信号整理成可读列表。</span>
-              </div>
-              <div>
-                <strong>给老板看趋势</strong>
-                <span>用指标、主题热度和来源构成快速判断今天有没有要关注的事。</span>
-              </div>
-              <div>
-                <strong>验证公司名单</strong>
-                <span>先用 ACRO 跑通规则，再批量接入目标公司和竞品。</span>
-              </div>
-            </div>
-          </section>
-
-          <section class="panel" id="sourceHealth">
-            <div class="section-head compact">
-              <h2>来源健康</h2>
-              <span id="healthStatus">--</span>
-            </div>
-            <div id="healthList" class="health-list"></div>
-          </section>
-
-          <section class="panel" id="trendPanel">
-            <div class="section-head compact">
-              <h2>日期间对比</h2>
-              <span id="trendDays">vs 昨日</span>
-            </div>
-            <div id="trendList" class="trend-list"></div>
-          </section>
-
-          <section class="panel">
-            <h2>AIhot 式接入</h2>
-            <div class="api-list">
-              <a href="../api/public/daily.json">日报 JSON</a>
-              <a href="../api/public/items.json">全部动态 JSON</a>
-              <a href="../api/public/topics.json">主题 JSON</a>
-            </div>
-          </section>
-        </aside>
+      <section class="signals-detail-section page-panel" data-page="signals" aria-label="Intelligence detail">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">情报明细</p>
+            <h2>全部信号与筛选结果</h2>
+          </div>
+          <span id="detailSignalCount" class="timestamp">加载中</span>
+        </div>
+        <div id="signalList" class="signal-list" aria-live="polite"></div>
       </section>
 
       <section class="pipeline-section page-panel" data-page="pipeline" aria-label="System pipeline">
@@ -26471,9 +27056,12 @@ function saveFeedback(id, value) {
 const state = {
   payload: null,
   tier: "daily",
-  signalType: "news",
+  signalType: "all",
   company: "all",
   category: "all",
+  timeRange: 30,
+  role: "all",
+  region: "all",
   searchQuery: "",
   page: "overview",
   sourceStage: "all",
@@ -27220,6 +27808,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 样本档案"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
@@ -27301,10 +27890,23 @@ const els = {
   metricArchive: document.querySelector("#metricArchive"),
   updatedAt: document.querySelector("#updatedAt"),
   signalList: document.querySelector("#signalList"),
-  topicBars: document.querySelector("#topicBars"),
-  sourceList: document.querySelector("#sourceList"),
+  topSignalList: document.querySelector("#topSignalList"),
+  detailSignalCount: document.querySelector("#detailSignalCount"),
   sourceCount: document.querySelector("#sourceCount"),
   windowDays: document.querySelector("#windowDays"),
+  timeRangeControl: document.querySelector("#timeRangeControl"),
+  roleControl: document.querySelector("#roleControl"),
+  regionFilter: document.querySelector("#regionFilter"),
+  executiveHeadline: document.querySelector("#executiveHeadline"),
+  executivePoints: document.querySelector("#executivePoints"),
+  signalTrendChart: document.querySelector("#signalTrendChart"),
+  trendLegend: document.querySelector("#trendLegend"),
+  regionBars: document.querySelector("#regionBars"),
+  companyTopicMatrix: document.querySelector("#companyTopicMatrix"),
+  categoryBars: document.querySelector("#categoryBars"),
+  metricCompetitorNote: document.querySelector("#metricCompetitorNote"),
+  metricCustomerNote: document.querySelector("#metricCustomerNote"),
+  openSignalDetailButton: document.querySelector("#openSignalDetailButton"),
   tierFilter: document.querySelector("#tierFilter"),
   signalTypeFilter: document.querySelector("#signalTypeFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
@@ -27313,7 +27915,6 @@ const els = {
   exportCsvButton: document.querySelector("#exportCsvButton"),
   refreshButton: document.querySelector("#refreshButton"),
   healthStatus: document.querySelector("#healthStatus"),
-  healthList: document.querySelector("#healthList"),
   healthGeneratedAt: document.querySelector("#healthGeneratedAt"),
   healthMetricTracked: document.querySelector("#healthMetricTracked"),
   healthMetricProducing: document.querySelector("#healthMetricProducing"),
@@ -27324,8 +27925,6 @@ const els = {
   healthStatusFilter: document.querySelector("#healthStatusFilter"),
   healthRowCount: document.querySelector("#healthRowCount"),
   healthTableBody: document.querySelector("#healthTableBody"),
-  trendList: document.querySelector("#trendList"),
-  trendDays: document.querySelector("#trendDays"),
   pageEyebrow: document.querySelector("#pageEyebrow"),
   pageTitle: document.querySelector("#pageTitle"),
   toolbar: document.querySelector(".toolbar"),
@@ -27360,7 +27959,6 @@ function renderLoadedData() {
   render();
   renderSourceHealth();
   renderSourceHealthPage();
-  renderTrend();
 }
 
 function hydrateCompanyMetadata(payload) {
@@ -27530,7 +28128,7 @@ function hydrateFilters() {
 
 function render() {
   const { payload } = state;
-  els.windowDays.textContent = `${payload.window_days} 天`;
+  els.windowDays.textContent = `${state.timeRange} 天`;
   els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
 
   renderOverviewScope();
@@ -27545,25 +28143,253 @@ function getSignalTypeItems() {
 }
 
 function renderOverviewScope() {
-  const scoped = getSignalTypeItems();
-  const hasNewFlags = scoped.some((item) => typeof item.is_new === "boolean");
-  els.metricCandidates.textContent = hasNewFlags
-    ? scoped.filter((item) => item.is_new).length
-    : state.payload.summary.new_candidates;
-  els.metricDaily.textContent = scoped.filter((item) => item.tier === "daily").length;
-  els.metricImmediate.textContent = scoped.filter((item) => item.tier === "immediate").length;
-  els.metricArchive.textContent = scoped.filter((item) => item.tier === "archive").length;
-  els.sourceCount.textContent = `${
-    new Set(scoped.flatMap((item) => item.source_ids || [item.source_id || item.source_label])).size
-  } sources`;
+  const scoped = getFilteredItems();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const customerCompanyCount = (state.payload.companies || []).filter(
+    (company) => company.business_role === "customer",
+  ).length;
+  const competitorCount = scoped.filter((item) => getItemRole(item, companyRoles) === "competitor").length;
+  const customerCount = scoped.filter((item) => getItemRole(item, companyRoles) === "customer").length;
+  const apacRegions = new Set(["japan", "china", "korea", "southeast_asia"]);
+  const apacCount = scoped.filter((item) => apacRegions.has(inferItemRegion(item))).length;
+  const criticalCount = scoped.filter(
+    (item) => ["daily", "immediate"].includes(item.tier) && item.score >= 65,
+  ).length;
 
-  const categoryMix = {};
-  for (const item of scoped) {
-    categoryMix[item.category] = (categoryMix[item.category] || 0) + 1;
-  }
+  els.metricCandidates.textContent = criticalCount;
+  els.metricDaily.textContent = competitorCount;
+  els.metricImmediate.textContent = customerCompanyCount ? customerCount : "未接入";
+  els.metricArchive.textContent = apacCount;
+  els.metricCompetitorNote.textContent = `${
+    (state.payload.companies || []).filter((company) => company.business_role === "competitor").length
+  } 家已确认竞品`;
+  els.metricCustomerNote.textContent = customerCompanyCount
+    ? `${customerCompanyCount} 家客户 / 目标客户`
+    : "客户池尚未导入名单";
+  els.sourceCount.textContent = `${scoped.length} 条`;
+  els.windowDays.textContent = `${state.timeRange} 天`;
+
+  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount);
+  renderSignalTrend(scoped, companyRoles);
+  renderRegionDistribution(scoped);
+  renderCompanyTopicMatrix(scoped);
+  renderCategoryDistribution(scoped);
   renderSignals();
-  renderBars(els.topicBars, categoryMix, labelCategory);
-  renderSources(scoped);
+}
+
+const regionDefinitions = [
+  { id: "japan", label: "日本" },
+  { id: "china", label: "中国" },
+  { id: "korea", label: "韩国" },
+  { id: "southeast_asia", label: "东南亚" },
+  { id: "north_america", label: "北美" },
+  { id: "europe", label: "欧洲" },
+  { id: "global", label: "全球 / 未识别" },
+];
+
+const regionPatterns = [
+  ["japan", /\b(japan|japanese|tokyo|osaka|kobe|kyoto|yokohama|biojapan)\b|日本|東京|东京|大阪|神戸|神户|京都|横浜|横滨|近畿|湘南/i],
+  ["china", /\b(china|chinese|beijing|shanghai|shenzhen|suzhou|guangzhou)\b|中国|北京|上海|深圳|苏州|广州/i],
+  ["korea", /\b(korea|korean|seoul|bio korea)\b|韩国|韓国|首尔|ソウル/i],
+  ["southeast_asia", /\b(singapore|malaysia|thailand|indonesia|vietnam|philippines)\b|新加坡|马来西亚|泰国|印度尼西亚|越南|菲律宾/i],
+  ["north_america", /\b(united states|u\.s\.|usa|canada|boston|california|san diego|new york)\b|美国|加拿大/i],
+  ["europe", /\b(europe|european|germany|france|uk|united kingdom|switzerland|netherlands|belgium)\b|欧洲|德国|法国|英国|瑞士|荷兰|比利时/i],
+];
+
+function inferItemRegion(item) {
+  const text = `${item.title || ""} ${item.summary || ""} ${item.ai_summary || ""} ${
+    (item.source_labels || [item.source_label]).join(" ")
+  }`;
+  return regionPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "global";
+}
+
+function labelRegion(region) {
+  return regionDefinitions.find((entry) => entry.id === region)?.label || region;
+}
+
+function getItemRole(item, companyRoles = null) {
+  const roles = companyRoles || new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const matchedRoles = (item.matched_company_ids || []).map((id) => roles.get(id)).filter(Boolean);
+  for (const role of ["customer", "competitor", "self"]) {
+    if (matchedRoles.includes(role)) return role;
+  }
+  return "industry";
+}
+
+function labelRole(role) {
+  return {
+    self: "本公司",
+    competitor: "竞品",
+    customer: "客户",
+    industry: "行业观察",
+  }[role] || role;
+}
+
+function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
+  const competitorCompanyCounts = {};
+  const categoryCounts = {};
+  const regionCounts = {};
+  for (const item of items) {
+    for (const companyId of item.matched_company_ids || []) {
+      if (companyRoles.get(companyId) === "competitor") {
+        competitorCompanyCounts[companyId] = (competitorCompanyCounts[companyId] || 0) + 1;
+      }
+    }
+    categoryCounts[item.category] = (categoryCounts[item.category] || 0) + 1;
+    const region = inferItemRegion(item);
+    regionCounts[region] = (regionCounts[region] || 0) + 1;
+  }
+  const topCompanyEntry = Object.entries(competitorCompanyCounts).sort((a, b) => b[1] - a[1])[0];
+  const topCompany = topCompanyEntry
+    ? state.payload.companies.find((company) => company.id === topCompanyEntry[0])
+    : null;
+  const topCategory = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1])[0];
+  const topRegion = Object.entries(regionCounts)
+    .filter(([region]) => region !== "global")
+    .sort((a, b) => b[1] - a[1])[0];
+
+  els.executiveHeadline.textContent = items.length
+    ? `${state.timeRange} 天内共识别 ${items.length} 条有效信号，重点看竞品动作与亚太变化`
+    : "当前筛选范围内没有达到日报门槛的信号";
+  const points = [
+    topCompany
+      ? `竞品活跃度最高：${shortCompanyName(topCompany.display_name)}，共 ${topCompanyEntry[1]} 条。`
+      : "当前范围内没有明确命中竞品池的信号。",
+    topCategory
+      ? `最集中的主题是“${labelCategory(topCategory[0])}”，占 ${topCategory[1]} 条。`
+      : "主题信号暂不足以形成判断。",
+    topRegion
+      ? `已识别地区中“${labelRegion(topRegion[0])}”最多，共 ${topRegion[1]} 条；其余全球内容仍需进一步结构化。`
+      : "多数内容暂未识别出明确事件地区，地区结果目前只作线索。",
+    customerCompanyCount
+      ? `客户池已接入 ${customerCompanyCount} 家，可继续观察需求与合作信号。`
+      : "客户池尚未导入，客户需求不显示为 0，避免造成“没有需求”的误判。",
+  ];
+  els.executivePoints.innerHTML = points.map((point) => `<li>${escapeHtml(point)}</li>`).join("");
+}
+
+function renderSignalTrend(items, companyRoles) {
+  const days = state.timeRange;
+  const seriesDefinitions = [
+    { id: "self", label: "本公司", color: "#087f8c" },
+    { id: "competitor", label: "竞品", color: "#c95d42" },
+    { id: "customer", label: "客户", color: "#345f9f" },
+    { id: "industry", label: "行业", color: "#7b8790" },
+  ].filter((series) => state.role === "all" || state.role === series.id);
+  const values = Object.fromEntries(seriesDefinitions.map((series) => [series.id, Array(days).fill(0)]));
+  for (const item of items) {
+    const age = Math.max(0, Math.floor(Number(item.age_days) || 0));
+    if (age >= days) continue;
+    const role = getItemRole(item, companyRoles);
+    if (values[role]) values[role][days - age - 1] += 1;
+  }
+  const maxValue = Math.max(1, ...Object.values(values).flat());
+  const chartWidth = 720;
+  const chartHeight = 220;
+  const padding = { top: 18, right: 14, bottom: 34, left: 32 };
+  const plotWidth = chartWidth - padding.left - padding.right;
+  const plotHeight = chartHeight - padding.top - padding.bottom;
+  const xFor = (index) => padding.left + (index / Math.max(days - 1, 1)) * plotWidth;
+  const yFor = (value) => padding.top + plotHeight - (value / maxValue) * plotHeight;
+  const grid = [0, 0.5, 1].map((ratio) => {
+    const y = padding.top + plotHeight * ratio;
+    const label = Math.round(maxValue * (1 - ratio));
+    return `<line x1="${padding.left}" y1="${y}" x2="${chartWidth - padding.right}" y2="${y}" class="chart-grid-line" />
+      <text x="${padding.left - 8}" y="${y + 4}" text-anchor="end" class="chart-axis-label">${label}</text>`;
+  }).join("");
+  const lines = seriesDefinitions.map((series) => {
+    const points = values[series.id].map((value, index) => `${xFor(index)},${yFor(value)}`).join(" ");
+    return `<polyline points="${points}" fill="none" stroke="${series.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />`;
+  }).join("");
+  const runDate = new Date(state.payload.generated_at);
+  const dateLabel = (daysAgo) => {
+    const date = new Date(runDate);
+    date.setDate(date.getDate() - daysAgo);
+    return `${date.getMonth() + 1}/${date.getDate()}`;
+  };
+  const xLabels = [
+    [padding.left, dateLabel(days - 1), "start"],
+    [padding.left + plotWidth / 2, dateLabel(Math.floor(days / 2)), "middle"],
+    [chartWidth - padding.right, dateLabel(0), "end"],
+  ].map(([x, label, anchor]) => `<text x="${x}" y="${chartHeight - 8}" text-anchor="${anchor}" class="chart-axis-label">${label}</text>`).join("");
+  els.signalTrendChart.innerHTML = `<svg class="trend-svg" viewBox="0 0 ${chartWidth} ${chartHeight}" role="img" aria-label="${state.timeRange} 天信号趋势">${grid}${lines}${xLabels}</svg>`;
+  els.trendLegend.innerHTML = seriesDefinitions.map((series) => {
+    const total = values[series.id].reduce((sum, value) => sum + value, 0);
+    const suffix = series.id === "customer" && !total ? "未接入" : total;
+    return `<span><i style="background:${series.color}"></i>${series.label} ${suffix}</span>`;
+  }).join("");
+}
+
+function renderRegionDistribution(items) {
+  const counts = Object.fromEntries(regionDefinitions.map((region) => [region.id, 0]));
+  for (const item of items) counts[inferItemRegion(item)] += 1;
+  const entries = regionDefinitions.map((region) => [region, counts[region.id]]).sort((a, b) => b[1] - a[1]);
+  const max = Math.max(1, ...entries.map(([, count]) => count));
+  els.regionBars.innerHTML = entries.map(([region, count]) => `
+    <div class="region-row">
+      <div><span>${escapeHtml(region.label)}</span><strong>${count}</strong></div>
+      <div class="region-track"><i style="width:${Math.max(count ? 7 : 0, Math.round((count / max) * 100))}%"></i></div>
+    </div>
+  `).join("");
+}
+
+function renderCompanyTopicMatrix(items) {
+  const companies = (state.payload.companies || []).filter(
+    (company) => ["self", "competitor", "customer"].includes(company.business_role),
+  );
+  const categoryTotals = {};
+  for (const item of items) categoryTotals[item.category] = (categoryTotals[item.category] || 0) + 1;
+  const categories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([category]) => category);
+  if (!categories.length) {
+    els.companyTopicMatrix.innerHTML = '<div class="empty">当前范围内没有可形成矩阵的主题。</div>';
+    return;
+  }
+  const matrix = {};
+  let max = 0;
+  for (const company of companies) {
+    matrix[company.id] = {};
+    for (const category of categories) {
+      const count = items.filter(
+        (item) => (item.matched_company_ids || []).includes(company.id) && item.category === category,
+      ).length;
+      matrix[company.id][category] = count;
+      max = Math.max(max, count);
+    }
+  }
+  const columns = `minmax(150px, 1.5fr) repeat(${categories.length}, minmax(68px, 1fr))`;
+  const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>公司</span>${categories.map((category) => `<span>${escapeHtml(labelCategory(category))}</span>`).join("")}</div>`;
+  const rows = companies.map((company) => `
+    <div class="matrix-row" style="grid-template-columns:${columns}">
+      <span class="matrix-company"><i class="role-dot role-${company.business_role}"></i>${escapeHtml(shortCompanyName(company.display_name))}</span>
+      ${categories.map((category) => {
+        const count = matrix[company.id][category];
+        const intensity = count ? Math.max(1, Math.ceil((count / Math.max(max, 1)) * 4)) : 0;
+        return `<span class="matrix-cell intensity-${intensity}" title="${count} 条">${count || "–"}</span>`;
+      }).join("")}
+    </div>
+  `).join("");
+  els.companyTopicMatrix.innerHTML = `<div class="matrix-scroll">${header}${rows}</div>`;
+}
+
+function renderCategoryDistribution(items) {
+  const counts = {};
+  for (const item of items) counts[item.category] = (counts[item.category] || 0) + 1;
+  const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const max = Math.max(1, ...entries.map(([, count]) => count));
+  els.categoryBars.innerHTML = entries.length ? entries.map(([category, count]) => `
+    <div class="category-row">
+      <div><span>${escapeHtml(labelCategory(category))}</span><strong>${count}</strong></div>
+      <div class="category-track"><i style="width:${Math.round((count / max) * 100)}%"></i></div>
+    </div>
+  `).join("") : '<div class="empty">当前范围内没有主题数据。</div>';
+}
+
+function shortCompanyName(name) {
+  return String(name).split(" / ")[0].replace(" Scientific", "");
 }
 
 function renderRules() {
@@ -27743,7 +28569,7 @@ function renderPage() {
   const [eyebrow, title] = pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
-  els.toolbar.hidden = state.page !== "overview";
+  els.toolbar.hidden = !["overview", "signals"].includes(state.page);
   els.pagePanels.forEach((panel) => {
     panel.hidden = panel.dataset.page !== state.page;
   });
@@ -27753,35 +28579,36 @@ function renderPage() {
 }
 
 function renderSignals() {
-  const query = state.searchQuery.toLowerCase().trim();
-  const filtered = state.payload.items
-    .filter((item) => state.tier === "all" || item.tier === state.tier)
-    .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
-    .filter(
-      (item) =>
-        state.company === "all" ||
-        (item.matched_companies || [item.company]).includes(state.company),
-    )
-    .filter((item) => state.category === "all" || item.category === state.category)
-    .filter((item) => {
-      if (!query) return true;
-      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")}`.toLowerCase();
-      return haystack.includes(query);
-    })
-    .sort((a, b) => b.score - a.score);
+  const filtered = getFilteredItems();
+  els.detailSignalCount.textContent = `${filtered.length} 条结果`;
+  renderSignalCards(els.topSignalList, filtered.slice(0, 5), true);
+  renderSignalCards(els.signalList, filtered, false);
+}
 
-  els.signalList.innerHTML = "";
-  const countSuffix = query ? `（搜索"${escapeHtml(state.searchQuery)}"，共 ${filtered.length} 条）` : "";
-  if (!filtered.length) {
-    els.signalList.innerHTML = `<div class="empty">当前筛选条件下没有需要展示的信号。${countSuffix}</div>`;
+function renderSignalCards(container, items, compact) {
+  if (!container) return;
+  container.innerHTML = "";
+  if (!items.length) {
+    const customerEmpty = state.role === "customer" && !(state.payload.companies || []).some(
+      (company) => company.business_role === "customer",
+    );
+    container.innerHTML = `<div class="empty">${
+      customerEmpty
+        ? "客户池尚未导入公司名单，因此不能把‘未接入’解释成‘没有客户信号’。"
+        : "当前筛选条件下没有需要展示的信号。"
+    }</div>`;
     return;
   }
-
-  for (const item of filtered) {
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  for (const item of items) {
     const card = document.createElement("article");
-    card.className = "signal-card";
+    card.className = `signal-card${compact ? " compact" : ""}`;
     const fb = state.feedback[item.id];
     const fbClass = fb ? `voted-${fb.value}` : "";
+    const role = getItemRole(item, companyRoles);
+    const region = inferItemRegion(item);
     card.innerHTML = `
       <div class="signal-top">
         <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
@@ -27789,6 +28616,8 @@ function renderSignals() {
       </div>
       <div class="meta-row">
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
+        <span class="tag role-tag role-${role}">${labelRole(role)}</span>
+        <span class="tag region-tag">${escapeHtml(labelRegion(region))}</span>
         <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
         <span class="tag">${labelCategory(item.category)}</span>
         <span class="tag company-match ${
@@ -27802,29 +28631,27 @@ function renderSignals() {
         <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
       <p class="summary">${escapeHtml(item.ai_summary || item.summary || "暂无摘要，建议回原文核对。")}</p>
-      <ul class="reason-list">
+      ${compact ? "" : `<ul class="reason-list">
         ${item.reasons.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
       </ul>
       <div class="feedback-row ${fbClass}">
         <span class="feedback-label">这条有用吗？</span>
-        <button class="fb-btn fb-up${fb && fb.value === "up" ? " active" : ""}" data-id="${item.id}" data-action="up" title="有用">👍 有用</button>
-        <button class="fb-btn fb-down${fb && fb.value === "down" ? " active" : ""}" data-id="${item.id}" data-action="down" title="无用">👎 无用</button>
-        ${fb ? '<span class="fb-thanks">已反馈，谢谢！</span>' : ""}
-      </div>
+        <button class="fb-btn fb-up${fb && fb.value === "up" ? " active" : ""}" data-id="${item.id}" data-action="up" title="有用">有用</button>
+        <button class="fb-btn fb-down${fb && fb.value === "down" ? " active" : ""}" data-id="${item.id}" data-action="down" title="无用">无用</button>
+        ${fb ? '<span class="fb-thanks">已反馈</span>' : ""}
+      </div>`}
     `;
-    els.signalList.appendChild(card);
+    container.appendChild(card);
   }
-
-  // Bind feedback button events after DOM is built
-  els.signalList.querySelectorAll(".fb-btn").forEach((btn) => {
+  if (compact) return;
+  container.querySelectorAll(".fb-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const id = btn.dataset.id;
       const action = btn.dataset.action;
       const current = state.feedback[id];
-      // Toggle off if clicking same action again
       const newValue = current && current.value === action ? null : action;
       state.feedback = saveFeedback(id, newValue);
-      renderSignals(); // re-render to update UI
+      renderSignals();
     });
   });
 }
@@ -27939,6 +28766,7 @@ function renderSourceHealth() {
   const errorCount = errors.length;
   els.healthStatus.textContent = errorCount > 0 ? `${errorCount} 异常 / ${total} 来源` : `${total} 来源正常`;
 
+  if (!els.healthList) return;
   if (errors.length === 0) {
     els.healthList.innerHTML = '<div class="health-ok">所有来源运行正常 ✓</div>';
     return;
@@ -28170,7 +28998,11 @@ function csvCell(value) {
 
 function getFilteredItems() {
   const query = state.searchQuery.toLowerCase().trim();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
   return state.payload.items
+    .filter((item) => Math.max(0, Math.floor(Number(item.age_days) || 0)) < state.timeRange)
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter(
@@ -28178,6 +29010,8 @@ function getFilteredItems() {
         state.company === "all" ||
         (item.matched_companies || [item.company]).includes(state.company),
     )
+    .filter((item) => state.role === "all" || getItemRole(item, companyRoles) === state.role)
+    .filter((item) => state.region === "all" || inferItemRegion(item) === state.region)
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;
@@ -28197,7 +29031,7 @@ document.querySelectorAll(".metric.clickable").forEach((card) => {
     state.tier = tier;
     els.tierFilter.value = tier;
     renderPage();
-    renderSignals();
+    renderOverviewScope();
   });
 });
 
@@ -28230,7 +29064,7 @@ document.querySelectorAll("[data-filter-company]").forEach((chip) => {
         els.companyFilter.value = "all";
       }
     }
-    renderSignals();
+    renderOverviewScope();
     document.querySelectorAll("[data-filter-company]").forEach((c) => {
       c.classList.toggle("active", c.dataset.filterCompany === companyId);
     });
@@ -28239,14 +29073,14 @@ document.querySelectorAll("[data-filter-company]").forEach((chip) => {
 
 els.searchInput.addEventListener("input", (event) => {
   state.searchQuery = event.target.value;
-  renderSignals();
+  renderOverviewScope();
 });
 
 els.exportCsvButton.addEventListener("click", exportCsv);
 
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;
-  renderSignals();
+  renderOverviewScope();
 });
 
 els.signalTypeFilter.addEventListener("change", (event) => {
@@ -28256,7 +29090,7 @@ els.signalTypeFilter.addEventListener("change", (event) => {
 
 els.categoryFilter.addEventListener("change", (event) => {
   state.category = event.target.value;
-  renderSignals();
+  renderOverviewScope();
 });
 
 els.companyFilter.addEventListener("change", (event) => {
@@ -28270,7 +29104,38 @@ els.companyFilter.addEventListener("change", (event) => {
   document.querySelectorAll("[data-filter-company]").forEach((c) => {
     c.classList.toggle("active", c.dataset.filterCompany === companyId);
   });
-  renderSignals();
+  renderOverviewScope();
+});
+
+els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.timeRange = Number(button.dataset.timeRange);
+    els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((control) => {
+      control.classList.toggle("active", control === button);
+    });
+    renderOverviewScope();
+  });
+});
+
+els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.role = button.dataset.roleFilter;
+    els.roleControl.querySelectorAll("[data-role-filter]").forEach((control) => {
+      control.classList.toggle("active", control === button);
+    });
+    renderOverviewScope();
+  });
+});
+
+els.regionFilter.addEventListener("change", (event) => {
+  state.region = event.target.value;
+  renderOverviewScope();
+});
+
+els.openSignalDetailButton.addEventListener("click", () => {
+  state.page = "signals";
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 els.refreshButton.addEventListener("click", () => loadData());

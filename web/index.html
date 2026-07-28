@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260728a" />
+    <link rel="stylesheet" href="./styles.css?v=20260728d" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -19,16 +19,17 @@
       <nav class="nav" aria-label="页面导航">
         <div class="nav-group">
           <span class="nav-group-label">情报工作台</span>
-          <button class="active" type="button" data-page-target="overview"><span class="nav-icon">⌂</span><span>总览</span></button>
-          <button type="button" data-page-target="companies"><span class="nav-icon">◉</span><span>公司池</span></button>
-          <button type="button" data-page-target="sources"><span class="nav-icon">◇</span><span>数据源地图</span></button>
-          <button type="button" data-page-target="acro"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
+          <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
+          <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
+          <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
+          <button type="button" data-page-target="acro" title="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
         </div>
         <div class="nav-group">
           <span class="nav-group-label">运行管理</span>
-          <button type="button" data-page-target="source-health"><span class="nav-icon">✓</span><span>数据源健康</span></button>
-          <button type="button" data-page-target="pipeline"><span class="nav-icon">↳</span><span>系统链路</span></button>
-          <button type="button" data-page-target="questions"><span class="nav-icon">?</span><span>待确认</span></button>
+          <button type="button" data-page-target="source-health" title="数据源健康"><span class="nav-icon">✓</span><span>数据源健康</span></button>
+          <button type="button" data-page-target="pipeline" title="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
+          <button type="button" data-page-target="questions" title="待确认"><span class="nav-icon">?</span><span>待确认</span></button>
         </div>
       </nav>
 
@@ -83,13 +84,13 @@
         <div class="toolbar" aria-label="Dashboard controls">
           <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
           <select id="signalTypeFilter" aria-label="按情报类型筛选">
-            <option value="news" selected>新闻</option>
+            <option value="all" selected>全部类型</option>
+            <option value="news">新闻</option>
             <option value="event">活动 / 生态</option>
             <option value="video">视频</option>
             <option value="filing">公司公告</option>
             <option value="regulatory">监管风险</option>
             <option value="research">论文研究</option>
-            <option value="all">全部类型</option>
           </select>
           <select id="tierFilter" aria-label="按推送分层筛选">
             <option value="all">全部分层</option>
@@ -110,43 +111,105 @@
         </div>
       </header>
 
-      <section class="summary-grid page-panel" data-page="overview" id="overview" aria-label="Summary metrics">
-        <article class="metric clickable" data-tier="all" title="点击查看全部动态">
-          <span>新候选</span>
+      <section class="analysis-controls page-panel" data-page="overview" id="overview" aria-label="Dashboard filters">
+        <div class="control-group">
+          <span>观察周期</span>
+          <div class="segmented-control" id="timeRangeControl" aria-label="观察周期">
+            <button type="button" data-time-range="7">7 天</button>
+            <button class="active" type="button" data-time-range="30">30 天</button>
+            <button type="button" data-time-range="90">90 天</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <span>公司角色</span>
+          <div class="segmented-control" id="roleControl" aria-label="公司角色">
+            <button class="active" type="button" data-role-filter="all">全部</button>
+            <button type="button" data-role-filter="self">本公司</button>
+            <button type="button" data-role-filter="competitor">竞品</button>
+            <button type="button" data-role-filter="customer">客户</button>
+          </div>
+        </div>
+        <label class="region-control">
+          <span>事件地区</span>
+          <select id="regionFilter" aria-label="按事件地区筛选">
+            <option value="all">全部地区</option>
+            <option value="japan">日本</option>
+            <option value="china">中国</option>
+            <option value="korea">韩国</option>
+            <option value="southeast_asia">东南亚</option>
+            <option value="north_america">北美</option>
+            <option value="europe">欧洲</option>
+            <option value="global">全球 / 未识别</option>
+          </select>
+        </label>
+        <small>地区为标题与摘要规则识别，后续将升级为结构化提取。</small>
+      </section>
+
+      <section class="summary-grid page-panel" data-page="overview" aria-label="Executive metrics">
+        <article class="metric executive">
+          <span>重大信号</span>
           <strong id="metricCandidates">--</strong>
-          <small>点击查看全部 →</small>
+          <small>高分日报与即时提醒</small>
         </article>
-        <article class="metric accent clickable" data-tier="daily" title="点击只看日报级内容">
-          <span>建议推送</span>
+        <article class="metric accent executive">
+          <span>竞品动态</span>
           <strong id="metricDaily">--</strong>
-          <small>点击查看日报 →</small>
+          <small id="metricCompetitorNote">已确认竞品池</small>
         </article>
-        <article class="metric warn clickable" data-tier="immediate" title="点击只看即时提醒">
-          <span>即时提醒</span>
+        <article class="metric warn executive">
+          <span>客户需求信号</span>
           <strong id="metricImmediate">--</strong>
-          <small>点击查看提醒 →</small>
+          <small id="metricCustomerNote">客户池待接入</small>
         </article>
-        <article class="metric quiet clickable" data-tier="archive" title="点击查看归档内容">
-          <span>噪音压制</span>
+        <article class="metric regional executive">
+          <span>亚太地区动态</span>
           <strong id="metricArchive">--</strong>
-          <small>点击查看归档 →</small>
+          <small>日本、中国、韩国与东南亚</small>
         </article>
       </section>
 
-      <section class="decision-band page-panel" data-page="overview" aria-label="Executive brief">
-        <div>
-          <p class="eyebrow">当前判断</p>
-          <h2>先做每日情报工作台，再开放即时推送</h2>
-          <p>
-            借鉴 AIhot 的精选流、日报、主题和 Agent 接入思路，但 ACRO 场景要多一层业务解释：
-            这条动态对产品宣传、竞品观察、日本市场和销售线索意味着什么。
-          </p>
+      <section class="decision-band dashboard-brief page-panel" data-page="overview" aria-label="Executive brief">
+        <div class="brief-copy">
+          <p class="eyebrow">老板摘要</p>
+          <h2 id="executiveHeadline">正在生成本期判断</h2>
+          <ul id="executivePoints" class="executive-points"></ul>
         </div>
-        <div class="decision-list">
-          <div><span>频率</span>当前建议每天 1 次，工作日上午生成</div>
-          <div><span>节奏</span>日报默认，重大信号再即时提醒</div>
-          <div><span>成本</span>公开来源先筛噪，AI 只处理高分候选</div>
+        <div class="brief-status-grid">
+          <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
+          <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
+          <div><span>当前范围</span><strong id="windowDays">30 天</strong></div>
         </div>
+      </section>
+
+      <section class="analytics-grid page-panel" data-page="overview" aria-label="Intelligence analytics">
+        <article class="analysis-panel trend-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">趋势</p><h2>信号走势</h2></div>
+            <div id="trendLegend" class="chart-legend"></div>
+          </div>
+          <div id="signalTrendChart" class="trend-chart" aria-label="信号趋势图"></div>
+        </article>
+        <article class="analysis-panel region-panel" id="regionPanel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">地区</p><h2>地区信号分布</h2></div>
+            <span>规则识别</span>
+          </div>
+          <div id="regionBars" class="region-bars"></div>
+        </article>
+        <article class="analysis-panel matrix-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">公司 × 主题</p><h2>竞品动作矩阵</h2></div>
+            <span>颜色越深，信号越集中</span>
+          </div>
+          <div id="companyTopicMatrix" class="company-topic-matrix"></div>
+        </article>
+        <article class="analysis-panel category-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">结构</p><h2>动作与主题构成</h2></div>
+            <span id="sourceCount">-- 条</span>
+          </div>
+          <div id="categoryBars" class="category-bars"></div>
+        </article>
       </section>
 
       <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
@@ -263,92 +326,28 @@
         </div>
       </section>
 
-      <section class="layout page-panel" data-page="overview">
-        <div class="feed" id="signals">
+      <section class="top-signals page-panel" data-page="overview" id="signals">
+        <div class="feed">
           <div class="section-head">
             <div>
-              <p class="eyebrow">精选信号</p>
-              <h2>今日需要市场部看的动态</h2>
+              <p class="eyebrow">决策证据</p>
+              <h2>本期最值得看的 5 条战略事件</h2>
             </div>
-            <span id="updatedAt" class="timestamp">加载中</span>
+            <button class="text-button" id="openSignalDetailButton" type="button">查看全部情报</button>
           </div>
-          <div id="signalList" class="signal-list" aria-live="polite"></div>
+          <div id="topSignalList" class="signal-list compact-signal-list" aria-live="polite"></div>
         </div>
+      </section>
 
-        <aside class="insights" aria-label="Dashboard insights">
-          <section class="panel" id="topics">
-            <div class="section-head compact">
-              <h2>主题热度</h2>
-              <span id="windowDays">-- 天</span>
-            </div>
-            <div id="topicBars" class="bars"></div>
-          </section>
-
-          <section class="panel">
-            <div class="section-head compact">
-              <h2>来源构成</h2>
-              <span id="sourceCount">-- sources</span>
-            </div>
-            <div id="sourceList" class="source-list"></div>
-          </section>
-
-          <section class="panel" id="workflow">
-            <h2>市场部动作队列</h2>
-            <div class="action-list">
-              <label><input type="checkbox" checked /> 先确认日报分类是否符合业务直觉</label>
-              <label><input type="checkbox" /> 补充休假前目标公司名单</label>
-              <label><input type="checkbox" /> 为 ADC / CGT / GMP 建立竞品关键词组</label>
-              <label><input type="checkbox" /> 决定哪些信号要进入老板即时提醒</label>
-            </div>
-          </section>
-
-          <section class="panel">
-            <h2>现阶段能解决什么</h2>
-            <div class="capability-list">
-              <div>
-                <strong>减少噪音</strong>
-                <span>把公开来源里的弱相关、旧新闻和金融噪音压到归档。</span>
-              </div>
-              <div>
-                <strong>给市场部选题</strong>
-                <span>把 CGT、GMP、合作、监管等信号整理成可读列表。</span>
-              </div>
-              <div>
-                <strong>给老板看趋势</strong>
-                <span>用指标、主题热度和来源构成快速判断今天有没有要关注的事。</span>
-              </div>
-              <div>
-                <strong>验证公司名单</strong>
-                <span>先用 ACRO 跑通规则，再批量接入目标公司和竞品。</span>
-              </div>
-            </div>
-          </section>
-
-          <section class="panel" id="sourceHealth">
-            <div class="section-head compact">
-              <h2>来源健康</h2>
-              <span id="healthStatus">--</span>
-            </div>
-            <div id="healthList" class="health-list"></div>
-          </section>
-
-          <section class="panel" id="trendPanel">
-            <div class="section-head compact">
-              <h2>日期间对比</h2>
-              <span id="trendDays">vs 昨日</span>
-            </div>
-            <div id="trendList" class="trend-list"></div>
-          </section>
-
-          <section class="panel">
-            <h2>AIhot 式接入</h2>
-            <div class="api-list">
-              <a href="../api/public/daily.json">日报 JSON</a>
-              <a href="../api/public/items.json">全部动态 JSON</a>
-              <a href="../api/public/topics.json">主题 JSON</a>
-            </div>
-          </section>
-        </aside>
+      <section class="signals-detail-section page-panel" data-page="signals" aria-label="Intelligence detail">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">情报明细</p>
+            <h2>全部信号与筛选结果</h2>
+          </div>
+          <span id="detailSignalCount" class="timestamp">加载中</span>
+        </div>
+        <div id="signalList" class="signal-list" aria-live="polite"></div>
       </section>
 
       <section class="pipeline-section page-panel" data-page="pipeline" aria-label="System pipeline">
@@ -475,7 +474,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260728a"></script>
-    <script src="./app.js?v=20260728a"></script>
+    <script src="./embedded-data.js?v=20260728d"></script>
+    <script src="./app.js?v=20260728d"></script>
   </body>
 </html>

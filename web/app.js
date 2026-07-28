@@ -22,9 +22,12 @@ function saveFeedback(id, value) {
 const state = {
   payload: null,
   tier: "daily",
-  signalType: "news",
+  signalType: "all",
   company: "all",
   category: "all",
+  timeRange: 30,
+  role: "all",
+  region: "all",
   searchQuery: "",
   page: "overview",
   sourceStage: "all",
@@ -771,6 +774,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 样本档案"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
@@ -852,10 +856,23 @@ const els = {
   metricArchive: document.querySelector("#metricArchive"),
   updatedAt: document.querySelector("#updatedAt"),
   signalList: document.querySelector("#signalList"),
-  topicBars: document.querySelector("#topicBars"),
-  sourceList: document.querySelector("#sourceList"),
+  topSignalList: document.querySelector("#topSignalList"),
+  detailSignalCount: document.querySelector("#detailSignalCount"),
   sourceCount: document.querySelector("#sourceCount"),
   windowDays: document.querySelector("#windowDays"),
+  timeRangeControl: document.querySelector("#timeRangeControl"),
+  roleControl: document.querySelector("#roleControl"),
+  regionFilter: document.querySelector("#regionFilter"),
+  executiveHeadline: document.querySelector("#executiveHeadline"),
+  executivePoints: document.querySelector("#executivePoints"),
+  signalTrendChart: document.querySelector("#signalTrendChart"),
+  trendLegend: document.querySelector("#trendLegend"),
+  regionBars: document.querySelector("#regionBars"),
+  companyTopicMatrix: document.querySelector("#companyTopicMatrix"),
+  categoryBars: document.querySelector("#categoryBars"),
+  metricCompetitorNote: document.querySelector("#metricCompetitorNote"),
+  metricCustomerNote: document.querySelector("#metricCustomerNote"),
+  openSignalDetailButton: document.querySelector("#openSignalDetailButton"),
   tierFilter: document.querySelector("#tierFilter"),
   signalTypeFilter: document.querySelector("#signalTypeFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
@@ -864,7 +881,6 @@ const els = {
   exportCsvButton: document.querySelector("#exportCsvButton"),
   refreshButton: document.querySelector("#refreshButton"),
   healthStatus: document.querySelector("#healthStatus"),
-  healthList: document.querySelector("#healthList"),
   healthGeneratedAt: document.querySelector("#healthGeneratedAt"),
   healthMetricTracked: document.querySelector("#healthMetricTracked"),
   healthMetricProducing: document.querySelector("#healthMetricProducing"),
@@ -875,8 +891,6 @@ const els = {
   healthStatusFilter: document.querySelector("#healthStatusFilter"),
   healthRowCount: document.querySelector("#healthRowCount"),
   healthTableBody: document.querySelector("#healthTableBody"),
-  trendList: document.querySelector("#trendList"),
-  trendDays: document.querySelector("#trendDays"),
   pageEyebrow: document.querySelector("#pageEyebrow"),
   pageTitle: document.querySelector("#pageTitle"),
   toolbar: document.querySelector(".toolbar"),
@@ -911,7 +925,6 @@ function renderLoadedData() {
   render();
   renderSourceHealth();
   renderSourceHealthPage();
-  renderTrend();
 }
 
 function hydrateCompanyMetadata(payload) {
@@ -1081,7 +1094,7 @@ function hydrateFilters() {
 
 function render() {
   const { payload } = state;
-  els.windowDays.textContent = `${payload.window_days} 天`;
+  els.windowDays.textContent = `${state.timeRange} 天`;
   els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
 
   renderOverviewScope();
@@ -1096,25 +1109,253 @@ function getSignalTypeItems() {
 }
 
 function renderOverviewScope() {
-  const scoped = getSignalTypeItems();
-  const hasNewFlags = scoped.some((item) => typeof item.is_new === "boolean");
-  els.metricCandidates.textContent = hasNewFlags
-    ? scoped.filter((item) => item.is_new).length
-    : state.payload.summary.new_candidates;
-  els.metricDaily.textContent = scoped.filter((item) => item.tier === "daily").length;
-  els.metricImmediate.textContent = scoped.filter((item) => item.tier === "immediate").length;
-  els.metricArchive.textContent = scoped.filter((item) => item.tier === "archive").length;
-  els.sourceCount.textContent = `${
-    new Set(scoped.flatMap((item) => item.source_ids || [item.source_id || item.source_label])).size
-  } sources`;
+  const scoped = getFilteredItems();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const customerCompanyCount = (state.payload.companies || []).filter(
+    (company) => company.business_role === "customer",
+  ).length;
+  const competitorCount = scoped.filter((item) => getItemRole(item, companyRoles) === "competitor").length;
+  const customerCount = scoped.filter((item) => getItemRole(item, companyRoles) === "customer").length;
+  const apacRegions = new Set(["japan", "china", "korea", "southeast_asia"]);
+  const apacCount = scoped.filter((item) => apacRegions.has(inferItemRegion(item))).length;
+  const criticalCount = scoped.filter(
+    (item) => ["daily", "immediate"].includes(item.tier) && item.score >= 65,
+  ).length;
 
-  const categoryMix = {};
-  for (const item of scoped) {
-    categoryMix[item.category] = (categoryMix[item.category] || 0) + 1;
-  }
+  els.metricCandidates.textContent = criticalCount;
+  els.metricDaily.textContent = competitorCount;
+  els.metricImmediate.textContent = customerCompanyCount ? customerCount : "未接入";
+  els.metricArchive.textContent = apacCount;
+  els.metricCompetitorNote.textContent = `${
+    (state.payload.companies || []).filter((company) => company.business_role === "competitor").length
+  } 家已确认竞品`;
+  els.metricCustomerNote.textContent = customerCompanyCount
+    ? `${customerCompanyCount} 家客户 / 目标客户`
+    : "客户池尚未导入名单";
+  els.sourceCount.textContent = `${scoped.length} 条`;
+  els.windowDays.textContent = `${state.timeRange} 天`;
+
+  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount);
+  renderSignalTrend(scoped, companyRoles);
+  renderRegionDistribution(scoped);
+  renderCompanyTopicMatrix(scoped);
+  renderCategoryDistribution(scoped);
   renderSignals();
-  renderBars(els.topicBars, categoryMix, labelCategory);
-  renderSources(scoped);
+}
+
+const regionDefinitions = [
+  { id: "japan", label: "日本" },
+  { id: "china", label: "中国" },
+  { id: "korea", label: "韩国" },
+  { id: "southeast_asia", label: "东南亚" },
+  { id: "north_america", label: "北美" },
+  { id: "europe", label: "欧洲" },
+  { id: "global", label: "全球 / 未识别" },
+];
+
+const regionPatterns = [
+  ["japan", /\b(japan|japanese|tokyo|osaka|kobe|kyoto|yokohama|biojapan)\b|日本|東京|东京|大阪|神戸|神户|京都|横浜|横滨|近畿|湘南/i],
+  ["china", /\b(china|chinese|beijing|shanghai|shenzhen|suzhou|guangzhou)\b|中国|北京|上海|深圳|苏州|广州/i],
+  ["korea", /\b(korea|korean|seoul|bio korea)\b|韩国|韓国|首尔|ソウル/i],
+  ["southeast_asia", /\b(singapore|malaysia|thailand|indonesia|vietnam|philippines)\b|新加坡|马来西亚|泰国|印度尼西亚|越南|菲律宾/i],
+  ["north_america", /\b(united states|u\.s\.|usa|canada|boston|california|san diego|new york)\b|美国|加拿大/i],
+  ["europe", /\b(europe|european|germany|france|uk|united kingdom|switzerland|netherlands|belgium)\b|欧洲|德国|法国|英国|瑞士|荷兰|比利时/i],
+];
+
+function inferItemRegion(item) {
+  const text = `${item.title || ""} ${item.summary || ""} ${item.ai_summary || ""} ${
+    (item.source_labels || [item.source_label]).join(" ")
+  }`;
+  return regionPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "global";
+}
+
+function labelRegion(region) {
+  return regionDefinitions.find((entry) => entry.id === region)?.label || region;
+}
+
+function getItemRole(item, companyRoles = null) {
+  const roles = companyRoles || new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const matchedRoles = (item.matched_company_ids || []).map((id) => roles.get(id)).filter(Boolean);
+  for (const role of ["customer", "competitor", "self"]) {
+    if (matchedRoles.includes(role)) return role;
+  }
+  return "industry";
+}
+
+function labelRole(role) {
+  return {
+    self: "本公司",
+    competitor: "竞品",
+    customer: "客户",
+    industry: "行业观察",
+  }[role] || role;
+}
+
+function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
+  const competitorCompanyCounts = {};
+  const categoryCounts = {};
+  const regionCounts = {};
+  for (const item of items) {
+    for (const companyId of item.matched_company_ids || []) {
+      if (companyRoles.get(companyId) === "competitor") {
+        competitorCompanyCounts[companyId] = (competitorCompanyCounts[companyId] || 0) + 1;
+      }
+    }
+    categoryCounts[item.category] = (categoryCounts[item.category] || 0) + 1;
+    const region = inferItemRegion(item);
+    regionCounts[region] = (regionCounts[region] || 0) + 1;
+  }
+  const topCompanyEntry = Object.entries(competitorCompanyCounts).sort((a, b) => b[1] - a[1])[0];
+  const topCompany = topCompanyEntry
+    ? state.payload.companies.find((company) => company.id === topCompanyEntry[0])
+    : null;
+  const topCategory = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1])[0];
+  const topRegion = Object.entries(regionCounts)
+    .filter(([region]) => region !== "global")
+    .sort((a, b) => b[1] - a[1])[0];
+
+  els.executiveHeadline.textContent = items.length
+    ? `${state.timeRange} 天内共识别 ${items.length} 条有效信号，重点看竞品动作与亚太变化`
+    : "当前筛选范围内没有达到日报门槛的信号";
+  const points = [
+    topCompany
+      ? `竞品活跃度最高：${shortCompanyName(topCompany.display_name)}，共 ${topCompanyEntry[1]} 条。`
+      : "当前范围内没有明确命中竞品池的信号。",
+    topCategory
+      ? `最集中的主题是“${labelCategory(topCategory[0])}”，占 ${topCategory[1]} 条。`
+      : "主题信号暂不足以形成判断。",
+    topRegion
+      ? `已识别地区中“${labelRegion(topRegion[0])}”最多，共 ${topRegion[1]} 条；其余全球内容仍需进一步结构化。`
+      : "多数内容暂未识别出明确事件地区，地区结果目前只作线索。",
+    customerCompanyCount
+      ? `客户池已接入 ${customerCompanyCount} 家，可继续观察需求与合作信号。`
+      : "客户池尚未导入，客户需求不显示为 0，避免造成“没有需求”的误判。",
+  ];
+  els.executivePoints.innerHTML = points.map((point) => `<li>${escapeHtml(point)}</li>`).join("");
+}
+
+function renderSignalTrend(items, companyRoles) {
+  const days = state.timeRange;
+  const seriesDefinitions = [
+    { id: "self", label: "本公司", color: "#087f8c" },
+    { id: "competitor", label: "竞品", color: "#c95d42" },
+    { id: "customer", label: "客户", color: "#345f9f" },
+    { id: "industry", label: "行业", color: "#7b8790" },
+  ].filter((series) => state.role === "all" || state.role === series.id);
+  const values = Object.fromEntries(seriesDefinitions.map((series) => [series.id, Array(days).fill(0)]));
+  for (const item of items) {
+    const age = Math.max(0, Math.floor(Number(item.age_days) || 0));
+    if (age >= days) continue;
+    const role = getItemRole(item, companyRoles);
+    if (values[role]) values[role][days - age - 1] += 1;
+  }
+  const maxValue = Math.max(1, ...Object.values(values).flat());
+  const chartWidth = 720;
+  const chartHeight = 220;
+  const padding = { top: 18, right: 14, bottom: 34, left: 32 };
+  const plotWidth = chartWidth - padding.left - padding.right;
+  const plotHeight = chartHeight - padding.top - padding.bottom;
+  const xFor = (index) => padding.left + (index / Math.max(days - 1, 1)) * plotWidth;
+  const yFor = (value) => padding.top + plotHeight - (value / maxValue) * plotHeight;
+  const grid = [0, 0.5, 1].map((ratio) => {
+    const y = padding.top + plotHeight * ratio;
+    const label = Math.round(maxValue * (1 - ratio));
+    return `<line x1="${padding.left}" y1="${y}" x2="${chartWidth - padding.right}" y2="${y}" class="chart-grid-line" />
+      <text x="${padding.left - 8}" y="${y + 4}" text-anchor="end" class="chart-axis-label">${label}</text>`;
+  }).join("");
+  const lines = seriesDefinitions.map((series) => {
+    const points = values[series.id].map((value, index) => `${xFor(index)},${yFor(value)}`).join(" ");
+    return `<polyline points="${points}" fill="none" stroke="${series.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />`;
+  }).join("");
+  const runDate = new Date(state.payload.generated_at);
+  const dateLabel = (daysAgo) => {
+    const date = new Date(runDate);
+    date.setDate(date.getDate() - daysAgo);
+    return `${date.getMonth() + 1}/${date.getDate()}`;
+  };
+  const xLabels = [
+    [padding.left, dateLabel(days - 1), "start"],
+    [padding.left + plotWidth / 2, dateLabel(Math.floor(days / 2)), "middle"],
+    [chartWidth - padding.right, dateLabel(0), "end"],
+  ].map(([x, label, anchor]) => `<text x="${x}" y="${chartHeight - 8}" text-anchor="${anchor}" class="chart-axis-label">${label}</text>`).join("");
+  els.signalTrendChart.innerHTML = `<svg class="trend-svg" viewBox="0 0 ${chartWidth} ${chartHeight}" role="img" aria-label="${state.timeRange} 天信号趋势">${grid}${lines}${xLabels}</svg>`;
+  els.trendLegend.innerHTML = seriesDefinitions.map((series) => {
+    const total = values[series.id].reduce((sum, value) => sum + value, 0);
+    const suffix = series.id === "customer" && !total ? "未接入" : total;
+    return `<span><i style="background:${series.color}"></i>${series.label} ${suffix}</span>`;
+  }).join("");
+}
+
+function renderRegionDistribution(items) {
+  const counts = Object.fromEntries(regionDefinitions.map((region) => [region.id, 0]));
+  for (const item of items) counts[inferItemRegion(item)] += 1;
+  const entries = regionDefinitions.map((region) => [region, counts[region.id]]).sort((a, b) => b[1] - a[1]);
+  const max = Math.max(1, ...entries.map(([, count]) => count));
+  els.regionBars.innerHTML = entries.map(([region, count]) => `
+    <div class="region-row">
+      <div><span>${escapeHtml(region.label)}</span><strong>${count}</strong></div>
+      <div class="region-track"><i style="width:${Math.max(count ? 7 : 0, Math.round((count / max) * 100))}%"></i></div>
+    </div>
+  `).join("");
+}
+
+function renderCompanyTopicMatrix(items) {
+  const companies = (state.payload.companies || []).filter(
+    (company) => ["self", "competitor", "customer"].includes(company.business_role),
+  );
+  const categoryTotals = {};
+  for (const item of items) categoryTotals[item.category] = (categoryTotals[item.category] || 0) + 1;
+  const categories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([category]) => category);
+  if (!categories.length) {
+    els.companyTopicMatrix.innerHTML = '<div class="empty">当前范围内没有可形成矩阵的主题。</div>';
+    return;
+  }
+  const matrix = {};
+  let max = 0;
+  for (const company of companies) {
+    matrix[company.id] = {};
+    for (const category of categories) {
+      const count = items.filter(
+        (item) => (item.matched_company_ids || []).includes(company.id) && item.category === category,
+      ).length;
+      matrix[company.id][category] = count;
+      max = Math.max(max, count);
+    }
+  }
+  const columns = `minmax(150px, 1.5fr) repeat(${categories.length}, minmax(68px, 1fr))`;
+  const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>公司</span>${categories.map((category) => `<span>${escapeHtml(labelCategory(category))}</span>`).join("")}</div>`;
+  const rows = companies.map((company) => `
+    <div class="matrix-row" style="grid-template-columns:${columns}">
+      <span class="matrix-company"><i class="role-dot role-${company.business_role}"></i>${escapeHtml(shortCompanyName(company.display_name))}</span>
+      ${categories.map((category) => {
+        const count = matrix[company.id][category];
+        const intensity = count ? Math.max(1, Math.ceil((count / Math.max(max, 1)) * 4)) : 0;
+        return `<span class="matrix-cell intensity-${intensity}" title="${count} 条">${count || "–"}</span>`;
+      }).join("")}
+    </div>
+  `).join("");
+  els.companyTopicMatrix.innerHTML = `<div class="matrix-scroll">${header}${rows}</div>`;
+}
+
+function renderCategoryDistribution(items) {
+  const counts = {};
+  for (const item of items) counts[item.category] = (counts[item.category] || 0) + 1;
+  const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const max = Math.max(1, ...entries.map(([, count]) => count));
+  els.categoryBars.innerHTML = entries.length ? entries.map(([category, count]) => `
+    <div class="category-row">
+      <div><span>${escapeHtml(labelCategory(category))}</span><strong>${count}</strong></div>
+      <div class="category-track"><i style="width:${Math.round((count / max) * 100)}%"></i></div>
+    </div>
+  `).join("") : '<div class="empty">当前范围内没有主题数据。</div>';
+}
+
+function shortCompanyName(name) {
+  return String(name).split(" / ")[0].replace(" Scientific", "");
 }
 
 function renderRules() {
@@ -1294,7 +1535,7 @@ function renderPage() {
   const [eyebrow, title] = pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
-  els.toolbar.hidden = state.page !== "overview";
+  els.toolbar.hidden = !["overview", "signals"].includes(state.page);
   els.pagePanels.forEach((panel) => {
     panel.hidden = panel.dataset.page !== state.page;
   });
@@ -1304,35 +1545,36 @@ function renderPage() {
 }
 
 function renderSignals() {
-  const query = state.searchQuery.toLowerCase().trim();
-  const filtered = state.payload.items
-    .filter((item) => state.tier === "all" || item.tier === state.tier)
-    .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
-    .filter(
-      (item) =>
-        state.company === "all" ||
-        (item.matched_companies || [item.company]).includes(state.company),
-    )
-    .filter((item) => state.category === "all" || item.category === state.category)
-    .filter((item) => {
-      if (!query) return true;
-      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")}`.toLowerCase();
-      return haystack.includes(query);
-    })
-    .sort((a, b) => b.score - a.score);
+  const filtered = getFilteredItems();
+  els.detailSignalCount.textContent = `${filtered.length} 条结果`;
+  renderSignalCards(els.topSignalList, filtered.slice(0, 5), true);
+  renderSignalCards(els.signalList, filtered, false);
+}
 
-  els.signalList.innerHTML = "";
-  const countSuffix = query ? `（搜索"${escapeHtml(state.searchQuery)}"，共 ${filtered.length} 条）` : "";
-  if (!filtered.length) {
-    els.signalList.innerHTML = `<div class="empty">当前筛选条件下没有需要展示的信号。${countSuffix}</div>`;
+function renderSignalCards(container, items, compact) {
+  if (!container) return;
+  container.innerHTML = "";
+  if (!items.length) {
+    const customerEmpty = state.role === "customer" && !(state.payload.companies || []).some(
+      (company) => company.business_role === "customer",
+    );
+    container.innerHTML = `<div class="empty">${
+      customerEmpty
+        ? "客户池尚未导入公司名单，因此不能把‘未接入’解释成‘没有客户信号’。"
+        : "当前筛选条件下没有需要展示的信号。"
+    }</div>`;
     return;
   }
-
-  for (const item of filtered) {
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  for (const item of items) {
     const card = document.createElement("article");
-    card.className = "signal-card";
+    card.className = `signal-card${compact ? " compact" : ""}`;
     const fb = state.feedback[item.id];
     const fbClass = fb ? `voted-${fb.value}` : "";
+    const role = getItemRole(item, companyRoles);
+    const region = inferItemRegion(item);
     card.innerHTML = `
       <div class="signal-top">
         <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
@@ -1340,6 +1582,8 @@ function renderSignals() {
       </div>
       <div class="meta-row">
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
+        <span class="tag role-tag role-${role}">${labelRole(role)}</span>
+        <span class="tag region-tag">${escapeHtml(labelRegion(region))}</span>
         <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
         <span class="tag">${labelCategory(item.category)}</span>
         <span class="tag company-match ${
@@ -1353,29 +1597,27 @@ function renderSignals() {
         <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
       <p class="summary">${escapeHtml(item.ai_summary || item.summary || "暂无摘要，建议回原文核对。")}</p>
-      <ul class="reason-list">
+      ${compact ? "" : `<ul class="reason-list">
         ${item.reasons.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
       </ul>
       <div class="feedback-row ${fbClass}">
         <span class="feedback-label">这条有用吗？</span>
-        <button class="fb-btn fb-up${fb && fb.value === "up" ? " active" : ""}" data-id="${item.id}" data-action="up" title="有用">👍 有用</button>
-        <button class="fb-btn fb-down${fb && fb.value === "down" ? " active" : ""}" data-id="${item.id}" data-action="down" title="无用">👎 无用</button>
-        ${fb ? '<span class="fb-thanks">已反馈，谢谢！</span>' : ""}
-      </div>
+        <button class="fb-btn fb-up${fb && fb.value === "up" ? " active" : ""}" data-id="${item.id}" data-action="up" title="有用">有用</button>
+        <button class="fb-btn fb-down${fb && fb.value === "down" ? " active" : ""}" data-id="${item.id}" data-action="down" title="无用">无用</button>
+        ${fb ? '<span class="fb-thanks">已反馈</span>' : ""}
+      </div>`}
     `;
-    els.signalList.appendChild(card);
+    container.appendChild(card);
   }
-
-  // Bind feedback button events after DOM is built
-  els.signalList.querySelectorAll(".fb-btn").forEach((btn) => {
+  if (compact) return;
+  container.querySelectorAll(".fb-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const id = btn.dataset.id;
       const action = btn.dataset.action;
       const current = state.feedback[id];
-      // Toggle off if clicking same action again
       const newValue = current && current.value === action ? null : action;
       state.feedback = saveFeedback(id, newValue);
-      renderSignals(); // re-render to update UI
+      renderSignals();
     });
   });
 }
@@ -1490,6 +1732,7 @@ function renderSourceHealth() {
   const errorCount = errors.length;
   els.healthStatus.textContent = errorCount > 0 ? `${errorCount} 异常 / ${total} 来源` : `${total} 来源正常`;
 
+  if (!els.healthList) return;
   if (errors.length === 0) {
     els.healthList.innerHTML = '<div class="health-ok">所有来源运行正常 ✓</div>';
     return;
@@ -1721,7 +1964,11 @@ function csvCell(value) {
 
 function getFilteredItems() {
   const query = state.searchQuery.toLowerCase().trim();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
   return state.payload.items
+    .filter((item) => Math.max(0, Math.floor(Number(item.age_days) || 0)) < state.timeRange)
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter(
@@ -1729,6 +1976,8 @@ function getFilteredItems() {
         state.company === "all" ||
         (item.matched_companies || [item.company]).includes(state.company),
     )
+    .filter((item) => state.role === "all" || getItemRole(item, companyRoles) === state.role)
+    .filter((item) => state.region === "all" || inferItemRegion(item) === state.region)
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;
@@ -1748,7 +1997,7 @@ document.querySelectorAll(".metric.clickable").forEach((card) => {
     state.tier = tier;
     els.tierFilter.value = tier;
     renderPage();
-    renderSignals();
+    renderOverviewScope();
   });
 });
 
@@ -1781,7 +2030,7 @@ document.querySelectorAll("[data-filter-company]").forEach((chip) => {
         els.companyFilter.value = "all";
       }
     }
-    renderSignals();
+    renderOverviewScope();
     document.querySelectorAll("[data-filter-company]").forEach((c) => {
       c.classList.toggle("active", c.dataset.filterCompany === companyId);
     });
@@ -1790,14 +2039,14 @@ document.querySelectorAll("[data-filter-company]").forEach((chip) => {
 
 els.searchInput.addEventListener("input", (event) => {
   state.searchQuery = event.target.value;
-  renderSignals();
+  renderOverviewScope();
 });
 
 els.exportCsvButton.addEventListener("click", exportCsv);
 
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;
-  renderSignals();
+  renderOverviewScope();
 });
 
 els.signalTypeFilter.addEventListener("change", (event) => {
@@ -1807,7 +2056,7 @@ els.signalTypeFilter.addEventListener("change", (event) => {
 
 els.categoryFilter.addEventListener("change", (event) => {
   state.category = event.target.value;
-  renderSignals();
+  renderOverviewScope();
 });
 
 els.companyFilter.addEventListener("change", (event) => {
@@ -1821,7 +2070,38 @@ els.companyFilter.addEventListener("change", (event) => {
   document.querySelectorAll("[data-filter-company]").forEach((c) => {
     c.classList.toggle("active", c.dataset.filterCompany === companyId);
   });
-  renderSignals();
+  renderOverviewScope();
+});
+
+els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.timeRange = Number(button.dataset.timeRange);
+    els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((control) => {
+      control.classList.toggle("active", control === button);
+    });
+    renderOverviewScope();
+  });
+});
+
+els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.role = button.dataset.roleFilter;
+    els.roleControl.querySelectorAll("[data-role-filter]").forEach((control) => {
+      control.classList.toggle("active", control === button);
+    });
+    renderOverviewScope();
+  });
+});
+
+els.regionFilter.addEventListener("change", (event) => {
+  state.region = event.target.value;
+  renderOverviewScope();
+});
+
+els.openSignalDetailButton.addEventListener("click", () => {
+  state.page = "signals";
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 els.refreshButton.addEventListener("click", () => loadData());
