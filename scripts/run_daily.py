@@ -1251,6 +1251,10 @@ def build_dashboard_payload(
             {
                 "id": company["id"],
                 "display_name": company["display_name"],
+                "business_role": company.get("business_role", "unclassified"),
+                "role_label": company.get("role_label", "待分类"),
+                "role_reason": company.get("role_reason", ""),
+                "monitoring_focus": company.get("monitoring_focus", ""),
                 "markets": company.get("markets", []),
                 "strategic_topics": company.get("strategic_topics", []),
             }

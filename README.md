@@ -6,10 +6,13 @@
 2. 能不能用规则把“值得推送”和“只是提到公司名”的噪音分开。
 3. 能不能每天生成一份可读的公司情报简报。
 
-当前公司池：
+当前公司按业务角色分池：
 
-- ACROBiosystems / 百普赛斯
-- Thermo Fisher Scientific
+- 本公司 / MVP 标本：ACROBiosystems / 百普赛斯
+- 竞品池：Thermo Fisher Scientific、Merck KGaA Life Science / MilliporeSigma、Sartorius / Sartorius Stedim Biotech、Miltenyi Biotec / 美天旎
+- 客户池：当前 0 家，待导入已确认客户或目标客户名单
+
+业务角色写在 `config/companies.json`。分类依据是产品与技术能力、应用场景、目标客户是否重叠；客户身份不能仅凭新闻内容推断，未确认前不会把公司放进客户池。
 
 当前活动生态来源：
 
@@ -17,7 +20,7 @@
 - 近畿生物产业振兴会议官方 RSS
 - 湘南 iPark 新闻与活动公告
 
-这三个平台是跨公司的监测数据源，不属于公司池。抓到内容后，系统再用公司别名匹配 ACRO、Thermo Fisher 或后续加入的对标公司。
+这三个平台是跨公司的监测数据源，不属于公司池。抓到内容后，系统再用公司别名匹配本公司、竞品池或后续加入的客户公司。
 
 ## 核心判断
 

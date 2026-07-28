@@ -883,6 +883,9 @@ const els = {
   ruleGrid: document.querySelector("#ruleGrid"),
   sourceStageFilter: document.querySelector("#sourceStageFilter"),
   sourceStageCount: document.querySelector("#sourceStageCount"),
+  companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
+  companyRoleSummary: document.querySelector("#companyRoleSummary"),
+  companyPoolGroups: document.querySelector("#companyPoolGroups"),
   pagePanels: document.querySelectorAll("[data-page]"),
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
@@ -904,10 +907,101 @@ async function fetchJson(path) {
 
 function renderLoadedData() {
   hydrateFilters();
+  renderCompanyPools();
   render();
   renderSourceHealth();
   renderSourceHealthPage();
   renderTrend();
+}
+
+function hydrateCompanyMetadata(payload) {
+  const embeddedCompanies = window.AIHOT_EMBEDDED_PAYLOAD?.companies || [];
+  const metadataById = new Map(embeddedCompanies.map((company) => [company.id, company]));
+  return {
+    ...payload,
+    companies: (payload.companies || []).map((company) => ({
+      ...(metadataById.get(company.id) || {}),
+      ...company,
+    })),
+  };
+}
+
+function renderCompanyPools() {
+  const companies = state.payload?.companies || [];
+  if (!els.companyPoolGroups || !els.companyRoleSummary) return;
+
+  const roleDefinitions = [
+    {
+      id: "self",
+      title: "本公司",
+      description: "作为系统标本验证全链路，单独统计，不占用竞品或客户名额。",
+      empty: "尚未设置本公司。",
+    },
+    {
+      id: "competitor",
+      title: "竞品池",
+      description: "依据产品、技术能力、应用场景与目标客户重叠程度纳入。",
+      empty: "尚未确认竞品公司。",
+    },
+    {
+      id: "customer",
+      title: "客户池",
+      description: "只收录已确认客户或目标客户，用于观察研发、管线、采购与合作需求信号。",
+      empty: "当前没有已确认客户。导入客户名单后再建立监测，现有竞品不会自动混入。",
+    },
+  ];
+
+  const counts = Object.fromEntries(
+    roleDefinitions.map((role) => [
+      role.id,
+      companies.filter((company) => company.business_role === role.id).length,
+    ]),
+  );
+  const unclassified = companies.filter(
+    (company) => !roleDefinitions.some((role) => role.id === company.business_role),
+  ).length;
+
+  els.companyPoolTimestamp.textContent = `MVP 阶段：${companies.length} 家公司已分类`;
+  els.companyRoleSummary.innerHTML = `
+    <article><span>本公司</span><strong>${counts.self}</strong><small>系统标本</small></article>
+    <article><span>竞品池</span><strong>${counts.competitor}</strong><small>行业对标</small></article>
+    <article><span>客户池</span><strong>${counts.customer}</strong><small>需求信号</small></article>
+    <article class="${unclassified ? "needs-review" : "is-clear"}"><span>待确认</span><strong>${unclassified}</strong><small>角色未定</small></article>
+  `;
+
+  els.companyPoolGroups.innerHTML = roleDefinitions
+    .map((role) => {
+      const members = companies.filter((company) => company.business_role === role.id);
+      const rows = members.length
+        ? members.map((company) => `
+            <article class="company-profile-row">
+              <div class="company-profile-title">
+                <strong>${escapeHtml(company.display_name)}</strong>
+                <span>${escapeHtml(company.role_label || role.title)}</span>
+              </div>
+              <div>
+                <small>判断依据</small>
+                <p>${escapeHtml(company.role_reason || "已由公司档案确定业务角色。")}</p>
+              </div>
+              <div>
+                <small>监测重点</small>
+                <p>${escapeHtml(company.monitoring_focus || (company.strategic_topics || []).slice(0, 5).join("、"))}</p>
+              </div>
+            </article>
+          `).join("")
+        : `<div class="company-pool-empty"><strong>0 家</strong><p>${escapeHtml(role.empty)}</p></div>`;
+
+      return `
+        <section class="company-pool-block role-${role.id}">
+          <header>
+            <div><span>${escapeHtml(role.title)}</span><strong>${members.length} 家</strong></div>
+            <p>${escapeHtml(role.description)}</p>
+          </header>
+          <div class="company-profile-list">${rows}</div>
+        </section>
+      `;
+    })
+    .join("");
 }
 
 async function loadData() {
@@ -924,7 +1018,7 @@ async function loadData() {
 
   try {
     if (canLoadLiveData) {
-      state.payload = await fetchJson("../data/latest_run.json");
+      state.payload = hydrateCompanyMetadata(await fetchJson("../data/latest_run.json"));
     } else if (window.AIHOT_EMBEDDED_PAYLOAD) {
       state.payload = window.AIHOT_EMBEDDED_PAYLOAD;
     } else {
