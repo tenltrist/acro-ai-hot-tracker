@@ -1135,7 +1135,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "exhibition",
         "Japan",
         "日本"
-      ]
+      ],
+      "business_role": "self",
+      "role_label": "本公司 / MVP 标本",
+      "role_reason": "以 ACRO 验证数据源、筛选、日报和展示的完整链路，不与外部公司混入竞品或客户统计。",
+      "monitoring_focus": "自身品牌、产品、活动、技术内容与区域市场动作"
     },
     {
       "id": "thermo_fisher",
@@ -1161,7 +1165,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "clinical trials",
         "Japan",
         "日本"
-      ]
+      ],
+      "business_role": "competitor",
+      "role_label": "竞品 / 综合型行业标杆",
+      "role_reason": "与 ACRO 在生命科学研究工具、重组蛋白相关应用、细胞培养和生物制药服务等领域存在产品与客户场景重叠。",
+      "monitoring_focus": "产品发布、平台能力、渠道活动、合作并购与生物制药服务"
     },
     {
       "id": "merck_life_science",
@@ -1190,7 +1198,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "reagent",
         "Japan",
         "日本"
-      ]
+      ],
+      "business_role": "competitor",
+      "role_label": "竞品 / 生命科学平台型公司",
+      "role_reason": "生命科学试剂、生物工艺、检测与 CDMO 能力覆盖 ACRO 所处的研究和生物制药客户市场。此处仅监测 Merck KGaA Life Science，不包含 MSD。",
+      "monitoring_focus": "试剂与耗材、生物工艺、检测服务、CDMO、区域扩张"
     },
     {
       "id": "sartorius",
@@ -1219,7 +1231,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Intellicyt",
         "Japan",
         "日本"
-      ]
+      ],
+      "business_role": "competitor",
+      "role_label": "竞品 / 生物工艺与分析",
+      "role_reason": "其生物工艺、细胞培养、分析平台及耗材面向相同的生物制药研发和生产客户，是能力边界上的对标公司。",
+      "monitoring_focus": "一次性工艺、细胞培养、分析平台、产能与合作"
     },
     {
       "id": "miltenyi_biotec",
@@ -1249,7 +1265,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "flow cytometry",
         "Japan",
         "日本"
-      ]
+      ],
+      "business_role": "competitor",
+      "role_label": "竞品 / 细胞治疗工具与平台",
+      "role_reason": "其细胞分选、流式分析、CGT 平台与 CDMO 服务覆盖 ACRO 重点关注的细胞与基因治疗场景。",
+      "monitoring_focus": "细胞分选、流式分析、CGT、GMP 工具与 CDMO"
     }
   ],
   "items": [
