@@ -1,0 +1,191 @@
+{
+  "sources": [
+    {
+      "id": "yakuji_nippo_official_rss",
+      "label": "Yakuji Nippo - official Japan pharma RSS",
+      "type": "rss",
+      "url": "https://www.yakuji.co.jp/feed",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本地区媒体",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 30
+    },
+    {
+      "id": "nikkanyaku_life_science_index",
+      "label": "Nikkan Yakugyo - life science indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Ank.jiho.jp%20%28%E3%83%90%E3%82%A4%E3%82%AA%E5%8C%BB%E8%96%AC%20OR%20%E7%B4%B0%E8%83%9E%E6%B2%BB%E7%99%82%20OR%20%E9%81%BA%E4%BC%9D%E5%AD%90%E6%B2%BB%E7%99%82%20OR%20mRNA%20OR%20CDMO%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本地区媒体",
+      "trust": "media",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "science_portal_life_science_index",
+      "label": "Science Portal - Japan life science indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Ascienceportal.jst.go.jp%20%28%E5%89%B5%E8%96%AC%20OR%20%E3%83%90%E3%82%A4%E3%82%AA%20OR%20%E7%B4%B0%E8%83%9E%E6%B2%BB%E7%99%82%20OR%20%E9%81%BA%E4%BC%9D%E5%AD%90%20OR%20%E6%8A%97%E4%BD%93%20OR%20%E5%86%8D%E7%94%9F%E5%8C%BB%E7%99%82%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本科研媒体",
+      "trust": "media",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "bioon_life_science_index",
+      "label": "Bioon - China life science indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Abioon.com%20%28%E6%8A%97%E4%BD%93%20OR%20ADC%20OR%20%E7%BB%86%E8%83%9E%E6%B2%BB%E7%96%97%20OR%20%E5%9F%BA%E5%9B%A0%E6%B2%BB%E7%96%97%20OR%20%E7%94%9F%E7%89%A9%E5%88%B6%E8%8D%AF%20OR%20%E7%B1%BB%E5%99%A8%E5%AE%98%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "中国地区媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "jiemian_health_index",
+      "label": "Jiemian Health - China pharma indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Ajiemian.com%20%28%E7%94%9F%E7%89%A9%E5%8C%BB%E8%8D%AF%20OR%20%E5%88%9B%E6%96%B0%E8%8D%AF%20OR%20%E7%BB%86%E8%83%9E%E6%B2%BB%E7%96%97%20OR%20ADC%20OR%20CRO%20OR%20CDMO%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "中国地区媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "36kr_health_index",
+      "label": "36Kr Health - China biotech indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3A36kr.com%20%28%E7%94%9F%E7%89%A9%E5%8C%BB%E8%8D%AF%20OR%20%E5%88%9B%E6%96%B0%E8%8D%AF%20OR%20%E7%BB%86%E8%83%9E%E6%B2%BB%E7%96%97%20OR%20%E5%9F%BA%E5%9B%A0%E6%B2%BB%E7%96%97%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "中国地区媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "biopharma_dive_official_rss",
+      "label": "BioPharma Dive - official RSS",
+      "type": "rss",
+      "url": "https://www.biopharmadive.com/feeds/news/",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "全球行业媒体",
+      "trust": "media",
+      "max_age_days": 45,
+      "max_items": 30
+    },
+    {
+      "id": "bioprocess_international_official_rss",
+      "label": "BioProcess International - official RSS",
+      "type": "rss",
+      "url": "https://www.bioprocessintl.com/rss",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "全球技术媒体",
+      "trust": "media",
+      "max_age_days": 60,
+      "max_items": 30
+    },
+    {
+      "id": "biospectrum_asia_index",
+      "label": "BioSpectrum Asia - APAC biotech indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Abiospectrumasia.com%20%28biopharma%20OR%20biotech%20OR%20%22cell%20therapy%22%20OR%20bioprocessing%20OR%20CDMO%29&hl=en-SG&gl=SG&ceid=SG%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "亚太地区媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "prtimes_japan_biotech_index",
+      "label": "PR Times - Japan biotech indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aprtimes.jp%20%28%E5%89%B5%E8%96%AC%20OR%20%E3%83%90%E3%82%A4%E3%82%AA%E5%8C%BB%E8%96%AC%20OR%20%E7%B4%B0%E8%83%9E%E6%B2%BB%E7%99%82%20OR%20%E9%81%BA%E4%BC%9D%E5%AD%90%E6%B2%BB%E7%99%82%20OR%20%E6%8A%97%E4%BD%93%20OR%20%E5%86%8D%E7%94%9F%E5%8C%BB%E7%99%82%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本企业发布平台",
+      "trust": "wire",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "amed_life_science_index",
+      "label": "AMED - Japan life science indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aamed.go.jp%20%28%E5%89%B5%E8%96%AC%20OR%20%E3%83%90%E3%82%A4%E3%82%AA%20OR%20%E5%86%8D%E7%94%9F%E5%8C%BB%E7%99%82%20OR%20%E9%81%BA%E4%BC%9D%E5%AD%90%E6%B2%BB%E7%99%82%20OR%20%E6%8A%97%E4%BD%93%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本研发资助机构",
+      "trust": "regulator",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "koreabiomed_apac_index",
+      "label": "Korea Biomedical Review - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Akoreabiomed.com%20%28biotech%20OR%20%22cell%20therapy%22%20OR%20ADC%20OR%20biosimilar%20OR%20CDMO%29&hl=en&gl=KR&ceid=KR%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "韩国地区媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "biospectrum_india_index",
+      "label": "BioSpectrum India - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Abiospectrumindia.com%20%28biopharma%20OR%20biotech%20OR%20%22cell%20therapy%22%20OR%20bioprocessing%20OR%20CDMO%29&hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "印度地区媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "pharmaceutical_technology_index",
+      "label": "Pharmaceutical Technology - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Apharmaceutical-technology.com%20%28bioprocessing%20OR%20%22cell%20therapy%22%20OR%20ADC%20OR%20CDMO%20OR%20manufacturing%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "全球行业媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "bioprocess_online_index",
+      "label": "BioProcess Online - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Abioprocessonline.com%20%28antibody%20OR%20%22cell%20therapy%22%20OR%20bioprocessing%20OR%20%22single-use%22%20OR%20GMP%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "全球技术媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "selectscience_life_science_index",
+      "label": "SelectScience - life science indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aselectscience.net%20%28antibody%20OR%20%22cell%20therapy%22%20OR%20bioprocessing%20OR%20%22flow%20cytometry%22%20OR%20organoid%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "全球技术媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    },
+    {
+      "id": "drug_target_review_index",
+      "label": "Drug Target Review - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Adrugtargetreview.com%20%28antibody%20OR%20ADC%20OR%20%22cell%20therapy%22%20OR%20organoid%20OR%20%22drug%20discovery%22%29&hl=en-US&gl=US&ceid=US%3Aen",
+      "profile_id": "biopharma_media_monitor",
+      "scope_label": "全球技术媒体",
+      "trust": "media",
+      "max_age_days": 90,
+      "max_items": 30
+    }
+  ]
+}
