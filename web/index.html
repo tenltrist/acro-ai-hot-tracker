@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260729j" />
+    <link rel="stylesheet" href="./styles.css?v=20260729k" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -21,6 +21,7 @@
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
           <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
           <button type="button" data-page-target="acro" title="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
@@ -202,6 +203,17 @@
           <span class="timestamp" id="companyPoolTimestamp">MVP 阶段：13 家公司已分类</span>
         </div>
         <div class="company-role-summary" id="companyRoleSummary" aria-label="公司角色统计"></div>
+        <div class="company-pool-groups" id="companyPoolGroups"></div>
+      </section>
+
+      <section class="company-sources-section page-panel" data-page="company-sources" aria-label="公司数据源档案">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">公司来源</p>
+            <h2>按公司查看已接入、共享覆盖与待补的数据源</h2>
+          </div>
+          <span class="timestamp">13 家公司 · 10 个统一板块</span>
+        </div>
         <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
           <div class="company-coverage-head">
             <div>
@@ -217,7 +229,6 @@
           <div class="company-coverage-metrics" id="companyCoverageMetrics"></div>
           <div class="company-coverage-grid" id="companyCoverageGrid"></div>
         </section>
-        <div class="company-pool-groups" id="companyPoolGroups"></div>
       </section>
 
       <section class="rules-section page-panel" data-page="sources" id="source-rules" aria-label="Data source rules">
@@ -391,6 +402,23 @@
           <article><span>标准标签</span><strong id="structuredTermCount">--</strong><small>多语言别名归一</small></article>
           <article><span>已命中情报</span><strong id="structuredHitCount">--</strong><small>当前完整数据集</small></article>
         </div>
+        <div class="structured-rule-scope" aria-label="结构化规则适用范围">
+          <article>
+            <span>全局提取规则</span>
+            <strong>适用于所有公司</strong>
+            <p>靶点、疗法、产品需求、研发阶段、业务动作和活动信号统一提取。</p>
+          </article>
+          <article>
+            <span>公司识别配置</span>
+            <strong>每家公司单独设置</strong>
+            <p>公司别名、监测重点、关键词和噪音词按照公司档案分别维护。</p>
+          </article>
+          <article>
+            <span>业务判断规则</span>
+            <strong>当前以 ACRO 为中心</strong>
+            <p>相关性、产品机会和建议动作从 ACRO 的市场与 BD 视角判断。</p>
+          </article>
+        </div>
         <div class="structured-flow" aria-label="Structured processing flow">
           <div><span>01</span><strong>读取原文</strong><small>标题 + 摘要</small></div>
           <div><span>02</span><strong>同义词归一</strong><small>中英日别名</small></div>
@@ -492,7 +520,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260729j"></script>
-    <script src="./app.js?v=20260729j"></script>
+    <script src="./embedded-data.js?v=20260729k"></script>
+    <script src="./app.js?v=20260729k"></script>
   </body>
 </html>

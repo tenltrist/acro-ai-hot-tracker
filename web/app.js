@@ -35,6 +35,7 @@ const state = {
   healthCompany: "all",
   healthStatus: "all",
   coverageCompany: "acro",
+  dockOpenRoles: new Set(["self"]),
   feedback: loadFeedback(),
   history: null,
 };
@@ -1806,6 +1807,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 样本档案"],
@@ -2028,8 +2030,14 @@ function renderCompanyDock() {
         `).join("")
       : `<div class="company-dock-empty">${escapeHtml(meta.empty)}</div>`;
     return `
-      <p class="company-dock-label"><span>${escapeHtml(meta.label)}</span><b>${members.length}</b></p>
-      ${rows}
+      <details class="company-dock-group" data-dock-role="${escapeHtml(role)}" ${state.dockOpenRoles.has(role) ? "open" : ""}>
+        <summary class="company-dock-summary">
+          <span>${escapeHtml(meta.label)}</span>
+          <b>${members.length}</b>
+          <i aria-hidden="true">⌄</i>
+        </summary>
+        <div class="company-dock-group-list">${rows}</div>
+      </details>
     `;
   }).join("");
   els.companyDockList.innerHTML = allButton + groups;
@@ -3489,6 +3497,13 @@ els.companyDockList.addEventListener("click", (event) => {
   renderOverviewScope();
 });
 
+els.companyDockList.addEventListener("toggle", (event) => {
+  const group = event.target.closest?.("[data-dock-role]");
+  if (!group || event.target !== group) return;
+  if (group.open) state.dockOpenRoles.add(group.dataset.dockRole);
+  else state.dockOpenRoles.delete(group.dataset.dockRole);
+}, true);
+
 els.searchInput.addEventListener("input", (event) => {
   state.searchQuery = event.target.value;
   renderOverviewScope();
@@ -3531,8 +3546,10 @@ els.companyPoolGroups.addEventListener("click", (event) => {
   const button = event.target.closest("[data-company-coverage-id]");
   if (!button) return;
   state.coverageCompany = button.dataset.companyCoverageId;
+  state.page = "company-sources";
   renderCompanySourceCoverage();
-  document.querySelector(".company-source-coverage")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {

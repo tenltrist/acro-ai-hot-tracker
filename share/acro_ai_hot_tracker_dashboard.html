@@ -338,6 +338,61 @@ a {
   text-align: center;
 }
 
+.company-dock-group {
+  min-width: 0;
+}
+
+.company-dock-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 14px;
+  align-items: center;
+  gap: 7px;
+  min-height: 30px;
+  margin: 3px 0 1px;
+  padding: 5px 6px;
+  border-radius: 5px;
+  color: #91a5b0;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+  list-style: none;
+}
+
+.company-dock-summary::-webkit-details-marker {
+  display: none;
+}
+
+.company-dock-summary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #dce8ee;
+}
+
+.company-dock-summary b {
+  min-width: 20px;
+  padding: 2px 5px;
+  border: 1px solid #334650;
+  border-radius: 4px;
+  color: #aec0ca;
+  text-align: center;
+}
+
+.company-dock-summary i {
+  color: #708590;
+  font-style: normal;
+  text-align: center;
+  transition: transform 160ms ease;
+}
+
+.company-dock-group[open] .company-dock-summary i {
+  transform: rotate(180deg);
+}
+
+.company-dock-group-list {
+  display: grid;
+  gap: 6px;
+  padding-top: 4px;
+}
+
 .company-dock-empty {
   padding: 8px 10px;
   border: 1px dashed #334650;
@@ -733,6 +788,7 @@ select {
 .rules-section,
 .profile-section,
 .companies-section,
+.company-sources-section,
 .pipeline-section,
 .structured-rules-section,
 .questions-section,
@@ -1049,10 +1105,9 @@ select {
 }
 
 .company-source-coverage {
-  margin: 0 0 22px;
-  padding: 18px 0 20px;
+  margin: 0;
+  padding: 4px 0 2px;
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
 .company-coverage-head {
@@ -2037,6 +2092,51 @@ select {
   color: var(--teal);
   font-size: 25px;
   line-height: 1;
+}
+
+.structured-rule-scope {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.structured-rule-scope article {
+  min-width: 0;
+  padding: 13px 14px;
+  border-left: 3px solid var(--teal);
+  background: var(--surface-2);
+}
+
+.structured-rule-scope article:nth-child(2) {
+  border-left-color: var(--blue);
+}
+
+.structured-rule-scope article:nth-child(3) {
+  border-left-color: var(--gold);
+}
+
+.structured-rule-scope span,
+.structured-rule-scope strong {
+  display: block;
+}
+
+.structured-rule-scope span {
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.structured-rule-scope strong {
+  font-size: 13px;
+}
+
+.structured-rule-scope p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .structured-flow {
@@ -3210,6 +3310,7 @@ select {
   .company-row,
   .pipeline-grid,
   .structured-flow,
+  .structured-rule-scope,
   .question-list div,
   .health-summary-grid,
   .health-legend,
@@ -3520,6 +3621,7 @@ select {
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
           <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
           <button type="button" data-page-target="acro" title="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
@@ -3701,6 +3803,17 @@ select {
           <span class="timestamp" id="companyPoolTimestamp">MVP 阶段：13 家公司已分类</span>
         </div>
         <div class="company-role-summary" id="companyRoleSummary" aria-label="公司角色统计"></div>
+        <div class="company-pool-groups" id="companyPoolGroups"></div>
+      </section>
+
+      <section class="company-sources-section page-panel" data-page="company-sources" aria-label="公司数据源档案">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">公司来源</p>
+            <h2>按公司查看已接入、共享覆盖与待补的数据源</h2>
+          </div>
+          <span class="timestamp">13 家公司 · 10 个统一板块</span>
+        </div>
         <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
           <div class="company-coverage-head">
             <div>
@@ -3716,7 +3829,6 @@ select {
           <div class="company-coverage-metrics" id="companyCoverageMetrics"></div>
           <div class="company-coverage-grid" id="companyCoverageGrid"></div>
         </section>
-        <div class="company-pool-groups" id="companyPoolGroups"></div>
       </section>
 
       <section class="rules-section page-panel" data-page="sources" id="source-rules" aria-label="Data source rules">
@@ -3889,6 +4001,23 @@ select {
           <article><span>规则组</span><strong id="structuredGroupCount">--</strong><small>独立业务维度</small></article>
           <article><span>标准标签</span><strong id="structuredTermCount">--</strong><small>多语言别名归一</small></article>
           <article><span>已命中情报</span><strong id="structuredHitCount">--</strong><small>当前完整数据集</small></article>
+        </div>
+        <div class="structured-rule-scope" aria-label="结构化规则适用范围">
+          <article>
+            <span>全局提取规则</span>
+            <strong>适用于所有公司</strong>
+            <p>靶点、疗法、产品需求、研发阶段、业务动作和活动信号统一提取。</p>
+          </article>
+          <article>
+            <span>公司识别配置</span>
+            <strong>每家公司单独设置</strong>
+            <p>公司别名、监测重点、关键词和噪音词按照公司档案分别维护。</p>
+          </article>
+          <article>
+            <span>业务判断规则</span>
+            <strong>当前以 ACRO 为中心</strong>
+            <p>相关性、产品机会和建议动作从 ACRO 的市场与 BD 视角判断。</p>
+          </article>
         </div>
         <div class="structured-flow" aria-label="Structured processing flow">
           <div><span>01</span><strong>读取原文</strong><small>标题 + 摘要</small></div>
@@ -89285,6 +89414,7 @@ const state = {
   healthCompany: "all",
   healthStatus: "all",
   coverageCompany: "acro",
+  dockOpenRoles: new Set(["self"]),
   feedback: loadFeedback(),
   history: null,
 };
@@ -91056,6 +91186,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 样本档案"],
@@ -91278,8 +91409,14 @@ function renderCompanyDock() {
         `).join("")
       : `<div class="company-dock-empty">${escapeHtml(meta.empty)}</div>`;
     return `
-      <p class="company-dock-label"><span>${escapeHtml(meta.label)}</span><b>${members.length}</b></p>
-      ${rows}
+      <details class="company-dock-group" data-dock-role="${escapeHtml(role)}" ${state.dockOpenRoles.has(role) ? "open" : ""}>
+        <summary class="company-dock-summary">
+          <span>${escapeHtml(meta.label)}</span>
+          <b>${members.length}</b>
+          <i aria-hidden="true">⌄</i>
+        </summary>
+        <div class="company-dock-group-list">${rows}</div>
+      </details>
     `;
   }).join("");
   els.companyDockList.innerHTML = allButton + groups;
@@ -92739,6 +92876,13 @@ els.companyDockList.addEventListener("click", (event) => {
   renderOverviewScope();
 });
 
+els.companyDockList.addEventListener("toggle", (event) => {
+  const group = event.target.closest?.("[data-dock-role]");
+  if (!group || event.target !== group) return;
+  if (group.open) state.dockOpenRoles.add(group.dataset.dockRole);
+  else state.dockOpenRoles.delete(group.dataset.dockRole);
+}, true);
+
 els.searchInput.addEventListener("input", (event) => {
   state.searchQuery = event.target.value;
   renderOverviewScope();
@@ -92781,8 +92925,10 @@ els.companyPoolGroups.addEventListener("click", (event) => {
   const button = event.target.closest("[data-company-coverage-id]");
   if (!button) return;
   state.coverageCompany = button.dataset.companyCoverageId;
+  state.page = "company-sources";
   renderCompanySourceCoverage();
-  document.querySelector(".company-source-coverage")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
