@@ -904,12 +904,19 @@ def parse_clinical_trials(source: dict[str, Any]) -> list[Candidate]:
 def source_allows_candidate(source: dict[str, Any], item: Candidate) -> bool:
     """Apply source-specific quality gates before global scoring."""
     blob = f"{item.title} {item.summary} {item.url}".lower()
+    title = item.title.lower()
     include_terms = [term.lower() for term in source.get("include_text_terms", [])]
     exclude_terms = [term.lower() for term in source.get("exclude_text_terms", [])]
+    include_title_terms = [term.lower() for term in source.get("include_title_terms", [])]
+    exclude_title_terms = [term.lower() for term in source.get("exclude_title_terms", [])]
 
     if include_terms and not any(term in blob for term in include_terms):
         return False
     if exclude_terms and any(term in blob for term in exclude_terms):
+        return False
+    if include_title_terms and not any(term in title for term in include_title_terms):
+        return False
+    if exclude_title_terms and any(term in title for term in exclude_title_terms):
         return False
     if source.get("require_published") and not item.published:
         return False

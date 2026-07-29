@@ -255,8 +255,9 @@ notes:
 
 | 来源 | 当前能力判断 | 常见获取方式 | 建设阶段 |
 | --- | --- | --- | --- |
-| PR Newswire | ACRO 已有实际命中 | 公司名 + `site:` 索引 RSS | `active` |
-| Business Wire | 官网拒绝当前自动请求；公司池定向索引已扩展到 5 家公司 | 公司池 + `site:` 索引 RSS | `active` |
+| PR Newswire | ACRO 及 8 家新增公司已建立定向入口 | 公司名 + `site:` 索引 RSS | `active` |
+| Business Wire | 官网拒绝当前自动请求；原公司池及 8 家新增公司已建立定向索引 | 公司池 + `site:` 索引 RSS | `active` |
+| PR Times | 生命科学宽主题、原公司池及 8 家新增公司已覆盖 | 日文公司名 + `site:` 索引 RSS | `active`，默认归档 |
 | GlobeNewswire | Biotechnology 官方 RSS 已验证可直连，需过滤财报、回购和泛市场报告 | 官方分类 RSS | `active` |
 
 #### B. 生物医药行业新闻
@@ -287,7 +288,7 @@ notes:
 | --- | --- | --- | --- |
 | 日本 | AnswersNews | 官方 RSS，实测 10 条；日本制药申报、获批、交易和生产密度高 | `active` |
 | 日本 | ミクスOnline | 官方 RSS，实测至少 30 条；标题摘要可用，部分正文需会员 | `active` |
-| 日本 | 日経バイオテクONLINE | 无公开 RSS、正文订阅；公司池 `site:` 索引已扩展到 5 家公司 | `active`，仅公开标题索引 |
+| 日本 | 日経バイオテクONLINE | 无公开 RSS、正文订阅；原公司池及 8 家新增公司已建立定向入口 | `active`，仅公开标题索引 |
 | 日本 | 日刊薬業 | 会员内容明显；公司池索引仅少量弱命中 | `available` |
 | 日本 | Science Portal | JST 官方 RSS 稳定，但全科学内容多、生命科学业务密度低 | `available` |
 | 中国 | 医药魔方 / ByDrug | 公司池索引已扩展到 ACRO、Thermo Fisher、默克、Sartorius 和美天旎 | `active` |
@@ -608,3 +609,20 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | Miltenyi Biotec / 美天旎 | 官方 6、全球 3、日本 1 | 10 / 5 | 数量少但业务相关度高；官方监测联合 Bioindustry 与 Biomedicine 子站 |
 
 三家公司共识别 90 条候选，其中 17 条达到日报或即时提醒门槛。9 个新入口均无抓取错误；本轮唯一运行错误来自既有 Thermo Fisher openFDA 接口的临时 HTTP 500，与新公司无关。
+
+### 11.5 2026-07-29 新增公司官方与媒体入口实测
+
+针对 Abcam、Promega、R&D Systems / Bio-Techne、BD Biosciences、MedChemExpress / MCE、STEMCELL Technologies、Sino Biological 和 Takara Bio，将原来每家一条 Google News 补漏源扩展为“官方新闻 / 技术内容 + 官方活动 + 聚合补漏 + 新闻稿与地区媒体”四层。本轮新增 20 个运行入口，所有入口抓取无报错。
+
+| 公司 | 主要专属来源 | 活动 / 技术补充 | 当前判断 |
+| --- | --- | --- | --- |
+| Abcam | 官方 Press Releases | 官方 Webinar / Event 定向索引 | 新闻稳定，活动低频 |
+| Promega | 官方 Press Releases | 官方 Resources / Events | 新闻与活动都有近期产出 |
+| R&D Systems / Bio-Techne | Bio-Techne 官方 IR Press Releases | Bio-Techne Events | 新闻稳定，Events 页当前索引安静 |
+| BD Biosciences | BD Newsroom + Scomix 产品更新 | 单细胞、Rhapsody、FACS 主题 | 有历史产出，本期无新日报信号 |
+| MedChemExpress / MCE | Resources 中的 Reviews、Topics 与 Blogs | Events / Webinars | 官网受 Cloudflare 限制；公开索引经标题过滤后当前安静，不用产品 SKU 充数 |
+| STEMCELL Technologies | 官方 Newsroom | 官方 Course / Webinar | 新闻低频，课程与 Webinar 产出稳定 |
+| Sino Biological | 官方合作、CRO、GMP 与产能更新 | 官方 Webinar / Conference | 已排除蛋白和抗体 SKU；当前低频 |
+| Takara Bio | 英文官网 News Releases | Takara Bio USA Webinar + 日经生物技术 | 官方新闻与日本地区媒体产出最完整 |
+
+共享媒体层同步扩展 Business Wire、PR Newswire、PR Times 和日经生物技术。所有共享入口新增标题级公司名门槛，并过滤股东诉讼提醒、股息与无关社区新闻；聚合搜索仍只是发现入口，官方原页或编辑媒体才是最终证据。
