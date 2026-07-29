@@ -27810,5 +27810,97 @@
     "tier": "archive",
     "score": 25,
     "signal_type": "event"
+  },
+  "29606f191f7b07c6": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "Evinova Launches Strategic Partnership with Merck KGaA, Darmstadt, Germany to Define the Future of Clinical Development - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQkJCV0lVQ3U2T2NFVUFuemlPb2hJOFRZb2FnVTdycjdfaHVpQVZGUWp3VmZvYVRvZ2JjSXc4SXJnNHVuLWRwSVFYZHl5cXc2MEFIZERWcERxSXBjMzd0ODRsdHZWVDM4YWRNSlNfRG9nNEpfNC1Hamgyd3I5TUVOeXVmMDJIVm1EYVp6T202TW5rUDFobk1HaUJrSkY3VEZ4dmNLZFhQMGJpZHNtSGFlZDJycWRpZDVmV2llSWJ0SHNCTUQ0Z2FsNzZDT1h0RVJscS1Jc1BwQXJaYmpWaVRrN0d1SVZ3a1dQbjJ0Q1ZKTUtuXy1RTVI1NEctMFltQlgwUW5xTA?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "daily",
+    "score": 72,
+    "signal_type": "news"
+  },
+  "41d9ac9db902bc82": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "e8fdeaf288fab76e": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "d20695a5f671a0ca": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3A%2F%2Frichmondbizsense.com%2F2026%2F07%2F28%2Fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2F&c=14430160313610887661&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "86881815c3cf9a0a": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3A%2F%2Fwww.01net.it%2Fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2F&c=14346548381911895341&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "b5331d73f965f7d1": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "Thermo Fisher Scientific (NYSE:TMO) Faces A Margin Test",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3A%2F%2Fkalkinemedia.com%2Fus%2Fstocks%2Fhealthcare%2Fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "f2d49f342983d3ea": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "「人と地球環境を大切にし、革新的な技術で豊かな社会の発展に貢献する」を理念に掲げる「イビデン」のリサーチ・カバレッジを7/31より開始｜次世代型の株式リサーチ「ENVALITH（エンヴァリス）」 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yUTNabWxodGxRWW1ieFJjTHRjaDJhM0NiR18ycWFkSzhjY25TbUJBNFlFMzRMNk9Jb0s0VEZwZTMzREowN2t6Snc1eEtJRC1JMFl3R1FnNWQ3VmFXTGRoek10TjBnSTNXUVE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "5e0cc86eafb0a7c1": {
+    "first_seen": "2026-07-29T17:16:03",
+    "title": "半年出海近千亿美元！中国创新药BD交易进入“量价齐升”新阶段，港股创新药ETF景顺(513780)聚焦全球化核心资产 - Jiemian.com",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GUTJ3VFQ3MnRWQnZ2VExHbFBVaDhaclU3RzRId3RxSzdsV21tcXNLRDdUb1h2czBNYm5Ua1B1c0k3SE9ueGw4N0ZyZzJjQmJhNWx3T1dJaFQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
   }
 }

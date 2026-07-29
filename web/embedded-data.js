@@ -1,11 +1,11 @@
 window.AIHOT_EMBEDDED_PAYLOAD = {
-  "generated_at": "2026-07-29T16:54:54",
+  "generated_at": "2026-07-29T17:16:03",
   "window_days": 90,
   "summary": {
     "new_candidates": 8,
     "immediate": 0,
-    "daily": 115,
-    "archive": 1176,
+    "daily": 116,
+    "archive": 1174,
     "errors": 0,
     "companies": 12,
     "sources": 88
@@ -52,7 +52,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Thermo Fisher official Events and Webinars - indexed RSS": 3,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
     "Bing News RSS - Thermo Fisher backup": 8,
-    "Google News RSS - Thermo Fisher Japan": 47,
+    "Google News RSS - Thermo Fisher Japan": 46,
     "PR Times - monitored company pool indexed RSS": 26,
     "Bing News RSS - ACROBiosystems backup": 2,
     "Merck Life Science official YouTube channel": 20,
@@ -104,9 +104,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
   "category_mix": {
     "market": 46,
     "partnership": 78,
-    "product": 218,
-    "regulatory": 101,
-    "company": 509,
+    "product": 217,
+    "regulatory": 99,
+    "company": 511,
     "video": 80,
     "finance": 42,
     "event": 153,
@@ -114,7 +114,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "research": 54
   },
   "signal_type_mix": {
-    "news": 995,
+    "news": 994,
     "video": 80,
     "funding": 23,
     "event": 127,
@@ -167,7 +167,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 6348,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-07-29T16:53:55"
+      "last_checked": "2026-07-29T17:15:00"
     },
     {
       "source_id": "acro_official_activities_index",
@@ -342,10 +342,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "productive",
       "total": 30,
       "immediate": 0,
-      "daily": 9,
-      "archive": 21,
-      "selected_rate": 30,
-      "last_published": "2026-07-27",
+      "daily": 10,
+      "archive": 20,
+      "selected_rate": 33,
+      "last_published": "2026-07-29",
       "error": "",
       "note": "Business Wire 官网拒绝当前自动请求；免费 MVP 改用 Google News 的公司池 + site 定向 RSS，属于索引接入，不是官网 RSS 直连。",
       "snapshot_count": 0,
@@ -1099,10 +1099,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "archive_only",
-      "total": 47,
+      "total": 46,
       "immediate": 0,
       "daily": 0,
-      "archive": 47,
+      "archive": 46,
       "selected_rate": 0,
       "last_published": "2026-07-28",
       "error": "",
@@ -2470,6 +2470,918 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "last_checked": ""
     }
   ],
+  "company_source_coverage": {
+    "version": "2026-07-29",
+    "slot_definitions": [
+      {
+        "id": "official_news",
+        "number": "01",
+        "label": "官方新闻与公告",
+        "description": "公司新闻稿、合作、收购、管理层和战略公告。"
+      },
+      {
+        "id": "product_updates",
+        "number": "02",
+        "label": "产品与解决方案更新",
+        "description": "新产品、新平台、新服务、产品页和解决方案变化。"
+      },
+      {
+        "id": "events_webinars",
+        "number": "03",
+        "label": "活动与 Webinar",
+        "description": "展会、会议、Workshop、Webinar、报名和回放。"
+      },
+      {
+        "id": "technical_content",
+        "number": "04",
+        "label": "技术内容与 Resources",
+        "description": "Blog、Insights、Application Note、Protocol、白皮书和学习中心。"
+      },
+      {
+        "id": "regional_official",
+        "number": "05",
+        "label": "日本与地区官网",
+        "description": "日本站、中国站或其他区域官方页面的本地动态。"
+      },
+      {
+        "id": "official_video",
+        "number": "06",
+        "label": "官方视频与内容频道",
+        "description": "YouTube、官方视频库、技术演示和 Webinar 回放。"
+      },
+      {
+        "id": "global_news",
+        "number": "07",
+        "label": "全球新闻补漏",
+        "description": "Google News、Bing News 等公开聚合入口。"
+      },
+      {
+        "id": "regional_media",
+        "number": "08",
+        "label": "日本与地区媒体",
+        "description": "日经生物技术、PR Times、医药魔方等地区媒体和发布平台。"
+      },
+      {
+        "id": "press_wires",
+        "number": "09",
+        "label": "新闻稿分发平台",
+        "description": "Business Wire、PR Newswire 和 GlobeNewswire 的公司定向补漏。"
+      },
+      {
+        "id": "research_regulatory_org",
+        "number": "10",
+        "label": "研究、监管与组织信号",
+        "description": "论文、临床、法规、专利、申报、招聘和组织变化。"
+      }
+    ],
+    "profiles": [
+      {
+        "company_id": "acro",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_official_news_index"
+            ],
+            "note": "官方 News 公开索引。"
+          },
+          "product_updates": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_product_sitemap"
+            ],
+            "note": "官方 Sitemap 新 URL 差分。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_official_activities_index"
+            ],
+            "note": "Activities 定向索引。"
+          },
+          "technical_content": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_official_insights_index"
+            ],
+            "note": "Insights 与应用内容。"
+          },
+          "regional_official": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_japan_official_index"
+            ],
+            "note": "ACRO 日本站公开页面。"
+          },
+          "official_video": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_youtube_official"
+            ],
+            "note": "官方 YouTube 频道页。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_acro",
+              "bing_news_acro_backup"
+            ],
+            "note": "Google 主源与 Bing 备份源。"
+          },
+          "regional_media": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "google_news_acro_jp",
+              "prtimes_company_pool_index",
+              "nikkei_biotech_company_pool_index",
+              "pharmcube_company_pool_index"
+            ],
+            "note": "日文聚合与日中地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "google_news_acro_prnewswire",
+              "businesswire_company_pool_index"
+            ],
+            "note": "PR Newswire 专属查询与 Business Wire 公司池。"
+          },
+          "research_regulatory_org": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "acro_pubmed_research",
+              "crossref_acro_affiliations"
+            ],
+            "note": "PubMed 和 Crossref 机构研究记录。"
+          }
+        }
+      },
+      {
+        "company_id": "thermo_fisher",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "thermo_official_rss"
+            ],
+            "note": "官方 IR Press Release RSS。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "thermo_official_rss"
+            ],
+            "note": "新品已由官方新闻稿覆盖，不重复扫全量目录。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "thermo_events_index"
+            ],
+            "note": "活动栏目公开索引。"
+          },
+          "technical_content": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "thermo_biotech_blog_rss"
+            ],
+            "note": "Biotech at Scale 官方 Blog RSS。"
+          },
+          "regional_official": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "thermo_japan_official_index"
+            ],
+            "note": "Thermo Fisher 日本站。"
+          },
+          "official_video": {
+            "status": "pending",
+            "mode": "dedicated",
+            "source_ids": [
+              "thermo_youtube_official"
+            ],
+            "note": "原频道 Atom 失效，等待确认新稳定入口。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_thermo",
+              "bing_news_thermo_backup"
+            ],
+            "note": "全球聚合与备份源。"
+          },
+          "regional_media": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "google_news_thermo_jp",
+              "nikkei_biotech_company_pool_index",
+              "pharmcube_company_pool_index"
+            ],
+            "note": "日文聚合及日中地区媒体。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_company_pool_index",
+              "globenewswire_biotechnology_rss"
+            ],
+            "note": "由公司池新闻稿平台共享覆盖。"
+          },
+          "research_regulatory_org": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "thermo_openfda_monitor",
+              "thermo_sec_filings",
+              "clinicaltrials_company_pool"
+            ],
+            "note": "openFDA 运行；SEC 待联系邮箱；ClinicalTrials.gov 共享覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "merck_life_science",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "merck_life_science_official_index"
+            ],
+            "note": "默克 Life Science 官方新闻定向入口。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "merck_life_science_official_index"
+            ],
+            "note": "产品发布暂由官方新闻覆盖。"
+          },
+          "official_video": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "merck_life_science_youtube_official"
+            ],
+            "note": "Merck Life Science 官方 YouTube。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_merck_life_science"
+            ],
+            "note": "使用 Merck KGaA 与 MilliporeSigma 限定。"
+          },
+          "regional_media": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "google_news_merck_life_science_jp",
+              "nikkei_biotech_company_pool_index",
+              "pharmcube_company_pool_index"
+            ],
+            "note": "日本补漏与日中媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_company_pool_index"
+            ],
+            "note": "Business Wire 公司池覆盖。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "sartorius",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "sartorius_official_news_index"
+            ],
+            "note": "Sartorius Newsroom 定向入口。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "sartorius_official_news_index"
+            ],
+            "note": "新品暂由 Newsroom 覆盖。"
+          },
+          "official_video": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "sartorius_youtube_official"
+            ],
+            "note": "Sartorius 官方 YouTube。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_sartorius"
+            ],
+            "note": "全球公司与业务主题聚合。"
+          },
+          "regional_media": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "google_news_sartorius_jp",
+              "nikkei_biotech_company_pool_index",
+              "pharmcube_company_pool_index"
+            ],
+            "note": "日本补漏与日中媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_company_pool_index"
+            ],
+            "note": "Business Wire 公司池覆盖。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "miltenyi_biotec",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "miltenyi_official_news_index"
+            ],
+            "note": "Bioindustry 与 Biomedicine 官方子站联合索引。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "miltenyi_official_news_index"
+            ],
+            "note": "新产品暂由官方新闻覆盖。"
+          },
+          "technical_content": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "miltenyi_youtube_official"
+            ],
+            "note": "技术内容当前主要由官方视频频道覆盖。"
+          },
+          "official_video": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "miltenyi_youtube_official"
+            ],
+            "note": "Miltenyi Biotec 官方 YouTube。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_miltenyi"
+            ],
+            "note": "全球新闻补漏。"
+          },
+          "regional_media": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "google_news_miltenyi_jp",
+              "nikkei_biotech_company_pool_index",
+              "pharmcube_company_pool_index"
+            ],
+            "note": "日本补漏与日中媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_company_pool_index"
+            ],
+            "note": "Business Wire 公司池覆盖。"
+          },
+          "research_regulatory_org": {
+            "status": "active",
+            "mode": "mixed",
+            "source_ids": [
+              "crossref_miltenyi_affiliations",
+              "clinicaltrials_company_pool"
+            ],
+            "note": "Crossref 专属机构记录与临床共享源。"
+          }
+        }
+      },
+      {
+        "company_id": "abcam",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "abcam_official_press_index"
+            ],
+            "note": "Abcam 官方 Press Releases。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "abcam_official_events_index"
+            ],
+            "note": "官方 Webinar 与 Event 定向入口。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_abcam"
+            ],
+            "note": "公司全称与业务主题补漏。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "PR Times 与日经生物技术新增公司池覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "Business Wire 与 PR Newswire 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "promega",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "promega_official_press_index"
+            ],
+            "note": "Promega 官方 Press Releases。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "promega_official_press_index"
+            ],
+            "note": "新产品暂由官方新闻覆盖。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "promega_official_events_index"
+            ],
+            "note": "Promega Resources 活动定向入口。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_promega"
+            ],
+            "note": "全球新闻补漏。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "日本地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "active",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "新闻稿平台新增公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "rd_systems",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "biotechne_official_press_index"
+            ],
+            "note": "Bio-Techne 官方 IR Press Releases。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "biotechne_official_press_index"
+            ],
+            "note": "R&D Systems 产品发布暂由 Bio-Techne 新闻覆盖。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "biotechne_official_events_index"
+            ],
+            "note": "Bio-Techne 官方 Events。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_rd_systems"
+            ],
+            "note": "R&D Systems 与 Bio-Techne 全称补漏。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "日本地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "active",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "Business Wire 与 PR Newswire 公司池。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "bd_biosciences",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "bd_biosciences_official_news_index"
+            ],
+            "note": "BD Newsroom 中的 Biosciences 定向内容。"
+          },
+          "product_updates": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "bd_biosciences_official_product_updates_index"
+            ],
+            "note": "Rhapsody、FACS、软件与抗体 Panel 更新。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_bd_biosciences"
+            ],
+            "note": "只使用 BD Biosciences 全称。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "日本地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "新闻稿平台共享覆盖。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "medchemexpress",
+        "slots": {
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "mce_official_webinars_index"
+            ],
+            "note": "MCE 官方 Webinar 公开索引，当前安静。"
+          },
+          "technical_content": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "mce_official_insights_index"
+            ],
+            "note": "Reviews、Topics 与 Blogs，已排除 SKU 页。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_medchemexpress"
+            ],
+            "note": "仅使用 MedChemExpress 全品牌名。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "日本地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "新闻稿平台共享覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "stemcell_technologies",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "stemcell_official_news_index"
+            ],
+            "note": "STEMCELL Technologies 官方 Newsroom。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "stemcell_official_news_index"
+            ],
+            "note": "新品暂由官方 Newsroom 覆盖。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "stemcell_official_webinars_index"
+            ],
+            "note": "官方 Course、Webinar 与 Event。"
+          },
+          "technical_content": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "stemcell_official_webinars_index"
+            ],
+            "note": "课程与 Webinar 暂时覆盖部分技术内容。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_stemcell_technologies"
+            ],
+            "note": "全球新闻补漏。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "日本地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "active",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "Business Wire 已有实际公司命中。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "sino_biological",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "sino_biological_official_updates_index"
+            ],
+            "note": "合作、CRO、GMP 与产能更新，已排除 SKU。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "sino_biological_official_webinars_index"
+            ],
+            "note": "官方 Webinar 与 Conference。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_sino_biological"
+            ],
+            "note": "Sino Biological 全品牌名补漏。"
+          },
+          "regional_media": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index",
+              "pharmcube_company_pool_index"
+            ],
+            "note": "日本与中国地区媒体共享覆盖。"
+          },
+          "press_wires": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "新闻稿平台共享覆盖。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      },
+      {
+        "company_id": "takara_bio",
+        "slots": {
+          "official_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "takara_bio_official_news_index"
+            ],
+            "note": "Takara Bio Inc. 英文官网 News Releases。"
+          },
+          "product_updates": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "takara_bio_official_news_index"
+            ],
+            "note": "新品与技术授权暂由官方新闻覆盖。"
+          },
+          "events_webinars": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "takara_bio_official_technical_events_index"
+            ],
+            "note": "Takara Bio USA Webinar 与活动。"
+          },
+          "technical_content": {
+            "status": "covered",
+            "mode": "dedicated",
+            "source_ids": [
+              "takara_bio_official_technical_events_index"
+            ],
+            "note": "技术 Webinar 暂时覆盖部分技术内容。"
+          },
+          "global_news": {
+            "status": "active",
+            "mode": "dedicated",
+            "source_ids": [
+              "google_news_takara_bio"
+            ],
+            "note": "Takara Bio 全球新闻补漏。"
+          },
+          "regional_media": {
+            "status": "active",
+            "mode": "shared",
+            "source_ids": [
+              "prtimes_expanded_company_pool_index",
+              "nikkei_biotech_expanded_company_pool_index"
+            ],
+            "note": "PR Times 和日经生物技术对 Takara Bio 产出较完整。"
+          },
+          "press_wires": {
+            "status": "active",
+            "mode": "shared",
+            "source_ids": [
+              "businesswire_expanded_company_pool_index",
+              "prnewswire_expanded_company_pool_index"
+            ],
+            "note": "Business Wire 与 PR Newswire 已有实际命中。"
+          },
+          "research_regulatory_org": {
+            "status": "covered",
+            "mode": "shared",
+            "source_ids": [
+              "clinicaltrials_company_pool"
+            ],
+            "note": "ClinicalTrials.gov 公司池覆盖。"
+          }
+        }
+      }
+    ]
+  },
   "companies": [
     {
       "id": "acro",
@@ -3051,6 +3963,73 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "age_days": 86
+    },
+    {
+      "id": "29606f191f7b07c6",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "businesswire_company_pool_index",
+      "source_label": "Business Wire - company pool indexed RSS",
+      "source_ids": [
+        "businesswire_company_pool_index"
+      ],
+      "source_labels": [
+        "Business Wire - company pool indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQkJCV0lVQ3U2T2NFVUFuemlPb2hJOFRZb2FnVTdycjdfaHVpQVZGUWp3VmZvYVRvZ2JjSXc4SXJnNHVuLWRwSVFYZHl5cXc2MEFIZERWcERxSXBjMzd0ODRsdHZWVDM4YWRNSlNfRG9nNEpfNC1Hamgyd3I5TUVOeXVmMDJIVm1EYVp6T202TW5rUDFobk1HaUJrSkY3VEZ4dmNLZFhQMGJpZHNtSGFlZDJycWRpZDVmV2llSWJ0SHNCTUQ0Z2FsNzZDT1h0RVJscS1Jc1BwQXJaYmpWaVRrN0d1SVZ3a1dQbjJ0Q1ZKTUtuXy1RTVI1NEctMFltQlgwUW5xTA?oc=5"
+      ],
+      "source_trust": "wire",
+      "title": "Evinova Launches Strategic Partnership with Merck KGaA, Darmstadt, Germany to Define the Future of Clinical Development - Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQkJCV0lVQ3U2T2NFVUFuemlPb2hJOFRZb2FnVTdycjdfaHVpQVZGUWp3VmZvYVRvZ2JjSXc4SXJnNHVuLWRwSVFYZHl5cXc2MEFIZERWcERxSXBjMzd0ODRsdHZWVDM4YWRNSlNfRG9nNEpfNC1Hamgyd3I5TUVOeXVmMDJIVm1EYVp6T202TW5rUDFobk1HaUJrSkY3VEZ4dmNLZFhQMGJpZHNtSGFlZDJycWRpZDVmV2llSWJ0SHNCTUQ0Z2FsNzZDT1h0RVJscS1Jc1BwQXJaYmpWaVRrN0d1SVZ3a1dQbjJ0Q1ZKTUtuXy1RTVI1NEctMFltQlgwUW5xTA?oc=5",
+      "published": "2026-07-29",
+      "summary": "Evinova Launches Strategic Partnership with Merck KGaA, Darmstadt, Germany to Define the Future of Clinical Development Business Wire",
+      "ai_summary": "",
+      "score": 72,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA, Merck KGaA, Darmstadt, Germany",
+        "新闻稿分发平台",
+        "业务动作命中: launch, partnership, clinical",
+        "高价值分类加成 +10: partnership"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "合作 / 共同开发"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 0
     },
     {
       "id": "888c139d5cd72870",
@@ -7179,7 +8158,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 127
     },
     {
-      "id": "e7342aa30da49c09",
+      "id": "41d9ac9db902bc82",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -7197,12 +8176,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -7249,7 +8228,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 83
     },
     {
-      "id": "d3fb952518d9720f",
+      "id": "e8fdeaf288fab76e",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -7267,13 +8246,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a944bd45e2ae78a99be9e8ab96&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -12519,73 +13498,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 92
     },
     {
-      "id": "042c88c9c131ca01",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "businesswire_company_pool_index",
-      "source_label": "Business Wire - company pool indexed RSS",
-      "source_ids": [
-        "businesswire_company_pool_index"
-      ],
-      "source_labels": [
-        "Business Wire - company pool indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTEhnc0REMWxCVTR6SHNncklEcTU2MUpQUkFaMEhKWnhWUzNtSE01U3g5X2lxeDlZMDZtb0loVmcxczVJalVkWFB6Qm9JNXJRTF9lenFTNDhhdUdnbkJvWGFTSVktX0k1em9sVjlCdWN6YzhxVkpEUk12SE1RaUMza21obWlpbG1zTmJ5TFk2by10MUU4ZnZGS05PVFlKczFWMEZpLWRSbGxoQThWM3hsNHJfa0RTeDl6UzhUMnNBS0hGMGNfelE?oc=5"
-      ],
-      "source_trust": "wire",
-      "title": "Thermo Fisher Scientific Completes Acquisition of Clario Holdings, Inc. - Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTEhnc0REMWxCVTR6SHNncklEcTU2MUpQUkFaMEhKWnhWUzNtSE01U3g5X2lxeDlZMDZtb0loVmcxczVJalVkWFB6Qm9JNXJRTF9lenFTNDhhdUdnbkJvWGFTSVktX0k1em9sVjlCdWN6YzhxVkpEUk12SE1RaUMza21obWlpbG1zTmJ5TFk2by10MUU4ZnZGS05PVFlKczFWMEZpLWRSbGxoQThWM3hsNHJfa0RTeDl6UzhUMnNBS0hGMGNfelE?oc=5",
-      "published": "2026-03-24",
-      "summary": "Thermo Fisher Scientific Completes Acquisition of Clario Holdings, Inc. Business Wire",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "新闻稿分发平台",
-        "业务动作命中: acquisition",
-        "超过时效窗口 127天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "并购 / 交易"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "age_days": 127
-    },
-    {
       "id": "c1c6a36cec64e0b3",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -16319,10 +17231,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaURlNWRvSDRGcl9PbUV4aTdZcDh5emRIaUwyb2RBYW9pc1pKd251ckRmN0I0X1JNekZ3SkE5ZUI3eUJDTVlyalN2eGN0b0dzSS14U1VQS2MwOW9QSm9MNVdxVU56M0w3ZjVodnFnVEVpVDEzalNoLThSMHZqTGV6a29ob3o4QUFGNUhmVjBZMXpXODdyWDZqTnhzbjBxNjV1TTI5VG5GMlllMGR1c01SejZaNUI?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook - Bloomberg.com",
+      "title": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook - Bloomberg",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaURlNWRvSDRGcl9PbUV4aTdZcDh5emRIaUwyb2RBYW9pc1pKd251ckRmN0I0X1JNekZ3SkE5ZUI3eUJDTVlyalN2eGN0b0dzSS14U1VQS2MwOW9QSm9MNVdxVU56M0w3ZjVodnFnVEVpVDEzalNoLThSMHZqTGV6a29ob3o4QUFGNUhmVjBZMXpXODdyWDZqTnhzbjBxNjV1TTI5VG5GMlllMGR1c01SejZaNUI?oc=5",
       "published": "2026-07-24",
-      "summary": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook Bloomberg.com",
+      "summary": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook Bloomberg",
       "ai_summary": "",
       "score": 38,
       "tier": "archive",
@@ -16487,7 +17399,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 6
     },
     {
-      "id": "e6448dbe3d4ed468",
+      "id": "d20695a5f671a0ca",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -16505,11 +17417,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp",
       "published": "2026-07-28",
       "summary": "Back in 2022, the Massachusetts-based firm announced that it would hire more than 500 local employees at facilities in Richmond and Henrico, but only ended up hiring about 190 employees by the time it ...",
       "ai_summary": "",
@@ -16552,7 +17464,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 1
     },
     {
-      "id": "f55230359dd44234",
+      "id": "86881815c3cf9a0a",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -16570,11 +17482,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp",
       "published": "2026-07-27",
       "summary": "Thermo Fisher’s specialty diagnostics portfolio addresses high-impact clinical needs across multiple myeloma monitoring with the EXENT® Solution, community oncology testing, critical care, allergy and ...",
       "ai_summary": "",
@@ -16679,6 +17591,68 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "age_days": 32
+    },
+    {
+      "id": "f8d9c9b86ddb74fc",
+      "company_id": "rd_systems",
+      "company": "R&D Systems / Bio-Techne",
+      "matched_company_ids": [
+        "rd_systems"
+      ],
+      "matched_companies": [
+        "R&D Systems / Bio-Techne"
+      ],
+      "source_id": "google_news_rd_systems",
+      "source_label": "Google News RSS - R&D Systems / Bio-Techne",
+      "source_ids": [
+        "google_news_rd_systems"
+      ],
+      "source_labels": [
+        "Google News RSS - R&D Systems / Bio-Techne"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdVNHWlhkd0dQUzZQVmt5N1JwbUQtNjR0cEp2VzJKZ1lmVVZNbmZ4bXVXU1Ywd21xTHJEN0Z0dXdzcFhnRHFMdEttOUV3QVJlZHNHRVJ5d3RKSzNRel9mWmg5XzVjYlBhWmVZQVh3WThoMnRNdVlZcElFM2FPZ0ZkRFBubi1WeWFINVBLS1lGYndKSjJHT0JScHFldmx0ME9aZnhBbTZSQXBVdw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "List of 18 Acquisitions by Bio-Techne (Jul 2026) - Tracxn",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdVNHWlhkd0dQUzZQVmt5N1JwbUQtNjR0cEp2VzJKZ1lmVVZNbmZ4bXVXU1Ywd21xTHJEN0Z0dXdzcFhnRHFMdEttOUV3QVJlZHNHRVJ5d3RKSzNRel9mWmg5XzVjYlBhWmVZQVh3WThoMnRNdVlZcElFM2FPZ0ZkRFBubi1WeWFINVBLS1lGYndKSjJHT0JScHFldmx0ME9aZnhBbTZSQXBVdw?oc=5",
+      "published": "2026-07-01",
+      "summary": "List of 18 Acquisitions by Bio-Techne (Jul 2026) Tracxn",
+      "ai_summary": "",
+      "score": 38,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Bio-Techne",
+        "业务动作命中: acquisition"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 28
     },
     {
       "id": "fa93c33bf65d8f3e",
@@ -17330,7 +18304,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMimgFBVV95cUxObGFuTW5MM3d5OFc4eklycDdNaDczdWpoeGRmTlB1amgweHVuV1F3M2p0bHRwV2swQTJFa2Z1OExRT0hGLTZQdDJ2c2hiemJOWWhjbDN4NjVyT1NrcURWdHNuWkxkSHlaem9XZUVwelhZNVB2WEFvbTRSZUpXMncyRk5LUDBUNW5veE9IazBpd01jX0xka3VCbDFB?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-raises-2026-outlook-after-10-growth-in-q2%2far-AA28CmiL&c=14750123491725895340&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-raises-2026-outlook-after-10-growth-in-q2%2far-AA28CmiL&c=14750123491725895340&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher raises 2026 outlook after 10% growth in Q2 - Yahoo Finance",
@@ -20546,8 +21520,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_trust": "owned",
       "title": "Webinar | Cell and Gene Therapy Regulatory and Process Guidance from Concept to Clinic",
       "url": "https://www.youtube.com/watch?v=dSW4U5ddmq0",
-      "published": "2026-07-17",
-      "summary": "Official YouTube channel video. 16 views · 12 days ago",
+      "published": "2026-07-16",
+      "summary": "Official YouTube channel video. 16 views · 13 days ago",
       "ai_summary": "",
       "score": 32,
       "tier": "archive",
@@ -20590,7 +21564,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 12
+      "age_days": 13
     },
     {
       "id": "489169154c17cf1a",
@@ -20778,73 +21752,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 0
-    },
-    {
-      "id": "91c498638894630e",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "bioon_life_science_index",
-      "source_label": "Bioon - China life science indexed RSS",
-      "source_ids": [
-        "bioon_life_science_index"
-      ],
-      "source_labels": [
-        "Bioon - China life science indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00WDNPeXV2eDdHREVRQkRJSVpEZ3lGZFZKSzlxVkxqR05pNXFrRThWY05fRURuMjczVld1UlhEbzd5clVXWEhMUU1qZXIzbVg0aEc4TVNxX3Q4cVl5?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "Nature Medicine：西安交大吴岳/袁祖贻团队发布AAV基因治疗临床实验结果，一次治疗，长期降血脂 - 生物谷",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00WDNPeXV2eDdHREVRQkRJSVpEZ3lGZFZKSzlxVkxqR05pNXFrRThWY05fRURuMjczVld1UlhEbzd5clVXWEhMUU1qZXIzbVg0aEc4TVNxX3Q4cVl5?oc=5",
-      "published": "2026-06-07",
-      "summary": "Nature Medicine：西安交大吴岳/袁祖贻团队发布AAV基因治疗临床实验结果，一次治疗，长期降血脂 生物谷",
-      "ai_summary": "",
-      "score": 32,
-      "tier": "archive",
-      "category": "regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: 基因治疗",
-        "业务动作命中: 发布",
-        "高价值分类加成 +8: regulatory"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "基因治疗",
-          "AAV / 病毒载体"
-        ],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "产品发布"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 30,
-        "label": "中相关",
-        "explanation": "该信号命中基因治疗、AAV / 病毒载体，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术",
-          "出现明确业务动作",
-          "包含监管或注册信号"
-        ]
-      },
-      "recommended_action": {
-        "type": "regulatory",
-        "label": "法规影响核对",
-        "owner": "产品 / 法规",
-        "priority": "medium",
-        "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
-      },
-      "age_days": 52
     },
     {
       "id": "6f39d2613e71047e",
@@ -24031,19 +24938,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_thermo"
+        "google_news_thermo",
+        "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher"
+        "Google News RSS - Thermo Fisher",
+        "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM3Y5LUcwelJyTlVxOWd2U2ZmNWY2dVR6TEp0Vlg3c3hKdklfVm5nbVNCLUlhTkpTVUR5LXJVdzJpR3NrS19yRUdSRDkzdUVfT3Y3NFZ4NUxwQjdKcGp6azNzZUZLSEVNTVd5cHZ5R2xPUWxUaTNnU2xNLUtNNFozRER1ZnQ5RC14YWJOVzBDaWNwTWk1?oc=5"
+        "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM3Y5LUcwelJyTlVxOWd2U2ZmNWY2dVR6TEp0Vlg3c3hKdklfVm5nbVNCLUlhTkpTVUR5LXJVdzJpR3NrS19yRUdSRDkzdUVfT3Y3NFZ4NUxwQjdKcGp6azNzZUZLSEVNTVd5cHZ5R2xPUWxUaTNnU2xNLUtNNFozRER1ZnQ5RC14YWJOVzBDaWNwTWk1?oc=5",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2ffinance.yahoo.com%2fmarkets%2fstocks%2farticles%2fthermo-fisher-nyse-tmo-q2-101720899.html&c=13292877388238650844&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher’s (NYSE:TMO) Q2 CY2026 Sales Top Estimates - Yahoo Finance",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM3Y5LUcwelJyTlVxOWd2U2ZmNWY2dVR6TEp0Vlg3c3hKdklfVm5nbVNCLUlhTkpTVUR5LXJVdzJpR3NrS19yRUdSRDkzdUVfT3Y3NFZ4NUxwQjdKcGp6azNzZUZLSEVNTVd5cHZ5R2xPUWxUaTNnU2xNLUtNNFozRER1ZnQ5RC14YWJOVzBDaWNwTWk1?oc=5",
       "published": "2026-07-23",
-      "summary": "Thermo Fisher’s (NYSE:TMO) Q2 CY2026 Sales Top Estimates Yahoo Finance",
+      "summary": "Life sciences company Thermo Fisher (NYSE:TMO) announced better-than-expected revenue in Q2 CY2026, with sales up 10.5% year on year to $11.99 billion. Its non-GAAP profit of $6.03 per share was 5.6% ...",
       "ai_summary": "",
       "score": 30,
       "tier": "archive",
@@ -24205,7 +25115,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 5
     },
     {
-      "id": "82a06741d43b1580",
+      "id": "0dd7c53ed73ae683",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -24223,13 +25133,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNTE0VE9xZHZhNXdycEJjV1Q3NFUyVFJYN29TQkJ3UkZzTGhSZHJ0WGdBSzMwUFZlVldBLTgzYWRZdnVVYTBlTzhtWGxFOGhQbHpTelhCS1JTOS05cWF6M0loYVIzeWVmSWZKaFk0Z3lwbGU2QktDeF9QdGw4STRkTg?oc=5"
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVBvdlJuMnJvSDZrUEVfZnRRcmVsY2tjTlBZY3lsejdMRS1rWnNSV2lFTE92NS04eXBXOFVWT01UNVFwclgzSDZBemJtS1NpdEFaWVhzX24yLXVoNFN5cUtRLXJTZy1YOHpfMDlnSVNRQWR0UXlRcDVmeTZldWNuekw4TktNOUdvajdveHRGcDEtYVFpcHY5NmtDdlFTdXhk?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific (TMO) Q2 2026 earnings summary - Quartr",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNTE0VE9xZHZhNXdycEJjV1Q3NFUyVFJYN29TQkJ3UkZzTGhSZHJ0WGdBSzMwUFZlVldBLTgzYWRZdnVVYTBlTzhtWGxFOGhQbHpTelhCS1JTOS05cWF6M0loYVIzeWVmSWZKaFk0Z3lwbGU2QktDeF9QdGw4STRkTg?oc=5",
-      "published": "2026-07-23",
-      "summary": "Thermo Fisher Scientific (TMO) Q2 2026 earnings summary Quartr",
+      "title": "What Makes Thermo Fisher Scientific (TMO) an Attractive Long-Term Bet? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVBvdlJuMnJvSDZrUEVfZnRRcmVsY2tjTlBZY3lsejdMRS1rWnNSV2lFTE92NS04eXBXOFVWT01UNVFwclgzSDZBemJtS1NpdEFaWVhzX24yLXVoNFN5cUtRLXJTZy1YOHpfMDlnSVNRQWR0UXlRcDVmeTZldWNuekw4TktNOUdvajdveHRGcDEtYVFpcHY5NmtDdlFTdXhk?oc=5",
+      "published": "2026-07-22",
+      "summary": "What Makes Thermo Fisher Scientific (TMO) an Attractive Long-Term Bet? Yahoo Finance",
       "ai_summary": "",
       "score": 30,
       "tier": "archive",
@@ -24263,7 +25173,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 6
+      "age_days": 7
     },
     {
       "id": "9d90191805104ca2",
@@ -24325,6 +25235,67 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 19
+    },
+    {
+      "id": "82a06741d43b1580",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNTE0VE9xZHZhNXdycEJjV1Q3NFUyVFJYN29TQkJ3UkZzTGhSZHJ0WGdBSzMwUFZlVldBLTgzYWRZdnVVYTBlTzhtWGxFOGhQbHpTelhCS1JTOS05cWF6M0loYVIzeWVmSWZKaFk0Z3lwbGU2QktDeF9QdGw4STRkTg?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific (TMO) Q2 2026 earnings summary - Quartr",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNTE0VE9xZHZhNXdycEJjV1Q3NFUyVFJYN29TQkJ3UkZzTGhSZHJ0WGdBSzMwUFZlVldBLTgzYWRZdnVVYTBlTzhtWGxFOGhQbHpTelhCS1JTOS05cWF6M0loYVIzeWVmSWZKaFk0Z3lwbGU2QktDeF9QdGw4STRkTg?oc=5",
+      "published": "2026-07-23",
+      "summary": "Thermo Fisher Scientific (TMO) Q2 2026 earnings summary Quartr",
+      "ai_summary": "",
+      "score": 30,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 6
     },
     {
       "id": "f5c23c1366e43f64",
@@ -24999,67 +25970,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 21
     },
     {
-      "id": "89b620cebdf170b8",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSnVaZ2RzdkRUUUI3ZzRnbnN4NXRtWXc1WEhka1JFbzhzTHZrQ0hoZl9QSnM5MnN4ajMtYjd5ZnlJNEtNbGVZSGhnbEVLdmE4TERhUFMyMVhBMjdqXzVEbWMtOWU5WEZCVjVWTWh3OTZXUUtOSjNBUllXOXZZLTIzU1R3aW5rX25rTng3My0tbkpyREVzZjA5dzdUTkNGdjl6MjdwQ2F2WGFzc094SmhoZXRvODljeTBLeXFkUUhWN0tudU1kTmZwaVpXb0pfVktkVGZ1WW1NYw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Q2 revenue beats estimates amid strong customer activity - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSnVaZ2RzdkRUUUI3ZzRnbnN4NXRtWXc1WEhka1JFbzhzTHZrQ0hoZl9QSnM5MnN4ajMtYjd5ZnlJNEtNbGVZSGhnbEVLdmE4TERhUFMyMVhBMjdqXzVEbWMtOWU5WEZCVjVWTWh3OTZXUUtOSjNBUllXOXZZLTIzU1R3aW5rX25rTng3My0tbkpyREVzZjA5dzdUTkNGdjl6MjdwQ2F2WGFzc094SmhoZXRvODljeTBLeXFkUUhWN0tudU1kTmZwaVpXb0pfVktkVGZ1WW1NYw?oc=5",
-      "published": "2026-07-23",
-      "summary": "Thermo Fisher Q2 revenue beats estimates amid strong customer activity TradingView",
-      "ai_summary": "",
-      "score": 30,
-      "tier": "archive",
-      "category": "finance",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进finance相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 6
-    },
-    {
       "id": "8373a72c04a11830",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -25119,6 +26029,67 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 61
+    },
+    {
+      "id": "89b620cebdf170b8",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSnVaZ2RzdkRUUUI3ZzRnbnN4NXRtWXc1WEhka1JFbzhzTHZrQ0hoZl9QSnM5MnN4ajMtYjd5ZnlJNEtNbGVZSGhnbEVLdmE4TERhUFMyMVhBMjdqXzVEbWMtOWU5WEZCVjVWTWh3OTZXUUtOSjNBUllXOXZZLTIzU1R3aW5rX25rTng3My0tbkpyREVzZjA5dzdUTkNGdjl6MjdwQ2F2WGFzc094SmhoZXRvODljeTBLeXFkUUhWN0tudU1kTmZwaVpXb0pfVktkVGZ1WW1NYw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Q2 revenue beats estimates amid strong customer activity - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSnVaZ2RzdkRUUUI3ZzRnbnN4NXRtWXc1WEhka1JFbzhzTHZrQ0hoZl9QSnM5MnN4ajMtYjd5ZnlJNEtNbGVZSGhnbEVLdmE4TERhUFMyMVhBMjdqXzVEbWMtOWU5WEZCVjVWTWh3OTZXUUtOSjNBUllXOXZZLTIzU1R3aW5rX25rTng3My0tbkpyREVzZjA5dzdUTkNGdjl6MjdwQ2F2WGFzc094SmhoZXRvODljeTBLeXFkUUhWN0tudU1kTmZwaVpXb0pfVktkVGZ1WW1NYw?oc=5",
+      "published": "2026-07-23",
+      "summary": "Thermo Fisher Q2 revenue beats estimates amid strong customer activity TradingView",
+      "ai_summary": "",
+      "score": 30,
+      "tier": "archive",
+      "category": "finance",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进finance相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 6
     },
     {
       "id": "77ebdfccac3b9f1e",
@@ -27667,10 +28638,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbXI3eDBldmtheWZpbmpqajZVUDJMcHA4bEhTc0F4ZS1WTDhITkdXVXBBTk5ZS2Uza3JySks4MzhoYWdoUEkxdXFnS1Ric0VpanFNemlNYWx2Z0xMZ1FERDV3NkZMRk5FcEVaX2V4YWljby1oOGo3ZHBwckx6ekg0UU9OVmJVVWhFQ2I5djM3MHBFbmF5SkQxS3dtMGpLYXItYXRjYlRiMl9VV1U?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Merck KGaA Secures $11.3 Billion Purchase of Bio-Techne - Bloomberg.com",
+      "title": "Merck KGaA Secures $11.3 Billion Purchase of Bio-Techne - Bloomberg",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbXI3eDBldmtheWZpbmpqajZVUDJMcHA4bEhTc0F4ZS1WTDhITkdXVXBBTk5ZS2Uza3JySks4MzhoYWdoUEkxdXFnS1Ric0VpanFNemlNYWx2Z0xMZ1FERDV3NkZMRk5FcEVaX2V4YWljby1oOGo3ZHBwckx6ekg0UU9OVmJVVWhFQ2I5djM3MHBFbmF5SkQxS3dtMGpLYXItYXRjYlRiMl9VV1U?oc=5",
       "published": "2026-06-25",
-      "summary": "Merck KGaA Secures $11.3 Billion Purchase of Bio-Techne Bloomberg.com",
+      "summary": "Merck KGaA Secures $11.3 Billion Purchase of Bio-Techne Bloomberg",
       "ai_summary": "",
       "score": 30,
       "tier": "archive",
@@ -27968,69 +28939,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 34
-    },
-    {
-      "id": "347c846e2a1b023d",
-      "company_id": "rd_systems",
-      "company": "R&D Systems / Bio-Techne / Merck KGaA Life Science / MilliporeSigma",
-      "matched_company_ids": [
-        "rd_systems",
-        "merck_life_science"
-      ],
-      "matched_companies": [
-        "R&D Systems / Bio-Techne",
-        "Merck KGaA Life Science / MilliporeSigma"
-      ],
-      "source_id": "google_news_rd_systems",
-      "source_label": "Google News RSS - R&D Systems / Bio-Techne",
-      "source_ids": [
-        "google_news_rd_systems"
-      ],
-      "source_labels": [
-        "Google News RSS - R&D Systems / Bio-Techne"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdGZIMXhXQXBTSmFUaGs3SkttckFLVXNUS0J2TEF2QjhsekxrVHMxY0lzYUJUakJoZWFZM1Yzai1xNlZaZ0pOd3BwaFh6dWJiSnZsa3R5ME0tUXREdEN4Vm54NEdKV2FfUzQwel90RlBFZ2NaeEtLUGxtLVJKOGMyOGFvOTB3SktuLWJlQnpQVC14MzNaQzUtLQ?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Merck KGaA to buy Bio-Techne for $11.3 billion - Big News Network.com",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdGZIMXhXQXBTSmFUaGs3SkttckFLVXNUS0J2TEF2QjhsekxrVHMxY0lzYUJUakJoZWFZM1Yzai1xNlZaZ0pOd3BwaFh6dWJiSnZsa3R5ME0tUXREdEN4Vm54NEdKV2FfUzQwel90RlBFZ2NaeEtLUGxtLVJKOGMyOGFvOTB3SktuLWJlQnpQVC14MzNaQzUtLQ?oc=5",
-      "published": "2026-06-29",
-      "summary": "Merck KGaA to buy Bio-Techne for $11.3 billion Big News Network.com",
-      "ai_summary": "",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: Bio-Techne, Merck KGaA"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 30
     },
     {
       "id": "1c7156bc87e78820",
@@ -32825,67 +33733,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 1
     },
     {
-      "id": "7d84a1e03b46eed5",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "koreabiomed_apac_index",
-      "source_label": "Korea Biomedical Review - indexed RSS",
-      "source_ids": [
-        "koreabiomed_apac_index"
-      ],
-      "source_labels": [
-        "Korea Biomedical Review - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE90UnJ3SXVKYi1fbWpNeGt2ZUd1LW82TVljdjd0clAxdGN1b3Q5cERjUEtBdnZoTUNGWDcteG56X0M5WW1sek5OU25SVC1yWVBvcGVwMmNwbDhjeldvSzhvekNrdXlRMldlS0tSRldB0gFyQVVfeXFMT0NMM3ROV1NzQUJaMHhGTlNSbzRXbm1GQmlETng5WWF2VjVCRjh4M1ZqREF1bVZvX1Y3UkFzV3pVLV9YQ0c3NjVRMG5hd3I3cV9PX1dIbEg0UUtYa1FGajVqaTl3dF9XeWNmRW12a2xPQVNn?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "Samsung Bioepis’ Keytruda biosimilar clears phase 1 and phase 3 trials - koreabiomed.com",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE90UnJ3SXVKYi1fbWpNeGt2ZUd1LW82TVljdjd0clAxdGN1b3Q5cERjUEtBdnZoTUNGWDcteG56X0M5WW1sek5OU25SVC1yWVBvcGVwMmNwbDhjeldvSzhvekNrdXlRMldlS0tSRldB0gFyQVVfeXFMT0NMM3ROV1NzQUJaMHhGTlNSbzRXbm1GQmlETng5WWF2VjVCRjh4M1ZqREF1bVZvX1Y3UkFzV3pVLV9YQ0c3NjVRMG5hd3I3cV9PX1dIbEg0UUtYa1FGajVqaTl3dF9XeWNmRW12a2xPQVNn?oc=5",
-      "published": "2026-06-29",
-      "summary": "Samsung Bioepis’ Keytruda biosimilar clears phase 1 and phase 3 trials koreabiomed.com",
-      "ai_summary": "",
-      "score": 26,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "业务动作命中: phase 1, phase 3"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "I 期临床",
-          "III 期临床"
-        ],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 10,
-        "label": "低相关",
-        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": [
-          "研发阶段可识别"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 30
-    },
-    {
       "id": "3417eb40425bffcc",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -33281,8 +34128,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_trust": "owned",
       "title": "Webinar | High Throughput Upstream Process Development for CHO Cells Using Ambr 250 Bioreactor",
       "url": "https://www.youtube.com/watch?v=EZ_4PXgxebk",
-      "published": "2026-07-23",
-      "summary": "Official YouTube channel video. 21 views · 6 days ago",
+      "published": "2026-07-22",
+      "summary": "Official YouTube channel video. 21 views · 7 days ago",
       "ai_summary": "",
       "score": 26,
       "tier": "archive",
@@ -33322,7 +34169,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 6
+      "age_days": 7
     },
     {
       "id": "d06fb2fb09437c51",
@@ -33749,7 +34596,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 75
     },
     {
-      "id": "7e75706272a9de1d",
+      "id": "5e0cc86eafb0a7c1",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
@@ -33763,11 +34610,68 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Jiemian Health - China pharma indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tZmJGNF9TQ0Jzd1NfYnkzZG1qbU1kQ05vZ1p1azNuOXVSRkI5YXF3cFRFRVBpRFVVSzFkdWhZbDNyYlFwR3ZYa0RpMTlDQy1ub1FtY0x3?oc=5"
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GUTJ3VFQ3MnRWQnZ2VExHbFBVaDhaclU3RzRId3RxSzdsV21tcXNLRDdUb1h2czBNYm5Ua1B1c0k3SE9ueGw4N0ZyZzJjQmJhNWx3T1dJaFQ?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "半年出海近千亿美元！中国创新药BD交易进入“量价齐升”新阶段，港股创新药ETF景顺(513780)聚焦全球化核心资产 - Jiemian.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GUTJ3VFQ3MnRWQnZ2VExHbFBVaDhaclU3RzRId3RxSzdsV21tcXNLRDdUb1h2czBNYm5Ua1B1c0k3SE9ueGw4N0ZyZzJjQmJhNWx3T1dJaFQ?oc=5",
+      "published": "2026-07-29",
+      "summary": "半年出海近千亿美元！中国创新药BD交易进入“量价齐升”新阶段，港股创新药ETF景顺(513780)聚焦全球化核心资产 Jiemian.com",
+      "ai_summary": "",
+      "score": 26,
+      "tier": "archive",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: 创新药",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 0,
+        "label": "低相关",
+        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
+        "reasons": []
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 0
+    },
+    {
+      "id": "6b516ba90fbc4d47",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jiemian_health_index",
+      "source_label": "Jiemian Health - China pharma indexed RSS",
+      "source_ids": [
+        "jiemian_health_index"
+      ],
+      "source_labels": [
+        "Jiemian Health - China pharma indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GY2JaTnE5cVAzbHYwZnFIYTBjZ1Y5S3YyQmJlalZ6U1prbFQxaVpxSW5MTUxmZ0dVVFVjUWtqaGVFUllHR3Q5YUszRExZZjdieUN5WUVqM1c?oc=5"
       ],
       "source_trust": "media",
       "title": "创新药与脑机接口双轮驱动，科创医药ETF华夏(588130)涨近1%，最新份额达4.56亿份 - Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tZmJGNF9TQ0Jzd1NfYnkzZG1qbU1kQ05vZ1p1azNuOXVSRkI5YXF3cFRFRVBpRFVVSzFkdWhZbDNyYlFwR3ZYa0RpMTlDQy1ub1FtY0x3?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GY2JaTnE5cVAzbHYwZnFIYTBjZ1Y5S3YyQmJlalZ6U1prbFQxaVpxSW5MTUxmZ0dVVFVjUWtqaGVFUllHR3Q5YUszRExZZjdieUN5WUVqM1c?oc=5",
       "published": "2026-07-29",
       "summary": "创新药与脑机接口双轮驱动，科创医药ETF华夏(588130)涨近1%，最新份额达4.56亿份 Jiemian.com",
       "ai_summary": "",
@@ -33920,7 +34824,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 0
     },
     {
-      "id": "c86a3a165b6df543",
+      "id": "3d7748950ea5d6c9",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
@@ -33934,11 +34838,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Jiemian Health - China pharma indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WekJCdnNPNmNXbk9MVFVBWVlsRFV6bFA2NWFESFd2UHZqdGh4bTMyY0tHa1l2NjZYcXdYcGRYeWhTV3RlMlJuZHpDSm1rZWNBR0hNRWdfRHU?oc=5"
+        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9OS0Jid2lfeXdtVlkwTUl6dkFoVUR2LTk4M0g0bU43VU5lTmRRdGprYV9pY01iZGlPaG1JaFVfM3V2bTBONjhCMXBORS1EVzNGaDNiQ2dB?oc=5"
       ],
       "source_trust": "media",
       "title": "资金大量涌入创新药主题ETF，科创医药ETF华夏(588130)涨近1%，连续6天获资金净流入 - Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WekJCdnNPNmNXbk9MVFVBWVlsRFV6bFA2NWFESFd2UHZqdGh4bTMyY0tHa1l2NjZYcXdYcGRYeWhTV3RlMlJuZHpDSm1rZWNBR0hNRWdfRHU?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9OS0Jid2lfeXdtVlkwTUl6dkFoVUR2LTk4M0g0bU43VU5lTmRRdGprYV9pY01iZGlPaG1JaFVfM3V2bTBONjhCMXBORS1EVzNGaDNiQ2dB?oc=5",
       "published": "2026-07-29",
       "summary": "资金大量涌入创新药主题ETF，科创医药ETF华夏(588130)涨近1%，连续6天获资金净流入 Jiemian.com",
       "ai_summary": "",
@@ -34148,7 +35052,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 1
     },
     {
-      "id": "4d54b23627c9815b",
+      "id": "27f18a53d66162f3",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
@@ -34162,13 +35066,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Jiemian Health - China pharma indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE05Y1JqRVFTV1BmUTlQYnBXNVA3NmllT3c2WGstTlVwTGZSaEJJUXBBRXZwZWpQT1VrcnAtakVYSlJSODFfTEZhTko1RzlTS2dDbThUU29nOEw?oc=5"
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0QnA0X2wzOWhrZXlrSXpmSUhkNmZPQ2RnQ1ZJZEpTRk9CVzJ6NDBScF9WS2dxd0JhRHRJRWdQYnVnRTlhOFB4cU5qcHoyMHNjXzZKcFBWeVE?oc=5"
       ],
       "source_trust": "media",
-      "title": "国内创新药行业长期结构性机会持续兑现，场内布局创新药选哪个ETF好？港股创新药ETF景顺(513780)一键囊括港股创新药龙头标的 - Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE05Y1JqRVFTV1BmUTlQYnBXNVA3NmllT3c2WGstTlVwTGZSaEJJUXBBRXZwZWpQT1VrcnAtakVYSlJSODFfTEZhTko1RzlTS2dDbThUU29nOEw?oc=5",
+      "title": "EASD大会即将召开，国产创新药步入价值验证期，港股通创新药ETF易方达(159316)近5日净流入2.25亿元 - Jiemian.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0QnA0X2wzOWhrZXlrSXpmSUhkNmZPQ2RnQ1ZJZEpTRk9CVzJ6NDBScF9WS2dxd0JhRHRJRWdQYnVnRTlhOFB4cU5qcHoyMHNjXzZKcFBWeVE?oc=5",
       "published": "2026-07-28",
-      "summary": "国内创新药行业长期结构性机会持续兑现，场内布局创新药选哪个ETF好？港股创新药ETF景顺(513780)一键囊括港股创新药龙头标的 Jiemian.com",
+      "summary": "EASD大会即将召开，国产创新药步入价值验证期，港股通创新药ETF易方达(159316)近5日净流入2.25亿元 Jiemian.com",
       "ai_summary": "",
       "score": 26,
       "tier": "archive",
@@ -34205,7 +35109,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 1
     },
     {
-      "id": "27f18a53d66162f3",
+      "id": "4d54b23627c9815b",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
@@ -34219,13 +35123,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Jiemian Health - China pharma indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0QnA0X2wzOWhrZXlrSXpmSUhkNmZPQ2RnQ1ZJZEpTRk9CVzJ6NDBScF9WS2dxd0JhRHRJRWdQYnVnRTlhOFB4cU5qcHoyMHNjXzZKcFBWeVE?oc=5"
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE05Y1JqRVFTV1BmUTlQYnBXNVA3NmllT3c2WGstTlVwTGZSaEJJUXBBRXZwZWpQT1VrcnAtakVYSlJSODFfTEZhTko1RzlTS2dDbThUU29nOEw?oc=5"
       ],
       "source_trust": "media",
-      "title": "EASD大会即将召开，国产创新药步入价值验证期，港股通创新药ETF易方达(159316)近5日净流入2.25亿元 - Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0QnA0X2wzOWhrZXlrSXpmSUhkNmZPQ2RnQ1ZJZEpTRk9CVzJ6NDBScF9WS2dxd0JhRHRJRWdQYnVnRTlhOFB4cU5qcHoyMHNjXzZKcFBWeVE?oc=5",
+      "title": "国内创新药行业长期结构性机会持续兑现，场内布局创新药选哪个ETF好？港股创新药ETF景顺(513780)一键囊括港股创新药龙头标的 - Jiemian.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE05Y1JqRVFTV1BmUTlQYnBXNVA3NmllT3c2WGstTlVwTGZSaEJJUXBBRXZwZWpQT1VrcnAtakVYSlJSODFfTEZhTko1RzlTS2dDbThUU29nOEw?oc=5",
       "published": "2026-07-28",
-      "summary": "EASD大会即将召开，国产创新药步入价值验证期，港股通创新药ETF易方达(159316)近5日净流入2.25亿元 Jiemian.com",
+      "summary": "国内创新药行业长期结构性机会持续兑现，场内布局创新药选哪个ETF好？港股创新药ETF景顺(513780)一键囊括港股创新药龙头标的 Jiemian.com",
       "ai_summary": "",
       "score": 26,
       "tier": "archive",
@@ -35006,63 +35910,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 5
-    },
-    {
-      "id": "dd80566dd5769325",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "jiemian_health_index",
-      "source_label": "Jiemian Health - China pharma indexed RSS",
-      "source_ids": [
-        "jiemian_health_index"
-      ],
-      "source_labels": [
-        "Jiemian Health - China pharma indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1YQi1GQ2RDS3dyZk8wYlFfd0xzVVBYY25XemVsZEl0ZHIzRTRFc25tN0s2bjRFYzQwUXlYbzdGYW41c2E5VjBCYXlJekxSaVF3X1FOVkJ3YW0?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "港股创新药单周大涨近4%领跑，科技估值修复窗口未变，南方基金旗下港股ETF布局机遇备受关注 - Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1YQi1GQ2RDS3dyZk8wYlFfd0xzVVBYY25XemVsZEl0ZHIzRTRFc25tN0s2bjRFYzQwUXlYbzdGYW41c2E5VjBCYXlJekxSaVF3X1FOVkJ3YW0?oc=5",
-      "published": "2026-07-27",
-      "summary": "港股创新药单周大涨近4%领跑，科技估值修复窗口未变，南方基金旗下港股ETF布局机遇备受关注 Jiemian.com",
-      "ai_summary": "",
-      "score": 26,
-      "tier": "archive",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: 创新药",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 0,
-        "label": "低相关",
-        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": []
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 2
     },
     {
       "id": "a4497426d9a8dc68",
@@ -36092,70 +36939,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
       "age_days": 365
-    },
-    {
-      "id": "8c51229ad82143a0",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "google_news_acro",
-      "source_label": "Google News RSS - ACROBiosystems",
-      "source_ids": [
-        "google_news_acro"
-      ],
-      "source_labels": [
-        "Google News RSS - ACROBiosystems"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZkhtcGpGeVdUUlY3R2ZWdU1BRmJxOWpPLXBCczluT25hVUI4VWFvVnMxZ2JwVkJTOXhqWlZHTks2NXBlT1V5VEROak9ZeVFNUTFUUm9SRDd0cDRYUkZRU2xKbTQxRnRsY0JLb0RJdlVMamtSX25LRVdESlFieWRNbHM3a0tDU0FCbkNDalk4WmJpcUxNRWVrN3ZlR1lzZFdscXMzX0hsMjMwSThDbVZ3YWRYZ3EzYWozaVROMUsyb1luZ9IBxwFBVV95cUxPV2pGWVhyazlwQkxXUUc3TFFWb2ZPZmFKWEUyRnd4NlNIYVhyR2JTcVRtdm9sRXZzVWkxN0N1VndlUERfZElXWGZiMDdmNFA1ZURrODFsRzN3aHBSQVhUUUcxSVhTYThra3dhVEdmYjFzREZ3WE92NVQ0X1BfdzVCSkZsR0d1TVBoOHRXVFJwbVIxNTc4ckJJZzFSZE04eWlaS3NQSGx0TnFDQnpSZDV5TnZTWV9JN3RIa1E4RlhJbFVUaUR3SWl3?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "ACROBiosystems and Partners Conclude OrganoAsia 2025 - The Manila Times",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZkhtcGpGeVdUUlY3R2ZWdU1BRmJxOWpPLXBCczluT25hVUI4VWFvVnMxZ2JwVkJTOXhqWlZHTks2NXBlT1V5VEROak9ZeVFNUTFUUm9SRDd0cDRYUkZRU2xKbTQxRnRsY0JLb0RJdlVMamtSX25LRVdESlFieWRNbHM3a0tDU0FCbkNDalk4WmJpcUxNRWVrN3ZlR1lzZFdscXMzX0hsMjMwSThDbVZ3YWRYZ3EzYWozaVROMUsyb1luZ9IBxwFBVV95cUxPV2pGWVhyazlwQkxXUUc3TFFWb2ZPZmFKWEUyRnd4NlNIYVhyR2JTcVRtdm9sRXZzVWkxN0N1VndlUERfZElXWGZiMDdmNFA1ZURrODFsRzN3aHBSQVhUUUcxSVhTYThra3dhVEdmYjFzREZ3WE92NVQ0X1BfdzVCSkZsR0d1TVBoOHRXVFJwbVIxNTc4ckJJZzFSZE04eWlaS3NQSGx0TnFDQnpSZDV5TnZTWV9JN3RIa1E4RlhJbFVUaUR3SWl3?oc=5",
-      "published": "2025-10-22",
-      "summary": "ACROBiosystems and Partners Conclude OrganoAsia 2025 The Manila Times",
-      "ai_summary": "",
-      "score": 25,
-      "tier": "archive",
-      "category": "partnership",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: ACROBiosystems",
-        "业务动作命中: partner",
-        "高价值分类加成 +10: partnership",
-        "超过硬性时效上限: 280 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "age_days": 280
     },
     {
       "id": "d72d90d54612d235",
@@ -38102,6 +38885,69 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 197
     },
     {
+      "id": "0d55f38346b7103d",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "pharmcube_company_pool_index",
+      "source_label": "Pharmcube / ByDrug - company pool indexed RSS",
+      "source_ids": [
+        "pharmcube_company_pool_index"
+      ],
+      "source_labels": [
+        "Pharmcube / ByDrug - company pool indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EWFRObm9LWkZJQWNDUVBGZFhUTFVtcUw0cVFuNkd3NThHR29RTWRFMk8wcHhaM3BGQXZpSllyQWI0b3o1NTVFN0JQbWJDTWR4dlV1bGJRNWZfVy1ETHYtcmdMRTlRcGpwQ2R5YmxDdEpnaHBuS1Y5WGFCTVZaUQ?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "突发！赛默飞再度闭厂，裁员103人 - ByDrug",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EWFRObm9LWkZJQWNDUVBGZFhUTFVtcUw0cVFuNkd3NThHR29RTWRFMk8wcHhaM3BGQXZpSllyQWI0b3o1NTVFN0JQbWJDTWR4dlV1bGJRNWZfVy1ETHYtcmdMRTlRcGpwQ2R5YmxDdEpnaHBuS1Y5WGFCTVZaUQ?oc=5",
+      "published": "2026-02-02",
+      "summary": "突发！赛默飞再度闭厂，裁员103人 ByDrug",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: 赛默飞",
+        "行业编辑媒体",
+        "超过默认时效窗口: 177 天前"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 177
+    },
+    {
       "id": "e438103b455a5dac",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -38235,69 +39081,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "age_days": 285
-    },
-    {
-      "id": "0d55f38346b7103d",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "pharmcube_company_pool_index",
-      "source_label": "Pharmcube / ByDrug - company pool indexed RSS",
-      "source_ids": [
-        "pharmcube_company_pool_index"
-      ],
-      "source_labels": [
-        "Pharmcube / ByDrug - company pool indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EWFRObm9LWkZJQWNDUVBGZFhUTFVtcUw0cVFuNkd3NThHR29RTWRFMk8wcHhaM3BGQXZpSllyQWI0b3o1NTVFN0JQbWJDTWR4dlV1bGJRNWZfVy1ETHYtcmdMRTlRcGpwQ2R5YmxDdEpnaHBuS1Y5WGFCTVZaUQ?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "突发！赛默飞再度闭厂，裁员103人 - ByDrug",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EWFRObm9LWkZJQWNDUVBGZFhUTFVtcUw0cVFuNkd3NThHR29RTWRFMk8wcHhaM3BGQXZpSllyQWI0b3o1NTVFN0JQbWJDTWR4dlV1bGJRNWZfVy1ETHYtcmdMRTlRcGpwQ2R5YmxDdEpnaHBuS1Y5WGFCTVZaUQ?oc=5",
-      "published": "2026-02-02",
-      "summary": "突发！赛默飞再度闭厂，裁员103人 ByDrug",
-      "ai_summary": "",
-      "score": 25,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: 赛默飞",
-        "行业编辑媒体",
-        "超过默认时效窗口: 177 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 177
     },
     {
       "id": "29c3a315eae1c438",
@@ -40494,70 +41277,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 5207
-    },
-    {
-      "id": "67d86f94a0915683",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo_jp",
-      "source_label": "Google News RSS - Thermo Fisher Japan",
-      "source_ids": [
-        "google_news_thermo_jp"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher Japan"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4yNFVYNlMtSjhNRHpzZ2pyMDVFZE11Y3NkY1EtOUVXWFE1VnE5eTRBYnZCT0lyRzQ4ckFyelpqRURMRTJhZnVNdnpXWXRFa0U?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "サーモフィッシャーサイエンティフィック、 最新のキャピラリー電気泳動テクノロジー SeqStudio Genetic Analyzerを日本で販売開始 - Newscast.jp",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4yNFVYNlMtSjhNRHpzZ2pyMDVFZE11Y3NkY1EtOUVXWFE1VnE5eTRBYnZCT0lyRzQ4ckFyelpqRURMRTJhZnVNdnpXWXRFa0U?oc=5",
-      "published": "2017-09-27",
-      "summary": "サーモフィッシャーサイエンティフィック、 最新のキャピラリー電気泳動テクノロジー SeqStudio Genetic Analyzerを日本で販売開始 Newscast.jp",
-      "ai_summary": "",
-      "score": 25,
-      "tier": "archive",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: サーモフィッシャー, サーモフィッシャーサイエンティフィック",
-        "战略主题命中: 日本",
-        "高价值分类加成 +10: product",
-        "超过硬性时效上限: 3227 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 3227
     },
     {
       "id": "38020ff467504ce2",
@@ -52251,7 +52970,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: STEMCELL Technologies, STEMCELL Tech, Stemcell Technologies",
         "公司自有来源",
@@ -52519,7 +53238,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "event",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: STEMCELL Technologies, STEMCELL Tech, Stemcell Technologies",
         "公司自有来源",
@@ -54640,6 +55359,70 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 63
     },
     {
+      "id": "807f1e6a24dba855",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "koreabiomed_apac_index",
+      "source_label": "Korea Biomedical Review - indexed RSS",
+      "source_ids": [
+        "koreabiomed_apac_index"
+      ],
+      "source_labels": [
+        "Korea Biomedical Review - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE05N2w1eFF5VXJ1WVZvdUpCZmVzWjdNLUJ6NFctZjVJcXhzLXV0QUlTUEc3cEdyX1N3aFo1NUhjTWxuaHdCajQzbno3Mlh6QVZCT2VKSVVYV3NoaG9PY29hMEhnSGtWcUVFTmJBa0Nn0gFyQVVfeXFMT3Roa1UtR1JCcVBYMHRBQTVaNXpaclB5SEk4UW1lSVlMN2RrcFFqaFplX19xNlJ6azBjNmlRaXA2bWRoWUF4N0hfdjk4Tk9iLWN4Mnl0TEdiaDJ5ZVFkTDFCeG5hd2RLZzdyQjlCT1pQYzB3?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "AimedBio's FGFR3-targeting ADC shows early responses in phase 1 trial - koreabiomed.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05N2w1eFF5VXJ1WVZvdUpCZmVzWjdNLUJ6NFctZjVJcXhzLXV0QUlTUEc3cEdyX1N3aFo1NUhjTWxuaHdCajQzbno3Mlh6QVZCT2VKSVVYV3NoaG9PY29hMEhnSGtWcUVFTmJBa0Nn0gFyQVVfeXFMT3Roa1UtR1JCcVBYMHRBQTVaNXpaclB5SEk4UW1lSVlMN2RrcFFqaFplX19xNlJ6azBjNmlRaXA2bWRoWUF4N0hfdjk4Tk9iLWN4Mnl0TEdiaDJ5ZVFkTDFCeG5hd2RLZzdyQjlCT1pQYzB3?oc=5",
+      "published": "2026-07-22",
+      "summary": "AimedBio's FGFR3-targeting ADC shows early responses in phase 1 trial koreabiomed.com",
+      "ai_summary": "",
+      "score": 24,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: ADC",
+        "业务动作命中: phase 1"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "ADC"
+        ],
+        "product_needs": [],
+        "development_stages": [
+          "I 期临床"
+        ],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 22,
+        "label": "低相关",
+        "explanation": "该信号命中ADC，对技术趋势有参考价值，但尚未出现明确商业需求。",
+        "reasons": [
+          "命中重点疗法或技术",
+          "研发阶段可识别"
+        ]
+      },
+      "recommended_action": {
+        "type": "trend",
+        "label": "技术趋势观察",
+        "owner": "产品市场",
+        "priority": "low",
+        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
+      },
+      "age_days": 7
+    },
+    {
       "id": "22652b5fcbb0d953",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -55046,65 +55829,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "owner": "系统",
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 1
-    },
-    {
-      "id": "30b76baf936aa089",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "prtimes_japan_biotech_index",
-      "source_label": "PR Times - Japan biotech indexed RSS",
-      "source_ids": [
-        "prtimes_japan_biotech_index"
-      ],
-      "source_labels": [
-        "PR Times - Japan biotech indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OZG1PeUFEMDc0eEYxMFlENmxGTzUtTjRieEZueFB3d3ctMTJhN0JZR2M4SGg0aGVWeTF0dHhWMy1GQkgyQlAwTVJHUUVaNGFHTUlRSDZmQkRrRVdRWGhwR3hyZ2ZjOU8yd3c?oc=5"
-      ],
-      "source_trust": "wire",
-      "title": "医療動画配信サービス「Medical*Online Video」臨床工学シリーズの配信を開始～医療安全を支えるエキスパート直伝、主要医療機器の基本操作・管理とトラブル対応を体系的に解説～ - PR TIMES",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OZG1PeUFEMDc0eEYxMFlENmxGTzUtTjRieEZueFB3d3ctMTJhN0JZR2M4SGg0aGVWeTF0dHhWMy1GQkgyQlAwTVJHUUVaNGFHTUlRSDZmQkRrRVdRWGhwR3hyZ2ZjOU8yd3c?oc=5",
-      "published": "2026-07-28",
-      "summary": "医療動画配信サービス「Medical*Online Video」臨床工学シリーズの配信を開始～医療安全を支えるエキスパート直伝、主要医療機器の基本操作・管理とトラブル対応を体系的に解説～ PR TIMES",
-      "ai_summary": "",
-      "score": 24,
-      "tier": "archive",
-      "category": "regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "新闻稿分发平台",
-        "业务动作命中: 開始",
-        "高价值分类加成 +8: regulatory"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 8,
-        "label": "低相关",
-        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": [
-          "包含监管或注册信号"
-        ]
-      },
-      "recommended_action": {
-        "type": "regulatory",
-        "label": "法规影响核对",
-        "owner": "产品 / 法规",
-        "priority": "low",
-        "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
       "age_days": 1
     },
@@ -68222,6 +68946,62 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 0
     },
     {
+      "id": "f2d49f342983d3ea",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "prtimes_japan_biotech_index",
+      "source_label": "PR Times - Japan biotech indexed RSS",
+      "source_ids": [
+        "prtimes_japan_biotech_index"
+      ],
+      "source_labels": [
+        "PR Times - Japan biotech indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yUTNabWxodGxRWW1ieFJjTHRjaDJhM0NiR18ycWFkSzhjY25TbUJBNFlFMzRMNk9Jb0s0VEZwZTMzREowN2t6Snc1eEtJRC1JMFl3R1FnNWQ3VmFXTGRoek10TjBnSTNXUVE?oc=5"
+      ],
+      "source_trust": "wire",
+      "title": "「人と地球環境を大切にし、革新的な技術で豊かな社会の発展に貢献する」を理念に掲げる「イビデン」のリサーチ・カバレッジを7/31より開始｜次世代型の株式リサーチ「ENVALITH（エンヴァリス）」 - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yUTNabWxodGxRWW1ieFJjTHRjaDJhM0NiR18ycWFkSzhjY25TbUJBNFlFMzRMNk9Jb0s0VEZwZTMzREowN2t6Snc1eEtJRC1JMFl3R1FnNWQ3VmFXTGRoek10TjBnSTNXUVE?oc=5",
+      "published": "2026-07-29",
+      "summary": "「人と地球環境を大切にし、革新的な技術で豊かな社会の発展に貢献する」を理念に掲げる「イビデン」のリサーチ・カバレッジを7/31より開始｜次世代型の株式リサーチ「ENVALITH（エンヴァリス）」 PR TIMES",
+      "ai_summary": "",
+      "score": 16,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "新闻稿分发平台",
+        "业务动作命中: 開始"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 0,
+        "label": "低相关",
+        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
+        "reasons": []
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 0
+    },
+    {
       "id": "0dd3763d3bd61a96",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -68860,6 +69640,67 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 49
+    },
+    {
+      "id": "ae507dc8c13fb775",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "bioon_life_science_index",
+      "source_label": "Bioon - China life science indexed RSS",
+      "source_ids": [
+        "bioon_life_science_index"
+      ],
+      "source_labels": [
+        "Bioon - China life science indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aZ190akV5VjdQOGVGcFZSVHp0aTRVb1VrOFVEMy1mVlBQVy1QYnVuSWpSY0NvSUJHM2NqTWZvUUlkamV5eGtqeVVMVHh5c3F6Q3JjSEkxb3I5Q0Nq?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "NEJM：CAR-T细胞疗法跨界破局——让“极难配型”的终末期肾病患者成功移植- 细胞治疗专区 - 生物谷",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aZ190akV5VjdQOGVGcFZSVHp0aTRVb1VrOFVEMy1mVlBQVy1QYnVuSWpSY0NvSUJHM2NqTWZvUUlkamV5eGtqeVVMVHh5c3F6Q3JjSEkxb3I5Q0Nq?oc=5",
+      "published": "2026-06-19",
+      "summary": "NEJM：CAR-T细胞疗法跨界破局——让“极难配型”的终末期肾病患者成功移植- 细胞治疗专区 生物谷",
+      "ai_summary": "",
+      "score": 16,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: 细胞治疗"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "CAR-T",
+          "细胞治疗"
+        ],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 12,
+        "label": "低相关",
+        "explanation": "该信号命中CAR-T、细胞治疗，对技术趋势有参考价值，但尚未出现明确商业需求。",
+        "reasons": [
+          "命中重点疗法或技术"
+        ]
+      },
+      "recommended_action": {
+        "type": "trend",
+        "label": "技术趋势观察",
+        "owner": "产品市场",
+        "priority": "low",
+        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
+      },
+      "age_days": 40
     },
     {
       "id": "9b82cd9d7083833a",
@@ -78481,72 +79322,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 6
     },
     {
-      "id": "0dd7c53ed73ae683",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo",
-        "bing_news_thermo_backup"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher",
-        "Bing News RSS - Thermo Fisher backup"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVBvdlJuMnJvSDZrUEVfZnRRcmVsY2tjTlBZY3lsejdMRS1rWnNSV2lFTE92NS04eXBXOFVWT01UNVFwclgzSDZBemJtS1NpdEFaWVhzX24yLXVoNFN5cUtRLXJTZy1YOHpfMDlnSVNRQWR0UXlRcDVmeTZldWNuekw4TktNOUdvajdveHRGcDEtYVFpcHY5NmtDdlFTdXhk?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fwww.insidermonkey.com%2fblog%2fwhat-makes-thermo-fisher-scientific-tmo-an-attractive-long-term-bet-1803589%2f&c=16719361552954781331&mkt=ja-jp"
-      ],
-      "source_trust": "aggregator",
-      "title": "What Makes Thermo Fisher Scientific (TMO) an Attractive Long-Term Bet? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVBvdlJuMnJvSDZrUEVfZnRRcmVsY2tjTlBZY3lsejdMRS1rWnNSV2lFTE92NS04eXBXOFVWT01UNVFwclgzSDZBemJtS1NpdEFaWVhzX24yLXVoNFN5cUtRLXJTZy1YOHpfMDlnSVNRQWR0UXlRcDVmeTZldWNuekw4TktNOUdvajdveHRGcDEtYVFpcHY5NmtDdlFTdXhk?oc=5",
-      "published": "2026-07-22",
-      "summary": "Dodge & Cox Fund, an investment management company, released its second-quarter 2026 investor letter for “Dodge and Cox Stock Fund”. A copy of the letter can be downloaded here.",
-      "ai_summary": "",
-      "score": 3,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: release",
-        "噪音词命中: stock"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 7
-    },
-    {
       "id": "80ab54d55c1b453c",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
@@ -79527,6 +80302,73 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
       "age_days": 3159
+    },
+    {
+      "id": "cfa62628dd0d4f07",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "google_news_acro",
+      "source_label": "Google News RSS - ACROBiosystems",
+      "source_ids": [
+        "google_news_acro"
+      ],
+      "source_labels": [
+        "Google News RSS - ACROBiosystems"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQek1mUjkxVGQzaUQ2dW1hVlVmMHBGUlh6SDZVRWRub2F1bHdkYmZOUDlEWnpYeURyRkVIYWlpNkJCdmZETjZvbGVDWDVCblZlUVkwQjQyMjRYYjRERUxkdTRGRktubldkSEJmZEZXNk5uaFdHd1k5UFppME91WmpYSmhaek8ySmNlLTE1OXcxSlE5Zw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Merck to acquire Austrian vaccine maker Themis Bioscience - Pharmaceutical Business review -",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQek1mUjkxVGQzaUQ2dW1hVlVmMHBGUlh6SDZVRWRub2F1bHdkYmZOUDlEWnpYeURyRkVIYWlpNkJCdmZETjZvbGVDWDVCblZlUVkwQjQyMjRYYjRERUxkdTRGRktubldkSEJmZEZXNk5uaFdHd1k5UFppME91WmpYSmhaek8ySmNlLTE1OXcxSlE5Zw?oc=5",
+      "published": "2020-05-27",
+      "summary": "Merck to acquire Austrian vaccine maker Themis Bioscience Pharmaceutical Business review -",
+      "ai_summary": "",
+      "score": 0,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "超过硬性时效上限: 2254 天前"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "疫苗"
+        ],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "并购 / 交易"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 47,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态",
+          "命中重点疗法或技术",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2254
     },
     {
       "id": "7653fc67f2fc36e9",
@@ -81074,7 +81916,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlRVYUpWQmhvV0FqRzJkRHdwclRxd1hVUzJic0tKQVJlRTZUUElCWGtYaUZKQjg5ajR3Nk92dzF0d19OeEFGTlBxMGtSaGI3WjNSZVJzYUtJMHgzejkybm1lTXVvcnJOZDRoMHdtTC04VHhocW1weVc0MXNlVklQb1VLckZWcV9wMlFxMkE3ZFpTWlIxS0lwbUt1VmZqWUJZcFdN?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-scientific-q2-earnings-call-highlights%2far-AA28zm1i&c=5438266740172301055&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-scientific-q2-earnings-call-highlights%2far-AA28zm1i&c=5438266740172301055&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific Q2 Earnings Call Highlights - Yahoo Finance",
@@ -81192,22 +82034,19 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_thermo",
-        "bing_news_thermo_backup"
+        "google_news_thermo"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher",
-        "Bing News RSS - Thermo Fisher backup"
+        "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxORGxic3pZR1J6a3BvMUhiWEhTNjVGa2dHMmtVNDBkQW1sOUNvdG9wVDBxX3RoVUhMQ0hqd2NjUy1rXzBuY0lGdDV3ejkzRGFhZUR1V3AzekN6X0Z1NDdxZmY1UXJwLTJsdDRvby1pZjRXYkJWaUZFaUtoWTEwb2M1TlVtN1RhTFRscFJjRUxjNmM1akFDV25j?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2ffinance.yahoo.com%2fmarkets%2fstocks%2farticles%2fthermo-fisher-stock-rises-3-103832079.html&c=10008859964737209262&mkt=ja-jp"
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxORGxic3pZR1J6a3BvMUhiWEhTNjVGa2dHMmtVNDBkQW1sOUNvdG9wVDBxX3RoVUhMQ0hqd2NjUy1rXzBuY0lGdDV3ejkzRGFhZUR1V3AzekN6X0Z1NDdxZmY1UXJwLTJsdDRvby1pZjRXYkJWaUZFaUtoWTEwb2M1TlVtN1RhTFRscFJjRUxjNmM1akFDV25j?oc=5"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher stock rises 3% on second quarter earnings beat - Yahoo Finance",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORGxic3pZR1J6a3BvMUhiWEhTNjVGa2dHMmtVNDBkQW1sOUNvdG9wVDBxX3RoVUhMQ0hqd2NjUy1rXzBuY0lGdDV3ejkzRGFhZUR1V3AzekN6X0Z1NDdxZmY1UXJwLTJsdDRvby1pZjRXYkJWaUZFaUtoWTEwb2M1TlVtN1RhTFRscFJjRUxjNmM1akFDV25j?oc=5",
       "published": "2026-07-23",
-      "summary": "Investing.com--On Thursday, Thermo Fisher Scientific Inc. (NYSE: TMO) reported second quarter results that exceeded analyst expectations, as the company demonstrated strengthening customer activity ...",
+      "summary": "Thermo Fisher stock rises 3% on second quarter earnings beat Yahoo Finance",
       "ai_summary": "",
       "score": 0,
       "tier": "archive",
@@ -81215,7 +82054,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher",
         "噪音词命中: stock rises, second quarter, stock"
       ],
       "intelligence": {
@@ -81266,7 +82105,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMipgFBVV95cUxQazhTeHpRZXdHYlh2YUdWekFJSUY4MFQwRDVUcmxEeFRidGJwcjZxV0VtbFQ3VnhvdVM2ZXZjOGlKYkZRcV8xNGU1QnotMUE0X1EyNW5kNE9RUDBTQmcxalFabGVpTWI4bVBNM3FWWlBxQ2UyalJDbHZlQUN1RDZfRG1WZjhOaUNZT3RCNDhmR3FxRkRIQ18yUlBBbVVaN3hXUUp0ZG5B?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-surpasses-111504094.html&c=12349847283684608630&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-surpasses-111504094.html&c=12349847283684608630&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific (TMO) Surpasses Q2 Earnings and Revenue Estimates - Yahoo Finance",
@@ -81570,19 +82409,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_thermo"
+        "google_news_thermo",
+        "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher"
+        "Google News RSS - Thermo Fisher",
+        "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeWlkT2FTdmJsdFFGZUZPLXNOOWU1WEV4eXJuYlEyUWVvMzhYZGJhNlp5VDB1ejVvajdyWnJlenNuUDE5U1gteVZIRDNsd3UwbjZjT09zNUxCYjFyV0x6RFhlTFM0TmdraERHLUdYU2hrWHBvNXBqa0VwZUxQZWJxQmJBc0lrV3l6aHRhVnh4V2QwZGR0VlJR?oc=5"
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeWlkT2FTdmJsdFFGZUZPLXNOOWU1WEV4eXJuYlEyUWVvMzhYZGJhNlp5VDB1ejVvajdyWnJlenNuUDE5U1gteVZIRDNsd3UwbjZjT09zNUxCYjFyV0x6RFhlTFM0TmdraERHLUdYU2hrWHBvNXBqa0VwZUxQZWJxQmJBc0lrV3l6aHRhVnh4V2QwZGR0VlJR?oc=5",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-tmo-stock-may-170756906.html&c=7316951232594975263&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher (TMO) Stock May Be Undervalued As Guidance Rises - Yahoo Finance",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeWlkT2FTdmJsdFFGZUZPLXNOOWU1WEV4eXJuYlEyUWVvMzhYZGJhNlp5VDB1ejVvajdyWnJlenNuUDE5U1gteVZIRDNsd3UwbjZjT09zNUxCYjFyV0x6RFhlTFM0TmdraERHLUdYU2hrWHBvNXBqa0VwZUxQZWJxQmJBc0lrV3l6aHRhVnh4V2QwZGR0VlJR?oc=5",
       "published": "2026-07-20",
-      "summary": "Thermo Fisher (TMO) Stock May Be Undervalued As Guidance Rises Yahoo Finance",
+      "summary": "Thermo Fisher Scientific stock has delivered a 32.0% gain over the past year, and the latest Discounted Cash Flow (DCF) intrinsic value estimate points to meaningful upside relative to the current ...",
       "ai_summary": "",
       "score": 0,
       "tier": "archive",
@@ -81590,7 +82432,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司池命中 +30: Thermo Fisher",
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "噪音词命中: stock"
       ],
       "intelligence": {
@@ -83474,7 +84316,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 2007
     },
     {
-      "id": "988792251c364dc7",
+      "id": "b5331d73f965f7d1",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -83492,11 +84334,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific (NYSE:TMO) Faces A Margin Test",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b1a93abb44689f65d0c6059da8e2&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69cf83044ada90b17312b1db387&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp",
       "published": "2026-07-25",
       "summary": "Thermo Fisher Scientific shows improving revenue and earnings, but stable margins and debt continue shaping its valuation and long-term business outlook.",
       "ai_summary": "",
@@ -83552,8 +84394,8 @@ window.AIHOT_EMBEDDED_HISTORY = {
   "summary": {
     "new_candidates": 8,
     "immediate": 0,
-    "daily": 115,
-    "archive": 1176,
+    "daily": 116,
+    "archive": 1174,
     "errors": 0,
     "companies": 12,
     "sources": 88
@@ -83561,9 +84403,9 @@ window.AIHOT_EMBEDDED_HISTORY = {
   "category_mix": {
     "market": 46,
     "partnership": 78,
-    "product": 218,
-    "regulatory": 101,
-    "company": 509,
+    "product": 217,
+    "regulatory": 99,
+    "company": 511,
     "video": 80,
     "finance": 42,
     "event": 153,
@@ -83612,7 +84454,7 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Thermo Fisher official Events and Webinars - indexed RSS": 3,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
     "Bing News RSS - Thermo Fisher backup": 8,
-    "Google News RSS - Thermo Fisher Japan": 47,
+    "Google News RSS - Thermo Fisher Japan": 46,
     "PR Times - monitored company pool indexed RSS": 26,
     "Bing News RSS - ACROBiosystems backup": 2,
     "Merck Life Science official YouTube channel": 20,

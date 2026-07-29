@@ -1,0 +1,175 @@
+{
+  "version": "2026-07-29",
+  "slot_definitions": [
+    {"id": "official_news", "number": "01", "label": "官方新闻与公告", "description": "公司新闻稿、合作、收购、管理层和战略公告。"},
+    {"id": "product_updates", "number": "02", "label": "产品与解决方案更新", "description": "新产品、新平台、新服务、产品页和解决方案变化。"},
+    {"id": "events_webinars", "number": "03", "label": "活动与 Webinar", "description": "展会、会议、Workshop、Webinar、报名和回放。"},
+    {"id": "technical_content", "number": "04", "label": "技术内容与 Resources", "description": "Blog、Insights、Application Note、Protocol、白皮书和学习中心。"},
+    {"id": "regional_official", "number": "05", "label": "日本与地区官网", "description": "日本站、中国站或其他区域官方页面的本地动态。"},
+    {"id": "official_video", "number": "06", "label": "官方视频与内容频道", "description": "YouTube、官方视频库、技术演示和 Webinar 回放。"},
+    {"id": "global_news", "number": "07", "label": "全球新闻补漏", "description": "Google News、Bing News 等公开聚合入口。"},
+    {"id": "regional_media", "number": "08", "label": "日本与地区媒体", "description": "日经生物技术、PR Times、医药魔方等地区媒体和发布平台。"},
+    {"id": "press_wires", "number": "09", "label": "新闻稿分发平台", "description": "Business Wire、PR Newswire 和 GlobeNewswire 的公司定向补漏。"},
+    {"id": "research_regulatory_org", "number": "10", "label": "研究、监管与组织信号", "description": "论文、临床、法规、专利、申报、招聘和组织变化。"}
+  ],
+  "profiles": [
+    {
+      "company_id": "acro",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["acro_official_news_index"], "note": "官方 News 公开索引。"},
+        "product_updates": {"status": "active", "mode": "dedicated", "source_ids": ["acro_product_sitemap"], "note": "官方 Sitemap 新 URL 差分。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["acro_official_activities_index"], "note": "Activities 定向索引。"},
+        "technical_content": {"status": "active", "mode": "dedicated", "source_ids": ["acro_official_insights_index"], "note": "Insights 与应用内容。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["acro_japan_official_index"], "note": "ACRO 日本站公开页面。"},
+        "official_video": {"status": "active", "mode": "dedicated", "source_ids": ["acro_youtube_official"], "note": "官方 YouTube 频道页。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_acro", "bing_news_acro_backup"], "note": "Google 主源与 Bing 备份源。"},
+        "regional_media": {"status": "active", "mode": "mixed", "source_ids": ["google_news_acro_jp", "prtimes_company_pool_index", "nikkei_biotech_company_pool_index", "pharmcube_company_pool_index"], "note": "日文聚合与日中地区媒体共享覆盖。"},
+        "press_wires": {"status": "active", "mode": "mixed", "source_ids": ["google_news_acro_prnewswire", "businesswire_company_pool_index"], "note": "PR Newswire 专属查询与 Business Wire 公司池。"},
+        "research_regulatory_org": {"status": "active", "mode": "dedicated", "source_ids": ["acro_pubmed_research", "crossref_acro_affiliations"], "note": "PubMed 和 Crossref 机构研究记录。"}
+      }
+    },
+    {
+      "company_id": "thermo_fisher",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_official_rss"], "note": "官方 IR Press Release RSS。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["thermo_official_rss"], "note": "新品已由官方新闻稿覆盖，不重复扫全量目录。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_events_index"], "note": "活动栏目公开索引。"},
+        "technical_content": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_biotech_blog_rss"], "note": "Biotech at Scale 官方 Blog RSS。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_japan_official_index"], "note": "Thermo Fisher 日本站。"},
+        "official_video": {"status": "pending", "mode": "dedicated", "source_ids": ["thermo_youtube_official"], "note": "原频道 Atom 失效，等待确认新稳定入口。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_thermo", "bing_news_thermo_backup"], "note": "全球聚合与备份源。"},
+        "regional_media": {"status": "active", "mode": "mixed", "source_ids": ["google_news_thermo_jp", "nikkei_biotech_company_pool_index", "pharmcube_company_pool_index"], "note": "日文聚合及日中地区媒体。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_company_pool_index", "globenewswire_biotechnology_rss"], "note": "由公司池新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "active", "mode": "mixed", "source_ids": ["thermo_openfda_monitor", "thermo_sec_filings", "clinicaltrials_company_pool"], "note": "openFDA 运行；SEC 待联系邮箱；ClinicalTrials.gov 共享覆盖。"}
+      }
+    },
+    {
+      "company_id": "merck_life_science",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["merck_life_science_official_index"], "note": "默克 Life Science 官方新闻定向入口。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["merck_life_science_official_index"], "note": "产品发布暂由官方新闻覆盖。"},
+        "official_video": {"status": "active", "mode": "dedicated", "source_ids": ["merck_life_science_youtube_official"], "note": "Merck Life Science 官方 YouTube。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_merck_life_science"], "note": "使用 Merck KGaA 与 MilliporeSigma 限定。"},
+        "regional_media": {"status": "active", "mode": "mixed", "source_ids": ["google_news_merck_life_science_jp", "nikkei_biotech_company_pool_index", "pharmcube_company_pool_index"], "note": "日本补漏与日中媒体共享覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_company_pool_index"], "note": "Business Wire 公司池覆盖。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "sartorius",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["sartorius_official_news_index"], "note": "Sartorius Newsroom 定向入口。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["sartorius_official_news_index"], "note": "新品暂由 Newsroom 覆盖。"},
+        "official_video": {"status": "active", "mode": "dedicated", "source_ids": ["sartorius_youtube_official"], "note": "Sartorius 官方 YouTube。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_sartorius"], "note": "全球公司与业务主题聚合。"},
+        "regional_media": {"status": "active", "mode": "mixed", "source_ids": ["google_news_sartorius_jp", "nikkei_biotech_company_pool_index", "pharmcube_company_pool_index"], "note": "日本补漏与日中媒体共享覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_company_pool_index"], "note": "Business Wire 公司池覆盖。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "miltenyi_biotec",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["miltenyi_official_news_index"], "note": "Bioindustry 与 Biomedicine 官方子站联合索引。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["miltenyi_official_news_index"], "note": "新产品暂由官方新闻覆盖。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["miltenyi_youtube_official"], "note": "技术内容当前主要由官方视频频道覆盖。"},
+        "official_video": {"status": "active", "mode": "dedicated", "source_ids": ["miltenyi_youtube_official"], "note": "Miltenyi Biotec 官方 YouTube。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_miltenyi"], "note": "全球新闻补漏。"},
+        "regional_media": {"status": "active", "mode": "mixed", "source_ids": ["google_news_miltenyi_jp", "nikkei_biotech_company_pool_index", "pharmcube_company_pool_index"], "note": "日本补漏与日中媒体共享覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_company_pool_index"], "note": "Business Wire 公司池覆盖。"},
+        "research_regulatory_org": {"status": "active", "mode": "mixed", "source_ids": ["crossref_miltenyi_affiliations", "clinicaltrials_company_pool"], "note": "Crossref 专属机构记录与临床共享源。"}
+      }
+    },
+    {
+      "company_id": "abcam",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["abcam_official_press_index"], "note": "Abcam 官方 Press Releases。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["abcam_official_events_index"], "note": "官方 Webinar 与 Event 定向入口。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_abcam"], "note": "公司全称与业务主题补漏。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "PR Times 与日经生物技术新增公司池覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "Business Wire 与 PR Newswire 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "promega",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["promega_official_press_index"], "note": "Promega 官方 Press Releases。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["promega_official_press_index"], "note": "新产品暂由官方新闻覆盖。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["promega_official_events_index"], "note": "Promega Resources 活动定向入口。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_promega"], "note": "全球新闻补漏。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "日本地区媒体共享覆盖。"},
+        "press_wires": {"status": "active", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "新闻稿平台新增公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "rd_systems",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["biotechne_official_press_index"], "note": "Bio-Techne 官方 IR Press Releases。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["biotechne_official_press_index"], "note": "R&D Systems 产品发布暂由 Bio-Techne 新闻覆盖。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["biotechne_official_events_index"], "note": "Bio-Techne 官方 Events。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_rd_systems"], "note": "R&D Systems 与 Bio-Techne 全称补漏。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "日本地区媒体共享覆盖。"},
+        "press_wires": {"status": "active", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "Business Wire 与 PR Newswire 公司池。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "bd_biosciences",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["bd_biosciences_official_news_index"], "note": "BD Newsroom 中的 Biosciences 定向内容。"},
+        "product_updates": {"status": "active", "mode": "dedicated", "source_ids": ["bd_biosciences_official_product_updates_index"], "note": "Rhapsody、FACS、软件与抗体 Panel 更新。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_bd_biosciences"], "note": "只使用 BD Biosciences 全称。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "日本地区媒体共享覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "medchemexpress",
+      "slots": {
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["mce_official_webinars_index"], "note": "MCE 官方 Webinar 公开索引，当前安静。"},
+        "technical_content": {"status": "active", "mode": "dedicated", "source_ids": ["mce_official_insights_index"], "note": "Reviews、Topics 与 Blogs，已排除 SKU 页。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_medchemexpress"], "note": "仅使用 MedChemExpress 全品牌名。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "日本地区媒体共享覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "新闻稿平台共享覆盖。"}
+      }
+    },
+    {
+      "company_id": "stemcell_technologies",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["stemcell_official_news_index"], "note": "STEMCELL Technologies 官方 Newsroom。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["stemcell_official_news_index"], "note": "新品暂由官方 Newsroom 覆盖。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["stemcell_official_webinars_index"], "note": "官方 Course、Webinar 与 Event。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["stemcell_official_webinars_index"], "note": "课程与 Webinar 暂时覆盖部分技术内容。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_stemcell_technologies"], "note": "全球新闻补漏。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "日本地区媒体共享覆盖。"},
+        "press_wires": {"status": "active", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "Business Wire 已有实际公司命中。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "sino_biological",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["sino_biological_official_updates_index"], "note": "合作、CRO、GMP 与产能更新，已排除 SKU。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["sino_biological_official_webinars_index"], "note": "官方 Webinar 与 Conference。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_sino_biological"], "note": "Sino Biological 全品牌名补漏。"},
+        "regional_media": {"status": "covered", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index", "pharmcube_company_pool_index"], "note": "日本与中国地区媒体共享覆盖。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "takara_bio",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["takara_bio_official_news_index"], "note": "Takara Bio Inc. 英文官网 News Releases。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["takara_bio_official_news_index"], "note": "新品与技术授权暂由官方新闻覆盖。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["takara_bio_official_technical_events_index"], "note": "Takara Bio USA Webinar 与活动。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["takara_bio_official_technical_events_index"], "note": "技术 Webinar 暂时覆盖部分技术内容。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_takara_bio"], "note": "Takara Bio 全球新闻补漏。"},
+        "regional_media": {"status": "active", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "PR Times 和日经生物技术对 Takara Bio 产出较完整。"},
+        "press_wires": {"status": "active", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "Business Wire 与 PR Newswire 已有实际命中。"},
+        "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    }
+  ]
+}

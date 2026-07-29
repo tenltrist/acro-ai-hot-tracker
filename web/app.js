@@ -34,6 +34,7 @@ const state = {
   sourceStage: "all",
   healthCompany: "all",
   healthStatus: "all",
+  coverageCompany: "acro",
   feedback: loadFeedback(),
   history: null,
 };
@@ -1941,6 +1942,11 @@ const els = {
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
   companyRoleSummary: document.querySelector("#companyRoleSummary"),
   companyPoolGroups: document.querySelector("#companyPoolGroups"),
+  companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
+  companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
+  companyCoverageSelect: document.querySelector("#companyCoverageSelect"),
+  companyCoverageMetrics: document.querySelector("#companyCoverageMetrics"),
+  companyCoverageGrid: document.querySelector("#companyCoverageGrid"),
   companyDockCount: document.querySelector("#companyDockCount"),
   companyDockList: document.querySelector("#companyDockList"),
   structuredRuleVersion: document.querySelector("#structuredRuleVersion"),
@@ -1971,6 +1977,7 @@ function renderLoadedData() {
   hydrateFilters();
   renderCompanyDock();
   renderCompanyPools();
+  renderCompanySourceCoverage();
   renderStructuredRules();
   render();
   renderSourceHealth();
@@ -2150,6 +2157,7 @@ function renderCompanyPools() {
                 <small>监测重点</small>
                 <p>${escapeHtml(company.monitoring_focus || (company.strategic_topics || []).slice(0, 5).join("、"))}</p>
               </div>
+              <button class="company-profile-source-button" type="button" data-company-coverage-id="${escapeHtml(company.id)}">查看数据源</button>
             </article>
           `).join("")
         : `<div class="company-pool-empty"><strong>0 家</strong><p>${escapeHtml(role.empty)}</p></div>`;
@@ -2165,6 +2173,112 @@ function renderCompanyPools() {
       `;
     })
     .join("");
+}
+
+const coverageStatusMeta = {
+  active: { label: "专属运行", className: "active" },
+  covered: { label: "已有覆盖", className: "covered" },
+  pending: { label: "待恢复 / 配置", className: "pending" },
+  planned: { label: "待补入口", className: "planned" },
+  manual: { label: "人工观察", className: "manual" },
+};
+
+const coverageModeLabels = {
+  dedicated: "公司专属",
+  shared: "共享来源",
+  mixed: "专属 + 共享",
+  none: "尚未配置",
+};
+
+function getCompanyCoverageProfile(companyId) {
+  return (state.payload?.company_source_coverage?.profiles || [])
+    .find((profile) => profile.company_id === companyId);
+}
+
+function getCoverageSourceIds(profile) {
+  return [...new Set(
+    Object.values(profile?.slots || {}).flatMap((slot) => slot.source_ids || []),
+  )];
+}
+
+function summarizeCoverageSlot(slot, companyId) {
+  const rowsById = new Map(getSourceHealthRows().map((row) => [row.source_id, row]));
+  const rows = (slot.source_ids || []).map((id) => rowsById.get(id)).filter(Boolean);
+  const sourceIds = new Set(slot.source_ids || []);
+  const items = (state.payload?.items || []).filter((item) =>
+    (item.matched_company_ids || []).includes(companyId) &&
+    (item.source_ids || [item.source_id]).some((id) => sourceIds.has(id)),
+  );
+  return {
+    rows,
+    total: items.length,
+    selected: items.filter((item) => ["immediate", "daily"].includes(item.tier)).length,
+    producing: new Set(items.flatMap((item) => item.source_ids || [item.source_id])).size,
+  };
+}
+
+function renderCompanySourceCoverage() {
+  if (!els.companyCoverageSelect || !els.companyCoverageGrid) return;
+  const companies = state.payload?.companies || [];
+  const coverage = state.payload?.company_source_coverage || {};
+  const definitions = coverage.slot_definitions || [];
+  const validIds = new Set(companies.map((company) => company.id));
+  if (!validIds.has(state.coverageCompany)) state.coverageCompany = companies[0]?.id || "";
+
+  els.companyCoverageSelect.innerHTML = companies.map((company) => `
+    <option value="${escapeHtml(company.id)}" ${company.id === state.coverageCompany ? "selected" : ""}>${escapeHtml(company.display_name)}</option>
+  `).join("");
+
+  const company = companies.find((row) => row.id === state.coverageCompany);
+  const profile = getCompanyCoverageProfile(state.coverageCompany) || { slots: {} };
+  const rowsById = new Map(getSourceHealthRows().map((row) => [row.source_id, row]));
+  const allSourceIds = getCoverageSourceIds(profile);
+  const dedicatedIds = allSourceIds.filter((id) => rowsById.get(id)?.company_id === state.coverageCompany);
+  const sharedIds = allSourceIds.filter((id) => rowsById.get(id)?.company_id !== state.coverageCompany);
+  const coveredSlots = definitions.filter((definition) =>
+    ["active", "covered"].includes(profile.slots?.[definition.id]?.status),
+  ).length;
+  const gapSlots = Math.max(0, definitions.length - coveredSlots);
+
+  els.companyCoverageTitle.textContent = company
+    ? `${company.display_name} · 10 板块数据源档案`
+    : "公司数据源档案";
+  els.companyCoverageDescription.textContent = company?.monitoring_focus
+    ? `监测重点：${company.monitoring_focus}`
+    : "专属来源、共享覆盖与待补入口统一展示。";
+  els.companyCoverageMetrics.innerHTML = `
+    <article><span>专属运行源</span><strong>${dedicatedIds.length}</strong><small>直接绑定该公司</small></article>
+    <article><span>共享覆盖源</span><strong>${sharedIds.length}</strong><small>新闻稿、地区媒体或研究池</small></article>
+    <article><span>已覆盖板块</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>专属运行或已有共享覆盖</small></article>
+    <article class="${gapSlots ? "needs-review" : "is-clear"}"><span>待补板块</span><strong>${gapSlots}</strong><small>待接入、待恢复或尚未配置</small></article>
+  `;
+
+  els.companyCoverageGrid.innerHTML = definitions.map((definition) => {
+    const slot = profile.slots?.[definition.id] || {
+      status: "planned",
+      mode: "none",
+      source_ids: [],
+      note: `尚未为 ${company?.display_name || "该公司"} 建立这一类稳定入口。`,
+    };
+    const status = coverageStatusMeta[slot.status] || coverageStatusMeta.planned;
+    const summary = summarizeCoverageSlot(slot, state.coverageCompany);
+    const sourceNames = summary.rows.map((row) => row.source_label);
+    const result = slot.source_ids?.length
+      ? `${slot.source_ids.length} 个来源 · 本轮候选 ${summary.total} · 日报 ${summary.selected}`
+      : "尚未配置运行入口";
+    return `
+      <article class="company-coverage-slot status-${status.className}">
+        <header>
+          <span>${escapeHtml(definition.number)}</span>
+          <div><strong>${escapeHtml(definition.label)}</strong><small>${escapeHtml(coverageModeLabels[slot.mode || "none"] || coverageModeLabels.none)}</small></div>
+          <b class="coverage-status ${status.className}">${escapeHtml(status.label)}</b>
+        </header>
+        <p>${escapeHtml(definition.description)}</p>
+        <div class="company-coverage-note">${escapeHtml(slot.note || "")}</div>
+        <div class="company-coverage-result"><strong>${escapeHtml(result)}</strong>${sourceNames.length ? `<small title="${escapeAttr(sourceNames.join("\n"))}">${escapeHtml(sourceNames.slice(0, 2).join(" / "))}${sourceNames.length > 2 ? ` +${sourceNames.length - 2}` : ""}</small>` : ""}</div>
+      </article>
+    `;
+  }).join("");
 }
 
 async function loadData() {
@@ -3086,6 +3200,45 @@ function getSourceHealthRows() {
   });
 }
 
+function getCompanyScopedHealthRows(rows, company) {
+  if (!company) return rows;
+  const coverageIds = new Set(getCoverageSourceIds(getCompanyCoverageProfile(company.id)));
+  const companyRows = rows.filter((row) =>
+    row.company_id === company.id ||
+    (row.scope || row.company) === company.display_name ||
+    coverageIds.has(row.source_id),
+  );
+
+  return companyRows.map((row) => {
+    const items = (state.payload.items || []).filter((item) =>
+      (item.matched_company_ids || []).includes(company.id) &&
+      (item.source_ids || [item.source_id]).includes(row.source_id),
+    );
+    const immediate = items.filter((item) => item.tier === "immediate").length;
+    const daily = items.filter((item) => item.tier === "daily").length;
+    const archive = items.filter((item) => item.tier === "archive").length;
+    const lastPublished = items.map((item) => item.published).filter(Boolean).sort().at(-1) || "";
+    let status = row.status;
+    if (!["error", "pending"].includes(status)) {
+      status = immediate + daily > 0 ? "productive" : items.length ? "archive_only" : "quiet";
+    }
+    return {
+      ...row,
+      scope: company.display_name,
+      total: items.length,
+      immediate,
+      daily,
+      archive,
+      selected_rate: items.length ? Math.round(((immediate + daily) / items.length) * 100) : 0,
+      last_published: lastPublished,
+      status,
+      note: row.company_id === company.id
+        ? row.note
+        : `共享来源在 ${company.display_name} 范围内的实际命中。`,
+    };
+  });
+}
+
 function renderSourceHealthPage() {
   const rows = getSourceHealthRows();
   const companies = [...new Set(rows.map((row) => row.scope || row.company).filter(Boolean))].sort();
@@ -3101,28 +3254,32 @@ function renderSourceHealthPage() {
   els.healthCompanyFilter.value = state.healthCompany;
 
   els.healthGeneratedAt.textContent = `本轮运行 ${formatDateTime(state.payload.generated_at)}`;
-  els.healthMetricTracked.textContent = rows.length;
-  els.healthMetricProducing.textContent = rows.filter((row) => row.total > 0).length;
-  els.healthMetricSelected.textContent = rows.filter((row) => row.immediate + row.daily > 0).length;
-  const quietCount = rows.filter((row) => row.status === "quiet").length;
-  const pendingCount = rows.filter((row) => row.status === "pending").length;
-  const errorCount = rows.filter((row) => row.status === "error").length;
+  const selectedCompany = (state.payload.companies || [])
+    .find((company) => company.display_name === state.healthCompany);
+  const metricRows = selectedCompany
+    ? getCompanyScopedHealthRows(rows, selectedCompany)
+    : rows.filter((row) =>
+        state.healthCompany === "all" || (row.scope || row.company) === state.healthCompany,
+      );
+
+  els.healthMetricTracked.textContent = metricRows.length;
+  els.healthMetricProducing.textContent = metricRows.filter((row) => row.total > 0).length;
+  els.healthMetricSelected.textContent = metricRows.filter((row) => row.immediate + row.daily > 0).length;
+  const quietCount = metricRows.filter((row) => row.status === "quiet").length;
+  const pendingCount = metricRows.filter((row) => row.status === "pending").length;
+  const errorCount = metricRows.filter((row) => row.status === "error").length;
   els.healthMetricAttention.textContent = quietCount + pendingCount + errorCount;
   els.healthAttentionDetail.textContent = `${quietCount} 个暂无内容 · ${pendingCount} 个待配置 · ${errorCount} 个异常`;
 
-  const visible = rows
-    .filter(
-      (row) =>
-        state.healthCompany === "all" ||
-        (row.scope || row.company) === state.healthCompany,
-    )
+  const visible = metricRows
     .filter((row) => state.healthStatus === "all" || row.status === state.healthStatus)
     .sort((a, b) => {
       const order = { error: 0, pending: 1, quiet: 2, archive_only: 3, productive: 4 };
       return (order[a.status] ?? 9) - (order[b.status] ?? 9) || b.total - a.total;
     });
 
-  els.healthRowCount.textContent = `显示 ${visible.length} / ${rows.length} 个运行入口 · 需处理的来源优先排在前面`;
+  const rangeLabel = selectedCompany ? "专属 + 共享覆盖" : "当前监测范围";
+  els.healthRowCount.textContent = `显示 ${visible.length} / ${metricRows.length} 个运行入口 · ${rangeLabel} · 需处理的来源优先排在前面`;
   if (!visible.length) {
     els.healthTableBody.innerHTML = '<div class="health-table-empty">当前筛选下没有数据源。</div>';
     return;
@@ -3363,6 +3520,19 @@ els.companyFilter.addEventListener("change", (event) => {
   state.company = event.target.value;
   renderCompanyDock();
   renderOverviewScope();
+});
+
+els.companyCoverageSelect.addEventListener("change", (event) => {
+  state.coverageCompany = event.target.value;
+  renderCompanySourceCoverage();
+});
+
+els.companyPoolGroups.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-company-coverage-id]");
+  if (!button) return;
+  state.coverageCompany = button.dataset.companyCoverageId;
+  renderCompanySourceCoverage();
+  document.querySelector(".company-source-coverage")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {

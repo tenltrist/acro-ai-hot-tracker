@@ -1483,6 +1483,7 @@ def build_dashboard_payload(
     company_lookup: dict[str, dict[str, Any]],
     source_config: list[dict[str, Any]],
     source_runtime: dict[str, Any],
+    company_source_coverage: dict[str, Any],
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
 ) -> dict[str, Any]:
@@ -1581,6 +1582,7 @@ def build_dashboard_payload(
         "category_mix": categories,
         "signal_type_mix": signal_types,
         "source_health": source_health,
+        "company_source_coverage": company_source_coverage,
         "companies": [
             {
                 "id": company["id"],
@@ -1734,6 +1736,7 @@ def main() -> int:
         for profile in company_config.get("source_profiles", [])
     }
     intelligence_rules = load_json(CONFIG_DIR / "intelligence_rules.json")
+    company_source_coverage = load_json(CONFIG_DIR / "company_source_coverage.json")
     sources = load_json(CONFIG_DIR / "sources.json")["sources"]
     company_lookup = {company["id"]: company for company in companies}
     source_lookup = {source["id"]: source for source in sources}
@@ -1802,6 +1805,7 @@ def main() -> int:
         company_lookup,
         sources,
         source_runtime,
+        company_source_coverage,
         args.days,
         ai_summaries,
     )

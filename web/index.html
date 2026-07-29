@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260729i" />
+    <link rel="stylesheet" href="./styles.css?v=20260729j" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -202,6 +202,21 @@
           <span class="timestamp" id="companyPoolTimestamp">MVP 阶段：13 家公司已分类</span>
         </div>
         <div class="company-role-summary" id="companyRoleSummary" aria-label="公司角色统计"></div>
+        <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
+          <div class="company-coverage-head">
+            <div>
+              <p class="eyebrow">公司数据源档案</p>
+              <h3 id="companyCoverageTitle">每家公司使用同一套 10 个来源板块</h3>
+              <p id="companyCoverageDescription">有专属入口的直接运行，共享媒体明确标记覆盖，缺失项也保留在档案中。</p>
+            </div>
+            <label class="company-coverage-select">
+              <span>选择公司</span>
+              <select id="companyCoverageSelect" aria-label="选择要查看数据源覆盖的公司"></select>
+            </label>
+          </div>
+          <div class="company-coverage-metrics" id="companyCoverageMetrics"></div>
+          <div class="company-coverage-grid" id="companyCoverageGrid"></div>
+        </section>
         <div class="company-pool-groups" id="companyPoolGroups"></div>
       </section>
 
@@ -477,7 +492,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260729i"></script>
-    <script src="./app.js?v=20260729i"></script>
+    <script src="./embedded-data.js?v=20260729j"></script>
+    <script src="./app.js?v=20260729j"></script>
   </body>
 </html>

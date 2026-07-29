@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-29T16:54:54",
+  "generated_at": "2026-07-29T17:16:03",
   "category_mix": {
     "market": 46,
     "partnership": 78,
-    "product": 218,
-    "regulatory": 101,
-    "company": 509,
+    "product": 217,
+    "regulatory": 99,
+    "company": 511,
     "video": 80,
     "finance": 42,
     "event": 153,
@@ -54,7 +54,7 @@
     "Thermo Fisher official Events and Webinars - indexed RSS": 3,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
     "Bing News RSS - Thermo Fisher backup": 8,
-    "Google News RSS - Thermo Fisher Japan": 47,
+    "Google News RSS - Thermo Fisher Japan": 46,
     "PR Times - monitored company pool indexed RSS": 26,
     "Bing News RSS - ACROBiosystems backup": 2,
     "Merck Life Science official YouTube channel": 20,
@@ -104,7 +104,7 @@
     "PR Times - expanded competitor pool indexed RSS": 1
   },
   "signal_type_mix": {
-    "news": 995,
+    "news": 994,
     "video": 80,
     "funding": 23,
     "event": 127,
