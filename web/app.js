@@ -63,12 +63,6 @@ const officialContentGroups = [
     description: "Insights、Blog、Application Note、白皮书和 Protocol。",
   },
   {
-    id: "official_video",
-    number: "E",
-    title: "视频与回放",
-    description: "官方 YouTube、技术视频和 Webinar Replay。",
-  },
-  {
     id: "regional_coverage",
     number: "＋",
     title: "跨类别地区覆盖",
@@ -133,12 +127,40 @@ const marketChannelGroups = [
   },
 ];
 
+const socialContentGroups = [
+  {
+    id: "official_video",
+    number: "A",
+    title: "官方视频与 Webinar 回放",
+    description: "监测公司官方频道的新视频、技术演示和会议回放；视频单独归档，避免与官网活动和新闻重复推送。",
+  },
+  {
+    id: "professional_social",
+    number: "B",
+    title: "专业社交与公司动态",
+    description: "观察合作、活动传播、招聘和管理层动态。公开可看不等于可以稳定自动抓取，因此目前保留人工核对。",
+  },
+  {
+    id: "china_content",
+    number: "C",
+    title: "中国内容生态",
+    description: "覆盖公众号、视频号和 Bilibili 等中国市场渠道；先登记官方账号与人工线索，后续再评估合规连接方式。",
+  },
+  {
+    id: "subscription_content",
+    number: "+",
+    title: "订阅与长内容补充",
+    description: "Newsletter 和 Podcast 适合低频深度内容；有公开 RSS 时再自动接入，没有则只作为人工订阅和核对入口。",
+    secondary: true,
+  },
+];
+
 const sourceInventory = [
   {
     layer: "official",
     number: "01",
-    title: "官方自有内容",
-    subtitle: "先按内容类型分组，再用公司、地区和获取方式作标签。官网直抓受限时，只使用公开索引结果，不绕过验证。",
+    title: "官方网站与自有内容",
+    subtitle: "这里负责官网新闻、产品、活动和技术页面；官方社交频道统一放到第 04 层，避免同一入口重复出现。官网直抓受限时，只使用公开索引结果。",
     sources: [
       {
         name: "ACRO 官网 News",
@@ -281,30 +303,6 @@ const sourceInventory = [
         note: "技术、CDMO、制造和行业活动内容，作为技术内容信号处理。",
         sourceIds: ["thermo_biotech_blog_rss"],
         url: "thermofisher.com/blog/biotechnology",
-      },
-      {
-        name: "Thermo Fisher 官方 YouTube",
-        contentGroup: "official_video",
-        companyTag: "Thermo Fisher",
-        regionTag: "全球频道",
-        status: "active",
-        trust: "A",
-        method: "YouTube Atom RSS",
-        note: "免费订阅官方频道更新，作为独立视频信号，不混入默认新闻流。",
-        sourceIds: ["thermo_youtube_official"],
-        url: "youtube.com/@thermofisher",
-      },
-      {
-        name: "ACRO 官方 YouTube",
-        contentGroup: "official_video",
-        companyTag: "ACRO",
-        regionTag: "全球频道",
-        status: "active",
-        trust: "A",
-        method: "官方频道公开页面",
-        note: "官方频道与 Channel ID 已确认；Atom Feed 实测返回 404，改为读取公开频道页中的最新视频。",
-        sourceIds: ["acro_youtube_official"],
-        url: "youtube.com/@ACROBiosystems",
       },
       {
         name: "ACRO 日本官网补充入口",
@@ -697,12 +695,152 @@ const sourceInventory = [
     layer: "social_content",
     number: "04",
     title: "社交与内容平台",
-    subtitle: "观察内容传播、活动、招聘和区域声量。只有公开且结构化的官方频道自动接入，其他平台保留人工观察。",
+    subtitle: "这一层按平台用途分组，再用获取方式标记自动或人工。官方内容可信度高，但只有能公开、稳定、结构化读取的入口才进入自动任务。",
     sources: [
-      { name: "LinkedIn 公司主页", status: "manual", trust: "D", method: "人工查看", note: "产品/活动/招聘动态价值高，但不自动抓取" },
-      { name: "微信公众号", status: "manual", trust: "D", method: "人工查看", note: "中国市场重要来源，自动化门槛高" },
-      { name: "X / Twitter", status: "manual", trust: "D", method: "人工查看", note: "海外会议和活动传播，目前不申请付费 API" },
-      { name: "Bilibili", status: "manual", trust: "D", method: "人工观察", note: "先作为中国市场内容渠道观察，不进入 MVP 自动抓取。" },
+      {
+        name: "ACRO 官方 YouTube",
+        socialGroup: "official_video",
+        companyTag: "ACRO",
+        regionTag: "全球频道",
+        status: "active",
+        trust: "A",
+        method: "公开频道页",
+        note: "标准 Atom Feed 返回 404，当前免费读取公开频道页；只生成视频信号，不混入默认新闻日报。",
+        sourceIds: ["acro_youtube_official"],
+        url: "youtube.com/@ACROBiosystems",
+      },
+      {
+        name: "Thermo Fisher 官方 YouTube",
+        socialGroup: "official_video",
+        companyTag: "Thermo Fisher",
+        regionTag: "全球频道",
+        status: "active",
+        trust: "A",
+        method: "YouTube Atom RSS",
+        note: "官方 Atom Feed 可直接订阅；视频独立归档，用于发现技术主题、演示和 Webinar 回放。",
+        sourceIds: ["thermo_youtube_official"],
+        url: "youtube.com/channel/UCfUs2fCDhx07fkszsJ0jOcA",
+      },
+      {
+        name: "Merck Life Science 官方 YouTube",
+        socialGroup: "official_video",
+        companyTag: "Merck Life Science",
+        regionTag: "全球频道",
+        status: "active",
+        trust: "A",
+        method: "公开频道页",
+        note: "本轮测试 20 条且全部匹配公司；Atom Feed 返回 404，因此使用公开频道页读取。",
+        sourceIds: ["merck_life_science_youtube_official"],
+        url: "youtube.com/@MerckLifeScience",
+      },
+      {
+        name: "Sartorius 官方 YouTube",
+        socialGroup: "official_video",
+        companyTag: "Sartorius",
+        regionTag: "全球频道",
+        status: "active",
+        trust: "A",
+        method: "公开频道页",
+        note: "本轮测试 20 条，包含 CGT、细胞系开发和上游工艺 Webinar；统一作为视频归档信号。",
+        sourceIds: ["sartorius_youtube_official"],
+        url: "youtube.com/@SartoriusGlobal",
+      },
+      {
+        name: "Miltenyi Biotec 官方 YouTube",
+        socialGroup: "official_video",
+        companyTag: "Miltenyi Biotec",
+        regionTag: "全球频道",
+        status: "active",
+        trust: "A",
+        method: "公开频道页",
+        note: "频道由公司官方 Linktree 确认；本轮测试 20 条，覆盖 CGT、空间生物学和 Miltenyi University。",
+        sourceIds: ["miltenyi_youtube_official"],
+        url: "youtube.com/c/MiltenyiBiotec_MACS",
+      },
+      {
+        name: "LinkedIn 公司主页",
+        socialGroup: "professional_social",
+        roleTag: "合作 / 活动 / 招聘",
+        regionTag: "全球",
+        status: "manual",
+        trust: "A",
+        method: "官方主页人工核对",
+        note: "ACRO 页面自动请求实测返回 999，且没有公开稳定 RSS；登记 5 家官方主页，但 MVP 不绕过登录和访问限制。",
+        url: "linkedin.com/company",
+      },
+      {
+        name: "X / Twitter 官方账号",
+        socialGroup: "professional_social",
+        roleTag: "会议传播 / 快讯",
+        regionTag: "海外",
+        status: "manual",
+        trust: "B",
+        method: "人工观察",
+        note: "公开页返回的是前端页面，未得到稳定结构化帖子数据；不申请付费 API 前，只记录重要活动和合作线索。",
+        url: "x.com",
+      },
+      {
+        name: "Facebook / Instagram 官方账号",
+        socialGroup: "professional_social",
+        roleTag: "品牌传播 / 活动",
+        regionTag: "海外 / 地区账号",
+        status: "manual",
+        trust: "B",
+        method: "人工抽查",
+        note: "对 B2B 生命科学决策信号贡献较低；只在目标公司或日本地区账号发布独有活动时补录。",
+      },
+      {
+        name: "微信公众号",
+        socialGroup: "china_content",
+        roleTag: "新闻 / 技术 / 活动",
+        regionTag: "中国",
+        status: "manual",
+        trust: "A",
+        method: "官方账号人工核对",
+        note: "公众号是中国市场重要来源，但没有公开稳定 RSS；先建立账号白名单和文章人工录入，不自建绕过平台限制的抓取器。",
+        url: "mp.weixin.qq.com",
+      },
+      {
+        name: "微信视频号",
+        socialGroup: "china_content",
+        roleTag: "直播 / 视频 / 活动",
+        regionTag: "中国",
+        status: "manual",
+        trust: "A",
+        method: "人工观察",
+        note: "适合发现直播预告和短视频，但缺少可公开持续读取的网页 Feed；与公众号活动做同事件去重。",
+      },
+      {
+        name: "Bilibili 官方账号与关键词",
+        socialGroup: "china_content",
+        roleTag: "技术视频 / 回放",
+        regionTag: "中国",
+        status: "manual",
+        trust: "B",
+        method: "人工检索",
+        note: "搜索页实测只返回前端外壳，尚未确认 5 家公司的稳定官方账号集合；确认账号后再评估公开视频监控。",
+        url: "search.bilibili.com",
+      },
+      {
+        name: "官方 Email Newsletter",
+        socialGroup: "subscription_content",
+        roleTag: "内容分发",
+        regionTag: "全球 / 地区",
+        status: "covered",
+        trust: "A",
+        method: "人工订阅 + 官网去重",
+        note: "邮件多数会回链到官网文章或活动页，当前由官网入口覆盖；只在邮件含独有内容时人工补录。",
+      },
+      {
+        name: "Podcast / Spotify / Apple Podcasts",
+        socialGroup: "subscription_content",
+        roleTag: "访谈 / 趋势",
+        regionTag: "全球",
+        status: "planned",
+        trust: "B",
+        method: "公开 Podcast RSS",
+        note: "先确认目标公司是否有持续更新的官方节目；若有公开 RSS，可免费接入并作为长内容信号归档。",
+      },
     ],
   },
   {
@@ -1492,6 +1630,8 @@ function renderRules() {
               ? renderOfficialSourceGroups(visibleSources)
               : cat.layer === "wire_media"
                 ? renderWireMediaGroups(visibleSources)
+                : cat.layer === "social_content"
+                  ? renderSocialContentGroups(visibleSources)
                 : cat.layer === "market_channel"
                   ? renderMarketChannelGroups(visibleSources)
                 : `<div class="source-grid">${visibleSources.map(renderSourceCard).join("")}</div>`
@@ -1535,6 +1675,19 @@ function renderMarketChannelGroups(sources) {
       <div><span>发现层</span><strong>从哪里发现活动与公司</strong><small>行业生态平台、展会官网、合作网络</small></div>
       <div><span>匹配层</span><strong>平台不是公司</strong><small>抓取后再匹配公司池中的公司别名</small></div>
       <div><span>去重层</span><strong>多个链接合并成一个事件</strong><small>标题、日期、报名 URL 与 Webinar ID</small></div>
+    `,
+  );
+}
+
+function renderSocialContentGroups(sources) {
+  return renderGroupedSources(
+    sources,
+    socialContentGroups,
+    "socialGroup",
+    `
+      <div><span>内容用途</span><strong>这个平台提供什么信号</strong><small>视频、活动、合作、招聘或地区传播</small></div>
+      <div><span>获取边界</span><strong>公开可看不等于可自动抓取</strong><small>只自动接入稳定公开页面或 Feed</small></div>
+      <div><span>推送规则</span><strong>社交内容不直接当新闻</strong><small>视频归档；重大合作与新活动经核对后升级</small></div>
     `,
   );
 }
@@ -1827,27 +1980,27 @@ function escapeAttr(value) {
 }
 
 function renderSourceHealth() {
-  const errors = state.payload.errors || [];
-  const sourceNames = new Set(
-    state.payload.items.flatMap((item) => item.source_labels || [item.source_label]),
-  );
-  const allActiveSources = [...sourceNames];
-
-  const total = allActiveSources.length;
-  const errorCount = errors.length;
-  els.healthStatus.textContent = errorCount > 0 ? `${errorCount} 异常 / ${total} 来源` : `${total} 来源正常`;
+  const rows = getSourceHealthRows();
+  const errors = rows.filter((row) => row.status === "error");
+  const runningCount = rows.filter((row) => row.enabled !== false).length;
+  const pendingCount = rows.filter((row) => row.status === "pending").length;
+  const quietCount = rows.filter((row) => row.status === "quiet").length;
+  els.healthStatus.textContent = errors.length
+    ? `${errors.length} 异常 · ${runningCount} 运行`
+    : pendingCount
+      ? `${runningCount} 运行 · ${pendingCount} 待配置`
+      : `${runningCount} 来源运行正常`;
 
   if (!els.healthList) return;
   if (errors.length === 0) {
-    els.healthList.innerHTML = '<div class="health-ok">所有来源运行正常 ✓</div>';
+    els.healthList.innerHTML = `<div class="health-ok">抓取入口无异常 · ${quietCount} 个本轮暂无内容 · ${pendingCount} 个待配置</div>`;
     return;
   }
 
   els.healthList.innerHTML = errors
-    .map((err) => {
-      const parts = err.split(": ");
-      const sourceId = parts[0];
-      const message = parts.slice(1).join(": ");
+    .map((row) => {
+      const sourceId = row.source_id;
+      const message = row.error || row.note || "抓取异常";
       const source = sourceInventory
         .flatMap((cat) => cat.sources)
         .find((s) => s.name.toLowerCase().includes(sourceId.replace(/_/g, " ").toLowerCase()));

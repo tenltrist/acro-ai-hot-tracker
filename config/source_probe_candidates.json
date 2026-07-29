@@ -232,6 +232,42 @@
       "trust": "regulator",
       "max_age_days": 365,
       "max_items": 30
+    },
+    {
+      "id": "merck_life_science_youtube_official",
+      "label": "Merck Life Science - official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/@MerckLifeScience/videos?hl=en",
+      "company_id": "merck_life_science",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20
+    },
+    {
+      "id": "sartorius_youtube_official",
+      "label": "Sartorius - official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/@SartoriusGlobal/videos?hl=en",
+      "company_id": "sartorius",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20
+    },
+    {
+      "id": "miltenyi_youtube_official",
+      "label": "Miltenyi Biotec - official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/c/MiltenyiBiotec_MACS/videos?hl=en",
+      "company_id": "miltenyi_biotec",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20
     }
   ]
 }

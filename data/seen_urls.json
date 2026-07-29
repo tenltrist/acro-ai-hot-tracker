@@ -18529,5 +18529,773 @@
     "tier": "archive",
     "score": 38,
     "signal_type": "news"
+  },
+  "80c92b475e820319": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "a9748d0cd7dfde02": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "0aacab5c4dac0cf9": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3A%2F%2Frichmondbizsense.com%2F2026%2F07%2F28%2Fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2F&c=14430160313610887661&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "2b4ce4d484002d01": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3A%2F%2Fwww.01net.it%2Fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2F&c=14346548381911895341&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "c5ac3fcf167bd3c9": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "How-to guide for eMcollect cloth swabs",
+    "url": "https://www.youtube.com/watch?v=y3zgfIf0nMY",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "97ac79abb82c78bf": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Dance It Out With Your AAW Workstation",
+    "url": "https://www.youtube.com/watch?v=K38aGwXuLbY",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "0eca48d4dc488ced": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Take A Dance Break With Your AAW Workstation",
+    "url": "https://www.youtube.com/watch?v=bghhzFbBeN8",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "73a4919fcadfb3f5": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "How-to guide for eMcollect sponges",
+    "url": "https://www.youtube.com/watch?v=8smasgLXIz0",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "db8d8d5e6f9d38e8": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Rapid-C+ System for Real-Time and Traditional Microbial Air Monitoring",
+    "url": "https://www.youtube.com/watch?v=J0Qc3sG8g3k",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "b48ea976b5e79772": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Millipore Express® 0.2 µm Ace Filters: One membrane. Infinite Possibilities.",
+    "url": "https://www.youtube.com/watch?v=nfDYdNcX_u4",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "f245a14158e9d481": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Advancing drug development with portfolio and customized lipids",
+    "url": "https://www.youtube.com/watch?v=-PGyhFKPQ9c",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "42191738363ddb92": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "How To Automate MILLIPLEX® Human Cytokine Multiplex Panel A on the AAW™ Workstation",
+    "url": "https://www.youtube.com/watch?v=QvDe3NWfoQ0",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "160f9fe956ab5af3": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Rethinking Organolithium Safety: Performance Without Pyrophoric Risk",
+    "url": "https://www.youtube.com/watch?v=90Mram1d-Cc",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "d04009c3aec8cb38": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Aseptic Process Simulation: Why the Culture Media you Choose Matters",
+    "url": "https://www.youtube.com/watch?v=RGKc9o3M9iI",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "431faec912bad45a": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Unlocking CHOZN® Elite: Transforming Cell Line Development for Enhanced Productivity",
+    "url": "https://www.youtube.com/watch?v=pkSuOdeneTk",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "6c4e45b66307f739": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Leading the Way in Cell Culture Media Control: The Future of Testing with CCM Fingerprinting",
+    "url": "https://www.youtube.com/watch?v=TB-YFdWeLbs",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "1126fcfeddd0e020": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Unveiling CHOZN® Elite: The Next Generation CHOZN® Cell Line for Biopharmaceuticals",
+    "url": "https://www.youtube.com/watch?v=m9mSRwww500",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "c61c303670ab7dcb": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "MConfig: Your Path to Custom Media Solutions",
+    "url": "https://www.youtube.com/watch?v=N-JPXYwhPjc",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "5a89ddb4382f452a": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "QuicTPD™ Kits for Targeted Protein Degradation",
+    "url": "https://www.youtube.com/watch?v=A7u8nY-w2oA",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "aaf0cfc94f2bf988": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "How to Configure your Scepter™ 3.0 Cell Counter for Cloud Navigation",
+    "url": "https://www.youtube.com/watch?v=bKMkRxNj0kQ",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "3e995331868e9994": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "TLC Explorer Software Instructions",
+    "url": "https://www.youtube.com/watch?v=o5Y33Ixkh4A",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "a02a37418a9adf7f": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Automated Chemical Synthesis with SYNPLE",
+    "url": "https://www.youtube.com/watch?v=PdOiJhJSGQc",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "7ba3dab48b45108d": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Harness the Power of Light with Penn PhD Photoreactor",
+    "url": "https://www.youtube.com/watch?v=ltbf9ortE8I",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "e91d3a25ae3a50d3": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Electrify Your Synthesis with Faraday Labs Electrosynthesis Workstation",
+    "url": "https://www.youtube.com/watch?v=PDxKPIXjGvo",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "d58b2e3dcaf2b8ba": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Microbiological Enumeration Using the Biosart® Monitors",
+    "url": "https://www.youtube.com/watch?v=Y1orpc1AFw4",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "d42a0579cb785577": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Your mRNA Process Simplified Increase pDNA Purity and Yields",
+    "url": "https://www.youtube.com/watch?v=JoBgrLcierY",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "679506198a56ecec": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Best Practices for Ensuring Virus Clearance When Using Anion Exchange Membrane Adsorbers",
+    "url": "https://www.youtube.com/watch?v=S6YU9zIKXIg",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "72622630c2b6047d": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Cell Line Development Tools for Rapid Prototyping of Intensified Bioprocesses",
+    "url": "https://www.youtube.com/watch?v=YNxIY1qBXUI",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "video"
+  },
+  "62624af936c65cf8": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Virus Expression Platform for Fast Development of Coronavirus Vaccines",
+    "url": "https://www.youtube.com/watch?v=oB3_yz1j7EA",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "4b32652ccc7a1356": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Process Intensification Cost Energy and Facility Footprint",
+    "url": "https://www.youtube.com/watch?v=XcR18l_VgYM",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "a380847bdda96a58": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | High Throughput Upstream Process Development for CHO Cells Using Ambr 250 Bioreactor",
+    "url": "https://www.youtube.com/watch?v=EZ_4PXgxebk",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "video"
+  },
+  "5527d3d222d14bcf": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Seed Train Process Intensification Success Story",
+    "url": "https://www.youtube.com/watch?v=9aupac9Bups",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "5b38e4efa188e7ea": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Cell and Gene Therapy Regulatory and Process Guidance from Concept to Clinic",
+    "url": "https://www.youtube.com/watch?v=dSW4U5ddmq0",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "video"
+  },
+  "708ca13ca9e8da9b": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Your mRNA Process Simplified Select the Right Purification Approach for Your Process",
+    "url": "https://www.youtube.com/watch?v=P_Wt53sQiec",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "070556ab849324bf": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Optimized and Efficient Cell Cryopreservation",
+    "url": "https://www.youtube.com/watch?v=fMoKEQatETo",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "af512f38e697334d": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | End to End Cold Chain Management a Next Generation Approach",
+    "url": "https://www.youtube.com/watch?v=FpBFKcRUpyo",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "d06fb2fb09437c51": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Simplifying the Route to GMP",
+    "url": "https://www.youtube.com/watch?v=dsBqMZjsAiE",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "video"
+  },
+  "e33124fa75913f65": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Screen, Optimize and Characterize Your Viral Vector Production with Confidence",
+    "url": "https://www.youtube.com/watch?v=PJ9cyw_JXjQ",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "c25411a508d7a448": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Connected DSP Design with Resolute BioSC",
+    "url": "https://www.youtube.com/watch?v=P0DVJv1QMfo",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "171ecf64f794f42c": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | How mRNA Manufacturers Disrupt Industry",
+    "url": "https://www.youtube.com/watch?v=7wzdN60PbSg",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "0d38778388fc54ba": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Improved Bio-Performance with Human Cells",
+    "url": "https://www.youtube.com/watch?v=q58dyZRMwRI",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "63bc69958047b437": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Three Ways to Disconnect with Confidence",
+    "url": "https://www.youtube.com/watch?v=FCkq2PS3MgU",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "8f850c0dc0a36a44": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Simplifying Final Filling – Single Use Transfer and Filling Solutions",
+    "url": "https://www.youtube.com/watch?v=-FjaU2s6Qu0",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "21962dfff85d7d24": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Webinar | Managing Freeze Thaw Applications Single Use Containers vs Bottles",
+    "url": "https://www.youtube.com/watch?v=XF7ckEfPJfA",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "1ce80a069bdebbca": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Pioneering Perspectives: Jolanda de Vries on the importance of preventative immunotherapy in NL",
+    "url": "https://www.youtube.com/watch?v=7ZAJg7rK70E",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "605fd219cc76df9a": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Transforming CGT: From Innovation to Global Business Models | All Things CGT Ep. 4",
+    "url": "https://www.youtube.com/watch?v=Bg3hYeYowRg",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "33883fb24afd5921": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Scaling Quality and Access: QA & Supply Chain in CGT | All Things CGT Ep. 3",
+    "url": "https://www.youtube.com/watch?v=xZ24gzTfLQE",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "2bdd58beb36f5f50": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Spatial biology in a preclinical setting with the MACSima® Platform",
+    "url": "https://www.youtube.com/watch?v=XOwJnC7q9No",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "video"
+  },
+  "f59e600e1b6cfa1f": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Investigating dopamine throughout the entire mouse brain in 3D",
+    "url": "https://www.youtube.com/watch?v=KEsizDX6SnQ",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "bf208abf6aa22686": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Automation & Analytics in CGT: Powering the Next Scale-Up | All Things CGT Ep. 2",
+    "url": "https://www.youtube.com/watch?v=IGDJv3rI-d8",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "82747d54ae25f36d": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "3D visualization of CAR T cell localization in primary tumor tissue",
+    "url": "https://www.youtube.com/watch?v=3u4nAdwcFZ8",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "81a06c5b0899d14f": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Leveraging single-cell RNA-sequencing to uncover pancreatic cancer biology",
+    "url": "https://www.youtube.com/watch?v=4EQeIyIJT74",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "03b3f3091b9eb0d3": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Miltenyi University: Cell therapy in autoimmune diseases: from clinical results to patient access",
+    "url": "https://www.youtube.com/watch?v=dFMw7O171PI",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "video"
+  },
+  "489169154c17cf1a": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Realize your γδ T cell therapy with CliniMACS Prodigy® Platform",
+    "url": "https://www.youtube.com/watch?v=ri1JKsNFOkU",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "video"
+  },
+  "d746a9eacfefe27d": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Whole-brain spatial transcriptomics at cellular resolution [WEBINAR]",
+    "url": "https://www.youtube.com/watch?v=aZ_TVh5KOEU",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "712272d32c6a9b01": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "52nd Annual Meeting of the EBMT - Alice Bertaina, MD, PhD, USA",
+    "url": "https://www.youtube.com/watch?v=BS914coxjkk",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "f99fb6bac261a191": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Turbocharge your CGT developments with our proven platform solutions [WEBINAR]",
+    "url": "https://www.youtube.com/watch?v=Y-Hu1gBI-_c",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "816461e8e0d116ef": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Join the network",
+    "url": "https://www.youtube.com/watch?v=vsEXZ0eZqC0",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "b49bb05964437372": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Building the Human Body in 3D: Prof. Alain Chédotal on Light Sheet Microscopy.",
+    "url": "https://www.youtube.com/watch?v=NgYuxI5btTA",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "212a9f45733b6ecd": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Inside Vibraint: Transforming Brain Research Through 3D Imaging with Thomas TopilkoIn.",
+    "url": "https://www.youtube.com/watch?v=4l1-6im32RA",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "c5d1d351c48b3300": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Shigeaki Kanatani on 3D Imaging, TRISCO, and why whole sample matters",
+    "url": "https://www.youtube.com/watch?v=PHlwsqKA364",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "9df358f60e2f2486": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Setting the benchmark in PoC cell manufacturing and analytics.",
+    "url": "https://www.youtube.com/watch?v=DrNz4MVDxbU",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "video"
+  },
+  "18d6850b4b0e88ee": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "MHC MACSimers: the T cell detection breakthrough",
+    "url": "https://www.youtube.com/watch?v=NMW596hNdi0",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
+  },
+  "8d9b482e3d6eedd0": {
+    "first_seen": "2026-07-29T11:48:54",
+    "title": "Regulatory Innovation in CGT: Time for Regulations to Evolve | All Things CGT Ep. 1",
+    "url": "https://www.youtube.com/watch?v=Nu3UCEPE0lc",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "video"
   }
 }

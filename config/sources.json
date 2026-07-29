@@ -652,6 +652,45 @@
       "max_items": 15
     },
     {
+      "id": "merck_life_science_youtube_official",
+      "label": "Merck Life Science official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/@MerckLifeScience/videos?hl=en",
+      "company_id": "merck_life_science",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20,
+      "health_note": "官方频道页可公开读取；标准 Atom Feed 返回 404，当前读取公开视频列表。测试获得 20 条并全部正确匹配 Merck Life Science。"
+    },
+    {
+      "id": "sartorius_youtube_official",
+      "label": "Sartorius official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/@SartoriusGlobal/videos?hl=en",
+      "company_id": "sartorius",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20,
+      "health_note": "官方频道由 Sartorius Newsroom 的社交链接交叉确认；公开频道页测试获得 20 条，包含 bioprocessing 与 CGT Webinar。"
+    },
+    {
+      "id": "miltenyi_youtube_official",
+      "label": "Miltenyi Biotec official YouTube channel",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/c/MiltenyiBiotec_MACS/videos?hl=en",
+      "company_id": "miltenyi_biotec",
+      "trust": "owned",
+      "signal_type": "video",
+      "category_hint": "video",
+      "max_age_days": 365,
+      "max_items": 20,
+      "health_note": "频道地址由 Miltenyi Biotec 官方 Linktree 交叉确认；测试获得 20 条，包含 CGT、空间生物学和 Miltenyi University 内容。"
+    },
+    {
       "id": "thermo_sec_filings",
       "label": "SEC EDGAR - Thermo Fisher filings",
       "type": "sec_submissions",
