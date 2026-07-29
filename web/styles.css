@@ -2090,6 +2090,7 @@ select {
   border-radius: 8px;
   padding: 14px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
 }
 
@@ -2218,6 +2219,171 @@ select {
   color: #51606b;
   font-size: 13px;
   line-height: 1.5;
+}
+
+.business-insight {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.85fr);
+  min-width: 0;
+  overflow: hidden;
+  border-left: 4px solid #a8b5bc;
+  border-radius: 6px;
+  background: #f5f8f8;
+}
+
+.business-insight.relevance-high {
+  border-left-color: #c85e45;
+  background: #fcf4f1;
+}
+
+.business-insight.relevance-medium {
+  border-left-color: #b88a24;
+  background: #fbf8ee;
+}
+
+.business-insight.relevance-low {
+  border-left-color: #83949d;
+}
+
+.business-insight-copy,
+.recommended-action {
+  min-width: 0;
+  padding: 11px 13px;
+}
+
+.business-insight-title,
+.recommended-action > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.business-insight-title span,
+.recommended-action > span {
+  color: #687780;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.business-insight-title strong {
+  color: #26343c;
+  font-size: 19px;
+}
+
+.business-insight-copy p,
+.recommended-action p {
+  margin: 4px 0 0;
+  color: #3f4d55;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.recommended-action {
+  border-left: 1px solid rgba(72, 91, 99, 0.14);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.recommended-action > div {
+  margin-top: 4px;
+  justify-content: flex-start;
+}
+
+.recommended-action strong {
+  color: #1d5660;
+  font-size: 13px;
+}
+
+.recommended-action small {
+  padding-left: 8px;
+  border-left: 1px solid #cbd5d9;
+  color: #687780;
+  font-size: 11px;
+}
+
+.business-insight.is-compact {
+  grid-template-columns: 1fr;
+}
+
+.business-insight.is-compact .recommended-action {
+  border-top: 1px solid rgba(72, 91, 99, 0.12);
+  border-left: 0;
+}
+
+.business-insight.is-compact .recommended-action p {
+  display: none;
+}
+
+.intelligence-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 8px 14px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.intelligence-field {
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.intelligence-field > span {
+  color: #718089;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.intelligence-field > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.intelligence-field b {
+  max-width: 100%;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: #e8f2f1;
+  color: #195d63;
+  font-size: 11px;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.field-targets b,
+.field-development_stages b {
+  background: #edf1f7;
+  color: #3f5f87;
+}
+
+.field-business_actions b,
+.field-event_signals b {
+  background: #f8f0df;
+  color: #805f18;
+}
+
+.intelligence-empty {
+  padding: 9px 11px;
+  border-left: 3px solid #c5cfd4;
+  background: #f7f9fa;
+  color: #718089;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .business-insight {
+    grid-template-columns: 1fr;
+  }
+
+  .recommended-action {
+    border-top: 1px solid rgba(72, 91, 99, 0.12);
+    border-left: 0;
+  }
 }
 
 .bars,

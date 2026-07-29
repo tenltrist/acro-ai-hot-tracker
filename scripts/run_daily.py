@@ -59,6 +59,9 @@ class Candidate:
     source_labels: list[str] = field(default_factory=list)
     related_urls: list[str] = field(default_factory=list)
     matched_company_ids: list[str] = field(default_factory=list)
+    intelligence: dict[str, list[str]] = field(default_factory=dict)
+    acro_relevance: dict[str, Any] = field(default_factory=dict)
+    recommended_action: dict[str, str] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         if not self.source_ids:
@@ -1146,6 +1149,141 @@ def merge_scoring_profiles(profiles: list[dict[str, Any]]) -> dict[str, Any]:
     return merged
 
 
+def term_matches(text: str, alias: str) -> bool:
+    term = clean_text(alias).lower()
+    if not term:
+        return False
+    if re.fullmatch(r"[a-z0-9][a-z0-9 .+/-]*", term):
+        return bool(re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", text))
+    return term in text
+
+
+def extract_intelligence(
+    item: Candidate,
+    intelligence_rules: dict[str, Any],
+) -> dict[str, list[str]]:
+    blob = clean_text(f"{item.title} {item.summary}").lower()
+    extracted: dict[str, list[str]] = {}
+    for group_id, group in intelligence_rules.get("groups", {}).items():
+        if group_id == "event_signals" and item.category != "event" and item.signal_type != "event":
+            extracted[group_id] = []
+            continue
+        hits: list[str] = []
+        for rule in group.get("items", []):
+            if any(term_matches(blob, alias) for alias in rule.get("aliases", [])):
+                hits.append(rule["label"])
+        extracted[group_id] = hits
+    return extracted
+
+
+def build_acro_relevance(
+    item: Candidate,
+    matched_companies: list[dict[str, Any]],
+) -> dict[str, Any]:
+    roles = {company.get("business_role", "unclassified") for company in matched_companies}
+    signals = item.intelligence
+    score = 0
+    reasons: list[str] = []
+
+    if "self" in roles:
+        score += 25
+        reasons.append("ACRO 自身动态")
+    if "customer" in roles:
+        score += 30
+        reasons.append("客户池公司动态")
+    if "competitor" in roles:
+        score += 18
+        reasons.append("竞品公司动态")
+    if signals.get("targets"):
+        score += 12
+        reasons.append("出现明确靶点")
+    if signals.get("modalities"):
+        score += 12
+        reasons.append("命中重点疗法或技术")
+    if signals.get("product_needs"):
+        score += 22
+        reasons.append("可映射到 ACRO 产品或服务需求")
+    if signals.get("development_stages"):
+        score += 10
+        reasons.append("研发阶段可识别")
+    if signals.get("business_actions"):
+        score += 10
+        reasons.append("出现明确业务动作")
+    if signals.get("event_signals"):
+        score += 6
+        reasons.append("可转化为活动运营线索")
+    if item.source_trust == "regulator" or item.category == "regulatory":
+        score += 8
+        reasons.append("包含监管或注册信号")
+
+    score = min(score, 100)
+    level = "high" if score >= 50 else "medium" if score >= 24 else "low"
+    target_text = "、".join(signals.get("targets", [])[:2])
+    modality_text = "、".join(signals.get("modalities", [])[:2])
+    need_text = "、".join(signals.get("product_needs", [])[:2])
+    stage_text = "、".join(signals.get("development_stages", [])[:1])
+
+    if "self" in roles:
+        explanation = "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。"
+    elif "customer" in roles:
+        explanation = f"客户池公司出现{stage_text or '新的研发'}信号，可评估{need_text or '相关试剂与服务'}需求。"
+    elif "competitor" in roles:
+        focus = "、".join(value for value in [modality_text, need_text] if value) or item.category
+        explanation = f"竞品正在推进{focus}相关动作，值得对比产品定位、市场话术和区域覆盖。"
+    elif need_text and (stage_text or signals.get("business_actions")):
+        explanation = f"该信号涉及{stage_text or '业务推进'}，可能产生{need_text}需求，适合纳入潜在客户筛选。"
+    elif signals.get("event_signals"):
+        topic = "、".join(value for value in [target_text, modality_text] if value) or "生命科学"
+        explanation = f"该活动聚焦{topic}，可评估参会、登台、赞助或合作伙伴接触价值。"
+    elif target_text or modality_text:
+        explanation = f"该信号命中{target_text or modality_text}，对技术趋势有参考价值，但尚未出现明确商业需求。"
+    else:
+        explanation = "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。"
+
+    return {
+        "level": level,
+        "score": score,
+        "label": {"high": "高相关", "medium": "中相关", "low": "低相关"}[level],
+        "explanation": explanation,
+        "reasons": reasons[:4],
+    }
+
+
+def build_recommended_action(
+    item: Candidate,
+    matched_companies: list[dict[str, Any]],
+) -> dict[str, str]:
+    roles = {company.get("business_role", "unclassified") for company in matched_companies}
+    signals = item.intelligence
+    relevance = item.acro_relevance.get("level", "low")
+    if "self" in roles:
+        return {"type": "content", "label": "口径与传播跟进", "owner": "市场运营", "priority": "high", "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"}
+    if "customer" in roles:
+        return {"type": "customer", "label": "客户需求跟进", "owner": "BD / 销售", "priority": "high", "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"}
+    if "competitor" in roles and relevance in {"high", "medium"}:
+        return {"type": "competitor", "label": "竞品对比", "owner": "产品市场", "priority": relevance, "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"}
+    if signals.get("product_needs") and (signals.get("development_stages") or signals.get("business_actions")):
+        return {"type": "lead", "label": "潜客识别", "owner": "BD / 区域市场", "priority": relevance, "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"}
+    if signals.get("event_signals"):
+        return {"type": "event", "label": "活动价值评估", "owner": "区域市场", "priority": relevance, "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"}
+    if item.source_trust == "regulator" or item.category == "regulatory":
+        return {"type": "regulatory", "label": "法规影响核对", "owner": "产品 / 法规", "priority": relevance, "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"}
+    if signals.get("targets") or signals.get("modalities"):
+        return {"type": "trend", "label": "技术趋势观察", "owner": "产品市场", "priority": relevance, "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"}
+    return {"type": "archive", "label": "归档观察", "owner": "系统", "priority": "low", "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"}
+
+
+def enrich_candidate_intelligence(
+    item: Candidate,
+    intelligence_rules: dict[str, Any],
+    matched_companies: list[dict[str, Any]],
+) -> Candidate:
+    item.intelligence = extract_intelligence(item, intelligence_rules)
+    item.acro_relevance = build_acro_relevance(item, matched_companies)
+    item.recommended_action = build_recommended_action(item, matched_companies)
+    return item
+
+
 def score_candidate(
     item: Candidate,
     profile: dict[str, Any],
@@ -1476,6 +1614,9 @@ def build_dashboard_payload(
                 "signal_type": item.signal_type,
                 "is_new": item.key not in seen,
                 "reasons": item.reasons,
+                "intelligence": item.intelligence,
+                "acro_relevance": item.acro_relevance,
+                "recommended_action": item.recommended_action,
                 "age_days": age_days(item.published),
             }
             for item in sorted(candidates, key=lambda x: (x.tier != "immediate", -x.score))
@@ -1549,6 +1690,16 @@ def render_section(
         ai_text = ai_summaries.get(item.key, "")
         if ai_text:
             lines.append(f"   - 🤖 AI 业务摘要：{ai_text}")
+        if item.acro_relevance:
+            lines.append(
+                f"   - ACRO 相关性：{item.acro_relevance.get('label', '')} · "
+                f"{item.acro_relevance.get('explanation', '')}"
+            )
+        if item.recommended_action:
+            lines.append(
+                f"   - 建议动作：{item.recommended_action.get('label', '')} "
+                f"— {item.recommended_action.get('text', '')}"
+            )
         lines.append("")
     return lines
 
@@ -1567,6 +1718,7 @@ def main() -> int:
         profile["id"]: profile
         for profile in company_config.get("source_profiles", [])
     }
+    intelligence_rules = load_json(CONFIG_DIR / "intelligence_rules.json")
     sources = load_json(CONFIG_DIR / "sources.json")["sources"]
     company_lookup = {company["id"]: company for company in companies}
     source_lookup = {source["id"]: source for source in sources}
@@ -1598,7 +1750,11 @@ def main() -> int:
         profile = merge_scoring_profiles(profiles)
         scored.append(
             apply_source_tier_policy(
-                score_candidate(item, profile, matched_companies, args.days),
+                enrich_candidate_intelligence(
+                    score_candidate(item, profile, matched_companies, args.days),
+                    intelligence_rules,
+                    matched_companies,
+                ),
                 source_lookup,
             )
         )

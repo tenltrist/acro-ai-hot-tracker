@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "groups": {
+    "targets": {
+      "label": "靶点",
+      "items": [
+        {"label": "HER2", "aliases": ["HER2", "ERBB2", "人表皮生长因子受体2"]},
+        {"label": "EGFR", "aliases": ["EGFR", "ERBB1", "表皮生长因子受体"]},
+        {"label": "Claudin 18.2", "aliases": ["Claudin 18.2", "CLDN18.2", "CLDN18"]},
+        {"label": "BCMA", "aliases": ["BCMA", "TNFRSF17"]},
+        {"label": "CD19", "aliases": ["CD19"]},
+        {"label": "CD20", "aliases": ["CD20", "MS4A1"]},
+        {"label": "CD22", "aliases": ["CD22"]},
+        {"label": "CD38", "aliases": ["CD38"]},
+        {"label": "B7-H3", "aliases": ["B7-H3", "B7H3", "CD276"]},
+        {"label": "PD-1 / PD-L1", "aliases": ["PD-1", "PD1", "PD-L1", "PDL1", "CD274"]},
+        {"label": "CTLA-4", "aliases": ["CTLA-4", "CTLA4"]},
+        {"label": "TROP2", "aliases": ["TROP2", "TROP-2", "TACSTD2"]},
+        {"label": "DLL3", "aliases": ["DLL3", "delta-like ligand 3"]},
+        {"label": "MSLN", "aliases": ["MSLN", "mesothelin", "间皮素", "メソテリン"]},
+        {"label": "GPC3", "aliases": ["GPC3", "glypican-3"]},
+        {"label": "KRAS", "aliases": ["KRAS", "KRAS G12C", "KRAS G12D"]}
+      ]
+    },
+    "modalities": {
+      "label": "疗法 / 技术",
+      "items": [
+        {"label": "ADC", "aliases": ["ADC", "antibody-drug conjugate", "antibody drug conjugate", "抗体偶联药物", "抗体薬物複合体"]},
+        {"label": "双抗 / 多抗", "aliases": ["bispecific", "multispecific", "双特异性抗体", "双抗", "二重特異性抗体"]},
+        {"label": "CAR-T", "aliases": ["CAR-T", "CAR T", "CART", "chimeric antigen receptor T", "嵌合抗原受体T细胞"]},
+        {"label": "TCR-T", "aliases": ["TCR-T", "TCR T", "TCRT", "T-cell receptor therapy"]},
+        {"label": "细胞治疗", "aliases": ["cell therapy", "cell-based therapy", "细胞治疗", "細胞治療"]},
+        {"label": "基因治疗", "aliases": ["gene therapy", "gene editing", "CRISPR", "基因治疗", "基因编辑", "遺伝子治療"]},
+        {"label": "mRNA / RNA", "aliases": ["mRNA", "RNA therapy", "RNAi", "siRNA", "antisense oligonucleotide", "ASO"]},
+        {"label": "疫苗", "aliases": ["vaccine", "vaccination", "疫苗", "ワクチン"]},
+        {"label": "AAV / 病毒载体", "aliases": ["AAV", "adeno-associated virus", "viral vector", "lentiviral vector", "病毒载体", "ウイルスベクター"]},
+        {"label": "类器官", "aliases": ["organoid", "organoids", "类器官", "オルガノイド"]},
+        {"label": "外泌体", "aliases": ["exosome", "extracellular vesicle", "EV therapy", "外泌体", "エクソソーム"]},
+        {"label": "蛋白降解", "aliases": ["PROTAC", "protein degrader", "targeted protein degradation", "molecular glue", "蛋白降解"]},
+        {"label": "放射性药物", "aliases": ["radiopharmaceutical", "radioligand", "theranostic", "放射性药物", "放射性医薬品"]}
+      ]
+    },
+    "product_needs": {
+      "label": "可能产品需求",
+      "items": [
+        {"label": "重组蛋白 / 靶点蛋白", "aliases": ["recombinant protein", "target protein", "antigen protein", "重组蛋白", "靶点蛋白", "組換えタンパク質"]},
+        {"label": "抗体", "aliases": ["antibody", "monoclonal antibody", "mAb", "抗体", "モノクローナル抗体"]},
+        {"label": "细胞因子", "aliases": ["cytokine", "interleukin", "growth factor", "细胞因子", "成长因子", "サイトカイン"]},
+        {"label": "细胞系 / 工程细胞", "aliases": ["cell line", "engineered cell", "reporter cell", "HEK293", "CHO cell", "细胞系", "工程细胞"]},
+        {"label": "检测试剂盒", "aliases": ["assay kit", "ELISA kit", "detection kit", "bioassay", "试剂盒", "检测试剂", "アッセイキット"]},
+        {"label": "GMP 级原料", "aliases": ["GMP-grade", "GMP grade", "GMP raw material", "ancillary material", "GMP级", "GMP原料"]},
+        {"label": "药效 / 功能分析", "aliases": ["potency assay", "functional assay", "bioactivity", "binding assay", "药效分析", "功能分析", "活性检测"]},
+        {"label": "细胞培养 / 培养基", "aliases": ["cell culture", "culture medium", "cell culture media", "细胞培养", "培养基", "細胞培養"]},
+        {"label": "流式 / 细胞分析", "aliases": ["flow cytometry", "cell analysis", "cell sorting", "流式细胞", "细胞分析"]},
+        {"label": "生物工艺", "aliases": ["bioprocess", "bioprocessing", "bioreactor", "single-use", "purification", "chromatography", "filtration", "生物工艺"]},
+        {"label": "CRO / CDMO 服务", "aliases": ["CRO", "CDMO", "contract research", "contract development", "contract manufacturing", "委托开发", "委托生产"]},
+        {"label": "伴随诊断 / 生物标志物", "aliases": ["companion diagnostic", "biomarker", "diagnostic assay", "伴随诊断", "生物标志物", "バイオマーカー"]}
+      ]
+    },
+    "development_stages": {
+      "label": "研发阶段",
+      "items": [
+        {"label": "早期发现", "aliases": ["discovery", "target validation", "lead discovery", "screening", "靶点验证", "药物发现"]},
+        {"label": "临床前", "aliases": ["preclinical", "pre-clinical", "in vivo", "IND-enabling", "临床前", "非臨床"]},
+        {"label": "IND / 临床申报", "aliases": ["IND", "investigational new drug", "clinical trial application", "CTA", "临床申报", "治験届"]},
+        {"label": "I 期临床", "aliases": ["phase 1", "phase i", "phase I", "一期临床", "第I相", "フェーズ1"]},
+        {"label": "II 期临床", "aliases": ["phase 2", "phase ii", "phase II", "二期临床", "第II相", "フェーズ2"]},
+        {"label": "III 期临床", "aliases": ["phase 3", "phase iii", "phase III", "三期临床", "第III相", "フェーズ3"]},
+        {"label": "注册 / 审批", "aliases": ["BLA", "NDA", "MAA", "approval", "approved", "regulatory filing", "获批", "批准", "承認", "申請"]},
+        {"label": "上市 / 商业化", "aliases": ["commercialization", "commercial launch", "market launch", "launched", "上市", "商业化", "発売"]}
+      ]
+    },
+    "business_actions": {
+      "label": "业务动作",
+      "items": [
+        {"label": "合作 / 共同开发", "aliases": ["collaboration", "partnership", "co-development", "joint development", "合作", "共同开发", "提携", "共同研究"]},
+        {"label": "授权 / 引进", "aliases": ["license agreement", "licensing", "in-license", "out-license", "授权", "许可", "引进", "導入"]},
+        {"label": "融资", "aliases": ["funding", "financing", "raises", "series A", "series B", "venture capital", "融资", "資金調達"]},
+        {"label": "并购 / 交易", "aliases": ["acquisition", "acquire", "merger", "M&A", "deal", "并购", "收购", "買収"]},
+        {"label": "产品发布", "aliases": ["launch", "release", "unveil", "introduce", "发布", "推出", "発売", "製品発表"]},
+        {"label": "扩产 / 新设施", "aliases": ["expansion", "expand capacity", "new facility", "manufacturing site", "opens", "扩产", "新建基地", "増産", "新設"]},
+        {"label": "临床里程碑", "aliases": ["first patient dosed", "enrollment", "topline results", "met primary endpoint", "clinical milestone", "首例入组", "临床里程碑", "症例登録"]},
+        {"label": "注册 / 监管动作", "aliases": ["FDA", "EMA", "PMDA", "NMPA", "regulatory", "approval", "filing", "获批", "申报", "承認", "申請"]},
+        {"label": "市场进入", "aliases": ["market entry", "enters japan", "enters china", "international expansion", "进入日本", "海外市场", "日本参入"]},
+        {"label": "招聘 / 组织扩张", "aliases": ["hiring", "recruitment", "appoints", "new CEO", "new CSO", "招聘", "任命", "採用", "就任"]}
+      ]
+    },
+    "event_signals": {
+      "label": "活动信号",
+      "items": [
+        {"label": "Webinar / 线上会议", "aliases": ["webinar", "online seminar", "virtual event", "Zoom", "线上会议", "ウェビナー", "オンラインセミナー"]},
+        {"label": "展会 / 峰会", "aliases": ["conference", "congress", "expo", "exhibition", "trade show", "展会", "峰会", "展示会", "学会"]},
+        {"label": "研讨会 / 讲座", "aliases": ["seminar", "symposium", "workshop", "研讨会", "讲座", "セミナー", "シンポジウム"]},
+        {"label": "演讲 / 登台", "aliases": ["speaker", "speaking", "presentation", "keynote", "panelist", "演讲", "登台", "登壇", "講演"]},
+        {"label": "参展 / 赞助", "aliases": ["exhibitor", "exhibiting", "booth", "sponsorship", "参展", "展位", "出展", "協賛"]},
+        {"label": "Partnering / 商务洽谈", "aliases": ["partnering", "one-on-one meeting", "business matching", "networking", "商务洽谈", "パートナリング", "ビジネスマッチング"]},
+        {"label": "报名 / 参会招募", "aliases": ["registration", "register now", "call for participants", "报名", "参会招募", "参加募集", "申込"]},
+        {"label": "参展企业征集", "aliases": ["call for exhibitors", "exhibitor application", "startup pitch", "pitch competition", "参展企业征集", "出展者募集", "ピッチコンテスト"]}
+      ]
+    }
+  }
+}

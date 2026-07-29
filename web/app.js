@@ -22,6 +22,7 @@ function saveFeedback(id, value) {
 const state = {
   payload: null,
   tier: "daily",
+  relevance: "all",
   signalType: "all",
   company: "all",
   category: "all",
@@ -1758,6 +1759,7 @@ const els = {
   metricCustomerNote: document.querySelector("#metricCustomerNote"),
   openSignalDetailButton: document.querySelector("#openSignalDetailButton"),
   tierFilter: document.querySelector("#tierFilter"),
+  relevanceFilter: document.querySelector("#relevanceFilter"),
   signalTypeFilter: document.querySelector("#signalTypeFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
   companyFilter: document.querySelector("#companyFilter"),
@@ -2005,7 +2007,7 @@ function renderOverviewScope() {
   const apacRegions = new Set(["japan", "china", "korea", "southeast_asia"]);
   const apacCount = scoped.filter((item) => apacRegions.has(inferItemRegion(item))).length;
   const criticalCount = scoped.filter(
-    (item) => ["daily", "immediate"].includes(item.tier) && item.score >= 65,
+    (item) => ["daily", "immediate"].includes(item.tier) && item.acro_relevance?.level === "high",
   ).length;
 
   els.metricCandidates.textContent = criticalCount;
@@ -2083,6 +2085,9 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
   const competitorCompanyCounts = {};
   const categoryCounts = {};
   const regionCounts = {};
+  const intelligenceCounts = {};
+  const actionCounts = {};
+  const relevanceCounts = { high: 0, medium: 0, low: 0 };
   for (const item of items) {
     for (const companyId of item.matched_company_ids || []) {
       if (companyRoles.get(companyId) === "competitor") {
@@ -2092,6 +2097,19 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
     categoryCounts[item.category] = (categoryCounts[item.category] || 0) + 1;
     const region = inferItemRegion(item);
     regionCounts[region] = (regionCounts[region] || 0) + 1;
+    const relevance = item.acro_relevance?.level || "low";
+    relevanceCounts[relevance] = (relevanceCounts[relevance] || 0) + 1;
+    for (const value of [
+      ...(item.intelligence?.targets || []),
+      ...(item.intelligence?.modalities || []),
+      ...(item.intelligence?.product_needs || []),
+    ]) {
+      intelligenceCounts[value] = (intelligenceCounts[value] || 0) + 1;
+    }
+    const actionLabel = item.recommended_action?.label;
+    if (actionLabel && actionLabel !== "归档观察") {
+      actionCounts[actionLabel] = (actionCounts[actionLabel] || 0) + 1;
+    }
   }
   const topCompanyEntry = Object.entries(competitorCompanyCounts).sort((a, b) => b[1] - a[1])[0];
   const topCompany = topCompanyEntry
@@ -2101,17 +2119,24 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
   const topRegion = Object.entries(regionCounts)
     .filter(([region]) => region !== "global")
     .sort((a, b) => b[1] - a[1])[0];
+  const topIntelligence = Object.entries(intelligenceCounts).sort((a, b) => b[1] - a[1])[0];
+  const topAction = Object.entries(actionCounts).sort((a, b) => b[1] - a[1])[0];
 
   els.executiveHeadline.textContent = items.length
-    ? `${state.timeRange} 天内共识别 ${items.length} 条有效信号，重点看竞品动作与亚太变化`
+    ? `${state.timeRange} 天内 ${items.length} 条信号：${relevanceCounts.high} 条 ACRO 高相关，${relevanceCounts.medium} 条中相关`
     : "当前筛选范围内没有达到日报门槛的信号";
   const points = [
     topCompany
       ? `竞品活跃度最高：${shortCompanyName(topCompany.display_name)}，共 ${topCompanyEntry[1]} 条。`
       : "当前范围内没有明确命中竞品池的信号。",
-    topCategory
-      ? `最集中的主题是“${labelCategory(topCategory[0])}”，占 ${topCategory[1]} 条。`
-      : "主题信号暂不足以形成判断。",
+    topIntelligence
+      ? `结构化情报中“${topIntelligence[0]}”出现最多，共 ${topIntelligence[1]} 条。`
+      : topCategory
+        ? `当前主要集中于“${labelCategory(topCategory[0])}”，尚需补充靶点和疗法字段。`
+        : "主题信号暂不足以形成判断。",
+    topAction
+      ? `建议动作最多的是“${topAction[0]}”，共 ${topAction[1]} 条待评估。`
+      : "当前没有信号达到需要人工行动的程度。",
     topRegion
       ? `已识别地区中“${labelRegion(topRegion[0])}”最多，共 ${topRegion[1]} 条；其余全球内容仍需进一步结构化。`
       : "多数内容暂未识别出明确事件地区，地区结果目前只作线索。",
@@ -2495,6 +2520,61 @@ function renderSignals() {
   renderSignalCards(els.signalList, filtered, false);
 }
 
+const intelligenceGroupLabels = {
+  targets: "靶点",
+  modalities: "疗法 / 技术",
+  product_needs: "可能产品需求",
+  development_stages: "研发阶段",
+  business_actions: "业务动作",
+  event_signals: "活动信号",
+};
+
+function renderIntelligenceFields(item) {
+  const intelligence = item.intelligence || {};
+  const populated = Object.entries(intelligenceGroupLabels)
+    .map(([key, label]) => ({ key, label, values: intelligence[key] || [] }))
+    .filter((group) => group.values.length);
+  if (!populated.length) {
+    return '<div class="intelligence-empty">六组医药字段暂无明确命中，保留原文归档。</div>';
+  }
+  return `<div class="intelligence-fields">
+    ${populated.map((group) => `
+      <div class="intelligence-field field-${group.key}">
+        <span>${escapeHtml(group.label)}</span>
+        <div>${group.values.map((value) => `<b>${escapeHtml(value)}</b>`).join("")}</div>
+      </div>`).join("")}
+  </div>`;
+}
+
+function renderBusinessInsight(item, compact) {
+  const relevance = item.acro_relevance || {
+    level: "low",
+    score: 0,
+    label: "待分析",
+    explanation: "暂无结构化业务解释。",
+  };
+  const action = item.recommended_action || {
+    label: "归档观察",
+    owner: "系统",
+    priority: "low",
+    text: "暂不发起业务动作。",
+  };
+  return `<div class="business-insight relevance-${escapeAttr(relevance.level || "low")}${compact ? " is-compact" : ""}">
+    <div class="business-insight-copy">
+      <div class="business-insight-title">
+        <span>ACRO ${escapeHtml(relevance.label || "待分析")}</span>
+        <strong>${Number(relevance.score) || 0}</strong>
+      </div>
+      <p>${escapeHtml(relevance.explanation || "暂无结构化业务解释。")}</p>
+    </div>
+    <div class="recommended-action priority-${escapeAttr(action.priority || "low")}">
+      <span>建议动作</span>
+      <div><strong>${escapeHtml(action.label || "归档观察")}</strong><small>${escapeHtml(action.owner || "待确认")}</small></div>
+      <p>${escapeHtml(action.text || "暂不发起业务动作。")}</p>
+    </div>
+  </div>`;
+}
+
 function renderSignalCards(container, items, compact) {
   if (!container) return;
   container.innerHTML = "";
@@ -2541,6 +2621,8 @@ function renderSignalCards(container, items, compact) {
         <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
       <p class="summary">${escapeHtml(item.ai_summary || item.summary || "暂无摘要，建议回原文核对。")}</p>
+      ${renderBusinessInsight(item, compact)}
+      ${compact ? "" : renderIntelligenceFields(item)}
       ${compact ? "" : `<ul class="reason-list">
         ${item.reasons.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
       </ul>
@@ -2873,7 +2955,7 @@ function exportCsv() {
     return;
   }
 
-  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "理由", "摘要", "URL"];
+  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "靶点", "疗法技术", "产品需求", "研发阶段", "业务动作", "活动信号", "ACRO相关性", "相关性解释", "建议动作", "负责人", "理由", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
     rows.push(
@@ -2886,6 +2968,16 @@ function exportCsv() {
         item.score,
         csvCell(labelTier(item.tier)),
         csvCell(labelCategory(item.category)),
+        csvCell((item.intelligence?.targets || []).join("; ")),
+        csvCell((item.intelligence?.modalities || []).join("; ")),
+        csvCell((item.intelligence?.product_needs || []).join("; ")),
+        csvCell((item.intelligence?.development_stages || []).join("; ")),
+        csvCell((item.intelligence?.business_actions || []).join("; ")),
+        csvCell((item.intelligence?.event_signals || []).join("; ")),
+        csvCell(item.acro_relevance?.label || ""),
+        csvCell(item.acro_relevance?.explanation || ""),
+        csvCell(item.recommended_action?.label || ""),
+        csvCell(item.recommended_action?.owner || ""),
         csvCell(item.reasons.slice(0, 3).join("; ")),
         csvCell(item.ai_summary || item.summary || ""),
         item.url,
@@ -2916,6 +3008,9 @@ function getFilteredItems() {
   return state.payload.items
     .filter((item) => Math.max(0, Math.floor(Number(item.age_days) || 0)) < state.timeRange)
     .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter(
+      (item) => state.relevance === "all" || (item.acro_relevance?.level || "low") === state.relevance,
+    )
     .filter((item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType)
     .filter(
       (item) =>
@@ -2927,7 +3022,8 @@ function getFilteredItems() {
     .filter((item) => state.category === "all" || item.category === state.category)
     .filter((item) => {
       if (!query) return true;
-      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")}`.toLowerCase();
+      const intelligenceText = Object.values(item.intelligence || {}).flat().join(" ");
+      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")} ${intelligenceText} ${item.acro_relevance?.explanation || ""} ${item.recommended_action?.label || ""} ${item.recommended_action?.text || ""}`.toLowerCase();
       return haystack.includes(query);
     })
     .sort((a, b) => b.score - a.score);
@@ -2992,6 +3088,11 @@ els.exportCsvButton.addEventListener("click", exportCsv);
 
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;
+  renderOverviewScope();
+});
+
+els.relevanceFilter.addEventListener("change", (event) => {
+  state.relevance = event.target.value;
   renderOverviewScope();
 });
 
