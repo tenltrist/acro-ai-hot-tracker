@@ -18,9 +18,23 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=DEFAULT_CANDIDATES)
     parser.add_argument("--days", type=int, default=90)
+    parser.add_argument(
+        "--only",
+        action="append",
+        default=[],
+        help="Probe only source IDs containing this text; may be repeated.",
+    )
     args = parser.parse_args()
 
     candidate_sources = tracker.load_json(args.config)["sources"]
+    if args.only:
+        candidate_sources = [
+            source
+            for source in candidate_sources
+            if any(term.lower() in source["id"].lower() for term in args.only)
+        ]
+    if not candidate_sources:
+        parser.error("no candidate sources matched --only")
     company_config = tracker.load_json(tracker.CONFIG_DIR / "companies.json")
     company_lookup = {company["id"]: company for company in company_config["companies"]}
     profiles = {

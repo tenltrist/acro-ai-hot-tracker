@@ -686,6 +686,20 @@
       "max_items": 10
     },
     {
+      "id": "amed_life_science_index",
+      "label": "AMED - Japan life science funding and policy indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aamed.go.jp%20%28%E5%89%B5%E8%96%AC%20OR%20%E3%83%90%E3%82%A4%E3%82%AA%20OR%20%E5%86%8D%E7%94%9F%E5%8C%BB%E7%99%82%20OR%20%E9%81%BA%E4%BC%9D%E5%AD%90%E6%B2%BB%E7%99%82%20OR%20%E6%8A%97%E4%BD%93%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本研发资助与政策",
+      "trust": "regulator",
+      "signal_type": "funding",
+      "category_hint": "research",
+      "max_age_days": 180,
+      "max_items": 30,
+      "health_note": "AMED 公开索引监测；本轮 22 条、近 90 天 13 条，主要是采纳项目、公开招募、研发计划和产业化政策。作为研发资助信号单独展示，不用它扩大默认新闻日报。"
+    },
+    {
       "id": "linkj_life_science_events",
       "label": "LINK-J - life science ecosystem events",
       "type": "html_links",

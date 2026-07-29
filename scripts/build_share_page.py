@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 
@@ -39,9 +40,24 @@ def main() -> int:
     embedded = f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\nwindow.AIHOT_EMBEDDED_HISTORY = {history_payload};\n"
     EMBEDDED_DATA_PATH.write_text(embedded, encoding="utf-8")
 
-    html = html.replace('    <link rel="stylesheet" href="./styles.css?v=20260728d" />', f"    <style>\n{css}\n    </style>")
-    html = html.replace('    <script src="./embedded-data.js?v=20260728d"></script>', f"    <script>\n{embedded}    </script>")
-    html = html.replace('    <script src="./app.js?v=20260728d"></script>', f"    <script>\n{js}\n    </script>")
+    html = re.sub(
+        r'    <link rel="stylesheet" href="\./styles\.css(?:\?v=[^"]+)?" />',
+        f"    <style>\n{css}\n    </style>",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'    <script src="\./embedded-data\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{embedded}    </script>",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'    <script src="\./app\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{js}\n    </script>",
+        html,
+        count=1,
+    )
 
     SHARE_DIR.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(html, encoding="utf-8")

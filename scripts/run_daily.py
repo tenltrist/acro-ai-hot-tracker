@@ -11,6 +11,7 @@ import html
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -171,10 +172,19 @@ def save_json(path: Path, data: Any) -> None:
 
 
 def fetch_text(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        charset = resp.headers.get_content_charset() or "utf-8"
-        return resp.read().decode(charset, errors="replace")
+    for attempt in range(3):
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                charset = resp.headers.get_content_charset() or "utf-8"
+                return resp.read().decode(charset, errors="replace")
+        except urllib.error.HTTPError:
+            raise
+        except (urllib.error.URLError, TimeoutError, ConnectionResetError, OSError):
+            if attempt == 2:
+                raise
+            time.sleep(attempt + 1)
+    raise RuntimeError(f"unreachable retry state for {url}")
 
 
 def generate_ai_summary(item: Candidate, company_name: str) -> str:
@@ -1054,7 +1064,7 @@ def score_candidate(
     item.score = max(0, score)
     item.reasons = reasons or ["未命中强规则，默认归档"]
     item.tier = classify_tier(item.score, item.source_trust, has_action)
-    if item.signal_type in {"video", "research"}:
+    if item.signal_type in {"video", "research", "funding"}:
         item.tier = "archive"
         item.reasons.append("专题信号：不进入默认新闻日报")
     return item

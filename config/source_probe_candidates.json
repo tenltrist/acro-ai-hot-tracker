@@ -186,6 +186,52 @@
       "trust": "media",
       "max_age_days": 90,
       "max_items": 30
+    },
+    {
+      "id": "prtimes_company_pool_index",
+      "label": "PR Times - monitored company pool indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aprtimes.jp%20%28ACROBiosystems%20OR%20%E3%82%A2%E3%82%AF%E3%83%AD%E3%83%90%E3%82%A4%E3%82%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA%20OR%20%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%20OR%20%E3%83%A1%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%20OR%20%E3%82%B6%E3%83%AB%E3%83%88%E3%83%AA%E3%82%A6%E3%82%B9%20OR%20%E3%83%9F%E3%83%AB%E3%83%86%E3%83%8B%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AA%E3%83%86%E3%82%AF%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本企业发布平台",
+      "trust": "wire",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "prtimes_cell_therapy_topic_html",
+      "label": "PR Times - cell therapy keyword page",
+      "type": "html_links",
+      "url": "https://prtimes.jp/topics/keywords/%E7%B4%B0%E8%83%9E%E6%B2%BB%E7%99%82",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本企业发布平台",
+      "trust": "wire",
+      "include_url_terms": [
+        "/main/html/rd/p/"
+      ],
+      "max_items": 30
+    },
+    {
+      "id": "amed_program_awards_index",
+      "label": "AMED - awards and programs indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aamed.go.jp%20%28%E6%8E%A1%E6%8A%9E%20OR%20%E5%85%AC%E5%8B%9F%20OR%20%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C%20OR%20%E7%94%A3%E6%A5%AD%E5%8C%96%29%20%28%E5%89%B5%E8%96%AC%20OR%20%E3%83%90%E3%82%A4%E3%82%AA%E5%8C%BB%E8%96%AC%20OR%20%E5%86%8D%E7%94%9F%E5%8C%BB%E7%99%82%20OR%20%E7%B4%B0%E8%83%9E%E6%B2%BB%E7%99%82%20OR%20%E9%81%BA%E4%BC%9D%E5%AD%90%E6%B2%BB%E7%99%82%20OR%20%E6%8A%97%E4%BD%93%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本研发资助机构",
+      "trust": "regulator",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "amed_company_pool_index",
+      "label": "AMED - monitored company pool indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aamed.go.jp%20%28ACROBiosystems%20OR%20%E3%82%A2%E3%82%AF%E3%83%AD%E3%83%90%E3%82%A4%E3%82%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA%20OR%20%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%20OR%20%E3%83%A1%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%20OR%20%E3%82%B6%E3%83%AB%E3%83%88%E3%83%AA%E3%82%A6%E3%82%B9%20OR%20%E3%83%9F%E3%83%AB%E3%83%86%E3%83%8B%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AA%E3%83%86%E3%82%AF%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "regional_life_science_media",
+      "scope_label": "日本研发资助机构",
+      "trust": "regulator",
+      "max_age_days": 365,
+      "max_items": 30
     }
   ]
 }

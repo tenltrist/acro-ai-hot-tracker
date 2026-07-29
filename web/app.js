@@ -351,6 +351,17 @@ const sourceInventory = [
         url: "prnewswire.com",
       },
       {
+        name: "PR Times",
+        mediaGroup: "press_release_distribution",
+        companyTag: "公司池 / 日本生命科学",
+        regionTag: "日本",
+        status: "available",
+        trust: "B",
+        method: "公司池索引 / 主题页 HTML",
+        note: "已测试宽主题、公司池和细胞治疗专题页三种入口。宽主题 30 条噪音偏高；公司池 26 条中只有 2 条命中已监测公司，且近 90 天增量只有 1 条；细胞治疗专题页内容较集中，但缺少稳定日期。现阶段保留为可用待接，不直接推送。",
+        url: "prtimes.jp",
+      },
+      {
         name: "Business Wire",
         mediaGroup: "press_release_distribution",
         companyTag: "公司池",
@@ -567,6 +578,17 @@ const sourceInventory = [
         url: "nk.jiho.jp",
       },
       {
+        name: "薬事日報",
+        mediaGroup: "regional_media",
+        companyTag: "制药 / 新产品 / 政策",
+        regionTag: "日本",
+        status: "available",
+        trust: "B",
+        method: "官方 RSS",
+        note: "官方 RSS 稳定，本轮 24 条全部为近 90 天内内容；同时混合处方药、OTC、美容与新产品汇总，暂不进默认日报，待增加栏目白名单。",
+        url: "yakuji.co.jp/feed",
+      },
+      {
         name: "Science Portal",
         mediaGroup: "regional_media",
         companyTag: "科研趋势",
@@ -574,7 +596,7 @@ const sourceInventory = [
         status: "available",
         trust: "B",
         method: "JST 官方 RSS",
-        note: "官方 RSS 稳定，但内容覆盖全科学领域，本轮生命科学业务密度偏低；待增加栏目或关键词过滤后再启用。",
+        note: "本轮定向索引获得 7 条，近 90 天 4 条，包含 iPS 再生医疗批准和基因编辑活动；业务密度仍偏低，保留为科研趋势观察源。",
         url: "scienceportal.jst.go.jp",
       },
       {
@@ -597,7 +619,7 @@ const sourceInventory = [
         status: "available",
         trust: "C",
         method: "site 索引 / 直连受限",
-        note: "官网与 Feed 自动请求返回 403；索引能发现类器官、外泌体和会议内容，但公司命中噪音较高，暂不启用。",
+        note: "官网与 Feed 自动请求返回 403；定向索引本轮获得 11 条，可发现 AAV 基因治疗、类器官和会议内容，但 0 条命中公司池，暂不启用。",
         url: "bioon.com",
       },
       {
@@ -619,7 +641,7 @@ const sourceInventory = [
         status: "available",
         trust: "C",
         method: "site 索引 RSS",
-        note: "能命中赛默飞交易和基因测序上游内容，但同时出现人物、职场等弱相关结果，需建立栏目白名单。",
+        note: "本轮获得 29 条，主要是创新药 ETF、股价和资金流内容，0 条达到日报门槛；在没有医药栏目白名单前不启用。",
         url: "jiemian.com",
       },
       {
@@ -630,7 +652,7 @@ const sourceInventory = [
         status: "available",
         trust: "C",
         method: "site 索引 RSS",
-        note: "能发现公司档案和融资周报，但公司资料页与旧内容比例较高，适合作为低权重补漏。",
+        note: "本轮获得 30 条，能发现初创企业融资和临床申报，但混入基金行情和公司资料页，0 条达到日报门槛；仅作低权重候选。",
         url: "36kr.com",
       },
       {
@@ -790,6 +812,15 @@ const sourceInventory = [
         method: "E-utilities API",
         note: "单独进入论文信号；不进默认新闻日报。",
         sourceIds: ["acro_pubmed_research"],
+      },
+      {
+        name: "AMED 研发资助与政策",
+        status: "active",
+        trust: "A",
+        method: "官方站定向索引 RSS",
+        note: "测试获得 22 条，近 90 天 13 条，内容主要是采纳项目、公开招募、研发计划和产业化政策。已独立归类为“研发资助 / 政策”，默认不用来扩大新闻日报。",
+        sourceIds: ["amed_life_science_index"],
+        url: "amed.go.jp",
       },
       { name: "Crossref 科研元数据", status: "planned", trust: "B", method: "REST API", note: "作为 PubMed 之外的免费补充，需配置真实联系邮箱并做本地缓存。" },
       { name: "ClinicalTrials.gov", status: "available", trust: "A", method: "公开 API", note: "接口已验证可用；ACRO 命中 0，Thermo 多为试验中使用设备，相关性不足，暂不运行。" },
@@ -1767,6 +1798,7 @@ function labelSignalType(type) {
     video: "视频",
     filing: "公司公告",
     regulatory: "监管风险",
+    funding: "研发资助 / 政策",
     research: "论文研究",
   }[type] || type;
 }
