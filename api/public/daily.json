@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-29T17:16:03",
+  "generated_at": "2026-07-29T17:42:29",
   "window_days": 90,
   "summary": {
-    "new_candidates": 8,
+    "new_candidates": 11,
     "immediate": 0,
-    "daily": 116,
-    "archive": 1174,
+    "daily": 119,
+    "archive": 1350,
     "errors": 0,
     "companies": 12,
-    "sources": 88
+    "sources": 105
   },
   "selected": [
     {
@@ -178,7 +178,7 @@
       "tier": "daily",
       "category": "partnership",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Merck KGaA, Merck KGaA, Darmstadt, Germany",
         "新闻稿分发平台",
@@ -2703,7 +2703,7 @@
       "age_days": 127
     },
     {
-      "id": "41d9ac9db902bc82",
+      "id": "6ba1ff176026fc75",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -2721,12 +2721,12 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -2773,7 +2773,7 @@
       "age_days": 83
     },
     {
-      "id": "e8fdeaf288fab76e",
+      "id": "1858593ea71dec24",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -2791,13 +2791,13 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69b69b6b5a4c818710bd5429dd2709&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a69bcbcdbac4ad9ae6b8e05e716171d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -7716,6 +7716,203 @@
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "age_days": 175
+    },
+    {
+      "id": "37834b02a6d3560f",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "sartorius_official_resources_index",
+      "source_label": "Sartorius official events and knowledge - indexed RSS",
+      "source_ids": [
+        "sartorius_official_resources_index"
+      ],
+      "source_labels": [
+        "Sartorius official events and knowledge - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXVpaUg2WTRFTU50TS1tZGdOS2VhcXlRYjRRZkhXVGZlVW52MHBWMW82M01MLTJPVWJNNWlfckFPQWJwbjNSS2hBT2hNWHBJYUJ3cTJ2Zkg4REhSN1FBbDRfV0ZQNGQ3Vm5jc2kwRzFIWHRoSHotSS1nYjUwaGxDZmtVdmQzV3FJMmNZTm9UZUI0c0xRUlN1VEJrN2lMd24zS3FaRTFsRGhQZXg4bnAwQS15cjh0QQ?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Driving Sustainable Biomanufacturing with Single-Use Technologies - Sartorius",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXVpaUg2WTRFTU50TS1tZGdOS2VhcXlRYjRRZkhXVGZlVW52MHBWMW82M01MLTJPVWJNNWlfckFPQWJwbjNSS2hBT2hNWHBJYUJ3cTJ2Zkg4REhSN1FBbDRfV0ZQNGQ3Vm5jc2kwRzFIWHRoSHotSS1nYjUwaGxDZmtVdmQzV3FJMmNZTm9UZUI0c0xRUlN1VEJrN2lMd24zS3FaRTFsRGhQZXg4bnAwQS15cjh0QQ?oc=5",
+      "published": "2026-03-03",
+      "summary": "Driving Sustainable Biomanufacturing with Single-Use Technologies Sartorius",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Sartorius",
+        "公司自有来源",
+        "战略主题命中: single-use",
+        "业务动作命中: manufacturing",
+        "超过时效窗口 148天，因业务动作匹配保留"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [
+          "生物工艺"
+        ],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 40,
+        "label": "中相关",
+        "explanation": "竞品正在推进生物工艺相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "可映射到 ACRO 产品或服务需求"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 148
+    },
+    {
+      "id": "18eb63f029cccd93",
+      "company_id": "rd_systems",
+      "company": "R&D Systems / Bio-Techne",
+      "matched_company_ids": [
+        "rd_systems"
+      ],
+      "matched_companies": [
+        "R&D Systems / Bio-Techne"
+      ],
+      "source_id": "biotechne_official_resources_index",
+      "source_label": "Bio-Techne official technical resources and videos - indexed RSS",
+      "source_ids": [
+        "biotechne_official_resources_index"
+      ],
+      "source_labels": [
+        "Bio-Techne official technical resources and videos - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Webinar: RNAscope Spatial Profiling in Prostate Cancer - Bio-Techne",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5",
+      "published": "2026-06-17",
+      "summary": "Webinar: RNAscope Spatial Profiling in Prostate Cancer Bio-Techne",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "event",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Bio-Techne",
+        "公司自有来源",
+        "高价值分类加成 +10: event"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": [
+          "Webinar / 线上会议"
+        ]
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 24,
+        "label": "中相关",
+        "explanation": "竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "可转化为活动运营线索"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 42
+    },
+    {
+      "id": "8cd12cc00742c32f",
+      "company_id": "sino_biological",
+      "company": "Sino Biological / 义翘神州",
+      "matched_company_ids": [
+        "sino_biological"
+      ],
+      "matched_companies": [
+        "Sino Biological / 义翘神州"
+      ],
+      "source_id": "sino_biological_resources_index",
+      "source_label": "Sino Biological official products, resources and videos - indexed RSS",
+      "source_ids": [
+        "sino_biological_resources_index"
+      ],
+      "source_labels": [
+        "Sino Biological official products, resources and videos - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE14M0VRRVBvdnIwTjl4TGluUkZwNm9ibG80TElrNmhTYnNkQmV0WFNqeHFuZDhrRnprWFZSTkpKUjlEZlVzYUgyT1lkZTF6RnlyV3RCQllfTENhbENSb2txbDROVHBuV19VTUJqMVUyVk1tbU0?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Quick Start Protocol for Cell-Free Protein Expression - Sino Biological",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE14M0VRRVBvdnIwTjl4TGluUkZwNm9ibG80TElrNmhTYnNkQmV0WFNqeHFuZDhrRnprWFZSTkpKUjlEZlVzYUgyT1lkZTF6RnlyV3RCQllfTENhbENSb2txbDROVHBuV19VTUJqMVUyVk1tbU0?oc=5",
+      "published": "2026-07-05",
+      "summary": "Quick Start Protocol for Cell-Free Protein Expression Sino Biological",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: Sino Biological",
+        "公司自有来源",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 24
     }
   ]
 }
