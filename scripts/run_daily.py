@@ -1069,6 +1069,12 @@ def dedupe(candidates: list[Candidate]) -> list[Candidate]:
             duplicate_index = title_index.get(title_key)
         if duplicate_index is not None:
             existing = unique[duplicate_index]
+            if (
+                item.company_id
+                and item.company_id != existing.company_id
+                and item.company_id not in existing.matched_company_ids
+            ):
+                existing.matched_company_ids.append(item.company_id)
             for source_id in item.source_ids:
                 if source_id not in existing.source_ids:
                     existing.source_ids.append(source_id)
@@ -1121,14 +1127,16 @@ def match_candidate_companies(
     item: Candidate,
     company_lookup: dict[str, dict[str, Any]],
 ) -> Candidate:
-    if item.company_id in company_lookup:
-        item.matched_company_ids = [item.company_id]
-        return item
-
     blob = f"{item.title} {item.summary}".lower()
-    matches: list[str] = []
+    matches = [
+        company_id
+        for company_id in [item.company_id, *item.matched_company_ids]
+        if company_id in company_lookup
+    ]
     for company_id, company in company_lookup.items():
-        if any(alias.lower() in blob for alias in company.get("aliases", [])):
+        if company_id not in matches and any(
+            term_matches(blob, alias) for alias in company.get("aliases", [])
+        ):
             matches.append(company_id)
     item.matched_company_ids = matches
     item.company_id = matches[0] if matches else ""

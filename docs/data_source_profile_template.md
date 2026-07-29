@@ -339,6 +339,7 @@ notes:
 | 行业生态与活动平台 | LINK-J | 会员企业活动、技术议题、Webinar、项目和开放创新信号 | 公开活动列表 `html_links` | `active` |
 | 行业生态与活动平台 | 近畿生物产业振兴会议 | 关西研讨会、产业交流、BioJapan 支援和区域项目 | 官方直接 RSS | `active` |
 | 行业生态与活动平台 | 湘南 iPark | 园区企业、活动公告、开放创新、合作及新闻 | News 列表 `html_links` | `active`；旧 RSS 和旧海报活动页不作为主入口 |
+| 行业生态与活动平台 | FIRM 再生医疗创新论坛 | CGT 会议、产学官活动、CDMO、标准、政策与亚太合作 | 官方 WordPress RSS，按活动 / 产业更新分视图 | `active` |
 | 展会与专业会议 | 重点展会官网和参展商页面 | 判断参展、赞助、演讲和主题方向 | `manual_review`、白名单页面差分 | `planned` |
 | 合作与商业网络 | 经销商 / 代理商新闻页 | 区域市场动作 | 白名单 RSS、`html_link_diff` | `planned` |
 | 合作与商业网络 | 合作伙伴新闻页 | 补齐合作另一方表述 | `indexed_rss`、`html_link_diff` | `planned` |
@@ -491,6 +492,8 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | `linkj_life_science_events` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 全国 | `active` | `discovery` | `html_link_diff` | B | 读取 LINK-J 主办、共办和特别会员活动，提取技术主题与公司信号 |
 | `kinkibio_official_feed` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 关西 | `active` | `discovery` | `direct_rss` | B | 官方 RSS 直接提供研讨会、产业交流和 BioJapan 支援信息 |
 | `shonan_ipark_news_events` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 湘南 | `active` | `discovery` | `html_link_diff` | B | 读取 News 列表；官方 RSS 仅有旧测试内容，旧活动页不作为主入口 |
+| `firm_regenerative_events_rss` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 亚太 | `active` | `discovery` | `direct_rss` | A | FIRM 官方 RSS 的活动视图，只保留举办、会议、Webinar 和产学官论坛 |
+| `firm_industry_updates_rss` | 市场活动与渠道 | 行业生态与活动平台 | 日本 / 亚太 | `active` | `discovery` | `direct_rss` | A | 同一官方 RSS 的产业视图，保留 CDMO、标准、调研、政策与 CGT 产业更新 |
 | `event_registration_platforms` | 市场活动与渠道 | 报名承载工具 | 多地区 | `covered` | `verification` | `manual_review` | C | 保存 Zoom 等报名 URL、会议 ID 与渠道参数，不做全站抓取 |
 | `acro_distributors` | 市场活动与渠道 | 公司新闻与公告 | 多地区 | `planned` | `discovery` | `html_link_diff` | C | 观察重点经销商和代理商的区域市场动作 |
 | `acro_partner_news` | 市场活动与渠道 | 公司新闻与公告 | 全球 | `planned` | `verification` | `indexed_rss` | B | 补齐合作另一方表述，并与 ACRO 事件归并 |

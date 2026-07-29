@@ -1,30 +1,29 @@
 {
-  "generated_at": "2026-07-29T15:44:06",
+  "generated_at": "2026-07-29T16:07:22",
   "category_mix": {
-    "market": 40,
-    "partnership": 51,
-    "product": 150,
-    "regulatory": 94,
-    "company": 427,
+    "market": 42,
+    "partnership": 56,
+    "product": 162,
+    "regulatory": 98,
+    "company": 457,
     "video": 80,
-    "finance": 39,
-    "event": 126,
-    "award": 2,
+    "finance": 42,
+    "event": 131,
+    "award": 4,
     "research": 54
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 2,
     "Google News RSS - ACROBiosystems": 34,
-    "Google News RSS - ACROBiosystems PR Newswire": 11,
+    "Google News RSS - ACROBiosystems PR Newswire": 12,
     "ACRO official Insights - indexed RSS": 13,
-    "ACRO Japan official pages - indexed RSS": 4,
+    "ACRO Japan official pages - indexed RSS": 5,
     "ACRO official YouTube channel": 20,
     "Google News RSS - ACROBiosystems Japan": 1,
     "Business Wire - company pool indexed RSS": 30,
     "Google News RSS - Thermo Fisher": 95,
     "Thermo Fisher official press releases RSS": 9,
     "GlobeNewswire - Biotechnology official RSS": 18,
-    "BioProcess Online - bioprocess topic indexed RSS": 8,
     "BioSpace - All News official RSS": 20,
     "Fierce Biotech - official RSS": 24,
     "Fierce Pharma - official RSS": 24,
@@ -32,7 +31,8 @@
     "Technology Networks - life science topic indexed RSS": 21,
     "Labiotech - official European biotech RSS": 12,
     "Pharmaceutical Technology - manufacturing topic indexed RSS": 8,
-    "SelectScience - life science product indexed RSS": 12,
+    "BioProcess Online - bioprocess topic indexed RSS": 8,
+    "SelectScience - life science product indexed RSS": 11,
     "BioSpectrum Asia - APAC biotech indexed RSS": 22,
     "Korea Biomedical Review - indexed RSS": 30,
     "BioSpectrum India - indexed RSS": 10,
@@ -43,6 +43,7 @@
     "Pharmcube / ByDrug - company pool indexed RSS": 18,
     "Merck KGaA Life Science official news - indexed RSS": 8,
     "Google News RSS - Merck KGaA Life Science": 30,
+    "Google News RSS - R&D Systems / Bio-Techne": 30,
     "Google News RSS - Merck Life Science Japan": 2,
     "Sartorius official Newsroom - indexed RSS": 8,
     "Google News RSS - Sartorius": 10,
@@ -51,7 +52,7 @@
     "Thermo Fisher Biotech at Scale RSS": 10,
     "Thermo Fisher official Events and Webinars - indexed RSS": 3,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
-    "Bing News RSS - Thermo Fisher backup": 7,
+    "Bing News RSS - Thermo Fisher backup": 8,
     "Google News RSS - Thermo Fisher Japan": 47,
     "PR Times - monitored company pool indexed RSS": 26,
     "Bing News RSS - ACROBiosystems backup": 2,
@@ -77,13 +78,21 @@
     "BioJapan - public event pages": 2,
     "PMDA - life science and regenerative medicine updates": 11,
     "Crossref - Miltenyi Biotec affiliation records": 20,
-    "ClinicalTrials.gov - monitored company sponsors and collaborators": 24
+    "ClinicalTrials.gov - monitored company sponsors and collaborators": 24,
+    "Google News RSS - Abcam": 4,
+    "Google News RSS - Promega": 6,
+    "Google News RSS - BD Biosciences": 1,
+    "Google News RSS - STEMCELL Technologies": 2,
+    "Google News RSS - Sino Biological": 8,
+    "Google News RSS - Takara Bio": 13,
+    "FIRM - regenerative medicine events official RSS": 4,
+    "FIRM - regenerative medicine industry updates official RSS": 1
   },
   "signal_type_mix": {
-    "news": 789,
+    "news": 848,
     "video": 80,
     "funding": 23,
-    "event": 105,
+    "event": 109,
     "research": 31,
     "regulatory": 11,
     "clinical_trial": 24
@@ -249,6 +258,218 @@
         "REAfinity",
         "Tyto",
         "flow cytometry",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "abcam",
+      "display_name": "Abcam",
+      "business_role": "competitor",
+      "role_label": "竞品 / 抗体与蛋白试剂",
+      "role_reason": "抗体、重组蛋白、ELISA 与细胞分析产品和 ACRO 的研究工具与生物制药客户高度重叠。",
+      "monitoring_focus": "抗体、重组蛋白、检测试剂盒、细胞分析与 Danaher 整合",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "research-reagents"
+      ],
+      "strategic_topics": [
+        "antibody",
+        "recombinant protein",
+        "ELISA",
+        "assay kit",
+        "biomarker",
+        "cell analysis",
+        "immuno-oncology",
+        "Danaher",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "promega",
+      "display_name": "Promega",
+      "business_role": "competitor",
+      "role_label": "竞品 / 功能分析与分子工具",
+      "role_reason": "生物发光、药效分析、细胞健康、基因组学与检测试剂覆盖相同研发客户和应用场景。",
+      "monitoring_focus": "药效分析、生物发光、细胞分析、基因组学与区域活动",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "research-reagents"
+      ],
+      "strategic_topics": [
+        "bioassay",
+        "luciferase",
+        "cell viability",
+        "potency assay",
+        "genomics",
+        "proteomics",
+        "drug discovery",
+        "assay kit",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "rd_systems",
+      "display_name": "R&D Systems / Bio-Techne",
+      "business_role": "competitor",
+      "role_label": "竞品 / 重组蛋白与抗体",
+      "role_reason": "R&D Systems 是 Bio-Techne 旗下品牌，在重组蛋白、细胞因子、抗体和检测试剂盒上与 ACRO 直接竞争。",
+      "monitoring_focus": "重组蛋白、细胞因子、抗体、ELISA、细胞与基因治疗工具",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "research-reagents"
+      ],
+      "strategic_topics": [
+        "recombinant protein",
+        "cytokine",
+        "growth factor",
+        "antibody",
+        "ELISA",
+        "assay kit",
+        "cell and gene therapy",
+        "GMP",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "bd_biosciences",
+      "display_name": "BD Biosciences",
+      "business_role": "competitor",
+      "role_label": "竞品 / 流式与细胞分析",
+      "role_reason": "BD Biosciences 的流式细胞仪、抗体、细胞分选和单细胞分析覆盖 ACRO 客户的细胞分析与 CGT 场景。",
+      "monitoring_focus": "流式细胞、细胞分选、研究抗体、单细胞与 CGT 应用",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "cell-analysis"
+      ],
+      "strategic_topics": [
+        "flow cytometry",
+        "cell sorting",
+        "antibody",
+        "single cell",
+        "cell analysis",
+        "CAR-T",
+        "cell therapy",
+        "diagnostics",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "medchemexpress",
+      "display_name": "MedChemExpress / MCE",
+      "business_role": "competitor",
+      "role_label": "竞品 / 小分子与研究试剂",
+      "role_reason": "MCE 通过小分子、重组蛋白、抗体、试剂盒与药物研发服务竞争同一批科研和药企客户。",
+      "monitoring_focus": "小分子、重组蛋白、抗体、药物筛选、产品上新与区域推广",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "research-reagents"
+      ],
+      "strategic_topics": [
+        "small molecule",
+        "inhibitor",
+        "drug discovery",
+        "screening",
+        "recombinant protein",
+        "antibody",
+        "assay kit",
+        "ADC",
+        "PROTAC",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "stemcell_technologies",
+      "display_name": "STEMCELL Technologies",
+      "business_role": "competitor",
+      "role_label": "竞品 / 干细胞与细胞培养",
+      "role_reason": "干细胞、免疫细胞、培养基、细胞分选与类器官方案和 ACRO 的细胞治疗及类器官产品场景重叠。",
+      "monitoring_focus": "干细胞、培养基、细胞分选、类器官、免疫学与 CGT",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "cell-culture"
+      ],
+      "strategic_topics": [
+        "stem cell",
+        "cell culture",
+        "culture media",
+        "cell separation",
+        "organoid",
+        "immune cell",
+        "cell therapy",
+        "iPSC",
+        "GMP",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "sino_biological",
+      "display_name": "Sino Biological / 义翟神州",
+      "business_role": "competitor",
+      "role_label": "竞品 / 蛋白抗体与 CRO",
+      "role_reason": "重组蛋白、抗体、基因、检测试剂盒和 CRO 服务与 ACRO 的核心产品线直接重叠。",
+      "monitoring_focus": "重组蛋白、抗体、细胞因子、CRO 服务、产能与海外扩张",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "research-reagents"
+      ],
+      "strategic_topics": [
+        "recombinant protein",
+        "antibody",
+        "cytokine",
+        "ELISA",
+        "assay kit",
+        "CRO",
+        "GMP",
+        "ADC",
+        "cell and gene therapy",
+        "Japan",
+        "日本"
+      ]
+    },
+    {
+      "id": "takara_bio",
+      "display_name": "Takara Bio / 宝生物",
+      "business_role": "competitor",
+      "role_label": "竞品 / 基因细胞治疗工具",
+      "role_reason": "PCR、NGS、基因工程、细胞与基因治疗研发试剂和 CDMO 能力覆盖 ACRO 的 CGT 客户群。",
+      "monitoring_focus": "PCR/NGS、基因工程、病毒载体、细胞治疗、CDMO 与日本区域动态",
+      "markets": [
+        "global",
+        "japan",
+        "china",
+        "cell-and-gene-therapy"
+      ],
+      "strategic_topics": [
+        "PCR",
+        "NGS",
+        "gene therapy",
+        "cell therapy",
+        "viral vector",
+        "AAV",
+        "lentiviral vector",
+        "CDMO",
+        "GMP",
         "Japan",
         "日本"
       ]

@@ -795,6 +795,25 @@ const sourceInventory = [
       { name: "Google News - Miltenyi Biotec 全球", status: "active", trust: "C", method: "RSS", note: "监测 Miltenyi Biotec、Bioindustry 和 Biomedicine 的公开新闻，重点是细胞分选、CGT 与 CDMO。", sourceIds: ["google_news_miltenyi"] },
       { name: "Google News - Miltenyi Biotec 日本", status: "active", trust: "C", method: "日文 RSS", note: "使用日文法人名与日本、Seminar、产品限定做区域补漏。", sourceIds: ["google_news_miltenyi_jp"] },
       {
+        name: "Google News - 新增竞品 / 对标池",
+        companyTag: "Abcam / Promega / R&D / BD / MCE / STEMCELL / Sino / Takara",
+        regionTag: "全球 + 日本",
+        status: "active",
+        trust: "C",
+        method: "公司全称 + 业务主题 RSS",
+        note: "8 家公司已逐源运行；每个入口都要同时命中公司全称，避免 BD、MCE 等短缩写扩大噪音。MCE 官网有 Cloudflare 阻断，当前保留安静的公开索引入口。",
+        sourceIds: [
+          "google_news_abcam",
+          "google_news_promega",
+          "google_news_rd_systems",
+          "google_news_bd_biosciences",
+          "google_news_medchemexpress",
+          "google_news_stemcell_technologies",
+          "google_news_sino_biological",
+          "google_news_takara_bio",
+        ],
+      },
+      {
         name: "Bing News RSS — ACRO / Thermo",
         status: "active",
         trust: "C",
@@ -1009,6 +1028,18 @@ const sourceInventory = [
         note: "覆盖 JBA 研究会、产业 Seminar、Webinar 和会员活动。本轮获得 9 条；列表链接只写 more，因此低频跟随详情页确认标题和日期。",
         sourceIds: ["jba_public_life_science_events"],
         url: "jba.or.jp",
+      },
+      {
+        name: "FIRM 再生医疗创新论坛",
+        marketGroup: "ecosystem_platform",
+        roleTag: "CGT 产业 + 活动发现",
+        regionTag: "日本 / 亚太",
+        status: "active",
+        trust: "A",
+        method: "官方直接 RSS",
+        note: "FIRM 不进入公司池，而是跨公司行业数据源。官方 Feed 分成活动和产业更新两个视图，捕捉 CGT 会议、CDMO、标准、政策和亚太合作信号。",
+        sourceIds: ["firm_regenerative_events_rss", "firm_industry_updates_rss"],
+        url: "firm.or.jp/feed",
       },
       {
         name: "BioJapan / 再生医疗JAPAN",
@@ -1623,7 +1654,7 @@ const sourceInventory = [
         status: "paid",
         trust: "B",
         method: "SaaS",
-        note: "适合大规模品牌与舆情监测；当前 5 家公司 MVP 规模下性价比不足。",
+        note: "适合大规模品牌与舆情监测；当前 13 家公司 MVP 规模仍优先验证免费入口。",
       },
       {
         name: "Patsnap / Derwent Innovation",
@@ -1662,6 +1693,7 @@ const pageMeta = {
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 样本档案"],
+  "structured-rules": ["Intelligence Operations", "六组结构化情报规则"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
   questions: ["Open Questions", "待确认事项"],
   "source-health": ["Source Operations", "数据源健康与产出质量"],
@@ -1673,6 +1705,14 @@ const companyIdToDisplayName = {
   merck_life_science: "Merck KGaA Life Science / MilliporeSigma",
   sartorius: "Sartorius / Sartorius Stedim Biotech",
   miltenyi_biotec: "Miltenyi Biotec / 美天旎",
+  abcam: "Abcam",
+  promega: "Promega",
+  rd_systems: "R&D Systems / Bio-Techne",
+  bd_biosciences: "BD Biosciences",
+  medchemexpress: "MedChemExpress / MCE",
+  stemcell_technologies: "STEMCELL Technologies",
+  sino_biological: "Sino Biological / 义翟神州",
+  takara_bio: "Takara Bio / 宝生物",
 };
 
 const fallbackPayload = {
@@ -1684,7 +1724,7 @@ const fallbackPayload = {
     daily: 5,
     archive: 38,
     errors: 0,
-    companies: 5,
+    companies: 13,
     sources: 7,
   },
   category_mix: {
@@ -1786,6 +1826,13 @@ const els = {
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
   companyRoleSummary: document.querySelector("#companyRoleSummary"),
   companyPoolGroups: document.querySelector("#companyPoolGroups"),
+  companyDockCount: document.querySelector("#companyDockCount"),
+  companyDockList: document.querySelector("#companyDockList"),
+  structuredRuleVersion: document.querySelector("#structuredRuleVersion"),
+  structuredGroupCount: document.querySelector("#structuredGroupCount"),
+  structuredTermCount: document.querySelector("#structuredTermCount"),
+  structuredHitCount: document.querySelector("#structuredHitCount"),
+  structuredRuleGrid: document.querySelector("#structuredRuleGrid"),
   pagePanels: document.querySelectorAll("[data-page]"),
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
@@ -1807,7 +1854,9 @@ async function fetchJson(path) {
 
 function renderLoadedData() {
   hydrateFilters();
+  renderCompanyDock();
   renderCompanyPools();
+  renderStructuredRules();
   render();
   renderSourceHealth();
   renderSourceHealthPage();
@@ -1823,6 +1872,106 @@ function hydrateCompanyMetadata(payload) {
       ...company,
     })),
   };
+}
+
+const companyRoleDockMeta = {
+  self: { label: "本公司", empty: "尚未设置本公司" },
+  competitor: { label: "竞品 / 对标池", empty: "尚未设置竞品" },
+  customer: { label: "客户池", empty: "客户名单待导入" },
+};
+
+function compactCompanyName(company) {
+  if (company.id === "acro") return "ACRO";
+  return (company.display_name || company.id).split(" / ")[0];
+}
+
+function renderCompanyDock() {
+  if (!els.companyDockList || !els.companyDockCount) return;
+  const companies = state.payload?.companies || [];
+  els.companyDockCount.textContent = `${companies.length} 家公司已接入`;
+  const allButton = `
+    <button class="company-chip ${state.company === "all" ? "active" : ""}" type="button" data-filter-company="all">
+      <span class="company-chip-main"><i class="company-dot all"></i><strong>全部公司</strong></span>
+      <small>本公司 + 竞品 + 客户联合情报流</small>
+    </button>
+  `;
+  const groups = Object.entries(companyRoleDockMeta).map(([role, meta]) => {
+    const members = companies.filter((company) => company.business_role === role);
+    const rows = members.length
+      ? members.map((company) => `
+          <button class="company-chip ${state.company === company.display_name ? "active" : ""}" type="button" data-filter-company="${escapeHtml(company.id)}">
+            <span class="company-chip-main"><i class="company-dot role-${role}"></i><strong>${escapeHtml(compactCompanyName(company))}</strong></span>
+            <small>${escapeHtml(company.role_label || meta.label)}</small>
+          </button>
+        `).join("")
+      : `<div class="company-dock-empty">${escapeHtml(meta.empty)}</div>`;
+    return `
+      <p class="company-dock-label"><span>${escapeHtml(meta.label)}</span><b>${members.length}</b></p>
+      ${rows}
+    `;
+  }).join("");
+  els.companyDockList.innerHTML = allButton + groups;
+}
+
+const structuredRuleMeta = {
+  targets: {
+    question: "这条信息在谈什么生物靶点？",
+    use: "用于把管线、合作和技术新闻归并到同一靶点趋势。",
+  },
+  modalities: {
+    question: "公司在推进哪种疗法或技术路线？",
+    use: "用于识别 ADC、细胞治疗、基因治疗、类器官等技术方向。",
+  },
+  product_needs: {
+    question: "这个动作可能带来什么 ACRO 产品需求？",
+    use: "将信息映射到重组蛋白、抗体、细胞因子、GMP 原料和功能分析等机会。",
+  },
+  development_stages: {
+    question: "该项目处在发现、临床前、临床还是上市阶段？",
+    use: "阶段决定需求紧迫度，也帮助 BD 选择介入时机。",
+  },
+  business_actions: {
+    question: "公司正在采取什么商业行动？",
+    use: "区分合作、授权、融资、并购、产品发布、扩产和市场进入。",
+  },
+  event_signals: {
+    question: "是什么活动，存在哪种参与机会？",
+    use: "仅对已确认的活动内容提取，用于评估报名、参展、登台、赞助和 Partnering。",
+  },
+};
+
+function renderStructuredRules() {
+  if (!els.structuredRuleGrid) return;
+  const rules = window.AIHOT_INTELLIGENCE_RULES || { version: "--", groups: {} };
+  const groups = Object.entries(rules.groups || {});
+  const termCount = groups.reduce((sum, [, group]) => sum + (group.items || []).length, 0);
+  const hitCount = (state.payload?.items || []).filter((item) =>
+    Object.values(item.intelligence || {}).some((values) => values.length),
+  ).length;
+  els.structuredRuleVersion.textContent = `规则版本 v${rules.version || "--"}`;
+  els.structuredGroupCount.textContent = groups.length;
+  els.structuredTermCount.textContent = termCount;
+  els.structuredHitCount.textContent = hitCount;
+  els.structuredRuleGrid.innerHTML = groups.map(([groupId, group], index) => {
+    const meta = structuredRuleMeta[groupId] || {};
+    const rows = (group.items || []).map((item) => `
+      <li>
+        <strong>${escapeHtml(item.label)}</strong>
+        <span>${escapeHtml((item.aliases || []).join(" / "))}</span>
+      </li>
+    `).join("");
+    return `
+      <article class="structured-rule-group">
+        <header>
+          <span>${String(index + 1).padStart(2, "0")}</span>
+          <div><h3>${escapeHtml(group.label)}</h3><p>${escapeHtml(meta.question || "")}</p></div>
+          <b>${(group.items || []).length} 个标准标签</b>
+        </header>
+        <p class="structured-rule-use">${escapeHtml(meta.use || "")}</p>
+        <ul>${rows}</ul>
+      </article>
+    `;
+  }).join("");
 }
 
 function renderCompanyPools() {
@@ -3043,40 +3192,29 @@ document.querySelectorAll(".metric.clickable").forEach((card) => {
   });
 });
 
-// Sidebar company chips: filter overview by company
-document.querySelectorAll("[data-filter-company]").forEach((chip) => {
-  chip.addEventListener("click", () => {
-    const companyId = chip.dataset.filterCompany;
-    state.page = "overview";
-    renderPage();
+// Sidebar company dock is rendered from companies.json, so one delegated listener
+// keeps newly added companies immediately interactive.
+els.companyDockList.addEventListener("click", (event) => {
+  const chip = event.target.closest("[data-filter-company]");
+  if (!chip) return;
+  const companyId = chip.dataset.filterCompany;
+  state.page = "overview";
+  renderPage();
 
-    if (companyId === "all") {
-      state.company = "all";
-      els.companyFilter.value = "all";
-    } else {
-      const companyName =
-        state.payload?.companies?.find((c) => c.id === companyId)?.display_name ||
-        companyIdToDisplayName[companyId] ||
-        companyId;
-      state.company = companyName;
-      let matched = false;
-      for (const opt of els.companyFilter.options) {
-        if (opt.textContent === companyName) {
-          els.companyFilter.value = companyName;
-          matched = true;
-          break;
-        }
-      }
-      if (!matched) {
-        state.company = "all";
-        els.companyFilter.value = "all";
-      }
-    }
-    renderOverviewScope();
-    document.querySelectorAll("[data-filter-company]").forEach((c) => {
-      c.classList.toggle("active", c.dataset.filterCompany === companyId);
-    });
-  });
+  if (companyId === "all") {
+    state.company = "all";
+    els.companyFilter.value = "all";
+  } else {
+    const companyName =
+      state.payload?.companies?.find((company) => company.id === companyId)?.display_name ||
+      companyIdToDisplayName[companyId] ||
+      companyId;
+    const hasOption = [...els.companyFilter.options].some((option) => option.value === companyName);
+    state.company = hasOption ? companyName : "all";
+    els.companyFilter.value = hasOption ? companyName : "all";
+  }
+  renderCompanyDock();
+  renderOverviewScope();
 });
 
 els.searchInput.addEventListener("input", (event) => {
@@ -3108,15 +3246,7 @@ els.categoryFilter.addEventListener("change", (event) => {
 
 els.companyFilter.addEventListener("change", (event) => {
   state.company = event.target.value;
-  const selectedCompany =
-    state.payload?.companies?.find((c) => c.display_name === state.company) ||
-    Object.entries(companyIdToDisplayName)
-      .map(([id, display_name]) => ({ id, display_name }))
-      .find((c) => c.display_name === state.company);
-  const companyId = selectedCompany?.id || "all";
-  document.querySelectorAll("[data-filter-company]").forEach((c) => {
-    c.classList.toggle("active", c.dataset.filterCompany === companyId);
-  });
+  renderCompanyDock();
   renderOverviewScope();
 });
 
