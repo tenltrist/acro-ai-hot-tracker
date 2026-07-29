@@ -178,7 +178,15 @@ def fetch_text(url: str) -> str:
             with urllib.request.urlopen(req, timeout=20) as resp:
                 charset = resp.headers.get_content_charset() or "utf-8"
                 return resp.read().decode(charset, errors="replace")
-        except urllib.error.HTTPError:
+        except urllib.error.HTTPError as exc:
+            if exc.code in {429, 500, 502, 503, 504} and attempt < 2:
+                retry_after = exc.headers.get("Retry-After", "")
+                try:
+                    delay = max(float(retry_after), attempt + 2)
+                except ValueError:
+                    delay = attempt + 2
+                time.sleep(delay)
+                continue
             raise
         except (urllib.error.URLError, TimeoutError, ConnectionResetError, OSError):
             if attempt == 2:
@@ -414,6 +422,23 @@ def is_html_noise(title: str) -> bool:
     if cleaned.startswith(("share on", "follow us on", "cookie", "accept cookies")):
         return True
     return False
+
+
+def extract_document_title(text: str) -> str:
+    for tag in ("h1", "title"):
+        match = re.search(
+            rf"<{tag}\b[^>]*>(.*?)</{tag}>",
+            text,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        if not match:
+            continue
+        title = clean_text(match.group(1))
+        if tag == "title":
+            title = re.split(r"\s+[|｜]\s+", title, maxsplit=1)[0].strip()
+        if title and not is_html_noise(title):
+            return title
+    return ""
 
 
 def extract_meaningful_summary(raw_description: str, title: str) -> str:
@@ -769,6 +794,110 @@ def parse_pubmed(source: dict[str, Any]) -> list[Candidate]:
     return items
 
 
+def parse_crossref(source: dict[str, Any]) -> list[Candidate]:
+    data = json.loads(fetch_text(source["url"]))
+    items: list[Candidate] = []
+    for record in data.get("message", {}).get("items", []):
+        titles = record.get("title", [])
+        title = clean_text(titles[0] if titles else "")
+        doi = clean_text(record.get("DOI", ""))
+        if not title or not doi:
+            continue
+        date_parts = record.get("published", {}).get("date-parts", [[]])
+        parts = date_parts[0] if date_parts else []
+        published = "-".join(str(value) for value in parts[:3])
+        affiliations = sorted(
+            {
+                clean_text(affiliation.get("name", ""))
+                for author in record.get("author", [])
+                for affiliation in author.get("affiliation", [])
+                if clean_text(affiliation.get("name", ""))
+            }
+        )
+        container_titles = record.get("container-title", [])
+        container = clean_text(container_titles[0] if container_titles else "")
+        candidate = Candidate(
+            company_id=source.get("company_id", ""),
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "research"),
+            title=title,
+            url=record.get("URL") or f"https://doi.org/{doi}",
+            published=normalize_source_date(published),
+            summary=(
+                f"Crossref publication metadata. Affiliations: {'; '.join(affiliations)}. "
+                f"Venue: {container or 'not supplied'}. DOI: {doi}"
+            )[:600],
+            category_hint=source.get("category_hint", "research"),
+            signal_type=source.get("signal_type", "research"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
+def parse_clinical_trials(source: dict[str, Any]) -> list[Candidate]:
+    data = json.loads(fetch_text(source["url"]))
+    items: list[Candidate] = []
+    for study in data.get("studies", []):
+        protocol = study.get("protocolSection", {})
+        identification = protocol.get("identificationModule", {})
+        sponsors = protocol.get("sponsorCollaboratorsModule", {})
+        status = protocol.get("statusModule", {})
+        conditions = protocol.get("conditionsModule", {})
+        arms = protocol.get("armsInterventionsModule", {})
+        nct_id = clean_text(identification.get("nctId", ""))
+        title = clean_text(
+            identification.get("briefTitle", "")
+            or identification.get("officialTitle", "")
+        )
+        if not nct_id or not title:
+            continue
+        lead = clean_text(sponsors.get("leadSponsor", {}).get("name", ""))
+        collaborators = [
+            clean_text(row.get("name", ""))
+            for row in sponsors.get("collaborators", [])
+            if clean_text(row.get("name", ""))
+        ]
+        updated = (
+            status.get("lastUpdatePostDateStruct", {}).get("date", "")
+            or status.get("studyFirstPostDateStruct", {}).get("date", "")
+        )
+        condition_names = [clean_text(value) for value in conditions.get("conditions", [])]
+        intervention_names = [
+            clean_text(row.get("name", ""))
+            for row in arms.get("interventions", [])
+            if clean_text(row.get("name", ""))
+        ]
+        candidate = Candidate(
+            company_id=source.get("company_id", ""),
+            source_id=source["id"],
+            source_label=source["label"],
+            source_trust=source.get("trust", "regulator"),
+            title=f"Clinical trial update {nct_id}: {title}",
+            url=f"https://clinicaltrials.gov/study/{nct_id}",
+            published=normalize_source_date(updated),
+            summary=(
+                f"Lead sponsor: {lead or 'not supplied'}. "
+                f"Collaborators: {'; '.join(collaborators) or 'none supplied'}. "
+                f"Status: {clean_text(status.get('overallStatus', ''))}. "
+                f"Conditions: {'; '.join(condition_names[:5])}. "
+                f"Interventions: {'; '.join(intervention_names[:5])}."
+            )[:700],
+            category_hint=source.get("category_hint", "regulatory"),
+            signal_type=source.get("signal_type", "clinical_trial"),
+        )
+        if not source_allows_candidate(source, candidate):
+            continue
+        items.append(candidate)
+        if len(items) >= source.get("max_items", 1000):
+            break
+    return items
+
+
 def source_allows_candidate(source: dict[str, Any], item: Candidate) -> bool:
     """Apply source-specific quality gates before global scoring."""
     blob = f"{item.title} {item.summary} {item.url}".lower()
@@ -778,6 +907,8 @@ def source_allows_candidate(source: dict[str, Any], item: Candidate) -> bool:
     if include_terms and not any(term in blob for term in include_terms):
         return False
     if exclude_terms and any(term in blob for term in exclude_terms):
+        return False
+    if source.get("require_published") and not item.published:
         return False
 
     source_age_limit = source.get("max_age_days")
@@ -795,6 +926,7 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
     include_terms = [term.lower() for term in source.get("include_url_terms", [])]
     exclude_terms = [term.lower() for term in source.get("exclude_url_terms", [])]
     rows_by_url: dict[str, dict[str, Any]] = {}
+    detail_cache: dict[str, tuple[str, str]] = {}
     for link in parser.links:
         absolute = urllib.parse.urljoin(base_url, link["href"])
         lowered_url = absolute.lower()
@@ -809,14 +941,30 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
             (1, link.get("text", "")),
         ]
         quality, title = next(
-            ((rank, value) for rank, value in title_candidates if value),
-            (0, absolute),
+            (
+                (rank, value)
+                for rank, value in title_candidates
+                if value and not is_html_noise(value)
+            ),
+            (0, ""),
         )
         title = re.sub(r"^(?:icon\s+)+", "", title, flags=re.IGNORECASE)
-        if len(title) < 4 or is_html_noise(title):
-            continue
         normalized = normalize_url(absolute)
         published = extract_calendar_date(link.get("time") or link.get("text", ""))
+        if not title and source.get("follow_detail_titles"):
+            if normalized not in detail_cache:
+                if len(detail_cache) >= source.get("max_items", 1000):
+                    continue
+                detail_text = fetch_text(absolute)
+                detail_cache[normalized] = (
+                    extract_document_title(detail_text),
+                    extract_calendar_date(clean_text(detail_text)),
+                )
+            title, detail_date = detail_cache[normalized]
+            published = published or detail_date
+            quality = 5
+        if not title or is_html_noise(title):
+            continue
         existing = rows_by_url.get(normalized)
         if (
             not existing
@@ -885,6 +1033,10 @@ def collect_candidates(
                 candidates.extend(parse_openfda(source))
             elif source["type"] == "pubmed":
                 candidates.extend(parse_pubmed(source))
+            elif source["type"] == "crossref":
+                candidates.extend(parse_crossref(source))
+            elif source["type"] == "clinical_trials":
+                candidates.extend(parse_clinical_trials(source))
             elif source["type"] == "html_links":
                 candidates.extend(parse_html_links(source))
             else:
@@ -1064,7 +1216,7 @@ def score_candidate(
     item.score = max(0, score)
     item.reasons = reasons or ["未命中强规则，默认归档"]
     item.tier = classify_tier(item.score, item.source_trust, has_action)
-    if item.signal_type in {"video", "research", "funding"}:
+    if item.signal_type in {"video", "research", "funding", "clinical_trial"}:
         item.tier = "archive"
         item.reasons.append("专题信号：不进入默认新闻日报")
     return item

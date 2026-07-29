@@ -1,25 +1,25 @@
 window.AIHOT_EMBEDDED_PAYLOAD = {
-  "generated_at": "2026-07-29T11:48:54",
+  "generated_at": "2026-07-29T12:15:22",
   "window_days": 90,
   "summary": {
-    "new_candidates": 64,
+    "new_candidates": 101,
     "immediate": 0,
-    "daily": 81,
-    "archive": 709,
+    "daily": 82,
+    "archive": 802,
     "errors": 0,
     "companies": 5,
-    "sources": 50
+    "sources": 58
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 2,
-    "Google News RSS - ACROBiosystems": 34,
+    "Google News RSS - ACROBiosystems": 33,
     "Google News RSS - ACROBiosystems PR Newswire": 11,
-    "ACRO official Insights - indexed RSS": 14,
+    "ACRO official Insights - indexed RSS": 13,
     "ACRO Japan official pages - indexed RSS": 4,
     "ACRO official YouTube channel": 20,
     "Google News RSS - ACROBiosystems Japan": 1,
     "Business Wire - company pool indexed RSS": 30,
-    "Google News RSS - Thermo Fisher": 94,
+    "Google News RSS - Thermo Fisher": 93,
     "Thermo Fisher official press releases RSS": 9,
     "GlobeNewswire - Biotechnology official RSS": 18,
     "BioProcess Online - bioprocess topic indexed RSS": 8,
@@ -31,19 +31,19 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Labiotech - official European biotech RSS": 12,
     "Pharmaceutical Technology - manufacturing topic indexed RSS": 8,
     "SelectScience - life science product indexed RSS": 12,
-    "BioSpectrum Asia - APAC biotech indexed RSS": 21,
-    "Korea Biomedical Review - indexed RSS": 29,
+    "BioSpectrum Asia - APAC biotech indexed RSS": 22,
+    "Korea Biomedical Review - indexed RSS": 28,
     "BioSpectrum India - indexed RSS": 10,
     "Nikkan Yakugyo - life science indexed RSS": 30,
     "AnswersNews - official Japan pharma RSS": 10,
     "Mix Online - official Japan pharma RSS": 30,
-    "Nikkei Biotech - company pool indexed RSS": 8,
+    "Nikkei Biotech - company pool indexed RSS": 9,
     "Pharmcube / ByDrug - company pool indexed RSS": 17,
     "Merck KGaA Life Science official news - indexed RSS": 8,
     "Google News RSS - Merck KGaA Life Science": 30,
     "Google News RSS - Merck Life Science Japan": 2,
     "Sartorius official Newsroom - indexed RSS": 8,
-    "Google News RSS - Sartorius": 9,
+    "Google News RSS - Sartorius": 10,
     "Miltenyi group official news - indexed RSS": 6,
     "Google News RSS - Miltenyi Biotec Japan": 2,
     "Thermo Fisher Biotech at Scale RSS": 10,
@@ -57,29 +57,39 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Sartorius official YouTube channel": 20,
     "Miltenyi Biotec official YouTube channel": 20,
     "AMED - Japan life science funding and policy indexed RSS": 22,
-    "LINK-J - life science ecosystem events": 26,
+    "LINK-J - life science ecosystem events": 27,
     "Kinki Bio - official seminar and ecosystem RSS": 4,
     "Shonan iPark - official news and event announcements": 10,
-    "PubMed - ACROBiosystems research signals": 7
+    "PubMed - ACROBiosystems research signals": 7,
+    "Crossref - ACROBiosystems affiliation records": 7,
+    "JBA - public life science events": 9,
+    "CPHI Japan - official RSS": 6,
+    "JSRM - regenerative medicine events": 17,
+    "BioJapan - public event pages": 2,
+    "PMDA - life science and regenerative medicine updates": 11,
+    "Crossref - Miltenyi Biotec affiliation records": 20,
+    "ClinicalTrials.gov - monitored company sponsors and collaborators": 24
   },
   "category_mix": {
-    "market": 24,
+    "market": 25,
     "partnership": 38,
-    "product": 104,
-    "regulatory": 51,
-    "company": 353,
+    "product": 105,
+    "regulatory": 86,
+    "company": 352,
     "video": 95,
-    "finance": 38,
-    "event": 56,
+    "finance": 37,
+    "event": 91,
     "award": 2,
-    "research": 29
+    "research": 53
   },
   "signal_type_mix": {
     "news": 626,
     "video": 95,
     "funding": 22,
-    "event": 40,
-    "research": 7
+    "event": 75,
+    "research": 31,
+    "regulatory": 11,
+    "clinical_trial": 24
   },
   "source_health": [
     {
@@ -126,7 +136,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 6348,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-07-29T11:48:28"
+      "last_checked": "2026-07-29T12:14:34"
     },
     {
       "source_id": "acro_official_activities_index",
@@ -161,12 +171,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "productive",
-      "total": 14,
+      "total": 13,
       "immediate": 0,
       "daily": 4,
-      "archive": 10,
-      "selected_rate": 29,
-      "last_published": "2026-07-28",
+      "archive": 9,
+      "selected_rate": 31,
+      "last_published": "2026-07-22",
       "error": "",
       "note": "",
       "snapshot_count": 0,
@@ -230,10 +240,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "productive",
-      "total": 34,
+      "total": 33,
       "immediate": 0,
       "daily": 2,
-      "archive": 32,
+      "archive": 31,
       "selected_rate": 6,
       "last_published": "2026-07-24",
       "error": "",
@@ -552,10 +562,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "productive",
-      "total": 21,
+      "total": 22,
       "immediate": 0,
       "daily": 1,
-      "archive": 20,
+      "archive": 21,
       "selected_rate": 5,
       "last_published": "2026-07-27",
       "error": "",
@@ -575,11 +585,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "productive",
-      "total": 29,
+      "total": 28,
       "immediate": 0,
       "daily": 1,
-      "archive": 28,
-      "selected_rate": 3,
+      "archive": 27,
+      "selected_rate": 4,
       "last_published": "2026-07-28",
       "error": "",
       "note": "使用韩国生物制药主题的公开标题索引，重点补充细胞治疗、生物类似药、CDMO 和临床制造。",
@@ -690,10 +700,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "archive_only",
-      "total": 8,
+      "total": 9,
       "immediate": 0,
       "daily": 0,
-      "archive": 8,
+      "archive": 9,
       "selected_rate": 0,
       "last_published": "2026-07-26",
       "error": "",
@@ -828,11 +838,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "productive",
-      "total": 9,
+      "total": 10,
       "immediate": 0,
-      "daily": 2,
+      "daily": 3,
       "archive": 7,
-      "selected_rate": 22,
+      "selected_rate": 30,
       "last_published": "2026-07-23",
       "error": "",
       "note": "",
@@ -1035,11 +1045,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "enabled": true,
       "status": "productive",
-      "total": 94,
+      "total": 93,
       "immediate": 0,
-      "daily": 13,
+      "daily": 12,
       "archive": 81,
-      "selected_rate": 14,
+      "selected_rate": 13,
       "last_published": "2026-07-29",
       "error": "",
       "note": "",
@@ -1288,10 +1298,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "event",
       "enabled": true,
       "status": "productive",
-      "total": 26,
+      "total": 27,
       "immediate": 0,
       "daily": 1,
-      "archive": 25,
+      "archive": 26,
       "selected_rate": 4,
       "last_published": "2026-08-03",
       "error": "",
@@ -1365,6 +1375,190 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "last_published": "2026-07-11",
       "error": "",
       "note": "",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "company_id": "",
+      "company": "日本生命科学活动",
+      "scope": "日本生命科学活动",
+      "source_type": "html_links",
+      "signal_type": "event",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 9,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 9,
+      "selected_rate": 0,
+      "last_published": "2026-07-31",
+      "error": "",
+      "note": "JBA 首页公开展示近期生命科学活动；列表的 more 链接不含标题，因此低频跟随详情页读取标题与日期。本轮测试获得 9 条。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "company_id": "",
+      "company": "日本制药展会",
+      "scope": "日本制药展会",
+      "source_type": "rss",
+      "signal_type": "event",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 6,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 6,
+      "selected_rate": 0,
+      "last_published": "2026-02-02",
+      "error": "",
+      "note": "官方 WordPress RSS 可直接读取；覆盖展期、参展商名单、来场登记和 Seminar Program。本轮测试获得 6 条。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "company_id": "",
+      "company": "日本再生医疗活动",
+      "scope": "日本再生医疗活动",
+      "source_type": "html_links",
+      "signal_type": "event",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 17,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 17,
+      "selected_rate": 0,
+      "last_published": "2026-06-17",
+      "error": "",
+      "note": "日本再生医疗学会活动分类公开可读；已修正日期标题解析并过滤明确标记为已结束的活动。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "biojapan_public_pages",
+      "source_label": "BioJapan - public event pages",
+      "company_id": "",
+      "company": "日本重点展会",
+      "scope": "日本重点展会",
+      "source_type": "html_links",
+      "signal_type": "event",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 2,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 2,
+      "selected_rate": 0,
+      "last_published": "2026-07-07",
+      "error": "",
+      "note": "官方页面与 Sitemap 均可公开读取；当前稳定入口是来场/Partnering 登记和 Seminar 页面，属于低频年度展会信号。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "company_id": "",
+      "company": "日本监管与指南",
+      "scope": "日本监管与指南",
+      "source_type": "html_links",
+      "signal_type": "regulatory",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 11,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 11,
+      "selected_rate": 0,
+      "last_published": "2026-07-27",
+      "error": "",
+      "note": "直接读取 PMDA 新着页，只保留有发布日期且命中细胞、基因、抗体、生物来源或再生医疗主题的更新。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "crossref_acro_affiliations",
+      "source_label": "Crossref - ACROBiosystems affiliation records",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "scope": "ACROBiosystems / 百普赛斯",
+      "source_type": "crossref",
+      "signal_type": "research",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 7,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 7,
+      "selected_rate": 0,
+      "last_published": "2026-04-22",
+      "error": "",
+      "note": "Crossref 公共 REST API 无需注册；必须在作者机构字段中出现 ACROBiosystems。本轮测试获得 7 条。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "scope": "Miltenyi Biotec / 美天旎",
+      "source_type": "crossref",
+      "signal_type": "research",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 20,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 20,
+      "selected_rate": 0,
+      "last_published": "2026-5-22",
+      "error": "",
+      "note": "Crossref 作者机构精确过滤；本轮测试获得 20 条，覆盖 CAR-T 制造、空间生物学和自动化工艺。",
+      "snapshot_count": 0,
+      "new_urls": 0,
+      "initial_snapshot": false,
+      "last_checked": ""
+    },
+    {
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "company_id": "",
+      "company": "公司池临床合作",
+      "scope": "公司池临床合作",
+      "source_type": "clinical_trials",
+      "signal_type": "clinical_trial",
+      "enabled": true,
+      "status": "archive_only",
+      "total": 24,
+      "immediate": 0,
+      "daily": 0,
+      "archive": 24,
+      "selected_rate": 0,
+      "last_published": "2026-07-27",
+      "error": "",
+      "note": "ClinicalTrials.gov v2 官方 API；仅查询公司作为 Sponsor 或 Collaborator 的研究，按最后更新时间排序。本轮 24 条，其中近一年 13 条。",
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
@@ -1539,6 +1733,48 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
   ],
   "items": [
     {
+      "id": "a48978bb0d47439e",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT02600208"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT02600208: Peripheral Blood Stem Cell Transplantation for Hematologic Malignancies With Alpha Beta TCell and B Cell Depletion Using the CliniMACS Device",
+      "url": "https://clinicaltrials.gov/study/NCT02600208",
+      "published": "2026-05-01",
+      "summary": "Lead sponsor: Julie-An M. Talano. Collaborators: Miltenyi Biotec, Inc.. Status: ACTIVE_NOT_RECRUITING. Conditions: Hematologic Malignancies. Interventions: CliniMACs.",
+      "ai_summary": "",
+      "score": 80,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "战略主题命中: CliniMACS",
+        "业务动作命中: EMA, clinical",
+        "高价值分类加成 +8: regulatory",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 89
+    },
+    {
       "id": "469600b5a176c381",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -1621,6 +1857,48 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 86
     },
     {
+      "id": "d900a8b6352f49b3",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.3389/fimmu.2026.1761397"
+      ],
+      "source_trust": "research",
+      "title": "Automated manufacturing of clinical-grade BDCA2 CAR NK cells in a closed system for the treatment of blastic plasmacytoid dendritic cell neoplasm",
+      "url": "https://doi.org/10.3389/fimmu.2026.1761397",
+      "published": "2026-2-27",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology, Inc., a Miltenyi Biotec Company; Miltenyi Biotec B.V. & Co. KG. Venue: Frontiers in Immunology. DOI: 10.3389/fimmu.2026.1761397",
+      "ai_summary": "",
+      "score": 67,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "战略主题命中: CAR NK",
+        "业务动作命中: manufacturing, clinical",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
       "id": "5f6aff94aa0a872a",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -1661,6 +1939,213 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过时效窗口 118天，因业务动作匹配保留"
       ],
       "age_days": 118
+    },
+    {
+      "id": "1a6e3ea185e48024",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT05267613"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT05267613: Endoscopic Evidence of Maintenance of Healing With Oral NEXIUM in Patients 1 to 11 Years Old With Erosive Esophagitis.",
+      "url": "https://clinicaltrials.gov/study/NCT05267613",
+      "published": "2026-07-27",
+      "summary": "Lead sponsor: AstraZeneca. Collaborators: IQVIA RDS Inc.; Calyx; Laboratory Corporation of America; Medidata Solutions; Thermo Fisher Scientific, Inc; CISCRP; Quipment Inc.; Little Journey Ltd.. Status: ACTIVE_NOT_RECRUITING. Conditions: Erosive Esophagitis. Interventions: Nexium 20mg; Nexium 10mg.",
+      "ai_summary": "",
+      "score": 66,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 2
+    },
+    {
+      "id": "bcea010a3f1de7df",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT07415876"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT07415876: Evaluating Urinary CXCL10 for Enhanced Detection of Acute Rejection in Kidney Transplant Patients With Low DD-CFDNA",
+      "url": "https://clinicaltrials.gov/study/NCT07415876",
+      "published": "2026-07-15",
+      "summary": "Lead sponsor: Virginia Commonwealth University. Collaborators: Thermo Fisher Scientific, Inc. Status: COMPLETED. Conditions: Kidney Transplant Rejection. Interventions: Retrospective Cohort Enrollment; Prospective Cohort Enrollment.",
+      "ai_summary": "",
+      "score": 66,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 14
+    },
+    {
+      "id": "628093e3771fc6b1",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT06504160"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT06504160: Targeted Investigation of Microbiome 2 Treat Atopic Dermatitis (TIME-2)",
+      "url": "https://clinicaltrials.gov/study/NCT06504160",
+      "published": "2026-07-02",
+      "summary": "Lead sponsor: National Institute of Allergy and Infectious Diseases (NIAID). Collaborators: Atopic Dermatitis Research Network (ADRN); Rho Federal Systems Division, Inc.; PPD, Thermo Fisher Scientific Inc.. Status: RECRUITING. Conditions: Atopic Dermatitis. Interventions: ShA9 Topical Gel; Hydrocortisone Ointment; Clobetasol Ointment; Fluocinonide Ointment; Placebo (Vehicle) Topical Gel.",
+      "ai_summary": "",
+      "score": 66,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, PPD",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 27
+    },
+    {
+      "id": "79669df1b50e2759",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific / Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "thermo_fisher",
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific",
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT06508931"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT06508931: Safety and Efficacy Study of Zamtocabtagene Autoleucel (MB-CART2019.1) in Pediatric Patients With R/R B-Cell Neoplasms",
+      "url": "https://clinicaltrials.gov/study/NCT06508931",
+      "published": "2026-05-05",
+      "summary": "Lead sponsor: Miltenyi Biomedicine GmbH. Collaborators: PPD, Part of Thermo Fisher Scientific. Status: RECRUITING. Conditions: B-Cell Neoplasm. Interventions: zamtocabtagene autoleucel (MB-CART2019.1).",
+      "ai_summary": "",
+      "score": 66,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, PPD",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 85
+    },
+    {
+      "id": "c839cd277687a0ae",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT05046613"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT05046613: Observational Study to Assess Maternal, Fetal and Infant Outcomes Following Exposure to Rimegepant",
+      "url": "https://clinicaltrials.gov/study/NCT05046613",
+      "published": "2026-05-05",
+      "summary": "Lead sponsor: Pfizer. Collaborators: PPD, Part of Thermo Fisher Scientific. Status: RECRUITING. Conditions: Migraine. Interventions: Rimegepant; Not taking Rimegepant.",
+      "ai_summary": "",
+      "score": 66,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, PPD",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 85
     },
     {
       "id": "79cd73975e955fe6",
@@ -1868,6 +2353,88 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 58
     },
     {
+      "id": "231efddea25973b9",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "crossref_acro_affiliations",
+      "source_label": "Crossref - ACROBiosystems affiliation records",
+      "source_ids": [
+        "crossref_acro_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - ACROBiosystems affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0056"
+      ],
+      "source_trust": "research",
+      "title": "56 A simple and flexible cell factor assay panel for clinical study sample analysis",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0056",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems, Beijing, China; ACROBiosystems, Newark, DE, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0056",
+      "ai_summary": "",
+      "score": 61,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "业务动作命中: award, clinical",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "f545dcf486a5aae6",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.3389/fimmu.2026.1779035"
+      ],
+      "source_trust": "research",
+      "title": "A clinical-grade automated platform for the manufacturing of CAR-γδ T cells for immunotherapy",
+      "url": "https://doi.org/10.3389/fimmu.2026.1779035",
+      "published": "2026-5-22",
+      "summary": "Crossref publication metadata. Affiliations: Department of Immunology, Institute for Cell Biology, University of Tübingen; Research and Development, Miltenyi Biotec B.V. & Co. KG. Venue: Frontiers in Immunology. DOI: 10.3389/fimmu.2026.1779035",
+      "ai_summary": "",
+      "score": 61,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "业务动作命中: manufacturing, clinical",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
       "id": "223d59d54e74bcc6",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -1987,6 +2554,47 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "高价值分类加成 +8: regulatory"
       ],
       "age_days": 47
+    },
+    {
+      "id": "d201df8704f8cee8",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2026-itoc.33"
+      ],
+      "source_trust": "research",
+      "title": "P03.03 Dried antibody cocktails: setting the benchmark for fast and robust flow cytometric analysis in cell and gene therapy",
+      "url": "https://doi.org/10.1136/jitc-2026-itoc.33",
+      "published": "2026-3",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.v. & Co. Kg, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2026-itoc.33",
+      "ai_summary": "",
+      "score": 57,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "战略主题命中: cell and gene therapy, gene therapy",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
     },
     {
       "id": "f610ddd76a80d18c",
@@ -2233,6 +2841,90 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 22
     },
     {
+      "id": "87277dbd4ea71026",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT04464434"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT04464434: Upfront Autologous HSCT Versus Immunosuppression in Early Diffuse Cutaneous Systemic Sclerosis",
+      "url": "https://clinicaltrials.gov/study/NCT04464434",
+      "published": "2026-03-24",
+      "summary": "Lead sponsor: UMC Utrecht. Collaborators: ZonMw: The Netherlands Organisation for Health Research and Development; Boehringer Ingelheim; Miltenyi Biotec, Inc.. Status: COMPLETED. Conditions: Systemic Sclerosis; Systemic Scleroses, Diffuse; Scleroderma; Scleroderma, Diffuse; Autologous Stem Cell Transplantation. Interventions: Upfront autologous HSCT.",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过时效窗口 127天，因业务动作匹配保留",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 127
+    },
+    {
+      "id": "e8ec174963f6bf6d",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT06052059"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT06052059: A Study to Evaluate Efficacy and Safety of Tulisokibart (MK-7240) in Participants With Moderately to Severely Active Ulcerative Colitis (MK-7240-001)",
+      "url": "https://clinicaltrials.gov/study/NCT06052059",
+      "published": "2026-03-13",
+      "summary": "Lead sponsor: Merck Sharp & Dohme LLC. Collaborators: PPD, Part of Thermo Fisher Scientific. Status: ACTIVE_NOT_RECRUITING. Conditions: Ulcerative Colitis. Interventions: IV Tulisokibart; IV Placebo; SC Tulisokibart; SC Placebo.",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, PPD",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过时效窗口 138天，因业务动作匹配保留",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 138
+    },
+    {
       "id": "91be4db09d618590",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma",
@@ -2352,6 +3044,211 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 19
     },
     {
+      "id": "7373428d94a9c02e",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "crossref_acro_affiliations",
+      "source_label": "Crossref - ACROBiosystems affiliation records",
+      "source_ids": [
+        "crossref_acro_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - ACROBiosystems affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0756"
+      ],
+      "source_trust": "research",
+      "title": "756 Developing a flexible cell profiling platform to qualify raw cellular materials and final therapeutics",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0756",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems, Beijing, China; ACROBiosystems, Newark, DE, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0756",
+      "ai_summary": "",
+      "score": 53,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "业务动作命中: award",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "5d7a3842a1b234dd",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "crossref_acro_affiliations",
+      "source_label": "Crossref - ACROBiosystems affiliation records",
+      "source_ids": [
+        "crossref_acro_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - ACROBiosystems affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0805"
+      ],
+      "source_trust": "research",
+      "title": "805 Scalable stem cell-derived natural killer cell differentiation in an in vitro feeder-free system",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0805",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems, Beijing, China; ACROBiosystems, Newark, DE, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0805",
+      "ai_summary": "",
+      "score": 53,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "业务动作命中: award",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "7baba76da7e65faf",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "crossref_acro_affiliations",
+      "source_label": "Crossref - ACROBiosystems affiliation records",
+      "source_ids": [
+        "crossref_acro_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - ACROBiosystems affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.1048"
+      ],
+      "source_trust": "research",
+      "title": "1048 Rapid mycoplasma detection technologies: enhancing biopharmaceutical safety and efficiency",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.1048",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems, Beijing, China; ACROBiosystems, Newark, DE, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.1048",
+      "ai_summary": "",
+      "score": 53,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: ACROBiosystems",
+        "科研数据库结构化来源",
+        "业务动作命中: award",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "db6200b656d8fbc3",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.1284"
+      ],
+      "source_trust": "research",
+      "title": "1284 Comprehensive preclinical characterization of a CAR T cell product using the MACSima™ spatial multiplexing platform",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.1284",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology, Inc., Gaithersburg, MD, USA; Miltenyi Biotec, Bergisch Gladbach, Germany; Miltenyi Biotec, Inc., Waltham, MA, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.1284",
+      "ai_summary": "",
+      "score": 53,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "1cc035f4f3724f9f",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2026-itoc.21"
+      ],
+      "source_trust": "research",
+      "title": "P02.07 Impact of human AB serum on CAR T cell manufacturing and metabolic properties of the drug product",
+      "url": "https://doi.org/10.1136/jitc-2026-itoc.21",
+      "published": "2026-3",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. & Co. Kg, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2026-itoc.21",
+      "ai_summary": "",
+      "score": 53,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "业务动作命中: manufacturing",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
       "id": "a77ead977ed02666",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
@@ -2433,7 +3330,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 33
     },
     {
-      "id": "8e140a5e7b289e1a",
+      "id": "3862918680f89839",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -2442,23 +3339,20 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "matched_companies": [
         "Thermo Fisher Scientific"
       ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
       "source_ids": [
-        "google_news_thermo",
         "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher",
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNm9Ybmhick83SGIwbnRHM2o1NzMwR2E5QUxxLXB3SGlkU3JPbExxdE41LTluMHZ1aG1ZMkpNQ1pkZU9CVW5EVF9pTU1uczREd25UZElBdEs4OG0xbXI0bFNuSjJoUldyTEVvTDd3SjZzR1JMZDJnUVR4cW5ILUt4NDR4THU5eUl5aENweUtGQzgtRGIxMTU1U3lVTQ?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher (TMO) Lands ImmuPharma Kapiglucagon Diabetes Manufacturing Role - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNm9Ybmhick83SGIwbnRHM2o1NzMwR2E5QUxxLXB3SGlkU3JPbExxdE41LTluMHZ1aG1ZMkpNQ1pkZU9CVW5EVF9pTU1uczREd25UZElBdEs4OG0xbXI0bFNuSjJoUldyTEVvTDd3SjZzR1JMZDJnUVR4cW5ILUt4NDR4THU5eUl5aENweUtGQzgtRGIxMTU1U3lVTQ?oc=5",
+      "title": "Thermo Fisher (TMO) Lands ImmuPharma Kapiglucagon Diabetes Manufacturing Role",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp",
       "published": "2026-07-24",
       "summary": "Thermo Fisher Scientific (NYSE:TMO) has been selected by ImmuPharma as the key drug product and contract development manufacturer for its Kapiglucagon diabetes treatment program. The partnership ...",
       "ai_summary": "",
@@ -2466,7 +3360,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "daily",
       "category": "company",
       "signal_type": "news",
-      "is_new": false,
+      "is_new": true,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: manufacturing",
@@ -2552,6 +3446,129 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 18
     },
     {
+      "id": "ffef74841b2c7706",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2026-itoc.22"
+      ],
+      "source_trust": "research",
+      "title": "P02.08 Precise and flexible formulation and filling of CAR T cells in a fully closed and automated system - the new CliniMACS Prodigy TCTf process",
+      "url": "https://doi.org/10.1136/jitc-2026-itoc.22",
+      "published": "2026-3",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2026-itoc.22",
+      "ai_summary": "",
+      "score": 51,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "战略主题命中: CliniMACS",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "144aa2f4e205668c",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0295"
+      ],
+      "source_trust": "research",
+      "title": "295 CD276-mediated fratricide limits CD276-CAR-T cell fitness",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0295",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology Inc., a Miltenyi Biotec Company, Gaithersburg, MD, USA; Miltenyi Biotec B.V. and Co. KG, Bergisch Gladbach, Germany; Miltenyi Biotec, Gaithersburg, MD, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0295",
+      "ai_summary": "",
+      "score": 51,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "战略主题命中: CAR-T",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "69ad7892ac1b2320",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2025-3184"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 3184: Development of novel anti-mesothelin CAR-T cells for the treatment of solid tumors",
+      "url": "https://doi.org/10.1158/1538-7445.am2025-3184",
+      "published": "2025-4-21",
+      "summary": "Crossref publication metadata. Affiliations: 1Lentigen Technology Inc., a Miltenyi Biotec Company, Gaithersburg, MD;; 2Miltenyi Biotec B.V. & Co. KG, Bergisch Gladbach, Germany.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-3184",
+      "ai_summary": "",
+      "score": 51,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "战略主题命中: CAR-T",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
       "id": "6c11d29671d535d3",
       "company_id": "miltenyi_biotec",
       "company": "Miltenyi Biotec / 美天旎",
@@ -2632,7 +3649,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 64
     },
     {
-      "id": "80c92b475e820319",
+      "id": "96eaeb2f1ac80924",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -2650,12 +3667,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -2672,7 +3689,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 83
     },
     {
-      "id": "a9748d0cd7dfde02",
+      "id": "f009da0aa5375081",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -2690,13 +3707,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -2858,6 +3875,45 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "高价值分类加成 +10: product"
       ],
       "age_days": 56
+    },
+    {
+      "id": "858bec68d1310112",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance - Lab Manager",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5",
+      "published": "2026-06-04",
+      "summary": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance Lab Manager",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product"
+      ],
+      "age_days": 55
     },
     {
       "id": "8944f11a22b96440",
@@ -3715,6 +4771,446 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "专题信号：不进入默认新闻日报"
       ],
       "age_days": 5
+    },
+    {
+      "id": "7b7624b59ce212c0",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.1295"
+      ],
+      "source_trust": "research",
+      "title": "1295 Spatial characterization of T-cell and B-cell receptors at subcellular resolution using in situ sequencing-by-synthesis of constant and variable segments",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.1295",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. and Co. KG, Bergisch Gladbach, Germany; Miltenyi Biotec, Inc., Bielefeld, Germany; Miltenyi Biotec, Inc., Gaithersburg, MD, USA; Miltenyi Biotec, Inc., Goettingen, Germany; Miltenyi Biotec, Inc., Radolfzell, Germany; Miltenyi Biotec, Inc., Waltham, MA, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.1295",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "e68524b56173ef05",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2026-4281"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 4281: Armoring ROR1 CAR T cells with IL18 improves CAR T cell function and cytotoxicity against pancreatic cancer cell-lines in vitro and in vivo",
+      "url": "https://doi.org/10.1158/1538-7445.am2026-4281",
+      "published": "2026-4-3",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec, Gaithersburg, MD.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2026-4281",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "79fe8d64c5b0d7c1",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2025-4539"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 4539: A new and standardized method to isolate viable, high-quality PBMCs from patient blood samples",
+      "url": "https://doi.org/10.1158/1538-7445.am2025-4539",
+      "published": "2025-4-21",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec, Bergisch Gladbach, Germany.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-4539",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "c0e8bcf8a95d909a",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2026-3718"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 3718: CAR Detection Reagents - Pioneering advances in CAR T analytics",
+      "url": "https://doi.org/10.1158/1538-7445.am2026-3718",
+      "published": "2026-4-3",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. & Co. KG, Bergisch Gladbach, Germany.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2026-3718",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "a841747ffed8fdd6",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-itoc11.49"
+      ],
+      "source_trust": "research",
+      "title": "P-08.04 Impact of variability of CD4+/CD8+ T cell ratios on the functional properties of CAR T cell products",
+      "url": "https://doi.org/10.1136/jitc-2025-itoc11.49",
+      "published": "2025-3-24",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2025-itoc11.49",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "adc559f18667c1fe",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-itoc11.50"
+      ],
+      "source_trust": "research",
+      "title": "P-08.05 Dried antibody cocktails are setting the benchmark for fast and robust CAR T cell flow cytometric analysis",
+      "url": "https://doi.org/10.1136/jitc-2025-itoc11.50",
+      "published": "2025-3-24",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. and Co. KG, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2025-itoc11.50",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "d6469226384d2af4",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0208"
+      ],
+      "source_trust": "research",
+      "title": "208 A novel fully human MSLN CAR armored with dominant negative TGFβ receptor II demonstrates enhanced efficacy in xenograft models of pancreatic cancer",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0208",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology Inc., a Miltenyi Biotec Company, Gaithersburg, MD, USA; Miltenyi Biotec, Gaithersburg, MD, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0208",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "b38f5f013ce8fe71",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0292"
+      ],
+      "source_trust": "research",
+      "title": "292 Optimized bi-paratopic BCMA-specific CAR T cells designed to minimize tonic signaling and off-target toxicity",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0292",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology Inc., a Miltenyi Biotec Company, Gaithersburg, MD, USA; Miltenyi Biotec B.V. and Co. KG, Bergisch Gladbach, Germany. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0292",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "cc443b3a7adfaa21",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0390"
+      ],
+      "source_trust": "research",
+      "title": "390 Hypoxia enhances the cytotoxicity of ex vivo expanded NK cells against multiple tumor cell lines",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0390",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology Inc., a Miltenyi Biotec company, Gaithersburg, MD, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0390",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "ec49050cf99b07a2",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-sitc2025.0223"
+      ],
+      "source_trust": "research",
+      "title": "223 Efficacy and safety characterization of PSMA-targeting CAR T-cells armored to secrete huIL7 using prostate cancer models",
+      "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0223",
+      "published": "2025-11",
+      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology Inc., a Miltenyi Biotec Company, Gaithersburg, MD, USA; Miltenyi Biotec, Clarksburg, MD, USA. Venue: Regular and Young Investigator Award Abstracts. DOI: 10.1136/jitc-2025-sitc2025.0223",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "4bac829d660c4eb8",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-itoc11.27"
+      ],
+      "source_trust": "research",
+      "title": "P-02.03 Artificial targets for functional characterization of CAR T cells",
+      "url": "https://doi.org/10.1136/jitc-2025-itoc11.27",
+      "published": "2025-3-24",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. and Co. KG, Bergisch Gladbach, Germany; University of Freiburg, Freiburg, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2025-itoc11.27",
+      "ai_summary": "",
+      "score": 45,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": null
     },
     {
       "id": "b0609318287b9bb5",
@@ -4903,10 +6399,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "https://news.google.com/rss/articles/CBMiSEFVX3lxTE91bF9HaXB3cUE4dzVuWElsVEpKS3RjMnhlV1JGQ3FBME9obVFRSGIwVmVMR0R3X1NyT2dQc25VWl9DSjNGQVVWZw?oc=5"
       ],
       "source_trust": "media",
-      "title": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 - 日刊薬業",
+      "title": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE91bF9HaXB3cUE4dzVuWElsVEpKS3RjMnhlV1JGQ3FBME9obVFRSGIwVmVMR0R3X1NyT2dQc25VWl9DSjNGQVVWZw?oc=5",
       "published": "2026-03-30",
-      "summary": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 日刊薬業",
+      "summary": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 | 日刊薬業 - 医薬品産業の総合情報サイト 日刊薬業",
       "ai_summary": "",
       "score": 40,
       "tier": "daily",
@@ -4915,7 +6411,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "is_new": false,
       "reasons": [
         "行业编辑媒体",
-        "战略主题命中: 遺伝子治療",
+        "战略主题命中: 遺伝子治療, 医薬品",
         "业务动作命中: 申請, 共同",
         "高价值分类加成 +10: partnership",
         "超过时效窗口 121天，因业务动作匹配保留"
@@ -5508,6 +7004,41 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 99
     },
     {
+      "id": "61f577a2f767f38f",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/symposia/0206.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年6月17日 審査 イベント 第32回日本遺伝子細胞治療学会学術集会でのブース出展について（個別面談）",
+      "url": "https://www.pmda.go.jp/review-services/symposia/0206.html",
+      "published": "2026-06-17",
+      "summary": "",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 細胞治療, 遺伝子",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 42
+    },
+    {
       "id": "d708ced636af5380",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -5737,45 +7268,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "业务动作命中: manufacturing"
       ],
       "age_days": 16
-    },
-    {
-      "id": "2622bf12be37ea37",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_official_insights_index",
-      "source_label": "ACRO official Insights - indexed RSS",
-      "source_ids": [
-        "acro_official_insights_index"
-      ],
-      "source_labels": [
-        "ACRO official Insights - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVWExa1FFZWVqZVI0OGJ3UEJGd0FmRjNfYS1OVm9qOXpzOHg2TVNSMGxIaFJVVlZxQ2FGZlNBdnFUenpDdGRNdF9EajBJNkM2WVJhcFRDRkI5WWRlRGpzbUpoNWJuM2N3ckJZTjFadTRoMndFUmoyV2x6a2lxUjZ1YkF1NWZidl9xdHRJRUhZamtwdUJEVlJnZHdVSQ?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "Sterility Testing in Biopharmaceutical Manufacturing | Conventional vs. qPCR Rapid Methods - ACROBiosystems",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVWExa1FFZWVqZVI0OGJ3UEJGd0FmRjNfYS1OVm9qOXpzOHg2TVNSMGxIaFJVVlZxQ2FGZlNBdnFUenpDdGRNdF9EajBJNkM2WVJhcFRDRkI5WWRlRGpzbUpoNWJuM2N3ckJZTjFadTRoMndFUmoyV2x6a2lxUjZ1YkF1NWZidl9xdHRJRUhZamtwdUJEVlJnZHdVSQ?oc=5",
-      "published": "2026-07-28",
-      "summary": "Sterility Testing in Biopharmaceutical Manufacturing | Conventional vs. qPCR Rapid Methods ACROBiosystems",
-      "ai_summary": "",
-      "score": 38,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: manufacturing"
-      ],
-      "age_days": 1
     },
     {
       "id": "d0e497cfdd8cc010",
@@ -6154,7 +7646,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 6
     },
     {
-      "id": "0aacab5c4dac0cf9",
+      "id": "3347ff5748f96a4a",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -6172,11 +7664,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=ja-jp",
       "published": "2026-07-28",
       "summary": "Back in 2022, the Massachusetts-based firm announced that it would hire more than 500 local employees at facilities in Richmond and Henrico, but only ended up hiring about 190 employees by the time it ...",
       "ai_summary": "",
@@ -6192,7 +7684,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 1
     },
     {
-      "id": "2b4ce4d484002d01",
+      "id": "77c0630116ae01d9",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -6210,11 +7702,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2fwww.01net.it%2fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2f&c=14346548381911895341&mkt=ja-jp",
       "published": "2026-07-27",
       "summary": "Thermo Fisher’s specialty diagnostics portfolio addresses high-impact clinical needs across multiple myeloma monitoring with the EXENT® Solution, community oncology testing, critical care, allergy and ...",
       "ai_summary": "",
@@ -6413,6 +7905,44 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 13
     },
     {
+      "id": "3a4b4bee730b12e7",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
+      "source_ids": [
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxQU0s5UlhzMDB6dnZzVkN3WjhScldqYmNFaU5LanFCMmh1MGdZNkpDcnVMUFhTa01aVjk1cnFIVkRLUERhdk1NakhnTnBUY240WlRPaXhSNUlGbDE3ZlU3SUJGN0FEY3FxVm9qTmZrZlJoTDVZX1dabk5FX2JPWm0tTEtmVGhoSWtobHhxNk4wY3dTU2ppeUFsODd3THRYcU5rUFdMekdnNVVXY3BSaHNtOFFGTnFxWDhlcG9JdzBLQQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Merck KGaA’s $11.3 Billion Bio-Techne Buy Bolsters CGT Ambitions in Biggest Deal Since 2014 - NAI500",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQU0s5UlhzMDB6dnZzVkN3WjhScldqYmNFaU5LanFCMmh1MGdZNkpDcnVMUFhTa01aVjk1cnFIVkRLUERhdk1NakhnTnBUY240WlRPaXhSNUlGbDE3ZlU3SUJGN0FEY3FxVm9qTmZrZlJoTDVZX1dabk5FX2JPWm0tTEtmVGhoSWtobHhxNk4wY3dTU2ppeUFsODd3THRYcU5rUFdMekdnNVVXY3BSaHNtOFFGTnFxWDhlcG9JdzBLQQ?oc=5",
+      "published": "2026-06-25",
+      "summary": "Merck KGaA’s $11.3 Billion Bio-Techne Buy Bolsters CGT Ambitions in Biggest Deal Since 2014 NAI500",
+      "ai_summary": "",
+      "score": 36,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA",
+        "战略主题命中: CGT"
+      ],
+      "age_days": 34
+    },
+    {
       "id": "2c18e778584bb572",
       "company_id": "sartorius",
       "company": "Sartorius / Sartorius Stedim Biotech",
@@ -6511,7 +8041,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMimgFBVV95cUxObGFuTW5MM3d5OFc4eklycDdNaDczdWpoeGRmTlB1amgweHVuV1F3M2p0bHRwV2swQTJFa2Z1OExRT0hGLTZQdDJ2c2hiemJOWWhjbDN4NjVyT1NrcURWdHNuWkxkSHlaem9XZUVwelhZNVB2WEFvbTRSZUpXMncyRk5LUDBUNW5veE9IazBpd01jX0xka3VCbDFB?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-raises-2026-outlook-after-10-growth-in-q2%2far-AA28CmiL&c=14750123491725895340&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-raises-2026-outlook-after-10-growth-in-q2%2far-AA28CmiL&c=14750123491725895340&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher raises 2026 outlook after 10% growth in Q2 - Yahoo Finance",
@@ -6637,6 +8167,42 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "高价值分类加成 +10: event"
       ],
       "age_days": 79
+    },
+    {
+      "id": "53bdf54fd0d510c7",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/bd_260915"
+      ],
+      "source_trust": "ecosystem",
+      "title": "バイオインダストリー協会／ 「製薬BD×ベンチャー会員 定例交流会」に 参加を希望するベンチャー企業を募集",
+      "url": "https://www.jba.or.jp/event/bd_260915",
+      "published": "2026-07-28",
+      "summary": "",
+      "ai_summary": "",
+      "score": 36,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 製薬",
+        "业务动作命中: 募集",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 1
     },
     {
       "id": "40b84bb2e0497bc3",
@@ -7300,7 +8866,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "战略主题命中: cell therapy",
@@ -7379,6 +8945,251 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "高价值分类加成 +10: event"
       ],
       "age_days": 21
+    },
+    {
+      "id": "7256234b2c3e0291",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/ipss-racmo"
+      ],
+      "source_trust": "ecosystem",
+      "title": "宮田 満のバイオ・アメイジング～緊急対談 バイオのあの話題はこれからどうなる？！／ 「iPS細胞治療を\"誰もが受けられる医療\"へ！S-RACMOの挑戦」",
+      "url": "https://www.jba.or.jp/event/ipss-racmo",
+      "published": "2026-07-29",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 細胞治療, iPS細胞",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 0
+    },
+    {
+      "id": "3270879676ff8ebb",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0018.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年7月27日 審査 New 2026年度 新再生医療等製品の承認品目一覧（2026年6月承認分まで）を掲載しました",
+      "url": "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0018.html",
+      "published": "2026-07-27",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 2
+    },
+    {
+      "id": "875b627d129dc733",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/safety/info-services/ctp/0006.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年7月22日 安全 New 「不具合が疑われる症例報告に関する情報（再生医療等製品）」に2026年3月分の情報を追加しました",
+      "url": "https://www.pmda.go.jp/safety/info-services/ctp/0006.html",
+      "published": "2026-07-22",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 7
+    },
+    {
+      "id": "a0a703777d373edd",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0011.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年7月21日 審査 再生医療等製品の最適使用推進ガイドラインを掲載しました",
+      "url": "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0011.html",
+      "published": "2026-07-21",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 8
+    },
+    {
+      "id": "ee42ab2b7e11e575",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0079.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年5月29日 審査 医薬品/再生医療等製品添付文書改訂相談に関する実施要綱を改正し、月初受付期間を前倒し、拡大しました",
+      "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0079.html",
+      "published": "2026-05-29",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 61
+    },
+    {
+      "id": "ddfd1d4d005b3ecd",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0035.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年5月29日 審査 再生医療等製品の治験相談等に関する実施要綱を改正し、月初受付期間を前倒し、拡大しました",
+      "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0035.html",
+      "published": "2026-05-29",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 61
+    },
+    {
+      "id": "ecfaf805a02373f3",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/safety/info-services/medical-safety-info/0004.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年5月8日 安全 2025年度（令和7年度）第2回医薬品・再生医療等製品の安全使用に関する調査結果を掲載しました",
+      "url": "https://www.pmda.go.jp/safety/info-services/medical-safety-info/0004.html",
+      "published": "2026-05-08",
+      "summary": "",
+      "ai_summary": "",
+      "score": 34,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 82
     },
     {
       "id": "d80ad146dd86768b",
@@ -7844,7 +9655,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "战略主题命中: cell and gene therapy, gene therapy",
@@ -7884,7 +9695,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "战略主题命中: cell therapy, CliniMACS",
@@ -8780,43 +10591,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 34
     },
     {
-      "id": "7c68b8af389a796f",
-      "company_id": "merck_life_science",
-      "company": "Merck KGaA Life Science / MilliporeSigma",
-      "matched_company_ids": [
-        "merck_life_science"
-      ],
-      "matched_companies": [
-        "Merck KGaA Life Science / MilliporeSigma"
-      ],
-      "source_id": "google_news_merck_life_science",
-      "source_label": "Google News RSS - Merck KGaA Life Science",
-      "source_ids": [
-        "google_news_merck_life_science"
-      ],
-      "source_labels": [
-        "Google News RSS - Merck KGaA Life Science"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQkt5dW44a29KakMtN0luUmVybEZIWkZiY3VnNkYzNE81TmhNaDYtTTE1WmZ2NDJXbFVLd3R6RW1Fem9ja0RKVV9aMWFiUzk2WTZ0MjllVWpRbEpqdjBOa3pYR1YzQjNxMU5uNHM2WU1FOU9lV2UxZkVXeFJXczBJLVR1N1VvNzBVanV2QUloY05TQnBEM1VISHFUci1WeEljM3ctc0J3?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "ProtaGene Teams With MilliporeSigma on End-to-End Testing - Contract Pharma",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQkt5dW44a29KakMtN0luUmVybEZIWkZiY3VnNkYzNE81TmhNaDYtTTE1WmZ2NDJXbFVLd3R6RW1Fem9ja0RKVV9aMWFiUzk2WTZ0MjllVWpRbEpqdjBOa3pYR1YzQjNxMU5uNHM2WU1FOU9lV2UxZkVXeFJXczBJLVR1N1VvNzBVanV2QUloY05TQnBEM1VISHFUci1WeEljM3ctc0J3?oc=5",
-      "published": "2026-05-18",
-      "summary": "ProtaGene Teams With MilliporeSigma on End-to-End Testing Contract Pharma",
-      "ai_summary": "",
-      "score": 30,
-      "tier": "archive",
-      "category": "finance",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: MilliporeSigma"
-      ],
-      "age_days": 72
-    },
-    {
       "id": "ec59c336be089cb0",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma",
@@ -9414,44 +11188,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 5
     },
     {
-      "id": "a1445c6fea612973",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaElEYzRLb195bW1fZmdsa2IxUDFvWS00bks4MlRRVXNaU0x5LUZZekJhQ1N1dFB0YVU2S3hwMzM1bHdKQ2Z2RmZkc3BWeFo1cVM0azVOOFhFN3pmaUN2ZUFRXzRuNmxpVGtybDQ4LUhsX05OTjNEWDdGUC1tdFdGWW9XbmpkZXNVdzZHa0hjWU5kM0pLT3c4OGppa1VXS2ttXzZqLTlQekRLZ3VMWW800gG0AUFVX3lxTE1PaVJKS1RUNjNMVEo3LUhHTzdYMjZfUGVMMUtrQXJVcHhiZGdwcVI4VFFWVS1jLTFtVlFneWpEcDd2SzBxZmpfYmY4Ujh0c1hVT25kMXlvUXlfY1VteXVmbUdoME9Fb0JXb1V1cE5KUHFPeGdWUEEzd2dmemZhc3hJdjN3eS1vRWhaZ3FnMkhxZFJmX1BMNnBrMTQxenNnaFRwTnJEU0FiX01lUEszbUhNVXRRNA?oc=5",
-        "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX3hQZzRMbjBwLXp5NE4zWnY4Sm1WaGd3cFBBaFNRb1dfbmVTLTQ2ajhKcFhHcG9sdXhwMTBQbWpBMTZXWE5CTExUeTlJZS1oajJvWkRidGZnWUpBemduUElKM1FjTG0zSFBJc0pSNUdqc3ZWOFg5dk1BNWxZSUVMOU9LN0dTZ2dubktNZVltM2lOQ2tMaTVuaHdB?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific lays off nearly 70 Wisconsin employees - WFRV Local 5",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaElEYzRLb195bW1fZmdsa2IxUDFvWS00bks4MlRRVXNaU0x5LUZZekJhQ1N1dFB0YVU2S3hwMzM1bHdKQ2Z2RmZkc3BWeFo1cVM0azVOOFhFN3pmaUN2ZUFRXzRuNmxpVGtybDQ4LUhsX05OTjNEWDdGUC1tdFdGWW9XbmpkZXNVdzZHa0hjWU5kM0pLT3c4OGppa1VXS2ttXzZqLTlQekRLZ3VMWW800gG0AUFVX3lxTE1PaVJKS1RUNjNMVEo3LUhHTzdYMjZfUGVMMUtrQXJVcHhiZGdwcVI4VFFWVS1jLTFtVlFneWpEcDd2SzBxZmpfYmY4Ujh0c1hVT25kMXlvUXlfY1VteXVmbUdoME9Fb0JXb1V1cE5KUHFPeGdWUEEzd2dmemZhc3hJdjN3eS1vRWhaZ3FnMkhxZFJmX1BMNnBrMTQxenNnaFRwTnJEU0FiX01lUEszbUhNVXRRNA?oc=5",
-      "published": "2026-07-13",
-      "summary": "Thermo Fisher Scientific lays off nearly 70 Wisconsin employees Yahoo Finance",
-      "ai_summary": "",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
-      ],
-      "age_days": 16
-    },
-    {
       "id": "159ddfe8aa82c7a5",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -9602,6 +11338,44 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
       ],
       "age_days": 5
+    },
+    {
+      "id": "a1445c6fea612973",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaElEYzRLb195bW1fZmdsa2IxUDFvWS00bks4MlRRVXNaU0x5LUZZekJhQ1N1dFB0YVU2S3hwMzM1bHdKQ2Z2RmZkc3BWeFo1cVM0azVOOFhFN3pmaUN2ZUFRXzRuNmxpVGtybDQ4LUhsX05OTjNEWDdGUC1tdFdGWW9XbmpkZXNVdzZHa0hjWU5kM0pLT3c4OGppa1VXS2ttXzZqLTlQekRLZ3VMWW800gG0AUFVX3lxTE1PaVJKS1RUNjNMVEo3LUhHTzdYMjZfUGVMMUtrQXJVcHhiZGdwcVI4VFFWVS1jLTFtVlFneWpEcDd2SzBxZmpfYmY4Ujh0c1hVT25kMXlvUXlfY1VteXVmbUdoME9Fb0JXb1V1cE5KUHFPeGdWUEEzd2dmemZhc3hJdjN3eS1vRWhaZ3FnMkhxZFJmX1BMNnBrMTQxenNnaFRwTnJEU0FiX01lUEszbUhNVXRRNA?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX3hQZzRMbjBwLXp5NE4zWnY4Sm1WaGd3cFBBaFNRb1dfbmVTLTQ2ajhKcFhHcG9sdXhwMTBQbWpBMTZXWE5CTExUeTlJZS1oajJvWkRidGZnWUpBemduUElKM1FjTG0zSFBJc0pSNUdqc3ZWOFg5dk1BNWxZSUVMOU9LN0dTZ2dubktNZVltM2lOQ2tMaTVuaHdB?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific lays off nearly 70 Wisconsin employees - WFRV Local 5",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaElEYzRLb195bW1fZmdsa2IxUDFvWS00bks4MlRRVXNaU0x5LUZZekJhQ1N1dFB0YVU2S3hwMzM1bHdKQ2Z2RmZkc3BWeFo1cVM0azVOOFhFN3pmaUN2ZUFRXzRuNmxpVGtybDQ4LUhsX05OTjNEWDdGUC1tdFdGWW9XbmpkZXNVdzZHa0hjWU5kM0pLT3c4OGppa1VXS2ttXzZqLTlQekRLZ3VMWW800gG0AUFVX3lxTE1PaVJKS1RUNjNMVEo3LUhHTzdYMjZfUGVMMUtrQXJVcHhiZGdwcVI4VFFWVS1jLTFtVlFneWpEcDd2SzBxZmpfYmY4Ujh0c1hVT25kMXlvUXlfY1VteXVmbUdoME9Fb0JXb1V1cE5KUHFPeGdWUEEzd2dmemZhc3hJdjN3eS1vRWhaZ3FnMkhxZFJmX1BMNnBrMTQxenNnaFRwTnJEU0FiX01lUEszbUhNVXRRNA?oc=5",
+      "published": "2026-07-13",
+      "summary": "Thermo Fisher Scientific lays off nearly 70 Wisconsin employees Yahoo Finance",
+      "ai_summary": "",
+      "score": 30,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
+      ],
+      "age_days": 16
     },
     {
       "id": "0dd7c53ed73ae683",
@@ -10551,7 +12325,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRVRKQlpuM1FRV0hXaS1yc0w2QmVkTUVraGJvQ080YXU3TVFHcUhPd1dFazRmVWxGWW9oa1lKRjZCNkw5MzA4SUh3cXRuSHoyNEx6VUkwWUR4SktvYXpaeWlxUEdZQkUyY1BidWk2dlA5WnJINVNzb290eUIzRkdEcjQ2R2kwY05jc0Q5WXFHLUxuMGh3dTBxMWpleFZGY2M?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-faces-a-margin-test&c=3323769802678693325&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific (NYSE:TMO) Faces A Margin Test - Kalkine Media",
@@ -11296,6 +13070,76 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 47
     },
     {
+      "id": "0506f51b3e2bc4c0",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-18143"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.6.17 イベント 【ご案内】AASCRM Webinar Series – 2026年7月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-18143",
+      "published": "2026-06-17",
+      "summary": "",
+      "ai_summary": "",
+      "score": 30,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 42
+    },
+    {
+      "id": "a58aa6f1fcaacd97",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-18103"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.5.30 イベント 【ご案内】AASCRM Webinar Series – 2026年6月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-18103",
+      "published": "2026-05-30",
+      "summary": "",
+      "ai_summary": "",
+      "score": 30,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 60
+    },
+    {
       "id": "895c825ccc47f707",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -11856,7 +13700,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "业务动作命中: clinical",
@@ -12179,6 +14023,215 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "高价值分类加成 +10: event"
       ],
       "age_days": 20
+    },
+    {
+      "id": "397b42fda0260901",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/_dynamo5"
+      ],
+      "source_trust": "ecosystem",
+      "title": "バイオエンジニアリング研究会 ／ 若手ダイナモ人財オープンセミナー ５次世代バイオものづくりの覚醒！ ～配列設計・翻訳制御・シャーシ開発への挑戦～",
+      "url": "https://www.jba.or.jp/event/_dynamo5",
+      "published": "2026-07-27",
+      "summary": "",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 2
+    },
+    {
+      "id": "fe3c618cc362bd88",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/post_health_0826"
+      ],
+      "source_trust": "ecosystem",
+      "title": "ヘルスケア研究会／ セミナー「ヘルスケアサービス、今後の有望なビジネスモデルとは」",
+      "url": "https://www.jba.or.jp/event/post_health_0826",
+      "published": "2026-07-24",
+      "summary": "",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 5
+    },
+    {
+      "id": "840975eddafc9856",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/260825aiai"
+      ],
+      "source_trust": "ecosystem",
+      "title": "先端技術情報発信セミナー／ 最新技術AIが切り拓く次世代研究開発とは～研究開発は‟AIと共創″の時代へ～",
+      "url": "https://www.jba.or.jp/event/260825aiai",
+      "published": "2026-07-23",
+      "summary": "",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 6
+    },
+    {
+      "id": "68a20571c625dfe4",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/polin_260731"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026年度政策情報セミナー／ 国内森林資源を活用した成長戦略型バイオエコノミーの推進 ～輸入原油・ナフサ依存から森林資源が拓く国産燃 料・化成品の時代へ～",
+      "url": "https://www.jba.or.jp/event/polin_260731",
+      "published": "2026-07-31",
+      "summary": "",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": -2
+    },
+    {
+      "id": "09410a8c75f00972",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "biojapan_public_pages",
+      "source_label": "BioJapan - public event pages",
+      "source_ids": [
+        "biojapan_public_pages"
+      ],
+      "source_labels": [
+        "BioJapan - public event pages"
+      ],
+      "related_urls": [
+        "https://jcd-expo.jp/jp/seminar.html"
+      ],
+      "source_trust": "ecosystem",
+      "title": "Available in early Aug. セミナー JOIN THE SEMINARS",
+      "url": "https://jcd-expo.jp/jp/seminar.html",
+      "published": "",
+      "summary": "",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": null
+    },
+    {
+      "id": "e73e0025f9c998e6",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/relief-services/infections/0032.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年6月24日 救済 生物由来製品等の一覧を更新しました",
+      "url": "https://www.pmda.go.jp/relief-services/infections/0032.html",
+      "published": "2026-06-24",
+      "summary": "",
+      "ai_summary": "",
+      "score": 28,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 35
     },
     {
       "id": "d316dfca7742a294",
@@ -13723,7 +15776,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "战略主题命中: cell line development",
@@ -13763,7 +15816,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "战略主题命中: bioreactor",
@@ -13803,7 +15856,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "战略主题命中: GMP",
@@ -14973,42 +17026,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过硬性时效上限: 363 天前"
       ],
       "age_days": 363
-    },
-    {
-      "id": "c28ecddda25ba4ec",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "nikkei_biotech_company_pool_index",
-      "source_label": "Nikkei Biotech - company pool indexed RSS",
-      "source_ids": [
-        "nikkei_biotech_company_pool_index"
-      ],
-      "source_labels": [
-        "Nikkei Biotech - company pool indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lSE5pQzlISTRDbzlUbHpGM0NUdGVoN0EyNWwwcG1ZRVRkRHRyTlZEUFMtaVNsRzNPZDYtVnM0MGRlQ01IelNDNjR3dXFhZlZKWlRDbnBxYUN3TUNYQnExMGRsZ2pHdw?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "ついに制御性T細胞を活用した治療が承認された - 日経バイオテクONLINE",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lSE5pQzlISTRDbzlUbHpGM0NUdGVoN0EyNWwwcG1ZRVRkRHRyTlZEUFMtaVNsRzNPZDYtVnM0MGRlQ01IelNDNjR3dXFhZlZKWlRDbnBxYUN3TUNYQnExMGRsZ2pHdw?oc=5",
-      "published": "2025-09-10",
-      "summary": "ついに制御性T細胞を活用した治療が承認された 日経バイオテクONLINE",
-      "ai_summary": "",
-      "score": 25,
-      "tier": "archive",
-      "category": "regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "业务动作命中: 承認",
-        "高价值分类加成 +8: regulatory",
-        "超过硬性时效上限: 322 天前"
-      ],
-      "age_days": 322
     },
     {
       "id": "ba216fee1a574fb5",
@@ -16778,7 +18795,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "业务动作命中: manufacturing",
@@ -17208,19 +19225,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "acro_pubmed_research",
       "source_label": "PubMed - ACROBiosystems research signals",
       "source_ids": [
-        "acro_pubmed_research"
+        "acro_pubmed_research",
+        "crossref_acro_affiliations"
       ],
       "source_labels": [
-        "PubMed - ACROBiosystems research signals"
+        "PubMed - ACROBiosystems research signals",
+        "Crossref - ACROBiosystems affiliation records"
       ],
       "related_urls": [
-        "https://pubmed.ncbi.nlm.nih.gov/42122643/"
+        "https://pubmed.ncbi.nlm.nih.gov/42122643/",
+        "https://doi.org/10.3390/polym18091015"
       ],
       "source_trust": "research",
       "title": "Concentration of DNA at the Cell Surface Dictates Transfection Efficacy: A Hyperbranched Poly(β-Amino Ester) Mediated Strategy for Enhanced Lentivirus Production.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42122643/",
       "published": "2026-04-22",
-      "summary": "PubMed record associated with ACROBiosystems. Journal: Polymers",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems Inc., Beijing 100176, China; Charles Institute of Dermatology, University College Dublin, D04 V1W8 Dublin, Ireland; Institute of Precision Medicine (AUST-IPM), Anhui University of Science and Technology, Huainan 232001, China; ST PHI Therapeutics Co., Ltd., Hangzhou 310051, China; School of Medicine, Anhui University of Science and Technology, Huainan 232001, China; School of Public Health, Anhui University of Science and Technology, Huainan 232001, China; Zhejiang Key Laboratory of New Drug Development for Central Nervous System Dise",
       "ai_summary": "",
       "score": 25,
       "tier": "archive",
@@ -17228,7 +19248,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "research",
       "is_new": false,
       "reasons": [
-        "公司池命中 +30: ACROBiosystems",
+        "公司池命中 +30: ACROBiosystems, ACROBiosystems Inc.",
         "科研数据库结构化来源",
         "高价值分类加成 +5: research",
         "超过默认时效窗口: 98 天前",
@@ -17332,19 +19352,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "acro_pubmed_research",
       "source_label": "PubMed - ACROBiosystems research signals",
       "source_ids": [
-        "acro_pubmed_research"
+        "acro_pubmed_research",
+        "crossref_acro_affiliations"
       ],
       "source_labels": [
-        "PubMed - ACROBiosystems research signals"
+        "PubMed - ACROBiosystems research signals",
+        "Crossref - ACROBiosystems affiliation records"
       ],
       "related_urls": [
-        "https://pubmed.ncbi.nlm.nih.gov/40913267/"
+        "https://pubmed.ncbi.nlm.nih.gov/40913267/",
+        "https://doi.org/10.1161/jaha.124.041168"
       ],
       "source_trust": "research",
       "title": "Single-Cell Transcriptome Profiling Reveals Dynamic Cell Populations and Immune Infiltration in Moyamoya Disease.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40913267/",
       "published": "2025-09-16",
-      "summary": "PubMed record associated with ACROBiosystems. Journal: Journal of the American Heart Association",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems Inc; Beijing Tiantan Hospital, Capital Medical University; Peking Union Medical College Hospital, Peking Union Medical College and Chinese Academy of Medical Sciences. Venue: Journal of the American Heart Association. DOI: 10.1161/jaha.124.041168",
       "ai_summary": "",
       "score": 25,
       "tier": "archive",
@@ -17373,19 +19396,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "acro_pubmed_research",
       "source_label": "PubMed - ACROBiosystems research signals",
       "source_ids": [
-        "acro_pubmed_research"
+        "acro_pubmed_research",
+        "crossref_acro_affiliations"
       ],
       "source_labels": [
-        "PubMed - ACROBiosystems research signals"
+        "PubMed - ACROBiosystems research signals",
+        "Crossref - ACROBiosystems affiliation records"
       ],
       "related_urls": [
-        "https://pubmed.ncbi.nlm.nih.gov/40966656/"
+        "https://pubmed.ncbi.nlm.nih.gov/40966656/",
+        "https://doi.org/10.1093/bib/bbaf477"
       ],
       "source_trust": "research",
       "title": "Computational refinement and multivalent engineering of complementarity-determining region-grafted nanobodies on a humanized scaffold for retaining antiviral efficacy.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40966656/",
       "published": "2025-08-31",
-      "summary": "PubMed record associated with ACROBiosystems. Journal: Briefings in bioinformatics",
+      "summary": "Crossref publication metadata. Affiliations: ACROBiosystems Inc. , Beijing 100176 ,; Institute for Translational Brain Research, State Key Laboratory of Medical Neurobiology, MOE Frontiers Center for Brain Science, Fudan University , Shanghai 200032 ,; Multiscale Research Institute of Complex Systems, Fudan University , Shanghai 201203 ,; State Key Laboratory of Genetics and Development of Complex Phenotypes, Shanghai Engineering Research Center of Industrial Microorganisms, MOE Engineering Research Center of Gene Technology, School of Life Sciences, Fudan University , Shanghai 200438 ,. Venue",
       "ai_summary": "",
       "score": 25,
       "tier": "archive",
@@ -17393,7 +19419,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "research",
       "is_new": false,
       "reasons": [
-        "公司池命中 +30: ACROBiosystems",
+        "公司池命中 +30: ACROBiosystems, ACROBiosystems Inc.",
         "科研数据库结构化来源",
         "高价值分类加成 +5: research",
         "超过硬性时效上限: 332 天前",
@@ -17442,6 +19468,1447 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "专题信号：不进入默认新闻日报"
       ],
       "age_days": 362
+    },
+    {
+      "id": "06a9466ab0a18d95",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "source_ids": [
+        "cphi_japan_official_feed"
+      ],
+      "source_labels": [
+        "CPHI Japan - official RSS"
+      ],
+      "related_urls": [
+        "https://www.cphijapan.com/12248/"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026年 出展社一覧・セミナープログラム公開！",
+      "url": "https://www.cphijapan.com/12248/",
+      "published": "2026-02-02",
+      "summary": "CPHI Japan (国際医薬品開発展) 2026 出展社一覧・セミナープログラムが公開されました！今年の出展社一覧・セミナープログラムが公開されました。是非ご覧ください。出展社一覧セミナープログラムタイムスケジュール […] 投稿 2026年 出展社一覧・セミナープログラム公開！ は CPHI Japan 2027 に最初に表示されました。",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 177 天前"
+      ],
+      "age_days": 177
+    },
+    {
+      "id": "9e42a84a6cab227c",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "source_ids": [
+        "cphi_japan_official_feed"
+      ],
+      "source_labels": [
+        "CPHI Japan - official RSS"
+      ],
+      "related_urls": [
+        "https://www.cphijapan.com/12035/"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026年 来場登録スタート！",
+      "url": "https://www.cphijapan.com/12035/",
+      "published": "2025-12-05",
+      "summary": "CPHI Japan (国際医薬品開発展) 2026 来場登録スタートしました！来場事前登録（無料）はこちら（重要）前回開催より、ご来場には来場登録が必須となりました。事前に来場登録後、来場者バッジを印刷の上ご来場をお願 […] 投稿 2026年 来場登録スタート！ は CPHI Japan 2027 に最初に表示されました。",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 236 天前"
+      ],
+      "age_days": 236
+    },
+    {
+      "id": "80a0fd23c4b204ef",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "source_ids": [
+        "cphi_japan_official_feed"
+      ],
+      "source_labels": [
+        "CPHI Japan - official RSS"
+      ],
+      "related_urls": [
+        "https://www.cphijapan.com/11755/"
+      ],
+      "source_trust": "ecosystem",
+      "title": "サステナビリティアワード2025 受賞出展社発表",
+      "url": "https://www.cphijapan.com/11755/",
+      "published": "2025-06-04",
+      "summary": "CPHI Japan / ファーマIT＆デジタルヘルス エキスポ 2025では、ブース部材の再利用を推進し、廃棄物の減少を目的とした「サステナビリティアワード2025」を開催しました。入賞出展社など詳細はこちら 投稿 サステナビリティアワード2025 受賞出展社発表 は CPHI Japan 2027 に最初に表示されました。",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 420 天前"
+      ],
+      "age_days": 420
+    },
+    {
+      "id": "9f3be5e3a306138d",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "source_ids": [
+        "cphi_japan_official_feed"
+      ],
+      "source_labels": [
+        "CPHI Japan - official RSS"
+      ],
+      "related_urls": [
+        "https://www.cphijapan.com/11614/"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026年開催決定！出展社募集中！",
+      "url": "https://www.cphijapan.com/11614/",
+      "published": "2025-04-23",
+      "summary": "23回目となる次回開催が、2026年4月21日から23日、東京ビッグサイトに決定しました。出展の申し込み、お問い合わせはこちら 投稿 2026年開催決定！出展社募集中！ は CPHI Japan 2027 に最初に表示されました。",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催, 募集",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 462 天前"
+      ],
+      "age_days": 462
+    },
+    {
+      "id": "2948a6aa50c01a61",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "source_ids": [
+        "cphi_japan_official_feed"
+      ],
+      "source_labels": [
+        "CPHI Japan - official RSS"
+      ],
+      "related_urls": [
+        "https://www.cphijapan.com/11124/"
+      ],
+      "source_trust": "ecosystem",
+      "title": "CPHI Japan 2025 セミナープログラム公開！",
+      "url": "https://www.cphijapan.com/11124/",
+      "published": "2025-02-03",
+      "summary": "CPHI Japan 2025 セミナープログラムを公開しました。プログラム詳細はこちらからご覧ください。タイムスケジュールはこちら！セミナーの申し込みには、来場事前登録が必要です。こちらからご登録ください。 投稿 CPHI Japan 2025 セミナープログラム公開！ は CPHI Japan 2027 に最初に表示されました。",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: セミナー",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 541 天前"
+      ],
+      "age_days": 541
+    },
+    {
+      "id": "5abbb90932e935ab",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "cphi_japan_official_feed",
+      "source_label": "CPHI Japan - official RSS",
+      "source_ids": [
+        "cphi_japan_official_feed"
+      ],
+      "source_labels": [
+        "CPHI Japan - official RSS"
+      ],
+      "related_urls": [
+        "https://www.cphijapan.com/11103/"
+      ],
+      "source_trust": "ecosystem",
+      "title": "【お知らせ】第10回日薬連国際委員会アジアセミナー（ベトナム）の開催",
+      "url": "https://www.cphijapan.com/11103/",
+      "published": "2025-01-23",
+      "summary": "2025年2月7日（金）15:00-17:00第10回日薬連国際委員会アジアセミナー（ベトナム）主催：日本製薬団体連合会協力；インフォーママーケッツジャパン ベトナムは豊富な人口と持続的な経済成長を背景に、医薬 […] 投稿 【お知らせ】第10回日薬連国際委員会アジアセミナー（ベトナム）の開催 は CPHI Japan 2027 に最初に表示されました。",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 製薬, セミナー",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 552 天前"
+      ],
+      "age_days": 552
+    },
+    {
+      "id": "c8d31ededcf52759",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-18033"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.4.27 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年5月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-18033",
+      "published": "2026-04-27",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 93 天前"
+      ],
+      "age_days": 93
+    },
+    {
+      "id": "eefc427883f2323a",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17907"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.3.25 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年4月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-17907",
+      "published": "2026-03-25",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 126 天前"
+      ],
+      "age_days": 126
+    },
+    {
+      "id": "a3a349e67c3ceb6d",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17900"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.3.24 学会からのお知らせ イベント 第13回再生医療資格認定講習会について",
+      "url": "https://www.jsrm.jp/news/news-17900",
+      "published": "2026-03-24",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 127 天前"
+      ],
+      "age_days": 127
+    },
+    {
+      "id": "2193b3a4339bff22",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17683"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.3.3 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年3月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-17683",
+      "published": "2026-03-03",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 148 天前"
+      ],
+      "age_days": 148
+    },
+    {
+      "id": "00c9c5b72027bfea",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17512"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.2.9 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年2月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-17512",
+      "published": "2026-02-09",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 170 天前"
+      ],
+      "age_days": 170
+    },
+    {
+      "id": "9139781ab8b9246d",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17415"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.1.23 学会からのお知らせ イベント ナショナルコンソーシアム 【第25回日本再生医療学会総会】安全キャビネット内での無菌操作における考慮事項の解説及び実演セミナー開催について",
+      "url": "https://www.jsrm.jp/news/news-17415",
+      "published": "2026-01-23",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 再生医療, セミナー",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 187 天前"
+      ],
+      "age_days": 187
+    },
+    {
+      "id": "63ac6b2ef217c873",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17393"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.1.14 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年1月開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-17393",
+      "published": "2026-01-14",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 196 天前"
+      ],
+      "age_days": 196
+    },
+    {
+      "id": "4ec2de0a78f8b033",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17390"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.1.9 学会からのお知らせ イベント 【ご案内】Phacilitate Advanced Therapies Week 2026開催のお知らせ（2026年2月9日～12日／サンディエゴ）",
+      "url": "https://www.jsrm.jp/news/news-17390",
+      "published": "2026-01-09",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 201 天前"
+      ],
+      "age_days": 201
+    },
+    {
+      "id": "8f0ffb645f7382ba",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17253"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.1.6 学会からのお知らせ イベント ナショナルコンソーシアム 【市民公開講座】「再生医療の最先端―今日からできる最初の一歩―」開催のご案内",
+      "url": "https://www.jsrm.jp/news/news-17253",
+      "published": "2026-01-06",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 再生医療",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 204 天前"
+      ],
+      "age_days": 204
+    },
+    {
+      "id": "9ceb5051dea57d78",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17217"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2025.12.25 イベント ナショナルコンソーシアム 「市民公開講座」開催のお知らせ",
+      "url": "https://www.jsrm.jp/news/news-17217",
+      "published": "2025-12-25",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "业务动作命中: 開催",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 216 天前"
+      ],
+      "age_days": 216
+    },
+    {
+      "id": "5d394d6f4638db60",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17204"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2025.12.10 学会からのお知らせ イベント ナショナルコンソーシアム 第10回再生医療産学官連携シンポジウム開催について",
+      "url": "https://www.jsrm.jp/news/news-17204",
+      "published": "2025-12-10",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 再生医療",
+        "业务动作命中: 開催, 連携",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 231 天前"
+      ],
+      "age_days": 231
+    },
+    {
+      "id": "7f46e22b4204a026",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0058.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年4月10日 審査 再生医療等製品再審査適合性調査相談を新設しました",
+      "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0058.html",
+      "published": "2026-04-10",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory",
+        "超过默认时效窗口: 110 天前"
+      ],
+      "age_days": 110
+    },
+    {
+      "id": "6ad873d3a0ab58b6",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0017.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年4月9日 審査 2025年度 新再生医療等製品の承認品目一覧を掲載しました",
+      "url": "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0017.html",
+      "published": "2026-04-09",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "战略主题命中: 再生医療",
+        "高价值分类加成 +8: regulatory",
+        "超过默认时效窗口: 111 天前"
+      ],
+      "age_days": 111
+    },
+    {
+      "id": "2a1f1329f78b727d",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pmda_life_science_updates",
+      "source_label": "PMDA - life science and regenerative medicine updates",
+      "source_ids": [
+        "pmda_life_science_updates"
+      ],
+      "source_labels": [
+        "PMDA - life science and regenerative medicine updates"
+      ],
+      "related_urls": [
+        "https://www.pmda.go.jp/relief-services/infections/0030.html"
+      ],
+      "source_trust": "regulator",
+      "title": "2026年4月1日 救済 生物由来製品感染等被害救済制度に関する給付額の改定のお知らせ",
+      "url": "https://www.pmda.go.jp/relief-services/infections/0030.html",
+      "published": "2026-04-01",
+      "summary": "",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "regulatory",
+      "is_new": true,
+      "reasons": [
+        "监管机构结构化来源",
+        "高价值分类加成 +8: regulatory",
+        "超过默认时效窗口: 119 天前"
+      ],
+      "age_days": 119
+    },
+    {
+      "id": "b72a3dcc48cacaf5",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.18609/cgti.2025.164"
+      ],
+      "source_trust": "research",
+      "title": "Scaling smarter: a case study in overcoming cell therapy manufacturing and regulatory hurdles",
+      "url": "https://doi.org/10.18609/cgti.2025.164",
+      "published": "2025-12-18",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec, USA; Tr1X, San Diego, CA, USA. Venue: Cell and Gene Therapy Insights. DOI: 10.18609/cgti.2025.164",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "signal_type": "research",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "战略主题命中: cell and gene therapy, cell therapy, gene therapy",
+        "业务动作命中: manufacturing",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 223 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 223
+    },
+    {
+      "id": "15c2d629dd28cecc",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT07192900"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT07192900: Fast TILs to Treat Metastatic Cancer Patients With Pleural Disease",
+      "url": "https://clinicaltrials.gov/study/NCT07192900",
+      "published": "2026-01-15",
+      "summary": "Lead sponsor: David Bartlett, MD. Collaborators: Miltenyi Biotec, Inc.; Iovance Biotherapeutics, Inc.; UPMC Hillman Cancer Center. Status: RECRUITING. Conditions: Malignant Pleural Effusion; Malignant Mesothelioma; Pleural Effusion, Malignant; Metastasis to Pleura. Interventions: locally manufactured adoptive cellular therapy (ACT) product; Interleukin-2.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 195 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 195
+    },
+    {
+      "id": "401e06c3b64fa1e8",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT00959140"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT00959140: Standardization of CD3+ T Cell Dose for Patients Receiving Allogeneic Peripheral Blood Stem Cell Transplantation From Matched Related Donors",
+      "url": "https://clinicaltrials.gov/study/NCT00959140",
+      "published": "2025-12-19",
+      "summary": "Lead sponsor: University of Alabama at Birmingham. Collaborators: Miltenyi Biotec, Inc.. Status: ACTIVE_NOT_RECRUITING. Conditions: Hematopoietic Stem Cell Transplantation. Interventions: CD3+ T cell depletion.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: EMA, clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 222 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 222
+    },
+    {
+      "id": "338181cb3d62d541",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT01881334"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT01881334: Expanded Access to T-cell Depleted Haplo-Identical Stem Cells for Patients Receiving Haplo-Identical and Unrelated Cord Blood Transplants",
+      "url": "https://clinicaltrials.gov/study/NCT01881334",
+      "published": "2025-11-20",
+      "summary": "Lead sponsor: Joanne Kurtzberg, MD. Collaborators: Duke University; Miltenyi Biotec, Inc.. Status: AVAILABLE. Conditions: Hematologic Malignancies; Inborn Errors of Metabolism Disorders; Immune Deficiencies. Interventions: CliniMACS CD34 Reagent System.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "战略主题命中: CliniMACS",
+        "业务动作命中: EMA, clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 251 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 251
+    },
+    {
+      "id": "1b1f732cdce6bff0",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT05705570"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT05705570: Clinical Trial Using CAR- T Cells for Treatment of Patients With Refractory or Relapsed CD19-positive B Lymphoid Malignancies",
+      "url": "https://clinicaltrials.gov/study/NCT05705570",
+      "published": "2025-09-25",
+      "summary": "Lead sponsor: Nelson Hamerschlak. Collaborators: Miltenyi Biotec, Inc.. Status: RECRUITING. Conditions: Acute Lymphoblastic Leukemia, in Relapse; Acute Lymphoblastic Leukemia Refractory; B-cell Lymphoma Recurrent; B-cell Lymphoma Refractory; Chronic Lymphocytic Leukemia Recurrent. Interventions: Cyclophosphamide; Fludarabine; Chimeric antigen receptor T cells to be implemented in a \"3 + 3\" design on day 0.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 307 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 307
+    },
+    {
+      "id": "6bfd2888f8de7973",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT07153289"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT07153289: CD318-targeted CAR-T Cell Therapy in Patients With Pancreatic Cancer (ResCPa)",
+      "url": "https://clinicaltrials.gov/study/NCT07153289",
+      "published": "2025-09-03",
+      "summary": "Lead sponsor: University Hospital Tuebingen. Collaborators: University Hospital Freiburg; Technical University of Munich; National Center for Tumor Diseases, Heidelberg; Wuerzburg University Hospital; Berlin Institute of Health; Miltenyi Biotec B.V. & Co. KG. Status: NOT_YET_RECRUITING. Conditions: Carcinoma, Pancreatic Ductal; Pancreatic Neoplasms. Interventions: CD318-CAR-T cells.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "战略主题命中: cell therapy, CAR-T",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 329 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 329
+    },
+    {
+      "id": "7607e1c9c88faa94",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT07087847"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT07087847: Ex Vivo T-Cell-Depleted Haploidentical Transplantation Bridging With Chimeric Antigen Receptor T-cell Therapy and Prophylactic Memory T Cell Infusion for Acute Leukemia",
+      "url": "https://clinicaltrials.gov/study/NCT07087847",
+      "published": "2025-07-28",
+      "summary": "Lead sponsor: Ruijin Hospital. Collaborators: Miltenyi Biotec B.V. & Co. KG. Status: NOT_YET_RECRUITING. Conditions: Acute Leukemia; Acute Leukemia Refractory; Acute Myeloid Leukemia (AML); ALL (Acute B-Lymphoblastic Leukemia); Acute Leukemia in Relapse. Interventions: TCRαβ+/CD45RA+depleted haploidentical hematopoietic stem cell transplantation (haplo-HSCT).",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "战略主题命中: cell therapy",
+        "业务动作命中: EMA, clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 366 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 366
+    },
+    {
+      "id": "c0d42894c85670c9",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT04832607"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT04832607: Multivirus-specific T-cell Transfer Post SCT vs AdV, CMV and EBV Infections",
+      "url": "https://clinicaltrials.gov/study/NCT04832607",
+      "published": "2025-07-18",
+      "summary": "Lead sponsor: Tobias Feuchtinger. Collaborators: European Commission; Simbec-Orion Group Ltd, Merthyr Tydfil, UK; Miltenyi Biotec B.V. & Co. KG, Bergisch Gladbach, Germany; Leiden University Medical Center, LUMC, Leiden, The Netherlands; Central Hospital, Nancy, France; University Hospital, Ghent; Ospedale Pediatrico Bambino Gesù, OPBG, Rome, Italy; Newcastle University; Vall d'Hebron Institute of Oncology. Status: RECRUITING. Conditions: AdV Infection; EBV Infection; CMV Infection; Stem Cell Transplant Complications. Interventions: Multivirus (CMV, EBV, AdV)-specific T cells.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 376 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 376
+    },
+    {
+      "id": "4bb9628343559ae5",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT00981058"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT00981058: First-line Treatment of Participants With Stage IV Squamous Non-Small Cell Lung Cancer With Necitumumab and Gemcitabine-Cisplatin",
+      "url": "https://clinicaltrials.gov/study/NCT00981058",
+      "published": "2025-06-18",
+      "summary": "Lead sponsor: Eli Lilly and Company. Collaborators: Parexel; PPD Development, LP; Medidata Solutions; Laboratory Corporation of America; University of Colorado, Denver; Thermo Fisher Scientific FS; ICON Clinical Research; Pacific Biomarkers; Sysmex Inostics GmbH; Intertek. Status: COMPLETED. Conditions: Non Small Cell Lung Cancer. Interventions: Necitumumab; Gemcitabine; Cisplatin.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific, PPD",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 406 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 406
+    },
+    {
+      "id": "8a0b1d0fb4ac75f9",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT06960044"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT06960044: Procalcitonin Aided Antimicrobial Therapy vs Standard of Care",
+      "url": "https://clinicaltrials.gov/study/NCT06960044",
+      "published": "2025-05-07",
+      "summary": "Lead sponsor: Azienda Ospedaliera SS. Antonio e Biagio e Cesare Arrigo di Alessandria. Collaborators: Thermo Fisher Scientific FS. Status: NOT_YET_RECRUITING. Conditions: Lower Respiratory Tract Infection (LRTI). Interventions: Procalcitonin-guided antibiotic management; Standard of care.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 448 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 448
+    },
+    {
+      "id": "7a32cced2d3e4db2",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT04158804"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT04158804: PROcalcitonin Impact on Antibiotic Reduction, adverSe Events and AVoidable healthcarE Costs (ProSAVE): A RCT",
+      "url": "https://clinicaltrials.gov/study/NCT04158804",
+      "published": "2025-03-20",
+      "summary": "Lead sponsor: Massachusetts General Hospital. Collaborators: BRAHMS GmbH; Thermo Fisher Scientific, Inc. Status: COMPLETED. Conditions: Pneumonia, Bacterial. Interventions: procalcitonin.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 496 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 496
+    },
+    {
+      "id": "fe250bd673556714",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT03266302"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT03266302: Hemoadsorption for Prevention of Vasodilatory Shock in Cardiac Surgery Patients With Infective Endocarditis",
+      "url": "https://clinicaltrials.gov/study/NCT03266302",
+      "published": "2025-03-18",
+      "summary": "Lead sponsor: Jena University Hospital. Collaborators: CytoSorbents, Inc; Thermo Fisher Scientific, Inc; Fraunhofer Institute for Interfacial Engineering and Biotechnology; German Federal Ministry of Education and Research. Status: COMPLETED. Conditions: Infective Endocarditis. Interventions: hemoadsorber for removal of cytokines.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 498 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 498
+    },
+    {
+      "id": "d6ddb2aa9c894280",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT05281809"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT05281809: Local Manufacture of CAR T-Cell Products for the Treatment of B-Cell Lymphoma and B-Acute Lymphoblastic Leukemia",
+      "url": "https://clinicaltrials.gov/study/NCT05281809",
+      "published": "2025-01-13",
+      "summary": "Lead sponsor: John Lister. Collaborators: Lentigen Technology, Inc.; Miltenyi Biotec, Inc.; Allegheny Health Network. Status: RECRUITING. Conditions: B-Cell Lymphoma; B Acute Lymphoblastic Leukemia; Diffuse Large B Cell Lymphoma; Mantle Cell Lymphoma; Follicular Lymphoma. Interventions: Chimeric Antigen Receptor (CAR) T-Cell Product (Autologous).",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 562 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 562
+    },
+    {
+      "id": "4b88495d3ec99192",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT01733134"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT01733134: Acute Heart Failure Patients With High Copeptin Treated With Tolvaptan Targets Increased AVP Activation for Treatment (ACTIVATE)",
+      "url": "https://clinicaltrials.gov/study/NCT01733134",
+      "published": "2024-11-20",
+      "summary": "Lead sponsor: Maisel, Alan, M.D.. Collaborators: Otsuka Pharmaceutical Development & Commercialization, Inc.; Thermo Fisher Scientific, Inc. Status: WITHDRAWN. Conditions: Acute Heart Failure. Interventions: Tolvaptan; placebo.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 616 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 616
+    },
+    {
+      "id": "fbdc0b943d4b01a0",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT05591911"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT05591911: Urine Gene Analysis for Pathogen Detection",
+      "url": "https://clinicaltrials.gov/study/NCT05591911",
+      "published": "2024-10-24",
+      "summary": "Lead sponsor: David Sheyn. Collaborators: Vikor Scientific; Thermo Fisher Scientific, Inc. Status: COMPLETED. Conditions: Urinary Tract Infections. Interventions: Urine PCR testing.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 643 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 643
+    },
+    {
+      "id": "2552b2070f1b0ec3",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT05094206"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT05094206: CAR20.19.22 T-cells in Relapsed, Refractory B-cell Malignancies",
+      "url": "https://clinicaltrials.gov/study/NCT05094206",
+      "published": "2024-09-19",
+      "summary": "Lead sponsor: Medical College of Wisconsin. Collaborators: Miltenyi Biotec, Inc.. Status: TERMINATED. Conditions: B-cell Non Hodgkin Lymphoma; B-cell Chronic Lymphocytic Leukemia. Interventions: 0.75x10^6 cells/kg CAR20.19.22 cells; 1x10^6 cells/kg CAR20.19.22 cells; 2.5x10^6 cells/kg CAR20.19.22 cells; 5x10^6 cells/kg CAR20.19.22 cells; Dose expansion: The maximum tolerated dose of CAR20.19.22 cells.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "监管机构结构化来源",
+        "业务动作命中: expansion, clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 678 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 678
+    },
+    {
+      "id": "d2d8306311d2f86d",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "clinicaltrials_company_pool",
+      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "source_ids": [
+        "clinicaltrials_company_pool"
+      ],
+      "source_labels": [
+        "ClinicalTrials.gov - monitored company sponsors and collaborators"
+      ],
+      "related_urls": [
+        "https://clinicaltrials.gov/study/NCT04246762"
+      ],
+      "source_trust": "regulator",
+      "title": "Clinical trial update NCT04246762: Study in Subjects With Rheumatoid Arthritis to Evaluate the Effect of a Single Dose of Olokizumab on the Pharmacokinetics of Substrates for CYP1A2, CYP2C9, CYP2C19 and CYP3A4",
+      "url": "https://clinicaltrials.gov/study/NCT04246762",
+      "published": "2024-08-15",
+      "summary": "Lead sponsor: R-Pharm International, LLC. Collaborators: IQVIA Pvt. Ltd; Thermo Fisher Scientific FS. Status: COMPLETED. Conditions: Rheumatoid Arthritis. Interventions: Olokizumab; Omeprazole; Caffeine; Warfarin+ Vitamin K; Midazolam.",
+      "ai_summary": "",
+      "score": 25,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "clinical_trial",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "监管机构结构化来源",
+        "业务动作命中: clinical",
+        "高价值分类加成 +8: regulatory",
+        "超过硬性时效上限: 713 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "age_days": 713
     },
     {
       "id": "ff0b6035b58960ca",
@@ -17885,41 +21352,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 63
     },
     {
-      "id": "807f1e6a24dba855",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "koreabiomed_apac_index",
-      "source_label": "Korea Biomedical Review - indexed RSS",
-      "source_ids": [
-        "koreabiomed_apac_index"
-      ],
-      "source_labels": [
-        "Korea Biomedical Review - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE05N2w1eFF5VXJ1WVZvdUpCZmVzWjdNLUJ6NFctZjVJcXhzLXV0QUlTUEc3cEdyX1N3aFo1NUhjTWxuaHdCajQzbno3Mlh6QVZCT2VKSVVYV3NoaG9PY29hMEhnSGtWcUVFTmJBa0Nn0gFyQVVfeXFMT3Roa1UtR1JCcVBYMHRBQTVaNXpaclB5SEk4UW1lSVlMN2RrcFFqaFplX19xNlJ6azBjNmlRaXA2bWRoWUF4N0hfdjk4Tk9iLWN4Mnl0TEdiaDJ5ZVFkTDFCeG5hd2RLZzdyQjlCT1pQYzB3?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "AimedBio's FGFR3-targeting ADC shows early responses in phase 1 trial - koreabiomed.com",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05N2w1eFF5VXJ1WVZvdUpCZmVzWjdNLUJ6NFctZjVJcXhzLXV0QUlTUEc3cEdyX1N3aFo1NUhjTWxuaHdCajQzbno3Mlh6QVZCT2VKSVVYV3NoaG9PY29hMEhnSGtWcUVFTmJBa0Nn0gFyQVVfeXFMT3Roa1UtR1JCcVBYMHRBQTVaNXpaclB5SEk4UW1lSVlMN2RrcFFqaFplX19xNlJ6azBjNmlRaXA2bWRoWUF4N0hfdjk4Tk9iLWN4Mnl0TEdiaDJ5ZVFkTDFCeG5hd2RLZzdyQjlCT1pQYzB3?oc=5",
-      "published": "2026-07-22",
-      "summary": "AimedBio's FGFR3-targeting ADC shows early responses in phase 1 trial koreabiomed.com",
-      "ai_summary": "",
-      "score": 24,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: ADC",
-        "业务动作命中: phase 1"
-      ],
-      "age_days": 7
-    },
-    {
       "id": "22652b5fcbb0d953",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -18130,6 +21562,42 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 6
     },
     {
+      "id": "c28ecddda25ba4ec",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "nikkei_biotech_company_pool_index",
+      "source_label": "Nikkei Biotech - company pool indexed RSS",
+      "source_ids": [
+        "nikkei_biotech_company_pool_index"
+      ],
+      "source_labels": [
+        "Nikkei Biotech - company pool indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lSE5pQzlISTRDbzlUbHpGM0NUdGVoN0EyNWwwcG1ZRVRkRHRyTlZEUFMtaVNsRzNPZDYtVnM0MGRlQ01IelNDNjR3dXFhZlZKWlRDbnBxYUN3TUNYQnExMGRsZ2pHdw?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "日本の創薬の強みをどう生かすか、創薬エコシステムの戦略や課題を産官で議論 - 日経バイオテクONLINE",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lSE5pQzlISTRDbzlUbHpGM0NUdGVoN0EyNWwwcG1ZRVRkRHRyTlZEUFMtaVNsRzNPZDYtVnM0MGRlQ01IelNDNjR3dXFhZlZKWlRDbnBxYUN3TUNYQnExMGRsZ2pHdw?oc=5",
+      "published": "2025-09-10",
+      "summary": "日本の創薬の強みをどう生かすか、創薬エコシステムの戦略や課題を産官で議論 日経バイオテクONLINE",
+      "ai_summary": "",
+      "score": 24,
+      "tier": "archive",
+      "category": "market",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: 創薬",
+        "高价值分类加成 +8: market",
+        "超过硬性时效上限: 322 天前"
+      ],
+      "age_days": 322
+    },
+    {
       "id": "639a0c91900ea1a9",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -18337,41 +21805,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 58
     },
     {
-      "id": "5fe63fe89c5aef39",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "nikkanyaku_life_science_index",
-      "source_label": "Nikkan Yakugyo - life science indexed RSS",
-      "source_ids": [
-        "nikkanyaku_life_science_index"
-      ],
-      "source_labels": [
-        "Nikkan Yakugyo - life science indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9la3pENXg0VUlfenlKa0V0OUg3VGFVNkh6MmxVSjdidVUzU2lZNGd4aWhDbjlOdmphUG4xQWFWeS00OExjS0tzbg?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "20日に再生医療部会 自己滑膜由来間葉系幹細胞セイビスカスなど審議 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9la3pENXg0VUlfenlKa0V0OUg3VGFVNkh6MmxVSjdidVUzU2lZNGd4aWhDbjlOdmphUG4xQWFWeS00OExjS0tzbg?oc=5",
-      "published": "2026-04-13",
-      "summary": "20日に再生医療部会 自己滑膜由来間葉系幹細胞セイビスカスなど審議 | 日刊薬業 - 医薬品産業の総合情報サイト 日刊薬業",
-      "ai_summary": "",
-      "score": 22,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: 再生医療, 医薬品",
-        "超过默认时效窗口: 107 天前"
-      ],
-      "age_days": 107
-    },
-    {
       "id": "e6d31c9bdd7bcc65",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -18574,6 +22007,40 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "高价值分类加成 +10: event"
       ],
       "age_days": -1
+    },
+    {
+      "id": "943265b49b9fa0fc",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "linkj_life_science_events",
+      "source_label": "LINK-J - life science ecosystem events",
+      "source_ids": [
+        "linkj_life_science_events"
+      ],
+      "source_labels": [
+        "LINK-J - life science ecosystem events"
+      ],
+      "related_urls": [
+        "https://www.link-j.org/event/article-52761.html"
+      ],
+      "source_trust": "ecosystem",
+      "title": "ネットワーキング 関西 中之島 三井リンクラボ中之島大交流会",
+      "url": "https://www.link-j.org/event/article-52761.html",
+      "published": "",
+      "summary": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": null
     },
     {
       "id": "e8c4ff0dd5345d90",
@@ -18847,6 +22314,281 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过默认时效窗口: 138 天前"
       ],
       "age_days": 138
+    },
+    {
+      "id": "d783266a5c113f4f",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/260827enzyme"
+      ],
+      "source_trust": "ecosystem",
+      "title": "\"未来へのバイオ技術″勉強会／ 酵素研究の現在地―2030年に向けた静かなる革新―",
+      "url": "https://www.jba.or.jp/event/260827enzyme",
+      "published": "2026-07-27",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 2
+    },
+    {
+      "id": "b6cfd76492c3a7fd",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/post_342"
+      ],
+      "source_trust": "ecosystem",
+      "title": "バイオものづくりフォーラム／ バイオものづくりフォーラム／ 大阪工業大学「バイオものづくりセンター」の紹介",
+      "url": "https://www.jba.or.jp/event/post_342",
+      "published": "2026-07-23",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 6
+    },
+    {
+      "id": "7f56957284c96db7",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jba_public_life_science_events",
+      "source_label": "JBA - public life science events",
+      "source_ids": [
+        "jba_public_life_science_events"
+      ],
+      "source_labels": [
+        "JBA - public life science events"
+      ],
+      "related_urls": [
+        "https://www.jba.or.jp/event/ttreg"
+      ],
+      "source_trust": "ecosystem",
+      "title": "宮田 満のバイオ・アメイジング～緊急対談 バイオのあの話題はこれからどうなる？！／ 「妊娠に必須であるマクロファージを同定～制御性T細胞（Treg）の集積を導く免疫寛容機構を解明～」",
+      "url": "https://www.jba.or.jp/event/ttreg",
+      "published": "2026-07-15",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 14
+    },
+    {
+      "id": "e7a828f76d136815",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-18117"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.6.4 イベント ISCT Asia 2026参加登録のご案内（JSRM会員限定登録料15％割引）",
+      "url": "https://www.jsrm.jp/news/news-18117",
+      "published": "2026-06-04",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 55
+    },
+    {
+      "id": "8c0b0a76df2f636e",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-18027"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026.4.20 学会からのお知らせ イベント 2026年 各認定制度受験会場に関するアンケート実施のご案内",
+      "url": "https://www.jsrm.jp/news/news-18027",
+      "published": "2026-04-20",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event",
+        "超过默认时效窗口: 100 天前"
+      ],
+      "age_days": 100
+    },
+    {
+      "id": "96f2ff4e07d576b5",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-17260"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2025.12.4 イベント ナショナルコンソーシアム 【アーカイブ配信開始】研究会「変形性膝関節症患者を対象とした精製ヒアルロン酸ナトリウム関節内注射の有効性及び安全性を評価する臨床研究（OAK-HA研究）」",
+      "url": "https://www.jsrm.jp/news/news-17260",
+      "published": "2025-12-04",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 237 天前"
+      ],
+      "age_days": 237
+    },
+    {
+      "id": "c03baacb6d87f0b2",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "jsrm_public_events",
+      "source_label": "JSRM - regenerative medicine events",
+      "source_ids": [
+        "jsrm_public_events"
+      ],
+      "source_labels": [
+        "JSRM - regenerative medicine events"
+      ],
+      "related_urls": [
+        "https://www.jsrm.jp/news/news-16834"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2025.10.22 学会からのお知らせ イベント ナショナルコンソーシアム ※公開終了※【アーカイブ配信開始】市民公開講座「変形性膝関節症とは？〜原因から最新治療・未来の医療まで〜」",
+      "url": "https://www.jsrm.jp/news/news-16834",
+      "published": "2025-10-22",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event",
+        "超过硬性时效上限: 280 天前"
+      ],
+      "age_days": 280
+    },
+    {
+      "id": "72268900131a320a",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "biojapan_public_pages",
+      "source_label": "BioJapan - public event pages",
+      "source_ids": [
+        "biojapan_public_pages"
+      ],
+      "source_labels": [
+        "BioJapan - public event pages"
+      ],
+      "related_urls": [
+        "https://jcd-expo.jp/jp/visit.html"
+      ],
+      "source_trust": "ecosystem",
+      "title": "2026/07/07 来場・パートナリング登録を開始しました。",
+      "url": "https://jcd-expo.jp/jp/visit.html",
+      "published": "2026-07-07",
+      "summary": "",
+      "ai_summary": "",
+      "score": 22,
+      "tier": "archive",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "高价值分类加成 +10: event"
+      ],
+      "age_days": 22
     },
     {
       "id": "f28f347ef7064b86",
@@ -19895,7 +23637,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -19934,7 +23676,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -19973,7 +23715,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20012,7 +23754,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20051,7 +23793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20090,7 +23832,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20129,7 +23871,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20168,7 +23910,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20208,7 +23950,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20248,7 +23990,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20288,7 +24030,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20328,7 +24070,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20368,7 +24110,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20408,7 +24150,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20448,7 +24190,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20488,7 +24230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20528,7 +24270,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20568,7 +24310,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20608,7 +24350,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20648,7 +24390,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20688,7 +24430,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20727,7 +24469,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20766,7 +24508,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20805,7 +24547,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20844,7 +24586,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20883,7 +24625,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20922,7 +24664,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -20961,7 +24703,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21000,7 +24742,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21039,7 +24781,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21078,7 +24820,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21117,7 +24859,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21156,7 +24898,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21195,7 +24937,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21234,7 +24976,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21273,7 +25015,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21312,7 +25054,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21351,7 +25093,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21384,13 +25126,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "title": "Scaling Quality and Access: QA & Supply Chain in CGT | All Things CGT Ep. 3",
       "url": "https://www.youtube.com/watch?v=xZ24gzTfLQE",
       "published": "2026-07-15",
-      "summary": "Official YouTube channel video. 44 views · 2 weeks ago",
+      "summary": "Official YouTube channel video. 45 views · 2 weeks ago",
       "ai_summary": "",
       "score": 20,
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21429,7 +25171,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21468,7 +25210,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21507,7 +25249,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21546,7 +25288,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21585,7 +25327,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21624,7 +25366,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21663,7 +25405,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21702,7 +25444,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21741,7 +25483,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21781,7 +25523,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21821,7 +25563,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21861,7 +25603,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -21901,7 +25643,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "tier": "archive",
       "category": "video",
       "signal_type": "video",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司自有来源",
         "高价值分类加成 +5: video",
@@ -22570,6 +26312,40 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 7
     },
     {
+      "id": "0cf9586945cd095a",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "biospectrum_asia_index",
+      "source_label": "BioSpectrum Asia - APAC biotech indexed RSS",
+      "source_ids": [
+        "biospectrum_asia_index"
+      ],
+      "source_labels": [
+        "BioSpectrum Asia - APAC biotech indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdlh5ZzdYQTR4OGVBMHhDbFlwaW5XNXJhNmxvSUNtSGdtdXZPblRNTVczTGdnVkxNR0FRdWI5cEpVRTBxNmEwWUNBSU5TWExOWV9JMU02cmFNT1RmMUFIVjA1NHRaWUVwR3FJMHV6Qnl6UW1WLVF0d1pBeFR0YVNIVDJ5TUU4V054UU9jQlNxZ1dZU0lETDlKQm9lVXBuTmFoNlREYTVMbW9vVUhHamFQaTAtYUVEbEEzaXNvS2YtZkZZTndxWnZ6aGN5MjBNejJoZXRtV09B?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "Korea's SK Biopharma collaborates with Insilico Medicine for $2.5 B AI-drug discovery deal - BioSpectrum Asia",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdlh5ZzdYQTR4OGVBMHhDbFlwaW5XNXJhNmxvSUNtSGdtdXZPblRNTVczTGdnVkxNR0FRdWI5cEpVRTBxNmEwWUNBSU5TWExOWV9JMU02cmFNT1RmMUFIVjA1NHRaWUVwR3FJMHV6Qnl6UW1WLVF0d1pBeFR0YVNIVDJ5TUU4V054UU9jQlNxZ1dZU0lETDlKQm9lVXBuTmFoNlREYTVMbW9vVUhHamFQaTAtYUVEbEEzaXNvS2YtZkZZTndxWnZ6aGN5MjBNejJoZXRtV09B?oc=5",
+      "published": "2026-06-22",
+      "summary": "Korea's SK Biopharma collaborates with Insilico Medicine for $2.5 B AI-drug discovery deal BioSpectrum Asia",
+      "ai_summary": "",
+      "score": 18,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "行业编辑媒体",
+        "业务动作命中: deal"
+      ],
+      "age_days": 37
+    },
+    {
       "id": "fd597e3ed3e8410f",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -22908,6 +26684,41 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "业务动作命中: 導入"
       ],
       "age_days": 6
+    },
+    {
+      "id": "f5bd3f0b3e582239",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "nikkei_biotech_company_pool_index",
+      "source_label": "Nikkei Biotech - company pool indexed RSS",
+      "source_ids": [
+        "nikkei_biotech_company_pool_index"
+      ],
+      "source_labels": [
+        "Nikkei Biotech - company pool indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tbmg0a2VaNU5nM2RkU0RVZXJPZDdmV0k3blhnd09ORy12ZGh1VTZQZEFqbWlMMDA3VUFVUmRyRVp6aE9WbGdSVFk1bGJVWjMyRWt5UkVzQThidVd0N3lGZ3RB?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "【パセオン資料】AI × 実験データで変わる製剤開発：モデルから分子設計までを加速する新戦略 - 日経バイオテクONLINE",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tbmg0a2VaNU5nM2RkU0RVZXJPZDdmV0k3blhnd09ORy12ZGh1VTZQZEFqbWlMMDA3VUFVUmRyRVp6aE9WbGdSVFk1bGJVWjMyRWt5UkVzQThidVd0N3lGZ3RB?oc=5",
+      "published": "2025-12-26",
+      "summary": "【パセオン資料】AI × 実験データで変わる製剤開発：モデルから分子設計までを加速する新戦略 日経バイオテクONLINE",
+      "ai_summary": "",
+      "score": 18,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "业务动作命中: 開発",
+        "超过硬性时效上限: 215 天前"
+      ],
+      "age_days": 215
     },
     {
       "id": "de7cec53c22a63f0",
@@ -27076,6 +30887,43 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 1
     },
     {
+      "id": "06028bc24ad1984f",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
+      "source_ids": [
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdWhZdUtlRTY0VG05VHdWb3NDYnhqUThFRW9wN0JVdF9VU28zbXBGa21HaTRsNWFsLXU4RlBXc0VRSmU2MHBOdmpSazVvaXMtVW11VURvVjVPWTh4Vy11Z1dXQVNGYW5HWnJuQ19saEY1b3VLTEJCQ09YNlF1X0haSWNiUFdvcDNJR0tzenVUUm5GREU4V2RwRjJ0UGlQOTNTOFh1SHlROA?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Bio-Techne Acquired by Merck for $11.3 Billion at a Premium, Jumps Over 20% Premarket. - TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdWhZdUtlRTY0VG05VHdWb3NDYnhqUThFRW9wN0JVdF9VU28zbXBGa21HaTRsNWFsLXU4RlBXc0VRSmU2MHBOdmpSazVvaXMtVW11VURvVjVPWTh4Vy11Z1dXQVNGYW5HWnJuQ19saEY1b3VLTEJCQ09YNlF1X0haSWNiUFdvcDNJR0tzenVUUm5GREU4V2RwRjJ0UGlQOTNTOFh1SHlROA?oc=5",
+      "published": "2026-06-25",
+      "summary": "Bio-Techne Acquired by Merck for $11.3 Billion at a Premium, Jumps Over 20% Premarket. TradingKey",
+      "ai_summary": "",
+      "score": 8,
+      "tier": "archive",
+      "category": "regulatory",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "高价值分类加成 +8: regulatory"
+      ],
+      "age_days": 34
+    },
+    {
       "id": "f4624f95802c4150",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -28149,43 +31997,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 3159
     },
     {
-      "id": "cfa62628dd0d4f07",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "google_news_acro",
-      "source_label": "Google News RSS - ACROBiosystems",
-      "source_ids": [
-        "google_news_acro"
-      ],
-      "source_labels": [
-        "Google News RSS - ACROBiosystems"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQek1mUjkxVGQzaUQ2dW1hVlVmMHBGUlh6SDZVRWRub2F1bHdkYmZOUDlEWnpYeURyRkVIYWlpNkJCdmZETjZvbGVDWDVCblZlUVkwQjQyMjRYYjRERUxkdTRGRktubldkSEJmZEZXNk5uaFdHd1k5UFppME91WmpYSmhaek8ySmNlLTE1OXcxSlE5Zw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Merck to acquire Austrian vaccine maker Themis Bioscience - Pharmaceutical Business review -",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQek1mUjkxVGQzaUQ2dW1hVlVmMHBGUlh6SDZVRWRub2F1bHdkYmZOUDlEWnpYeURyRkVIYWlpNkJCdmZETjZvbGVDWDVCblZlUVkwQjQyMjRYYjRERUxkdTRGRktubldkSEJmZEZXNk5uaFdHd1k5UFppME91WmpYSmhaek8ySmNlLTE1OXcxSlE5Zw?oc=5",
-      "published": "2020-05-27",
-      "summary": "Merck to acquire Austrian vaccine maker Themis Bioscience Pharmaceutical Business review -",
-      "ai_summary": "",
-      "score": 0,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "超过硬性时效上限: 2254 天前"
-      ],
-      "age_days": 2254
-    },
-    {
       "id": "7653fc67f2fc36e9",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
@@ -28464,6 +32275,41 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "超过默认时效窗口: 174 天前"
       ],
       "age_days": 174
+    },
+    {
+      "id": "c0da4eb9b25cdda2",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "nikkanyaku_life_science_index",
+      "source_label": "Nikkan Yakugyo - life science indexed RSS",
+      "source_ids": [
+        "nikkanyaku_life_science_index"
+      ],
+      "source_labels": [
+        "Nikkan Yakugyo - life science indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5OUzAzSmhVNURuZmE3WmVqTWhYeUVhRDUxWlN5SGdrazNXSElVTE5wNHZ2X0F2TnhfdWFhVTFNdFR0Z3FRcXh0Tg?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "〔組織・人事〕富士フイルム富山化学（4月1日付） - 日刊薬業",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5OUzAzSmhVNURuZmE3WmVqTWhYeUVhRDUxWlN5SGdrazNXSElVTE5wNHZ2X0F2TnhfdWFhVTFNdFR0Z3FRcXh0Tg?oc=5",
+      "published": "2026-03-30",
+      "summary": "〔組織・人事〕富士フイルム富山化学（4月1日付） 日刊薬業",
+      "ai_summary": "",
+      "score": 0,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "噪音词命中: 人事",
+        "超过默认时效窗口: 121 天前"
+      ],
+      "age_days": 121
     },
     {
       "id": "c5eb8c62608af429",
@@ -28757,43 +32603,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 34
     },
     {
-      "id": "22e538bb1172e3f7",
-      "company_id": "merck_life_science",
-      "company": "Merck KGaA Life Science / MilliporeSigma",
-      "matched_company_ids": [
-        "merck_life_science"
-      ],
-      "matched_companies": [
-        "Merck KGaA Life Science / MilliporeSigma"
-      ],
-      "source_id": "google_news_merck_life_science",
-      "source_label": "Google News RSS - Merck KGaA Life Science",
-      "source_ids": [
-        "google_news_merck_life_science"
-      ],
-      "source_labels": [
-        "Google News RSS - Merck KGaA Life Science"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNM2d1aUt0cWd5eHZJVENMYXEzZVhFTE8wSW9QLXdLXzljOGdCcGI3bHhLSEJLc0FsYzYwUHdzMk9IRXNPWHNQbldwRnVJQXBVV0R5WWpodVFlVVNFN2gzZ1pWb1pudXpWZC1wUE9saXJ5UUlLOTgyXzBqT05xOWtOa216aVh0SEdNZ0RuYVdyMF9hTkp6RDZsejU3a0F5a0dkUkE?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Merck Germany Lands Bio-Techne In $11.3 Billion Cash Deal - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNM2d1aUt0cWd5eHZJVENMYXEzZVhFTE8wSW9QLXdLXzljOGdCcGI3bHhLSEJLc0FsYzYwUHdzMk9IRXNPWHNQbldwRnVJQXBVV0R5WWpodVFlVVNFN2gzZ1pWb1pudXpWZC1wUE9saXJ5UUlLOTgyXzBqT05xOWtOa216aVh0SEdNZ0RuYVdyMF9hTkp6RDZsejU3a0F5a0dkUkE?oc=5",
-      "published": "2026-06-25",
-      "summary": "Merck Germany Lands Bio-Techne In $11.3 Billion Cash Deal Benzinga",
-      "ai_summary": "",
-      "score": 0,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "未命中强规则，默认归档"
-      ],
-      "age_days": 34
-    },
-    {
       "id": "184fc9b6b0390698",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma",
@@ -28891,7 +32700,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "related_urls": [
         "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Announces-Quarterly-Dividend-3dcda308b/default.aspx",
         "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Announces-Quarterly-Dividend/default.aspx",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZm8xa3pXcFR4YlVocmNiZjZfZzQ1NmRzN29oMmpTaTNMYkd0U29yYlZFcC1YM2hvd1lGeUxDc0RrV2x5MlJSZnBPd1MtNFJZUGNFZ1VFVndxbEtrQXpkZzJobUVNNndxU2xzcVVVUnU1V3pTb1hqenVBWWFWYnhCVFozWXV3b1BJNnlLYUd6Yy1jQndMU1hsc0dybWYxRmlaRERIODlfazRZT09IT1E?oc=5"
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZm8xa3pXcFR4YlVocmNiZjZfZzQ1NmRzN29oMmpTaTNMYkd0U29yYlZFcC1YM2hvd1lGeUxDc0RrV2x5MlJSZnBPd1MtNFJZUGNFZ1VFVndxbEtrQXpkZzJobUVNNndxU2xzcVVVUnU1V3pTb1hqenVBWWFWYnhCVFozWXV3b1BJNnlLYUd6Yy1jQndMU1hsc0dybWYxRmlaRERIODlfazRZT09IT1E?oc=5",
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxOUnhWbC1MZ2NoUnlzUDAxMDBMR05HZi0yZnNsYVhYZWpvWlBYcC1KazFZdFc1UkFjb0lOTnE1ak9nSjNVcHBZZ2pseHM1X1VPSExGd3JiV1FRRTRaU2NEbFh5d29aanIwSEVubGsyam5SY3NlOWZ0UDZtNWRxX0RiczU3bS1Pd1J1MmQtMUFrSElBUUFTSEl2OUMydmwxQQ?oc=5"
       ],
       "source_trust": "owned",
       "title": "Thermo Fisher Scientific Announces Quarterly Dividend",
@@ -29276,7 +33086,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdlRVYUpWQmhvV0FqRzJkRHdwclRxd1hVUzJic0tKQVJlRTZUUElCWGtYaUZKQjg5ajR3Nk92dzF0d19OeEFGTlBxMGtSaGI3WjNSZVJzYUtJMHgzejkybm1lTXVvcnJOZDRoMHdtTC04VHhocW1weVc0MXNlVklQb1VLckZWcV9wMlFxMkE3ZFpTWlIxS0lwbUt1VmZqWUJZcFdN?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-scientific-q2-earnings-call-highlights%2far-AA28zm1i&c=5438266740172301055&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fthermo-fisher-scientific-q2-earnings-call-highlights%2far-AA28zm1i&c=5438266740172301055&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific Q2 Earnings Call Highlights - Yahoo Finance",
@@ -29393,7 +33203,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMipgFBVV95cUxQazhTeHpRZXdHYlh2YUdWekFJSUY4MFQwRDVUcmxEeFRidGJwcjZxV0VtbFQ3VnhvdVM2ZXZjOGlKYkZRcV8xNGU1QnotMUE0X1EyNW5kNE9RUDBTQmcxalFabGVpTWI4bVBNM3FWWlBxQ2UyalJDbHZlQUN1RDZfRG1WZjhOaUNZT3RCNDhmR3FxRkRIQ18yUlBBbVVaN3hXUUp0ZG5B?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-surpasses-111504094.html&c=12349847283684608630&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-surpasses-111504094.html&c=12349847283684608630&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific (TMO) Surpasses Q2 Earnings and Revenue Estimates - Yahoo Finance",
@@ -30022,44 +33832,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "age_days": 5
     },
     {
-      "id": "14714e10579cd419",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY01SdS0tZFJ5dmFtTjVNVl96bjZNNXItRGgwUjFRTU42bTVkNkVNUEJ0LVBnd3JtV2VBOVJmSUdMX043eVIzTm1BR1hEZjNxTFFQX3ZicVp3cjYyVlFKcjZPNW10SDRHU05JTng3azBMUVB3bFY1MjU0Q0Jyd3pLM0stSTZ2QQ?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Stock Climbs As Analysts Hike Targets Ahead Q2 - timothysykes.com",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY01SdS0tZFJ5dmFtTjVNVl96bjZNNXItRGgwUjFRTU42bTVkNkVNUEJ0LVBnd3JtV2VBOVJmSUdMX043eVIzTm1BR1hEZjNxTFFQX3ZicVp3cjYyVlFKcjZPNW10SDRHU05JTng3azBMUVB3bFY1MjU0Q0Jyd3pLM0stSTZ2QQ?oc=5",
-      "published": "2026-07-24",
-      "summary": "Thermo Fisher Stock Climbs As Analysts Hike Targets Ahead Q2 timothysykes.com",
-      "ai_summary": "",
-      "score": 0,
-      "tier": "archive",
-      "category": "company",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "噪音词命中: stock"
-      ],
-      "age_days": 5
-    },
-    {
       "id": "feec1291d4f881b4",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -30093,6 +33865,44 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "噪音词命中: stock"
+      ],
+      "age_days": 5
+    },
+    {
+      "id": "14714e10579cd419",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY01SdS0tZFJ5dmFtTjVNVl96bjZNNXItRGgwUjFRTU42bTVkNkVNUEJ0LVBnd3JtV2VBOVJmSUdMX043eVIzTm1BR1hEZjNxTFFQX3ZicVp3cjYyVlFKcjZPNW10SDRHU05JTng3azBMUVB3bFY1MjU0Q0Jyd3pLM0stSTZ2QQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Stock Climbs As Analysts Hike Targets Ahead Q2 - timothysykes.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY01SdS0tZFJ5dmFtTjVNVl96bjZNNXItRGgwUjFRTU42bTVkNkVNUEJ0LVBnd3JtV2VBOVJmSUdMX043eVIzTm1BR1hEZjNxTFFQX3ZicVp3cjYyVlFKcjZPNW10SDRHU05JTng3azBMUVB3bFY1MjU0Q0Jyd3pLM0stSTZ2QQ?oc=5",
+      "published": "2026-07-24",
+      "summary": "Thermo Fisher Stock Climbs As Analysts Hike Targets Ahead Q2 timothysykes.com",
+      "ai_summary": "",
+      "score": 0,
+      "tier": "archive",
+      "category": "company",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher",
         "噪音词命中: stock"
       ],
       "age_days": 5
@@ -30821,36 +34631,36 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
 window.AIHOT_EMBEDDED_HISTORY = {
   "date": "2026-07-29",
   "summary": {
-    "new_candidates": 64,
+    "new_candidates": 101,
     "immediate": 0,
-    "daily": 81,
-    "archive": 709,
+    "daily": 82,
+    "archive": 802,
     "errors": 0,
     "companies": 5,
-    "sources": 50
+    "sources": 58
   },
   "category_mix": {
-    "market": 24,
+    "market": 25,
     "partnership": 38,
-    "product": 104,
-    "regulatory": 51,
-    "company": 353,
+    "product": 105,
+    "regulatory": 86,
+    "company": 352,
     "video": 95,
-    "finance": 38,
-    "event": 56,
+    "finance": 37,
+    "event": 91,
     "award": 2,
-    "research": 29
+    "research": 53
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 2,
-    "Google News RSS - ACROBiosystems": 34,
+    "Google News RSS - ACROBiosystems": 33,
     "Google News RSS - ACROBiosystems PR Newswire": 11,
-    "ACRO official Insights - indexed RSS": 14,
+    "ACRO official Insights - indexed RSS": 13,
     "ACRO Japan official pages - indexed RSS": 4,
     "ACRO official YouTube channel": 20,
     "Google News RSS - ACROBiosystems Japan": 1,
     "Business Wire - company pool indexed RSS": 30,
-    "Google News RSS - Thermo Fisher": 94,
+    "Google News RSS - Thermo Fisher": 93,
     "Thermo Fisher official press releases RSS": 9,
     "GlobeNewswire - Biotechnology official RSS": 18,
     "BioProcess Online - bioprocess topic indexed RSS": 8,
@@ -30862,19 +34672,19 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Labiotech - official European biotech RSS": 12,
     "Pharmaceutical Technology - manufacturing topic indexed RSS": 8,
     "SelectScience - life science product indexed RSS": 12,
-    "BioSpectrum Asia - APAC biotech indexed RSS": 21,
-    "Korea Biomedical Review - indexed RSS": 29,
+    "BioSpectrum Asia - APAC biotech indexed RSS": 22,
+    "Korea Biomedical Review - indexed RSS": 28,
     "BioSpectrum India - indexed RSS": 10,
     "Nikkan Yakugyo - life science indexed RSS": 30,
     "AnswersNews - official Japan pharma RSS": 10,
     "Mix Online - official Japan pharma RSS": 30,
-    "Nikkei Biotech - company pool indexed RSS": 8,
+    "Nikkei Biotech - company pool indexed RSS": 9,
     "Pharmcube / ByDrug - company pool indexed RSS": 17,
     "Merck KGaA Life Science official news - indexed RSS": 8,
     "Google News RSS - Merck KGaA Life Science": 30,
     "Google News RSS - Merck Life Science Japan": 2,
     "Sartorius official Newsroom - indexed RSS": 8,
-    "Google News RSS - Sartorius": 9,
+    "Google News RSS - Sartorius": 10,
     "Miltenyi group official news - indexed RSS": 6,
     "Google News RSS - Miltenyi Biotec Japan": 2,
     "Thermo Fisher Biotech at Scale RSS": 10,
@@ -30888,9 +34698,17 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Sartorius official YouTube channel": 20,
     "Miltenyi Biotec official YouTube channel": 20,
     "AMED - Japan life science funding and policy indexed RSS": 22,
-    "LINK-J - life science ecosystem events": 26,
+    "LINK-J - life science ecosystem events": 27,
     "Kinki Bio - official seminar and ecosystem RSS": 4,
     "Shonan iPark - official news and event announcements": 10,
-    "PubMed - ACROBiosystems research signals": 7
+    "PubMed - ACROBiosystems research signals": 7,
+    "Crossref - ACROBiosystems affiliation records": 7,
+    "JBA - public life science events": 9,
+    "CPHI Japan - official RSS": 6,
+    "JSRM - regenerative medicine events": 17,
+    "BioJapan - public event pages": 2,
+    "PMDA - life science and regenerative medicine updates": 11,
+    "Crossref - Miltenyi Biotec affiliation records": 20,
+    "ClinicalTrials.gov - monitored company sponsors and collaborators": 24
   }
 };

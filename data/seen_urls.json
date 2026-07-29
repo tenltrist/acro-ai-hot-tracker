@@ -19297,5 +19297,1124 @@
     "tier": "archive",
     "score": 20,
     "signal_type": "video"
+  },
+  "0cf9586945cd095a": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Korea's SK Biopharma collaborates with Insilico Medicine for $2.5 B AI-drug discovery deal - BioSpectrum Asia",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdlh5ZzdYQTR4OGVBMHhDbFlwaW5XNXJhNmxvSUNtSGdtdXZPblRNTVczTGdnVkxNR0FRdWI5cEpVRTBxNmEwWUNBSU5TWExOWV9JMU02cmFNT1RmMUFIVjA1NHRaWUVwR3FJMHV6Qnl6UW1WLVF0d1pBeFR0YVNIVDJ5TUU4V054UU9jQlNxZ1dZU0lETDlKQm9lVXBuTmFoNlREYTVMbW9vVUhHamFQaTAtYUVEbEEzaXNvS2YtZkZZTndxWnZ6aGN5MjBNejJoZXRtV09B?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "06028bc24ad1984f": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Bio-Techne Acquired by Merck for $11.3 Billion at a Premium, Jumps Over 20% Premarket. - TradingKey",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdWhZdUtlRTY0VG05VHdWb3NDYnhqUThFRW9wN0JVdF9VU28zbXBGa21HaTRsNWFsLXU4RlBXc0VRSmU2MHBOdmpSazVvaXMtVW11VURvVjVPWTh4Vy11Z1dXQVNGYW5HWnJuQ19saEY1b3VLTEJCQ09YNlF1X0haSWNiUFdvcDNJR0tzenVUUm5GREU4V2RwRjJ0UGlQOTNTOFh1SHlROA?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "96eaeb2f1ac80924": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "f009da0aa5375081": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166951%2F&c=374108904390942841&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "3347ff5748f96a4a": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3A%2F%2Frichmondbizsense.com%2F2026%2F07%2F28%2Fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2F&c=14430160313610887661&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "3862918680f89839": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Thermo Fisher (TMO) Lands ImmuPharma Kapiglucagon Diabetes Manufacturing Role",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "77c0630116ae01d9": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3A%2F%2Fwww.01net.it%2Fthermo-fisher-scientific-presents-end-to-end-diagnostic-and-lab-solutions-addressing-unmet-clinical-needs-at-adlm-2026%2F&c=14346548381911895341&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "943265b49b9fa0fc": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "ネットワーキング 関西 中之島 三井リンクラボ中之島大交流会",
+    "url": "https://www.link-j.org/event/article-52761.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "53bdf54fd0d510c7": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "バイオインダストリー協会／ 「製薬BD×ベンチャー会員 定例交流会」に 参加を希望するベンチャー企業を募集",
+    "url": "https://www.jba.or.jp/event/bd_260915",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "event"
+  },
+  "7256234b2c3e0291": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "宮田 満のバイオ・アメイジング～緊急対談 バイオのあの話題はこれからどうなる？！／ 「iPS細胞治療を\"誰もが受けられる医療\"へ！S-RACMOの挑戦」",
+    "url": "https://www.jba.or.jp/event/ipss-racmo",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "event"
+  },
+  "397b42fda0260901": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "バイオエンジニアリング研究会 ／ 若手ダイナモ人財オープンセミナー ５次世代バイオものづくりの覚醒！ ～配列設計・翻訳制御・シャーシ開発への挑戦～",
+    "url": "https://www.jba.or.jp/event/_dynamo5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "d783266a5c113f4f": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "\"未来へのバイオ技術″勉強会／ 酵素研究の現在地―2030年に向けた静かなる革新―",
+    "url": "https://www.jba.or.jp/event/260827enzyme",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "fe3c618cc362bd88": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "ヘルスケア研究会／ セミナー「ヘルスケアサービス、今後の有望なビジネスモデルとは」",
+    "url": "https://www.jba.or.jp/event/post_health_0826",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "840975eddafc9856": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "先端技術情報発信セミナー／ 最新技術AIが切り拓く次世代研究開発とは～研究開発は‟AIと共創″の時代へ～",
+    "url": "https://www.jba.or.jp/event/260825aiai",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "b6cfd76492c3a7fd": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "バイオものづくりフォーラム／ バイオものづくりフォーラム／ 大阪工業大学「バイオものづくりセンター」の紹介",
+    "url": "https://www.jba.or.jp/event/post_342",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "7f56957284c96db7": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "宮田 満のバイオ・アメイジング～緊急対談 バイオのあの話題はこれからどうなる？！／ 「妊娠に必須であるマクロファージを同定～制御性T細胞（Treg）の集積を導く免疫寛容機構を解明～」",
+    "url": "https://www.jba.or.jp/event/ttreg",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "68a20571c625dfe4": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年度政策情報セミナー／ 国内森林資源を活用した成長戦略型バイオエコノミーの推進 ～輸入原油・ナフサ依存から森林資源が拓く国産燃 料・化成品の時代へ～",
+    "url": "https://www.jba.or.jp/event/polin_260731",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "06a9466ab0a18d95": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年 出展社一覧・セミナープログラム公開！",
+    "url": "https://www.cphijapan.com/12248",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "9e42a84a6cab227c": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年 来場登録スタート！",
+    "url": "https://www.cphijapan.com/12035",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "80a0fd23c4b204ef": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "サステナビリティアワード2025 受賞出展社発表",
+    "url": "https://www.cphijapan.com/11755",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "9f3be5e3a306138d": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年開催決定！出展社募集中！",
+    "url": "https://www.cphijapan.com/11614",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "2948a6aa50c01a61": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "CPHI Japan 2025 セミナープログラム公開！",
+    "url": "https://www.cphijapan.com/11124",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "5abbb90932e935ab": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "【お知らせ】第10回日薬連国際委員会アジアセミナー（ベトナム）の開催",
+    "url": "https://www.cphijapan.com/11103",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "0506f51b3e2bc4c0": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.6.17 イベント 【ご案内】AASCRM Webinar Series – 2026年7月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-18143",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "event"
+  },
+  "e7a828f76d136815": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.6.4 イベント ISCT Asia 2026参加登録のご案内（JSRM会員限定登録料15％割引）",
+    "url": "https://www.jsrm.jp/news/news-18117",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "a58aa6f1fcaacd97": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.5.30 イベント 【ご案内】AASCRM Webinar Series – 2026年6月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-18103",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "event"
+  },
+  "c8d31ededcf52759": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.4.27 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年5月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-18033",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "8c0b0a76df2f636e": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.4.20 学会からのお知らせ イベント 2026年 各認定制度受験会場に関するアンケート実施のご案内",
+    "url": "https://www.jsrm.jp/news/news-18027",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "eefc427883f2323a": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.3.25 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年4月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-17907",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "a3a349e67c3ceb6d": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.3.24 学会からのお知らせ イベント 第13回再生医療資格認定講習会について",
+    "url": "https://www.jsrm.jp/news/news-17900",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "2193b3a4339bff22": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.3.3 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年3月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-17683",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "00c9c5b72027bfea": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.2.9 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年2月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-17512",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "9139781ab8b9246d": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.1.23 学会からのお知らせ イベント ナショナルコンソーシアム 【第25回日本再生医療学会総会】安全キャビネット内での無菌操作における考慮事項の解説及び実演セミナー開催について",
+    "url": "https://www.jsrm.jp/news/news-17415",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "63ac6b2ef217c873": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.1.14 学会からのお知らせ イベント 【ご案内】AASCRM Webinar Series – 2026年1月開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-17393",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "4ec2de0a78f8b033": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.1.9 学会からのお知らせ イベント 【ご案内】Phacilitate Advanced Therapies Week 2026開催のお知らせ（2026年2月9日～12日／サンディエゴ）",
+    "url": "https://www.jsrm.jp/news/news-17390",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "8f0ffb645f7382ba": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026.1.6 学会からのお知らせ イベント ナショナルコンソーシアム 【市民公開講座】「再生医療の最先端―今日からできる最初の一歩―」開催のご案内",
+    "url": "https://www.jsrm.jp/news/news-17253",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "9ceb5051dea57d78": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2025.12.25 イベント ナショナルコンソーシアム 「市民公開講座」開催のお知らせ",
+    "url": "https://www.jsrm.jp/news/news-17217",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "5d394d6f4638db60": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2025.12.10 学会からのお知らせ イベント ナショナルコンソーシアム 第10回再生医療産学官連携シンポジウム開催について",
+    "url": "https://www.jsrm.jp/news/news-17204",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "96f2ff4e07d576b5": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2025.12.4 イベント ナショナルコンソーシアム 【アーカイブ配信開始】研究会「変形性膝関節症患者を対象とした精製ヒアルロン酸ナトリウム関節内注射の有効性及び安全性を評価する臨床研究（OAK-HA研究）」",
+    "url": "https://www.jsrm.jp/news/news-17260",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "c03baacb6d87f0b2": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2025.10.22 学会からのお知らせ イベント ナショナルコンソーシアム ※公開終了※【アーカイブ配信開始】市民公開講座「変形性膝関節症とは？〜原因から最新治療・未来の医療まで〜」",
+    "url": "https://www.jsrm.jp/news/news-16834",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "09410a8c75f00972": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Available in early Aug. セミナー JOIN THE SEMINARS",
+    "url": "https://jcd-expo.jp/jp/seminar.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "72268900131a320a": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026/07/07 来場・パートナリング登録を開始しました。",
+    "url": "https://jcd-expo.jp/jp/visit.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "3270879676ff8ebb": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年7月27日 審査 New 2026年度 新再生医療等製品の承認品目一覧（2026年6月承認分まで）を掲載しました",
+    "url": "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0018.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "regulatory"
+  },
+  "875b627d129dc733": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年7月22日 安全 New 「不具合が疑われる症例報告に関する情報（再生医療等製品）」に2026年3月分の情報を追加しました",
+    "url": "https://www.pmda.go.jp/safety/info-services/ctp/0006.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "regulatory"
+  },
+  "a0a703777d373edd": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年7月21日 審査 再生医療等製品の最適使用推進ガイドラインを掲載しました",
+    "url": "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0011.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "regulatory"
+  },
+  "e73e0025f9c998e6": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年6月24日 救済 生物由来製品等の一覧を更新しました",
+    "url": "https://www.pmda.go.jp/relief-services/infections/0032.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "regulatory"
+  },
+  "61f577a2f767f38f": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年6月17日 審査 イベント 第32回日本遺伝子細胞治療学会学術集会でのブース出展について（個別面談）",
+    "url": "https://www.pmda.go.jp/review-services/symposia/0206.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "regulatory"
+  },
+  "ee42ab2b7e11e575": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年5月29日 審査 医薬品/再生医療等製品添付文書改訂相談に関する実施要綱を改正し、月初受付期間を前倒し、拡大しました",
+    "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0079.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "regulatory"
+  },
+  "ddfd1d4d005b3ecd": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年5月29日 審査 再生医療等製品の治験相談等に関する実施要綱を改正し、月初受付期間を前倒し、拡大しました",
+    "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0035.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "regulatory"
+  },
+  "ecfaf805a02373f3": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年5月8日 安全 2025年度（令和7年度）第2回医薬品・再生医療等製品の安全使用に関する調査結果を掲載しました",
+    "url": "https://www.pmda.go.jp/safety/info-services/medical-safety-info/0004.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "regulatory"
+  },
+  "7f46e22b4204a026": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年4月10日 審査 再生医療等製品再審査適合性調査相談を新設しました",
+    "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0058.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "regulatory"
+  },
+  "6ad873d3a0ab58b6": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年4月9日 審査 2025年度 新再生医療等製品の承認品目一覧を掲載しました",
+    "url": "https://www.pmda.go.jp/review-services/drug-reviews/review-information/ctp/0017.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "regulatory"
+  },
+  "2a1f1329f78b727d": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "2026年4月1日 救済 生物由来製品感染等被害救済制度に関する給付額の改定のお知らせ",
+    "url": "https://www.pmda.go.jp/relief-services/infections/0030.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "regulatory"
+  },
+  "7373428d94a9c02e": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "756 Developing a flexible cell profiling platform to qualify raw cellular materials and final therapeutics",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0756",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 53,
+    "signal_type": "research"
+  },
+  "5d7a3842a1b234dd": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "805 Scalable stem cell-derived natural killer cell differentiation in an in vitro feeder-free system",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0805",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 53,
+    "signal_type": "research"
+  },
+  "7baba76da7e65faf": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "1048 Rapid mycoplasma detection technologies: enhancing biopharmaceutical safety and efficiency",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.1048",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 53,
+    "signal_type": "research"
+  },
+  "231efddea25973b9": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "56 A simple and flexible cell factor assay panel for clinical study sample analysis",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0056",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 61,
+    "signal_type": "research"
+  },
+  "ffef74841b2c7706": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "P02.08 Precise and flexible formulation and filling of CAR T cells in a fully closed and automated system - the new CliniMACS Prodigy TCTf process",
+    "url": "https://doi.org/10.1136/jitc-2026-itoc.22",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 51,
+    "signal_type": "research"
+  },
+  "7b7624b59ce212c0": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "1295 Spatial characterization of T-cell and B-cell receptors at subcellular resolution using in situ sequencing-by-synthesis of constant and variable segments",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.1295",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "e68524b56173ef05": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Abstract 4281: Armoring ROR1 CAR T cells with IL18 improves CAR T cell function and cytotoxicity against pancreatic cancer cell-lines in vitro and in vivo",
+    "url": "https://doi.org/10.1158/1538-7445.am2026-4281",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "db6200b656d8fbc3": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "1284 Comprehensive preclinical characterization of a CAR T cell product using the MACSima™ spatial multiplexing platform",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.1284",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 53,
+    "signal_type": "research"
+  },
+  "d900a8b6352f49b3": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Automated manufacturing of clinical-grade BDCA2 CAR NK cells in a closed system for the treatment of blastic plasmacytoid dendritic cell neoplasm",
+    "url": "https://doi.org/10.3389/fimmu.2026.1761397",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 67,
+    "signal_type": "research"
+  },
+  "79fe8d64c5b0d7c1": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Abstract 4539: A new and standardized method to isolate viable, high-quality PBMCs from patient blood samples",
+    "url": "https://doi.org/10.1158/1538-7445.am2025-4539",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "c0e8bcf8a95d909a": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Abstract 3718: CAR Detection Reagents - Pioneering advances in CAR T analytics",
+    "url": "https://doi.org/10.1158/1538-7445.am2026-3718",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "1cc035f4f3724f9f": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "P02.07 Impact of human AB serum on CAR T cell manufacturing and metabolic properties of the drug product",
+    "url": "https://doi.org/10.1136/jitc-2026-itoc.21",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 53,
+    "signal_type": "research"
+  },
+  "a841747ffed8fdd6": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "P-08.04 Impact of variability of CD4+/CD8+ T cell ratios on the functional properties of CAR T cell products",
+    "url": "https://doi.org/10.1136/jitc-2025-itoc11.49",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "f545dcf486a5aae6": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "A clinical-grade automated platform for the manufacturing of CAR-γδ T cells for immunotherapy",
+    "url": "https://doi.org/10.3389/fimmu.2026.1779035",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 61,
+    "signal_type": "research"
+  },
+  "adc559f18667c1fe": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "P-08.05 Dried antibody cocktails are setting the benchmark for fast and robust CAR T cell flow cytometric analysis",
+    "url": "https://doi.org/10.1136/jitc-2025-itoc11.50",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "144aa2f4e205668c": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "295 CD276-mediated fratricide limits CD276-CAR-T cell fitness",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0295",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 51,
+    "signal_type": "research"
+  },
+  "69ad7892ac1b2320": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Abstract 3184: Development of novel anti-mesothelin CAR-T cells for the treatment of solid tumors",
+    "url": "https://doi.org/10.1158/1538-7445.am2025-3184",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 51,
+    "signal_type": "research"
+  },
+  "d6469226384d2af4": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "208 A novel fully human MSLN CAR armored with dominant negative TGFβ receptor II demonstrates enhanced efficacy in xenograft models of pancreatic cancer",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0208",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "b38f5f013ce8fe71": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "292 Optimized bi-paratopic BCMA-specific CAR T cells designed to minimize tonic signaling and off-target toxicity",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0292",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "d201df8704f8cee8": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "P03.03 Dried antibody cocktails: setting the benchmark for fast and robust flow cytometric analysis in cell and gene therapy",
+    "url": "https://doi.org/10.1136/jitc-2026-itoc.33",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 57,
+    "signal_type": "research"
+  },
+  "b72a3dcc48cacaf5": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Scaling smarter: a case study in overcoming cell therapy manufacturing and regulatory hurdles",
+    "url": "https://doi.org/10.18609/cgti.2025.164",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "research"
+  },
+  "cc443b3a7adfaa21": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "390 Hypoxia enhances the cytotoxicity of ex vivo expanded NK cells against multiple tumor cell lines",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0390",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "ec49050cf99b07a2": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "223 Efficacy and safety characterization of PSMA-targeting CAR T-cells armored to secrete huIL7 using prostate cancer models",
+    "url": "https://doi.org/10.1136/jitc-2025-sitc2025.0223",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "4bac829d660c4eb8": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "P-02.03 Artificial targets for functional characterization of CAR T cells",
+    "url": "https://doi.org/10.1136/jitc-2025-itoc11.27",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 45,
+    "signal_type": "research"
+  },
+  "1a6e3ea185e48024": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT05267613: Endoscopic Evidence of Maintenance of Healing With Oral NEXIUM in Patients 1 to 11 Years Old With Erosive Esophagitis.",
+    "url": "https://clinicaltrials.gov/study/NCT05267613",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 66,
+    "signal_type": "clinical_trial"
+  },
+  "bcea010a3f1de7df": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT07415876: Evaluating Urinary CXCL10 for Enhanced Detection of Acute Rejection in Kidney Transplant Patients With Low DD-CFDNA",
+    "url": "https://clinicaltrials.gov/study/NCT07415876",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 66,
+    "signal_type": "clinical_trial"
+  },
+  "628093e3771fc6b1": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT06504160: Targeted Investigation of Microbiome 2 Treat Atopic Dermatitis (TIME-2)",
+    "url": "https://clinicaltrials.gov/study/NCT06504160",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 66,
+    "signal_type": "clinical_trial"
+  },
+  "79669df1b50e2759": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT06508931: Safety and Efficacy Study of Zamtocabtagene Autoleucel (MB-CART2019.1) in Pediatric Patients With R/R B-Cell Neoplasms",
+    "url": "https://clinicaltrials.gov/study/NCT06508931",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher",
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 66,
+    "signal_type": "clinical_trial"
+  },
+  "c839cd277687a0ae": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT05046613: Observational Study to Assess Maternal, Fetal and Infant Outcomes Following Exposure to Rimegepant",
+    "url": "https://clinicaltrials.gov/study/NCT05046613",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 66,
+    "signal_type": "clinical_trial"
+  },
+  "a48978bb0d47439e": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT02600208: Peripheral Blood Stem Cell Transplantation for Hematologic Malignancies With Alpha Beta TCell and B Cell Depletion Using the CliniMACS Device",
+    "url": "https://clinicaltrials.gov/study/NCT02600208",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 80,
+    "signal_type": "clinical_trial"
+  },
+  "87277dbd4ea71026": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT04464434: Upfront Autologous HSCT Versus Immunosuppression in Early Diffuse Cutaneous Systemic Sclerosis",
+    "url": "https://clinicaltrials.gov/study/NCT04464434",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 56,
+    "signal_type": "clinical_trial"
+  },
+  "e8ec174963f6bf6d": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT06052059: A Study to Evaluate Efficacy and Safety of Tulisokibart (MK-7240) in Participants With Moderately to Severely Active Ulcerative Colitis (MK-7240-001)",
+    "url": "https://clinicaltrials.gov/study/NCT06052059",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 56,
+    "signal_type": "clinical_trial"
+  },
+  "15c2d629dd28cecc": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT07192900: Fast TILs to Treat Metastatic Cancer Patients With Pleural Disease",
+    "url": "https://clinicaltrials.gov/study/NCT07192900",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "401e06c3b64fa1e8": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT00959140: Standardization of CD3+ T Cell Dose for Patients Receiving Allogeneic Peripheral Blood Stem Cell Transplantation From Matched Related Donors",
+    "url": "https://clinicaltrials.gov/study/NCT00959140",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "338181cb3d62d541": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT01881334: Expanded Access to T-cell Depleted Haplo-Identical Stem Cells for Patients Receiving Haplo-Identical and Unrelated Cord Blood Transplants",
+    "url": "https://clinicaltrials.gov/study/NCT01881334",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "1b1f732cdce6bff0": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT05705570: Clinical Trial Using CAR- T Cells for Treatment of Patients With Refractory or Relapsed CD19-positive B Lymphoid Malignancies",
+    "url": "https://clinicaltrials.gov/study/NCT05705570",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "6bfd2888f8de7973": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT07153289: CD318-targeted CAR-T Cell Therapy in Patients With Pancreatic Cancer (ResCPa)",
+    "url": "https://clinicaltrials.gov/study/NCT07153289",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "7607e1c9c88faa94": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT07087847: Ex Vivo T-Cell-Depleted Haploidentical Transplantation Bridging With Chimeric Antigen Receptor T-cell Therapy and Prophylactic Memory T Cell Infusion for Acute Leukemia",
+    "url": "https://clinicaltrials.gov/study/NCT07087847",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "c0d42894c85670c9": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT04832607: Multivirus-specific T-cell Transfer Post SCT vs AdV, CMV and EBV Infections",
+    "url": "https://clinicaltrials.gov/study/NCT04832607",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "4bb9628343559ae5": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT00981058: First-line Treatment of Participants With Stage IV Squamous Non-Small Cell Lung Cancer With Necitumumab and Gemcitabine-Cisplatin",
+    "url": "https://clinicaltrials.gov/study/NCT00981058",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "8a0b1d0fb4ac75f9": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT06960044: Procalcitonin Aided Antimicrobial Therapy vs Standard of Care",
+    "url": "https://clinicaltrials.gov/study/NCT06960044",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "7a32cced2d3e4db2": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT04158804: PROcalcitonin Impact on Antibiotic Reduction, adverSe Events and AVoidable healthcarE Costs (ProSAVE): A RCT",
+    "url": "https://clinicaltrials.gov/study/NCT04158804",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "fe250bd673556714": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT03266302: Hemoadsorption for Prevention of Vasodilatory Shock in Cardiac Surgery Patients With Infective Endocarditis",
+    "url": "https://clinicaltrials.gov/study/NCT03266302",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "d6ddb2aa9c894280": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT05281809: Local Manufacture of CAR T-Cell Products for the Treatment of B-Cell Lymphoma and B-Acute Lymphoblastic Leukemia",
+    "url": "https://clinicaltrials.gov/study/NCT05281809",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "4b88495d3ec99192": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT01733134: Acute Heart Failure Patients With High Copeptin Treated With Tolvaptan Targets Increased AVP Activation for Treatment (ACTIVATE)",
+    "url": "https://clinicaltrials.gov/study/NCT01733134",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "fbdc0b943d4b01a0": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT05591911: Urine Gene Analysis for Pathogen Detection",
+    "url": "https://clinicaltrials.gov/study/NCT05591911",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "2552b2070f1b0ec3": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT05094206: CAR20.19.22 T-cells in Relapsed, Refractory B-cell Malignancies",
+    "url": "https://clinicaltrials.gov/study/NCT05094206",
+    "company_id": "miltenyi_biotec",
+    "matched_company_ids": [
+      "miltenyi_biotec"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
+  },
+  "d2d8306311d2f86d": {
+    "first_seen": "2026-07-29T12:15:22",
+    "title": "Clinical trial update NCT04246762: Study in Subjects With Rheumatoid Arthritis to Evaluate the Effect of a Single Dose of Olokizumab on the Pharmacokinetics of Substrates for CYP1A2, CYP2C9, CYP2C19 and CYP3A4",
+    "url": "https://clinicaltrials.gov/study/NCT04246762",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "clinical_trial"
   }
 }

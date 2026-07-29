@@ -268,6 +268,143 @@
       "category_hint": "video",
       "max_age_days": 365,
       "max_items": 20
+    },
+    {
+      "id": "jba_public_life_science_events",
+      "label": "JBA - public life science events",
+      "type": "html_links",
+      "url": "https://www.jba.or.jp/",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本生命科学活动",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "include_url_terms": [
+        "jba.or.jp/event/"
+      ],
+      "follow_detail_titles": true,
+      "max_age_days": 365,
+      "max_items": 12
+    },
+    {
+      "id": "cphi_japan_official_feed",
+      "label": "CPHI Japan - official RSS",
+      "type": "rss",
+      "url": "https://www.cphijapan.com/feed/",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本制药展会",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "max_age_days": 730,
+      "max_items": 20
+    },
+    {
+      "id": "jsrm_public_events",
+      "label": "JSRM - regenerative medicine events",
+      "type": "html_links",
+      "url": "https://www.jsrm.jp/news-category/event/",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本再生医疗活动",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "include_url_terms": [
+        "/news/news-"
+      ],
+      "exclude_text_terms": [
+        "終了しました"
+      ],
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "biojapan_public_pages",
+      "label": "BioJapan - public event pages",
+      "type": "html_links",
+      "url": "https://jcd-expo.jp/jp/",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本重点展会",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "include_url_terms": [
+        "/jp/seminar.html",
+        "/jp/visit.html"
+      ],
+      "max_items": 20
+    },
+    {
+      "id": "pmda_life_science_updates",
+      "label": "PMDA - life science and regenerative medicine updates",
+      "type": "html_links",
+      "url": "https://www.pmda.go.jp/0017.html",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本监管与指南",
+      "trust": "regulator",
+      "signal_type": "regulatory",
+      "category_hint": "regulatory",
+      "include_url_terms": [
+        "pmda.go.jp/"
+      ],
+      "include_text_terms": [
+        "再生医療",
+        "遺伝子治療",
+        "細胞",
+        "抗体",
+        "バイオ",
+        "生物由来"
+      ],
+      "require_published": true,
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "crossref_acro_affiliations",
+      "label": "Crossref - ACROBiosystems affiliation records",
+      "type": "crossref",
+      "url": "https://api.crossref.org/works?query.affiliation=ACROBiosystems&filter=from-pub-date%3A2025-01-01&rows=20&select=DOI%2Ctitle%2Cpublished%2Cauthor%2Ccontainer-title%2CURL",
+      "company_id": "acro",
+      "trust": "research",
+      "signal_type": "research",
+      "category_hint": "research",
+      "include_text_terms": [
+        "ACROBiosystems"
+      ],
+      "max_age_days": 730,
+      "max_items": 20
+    },
+    {
+      "id": "crossref_miltenyi_affiliations",
+      "label": "Crossref - Miltenyi Biotec affiliation records",
+      "type": "crossref",
+      "url": "https://api.crossref.org/works?query.affiliation=Miltenyi%20Biotec&filter=from-pub-date%3A2025-01-01&rows=20&select=DOI%2Ctitle%2Cpublished%2Cauthor%2Ccontainer-title%2CURL",
+      "company_id": "miltenyi_biotec",
+      "trust": "research",
+      "signal_type": "research",
+      "category_hint": "research",
+      "include_text_terms": [
+        "Miltenyi Biotec"
+      ],
+      "max_age_days": 730,
+      "max_items": 20
+    },
+    {
+      "id": "clinicaltrials_company_pool",
+      "label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
+      "type": "clinical_trials",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.spons=%28%22Thermo%20Fisher%20Scientific%22%20OR%20%22Miltenyi%20Biotec%22%20OR%20%22Sartorius%22%29&pageSize=30&countTotal=true&format=json&sort=LastUpdatePostDate%3Adesc",
+      "scope_label": "公司池临床合作",
+      "trust": "regulator",
+      "signal_type": "clinical_trial",
+      "category_hint": "regulatory",
+      "include_text_terms": [
+        "Thermo Fisher",
+        "Miltenyi Biotec",
+        "Sartorius"
+      ],
+      "max_age_days": 730,
+      "max_items": 30
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-29T11:48:54",
+  "generated_at": "2026-07-29T12:15:22",
   "window_days": 90,
   "summary": {
-    "new_candidates": 64,
+    "new_candidates": 101,
     "immediate": 0,
-    "daily": 81,
-    "archive": 709,
+    "daily": 82,
+    "archive": 802,
     "errors": 0,
     "companies": 5,
-    "sources": 50
+    "sources": 58
   },
   "selected": [
     {
@@ -906,7 +906,7 @@
       "age_days": 33
     },
     {
-      "id": "8e140a5e7b289e1a",
+      "id": "3862918680f89839",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -915,23 +915,20 @@
       "matched_companies": [
         "Thermo Fisher Scientific"
       ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
       "source_ids": [
-        "google_news_thermo",
         "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher",
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNm9Ybmhick83SGIwbnRHM2o1NzMwR2E5QUxxLXB3SGlkU3JPbExxdE41LTluMHZ1aG1ZMkpNQ1pkZU9CVW5EVF9pTU1uczREd25UZElBdEs4OG0xbXI0bFNuSjJoUldyTEVvTDd3SjZzR1JMZDJnUVR4cW5ILUt4NDR4THU5eUl5aENweUtGQzgtRGIxMTU1U3lVTQ?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a1119a6441dab4fc5828f5652d6&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher (TMO) Lands ImmuPharma Kapiglucagon Diabetes Manufacturing Role - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNm9Ybmhick83SGIwbnRHM2o1NzMwR2E5QUxxLXB3SGlkU3JPbExxdE41LTluMHZ1aG1ZMkpNQ1pkZU9CVW5EVF9pTU1uczREd25UZElBdEs4OG0xbXI0bFNuSjJoUldyTEVvTDd3SjZzR1JMZDJnUVR4cW5ILUt4NDR4THU5eUl5aENweUtGQzgtRGIxMTU1U3lVTQ?oc=5",
+      "title": "Thermo Fisher (TMO) Lands ImmuPharma Kapiglucagon Diabetes Manufacturing Role",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e93f4e21b97c3d4b0f897609&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fthermo-fisher-tmo-lands-immupharma-090819117.html&c=2435584272267530789&mkt=ja-jp",
       "published": "2026-07-24",
       "summary": "Thermo Fisher Scientific (NYSE:TMO) has been selected by ImmuPharma as the key drug product and contract development manufacturer for its Kapiglucagon diabetes treatment program. The partnership ...",
       "ai_summary": "",
@@ -939,7 +936,7 @@
       "tier": "daily",
       "category": "company",
       "signal_type": "news",
-      "is_new": false,
+      "is_new": true,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "战略主题命中: manufacturing",
@@ -1064,7 +1061,7 @@
       "age_days": 64
     },
     {
-      "id": "80c92b475e820319",
+      "id": "96eaeb2f1ac80924",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -1082,12 +1079,12 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "",
@@ -1104,7 +1101,7 @@
       "age_days": 83
     },
     {
-      "id": "a9748d0cd7dfde02",
+      "id": "f009da0aa5375081",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -1122,13 +1119,13 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fwww.asahi.com%2fand%2fpressrelease%2f16554154&c=6298948042624380462&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a696a115f7543e0abd241fb67a52c46&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a697030e6b34a2babec558e5f8d1280&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166951%2f&c=374108904390942841&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystemsは、グローバルなIPガバナンスとライセンシング・システムを最適化し続け、前臨床およびトランスレーショナル・リサーチを拡大し、高品質な医薬品開発を加速するために、規制された、ユーザーフレンドリーな機能性細胞株ソリューションをグローバルに提供していきます。",
       "ai_summary": "",
@@ -1290,6 +1287,45 @@
         "高价值分类加成 +10: product"
       ],
       "age_days": 56
+    },
+    {
+      "id": "858bec68d1310112",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance - Lab Manager",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5",
+      "published": "2026-06-04",
+      "summary": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance Lab Manager",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product"
+      ],
+      "age_days": 55
     },
     {
       "id": "8944f11a22b96440",
@@ -2858,10 +2894,10 @@
         "https://news.google.com/rss/articles/CBMiSEFVX3lxTE91bF9HaXB3cUE4dzVuWElsVEpKS3RjMnhlV1JGQ3FBME9obVFRSGIwVmVMR0R3X1NyT2dQc25VWl9DSjNGQVVWZw?oc=5"
       ],
       "source_trust": "media",
-      "title": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 - 日刊薬業",
+      "title": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE91bF9HaXB3cUE4dzVuWElsVEpKS3RjMnhlV1JGQ3FBME9obVFRSGIwVmVMR0R3X1NyT2dQc25VWl9DSjNGQVVWZw?oc=5",
       "published": "2026-03-30",
-      "summary": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 日刊薬業",
+      "summary": "国内申請中の遺伝子治療薬で共同販促契約 フェリング/日本化薬 | 日刊薬業 - 医薬品産業の総合情報サイト 日刊薬業",
       "ai_summary": "",
       "score": 40,
       "tier": "daily",
@@ -2870,7 +2906,7 @@
       "is_new": false,
       "reasons": [
         "行业编辑媒体",
-        "战略主题命中: 遺伝子治療",
+        "战略主题命中: 遺伝子治療, 医薬品",
         "业务动作命中: 申請, 共同",
         "高价值分类加成 +10: partnership",
         "超过时效窗口 121天，因业务动作匹配保留"
