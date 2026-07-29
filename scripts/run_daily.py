@@ -1089,6 +1089,25 @@ def dedupe(candidates: list[Candidate]) -> list[Candidate]:
     return unique
 
 
+def apply_source_tier_policy(
+    item: Candidate,
+    source_lookup: dict[str, dict[str, Any]],
+) -> Candidate:
+    contributing_sources = [
+        source_lookup[source_id]
+        for source_id in item.source_ids
+        if source_id in source_lookup
+    ]
+    if (
+        contributing_sources
+        and all(source.get("archive_only", False) for source in contributing_sources)
+        and item.tier != "archive"
+    ):
+        item.tier = "archive"
+        item.reasons.append("试接观察源：当前只归档，不进日报")
+    return item
+
+
 def normalize_title(value: str) -> str:
     # Google News appends the publisher after the final " - ".
     headline = re.sub(r"\s+-\s+[^-]{2,80}$", "", clean_text(value))
@@ -1578,7 +1597,10 @@ def main() -> int:
                 profiles.append(source_profiles[profile_id])
         profile = merge_scoring_profiles(profiles)
         scored.append(
-            score_candidate(item, profile, matched_companies, args.days)
+            apply_source_tier_policy(
+                score_candidate(item, profile, matched_companies, args.days),
+                source_lookup,
+            )
         )
 
     # AI summary for daily/immediate items

@@ -287,6 +287,19 @@
       "max_items": 12
     },
     {
+      "id": "mediso_jhvs_public_index",
+      "label": "MEDISO / JHVS - public healthcare venture updates",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Amediso.mhlw.go.jp%20%28MEDISO%20OR%20JHVS%20OR%20%E5%8C%BB%E7%99%82%E7%B3%BB%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%29&hl=ja&gl=JP&ceid=JP%3Aja",
+      "profile_id": "japan_life_science_events",
+      "scope_label": "日本医疗创业与产业活动",
+      "trust": "ecosystem",
+      "signal_type": "event",
+      "category_hint": "event",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
       "id": "cphi_japan_official_feed",
       "label": "CPHI Japan - official RSS",
       "type": "rss",
