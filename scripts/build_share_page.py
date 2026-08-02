@@ -31,7 +31,17 @@ def main() -> int:
     company_metadata = {company["id"]: company for company in company_config["companies"]}
     for company in payload_data.get("companies", []):
         configured = company_metadata.get(company["id"], {})
-        for field in ("business_role", "role_label", "role_reason", "monitoring_focus"):
+        for field in (
+            "business_role",
+            "role_label",
+            "role_reason",
+            "monitoring_focus",
+            "aliases",
+            "markets",
+            "strategic_topics",
+            "business_actions",
+            "noise_terms",
+        ):
             if field in configured:
                 company[field] = configured[field]
 

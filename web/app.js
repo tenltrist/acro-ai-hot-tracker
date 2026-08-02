@@ -37,6 +37,8 @@ const state = {
   coverageCompany: "acro",
   relationshipType: "all",
   relationshipEvidence: "all",
+  relationshipGraphLayer: "all",
+  relationshipGraphFocus: "acro",
   dockOpenRoles: new Set(["self"]),
   feedback: loadFeedback(),
   history: null,
@@ -1957,9 +1959,12 @@ const els = {
   relationshipUpdatedAt: document.querySelector("#relationshipUpdatedAt"),
   relationshipConfirmedCount: document.querySelector("#relationshipConfirmedCount"),
   relationshipDisclosedCount: document.querySelector("#relationshipDisclosedCount"),
+  relationshipCandidateCount: document.querySelector("#relationshipCandidateCount"),
   relationshipCustomerCount: document.querySelector("#relationshipCustomerCount"),
   relationshipSegmentCount: document.querySelector("#relationshipSegmentCount"),
-  relationshipMapNodes: document.querySelector("#relationshipMapNodes"),
+  relationshipGraph: document.querySelector("#relationshipGraph"),
+  relationshipFocusPanel: document.querySelector("#relationshipFocusPanel"),
+  relationshipLayerControl: document.querySelector("#relationshipLayerControl"),
   relationshipResultCount: document.querySelector("#relationshipResultCount"),
   relationshipTypeFilter: document.querySelector("#relationshipTypeFilter"),
   relationshipEvidenceFilter: document.querySelector("#relationshipEvidenceFilter"),
@@ -2130,48 +2135,86 @@ function renderCompanyPools() {
   const companies = state.payload?.companies || [];
   if (!els.companyPoolGroups || !els.companyRoleSummary) return;
 
+  const relationshipData = getRelationshipData();
+  const relationshipRecords = relationshipData.records || [];
+  const asRelationshipMember = (record) => ({
+    id: record.id,
+    display_name: record.organization,
+    role_label: record.relationship_label,
+    role_reason: record.classification_note,
+    monitoring_focus: record.summary,
+    entity_kind: "relationship",
+    relationship_id: record.id,
+  });
+  const asSegmentMember = (segment, index) => ({
+    id: `customer-segment-${index}`,
+    display_name: segment.label,
+    role_label: "客户群 / 具体名单待发现",
+    role_reason: segment.note,
+    monitoring_focus: "从官方案例、合作公告、产品引用和会议演讲中逐条确认。",
+    entity_kind: "segment",
+  });
+
   const roleDefinitions = [
     {
       id: "self",
       title: "本公司",
       description: "作为系统标本验证全链路，单独统计，不占用竞品或客户名额。",
       empty: "尚未设置本公司。",
+      members: companies.filter((company) => company.business_role === "self"),
     },
     {
       id: "competitor",
       title: "竞品池",
       description: "依据产品、技术能力、应用场景与目标客户重叠程度纳入。",
       empty: "尚未确认竞品公司。",
+      members: companies.filter((company) => company.business_role === "competitor"),
     },
     {
       id: "customer",
-      title: "客户池",
-      description: "只收录已确认客户或目标客户，用于观察研发、管线、采购与合作需求信号。",
-      empty: "当前没有已确认客户。导入客户名单后再建立监测，现有竞品不会自动混入。",
+      title: "已确认客户",
+      description: "只收录有采购、项目、客户案例或内部授权证据的公司。",
+      empty: "当前没有可对外展示的已确认客户，不用合作伙伴或参会公司填充。",
+      members: companies.filter((company) => company.business_role === "customer"),
+    },
+    {
+      id: "partner",
+      title: "已确认合作伙伴",
+      description: "双方具名公告、MOU 或明确项目构成合作证据，但不自动等同于客户。",
+      empty: "尚无已确认合作伙伴。",
+      members: relationshipRecords.filter((record) => record.evidence_level === "confirmed").map(asRelationshipMember),
+    },
+    {
+      id: "disclosed",
+      title: "官网披露关系",
+      description: "公司官网披露存在合作，但缺少具体项目、时间或采购证据。",
+      empty: "尚无官网披露但待核对的关系。",
+      members: relationshipRecords.filter((record) => record.evidence_level === "disclosed").map(asRelationshipMember),
+    },
+    {
+      id: "customer-segment",
+      title: "客户发现方向",
+      description: "已知 ACRO 服务哪些类型客群，但具体公司需要逐条发现和确认。",
+      empty: "尚未建立客户发现方向。",
+      members: (relationshipData.customer_segments || []).map(asSegmentMember),
     },
   ];
 
-  const counts = Object.fromEntries(
-    roleDefinitions.map((role) => [
-      role.id,
-      companies.filter((company) => company.business_role === role.id).length,
-    ]),
-  );
-  const unclassified = companies.filter(
-    (company) => !roleDefinitions.some((role) => role.id === company.business_role),
-  ).length;
+  const counts = Object.fromEntries(roleDefinitions.map((role) => [role.id, role.members.length]));
 
-  els.companyPoolTimestamp.textContent = `MVP 阶段：${companies.length} 家公司已分类`;
+  els.companyPoolTimestamp.textContent = `${companies.length} 家监测公司 · ${relationshipRecords.length} 条关系证据`;
   els.companyRoleSummary.innerHTML = `
     <article><span>本公司</span><strong>${counts.self}</strong><small>系统标本</small></article>
     <article><span>竞品池</span><strong>${counts.competitor}</strong><small>行业对标</small></article>
-    <article><span>客户池</span><strong>${counts.customer}</strong><small>需求信号</small></article>
-    <article class="${unclassified ? "needs-review" : "is-clear"}"><span>待确认</span><strong>${unclassified}</strong><small>角色未定</small></article>
+    <article><span>已确认客户</span><strong>${counts.customer}</strong><small>高证据门槛</small></article>
+    <article><span>合作伙伴</span><strong>${counts.partner}</strong><small>具名公告 / MOU</small></article>
+    <article class="needs-review"><span>披露待核对</span><strong>${counts.disclosed}</strong><small>不直接当客户</small></article>
+    <article><span>客户发现方向</span><strong>${counts["customer-segment"]}</strong><small>逐条补公司名单</small></article>
   `;
 
   els.companyPoolGroups.innerHTML = roleDefinitions
     .map((role) => {
-      const members = companies.filter((company) => company.business_role === role.id);
+      const members = role.members;
       const rows = members.length
         ? members.map((company) => `
             <article class="company-profile-row">
@@ -2187,7 +2230,11 @@ function renderCompanyPools() {
                 <small>监测重点</small>
                 <p>${escapeHtml(company.monitoring_focus || (company.strategic_topics || []).slice(0, 5).join("、"))}</p>
               </div>
-              <button class="company-profile-source-button" type="button" data-company-coverage-id="${escapeHtml(company.id)}">查看数据源</button>
+              ${company.entity_kind === "relationship"
+                ? `<button class="company-profile-source-button" type="button" data-relationship-card-id="${escapeAttr(company.relationship_id)}">查看关系证据</button>`
+                : company.entity_kind === "segment"
+                  ? '<span class="company-profile-state">名单发现中</span>'
+                  : `<button class="company-profile-source-button" type="button" data-company-coverage-id="${escapeHtml(company.id)}">查看数据源</button>`}
             </article>
           `).join("")
         : `<div class="company-pool-empty"><strong>0 家</strong><p>${escapeHtml(role.empty)}</p></div>`;
@@ -2219,15 +2266,313 @@ const relationshipEvidenceMeta = {
   candidate: { label: "候选线索", className: "candidate" },
 };
 
+function normalizeEntityText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9一-鿿぀-ヿ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function cleanRelationshipEntity(value) {
+  return String(value || "")
+    .replace(/^[\s:|、,-]+|[\s:|、,-]+$/g, "")
+    .replace(/\b(?:announces?|launches?|signs?|enters?|extends?|forms?|establishes?)\b.*$/i, "")
+    .replace(/\b(?:strengthens?|partners?|collaborates?|teams? up)\b.*$/i, "")
+    .trim()
+    .slice(0, 72);
+}
+
+function isPlausibleRelationshipEntity(value) {
+  const normalized = normalizeEntityText(value);
+  if (normalized.length < 2) return false;
+  const blocked = new Set([
+    "strategic", "partnership", "partnerships", "collaboration", "collaborations",
+    "agreement", "agreements", "research", "technology", "technologies", "company",
+  ]);
+  return !blocked.has(normalized);
+}
+
+function extractRelationshipCounterparty(item, sourceOrganization) {
+  const title = String(item.title || "").replace(/\s+-\s+[^-]{2,45}$/, "").trim();
+  if (/^(?:how|why|what|when)\b/i.test(title)) return "";
+  const source = normalizeEntityText(sourceOrganization);
+  const chooseOtherSide = (left, right) => {
+    const cleanLeft = cleanRelationshipEntity(left);
+    const cleanRight = cleanRelationshipEntity(right);
+    const leftNorm = normalizeEntityText(cleanLeft);
+    const rightNorm = normalizeEntityText(cleanRight);
+    if (leftNorm && (source.includes(leftNorm) || leftNorm.includes(source))) return cleanRight;
+    if (rightNorm && (source.includes(rightNorm) || rightNorm.includes(source))) return cleanLeft;
+    return cleanLeft || cleanRight;
+  };
+
+  const andMatch = title.match(/^(.{2,80}?)\s+(?:and|&)\s+(.{2,80}?)\s+(?:partner|collaborat|sign|team|expand)/i);
+  if (andMatch) return chooseOtherSide(andMatch[1], andMatch[2]);
+
+  const actionWithMatch = title.match(/^(.{2,80}?)\s+(?:launches|announces|enters|signs|extends|forms|establishes)[^.!?]{0,55}?\s+with\s+(.{2,80}?)(?:\s+to\b|\s+for\b|,|$)/i);
+  if (actionWithMatch) return chooseOtherSide(actionWithMatch[1], actionWithMatch[2]);
+
+  const generalWithMatch = title.match(/^(.{2,80}?)\s+(?:partners?|collaborates?|teams? up|signs?)[^.!?]{0,35}?\s+with\s+(.{2,80}?)(?:\s+to\b|\s+for\b|,|$)/i);
+  if (generalWithMatch) return chooseOtherSide(generalWithMatch[1], generalWithMatch[2]);
+
+  const japaneseMatch = title.match(/^(.{2,60}?)と(.{2,60}?)[、,]/);
+  if (japaneseMatch) return chooseOtherSide(japaneseMatch[1], japaneseMatch[2]);
+  return "";
+}
+
+function getDynamicRelationshipCandidates() {
+  const companiesById = new Map((state.payload?.companies || []).map((company) => [company.id, company]));
+  const candidates = [];
+  for (const item of state.payload?.items || []) {
+    const actions = item.intelligence?.business_actions || [];
+    const isRelationship = item.category === "partnership" || actions.some((action) =>
+      ["合作 / 共同开发", "授权 / 引进", "并购 / 交易"].includes(action),
+    );
+    if (!isRelationship || !["daily", "immediate"].includes(item.tier) || Number(item.age_days || 0) > 90) continue;
+    const sourceCompany = companiesById.get(item.matched_company_ids?.[0]);
+    if (!sourceCompany) continue;
+    const sourceOrganization = sourceCompany?.display_name || item.matched_companies?.[0] || item.company || "";
+    const normalizedTitle = normalizeEntityText(item.title);
+    const sourceAliases = [sourceCompany.display_name, ...(sourceCompany.aliases || [])]
+      .map(normalizeEntityText)
+      .filter((alias) => alias.length >= 4);
+    if (!sourceAliases.some((alias) => normalizedTitle.includes(alias) || alias.includes(normalizedTitle))) continue;
+    const counterparty = extractRelationshipCounterparty(item, sourceOrganization);
+    if (!sourceOrganization || !counterparty || !isPlausibleRelationshipEntity(counterparty)) continue;
+    if (normalizeEntityText(sourceOrganization).includes(normalizeEntityText(counterparty))) continue;
+    const sourceTrust = String(item.source_trust || "").toLowerCase();
+    const confidence = sourceTrust.includes("official") ? 82 : sourceTrust.includes("wire") ? 72 : 62;
+    candidates.push({
+      id: `dynamic-${item.id}`,
+      source_organization: sourceOrganization,
+      source_company_id: sourceCompany?.id || "",
+      organization: counterparty,
+      relationship_type: "dynamic_candidate",
+      relationship_label: actions[0] || "动态合作候选",
+      evidence_level: "candidate",
+      evidence_label: "新闻规则识别",
+      confidence_score: confidence,
+      status: "candidate",
+      status_label: "待人工确认",
+      source_date: item.published || null,
+      topics: [...new Set([
+        ...(item.intelligence?.modalities || []),
+        ...(item.intelligence?.targets || []),
+        ...(item.intelligence?.product_needs || []),
+      ])].slice(0, 4),
+      summary: `系统从新闻中识别到 ${shortCompanyName(sourceOrganization)} 与 ${counterparty} 可能存在关系事件。`,
+      classification_note: "这是自动识别候选，只有核对双方官方公告或明确项目后，才能升级为已确认关系。",
+      source_title: item.title,
+      source_url: item.url,
+      source_item: item,
+    });
+  }
+
+  const deduped = new Map();
+  for (const candidate of candidates.sort((a, b) => (b.source_item?.score || 0) - (a.source_item?.score || 0))) {
+    const key = `${normalizeEntityText(candidate.source_organization)}|${normalizeEntityText(candidate.organization)}`;
+    if (!deduped.has(key)) deduped.set(key, candidate);
+  }
+  return [...deduped.values()].slice(0, 8);
+}
+
+function graphNodeId(prefix, value) {
+  return `${prefix}-${normalizeEntityText(value).replace(/\s+/g, "-").slice(0, 48)}`;
+}
+
+function splitGraphLabel(value, maxLength = 15) {
+  const text = String(value || "");
+  if (text.length <= maxLength) return [text];
+  const words = text.split(/\s+/);
+  if (words.length === 1) return [text.slice(0, maxLength), text.slice(maxLength, maxLength * 2)];
+  const lines = [""];
+  for (const word of words) {
+    const current = lines[lines.length - 1];
+    if (!current || `${current} ${word}`.length <= maxLength) {
+      lines[lines.length - 1] = current ? `${current} ${word}` : word;
+    } else if (lines.length < 2) {
+      lines.push(word);
+    }
+  }
+  return lines.slice(0, 2);
+}
+
+function buildRelationshipGraphModel(records, dynamicCandidates, segments) {
+  const nodes = new Map();
+  const edges = [];
+  const addNode = (node) => {
+    if (!nodes.has(node.id)) nodes.set(node.id, node);
+    return nodes.get(node.id);
+  };
+  const addEdge = (from, to, type, label = "") => {
+    if (!edges.some((edge) => edge.from === from && edge.to === to && edge.type === type)) {
+      edges.push({ id: `${from}|${to}|${type}`, from, to, type, label });
+    }
+  };
+
+  addNode({ id: "acro", label: "ACRO", category: "hub", description: "企业关系与客户线索中心" });
+  for (const record of records) {
+    const nodeId = `record-${record.id}`;
+    addNode({
+      id: nodeId,
+      label: record.organization,
+      category: "organization",
+      evidence: record.evidence_level,
+      description: record.summary,
+      record,
+    });
+    addEdge("acro", nodeId, record.evidence_level, record.relationship_label);
+    for (const topic of record.topics || []) {
+      const topicId = graphNodeId("topic", topic);
+      addNode({ id: topicId, label: topic, category: "topic", description: "关联技术与产品主题" });
+      addEdge(nodeId, topicId, "topic", topic);
+    }
+  }
+
+  for (const candidate of dynamicCandidates) {
+    const sourceId = candidate.source_company_id === "acro"
+      ? "acro"
+      : graphNodeId("company", candidate.source_organization);
+    if (sourceId !== "acro") {
+      addNode({
+        id: sourceId,
+        label: shortCompanyName(candidate.source_organization),
+        category: "competitor",
+        description: "监测公司，其合作动作已进入关系候选。",
+      });
+      addEdge("acro", sourceId, "competitor_context", "竞品监测");
+    }
+    const candidateId = `candidate-${candidate.id}`;
+    addNode({
+      id: candidateId,
+      label: candidate.organization,
+      category: "candidate",
+      evidence: "candidate",
+      description: candidate.summary,
+      record: candidate,
+    });
+    addEdge(sourceId, candidateId, "candidate", candidate.relationship_label);
+    for (const topic of candidate.topics || []) {
+      const topicId = graphNodeId("topic", topic);
+      addNode({ id: topicId, label: topic, category: "topic", description: "关联技术与产品主题" });
+      addEdge(candidateId, topicId, "topic", topic);
+    }
+  }
+
+  segments.forEach((segment, index) => {
+    const segmentId = `segment-${index}`;
+    addNode({ id: segmentId, label: segment.label, category: "segment", description: segment.note });
+    addEdge("acro", segmentId, "segment", "客户发现方向");
+  });
+  return { nodes: [...nodes.values()], edges };
+}
+
+function renderRelationshipGraph(records, dynamicCandidates, segments) {
+  if (!els.relationshipGraph || !els.relationshipFocusPanel) return;
+  const model = buildRelationshipGraphModel(records, dynamicCandidates, segments);
+  const layer = state.relationshipGraphLayer;
+  const isVisible = (node) => {
+    if (layer === "organization") return ["hub", "organization", "competitor", "candidate"].includes(node.category);
+    if (layer === "technology") return node.category !== "segment";
+    if (layer === "customer") return ["hub", "segment"].includes(node.category);
+    return true;
+  };
+  const visibleNodes = model.nodes.filter(isVisible);
+  const visibleIds = new Set(visibleNodes.map((node) => node.id));
+  const visibleEdges = model.edges.filter((edge) => visibleIds.has(edge.from) && visibleIds.has(edge.to));
+  if (!visibleIds.has(state.relationshipGraphFocus)) state.relationshipGraphFocus = "acro";
+
+  const center = { x: 500, y: 292 };
+  const organizationNodes = visibleNodes.filter((node) => ["organization", "competitor", "candidate"].includes(node.category));
+  const topicNodes = visibleNodes.filter((node) => node.category === "topic");
+  const segmentNodes = visibleNodes.filter((node) => node.category === "segment");
+  const positions = new Map([["acro", center]]);
+  organizationNodes.forEach((node, index) => {
+    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / Math.max(organizationNodes.length, 1);
+    positions.set(node.id, { x: center.x + Math.cos(angle) * 188, y: center.y + Math.sin(angle) * 178 });
+  });
+  topicNodes.forEach((node, index) => {
+    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / Math.max(topicNodes.length, 1) + 0.18;
+    positions.set(node.id, { x: center.x + Math.cos(angle) * 292, y: center.y + Math.sin(angle) * 255 });
+  });
+  segmentNodes.forEach((node, index) => {
+    const spacing = 720 / Math.max(segmentNodes.length, 1);
+    positions.set(node.id, { x: 140 + spacing * (index + 0.5), y: 598 });
+  });
+
+  const focusId = state.relationshipGraphFocus;
+  const connected = new Set([focusId]);
+  for (const edge of visibleEdges) {
+    if (edge.from === focusId) connected.add(edge.to);
+    if (edge.to === focusId) connected.add(edge.from);
+  }
+  const isFocused = focusId !== "acro";
+  const edgeMarkup = visibleEdges.map((edge) => {
+    const from = positions.get(edge.from);
+    const to = positions.get(edge.to);
+    if (!from || !to) return "";
+    const active = !isFocused || edge.from === focusId || edge.to === focusId;
+    return `<line class="graph-edge edge-${escapeAttr(edge.type)} ${active ? "is-active" : "is-muted"}" x1="${from.x}" y1="${from.y}" x2="${to.x}" y2="${to.y}"><title>${escapeHtml(edge.label || edge.type)}</title></line>`;
+  }).join("");
+  const nodeMarkup = visibleNodes.map((node) => {
+    const position = positions.get(node.id);
+    if (!position) return "";
+    const lines = splitGraphLabel(node.label, node.category === "hub" ? 12 : 16);
+    const radius = node.category === "hub" ? 54 : node.category === "topic" ? 25 : node.category === "segment" ? 32 : 34;
+    const active = !isFocused || connected.has(node.id);
+    const textStart = lines.length === 1 ? 4 : -4;
+    return `
+      <g class="graph-node node-${escapeAttr(node.category)} evidence-${escapeAttr(node.evidence || "none")} ${node.id === focusId ? "is-selected" : ""} ${active ? "is-active" : "is-muted"}" data-graph-node-id="${escapeAttr(node.id)}" role="button" tabindex="0" transform="translate(${position.x} ${position.y})">
+        <circle r="${radius}"></circle>
+        <text text-anchor="middle" y="${textStart}">${lines.map((line, lineIndex) => `<tspan x="0" dy="${lineIndex ? 13 : 0}">${escapeHtml(line)}</tspan>`).join("")}</text>
+        <title>${escapeHtml(node.label)}：${escapeHtml(node.description || "")}</title>
+      </g>
+    `;
+  }).join("");
+  els.relationshipGraph.innerHTML = `<g class="graph-edges">${edgeMarkup}</g><g class="graph-nodes">${nodeMarkup}</g>`;
+  renderRelationshipFocusPanel(model, focusId);
+}
+
+function renderRelationshipFocusPanel(model, focusId) {
+  const node = model.nodes.find((entry) => entry.id === focusId) || model.nodes[0];
+  const linkedNodes = model.edges
+    .filter((edge) => edge.from === node.id || edge.to === node.id)
+    .map((edge) => model.nodes.find((entry) => entry.id === (edge.from === node.id ? edge.to : edge.from)))
+    .filter(Boolean);
+  if (node.category === "hub") {
+    const organizationCount = model.nodes.filter((entry) => ["organization", "competitor", "candidate"].includes(entry.category)).length;
+    const topicCount = model.nodes.filter((entry) => entry.category === "topic").length;
+    els.relationshipFocusPanel.innerHTML = `
+      <span>当前中心</span><h3>ACRO 关系网络</h3>
+      <p>这张图不是“公司名单”，而是公司、技术主题和客户方向之间的可回溯关系。</p>
+      <div class="focus-metrics"><b>${organizationCount}<small>公司节点</small></b><b>${topicCount}<small>技术节点</small></b><b>${linkedNodes.length}<small>直接连接</small></b></div>
+      <ul><li>实线：官方或具名证据</li><li>点线：新闻识别候选</li><li>客户节点：只表示发现方向</li></ul>
+    `;
+    return;
+  }
+  const record = node.record;
+  const evidence = record ? relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate : null;
+  els.relationshipFocusPanel.innerHTML = `
+    <span>${escapeHtml(node.category === "topic" ? "技术主题" : node.category === "segment" ? "客户发现方向" : evidence?.label || "监测公司")}</span>
+    <h3>${escapeHtml(node.label)}</h3>
+    <p>${escapeHtml(node.description || "暂无详细说明。")}</p>
+    <div class="focus-linked"><strong>直接关联 ${linkedNodes.length}</strong>${linkedNodes.slice(0, 6).map((entry) => `<b>${escapeHtml(entry.label)}</b>`).join("")}</div>
+    ${record ? `<div class="focus-evidence"><small>${escapeHtml(record.status_label || "待确认")}${record.confidence_score ? ` · 置信 ${record.confidence_score}%` : ""}</small><a href="${escapeAttr(record.source_url)}" target="_blank" rel="noreferrer">查看证据</a></div>` : ""}
+  `;
+}
+
 function renderCompanyRelationships() {
   if (!els.relationshipList) return;
   const data = getRelationshipData();
   const records = data.records || [];
   const segments = data.customer_segments || [];
+  const dynamicCandidates = getDynamicRelationshipCandidates();
+  const allRecords = [...records, ...dynamicCandidates];
   const confirmed = records.filter((record) => record.evidence_level === "confirmed");
   const disclosed = records.filter((record) => record.evidence_level === "disclosed");
   const customers = records.filter((record) => record.relationship_type === "confirmed_customer");
-  const visible = records.filter(
+  const visible = allRecords.filter(
     (record) =>
       (state.relationshipType === "all" || record.relationship_type === state.relationshipType) &&
       (state.relationshipEvidence === "all" || record.evidence_level === state.relationshipEvidence),
@@ -2236,30 +2581,24 @@ function renderCompanyRelationships() {
   els.relationshipUpdatedAt.textContent = `证据库更新：${data.updated_at || "--"}`;
   els.relationshipConfirmedCount.textContent = confirmed.length;
   els.relationshipDisclosedCount.textContent = disclosed.length;
+  els.relationshipCandidateCount.textContent = dynamicCandidates.length;
   els.relationshipCustomerCount.textContent = customers.length;
   els.relationshipSegmentCount.textContent = segments.length;
-  els.relationshipResultCount.textContent = `显示 ${visible.length} / ${records.length} 条`;
-
-  els.relationshipMapNodes.innerHTML = records.map((record) => {
-    const evidence = relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate;
-    return `
-      <button class="relationship-node evidence-${evidence.className}" type="button" data-relationship-id="${escapeAttr(record.id)}">
-        <strong>${escapeHtml(record.organization)}</strong>
-        <span>${escapeHtml(record.relationship_label)}</span>
-      </button>
-    `;
-  }).join("");
+  els.relationshipResultCount.textContent = `显示 ${visible.length} / ${allRecords.length} 条`;
+  renderRelationshipGraph(records, dynamicCandidates, segments);
 
   els.relationshipList.innerHTML = visible.length ? visible.map((record) => {
     const evidence = relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate;
     const topics = (record.topics || []).map((topic) => `<b>${escapeHtml(topic)}</b>`).join("");
+    const sourceOrganization = record.source_organization || "ACRO";
     return `
       <article class="relationship-card" id="relationship-card-${escapeAttr(record.id)}">
         <header>
-          <div><span>ACRO ↔</span><strong>${escapeHtml(record.organization)}</strong></div>
+          <div><span>${escapeHtml(shortCompanyName(sourceOrganization))} ↔</span><strong>${escapeHtml(record.organization)}</strong></div>
           <div class="relationship-badges">
             <b class="relationship-type">${escapeHtml(record.relationship_label)}</b>
             <b class="evidence-badge ${evidence.className}">${escapeHtml(evidence.label)}</b>
+            ${record.confidence_score ? `<b class="confidence-badge">置信 ${record.confidence_score}%</b>` : ""}
           </div>
         </header>
         <p class="relationship-summary">${escapeHtml(record.summary)}</p>
@@ -2267,7 +2606,7 @@ function renderCompanyRelationships() {
         <div class="relationship-proof">
           <div><span>分类说明</span><p>${escapeHtml(record.classification_note)}</p></div>
           <div><span>公开状态</span><p>${escapeHtml(record.status_label || "待核对")}${record.source_date ? ` · ${escapeHtml(record.source_date)}` : ""}</p></div>
-          <a href="${escapeAttr(record.source_url)}" target="_blank" rel="noreferrer">查看官方证据</a>
+          <a href="${escapeAttr(record.source_url)}" target="_blank" rel="noreferrer">${record.evidence_level === "candidate" ? "查看新闻证据" : "查看官方证据"}</a>
         </div>
       </article>
     `;
@@ -2438,17 +2777,17 @@ async function loadData() {
 }
 
 function hydrateFilters() {
-  const categories = [...new Set(state.payload.items.map((item) => item.category))].sort();
+  const categories = [...new Set(state.payload.items.map(getBusinessEventType))].sort();
   const companies = (state.payload.companies || [])
     .map((company) => company.display_name)
     .sort();
   const current = els.categoryFilter.value;
   const currentCompany = els.companyFilter.value;
-  els.categoryFilter.innerHTML = '<option value="all">全部主题</option>';
+  els.categoryFilter.innerHTML = '<option value="all">全部商业事件</option>';
   for (const category of categories) {
     const option = document.createElement("option");
     option.value = category;
-    option.textContent = labelCategory(category);
+    option.textContent = labelBusinessEvent(category);
     els.categoryFilter.appendChild(option);
   }
   els.categoryFilter.value = categories.includes(current) ? current : "all";
@@ -2477,6 +2816,51 @@ function getSignalTypeItems() {
   return state.payload.items.filter(
     (item) => state.signalType === "all" || (item.signal_type || "news") === state.signalType,
   );
+}
+
+const businessEventDefinitions = {
+  product_platform: { label: "产品与平台", short: "产品平台" },
+  target_therapy: { label: "靶点与治疗方向", short: "靶点疗法" },
+  clinical_regulatory: { label: "临床与监管", short: "临床监管" },
+  partnership_deal: { label: "合作、授权与交易", short: "合作交易" },
+  customer_demand: { label: "客户需求与潜在机会", short: "客户需求" },
+  market_activity: { label: "市场活动与渠道", short: "市场活动" },
+  regional_expansion: { label: "地区扩张与市场进入", short: "地区扩张" },
+  quality_supply: { label: "质量、GMP 与供应链", short: "质量供应" },
+  corporate_strategy: { label: "公司战略与组织动作", short: "公司战略" },
+};
+
+function getBusinessEventType(item) {
+  const intelligence = item.intelligence || {};
+  const actions = intelligence.business_actions || [];
+  const text = `${item.title || ""} ${item.summary || ""} ${item.ai_summary || ""}`;
+  if (/\b(?:GMP|quality|supply chain|ISO 13485|ISO 17025|material suitability|raw material)\b|质量|供应链|原料合规/i.test(text)) {
+    return "quality_supply";
+  }
+  if (item.recommended_action?.type === "lead") return "customer_demand";
+  if (item.category === "partnership" || actions.some((action) =>
+    ["合作 / 共同开发", "授权 / 引进", "并购 / 交易"].includes(action),
+  )) return "partnership_deal";
+  if (item.category === "regulatory" || (intelligence.development_stages || []).length ||
+      actions.includes("临床里程碑") || actions.includes("注册 / 监管动作")) {
+    return "clinical_regulatory";
+  }
+  if (item.signal_type === "event" || item.category === "event" || item.category === "video" ||
+      (intelligence.event_signals || []).length) return "market_activity";
+  if (item.category === "market" || actions.includes("市场进入") || actions.includes("扩产 / 新设施")) {
+    return "regional_expansion";
+  }
+  if (item.category === "product" || actions.includes("产品发布")) return "product_platform";
+  if ((intelligence.targets || []).length || (intelligence.modalities || []).length || item.category === "research") {
+    return "target_therapy";
+  }
+  if ((intelligence.product_needs || []).length && getItemRole(item) === "industry") return "customer_demand";
+  return "corporate_strategy";
+}
+
+function labelBusinessEvent(eventType, short = false) {
+  const definition = businessEventDefinitions[eventType];
+  return definition ? (short ? definition.short : definition.label) : eventType;
 }
 
 function renderOverviewScope() {
@@ -2556,8 +2940,8 @@ function renderBusinessLaneItems(container, items, emptyText, laneType) {
     const context = laneType === "opportunity"
       ? (intelligence.product_needs || [])[0] || item.recommended_action?.label || "待评估"
       : laneType === "partner"
-        ? (intelligence.business_actions || [])[0] || labelCategory(item.category)
-        : (intelligence.modalities || [])[0] || labelCategory(item.category);
+        ? (intelligence.business_actions || [])[0] || labelBusinessEvent(getBusinessEventType(item), true)
+        : (intelligence.modalities || [])[0] || labelBusinessEvent(getBusinessEventType(item), true);
     return `
       <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
         <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
@@ -2631,7 +3015,8 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
         competitorCompanyCounts[companyId] = (competitorCompanyCounts[companyId] || 0) + 1;
       }
     }
-    categoryCounts[item.category] = (categoryCounts[item.category] || 0) + 1;
+    const businessEvent = getBusinessEventType(item);
+    categoryCounts[businessEvent] = (categoryCounts[businessEvent] || 0) + 1;
     const region = inferItemRegion(item);
     regionCounts[region] = (regionCounts[region] || 0) + 1;
     const relevance = item.acro_relevance?.level || "low";
@@ -2669,7 +3054,7 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
     topIntelligence
       ? `结构化情报中“${topIntelligence[0]}”出现最多，共 ${topIntelligence[1]} 条。`
       : topCategory
-        ? `当前主要集中于“${labelCategory(topCategory[0])}”，尚需补充靶点和疗法字段。`
+        ? `当前主要集中于“${labelBusinessEvent(topCategory[0])}”，尚需补充靶点和疗法字段。`
         : "主题信号暂不足以形成判断。",
     topAction
       ? `建议动作最多的是“${topAction[0]}”，共 ${topAction[1]} 条待评估。`
@@ -2754,10 +3139,13 @@ function renderCompanyTopicMatrix(items) {
     (company) => ["self", "competitor", "customer"].includes(company.business_role),
   );
   const categoryTotals = {};
-  for (const item of items) categoryTotals[item.category] = (categoryTotals[item.category] || 0) + 1;
+  for (const item of items) {
+    const eventType = getBusinessEventType(item);
+    categoryTotals[eventType] = (categoryTotals[eventType] || 0) + 1;
+  }
   const categories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([category]) => category);
   if (!categories.length) {
-    els.companyTopicMatrix.innerHTML = '<div class="empty">当前范围内没有可形成矩阵的主题。</div>';
+    els.companyTopicMatrix.innerHTML = '<div class="empty">当前范围内没有可形成矩阵的商业事件。</div>';
     return;
   }
   const matrix = {};
@@ -2766,14 +3154,14 @@ function renderCompanyTopicMatrix(items) {
     matrix[company.id] = {};
     for (const category of categories) {
       const count = items.filter(
-        (item) => (item.matched_company_ids || []).includes(company.id) && item.category === category,
+        (item) => (item.matched_company_ids || []).includes(company.id) && getBusinessEventType(item) === category,
       ).length;
       matrix[company.id][category] = count;
       max = Math.max(max, count);
     }
   }
   const columns = `minmax(150px, 1.5fr) repeat(${categories.length}, minmax(68px, 1fr))`;
-  const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>公司</span>${categories.map((category) => `<span>${escapeHtml(labelCategory(category))}</span>`).join("")}</div>`;
+  const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>公司</span>${categories.map((category) => `<span>${escapeHtml(labelBusinessEvent(category, true))}</span>`).join("")}</div>`;
   const rows = companies.map((company) => `
     <div class="matrix-row" style="grid-template-columns:${columns}">
       <span class="matrix-company"><i class="role-dot role-${company.business_role}"></i>${escapeHtml(shortCompanyName(company.display_name))}</span>
@@ -2789,15 +3177,18 @@ function renderCompanyTopicMatrix(items) {
 
 function renderCategoryDistribution(items) {
   const counts = {};
-  for (const item of items) counts[item.category] = (counts[item.category] || 0) + 1;
+  for (const item of items) {
+    const eventType = getBusinessEventType(item);
+    counts[eventType] = (counts[eventType] || 0) + 1;
+  }
   const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6);
   const max = Math.max(1, ...entries.map(([, count]) => count));
   els.categoryBars.innerHTML = entries.length ? entries.map(([category, count]) => `
     <div class="category-row">
-      <div><span>${escapeHtml(labelCategory(category))}</span><strong>${count}</strong></div>
+      <div><span>${escapeHtml(labelBusinessEvent(category))}</span><strong>${count}</strong></div>
       <div class="category-track"><i style="width:${Math.round((count / max) * 100)}%"></i></div>
     </div>
-  `).join("") : '<div class="empty">当前范围内没有主题数据。</div>';
+  `).join("") : '<div class="empty">当前范围内没有商业事件数据。</div>';
 }
 
 function shortCompanyName(name) {
@@ -3146,7 +3537,7 @@ function renderSignalCards(container, items, compact) {
         <span class="tag role-tag role-${role}">${labelRole(role)}</span>
         <span class="tag region-tag">${escapeHtml(labelRegion(region))}</span>
         <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
-        <span class="tag">${labelCategory(item.category)}</span>
+        <span class="tag business-event-tag">${labelBusinessEvent(getBusinessEventType(item), true)}</span>
         <span class="tag company-match ${
           item.matched_companies?.length ? "matched" : "unmatched"
         }">${escapeHtml(
@@ -3535,7 +3926,7 @@ function exportCsv() {
     return;
   }
 
-  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "分类", "靶点", "疗法技术", "产品需求", "研发阶段", "业务动作", "活动信号", "ACRO相关性", "相关性解释", "建议动作", "负责人", "理由", "摘要", "URL"];
+  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "商业事件", "靶点", "疗法技术", "产品需求", "研发阶段", "业务动作", "活动信号", "ACRO相关性", "相关性解释", "建议动作", "负责人", "理由", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
     rows.push(
@@ -3547,7 +3938,7 @@ function exportCsv() {
         csvCell(item.published || ""),
         item.score,
         csvCell(labelTier(item.tier)),
-        csvCell(labelCategory(item.category)),
+        csvCell(labelBusinessEvent(getBusinessEventType(item))),
         csvCell((item.intelligence?.targets || []).join("; ")),
         csvCell((item.intelligence?.modalities || []).join("; ")),
         csvCell((item.intelligence?.product_needs || []).join("; ")),
@@ -3599,7 +3990,7 @@ function getFilteredItems() {
     )
     .filter((item) => state.role === "all" || getItemRole(item, companyRoles) === state.role)
     .filter((item) => state.region === "all" || inferItemRegion(item) === state.region)
-    .filter((item) => state.category === "all" || item.category === state.category)
+    .filter((item) => state.category === "all" || getBusinessEventType(item) === state.category)
     .filter((item) => {
       if (!query) return true;
       const intelligenceText = Object.values(item.intelligence || {}).flat().join(" ");
@@ -3694,13 +4085,26 @@ els.companyCoverageSelect.addEventListener("change", (event) => {
 });
 
 els.companyPoolGroups.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-company-coverage-id]");
-  if (!button) return;
-  state.coverageCompany = button.dataset.companyCoverageId;
-  state.page = "company-sources";
-  renderCompanySourceCoverage();
+  const coverageButton = event.target.closest("[data-company-coverage-id]");
+  if (coverageButton) {
+    state.coverageCompany = coverageButton.dataset.companyCoverageId;
+    state.page = "company-sources";
+    renderCompanySourceCoverage();
+    renderPage();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+  const relationshipButton = event.target.closest("[data-relationship-card-id]");
+  if (!relationshipButton) return;
+  state.relationshipType = "all";
+  state.relationshipEvidence = "all";
+  els.relationshipTypeFilter.value = "all";
+  els.relationshipEvidenceFilter.value = "all";
+  state.page = "relationships";
+  renderCompanyRelationships();
   renderPage();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  const card = document.querySelector(`#relationship-card-${CSS.escape(relationshipButton.dataset.relationshipCardId)}`);
+  if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
 els.relationshipTypeFilter.addEventListener("change", (event) => {
@@ -3713,11 +4117,31 @@ els.relationshipEvidenceFilter.addEventListener("change", (event) => {
   renderCompanyRelationships();
 });
 
-els.relationshipMapNodes.addEventListener("click", (event) => {
-  const node = event.target.closest("[data-relationship-id]");
+els.relationshipGraph.addEventListener("click", (event) => {
+  const node = event.target.closest("[data-graph-node-id]");
   if (!node) return;
-  const card = document.querySelector(`#relationship-card-${CSS.escape(node.dataset.relationshipId)}`);
-  if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+  state.relationshipGraphFocus = node.dataset.graphNodeId;
+  renderCompanyRelationships();
+});
+
+els.relationshipGraph.addEventListener("keydown", (event) => {
+  if (!["Enter", " "].includes(event.key)) return;
+  const node = event.target.closest("[data-graph-node-id]");
+  if (!node) return;
+  event.preventDefault();
+  state.relationshipGraphFocus = node.dataset.graphNodeId;
+  renderCompanyRelationships();
+});
+
+els.relationshipLayerControl.querySelectorAll("[data-graph-layer]").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.relationshipGraphLayer = button.dataset.graphLayer;
+    state.relationshipGraphFocus = "acro";
+    els.relationshipLayerControl.querySelectorAll("[data-graph-layer]").forEach((control) => {
+      control.classList.toggle("active", control === button);
+    });
+    renderCompanyRelationships();
+  });
 });
 
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {

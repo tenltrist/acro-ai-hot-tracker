@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260802a" />
+    <link rel="stylesheet" href="./styles.css?v=20260802b" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -84,8 +84,8 @@
           <select id="companyFilter" aria-label="按公司筛选">
             <option value="all">全部公司</option>
           </select>
-          <select id="categoryFilter" aria-label="按主题筛选">
-            <option value="all">全部主题</option>
+          <select id="categoryFilter" aria-label="按商业事件筛选">
+            <option value="all">全部商业事件</option>
           </select>
           <button class="icon-button" id="exportCsvButton" type="button" title="导出CSV" aria-label="导出CSV">CSV</button>
           <button class="icon-button" id="refreshButton" type="button" title="同步已完成的最新抓取结果" aria-label="同步已完成的最新抓取结果">
@@ -188,7 +188,7 @@
         </article>
         <article class="analysis-panel category-panel">
           <div class="section-head compact">
-            <div><p class="eyebrow">结构</p><h2>动作与主题构成</h2></div>
+            <div><p class="eyebrow">结构</p><h2>商业事件构成</h2></div>
             <span id="sourceCount">-- 条</span>
           </div>
           <div id="categoryBars" class="category-bars"></div>
@@ -226,7 +226,7 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">公司池</p>
-            <h2>按业务关系拆分本公司、竞品池与客户池</h2>
+            <h2>一家公司可拥有多个业务角色，但每个角色都要有证据</h2>
           </div>
           <span class="timestamp" id="companyPoolTimestamp">MVP 阶段：13 家公司已分类</span>
         </div>
@@ -246,13 +246,33 @@
         <div class="relationship-summary-grid">
           <article><span>已确认合作</span><strong id="relationshipConfirmedCount">--</strong><small>有具名公告或项目证据</small></article>
           <article><span>官网披露关系</span><strong id="relationshipDisclosedCount">--</strong><small>已披露，具体项目待核对</small></article>
+          <article><span>动态关系候选</span><strong id="relationshipCandidateCount">--</strong><small>从新闻中自动识别，未经人工确认</small></article>
           <article><span>已确认客户</span><strong id="relationshipCustomerCount">0</strong><small>不用合作或参会信息代替客户证据</small></article>
           <article><span>客户发现方向</span><strong id="relationshipSegmentCount">--</strong><small>已确认客群，名单需逐条发现</small></article>
         </div>
 
-        <div class="relationship-map" aria-label="ACRO relationship map">
-          <div class="relationship-hub"><span>ACRO</span><strong>企业关系中心</strong><small>只展示可回溯证据</small></div>
-          <div id="relationshipMapNodes" class="relationship-map-nodes"></div>
+        <div class="relationship-graph-shell" aria-label="ACRO interactive relationship graph">
+          <div class="relationship-graph-head">
+            <div><strong>关系网络</strong><span>点击任意节点，只高亮与它相关的公司、技术和客户方向</span></div>
+            <div class="segmented-control relationship-layer-control" id="relationshipLayerControl" aria-label="关系图层级">
+              <button class="active" type="button" data-graph-layer="all">全部</button>
+              <button type="button" data-graph-layer="organization">公司</button>
+              <button type="button" data-graph-layer="technology">技术</button>
+              <button type="button" data-graph-layer="customer">客户方向</button>
+            </div>
+          </div>
+          <div class="relationship-graph-stage">
+            <svg id="relationshipGraph" viewBox="0 0 1000 640" role="img" aria-label="ACRO 企业关系网络图"></svg>
+            <aside id="relationshipFocusPanel" class="relationship-focus-panel" aria-live="polite"></aside>
+          </div>
+          <div class="relationship-graph-legend">
+            <span><i class="legend-hub"></i>ACRO</span>
+            <span><i class="legend-confirmed"></i>已确认合作</span>
+            <span><i class="legend-disclosed"></i>官网披露</span>
+            <span><i class="legend-candidate"></i>新闻候选</span>
+            <span><i class="legend-topic"></i>技术主题</span>
+            <span><i class="legend-segment"></i>客户方向</span>
+          </div>
         </div>
 
         <div class="relationship-controls" aria-label="Relationship filters">
@@ -265,11 +285,13 @@
             <option value="strategic_partner">战略合作</option>
             <option value="research_partner">科研资源合作</option>
             <option value="disclosed_relationship">官网披露关系</option>
+            <option value="dynamic_candidate">动态关系候选</option>
           </select>
           <select id="relationshipEvidenceFilter" aria-label="按证据等级筛选">
             <option value="all">全部证据</option>
             <option value="confirmed">已确认</option>
             <option value="disclosed">已披露待核对</option>
+            <option value="candidate">候选待确认</option>
           </select>
         </div>
         <div id="relationshipList" class="relationship-list"></div>
@@ -597,7 +619,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260802a"></script>
-    <script src="./app.js?v=20260802a"></script>
+    <script src="./embedded-data.js?v=20260802b"></script>
+    <script src="./app.js?v=20260802b"></script>
   </body>
 </html>

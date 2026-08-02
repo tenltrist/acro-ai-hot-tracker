@@ -4329,6 +4329,44 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "exhibition",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "ACROBiosystems",
+        "ACRO Biosystems",
+        "ACROBiosystems Group",
+        "ACROBiosystems Inc.",
+        "百普赛斯",
+        "アクロバイオシステムズ"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "unveil",
+        "release",
+        "collaboration",
+        "partner",
+        "MOU",
+        "license",
+        "award",
+        "FDA",
+        "EMA",
+        "PMDA",
+        "clinical",
+        "manufacturing",
+        "GMP-grade",
+        "expansion"
+      ],
+      "noise_terms": [
+        "coupon",
+        "promo code",
+        "job posting",
+        "linkedin repost",
+        "directory listing",
+        "company profile",
+        "price target",
+        "forecast",
+        "price to sales",
+        "TradingView"
       ]
     },
     {
@@ -4359,6 +4397,61 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "clinical trials",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Thermo Fisher",
+        "Thermo Fisher Scientific",
+        "ThermoFisher",
+        "Thermo Scientific",
+        "Invitrogen",
+        "Applied Biosystems",
+        "Gibco",
+        "Patheon",
+        "PPD",
+        "サーモフィッシャー",
+        "サーモフィッシャーサイエンティフィック",
+        "赛默飞",
+        "赛默飞世尔"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "unveil",
+        "release",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "FDA",
+        "PMDA",
+        "clinical",
+        "manufacturing"
+      ],
+      "noise_terms": [
+        "stock falls",
+        "stock rises",
+        "price target",
+        "forecast",
+        "analyst rating",
+        "dividend history",
+        "earnings conference call",
+        "conference call",
+        "financial results",
+        "quarterly results",
+        "quarterly dividend",
+        "investor day",
+        "first quarter",
+        "second quarter",
+        "third quarter",
+        "fourth quarter",
+        "bull case",
+        "investor takes",
+        "new stake",
+        "stock",
+        "job posting",
+        "coupon",
+        "directory listing"
       ]
     },
     {
@@ -4392,6 +4485,55 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "reagent",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Merck KGaA",
+        "Merck KGaA, Darmstadt, Germany",
+        "MilliporeSigma",
+        "Merck Life Science",
+        "Merck Millipore",
+        "默克生命科学",
+        "默克密理博",
+        "メルクライフサイエンス"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "investment",
+        "opens",
+        "manufacturing",
+        "GMP",
+        "FDA",
+        "PMDA"
+      ],
+      "noise_terms": [
+        "Merck & Co.",
+        "MSD",
+        "Keytruda",
+        "Erbitux",
+        "Bavencio",
+        "Tepmetko",
+        "patient dosed",
+        "investigational drug",
+        "novel treatments",
+        "therapeutic areas",
+        "rare tumour",
+        "cardiomyopathies",
+        "oncology",
+        "semiconductor",
+        "electronics",
+        "financial results",
+        "quarterly results",
+        "earnings",
+        "dividend",
+        "stock",
+        "job posting",
+        "coupon"
       ]
     },
     {
@@ -4425,6 +4567,40 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Intellicyt",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Sartorius",
+        "Sartorius AG",
+        "Sartorius Stedim",
+        "Sartorius Stedim Biotech",
+        "赛多利斯",
+        "ザルトリウス"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "investment",
+        "opens",
+        "manufacturing",
+        "FDA",
+        "PMDA"
+      ],
+      "noise_terms": [
+        "financial results",
+        "quarterly results",
+        "earnings",
+        "bond",
+        "dividend",
+        "share price",
+        "stock",
+        "investor",
+        "job posting",
+        "coupon"
       ]
     },
     {
@@ -4459,6 +4635,37 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "flow cytometry",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Miltenyi Biotec",
+        "Miltenyi Bioindustry",
+        "Miltenyi Biomedicine",
+        "美天旎",
+        "美天旎生物技术",
+        "ミルテニーバイオテク"
+      ],
+      "business_actions": [
+        "launch",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "agreement",
+        "expansion",
+        "manufacturing",
+        "submission",
+        "approval",
+        "EMA",
+        "FDA",
+        "PMDA",
+        "clinical"
+      ],
+      "noise_terms": [
+        "job posting",
+        "career",
+        "coupon",
+        "directory listing",
+        "used equipment",
+        "protocol citation"
       ]
     },
     {
@@ -4485,6 +4692,31 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Danaher",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Abcam",
+        "Abcam plc",
+        "Abcam Limited",
+        "艾博抗",
+        "アブカム"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "integration",
+        "expansion",
+        "agreement"
+      ],
+      "noise_terms": [
+        "job posting",
+        "coupon",
+        "protocol citation",
+        "stock",
+        "share price",
+        "used antibody"
       ]
     },
     {
@@ -4511,6 +4743,31 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "assay kit",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Promega",
+        "Promega Corporation",
+        "Promega KK",
+        "Promega K.K.",
+        "普洛麦格",
+        "プロメガ"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "agreement",
+        "expansion",
+        "webinar",
+        "seminar"
+      ],
+      "noise_terms": [
+        "job posting",
+        "coupon",
+        "promo code",
+        "protocol citation",
+        "used equipment"
       ]
     },
     {
@@ -4537,6 +4794,33 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "GMP",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "R&D Systems",
+        "R and D Systems",
+        "Bio-Techne",
+        "Bio Techne",
+        "诺德胜",
+        "バイオテクネ"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "expansion",
+        "GMP"
+      ],
+      "noise_terms": [
+        "research and development systems",
+        "job posting",
+        "stock",
+        "earnings",
+        "dividend",
+        "price target",
+        "protocol citation"
       ]
     },
     {
@@ -4563,6 +4847,32 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "diagnostics",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "BD Biosciences",
+        "Becton Dickinson Biosciences",
+        "BD Life Sciences",
+        "BD FACS",
+        "碧迪生命科学",
+        "BDバイオサイエンス"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "acquisition",
+        "agreement",
+        "FDA",
+        "expansion"
+      ],
+      "noise_terms": [
+        "BD company stock",
+        "earnings",
+        "dividend",
+        "share price",
+        "job posting",
+        "medical device recall"
       ]
     },
     {
@@ -4590,6 +4900,31 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "PROTAC",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "MedChemExpress",
+        "MedChem Express",
+        "MCE",
+        "MedChemExpress LLC",
+        "美迪西化学",
+        "メドケムエクスプレス"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "introduce",
+        "collaboration",
+        "partnership",
+        "expansion",
+        "webinar"
+      ],
+      "noise_terms": [
+        "coupon",
+        "promo code",
+        "discount",
+        "product citation",
+        "protocol citation",
+        "directory listing"
       ]
     },
     {
@@ -4617,6 +4952,30 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "GMP",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "STEMCELL Technologies",
+        "STEMCELL Technologies Inc.",
+        "STEMCELL Tech",
+        "Stemcell Technologies",
+        "ステムセル・テクノロジーズ"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "agreement",
+        "expansion",
+        "manufacturing",
+        "GMP"
+      ],
+      "noise_terms": [
+        "stem cell technologies review",
+        "job posting",
+        "protocol citation",
+        "coupon",
+        "directory listing"
       ]
     },
     {
@@ -4644,6 +5003,33 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "cell and gene therapy",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Sino Biological",
+        "Sino Biological Inc.",
+        "SinoBiological",
+        "义翘神州",
+        "北京义翘神州",
+        "シノバイオロジカル"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "expansion",
+        "manufacturing",
+        "GMP",
+        "agreement"
+      ],
+      "noise_terms": [
+        "stock",
+        "share price",
+        "financial results",
+        "earnings",
+        "job posting",
+        "coupon",
+        "protocol citation"
       ]
     },
     {
@@ -4671,6 +5057,34 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "GMP",
         "Japan",
         "日本"
+      ],
+      "aliases": [
+        "Takara Bio",
+        "Takara Bio Inc.",
+        "Takara Bio USA",
+        "Clontech",
+        "宝生物",
+        "タカラバイオ"
+      ],
+      "business_actions": [
+        "launch",
+        "release",
+        "collaboration",
+        "partnership",
+        "license",
+        "agreement",
+        "manufacturing",
+        "clinical",
+        "PMDA"
+      ],
+      "noise_terms": [
+        "financial results",
+        "earnings",
+        "stock",
+        "share price",
+        "job posting",
+        "coupon",
+        "protocol citation"
       ]
     }
   ],
