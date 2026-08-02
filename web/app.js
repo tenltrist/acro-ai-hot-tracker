@@ -35,6 +35,8 @@ const state = {
   healthCompany: "all",
   healthStatus: "all",
   coverageCompany: "acro",
+  relationshipType: "all",
+  relationshipEvidence: "all",
   dockOpenRoles: new Set(["self"]),
   feedback: loadFeedback(),
   history: null,
@@ -1807,6 +1809,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  relationships: ["Relationship Intelligence", "ACRO 企业关系与客户线索"],
   "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
@@ -1944,6 +1947,24 @@ const els = {
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
   companyRoleSummary: document.querySelector("#companyRoleSummary"),
   companyPoolGroups: document.querySelector("#companyPoolGroups"),
+  competitorLaneCount: document.querySelector("#competitorLaneCount"),
+  opportunityLaneCount: document.querySelector("#opportunityLaneCount"),
+  partnerLaneCount: document.querySelector("#partnerLaneCount"),
+  competitorActionList: document.querySelector("#competitorActionList"),
+  opportunityActionList: document.querySelector("#opportunityActionList"),
+  partnerActionList: document.querySelector("#partnerActionList"),
+  openRelationshipsButton: document.querySelector("#openRelationshipsButton"),
+  relationshipUpdatedAt: document.querySelector("#relationshipUpdatedAt"),
+  relationshipConfirmedCount: document.querySelector("#relationshipConfirmedCount"),
+  relationshipDisclosedCount: document.querySelector("#relationshipDisclosedCount"),
+  relationshipCustomerCount: document.querySelector("#relationshipCustomerCount"),
+  relationshipSegmentCount: document.querySelector("#relationshipSegmentCount"),
+  relationshipMapNodes: document.querySelector("#relationshipMapNodes"),
+  relationshipResultCount: document.querySelector("#relationshipResultCount"),
+  relationshipTypeFilter: document.querySelector("#relationshipTypeFilter"),
+  relationshipEvidenceFilter: document.querySelector("#relationshipEvidenceFilter"),
+  relationshipList: document.querySelector("#relationshipList"),
+  customerSegmentList: document.querySelector("#customerSegmentList"),
   companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
   companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
   companyCoverageSelect: document.querySelector("#companyCoverageSelect"),
@@ -1979,6 +2000,7 @@ function renderLoadedData() {
   hydrateFilters();
   renderCompanyDock();
   renderCompanyPools();
+  renderCompanyRelationships();
   renderCompanySourceCoverage();
   renderStructuredRules();
   render();
@@ -2181,6 +2203,83 @@ function renderCompanyPools() {
       `;
     })
     .join("");
+}
+
+function getRelationshipData() {
+  return window.AIHOT_COMPANY_RELATIONSHIPS || {
+    updated_at: "--",
+    records: [],
+    customer_segments: [],
+  };
+}
+
+const relationshipEvidenceMeta = {
+  confirmed: { label: "已确认", className: "confirmed" },
+  disclosed: { label: "已披露待核对", className: "disclosed" },
+  candidate: { label: "候选线索", className: "candidate" },
+};
+
+function renderCompanyRelationships() {
+  if (!els.relationshipList) return;
+  const data = getRelationshipData();
+  const records = data.records || [];
+  const segments = data.customer_segments || [];
+  const confirmed = records.filter((record) => record.evidence_level === "confirmed");
+  const disclosed = records.filter((record) => record.evidence_level === "disclosed");
+  const customers = records.filter((record) => record.relationship_type === "confirmed_customer");
+  const visible = records.filter(
+    (record) =>
+      (state.relationshipType === "all" || record.relationship_type === state.relationshipType) &&
+      (state.relationshipEvidence === "all" || record.evidence_level === state.relationshipEvidence),
+  );
+
+  els.relationshipUpdatedAt.textContent = `证据库更新：${data.updated_at || "--"}`;
+  els.relationshipConfirmedCount.textContent = confirmed.length;
+  els.relationshipDisclosedCount.textContent = disclosed.length;
+  els.relationshipCustomerCount.textContent = customers.length;
+  els.relationshipSegmentCount.textContent = segments.length;
+  els.relationshipResultCount.textContent = `显示 ${visible.length} / ${records.length} 条`;
+
+  els.relationshipMapNodes.innerHTML = records.map((record) => {
+    const evidence = relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate;
+    return `
+      <button class="relationship-node evidence-${evidence.className}" type="button" data-relationship-id="${escapeAttr(record.id)}">
+        <strong>${escapeHtml(record.organization)}</strong>
+        <span>${escapeHtml(record.relationship_label)}</span>
+      </button>
+    `;
+  }).join("");
+
+  els.relationshipList.innerHTML = visible.length ? visible.map((record) => {
+    const evidence = relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate;
+    const topics = (record.topics || []).map((topic) => `<b>${escapeHtml(topic)}</b>`).join("");
+    return `
+      <article class="relationship-card" id="relationship-card-${escapeAttr(record.id)}">
+        <header>
+          <div><span>ACRO ↔</span><strong>${escapeHtml(record.organization)}</strong></div>
+          <div class="relationship-badges">
+            <b class="relationship-type">${escapeHtml(record.relationship_label)}</b>
+            <b class="evidence-badge ${evidence.className}">${escapeHtml(evidence.label)}</b>
+          </div>
+        </header>
+        <p class="relationship-summary">${escapeHtml(record.summary)}</p>
+        <div class="relationship-topics">${topics}</div>
+        <div class="relationship-proof">
+          <div><span>分类说明</span><p>${escapeHtml(record.classification_note)}</p></div>
+          <div><span>公开状态</span><p>${escapeHtml(record.status_label || "待核对")}${record.source_date ? ` · ${escapeHtml(record.source_date)}` : ""}</p></div>
+          <a href="${escapeAttr(record.source_url)}" target="_blank" rel="noreferrer">查看官方证据</a>
+        </div>
+      </article>
+    `;
+  }).join("") : '<div class="empty">当前筛选条件下没有关系证据。</div>';
+
+  els.customerSegmentList.innerHTML = segments.map((segment) => `
+    <article>
+      <strong>${escapeHtml(segment.label)}</strong>
+      <p>${escapeHtml(segment.note)}</p>
+      <span>客户群已确认 · 具体公司待发现</span>
+    </article>
+  `).join("");
 }
 
 const coverageStatusMeta = {
@@ -2414,7 +2513,59 @@ function renderOverviewScope() {
   renderRegionDistribution(scoped);
   renderCompanyTopicMatrix(scoped);
   renderCategoryDistribution(scoped);
+  renderBusinessLanes(scoped, companyRoles);
   renderSignals();
+}
+
+function renderBusinessLanes(items, companyRoles) {
+  if (!els.competitorActionList) return;
+  const competitorItems = items.filter(
+    (item) => getItemRole(item, companyRoles) === "competitor",
+  );
+  const opportunityItems = items.filter((item) => {
+    const role = getItemRole(item, companyRoles);
+    const productNeeds = item.intelligence?.product_needs || [];
+    return item.recommended_action?.type === "lead" ||
+      (item.acro_relevance?.level === "high" && role !== "competitor") ||
+      (productNeeds.length && role === "industry");
+  });
+  const partnerItems = items.filter((item) =>
+    item.category === "partnership" ||
+    (item.intelligence?.business_actions || []).some((action) =>
+      ["合作 / 共同开发", "授权 / 引进"].includes(action),
+    ),
+  );
+
+  els.competitorLaneCount.textContent = competitorItems.length;
+  els.opportunityLaneCount.textContent = opportunityItems.length;
+  els.partnerLaneCount.textContent = partnerItems.length;
+  renderBusinessLaneItems(els.competitorActionList, competitorItems, "当前范围内没有竞品行动。", "competitor");
+  renderBusinessLaneItems(els.opportunityActionList, opportunityItems, "尚无达到门槛的 ACRO 机会。", "opportunity");
+  renderBusinessLaneItems(els.partnerActionList, partnerItems, "当前范围内没有新合作信号。", "partner");
+}
+
+function renderBusinessLaneItems(container, items, emptyText, laneType) {
+  const topItems = [...items].sort((a, b) => b.score - a.score).slice(0, 3);
+  if (!topItems.length) {
+    container.innerHTML = `<div class="business-lane-empty">${escapeHtml(emptyText)}</div>`;
+    return;
+  }
+  container.innerHTML = topItems.map((item) => {
+    const company = item.matched_companies?.[0] || item.company || "行业信号";
+    const intelligence = item.intelligence || {};
+    const context = laneType === "opportunity"
+      ? (intelligence.product_needs || [])[0] || item.recommended_action?.label || "待评估"
+      : laneType === "partner"
+        ? (intelligence.business_actions || [])[0] || labelCategory(item.category)
+        : (intelligence.modalities || [])[0] || labelCategory(item.category);
+    return `
+      <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
+        <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
+        <strong>${escapeHtml(item.title)}</strong>
+        <small>${escapeHtml(item.published || "日期待核对")} · ${Number(item.score) || 0} 分</small>
+      </a>
+    `;
+  }).join("");
 }
 
 const regionDefinitions = [
@@ -3552,6 +3703,23 @@ els.companyPoolGroups.addEventListener("click", (event) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+els.relationshipTypeFilter.addEventListener("change", (event) => {
+  state.relationshipType = event.target.value;
+  renderCompanyRelationships();
+});
+
+els.relationshipEvidenceFilter.addEventListener("change", (event) => {
+  state.relationshipEvidence = event.target.value;
+  renderCompanyRelationships();
+});
+
+els.relationshipMapNodes.addEventListener("click", (event) => {
+  const node = event.target.closest("[data-relationship-id]");
+  if (!node) return;
+  const card = document.querySelector(`#relationship-card-${CSS.escape(node.dataset.relationshipId)}`);
+  if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
   button.addEventListener("click", () => {
     state.timeRange = Number(button.dataset.timeRange);
@@ -3579,6 +3747,12 @@ els.regionFilter.addEventListener("change", (event) => {
 
 els.openSignalDetailButton.addEventListener("click", () => {
   state.page = "signals";
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+els.openRelationshipsButton.addEventListener("click", () => {
+  state.page = "relationships";
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });

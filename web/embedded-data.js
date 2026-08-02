@@ -96397,3 +96397,143 @@ window.AIHOT_INTELLIGENCE_RULES = {
     }
   }
 };
+window.AIHOT_COMPANY_RELATIONSHIPS = {
+  "version": 1,
+  "updated_at": "2026-08-02",
+  "hub_company": {
+    "id": "acro",
+    "display_name": "ACROBiosystems / 百普赛斯"
+  },
+  "records": [
+    {
+      "id": "acro-abveris",
+      "organization": "Abveris",
+      "relationship_type": "strategic_partner",
+      "relationship_label": "战略合作伙伴",
+      "evidence_level": "confirmed",
+      "evidence_label": "双方合作公告",
+      "status": "historical",
+      "status_label": "历史合作公告",
+      "source_date": "2020-04-08",
+      "topics": [
+        "antibody discovery",
+        "recombinant proteins"
+      ],
+      "summary": "双方将 ACRO 重组蛋白产品与 Abveris 抗体发现平台组合为联合服务。",
+      "classification_note": "官方公告明确使用 collaboration 和 strategic collaboration，可确认为合作关系；不等同于当前客户关系。",
+      "source_title": "Abveris and ACROBiosystems extend partnership",
+      "source_url": "https://www.acrobiosystems.com/news/1116"
+    },
+    {
+      "id": "acro-daan",
+      "organization": "DAAN Biotherapeutics",
+      "relationship_type": "strategic_partner",
+      "relationship_label": "战略合作伙伴",
+      "evidence_level": "confirmed",
+      "evidence_label": "MOU 官方公告",
+      "status": "current",
+      "status_label": "近期公开合作",
+      "source_date": "2025-08-20",
+      "topics": [
+        "immuno-oncology",
+        "TCR-T",
+        "bioreagents"
+      ],
+      "summary": "围绕精准免疫肿瘤药物开发建立试剂供应、技术合作、共同研究和数据共享框架。",
+      "classification_note": "有双方具名 MOU 与合作范围，作为已确认合作展示。",
+      "source_title": "ACROBiosystems and DAAN Biotherapeutics sign strategic MOU",
+      "source_url": "https://kr.acrobiosystems.com/news/partnership-daan"
+    },
+    {
+      "id": "acro-bei-resources",
+      "organization": "BEI Resources",
+      "relationship_type": "research_partner",
+      "relationship_label": "科研资源合作",
+      "evidence_level": "confirmed",
+      "evidence_label": "官方项目公告",
+      "status": "historical",
+      "status_label": "历史项目",
+      "source_date": null,
+      "topics": [
+        "SARS-CoV-2",
+        "research reagents",
+        "public resources"
+      ],
+      "summary": "ACRO 向 BEI Resources 捐赠病毒相关研究试剂，支持公共科研资源分发。",
+      "classification_note": "这是有明确项目内容的科研资源合作，不归入商业客户。",
+      "source_title": "ACROBiosystems makes donations to BEI Resources",
+      "source_url": "https://kr.acrobiosystems.com/news/1267"
+    },
+    {
+      "id": "acro-pfizer",
+      "organization": "Pfizer",
+      "relationship_type": "disclosed_relationship",
+      "relationship_label": "官网披露关系",
+      "evidence_level": "disclosed",
+      "evidence_label": "公司介绍统一表述",
+      "status": "undated",
+      "status_label": "当前状态待核对",
+      "source_date": null,
+      "topics": [
+        "top pharmaceutical enterprise"
+      ],
+      "summary": "ACRO 官方公司介绍将 Pfizer 列为建立长期稳定合作的头部药企之一。",
+      "classification_note": "未披露具体项目、时间和采购关系，不标记为已确认客户。",
+      "source_title": "Why ACRO",
+      "source_url": "https://careers.acrobiosystems.com/why-acro/"
+    },
+    {
+      "id": "acro-novartis",
+      "organization": "Novartis",
+      "relationship_type": "disclosed_relationship",
+      "relationship_label": "官网披露关系",
+      "evidence_level": "disclosed",
+      "evidence_label": "公司介绍统一表述",
+      "status": "undated",
+      "status_label": "当前状态待核对",
+      "source_date": null,
+      "topics": [
+        "top pharmaceutical enterprise"
+      ],
+      "summary": "ACRO 官方公司介绍将 Novartis 列为建立长期稳定合作的头部药企之一。",
+      "classification_note": "未披露具体项目、时间和采购关系，不标记为已确认客户。",
+      "source_title": "Why ACRO",
+      "source_url": "https://careers.acrobiosystems.com/why-acro/"
+    },
+    {
+      "id": "acro-johnson-johnson",
+      "organization": "Johnson & Johnson",
+      "relationship_type": "disclosed_relationship",
+      "relationship_label": "官网披露关系",
+      "evidence_level": "disclosed",
+      "evidence_label": "公司介绍统一表述",
+      "status": "undated",
+      "status_label": "当前状态待核对",
+      "source_date": null,
+      "topics": [
+        "top pharmaceutical enterprise"
+      ],
+      "summary": "ACRO 官方公司介绍将 Johnson & Johnson 列为建立长期稳定合作的头部药企之一。",
+      "classification_note": "未披露具体项目、时间和采购关系，不标记为已确认客户。",
+      "source_title": "Why ACRO",
+      "source_url": "https://careers.acrobiosystems.com/why-acro/"
+    }
+  ],
+  "customer_segments": [
+    {
+      "label": "制药与 Biotech 公司",
+      "status": "segment_only",
+      "note": "官网确认这是服务客群，但不自动推断具体企业是客户。"
+    },
+    {
+      "label": "CRO / CDMO",
+      "status": "segment_only",
+      "note": "适合从合作新闻、项目案例和会议演讲中发现名单。"
+    },
+    {
+      "label": "科研机构与医院",
+      "status": "segment_only",
+      "note": "需要通过论文致谢、产品引用和官方案例逐条确认。"
+    }
+  ]
+};

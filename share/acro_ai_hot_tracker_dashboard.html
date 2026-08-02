@@ -788,6 +788,7 @@ select {
 .rules-section,
 .profile-section,
 .companies-section,
+.relationships-section,
 .company-sources-section,
 .pipeline-section,
 .structured-rules-section,
@@ -799,6 +800,449 @@ select {
   padding: 18px;
   margin-bottom: 18px;
   box-shadow: var(--shadow);
+}
+
+.business-lanes-section {
+  margin-bottom: 18px;
+}
+
+.business-lanes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.business-lane {
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--coral);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.business-lane.lane-opportunity {
+  border-top-color: var(--gold);
+}
+
+.business-lane.lane-partner {
+  border-top-color: var(--blue);
+}
+
+.business-lane > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.business-lane > header span {
+  color: #263841;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.business-lane > header strong {
+  min-width: 28px;
+  color: var(--coral);
+  font-size: 20px;
+  text-align: right;
+}
+
+.lane-opportunity > header strong {
+  color: var(--gold);
+}
+
+.lane-partner > header strong {
+  color: var(--blue);
+}
+
+.business-lane > p {
+  min-height: 48px;
+  margin: 7px 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.business-lane-list {
+  display: grid;
+  gap: 7px;
+}
+
+.business-lane-item {
+  display: grid;
+  gap: 5px;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #e1e7ea;
+  border-radius: 6px;
+  background: #fbfcfc;
+  text-decoration: none;
+}
+
+.business-lane-item:hover {
+  border-color: #aacfd1;
+  background: #f4faf9;
+}
+
+.business-lane-item > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.business-lane-item b,
+.business-lane-item i,
+.business-lane-item small {
+  font-size: 10px;
+}
+
+.business-lane-item b {
+  overflow: hidden;
+  color: #49616a;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.business-lane-item i {
+  flex: 0 0 auto;
+  color: #97702d;
+  font-style: normal;
+  font-weight: 750;
+}
+
+.business-lane-item > strong {
+  display: -webkit-box;
+  overflow: hidden;
+  color: #26343c;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.business-lane-item small {
+  align-self: end;
+  color: #89969d;
+}
+
+.business-lane-empty {
+  min-height: 100px;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+.relationship-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.relationship-summary-grid article {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fbfcfc;
+}
+
+.relationship-summary-grid span,
+.relationship-summary-grid small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.relationship-summary-grid strong {
+  color: #263841;
+  font-size: 25px;
+}
+
+.relationship-map {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+  margin-bottom: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--teal);
+  border-radius: 8px;
+  background: #f8fbfb;
+}
+
+.relationship-hub {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  min-height: 132px;
+  padding: 16px;
+  background: #173238;
+  color: white;
+  border-radius: 7px;
+}
+
+.relationship-hub span {
+  color: #84d7da;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.relationship-hub strong {
+  font-size: 13px;
+}
+
+.relationship-hub small {
+  color: #a9bdc2;
+  font-size: 10px;
+}
+
+.relationship-map-nodes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.relationship-node {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  min-width: 0;
+  min-height: 60px;
+  padding: 8px 10px;
+  border: 1px solid #bad6d7;
+  border-radius: 6px;
+  background: white;
+  color: #263841;
+  text-align: left;
+  cursor: pointer;
+}
+
+.relationship-node.evidence-disclosed {
+  border-color: #e1c991;
+  background: #fffdf7;
+}
+
+.relationship-node:hover {
+  border-color: var(--teal);
+}
+
+.relationship-node strong {
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.relationship-node span {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.relationship-controls {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.relationship-controls > div {
+  display: grid;
+  gap: 3px;
+  margin-right: auto;
+}
+
+.relationship-controls strong {
+  color: #263841;
+  font-size: 13px;
+}
+
+.relationship-controls span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.relationship-controls select {
+  min-width: 170px;
+  height: 36px;
+}
+
+.relationship-list {
+  display: grid;
+  gap: 9px;
+}
+
+.relationship-card {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: white;
+}
+
+.relationship-card > header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.relationship-card > header > div:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.relationship-card > header span {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.relationship-card > header strong {
+  color: #26343c;
+  font-size: 15px;
+}
+
+.relationship-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.relationship-type,
+.evidence-badge {
+  padding: 4px 7px;
+  border-radius: 4px;
+  background: #e8f3f3;
+  color: #236a70;
+  font-size: 9px;
+}
+
+.evidence-badge.confirmed {
+  background: #dff2e9;
+  color: #25694f;
+}
+
+.evidence-badge.disclosed {
+  background: var(--gold-soft);
+  color: #805a12;
+}
+
+.relationship-summary {
+  margin: 9px 0;
+  color: #47565e;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.relationship-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.relationship-topics b {
+  padding: 3px 6px;
+  border: 1px solid #dbe3e6;
+  border-radius: 4px;
+  color: #64737b;
+  font-size: 9px;
+}
+
+.relationship-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(160px, 0.8fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+}
+
+.relationship-proof div {
+  min-width: 0;
+}
+
+.relationship-proof span {
+  color: #849199;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.relationship-proof p {
+  margin: 3px 0 0;
+  color: #53616a;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.relationship-proof a {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.customer-discovery-block {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.8fr);
+  gap: 18px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.customer-discovery-block h3 {
+  margin: 5px 0 0;
+  color: #26343c;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.customer-segment-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.customer-segment-list article {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #d6e0e4;
+  border-top: 3px solid var(--blue);
+  border-radius: 7px;
+}
+
+.customer-segment-list strong {
+  color: #30445b;
+  font-size: 12px;
+}
+
+.customer-segment-list p {
+  margin: 7px 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.customer-segment-list span {
+  color: #345f9f;
+  font-size: 9px;
+  font-weight: 800;
 }
 
 .health-summary-grid {
@@ -3604,6 +4048,71 @@ select {
   }
 }
 
+@media (max-width: 1100px) {
+  .business-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .business-lane > p {
+    min-height: 0;
+  }
+
+  .business-lane-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .relationship-map {
+    grid-template-columns: 180px minmax(0, 1fr);
+  }
+
+  .relationship-map-nodes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .business-lane-list,
+  .relationship-summary-grid,
+  .customer-segment-list {
+    grid-template-columns: 1fr;
+  }
+
+  .relationship-map,
+  .customer-discovery-block,
+  .relationship-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .relationship-map-nodes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .relationship-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .relationship-controls select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .relationship-card > header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .relationship-badges {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 460px) {
+  .relationship-map-nodes {
+    grid-template-columns: 1fr;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -3621,6 +4130,7 @@ select {
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="relationships" title="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
           <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
           <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
@@ -3794,6 +4304,33 @@ select {
         </article>
       </section>
 
+      <section class="business-lanes-section page-panel" data-page="overview" aria-label="Business action signals">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">业务行动面板</p>
+            <h2>把新闻拆成竞争、机会与合作三条线</h2>
+          </div>
+          <button class="text-button" id="openRelationshipsButton" type="button">查看关系证据</button>
+        </div>
+        <div class="business-lanes">
+          <article class="business-lane lane-competitor">
+            <header><span>竞品动作</span><strong id="competitorLaneCount">--</strong></header>
+            <p>新产品、平台、扩产与区域动作，用于产品和话术对比。</p>
+            <div id="competitorActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-opportunity">
+            <header><span>ACRO 机会</span><strong id="opportunityLaneCount">--</strong></header>
+            <p>高相关技术、产品需求与建议动作，用于市场和 BD 判断。</p>
+            <div id="opportunityActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-partner">
+            <header><span>合作信号</span><strong id="partnerLaneCount">--</strong></header>
+            <p>合作、授权、MOU 与共同开发，保留原文证据和关系等级。</p>
+            <div id="partnerActionList" class="business-lane-list"></div>
+          </article>
+        </div>
+      </section>
+
       <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
         <div class="section-head">
           <div>
@@ -3804,6 +4341,55 @@ select {
         </div>
         <div class="company-role-summary" id="companyRoleSummary" aria-label="公司角色统计"></div>
         <div class="company-pool-groups" id="companyPoolGroups"></div>
+      </section>
+
+      <section class="relationships-section page-panel" data-page="relationships" aria-label="Company relationship intelligence">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">ACRO 关系雷达</p>
+            <h2>合作伙伴、官网披露关系与客户线索分开管理</h2>
+          </div>
+          <span class="timestamp" id="relationshipUpdatedAt">证据库加载中</span>
+        </div>
+
+        <div class="relationship-summary-grid">
+          <article><span>已确认合作</span><strong id="relationshipConfirmedCount">--</strong><small>有具名公告或项目证据</small></article>
+          <article><span>官网披露关系</span><strong id="relationshipDisclosedCount">--</strong><small>已披露，具体项目待核对</small></article>
+          <article><span>已确认客户</span><strong id="relationshipCustomerCount">0</strong><small>不用合作或参会信息代替客户证据</small></article>
+          <article><span>客户发现方向</span><strong id="relationshipSegmentCount">--</strong><small>已确认客群，名单需逐条发现</small></article>
+        </div>
+
+        <div class="relationship-map" aria-label="ACRO relationship map">
+          <div class="relationship-hub"><span>ACRO</span><strong>企业关系中心</strong><small>只展示可回溯证据</small></div>
+          <div id="relationshipMapNodes" class="relationship-map-nodes"></div>
+        </div>
+
+        <div class="relationship-controls" aria-label="Relationship filters">
+          <div>
+            <strong>关系证据库</strong>
+            <span id="relationshipResultCount">--</span>
+          </div>
+          <select id="relationshipTypeFilter" aria-label="按关系类型筛选">
+            <option value="all">全部关系</option>
+            <option value="strategic_partner">战略合作</option>
+            <option value="research_partner">科研资源合作</option>
+            <option value="disclosed_relationship">官网披露关系</option>
+          </select>
+          <select id="relationshipEvidenceFilter" aria-label="按证据等级筛选">
+            <option value="all">全部证据</option>
+            <option value="confirmed">已确认</option>
+            <option value="disclosed">已披露待核对</option>
+          </select>
+        </div>
+        <div id="relationshipList" class="relationship-list"></div>
+
+        <div class="customer-discovery-block">
+          <div>
+            <p class="eyebrow">客户发现队列</p>
+            <h3>官网目前只能确认客群，不能直接还原完整客户名单</h3>
+          </div>
+          <div id="customerSegmentList" class="customer-segment-list"></div>
+        </div>
       </section>
 
       <section class="company-sources-section page-panel" data-page="company-sources" aria-label="公司数据源档案">
@@ -100520,6 +101106,146 @@ window.AIHOT_INTELLIGENCE_RULES = {
     }
   }
 };
+window.AIHOT_COMPANY_RELATIONSHIPS = {
+  "version": 1,
+  "updated_at": "2026-08-02",
+  "hub_company": {
+    "id": "acro",
+    "display_name": "ACROBiosystems / 百普赛斯"
+  },
+  "records": [
+    {
+      "id": "acro-abveris",
+      "organization": "Abveris",
+      "relationship_type": "strategic_partner",
+      "relationship_label": "战略合作伙伴",
+      "evidence_level": "confirmed",
+      "evidence_label": "双方合作公告",
+      "status": "historical",
+      "status_label": "历史合作公告",
+      "source_date": "2020-04-08",
+      "topics": [
+        "antibody discovery",
+        "recombinant proteins"
+      ],
+      "summary": "双方将 ACRO 重组蛋白产品与 Abveris 抗体发现平台组合为联合服务。",
+      "classification_note": "官方公告明确使用 collaboration 和 strategic collaboration，可确认为合作关系；不等同于当前客户关系。",
+      "source_title": "Abveris and ACROBiosystems extend partnership",
+      "source_url": "https://www.acrobiosystems.com/news/1116"
+    },
+    {
+      "id": "acro-daan",
+      "organization": "DAAN Biotherapeutics",
+      "relationship_type": "strategic_partner",
+      "relationship_label": "战略合作伙伴",
+      "evidence_level": "confirmed",
+      "evidence_label": "MOU 官方公告",
+      "status": "current",
+      "status_label": "近期公开合作",
+      "source_date": "2025-08-20",
+      "topics": [
+        "immuno-oncology",
+        "TCR-T",
+        "bioreagents"
+      ],
+      "summary": "围绕精准免疫肿瘤药物开发建立试剂供应、技术合作、共同研究和数据共享框架。",
+      "classification_note": "有双方具名 MOU 与合作范围，作为已确认合作展示。",
+      "source_title": "ACROBiosystems and DAAN Biotherapeutics sign strategic MOU",
+      "source_url": "https://kr.acrobiosystems.com/news/partnership-daan"
+    },
+    {
+      "id": "acro-bei-resources",
+      "organization": "BEI Resources",
+      "relationship_type": "research_partner",
+      "relationship_label": "科研资源合作",
+      "evidence_level": "confirmed",
+      "evidence_label": "官方项目公告",
+      "status": "historical",
+      "status_label": "历史项目",
+      "source_date": null,
+      "topics": [
+        "SARS-CoV-2",
+        "research reagents",
+        "public resources"
+      ],
+      "summary": "ACRO 向 BEI Resources 捐赠病毒相关研究试剂，支持公共科研资源分发。",
+      "classification_note": "这是有明确项目内容的科研资源合作，不归入商业客户。",
+      "source_title": "ACROBiosystems makes donations to BEI Resources",
+      "source_url": "https://kr.acrobiosystems.com/news/1267"
+    },
+    {
+      "id": "acro-pfizer",
+      "organization": "Pfizer",
+      "relationship_type": "disclosed_relationship",
+      "relationship_label": "官网披露关系",
+      "evidence_level": "disclosed",
+      "evidence_label": "公司介绍统一表述",
+      "status": "undated",
+      "status_label": "当前状态待核对",
+      "source_date": null,
+      "topics": [
+        "top pharmaceutical enterprise"
+      ],
+      "summary": "ACRO 官方公司介绍将 Pfizer 列为建立长期稳定合作的头部药企之一。",
+      "classification_note": "未披露具体项目、时间和采购关系，不标记为已确认客户。",
+      "source_title": "Why ACRO",
+      "source_url": "https://careers.acrobiosystems.com/why-acro/"
+    },
+    {
+      "id": "acro-novartis",
+      "organization": "Novartis",
+      "relationship_type": "disclosed_relationship",
+      "relationship_label": "官网披露关系",
+      "evidence_level": "disclosed",
+      "evidence_label": "公司介绍统一表述",
+      "status": "undated",
+      "status_label": "当前状态待核对",
+      "source_date": null,
+      "topics": [
+        "top pharmaceutical enterprise"
+      ],
+      "summary": "ACRO 官方公司介绍将 Novartis 列为建立长期稳定合作的头部药企之一。",
+      "classification_note": "未披露具体项目、时间和采购关系，不标记为已确认客户。",
+      "source_title": "Why ACRO",
+      "source_url": "https://careers.acrobiosystems.com/why-acro/"
+    },
+    {
+      "id": "acro-johnson-johnson",
+      "organization": "Johnson & Johnson",
+      "relationship_type": "disclosed_relationship",
+      "relationship_label": "官网披露关系",
+      "evidence_level": "disclosed",
+      "evidence_label": "公司介绍统一表述",
+      "status": "undated",
+      "status_label": "当前状态待核对",
+      "source_date": null,
+      "topics": [
+        "top pharmaceutical enterprise"
+      ],
+      "summary": "ACRO 官方公司介绍将 Johnson & Johnson 列为建立长期稳定合作的头部药企之一。",
+      "classification_note": "未披露具体项目、时间和采购关系，不标记为已确认客户。",
+      "source_title": "Why ACRO",
+      "source_url": "https://careers.acrobiosystems.com/why-acro/"
+    }
+  ],
+  "customer_segments": [
+    {
+      "label": "制药与 Biotech 公司",
+      "status": "segment_only",
+      "note": "官网确认这是服务客群，但不自动推断具体企业是客户。"
+    },
+    {
+      "label": "CRO / CDMO",
+      "status": "segment_only",
+      "note": "适合从合作新闻、项目案例和会议演讲中发现名单。"
+    },
+    {
+      "label": "科研机构与医院",
+      "status": "segment_only",
+      "note": "需要通过论文致谢、产品引用和官方案例逐条确认。"
+    }
+  ]
+};
     </script>
     <script>
 const FEEDBACK_STORE_KEY = "aihot_feedback";
@@ -100559,6 +101285,8 @@ const state = {
   healthCompany: "all",
   healthStatus: "all",
   coverageCompany: "acro",
+  relationshipType: "all",
+  relationshipEvidence: "all",
   dockOpenRoles: new Set(["self"]),
   feedback: loadFeedback(),
   history: null,
@@ -102331,6 +103059,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  relationships: ["Relationship Intelligence", "ACRO 企业关系与客户线索"],
   "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
@@ -102468,6 +103197,24 @@ const els = {
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
   companyRoleSummary: document.querySelector("#companyRoleSummary"),
   companyPoolGroups: document.querySelector("#companyPoolGroups"),
+  competitorLaneCount: document.querySelector("#competitorLaneCount"),
+  opportunityLaneCount: document.querySelector("#opportunityLaneCount"),
+  partnerLaneCount: document.querySelector("#partnerLaneCount"),
+  competitorActionList: document.querySelector("#competitorActionList"),
+  opportunityActionList: document.querySelector("#opportunityActionList"),
+  partnerActionList: document.querySelector("#partnerActionList"),
+  openRelationshipsButton: document.querySelector("#openRelationshipsButton"),
+  relationshipUpdatedAt: document.querySelector("#relationshipUpdatedAt"),
+  relationshipConfirmedCount: document.querySelector("#relationshipConfirmedCount"),
+  relationshipDisclosedCount: document.querySelector("#relationshipDisclosedCount"),
+  relationshipCustomerCount: document.querySelector("#relationshipCustomerCount"),
+  relationshipSegmentCount: document.querySelector("#relationshipSegmentCount"),
+  relationshipMapNodes: document.querySelector("#relationshipMapNodes"),
+  relationshipResultCount: document.querySelector("#relationshipResultCount"),
+  relationshipTypeFilter: document.querySelector("#relationshipTypeFilter"),
+  relationshipEvidenceFilter: document.querySelector("#relationshipEvidenceFilter"),
+  relationshipList: document.querySelector("#relationshipList"),
+  customerSegmentList: document.querySelector("#customerSegmentList"),
   companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
   companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
   companyCoverageSelect: document.querySelector("#companyCoverageSelect"),
@@ -102503,6 +103250,7 @@ function renderLoadedData() {
   hydrateFilters();
   renderCompanyDock();
   renderCompanyPools();
+  renderCompanyRelationships();
   renderCompanySourceCoverage();
   renderStructuredRules();
   render();
@@ -102705,6 +103453,83 @@ function renderCompanyPools() {
       `;
     })
     .join("");
+}
+
+function getRelationshipData() {
+  return window.AIHOT_COMPANY_RELATIONSHIPS || {
+    updated_at: "--",
+    records: [],
+    customer_segments: [],
+  };
+}
+
+const relationshipEvidenceMeta = {
+  confirmed: { label: "已确认", className: "confirmed" },
+  disclosed: { label: "已披露待核对", className: "disclosed" },
+  candidate: { label: "候选线索", className: "candidate" },
+};
+
+function renderCompanyRelationships() {
+  if (!els.relationshipList) return;
+  const data = getRelationshipData();
+  const records = data.records || [];
+  const segments = data.customer_segments || [];
+  const confirmed = records.filter((record) => record.evidence_level === "confirmed");
+  const disclosed = records.filter((record) => record.evidence_level === "disclosed");
+  const customers = records.filter((record) => record.relationship_type === "confirmed_customer");
+  const visible = records.filter(
+    (record) =>
+      (state.relationshipType === "all" || record.relationship_type === state.relationshipType) &&
+      (state.relationshipEvidence === "all" || record.evidence_level === state.relationshipEvidence),
+  );
+
+  els.relationshipUpdatedAt.textContent = `证据库更新：${data.updated_at || "--"}`;
+  els.relationshipConfirmedCount.textContent = confirmed.length;
+  els.relationshipDisclosedCount.textContent = disclosed.length;
+  els.relationshipCustomerCount.textContent = customers.length;
+  els.relationshipSegmentCount.textContent = segments.length;
+  els.relationshipResultCount.textContent = `显示 ${visible.length} / ${records.length} 条`;
+
+  els.relationshipMapNodes.innerHTML = records.map((record) => {
+    const evidence = relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate;
+    return `
+      <button class="relationship-node evidence-${evidence.className}" type="button" data-relationship-id="${escapeAttr(record.id)}">
+        <strong>${escapeHtml(record.organization)}</strong>
+        <span>${escapeHtml(record.relationship_label)}</span>
+      </button>
+    `;
+  }).join("");
+
+  els.relationshipList.innerHTML = visible.length ? visible.map((record) => {
+    const evidence = relationshipEvidenceMeta[record.evidence_level] || relationshipEvidenceMeta.candidate;
+    const topics = (record.topics || []).map((topic) => `<b>${escapeHtml(topic)}</b>`).join("");
+    return `
+      <article class="relationship-card" id="relationship-card-${escapeAttr(record.id)}">
+        <header>
+          <div><span>ACRO ↔</span><strong>${escapeHtml(record.organization)}</strong></div>
+          <div class="relationship-badges">
+            <b class="relationship-type">${escapeHtml(record.relationship_label)}</b>
+            <b class="evidence-badge ${evidence.className}">${escapeHtml(evidence.label)}</b>
+          </div>
+        </header>
+        <p class="relationship-summary">${escapeHtml(record.summary)}</p>
+        <div class="relationship-topics">${topics}</div>
+        <div class="relationship-proof">
+          <div><span>分类说明</span><p>${escapeHtml(record.classification_note)}</p></div>
+          <div><span>公开状态</span><p>${escapeHtml(record.status_label || "待核对")}${record.source_date ? ` · ${escapeHtml(record.source_date)}` : ""}</p></div>
+          <a href="${escapeAttr(record.source_url)}" target="_blank" rel="noreferrer">查看官方证据</a>
+        </div>
+      </article>
+    `;
+  }).join("") : '<div class="empty">当前筛选条件下没有关系证据。</div>';
+
+  els.customerSegmentList.innerHTML = segments.map((segment) => `
+    <article>
+      <strong>${escapeHtml(segment.label)}</strong>
+      <p>${escapeHtml(segment.note)}</p>
+      <span>客户群已确认 · 具体公司待发现</span>
+    </article>
+  `).join("");
 }
 
 const coverageStatusMeta = {
@@ -102938,7 +103763,59 @@ function renderOverviewScope() {
   renderRegionDistribution(scoped);
   renderCompanyTopicMatrix(scoped);
   renderCategoryDistribution(scoped);
+  renderBusinessLanes(scoped, companyRoles);
   renderSignals();
+}
+
+function renderBusinessLanes(items, companyRoles) {
+  if (!els.competitorActionList) return;
+  const competitorItems = items.filter(
+    (item) => getItemRole(item, companyRoles) === "competitor",
+  );
+  const opportunityItems = items.filter((item) => {
+    const role = getItemRole(item, companyRoles);
+    const productNeeds = item.intelligence?.product_needs || [];
+    return item.recommended_action?.type === "lead" ||
+      (item.acro_relevance?.level === "high" && role !== "competitor") ||
+      (productNeeds.length && role === "industry");
+  });
+  const partnerItems = items.filter((item) =>
+    item.category === "partnership" ||
+    (item.intelligence?.business_actions || []).some((action) =>
+      ["合作 / 共同开发", "授权 / 引进"].includes(action),
+    ),
+  );
+
+  els.competitorLaneCount.textContent = competitorItems.length;
+  els.opportunityLaneCount.textContent = opportunityItems.length;
+  els.partnerLaneCount.textContent = partnerItems.length;
+  renderBusinessLaneItems(els.competitorActionList, competitorItems, "当前范围内没有竞品行动。", "competitor");
+  renderBusinessLaneItems(els.opportunityActionList, opportunityItems, "尚无达到门槛的 ACRO 机会。", "opportunity");
+  renderBusinessLaneItems(els.partnerActionList, partnerItems, "当前范围内没有新合作信号。", "partner");
+}
+
+function renderBusinessLaneItems(container, items, emptyText, laneType) {
+  const topItems = [...items].sort((a, b) => b.score - a.score).slice(0, 3);
+  if (!topItems.length) {
+    container.innerHTML = `<div class="business-lane-empty">${escapeHtml(emptyText)}</div>`;
+    return;
+  }
+  container.innerHTML = topItems.map((item) => {
+    const company = item.matched_companies?.[0] || item.company || "行业信号";
+    const intelligence = item.intelligence || {};
+    const context = laneType === "opportunity"
+      ? (intelligence.product_needs || [])[0] || item.recommended_action?.label || "待评估"
+      : laneType === "partner"
+        ? (intelligence.business_actions || [])[0] || labelCategory(item.category)
+        : (intelligence.modalities || [])[0] || labelCategory(item.category);
+    return `
+      <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
+        <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
+        <strong>${escapeHtml(item.title)}</strong>
+        <small>${escapeHtml(item.published || "日期待核对")} · ${Number(item.score) || 0} 分</small>
+      </a>
+    `;
+  }).join("");
 }
 
 const regionDefinitions = [
@@ -104076,6 +104953,23 @@ els.companyPoolGroups.addEventListener("click", (event) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+els.relationshipTypeFilter.addEventListener("change", (event) => {
+  state.relationshipType = event.target.value;
+  renderCompanyRelationships();
+});
+
+els.relationshipEvidenceFilter.addEventListener("change", (event) => {
+  state.relationshipEvidence = event.target.value;
+  renderCompanyRelationships();
+});
+
+els.relationshipMapNodes.addEventListener("click", (event) => {
+  const node = event.target.closest("[data-relationship-id]");
+  if (!node) return;
+  const card = document.querySelector(`#relationship-card-${CSS.escape(node.dataset.relationshipId)}`);
+  if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
   button.addEventListener("click", () => {
     state.timeRange = Number(button.dataset.timeRange);
@@ -104103,6 +104997,12 @@ els.regionFilter.addEventListener("change", (event) => {
 
 els.openSignalDetailButton.addEventListener("click", () => {
   state.page = "signals";
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+els.openRelationshipsButton.addEventListener("click", () => {
+  state.page = "relationships";
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });

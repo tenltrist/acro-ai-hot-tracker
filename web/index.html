@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260729l" />
+    <link rel="stylesheet" href="./styles.css?v=20260802a" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -21,6 +21,7 @@
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="relationships" title="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
           <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
           <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
@@ -194,6 +195,33 @@
         </article>
       </section>
 
+      <section class="business-lanes-section page-panel" data-page="overview" aria-label="Business action signals">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">业务行动面板</p>
+            <h2>把新闻拆成竞争、机会与合作三条线</h2>
+          </div>
+          <button class="text-button" id="openRelationshipsButton" type="button">查看关系证据</button>
+        </div>
+        <div class="business-lanes">
+          <article class="business-lane lane-competitor">
+            <header><span>竞品动作</span><strong id="competitorLaneCount">--</strong></header>
+            <p>新产品、平台、扩产与区域动作，用于产品和话术对比。</p>
+            <div id="competitorActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-opportunity">
+            <header><span>ACRO 机会</span><strong id="opportunityLaneCount">--</strong></header>
+            <p>高相关技术、产品需求与建议动作，用于市场和 BD 判断。</p>
+            <div id="opportunityActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-partner">
+            <header><span>合作信号</span><strong id="partnerLaneCount">--</strong></header>
+            <p>合作、授权、MOU 与共同开发，保留原文证据和关系等级。</p>
+            <div id="partnerActionList" class="business-lane-list"></div>
+          </article>
+        </div>
+      </section>
+
       <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
         <div class="section-head">
           <div>
@@ -204,6 +232,55 @@
         </div>
         <div class="company-role-summary" id="companyRoleSummary" aria-label="公司角色统计"></div>
         <div class="company-pool-groups" id="companyPoolGroups"></div>
+      </section>
+
+      <section class="relationships-section page-panel" data-page="relationships" aria-label="Company relationship intelligence">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">ACRO 关系雷达</p>
+            <h2>合作伙伴、官网披露关系与客户线索分开管理</h2>
+          </div>
+          <span class="timestamp" id="relationshipUpdatedAt">证据库加载中</span>
+        </div>
+
+        <div class="relationship-summary-grid">
+          <article><span>已确认合作</span><strong id="relationshipConfirmedCount">--</strong><small>有具名公告或项目证据</small></article>
+          <article><span>官网披露关系</span><strong id="relationshipDisclosedCount">--</strong><small>已披露，具体项目待核对</small></article>
+          <article><span>已确认客户</span><strong id="relationshipCustomerCount">0</strong><small>不用合作或参会信息代替客户证据</small></article>
+          <article><span>客户发现方向</span><strong id="relationshipSegmentCount">--</strong><small>已确认客群，名单需逐条发现</small></article>
+        </div>
+
+        <div class="relationship-map" aria-label="ACRO relationship map">
+          <div class="relationship-hub"><span>ACRO</span><strong>企业关系中心</strong><small>只展示可回溯证据</small></div>
+          <div id="relationshipMapNodes" class="relationship-map-nodes"></div>
+        </div>
+
+        <div class="relationship-controls" aria-label="Relationship filters">
+          <div>
+            <strong>关系证据库</strong>
+            <span id="relationshipResultCount">--</span>
+          </div>
+          <select id="relationshipTypeFilter" aria-label="按关系类型筛选">
+            <option value="all">全部关系</option>
+            <option value="strategic_partner">战略合作</option>
+            <option value="research_partner">科研资源合作</option>
+            <option value="disclosed_relationship">官网披露关系</option>
+          </select>
+          <select id="relationshipEvidenceFilter" aria-label="按证据等级筛选">
+            <option value="all">全部证据</option>
+            <option value="confirmed">已确认</option>
+            <option value="disclosed">已披露待核对</option>
+          </select>
+        </div>
+        <div id="relationshipList" class="relationship-list"></div>
+
+        <div class="customer-discovery-block">
+          <div>
+            <p class="eyebrow">客户发现队列</p>
+            <h3>官网目前只能确认客群，不能直接还原完整客户名单</h3>
+          </div>
+          <div id="customerSegmentList" class="customer-segment-list"></div>
+        </div>
       </section>
 
       <section class="company-sources-section page-panel" data-page="company-sources" aria-label="公司数据源档案">
@@ -520,7 +597,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260729l"></script>
-    <script src="./app.js?v=20260729l"></script>
+    <script src="./embedded-data.js?v=20260802a"></script>
+    <script src="./app.js?v=20260802a"></script>
   </body>
 </html>
