@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260802b" />
+    <link rel="stylesheet" href="./styles.css?v=20260804a" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -21,6 +21,7 @@
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="japan-customers" title="日本客户池"><span class="nav-icon">日</span><span>日本客户池</span></button>
           <button type="button" data-page-target="relationships" title="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
           <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
@@ -234,6 +235,49 @@
         <div class="company-pool-groups" id="companyPoolGroups"></div>
       </section>
 
+      <section class="japan-customers-section page-panel" data-page="japan-customers" aria-label="Japan customer pool">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">日本客户池</p>
+            <h2>先把名单变成公司锚点，再用外部信号补充关系和机会</h2>
+          </div>
+          <span class="timestamp" id="japanCustomerTimestamp">客户名单加载中</span>
+        </div>
+
+        <div class="customer-pool-principle">
+          <strong>当前边界</strong>
+          <span>名单收录不自动等于已成交、合作项目或商业机会；只有匹配到新闻或人工证据后，才进入关系与机会判断。</span>
+        </div>
+
+        <div class="customer-pool-summary" aria-label="日本客户池统计">
+          <article><span>去重后客户</span><strong id="japanCustomerCount">--</strong><small>公司、机构与渠道对象</small></article>
+          <article><span>制药及产业客户</span><strong id="japanIndustryCount">--</strong><small>按原名单大类统计</small></article>
+          <article><span>科研及学术机构</span><strong id="japanAcademiaCount">--</strong><small>高校、医院与研究机构</small></article>
+          <article><span>命中客户</span><strong id="japanLinkedCount">--</strong><small>存在名称匹配候选</small></article>
+        </div>
+
+        <div class="customer-pool-controls" aria-label="日本客户筛选">
+          <input id="japanCustomerSearch" type="search" placeholder="搜索客户或母公司..." aria-label="搜索日本客户" />
+          <select id="japanCustomerTypeFilter" aria-label="按客户大类筛选"><option value="all">全部客户大类</option></select>
+          <select id="japanCustomerSapFilter" aria-label="按SAP客户类型筛选"><option value="all">全部业务类型</option></select>
+          <select id="japanCustomerSignalFilter" aria-label="按外部信号状态筛选">
+            <option value="all">全部信号状态</option>
+            <option value="linked">有外部信号候选</option>
+            <option value="unlinked">暂无外部信号</option>
+            <option value="review">身份待规范</option>
+          </select>
+          <span id="japanCustomerResultCount">--</span>
+        </div>
+
+        <div class="customer-pool-layout">
+          <div class="customer-directory" aria-label="日本客户名单">
+            <div class="customer-directory-head" aria-hidden="true"><span>客户锚点</span><span>名单分类</span><span>母公司</span><span>外部信号</span></div>
+            <div id="japanCustomerList" class="customer-directory-list"></div>
+          </div>
+          <aside id="japanCustomerDetail" class="customer-detail-panel" aria-live="polite"></aside>
+        </div>
+      </section>
+
       <section class="relationships-section page-panel" data-page="relationships" aria-label="Company relationship intelligence">
         <div class="section-head">
           <div>
@@ -248,6 +292,7 @@
           <article><span>官网披露关系</span><strong id="relationshipDisclosedCount">--</strong><small>已披露，具体项目待核对</small></article>
           <article><span>动态关系候选</span><strong id="relationshipCandidateCount">--</strong><small>从新闻中自动识别，未经人工确认</small></article>
           <article><span>已确认客户</span><strong id="relationshipCustomerCount">0</strong><small>不用合作或参会信息代替客户证据</small></article>
+          <article><span>日本客户名单</span><strong id="relationshipJapanCustomerCount">--</strong><small>名单收录，不自动生成关系线</small></article>
           <article><span>客户发现方向</span><strong id="relationshipSegmentCount">--</strong><small>已确认客群，名单需逐条发现</small></article>
         </div>
 
@@ -619,7 +664,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260802b"></script>
-    <script src="./app.js?v=20260802b"></script>
+    <script src="./embedded-data.js?v=20260804a"></script>
+    <script src="./app.js?v=20260804a"></script>
   </body>
 </html>

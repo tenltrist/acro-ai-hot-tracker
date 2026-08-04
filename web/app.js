@@ -39,6 +39,11 @@ const state = {
   relationshipEvidence: "all",
   relationshipGraphLayer: "all",
   relationshipGraphFocus: "acro",
+  customerQuery: "",
+  customerType: "all",
+  customerSapType: "all",
+  customerSignalStatus: "all",
+  selectedCustomerId: null,
   dockOpenRoles: new Set(["self"]),
   feedback: loadFeedback(),
   history: null,
@@ -1811,6 +1816,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  "japan-customers": ["Japan Customer Pool", "日本客户名单与机会发现"],
   relationships: ["Relationship Intelligence", "ACRO 企业关系与客户线索"],
   "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
@@ -1961,6 +1967,7 @@ const els = {
   relationshipDisclosedCount: document.querySelector("#relationshipDisclosedCount"),
   relationshipCandidateCount: document.querySelector("#relationshipCandidateCount"),
   relationshipCustomerCount: document.querySelector("#relationshipCustomerCount"),
+  relationshipJapanCustomerCount: document.querySelector("#relationshipJapanCustomerCount"),
   relationshipSegmentCount: document.querySelector("#relationshipSegmentCount"),
   relationshipGraph: document.querySelector("#relationshipGraph"),
   relationshipFocusPanel: document.querySelector("#relationshipFocusPanel"),
@@ -1970,6 +1977,18 @@ const els = {
   relationshipEvidenceFilter: document.querySelector("#relationshipEvidenceFilter"),
   relationshipList: document.querySelector("#relationshipList"),
   customerSegmentList: document.querySelector("#customerSegmentList"),
+  japanCustomerTimestamp: document.querySelector("#japanCustomerTimestamp"),
+  japanCustomerCount: document.querySelector("#japanCustomerCount"),
+  japanIndustryCount: document.querySelector("#japanIndustryCount"),
+  japanAcademiaCount: document.querySelector("#japanAcademiaCount"),
+  japanLinkedCount: document.querySelector("#japanLinkedCount"),
+  japanCustomerSearch: document.querySelector("#japanCustomerSearch"),
+  japanCustomerTypeFilter: document.querySelector("#japanCustomerTypeFilter"),
+  japanCustomerSapFilter: document.querySelector("#japanCustomerSapFilter"),
+  japanCustomerSignalFilter: document.querySelector("#japanCustomerSignalFilter"),
+  japanCustomerResultCount: document.querySelector("#japanCustomerResultCount"),
+  japanCustomerList: document.querySelector("#japanCustomerList"),
+  japanCustomerDetail: document.querySelector("#japanCustomerDetail"),
   companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
   companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
   companyCoverageSelect: document.querySelector("#companyCoverageSelect"),
@@ -2005,6 +2024,7 @@ function renderLoadedData() {
   hydrateFilters();
   renderCompanyDock();
   renderCompanyPools();
+  renderJapanCustomerPool();
   renderCompanyRelationships();
   renderCompanySourceCoverage();
   renderStructuredRules();
@@ -2068,6 +2088,188 @@ function renderCompanyDock() {
     `;
   }).join("");
   els.companyDockList.innerHTML = allButton + groups;
+}
+
+function getJapanCustomerData() {
+  return window.AIHOT_JAPAN_CUSTOMERS || {
+    imported_at: "--",
+    source: "日本客户列表.xlsx",
+    semantics: "名单收录客户，不自动等同于已确认采购、合作项目或商业机会。",
+    import_summary: { source_rows: 0, unique_customers: 0, duplicate_rows_merged: 0, identity_review: 0 },
+    customers: [],
+  };
+}
+
+function normalizeCustomerMatchText(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[‐‑‒–—]/g, "-")
+    .replace(/[^a-z0-9一-鿿぀-ヿ&+.-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function stripCustomerCompanySuffix(value) {
+  return normalizeCustomerMatchText(value)
+    .replace(/[, .-]+(?:co\.?|company|corporation|inc\.?|incorporated|ltd\.?|limited)(?:[, .-]+(?:co\.?|inc\.?|ltd\.?))*$/i, "")
+    .trim();
+}
+
+function isStrongCustomerMatchTerm(value) {
+  const compact = value.replace(/[^a-z0-9一-鿿぀-ヿ]/g, "");
+  const cjkCount = (compact.match(/[一-鿿぀-ヿ]/g) || []).length;
+  if (cjkCount >= 3) return true;
+  if (compact.length < 6) return false;
+  const tokens = value.split(/[^a-z0-9]+/).filter(Boolean);
+  const genericTokens = new Set([
+    "bio", "biotech", "biotechnology", "cell", "chemical", "diagnostics", "institute",
+    "lab", "laboratory", "medical", "pharma", "pharmaceutical", "research", "science",
+    "stem", "technology", "therapeutics",
+  ]);
+  if (tokens.length && tokens.every((token) => genericTokens.has(token))) return false;
+  return !new Set(["unknown", "institute", "university", "laboratory", "hospital", "research"]).has(compact);
+}
+
+function getCustomerMatchTerms(customer) {
+  const values = [customer.name, customer.parent_company, ...(customer.aliases || [])];
+  const terms = new Set();
+  for (const value of values) {
+    const normalized = normalizeCustomerMatchText(value);
+    const simplified = stripCustomerCompanySuffix(value);
+    if (isStrongCustomerMatchTerm(normalized)) terms.add(normalized);
+    if (simplified !== normalized && isStrongCustomerMatchTerm(simplified)) terms.add(simplified);
+  }
+  return [...terms];
+}
+
+let japanCustomerSignalCache = { payload: null, data: null, index: new Map() };
+
+function getJapanCustomerSignalIndex() {
+  const data = getJapanCustomerData();
+  if (japanCustomerSignalCache.payload === state.payload && japanCustomerSignalCache.data === data) {
+    return japanCustomerSignalCache.index;
+  }
+  const items = state.payload?.items || [];
+  const itemText = items.map((item) => normalizeCustomerMatchText([
+    item.title,
+    item.summary,
+    item.ai_summary,
+    item.company,
+    ...(item.matched_companies || []),
+  ].filter(Boolean).join(" ")));
+  const index = new Map();
+  for (const customer of data.customers || []) {
+    const terms = getCustomerMatchTerms(customer);
+    const matches = items.filter((item, itemIndex) => terms.some((term) => itemText[itemIndex].includes(term)));
+    index.set(customer.id, [...matches].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)));
+  }
+  japanCustomerSignalCache = { payload: state.payload, data, index };
+  return index;
+}
+
+function getJapanCustomerMatchedItemIds() {
+  const ids = new Set();
+  for (const matches of getJapanCustomerSignalIndex().values()) {
+    for (const item of matches) ids.add(item.id || item.url);
+  }
+  return ids;
+}
+
+function customerTagMarkup(customer) {
+  return [customer.customer_type, customer.sap_customer_type]
+    .filter(Boolean)
+    .map((value) => `<b>${escapeHtml(value)}</b>`)
+    .join("");
+}
+
+function customerDetailField(label, value) {
+  if (!value) return "";
+  return `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
+}
+
+function renderJapanCustomerPool() {
+  if (!els.japanCustomerList || !els.japanCustomerDetail) return;
+  const data = getJapanCustomerData();
+  const customers = data.customers || [];
+  const signalIndex = getJapanCustomerSignalIndex();
+  const linkedCustomers = customers.filter((customer) => (signalIndex.get(customer.id) || []).length);
+  const academiaCount = customers.filter((customer) => customer.customer_type === "Academia").length;
+  const industryCount = customers.filter((customer) => customer.customer_type && customer.customer_type !== "Academia").length;
+
+  els.japanCustomerTimestamp.textContent = `导入 ${data.imported_at || "--"} · ${data.import_summary?.duplicate_rows_merged || 0} 条重复已合并`;
+  els.japanCustomerCount.textContent = customers.length;
+  els.japanIndustryCount.textContent = industryCount;
+  els.japanAcademiaCount.textContent = academiaCount;
+  els.japanLinkedCount.textContent = linkedCustomers.length;
+
+  const customerTypes = [...new Set(customers.map((customer) => customer.customer_type).filter(Boolean))].sort();
+  const sapTypes = [...new Set(customers.map((customer) => customer.sap_customer_type).filter(Boolean))].sort();
+  els.japanCustomerTypeFilter.innerHTML = '<option value="all">全部客户大类</option>' + customerTypes
+    .map((value) => `<option value="${escapeAttr(value)}">${escapeHtml(value)}</option>`).join("");
+  els.japanCustomerSapFilter.innerHTML = '<option value="all">全部业务类型</option>' + sapTypes
+    .map((value) => `<option value="${escapeAttr(value)}">${escapeHtml(value)}</option>`).join("");
+  els.japanCustomerTypeFilter.value = customerTypes.includes(state.customerType) ? state.customerType : "all";
+  els.japanCustomerSapFilter.value = sapTypes.includes(state.customerSapType) ? state.customerSapType : "all";
+
+  const query = state.customerQuery.toLowerCase().trim();
+  const visible = customers.filter((customer) => {
+    const matches = signalIndex.get(customer.id) || [];
+    const haystack = `${customer.name} ${customer.parent_company || ""} ${(customer.aliases || []).join(" ")}`.toLowerCase();
+    return (!query || haystack.includes(query)) &&
+      (state.customerType === "all" || customer.customer_type === state.customerType) &&
+      (state.customerSapType === "all" || customer.sap_customer_type === state.customerSapType) &&
+      (state.customerSignalStatus === "all" ||
+        (state.customerSignalStatus === "linked" && matches.length > 0) ||
+        (state.customerSignalStatus === "unlinked" && matches.length === 0) ||
+        (state.customerSignalStatus === "review" && customer.identity_status === "review"));
+  });
+  els.japanCustomerResultCount.textContent = `显示 ${visible.length} / ${customers.length} 个客户锚点`;
+  if (!visible.some((customer) => customer.id === state.selectedCustomerId)) {
+    state.selectedCustomerId = visible[0]?.id || null;
+  }
+
+  els.japanCustomerList.innerHTML = visible.length ? visible.map((customer) => {
+    const matches = signalIndex.get(customer.id) || [];
+    const parent = customer.parent_company && customer.parent_company !== customer.name ? customer.parent_company : "";
+    return `
+      <button class="customer-directory-row ${customer.id === state.selectedCustomerId ? "active" : ""}" type="button" data-japan-customer-id="${escapeAttr(customer.id)}">
+        <span class="customer-name-cell"><strong>${escapeHtml(customer.name)}</strong>${customer.identity_status === "review" ? "<small>身份待规范</small>" : ""}</span>
+        <span class="customer-type-tags">${customerTagMarkup(customer)}</span>
+        <span class="customer-parent-cell">${escapeHtml(parent)}</span>
+        <span class="customer-signal-count ${matches.length ? "has-signal" : ""}">${matches.length ? `${matches.length} 条候选` : "暂无"}</span>
+      </button>`;
+  }).join("") : '<div class="customer-directory-empty">当前筛选范围内没有客户记录。</div>';
+
+  const selected = customers.find((customer) => customer.id === state.selectedCustomerId);
+  if (!selected) {
+    els.japanCustomerDetail.innerHTML = '<div class="customer-directory-empty">请选择一个客户锚点。</div>';
+    return;
+  }
+  const matches = signalIndex.get(selected.id) || [];
+  const aliases = (selected.aliases || []).join(" / ");
+  const fields = [
+    customerDetailField("母公司", selected.parent_company && selected.parent_company !== selected.name ? selected.parent_company : ""),
+    customerDetailField("客户大类", selected.customer_type),
+    customerDetailField("SAP 分类", selected.sap_customer_type),
+    customerDetailField("地区", [selected.region, selected.country].filter(Boolean).join(" / ")),
+    customerDetailField("合并别名", aliases),
+  ].filter(Boolean).join("");
+  const signalMarkup = matches.length ? matches.slice(0, 5).map((item) => `
+    <a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
+      <strong>${escapeHtml(item.title)}</strong>
+      <span>${escapeHtml(item.published || "日期待核对")} · ${escapeHtml(labelBusinessEvent(getBusinessEventType(item), true))}</span>
+    </a>`).join("") : '<p>当前抓取结果没有可靠名称命中，关系与机会保持待发现状态。</p>';
+  els.japanCustomerDetail.innerHTML = `
+    <header><span>名单客户锚点</span><h3>${escapeHtml(selected.name)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
+    <div class="customer-detail-fields">${fields}</div>
+    <div class="customer-opportunity-state ${matches.length ? "candidate" : "quiet"}">
+      <span>机会识别状态</span>
+      <strong>${matches.length ? `${matches.length} 条外部信号候选` : "暂无外部信号候选"}</strong>
+      <p>${matches.length ? "当前仅完成公司名称匹配，仍需核对主体、事件和 ACRO 产品需求。" : "保留为客户名单对象，等待官网、新闻或人工关系证据。"}</p>
+    </div>
+    <div class="customer-signal-list"><span>关联证据候选</span>${signalMarkup}</div>
+    <footer>原始行：${(selected.source_rows || []).join("、")}</footer>`;
 }
 
 const structuredRuleMeta = {
@@ -2149,10 +2351,13 @@ function renderCompanyPools() {
   const asSegmentMember = (segment, index) => ({
     id: `customer-segment-${index}`,
     display_name: segment.label,
-    role_label: "客户群 / 具体名单待发现",
+    role_label: segment.status === "listed_pool" ? "客户名单 / 关系待补" : "客户群 / 具体名单待发现",
     role_reason: segment.note,
-    monitoring_focus: "从官方案例、合作公告、产品引用和会议演讲中逐条确认。",
+    monitoring_focus: segment.status === "listed_pool"
+      ? "以公司名称为锚点匹配官网、新闻和人工证据，不自动推断采购或合作。"
+      : "从官方案例、合作公告、产品引用和会议演讲中逐条确认。",
     entity_kind: "segment",
+    customer_pool: segment.status === "listed_pool",
   });
 
   const roleDefinitions = [
@@ -2196,7 +2401,7 @@ function renderCompanyPools() {
       title: "客户发现方向",
       description: "已知 ACRO 服务哪些类型客群，但具体公司需要逐条发现和确认。",
       empty: "尚未建立客户发现方向。",
-      members: (relationshipData.customer_segments || []).map(asSegmentMember),
+      members: getRelationshipSegments(relationshipData).map(asSegmentMember),
     },
   ];
 
@@ -2232,6 +2437,8 @@ function renderCompanyPools() {
               </div>
               ${company.entity_kind === "relationship"
                 ? `<button class="company-profile-source-button" type="button" data-relationship-card-id="${escapeAttr(company.relationship_id)}">查看关系证据</button>`
+                : company.customer_pool
+                  ? '<button class="company-profile-source-button" type="button" data-open-japan-customers>查看客户名单</button>'
                 : company.entity_kind === "segment"
                   ? '<span class="company-profile-state">名单发现中</span>'
                   : `<button class="company-profile-source-button" type="button" data-company-coverage-id="${escapeHtml(company.id)}">查看数据源</button>`}
@@ -2258,6 +2465,21 @@ function getRelationshipData() {
     records: [],
     customer_segments: [],
   };
+}
+
+function getRelationshipSegments(data = getRelationshipData()) {
+  const segments = [...(data.customer_segments || [])];
+  const customerData = getJapanCustomerData();
+  const count = customerData.customers?.length || 0;
+  if (count) {
+    segments.unshift({
+      label: `日本客户名单 · ${count} 家`,
+      status: "listed_pool",
+      count,
+      note: "已作为公司锚点导入；名单归属不自动等于已成交、合作项目或当前商业机会。",
+    });
+  }
+  return segments;
 }
 
 const relationshipEvidenceMeta = {
@@ -2463,7 +2685,7 @@ function buildRelationshipGraphModel(records, dynamicCandidates, segments) {
   segments.forEach((segment, index) => {
     const segmentId = `segment-${index}`;
     addNode({ id: segmentId, label: segment.label, category: "segment", description: segment.note });
-    addEdge("acro", segmentId, "segment", "客户发现方向");
+    addEdge("acro", segmentId, "segment", segment.status === "listed_pool" ? "客户名单锚点" : "客户发现方向");
   });
   return { nodes: [...nodes.values()], edges };
 }
@@ -2566,7 +2788,8 @@ function renderCompanyRelationships() {
   if (!els.relationshipList) return;
   const data = getRelationshipData();
   const records = data.records || [];
-  const segments = data.customer_segments || [];
+  const segments = getRelationshipSegments(data);
+  const japanCustomerCount = getJapanCustomerData().customers?.length || 0;
   const dynamicCandidates = getDynamicRelationshipCandidates();
   const allRecords = [...records, ...dynamicCandidates];
   const confirmed = records.filter((record) => record.evidence_level === "confirmed");
@@ -2583,6 +2806,7 @@ function renderCompanyRelationships() {
   els.relationshipDisclosedCount.textContent = disclosed.length;
   els.relationshipCandidateCount.textContent = dynamicCandidates.length;
   els.relationshipCustomerCount.textContent = customers.length;
+  els.relationshipJapanCustomerCount.textContent = japanCustomerCount;
   els.relationshipSegmentCount.textContent = segments.length;
   els.relationshipResultCount.textContent = `显示 ${visible.length} / ${allRecords.length} 条`;
   renderRelationshipGraph(records, dynamicCandidates, segments);
@@ -2616,7 +2840,7 @@ function renderCompanyRelationships() {
     <article>
       <strong>${escapeHtml(segment.label)}</strong>
       <p>${escapeHtml(segment.note)}</p>
-      <span>客户群已确认 · 具体公司待发现</span>
+      <span>${segment.status === "listed_pool" ? "名单已导入 · 关系与机会待识别" : "客户群已确认 · 具体公司待发现"}</span>
     </article>
   `).join("");
 }
@@ -2868,7 +3092,7 @@ function renderOverviewScope() {
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  const customerCompanyCount = (state.payload.companies || []).filter(
+  const customerCompanyCount = getJapanCustomerData().customers?.length || (state.payload.companies || []).filter(
     (company) => company.business_role === "customer",
   ).length;
   const competitorCount = scoped.filter((item) => getItemRole(item, companyRoles) === "competitor").length;
@@ -2887,12 +3111,12 @@ function renderOverviewScope() {
     (state.payload.companies || []).filter((company) => company.business_role === "competitor").length
   } 家已确认竞品`;
   els.metricCustomerNote.textContent = customerCompanyCount
-    ? `${customerCompanyCount} 家客户 / 目标客户`
+    ? `${customerCompanyCount} 家日本客户名单`
     : "客户池尚未导入名单";
   els.sourceCount.textContent = `${scoped.length} 条`;
   els.windowDays.textContent = `${state.timeRange} 天`;
 
-  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount);
+  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount);
   renderSignalTrend(scoped, companyRoles);
   renderRegionDistribution(scoped);
   renderCompanyTopicMatrix(scoped);
@@ -2990,6 +3214,7 @@ function getItemRole(item, companyRoles = null) {
   for (const role of ["customer", "competitor", "self"]) {
     if (matchedRoles.includes(role)) return role;
   }
+  if (getJapanCustomerMatchedItemIds().has(item.id || item.url)) return "customer";
   return "industry";
 }
 
@@ -3002,7 +3227,7 @@ function labelRole(role) {
   }[role] || role;
 }
 
-function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
+function renderExecutiveBrief(items, companyRoles, customerCompanyCount, customerSignalCount = 0) {
   const competitorCompanyCounts = {};
   const categoryCounts = {};
   const regionCounts = {};
@@ -3063,7 +3288,7 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount) {
       ? `已识别地区中“${labelRegion(topRegion[0])}”最多，共 ${topRegion[1]} 条；其余全球内容仍需进一步结构化。`
       : "多数内容暂未识别出明确事件地区，地区结果目前只作线索。",
     customerCompanyCount
-      ? `客户池已接入 ${customerCompanyCount} 家，可继续观察需求与合作信号。`
+      ? `日本客户名单已接入 ${customerCompanyCount} 家，当前范围识别到 ${customerSignalCount} 条名称匹配信号，仍需人工核对。`
       : "客户池尚未导入，客户需求不显示为 0，避免造成“没有需求”的误判。",
   ];
   els.executivePoints.innerHTML = points.map((point) => `<li>${escapeHtml(point)}</li>`).join("");
@@ -3116,7 +3341,8 @@ function renderSignalTrend(items, companyRoles) {
   els.signalTrendChart.innerHTML = `<svg class="trend-svg" viewBox="0 0 ${chartWidth} ${chartHeight}" role="img" aria-label="${state.timeRange} 天信号趋势">${grid}${lines}${xLabels}</svg>`;
   els.trendLegend.innerHTML = seriesDefinitions.map((series) => {
     const total = values[series.id].reduce((sum, value) => sum + value, 0);
-    const suffix = series.id === "customer" && !total ? "未接入" : total;
+    const hasCustomerPool = (getJapanCustomerData().customers || []).length > 0;
+    const suffix = series.id === "customer" && !total && !hasCustomerPool ? "未接入" : total;
     return `<span><i style="background:${series.color}"></i>${series.label} ${suffix}</span>`;
   }).join("");
 }
@@ -4085,6 +4311,13 @@ els.companyCoverageSelect.addEventListener("change", (event) => {
 });
 
 els.companyPoolGroups.addEventListener("click", (event) => {
+  const customerPoolButton = event.target.closest("[data-open-japan-customers]");
+  if (customerPoolButton) {
+    state.page = "japan-customers";
+    renderPage();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
   const coverageButton = event.target.closest("[data-company-coverage-id]");
   if (coverageButton) {
     state.coverageCompany = coverageButton.dataset.companyCoverageId;
@@ -4196,6 +4429,33 @@ els.healthCompanyFilter.addEventListener("change", (event) => {
 els.healthStatusFilter.addEventListener("change", (event) => {
   state.healthStatus = event.target.value;
   renderSourceHealthPage();
+});
+
+els.japanCustomerSearch.addEventListener("input", (event) => {
+  state.customerQuery = event.target.value;
+  renderJapanCustomerPool();
+});
+
+els.japanCustomerTypeFilter.addEventListener("change", (event) => {
+  state.customerType = event.target.value;
+  renderJapanCustomerPool();
+});
+
+els.japanCustomerSapFilter.addEventListener("change", (event) => {
+  state.customerSapType = event.target.value;
+  renderJapanCustomerPool();
+});
+
+els.japanCustomerSignalFilter.addEventListener("change", (event) => {
+  state.customerSignalStatus = event.target.value;
+  renderJapanCustomerPool();
+});
+
+els.japanCustomerList.addEventListener("click", (event) => {
+  const row = event.target.closest("[data-japan-customer-id]");
+  if (!row) return;
+  state.selectedCustomerId = row.dataset.japanCustomerId;
+  renderJapanCustomerPool();
 });
 
 els.pageButtons.forEach((button) => {

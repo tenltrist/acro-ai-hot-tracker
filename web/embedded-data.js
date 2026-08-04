@@ -95995,3 +95995,1931 @@ window.AIHOT_COMPANY_RELATIONSHIPS = {
     }
   ]
 };
+window.AIHOT_JAPAN_CUSTOMERS = {
+  "version": 1,
+  "imported_at": "2026-08-04",
+  "source": "日本客户列表.xlsx / Sheet1",
+  "semantics": "名单收录客户，不自动等同于已确认采购、合作项目或商业机会。",
+  "import_summary": {
+    "source_rows": 138,
+    "unique_customers": 137,
+    "duplicate_rows_merged": 1,
+    "identity_review": 19
+  },
+  "customer_type_mix": {
+    "Other Pharma": 98,
+    "Academia": 33,
+    "Distributor": 1,
+    "TOP50 Pharma": 1
+  },
+  "sap_type_mix": {
+    "Institute": 35,
+    "Others": 30,
+    "Distributor": 18,
+    "CGT": 14,
+    "CXO": 8,
+    "Biopharma": 7,
+    "Antibody": 6,
+    "Vaccine": 3
+  },
+  "customers": [
+    {
+      "id": "jp-00d878de7f",
+      "name": "(ONProS) Mizunase Research Institut",
+      "parent_company": "(ONProS) Mizunase Research Institut",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        33
+      ]
+    },
+    {
+      "id": "jp-499e3f0090",
+      "name": "52365",
+      "parent_company": "52365",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        12
+      ]
+    },
+    {
+      "id": "jp-3d1c26fdad",
+      "name": "A-SEEDS Co., Ltd.",
+      "parent_company": "A-SEEDS Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        111
+      ]
+    },
+    {
+      "id": "jp-da37fa8f8e",
+      "name": "ACEL",
+      "parent_company": "ACEL",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        81
+      ]
+    },
+    {
+      "id": "jp-bd6084c376",
+      "name": "aceRNA Technologies, Inc.",
+      "parent_company": "aceRNA Technologies, Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        19
+      ]
+    },
+    {
+      "id": "jp-8ef3d7e87c",
+      "name": "Aichi Cancer Center Research Instit",
+      "parent_company": "Aichi Cancer Center Research Instit",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        56
+      ]
+    },
+    {
+      "id": "jp-6086453a66",
+      "name": "Alfresa Pharma Co., Ltd",
+      "parent_company": "Alfresa Pharma Co., Ltd",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        55
+      ]
+    },
+    {
+      "id": "jp-ff017aa042",
+      "name": "Alpha Bio Co., Ltd.",
+      "aliases": [
+        "Alpha Bio"
+      ],
+      "parent_company": "Alpha Bio Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        72,
+        128
+      ]
+    },
+    {
+      "id": "jp-44af456e1e",
+      "name": "Alpha Purchase",
+      "parent_company": "Alpha Purchase",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        51
+      ]
+    },
+    {
+      "id": "jp-501980063b",
+      "name": "Alrair",
+      "parent_company": "Alrair",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        21
+      ]
+    },
+    {
+      "id": "jp-23a786ab3e",
+      "name": "Aomori Prefectural Central Hospital",
+      "parent_company": "Aomori Prefectural Central Hospital",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        122
+      ]
+    },
+    {
+      "id": "jp-e6b5c57029",
+      "name": "ARCALIS Inc.",
+      "parent_company": "ARCALIS Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        101
+      ]
+    },
+    {
+      "id": "jp-6b7defa5cb",
+      "name": "AzBio",
+      "parent_company": "AzBio",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        24
+      ]
+    },
+    {
+      "id": "jp-ac9dc00f42",
+      "name": "Bio Matrix Research, Inc.",
+      "parent_company": "Bio Matrix Research, Inc.",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        129
+      ]
+    },
+    {
+      "id": "jp-11be53426a",
+      "name": "Biotech Lab Co., Ltd.",
+      "parent_company": "Biotech Lab Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        34
+      ]
+    },
+    {
+      "id": "jp-a452952e67",
+      "name": "Bluejay Diagnostics,Inc.",
+      "parent_company": "Bluejay Diagnostics,Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        67
+      ]
+    },
+    {
+      "id": "jp-38fd31d6cc",
+      "name": "Bruker Japan",
+      "parent_company": "Bruker",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        80
+      ]
+    },
+    {
+      "id": "jp-5f435eb302",
+      "name": "CELL Co., Ltd.",
+      "parent_company": "CELL Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        107
+      ]
+    },
+    {
+      "id": "jp-b832fbfb7f",
+      "name": "Cellex Corporation",
+      "parent_company": "Cellex Corporation",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        14
+      ]
+    },
+    {
+      "id": "jp-490855e44d",
+      "name": "Center for New Generation Infectiou",
+      "parent_company": "Center for New Generation Infectiou",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        78
+      ]
+    },
+    {
+      "id": "jp-89fd3920d0",
+      "name": "Center for Transboundary Animal Dis",
+      "parent_company": "Center for Transboundary Animal Dis",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        63
+      ]
+    },
+    {
+      "id": "jp-11f6269607",
+      "name": "Central Link Co.",
+      "parent_company": "Central Link Co.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        57
+      ]
+    },
+    {
+      "id": "jp-2a88772dc0",
+      "name": "DENSO Corporation",
+      "parent_company": "DENSO Corporation",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        95
+      ]
+    },
+    {
+      "id": "jp-a14e928f25",
+      "name": "Department of Infection Control Vir",
+      "parent_company": "Department of Infection Control Vir",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        37
+      ]
+    },
+    {
+      "id": "jp-95f2483549",
+      "name": "Department of Urology, Institute of",
+      "parent_company": "Department of Urology, Institute of",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        40
+      ]
+    },
+    {
+      "id": "jp-3950221cca",
+      "name": "Division of Vaccine Science departm",
+      "parent_company": "Division of Vaccine Science departm",
+      "customer_type": "Academia",
+      "sap_customer_type": "Vaccine",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        9
+      ]
+    },
+    {
+      "id": "jp-cfd367f56b",
+      "name": "E-ASL",
+      "parent_company": "E-ASL",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        25
+      ]
+    },
+    {
+      "id": "jp-1b66ba2dbc",
+      "name": "EA Pharma Co., Ltd. (iPark)",
+      "parent_company": "EA Pharma Co., Ltd. (iPark)",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        59
+      ]
+    },
+    {
+      "id": "jp-bf6593a721",
+      "name": "Ehime Prefectural Central Hospital",
+      "parent_company": "Ehime Prefectural Central Hospital",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        82
+      ]
+    },
+    {
+      "id": "jp-9bf5a386d6",
+      "name": "Ehime University",
+      "parent_company": "Ehime University",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        53
+      ]
+    },
+    {
+      "id": "jp-e6512497e0",
+      "name": "EIKEN CHEMICAL CO.,LTD.",
+      "parent_company": "EIKEN CHEMICAL CO.,LTD.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        60
+      ]
+    },
+    {
+      "id": "jp-cda18fd02e",
+      "name": "Eurus Therapeutics",
+      "parent_company": "Eurus Therapeutics",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Antibody",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        92
+      ]
+    },
+    {
+      "id": "jp-3c6ba4c60a",
+      "name": "Faculty of Science and Technology,",
+      "parent_company": "Faculty of Science and Technology,",
+      "customer_type": "Academia",
+      "sap_customer_type": "Vaccine",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        8
+      ]
+    },
+    {
+      "id": "jp-15e448fba1",
+      "name": "Frontier Sciences Sapporo Branch",
+      "parent_company": "Frontier Sciences Sapporo Branch",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        31
+      ]
+    },
+    {
+      "id": "jp-48791048ce",
+      "name": "Fuji Chemical",
+      "parent_company": "Fuji Chemical",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        113
+      ]
+    },
+    {
+      "id": "jp-03dac431fe",
+      "name": "Fuji Film Wako Junyaku （E/U: from w",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        137
+      ]
+    },
+    {
+      "id": "jp-ba4148bd1a",
+      "name": "Fuji Kagaku Yakuhin （E/U: Confident",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        136
+      ]
+    },
+    {
+      "id": "jp-96fd9826fb",
+      "name": "FUJIFILM",
+      "parent_company": "FUJIFILM",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        123
+      ]
+    },
+    {
+      "id": "jp-8481cdedf5",
+      "name": "Fukushima Medical Universitv",
+      "parent_company": "Fukushima Medical Universitv",
+      "customer_type": "Academia",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        132
+      ]
+    },
+    {
+      "id": "jp-8ea9110c4f",
+      "name": "Global Life Sciences Technologies J",
+      "parent_company": "Global Life Sciences Technologies J",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        28
+      ]
+    },
+    {
+      "id": "jp-99f4f44cdf",
+      "name": "Greene/Vogt Laboratory, Internation",
+      "parent_company": "Greene/Vogt Laboratory, Internation",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        41
+      ]
+    },
+    {
+      "id": "jp-74623a1a77",
+      "name": "Hamasaki Laboratory, Division of Fu",
+      "parent_company": "Hamasaki Laboratory, Division of Fu",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        42
+      ]
+    },
+    {
+      "id": "jp-38162e886a",
+      "name": "Hamasaki Laboratory, iPS Cell Resea",
+      "parent_company": "Hamasaki Laboratory, iPS Cell Resea",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        102
+      ]
+    },
+    {
+      "id": "jp-13e03d40a7",
+      "name": "Hayashi Kasei Co.",
+      "parent_company": "Hayashi Kasei Co.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        30
+      ]
+    },
+    {
+      "id": "jp-e4b539abf2",
+      "name": "HIPUS Co., Ltd.",
+      "parent_company": "HIPUS Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        121
+      ]
+    },
+    {
+      "id": "jp-68a0eb8e36",
+      "name": "Hiroshima Institute of Life Science",
+      "parent_company": "Hiroshima Institute of Life Science",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        112
+      ]
+    },
+    {
+      "id": "jp-a13757abfd",
+      "name": "Hitachi, Ltd.",
+      "parent_company": "Hitachi, Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        23
+      ]
+    },
+    {
+      "id": "jp-ca4b143a86",
+      "name": "Hourai medech",
+      "parent_company": "Hourai medech",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        94
+      ]
+    },
+    {
+      "id": "jp-ed633cc4dd",
+      "name": "Ichimaru Pharcos Co., Ltd.",
+      "parent_company": "Ichimaru Pharcos Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        52
+      ]
+    },
+    {
+      "id": "jp-526e69b4cd",
+      "name": "Iedakagaku (via Fuji Film Wako Juny",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        139
+      ]
+    },
+    {
+      "id": "jp-15317db2c5",
+      "name": "Institute of Microbial Diseases, Os",
+      "parent_company": "Institute of Microbial Diseases, Os",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        61
+      ]
+    },
+    {
+      "id": "jp-4ca6d90ae2",
+      "name": "International Research Center for I",
+      "parent_company": "International Research Center for I",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        77
+      ]
+    },
+    {
+      "id": "jp-ea3ddfa73e",
+      "name": "Iwai Kagaku",
+      "parent_company": "Iwai Kagaku",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        20
+      ]
+    },
+    {
+      "id": "jp-67a7e69851",
+      "name": "IWAKI SEIYAKU CO., LTD.",
+      "parent_company": "IWAKI SEIYAKU CO., LTD.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        108
+      ]
+    },
+    {
+      "id": "jp-cfd83edba7",
+      "name": "Japan Institute for Health Security",
+      "parent_company": "Japan Institute for Health Security",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        22
+      ]
+    },
+    {
+      "id": "jp-98121a14c6",
+      "name": "Japan Red Cross Society",
+      "parent_company": "Japan Red Cross Society",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        65
+      ]
+    },
+    {
+      "id": "jp-8808b4b8e6",
+      "name": "Jiksak Bioengin",
+      "parent_company": "Jiksak Bioengin",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        104
+      ]
+    },
+    {
+      "id": "jp-336de02855",
+      "name": "JSR Corporation",
+      "parent_company": "JSR Corporation",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        39
+      ]
+    },
+    {
+      "id": "jp-92d70b60cb",
+      "name": "Kakkennsha",
+      "parent_company": "Kakkennsha",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        18
+      ]
+    },
+    {
+      "id": "jp-7633ac3ec5",
+      "name": "Kikkoman",
+      "parent_company": "Kikkoman",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        106
+      ]
+    },
+    {
+      "id": "jp-09b9530112",
+      "name": "Kinn Holdings",
+      "parent_company": "Kinn Holdings",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        73
+      ]
+    },
+    {
+      "id": "jp-a8e2a68072",
+      "name": "Kintetsu World Express, Inc.",
+      "parent_company": "Kintetsu World Express, Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        58
+      ]
+    },
+    {
+      "id": "jp-dca646d49c",
+      "name": "KISHIDA CHEMICAL CO.,LTD.",
+      "parent_company": "KISHIDA CHEMICAL CO.,LTD.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        16
+      ]
+    },
+    {
+      "id": "jp-c9a0b1b7ed",
+      "name": "Kohjin Bio Co., Ltd.",
+      "parent_company": "Kohjin Bio Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        133
+      ]
+    },
+    {
+      "id": "jp-9c4b5ad7a9",
+      "name": "Konara Food Industry Co., Ltd.",
+      "parent_company": "Konara Food Industry Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        98
+      ]
+    },
+    {
+      "id": "jp-6a8db12d7d",
+      "name": "Koseki Hideo Shouten",
+      "parent_company": "Koseki Hideo Shouten",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        114
+      ]
+    },
+    {
+      "id": "jp-be17834a32",
+      "name": "Kyom Bioscience Co., Ltd. Antibody",
+      "parent_company": "Kyom Bioscience Co., Ltd. Antibody",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Antibody",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        118
+      ]
+    },
+    {
+      "id": "jp-4086b0e53f",
+      "name": "Liberocera Corporation",
+      "parent_company": "Liberocera Corporation",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Antibody",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        90
+      ]
+    },
+    {
+      "id": "jp-304d6f161a",
+      "name": "Liid Pharmaceuticals",
+      "parent_company": "Liid Pharmaceuticals",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        99
+      ]
+    },
+    {
+      "id": "jp-46e29cb649",
+      "name": "MALSvHereiftireod",
+      "parent_company": "MALSvHereiftireod",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        130
+      ]
+    },
+    {
+      "id": "jp-126c0adc7c",
+      "name": "Marine-Earth Science and Tech",
+      "parent_company": "Marine-Earth Science and Tech",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        70
+      ]
+    },
+    {
+      "id": "jp-bd19990094",
+      "name": "Medical Proteoscope Inc",
+      "parent_company": "Medical Proteoscope Inc",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        69
+      ]
+    },
+    {
+      "id": "jp-87000482fe",
+      "name": "Minaris Advanced Therapies",
+      "parent_company": "Minaris Advanced Therapies",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        117
+      ]
+    },
+    {
+      "id": "jp-221b0739a5",
+      "name": "Miyata Yakuhin",
+      "parent_company": "Miyata Yakuhin",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        74
+      ]
+    },
+    {
+      "id": "jp-1492c4cedf",
+      "name": "Mochida Pharmaceutical Co., Ltd.",
+      "parent_company": "Mochida Pharmaceutical Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        11
+      ]
+    },
+    {
+      "id": "jp-71ad61479e",
+      "name": "Nara Medical University",
+      "parent_company": "Nara Medical University",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        62
+      ]
+    },
+    {
+      "id": "jp-d318f8d721",
+      "name": "National Cancer Center Hospital East",
+      "parent_company": "National Cancer Center Hospital East",
+      "customer_type": "Academia",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        131
+      ]
+    },
+    {
+      "id": "jp-5ce2454ead",
+      "name": "National Cancer Center Japan",
+      "parent_company": "National Cancer Center Japan",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        68
+      ]
+    },
+    {
+      "id": "jp-d496a5964c",
+      "name": "National Center for Global Health and Medicine - NCGM",
+      "parent_company": "National Center for Global Health and Medicine - NCGM",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        38
+      ]
+    },
+    {
+      "id": "jp-815ab6f632",
+      "name": "National Center of Neurology and Ps",
+      "parent_company": "National Center of Neurology and Ps",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        76
+      ]
+    },
+    {
+      "id": "jp-9992449789",
+      "name": "National Defense Medical College",
+      "parent_company": "National Defense Medical College",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        110
+      ]
+    },
+    {
+      "id": "jp-7b42dc6708",
+      "name": "National Institute for Health Crisi",
+      "parent_company": "National Institute for Health Crisi",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        109
+      ]
+    },
+    {
+      "id": "jp-ed100f825c",
+      "name": "New Japan Science",
+      "parent_company": "New Japan Science",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        91
+      ]
+    },
+    {
+      "id": "jp-6cdeb5bfe9",
+      "name": "Nippi, Incorporated",
+      "parent_company": "Nippi, Incorporated",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        46
+      ]
+    },
+    {
+      "id": "jp-45f39bf893",
+      "name": "Nippon Kayaku Co., Ltd.",
+      "parent_company": "Nippon Kayaku Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Antibody",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        120
+      ]
+    },
+    {
+      "id": "jp-3f119eddec",
+      "name": "Nippon Medical School",
+      "parent_company": "Nippon Medical School",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        71
+      ]
+    },
+    {
+      "id": "jp-c55376e611",
+      "name": "Nitto Trading Co., Ltd.",
+      "parent_company": "Nitto Denko Corporation",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        79
+      ]
+    },
+    {
+      "id": "jp-ff8a4a88ad",
+      "name": "Noile-Immune Biotech Inc.",
+      "parent_company": "Noile-Immune Biotech Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        26
+      ]
+    },
+    {
+      "id": "jp-9949bdec76",
+      "name": "Okadai University (Medicine) Pharma",
+      "parent_company": "Okadai University (Medicine) Pharma",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        88
+      ]
+    },
+    {
+      "id": "jp-7f7d44a1a0",
+      "name": "Okinawa Institute of Science and Te",
+      "parent_company": "Okinawa Institute of Science and Te",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        15
+      ]
+    },
+    {
+      "id": "jp-a6fd107b09",
+      "name": "Osaka Intensive Research Institute",
+      "parent_company": "Osaka Intensive Research Institute",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        87
+      ]
+    },
+    {
+      "id": "jp-75c9564944",
+      "name": "Osaka Yakken (E/U: Osaka University",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        138
+      ]
+    },
+    {
+      "id": "jp-26a461737b",
+      "name": "Peptidedream",
+      "parent_company": "Peptidedream",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        84
+      ]
+    },
+    {
+      "id": "jp-9282944745",
+      "name": "Phenix Bio",
+      "parent_company": "Phenix Bio",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        13
+      ]
+    },
+    {
+      "id": "jp-1674832ed0",
+      "name": "PRISM Biolab",
+      "parent_company": "PRISM",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        29
+      ]
+    },
+    {
+      "id": "jp-6dd537ad8e",
+      "name": "RACTHERA Co., Ltd. (Esaka)",
+      "parent_company": "RACTHERA Co., Ltd. (Esaka)",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        45
+      ]
+    },
+    {
+      "id": "jp-b729e83bcb",
+      "name": "Rebomic",
+      "parent_company": "Rebomic",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        17
+      ]
+    },
+    {
+      "id": "jp-ae8720fa1f",
+      "name": "Rebornabiosciences",
+      "parent_company": "Rebornabiosciences",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        124
+      ]
+    },
+    {
+      "id": "jp-6a293df65a",
+      "name": "Reoken",
+      "parent_company": "Reoken",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        119
+      ]
+    },
+    {
+      "id": "jp-ab5e233ccc",
+      "name": "Reprocell Co., Ltd.",
+      "parent_company": "Reprocell Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        103
+      ]
+    },
+    {
+      "id": "jp-396a632038",
+      "name": "Research and Development Center, iP",
+      "parent_company": "Research and Development Center, iP",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        50
+      ]
+    },
+    {
+      "id": "jp-e016f174b0",
+      "name": "Ribomic Inc.",
+      "parent_company": "Ribomic Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Antibody",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        4
+      ]
+    },
+    {
+      "id": "jp-f2b1024dd3",
+      "name": "RIKAKEN CO.,LTD.",
+      "parent_company": "RIKAKEN CO.,LTD.",
+      "customer_type": "Distributor",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        3
+      ]
+    },
+    {
+      "id": "jp-e35ab8589c",
+      "name": "Rocto-Science",
+      "parent_company": "Rocto-Science",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        44
+      ]
+    },
+    {
+      "id": "jp-934358232e",
+      "name": "ROHTO Pharmaceutical Co., Ltd.",
+      "parent_company": "ROHTO Pharmaceutical Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        10
+      ]
+    },
+    {
+      "id": "jp-d21e382dad",
+      "name": "Sanwa Kagaku Kenkyusho",
+      "parent_company": "Sanwa Kagaku Kenkyusho",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        5
+      ]
+    },
+    {
+      "id": "jp-37e77b4a20",
+      "name": "Seiko (E/U: NIPPON BIOMEDICAL LABOR",
+      "parent_company": "Seiko (E/U: NIPPON BIOMEDICAL LABOR",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        105
+      ]
+    },
+    {
+      "id": "jp-357a3c77fc",
+      "name": "SEKISUI CHEMICAL CO.,LTD",
+      "parent_company": "SEKISUI",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        7
+      ]
+    },
+    {
+      "id": "jp-97a5010784",
+      "name": "SHINKO SEIKI CO., LTD.",
+      "parent_company": "SHINKO SEIKI CO., LTD.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        6
+      ]
+    },
+    {
+      "id": "jp-f24d429482",
+      "name": "Site-Fact Co., Ltd.",
+      "parent_company": "Site-Fact Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        116
+      ]
+    },
+    {
+      "id": "jp-1b8378f930",
+      "name": "SNBL, Ltd.",
+      "parent_company": "SNBL, Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        49
+      ]
+    },
+    {
+      "id": "jp-b903ee9397",
+      "name": "Stem Cell & Device Laboratory, Inc.",
+      "parent_company": "Stem Cell & Device Laboratory, Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        75
+      ]
+    },
+    {
+      "id": "jp-af9e438075",
+      "name": "Sumika Analysis Center Co., Ltd. (P",
+      "parent_company": "Sumika Analysis Center Co., Ltd. (P",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        64
+      ]
+    },
+    {
+      "id": "jp-0139026acd",
+      "name": "Sumika Chemical Analysis Center Co.",
+      "parent_company": "Sumika Chemical Analysis Center Co.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CXO",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        35
+      ]
+    },
+    {
+      "id": "jp-91885fe22a",
+      "name": "Sun Thera Bio",
+      "parent_company": "Sun Thera Bio",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Antibody",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        115
+      ]
+    },
+    {
+      "id": "jp-6e9378604f",
+      "name": "Syashima Yakuhin",
+      "parent_company": "Syashima Yakuhin",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        54
+      ]
+    },
+    {
+      "id": "jp-9dca782260",
+      "name": "Tada Yakuhinkogyo",
+      "parent_company": "Tada Yakuhinkogyo",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        86
+      ]
+    },
+    {
+      "id": "jp-4233133533",
+      "name": "Tagsix Bio Co., Ltd",
+      "parent_company": "Tagsix Bio Co., Ltd",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        66
+      ]
+    },
+    {
+      "id": "jp-3a711a5aba",
+      "name": "Takeda Pharmaceuticals",
+      "parent_company": "Takeda",
+      "customer_type": "TOP50 Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        96
+      ]
+    },
+    {
+      "id": "jp-d51c486fde",
+      "name": "Techno Suzuta",
+      "parent_company": "Techno Suzuta",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        27
+      ]
+    },
+    {
+      "id": "jp-63d1d60692",
+      "name": "Tele-b10",
+      "parent_company": "Tele-b10",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        125
+      ]
+    },
+    {
+      "id": "jp-5d46995724",
+      "name": "The Jikei University School of Medicine",
+      "parent_company": "The Jikei University School of Medicine",
+      "customer_type": "Academia",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        127
+      ]
+    },
+    {
+      "id": "jp-74fdc34a66",
+      "name": "Tokai University",
+      "parent_company": "Tokai University",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        89
+      ]
+    },
+    {
+      "id": "jp-1bbc64ff53",
+      "name": "Tokyo Metropolitan Cancer and Infec",
+      "parent_company": "Tokyo Metropolitan Cancer and Infec",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        83
+      ]
+    },
+    {
+      "id": "jp-0a0733e5aa",
+      "name": "Tokyo Metropolitan University",
+      "parent_company": "Tokyo Metropolitan University",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        85
+      ]
+    },
+    {
+      "id": "jp-f574807cf0",
+      "name": "Toyobo Biotechnology Research Labor",
+      "parent_company": "Toyobo Biotechnology Research Labor",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Vaccine",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        36
+      ]
+    },
+    {
+      "id": "jp-fe920339bb",
+      "name": "Trans Chromosomics, Inc.",
+      "parent_company": "Trans Chromosomics, Inc.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "CGT",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        2
+      ]
+    },
+    {
+      "id": "jp-59f3120d04",
+      "name": "Triumph Co., Ltd. 21 Notice Meiji S",
+      "parent_company": "Triumph Co., Ltd. 21 Notice Meiji S",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Biopharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        48
+      ]
+    },
+    {
+      "id": "jp-8579927082",
+      "name": "Tsutsumi Chemical Co., Ltd.",
+      "parent_company": "Tsutsumi Chemical Co., Ltd.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        47
+      ]
+    },
+    {
+      "id": "jp-c014f856db",
+      "name": "Tuning Fork Bio",
+      "parent_company": "Tuning Fork Bio",
+      "customer_type": "Other Pharma",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        135
+      ]
+    },
+    {
+      "id": "jp-a7b2d5cfb4",
+      "name": "UEC",
+      "parent_company": "UEC",
+      "customer_type": "Academia",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        134
+      ]
+    },
+    {
+      "id": "jp-4e41079f52",
+      "name": "University of Osaka iFReC",
+      "parent_company": "University of Osaka iFReC",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        93
+      ]
+    },
+    {
+      "id": "jp-50d8b4a941",
+      "name": "Unknown",
+      "parent_company": "Unknown",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Others",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        43
+      ]
+    },
+    {
+      "id": "jp-28a5a82801",
+      "name": "Waseda University",
+      "parent_company": "Waseda University",
+      "customer_type": "Academia",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        126
+      ]
+    },
+    {
+      "id": "jp-7af39a7149",
+      "name": "Yasu Pharmaceutical Co.",
+      "parent_company": "Yasu Pharmaceutical Co.",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        32
+      ]
+    },
+    {
+      "id": "jp-e4304ff113",
+      "name": "プラ仆八久.八才株",
+      "parent_company": "プラ仆八久.八才株",
+      "customer_type": "Other Pharma",
+      "sap_customer_type": "Distributor",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "review",
+      "source_rows": [
+        97
+      ]
+    },
+    {
+      "id": "jp-04d207b3d0",
+      "name": "名古屋大学農学部 分子生物工学",
+      "parent_company": "名古屋大学農学部 分子生物工学",
+      "customer_type": "Academia",
+      "sap_customer_type": "Institute",
+      "continent": "APAC",
+      "region": "Japan",
+      "country": "Japan",
+      "identity_status": "listed",
+      "source_rows": [
+        100
+      ]
+    }
+  ]
+};

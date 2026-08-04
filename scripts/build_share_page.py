@@ -14,6 +14,7 @@ DATA_PATH = ROOT / "data" / "latest_run.json"
 COMPANY_CONFIG_PATH = ROOT / "config" / "companies.json"
 INTELLIGENCE_RULES_PATH = ROOT / "config" / "intelligence_rules.json"
 COMPANY_RELATIONSHIPS_PATH = ROOT / "config" / "company_relationships.json"
+JAPAN_CUSTOMERS_PATH = ROOT / "config" / "japan_customers.json"
 HISTORY_DIR = ROOT / "data" / "history"
 SHARE_DIR = ROOT / "share"
 OUT_PATH = SHARE_DIR / "acro_ai_hot_tracker_dashboard.html"
@@ -28,6 +29,7 @@ def main() -> int:
     company_config = json.loads(COMPANY_CONFIG_PATH.read_text(encoding="utf-8"))
     intelligence_rules = json.loads(INTELLIGENCE_RULES_PATH.read_text(encoding="utf-8"))
     company_relationships = json.loads(COMPANY_RELATIONSHIPS_PATH.read_text(encoding="utf-8"))
+    japan_customers = json.loads(JAPAN_CUSTOMERS_PATH.read_text(encoding="utf-8"))
     company_metadata = {company["id"]: company for company in company_config["companies"]}
     for company in payload_data.get("companies", []):
         configured = company_metadata.get(company["id"], {})
@@ -53,11 +55,13 @@ def main() -> int:
 
     rules_payload = json.dumps(intelligence_rules, ensure_ascii=False, indent=2)
     relationships_payload = json.dumps(company_relationships, ensure_ascii=False, indent=2)
+    japan_customers_payload = json.dumps(japan_customers, ensure_ascii=False, indent=2)
     embedded = (
         f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\n"
         f"window.AIHOT_EMBEDDED_HISTORY = {history_payload};\n"
         f"window.AIHOT_INTELLIGENCE_RULES = {rules_payload};\n"
         f"window.AIHOT_COMPANY_RELATIONSHIPS = {relationships_payload};\n"
+        f"window.AIHOT_JAPAN_CUSTOMERS = {japan_customers_payload};\n"
     )
     EMBEDDED_DATA_PATH.write_text(embedded, encoding="utf-8")
 
