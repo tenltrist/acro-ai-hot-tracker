@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-07T02:17:13",
+  "generated_at": "2026-08-10T01:10:49",
   "window_days": 90,
   "summary": {
-    "new_candidates": 135,
+    "new_candidates": 192,
     "immediate": 0,
-    "daily": 120,
-    "archive": 1307,
+    "daily": 127,
+    "archive": 1305,
     "errors": 0,
     "companies": 12,
-    "sources": 103
+    "sources": 102
   },
   "selected": [
     {
@@ -76,7 +76,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 9
+      "age_days": 12
     },
     {
       "id": "888c139d5cd72870",
@@ -142,7 +142,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 46
+      "age_days": 49
     },
     {
       "id": "7b485a48b2cec143",
@@ -182,7 +182,7 @@
         "战略主题命中: manufacturing, cell therapy",
         "业务动作命中: unveil, manufacturing",
         "高价值分类加成 +10: product",
-        "超过时效窗口 95天，因业务动作匹配保留"
+        "超过时效窗口 98天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -211,7 +211,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 95
+      "age_days": 98
     },
     {
       "id": "5f6aff94aa0a872a",
@@ -251,7 +251,7 @@
         "战略主题命中: manufacturing, cell therapy",
         "业务动作命中: introduce, manufacturing",
         "高价值分类加成 +10: product",
-        "超过时效窗口 127天，因业务动作匹配保留"
+        "超过时效窗口 130天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -280,7 +280,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 127
+      "age_days": 130
     },
     {
       "id": "411e8520e5b8256c",
@@ -349,10 +349,10 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 30
+      "age_days": 33
     },
     {
-      "id": "a84458d282d9d42e",
+      "id": "42bcf99a07fca215",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -372,20 +372,20 @@
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMivAJBVV95cUxQVld2dklyRjZuQ1AwZFlUSVBuSzExVWN0N1k1MU5HUWJsY2dZZ1NzTEI5N1UxelMtQnN1RFVZTGVmX1hrbHpFcWZrMEhNRzQtbkh5Xzdxb0hjMGU5cFAyM3hXWHhGRVp5T0ZLMVd0UFdISjFlVjN6WHNDejNMUVVzQUNMNlVCU3RDU2lfTUVQNVZSSFhBanB6RndEQmlqLUIxaGJpbDBCc2NaQjBTQWRHaW9xM20xTDZ1WG54a1I3bHRDcW9DVXVDVlo5LUswT2V0ZXBjQ3JXWmZwZ1VIVDVPMnpFU0tPVklXV2JMTDFHazA3clY5bXVLUWdILXltYklOUVE1VWNwQTBndTZjNEJzN1FEcXkwZlRpLXN2OV9UOGFJTGFPR3cyZDRGSmhxak44VUY4N0hHUVZPcVQx?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe7c75e493a9a9fc2f3328d555d&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f07%2f15%2ftmt-newswire%2fpr-newswire%2facrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process%2f2384463&c=16154244222104438913&mkt=en-us"
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE51eU5RUElSTDljZUJ5SlZEWEU3QlVZV2hrOWFuYmlqZXBleFFJdnZjVUF3cUc0SkpVSGNqQlFnbXJDN3A2QzEtWnk5X3ZvT0dOOWpKcQ?oc=5",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7924e61d3a461aa2ff2d85e593cc67&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f07%2f15%2ftmt-newswire%2fpr-newswire%2facrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process%2f2384463&c=16154244222104438913&mkt=en-us"
       ],
       "source_trust": "aggregator",
-      "title": "ACROBiosystems Obtains PMDA Material Suitability Confirmation for GMP-grade IL-15, Ensuring Reliable Quality and Strengthening the Biopharmaceutical Approval Process - bastillepost.com",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQVld2dklyRjZuQ1AwZFlUSVBuSzExVWN0N1k1MU5HUWJsY2dZZ1NzTEI5N1UxelMtQnN1RFVZTGVmX1hrbHpFcWZrMEhNRzQtbkh5Xzdxb0hjMGU5cFAyM3hXWHhGRVp5T0ZLMVd0UFdISjFlVjN6WHNDejNMUVVzQUNMNlVCU3RDU2lfTUVQNVZSSFhBanB6RndEQmlqLUIxaGJpbDBCc2NaQjBTQWRHaW9xM20xTDZ1WG54a1I3bHRDcW9DVXVDVlo5LUswT2V0ZXBjQ3JXWmZwZ1VIVDVPMnpFU0tPVklXV2JMTDFHazA3clY5bXVLUWdILXltYklOUVE1VWNwQTBndTZjNEJzN1FEcXkwZlRpLXN2OV9UOGFJTGFPR3cyZDRGSmhxak44VUY4N0hHUVZPcVQx?oc=5",
-      "published": "2026-07-15",
+      "title": "ACROBiosystems Obtains PMDA Material Suitability Confirmation for GMP-grade IL-15, Ensuring Reliable Quality and Strengthening the Biopharmaceutical Approval Process - Taiwan News",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE51eU5RUElSTDljZUJ5SlZEWEU3QlVZV2hrOWFuYmlqZXBleFFJdnZjVUF3cUc0SkpVSGNqQlFnbXJDN3A2QzEtWnk5X3ZvT0dOOWpKcQ?oc=5",
+      "published": "2026-07-14",
       "summary": "NEWARK, Del., July 15, 2026 /PRNewswire/ -- Recently, ACROBiosystems has officially received the \"Material Suitability Confirmation for Regenerative Medicine Products\" (Certificate No.: 薬機審長発第47号) ...",
       "ai_summary": "",
       "score": 62,
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": false,
+      "is_new": true,
       "reasons": [
         "公司池命中 +30: ACROBiosystems",
         "战略主题命中: GMP",
@@ -425,7 +425,7 @@
         "priority": "high",
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
-      "age_days": 23
+      "age_days": 27
     },
     {
       "id": "0664e0626a5a2d9d",
@@ -492,7 +492,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 14
+      "age_days": 17
     },
     {
       "id": "4dfa9ef4dc3477cb",
@@ -555,139 +555,7 @@
         "priority": "low",
         "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
       },
-      "age_days": 67
-    },
-    {
-      "id": "882a03e76d3fdcf7",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxPejRzOF8wR3hOUk1sWHBrTjhNOWVaSDBBSkxSbWVUa3dQcjRDRGtOZVZQeW5JZHhlY19fUkhldHN0Yk1lOEJpZmhmZXFxMW1ybXNfd1MtUzdRODBTbmVhUnAzaXJVSVFwck1HSEFJOHBsaFBicUtYdS1seF9YcnhvS1RYREdkVThMWnJEZU9KS09OOUJQd2otUzI3dnFOQk0?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific launches new general purpose centrifuges with natural refrigerant cooling - Manufacturing Chemist",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPejRzOF8wR3hOUk1sWHBrTjhNOWVaSDBBSkxSbWVUa3dQcjRDRGtOZVZQeW5JZHhlY19fUkhldHN0Yk1lOEJpZmhmZXFxMW1ybXNfd1MtUzdRODBTbmVhUnAzaXJVSVFwck1HSEFJOHBsaFBicUtYdS1seF9YcnhvS1RYREdkVThMWnJEZU9KS09OOUJQd2otUzI3dnFOQk0?oc=5",
-      "published": "2026-08-04",
-      "summary": "Thermo Fisher Scientific launches new general purpose centrifuges with natural refrigerant cooling Manufacturing Chemist",
-      "ai_summary": "",
-      "score": 62,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "战略主题命中: manufacturing",
-        "业务动作命中: launch, manufacturing",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 3
-    },
-    {
-      "id": "29e59d4ab021ff6d",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "bing_news_acro_backup",
-      "source_label": "Bing News RSS - ACROBiosystems backup",
-      "source_ids": [
-        "bing_news_acro_backup"
-      ],
-      "source_labels": [
-        "Bing News RSS - ACROBiosystems backup"
-      ],
-      "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe7c75e493a9a9fc2f3328d555d&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe7c75e493a9a9fc2f3328d555d&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f05%2f10%2ftmt-newswire%2fpr-newswire%2facrobiosystems-launches-global-license-solution-upgrade-for-hek293-functional-cell-lines-streamlining-compliance-to-accelerate-biopharmaceutical-rd%2f2340083&c=6088159886962232871&mkt=en-us"
-      ],
-      "source_trust": "aggregator",
-      "title": "ACROBiosystems Launches Global License Solution Upgrade for HEK293 Functional Cell Lines, Streamlining Compliance to Accelerate Biopharmaceutical R&D",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe7c75e493a9a9fc2f3328d555d&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-      "published": "2026-05-10",
-      "summary": "The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools. Functional cell lines serve as a versatile vital engine driving full-cycle breakthroughs in innovative ...",
-      "ai_summary": "",
-      "score": 62,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: ACROBiosystems",
-        "战略主题命中: HEK293",
-        "业务动作命中: launch, license",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "细胞系 / 工程细胞"
-        ],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 47,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "可映射到 ACRO 产品或服务需求"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "age_days": 89
+      "age_days": 70
     },
     {
       "id": "223d59d54e74bcc6",
@@ -703,24 +571,20 @@
       "source_label": "Business Wire - company pool indexed RSS",
       "source_ids": [
         "businesswire_company_pool_index",
-        "google_news_thermo",
-        "bing_news_thermo_backup"
+        "google_news_thermo"
       ],
       "source_labels": [
         "Business Wire - company pool indexed RSS",
-        "Google News RSS - Thermo Fisher",
-        "Bing News RSS - Thermo Fisher backup"
+        "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMihgJBVV95cUxOTnA1c2lfYjhfRDd4UVdCVkNwb1FpcTVKamZzSUpfaHVfSmRzbWNiWEFYcnlyUDZTT0hxUWVfamRPRC1IbnN0TEoyb3h6VXFtRU05cWNYTGpSbThzTDBnUHBtdHNYel8zdXJUOEVsVHZkTkw5QXNGTS1VRl9xTnJOY1RENkhaOWpVdUItdjVrZDBpcEVoM3pESWNJVl8xSU4zTURydGlBQi1CWTZCZTR4NWNxN1dneExoNEtYelpsaWdzcWsxREd1cHY5a1BZWTV3dnFCS1pIcUtSUHpPbFA3eVBmV0l6cVNPNmNaNG1XM1VoelZqdWRfLUlZQlEwNEZDWmFGN09R?oc=5",
-        "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNYjRockdmWG1LMjM5S052YldEWWVGV3IzM1I0MjM3TkJ5Qm5VRlQ0RE14dGR2VGYwMExRU084eWlrdVhtMVVsMThka1dROFNGNExDaXF3RmR3X0g1Rm8wazRQSEVhR2lVbTZMNDZKclM3QWVRb002ZHdoZFR4VkZjYjdhNWFSRDRMQlBRUldLZVJiN2VYblhsMGJuR21lenZ6aHpIQ1B1QjFHVGZuU1FtNHk2S2p6VWJQNkoxVUtKOXdlaEpXQ3VtSkdid1Z4ak9VdERmdUt2WFNibThBdmEzVGV5NjBrakRBeW41NHR6MA?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe77b3442e2881b40d7eef2ab20&url=https%3a%2f%2fwww.tmcnet.com%2fusubmit%2f2026%2f07%2f27%2f10420289.htm&c=16823410986221203768&mkt=en-us"
+        "https://news.google.com/rss/articles/CBMihgJBVV95cUxOTnA1c2lfYjhfRDd4UVdCVkNwb1FpcTVKamZzSUpfaHVfSmRzbWNiWEFYcnlyUDZTT0hxUWVfamRPRC1IbnN0TEoyb3h6VXFtRU05cWNYTGpSbThzTDBnUHBtdHNYel8zdXJUOEVsVHZkTkw5QXNGTS1VRl9xTnJOY1RENkhaOWpVdUItdjVrZDBpcEVoM3pESWNJVl8xSU4zTURydGlBQi1CWTZCZTR4NWNxN1dneExoNEtYelpsaWdzcWsxREd1cHY5a1BZWTV3dnFCS1pIcUtSUHpPbFA3eVBmV0l6cVNPNmNaNG1XM1VoelZqdWRfLUlZQlEwNEZDWmFGN09R?oc=5"
       ],
       "source_trust": "wire",
       "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet Clinical Needs at ADLM 2026 - Business Wire",
       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOTnA1c2lfYjhfRDd4UVdCVkNwb1FpcTVKamZzSUpfaHVfSmRzbWNiWEFYcnlyUDZTT0hxUWVfamRPRC1IbnN0TEoyb3h6VXFtRU05cWNYTGpSbThzTDBnUHBtdHNYel8zdXJUOEVsVHZkTkw5QXNGTS1VRl9xTnJOY1RENkhaOWpVdUItdjVrZDBpcEVoM3pESWNJVl8xSU4zTURydGlBQi1CWTZCZTR4NWNxN1dneExoNEtYelpsaWdzcWsxREd1cHY5a1BZWTV3dnFCS1pIcUtSUHpPbFA3eVBmV0l6cVNPNmNaNG1XM1VoelZqdWRfLUlZQlEwNEZDWmFGN09R?oc=5",
       "published": "2026-07-27",
-      "summary": "\"Laboratories today face growing pressure to deliver faster, more accurate results while managing operational complexity,\" said Puneet Sarin, senior vice president and president, specialty diagnostics ...",
+      "summary": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet Clinical Needs at ADLM 2026 Business Wire",
       "ai_summary": "",
       "score": 60,
       "tier": "daily",
@@ -759,7 +623,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 11
+      "age_days": 14
     },
     {
       "id": "754b5e4f8a2ced57",
@@ -826,7 +690,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 86
+      "age_days": 89
     },
     {
       "id": "532e64feb8c65cdb",
@@ -889,71 +753,7 @@
         "priority": "low",
         "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
       },
-      "age_days": 32
-    },
-    {
-      "id": "c753b4c0d4aadad1",
-      "company_id": "stemcell_technologies",
-      "company": "STEMCELL Technologies",
-      "matched_company_ids": [
-        "stemcell_technologies"
-      ],
-      "matched_companies": [
-        "STEMCELL Technologies"
-      ],
-      "source_id": "google_news_stemcell_technologies",
-      "source_label": "Google News RSS - STEMCELL Technologies",
-      "source_ids": [
-        "google_news_stemcell_technologies"
-      ],
-      "source_labels": [
-        "Google News RSS - STEMCELL Technologies"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMirAJBVV95cUxOQlRyMVZKMkJQcmNTT3FacHpXSHlQeU5ONGgwb1ZlR05HelZEeEdfN1ZZM1JKRFNLSTJfWWo0dVdqdmNWMTlIdUlHNDJ1RURpcEM4WEozU1c2NGR1S0hHTWFncGdDdkxLMVoxaWFUSTVJc2o1Z1ZabUM5aHNVWFJ6dWQzRXNjNXZXWHVVMDkzMHVEa2tCb0VHRHA1OWlfeklST3ZmWXlBUjRlNzlwNGl1cUNYRGNSLUJOVzg5M0ltYlJneTZ0M2NjLU0wSEhLMXVNZjRRQ012MkF5djZYdmFnVG0zVXkyVXAxS2loR2ppVlVadjlaeHJOak90dFljU2ZfTUwzbmJtSFZrZDNpaGNiOC1RQmZnR0o1TUluaXAya2ZnT1FGTTFMaGZNR3o?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "STEMCELL Technologies und CCRM schließen Partnerschaft, um den Zugang zu aufeinander abgestimmten GMP- und RUO-iPSC-Linien für die Entwicklung von Zelltherapien zu erweitern - The Joplin Globe",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOQlRyMVZKMkJQcmNTT3FacHpXSHlQeU5ONGgwb1ZlR05HelZEeEdfN1ZZM1JKRFNLSTJfWWo0dVdqdmNWMTlIdUlHNDJ1RURpcEM4WEozU1c2NGR1S0hHTWFncGdDdkxLMVoxaWFUSTVJc2o1Z1ZabUM5aHNVWFJ6dWQzRXNjNXZXWHVVMDkzMHVEa2tCb0VHRHA1OWlfeklST3ZmWXlBUjRlNzlwNGl1cUNYRGNSLUJOVzg5M0ltYlJneTZ0M2NjLU0wSEhLMXVNZjRRQ012MkF5djZYdmFnVG0zVXkyVXAxS2loR2ppVlVadjlaeHJOak90dFljU2ZfTUwzbmJtSFZrZDNpaGNiOC1RQmZnR0o1TUluaXAya2ZnT1FGTTFMaGZNR3o?oc=5",
-      "published": "2026-07-08",
-      "summary": "STEMCELL Technologies und CCRM schließen Partnerschaft, um den Zugang zu aufeinander abgestimmten GMP- und RUO-iPSC-Linien für die Entwicklung von Zelltherapien zu erweitern The Joplin Globe",
-      "ai_summary": "",
-      "score": 60,
-      "tier": "daily",
-      "category": "partnership",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: STEMCELL Technologies, STEMCELL Tech, Stemcell Technologies",
-        "战略主题命中: iPSC, GMP",
-        "业务动作命中: GMP",
-        "高价值分类加成 +10: partnership"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 30
+      "age_days": 35
     },
     {
       "id": "2c20d2768e6aedf6",
@@ -1019,7 +819,135 @@
         "priority": "high",
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
-      "age_days": 56
+      "age_days": 59
+    },
+    {
+      "id": "401924cbd509e020",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/kits/tnf-alpha-mouse-frt-b102"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: tnf alpha mouse frt b102",
+      "url": "https://www.acrobiosystems.com/products/kits/tnf-alpha-mouse-frt-b102",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: MOU, EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "e9db0df988697c71",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/tim-1-mouse-ki1-m52h3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: tim 1 mouse ki1 m52h3",
+      "url": "https://www.acrobiosystems.com/products/protein/tim-1-mouse-ki1-m52h3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 56,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: MOU, EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
     },
     {
       "id": "f610ddd76a80d18c",
@@ -1086,7 +1014,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 38
+      "age_days": 41
     },
     {
       "id": "dbcfffcf57d25dc8",
@@ -1151,7 +1079,7 @@
         "priority": "medium",
         "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
       },
-      "age_days": 3
+      "age_days": 6
     },
     {
       "id": "a85354aefa9a6a77",
@@ -1215,7 +1143,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 71
+      "age_days": 74
     },
     {
       "id": "b142009799e4474e",
@@ -1239,10 +1167,10 @@
         "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration - Sartorius",
+      "title": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration - sartorius.com",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5",
       "published": "2026-06-23",
-      "summary": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration Sartorius",
+      "summary": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration sartorius.com",
       "ai_summary": "",
       "score": 56,
       "tier": "daily",
@@ -1282,7 +1210,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 45
+      "age_days": 48
     },
     {
       "id": "6fede91478efe6b8",
@@ -1348,133 +1276,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 45
-    },
-    {
-      "id": "6ee8bad642b7d5d9",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRGxIc3FiMTNwQjNLTms3SnZmYUpVdXppZ0JXdHFac1RHZzZrWDJxS1k5WFlkamRNY0k0TklLVThobElBVUxneE1MRGt6TjJkelhXSFA1RmNmd25Hek1OSlUyc0xtV2tLcjlWdDNucjZYUmJFaDFzeXM1cDZkdXEtZXk0WUdYU1pOUkdlRFpIWTBEZ0FuMFFhZXYxSHI3QWhHUGVEb0NqSQ?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Launches General Purpose Centrifuges with Natural Refrigerant Cooling - Clinical Lab Products",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRGxIc3FiMTNwQjNLTms3SnZmYUpVdXppZ0JXdHFac1RHZzZrWDJxS1k5WFlkamRNY0k0TklLVThobElBVUxneE1MRGt6TjJkelhXSFA1RmNmd25Hek1OSlUyc0xtV2tLcjlWdDNucjZYUmJFaDFzeXM1cDZkdXEtZXk0WUdYU1pOUkdlRFpIWTBEZ0FuMFFhZXYxSHI3QWhHUGVEb0NqSQ?oc=5",
-      "published": "2026-08-05",
-      "summary": "Thermo Fisher Scientific Launches General Purpose Centrifuges with Natural Refrigerant Cooling Clinical Lab Products",
-      "ai_summary": "",
-      "score": 56,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: launch, clinical",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 2
-    },
-    {
-      "id": "85950deafb120541",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWEs0bmoyVFVZUnZHMER0TjRCN2JRemFudVlLdmdLOVJpamFDcVRpY2luOFVvTThia1JJQ1NWMVJLdmVhamRDZkNGazJSem00RzhGSC1NR0ZTRk1saF9BU2ZaUmRmWms2eUJTNVFaVE5jWWMwUDNfRy1tNGJTQzYzUjc5T05DYmtXUVVTdlBsUTdEUG9WaGwyWTNITDBSZGE5b1ZMR3JSQ0VuMUNjR0JYaWFSYWt4Y2ptSjVtS0xFSkwwa0pCZzRPbnh3ZUtuaUxULTRVRWVR?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Launches New Quality Assurance Software - Clinical Lab Products",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWEs0bmoyVFVZUnZHMER0TjRCN2JRemFudVlLdmdLOVJpamFDcVRpY2luOFVvTThia1JJQ1NWMVJLdmVhamRDZkNGazJSem00RzhGSC1NR0ZTRk1saF9BU2ZaUmRmWms2eUJTNVFaVE5jWWMwUDNfRy1tNGJTQzYzUjc5T05DYmtXUVVTdlBsUTdEUG9WaGwyWTNITDBSZGE5b1ZMR3JSQ0VuMUNjR0JYaWFSYWt4Y2ptSjVtS0xFSkwwa0pCZzRPbnh3ZUtuaUxULTRVRWVR?oc=5",
-      "published": "2026-07-07",
-      "summary": "Thermo Fisher Scientific Launches New Quality Assurance Software Clinical Lab Products",
-      "ai_summary": "",
-      "score": 56,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: launch, clinical",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 31
+      "age_days": 48
     },
     {
       "id": "6ee5a70f4e5d4be7",
@@ -1537,7 +1339,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 60
+      "age_days": 63
     },
     {
       "id": "ae65189ef2cf02a2",
@@ -1600,7 +1402,74 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 71
+      "age_days": 74
+    },
+    {
+      "id": "6e9ac55b265d023b",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Clinical Trials Arena",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
+      "published": "2026-07-03",
+      "summary": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial Clinical Trials Arena",
+      "ai_summary": "",
+      "score": 54,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher",
+        "战略主题命中: clinical trials",
+        "业务动作命中: clinical",
+        "高价值分类加成 +10: partnership"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [
+          "III 期临床"
+        ],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "研发阶段可识别"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 38
     },
     {
       "id": "447e26fb57557787",
@@ -1667,75 +1536,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 28
-    },
-    {
-      "id": "6e9ac55b265d023b",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxPWm92Mk5OQ1JOUHA0cFJHd0ZUeE1iNjd4YlFYbWVGbG9HLW9kX2JERUZiRlByWURBN0pDZmk3SGhLb0pXeWk5R0dLc3cwNzJBMENzQlJfUC1fYklwYkJGZExTaVpBRzlpRERteVQyeHpRbDVpV1ozdDY3U3FDdTBEcWIwYmpvRERfdnY5WW5WMHlSSVdzSjNwR3NNMEZTZw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Clinical Trials Arena",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
-      "published": "2026-07-03",
-      "summary": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial Clinical Trials Arena",
-      "ai_summary": "",
-      "score": 54,
-      "tier": "daily",
-      "category": "partnership",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "战略主题命中: clinical trials",
-        "业务动作命中: clinical",
-        "高价值分类加成 +10: partnership"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "III 期临床"
-        ],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "研发阶段可识别"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "age_days": 35
+      "age_days": 31
     },
     {
       "id": "06c70830075a3d0e",
@@ -1801,78 +1602,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 30
-    },
-    {
-      "id": "85a7ed8650c1a7fc",
-      "company_id": "sino_biological",
-      "company": "Sino Biological / 义翘神州",
-      "matched_company_ids": [
-        "sino_biological"
-      ],
-      "matched_companies": [
-        "Sino Biological / 义翘神州"
-      ],
-      "source_id": "google_news_sino_biological",
-      "source_label": "Google News RSS - Sino Biological",
-      "source_ids": [
-        "google_news_sino_biological"
-      ],
-      "source_labels": [
-        "Google News RSS - Sino Biological"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQeVlzS3NVMk1tV21XOHo4VERfeXdWLXF1Nkd3NUxJdUtyeUpUTm9LMDJ3ZHNOamR2M0NRQXB0OXg3ZERrcUNOaThSMDhpRktnVjNkQm1SLWdpckxZNWhnMXZXRmlQMFFJeTlxRUVVQkFUWDY3ZjBXWXRCMmJ1WllYcnlONnhfRnFUT0EtZS1XWGhrX205SVQ1ZkZwMTQ2d3RIakVCWExkOUJTanVudkF1MllyMk9wQ3NuMEhRYWZoUVd4bkNqdzdWTmlZSko3dEJFX3BSVXBCUHpWVm8zSzNKYnRtRVphM2NRWHRZNG5vVmttcUJDRUNLc2VRNFd0ZXM?oc=5",
-        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORnJkRU9mUkcwNUZrd2FReTNxQ0VpbGExWVdrME5fUzBDbk56SUNhUEJUUTYyVUhPMnNka2xCcUhPc0dLOEQ0YV9aTTBxM2RWTVMyOVozbm01TFA2dGtybDk2d1ctRnVLWEREbW12eGpXNnNnYktDNklCR3hxREw4VG54a0dvRmdSNDlB?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Sino Biological Launches XPressMAX™ Cell-Free Protein Synthesis Kit, Accelerating AI-Powered High-Throughput Antibody Drug Discovery - BioSpace",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQeVlzS3NVMk1tV21XOHo4VERfeXdWLXF1Nkd3NUxJdUtyeUpUTm9LMDJ3ZHNOamR2M0NRQXB0OXg3ZERrcUNOaThSMDhpRktnVjNkQm1SLWdpckxZNWhnMXZXRmlQMFFJeTlxRUVVQkFUWDY3ZjBXWXRCMmJ1WllYcnlONnhfRnFUT0EtZS1XWGhrX205SVQ1ZkZwMTQ2d3RIakVCWExkOUJTanVudkF1MllyMk9wQ3NuMEhRYWZoUVd4bkNqdzdWTmlZSko3dEJFX3BSVXBCUHpWVm8zSzNKYnRtRVphM2NRWHRZNG5vVmttcUJDRUNLc2VRNFd0ZXM?oc=5",
-      "published": "2026-05-19",
-      "summary": "Sino Biological Launches XPressMAX™ Cell-Free Protein Synthesis Kit, Accelerating AI-Powered High-Throughput Antibody Drug Discovery BioSpace",
-      "ai_summary": "",
-      "score": 54,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Sino Biological",
-        "战略主题命中: antibody",
-        "业务动作命中: launch",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "抗体"
-        ],
-        "development_stages": [
-          "早期发现"
-        ],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "high",
-        "score": 50,
-        "label": "高相关",
-        "explanation": "竞品正在推进抗体相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "可映射到 ACRO 产品或服务需求",
-          "研发阶段可识别"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "high",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "age_days": 80
+      "age_days": 33
     },
     {
       "id": "8706f78c36d0e343",
@@ -1942,7 +1672,77 @@
         "priority": "high",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 79
+      "age_days": 82
+    },
+    {
+      "id": "85a7ed8650c1a7fc",
+      "company_id": "sino_biological",
+      "company": "Sino Biological / 义翘神州",
+      "matched_company_ids": [
+        "sino_biological"
+      ],
+      "matched_companies": [
+        "Sino Biological / 义翘神州"
+      ],
+      "source_id": "google_news_sino_biological",
+      "source_label": "Google News RSS - Sino Biological",
+      "source_ids": [
+        "google_news_sino_biological"
+      ],
+      "source_labels": [
+        "Google News RSS - Sino Biological"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQeVlzS3NVMk1tV21XOHo4VERfeXdWLXF1Nkd3NUxJdUtyeUpUTm9LMDJ3ZHNOamR2M0NRQXB0OXg3ZERrcUNOaThSMDhpRktnVjNkQm1SLWdpckxZNWhnMXZXRmlQMFFJeTlxRUVVQkFUWDY3ZjBXWXRCMmJ1WllYcnlONnhfRnFUT0EtZS1XWGhrX205SVQ1ZkZwMTQ2d3RIakVCWExkOUJTanVudkF1MllyMk9wQ3NuMEhRYWZoUVd4bkNqdzdWTmlZSko3dEJFX3BSVXBCUHpWVm8zSzNKYnRtRVphM2NRWHRZNG5vVmttcUJDRUNLc2VRNFd0ZXM?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sino Biological Launches XPressMAX™ Cell-Free Protein Synthesis Kit, Accelerating AI-Powered High-Throughput Antibody Drug Discovery - BioSpace",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQeVlzS3NVMk1tV21XOHo4VERfeXdWLXF1Nkd3NUxJdUtyeUpUTm9LMDJ3ZHNOamR2M0NRQXB0OXg3ZERrcUNOaThSMDhpRktnVjNkQm1SLWdpckxZNWhnMXZXRmlQMFFJeTlxRUVVQkFUWDY3ZjBXWXRCMmJ1WllYcnlONnhfRnFUT0EtZS1XWGhrX205SVQ1ZkZwMTQ2d3RIakVCWExkOUJTanVudkF1MllyMk9wQ3NuMEhRYWZoUVd4bkNqdzdWTmlZSko3dEJFX3BSVXBCUHpWVm8zSzNKYnRtRVphM2NRWHRZNG5vVmttcUJDRUNLc2VRNFd0ZXM?oc=5",
+      "published": "2026-05-19",
+      "summary": "Sino Biological Launches XPressMAX™ Cell-Free Protein Synthesis Kit, Accelerating AI-Powered High-Throughput Antibody Drug Discovery BioSpace",
+      "ai_summary": "",
+      "score": 54,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sino Biological",
+        "战略主题命中: antibody",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [
+          "抗体"
+        ],
+        "development_stages": [
+          "早期发现"
+        ],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "high",
+        "score": 50,
+        "label": "高相关",
+        "explanation": "竞品正在推进抗体相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "可映射到 ACRO 产品或服务需求",
+          "研发阶段可识别"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "high",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 83
     },
     {
       "id": "a77ead977ed02666",
@@ -2008,7 +1808,7 @@
         "priority": "high",
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
-      "age_days": 52
+      "age_days": 55
     },
     {
       "id": "ec55e65a5bc00d6f",
@@ -2075,7 +1875,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 43
+      "age_days": 46
     },
     {
       "id": "e679a9f142b13fa9",
@@ -2114,7 +1914,7 @@
         "战略主题命中: clinical trials",
         "业务动作命中: collaboration, clinical",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 116天，因业务动作匹配保留"
+        "超过时效窗口 119天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -2143,7 +1943,76 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 116
+      "age_days": 119
+    },
+    {
+      "id": "5a7262026c69d05e",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "bing_news_acro_backup",
+      "source_label": "Bing News RSS - ACROBiosystems backup",
+      "source_ids": [
+        "bing_news_acro_backup"
+      ],
+      "source_labels": [
+        "Bing News RSS - ACROBiosystems backup"
+      ],
+      "related_urls": [
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7924e61d3a461aa2ff2d85e593cc67&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7924e61d3a461aa2ff2d85e593cc67&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f05%2f10%2ftmt-newswire%2fpr-newswire%2facrobiosystems-launches-global-license-solution-upgrade-for-hek293-functional-cell-lines-streamlining-compliance-to-accelerate-biopharmaceutical-rd%2f2340083&c=6088159886962232871&mkt=en-us"
+      ],
+      "source_trust": "aggregator",
+      "title": "ACROBiosystems Launches Global License Solution Upgrade for HEK293 Functional Cell Lines, Streamlining Compliance to Accelerate Biopharmaceutical R&D",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7924e61d3a461aa2ff2d85e593cc67&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
+      "published": "2026-05-10",
+      "summary": "The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools. Functional cell lines serve as a versatile vital engine driving full-cycle breakthroughs in innovative ...",
+      "ai_summary": "",
+      "score": 52,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: ACROBiosystems",
+        "战略主题命中: HEK293",
+        "业务动作命中: launch, license",
+        "高价值分类加成 +10: product",
+        "超过时效窗口 92天，因业务动作匹配保留"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [
+          "细胞系 / 工程细胞"
+        ],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 47,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态",
+          "可映射到 ACRO 产品或服务需求"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 92
     },
     {
       "id": "3774c228133883e7",
@@ -2183,7 +2052,7 @@
         "战略主题命中: GMP",
         "业务动作命中: expansion, GMP",
         "高价值分类加成 +10: event",
-        "超过时效窗口 142天，因业务动作匹配保留"
+        "超过时效窗口 145天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -2212,7 +2081,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 142
+      "age_days": 145
     },
     {
       "id": "0d4166b974c394be",
@@ -2279,7 +2148,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 67
+      "age_days": 70
     },
     {
       "id": "d4e75cee85557dee",
@@ -2343,73 +2212,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 10
-    },
-    {
-      "id": "34a3e6c513523bf0",
-      "company_id": "abcam",
-      "company": "Abcam",
-      "matched_company_ids": [
-        "abcam"
-      ],
-      "matched_companies": [
-        "Abcam"
-      ],
-      "source_id": "prnewswire_expanded_company_pool_index",
-      "source_label": "PR Newswire - expanded competitor pool indexed RSS",
-      "source_ids": [
-        "prnewswire_expanded_company_pool_index"
-      ],
-      "source_labels": [
-        "PR Newswire - expanded competitor pool indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQSkVOQ080MUxGLTRhM0FwcnhQQldyQ1ZoeEtOUGdCRWNOMmsyd3dWb01QcGQ5N3Y4SUZsTW45QThhUlpBcmM2RGpYelhGSnhTM2tOR2hTM3R4SWRMdFlicjhCRFd3V0RZTDZGLW9MbE1HRHN0UXBKZ3VwS0VJUHg1Z0wzS1JQMHhjbXNrclRkZ0ZNam9mZExIMDdMZVN5bjZzSVBmdWs0MV9BamFzbVJuZldnak9LN3J0SXBQSXBPVmRMRktZVlpSbnNGeWJkTEpIbUgwb285Q0xlQVh1dWF1Q3R4cUM0THhoSWh1M29GU2xnR2xURHRHRUI5NDUxX2lfSE5Ha2VET3E1QXhOUzJLeTB5ZTFWUFVISktaNUE0VkNiNjhSUG01ZkhLa19YZ19DaC0wYVNrY1I?oc=5"
-      ],
-      "source_trust": "wire",
-      "title": "Abcam launches SimpleStep Ignite™ ELISA: an innovative assay platform that combines 50x higher sensitivity and up to 35x wider dynamic range in only 55 minutes - PR Newswire",
-      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQSkVOQ080MUxGLTRhM0FwcnhQQldyQ1ZoeEtOUGdCRWNOMmsyd3dWb01QcGQ5N3Y4SUZsTW45QThhUlpBcmM2RGpYelhGSnhTM2tOR2hTM3R4SWRMdFlicjhCRFd3V0RZTDZGLW9MbE1HRHN0UXBKZ3VwS0VJUHg1Z0wzS1JQMHhjbXNrclRkZ0ZNam9mZExIMDdMZVN5bjZzSVBmdWs0MV9BamFzbVJuZldnak9LN3J0SXBQSXBPVmRMRktZVlpSbnNGeWJkTEpIbUgwb285Q0xlQVh1dWF1Q3R4cUM0THhoSWh1M29GU2xnR2xURHRHRUI5NDUxX2lfSE5Ha2VET3E1QXhOUzJLeTB5ZTFWUFVISktaNUE0VkNiNjhSUG01ZkhLa19YZ19DaC0wYVNrY1I?oc=5",
-      "published": "2026-04-13",
-      "summary": "Abcam launches SimpleStep Ignite™ ELISA: an innovative assay platform that combines 50x higher sensitivity and up to 35x wider dynamic range in only 55 minutes PR Newswire",
-      "ai_summary": "",
-      "score": 52,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Abcam",
-        "新闻稿分发平台",
-        "战略主题命中: ELISA",
-        "业务动作命中: launch",
-        "高价值分类加成 +10: product",
-        "超过时效窗口 116天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 116
+      "age_days": 13
     },
     {
       "id": "6c11d29671d535d3",
@@ -2476,7 +2279,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 53
+      "age_days": 56
     },
     {
       "id": "594760e6348b8e2f",
@@ -2543,7 +2346,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 73
+      "age_days": 76
     },
     {
       "id": "955a568e3b9c3d4a",
@@ -2582,7 +2385,7 @@
         "战略主题命中: clinical trials",
         "业务动作命中: acquisition, clinical",
         "高价值分类加成 +8: regulatory",
-        "超过时效窗口 136天，因业务动作匹配保留"
+        "超过时效窗口 139天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -2612,7 +2415,72 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 136
+      "age_days": 139
+    },
+    {
+      "id": "7ad4e33344a2f729",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMizgFBVV95cUxONm5zR2VUSkYtTFZnTjJ1VWxLazZ0bkdXNzJibVd1WEZmeXpqdDBTbHY0ZU1nOFVKLXhPdTdBdEdsaGxjTnREblBBMXpvMHVTczUxRXFndjV2VzItVzRRNGhBSTZmNmhoU2NHdUptVHBzZElwdW1JU1VoQVFSWjV4ZE1Za2t5X3ItN0twNzNQMVE3OXRSbHZrSjAzT1JqelhUYXlseFNfRFBUMWl6NTBNUWo5QzFkU1VGTWlYOVU3SlJyaVcyXzU3NXBMbVhGUQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher, Datavant Partner to Advance Real-World Data Interoperability Across Clinical Development - Applied Clinical Trials Online",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONm5zR2VUSkYtTFZnTjJ1VWxLazZ0bkdXNzJibVd1WEZmeXpqdDBTbHY0ZU1nOFVKLXhPdTdBdEdsaGxjTnREblBBMXpvMHVTczUxRXFndjV2VzItVzRRNGhBSTZmNmhoU2NHdUptVHBzZElwdW1JU1VoQVFSWjV4ZE1Za2t5X3ItN0twNzNQMVE3OXRSbHZrSjAzT1JqelhUYXlseFNfRFBUMWl6NTBNUWo5QzFkU1VGTWlYOVU3SlJyaVcyXzU3NXBMbVhGUQ?oc=5",
+      "published": "2026-02-11",
+      "summary": "Thermo Fisher, Datavant Partner to Advance Real-World Data Interoperability Across Clinical Development Applied Clinical Trials Online",
+      "ai_summary": "",
+      "score": 50,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher",
+        "战略主题命中: clinical development, clinical trials",
+        "业务动作命中: clinical",
+        "高价值分类加成 +10: partnership",
+        "超过时效窗口 180天，因业务动作匹配保留"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 180
     },
     {
       "id": "f58f4d783dec1dec",
@@ -2683,7 +2551,1037 @@
         "priority": "high",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 85
+      "age_days": 88
+    },
+    {
+      "id": "620c163a7fca1685",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/gm-csf-human-gmf-h82e3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: gm csf human gmf h82e3",
+      "url": "https://www.acrobiosystems.com/products/protein/gm-csf-human-gmf-h82e3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "72be78151aa96a93",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/kits/ctla-4-human-frt-p053"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: ctla 4 human frt p053",
+      "url": "https://www.acrobiosystems.com/products/kits/ctla-4-human-frt-p053",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "fa87ac9b928cc46f",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/kits/il-22-human-frt-p039"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: il 22 human frt p039",
+      "url": "https://www.acrobiosystems.com/products/kits/il-22-human-frt-p039",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "5b2849d4ef8db8f1",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/dll3-human-dl3-h82h3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: dll3 human dl3 h82h3",
+      "url": "https://www.acrobiosystems.com/products/protein/dll3-human-dl3-h82h3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [
+          "DLL3"
+        ],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 37,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态",
+          "出现明确靶点"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "d239daa82dcb1cc9",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/dll3-cynomolgus-dl3-c52hb"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: dll3 cynomolgus dl3 c52hb",
+      "url": "https://www.acrobiosystems.com/products/protein/dll3-cynomolgus-dl3-c52hb",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [
+          "DLL3"
+        ],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 37,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态",
+          "出现明确靶点"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "4bb19b6fbcb6e599",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/kits/integrin-alpha-4-beta-1-human-frt-p049"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: integrin alpha 4 beta 1 human frt p049",
+      "url": "https://www.acrobiosystems.com/products/kits/integrin-alpha-4-beta-1-human-frt-p049",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "18ed8d14a5c22a8c",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/integrin-alpha-2-beta-1-human-it1-h82w7"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: integrin alpha 2 beta 1 human it1 h82w7",
+      "url": "https://www.acrobiosystems.com/products/protein/integrin-alpha-2-beta-1-human-it1-h82w7",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "b985adab7df84022",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/tshr-human-tsr-h82p3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: tshr human tsr h82p3",
+      "url": "https://www.acrobiosystems.com/products/protein/tshr-human-tsr-h82p3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "9ce265543d86e6b5",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/lrrc15-canine-lr5-c52h4"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: lrrc15 canine lr5 c52h4",
+      "url": "https://www.acrobiosystems.com/products/protein/lrrc15-canine-lr5-c52h4",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "7ae9d8134b6faacb",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/il-11-r-alpha-rhesus-macaque-ilr-r82e3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: il 11 r alpha rhesus macaque ilr r82e3",
+      "url": "https://www.acrobiosystems.com/products/protein/il-11-r-alpha-rhesus-macaque-ilr-r82e3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "c895168882179ced",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/ccr9-human-cc9-hf2g3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: ccr9 human cc9 hf2g3",
+      "url": "https://www.acrobiosystems.com/products/protein/ccr9-human-cc9-hf2g3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "fcb031d6a3bde2a9",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/beads/camelid-vhh-rabbit-mbc-k202"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: camelid vhh rabbit mbc k202",
+      "url": "https://www.acrobiosystems.com/products/beads/camelid-vhh-rabbit-mbc-k202",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "9e57d6a091ca636c",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/nav1-6-human-na6-h5113"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: nav1 6 human na6 h5113",
+      "url": "https://www.acrobiosystems.com/products/protein/nav1-6-human-na6-h5113",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "e35356ad3bf32ce3",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/reagent/igg-pzf2667"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: igg pzf2667",
+      "url": "https://www.acrobiosystems.com/products/reagent/igg-pzf2667",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "c0c453d79d099433",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/cell-grade-beads/tcrαβ-human-mbs-s011"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: tcrαβ human mbs s011",
+      "url": "https://www.acrobiosystems.com/products/cell-grade-beads/tcrαβ-human-mbs-s011",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
+    },
+    {
+      "id": "3cdc82d8459d55ef",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_product_sitemap",
+      "source_label": "ACRO official product and solution sitemap monitor",
+      "source_ids": [
+        "acro_product_sitemap"
+      ],
+      "source_labels": [
+        "ACRO official product and solution sitemap monitor"
+      ],
+      "related_urls": [
+        "https://www.acrobiosystems.com/products/protein/lysosomal-phospholipase-a2-hamster-ly2-h51h3"
+      ],
+      "source_trust": "owned",
+      "title": "ACRO new product or solution page: lysosomal phospholipase a2 hamster ly2 h51h3",
+      "url": "https://www.acrobiosystems.com/products/protein/lysosomal-phospholipase-a2-hamster-ly2-h51h3",
+      "published": "2026-08-08",
+      "summary": "New URL detected in the official sitemap.",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "业务动作命中: EMA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 2
     },
     {
       "id": "620fd17015e41359",
@@ -2745,7 +3643,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 87
+      "age_days": 90
     },
     {
       "id": "2a8ab724fcc69819",
@@ -2810,7 +3708,7 @@
         "priority": "medium",
         "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
       },
-      "age_days": 7
+      "age_days": 10
     },
     {
       "id": "c79ae203a0efda78",
@@ -2879,7 +3777,7 @@
         "priority": "high",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 37
+      "age_days": 40
     },
     {
       "id": "a65959e72d194776",
@@ -2903,76 +3801,10 @@
         "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalJWNVNGRkFGbF9nc1JZWjhJRmdZUks5eFRlamlOUE1QcGFaNGFnUXZ2U3RTZVdwaDdIT21qd2UwdWVya2U3MzZHYWZJZGdFNkFVRTFKX3NDNGRqQS02VlRaOG1rc1FVU0ExVGVHVWRvYnFja3NwYVo3WjFwSURRZV9XWUNzWExvZHg0VTZ0RVd5bTM1SlFtVnRHamZjMkFINmx6UnZ1ZXhTUnV4b2xrckY1cWpNZmhjU2Rn?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Sartorius launches Cubis® III balances with built-in compliance and connectivity - Drug Discovery News",
+      "title": "Sartorius launches Cubis® III balances with built-in compliance and connectivity - drugdiscoverynews.com",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalJWNVNGRkFGbF9nc1JZWjhJRmdZUks5eFRlamlOUE1QcGFaNGFnUXZ2U3RTZVdwaDdIT21qd2UwdWVya2U3MzZHYWZJZGdFNkFVRTFKX3NDNGRqQS02VlRaOG1rc1FVU0ExVGVHVWRvYnFja3NwYVo3WjFwSURRZV9XWUNzWExvZHg0VTZ0RVd5bTM1SlFtVnRHamZjMkFINmx6UnZ1ZXhTUnV4b2xrckY1cWpNZmhjU2Rn?oc=5",
       "published": "2026-06-03",
-      "summary": "Sartorius launches Cubis® III balances with built-in compliance and connectivity Drug Discovery News",
-      "ai_summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Sartorius",
-        "业务动作命中: launch",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "早期发现"
-        ],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "研发阶段可识别"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "age_days": 65
-    },
-    {
-      "id": "858bec68d1310112",
-      "company_id": "sartorius",
-      "company": "Sartorius / Sartorius Stedim Biotech",
-      "matched_company_ids": [
-        "sartorius"
-      ],
-      "matched_companies": [
-        "Sartorius / Sartorius Stedim Biotech"
-      ],
-      "source_id": "google_news_sartorius",
-      "source_label": "Google News RSS - Sartorius",
-      "source_ids": [
-        "google_news_sartorius"
-      ],
-      "source_labels": [
-        "Google News RSS - Sartorius"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance - Lab Manager",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5",
-      "published": "2026-06-04",
-      "summary": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance Lab Manager",
+      "summary": "Sartorius launches Cubis® III balances with built-in compliance and connectivity drugdiscoverynews.com",
       "ai_summary": "",
       "score": 48,
       "tier": "daily",
@@ -3008,7 +3840,70 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 64
+      "age_days": 68
+    },
+    {
+      "id": "858bec68d1310112",
+      "company_id": "sartorius",
+      "company": "Sartorius / Sartorius Stedim Biotech",
+      "matched_company_ids": [
+        "sartorius"
+      ],
+      "matched_companies": [
+        "Sartorius / Sartorius Stedim Biotech"
+      ],
+      "source_id": "google_news_sartorius",
+      "source_label": "Google News RSS - Sartorius",
+      "source_ids": [
+        "google_news_sartorius"
+      ],
+      "source_labels": [
+        "Google News RSS - Sartorius"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance - labmanager.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMW5QQWNwWjRMeVdaUUlrX1JNdnFmbkdwbWFUYXRzRVZjWGFHU3d1WVdKTjVuVC03X1Y0SVlKLXlmMUV0V1FGcDFnVnpvTUNtMmx5Q0JwYUhHVFd6eDZYSFlka3NiZkVBb202ZWxSSXh6M2dPc2ZGU0VoRFBMcVJHTVhVVUFzZFJxSm1EbGp5QnFPamZYWDBBeGVPajBCbFh1RFlRbWVVWWVEVV8yRzRKdDhIVUQ1eVBONFluQmNaTHdoVEpPSDVwbElFY3E?oc=5",
+      "published": "2026-06-04",
+      "summary": "Sartorius Launches Cubis III Lab Balance with Native LIMS Connectivity and On-Instrument Compliance labmanager.com",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Sartorius",
+        "业务动作命中: launch",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 67
     },
     {
       "id": "e6b070a3c0cf55d5",
@@ -3075,7 +3970,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 71
+      "age_days": 74
     },
     {
       "id": "8944f11a22b96440",
@@ -3142,10 +4037,10 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 42
+      "age_days": 45
     },
     {
-      "id": "763411116dbec188",
+      "id": "5dd35a6867663269",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -3163,22 +4058,22 @@
         "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWWVzNzFhdzdCM1JrN3hGMTFKOUdWWWtKRy0zR3FPb2tHUnBtZzZsbHA2ajllOWV0dEFfMzJLYnVEZFA2MG83OTk4YThlLXhHdG1yX2lyRlllRFBEUDNfWTRqQ2tUWW1aenF1eHdxOW1JZTNkV0ZpSFVCNTN0bWF3NEVIWDNzdmh2NkNSNE8zYUExV3BoUndBRFF0VElNeXR5NEhyVHgyRElQTWpvd1Z3S3llV1FTVGNzMWh4ekVhNTMxSHl3empMc3JValZRYUFkMHZkUGdOeUVEYnM?oc=5"
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRTJLU1dyR0ZiSzlEempsZ0F1aHN4NEI2bkVjZm40Xy1ZbXFmUmxKNk5aMGdScmNIT25pS0cxcTRrQm5OZ2llUWNJcks2SmJYS25rSTNrZXpyQm9La3NGT0RpN2pwa2NWdk9BSU1zc2xtUUdqTDNVbGl1RlBNaW9GdlZRZUptRFhqVTRRbzNyQTVnd21oUkpPbUdqdzB5TE1LUGtKMkxNUXl3dGpGdW1qdEl2b2czb1VkZGUwR1hqdTEyamdjVlVieQ?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Launches a New Spectrophotometer Suite for Water, Food and Life Science Testing - Spectroscopy Online",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWWVzNzFhdzdCM1JrN3hGMTFKOUdWWWtKRy0zR3FPb2tHUnBtZzZsbHA2ajllOWV0dEFfMzJLYnVEZFA2MG83OTk4YThlLXhHdG1yX2lyRlllRFBEUDNfWTRqQ2tUWW1aenF1eHdxOW1JZTNkV0ZpSFVCNTN0bWF3NEVIWDNzdmh2NkNSNE8zYUExV3BoUndBRFF0VElNeXR5NEhyVHgyRElQTWpvd1Z3S3llV1FTVGNzMWh4ekVhNTMxSHl3empMc3JValZRYUFkMHZkUGdOeUVEYnM?oc=5",
-      "published": "2026-07-24",
-      "summary": "Thermo Fisher Scientific Launches a New Spectrophotometer Suite for Water, Food and Life Science Testing Spectroscopy Online",
+      "title": "Thermo Fisher Scientific introduces InstaFlux solution to simplify pathogen and environmental testing - FoodBev Media",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRTJLU1dyR0ZiSzlEempsZ0F1aHN4NEI2bkVjZm40Xy1ZbXFmUmxKNk5aMGdScmNIT25pS0cxcTRrQm5OZ2llUWNJcks2SmJYS25rSTNrZXpyQm9La3NGT0RpN2pwa2NWdk9BSU1zc2xtUUdqTDNVbGl1RlBNaW9GdlZRZUptRFhqVTRRbzNyQTVnd21oUkpPbUdqdzB5TE1LUGtKMkxNUXl3dGpGdW1qdEl2b2czb1VkZGUwR1hqdTEyamdjVlVieQ?oc=5",
+      "published": "2026-08-07",
+      "summary": "Thermo Fisher Scientific introduces InstaFlux solution to simplify pathogen and environmental testing FoodBev Media",
       "ai_summary": "",
       "score": 48,
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": false,
+      "is_new": true,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: launch",
+        "业务动作命中: introduce",
         "高价值分类加成 +10: product"
       ],
       "intelligence": {
@@ -3205,136 +4100,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 14
-    },
-    {
-      "id": "cc1c472874027f4a",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRUNkTExidmRfZ1haMkZfc2Z6QUpRTElqWTJpM1BEc0xCVkx5Y3padmlGZkxuM1IxdDN3YXV4ZGxNczJBR1BFWmY2Qlg4d0JxcDJzV3Y0X1ZxS3YxVW1FWmJJWDIyNWlDdFFIUUJQV2JVb3J4Zzc3dUllNVFWT2lKaUwwYTU0X012ZktfMFRrYi04YW1yZS00NEJ5Qk5NajRISEtGUmstbE9Hcjh4RkNlaW1QQjJEdXRac1dCZWc1cVdQZW8?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Launches Real-World Registry to Advance Long-Term Vitiligo Research - BioPharma APAC",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRUNkTExidmRfZ1haMkZfc2Z6QUpRTElqWTJpM1BEc0xCVkx5Y3padmlGZkxuM1IxdDN3YXV4ZGxNczJBR1BFWmY2Qlg4d0JxcDJzV3Y0X1ZxS3YxVW1FWmJJWDIyNWlDdFFIUUJQV2JVb3J4Zzc3dUllNVFWT2lKaUwwYTU0X012ZktfMFRrYi04YW1yZS00NEJ5Qk5NajRISEtGUmstbE9Hcjh4RkNlaW1QQjJEdXRac1dCZWc1cVdQZW8?oc=5",
-      "published": "2026-07-31",
-      "summary": "Thermo Fisher Launches Real-World Registry to Advance Long-Term Vitiligo Research BioPharma APAC",
-      "ai_summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "业务动作命中: launch",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 7
-    },
-    {
-      "id": "64aac44c8d3dc548",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMnkyMlhyVHZUWmUtMlZiWEI3aTBMcmJuVFI0VFFxbk4wOGtZZjMtOVJQQWs4Sl9Lamx3UWE5ank4WkFXcVRQTTdNMV80RmhOUGlGZGpmb19zNFJoeGdOWEpyV2cyUzNxajlMTm5nYmppbC1FS2FUWmQxdTIxbVAxZmJMLWE2NGlURWlyQzY5dkFoNk9USFFndlFPWHlBZFZsQlJwcVNlYk5Yd3lvU0dqTkxSb1Y3QXVzQi1HZEZuUV9YZjhxRGNwdw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development - BioPharm International",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMnkyMlhyVHZUWmUtMlZiWEI3aTBMcmJuVFI0VFFxbk4wOGtZZjMtOVJQQWs4Sl9Lamx3UWE5ank4WkFXcVRQTTdNMV80RmhOUGlGZGpmb19zNFJoeGdOWEpyV2cyUzNxajlMTm5nYmppbC1FS2FUWmQxdTIxbVAxZmJMLWE2NGlURWlyQzY5dkFoNk9USFFndlFPWHlBZFZsQlJwcVNlYk5Yd3lvU0dqTkxSb1Y3QXVzQi1HZEZuUV9YZjhxRGNwdw?oc=5",
-      "published": "2026-07-16",
-      "summary": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development BioPharm International",
-      "ai_summary": "",
-      "score": 48,
-      "tier": "daily",
-      "category": "partnership",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
-        "业务动作命中: partnership",
-        "高价值分类加成 +10: partnership"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "合作 / 共同开发"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "age_days": 22
+      "age_days": 3
     },
     {
       "id": "d3ee6e6531ea3a0d",
@@ -3400,7 +4166,73 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 44
+      "age_days": 47
+    },
+    {
+      "id": "64aac44c8d3dc548",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMnkyMlhyVHZUWmUtMlZiWEI3aTBMcmJuVFI0VFFxbk4wOGtZZjMtOVJQQWs4Sl9Lamx3UWE5ank4WkFXcVRQTTdNMV80RmhOUGlGZGpmb19zNFJoeGdOWEpyV2cyUzNxajlMTm5nYmppbC1FS2FUWmQxdTIxbVAxZmJMLWE2NGlURWlyQzY5dkFoNk9USFFndlFPWHlBZFZsQlJwcVNlYk5Yd3lvU0dqTkxSb1Y3QXVzQi1HZEZuUV9YZjhxRGNwdw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development - BioPharm International",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMnkyMlhyVHZUWmUtMlZiWEI3aTBMcmJuVFI0VFFxbk4wOGtZZjMtOVJQQWs4Sl9Lamx3UWE5ank4WkFXcVRQTTdNMV80RmhOUGlGZGpmb19zNFJoeGdOWEpyV2cyUzNxajlMTm5nYmppbC1FS2FUWmQxdTIxbVAxZmJMLWE2NGlURWlyQzY5dkFoNk9USFFndlFPWHlBZFZsQlJwcVNlYk5Yd3lvU0dqTkxSb1Y3QXVzQi1HZEZuUV9YZjhxRGNwdw?oc=5",
+      "published": "2026-07-16",
+      "summary": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development BioPharm International",
+      "ai_summary": "",
+      "score": 48,
+      "tier": "daily",
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "业务动作命中: partnership",
+        "高价值分类加成 +10: partnership"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "合作 / 共同开发"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 25
     },
     {
       "id": "c13165325af0f9f1",
@@ -3424,10 +4256,10 @@
         "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVMxeThTcHlUWW13YTNkT01MSl83S1RrWC1YS09xTUxTWVlXNE9ZSVVRX213cEU0NTBZaTB3eW1oWXg1eU9pZEpDWThLR2RoeTE5YVhnX2kyX2k0bWdobVh2YUdCUUc5WHZvWG95WUhHbTRMMWtwbjM4c19LWWJaZlM0Qm01bEZPU09ERS1PNVJyWHozNHhjR1JTVnhXNjc5eDhsbGxFbFJGSEJSaHRrRGg3bm1qOV90TjVwTDkySVU?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series - Food Safety Magazine",
+      "title": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series - food-safety.com",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZVMxeThTcHlUWW13YTNkT01MSl83S1RrWC1YS09xTUxTWVlXNE9ZSVVRX213cEU0NTBZaTB3eW1oWXg1eU9pZEpDWThLR2RoeTE5YVhnX2kyX2k0bWdobVh2YUdCUUc5WHZvWG95WUhHbTRMMWtwbjM4c19LWWJaZlM0Qm01bEZPU09ERS1PNVJyWHozNHhjR1JTVnhXNjc5eDhsbGxFbFJGSEJSaHRrRGg3bm1qOV90TjVwTDkySVU?oc=5",
       "published": "2026-07-08",
-      "summary": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series Food Safety Magazine",
+      "summary": "Thermo Fisher Scientific Launches GENESYS G5 UV-Visible Spectrophotometer Series food-safety.com",
       "ai_summary": "",
       "score": 48,
       "tier": "daily",
@@ -3463,7 +4295,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 30
+      "age_days": 33
     },
     {
       "id": "e8527fc67469fb80",
@@ -3525,7 +4357,7 @@
         "priority": "low",
         "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
       },
-      "age_days": 9
+      "age_days": 12
     },
     {
       "id": "ccaec412fb1ab662",
@@ -3588,7 +4420,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 46
+      "age_days": 49
     },
     {
       "id": "8932f1901ac5e0e2",
@@ -3654,7 +4486,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 3
+      "age_days": 6
     },
     {
       "id": "f6b1fa32e972a688",
@@ -3717,7 +4549,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 4
+      "age_days": 7
     },
     {
       "id": "5ba3709515e65561",
@@ -3780,7 +4612,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 7
+      "age_days": 10
     },
     {
       "id": "0e57e7cdf46cecea",
@@ -3847,7 +4679,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 43
+      "age_days": 46
     },
     {
       "id": "5ae83bf543e3bc12",
@@ -3871,10 +4703,10 @@
         "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXppcnRQMXJsd1RpWUh1T013bmUwY1Yxd0RoMERJUjN6YXVlT1RoUWFLMEM2d0hiWWdsU1Y4eXJVM3QzU1JQd2cwUzNMT2tsVkNFT1dGcmNDaDFtcHU5ek9CTTVqNGcybmQ4VUk3bGpvdjNtRzVXRmdCUVlyRUxqV3lPQWRBYmZUem5oWHhzZnMyeFBMRHBha2JuOU91QVJoNFU2RWhTcm5KS1VscktfZThR?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Bio-Techne Launches Expanded R&D Systems AI-Engineered Designer Protein Portfolio - Bio-Techne Corporation (TECH)",
+      "title": "Bio-Techne Launches Expanded R&D Systems AI-Engineered Designer Protein Portfolio - investors.bio-techne.com",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXppcnRQMXJsd1RpWUh1T013bmUwY1Yxd0RoMERJUjN6YXVlT1RoUWFLMEM2d0hiWWdsU1Y4eXJVM3QzU1JQd2cwUzNMT2tsVkNFT1dGcmNDaDFtcHU5ek9CTTVqNGcybmQ4VUk3bGpvdjNtRzVXRmdCUVlyRUxqV3lPQWRBYmZUem5oWHhzZnMyeFBMRHBha2JuOU91QVJoNFU2RWhTcm5KS1VscktfZThR?oc=5",
       "published": "2026-07-08",
-      "summary": "Bio-Techne Launches Expanded R&D Systems AI-Engineered Designer Protein Portfolio Bio-Techne Corporation (TECH)",
+      "summary": "Bio-Techne Launches Expanded R&D Systems AI-Engineered Designer Protein Portfolio investors.bio-techne.com",
       "ai_summary": "",
       "score": 48,
       "tier": "daily",
@@ -3911,7 +4743,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 30
+      "age_days": 33
     },
     {
       "id": "e735cfa97567e552",
@@ -3980,7 +4812,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 31
+      "age_days": 34
     },
     {
       "id": "f733dae8abf1cdf3",
@@ -4019,7 +4851,7 @@
         "新闻稿分发平台",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 158天，因业务动作匹配保留"
+        "超过时效窗口 161天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -4045,7 +4877,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 158
+      "age_days": 161
     },
     {
       "id": "8ca7d4d2e6737ad8",
@@ -4084,7 +4916,7 @@
         "新闻稿分发平台",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 129天，因业务动作匹配保留"
+        "超过时效窗口 132天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -4110,7 +4942,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 129
+      "age_days": 132
     },
     {
       "id": "d8ceafe4f5c145ff",
@@ -4139,7 +4971,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: vaccine, CRO",
@@ -4179,7 +5011,7 @@
         "priority": "medium",
         "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
-      "age_days": 1
+      "age_days": 4
     },
     {
       "id": "4411636558332204",
@@ -4208,7 +5040,7 @@
       "tier": "daily",
       "category": "regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: mRNA, vaccine",
@@ -4249,7 +5081,7 @@
         "priority": "medium",
         "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
-      "age_days": 2
+      "age_days": 5
     },
     {
       "id": "3d526a27a922e636",
@@ -4312,10 +5144,10 @@
         "priority": "low",
         "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
-      "age_days": 64
+      "age_days": 67
     },
     {
-      "id": "a02dc1b130d38ba4",
+      "id": "6e0ca9ccbebfc675",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma / R&D Systems / Bio-Techne",
       "matched_company_ids": [
@@ -4335,13 +5167,13 @@
         "Google News RSS - Merck KGaA Life Science"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5"
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjJPY29tb1diSWd6SEtEbEdKajdEdFh4RU5nZUtNQVZlNjc2bk9lOVg5WmZZODdBWVJicjI5VmpmN2puby1HWkFSTVgzaGNZLVJrcWVMQ3hBNXI3QmFMRDVoS3pyUjZTcTg0dDI2THVTOVdNTmFra203NzhuYW92SjU3ZnFSaEpRQVBoeEN1UlVfZUEyNWF5eGx4ZFNkMnJnY05NN3k5WTJ4RVY1MG9UZzM5ZEtERWdhWmZR?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5",
+      "title": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion - Medical Device Network",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjJPY29tb1diSWd6SEtEbEdKajdEdFh4RU5nZUtNQVZlNjc2bk9lOVg5WmZZODdBWVJicjI5VmpmN2puby1HWkFSTVgzaGNZLVJrcWVMQ3hBNXI3QmFMRDVoS3pyUjZTcTg0dDI2THVTOVdNTmFra203NzhuYW92SjU3ZnFSaEpRQVBoeEN1UlVfZUEyNWF5eGx4ZFNkMnJnY05NN3k5WTJ4RVY1MG9UZzM5ZEtERWdhWmZR?oc=5",
       "published": "2026-06-25",
-      "summary": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion Yahoo Finance",
+      "summary": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion Medical Device Network",
       "ai_summary": "",
       "score": 46,
       "tier": "daily",
@@ -4380,7 +5212,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 43
+      "age_days": 46
     },
     {
       "id": "6eb9504bc1181d72",
@@ -4447,7 +5279,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 42
+      "age_days": 45
     },
     {
       "id": "829baf886cc936b3",
@@ -4515,7 +5347,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 71
+      "age_days": 74
     },
     {
       "id": "9da1ddd5209d7fc5",
@@ -4582,7 +5414,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 53
+      "age_days": 56
     },
     {
       "id": "2a6dab8a135c09ba",
@@ -4648,10 +5480,10 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 43
+      "age_days": 46
     },
     {
-      "id": "461c33f45137906b",
+      "id": "e0a6c93d11d24db2",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -4669,11 +5501,11 @@
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe77b3442e2881b40d7eef2ab20&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=en-us"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7924e6eaa04aa68618665d399cd6ca&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=en-us"
       ],
       "source_trust": "aggregator",
       "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional expansion project",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a753fe77b3442e2881b40d7eef2ab20&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7924e6eaa04aa68618665d399cd6ca&url=https%3a%2f%2frichmondbizsense.com%2f2026%2f07%2f28%2fpharma-firm-thermo-fisher-misses-hiring-goals-only-gets-partial-incentives-for-regional-expansion-project%2f&c=14430160313610887661&mkt=en-us",
       "published": "2026-07-28",
       "summary": "Back in 2022, the Massachusetts-based firm announced that it would hire more than 500 local employees at facilities in Richmond and Henrico, but only ended up hiring about 190 employees by the time it ...",
       "ai_summary": "",
@@ -4715,73 +5547,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 10
-    },
-    {
-      "id": "4277d3ede329dc18",
-      "company_id": "rd_systems",
-      "company": "R&D Systems / Bio-Techne",
-      "matched_company_ids": [
-        "rd_systems"
-      ],
-      "matched_companies": [
-        "R&D Systems / Bio-Techne"
-      ],
-      "source_id": "google_news_rd_systems",
-      "source_label": "Google News RSS - R&D Systems / Bio-Techne",
-      "source_ids": [
-        "google_news_rd_systems"
-      ],
-      "source_labels": [
-        "Google News RSS - R&D Systems / Bio-Techne"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaVc3bzF2b2tyTE5aZ09mcHNBRFQ3d2I2SVFIYlhTMUxvSDFFOURQSnctS1VCSzkwNVJ4bUJTcFRDTllDempsYzdqOTZZYzlwazZZN200RS1vZnBfYm5aX2RfazJELTRuc2NIa2NvMF9udWVUa1hSa1FEdHQ1LTNtMjVJNjhDLURNZW1xWkt3dVMyUTVhNUZyYWZtcDE2ejlSeEJvMzl0QWwzMkRSRnhmV05Ka3ZjRjZMTUFJUm85R2x4Z2w1bHBheVA3YmMtSUZtczBSWnJvbm81dw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Merck gets $9.5bn underwritten facility for Bio-Techne acquisition - Global Capital",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaVc3bzF2b2tyTE5aZ09mcHNBRFQ3d2I2SVFIYlhTMUxvSDFFOURQSnctS1VCSzkwNVJ4bUJTcFRDTllDempsYzdqOTZZYzlwazZZN200RS1vZnBfYm5aX2RfazJELTRuc2NIa2NvMF9udWVUa1hSa1FEdHQ1LTNtMjVJNjhDLURNZW1xWkt3dVMyUTVhNUZyYWZtcDE2ejlSeEJvMzl0QWwzMkRSRnhmV05Ka3ZjRjZMTUFJUm85R2x4Z2w1bHBheVA3YmMtSUZtczBSWnJvbm81dw?oc=5",
-      "published": "2026-07-31",
-      "summary": "Merck gets $9.5bn underwritten facility for Bio-Techne acquisition Global Capital",
-      "ai_summary": "",
-      "score": 46,
-      "tier": "daily",
-      "category": "market",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Bio-Techne",
-        "业务动作命中: acquisition",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "并购 / 交易"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "age_days": 7
+      "age_days": 13
     },
     {
       "id": "30c0b56fc7886b16",
@@ -4820,7 +5586,7 @@
         "新闻稿分发平台",
         "业务动作命中: clinical",
         "高价值分类加成 +10: product",
-        "超过时效窗口 172天，因业务动作匹配保留"
+        "超过时效窗口 175天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -4846,7 +5612,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 172
+      "age_days": 175
     },
     {
       "id": "77279c247835778a",
@@ -4885,7 +5651,7 @@
         "新闻稿分发平台",
         "业务动作命中: release",
         "高价值分类加成 +10: product",
-        "超过时效窗口 93天，因业务动作匹配保留"
+        "超过时效窗口 96天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -4911,7 +5677,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 93
+      "age_days": 96
     },
     {
       "id": "8e8c22e7a4c8e57a",
@@ -4950,7 +5716,7 @@
         "新闻稿分发平台",
         "业务动作命中: introduce",
         "高价值分类加成 +10: product",
-        "超过时效窗口 113天，因业务动作匹配保留"
+        "超过时效窗口 116天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -4976,7 +5742,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 113
+      "age_days": 116
     },
     {
       "id": "6d3561c7f3242295",
@@ -5043,7 +5809,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 17
+      "age_days": 20
     },
     {
       "id": "4beff6cc21d45f28",
@@ -5067,10 +5833,10 @@
         "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQWlON01xWWRaNXB6TUtDZ0I5WjRnTkg5RFNaeTU0akNpdG5xUGVObEVKSFJDNllTRXRILWhNQ1U4VE01Qzl2RTFjdjRfQ01hSUNFaV9mMkF6a0hYQVl5XzQ3UXlVRGRMZGJ0YWctNnZ3bFlFZnlYM2hsNFRVNEd1WUFzdXBEQVhuY3RIUXJRbUgzSU9kNko4RTNKR0Y0b0JaSXl6bnhiUG50NDNNMWtkRGtkM2c0OGdoX3NlQlZWZ0lucUpOeEJUUlZBODRMRE9QUXdxcXFfbE8tYlkzZlVPajVXTk1TUlJBaWFUMHdiYnA?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Sartorius launches next-generation platform to boost efficiency in cell therapy production - Sartorius",
+      "title": "Sartorius launches next-generation platform to boost efficiency in cell therapy production - sartorius.com",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQWlON01xWWRaNXB6TUtDZ0I5WjRnTkg5RFNaeTU0akNpdG5xUGVObEVKSFJDNllTRXRILWhNQ1U4VE01Qzl2RTFjdjRfQ01hSUNFaV9mMkF6a0hYQVl5XzQ3UXlVRGRMZGJ0YWctNnZ3bFlFZnlYM2hsNFRVNEd1WUFzdXBEQVhuY3RIUXJRbUgzSU9kNko4RTNKR0Y0b0JaSXl6bnhiUG50NDNNMWtkRGtkM2c0OGdoX3NlQlZWZ0lucUpOeEJUUlZBODRMRE9QUXdxcXFfbE8tYlkzZlVPajVXTk1TUlJBaWFUMHdiYnA?oc=5",
       "published": "2026-03-16",
-      "summary": "Sartorius launches next-generation platform to boost efficiency in cell therapy production Sartorius",
+      "summary": "Sartorius launches next-generation platform to boost efficiency in cell therapy production sartorius.com",
       "ai_summary": "",
       "score": 44,
       "tier": "daily",
@@ -5083,7 +5849,7 @@
         "战略主题命中: cell therapy",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 144天，因业务动作匹配保留"
+        "超过时效窗口 147天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -5112,7 +5878,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 144
+      "age_days": 147
     },
     {
       "id": "b44024f031932fd3",
@@ -5175,7 +5941,7 @@
         "priority": "low",
         "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
       },
-      "age_days": 31
+      "age_days": 34
     },
     {
       "id": "dfa4d4f9280ccb4a",
@@ -5215,7 +5981,7 @@
         "战略主题命中: ELISA",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 116天，因业务动作匹配保留"
+        "超过时效窗口 119天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -5241,73 +6007,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 116
-    },
-    {
-      "id": "b1dc6ad64ac29515",
-      "company_id": "sartorius",
-      "company": "Sartorius / Sartorius Stedim Biotech",
-      "matched_company_ids": [
-        "sartorius"
-      ],
-      "matched_companies": [
-        "Sartorius / Sartorius Stedim Biotech"
-      ],
-      "source_id": "sartorius_official_resources_index",
-      "source_label": "Sartorius official events and knowledge - indexed RSS",
-      "source_ids": [
-        "sartorius_official_resources_index"
-      ],
-      "source_labels": [
-        "Sartorius official events and knowledge - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0ZvUHNjOEthU3JuNENZZ0JnNFBSOXFSVERRSnpWQTlobnNKd3MwUDVOVFJSUThlTTJwTlJDNzMzSmxWM0lRcVJMSG5MNnRrZXVvLU5ieGYxUmR1WlN3NXY3eUZ5SzY3a0pBZlJTV0k5TXJYWWRwSFZXQklFOURzVFZyT0lZcUJxSl9DZ2hMQ1ozRmpJWWh2SDM5b2doXy0yUlZLRXZDbUczUjB1VkE?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "Flexsafe STR® 50L (multi-use DO/pH) | Manufacturing Bioreactors - Sartorius eShop",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0ZvUHNjOEthU3JuNENZZ0JnNFBSOXFSVERRSnpWQTlobnNKd3MwUDVOVFJSUThlTTJwTlJDNzMzSmxWM0lRcVJMSG5MNnRrZXVvLU5ieGYxUmR1WlN3NXY3eUZ5SzY3a0pBZlJTV0k5TXJYWWRwSFZXQklFOURzVFZyT0lZcUJxSl9DZ2hMQ1ozRmpJWWh2SDM5b2doXy0yUlZLRXZDbUczUjB1VkE?oc=5",
-      "published": "2026-02-10",
-      "summary": "Flexsafe STR® 50L (multi-use DO/pH) | Manufacturing Bioreactors Sartorius eShop",
-      "ai_summary": "",
-      "score": 44,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +15: Sartorius",
-        "公司自有来源",
-        "战略主题命中: bioreactor",
-        "业务动作命中: manufacturing",
-        "高价值分类加成 +10: product",
-        "超过时效窗口 178天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 178
+      "age_days": 119
     },
     {
       "id": "ac5eb74389317355",
@@ -5347,7 +6047,7 @@
         "战略主题命中: ADC",
         "业务动作命中: clinical",
         "高价值分类加成 +8: regulatory",
-        "超过时效窗口 141天，因业务动作匹配保留"
+        "超过时效窗口 144天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -5377,7 +6077,69 @@
         "priority": "high",
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
-      "age_days": 141
+      "age_days": 144
+    },
+    {
+      "id": "155121aa5eabe85e",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "pharmaceutical_technology_index",
+      "source_label": "Pharmaceutical Technology - manufacturing topic indexed RSS",
+      "source_ids": [
+        "pharmaceutical_technology_index"
+      ],
+      "source_labels": [
+        "Pharmaceutical Technology - manufacturing topic indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWXJia3dCTFlrWUVUby0yNk1JUm0yc2xRS284MEtPWVBHYVM2TjBIU1lHRlB2X0FhSmZEdVJBaDZmYThIVnYzWmZ0bF9MR0hIVlJVdjFaLV8xcGZxYkxQckNvMmJkcEZWcXVvTUxocUJDdUdLMDNZRkVHZjhXTDFvZGJhNU1zRmNBMGdmYmloeU5JTVJvYUE0VW8xRk9yaWlhQVJ5UzBvMVZBZzhGZVdubQ?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "BeOne Manufacturing and R&D Facility Expansion, New Jersey, US - Pharmaceutical Technology",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWXJia3dCTFlrWUVUby0yNk1JUm0yc2xRS284MEtPWVBHYVM2TjBIU1lHRlB2X0FhSmZEdVJBaDZmYThIVnYzWmZ0bF9MR0hIVlJVdjFaLV8xcGZxYkxQckNvMmJkcEZWcXVvTUxocUJDdUdLMDNZRkVHZjhXTDFvZGJhNU1zRmNBMGdmYmloeU5JTVJvYUE0VW8xRk9yaWlhQVJ5UzBvMVZBZzhGZVdubQ?oc=5",
+      "published": "2026-08-07",
+      "summary": "BeOne Manufacturing and R&D Facility Expansion, New Jersey, US Pharmaceutical Technology",
+      "ai_summary": "",
+      "score": 42,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: manufacturing",
+        "业务动作命中: expansion, manufacturing",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "扩产 / 新设施"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 10,
+        "label": "低相关",
+        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
+        "reasons": [
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "age_days": 3
     },
     {
       "id": "e61f19fec7de8ad8",
@@ -5439,7 +6201,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 14
+      "age_days": 17
     },
     {
       "id": "42e822607c51d3d8",
@@ -5501,7 +6263,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 25
+      "age_days": 28
     },
     {
       "id": "b537e2561526483f",
@@ -5566,7 +6328,7 @@
         "priority": "medium",
         "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
       },
-      "age_days": 59
+      "age_days": 62
     },
     {
       "id": "18eb3cf987f9f852",
@@ -5631,73 +6393,73 @@
         "priority": "low",
         "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
       },
-      "age_days": 9
+      "age_days": 12
     },
     {
-      "id": "47e5f219af6aceda",
+      "id": "725bbfcc1e9e0e33",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
       "matched_companies": [],
-      "source_id": "linkj_life_science_events",
-      "source_label": "LINK-J - life science ecosystem events",
+      "source_id": "answersnews_official_rss",
+      "source_label": "AnswersNews - official Japan pharma RSS",
       "source_ids": [
-        "linkj_life_science_events"
+        "answersnews_official_rss"
       ],
       "source_labels": [
-        "LINK-J - life science ecosystem events"
+        "AnswersNews - official Japan pharma RSS"
       ],
       "related_urls": [
-        "https://www.link-j.org/member_event/article-53137.html"
+        "https://answers.and-pro.jp/pharmanews/33014/"
       ],
-      "source_trust": "ecosystem",
-      "title": "令和8年度 第1回産学官連携情報交流セミナー「再生医療の現在地と未来」",
-      "url": "https://www.link-j.org/member_event/article-53137.html",
+      "source_trust": "media",
+      "title": "アステラス、フェゾリネタントを日本で申請／中外、カリフォルニア大サンフランシスコ校と共同研究 など｜製薬業界きょうのニュースまとめ読み（2026年8月7日）",
+      "url": "https://answers.and-pro.jp/pharmanews/33014/",
       "published": "2026-08-07",
-      "summary": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
+      "summary": "アステラス、フェゾリネタントを日本で申請…閉経に伴うVMS治療薬 アステラス製薬は8月7日、閉経に伴う血管運動神経症状（ホットフラッシュおよび発汗、VMS）の治療薬フェゾリネタント（一般名）を日本で申請した",
       "ai_summary": "",
       "score": 42,
       "tier": "daily",
-      "category": "event",
-      "signal_type": "event",
-      "is_new": false,
+      "category": "partnership",
+      "signal_type": "news",
+      "is_new": true,
       "reasons": [
-        "行业生态平台公开来源",
-        "战略主题命中: 再生医療, セミナー",
-        "业务动作命中: 連携",
-        "高价值分类加成 +10: event"
+        "行业编辑媒体",
+        "战略主题命中: 製薬",
+        "业务动作命中: 申請, 共同",
+        "高价值分类加成 +10: partnership"
       ],
       "intelligence": {
         "targets": [],
         "modalities": [],
         "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "产品发布"
+        "development_stages": [
+          "注册 / 审批"
         ],
-        "event_signals": [
-          "Webinar / 线上会议",
-          "研讨会 / 讲座"
-        ]
+        "business_actions": [
+          "合作 / 共同开发",
+          "注册 / 监管动作"
+        ],
+        "event_signals": []
       },
       "acro_relevance": {
         "level": "low",
-        "score": 16,
+        "score": 20,
         "label": "低相关",
-        "explanation": "该活动聚焦生命科学，可评估参会、登台、赞助或合作伙伴接触价值。",
+        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
         "reasons": [
-          "出现明确业务动作",
-          "可转化为活动运营线索"
+          "研发阶段可识别",
+          "出现明确业务动作"
         ]
       },
       "recommended_action": {
-        "type": "event",
-        "label": "活动价值评估",
-        "owner": "区域市场",
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
         "priority": "low",
-        "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 0
+      "age_days": 3
     },
     {
       "id": "a7f1ec125f4caa18",
@@ -5763,7 +6525,7 @@
         "priority": "low",
         "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
       },
-      "age_days": -13
+      "age_days": -10
     },
     {
       "id": "ca7fdd02fe028310",
@@ -5829,7 +6591,70 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 45
+      "age_days": 48
+    },
+    {
+      "id": "34169f73b3c00f7b",
+      "company_id": "acro",
+      "company": "ACROBiosystems / 百普赛斯",
+      "matched_company_ids": [
+        "acro"
+      ],
+      "matched_companies": [
+        "ACROBiosystems / 百普赛斯"
+      ],
+      "source_id": "acro_japan_official_index",
+      "source_label": "ACRO Japan official pages - indexed RSS",
+      "source_ids": [
+        "acro_japan_official_index"
+      ],
+      "source_labels": [
+        "ACRO Japan official pages - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxPc25oUXdfZnhfSkdKaXZIMkhpZkU3UFNZYlZqSDB0aF9mQWszUkdIVm5uNXlTcHluM05qcFNubjdZZUtBQ19sLWo3Y1Vsb3Z4am82eVVuT1R3dUwyNldfOTR0dElBR0Jodm13MU1Pc3VhdXZMcVpiN0NxS1BraFFfdVU1Zw?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Platelet glycoprotein V - ACROBiosystems",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPc25oUXdfZnhfSkdKaXZIMkhpZkU3UFNZYlZqSDB0aF9mQWszUkdIVm5uNXlTcHluM05qcFNubjdZZUtBQ19sLWo3Y1Vsb3Z4am82eVVuT1R3dUwyNldfOTR0dElBR0Jodm13MU1Pc3VhdXZMcVpiN0NxS1BraFFfdVU1Zw?oc=5",
+      "published": "2026-08-07",
+      "summary": "Platelet glycoprotein V ACROBiosystems",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "product",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: ACROBiosystems",
+        "公司自有来源",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 25,
+        "label": "中相关",
+        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
+        "reasons": [
+          "ACRO 自身动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "content",
+        "label": "口径与传播跟进",
+        "owner": "市场运营",
+        "priority": "high",
+        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
+      },
+      "age_days": 3
     },
     {
       "id": "7b2120c6604c90f7",
@@ -5892,7 +6717,7 @@
         "priority": "high",
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
-      "age_days": 3
+      "age_days": 6
     },
     {
       "id": "7eeffb4e443c1276",
@@ -5955,7 +6780,7 @@
         "priority": "high",
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
-      "age_days": 4
+      "age_days": 7
     },
     {
       "id": "c670c1ca9908084c",
@@ -5984,134 +6809,6 @@
       "tier": "daily",
       "category": "product",
       "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: antibody, manufacturing",
-        "业务动作命中: manufacturing",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "抗体",
-          "生物工艺"
-        ],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 22,
-        "label": "低相关",
-        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": [
-          "可映射到 ACRO 产品或服务需求"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 1
-    },
-    {
-      "id": "98cd559de40f92f8",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "pharmaceutical_technology_index",
-      "source_label": "Pharmaceutical Technology - manufacturing topic indexed RSS",
-      "source_ids": [
-        "pharmaceutical_technology_index"
-      ],
-      "source_labels": [
-        "Pharmaceutical Technology - manufacturing topic indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb09wejlRTVBaY1ZEaHluX3RjQ1ltVHN0b3B5Q2lGN2xSZTkwTjJocUpRS1hEemx0Ujg0UWt1YjM5c3VGYzRuN0tfZ0xfcG5MMks5ZF90WkhNb1YxQTYxV2V5dnBaRFMzeHJRaGpuazBxQTNRTWtWLTJNcGJpbmhubXNndF9hdW5GVmFtTlM2cU8xRHV6NkR4Y25ac1dpSU9FVE1fRDZGT0kxTnpO?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "FDA AdCom shuns Capricor’s DMD cell therapy amid data dispute - Pharmaceutical Technology",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb09wejlRTVBaY1ZEaHluX3RjQ1ltVHN0b3B5Q2lGN2xSZTkwTjJocUpRS1hEemx0Ujg0UWt1YjM5c3VGYzRuN0tfZ0xfcG5MMks5ZF90WkhNb1YxQTYxV2V5dnBaRFMzeHJRaGpuazBxQTNRTWtWLTJNcGJpbmhubXNndF9hdW5GVmFtTlM2cU8xRHV6NkR4Y25ac1dpSU9FVE1fRDZGT0kxTnpO?oc=5",
-      "published": "2026-07-30",
-      "summary": "FDA AdCom shuns Capricor’s DMD cell therapy amid data dispute Pharmaceutical Technology",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: ADC, cell therapy",
-        "业务动作命中: FDA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "细胞治疗"
-        ],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "注册 / 监管动作"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 22,
-        "label": "低相关",
-        "explanation": "该信号命中细胞治疗，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "low",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
-      },
-      "age_days": 8
-    },
-    {
-      "id": "5ca3cfd71383b6e9",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "bioprocess_online_index",
-      "source_label": "BioProcess Online - bioprocess topic indexed RSS",
-      "source_ids": [
-        "bioprocess_online_index"
-      ],
-      "source_labels": [
-        "BioProcess Online - bioprocess topic indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQmtON0J5QURkUFJRZHdfVjR3ck1jOUF1TW53TWRPZjJDUHE0Z3VWSmhFV2hXel9SY29zRXR1ZlFQeDQ3QTJzenpIZW5FYXRSTUZDSnFtTUZKRTJqNmlydmtTTlBKbGJDYksyeWZvWmdrcVF5VEViOUpnc28wbnhkRzROSVp4d3FObjhDeVdXd0dBYXc4MmNwNDNaazZzWm8?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "Top 5 Challenges In Antibody-Oligonucleotide Manufacturing - Bioprocess Online",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQmtON0J5QURkUFJRZHdfVjR3ck1jOUF1TW53TWRPZjJDUHE0Z3VWSmhFV2hXel9SY29zRXR1ZlFQeDQ3QTJzenpIZW5FYXRSTUZDSnFtTUZKRTJqNmlydmtTTlBKbGJDYksyeWZvWmdrcVF5VEViOUpnc28wbnhkRzROSVp4d3FObjhDeVdXd0dBYXc4MmNwNDNaazZzWm8?oc=5",
-      "published": "2026-07-10",
-      "summary": "Top 5 Challenges In Antibody-Oligonucleotide Manufacturing Bioprocess Online",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
       "is_new": false,
       "reasons": [
         "行业编辑媒体",
@@ -6146,72 +6843,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 28
-    },
-    {
-      "id": "2a70eb71fb930b4c",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "koreabiomed_apac_index",
-      "source_label": "Korea Biomedical Review - indexed RSS",
-      "source_ids": [
-        "koreabiomed_apac_index"
-      ],
-      "source_labels": [
-        "Korea Biomedical Review - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxZk1MQzY3MVRsaVl4SWUteUpoQmJXZ0oycVlPOEpLMUpHS1l0b3dRa0FkdzJEZm0xSUNINUZBbk52Z0tEdjgwNjU1S0ZENVFTbjNvdHFiU2k0ZWhTNVdIdmZ1S3hQQ3lEOFNOWU530gFyQVVfeXFMT3BCV2x3XzFYNUg2NjBNaDJaUjhKOGJsUmZLZG41b1RpVUV6clVISmVGQk54RXZHV0ZZRzcyb0dfd0xhOWtfb3BobHI2UGlkZ0ZieTBEb2M0OUlDUjRIczFoQ2QybVhQSUtlOUI0M0Viak1B?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "Proteina shares surge 19% after AI antibody option deal with Samsung Bioepis - koreabiomed.com",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxZk1MQzY3MVRsaVl4SWUteUpoQmJXZ0oycVlPOEpLMUpHS1l0b3dRa0FkdzJEZm0xSUNINUZBbk52Z0tEdjgwNjU1S0ZENVFTbjNvdHFiU2k0ZWhTNVdIdmZ1S3hQQ3lEOFNOWU530gFyQVVfeXFMT3BCV2x3XzFYNUg2NjBNaDJaUjhKOGJsUmZLZG41b1RpVUV6clVISmVGQk54RXZHV0ZZRzcyb0dfd0xhOWtfb3BobHI2UGlkZ0ZieTBEb2M0OUlDUjRIczFoQ2QybVhQSUtlOUI0M0Viak1B?oc=5",
-      "published": "2026-07-09",
-      "summary": "Proteina shares surge 19% after AI antibody option deal with Samsung Bioepis koreabiomed.com",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: antibody, protein",
-        "业务动作命中: deal",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "抗体"
-        ],
-        "development_stages": [],
-        "business_actions": [
-          "并购 / 交易"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 32,
-        "label": "中相关",
-        "explanation": "该信号涉及业务推进，可能产生抗体需求，适合纳入潜在客户筛选。",
-        "reasons": [
-          "可映射到 ACRO 产品或服务需求",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "lead",
-        "label": "潜客识别",
-        "owner": "BD / 区域市场",
-        "priority": "medium",
-        "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
-      },
-      "age_days": 29
+      "age_days": 4
     },
     {
       "id": "e32995a6cf1bbecc",
@@ -6279,7 +6911,7 @@
         "priority": "medium",
         "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
       },
-      "age_days": 23
+      "age_days": 26
     },
     {
       "id": "4fe989c5781d3c45",
@@ -6314,7 +6946,7 @@
         "战略主题命中: mRNA, ワクチン, 医薬品",
         "业务动作命中: 申請",
         "高价值分类加成 +8: regulatory",
-        "超过时效窗口 169天，因业务动作匹配保留"
+        "超过时效窗口 172天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -6350,147 +6982,7 @@
         "priority": "medium",
         "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
-      "age_days": 169
-    },
-    {
-      "id": "becabae4cdd3d00a",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "nikkanyaku_life_science_index",
-      "source_label": "Nikkan Yakugyo - life science indexed RSS",
-      "source_ids": [
-        "nikkanyaku_life_science_index"
-      ],
-      "source_labels": [
-        "Nikkan Yakugyo - life science indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5FU0o2OTFjOTZuVVNVZk5YSHU1eURzYU5MaGhkMnFDb2gtWV9mbXVxMExRM1ZjQ2ZfY0hvUG55RjdXYnBEVWRGZg?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "米国、インフルワクチン審査を拒否 米モデルナ申請のmRNA-1010 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5FU0o2OTFjOTZuVVNVZk5YSHU1eURzYU5MaGhkMnFDb2gtWV9mbXVxMExRM1ZjQ2ZfY0hvUG55RjdXYnBEVWRGZg?oc=5",
-      "published": "2026-02-12",
-      "summary": "米国、インフルワクチン審査を拒否 米モデルナ申請のmRNA-1010 | 日刊薬業 - 医薬品産業の総合情報サイト 日刊薬業",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: mRNA, ワクチン, 医薬品",
-        "业务动作命中: 申請",
-        "高价值分类加成 +8: regulatory",
-        "超过时效窗口 176天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "mRNA / RNA",
-          "疫苗"
-        ],
-        "product_needs": [],
-        "development_stages": [
-          "注册 / 审批"
-        ],
-        "business_actions": [
-          "注册 / 监管动作"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 40,
-        "label": "中相关",
-        "explanation": "该信号命中mRNA / RNA、疫苗，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术",
-          "研发阶段可识别",
-          "出现明确业务动作",
-          "包含监管或注册信号"
-        ]
-      },
-      "recommended_action": {
-        "type": "regulatory",
-        "label": "法规影响核对",
-        "owner": "产品 / 法规",
-        "priority": "medium",
-        "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
-      },
-      "age_days": 176
-    },
-    {
-      "id": "39965b2dfc7ca8ee",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "nikkanyaku_life_science_index",
-      "source_label": "Nikkan Yakugyo - life science indexed RSS",
-      "source_ids": [
-        "nikkanyaku_life_science_index"
-      ],
-      "source_labels": [
-        "Nikkan Yakugyo - life science indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE16LVN3RmF6czRNYzU5YjJVaWNfNUVyRGtlT2x2MkZTYXJRdzg4ejN3MWlWcFkzdGo0YzRvM0R3VUMzZlljRzlwQg?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "日本発遺伝子治療薬2品目、年内申請へ 自治医大発ベンチャー、28年黒字化を視野 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE16LVN3RmF6czRNYzU5YjJVaWNfNUVyRGtlT2x2MkZTYXJRdzg4ejN3MWlWcFkzdGo0YzRvM0R3VUMzZlljRzlwQg?oc=5",
-      "published": "2026-02-10",
-      "summary": "日本発遺伝子治療薬2品目、年内申請へ 自治医大発ベンチャー、28年黒字化を視野 | 日刊薬業 - 医薬品産業の総合情報サイト 日刊薬業",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: 遺伝子治療, 医薬品",
-        "业务动作命中: 申請",
-        "高价值分类加成 +10: product",
-        "超过时效窗口 178天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "基因治疗"
-        ],
-        "product_needs": [],
-        "development_stages": [
-          "注册 / 审批"
-        ],
-        "business_actions": [
-          "注册 / 监管动作"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 32,
-        "label": "中相关",
-        "explanation": "该信号命中基因治疗，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术",
-          "研发阶段可识别",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
-      },
-      "age_days": 178
+      "age_days": 172
     },
     {
       "id": "0abe9fa7dc2c1e87",
@@ -6524,7 +7016,8 @@
         "行业编辑媒体",
         "战略主题命中: 遺伝子治療, 医薬品",
         "业务动作命中: 承認",
-        "高价值分类加成 +10: product"
+        "高价值分类加成 +10: product",
+        "超过时效窗口 91天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -6558,7 +7051,7 @@
         "priority": "medium",
         "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
       },
-      "age_days": 88
+      "age_days": 91
     },
     {
       "id": "33fc08a0085a6830",
@@ -6593,7 +7086,7 @@
         "战略主题命中: 遺伝子治療, 医薬品",
         "业务动作命中: 申請, 共同",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 130天，因业务动作匹配保留"
+        "超过时效窗口 133天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -6627,7 +7120,7 @@
         "priority": "medium",
         "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
       },
-      "age_days": 130
+      "age_days": 133
     },
     {
       "id": "bc750ca574940a9c",
@@ -6692,7 +7185,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 3
+      "age_days": 6
     },
     {
       "id": "dead8fe52aef764b",
@@ -6761,7 +7254,7 @@
         "priority": "high",
         "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
       },
-      "age_days": 3
+      "age_days": 6
     },
     {
       "id": "57ceeee94a462382",
@@ -6823,69 +7316,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 3
-    },
-    {
-      "id": "a9df8aea44a5407e",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "pharmcube_company_pool_index",
-      "source_label": "Pharmcube / ByDrug - company pool indexed RSS",
-      "source_ids": [
-        "pharmcube_company_pool_index"
-      ],
-      "source_labels": [
-        "Pharmcube / ByDrug - company pool indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMifkFVX3lxTE9jVEdOOFNoeFVoQmlEcHR3QW96TU8zNHZiLWlSMU1pQjVpWGYxZFhZMmRpQkNjZHNidHFPOE5VVkpMUUxxXzdUb0c2ZDJYejZEb0Z6Ml9QZVJWdnBVMmRKOGx1UUQ5MTRwZDVkV1UtU2RIYlF3cFNLX2dHNDVZdw?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "百普赛斯，港股IPO递表失败！ - ByDrug",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9jVEdOOFNoeFVoQmlEcHR3QW96TU8zNHZiLWlSMU1pQjVpWGYxZFhZMmRpQkNjZHNidHFPOE5VVkpMUUxxXzdUb0c2ZDJYejZEb0Z6Ml9QZVJWdnBVMmRKOGx1UUQ5MTRwZDVkV1UtU2RIYlF3cFNLX2dHNDVZdw?oc=5",
-      "published": "2026-07-30",
-      "summary": "百普赛斯，港股IPO递表失败！ ByDrug",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "finance",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: 百普赛斯",
-        "行业编辑媒体"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "age_days": 8
+      "age_days": 6
     },
     {
       "id": "f33a325948caf65f",
@@ -6909,10 +7340,10 @@
         "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NZjNIQ2pRa2tMU01EcHg2NGVMMXc2Wm51WHRYNWRzZUh1NmY0VzdqeGY5bVY1b2ltSHhsYWU3MzhxZngtQWsyS3VzdHNDb2gwZW5KRmQtMnloX2UzVHllaTBER1REYV9rNVhIYXRoLWtaRDFpTnBKN3laUWc?oc=5"
       ],
       "source_trust": "owned",
-      "title": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for HPLC - emdgroup.com",
+      "title": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for HPLC - EMDGroup.com.",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NZjNIQ2pRa2tMU01EcHg2NGVMMXc2Wm51WHRYNWRzZUh1NmY0VzdqeGY5bVY1b2ltSHhsYWU3MzhxZngtQWsyS3VzdHNDb2gwZW5KRmQtMnloX2UzVHllaTBER1REYV9rNVhIYXRoLWtaRDFpTnBKN3laUWc?oc=5",
       "published": "2026-04-21",
-      "summary": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for HPLC emdgroup.com",
+      "summary": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for HPLC EMDGroup.com.",
       "ai_summary": "",
       "score": 40,
       "tier": "daily",
@@ -6924,7 +7355,7 @@
         "公司自有来源",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 108天，因业务动作匹配保留"
+        "超过时效窗口 111天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -6950,7 +7381,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 108
+      "age_days": 111
     },
     {
       "id": "041ed5fe146fb6cf",
@@ -6974,10 +7405,10 @@
         "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThQT2JzcDhSSzlzMTFJQ19XYmJhUXQ1Vko0a0UwODYwdm5HVWRMOHVteFJRdllJVW9rWWtac2JZNjdBWVNTZkh0U2hVbklQMk9JMWJIUXF6YWg1LWFGM2N0ZndGZEtGdmd4MVhQcFlVZVlicXBOa2dQVHJXMnVSRzU4TFVIbTh5VnMxSGdxekRQVVJYRGV2Sm9XSUZaaVdLZU5pTVExbk1zYXlsN1R3Y1FKVEJwMVhYaVQ1SXpKZ1JfYkJnOV8zMDQ5Y1VBT2pTRjBzbUxYdklxYUoxZUdkaDJaMTdrOGt4QnpsOHFWS1FqU1pSampqMUFGTQ?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Sartorius launches rational-design CHO host cell line with up to three-fold increase in productivity - Sartorius",
+      "title": "Sartorius launches rational-design CHO host cell line with up to three-fold increase in productivity - sartorius.com",
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThQT2JzcDhSSzlzMTFJQ19XYmJhUXQ1Vko0a0UwODYwdm5HVWRMOHVteFJRdllJVW9rWWtac2JZNjdBWVNTZkh0U2hVbklQMk9JMWJIUXF6YWg1LWFGM2N0ZndGZEtGdmd4MVhQcFlVZVlicXBOa2dQVHJXMnVSRzU4TFVIbTh5VnMxSGdxekRQVVJYRGV2Sm9XSUZaaVdLZU5pTVExbk1zYXlsN1R3Y1FKVEJwMVhYaVQ1SXpKZ1JfYkJnOV8zMDQ5Y1VBT2pTRjBzbUxYdklxYUoxZUdkaDJaMTdrOGt4QnpsOHFWS1FqU1pSampqMUFGTQ?oc=5",
       "published": "2026-03-03",
-      "summary": "Sartorius launches rational-design CHO host cell line with up to three-fold increase in productivity Sartorius",
+      "summary": "Sartorius launches rational-design CHO host cell line with up to three-fold increase in productivity sartorius.com",
       "ai_summary": "",
       "score": 40,
       "tier": "daily",
@@ -6989,7 +7420,7 @@
         "公司自有来源",
         "业务动作命中: launch",
         "高价值分类加成 +10: product",
-        "超过时效窗口 157天，因业务动作匹配保留"
+        "超过时效窗口 160天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7018,7 +7449,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 157
+      "age_days": 160
     },
     {
       "id": "87eff043d5e9c1cb",
@@ -7057,7 +7488,7 @@
         "公司自有来源",
         "战略主题命中: cell therapy",
         "业务动作命中: manufacturing",
-        "超过时效窗口 151天，因业务动作匹配保留"
+        "超过时效窗口 154天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7089,7 +7520,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 151
+      "age_days": 154
     },
     {
       "id": "e530be2f2ff78ac6",
@@ -7128,7 +7559,7 @@
         "公司自有来源",
         "业务动作命中: agreement",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 102天，因业务动作匹配保留"
+        "超过时效窗口 105天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7154,7 +7585,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 102
+      "age_days": 105
     },
     {
       "id": "b706ef6c303c6abf",
@@ -7193,7 +7624,7 @@
         "公司自有来源",
         "业务动作命中: collaboration",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 120天，因业务动作匹配保留"
+        "超过时效窗口 123天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7222,7 +7653,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 120
+      "age_days": 123
     },
     {
       "id": "2c3834e263f50da2",
@@ -7285,70 +7716,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 68
-    },
-    {
-      "id": "d92cd8cb231f482e",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "thermo_events_index",
-      "source_label": "Thermo Fisher official Events and Webinars - indexed RSS",
-      "source_ids": [
-        "thermo_events_index"
-      ],
-      "source_labels": [
-        "Thermo Fisher official Events and Webinars - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcGc0VUFzS3JldzR0UXVTN1h6cDJfSkxfOUtKZTFHMWJfek9kcE5kNHgwOXY0SUVSU2JKXzhNMFZ5Yl9UTGdYaEFscWw5RHlnN2Rxa19EX0l5VlNrXzVWM3pyYVdISjVpVkpHdXc4NHVrQ0xnU2lsejVzTzl0QTEyUzB4NldkM28?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "Getting Started with Single Particle Cryo-EM: How to Access the NIH National Centers - Thermo Fisher Scientific",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcGc0VUFzS3JldzR0UXVTN1h6cDJfSkxfOUtKZTFHMWJfek9kcE5kNHgwOXY0SUVSU2JKXzhNMFZ5Yl9UTGdYaEFscWw5RHlnN2Rxa19EX0l5VlNrXzVWM3pyYVdISjVpVkpHdXc4NHVrQ0xnU2lsejVzTzl0QTEyUzB4NldkM28?oc=5",
-      "published": "2026-08-06",
-      "summary": "Getting Started with Single Particle Cryo-EM: How to Access the NIH National Centers Thermo Fisher Scientific",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "event",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
-        "公司自有来源",
-        "高价值分类加成 +10: event"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 1
+      "age_days": 71
     },
     {
       "id": "1f15f4e319568889",
@@ -7411,7 +7779,77 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 10
+      "age_days": 13
+    },
+    {
+      "id": "1718a9d0f2e36e62",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "thermo_japan_official_index",
+      "source_label": "Thermo Fisher Japan official pages - indexed RSS",
+      "source_ids": [
+        "thermo_japan_official_index"
+      ],
+      "source_labels": [
+        "Thermo Fisher Japan official pages - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiekFVX3lxTFBlNUprc01GNWhtbmpzYzNzcWZob2U5Sl9SVENlVnQtRXZLREdaZFhLYVYzbW1oRlFmRXVwc0ZSaVFPdHhvRlRsaUZkOWg3cmllVFNSRHF0aGFnc2VyaS1Zc3d1a0drbjhoRFBvbFdxbkZwWWlTRjNEMUlB?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "3D細胞培養オンラインセミナー - Thermo Fisher Scientific",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBlNUprc01GNWhtbmpzYzNzcWZob2U5Sl9SVENlVnQtRXZLREdaZFhLYVYzbW1oRlFmRXVwc0ZSaVFPdHhvRlRsaUZkOWg3cmllVFNSRHF0aGFnc2VyaS1Zc3d1a0drbjhoRFBvbFdxbkZwWWlTRjNEMUlB?oc=5",
+      "published": "2026-08-07",
+      "summary": "3D細胞培養オンラインセミナー Thermo Fisher Scientific",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "event",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
+        "公司自有来源",
+        "高价值分类加成 +10: event"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [
+          "细胞培养 / 培养基"
+        ],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": [
+          "Webinar / 线上会议",
+          "研讨会 / 讲座"
+        ]
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 46,
+        "label": "中相关",
+        "explanation": "竞品正在推进细胞培养 / 培养基相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "可映射到 ACRO 产品或服务需求",
+          "可转化为活动运营线索"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "age_days": 3
     },
     {
       "id": "043c3f382d2dd024",
@@ -7476,7 +7914,75 @@
         "priority": "low",
         "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
       },
-      "age_days": -13
+      "age_days": -10
+    },
+    {
+      "id": "e7e58bcdb515026f",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "linkj_life_science_events",
+      "source_label": "LINK-J - life science ecosystem events",
+      "source_ids": [
+        "linkj_life_science_events"
+      ],
+      "source_labels": [
+        "LINK-J - life science ecosystem events"
+      ],
+      "related_urls": [
+        "https://www.link-j.org/member_event/article-53581.html"
+      ],
+      "source_trust": "ecosystem",
+      "title": "ハイブリッドセミナーのご案内 | 抗体医薬品（mAbs、BsAbs、TsAbs）のためのCMCおよび薬事戦略",
+      "url": "https://www.link-j.org/member_event/article-53581.html",
+      "published": "2026-08-27",
+      "summary": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
+      "ai_summary": "",
+      "score": 40,
+      "tier": "daily",
+      "category": "event",
+      "signal_type": "event",
+      "is_new": true,
+      "reasons": [
+        "行业生态平台公开来源",
+        "战略主题命中: 抗体, 抗体医薬, セミナー",
+        "高价值分类加成 +10: event"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [
+          "抗体"
+        ],
+        "development_stages": [],
+        "business_actions": [
+          "产品发布"
+        ],
+        "event_signals": [
+          "Webinar / 线上会议",
+          "研讨会 / 讲座"
+        ]
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 38,
+        "label": "中相关",
+        "explanation": "该信号涉及业务推进，可能产生抗体需求，适合纳入潜在客户筛选。",
+        "reasons": [
+          "可映射到 ACRO 产品或服务需求",
+          "出现明确业务动作",
+          "可转化为活动运营线索"
+        ]
+      },
+      "recommended_action": {
+        "type": "lead",
+        "label": "潜客识别",
+        "owner": "BD / 区域市场",
+        "priority": "medium",
+        "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
+      },
+      "age_days": -17
     },
     {
       "id": "ac7a0850e5be41b0",
@@ -7511,7 +8017,7 @@
         "战略主题命中: 創薬",
         "业务动作命中: 連携, 覚書",
         "高价值分类加成 +10: event",
-        "超过时效窗口 108天，因业务动作匹配保留"
+        "超过时效窗口 111天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7540,75 +8046,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 108
-    },
-    {
-      "id": "977864664856d46f",
-      "company_id": "promega",
-      "company": "Promega",
-      "matched_company_ids": [
-        "promega"
-      ],
-      "matched_companies": [
-        "Promega"
-      ],
-      "source_id": "promega_official_press_index",
-      "source_label": "Promega official press releases - indexed RSS",
-      "source_ids": [
-        "promega_official_press_index",
-        "businesswire_expanded_company_pool_index"
-      ],
-      "source_labels": [
-        "Promega official press releases - indexed RSS",
-        "Business Wire - expanded competitor pool indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdHlIUUlNNUt2a0d5bE42aEhqWjdLU05nVmhBZnNKZnAzSGpmb2pha0h0LTQ0MU1rV3Y0STBwRjItQ01Xbk5QVU5RY1NaSW5rRTlfTGhFSGZqQm5GYTYzX3Q1cHVOamlzSWxyZVUxTGRrMlctcG42SDdKTUVBcUJfZFFxemYzNmFrdWpBdGNFX3N0RUZvSHh5TlhQNmtLck9feWdkT3JlOW5va1FOYjlEMDhrVlRibjdXcWZQaGZETXRIMm95a1lmbw?oc=5",
-        "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcExoTURnQzdyd1c0M0pZRms1Y0V3SXBXYUpsRzJ6NVZtNjRuSjhRN1lwaEdpTjVZYnFwV3NWVGwwU1cxUTZtYzJET21RZ3BxdklvOHRMd21NcU83SWVtNUJ1cE9XeGVSc0lzNk03NjFOZkZ6OEhOOTEzWU9BUFpERHVsRkZWUU8zNTZzVXp0bnlvb09maE1QMmwyM2JTck1iT0VzMi1HbjJUZWhELTRmc3REcUdqM3p3RUFnbUMtY0FrYTMxYjhVcEZuanc3RlVNcXdmN2tTMWRldEFxbTlSQUFUVkpMalM1bG5jVzJ3ZXk1eHozRUF5VQ?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "Promega Unveils Cellular Target Engagement Technology Aimed at Expanding the Druggable Proteome at SLAS 2026 - Promega Corporation",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdHlIUUlNNUt2a0d5bE42aEhqWjdLU05nVmhBZnNKZnAzSGpmb2pha0h0LTQ0MU1rV3Y0STBwRjItQ01Xbk5QVU5RY1NaSW5rRTlfTGhFSGZqQm5GYTYzX3Q1cHVOamlzSWxyZVUxTGRrMlctcG42SDdKTUVBcUJfZFFxemYzNmFrdWpBdGNFX3N0RUZvSHh5TlhQNmtLck9feWdkT3JlOW5va1FOYjlEMDhrVlRibjdXcWZQaGZETXRIMm95a1lmbw?oc=5",
-      "published": "2026-02-09",
-      "summary": "Promega Unveils Cellular Target Engagement Technology Aimed at Expanding the Druggable Proteome at SLAS 2026 Promega Corporation",
-      "ai_summary": "",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +15: Promega, Promega Corporation",
-        "公司自有来源",
-        "业务动作命中: unveil",
-        "高价值分类加成 +10: product",
-        "超过时效窗口 179天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "age_days": 179
+      "age_days": 111
     },
     {
       "id": "b3ea2f168c9aa568",
@@ -7650,7 +8088,7 @@
         "公司自有来源",
         "业务动作命中: agreement",
         "高价值分类加成 +10: partnership",
-        "超过时效窗口 115天，因业务动作匹配保留"
+        "超过时效窗口 118天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7676,7 +8114,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 115
+      "age_days": 118
     },
     {
       "id": "077650a760f56e84",
@@ -7700,10 +8138,10 @@
         "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVFVvT1Rnb1pHaHZtSHdLMWlOZTNHMG9SWERKSEJpcUsyVVd3ZF9hQ2xnaXZJT3lnU1FnOExYSTJ4VEhVMmRva2hFYW5CWVV3TUUxN2lRb2lsdWZwVGxrZVgxY0pLYmczaU5mWk5QNWgzamFUWHhxUXYtLW11cHdSVjNxX3hHY0ZGTjloYTJZanlWelBUQWRFaWFmM0RqaEJTTTlGNjZ1SGJLRjVobW1raDZR?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Bio-Techne Releases Third Quarter Fiscal 2026 Results - Bio-Techne Corporation (TECH)",
+      "title": "Bio-Techne Releases Third Quarter Fiscal 2026 Results - investors.bio-techne.com",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVFVvT1Rnb1pHaHZtSHdLMWlOZTNHMG9SWERKSEJpcUsyVVd3ZF9hQ2xnaXZJT3lnU1FnOExYSTJ4VEhVMmRva2hFYW5CWVV3TUUxN2lRb2lsdWZwVGxrZVgxY0pLYmczaU5mWk5QNWgzamFUWHhxUXYtLW11cHdSVjNxX3hHY0ZGTjloYTJZanlWelBUQWRFaWFmM0RqaEJTTTlGNjZ1SGJLRjVobW1raDZR?oc=5",
       "published": "2026-05-06",
-      "summary": "Bio-Techne Releases Third Quarter Fiscal 2026 Results Bio-Techne Corporation (TECH)",
+      "summary": "Bio-Techne Releases Third Quarter Fiscal 2026 Results investors.bio-techne.com",
       "ai_summary": "",
       "score": 40,
       "tier": "daily",
@@ -7715,7 +8153,7 @@
         "公司自有来源",
         "业务动作命中: release",
         "高价值分类加成 +10: product",
-        "超过时效窗口 93天，因业务动作匹配保留"
+        "超过时效窗口 96天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7741,7 +8179,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 93
+      "age_days": 96
     },
     {
       "id": "37834b02a6d3560f",
@@ -7765,10 +8203,10 @@
         "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXVpaUg2WTRFTU50TS1tZGdOS2VhcXlRYjRRZkhXVGZlVW52MHBWMW82M01MLTJPVWJNNWlfckFPQWJwbjNSS2hBT2hNWHBJYUJ3cTJ2Zkg4REhSN1FBbDRfV0ZQNGQ3Vm5jc2kwRzFIWHRoSHotSS1nYjUwaGxDZmtVdmQzV3FJMmNZTm9UZUI0c0xRUlN1VEJrN2lMd24zS3FaRTFsRGhQZXg4bnAwQS15cjh0QQ?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Driving Sustainable Biomanufacturing with Single-Use Technologies - Sartorius",
+      "title": "Driving Sustainable Biomanufacturing with Single-Use Technologies - sartorius.com",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXVpaUg2WTRFTU50TS1tZGdOS2VhcXlRYjRRZkhXVGZlVW52MHBWMW82M01MLTJPVWJNNWlfckFPQWJwbjNSS2hBT2hNWHBJYUJ3cTJ2Zkg4REhSN1FBbDRfV0ZQNGQ3Vm5jc2kwRzFIWHRoSHotSS1nYjUwaGxDZmtVdmQzV3FJMmNZTm9UZUI0c0xRUlN1VEJrN2lMd24zS3FaRTFsRGhQZXg4bnAwQS15cjh0QQ?oc=5",
       "published": "2026-03-03",
-      "summary": "Driving Sustainable Biomanufacturing with Single-Use Technologies Sartorius",
+      "summary": "Driving Sustainable Biomanufacturing with Single-Use Technologies sartorius.com",
       "ai_summary": "",
       "score": 40,
       "tier": "daily",
@@ -7780,7 +8218,7 @@
         "公司自有来源",
         "战略主题命中: single-use",
         "业务动作命中: manufacturing",
-        "超过时效窗口 157天，因业务动作匹配保留"
+        "超过时效窗口 160天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -7809,7 +8247,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 157
+      "age_days": 160
     },
     {
       "id": "18eb63f029cccd93",
@@ -7875,7 +8313,7 @@
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
-      "age_days": 48
+      "age_days": 51
     },
     {
       "id": "8cd12cc00742c32f",
@@ -7938,7 +8376,7 @@
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
-      "age_days": 33
+      "age_days": 36
     }
   ]
 }
