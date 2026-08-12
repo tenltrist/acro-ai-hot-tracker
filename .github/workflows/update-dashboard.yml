@@ -18,6 +18,9 @@ jobs:
       - name: Generate dashboard data
         run: python3 scripts/run_daily.py --days 90
 
+      - name: Validate dashboard data
+        run: python3 scripts/validate_dashboard.py
+
       - name: Build share page
         run: python3 scripts/build_share_page.py
 

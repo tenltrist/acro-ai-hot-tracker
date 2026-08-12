@@ -1970,7 +1970,7 @@ select {
 
 .company-coverage-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
   margin-bottom: 12px;
 }
@@ -1990,6 +1990,11 @@ select {
 .company-coverage-metrics article.needs-review {
   border-color: #e3bd80;
   background: #fff9ed;
+}
+
+.company-coverage-metrics article.has-output {
+  border-color: #a9d9ca;
+  background: #f0f8f5;
 }
 
 .company-coverage-metrics span,
@@ -2129,6 +2134,14 @@ select {
 .company-coverage-result strong {
   color: #1c7076;
   font-size: 11px;
+}
+
+.company-coverage-result.runtime-quiet strong {
+  color: #7a6b4d;
+}
+
+.company-coverage-result.runtime-selected strong {
+  color: #176b55;
 }
 
 .company-coverage-result small {
@@ -3579,7 +3592,8 @@ select {
   border-top: 0;
 }
 
-.matrix-row > span {
+.matrix-row > span,
+.matrix-row > button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3592,7 +3606,23 @@ select {
   text-align: center;
 }
 
-.matrix-row > span:first-child {
+.matrix-row > button {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.matrix-row > button:hover,
+.matrix-row > button:focus-visible {
+  outline: 2px solid #176f77;
+  outline-offset: -2px;
+  filter: saturate(1.2);
+}
+
+.matrix-row > span:first-child,
+.matrix-row > button:first-child {
   justify-content: flex-start;
   border-left: 0;
 }
@@ -3813,6 +3843,17 @@ select {
   color: #34434d;
   font-size: 14px;
   line-height: 1.65;
+}
+
+.business-summary-toggle.summary-rule summary span,
+.business-summary.summary-rule span {
+  color: #5f747b;
+}
+
+.business-summary-toggle.summary-ai,
+.business-summary.summary-ai {
+  border-color: #b8dcda;
+  background: #f3fafa;
 }
 
 .feed,
@@ -4891,6 +4932,34 @@ select {
 
   .company-coverage-metrics {
     grid-template-columns: 1fr;
+  }
+
+  .customer-directory {
+    overflow-x: visible;
+    border: 0;
+  }
+
+  .customer-directory-head {
+    display: none;
+  }
+
+  .customer-directory-row {
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 12px;
+    margin-bottom: 8px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+  }
+
+  .customer-type-tags,
+  .customer-parent-cell {
+    grid-column: 1 / -1;
+  }
+
+  .customer-signal-count {
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .company-coverage-slot header {

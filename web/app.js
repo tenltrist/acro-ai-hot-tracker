@@ -2314,7 +2314,7 @@ function renderJapanCustomerPool() {
   const signalMarkup = matches.length ? matches.slice(0, 5).map((item) => `
     <a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
       <strong>${escapeHtml(item.title)}</strong>
-      <span>${escapeHtml(item.published || "日期待核对")} · ${escapeHtml(labelBusinessEvent(getBusinessEventType(item), true))}</span>
+      <span>${escapeHtml(getItemDateLabel(item))} · ${escapeHtml(labelBusinessEvent(getBusinessEventType(item), true))}</span>
     </a>`).join("") : '<p>当前抓取结果没有可靠名称命中，关系与机会保持待发现状态。</p>';
   els.japanCustomerDetail.innerHTML = `
     <header><span>名单客户锚点</span><h3>${escapeHtml(selected.name)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
@@ -2609,7 +2609,7 @@ function getDynamicRelationshipCandidates() {
     const isRelationship = item.category === "partnership" || actions.some((action) =>
       ["合作 / 共同开发", "授权 / 引进", "并购 / 交易"].includes(action),
     );
-    if (!isRelationship || !["daily", "immediate"].includes(item.tier) || Number(item.age_days || 0) > 90) continue;
+    if (!isRelationship || !["daily", "immediate"].includes(item.tier) || !itemIsWithinRange(item, 90)) continue;
     const sourceCompany = companiesById.get(item.matched_company_ids?.[0]);
     if (!sourceCompany) continue;
     const sourceOrganization = sourceCompany?.display_name || item.matched_companies?.[0] || item.company || "";
@@ -2970,18 +2970,23 @@ function renderCompanySourceCoverage() {
     ["active", "covered"].includes(profile.slots?.[definition.id]?.status),
   ).length;
   const gapSlots = Math.max(0, definitions.length - coveredSlots);
+  const companyItems = (state.payload?.items || []).filter((item) =>
+    (item.matched_company_ids || []).includes(state.coverageCompany),
+  );
+  const companySelected = companyItems.filter((item) => ["immediate", "daily"].includes(item.tier));
 
   els.companyCoverageTitle.textContent = company
     ? `${company.display_name} · 10 板块数据源档案`
     : "公司数据源档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
-    ? `监测重点：${company.monitoring_focus}`
+    ? `监测重点：${company.monitoring_focus}。配置覆盖表示入口已经登记，实际产出以本轮命中为准。`
     : "专属来源、共享覆盖与待补入口统一展示。";
   els.companyCoverageMetrics.innerHTML = `
     <article><span>专属运行源</span><strong>${dedicatedIds.length}</strong><small>直接绑定该公司</small></article>
     <article><span>共享覆盖源</span><strong>${sharedIds.length}</strong><small>新闻稿、地区媒体或研究池</small></article>
-    <article><span>已覆盖板块</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>专属运行或已有共享覆盖</small></article>
-    <article class="${gapSlots ? "needs-review" : "is-clear"}"><span>待补板块</span><strong>${gapSlots}</strong><small>待接入、待恢复或尚未配置</small></article>
+    <article><span>配置覆盖</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>${gapSlots} 个板块待补</small></article>
+    <article class="${companyItems.length ? "has-output" : "needs-review"}"><span>本轮实际命中</span><strong>${companyItems.length}</strong><small>真正关联到该公司</small></article>
+    <article class="${companySelected.length ? "has-output" : "needs-review"}"><span>进入日报</span><strong>${companySelected.length}</strong><small>通过相关性与动作门槛</small></article>
   `;
 
   els.companyCoverageGrid.innerHTML = definitions.map((definition) => {
@@ -2994,8 +2999,11 @@ function renderCompanySourceCoverage() {
     const status = coverageStatusMeta[slot.status] || coverageStatusMeta.planned;
     const summary = summarizeCoverageSlot(slot, state.coverageCompany);
     const sourceNames = summary.rows.map((row) => row.source_label);
+    const runtimeClass = summary.selected ? "selected" : summary.total ? "archive" : "quiet";
     const result = slot.source_ids?.length
-      ? `${slot.source_ids.length} 个来源 · 本轮候选 ${summary.total} · 日报 ${summary.selected}`
+      ? summary.total
+        ? `本轮实际命中 ${summary.total} 条 · ${summary.selected} 条进入日报`
+        : `${slot.source_ids.length} 个入口已配置 · 本轮未命中该公司`
       : "尚未配置运行入口";
     return `
       <article class="company-coverage-slot status-${status.className}">
@@ -3006,7 +3014,7 @@ function renderCompanySourceCoverage() {
         </header>
         <p>${escapeHtml(definition.description)}</p>
         <div class="company-coverage-note">${escapeHtml(slot.note || "")}</div>
-        <div class="company-coverage-result"><strong>${escapeHtml(result)}</strong>${sourceNames.length ? `<small title="${escapeAttr(sourceNames.join("\n"))}">${escapeHtml(sourceNames.slice(0, 2).join(" / "))}${sourceNames.length > 2 ? ` +${sourceNames.length - 2}` : ""}</small>` : ""}</div>
+        <div class="company-coverage-result runtime-${runtimeClass}"><strong>${escapeHtml(result)}</strong>${sourceNames.length ? `<small title="${escapeAttr(sourceNames.join("\n"))}">${escapeHtml(sourceNames.slice(0, 2).join(" / "))}${sourceNames.length > 2 ? ` +${sourceNames.length - 2}` : ""}</small>` : ""}</div>
       </article>
     `;
   }).join("");
@@ -3056,9 +3064,13 @@ async function loadData() {
     els.updatedAt.textContent = `同步失败，仍显示 ${previousRun}`;
     els.healthGeneratedAt.textContent = `同步失败，仍显示本轮 ${previousRun}`;
   }
-  els.refreshButton.disabled = false;
+  els.refreshButton.disabled = !canLoadLiveData;
   els.refreshButton.classList.remove("is-loading");
   els.refreshButton.removeAttribute("aria-busy");
+  if (!canLoadLiveData) {
+    els.refreshButton.title = "当前是本地文件快照；请使用 localhost 或在线地址同步最新结果";
+    els.refreshButton.setAttribute("aria-label", els.refreshButton.title);
+  }
 }
 
 function hydrateFilters() {
@@ -3127,6 +3139,9 @@ const businessEventDefinitions = {
 };
 
 function getBusinessEventType(item) {
+  if (item.business_event_type && businessEventDefinitions[item.business_event_type]) {
+    return item.business_event_type;
+  }
   const intelligence = item.intelligence || {};
   const actions = intelligence.business_actions || [];
   const text = `${item.title || ""} ${item.summary || ""} ${item.ai_summary || ""}`;
@@ -3249,7 +3264,7 @@ function renderBusinessLaneItems(container, items, emptyText, laneType) {
       <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
         <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
         <strong>${escapeHtml(item.title)}</strong>
-        <small>${escapeHtml(item.published || "日期待核对")} · ${Number(item.score) || 0} 分</small>
+        <small>${escapeHtml(getItemDateLabel(item))} · ${Number(item.score) || 0} 分</small>
       </a>
     `;
   }).join("");
@@ -3449,7 +3464,7 @@ function renderCompanyTopicMatrix() {
   const companies = sortCompaniesForDisplay(primaryCompetitors.length ? primaryCompetitors : competitorCompanies);
   const matrixCompanyById = new Map(companies.map((company) => [company.id, company]));
   const items = (state.payload.items || []).filter((item) =>
-    Math.max(0, Math.floor(Number(item.age_days) || 0)) < 90 &&
+    itemIsWithinRange(item, 90) &&
     (item.matched_company_ids || []).some((id) => matrixCompanyById.has(id)),
   );
   const resolveCompanyId = (item) => {
@@ -3502,7 +3517,8 @@ function renderCompanyTopicMatrix() {
         const count = matrix[company.id][category];
         const selected = selectedMatrix[company.id][category];
         const intensity = count ? Math.max(1, Math.ceil((count / Math.max(max, 1)) * 4)) : 0;
-        return `<span class="matrix-cell intensity-${intensity}" title="${count} 条监测信号 · ${selected} 条进入日报">${count || "–"}</span>`;
+        if (!count) return '<span class="matrix-cell intensity-0">–</span>';
+        return `<button class="matrix-cell intensity-${intensity}" type="button" data-matrix-company="${escapeAttr(company.display_name)}" data-matrix-category="${escapeAttr(category)}" title="查看 ${count} 条监测信号，其中 ${selected} 条进入日报">${count}</button>`;
       }).join("")}
     </div>
   `).join("");
@@ -3959,14 +3975,17 @@ function getDisplaySummary(item) {
 }
 
 function renderBusinessSummary(item, compact) {
-  const label = state.translationLanguage === "en" ? "Business brief" : "业务摘要";
+  const isLlm = item.summary_method === "llm";
+  const label = state.translationLanguage === "en"
+    ? isLlm ? "AI summary" : "Rule brief"
+    : isLlm ? "AI 摘要" : "规则提要";
   const text = getDisplaySummary(item);
   if (!compact) {
-    return `<p class="summary business-summary"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
+    return `<p class="summary business-summary summary-${isLlm ? "ai" : "rule"}"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
   }
   const preview = firstReadableSentence(text, state.translationLanguage === "en" ? 110 : 72) || text;
   const expandLabel = state.translationLanguage === "en" ? "Details" : "展开";
-  return `<details class="business-summary-toggle">
+  return `<details class="business-summary-toggle summary-${isLlm ? "ai" : "rule"}">
     <summary><span>${escapeHtml(label)}</span><b>${escapeHtml(preview)}</b><i>${escapeHtml(expandLabel)}</i></summary>
     <p>${escapeHtml(text)}</p>
   </details>`;
@@ -4135,7 +4154,7 @@ function renderSignalCards(container, items, compact) {
             ? `命中：${item.matched_companies.join(" / ")}`
             : "未命中公司池",
         )}</span>
-        <span class="tag">${escapeHtml(item.published || "no date")}</span>
+        <span class="tag date-tag ${item.event_start_at ? "event-date" : "published-date"}">${escapeHtml(getItemDateLabel(item))}</span>
         <span class="tag source-origin">${escapeHtml(getSourceLabelText(item))}</span>
       </div>
       ${renderBusinessSummary(item, compact)}
@@ -4270,14 +4289,11 @@ function escapeAttr(value) {
 function renderSourceHealth() {
   const rows = getSourceHealthRows();
   const errors = rows.filter((row) => row.status === "error");
-  const runningCount = rows.filter((row) => row.enabled !== false).length;
+  const productiveCount = rows.filter((row) => row.status === "productive").length;
+  const archiveCount = rows.filter((row) => row.status === "archive_only").length;
   const pendingCount = rows.filter((row) => row.status === "pending").length;
   const quietCount = rows.filter((row) => row.status === "quiet").length;
-  els.healthStatus.textContent = errors.length
-    ? `${errors.length} 异常 · ${runningCount} 运行`
-    : pendingCount
-      ? `${runningCount} 运行 · ${pendingCount} 待配置`
-      : `${runningCount} 来源运行正常`;
+  els.healthStatus.textContent = `${productiveCount} 有效 · ${archiveCount} 仅归档 · ${quietCount} 无内容 · ${errors.length} 异常${pendingCount ? ` · ${pendingCount} 待配置` : ""}`;
 
   if (!els.healthList) return;
   if (errors.length === 0) {
@@ -4516,7 +4532,7 @@ function exportCsv() {
     return;
   }
 
-  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "商业事件", "靶点", "疗法技术", "产品需求", "研发阶段", "业务动作", "活动信号", "ACRO相关性", "相关性解释", "建议动作", "负责人", "理由", "摘要", "URL"];
+  const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "活动日期", "分数", "分层", "商业事件", "靶点", "疗法技术", "产品需求", "研发阶段", "业务动作", "活动信号", "ACRO相关性", "相关性解释", "建议动作", "负责人", "理由", "摘要方式", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
     const translatedAction = translateRecommendedAction(item.recommended_action || {});
@@ -4526,7 +4542,8 @@ function exportCsv() {
         csvCell(item.company),
         csvCell(labelSignalType(item.signal_type || "news")),
         csvCell((item.source_labels || [item.source_label]).join(" + ")),
-        csvCell(item.published || ""),
+        csvCell(item.published_at || ""),
+        csvCell(item.event_start_at || ""),
         item.score,
         csvCell(labelTier(item.tier)),
         csvCell(labelBusinessEventLanguage(getBusinessEventType(item))),
@@ -4541,6 +4558,7 @@ function exportCsv() {
         csvCell(state.translationLanguage === "en" ? translatedAction.label : item.recommended_action?.label || ""),
         csvCell(state.translationLanguage === "en" ? translatedAction.owner : item.recommended_action?.owner || ""),
         csvCell(item.reasons.slice(0, 3).join("; ")),
+        csvCell(item.summary_method === "llm" ? "AI 摘要" : "规则提要"),
         csvCell(getDisplaySummary(item)),
         item.url,
       ].join(",")
@@ -4562,13 +4580,38 @@ function csvCell(value) {
   return `"${escaped}"`;
 }
 
+function itemIsWithinRange(item, days) {
+  if (item.event_start_at) {
+    if (item.days_until_event === null || item.days_until_event === undefined || item.days_until_event === "") return true;
+    const until = Number(item.days_until_event);
+    return Number.isFinite(until) ? until >= -days && until < days : true;
+  }
+  if (item.age_days === null || item.age_days === undefined || item.age_days === "") return true;
+  const age = Number(item.age_days);
+  return Number.isFinite(age) ? age >= 0 && age < days : true;
+}
+
+function getItemDateLabel(item) {
+  if (item.event_start_at) {
+    const hasOffset = item.days_until_event !== null && item.days_until_event !== undefined && item.days_until_event !== "";
+    const until = Number(item.days_until_event);
+    const suffix = hasOffset && Number.isFinite(until)
+      ? until > 0 ? ` · ${until} 天后` : until === 0 ? " · 今天" : ` · ${Math.abs(until)} 天前`
+      : "";
+    return `活动 ${item.event_start_at}${suffix}`;
+  }
+  return item.published_at || item.published
+    ? `发布 ${item.published_at || item.published}`
+    : "日期待核对";
+}
+
 function getFilteredItems() {
   const query = state.searchQuery.toLowerCase().trim();
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
   return state.payload.items
-    .filter((item) => Math.max(0, Math.floor(Number(item.age_days) || 0)) < state.timeRange)
+    .filter((item) => itemIsWithinRange(item, state.timeRange))
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter(
       (item) => state.relevance === "all" || (item.acro_relevance?.level || "low") === state.relevance,
@@ -4791,6 +4834,29 @@ els.openRelationshipsButton.addEventListener("click", () => {
 });
 
 els.refreshButton.addEventListener("click", () => loadData());
+
+els.companyTopicMatrix.addEventListener("click", (event) => {
+  const cell = event.target.closest("[data-matrix-company][data-matrix-category]");
+  if (!cell) return;
+  state.company = cell.dataset.matrixCompany;
+  state.category = cell.dataset.matrixCategory;
+  state.tier = "all";
+  state.role = "all";
+  state.timeRange = 90;
+  state.page = "signals";
+  els.companyFilter.value = state.company;
+  els.categoryFilter.value = state.category;
+  els.tierFilter.value = "all";
+  els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
+    button.classList.toggle("active", Number(button.dataset.timeRange) === 90);
+  });
+  els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.roleFilter === "all");
+  });
+  renderPage();
+  renderOverviewScope();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 els.sourceStageFilter.addEventListener("change", (event) => {
   state.sourceStage = event.target.value;

@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-12T16:13:46",
+  "generated_at": "2026-08-12T17:14:34",
   "category_mix": {
     "partnership": 79,
     "event": 162,
     "regulatory": 173,
-    "product": 238,
+    "product": 236,
     "company": 569,
     "video": 80,
-    "market": 40,
+    "market": 41,
     "finance": 39,
     "award": 11,
     "research": 80
   },
   "source_mix": {
     "ACRO official News - indexed RSS": 1,
-    "Google News RSS - ACROBiosystems": 39,
+    "Google News RSS - ACROBiosystems": 38,
     "ACRO official Events and Webinars - indexed RSS": 1,
     "ACRO official Insights - indexed RSS": 13,
     "ACRO Japan official pages - indexed RSS": 8,
@@ -35,7 +35,7 @@
     "SelectScience - life science product indexed RSS": 8,
     "BioSpectrum Asia - APAC biotech indexed RSS": 22,
     "Korea Biomedical Review - indexed RSS": 26,
-    "BioSpectrum India - indexed RSS": 12,
+    "BioSpectrum India - indexed RSS": 13,
     "Nikkan Yakugyo - life science indexed RSS": 30,
     "AnswersNews - official Japan pharma RSS": 10,
     "Mix Online - official Japan pharma RSS": 30,
@@ -53,7 +53,7 @@
     "Thermo Fisher Biotech at Scale RSS": 10,
     "Thermo Fisher official Events and Webinars - indexed RSS": 3,
     "Thermo Fisher Japan official pages - indexed RSS": 10,
-    "Bing News RSS - Thermo Fisher backup": 11,
+    "Bing News RSS - Thermo Fisher backup": 10,
     "Google News RSS - Thermo Fisher Japan": 49,
     "PR Times - monitored company pool indexed RSS": 25,
     "Bing News RSS - ACROBiosystems backup": 2,
@@ -121,7 +121,7 @@
     "Takara Bio Japan official pages - indexed RSS": 11
   },
   "signal_type_mix": {
-    "news": 1072,
+    "news": 1071,
     "video": 80,
     "filing": 1,
     "funding": 20,

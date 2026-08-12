@@ -62,6 +62,8 @@ class Candidate:
     intelligence: dict[str, list[str]] = field(default_factory=dict)
     acro_relevance: dict[str, Any] = field(default_factory=dict)
     recommended_action: dict[str, str] = field(default_factory=dict)
+    business_event_type: str = "corporate_strategy"
+    selection_reason: str = ""
 
     def __post_init__(self) -> None:
         if not self.source_ids:
@@ -374,14 +376,32 @@ def extract_calendar_date(value: str) -> str:
         return ""
 
 
-def age_days(value: str) -> int | None:
+def parse_calendar_date(value: str) -> dt.date | None:
     if not value:
         return None
+    match = re.match(r"^(20\d{2})-(\d{1,2})-(\d{1,2})", clean_text(value))
+    if not match:
+        return None
     try:
-        published = dt.date.fromisoformat(value[:10])
+        return dt.date(*(int(part) for part in match.groups()))
     except ValueError:
         return None
-    return (dt.date.today() - published).days
+
+
+def age_days(value: str) -> int | None:
+    published = parse_calendar_date(value)
+    return (dt.date.today() - published).days if published else None
+
+
+def days_until(value: str) -> int | None:
+    event_date = parse_calendar_date(value)
+    return (event_date - dt.date.today()).days if event_date else None
+
+
+def latest_calendar_value(values: list[str]) -> str:
+    dated = [(parse_calendar_date(value), value) for value in values]
+    valid = [(date, value) for date, value in dated if date]
+    return max(valid, key=lambda row: row[0])[1] if valid else ""
 
 
 HTML_NOISE_TITLES = {
@@ -1120,6 +1140,7 @@ def apply_source_tier_policy(
         and item.tier != "archive"
     ):
         item.tier = "archive"
+        item.selection_reason = "来源处于观察期，仅归档"
         item.reasons.append("试接观察源：当前只归档，不进日报")
     return item
 
@@ -1203,10 +1224,6 @@ def build_rule_summary(item: Candidate, matched_companies: list[dict[str, Any]])
 
     if focus:
         opening += f"，重点涉及{focus}"
-    else:
-        title_point = first_sentence(item.title, 90)
-        if title_point:
-            opening += f"，主题为“{title_point}”"
     opening += "。"
 
     raw_point = ""
@@ -1384,6 +1401,47 @@ def build_recommended_action(
     return {"type": "archive", "label": "归档观察", "owner": "系统", "priority": "low", "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"}
 
 
+def classify_business_event_type(
+    item: Candidate,
+    matched_companies: list[dict[str, Any]],
+) -> str:
+    intelligence = item.intelligence or {}
+    actions = intelligence.get("business_actions") or []
+    text = clean_text(f"{item.title} {item.summary}")
+    roles = {company.get("business_role", "unclassified") for company in matched_companies}
+    if re.search(r"\b(?:GMP|quality|supply chain|ISO 13485|ISO 17025|material suitability|raw material)\b|质量|供应链|原料合规", text, re.I):
+        return "quality_supply"
+    if item.recommended_action.get("type") == "lead":
+        return "customer_demand"
+    if item.category == "partnership" or any(
+        action in {"合作 / 共同开发", "授权 / 引进", "并购 / 交易"}
+        for action in actions
+    ):
+        return "partnership_deal"
+    if (
+        item.category == "regulatory"
+        or intelligence.get("development_stages")
+        or "临床里程碑" in actions
+        or "注册 / 监管动作" in actions
+    ):
+        return "clinical_regulatory"
+    if (
+        item.signal_type == "event"
+        or item.category in {"event", "video"}
+        or intelligence.get("event_signals")
+    ):
+        return "market_activity"
+    if item.category == "market" or "市场进入" in actions or "扩产 / 新设施" in actions:
+        return "regional_expansion"
+    if item.category == "product" or "产品发布" in actions:
+        return "product_platform"
+    if intelligence.get("targets") or intelligence.get("modalities") or item.category == "research":
+        return "target_therapy"
+    if intelligence.get("product_needs") and not roles:
+        return "customer_demand"
+    return "corporate_strategy"
+
+
 def enrich_candidate_intelligence(
     item: Candidate,
     intelligence_rules: dict[str, Any],
@@ -1392,6 +1450,33 @@ def enrich_candidate_intelligence(
     item.intelligence = extract_intelligence(item, intelligence_rules)
     item.acro_relevance = build_acro_relevance(item, matched_companies)
     item.recommended_action = build_recommended_action(item, matched_companies)
+    item.business_event_type = classify_business_event_type(item, matched_companies)
+    return item
+
+
+def apply_daily_admission_policy(item: Candidate) -> Candidate:
+    """Keep the daily feed decision-grade while retaining rejected items in archive."""
+    if item.tier == "archive":
+        item.selection_reason = "未达到日报基础分数"
+        return item
+
+    relevance = item.acro_relevance.get("level", "low")
+    action_type = item.recommended_action.get("type", "archive")
+    if relevance == "low":
+        item.tier = "archive"
+        item.selection_reason = "ACRO 相关性较低，仅归档"
+        item.reasons.append("日报准入：低相关信号降为归档")
+        return item
+
+    if not item.matched_company_ids and relevance == "medium" and action_type in {"archive", "trend"}:
+        item.tier = "archive"
+        item.selection_reason = "未命中公司且暂无明确业务动作，仅归档"
+        item.reasons.append("日报准入：未命中公司且缺少明确业务动作")
+        return item
+
+    if item.tier == "immediate" and relevance != "high":
+        item.tier = "daily"
+    item.selection_reason = "命中公司或中高相关业务信号"
     return item
 
 
@@ -1582,8 +1667,10 @@ def build_dashboard_payload(
     company_source_coverage: dict[str, Any],
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
+    summary_methods: dict[str, str] | None = None,
 ) -> dict[str, Any]:
     ai_summaries = ai_summaries or {}
+    summary_methods = summary_methods or {}
     new_items = [item for item in candidates if item.key not in seen]
     tiers = {
         "immediate": [item for item in candidates if item.tier == "immediate"],
@@ -1646,7 +1733,7 @@ def build_dashboard_payload(
                 "selected_rate": round(
                     ((tier_counts["immediate"] + tier_counts["daily"]) / len(source_items)) * 100
                 ) if source_items else 0,
-                "last_published": max(dated_items) if dated_items else "",
+                "last_published": latest_calendar_value(dated_items),
                 "error": errors_by_source.get(source["id"], ""),
                 "note": source.get("disabled_reason", "") or source.get("health_note", ""),
                 "snapshot_count": runtime.get("snapshot_count", 0),
@@ -1724,16 +1811,27 @@ def build_dashboard_payload(
                 "published": item.published,
                 "summary": item.summary,
                 "ai_summary": ai_summaries.get(item.key, ""),
+                "summary_method": summary_methods.get(item.key, "rule"),
+                "summary_quality": (
+                    "source_backed"
+                    if item.summary and not is_low_information_summary(item.summary, item.title)
+                    else "structured_inference"
+                ),
                 "score": item.score,
                 "tier": item.tier,
                 "category": item.category,
+                "business_event_type": item.business_event_type,
                 "signal_type": item.signal_type,
                 "is_new": item.key not in seen,
                 "reasons": item.reasons,
                 "intelligence": item.intelligence,
                 "acro_relevance": item.acro_relevance,
                 "recommended_action": item.recommended_action,
-                "age_days": age_days(item.published),
+                "selection_reason": item.selection_reason,
+                "published_at": "" if item.signal_type == "event" else item.published,
+                "event_start_at": item.published if item.signal_type == "event" else "",
+                "age_days": None if item.signal_type == "event" else age_days(item.published),
+                "days_until_event": days_until(item.published) if item.signal_type == "event" else None,
             }
             for item in sorted(candidates, key=lambda x: (x.tier != "immediate", -x.score))
         ],
@@ -1865,16 +1963,11 @@ def main() -> int:
             if profile_id in source_profiles:
                 profiles.append(source_profiles[profile_id])
         profile = merge_scoring_profiles(profiles)
-        scored.append(
-            apply_source_tier_policy(
-                enrich_candidate_intelligence(
-                    score_candidate(item, profile, matched_companies, args.days),
-                    intelligence_rules,
-                    matched_companies,
-                ),
-                source_lookup,
-            )
-        )
+        scored_item = score_candidate(item, profile, matched_companies, args.days)
+        enrich_candidate_intelligence(scored_item, intelligence_rules, matched_companies)
+        apply_daily_admission_policy(scored_item)
+        apply_source_tier_policy(scored_item, source_lookup)
+        scored.append(scored_item)
 
     # Business summary for dashboard cards. The rule-based pass is always on so
     # the UI never falls back to title-like RSS descriptions; optional LLM output
@@ -1890,6 +1983,7 @@ def main() -> int:
         )
         for item in scored
     }
+    summary_methods = {item.key: "rule" for item in scored}
     if args.ai_summary:
         summary_candidates = [item for item in scored if item.tier in {"immediate", "daily"}]
         for item in summary_candidates:
@@ -1904,6 +1998,7 @@ def main() -> int:
             ai_text = generate_ai_summary(item, company_name)
             if ai_text:
                 ai_summaries[item.key] = ai_text
+                summary_methods[item.key] = "llm"
 
     report = build_report(scored, errors, seen, company_lookup, args.days, ai_summaries)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
@@ -1919,6 +2014,7 @@ def main() -> int:
         company_source_coverage,
         args.days,
         ai_summaries,
+        summary_methods,
     )
     save_json(LATEST_RUN_PATH, payload)
     write_static_api(payload)
