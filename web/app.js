@@ -3753,6 +3753,17 @@ function renderBusinessInsight(item, compact) {
   };
   const isEnglish = state.translationLanguage === "en";
   const translatedAction = translateRecommendedAction(action);
+  if (compact) {
+    const relevanceLabel = isEnglish ? getRelevanceLabel(item) : relevance.label || "待分析";
+    const actionLabel = isEnglish ? translatedAction.label : action.label || "归档观察";
+    const actionOwner = isEnglish ? translatedAction.owner : action.owner || "待确认";
+    const explanation = firstReadableSentence(getRelevanceExplanation(item), 74);
+    return `<div class="business-insight-strip relevance-${escapeAttr(relevance.level || "low")}">
+      <div class="strip-score"><strong>${Number(relevance.score) || 0}</strong><span>ACRO ${escapeHtml(relevanceLabel)}</span></div>
+      <p>${escapeHtml(explanation)}</p>
+      <div class="strip-action"><strong>${escapeHtml(actionLabel)}</strong><span>${escapeHtml(actionOwner)}</span></div>
+    </div>`;
+  }
   return `<div class="business-insight relevance-${escapeAttr(relevance.level || "low")}${compact ? " is-compact" : ""}">
     <div class="business-insight-copy">
       <div class="business-insight-title">
@@ -3875,6 +3886,20 @@ function getDisplaySummary(item) {
       ? "暂无可用摘要，建议打开原文核对。"
       : item.summary
   );
+}
+
+function renderBusinessSummary(item, compact) {
+  const label = state.translationLanguage === "en" ? "Business brief" : "业务摘要";
+  const text = getDisplaySummary(item);
+  if (!compact) {
+    return `<p class="summary business-summary"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
+  }
+  const preview = firstReadableSentence(text, state.translationLanguage === "en" ? 110 : 72) || text;
+  const expandLabel = state.translationLanguage === "en" ? "Details" : "展开";
+  return `<details class="business-summary-toggle">
+    <summary><span>${escapeHtml(label)}</span><b>${escapeHtml(preview)}</b><i>${escapeHtml(expandLabel)}</i></summary>
+    <p>${escapeHtml(text)}</p>
+  </details>`;
 }
 
 function buildClientBusinessSummaryEn(item) {
@@ -4043,7 +4068,7 @@ function renderSignalCards(container, items, compact) {
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
         <span class="tag source-origin">${escapeHtml(getSourceLabelText(item))}</span>
       </div>
-      <p class="summary business-summary"><span>${state.translationLanguage === "en" ? "Business brief" : "业务摘要"}</span>${escapeHtml(getDisplaySummary(item))}</p>
+      ${renderBusinessSummary(item, compact)}
       ${renderBusinessInsight(item, compact)}
       ${compact ? "" : renderIntelligenceFields(item)}
       ${compact ? "" : `<ul class="reason-list">
