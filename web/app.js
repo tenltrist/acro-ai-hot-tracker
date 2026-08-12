@@ -3729,6 +3729,80 @@ function renderBusinessInsight(item, compact) {
   </div>`;
 }
 
+function normalizeSummaryForCompare(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\s+-\s+[^-]{2,80}$/g, "")
+    .replace(/[^\w一-鿿ぁ-んァ-ン]+/g, "");
+}
+
+function isLowInformationSummary(summary, title) {
+  const summaryNorm = normalizeSummaryForCompare(summary);
+  const titleNorm = normalizeSummaryForCompare(title);
+  if (!summaryNorm) return true;
+  if (summaryNorm === titleNorm) return true;
+  if (titleNorm && (summaryNorm.startsWith(titleNorm) || titleNorm.startsWith(summaryNorm))) return true;
+  return summaryNorm.length < 28;
+}
+
+function firstReadableSentence(value, maxLength = 120) {
+  const text = String(value || "")
+    .replace(/\s+/g, " ")
+    .replace(/\s+-\s+[^-]{2,80}$/g, "")
+    .trim();
+  if (!text) return "";
+  const first = text.split(/(?<=[。.!！？])\s+/)[0].trim();
+  return first.length > maxLength ? `${first.slice(0, maxLength).replace(/[，,、；;:：\s]+$/g, "")}...` : first;
+}
+
+function getStructuredFocus(item) {
+  const intelligence = item.intelligence || {};
+  return [
+    ...(intelligence.targets || []),
+    ...(intelligence.modalities || []),
+    ...(intelligence.product_needs || []),
+  ].filter(Boolean).slice(0, 4).join("、");
+}
+
+function buildClientBusinessSummary(item) {
+  const company = item.matched_companies?.length ? item.matched_companies.slice(0, 2).join(" / ") : "行业公开信号";
+  const eventLabel = labelBusinessEvent(getBusinessEventType(item), true);
+  const role = getItemRole(item);
+  const focus = getStructuredFocus(item);
+  let opening = "";
+  if (role === "self") {
+    opening = `${company}更新了${eventLabel}相关内容`;
+  } else if (role === "competitor") {
+    opening = `竞品 ${company} 出现${eventLabel}信号`;
+  } else if (role === "customer") {
+    opening = `客户池公司 ${company} 出现${eventLabel}信号`;
+  } else if ((item.signal_type || "news") === "event") {
+    opening = "这是一条市场活动或生态平台信号";
+  } else {
+    opening = `这是一条${eventLabel}类公开信息`;
+  }
+  opening += focus ? `，重点涉及${focus}。` : `，主题为“${firstReadableSentence(item.title, 90)}”。`;
+
+  const rawPoint = !isLowInformationSummary(item.summary, item.title)
+    ? `原始摘要要点：${firstReadableSentence(item.summary, 110)}。`
+    : "";
+  const relevance = item.acro_relevance?.explanation || "";
+  const action = item.recommended_action
+    ? `建议按“${item.recommended_action.label || "归档观察"}”处理：${item.recommended_action.text || ""}`
+    : "";
+  return [opening, rawPoint, relevance, action].filter(Boolean).join(" ").slice(0, 280);
+}
+
+function getDisplaySummary(item) {
+  const aiSummary = String(item.ai_summary || "").trim();
+  if (aiSummary) return aiSummary;
+  return buildClientBusinessSummary(item) || (
+    isLowInformationSummary(item.summary, item.title)
+      ? "暂无可用摘要，建议打开原文核对。"
+      : item.summary
+  );
+}
+
 function renderSignalCards(container, items, compact) {
   if (!container) return;
   container.innerHTML = "";
@@ -3774,7 +3848,7 @@ function renderSignalCards(container, items, compact) {
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
         <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
-      <p class="summary">${escapeHtml(item.ai_summary || item.summary || "暂无摘要，建议回原文核对。")}</p>
+      <p class="summary business-summary"><span>业务摘要</span>${escapeHtml(getDisplaySummary(item))}</p>
       ${renderBusinessInsight(item, compact)}
       ${compact ? "" : renderIntelligenceFields(item)}
       ${compact ? "" : `<ul class="reason-list">

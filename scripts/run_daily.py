@@ -1130,6 +1130,102 @@ def normalize_title(value: str) -> str:
     return re.sub(r"[^\w]+", "", headline, flags=re.UNICODE).lower()
 
 
+def normalize_summary_text(value: str) -> str:
+    return re.sub(r"[^\w一-鿿ぁ-んァ-ン]+", "", clean_text(value).lower())
+
+
+def is_low_information_summary(summary: str, title: str) -> bool:
+    summary_norm = normalize_summary_text(summary)
+    title_norm = normalize_summary_text(re.sub(r"\s+-\s+[^-]{2,80}$", "", title))
+    if not summary_norm:
+        return True
+    if summary_norm == title_norm:
+        return True
+    if title_norm and (summary_norm.startswith(title_norm) or title_norm.startswith(summary_norm)):
+        return True
+    return len(summary_norm) < 28
+
+
+def first_sentence(value: str, max_chars: int = 120) -> str:
+    text = clean_text(value)
+    if not text:
+        return ""
+    text = re.sub(r"\s+-\s+[^-]{2,80}$", "", text).strip()
+    parts = re.split(r"(?<=[。.!！？])\s+", text, maxsplit=1)
+    text = parts[0].strip()
+    if len(text) > max_chars:
+        text = text[:max_chars].rstrip("，,、；;:： ") + "..."
+    return text
+
+
+def join_labels(values: list[str], limit: int = 3) -> str:
+    labels = list(dict.fromkeys(value for value in values if value).keys())[:limit]
+    return "、".join(labels)[:120] if labels else ""
+
+
+def build_rule_summary(item: Candidate, matched_companies: list[dict[str, Any]]) -> str:
+    """Create a low-cost business summary when no LLM summary is available."""
+    roles = {company.get("business_role", "unclassified") for company in matched_companies}
+    company_names = [company.get("display_name", "") for company in matched_companies if company.get("display_name")]
+    subject = " / ".join(company_names[:2]) or "行业公开信号"
+    intelligence = item.intelligence or {}
+    focus = join_labels(
+        [
+            *(intelligence.get("targets") or []),
+            *(intelligence.get("modalities") or []),
+            *(intelligence.get("product_needs") or []),
+        ],
+        4,
+    )
+    action_label = item.recommended_action.get("label", "") if item.recommended_action else ""
+    event_hint = {
+        "product": "产品与平台动态",
+        "event": "市场活动信息",
+        "video": "视频或 Webinar 内容",
+        "research": "技术与研究内容",
+        "regulatory": "临床监管信号",
+        "partnership": "合作或交易信号",
+        "market": "市场与区域动态",
+        "finance": "资本或业绩信号",
+        "company": "公司战略与组织动态",
+    }.get(item.category, "公开信息")
+
+    if "self" in roles:
+        opening = f"{subject}更新了{event_hint}"
+    elif "competitor" in roles:
+        opening = f"竞品 {subject} 出现{event_hint}"
+    elif "customer" in roles:
+        opening = f"客户池公司 {subject} 出现{event_hint}"
+    elif item.signal_type == "event":
+        opening = f"该来源捕捉到一条市场活动信号"
+    else:
+        opening = f"该来源捕捉到一条{event_hint}"
+
+    if focus:
+        opening += f"，重点涉及{focus}"
+    else:
+        title_point = first_sentence(item.title, 90)
+        if title_point:
+            opening += f"，主题为“{title_point}”"
+    opening += "。"
+
+    raw_point = ""
+    if item.summary and not is_low_information_summary(item.summary, item.title):
+        raw_point = first_sentence(item.summary, 110)
+        if raw_point:
+            raw_point = f"原始摘要要点：{raw_point}。"
+
+    relevance = item.acro_relevance.get("explanation", "") if item.acro_relevance else ""
+    action = ""
+    if item.recommended_action:
+        action = f"建议按“{action_label or '归档观察'}”处理：{item.recommended_action.get('text', '')}"
+
+    summary = clean_text(" ".join(part for part in [opening, raw_point, relevance, action] if part))
+    if len(summary) > 280:
+        summary = summary[:280].rstrip("，,、；;:： ") + "..."
+    return summary
+
+
 def match_candidate_companies(
     item: Candidate,
     company_lookup: dict[str, dict[str, Any]],
@@ -1777,8 +1873,20 @@ def main() -> int:
             )
         )
 
-    # AI summary for daily/immediate items
-    ai_summaries: dict[str, str] = {}
+    # Business summary for dashboard cards. The rule-based pass is always on so
+    # the UI never falls back to title-like RSS descriptions; optional LLM output
+    # can overwrite it for daily/immediate items.
+    ai_summaries: dict[str, str] = {
+        item.key: build_rule_summary(
+            item,
+            [
+                company_lookup[company_id]
+                for company_id in item.matched_company_ids
+                if company_id in company_lookup
+            ],
+        )
+        for item in scored
+    }
     if args.ai_summary:
         summary_candidates = [item for item in scored if item.tier in {"immediate", "daily"}]
         for item in summary_candidates:

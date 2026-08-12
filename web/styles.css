@@ -3814,6 +3814,23 @@ select {
   margin: 0;
 }
 
+.business-summary {
+  color: #34434d;
+  background: #f8fbfb;
+  border: 1px solid #e1ecef;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+
+.business-summary span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  color: #08767f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .reason-list {
   margin: 0;
   padding-left: 18px;
