@@ -495,6 +495,33 @@ h2 {
   display: none;
 }
 
+.translation-toggle {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(34px, 1fr));
+  height: 38px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f6fafb;
+}
+
+.translation-toggle button {
+  height: 30px;
+  min-width: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #60717b;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.translation-toggle button.active {
+  background: var(--teal);
+  color: #fff;
+}
+
 button,
 select {
   border: 1px solid var(--line);
@@ -4963,6 +4990,10 @@ select {
           <select id="categoryFilter" aria-label="按商业事件筛选">
             <option value="all">全部商业事件</option>
           </select>
+          <div class="translation-toggle" id="translationToggle" aria-label="切换新闻分析语言">
+            <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
+            <button type="button" data-translation-language="en" title="Show English brief">EN</button>
+          </div>
           <button class="icon-button" id="exportCsvButton" type="button" title="导出CSV" aria-label="导出CSV">CSV</button>
           <button class="icon-button" id="refreshButton" type="button" title="同步已完成的最新抓取结果" aria-label="同步已完成的最新抓取结果">
             <span aria-hidden="true">↻</span>
@@ -103468,6 +103499,7 @@ window.AIHOT_JAPAN_CUSTOMERS = {
     </script>
     <script>
 const FEEDBACK_STORE_KEY = "aihot_feedback";
+const TRANSLATION_LANGUAGE_KEY = "aihot_translation_language";
 
 function loadFeedback() {
   try {
@@ -103486,6 +103518,23 @@ function saveFeedback(id, value) {
   }
   localStorage.setItem(FEEDBACK_STORE_KEY, JSON.stringify(fb));
   return fb;
+}
+
+function loadTranslationLanguage() {
+  try {
+    const value = localStorage.getItem(TRANSLATION_LANGUAGE_KEY);
+    return value === "en" ? "en" : "zh";
+  } catch {
+    return "zh";
+  }
+}
+
+function saveTranslationLanguage(value) {
+  try {
+    localStorage.setItem(TRANSLATION_LANGUAGE_KEY, value);
+  } catch {
+    // Ignore storage failures; the toggle still works for the current session.
+  }
 }
 
 const state = {
@@ -103514,6 +103563,7 @@ const state = {
   customerSignalStatus: "all",
   selectedCustomerId: null,
   dockOpenRoles: new Set(["self"]),
+  translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
   history: null,
 };
@@ -105402,6 +105452,7 @@ const els = {
   categoryFilter: document.querySelector("#categoryFilter"),
   companyFilter: document.querySelector("#companyFilter"),
   searchInput: document.querySelector("#searchInput"),
+  translationToggle: document.querySelector("#translationToggle"),
   exportCsvButton: document.querySelector("#exportCsvButton"),
   refreshButton: document.querySelector("#refreshButton"),
   healthStatus: document.querySelector("#healthStatus"),
@@ -106500,9 +106551,19 @@ function render() {
   els.windowDays.textContent = `${state.timeRange} 天`;
   els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
 
+  renderTranslationToggle();
   renderOverviewScope();
   renderRules();
   renderPage();
+}
+
+function renderTranslationToggle() {
+  if (!els.translationToggle) return;
+  els.translationToggle.querySelectorAll("[data-translation-language]").forEach((button) => {
+    const active = button.dataset.translationLanguage === state.translationLanguage;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
 
 function getSignalTypeItems() {
@@ -106512,15 +106573,15 @@ function getSignalTypeItems() {
 }
 
 const businessEventDefinitions = {
-  product_platform: { label: "产品与平台", short: "产品平台" },
-  target_therapy: { label: "靶点与治疗方向", short: "靶点疗法" },
-  clinical_regulatory: { label: "临床与监管", short: "临床监管" },
-  partnership_deal: { label: "合作、授权与交易", short: "合作交易" },
-  customer_demand: { label: "客户需求与潜在机会", short: "客户需求" },
-  market_activity: { label: "市场活动与渠道", short: "市场活动" },
-  regional_expansion: { label: "地区扩张与市场进入", short: "地区扩张" },
-  quality_supply: { label: "质量、GMP 与供应链", short: "质量供应" },
-  corporate_strategy: { label: "公司战略与组织动作", short: "公司战略" },
+  product_platform: { label: "产品与平台", short: "产品平台", en: "Product and platform", shortEn: "Product" },
+  target_therapy: { label: "靶点与治疗方向", short: "靶点疗法", en: "Targets and therapy areas", shortEn: "Targets" },
+  clinical_regulatory: { label: "临床与监管", short: "临床监管", en: "Clinical and regulatory", shortEn: "Clinical" },
+  partnership_deal: { label: "合作、授权与交易", short: "合作交易", en: "Partnerships, licensing and deals", shortEn: "Deals" },
+  customer_demand: { label: "客户需求与潜在机会", short: "客户需求", en: "Customer demand and opportunities", shortEn: "Demand" },
+  market_activity: { label: "市场活动与渠道", short: "市场活动", en: "Market activities and channels", shortEn: "Events" },
+  regional_expansion: { label: "地区扩张与市场进入", short: "地区扩张", en: "Regional expansion and market entry", shortEn: "Region" },
+  quality_supply: { label: "质量、GMP 与供应链", short: "质量供应", en: "Quality, GMP and supply chain", shortEn: "Quality" },
+  corporate_strategy: { label: "公司战略与组织动作", short: "公司战略", en: "Corporate strategy and organization", shortEn: "Strategy" },
 };
 
 function getBusinessEventType(item) {
@@ -106554,6 +106615,13 @@ function getBusinessEventType(item) {
 function labelBusinessEvent(eventType, short = false) {
   const definition = businessEventDefinitions[eventType];
   return definition ? (short ? definition.short : definition.label) : eventType;
+}
+
+function labelBusinessEventLanguage(eventType, short = false, language = state.translationLanguage) {
+  const definition = businessEventDefinitions[eventType];
+  if (!definition) return eventType;
+  if (language === "en") return short ? definition.shortEn || definition.en : definition.en;
+  return short ? definition.short : definition.label;
 }
 
 function renderOverviewScope() {
@@ -107182,18 +107250,20 @@ function renderBusinessInsight(item, compact) {
     priority: "low",
     text: "暂不发起业务动作。",
   };
+  const isEnglish = state.translationLanguage === "en";
+  const translatedAction = translateRecommendedAction(action);
   return `<div class="business-insight relevance-${escapeAttr(relevance.level || "low")}${compact ? " is-compact" : ""}">
     <div class="business-insight-copy">
       <div class="business-insight-title">
-        <span>ACRO ${escapeHtml(relevance.label || "待分析")}</span>
+        <span>${isEnglish ? `ACRO ${escapeHtml(getRelevanceLabel(item))}` : `ACRO ${escapeHtml(relevance.label || "待分析")}`}</span>
         <strong>${Number(relevance.score) || 0}</strong>
       </div>
-      <p>${escapeHtml(relevance.explanation || "暂无结构化业务解释。")}</p>
+      <p>${escapeHtml(getRelevanceExplanation(item))}</p>
     </div>
     <div class="recommended-action priority-${escapeAttr(action.priority || "low")}">
-      <span>建议动作</span>
-      <div><strong>${escapeHtml(action.label || "归档观察")}</strong><small>${escapeHtml(action.owner || "待确认")}</small></div>
-      <p>${escapeHtml(action.text || "暂不发起业务动作。")}</p>
+      <span>${isEnglish ? "Suggested action" : "建议动作"}</span>
+      <div><strong>${escapeHtml(isEnglish ? translatedAction.label : action.label || "归档观察")}</strong><small>${escapeHtml(isEnglish ? translatedAction.owner : action.owner || "待确认")}</small></div>
+      <p>${escapeHtml(isEnglish ? translatedAction.text : action.text || "暂不发起业务动作。")}</p>
     </div>
   </div>`;
 }
@@ -107234,6 +107304,7 @@ function getStructuredFocus(item) {
 }
 
 function buildClientBusinessSummary(item) {
+  if (state.translationLanguage === "en") return buildClientBusinessSummaryEn(item);
   const company = item.matched_companies?.length ? item.matched_companies.slice(0, 2).join(" / ") : "行业公开信号";
   const eventLabel = labelBusinessEvent(getBusinessEventType(item), true);
   const role = getItemRole(item);
@@ -107263,6 +107334,9 @@ function buildClientBusinessSummary(item) {
 }
 
 function getDisplaySummary(item) {
+  if (state.translationLanguage === "en") {
+    return item.ai_summary_en || buildClientBusinessSummaryEn(item);
+  }
   const aiSummary = String(item.ai_summary || "").trim();
   if (aiSummary) return aiSummary;
   return buildClientBusinessSummary(item) || (
@@ -107270,6 +107344,122 @@ function getDisplaySummary(item) {
       ? "暂无可用摘要，建议打开原文核对。"
       : item.summary
   );
+}
+
+function buildClientBusinessSummaryEn(item) {
+  const company = item.matched_companies?.length ? item.matched_companies.slice(0, 2).join(" / ") : "an industry signal";
+  const eventLabel = labelBusinessEventLanguage(getBusinessEventType(item), false, "en").toLowerCase();
+  const role = getItemRole(item);
+  const focus = getStructuredFocus(item);
+  let opening = "";
+  if (role === "self") {
+    opening = `${company} has a new ${eventLabel} update`;
+  } else if (role === "competitor") {
+    opening = `Competitor ${company} shows a ${eventLabel} signal`;
+  } else if (role === "customer") {
+    opening = `Customer-pool company ${company} shows a ${eventLabel} signal`;
+  } else if ((item.signal_type || "news") === "event") {
+    opening = "This is a market activity or ecosystem platform signal";
+  } else {
+    opening = `This is a public ${eventLabel} signal`;
+  }
+  opening += focus ? `, with focus on ${focus}.` : `, based on the original headline: "${firstReadableSentence(item.title, 110)}."`;
+
+  const rawPoint = !isLowInformationSummary(item.summary, item.title)
+    ? `Original-source point: ${firstReadableSentence(item.summary, 130)}.`
+    : "";
+  const relevance = getRelevanceExplanation(item, "en");
+  const action = item.recommended_action ? translateRecommendedAction(item.recommended_action) : null;
+  const actionText = action ? `Suggested action: ${action.text}` : "";
+  return [opening, rawPoint, relevance, actionText].filter(Boolean).join(" ").slice(0, 360);
+}
+
+function getRelevanceLabel(item, language = state.translationLanguage) {
+  const level = item.acro_relevance?.level || "low";
+  if (language !== "en") return item.acro_relevance?.label || "待分析";
+  return {
+    high: "high relevance",
+    medium: "medium relevance",
+    low: "low relevance",
+  }[level] || "pending review";
+}
+
+function getRelevanceExplanation(item, language = state.translationLanguage) {
+  if (language !== "en") return item.acro_relevance?.explanation || "暂无结构化业务解释。";
+  const role = getItemRole(item);
+  const intelligence = item.intelligence || {};
+  const focus = getStructuredFocus(item);
+  const needs = (intelligence.product_needs || []).slice(0, 2).join(", ");
+  const stages = (intelligence.development_stages || []).slice(0, 1).join(", ");
+  if (role === "self") {
+    return "This is an ACRO-owned public update. Check the external messaging and decide whether it should be repurposed for secondary promotion or internal alignment.";
+  }
+  if (role === "customer") {
+    return `A customer-pool company shows ${stages || "a new R&D or market"} signal. Review whether it implies demand for ${needs || "ACRO-related products or services"}.`;
+  }
+  if (role === "competitor") {
+    return `A competitor is moving around ${focus || labelBusinessEventLanguage(getBusinessEventType(item), false, "en").toLowerCase()}. Compare product positioning, messaging, and regional coverage.`;
+  }
+  if (needs && (stages || (intelligence.business_actions || []).length)) {
+    return `The signal may imply demand for ${needs}. Confirm the company identity, project stage, and region before treating it as a sales lead.`;
+  }
+  if ((intelligence.event_signals || []).length) {
+    return "This event-related signal may be useful for registration, speaking, sponsorship, or partnering evaluation.";
+  }
+  if (focus) {
+    return `The signal matches ${focus}. It is useful for trend monitoring, but no clear ACRO product demand is confirmed yet.`;
+  }
+  return "No clear ACRO product demand, customer action, or priority technology signal has been detected. Keep it as archive evidence.";
+}
+
+function translateRecommendedAction(action = {}) {
+  const byType = {
+    content: {
+      label: "Messaging follow-up",
+      owner: "Marketing operations",
+      text: "Verify the official messaging and decide whether to reuse it for LinkedIn, newsletter, or internal sales material.",
+    },
+    customer: {
+      label: "Customer needs follow-up",
+      owner: "BD / Sales",
+      text: "Review the customer profile and past interactions, then check whether there is a relevant product need or timing window.",
+    },
+    competitor: {
+      label: "Competitor comparison",
+      owner: "Product marketing",
+      text: "Compare the competitor's product, technology, partnership, and regional moves against ACRO positioning.",
+    },
+    lead: {
+      label: "Prospect identification",
+      owner: "BD / Regional marketing",
+      text: "Confirm the company identity, pipeline stage, and region, then decide whether to add it to the prospect pool.",
+    },
+    event: {
+      label: "Event value review",
+      owner: "Regional marketing",
+      text: "Check the date, participating companies, and agenda to assess registration, speaking, sponsorship, or partnering value.",
+    },
+    regulatory: {
+      label: "Regulatory impact check",
+      owner: "Product / Regulatory",
+      text: "Verify the original regulatory document, scope, and affected products before internal escalation.",
+    },
+    trend: {
+      label: "Technology trend watch",
+      owner: "Product marketing",
+      text: "Add it to target and technology trend tracking until a clearer pipeline, partnership, or demand signal appears.",
+    },
+    archive: {
+      label: "Archive watch",
+      owner: "System",
+      text: "No business action is required now. Keep it as evidence for future trend and company-profile analysis.",
+    },
+  };
+  return byType[action.type] || {
+    label: action.label || "Review",
+    owner: action.owner || "TBD",
+    text: action.text || "Review the original source before taking action.",
+  };
 }
 
 function renderSignalCards(container, items, compact) {
@@ -107317,7 +107507,7 @@ function renderSignalCards(container, items, compact) {
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
         <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
       </div>
-      <p class="summary business-summary"><span>业务摘要</span>${escapeHtml(getDisplaySummary(item))}</p>
+      <p class="summary business-summary"><span>${state.translationLanguage === "en" ? "Business brief" : "业务摘要"}</span>${escapeHtml(getDisplaySummary(item))}</p>
       ${renderBusinessInsight(item, compact)}
       ${compact ? "" : renderIntelligenceFields(item)}
       ${compact ? "" : `<ul class="reason-list">
@@ -107698,6 +107888,7 @@ function exportCsv() {
   const headers = ["标题", "公司命中", "情报类型", "来源", "发布日期", "分数", "分层", "商业事件", "靶点", "疗法技术", "产品需求", "研发阶段", "业务动作", "活动信号", "ACRO相关性", "相关性解释", "建议动作", "负责人", "理由", "摘要", "URL"];
   const rows = [headers.join(",")];
   for (const item of filtered) {
+    const translatedAction = translateRecommendedAction(item.recommended_action || {});
     rows.push(
       [
         csvCell(item.title),
@@ -107707,19 +107898,19 @@ function exportCsv() {
         csvCell(item.published || ""),
         item.score,
         csvCell(labelTier(item.tier)),
-        csvCell(labelBusinessEvent(getBusinessEventType(item))),
+        csvCell(labelBusinessEventLanguage(getBusinessEventType(item))),
         csvCell((item.intelligence?.targets || []).join("; ")),
         csvCell((item.intelligence?.modalities || []).join("; ")),
         csvCell((item.intelligence?.product_needs || []).join("; ")),
         csvCell((item.intelligence?.development_stages || []).join("; ")),
         csvCell((item.intelligence?.business_actions || []).join("; ")),
         csvCell((item.intelligence?.event_signals || []).join("; ")),
-        csvCell(item.acro_relevance?.label || ""),
-        csvCell(item.acro_relevance?.explanation || ""),
-        csvCell(item.recommended_action?.label || ""),
-        csvCell(item.recommended_action?.owner || ""),
+        csvCell(getRelevanceLabel(item)),
+        csvCell(getRelevanceExplanation(item)),
+        csvCell(state.translationLanguage === "en" ? translatedAction.label : item.recommended_action?.label || ""),
+        csvCell(state.translationLanguage === "en" ? translatedAction.owner : item.recommended_action?.owner || ""),
         csvCell(item.reasons.slice(0, 3).join("; ")),
-        csvCell(item.ai_summary || item.summary || ""),
+        csvCell(getDisplaySummary(item)),
         item.url,
       ].join(",")
     );
@@ -107821,6 +108012,15 @@ els.searchInput.addEventListener("input", (event) => {
 });
 
 els.exportCsvButton.addEventListener("click", exportCsv);
+
+els.translationToggle?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-translation-language]");
+  if (!button) return;
+  state.translationLanguage = button.dataset.translationLanguage === "en" ? "en" : "zh";
+  saveTranslationLanguage(state.translationLanguage);
+  renderTranslationToggle();
+  renderOverviewScope();
+});
 
 els.tierFilter.addEventListener("change", (event) => {
   state.tier = event.target.value;

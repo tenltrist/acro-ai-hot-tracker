@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260812fullsummary" />
+    <link rel="stylesheet" href="./styles.css?v=20260812translate" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -88,6 +88,10 @@
           <select id="categoryFilter" aria-label="按商业事件筛选">
             <option value="all">全部商业事件</option>
           </select>
+          <div class="translation-toggle" id="translationToggle" aria-label="切换新闻分析语言">
+            <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
+            <button type="button" data-translation-language="en" title="Show English brief">EN</button>
+          </div>
           <button class="icon-button" id="exportCsvButton" type="button" title="导出CSV" aria-label="导出CSV">CSV</button>
           <button class="icon-button" id="refreshButton" type="button" title="同步已完成的最新抓取结果" aria-label="同步已完成的最新抓取结果">
             <span aria-hidden="true">↻</span>
@@ -664,7 +668,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260812fullsummary"></script>
-    <script src="./app.js?v=20260812fullsummary"></script>
+    <script src="./embedded-data.js?v=20260812translate"></script>
+    <script src="./app.js?v=20260812translate"></script>
   </body>
 </html>
