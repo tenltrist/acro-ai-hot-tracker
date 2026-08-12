@@ -2766,9 +2766,194 @@ select {
   white-space: nowrap;
 }
 
+.source-view-tabs {
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(118px, auto));
+  padding: 4px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.source-view-tabs button {
+  min-height: 38px;
+  padding: 7px 16px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.source-view-tabs button:hover {
+  color: var(--teal);
+}
+
+.source-view-tabs button.active {
+  background: var(--surface);
+  color: var(--teal);
+  box-shadow: 0 1px 4px rgba(28, 52, 62, 0.12);
+}
+
+.source-view-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.source-view-metrics article {
+  min-width: 0;
+  min-height: 104px;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-top: 3px solid #a7b3ba;
+  border-radius: 7px;
+  background: var(--surface);
+}
+
+.source-view-metrics article.productive {
+  border-top-color: var(--teal);
+}
+
+.source-view-metrics article.attention {
+  border-top-color: var(--coral);
+}
+
+.source-view-metrics span,
+.source-view-metrics small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.source-view-metrics strong {
+  color: #263841;
+  font-size: 25px;
+}
+
 .rule-board {
   display: grid;
   gap: 14px;
+}
+
+.runtime-source-lane {
+  display: grid;
+  gap: 12px;
+  padding: 4px 0 18px;
+}
+
+.runtime-source-lane + .runtime-source-lane {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.runtime-source-lane > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.runtime-source-lane > header h3 {
+  margin: 0 0 4px;
+  color: #263841;
+  font-size: 16px;
+}
+
+.runtime-source-lane > header p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.runtime-source-lane > header > strong {
+  color: var(--teal);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.runtime-source-card {
+  align-content: start;
+  min-height: 188px;
+  border-left: 3px solid #9aa8af;
+}
+
+.runtime-source-card.status-productive {
+  border-left-color: var(--teal);
+}
+
+.runtime-source-card.status-archive_only {
+  border-left-color: var(--blue);
+}
+
+.runtime-source-card.status-quiet {
+  border-left-color: var(--gold);
+}
+
+.runtime-source-card.status-pending,
+.runtime-source-card.status-error {
+  border-left-color: var(--coral);
+}
+
+.runtime-source-card .health-state {
+  flex-shrink: 0;
+  min-height: 23px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.runtime-source-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.runtime-source-stats span {
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  padding: 7px 6px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.runtime-source-stats span + span {
+  border-left: 1px solid var(--line);
+}
+
+.runtime-source-stats b {
+  color: #263841;
+  font-size: 16px;
+}
+
+.runtime-source-card .source-card-note {
+  padding-top: 7px;
+  border-top: 1px dashed var(--line);
+}
+
+.runtime-source-empty {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
 }
 
 .rule-lane {
@@ -4724,6 +4909,10 @@ select {
     margin-left: 0;
     text-align: left;
   }
+
+  .source-view-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 1100px) {
@@ -4827,6 +5016,10 @@ select {
   }
 
   .company-coverage-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .source-view-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -4961,6 +5154,29 @@ select {
 
   .company-role-summary {
     grid-template-columns: 1fr;
+  }
+
+  .source-view-tabs {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .source-view-tabs button {
+    min-width: 0;
+    padding-inline: 6px;
+    font-size: 11px;
+  }
+
+  .source-view-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .source-view-metrics article {
+    min-height: 0;
+  }
+
+  .runtime-source-lane > header {
+    align-items: flex-start;
   }
 
   .company-coverage-head {
@@ -5595,13 +5811,13 @@ select {
             <p class="eyebrow">公司来源</p>
             <h2>分开查看入口配置与本轮真实产出</h2>
           </div>
-          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 个统一板块</span>
+          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 类来源板块</span>
         </div>
         <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
           <div class="company-coverage-head">
             <div>
               <p class="eyebrow">公司数据源档案</p>
-              <h3 id="companyCoverageTitle">每家公司使用同一套 10 个来源板块</h3>
+              <h3 id="companyCoverageTitle">每家公司使用同一套 10 类来源板块</h3>
               <p id="companyCoverageDescription">入口已配置不等于本轮有数据；实际效果以命中数量和日报产出为准。</p>
             </div>
             <label class="company-coverage-select">
@@ -5618,66 +5834,51 @@ select {
         <div class="section-head">
           <div>
             <p class="eyebrow">数据源地图</p>
-            <h2>先看“信息从哪里来”，再决定“怎么接入系统”</h2>
+            <h2>先看真实产出，再查看完整来源方法库</h2>
           </div>
-          <span class="timestamp">规则展示，不等于全部自动抓取</span>
+          <span class="timestamp">默认只显示真正贡献日报的入口</span>
         </div>
 
-        <div class="rule-story">
-          <div class="story-step">
-            <span>1</span>
-            <strong>分类保留</strong>
-            <p>官方、媒体、聚合、社交、市场、研发监管等板块回答“信息从哪里来”。</p>
-          </div>
-          <div class="story-step">
-            <span>2</span>
-            <strong>阶段更新</strong>
-            <p>每个来源只标记正在使用、可用待接、未来开发、人工观察或不接入。</p>
-          </div>
-          <div class="story-step">
-            <span>3</span>
-            <strong>运行看健康</strong>
-            <p>地图说明建设阶段；产出数、日报贡献和异常统一去“数据源健康”查看。</p>
-          </div>
+        <div class="source-view-tabs" id="sourceViewControl" aria-label="切换数据源地图视图">
+          <button class="active" type="button" data-source-view="effective">有效来源</button>
+          <button type="button" data-source-view="connected">系统已接入</button>
+          <button type="button" data-source-view="library">来源方法库</button>
         </div>
 
-        <div class="rule-principle">
-          <strong>一句话</strong>
-          <span>分类板块继续负责“看全”，阶段标签说明“现在做到哪里”，两者不再混在一起。</span>
-        </div>
+        <div class="source-view-metrics" id="sourceViewMetrics"></div>
 
-        <div class="decision-matrix">
-          <div>
-            <span>现在在用</span>
-            <strong>已进入自动抓取</strong>
-            <p>卡片下方直接显示本轮候选、日报、归档和最后内容日期。</p>
+        <div id="sourceLibraryIntro" hidden>
+          <div class="rule-story">
+            <div class="story-step">
+              <span>1</span>
+              <strong>完整记录</strong>
+              <p>官方、媒体、聚合、社交、市场、研发监管等板块回答“还可以从哪里获取”。</p>
+            </div>
+            <div class="story-step">
+              <span>2</span>
+              <strong>建设阶段</strong>
+              <p>卡片标记已接、可用待接、未来开发、人工观察、受限或付费候选。</p>
+            </div>
+            <div class="story-step">
+              <span>3</span>
+              <strong>不代表运行</strong>
+              <p>方法库负责保留可能性，只有前两个视图代表系统中的真实运行入口。</p>
+            </div>
           </div>
-          <div>
-            <span>可用待接</span>
-            <strong>方法已验证</strong>
-            <p>因联系方式、相关性或当前优先级尚未启用。</p>
-          </div>
-          <div>
-            <span>未来开发</span>
-            <strong>有价值，但还没开工</strong>
-            <p>Crossref、专利、重点展会日历、经销商和合作伙伴页面。</p>
+
+          <div class="rule-principle">
+            <strong>方法库口径</strong>
+            <span>这里是来源方案全集，不等于已自动抓取，也不等于产生了有效新闻。</span>
           </div>
         </div>
 
         <div class="source-map-controls">
           <div>
-            <strong>8 个来源板块 · 官方层按内容细分</strong>
-            <span id="sourceStageCount">显示全部来源</span>
+            <strong id="sourceViewTitle">本轮有效来源</strong>
+            <span id="sourceStageCount">正在读取真实产出</span>
           </div>
-          <select id="sourceStageFilter" aria-label="按建设阶段筛选数据源">
-            <option value="all">全部阶段</option>
-            <option value="active">现在在用</option>
-            <option value="available">可用待接</option>
-            <option value="planned">未来开发</option>
-            <option value="manual">人工观察</option>
-            <option value="covered">已有其他来源覆盖</option>
-            <option value="blocked">不接入</option>
-            <option value="paid">付费候选</option>
+          <select id="sourceStageFilter" aria-label="筛选当前数据源视图">
+            <option value="all">全部有效来源</option>
           </select>
         </div>
 
@@ -117765,6 +117966,7 @@ const state = {
   region: "all",
   searchQuery: "",
   page: "overview",
+  sourceView: "effective",
   sourceStage: "all",
   healthCompany: "all",
   healthStatus: "all",
@@ -119698,6 +119900,10 @@ const els = {
   pageTitle: document.querySelector("#pageTitle"),
   toolbar: document.querySelector(".toolbar"),
   ruleGrid: document.querySelector("#ruleGrid"),
+  sourceViewControl: document.querySelector("#sourceViewControl"),
+  sourceViewMetrics: document.querySelector("#sourceViewMetrics"),
+  sourceViewTitle: document.querySelector("#sourceViewTitle"),
+  sourceLibraryIntro: document.querySelector("#sourceLibraryIntro"),
   sourceStageFilter: document.querySelector("#sourceStageFilter"),
   sourceStageCount: document.querySelector("#sourceStageCount"),
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
@@ -120667,7 +120873,7 @@ function renderCompanySourceCoverage() {
   const coverage = state.payload?.company_source_coverage || {};
   const definitions = coverage.slot_definitions || [];
   if (els.companyCoverageTimestamp) {
-    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 个统一板块`;
+    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 类来源板块`;
   }
   const validIds = new Set(companies.map((company) => company.id));
   if (!validIds.has(state.coverageCompany)) state.coverageCompany = companies[0]?.id || "";
@@ -120692,7 +120898,7 @@ function renderCompanySourceCoverage() {
   const companySelected = companyItems.filter((item) => ["immediate", "daily"].includes(item.tier));
 
   els.companyCoverageTitle.textContent = company
-    ? `${company.display_name} · 10 板块数据源档案`
+    ? `${company.display_name} · ${definitions.length} 类来源板块档案`
     : "公司数据源档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
     ? `监测重点：${company.monitoring_focus}。配置覆盖表示入口已经登记，实际产出以本轮命中为准。`
@@ -121287,7 +121493,7 @@ function shortCompanyName(name) {
   return String(name).split(" / ")[0].replace(" Scientific", "");
 }
 
-function renderRules() {
+function renderSourceLibrary() {
   const allSources = sourceInventory.flatMap((cat) => cat.sources);
   const visibleCount = allSources.filter(
     (source) => state.sourceStage === "all" || source.status === state.sourceStage,
@@ -121333,6 +121539,157 @@ function renderRules() {
       `;
     })
     .join("");
+}
+
+const sourceViewFilters = {
+  effective: [
+    ["all", "全部有效来源"],
+    ["dedicated", "公司专属入口"],
+    ["shared", "跨公司共享入口"],
+  ],
+  connected: [
+    ["all", "全部已接入入口"],
+    ["productive", "有效产出"],
+    ["archive_only", "仅归档"],
+    ["quiet", "暂无内容"],
+    ["pending", "待配置"],
+    ["error", "抓取异常"],
+  ],
+  library: [
+    ["all", "全部来源方法"],
+    ["active", "现在在用"],
+    ["available", "可用待接"],
+    ["planned", "未来开发"],
+    ["manual", "人工观察"],
+    ["covered", "已被其他入口覆盖"],
+    ["blocked", "高风险 / 不接入"],
+    ["paid", "付费候选"],
+  ],
+};
+
+function hydrateSourceStageFilter() {
+  const options = sourceViewFilters[state.sourceView] || sourceViewFilters.effective;
+  if (!options.some(([value]) => value === state.sourceStage)) state.sourceStage = "all";
+  els.sourceStageFilter.innerHTML = options.map(([value, label]) =>
+    `<option value="${value}"${value === state.sourceStage ? " selected" : ""}>${label}</option>`,
+  ).join("");
+}
+
+function renderSourceViewMetrics(healthRows, allMethods) {
+  const count = (status) => healthRows.filter((row) => row.status === status).length;
+  const pendingAndErrors = count("pending") + count("error");
+  els.sourceViewMetrics.innerHTML = `
+    <article class="productive"><span>日报有效入口</span><strong>${count("productive")}</strong><small>本轮真正贡献了日报</small></article>
+    <article><span>仅归档</span><strong>${count("archive_only")}</strong><small>有内容，但未达日报门槛</small></article>
+    <article><span>暂无内容</span><strong>${count("quiet")}</strong><small>已运行，时效窗口内零产出</small></article>
+    <article class="${pendingAndErrors ? "attention" : ""}"><span>待配置 / 异常</span><strong>${pendingAndErrors}</strong><small>${count("pending")} 待配置 · ${count("error")} 异常</small></article>
+    <article><span>方法库方案</span><strong>${allMethods.length}</strong><small>可能性全集，不等于已运行</small></article>
+  `;
+}
+
+function renderRuntimeSourceCard(row) {
+  const selected = (row.immediate || 0) + (row.daily || 0);
+  const scope = row.company_id ? (row.scope || row.company || "公司专属") : "跨公司共享";
+  const detail = row.error || row.note || "";
+  return `
+    <article class="source-card runtime-source-card status-${escapeAttr(row.status)}">
+      <div class="source-card-top">
+        <strong>${escapeHtml(row.source_label)}</strong>
+        <span class="health-state ${escapeAttr(row.status)}">${escapeHtml(healthStatusLabel(row.status))}</span>
+      </div>
+      <div class="source-card-meta">
+        <span class="company-source-tag">${escapeHtml(scope)}</span>
+        <span class="role-source-tag">${escapeHtml(labelSignalType(row.signal_type || "news"))}</span>
+        <span class="method-tag">${escapeHtml(row.source_type || "unknown")}</span>
+      </div>
+      <div class="runtime-source-stats">
+        <span><b>${selected}</b>日报</span>
+        <span><b>${row.archive || 0}</b>归档</span>
+        <span><b>${row.total || 0}</b>候选</span>
+      </div>
+      <div class="source-card-result"><span>最后内容</span>${escapeHtml(row.last_published || "本轮暂无")}</div>
+      ${detail ? `<p class="source-card-note">${escapeHtml(detail)}</p>` : ""}
+    </article>`;
+}
+
+function renderRuntimeSourceBoard(rows) {
+  const sorted = [...rows].sort((a, b) => {
+    const selectedA = (a.immediate || 0) + (a.daily || 0);
+    const selectedB = (b.immediate || 0) + (b.daily || 0);
+    return selectedB - selectedA || (b.total || 0) - (a.total || 0) ||
+      String(a.source_label).localeCompare(String(b.source_label));
+  });
+  const groups = [
+    {
+      id: "dedicated",
+      title: "公司专属入口",
+      description: "为某一家公司配置的官网、搜索、新闻或研究入口",
+      rows: sorted.filter((row) => Boolean(row.company_id)),
+    },
+    {
+      id: "shared",
+      title: "跨公司共享入口",
+      description: "一个入口同时覆盖多家公司，再通过公司别名和主题规则归档",
+      rows: sorted.filter((row) => !row.company_id),
+    },
+  ].filter((group) => group.rows.length);
+
+  if (!groups.length) {
+    els.ruleGrid.innerHTML = '<div class="empty runtime-source-empty">当前筛选下没有真实运行入口。</div>';
+    return;
+  }
+
+  els.ruleGrid.innerHTML = groups.map((group) => `
+    <section class="runtime-source-lane ${group.id}">
+      <header>
+        <div><h3>${group.title}</h3><p>${group.description}</p></div>
+        <strong>${group.rows.length} 个</strong>
+      </header>
+      <div class="source-grid">${group.rows.map(renderRuntimeSourceCard).join("")}</div>
+    </section>
+  `).join("");
+}
+
+function renderRules() {
+  if (!els.ruleGrid || !els.sourceStageFilter) return;
+  const healthRows = getSourceHealthRows().filter((row) => row.enabled !== false);
+  const allMethods = sourceInventory.flatMap((category) => category.sources);
+  hydrateSourceStageFilter();
+  renderSourceViewMetrics(healthRows, allMethods);
+  els.sourceLibraryIntro.hidden = state.sourceView !== "library";
+  els.sourceViewControl.querySelectorAll("[data-source-view]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.sourceView === state.sourceView);
+  });
+
+  if (state.sourceView === "library") {
+    els.sourceViewTitle.textContent = `来源方法库 · ${sourceInventory.length} 类板块`;
+    renderSourceLibrary();
+    return;
+  }
+
+  let visible = state.sourceView === "effective"
+    ? healthRows.filter((row) => row.status === "productive")
+    : [...healthRows];
+
+  if (state.sourceView === "effective" && state.sourceStage !== "all") {
+    visible = visible.filter((row) =>
+      state.sourceStage === "dedicated" ? Boolean(row.company_id) : !row.company_id,
+    );
+  }
+  if (state.sourceView === "connected" && state.sourceStage !== "all") {
+    visible = visible.filter((row) => row.status === state.sourceStage);
+  }
+
+  if (state.sourceView === "effective") {
+    const dedicatedCount = visible.filter((row) => Boolean(row.company_id)).length;
+    const sharedCount = visible.length - dedicatedCount;
+    els.sourceViewTitle.textContent = "本轮有效来源";
+    els.sourceStageCount.textContent = `显示 ${visible.length} 个日报贡献入口 · ${dedicatedCount} 专属 / ${sharedCount} 共享`;
+  } else {
+    els.sourceViewTitle.textContent = "系统已接入入口";
+    els.sourceStageCount.textContent = `显示 ${visible.length} / ${healthRows.length} 个真实运行入口`;
+  }
+  renderRuntimeSourceBoard(visible);
 }
 
 function renderOfficialSourceGroups(sources) {
@@ -122602,6 +122959,14 @@ els.companyTopicMatrix.addEventListener("click", (event) => {
 
 els.sourceStageFilter.addEventListener("change", (event) => {
   state.sourceStage = event.target.value;
+  renderRules();
+});
+
+els.sourceViewControl.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-source-view]");
+  if (!button) return;
+  state.sourceView = button.dataset.sourceView;
+  state.sourceStage = "all";
   renderRules();
 });
 

@@ -49,6 +49,7 @@ const state = {
   region: "all",
   searchQuery: "",
   page: "overview",
+  sourceView: "effective",
   sourceStage: "all",
   healthCompany: "all",
   healthStatus: "all",
@@ -1982,6 +1983,10 @@ const els = {
   pageTitle: document.querySelector("#pageTitle"),
   toolbar: document.querySelector(".toolbar"),
   ruleGrid: document.querySelector("#ruleGrid"),
+  sourceViewControl: document.querySelector("#sourceViewControl"),
+  sourceViewMetrics: document.querySelector("#sourceViewMetrics"),
+  sourceViewTitle: document.querySelector("#sourceViewTitle"),
+  sourceLibraryIntro: document.querySelector("#sourceLibraryIntro"),
   sourceStageFilter: document.querySelector("#sourceStageFilter"),
   sourceStageCount: document.querySelector("#sourceStageCount"),
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
@@ -2951,7 +2956,7 @@ function renderCompanySourceCoverage() {
   const coverage = state.payload?.company_source_coverage || {};
   const definitions = coverage.slot_definitions || [];
   if (els.companyCoverageTimestamp) {
-    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 个统一板块`;
+    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 类来源板块`;
   }
   const validIds = new Set(companies.map((company) => company.id));
   if (!validIds.has(state.coverageCompany)) state.coverageCompany = companies[0]?.id || "";
@@ -2976,7 +2981,7 @@ function renderCompanySourceCoverage() {
   const companySelected = companyItems.filter((item) => ["immediate", "daily"].includes(item.tier));
 
   els.companyCoverageTitle.textContent = company
-    ? `${company.display_name} · 10 板块数据源档案`
+    ? `${company.display_name} · ${definitions.length} 类来源板块档案`
     : "公司数据源档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
     ? `监测重点：${company.monitoring_focus}。配置覆盖表示入口已经登记，实际产出以本轮命中为准。`
@@ -3571,7 +3576,7 @@ function shortCompanyName(name) {
   return String(name).split(" / ")[0].replace(" Scientific", "");
 }
 
-function renderRules() {
+function renderSourceLibrary() {
   const allSources = sourceInventory.flatMap((cat) => cat.sources);
   const visibleCount = allSources.filter(
     (source) => state.sourceStage === "all" || source.status === state.sourceStage,
@@ -3617,6 +3622,157 @@ function renderRules() {
       `;
     })
     .join("");
+}
+
+const sourceViewFilters = {
+  effective: [
+    ["all", "全部有效来源"],
+    ["dedicated", "公司专属入口"],
+    ["shared", "跨公司共享入口"],
+  ],
+  connected: [
+    ["all", "全部已接入入口"],
+    ["productive", "有效产出"],
+    ["archive_only", "仅归档"],
+    ["quiet", "暂无内容"],
+    ["pending", "待配置"],
+    ["error", "抓取异常"],
+  ],
+  library: [
+    ["all", "全部来源方法"],
+    ["active", "现在在用"],
+    ["available", "可用待接"],
+    ["planned", "未来开发"],
+    ["manual", "人工观察"],
+    ["covered", "已被其他入口覆盖"],
+    ["blocked", "高风险 / 不接入"],
+    ["paid", "付费候选"],
+  ],
+};
+
+function hydrateSourceStageFilter() {
+  const options = sourceViewFilters[state.sourceView] || sourceViewFilters.effective;
+  if (!options.some(([value]) => value === state.sourceStage)) state.sourceStage = "all";
+  els.sourceStageFilter.innerHTML = options.map(([value, label]) =>
+    `<option value="${value}"${value === state.sourceStage ? " selected" : ""}>${label}</option>`,
+  ).join("");
+}
+
+function renderSourceViewMetrics(healthRows, allMethods) {
+  const count = (status) => healthRows.filter((row) => row.status === status).length;
+  const pendingAndErrors = count("pending") + count("error");
+  els.sourceViewMetrics.innerHTML = `
+    <article class="productive"><span>日报有效入口</span><strong>${count("productive")}</strong><small>本轮真正贡献了日报</small></article>
+    <article><span>仅归档</span><strong>${count("archive_only")}</strong><small>有内容，但未达日报门槛</small></article>
+    <article><span>暂无内容</span><strong>${count("quiet")}</strong><small>已运行，时效窗口内零产出</small></article>
+    <article class="${pendingAndErrors ? "attention" : ""}"><span>待配置 / 异常</span><strong>${pendingAndErrors}</strong><small>${count("pending")} 待配置 · ${count("error")} 异常</small></article>
+    <article><span>方法库方案</span><strong>${allMethods.length}</strong><small>可能性全集，不等于已运行</small></article>
+  `;
+}
+
+function renderRuntimeSourceCard(row) {
+  const selected = (row.immediate || 0) + (row.daily || 0);
+  const scope = row.company_id ? (row.scope || row.company || "公司专属") : "跨公司共享";
+  const detail = row.error || row.note || "";
+  return `
+    <article class="source-card runtime-source-card status-${escapeAttr(row.status)}">
+      <div class="source-card-top">
+        <strong>${escapeHtml(row.source_label)}</strong>
+        <span class="health-state ${escapeAttr(row.status)}">${escapeHtml(healthStatusLabel(row.status))}</span>
+      </div>
+      <div class="source-card-meta">
+        <span class="company-source-tag">${escapeHtml(scope)}</span>
+        <span class="role-source-tag">${escapeHtml(labelSignalType(row.signal_type || "news"))}</span>
+        <span class="method-tag">${escapeHtml(row.source_type || "unknown")}</span>
+      </div>
+      <div class="runtime-source-stats">
+        <span><b>${selected}</b>日报</span>
+        <span><b>${row.archive || 0}</b>归档</span>
+        <span><b>${row.total || 0}</b>候选</span>
+      </div>
+      <div class="source-card-result"><span>最后内容</span>${escapeHtml(row.last_published || "本轮暂无")}</div>
+      ${detail ? `<p class="source-card-note">${escapeHtml(detail)}</p>` : ""}
+    </article>`;
+}
+
+function renderRuntimeSourceBoard(rows) {
+  const sorted = [...rows].sort((a, b) => {
+    const selectedA = (a.immediate || 0) + (a.daily || 0);
+    const selectedB = (b.immediate || 0) + (b.daily || 0);
+    return selectedB - selectedA || (b.total || 0) - (a.total || 0) ||
+      String(a.source_label).localeCompare(String(b.source_label));
+  });
+  const groups = [
+    {
+      id: "dedicated",
+      title: "公司专属入口",
+      description: "为某一家公司配置的官网、搜索、新闻或研究入口",
+      rows: sorted.filter((row) => Boolean(row.company_id)),
+    },
+    {
+      id: "shared",
+      title: "跨公司共享入口",
+      description: "一个入口同时覆盖多家公司，再通过公司别名和主题规则归档",
+      rows: sorted.filter((row) => !row.company_id),
+    },
+  ].filter((group) => group.rows.length);
+
+  if (!groups.length) {
+    els.ruleGrid.innerHTML = '<div class="empty runtime-source-empty">当前筛选下没有真实运行入口。</div>';
+    return;
+  }
+
+  els.ruleGrid.innerHTML = groups.map((group) => `
+    <section class="runtime-source-lane ${group.id}">
+      <header>
+        <div><h3>${group.title}</h3><p>${group.description}</p></div>
+        <strong>${group.rows.length} 个</strong>
+      </header>
+      <div class="source-grid">${group.rows.map(renderRuntimeSourceCard).join("")}</div>
+    </section>
+  `).join("");
+}
+
+function renderRules() {
+  if (!els.ruleGrid || !els.sourceStageFilter) return;
+  const healthRows = getSourceHealthRows().filter((row) => row.enabled !== false);
+  const allMethods = sourceInventory.flatMap((category) => category.sources);
+  hydrateSourceStageFilter();
+  renderSourceViewMetrics(healthRows, allMethods);
+  els.sourceLibraryIntro.hidden = state.sourceView !== "library";
+  els.sourceViewControl.querySelectorAll("[data-source-view]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.sourceView === state.sourceView);
+  });
+
+  if (state.sourceView === "library") {
+    els.sourceViewTitle.textContent = `来源方法库 · ${sourceInventory.length} 类板块`;
+    renderSourceLibrary();
+    return;
+  }
+
+  let visible = state.sourceView === "effective"
+    ? healthRows.filter((row) => row.status === "productive")
+    : [...healthRows];
+
+  if (state.sourceView === "effective" && state.sourceStage !== "all") {
+    visible = visible.filter((row) =>
+      state.sourceStage === "dedicated" ? Boolean(row.company_id) : !row.company_id,
+    );
+  }
+  if (state.sourceView === "connected" && state.sourceStage !== "all") {
+    visible = visible.filter((row) => row.status === state.sourceStage);
+  }
+
+  if (state.sourceView === "effective") {
+    const dedicatedCount = visible.filter((row) => Boolean(row.company_id)).length;
+    const sharedCount = visible.length - dedicatedCount;
+    els.sourceViewTitle.textContent = "本轮有效来源";
+    els.sourceStageCount.textContent = `显示 ${visible.length} 个日报贡献入口 · ${dedicatedCount} 专属 / ${sharedCount} 共享`;
+  } else {
+    els.sourceViewTitle.textContent = "系统已接入入口";
+    els.sourceStageCount.textContent = `显示 ${visible.length} / ${healthRows.length} 个真实运行入口`;
+  }
+  renderRuntimeSourceBoard(visible);
 }
 
 function renderOfficialSourceGroups(sources) {
@@ -4886,6 +5042,14 @@ els.companyTopicMatrix.addEventListener("click", (event) => {
 
 els.sourceStageFilter.addEventListener("change", (event) => {
   state.sourceStage = event.target.value;
+  renderRules();
+});
+
+els.sourceViewControl.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-source-view]");
+  if (!button) return;
+  state.sourceView = button.dataset.sourceView;
+  state.sourceStage = "all";
   renderRules();
 });
 

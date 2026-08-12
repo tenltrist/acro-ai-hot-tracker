@@ -2759,9 +2759,194 @@ select {
   white-space: nowrap;
 }
 
+.source-view-tabs {
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(118px, auto));
+  padding: 4px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.source-view-tabs button {
+  min-height: 38px;
+  padding: 7px 16px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.source-view-tabs button:hover {
+  color: var(--teal);
+}
+
+.source-view-tabs button.active {
+  background: var(--surface);
+  color: var(--teal);
+  box-shadow: 0 1px 4px rgba(28, 52, 62, 0.12);
+}
+
+.source-view-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.source-view-metrics article {
+  min-width: 0;
+  min-height: 104px;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-top: 3px solid #a7b3ba;
+  border-radius: 7px;
+  background: var(--surface);
+}
+
+.source-view-metrics article.productive {
+  border-top-color: var(--teal);
+}
+
+.source-view-metrics article.attention {
+  border-top-color: var(--coral);
+}
+
+.source-view-metrics span,
+.source-view-metrics small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.source-view-metrics strong {
+  color: #263841;
+  font-size: 25px;
+}
+
 .rule-board {
   display: grid;
   gap: 14px;
+}
+
+.runtime-source-lane {
+  display: grid;
+  gap: 12px;
+  padding: 4px 0 18px;
+}
+
+.runtime-source-lane + .runtime-source-lane {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.runtime-source-lane > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.runtime-source-lane > header h3 {
+  margin: 0 0 4px;
+  color: #263841;
+  font-size: 16px;
+}
+
+.runtime-source-lane > header p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.runtime-source-lane > header > strong {
+  color: var(--teal);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.runtime-source-card {
+  align-content: start;
+  min-height: 188px;
+  border-left: 3px solid #9aa8af;
+}
+
+.runtime-source-card.status-productive {
+  border-left-color: var(--teal);
+}
+
+.runtime-source-card.status-archive_only {
+  border-left-color: var(--blue);
+}
+
+.runtime-source-card.status-quiet {
+  border-left-color: var(--gold);
+}
+
+.runtime-source-card.status-pending,
+.runtime-source-card.status-error {
+  border-left-color: var(--coral);
+}
+
+.runtime-source-card .health-state {
+  flex-shrink: 0;
+  min-height: 23px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.runtime-source-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.runtime-source-stats span {
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  padding: 7px 6px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.runtime-source-stats span + span {
+  border-left: 1px solid var(--line);
+}
+
+.runtime-source-stats b {
+  color: #263841;
+  font-size: 16px;
+}
+
+.runtime-source-card .source-card-note {
+  padding-top: 7px;
+  border-top: 1px dashed var(--line);
+}
+
+.runtime-source-empty {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
 }
 
 .rule-lane {
@@ -4717,6 +4902,10 @@ select {
     margin-left: 0;
     text-align: left;
   }
+
+  .source-view-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 1100px) {
@@ -4820,6 +5009,10 @@ select {
   }
 
   .company-coverage-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .source-view-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -4954,6 +5147,29 @@ select {
 
   .company-role-summary {
     grid-template-columns: 1fr;
+  }
+
+  .source-view-tabs {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .source-view-tabs button {
+    min-width: 0;
+    padding-inline: 6px;
+    font-size: 11px;
+  }
+
+  .source-view-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .source-view-metrics article {
+    min-height: 0;
+  }
+
+  .runtime-source-lane > header {
+    align-items: flex-start;
   }
 
   .company-coverage-head {

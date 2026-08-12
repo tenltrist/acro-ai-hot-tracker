@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260812coverage2" />
+    <link rel="stylesheet" href="./styles.css?v=20260812sourcemap" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -356,13 +356,13 @@
             <p class="eyebrow">公司来源</p>
             <h2>分开查看入口配置与本轮真实产出</h2>
           </div>
-          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 个统一板块</span>
+          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 类来源板块</span>
         </div>
         <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
           <div class="company-coverage-head">
             <div>
               <p class="eyebrow">公司数据源档案</p>
-              <h3 id="companyCoverageTitle">每家公司使用同一套 10 个来源板块</h3>
+              <h3 id="companyCoverageTitle">每家公司使用同一套 10 类来源板块</h3>
               <p id="companyCoverageDescription">入口已配置不等于本轮有数据；实际效果以命中数量和日报产出为准。</p>
             </div>
             <label class="company-coverage-select">
@@ -379,66 +379,51 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">数据源地图</p>
-            <h2>先看“信息从哪里来”，再决定“怎么接入系统”</h2>
+            <h2>先看真实产出，再查看完整来源方法库</h2>
           </div>
-          <span class="timestamp">规则展示，不等于全部自动抓取</span>
+          <span class="timestamp">默认只显示真正贡献日报的入口</span>
         </div>
 
-        <div class="rule-story">
-          <div class="story-step">
-            <span>1</span>
-            <strong>分类保留</strong>
-            <p>官方、媒体、聚合、社交、市场、研发监管等板块回答“信息从哪里来”。</p>
-          </div>
-          <div class="story-step">
-            <span>2</span>
-            <strong>阶段更新</strong>
-            <p>每个来源只标记正在使用、可用待接、未来开发、人工观察或不接入。</p>
-          </div>
-          <div class="story-step">
-            <span>3</span>
-            <strong>运行看健康</strong>
-            <p>地图说明建设阶段；产出数、日报贡献和异常统一去“数据源健康”查看。</p>
-          </div>
+        <div class="source-view-tabs" id="sourceViewControl" aria-label="切换数据源地图视图">
+          <button class="active" type="button" data-source-view="effective">有效来源</button>
+          <button type="button" data-source-view="connected">系统已接入</button>
+          <button type="button" data-source-view="library">来源方法库</button>
         </div>
 
-        <div class="rule-principle">
-          <strong>一句话</strong>
-          <span>分类板块继续负责“看全”，阶段标签说明“现在做到哪里”，两者不再混在一起。</span>
-        </div>
+        <div class="source-view-metrics" id="sourceViewMetrics"></div>
 
-        <div class="decision-matrix">
-          <div>
-            <span>现在在用</span>
-            <strong>已进入自动抓取</strong>
-            <p>卡片下方直接显示本轮候选、日报、归档和最后内容日期。</p>
+        <div id="sourceLibraryIntro" hidden>
+          <div class="rule-story">
+            <div class="story-step">
+              <span>1</span>
+              <strong>完整记录</strong>
+              <p>官方、媒体、聚合、社交、市场、研发监管等板块回答“还可以从哪里获取”。</p>
+            </div>
+            <div class="story-step">
+              <span>2</span>
+              <strong>建设阶段</strong>
+              <p>卡片标记已接、可用待接、未来开发、人工观察、受限或付费候选。</p>
+            </div>
+            <div class="story-step">
+              <span>3</span>
+              <strong>不代表运行</strong>
+              <p>方法库负责保留可能性，只有前两个视图代表系统中的真实运行入口。</p>
+            </div>
           </div>
-          <div>
-            <span>可用待接</span>
-            <strong>方法已验证</strong>
-            <p>因联系方式、相关性或当前优先级尚未启用。</p>
-          </div>
-          <div>
-            <span>未来开发</span>
-            <strong>有价值，但还没开工</strong>
-            <p>Crossref、专利、重点展会日历、经销商和合作伙伴页面。</p>
+
+          <div class="rule-principle">
+            <strong>方法库口径</strong>
+            <span>这里是来源方案全集，不等于已自动抓取，也不等于产生了有效新闻。</span>
           </div>
         </div>
 
         <div class="source-map-controls">
           <div>
-            <strong>8 个来源板块 · 官方层按内容细分</strong>
-            <span id="sourceStageCount">显示全部来源</span>
+            <strong id="sourceViewTitle">本轮有效来源</strong>
+            <span id="sourceStageCount">正在读取真实产出</span>
           </div>
-          <select id="sourceStageFilter" aria-label="按建设阶段筛选数据源">
-            <option value="all">全部阶段</option>
-            <option value="active">现在在用</option>
-            <option value="available">可用待接</option>
-            <option value="planned">未来开发</option>
-            <option value="manual">人工观察</option>
-            <option value="covered">已有其他来源覆盖</option>
-            <option value="blocked">不接入</option>
-            <option value="paid">付费候选</option>
+          <select id="sourceStageFilter" aria-label="筛选当前数据源视图">
+            <option value="all">全部有效来源</option>
           </select>
         </div>
 
@@ -682,7 +667,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260812coverage2"></script>
-    <script src="./app.js?v=20260812coverage2"></script>
+    <script src="./embedded-data.js?v=20260812sourcemap"></script>
+    <script src="./app.js?v=20260812sourcemap"></script>
   </body>
 </html>
