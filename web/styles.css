@@ -2171,6 +2171,15 @@ select {
   color: #a84e38;
 }
 
+.company-coverage-result.runtime-not-configured > b {
+  background: #edf1f3;
+  color: #6f7c83;
+}
+
+.company-coverage-result.runtime-not-configured strong {
+  color: #77858c;
+}
+
 .company-coverage-result small {
   grid-column: 1 / -1;
   overflow: hidden;

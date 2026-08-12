@@ -3006,20 +3006,31 @@ function renderCompanySourceCoverage() {
       : status.label;
     const summary = summarizeCoverageSlot(slot, state.coverageCompany);
     const sourceNames = summary.rows.map((row) => row.source_label);
+    const hasConfiguredEntry = Boolean(slot.source_ids?.length) && ["active", "covered"].includes(slot.status);
     const hasRuntimeError = summary.rows.some((row) => row.status === "error");
-    const runtimeClass = hasRuntimeError ? "error" : summary.selected ? "selected" : summary.total ? "archive" : "quiet";
-    const runtimeLabel = hasRuntimeError
+    const runtimeClass = !hasConfiguredEntry
+      ? "not-configured"
+      : hasRuntimeError
+        ? "error"
+        : summary.selected
+          ? "selected"
+          : summary.total
+            ? "archive"
+            : "quiet";
+    const runtimeLabel = !hasConfiguredEntry
+      ? "未接入，不统计"
+      : hasRuntimeError
       ? "抓取异常"
       : summary.selected
         ? "有日报产出"
         : summary.total
           ? "仅归档产出"
           : "本轮零命中";
-    const result = slot.source_ids?.length
+    const result = hasConfiguredEntry
       ? summary.total
         ? `实际命中 ${summary.total} 条 · ${summary.selected} 条进入日报`
         : `${slot.source_ids.length} 个入口已登记，但没有命中该公司`
-      : "没有可运行的自动入口";
+      : "当前没有经过验证的自动入口";
     return `
       <article class="company-coverage-slot status-${status.className}">
         <header>
