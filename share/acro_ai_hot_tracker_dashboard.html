@@ -3632,8 +3632,16 @@ select {
 }
 
 .matrix-company > span {
+  display: grid;
+  gap: 2px;
   min-width: 0;
   text-align: left;
+}
+
+.matrix-company small {
+  color: #89969d;
+  font-size: 9px;
+  font-weight: 650;
 }
 
 .role-dot {
@@ -5308,7 +5316,7 @@ select {
         <article class="analysis-panel matrix-panel">
           <div class="section-head compact">
             <div><p class="eyebrow">核心竞品 × 主题</p><h2>竞品动作矩阵</h2></div>
-            <span>按竞争相关性由高到低 · 颜色越深，信号越集中</span>
+            <span>近 90 天全部监测信号 · 颜色越深，动作越集中</span>
           </div>
           <div id="companyTopicMatrix" class="company-topic-matrix"></div>
         </article>
@@ -110498,7 +110506,7 @@ function renderOverviewScope() {
   renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount);
   renderSignalTrend(scoped, companyRoles);
   renderRegionDistribution(scoped);
-  renderCompanyTopicMatrix(scoped);
+  renderCompanyTopicMatrix();
   renderCategoryDistribution(scoped);
   renderBusinessLanes(scoped, companyRoles);
   renderSignals();
@@ -110739,7 +110747,7 @@ function renderRegionDistribution(items) {
   `).join("");
 }
 
-function renderCompanyTopicMatrix(items) {
+function renderCompanyTopicMatrix() {
   const competitorCompanies = (state.payload.companies || []).filter(
     (company) => company.business_role === "competitor",
   );
@@ -110747,6 +110755,19 @@ function renderCompanyTopicMatrix(items) {
     (company) => company.competitive_relevance_scope === "primary" && Number.isFinite(Number(company.competitive_relevance_rank)),
   );
   const companies = sortCompaniesForDisplay(primaryCompetitors.length ? primaryCompetitors : competitorCompanies);
+  const matrixCompanyById = new Map(companies.map((company) => [company.id, company]));
+  const items = (state.payload.items || []).filter((item) =>
+    Math.max(0, Math.floor(Number(item.age_days) || 0)) < 90 &&
+    (item.matched_company_ids || []).some((id) => matrixCompanyById.has(id)),
+  );
+  const resolveCompanyId = (item) => {
+    const matchedIds = (item.matched_company_ids || []).filter((id) => matrixCompanyById.has(id));
+    if (!matchedIds.length) return "";
+    const brandId = matchedIds.find((id) => matchedIds.includes(matrixCompanyById.get(id)?.parent_company_id));
+    return brandId || [...matchedIds].sort(
+      (a, b) => getCompetitiveRank(matrixCompanyById.get(a)) - getCompetitiveRank(matrixCompanyById.get(b)),
+    )[0];
+  };
   const categoryTotals = {};
   for (const item of items) {
     const eventType = getBusinessEventType(item);
@@ -110754,24 +110775,25 @@ function renderCompanyTopicMatrix(items) {
   }
   const categories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([category]) => category);
   if (!categories.length) {
-    els.companyTopicMatrix.innerHTML = '<div class="empty">当前范围内没有可形成矩阵的商业事件。</div>';
+    els.companyTopicMatrix.innerHTML = '<div class="empty">近 90 天没有可形成矩阵的核心竞品信号。</div>';
     return;
   }
   const matrix = {};
+  const selectedMatrix = {};
+  const companyTotals = {};
   for (const company of companies) {
     matrix[company.id] = Object.fromEntries(categories.map((category) => [category, 0]));
+    selectedMatrix[company.id] = Object.fromEntries(categories.map((category) => [category, 0]));
+    companyTotals[company.id] = 0;
   }
-  const matrixCompanyById = new Map(companies.map((company) => [company.id, company]));
   for (const item of items) {
     const eventType = getBusinessEventType(item);
+    const primaryId = resolveCompanyId(item);
+    if (!primaryId) continue;
+    companyTotals[primaryId] += 1;
     if (!categories.includes(eventType)) continue;
-    const matchedIds = (item.matched_company_ids || []).filter((id) => matrixCompanyById.has(id));
-    if (!matchedIds.length) continue;
-    const brandId = matchedIds.find((id) => matchedIds.includes(matrixCompanyById.get(id)?.parent_company_id));
-    const primaryId = brandId || [...matchedIds].sort(
-      (a, b) => getCompetitiveRank(matrixCompanyById.get(a)) - getCompetitiveRank(matrixCompanyById.get(b)),
-    )[0];
     matrix[primaryId][eventType] += 1;
+    if (["daily", "immediate"].includes(item.tier)) selectedMatrix[primaryId][eventType] += 1;
   }
   let max = 0;
   for (const company of companies) {
@@ -110779,15 +110801,16 @@ function renderCompanyTopicMatrix(items) {
       max = Math.max(max, matrix[company.id][category]);
     }
   }
-  const columns = `minmax(150px, 1.5fr) repeat(${categories.length}, minmax(68px, 1fr))`;
+  const columns = `minmax(178px, 1.65fr) repeat(${categories.length}, minmax(72px, 1fr))`;
   const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>相关竞品（高 → 低）</span>${categories.map((category) => `<span>${escapeHtml(labelBusinessEvent(category, true))}</span>`).join("")}</div>`;
   const rows = companies.map((company) => `
     <div class="matrix-row" style="grid-template-columns:${columns}">
-      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b><span>${escapeHtml(shortCompanyName(company.display_name))}</span></span>
+      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b><span>${escapeHtml(shortCompanyName(company.display_name))}<small>${companyTotals[company.id]} 条监测信号</small></span></span>
       ${categories.map((category) => {
         const count = matrix[company.id][category];
+        const selected = selectedMatrix[company.id][category];
         const intensity = count ? Math.max(1, Math.ceil((count / Math.max(max, 1)) * 4)) : 0;
-        return `<span class="matrix-cell intensity-${intensity}" title="${count} 条">${count || "–"}</span>`;
+        return `<span class="matrix-cell intensity-${intensity}" title="${count} 条监测信号 · ${selected} 条进入日报">${count || "–"}</span>`;
       }).join("")}
     </div>
   `).join("");

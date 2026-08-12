@@ -3625,8 +3625,16 @@ select {
 }
 
 .matrix-company > span {
+  display: grid;
+  gap: 2px;
   min-width: 0;
   text-align: left;
+}
+
+.matrix-company small {
+  color: #89969d;
+  font-size: 9px;
+  font-weight: 650;
 }
 
 .role-dot {
