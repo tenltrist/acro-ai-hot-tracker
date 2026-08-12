@@ -395,14 +395,14 @@ const sourceInventory = [
         url: "promega.com/aboutus/press-releases",
       },
       {
-        name: "Bio-Techne / R&D Systems Press Releases",
+        name: "Bio-Techne Press Releases",
         contentGroup: "company_news",
-        companyTag: "R&D Systems / Bio-Techne",
+        companyTag: "Bio-Techne（R&D Systems 母公司）",
         regionTag: "全球站",
         status: "active",
         trust: "A",
         method: "官方 IR 定向索引 RSS",
-        note: "R&D Systems 是品牌，新闻主体多为 Bio-Techne；当前优先保留产品、合作、收购与技术平台更新。",
+        note: "集团新闻归入 Bio-Techne；明确提到 R&D Systems 的内容再同步命中品牌档案。",
         sourceIds: ["biotechne_official_press_index"],
         url: "investors.bio-techne.com/press-releases",
       },
@@ -940,17 +940,23 @@ const sourceInventory = [
       { name: "Google News - Miltenyi Biotec 全球", status: "active", trust: "C", method: "RSS", note: "监测 Miltenyi Biotec、Bioindustry 和 Biomedicine 的公开新闻，重点是细胞分选、CGT 与 CDMO。", sourceIds: ["google_news_miltenyi"] },
       { name: "Google News - Miltenyi Biotec 日本", status: "active", trust: "C", method: "日文 RSS", note: "使用日文法人名与日本、Seminar、产品限定做区域补漏。", sourceIds: ["google_news_miltenyi_jp"] },
       {
-        name: "Google News - 新增竞品 / 对标池",
-        companyTag: "Abcam / Promega / R&D / BD / MCE / STEMCELL / Sino / Takara",
+        name: "Google News - 竞品公司定向池",
+        companyTag: "11 家核心竞品 + 扩展对标公司",
         regionTag: "全球 + 日本",
         status: "active",
         trust: "C",
         method: "公司全称 + 业务主题 RSS",
-        note: "8 家公司已逐源运行，这一层只负责外部补漏；官方新闻、活动与技术内容已在 01 层建立独立入口。每个聚合入口都必须同时命中公司全称。",
+        note: "核心竞品按固定相关性排名管理；这一层只负责外部补漏，每个入口必须同时命中公司或品牌全称。",
         sourceIds: [
+          "google_news_proteintech",
           "google_news_abcam",
           "google_news_promega",
           "google_news_rd_systems",
+          "google_news_cellgenix",
+          "google_news_biolegend",
+          "google_news_sigma_aldrich",
+          "google_news_biotechne",
+          "google_news_peprotech",
           "google_news_bd_biosciences",
           "google_news_medchemexpress",
           "google_news_stemcell_technologies",
@@ -1799,7 +1805,7 @@ const sourceInventory = [
         status: "paid",
         trust: "B",
         method: "SaaS",
-        note: "适合大规模品牌与舆情监测；当前 13 家公司 MVP 规模仍优先验证免费入口。",
+        note: "适合大规模品牌与舆情监测；当前 MVP 公司池仍优先验证免费入口。",
       },
       {
         name: "Patsnap / Derwent Innovation",
@@ -1855,7 +1861,13 @@ const companyIdToDisplayName = {
   miltenyi_biotec: "Miltenyi Biotec / 美天旎",
   abcam: "Abcam",
   promega: "Promega",
-  rd_systems: "R&D Systems / Bio-Techne",
+  rd_systems: "R&D Systems",
+  proteintech: "Proteintech",
+  cellgenix: "CellGenix",
+  biolegend: "BioLegend",
+  sigma_aldrich: "Sigma-Aldrich",
+  biotechne: "Bio-Techne",
+  peprotech: "PeproTech",
   bd_biosciences: "BD Biosciences",
   medchemexpress: "MedChemExpress / MCE",
   stemcell_technologies: "STEMCELL Technologies",
@@ -2010,6 +2022,7 @@ const els = {
   japanCustomerList: document.querySelector("#japanCustomerList"),
   japanCustomerDetail: document.querySelector("#japanCustomerDetail"),
   companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
+  companyCoverageTimestamp: document.querySelector("#companyCoverageTimestamp"),
   companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
   companyCoverageSelect: document.querySelector("#companyCoverageSelect"),
   companyCoverageMetrics: document.querySelector("#companyCoverageMetrics"),
@@ -2076,6 +2089,27 @@ function compactCompanyName(company) {
   return (company.display_name || company.id).split(" / ")[0];
 }
 
+function getCompetitiveRank(company) {
+  const rank = Number(company?.competitive_relevance_rank);
+  return Number.isFinite(rank) && rank > 0 ? rank : Number.POSITIVE_INFINITY;
+}
+
+function formatCompetitiveRank(company) {
+  const rank = getCompetitiveRank(company);
+  return Number.isFinite(rank) ? String(rank).padStart(2, "0") : "--";
+}
+
+function sortCompaniesForDisplay(companies) {
+  const roleOrder = { self: 0, competitor: 1, customer: 2 };
+  return [...companies].sort((a, b) => {
+    const roleDelta = (roleOrder[a.business_role] ?? 9) - (roleOrder[b.business_role] ?? 9);
+    if (roleDelta) return roleDelta;
+    const rankDelta = getCompetitiveRank(a) - getCompetitiveRank(b);
+    if (rankDelta) return rankDelta;
+    return String(a.display_name || a.id).localeCompare(String(b.display_name || b.id), "en");
+  });
+}
+
 function renderCompanyDock() {
   if (!els.companyDockList || !els.companyDockCount) return;
   const companies = state.payload?.companies || [];
@@ -2087,12 +2121,14 @@ function renderCompanyDock() {
     </button>
   `;
   const groups = Object.entries(companyRoleDockMeta).map(([role, meta]) => {
-    const members = companies.filter((company) => company.business_role === role);
+    const members = sortCompaniesForDisplay(
+      companies.filter((company) => company.business_role === role),
+    );
     const rows = members.length
       ? members.map((company) => `
           <button class="company-chip ${state.company === company.display_name ? "active" : ""}" type="button" data-filter-company="${escapeHtml(company.id)}">
             <span class="company-chip-main"><i class="company-dot role-${role}"></i><strong>${escapeHtml(compactCompanyName(company))}</strong></span>
-            <small>${escapeHtml(company.role_label || meta.label)}</small>
+            <small>${role === "competitor" && Number.isFinite(getCompetitiveRank(company)) ? `#${formatCompetitiveRank(company)} · ` : ""}${escapeHtml(company.role_label || meta.label)}</small>
           </button>
         `).join("")
       : `<div class="company-dock-empty">${escapeHtml(meta.empty)}</div>`;
@@ -2391,9 +2427,11 @@ function renderCompanyPools() {
     {
       id: "competitor",
       title: "竞品池",
-      description: "依据产品、技术能力、应用场景与目标客户重叠程度纳入。",
+      description: "核心竞品依照已确认的业务相关性排序；其余公司保留在扩展观察池。",
       empty: "尚未确认竞品公司。",
-      members: companies.filter((company) => company.business_role === "competitor"),
+      members: sortCompaniesForDisplay(
+        companies.filter((company) => company.business_role === "competitor"),
+      ),
     },
     {
       id: "customer",
@@ -2444,7 +2482,7 @@ function renderCompanyPools() {
         ? members.map((company) => `
             <article class="company-profile-row">
               <div class="company-profile-title">
-                <strong>${escapeHtml(company.display_name)}</strong>
+                <strong>${Number.isFinite(getCompetitiveRank(company)) ? `<i class="competitor-rank-badge">${formatCompetitiveRank(company)}</i>` : ""}${escapeHtml(company.display_name)}</strong>
                 <span>${escapeHtml(company.role_label || role.title)}</span>
               </div>
               <div>
@@ -2909,9 +2947,12 @@ function summarizeCoverageSlot(slot, companyId) {
 
 function renderCompanySourceCoverage() {
   if (!els.companyCoverageSelect || !els.companyCoverageGrid) return;
-  const companies = state.payload?.companies || [];
+  const companies = sortCompaniesForDisplay(state.payload?.companies || []);
   const coverage = state.payload?.company_source_coverage || {};
   const definitions = coverage.slot_definitions || [];
+  if (els.companyCoverageTimestamp) {
+    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 个统一板块`;
+  }
   const validIds = new Set(companies.map((company) => company.id));
   if (!validIds.has(state.coverageCompany)) state.coverageCompany = companies[0]?.id || "";
 
@@ -3399,9 +3440,13 @@ function renderRegionDistribution(items) {
 }
 
 function renderCompanyTopicMatrix(items) {
-  const companies = (state.payload.companies || []).filter(
-    (company) => ["self", "competitor", "customer"].includes(company.business_role),
+  const competitorCompanies = (state.payload.companies || []).filter(
+    (company) => company.business_role === "competitor",
   );
+  const primaryCompetitors = competitorCompanies.filter(
+    (company) => company.competitive_relevance_scope === "primary" && Number.isFinite(Number(company.competitive_relevance_rank)),
+  );
+  const companies = sortCompaniesForDisplay(primaryCompetitors.length ? primaryCompetitors : competitorCompanies);
   const categoryTotals = {};
   for (const item of items) {
     const eventType = getBusinessEventType(item);
@@ -3413,22 +3458,32 @@ function renderCompanyTopicMatrix(items) {
     return;
   }
   const matrix = {};
+  for (const company of companies) {
+    matrix[company.id] = Object.fromEntries(categories.map((category) => [category, 0]));
+  }
+  const matrixCompanyById = new Map(companies.map((company) => [company.id, company]));
+  for (const item of items) {
+    const eventType = getBusinessEventType(item);
+    if (!categories.includes(eventType)) continue;
+    const matchedIds = (item.matched_company_ids || []).filter((id) => matrixCompanyById.has(id));
+    if (!matchedIds.length) continue;
+    const brandId = matchedIds.find((id) => matchedIds.includes(matrixCompanyById.get(id)?.parent_company_id));
+    const primaryId = brandId || [...matchedIds].sort(
+      (a, b) => getCompetitiveRank(matrixCompanyById.get(a)) - getCompetitiveRank(matrixCompanyById.get(b)),
+    )[0];
+    matrix[primaryId][eventType] += 1;
+  }
   let max = 0;
   for (const company of companies) {
-    matrix[company.id] = {};
     for (const category of categories) {
-      const count = items.filter(
-        (item) => (item.matched_company_ids || []).includes(company.id) && getBusinessEventType(item) === category,
-      ).length;
-      matrix[company.id][category] = count;
-      max = Math.max(max, count);
+      max = Math.max(max, matrix[company.id][category]);
     }
   }
   const columns = `minmax(150px, 1.5fr) repeat(${categories.length}, minmax(68px, 1fr))`;
-  const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>公司</span>${categories.map((category) => `<span>${escapeHtml(labelBusinessEvent(category, true))}</span>`).join("")}</div>`;
+  const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>相关竞品（高 → 低）</span>${categories.map((category) => `<span>${escapeHtml(labelBusinessEvent(category, true))}</span>`).join("")}</div>`;
   const rows = companies.map((company) => `
     <div class="matrix-row" style="grid-template-columns:${columns}">
-      <span class="matrix-company"><i class="role-dot role-${company.business_role}"></i>${escapeHtml(shortCompanyName(company.display_name))}</span>
+      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b><span>${escapeHtml(shortCompanyName(company.display_name))}</span></span>
       ${categories.map((category) => {
         const count = matrix[company.id][category];
         const intensity = count ? Math.max(1, Math.ceil((count / Math.max(max, 1)) * 4)) : 0;

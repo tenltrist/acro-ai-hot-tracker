@@ -2226,9 +2226,28 @@ select {
 }
 
 .company-profile-title strong {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   color: #26343c;
   font-size: 14px;
   overflow-wrap: anywhere;
+}
+
+.competitor-rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 22px;
+  flex: 0 0 24px;
+  border: 1px solid #efc2b5;
+  border-radius: 4px;
+  color: #a64e39;
+  background: #fff7f3;
+  font-size: 10px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
 }
 
 .company-profile-title span {
@@ -3588,6 +3607,26 @@ select {
   color: #283a42 !important;
   font-weight: 750;
   overflow-wrap: anywhere;
+}
+
+.matrix-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  border: 1px solid #efc2b5;
+  border-radius: 4px;
+  color: #a64e39;
+  background: #fff7f3;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.matrix-company > span {
+  min-width: 0;
+  text-align: left;
 }
 
 .role-dot {

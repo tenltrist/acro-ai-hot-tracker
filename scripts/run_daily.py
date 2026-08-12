@@ -1687,6 +1687,9 @@ def build_dashboard_payload(
                 "role_label": company.get("role_label", "待分类"),
                 "role_reason": company.get("role_reason", ""),
                 "monitoring_focus": company.get("monitoring_focus", ""),
+                "competitive_relevance_rank": company.get("competitive_relevance_rank"),
+                "competitive_relevance_scope": company.get("competitive_relevance_scope", ""),
+                "parent_company_id": company.get("parent_company_id", ""),
                 "markets": company.get("markets", []),
                 "strategic_topics": company.get("strategic_topics", []),
             }

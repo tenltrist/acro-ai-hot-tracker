@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260812focuscards" />
+    <link rel="stylesheet" href="./styles.css?v=20260812competitorrank" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -182,8 +182,8 @@
         </article>
         <article class="analysis-panel matrix-panel">
           <div class="section-head compact">
-            <div><p class="eyebrow">公司 × 主题</p><h2>竞品动作矩阵</h2></div>
-            <span>颜色越深，信号越集中</span>
+            <div><p class="eyebrow">核心竞品 × 主题</p><h2>竞品动作矩阵</h2></div>
+            <span>按竞争相关性由高到低 · 颜色越深，信号越集中</span>
           </div>
           <div id="companyTopicMatrix" class="company-topic-matrix"></div>
         </article>
@@ -356,7 +356,7 @@
             <p class="eyebrow">公司来源</p>
             <h2>按公司查看已接入、共享覆盖与待补的数据源</h2>
           </div>
-          <span class="timestamp">13 家公司 · 10 个统一板块</span>
+          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 个统一板块</span>
         </div>
         <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
           <div class="company-coverage-head">
@@ -682,7 +682,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260812focuscards"></script>
-    <script src="./app.js?v=20260812focuscards"></script>
+    <script src="./embedded-data.js?v=20260812competitorrank"></script>
+    <script src="./app.js?v=20260812competitorrank"></script>
   </body>
 </html>
