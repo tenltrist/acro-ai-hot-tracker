@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260812translate" />
+    <link rel="stylesheet" href="./styles.css?v=20260812scopedlang" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -88,10 +88,6 @@
           <select id="categoryFilter" aria-label="按商业事件筛选">
             <option value="all">全部商业事件</option>
           </select>
-          <div class="translation-toggle" id="translationToggle" aria-label="切换新闻分析语言">
-            <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
-            <button type="button" data-translation-language="en" title="Show English brief">EN</button>
-          </div>
           <button class="icon-button" id="exportCsvButton" type="button" title="导出CSV" aria-label="导出CSV">CSV</button>
           <button class="icon-button" id="refreshButton" type="button" title="同步已完成的最新抓取结果" aria-label="同步已完成的最新抓取结果">
             <span aria-hidden="true">↻</span>
@@ -488,7 +484,16 @@
               <p class="eyebrow">决策证据</p>
               <h2>本期最值得看的 5 条战略事件</h2>
             </div>
-            <button class="text-button" id="openSignalDetailButton" type="button">查看全部情报</button>
+            <div class="section-actions">
+              <label class="translation-control">
+                <span>分析语言</span>
+                <div class="translation-toggle" aria-label="切换新闻分析语言">
+                  <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
+                  <button type="button" data-translation-language="en" title="Show English brief">EN</button>
+                </div>
+              </label>
+              <button class="text-button" id="openSignalDetailButton" type="button">查看全部情报</button>
+            </div>
           </div>
           <div id="topSignalList" class="signal-list compact-signal-list" aria-live="polite"></div>
         </div>
@@ -500,7 +505,16 @@
             <p class="eyebrow">情报明细</p>
             <h2>全部信号与筛选结果</h2>
           </div>
-          <span id="detailSignalCount" class="timestamp">加载中</span>
+          <div class="section-actions">
+            <label class="translation-control">
+              <span>分析语言</span>
+              <div class="translation-toggle" aria-label="切换新闻分析语言">
+                <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
+                <button type="button" data-translation-language="en" title="Show English brief">EN</button>
+              </div>
+            </label>
+            <span id="detailSignalCount" class="timestamp">加载中</span>
+          </div>
         </div>
         <div id="signalList" class="signal-list" aria-live="polite"></div>
       </section>
@@ -668,7 +682,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260812translate"></script>
-    <script src="./app.js?v=20260812translate"></script>
+    <script src="./embedded-data.js?v=20260812scopedlang"></script>
+    <script src="./app.js?v=20260812scopedlang"></script>
   </body>
 </html>

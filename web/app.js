@@ -1952,7 +1952,7 @@ const els = {
   categoryFilter: document.querySelector("#categoryFilter"),
   companyFilter: document.querySelector("#companyFilter"),
   searchInput: document.querySelector("#searchInput"),
-  translationToggle: document.querySelector("#translationToggle"),
+  translationToggles: document.querySelectorAll(".translation-toggle"),
   exportCsvButton: document.querySelector("#exportCsvButton"),
   refreshButton: document.querySelector("#refreshButton"),
   healthStatus: document.querySelector("#healthStatus"),
@@ -3058,11 +3058,12 @@ function render() {
 }
 
 function renderTranslationToggle() {
-  if (!els.translationToggle) return;
-  els.translationToggle.querySelectorAll("[data-translation-language]").forEach((button) => {
-    const active = button.dataset.translationLanguage === state.translationLanguage;
-    button.classList.toggle("active", active);
-    button.setAttribute("aria-pressed", String(active));
+  els.translationToggles.forEach((toggle) => {
+    toggle.querySelectorAll("[data-translation-language]").forEach((button) => {
+      const active = button.dataset.translationLanguage === state.translationLanguage;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
   });
 }
 
@@ -3803,6 +3804,36 @@ function getStructuredFocus(item) {
   ].filter(Boolean).slice(0, 4).join("、");
 }
 
+function buildChineseSignalTitle(item) {
+  const company = item.matched_companies?.length
+    ? shortCompanyName(item.matched_companies[0])
+    : "行业公开信号";
+  const eventLabel = labelBusinessEvent(getBusinessEventType(item), true);
+  const focus = getStructuredFocus(item);
+  if (focus) return `${company}：${focus}相关${eventLabel}信号`;
+  return `${company}：${eventLabel}信号`;
+}
+
+function getDisplayTitle(item) {
+  if (state.translationLanguage === "zh") return buildChineseSignalTitle(item);
+  return item.title || buildClientBusinessSummaryEn(item);
+}
+
+function getSourceLabelText(item) {
+  const labels = (item.source_labels || [item.source_label]).filter(Boolean);
+  const text = labels.join(" + ");
+  if (state.translationLanguage !== "zh") return text;
+  return text
+    .replace(/company pool indexed RSS/gi, "公司池索引 RSS")
+    .replace(/indexed RSS/gi, "索引 RSS")
+    .replace(/\bbackup\b/gi, "备份")
+    .replace(/official news/gi, "官网新闻")
+    .replace(/official site/gi, "官网")
+    .replace(/official Insights/gi, "官方 Insights")
+    .replace(/Google News RSS/g, "Google News RSS")
+    .replace(/Bing News RSS/g, "Bing News RSS");
+}
+
 function buildClientBusinessSummary(item) {
   if (state.translationLanguage === "en") return buildClientBusinessSummaryEn(item);
   const company = item.matched_companies?.length ? item.matched_companies.slice(0, 2).join(" / ") : "行业公开信号";
@@ -3986,9 +4017,14 @@ function renderSignalCards(container, items, compact) {
     const fbClass = fb ? `voted-${fb.value}` : "";
     const role = getItemRole(item, companyRoles);
     const region = inferItemRegion(item);
+    const displayTitle = getDisplayTitle(item);
+    const showOriginalTitle = state.translationLanguage === "zh" && displayTitle !== item.title;
     card.innerHTML = `
       <div class="signal-top">
-        <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
+        <div class="signal-title-stack">
+          <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(displayTitle)}</a>
+          ${showOriginalTitle ? `<p class="original-title"><span>原文标题</span>${escapeHtml(item.title)}</p>` : ""}
+        </div>
         <span class="score">${item.score}</span>
       </div>
       <div class="meta-row">
@@ -3996,7 +4032,7 @@ function renderSignalCards(container, items, compact) {
         <span class="tag role-tag role-${role}">${labelRole(role)}</span>
         <span class="tag region-tag">${escapeHtml(labelRegion(region))}</span>
         <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
-        <span class="tag business-event-tag">${labelBusinessEvent(getBusinessEventType(item), true)}</span>
+        <span class="tag business-event-tag">${labelBusinessEventLanguage(getBusinessEventType(item), true)}</span>
         <span class="tag company-match ${
           item.matched_companies?.length ? "matched" : "unmatched"
         }">${escapeHtml(
@@ -4005,7 +4041,7 @@ function renderSignalCards(container, items, compact) {
             : "未命中公司池",
         )}</span>
         <span class="tag">${escapeHtml(item.published || "no date")}</span>
-        <span class="tag source-origin">${escapeHtml((item.source_labels || [item.source_label]).join(" + "))}</span>
+        <span class="tag source-origin">${escapeHtml(getSourceLabelText(item))}</span>
       </div>
       <p class="summary business-summary"><span>${state.translationLanguage === "en" ? "Business brief" : "业务摘要"}</span>${escapeHtml(getDisplaySummary(item))}</p>
       ${renderBusinessInsight(item, compact)}
@@ -4513,13 +4549,15 @@ els.searchInput.addEventListener("input", (event) => {
 
 els.exportCsvButton.addEventListener("click", exportCsv);
 
-els.translationToggle?.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-translation-language]");
-  if (!button) return;
-  state.translationLanguage = button.dataset.translationLanguage === "en" ? "en" : "zh";
-  saveTranslationLanguage(state.translationLanguage);
-  renderTranslationToggle();
-  renderOverviewScope();
+els.translationToggles.forEach((toggle) => {
+  toggle.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-translation-language]");
+    if (!button) return;
+    state.translationLanguage = button.dataset.translationLanguage === "en" ? "en" : "zh";
+    saveTranslationLanguage(state.translationLanguage);
+    renderTranslationToggle();
+    renderOverviewScope();
+  });
 });
 
 els.tierFilter.addEventListener("change", (event) => {
