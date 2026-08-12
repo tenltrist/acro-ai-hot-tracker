@@ -2904,11 +2904,11 @@ function renderCompanyRelationships() {
 }
 
 const coverageStatusMeta = {
-  active: { label: "专属运行", className: "active" },
-  covered: { label: "已有覆盖", className: "covered" },
-  pending: { label: "待恢复 / 配置", className: "pending" },
-  planned: { label: "待补入口", className: "planned" },
-  manual: { label: "人工观察", className: "manual" },
+  active: { label: "入口已配置", className: "active" },
+  covered: { label: "入口已配置", className: "covered" },
+  pending: { label: "入口待验证", className: "pending" },
+  planned: { label: "尚未配置", className: "planned" },
+  manual: { label: "仅人工记录", className: "manual" },
 };
 
 const coverageModeLabels = {
@@ -2980,11 +2980,11 @@ function renderCompanySourceCoverage() {
     : "公司数据源档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
     ? `监测重点：${company.monitoring_focus}。配置覆盖表示入口已经登记，实际产出以本轮命中为准。`
-    : "专属来源、共享覆盖与待补入口统一展示。";
+    : "入口配置和实际产出分别展示，零命中不再算作有效产出。";
   els.companyCoverageMetrics.innerHTML = `
-    <article><span>专属运行源</span><strong>${dedicatedIds.length}</strong><small>直接绑定该公司</small></article>
-    <article><span>共享覆盖源</span><strong>${sharedIds.length}</strong><small>新闻稿、地区媒体或研究池</small></article>
-    <article><span>配置覆盖</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>${gapSlots} 个板块待补</small></article>
+    <article><span>专属配置入口</span><strong>${dedicatedIds.length}</strong><small>已登记，不代表有产出</small></article>
+    <article><span>共享配置入口</span><strong>${sharedIds.length}</strong><small>可检索该公司，不代表命中</small></article>
+    <article><span>已配置板块</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>${gapSlots} 个板块尚未配置</small></article>
     <article class="${companyItems.length ? "has-output" : "needs-review"}"><span>本轮实际命中</span><strong>${companyItems.length}</strong><small>真正关联到该公司</small></article>
     <article class="${companySelected.length ? "has-output" : "needs-review"}"><span>进入日报</span><strong>${companySelected.length}</strong><small>通过相关性与动作门槛</small></article>
   `;
@@ -2997,24 +2997,39 @@ function renderCompanySourceCoverage() {
       note: `尚未为 ${company?.display_name || "该公司"} 建立这一类稳定入口。`,
     };
     const status = coverageStatusMeta[slot.status] || coverageStatusMeta.planned;
+    const configurationLabel = ["active", "covered"].includes(slot.status)
+      ? {
+          dedicated: "专属入口已配置",
+          shared: "共享入口已配置",
+          mixed: "专属 + 共享已配置",
+        }[slot.mode] || status.label
+      : status.label;
     const summary = summarizeCoverageSlot(slot, state.coverageCompany);
     const sourceNames = summary.rows.map((row) => row.source_label);
-    const runtimeClass = summary.selected ? "selected" : summary.total ? "archive" : "quiet";
+    const hasRuntimeError = summary.rows.some((row) => row.status === "error");
+    const runtimeClass = hasRuntimeError ? "error" : summary.selected ? "selected" : summary.total ? "archive" : "quiet";
+    const runtimeLabel = hasRuntimeError
+      ? "抓取异常"
+      : summary.selected
+        ? "有日报产出"
+        : summary.total
+          ? "仅归档产出"
+          : "本轮零命中";
     const result = slot.source_ids?.length
       ? summary.total
-        ? `本轮实际命中 ${summary.total} 条 · ${summary.selected} 条进入日报`
-        : `${slot.source_ids.length} 个入口已配置 · 本轮未命中该公司`
-      : "尚未配置运行入口";
+        ? `实际命中 ${summary.total} 条 · ${summary.selected} 条进入日报`
+        : `${slot.source_ids.length} 个入口已登记，但没有命中该公司`
+      : "没有可运行的自动入口";
     return `
       <article class="company-coverage-slot status-${status.className}">
         <header>
           <span>${escapeHtml(definition.number)}</span>
           <div><strong>${escapeHtml(definition.label)}</strong><small>${escapeHtml(coverageModeLabels[slot.mode || "none"] || coverageModeLabels.none)}</small></div>
-          <b class="coverage-status ${status.className}">${escapeHtml(status.label)}</b>
+          <b class="coverage-status ${status.className}">${escapeHtml(configurationLabel)}</b>
         </header>
         <p>${escapeHtml(definition.description)}</p>
         <div class="company-coverage-note">${escapeHtml(slot.note || "")}</div>
-        <div class="company-coverage-result runtime-${runtimeClass}"><strong>${escapeHtml(result)}</strong>${sourceNames.length ? `<small title="${escapeAttr(sourceNames.join("\n"))}">${escapeHtml(sourceNames.slice(0, 2).join(" / "))}${sourceNames.length > 2 ? ` +${sourceNames.length - 2}` : ""}</small>` : ""}</div>
+        <div class="company-coverage-result runtime-${runtimeClass}"><b>${escapeHtml(runtimeLabel)}</b><strong>${escapeHtml(result)}</strong>${sourceNames.length ? `<small title="${escapeAttr(sourceNames.join("\n"))}">${escapeHtml(sourceNames.slice(0, 2).join(" / "))}${sourceNames.length > 2 ? ` +${sourceNames.length - 2}` : ""}</small>` : ""}</div>
       </article>
     `;
   }).join("");

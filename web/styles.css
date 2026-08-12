@@ -2126,9 +2126,20 @@ select {
 
 .company-coverage-result {
   display: grid;
-  gap: 3px;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 8px;
+  align-items: center;
   padding-top: 7px;
   border-top: 1px dashed var(--line);
+}
+
+.company-coverage-result > b {
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #edf1f3;
+  color: #65747b;
+  font-size: 9px;
+  white-space: nowrap;
 }
 
 .company-coverage-result strong {
@@ -2140,11 +2151,28 @@ select {
   color: #7a6b4d;
 }
 
+.company-coverage-result.runtime-quiet > b,
+.company-coverage-result.runtime-archive > b {
+  background: #fff4dd;
+  color: #8b6426;
+}
+
 .company-coverage-result.runtime-selected strong {
   color: #176b55;
 }
 
+.company-coverage-result.runtime-selected > b {
+  background: #e5f5ef;
+  color: #176b55;
+}
+
+.company-coverage-result.runtime-error > b {
+  background: #fae7df;
+  color: #a84e38;
+}
+
 .company-coverage-result small {
+  grid-column: 1 / -1;
   overflow: hidden;
   color: #7a8990;
   font-size: 9px;
