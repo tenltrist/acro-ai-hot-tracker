@@ -48376,5 +48376,485 @@
     "tier": "archive",
     "score": 21,
     "signal_type": "news"
+  },
+  "a11605593e5324de": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Mineralys Therapeutics Reports Inducement Award Under Nasdaq Listing Rule 5635(c)(4)",
+    "url": "https://www.globenewswire.com/news-release/2026/08/13/3344905/0/en/mineralys-therapeutics-reports-inducement-award-under-nasdaq-listing-rule-5635-c-4.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "4eb402176d9cc036": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Taiho and Cullinan’s zipalertinib clears Phase 3, teeing up first-line competition",
+    "url": "https://www.biospace.com/drug-development/taiho-and-cullinans-zipalertinib-clears-phase-3-teeing-up-first-line-competition",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "260cc5aef34a3ea4": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Zealand sells milestone, royalty rights to rare blood cancer asset for up to $100M",
+    "url": "https://www.biospace.com/deals/zealand-sells-milestone-royalty-rights-to-rare-blood-cancer-asset-for-up-to-100m",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "661420fe58be9bb4": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Bankrupt Sangamo offloads assets to Lilly, PTC in $161M sale",
+    "url": "https://www.biospace.com/deals/bankrupt-sangamo-offloads-assets-to-lilly-ptc-in-161m-sale",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "2dd897438c052603": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "The Italian inflection point: Clinical strength, culture and capital",
+    "url": "https://www.biospace.com/drug-development/the-italian-inflection-point-clinical-strength-culture-and-capital",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "0a3bfe9c7486d97b": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "July's biopharma layoffs affect 466 employees, a 94% year-over-year drop",
+    "url": "https://www.biospace.com/job-trends/julys-biopharma-layoffs-affect-466-employees-a-94-year-over-year-drop",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "500ffe99efa528d2": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Behind the bell: Gearing up to go public",
+    "url": "https://www.biospace.com/business/behind-the-bell-gearing-up-to-go-public",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "52ba69b5843cc4ff": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "PDS halts work on phase 3 cancer therapy to focus on colorectal contender",
+    "url": "https://www.fiercebiotech.com/biotech/pds-halts-phase-3-stage-cancer-therapy-focus-colorectal-contender",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "31f5bb101258c970": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "After tasting IPO success, Hemab’s CEO seeks ‘flavor of a multi-product coagulation company’",
+    "url": "https://www.fiercebiotech.com/biotech/after-ipo-success-hemabs-ceo-seeks-flavor-multi-product-coagulation-company",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "a1e0417f131f9cb2": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Pfizer’s former chemistry whiz debuts Khartis Therapeutics with $95M for thyroid eye disease pill",
+    "url": "https://www.fiercebiotech.com/biotech/pfizer-chemistry-whiz-debuts-khartis-therapeutics-sights-set-thyroid-eye-disease",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "6024b02c212080e7": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Medtronic veteran Bill Shields crosses over to become CEO at valve disease startup",
+    "url": "https://www.fiercebiotech.com/medtech/medtronic-veteran-bill-shields-becomes-ceo-valve-disease-startup",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "51d8a9e133061f7e": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "PTC’s $211M bid wins Sangamo auction, teeing up ‘special opportunity’ to enter Fabry market",
+    "url": "https://www.fiercebiotech.com/biotech/ptcs-211m-bid-wins-sangamo-auction-teeing-special-opportunity-enter-fabry-market",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "0fa25398b82d5e33": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Cullinan tees up J&J fight—and $100M payday—as Taiho-partnered drug hits phase 3 cancer goal",
+    "url": "https://www.fiercebiotech.com/biotech/cullinan-tees-jj-fight-and-100m-payday-taiho-partnered-drug-hits-cancer-goal",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "news"
+  },
+  "487149681dd1e7d3": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Zealand sells its rights to Takeda’s blood cancer drug for $100M ahead of FDA approval decision",
+    "url": "https://www.fiercebiotech.com/biotech/zealand-sells-its-rights-takedas-blood-cancer-drug-100m-ahead-fda-decision",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "a71f3984fdf1df01": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "It's crunch time for Karyopharm as company faces potential default next month",
+    "url": "https://www.fiercepharma.com/pharma/its-crunch-time-karyopharm-it-faces-potential-default-next-month",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "d20519190b220e8a": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "AZ's blood pressure newcomer Baxfendy fails to meet cost-effectiveness bar, ICER says",
+    "url": "https://www.fiercepharma.com/pharma/azs-baxfendy-not-worth-its-price-tag-icer-says",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "b258164fcbf58fa3": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Obesity not a 'zero-sum game' as patients crave optionality, Novo CEO says: Reuters",
+    "url": "https://www.fiercepharma.com/pharma/obesity-not-zero-sum-game-patients-crave-optionality-novo-ceo-says-reuters",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "abfedef866dc1a16": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Neurocrine stands by blockbuster hopeful Vykat XR as Prader-Willi docs raise potential safety flags",
+    "url": "https://www.fiercepharma.com/pharma/neurocrines-blockbuster-hopeful-vykat-xr-tied-possible-safety-risks-prader-willi-clinicians",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "0e45b1c7d7c02257": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Abbott to pump up blood supply with $1M college sports prize amid US crisis",
+    "url": "https://www.fiercepharma.com/marketing/abbott-pump-blood-supply-1m-college-sports-prize-amid-us-crisis",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "f44f31cf989b77bd": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Leo Pharma readies rare disease education push for 2nd annual GPP awareness day",
+    "url": "https://www.fiercepharma.com/marketing/leo-pharma-readies-rare-disease-education-push-2nd-annual-gpp-awareness-day",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "207a6c4ea5e29e3d": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Scholar Rock ditches Novo’s legacy Catalent plant in FDA refiling of SMA drug",
+    "url": "https://www.fiercepharma.com/pharma/scholar-rock-ditches-novo-legacy-catalent-plant-fda-refiling-sma-drug",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "d66b4b0a5680c10d": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo and Michael J. Fox Foundation Collaborate to Advance Proteomics-Enabled Parkinson’s Therapy",
+    "url": "https://www.genengnews.com/topics/omics/thermo-and-michael-j-fox-foundation-collaborate-to-advance-proteomics-enabled-parkinsons-therapy",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "news"
+  },
+  "91ffaffd9c863728": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Pangenome-Guided Breeding Boosts Yield and High-Altitude Adaptation in Buckwheat",
+    "url": "https://www.genengnews.com/topics/omics/pangenome-guided-breeding-boosts-yield-and-high-altitude-adaptation-in-buckwheat",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "018c8bc38a1f8c01": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Advancing Microbial-Derived Biologics from Scale-Up to Commercial Production",
+    "url": "https://www.genengnews.com/multimedia/webinars/advancing-microbial-derived-biologics-from-scale-up-to-commercial-production",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "news"
+  },
+  "2be01a38f44b16a9": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Financial Value of AI Agents in Drug Development",
+    "url": "https://www.genengnews.com/topics/artificial-intelligence/financial-value-of-ai-agents-in-drug-development",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "4b08940f7d4a81b0": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Long-Term Memory Loss Secrets Revealed with Artificial Hibernation",
+    "url": "https://www.genengnews.com/topics/translational-medicine/long-term-memory-loss-secrets-revealed-with-artificial-hibernation",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "791305900ee01106": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Producing Recombinant Antibodies for In Vivo Research",
+    "url": "https://www.genengnews.com/topics/bioprocessing/producing-recombinant-antibodies-for-in-vivo-research",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "baf6f48e9ccfd042": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "The Coming Shift from Biomarkers to Biological Trajectories",
+    "url": "https://www.genengnews.com/topics/drug-discovery/the-coming-shift-from-biomarkers-to-biological-trajectories",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "a35d9ec9899f6912": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher Scientific Completes Sale of its Microbiology Business to Astorg",
+    "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Completes-Sale-of-its-Microbiology-Business-to-Astorg/default.aspx",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "21d47f45d77cd84c": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher Scientific Reports Second Quarter 2026 Results",
+    "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-Second-Quarter-2026-Results/default.aspx",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "d97550e907ac2843": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "ACROBiosystems Wins CiteAb Award, Gaining Worldwide Recognition",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e7037c0a64c10acc00c9935730c60&url=https%3A%2F%2Ffinance.yahoo.com%2Fsectors%2Fhealthcare%2Farticles%2Facrobiosystems-wins-citeab-award-gaining-150000058.html&c=1574793412241361085&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "4b3e0e6f55897a54": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "ACROBiosystems Launches Global License Solution Upgrade for HEK293 Functional Cell Lines, Streamlining Compliance to Accelerate Biopharmaceutical R&D",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e7037c0a64c10acc00c9935730c60&url=https%3A%2F%2Ffinance.yahoo.com%2Fsectors%2Fhealthcare%2Farticles%2Facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "47da37edad039c0d": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "ACROBiosystems Obtains PMDA Material Suitability Confirmation for GMP-grade IL-15, Ensuring Reliable Quality and Strengthening the Biopharmaceutical Approval Process",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e7037c0a64c10acc00c9935730c60&url=https%3A%2F%2Fwww.manilatimes.net%2F2026%2F07%2F15%2Ftmt-newswire%2Fpr-newswire%2Facrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process%2F2384463&c=16154244222104438913&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 62,
+    "signal_type": "news"
+  },
+  "200e091731c74081": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Astorg Completes Acquisition of Microbiology Business From Thermo Fisher Scientific, Establishing an Independent Global Diagnostics Specialist",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Fastorg-completes-acquisition-microbiology-business-121000815.html&c=3806153487108414995&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "303cc18c091a4aa3": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher eyes 15%-20% India customer growth on biopharma research, manufacturing boost",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fmoney%2Fgeneral%2Fthermo-fisher-eyes-15-20-india-customer-growth-on-biopharma-research-manufacturing-boost%2Far-AA29KRca&c=7816011034548426434&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 44,
+    "signal_type": "news"
+  },
+  "f53b7f3668196bd9": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher closes $1.1B sale of microbiology unit to PE firm",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fwww.medtechdive.com%2Fnews%2Fthermo-fisher-closes-11b-sale-of-microbiology-unit-to-pe-firm%2F827811%2F&c=13539879891705849442&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "4f97ef22501e565a": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher raises 2026 outlook after 10% growth in Q2",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Fthermo-fisher-raises-2026-outlook-112521196.html&c=1434195600213344841&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "484d943040e3bba5": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Astorg completes buyout of Thermo Fisher’s microbiology business",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fwww.pehub.com%2Fastorg-completes-buyout-of-thermo-fishers-microbiology-business%2F&c=9831165568077957837&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "ea354191324e4dad": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher extends post-Q2 gains after raising outlook",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fseekingalpha.com%2Fnews%2F4617292-thermo-fisher-stock-rebounds-q2-beat&c=11408406609704355142&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "aaba136ac7099840": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fthehackernews.com%2F2026%2F08%2Fthermo-fisher-patches-flaw-that-could.html&c=15176075805179534479&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2739c6762ddddd5a": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher beats quarterly estimates as customer demand improves",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fmoney%2Feconomy%2Fthermo-fisher-beats-quarterly-estimates-as-customer-demand-improves%2Far-AA28xxEg&c=12763071220452686331&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "bb84c6ebc8cf6db3": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "Thermo Fisher sells microbiology business for $1.08 billion",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fwww.wfmz.com%2Fnews%2Farea%2Flehighvalley%2Fthermo-fisher-sells-microbiology-business-for-1-08-billion%2Farticle_80ff65f5-19d4-4d9d-8743-54764da8dafb.html&c=2418866541890807758&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "83e445d338a2aff3": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "NIC and Thermo Fisher advance shared tech infrastructure",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a7e703800e2483ca594a219c1cfba4b&url=https%3A%2F%2Fwww.msn.com%2Fen-sg%2Fmoney%2Ftechnology%2Fnic-and-thermo-fisher-advance-shared-tech-infrastructure%2Far-AA2a1CaS&c=14487092137367734794&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "54b2e5a88db0ec92": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "腸内環境・ヘルスケアベンチャーに学ぶ、事業化前に押さえるべき実証・評価の進め方",
+    "url": "https://www.link-j.org/member_event/article-53666.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "51be2f5523544874": {
+    "first_seen": "2026-08-14T02:03:11",
+    "title": "「ロンジェビティ」を科学する：最先端の抗老化評価戦略",
+    "url": "https://www.link-j.org/member_event/article-53584.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
   }
 }
