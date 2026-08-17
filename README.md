@@ -71,6 +71,30 @@ ai_hot_tracker/data/latest_run.json
 python3 ai_hot_tracker/scripts/run_daily.py --dry-run
 ```
 
+### 可选的真实 AI 摘要
+
+默认运行只使用免费规则提要，不会调用付费模型。只有同时显式配置提供商、API Key、模型并加上 `--ai-summary` 时，才会对日报候选进行二次摘要。
+
+OpenAI Responses API 示例：
+
+```bash
+AI_SUMMARY_PROVIDER=openai \
+OPENAI_API_KEY="..." \
+AI_SUMMARY_MODEL="你确认使用的模型" \
+python3 ai_hot_tracker/scripts/run_daily.py --ai-summary --ai-summary-limit 10
+```
+
+Anthropic Messages API 示例：
+
+```bash
+AI_SUMMARY_PROVIDER=anthropic \
+ANTHROPIC_API_KEY="..." \
+AI_SUMMARY_MODEL="你确认使用的模型" \
+python3 ai_hot_tracker/scripts/run_daily.py --ai-summary --ai-summary-limit 10
+```
+
+每轮默认最多生成 10 条新摘要，已生成的 AI 摘要会复用，避免每天重复花费。配置缺失或请求失败时，本轮仍保留规则提要，并在 `summary_pipeline` 中记录原因。
+
 生成后可以运行数据一致性检查：
 
 ```bash

@@ -4715,14 +4715,19 @@ function renderSourceHealthPage() {
         state.healthCompany === "all" || (row.scope || row.company) === state.healthCompany,
       );
 
-  els.healthMetricTracked.textContent = metricRows.length;
+  const operationalStatus = (row) => row.operational_status || (
+    row.status === "error" ? "error" : row.status === "pending" ? "not_running" : "reachable"
+  );
+  els.healthMetricTracked.textContent = metricRows.filter(
+    (row) => operationalStatus(row) !== "not_running",
+  ).length;
   els.healthMetricProducing.textContent = metricRows.filter((row) => row.total > 0).length;
   els.healthMetricSelected.textContent = metricRows.filter((row) => row.immediate + row.daily > 0).length;
   const quietCount = metricRows.filter((row) => row.status === "quiet").length;
   const pendingCount = metricRows.filter((row) => row.status === "pending").length;
   const errorCount = metricRows.filter((row) => row.status === "error").length;
-  els.healthMetricAttention.textContent = quietCount + pendingCount + errorCount;
-  els.healthAttentionDetail.textContent = `${quietCount} 个暂无内容 · ${pendingCount} 个待配置 · ${errorCount} 个异常`;
+  els.healthMetricAttention.textContent = errorCount;
+  els.healthAttentionDetail.textContent = `${pendingCount} 个待配置 · ${quietCount} 个无命中不算异常`;
 
   const visible = metricRows
     .filter((row) => state.healthStatus === "all" || row.status === state.healthStatus)
@@ -4742,6 +4747,10 @@ function renderSourceHealthPage() {
     .map((row) => {
       const selected = row.immediate + row.daily;
       const detail = row.error || row.note || healthStatusDescription(row.status);
+      const operation = operationalStatus(row);
+      const checkedLabel = row.last_checked
+        ? `检查 ${formatDateTime(row.last_checked)}`
+        : detail;
       return `<div class="health-table-row" role="row">
         <span class="health-name"><strong>${escapeHtml(row.source_label)}</strong><small>监测范围：${escapeHtml(row.scope || row.company || "跨公司")}</small></span>
         <span><span class="health-type">${escapeHtml(labelSignalType(row.signal_type))}</span><small>${escapeHtml(row.source_type)}</small></span>
@@ -4750,10 +4759,22 @@ function renderSourceHealthPage() {
         <span>${row.archive}</span>
         <span>${row.selected_rate}%</span>
         <span>${escapeHtml(row.last_published || "—")}</span>
-        <span class="health-status-cell"><span class="health-state ${row.status}">${healthStatusLabel(row.status)}</span><small title="${escapeAttr(detail)}">${escapeHtml(detail)}</small></span>
+        <span class="health-status-cell">
+          <span class="health-state operational-${escapeAttr(operation)}">${escapeHtml(operationalStatusLabel(operation))}</span>
+          <span class="health-state ${row.status}">${escapeHtml(healthStatusLabel(row.status))}</span>
+          <small title="${escapeAttr(detail)}">${escapeHtml(checkedLabel)}</small>
+        </span>
       </div>`;
     })
     .join("");
+}
+
+function operationalStatusLabel(status) {
+  return {
+    reachable: "运行正常",
+    error: "请求失败",
+    not_running: "未发起请求",
+  }[status] || status;
 }
 
 function healthStatusLabel(status) {

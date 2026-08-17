@@ -9,6 +9,7 @@ import email.utils
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -176,7 +177,8 @@ def save_json(path: Path, data: Any) -> None:
         f.write("\n")
 
 
-def fetch_text(url: str) -> str:
+def fetch_text(url: str, retry_http_codes: set[int] | None = None) -> str:
+    retryable_codes = {429, 500, 502, 503, 504} | (retry_http_codes or set())
     for attempt in range(3):
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         try:
@@ -184,7 +186,7 @@ def fetch_text(url: str) -> str:
                 charset = resp.headers.get_content_charset() or "utf-8"
                 return resp.read().decode(charset, errors="replace")
         except urllib.error.HTTPError as exc:
-            if exc.code in {429, 500, 502, 503, 504} and attempt < 2:
+            if exc.code in retryable_codes and attempt < 2:
                 retry_after = exc.headers.get("Retry-After", "")
                 try:
                     delay = max(float(retry_after), attempt + 2)
@@ -200,16 +202,66 @@ def fetch_text(url: str) -> str:
     raise RuntimeError(f"unreachable retry state for {url}")
 
 
-def generate_ai_summary(item: Candidate, company_name: str) -> str:
-    """Generate a Chinese business-oriented summary for a candidate item.
+def resolve_ai_summary_config() -> tuple[dict[str, str], str]:
+    """Resolve an explicitly enabled model provider without making a request."""
+    provider = os.environ.get("AI_SUMMARY_PROVIDER", "").strip().lower()
+    if not provider:
+        if os.environ.get("OPENAI_API_KEY"):
+            provider = "openai"
+        elif os.environ.get("ANTHROPIC_API_KEY"):
+            provider = "anthropic"
+    if provider not in {"openai", "anthropic"}:
+        return {}, "Set AI_SUMMARY_PROVIDER to openai or anthropic."
 
-    Requires ANTHROPIC_API_KEY env var. Returns empty string if unavailable or on error.
-    """
-    import os
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key_name = "OPENAI_API_KEY" if provider == "openai" else "ANTHROPIC_API_KEY"
+    api_key = os.environ.get(api_key_name, "").strip()
     if not api_key:
-        return ""
+        return {}, f"{api_key_name} is not set."
+
+    model = os.environ.get("AI_SUMMARY_MODEL", "").strip()
+    if not model:
+        return {}, "AI_SUMMARY_MODEL is not set; choose a model explicitly to control cost."
+
+    return {
+        "provider": provider,
+        "api_key": api_key,
+        "model": model,
+    }, ""
+
+
+def response_error_message(exc: Exception) -> str:
+    if isinstance(exc, urllib.error.HTTPError):
+        detail = ""
+        try:
+            payload = json.loads(exc.read().decode("utf-8", errors="replace"))
+            detail = clean_text(
+                payload.get("error", {}).get("message", "")
+                if isinstance(payload.get("error"), dict)
+                else payload.get("error", "")
+            )
+        except (json.JSONDecodeError, AttributeError, OSError):
+            detail = ""
+        return f"HTTP {exc.code}{f': {detail[:180]}' if detail else ''}"
+    return clean_text(str(exc))[:200] or exc.__class__.__name__
+
+
+def extract_openai_response_text(result: dict[str, Any]) -> str:
+    parts: list[str] = []
+    for output in result.get("output", []):
+        if output.get("type") != "message":
+            continue
+        for content in output.get("content", []):
+            if content.get("type") == "output_text" and content.get("text"):
+                parts.append(content["text"])
+    return clean_text(" ".join(parts))
+
+
+def generate_ai_summary(
+    item: Candidate,
+    company_name: str,
+    config: dict[str, str],
+) -> tuple[str, str]:
+    """Generate one business summary and return (text, error)."""
 
     prompt = (
         f"你是企业市场部的竞争情报分析助手。请用2-3句简洁的中文总结以下新闻，"
@@ -224,34 +276,51 @@ def generate_ai_summary(item: Candidate, company_name: str) -> str:
         f"分数：{item.score}\n"
     )
 
-    body = json.dumps({
-        "model": "claude-sonnet-5",
-        "max_tokens": 200,
-        "temperature": 0.3,
-        "messages": [
-            {"role": "user", "content": prompt}
-        ],
-    })
-
     try:
-        req = urllib.request.Request(
-            "https://api.anthropic.com/v1/messages",
-            data=body.encode("utf-8"),
-            headers={
+        if config["provider"] == "openai":
+            endpoint = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+            body = {
+                "model": config["model"],
+                "input": prompt,
+                "max_output_tokens": 320,
+                "store": False,
+            }
+            headers = {
                 "Content-Type": "application/json",
-                "x-api-key": api_key,
-                "anthropic-version": "2025-01-01",
-            },
+                "Authorization": f"Bearer {config['api_key']}",
+            }
+            url = f"{endpoint}/responses"
+        else:
+            endpoint = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/")
+            body = {
+                "model": config["model"],
+                "max_tokens": 320,
+                "messages": [{"role": "user", "content": prompt}],
+            }
+            headers = {
+                "Content-Type": "application/json",
+                "x-api-key": config["api_key"],
+                "anthropic-version": os.environ.get("ANTHROPIC_VERSION", "2023-06-01"),
+            }
+            url = f"{endpoint}/v1/messages"
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(body).encode("utf-8"),
+            headers=headers,
         )
         with urllib.request.urlopen(req, timeout=30) as resp:
             result = json.loads(resp.read().decode("utf-8"))
-            content = result.get("content", [])
-            if content and isinstance(content, list):
-                return content[0].get("text", "").strip()
-    except Exception:
-        pass
-
-    return ""
+        if config["provider"] == "openai":
+            text = extract_openai_response_text(result)
+        else:
+            text = clean_text(" ".join(
+                block.get("text", "")
+                for block in result.get("content", [])
+                if block.get("type") == "text"
+            ))
+        return (text, "") if text else ("", "Model response contained no text.")
+    except (urllib.error.URLError, TimeoutError, OSError, json.JSONDecodeError, KeyError) as exc:
+        return "", response_error_message(exc)
 
 
 def clean_text(value: str) -> str:
@@ -742,7 +811,9 @@ def parse_sec_submissions(source: dict[str, Any]) -> list[Candidate]:
 
 
 def parse_openfda(source: dict[str, Any]) -> list[Candidate]:
-    data = json.loads(fetch_text(source["url"]))
+    # openFDA can return a transient 403 to shared CI runners. Retry this source
+    # specifically without teaching every blocked website to retry forbidden pages.
+    data = json.loads(fetch_text(source["url"], retry_http_codes={403}))
     items: list[Candidate] = []
     for result in data.get("results", []):
         firm = clean_text(result.get("recalling_firm", ""))
@@ -1042,6 +1113,12 @@ def collect_candidates(
     for source in sources:
         if source.get("enabled", True) is False:
             continue
+        source_id = source["id"]
+        runtime: dict[str, Any] = {
+            "last_checked": dt.datetime.now().isoformat(timespec="seconds"),
+        }
+        source_runtime[source_id] = runtime
+        candidate_count_before = len(candidates)
         try:
             if source["type"] == "rss":
                 candidates.extend(parse_rss(source))
@@ -1056,7 +1133,7 @@ def collect_candidates(
                 )
                 candidates.extend(items)
                 snapshot_updates[source["id"]] = snapshot
-                source_runtime[source["id"]] = runtime
+                source_runtime[source_id].update(runtime)
             elif source["type"] == "sec_submissions":
                 candidates.extend(parse_sec_submissions(source))
             elif source["type"] == "openfda":
@@ -1080,7 +1157,13 @@ def collect_candidates(
             KeyError,
             ValueError,
         ) as exc:
-            errors.append(f"{source['id']}: {exc}")
+            message = str(exc)
+            errors.append(f"{source_id}: {message}")
+            source_runtime[source_id]["error"] = message
+        finally:
+            source_runtime[source_id]["raw_candidate_count"] = (
+                len(candidates) - candidate_count_before
+            )
     return candidates, errors, snapshot_updates, source_runtime
 
 
@@ -1614,8 +1697,10 @@ def build_report(
     company_lookup: dict[str, dict[str, Any]],
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
+    summary_methods: dict[str, str] | None = None,
 ) -> str:
     ai_summaries = ai_summaries or {}
+    summary_methods = summary_methods or {}
     today = dt.datetime.now().strftime("%Y-%m-%d %H:%M")
     new_items = [item for item in candidates if item.key not in seen]
     immediate = [item for item in new_items if item.tier == "immediate"]
@@ -1636,9 +1721,9 @@ def build_report(
         "",
     ]
 
-    lines.extend(render_section("即时提醒候选", immediate, company_lookup, ai_summaries))
-    lines.extend(render_section("今日简报", daily, company_lookup, ai_summaries))
-    lines.extend(render_section("归档 / 暂不推送", archive[:15], company_lookup, ai_summaries))
+    lines.extend(render_section("即时提醒候选", immediate, company_lookup, ai_summaries, summary_methods))
+    lines.extend(render_section("今日简报", daily, company_lookup, ai_summaries, summary_methods))
+    lines.extend(render_section("归档 / 暂不推送", archive[:15], company_lookup, ai_summaries, summary_methods))
 
     if errors:
         lines.extend(["", "## 抓取错误", ""])
@@ -1668,9 +1753,15 @@ def build_dashboard_payload(
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
     summary_methods: dict[str, str] | None = None,
+    summary_providers: dict[str, str] | None = None,
+    summary_models: dict[str, str] | None = None,
+    summary_pipeline: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     ai_summaries = ai_summaries or {}
     summary_methods = summary_methods or {}
+    summary_providers = summary_providers or {}
+    summary_models = summary_models or {}
+    summary_pipeline = summary_pipeline or {"status": "rules_only", "requested": False}
     new_items = [item for item in candidates if item.key not in seen]
     tiers = {
         "immediate": [item for item in candidates if item.tier == "immediate"],
@@ -1708,6 +1799,13 @@ def build_dashboard_payload(
             status = "productive" if tier_counts["immediate"] + tier_counts["daily"] else "archive_only"
         else:
             status = "quiet"
+        operational_status = (
+            "not_running"
+            if not enabled
+            else "error"
+            if source["id"] in errors_by_source
+            else "reachable"
+        )
         dated_items = [item.published for item in source_items if item.published]
         source_company_id = source.get("company_id", "")
         scope_label = (
@@ -1726,6 +1824,8 @@ def build_dashboard_payload(
                 "signal_type": source.get("signal_type", "news"),
                 "enabled": enabled,
                 "status": status,
+                "operational_status": operational_status,
+                "output_status": status if status not in {"error", "pending"} else "none",
                 "total": len(source_items),
                 "immediate": tier_counts["immediate"],
                 "daily": tier_counts["daily"],
@@ -1740,6 +1840,7 @@ def build_dashboard_payload(
                 "new_urls": runtime.get("new_urls", 0),
                 "initial_snapshot": runtime.get("initial_snapshot", False),
                 "last_checked": runtime.get("last_checked", ""),
+                "raw_candidate_count": runtime.get("raw_candidate_count", 0),
             }
         )
 
@@ -1761,6 +1862,7 @@ def build_dashboard_payload(
             ),
             "sources": len({item.source_id for item in candidates}),
         },
+        "summary_pipeline": summary_pipeline,
         "source_mix": sources,
         "category_mix": categories,
         "signal_type_mix": signal_types,
@@ -1812,6 +1914,8 @@ def build_dashboard_payload(
                 "summary": item.summary,
                 "ai_summary": ai_summaries.get(item.key, ""),
                 "summary_method": summary_methods.get(item.key, "rule"),
+                "summary_provider": summary_providers.get(item.key, "rules"),
+                "summary_model": summary_models.get(item.key, ""),
                 "summary_quality": (
                     "source_backed"
                     if item.summary and not is_low_information_summary(item.summary, item.title)
@@ -1855,6 +1959,7 @@ def write_static_api(payload: dict[str, Any]) -> None:
         "generated_at": payload["generated_at"],
         "window_days": payload["window_days"],
         "summary": payload["summary"],
+        "summary_pipeline": payload.get("summary_pipeline", {}),
         "selected": [item for item in payload["items"] if item["tier"] in {"immediate", "daily"}],
     })
     save_json(API_DIR / "topics.json", {
@@ -1871,8 +1976,10 @@ def render_section(
     items: list[Candidate],
     company_lookup: dict[str, dict[str, Any]],
     ai_summaries: dict[str, str] | None = None,
+    summary_methods: dict[str, str] | None = None,
 ) -> list[str]:
     ai_summaries = ai_summaries or {}
+    summary_methods = summary_methods or {}
     lines = ["", f"## {title}", ""]
     if not items:
         lines.append("暂无。")
@@ -1903,7 +2010,8 @@ def render_section(
             lines.append(f"   - 摘要：{clean_text(item.summary)[:220]}")
         ai_text = ai_summaries.get(item.key, "")
         if ai_text:
-            lines.append(f"   - 🤖 AI 业务摘要：{ai_text}")
+            summary_label = "AI 摘要" if summary_methods.get(item.key) == "llm" else "规则提要"
+            lines.append(f"   - {summary_label}：{ai_text}")
         if item.acro_relevance:
             lines.append(
                 f"   - ACRO 相关性：{item.acro_relevance.get('label', '')} · "
@@ -1919,11 +2027,25 @@ def render_section(
 
 
 def main() -> int:
+    try:
+        default_ai_summary_limit = max(1, int(os.environ.get("AI_SUMMARY_LIMIT", "10")))
+    except ValueError:
+        default_ai_summary_limit = 10
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Do not update seen state.")
     parser.add_argument("--days", type=int, default=90, help="Recency window for daily push candidates.")
     parser.add_argument("--strict-errors", action="store_true", help="Exit non-zero when any source fails.")
-    parser.add_argument("--ai-summary", action="store_true", help="Generate AI Chinese summaries for daily/immediate items (needs ANTHROPIC_API_KEY).")
+    parser.add_argument(
+        "--ai-summary",
+        action="store_true",
+        help="Generate model summaries only when provider, key, and model are explicitly configured.",
+    )
+    parser.add_argument(
+        "--ai-summary-limit",
+        type=int,
+        default=default_ai_summary_limit,
+        help="Maximum new model summaries per run (default: 10).",
+    )
     args = parser.parse_args()
 
     company_config = load_json(CONFIG_DIR / "companies.json")
@@ -1938,6 +2060,12 @@ def main() -> int:
     company_lookup = {company["id"]: company for company in companies}
     source_lookup = {source["id"]: source for source in sources}
     seen = load_json(SEEN_PATH) if SEEN_PATH.exists() else {}
+    previous_payload = load_json(LATEST_RUN_PATH) if LATEST_RUN_PATH.exists() else {}
+    previous_items = {
+        item.get("id"): item
+        for item in previous_payload.get("items", [])
+        if item.get("id")
+    }
     source_snapshots = (
         load_json(SOURCE_SNAPSHOTS_PATH)
         if SOURCE_SNAPSHOTS_PATH.exists()
@@ -1984,9 +2112,51 @@ def main() -> int:
         for item in scored
     }
     summary_methods = {item.key: "rule" for item in scored}
+    summary_providers = {item.key: "rules" for item in scored}
+    summary_models = {item.key: "" for item in scored}
+    reused_count = 0
+    for item in scored:
+        previous = previous_items.get(item.key, {})
+        if previous.get("summary_method") != "llm" or not previous.get("ai_summary"):
+            continue
+        ai_summaries[item.key] = previous["ai_summary"]
+        summary_methods[item.key] = "llm"
+        summary_providers[item.key] = previous.get("summary_provider", "model")
+        summary_models[item.key] = previous.get("summary_model", "")
+        reused_count += 1
+
+    summary_pipeline: dict[str, Any] = {
+        "requested": args.ai_summary,
+        "status": "rules_only",
+        "provider": "",
+        "model": "",
+        "limit": max(1, args.ai_summary_limit),
+        "eligible": 0,
+        "generated": 0,
+        "reused": reused_count,
+        "failed": 0,
+        "error": "",
+    }
     if args.ai_summary:
-        summary_candidates = [item for item in scored if item.tier in {"immediate", "daily"}]
-        for item in summary_candidates:
+        config, config_error = resolve_ai_summary_config()
+        summary_candidates = sorted(
+            [
+                item
+                for item in scored
+                if item.tier in {"immediate", "daily"}
+                and summary_methods.get(item.key) != "llm"
+            ],
+            key=lambda item: (item.tier != "immediate", -item.score),
+        )
+        summary_pipeline["eligible"] = len(summary_candidates)
+        if config_error:
+            summary_pipeline["status"] = "configuration_error"
+            summary_pipeline["error"] = config_error
+            print(f"AI summary disabled for this run: {config_error}", file=sys.stderr)
+        else:
+            summary_pipeline["provider"] = config["provider"]
+            summary_pipeline["model"] = config["model"]
+        for item in summary_candidates[:summary_pipeline["limit"]] if config else []:
             company_name = (
                 " / ".join(
                     company_lookup[company_id]["display_name"]
@@ -1995,12 +2165,35 @@ def main() -> int:
                 )
                 or "行业观察"
             )
-            ai_text = generate_ai_summary(item, company_name)
+            ai_text, ai_error = generate_ai_summary(item, company_name, config)
             if ai_text:
                 ai_summaries[item.key] = ai_text
                 summary_methods[item.key] = "llm"
+                summary_providers[item.key] = config["provider"]
+                summary_models[item.key] = config["model"]
+                summary_pipeline["generated"] += 1
+                continue
+            summary_pipeline["failed"] += 1
+            summary_pipeline["error"] = ai_error
+            summary_pipeline["status"] = "request_error"
+            print(f"AI summary request failed: {ai_error}", file=sys.stderr)
+            break
+        if config and summary_pipeline["status"] != "request_error":
+            summary_pipeline["status"] = (
+                "limit_reached"
+                if len(summary_candidates) > summary_pipeline["limit"]
+                else "complete"
+            )
 
-    report = build_report(scored, errors, seen, company_lookup, args.days, ai_summaries)
+    report = build_report(
+        scored,
+        errors,
+        seen,
+        company_lookup,
+        args.days,
+        ai_summaries,
+        summary_methods,
+    )
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = REPORT_DIR / f"daily-{dt.date.today().isoformat()}.md"
     out_path.write_text(report, encoding="utf-8")
@@ -2015,6 +2208,9 @@ def main() -> int:
         args.days,
         ai_summaries,
         summary_methods,
+        summary_providers,
+        summary_models,
+        summary_pipeline,
     )
     save_json(LATEST_RUN_PATH, payload)
     write_static_api(payload)

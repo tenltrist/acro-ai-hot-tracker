@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260812sourcecrosswalk" />
+    <link rel="stylesheet" href="./styles.css?v=20260817healthsummary" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -611,9 +611,9 @@
 
         <div class="health-summary-grid">
           <article>
-            <span>已登记运行入口</span>
+            <span>本轮已检查入口</span>
             <strong id="healthMetricTracked">--</strong>
-            <small>包含运行中、暂无内容和待配置来源</small>
+            <small>已实际发起请求，不含仅记录的待配置方法</small>
           </article>
           <article>
             <span>本轮有产出</span>
@@ -626,17 +626,17 @@
             <small>至少有 1 条进入日报或提醒</small>
           </article>
           <article>
-            <span>需关注</span>
+            <span>运行异常</span>
             <strong id="healthMetricAttention">--</strong>
-            <small id="healthAttentionDetail">暂无内容、待配置或抓取异常</small>
+            <small id="healthAttentionDetail">请求失败与待配置单独计算</small>
           </article>
         </div>
 
         <div class="health-legend" aria-label="健康状态说明">
-          <div><span class="health-dot productive"></span><strong>有效产出</strong><small>有内容进入日报</small></div>
-          <div><span class="health-dot archive-only"></span><strong>仅归档</strong><small>有内容，但目前没有达到推送阈值</small></div>
-          <div><span class="health-dot quiet"></span><strong>暂无内容</strong><small>可访问，但时效窗口内没有新记录</small></div>
-          <div><span class="health-dot pending"></span><strong>待配置</strong><small>规则已记录，目前不发起请求</small></div>
+          <div><span class="health-dot reachable"></span><strong>运行正常</strong><small>本轮请求成功；不代表一定有新闻</small></div>
+          <div><span class="health-dot productive"></span><strong>进入日报</strong><small>已有候选通过当前筛选门槛</small></div>
+          <div><span class="health-dot archive-only"></span><strong>仅归档</strong><small>请求正常且有内容，但本轮未进日报</small></div>
+          <div><span class="health-dot quiet"></span><strong>本轮无命中</strong><small>请求正常，仅表示时效窗口内零产出</small></div>
         </div>
 
         <div class="health-controls" aria-label="数据源健康筛选">
@@ -663,20 +663,20 @@
             <span>归档</span>
             <span>入选率</span>
             <span>最后内容</span>
-            <span>状态</span>
+            <span>运行 / 产出</span>
           </div>
           <div id="healthTableBody"></div>
         </div>
 
         <div class="health-decisions">
-          <div><span>当前保留</span><strong>官方 RSS + 官网定向 RSS</strong><p>稳定、可解释，是 MVP 的核心来源。</p></div>
-          <div><span>备用补漏</span><strong>Bing News RSS</strong><p>只保留 Google News 没有覆盖的事件，避免重复转载。</p></div>
-          <div><span>下一个测试</span><strong>官网 Sitemap 新 URL 差分</strong><p>不依赖不准确的 lastmod，只监控新增页面。</p></div>
+          <div><span>核心主源</span><strong>官网、官方 RSS 与 Sitemap</strong><p>优先保留原始发布链路，用于确认公司、产品、活动与技术动态。</p></div>
+          <div><span>免费补漏</span><strong>Google News + Bing News + 发布平台</strong><p>覆盖官网外报道，通过去重后只保留一个主事件。</p></div>
+          <div><span>运维原则</span><strong>异常要修，无命中先观察</strong><p>零产出不等于断链；只有请求失败才列入异常。</p></div>
         </div>
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260812sourcecrosswalk"></script>
-    <script src="./app.js?v=20260812sourcecrosswalk"></script>
+    <script src="./embedded-data.js?v=20260817healthsummary"></script>
+    <script src="./app.js?v=20260817healthsummary"></script>
   </body>
 </html>

@@ -31,8 +31,8 @@
     {
       "company_id": "thermo_fisher",
       "slots": {
-        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_official_rss"], "note": "官方 IR Press Release RSS。"},
-        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["thermo_official_rss"], "note": "新品已由官方新闻稿覆盖，不重复扫全量目录。"},
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_official_rss"], "note": "官方 IR 新闻详情页的定向索引 RSS。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["thermo_official_rss"], "note": "新品已由官方 IR 新闻稿索引覆盖，不重复扫全量目录。"},
         "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_events_index"], "note": "活动栏目公开索引。"},
         "technical_content": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_biotech_blog_rss"], "note": "Biotech at Scale 官方 Blog RSS。"},
         "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["thermo_japan_official_index"], "note": "Thermo Fisher 日本站。"},

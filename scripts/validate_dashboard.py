@@ -58,6 +58,8 @@ def main() -> int:
             errors.append(f"{item_id}: missing or invalid business_event_type")
         if item.get("summary_method") not in {"rule", "llm"}:
             errors.append(f"{item_id}: invalid summary_method")
+        if item.get("summary_method") == "llm" and not item.get("summary_provider"):
+            errors.append(f"{item_id}: LLM summary is missing provider provenance")
         if item.get("tier") in {"daily", "immediate"} and item.get("acro_relevance", {}).get("level") == "low":
             errors.append(f"{item_id}: low-relevance item entered the daily feed")
         if item.get("event_start_at") and item.get("published_at"):
@@ -65,6 +67,10 @@ def main() -> int:
 
     for row in health_rows:
         source_id = row.get("source_id")
+        if row.get("operational_status") not in {"reachable", "error", "not_running"}:
+            errors.append(f"{source_id}: invalid operational_status")
+        if row.get("status") == "error" and row.get("operational_status") != "error":
+            errors.append(f"{source_id}: error status is not reflected operationally")
         source_items = [item for item in items if source_id in item.get("source_ids", [item.get("source_id")])]
         counts = {
             tier: sum(item.get("tier") == tier for item in source_items)
@@ -75,6 +81,16 @@ def main() -> int:
         for tier, count in counts.items():
             if row.get(tier) != count:
                 errors.append(f"{source_id}: health {tier} count does not match items")
+
+    summary_pipeline = payload.get("summary_pipeline", {})
+    if summary_pipeline.get("status") not in {
+        "rules_only",
+        "configuration_error",
+        "request_error",
+        "limit_reached",
+        "complete",
+    }:
+        errors.append("summary_pipeline has invalid status")
 
     coverage = payload.get("company_source_coverage", {})
     for profile in coverage.get("profiles", []):

@@ -546,11 +546,14 @@
     },
     {
       "id": "thermo_official_rss",
-      "label": "Thermo Fisher official press releases RSS",
+      "label": "Thermo Fisher official press releases - indexed RSS",
       "type": "rss",
-      "url": "https://ir.thermofisher.com/rss/pressrelease.aspx",
+      "url": "https://news.google.com/rss/search?q=site%3Air.thermofisher.com%2Finvestors%2Fnews-events%2Fnews%2Fnews-details%2F+%22Thermo+Fisher+Scientific%22&hl=en-US&gl=US&ceid=US%3Aen",
       "company_id": "thermo_fisher",
-      "trust": "owned"
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "Thermo Fisher IR 直连 RSS 现由 Cloudflare 验证页拦截；改用官方 IR 新闻详情页的定向索引 RSS，结果仍指向官方发布。"
     },
     {
       "id": "thermo_biotech_blog_rss",

@@ -554,12 +554,12 @@ notes: MVP 标本公司。第一阶段用于验证数据获取、筛选、存储
 | ACRO Insights | 直抓同样触发滑块验证，但公开搜索能够收录页面 | 技术内容 · `indexed_rss` · `active` |
 | ACRO 日本官网 | 直抓同样触发滑块验证 | 地区补充入口 · `indexed_rss` · `active`；抓到后再分内容类型 |
 | ACRO 官方 YouTube | 官方频道 `@ACROBiosystems` 与 Channel ID 已确认；标准 Atom Feed 返回 404，频道公开页返回 30 条视频 | 视频与回放 · 公开频道页解析 · `active` |
-| Thermo Fisher IR / Press Release | 官方 RSS 返回 HTTP 200，结构完整 | 公司新闻与公告 · `direct_rss` · `active` |
-| Thermo Fisher Newsroom | HTML 返回 403 | 公司新闻与公告 · `do_not_fetch` · `covered`，由 IR RSS 覆盖 |
+| Thermo Fisher IR / Press Release | 直连 RSS 现触发 Cloudflare 验证；官方 IR 新闻详情页可被公开索引 | 公司新闻与公告 · `indexed_rss` · `active` |
+| Thermo Fisher Newsroom | HTML 返回 403 | 公司新闻与公告 · `do_not_fetch` · `covered`，由 IR 官方页定向索引覆盖 |
 | Thermo Fisher Biotech at Scale Blog | 官方 Blog RSS 可稳定返回 | 技术内容 · `direct_rss` · `active` |
 | Thermo Fisher 官方 YouTube | Atom Feed 稳定返回，无需 API Key | 视频与回放 · `atom` · `active` |
 | Thermo Fisher Events / Webinar | 主活动页直抓返回 403；公开索引可返回 Webinar、Conference 和 Summit 页面 | 活动与 Webinar · `indexed_rss` · `active` |
-| Thermo Fisher 产品更新 | 大型产品目录不适合全量抓取；官方新闻稿 RSS 已包含新品发布，例如 ASMS 2026 新产品与技术 | 产品与解决方案更新 · 由 `thermo_official_rss` 覆盖，不单独重复建源 |
+| Thermo Fisher 产品更新 | 大型产品目录不适合全量抓取；官方 IR 新闻索引已包含新品发布，例如 ASMS 2026 新产品与技术 | 产品与解决方案更新 · 由 `thermo_official_rss` 覆盖，不单独重复建源 |
 | Thermo Fisher 日本官网 | 日本站公开索引可返回新闻、活动和 Seminar 页面 | 地区补充入口 · `indexed_rss` · `active`；限制 180 天并与泛新闻源去重 |
 
 补充测试：ACRO 英文 Sitemap 中约有 6302 个产品 URL 和 29 个 Solutions URL，且这些页面共享同一个 `lastmod` 日期，不能把 `lastmod` 当作真实发布时间。系统因此保存 URL 哈希基线，后续只把新增 URL 作为产品更新候选，不回灌历史页面。

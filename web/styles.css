@@ -1663,6 +1663,22 @@ select {
   color: #075f69;
 }
 
+.health-dot.reachable,
+.health-state.operational-reachable {
+  background: #e8f3ee;
+  color: #21664e;
+}
+
+.health-dot.reachable {
+  background: #2f7d60;
+}
+
+.health-state.operational-error,
+.health-state.operational-not_running {
+  background: var(--coral-soft);
+  color: var(--coral);
+}
+
 .health-dot.productive {
   background: var(--teal);
 }
@@ -1764,6 +1780,15 @@ select {
   color: var(--muted);
   font-size: 11px;
   line-height: 1.3;
+}
+
+.health-status-cell {
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+}
+
+.health-status-cell small {
+  grid-column: 1 / -1;
 }
 
 .health-status-cell small {
