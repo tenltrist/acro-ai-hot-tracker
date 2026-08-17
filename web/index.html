@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260812sourcemap" />
+    <link rel="stylesheet" href="./styles.css?v=20260812sourcecrosswalk" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -354,21 +354,30 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">公司来源</p>
-            <h2>分开查看入口配置与本轮真实产出</h2>
+            <h2>先看公司监测什么，再展开查看具体使用的来源</h2>
           </div>
-          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 类来源板块</span>
+          <span class="timestamp" id="companyCoverageTimestamp">公司池加载中 · 10 类公司监测板块</span>
         </div>
         <section class="company-source-coverage" aria-label="公司专属数据源覆盖">
           <div class="company-coverage-head">
             <div>
-              <p class="eyebrow">公司数据源档案</p>
-              <h3 id="companyCoverageTitle">每家公司使用同一套 10 类来源板块</h3>
-              <p id="companyCoverageDescription">入口已配置不等于本轮有数据；实际效果以命中数量和日报产出为准。</p>
+              <p class="eyebrow">公司监测档案</p>
+              <h3 id="companyCoverageTitle">每家公司使用同一套 10 类监测板块</h3>
+              <p id="companyCoverageDescription">每个板块回答“监测什么”；展开后可查看这家公司实际使用的 RSS、官网和检索入口。</p>
             </div>
             <label class="company-coverage-select">
               <span>选择公司</span>
               <select id="companyCoverageSelect" aria-label="选择要查看数据源覆盖的公司"></select>
             </label>
+          </div>
+          <div class="company-source-crosswalk" id="companySourceCrosswalk" aria-label="公司监测与来源方法的关系">
+            <div><span>看什么</span><strong>10 类公司监测板块</strong><small>新闻、产品、活动、技术与研究等内容</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>具体用什么</span><strong>实际采集入口</strong><small>展开板块后查看 RSS、官网和定向检索</small></div>
+            <i aria-hidden="true">→</i>
+            <button type="button" data-open-source-library>
+              <span>从哪里获取</span><strong>8 类来源方法</strong><small>打开方法库查看官方、媒体、社交与研发监管来源</small>
+            </button>
           </div>
           <div class="company-coverage-metrics" id="companyCoverageMetrics"></div>
           <div class="company-coverage-grid" id="companyCoverageGrid"></div>
@@ -667,7 +676,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260812sourcemap"></script>
-    <script src="./app.js?v=20260812sourcemap"></script>
+    <script src="./embedded-data.js?v=20260812sourcecrosswalk"></script>
+    <script src="./app.js?v=20260812sourcecrosswalk"></script>
   </body>
 </html>

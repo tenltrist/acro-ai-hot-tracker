@@ -51,6 +51,10 @@ const state = {
   page: "overview",
   sourceView: "effective",
   sourceStage: "all",
+  sourceFocusId: "",
+  sourceFocusLayer: "",
+  sourceOutputId: "all",
+  sourceOutputLabel: "",
   healthCompany: "all",
   healthStatus: "all",
   coverageCompany: "acro",
@@ -2032,6 +2036,7 @@ const els = {
   companyCoverageSelect: document.querySelector("#companyCoverageSelect"),
   companyCoverageMetrics: document.querySelector("#companyCoverageMetrics"),
   companyCoverageGrid: document.querySelector("#companyCoverageGrid"),
+  companySourceCrosswalk: document.querySelector("#companySourceCrosswalk"),
   companyDockCount: document.querySelector("#companyDockCount"),
   companyDockList: document.querySelector("#companyDockList"),
   structuredRuleVersion: document.querySelector("#structuredRuleVersion"),
@@ -2950,13 +2955,103 @@ function summarizeCoverageSlot(slot, companyId) {
   };
 }
 
+function inferSourceMethodCategory(sourceId, row = {}) {
+  const id = String(sourceId).toLowerCase();
+  const value = `${id} ${row.source_label || ""} ${row.source_type || ""}`.toLowerCase();
+  let layer = "official";
+  if (/google_news|bing_news|news_search|aggregat/.test(id)) layer = "aggregator";
+  else if (/crossref|pubmed|clinical|pmda|amed|openfda|patent|research|trial|regulat/.test(id)) layer = "research_regulatory";
+  else if (/youtube|multimedia|video|linkedin|wechat|twitter|social/.test(id)) layer = "social_content";
+  else if (/linkj|ispark|kinki|firm_|conference|exhibition|channel_event/.test(id)) layer = "market_channel";
+  else if (/businesswire|prnewswire|globenewswire|prtimes|nikkei|pharmcube|fierce|biospace|gen_|selectscience|bioprocess|newswire|media/.test(id)) layer = "wire_media";
+  else if (!/_official_|official_/.test(id) && /social|media|video/.test(value)) layer = "social_content";
+  return sourceInventory.find((category) => category.layer === layer) || null;
+}
+
+function getSourceMethodRecord(sourceId, row = {}) {
+  for (const category of sourceInventory) {
+    const method = category.sources.find((source) => (source.sourceIds || []).includes(sourceId));
+    if (method) return { category, method };
+  }
+  const category = inferSourceMethodCategory(sourceId, row);
+  return category ? { category, method: null } : null;
+}
+
+function summarizeCoverageSource(row, companyId) {
+  const items = (state.payload?.items || []).filter((item) =>
+    (item.matched_company_ids || []).includes(companyId) &&
+    (item.source_ids || [item.source_id]).includes(row.source_id),
+  );
+  const immediate = items.filter((item) => item.tier === "immediate").length;
+  const daily = items.filter((item) => item.tier === "daily").length;
+  const archive = items.filter((item) => item.tier === "archive").length;
+  const selected = immediate + daily;
+  const status = ["error", "pending"].includes(row.status)
+    ? row.status
+    : selected
+      ? "productive"
+      : items.length
+        ? "archive_only"
+        : "quiet";
+  return {
+    total: items.length,
+    selected,
+    archive,
+    status,
+    lastPublished: items.map((item) => item.published_at || item.published).filter(Boolean).sort().at(-1) || "",
+  };
+}
+
+function renderCoverageSourceRow(row, companyId) {
+  const result = summarizeCoverageSource(row, companyId);
+  const methodRecord = getSourceMethodRecord(row.source_id, row);
+  const scopeLabel = row.company_id === companyId ? "公司专属" : "跨公司共享";
+  const methodLabel = methodRecord
+    ? `${methodRecord.category.number} ${methodRecord.category.title}`
+    : "来源方法待归类";
+  const sourceLabel = row.source_label || row.source_id;
+  const outputDisabled = result.total ? "" : " disabled";
+  const sourceUrl = methodRecord?.method?.url
+    ? (/^https?:\/\//i.test(methodRecord.method.url) ? methodRecord.method.url : `https://${methodRecord.method.url}`)
+    : "";
+  return `
+    <article class="coverage-source-row status-${escapeAttr(result.status)}">
+      <header>
+        <div>
+          <strong>${escapeHtml(sourceLabel)}</strong>
+          <small>${escapeHtml(row.source_id)}</small>
+        </div>
+        <span class="health-state ${escapeAttr(result.status)}">${escapeHtml(healthStatusLabel(result.status))}</span>
+      </header>
+      <div class="coverage-source-route">
+        <span>${escapeHtml(scopeLabel)}</span>
+        <span>${escapeHtml(labelSignalType(row.signal_type || "news"))}</span>
+        <span>${escapeHtml(row.source_type || "unknown")}</span>
+        <b>${escapeHtml(methodLabel)}</b>
+      </div>
+      <div class="coverage-source-metrics">
+        <span><b>${result.total}</b>候选</span>
+        <span><b>${result.selected}</b>日报</span>
+        <span><b>${result.archive}</b>归档</span>
+        <span><b>${escapeHtml(result.lastPublished || "—")}</b>最后内容</span>
+      </div>
+      <div class="coverage-source-actions">
+        <button type="button" data-view-source-output-id="${escapeAttr(row.source_id)}" data-source-label="${escapeAttr(sourceLabel)}"${outputDisabled}>
+          ${result.total ? `查看 ${result.total} 条产出` : "暂无产出"}
+        </button>
+        ${sourceUrl ? `<a href="${escapeAttr(sourceUrl)}" target="_blank" rel="noreferrer">打开来源</a>` : ""}
+        <button type="button" data-locate-source-id="${escapeAttr(row.source_id)}"${methodRecord ? "" : " disabled"}>在来源方法库定位</button>
+      </div>
+    </article>`;
+}
+
 function renderCompanySourceCoverage() {
   if (!els.companyCoverageSelect || !els.companyCoverageGrid) return;
   const companies = sortCompaniesForDisplay(state.payload?.companies || []);
   const coverage = state.payload?.company_source_coverage || {};
   const definitions = coverage.slot_definitions || [];
   if (els.companyCoverageTimestamp) {
-    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 类来源板块`;
+    els.companyCoverageTimestamp.textContent = `${companies.length} 家公司 · ${definitions.length} 类公司监测板块`;
   }
   const validIds = new Set(companies.map((company) => company.id));
   if (!validIds.has(state.coverageCompany)) state.coverageCompany = companies[0]?.id || "";
@@ -2981,15 +3076,15 @@ function renderCompanySourceCoverage() {
   const companySelected = companyItems.filter((item) => ["immediate", "daily"].includes(item.tier));
 
   els.companyCoverageTitle.textContent = company
-    ? `${company.display_name} · ${definitions.length} 类来源板块档案`
-    : "公司数据源档案";
+    ? `${company.display_name} · ${definitions.length} 类公司监测板块`
+    : "公司监测档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
-    ? `监测重点：${company.monitoring_focus}。配置覆盖表示入口已经登记，实际产出以本轮命中为准。`
-    : "入口配置和实际产出分别展示，零命中不再算作有效产出。";
+    ? `监测重点：${company.monitoring_focus}。点开任一监测板块，可查看它实际使用的具体入口、所属来源方法和本轮产出。`
+    : "监测板块回答看什么，实际入口回答具体用了哪些 RSS、官网和检索规则。";
   els.companyCoverageMetrics.innerHTML = `
     <article><span>专属配置入口</span><strong>${dedicatedIds.length}</strong><small>已登记，不代表有产出</small></article>
     <article><span>共享配置入口</span><strong>${sharedIds.length}</strong><small>可检索该公司，不代表命中</small></article>
-    <article><span>已配置板块</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>${gapSlots} 个板块尚未配置</small></article>
+    <article><span>已覆盖监测板块</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>${gapSlots} 个监测板块尚未配置</small></article>
     <article class="${companyItems.length ? "has-output" : "needs-review"}"><span>本轮实际命中</span><strong>${companyItems.length}</strong><small>真正关联到该公司</small></article>
     <article class="${companySelected.length ? "has-output" : "needs-review"}"><span>进入日报</span><strong>${companySelected.length}</strong><small>通过相关性与动作门槛</small></article>
   `;
@@ -3010,7 +3105,14 @@ function renderCompanySourceCoverage() {
         }[slot.mode] || status.label
       : status.label;
     const summary = summarizeCoverageSlot(slot, state.coverageCompany);
-    const sourceNames = summary.rows.map((row) => row.source_label);
+    const sourceRows = (slot.source_ids || []).map((sourceId) => rowsById.get(sourceId) || {
+      source_id: sourceId,
+      source_label: sourceId,
+      company_id: "",
+      source_type: "unknown",
+      signal_type: "news",
+      status: "pending",
+    });
     const hasConfiguredEntry = Boolean(slot.source_ids?.length) && ["active", "covered"].includes(slot.status);
     const hasRuntimeError = summary.rows.some((row) => row.status === "error");
     const runtimeClass = !hasConfiguredEntry
@@ -3037,16 +3139,25 @@ function renderCompanySourceCoverage() {
         : `${slot.source_ids.length} 个入口已登记，但没有命中该公司`
       : "当前没有经过验证的自动入口";
     return `
-      <article class="company-coverage-slot status-${status.className}">
-        <header>
+      <details class="company-coverage-slot status-${status.className}">
+        <summary>
           <span>${escapeHtml(definition.number)}</span>
-          <div><strong>${escapeHtml(definition.label)}</strong><small>${escapeHtml(coverageModeLabels[slot.mode || "none"] || coverageModeLabels.none)}</small></div>
+          <div><strong>${escapeHtml(definition.label)}</strong><small>${escapeHtml(coverageModeLabels[slot.mode || "none"] || coverageModeLabels.none)} · ${slot.source_ids?.length || 0} 个实际入口</small></div>
           <b class="coverage-status ${status.className}">${escapeHtml(configurationLabel)}</b>
-        </header>
-        <p>${escapeHtml(definition.description)}</p>
-        <div class="company-coverage-note">${escapeHtml(slot.note || "")}</div>
-        <div class="company-coverage-result runtime-${runtimeClass}"><b>${escapeHtml(runtimeLabel)}</b><strong>${escapeHtml(result)}</strong>${sourceNames.length ? `<small title="${escapeAttr(sourceNames.join("\n"))}">${escapeHtml(sourceNames.slice(0, 2).join(" / "))}${sourceNames.length > 2 ? ` +${sourceNames.length - 2}` : ""}</small>` : ""}</div>
-      </article>
+          <i class="coverage-expand-indicator" aria-hidden="true"></i>
+        </summary>
+        <div class="company-coverage-slot-body">
+          <p>${escapeHtml(definition.description)}</p>
+          <div class="company-coverage-note">${escapeHtml(slot.note || "")}</div>
+          <div class="company-coverage-result runtime-${runtimeClass}"><b>${escapeHtml(runtimeLabel)}</b><strong>${escapeHtml(result)}</strong></div>
+          <div class="coverage-source-list-head"><strong>该公司实际使用的来源</strong><span>${sourceRows.length} 个入口</span></div>
+          <div class="coverage-source-list">
+            ${sourceRows.length
+              ? sourceRows.map((row) => renderCoverageSourceRow(row, state.coverageCompany)).join("")
+              : '<div class="coverage-source-empty">这个监测板块还没有配置具体采集入口。</div>'}
+          </div>
+        </div>
+      </details>
     `;
   }).join("");
 }
@@ -3132,7 +3243,7 @@ function hydrateFilters() {
 
 function render() {
   const { payload } = state;
-  els.windowDays.textContent = `${state.timeRange} 天`;
+  els.windowDays.textContent = state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`;
   els.updatedAt.textContent = `更新于 ${formatDateTime(payload.generated_at)}`;
 
   renderTranslationToggle();
@@ -3239,7 +3350,7 @@ function renderOverviewScope() {
     ? `${customerCompanyCount} 家日本客户名单`
     : "客户池尚未导入名单";
   els.sourceCount.textContent = `${scoped.length} 条`;
-  els.windowDays.textContent = `${state.timeRange} 天`;
+  els.windowDays.textContent = state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`;
 
   renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount);
   renderSignalTrend(scoped, companyRoles);
@@ -3592,7 +3703,7 @@ function renderSourceLibrary() {
       );
       if (!visibleSources.length) return "";
       return `
-        <section class="rule-lane ${cat.layer}">
+        <section class="rule-lane ${cat.layer}${state.sourceFocusLayer === cat.layer ? " source-lane-focus" : ""}" data-source-layer="${escapeAttr(cat.layer)}">
           <div class="rule-lane-head">
             <div class="rule-lane-title">
               <span class="lane-number">${cat.number}</span>
@@ -3675,7 +3786,7 @@ function renderRuntimeSourceCard(row) {
   const scope = row.company_id ? (row.scope || row.company || "公司专属") : "跨公司共享";
   const detail = row.error || row.note || "";
   return `
-    <article class="source-card runtime-source-card status-${escapeAttr(row.status)}">
+    <article class="source-card runtime-source-card status-${escapeAttr(row.status)}" data-runtime-source-id="${escapeAttr(row.source_id)}">
       <div class="source-card-top">
         <strong>${escapeHtml(row.source_label)}</strong>
         <span class="health-state ${escapeAttr(row.status)}">${escapeHtml(healthStatusLabel(row.status))}</span>
@@ -3900,8 +4011,10 @@ function renderGroupedSources(sources, groupDefinitions, groupKey, axisContent) 
 
 function renderSourceCard(src) {
   const result = liveSourceResult(src);
+  const sourceIds = src.sourceIds || [];
+  const focused = state.sourceFocusId && sourceIds.includes(state.sourceFocusId);
   return `
-    <article class="source-card">
+    <article class="source-card${focused ? " source-card-focus" : ""}"${sourceIds.length ? ` data-library-source-ids="${escapeAttr(sourceIds.join(" "))}"` : ""}>
       <div class="source-card-top">
         <strong>${escapeHtml(src.name)}</strong>
         <span class="status-pill ${src.status}">${labelStatus(src.status)}</span>
@@ -3975,7 +4088,9 @@ function renderPage() {
 
 function renderSignals() {
   const filtered = getFilteredItems();
-  els.detailSignalCount.textContent = `${filtered.length} 条结果`;
+  els.detailSignalCount.innerHTML = state.sourceOutputId !== "all"
+    ? `${filtered.length} 条结果 · 来源：${escapeHtml(state.sourceOutputLabel)} · 本轮全部记录 <button type="button" data-clear-source-output>清除来源筛选</button>`
+    : `${filtered.length} 条结果`;
   renderSignalCards(els.topSignalList, filtered.slice(0, 5), true);
   renderSignalCards(els.signalList, filtered, false);
 }
@@ -4793,7 +4908,13 @@ function getFilteredItems() {
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
   return state.payload.items
-    .filter((item) => itemIsWithinRange(item, state.timeRange))
+    .filter((item) =>
+      state.sourceOutputId !== "all" || itemIsWithinRange(item, state.timeRange),
+    )
+    .filter((item) =>
+      state.sourceOutputId === "all" ||
+      (item.source_ids || [item.source_id]).includes(state.sourceOutputId),
+    )
     .filter((item) => state.tier === "all" || item.tier === state.tier)
     .filter(
       (item) => state.relevance === "all" || (item.acro_relevance?.level || "low") === state.relevance,
@@ -4814,6 +4935,70 @@ function getFilteredItems() {
       return haystack.includes(query);
     })
     .sort((a, b) => b.score - a.score);
+}
+
+function openSourceLibrary(sourceId = "") {
+  const healthRow = getSourceHealthRows().find((row) => row.source_id === sourceId) || {};
+  const methodRecord = sourceId ? getSourceMethodRecord(sourceId, healthRow) : null;
+  state.sourceFocusId = sourceId;
+  state.sourceFocusLayer = methodRecord && !methodRecord.method ? methodRecord.category.layer : "";
+  state.sourceView = "library";
+  state.sourceStage = "all";
+  state.page = "sources";
+  renderRules();
+  renderPage();
+  requestAnimationFrame(() => {
+    const target = sourceId
+      ? els.ruleGrid.querySelector(`[data-library-source-ids~="${CSS.escape(sourceId)}"]`) ||
+        els.ruleGrid.querySelector(`[data-source-layer="${CSS.escape(state.sourceFocusLayer)}"]`)
+      : els.sourceViewControl;
+    target?.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+}
+
+function openSourceOutput(sourceId, sourceLabel) {
+  const company = (state.payload?.companies || []).find((row) => row.id === state.coverageCompany);
+  state.sourceOutputId = sourceId;
+  state.sourceOutputLabel = sourceLabel;
+  state.searchQuery = "";
+  state.tier = "all";
+  state.relevance = "all";
+  state.signalType = "all";
+  state.category = "all";
+  state.role = "all";
+  state.region = "all";
+  state.company = company?.display_name || "all";
+  state.page = "signals";
+
+  els.searchInput.value = "";
+  els.tierFilter.value = "all";
+  els.relevanceFilter.value = "all";
+  els.signalTypeFilter.value = "all";
+  els.categoryFilter.value = "all";
+  els.companyFilter.value = [...els.companyFilter.options].some((option) => option.value === state.company)
+    ? state.company
+    : "all";
+  els.regionFilter.value = "all";
+  els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
+    button.classList.remove("active");
+  });
+  els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.roleFilter === "all");
+  });
+
+  renderPage();
+  renderCompanyDock();
+  renderOverviewScope();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function clearSourceOutput() {
+  state.sourceOutputId = "all";
+  state.sourceOutputLabel = "";
+  els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
+    button.classList.toggle("active", Number(button.dataset.timeRange) === state.timeRange);
+  });
+  renderOverviewScope();
 }
 
 // ── Event listeners ──
@@ -4911,6 +5096,26 @@ els.companyCoverageSelect.addEventListener("change", (event) => {
   renderCompanySourceCoverage();
 });
 
+els.companySourceCrosswalk.addEventListener("click", (event) => {
+  if (!event.target.closest("[data-open-source-library]")) return;
+  openSourceLibrary();
+});
+
+els.companyCoverageGrid.addEventListener("click", (event) => {
+  const outputButton = event.target.closest("[data-view-source-output-id]");
+  if (outputButton) {
+    openSourceOutput(outputButton.dataset.viewSourceOutputId, outputButton.dataset.sourceLabel);
+    return;
+  }
+  const methodButton = event.target.closest("[data-locate-source-id]");
+  if (methodButton) openSourceLibrary(methodButton.dataset.locateSourceId);
+});
+
+els.detailSignalCount.addEventListener("click", (event) => {
+  if (!event.target.closest("[data-clear-source-output]")) return;
+  clearSourceOutput();
+});
+
 els.companyPoolGroups.addEventListener("click", (event) => {
   const customerPoolButton = event.target.closest("[data-open-japan-customers]");
   if (customerPoolButton) {
@@ -4980,6 +5185,8 @@ els.relationshipLayerControl.querySelectorAll("[data-graph-layer]").forEach((but
 
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
   button.addEventListener("click", () => {
+    state.sourceOutputId = "all";
+    state.sourceOutputLabel = "";
     state.timeRange = Number(button.dataset.timeRange);
     els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((control) => {
       control.classList.toggle("active", control === button);
@@ -5041,6 +5248,8 @@ els.companyTopicMatrix.addEventListener("click", (event) => {
 });
 
 els.sourceStageFilter.addEventListener("change", (event) => {
+  state.sourceFocusId = "";
+  state.sourceFocusLayer = "";
   state.sourceStage = event.target.value;
   renderRules();
 });
@@ -5048,6 +5257,8 @@ els.sourceStageFilter.addEventListener("change", (event) => {
 els.sourceViewControl.addEventListener("click", (event) => {
   const button = event.target.closest("[data-source-view]");
   if (!button) return;
+  state.sourceFocusId = "";
+  state.sourceFocusLayer = "";
   state.sourceView = button.dataset.sourceView;
   state.sourceStage = "all";
   renderRules();
