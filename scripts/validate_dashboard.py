@@ -64,6 +64,18 @@ def main() -> int:
             errors.append(f"{item_id}: low-relevance item entered the daily feed")
         if item.get("event_start_at") and item.get("published_at"):
             errors.append(f"{item_id}: event date is also marked as publication date")
+        evidence = item.get("evidence", {})
+        if evidence.get("kind") not in {"primary", "secondary", "index"}:
+            errors.append(f"{item_id}: missing or invalid evidence kind")
+        if evidence.get("verification_status") not in {
+            "source_backed",
+            "needs_original_check",
+        }:
+            errors.append(f"{item_id}: missing or invalid evidence verification status")
+        if evidence.get("primary_url") != item.get("url"):
+            errors.append(f"{item_id}: evidence primary URL is disconnected from item URL")
+        if item.get("workflow_status") != "new":
+            errors.append(f"{item_id}: invalid default workflow status")
 
     for row in health_rows:
         source_id = row.get("source_id")
@@ -100,6 +112,29 @@ def main() -> int:
             unknown = set(slot.get("source_ids", [])) - source_ids
             if unknown:
                 errors.append(f"coverage profile {profile.get('company_id')} has unknown sources {sorted(unknown)}")
+
+    timelines = payload.get("company_timelines", [])
+    timeline_company_ids = {timeline.get("company_id") for timeline in timelines}
+    if timeline_company_ids != company_ids:
+        errors.append("company_timelines do not cover the complete company pool")
+    valid_item_ids = set(item_ids)
+    for timeline in timelines:
+        unknown_items = set(timeline.get("item_ids", [])) - valid_item_ids
+        if unknown_items:
+            errors.append(
+                f"timeline {timeline.get('company_id')} contains unknown item ids {sorted(unknown_items)[:5]}"
+            )
+
+    source_experiments = payload.get("source_experiments", {})
+    allowed_experiment_statuses = {
+        "blocked_public_demo",
+        "replaced_by_direct",
+        "active_alternative",
+        "deferred_server",
+    }
+    for experiment in source_experiments.get("experiments", []):
+        if experiment.get("status") not in allowed_experiment_statuses:
+            errors.append(f"source experiment {experiment.get('id')} has invalid status")
 
     daily_count = sum(item.get("tier") in {"daily", "immediate"} for item in items)
     status_counts = {

@@ -1690,6 +1690,110 @@ def classify_tier(score: int, trust: str, has_action: bool = False) -> str:
     return "archive"
 
 
+def build_evidence_record(
+    item: Candidate,
+    source_lookup: dict[str, dict[str, Any]],
+    generated_at: str,
+) -> dict[str, Any]:
+    """Describe what supports the signal without overstating rule inference."""
+    source_rows = [
+        source_lookup[source_id]
+        for source_id in item.source_ids
+        if source_id in source_lookup
+    ]
+    source_types = list(dict.fromkeys(row.get("type", "unknown") for row in source_rows))
+    trust = item.source_trust or "unknown"
+    evidence_kind = (
+        "primary"
+        if trust in {"owned", "regulator", "research"}
+        else "secondary"
+        if trust in {"wire", "media", "ecosystem"}
+        else "index"
+    )
+    has_excerpt = bool(item.summary and not is_low_information_summary(item.summary, item.title))
+    return {
+        "kind": evidence_kind,
+        "kind_label": {
+            "primary": "一手或官方证据",
+            "secondary": "公开二手证据",
+            "index": "聚合索引线索",
+        }[evidence_kind],
+        "verification_status": "source_backed" if has_excerpt else "needs_original_check",
+        "verification_label": "有原始摘要支持" if has_excerpt else "需打开原文核验",
+        "summary_basis": "source_excerpt" if has_excerpt else "title_and_structured_rules",
+        "source_excerpt": first_sentence(item.summary, 220) if has_excerpt else "",
+        "primary_url": item.url,
+        "related_urls": item.related_urls,
+        "source_ids": item.source_ids,
+        "source_labels": item.source_labels,
+        "source_types": source_types,
+        "source_trust": trust,
+        "published_at": item.published,
+        "checked_at": generated_at,
+    }
+
+
+def build_company_timelines(
+    candidates: list[Candidate],
+    company_lookup: dict[str, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    timelines: list[dict[str, Any]] = []
+    for company_id, company in company_lookup.items():
+        company_items = [
+            item for item in candidates if company_id in item.matched_company_ids
+        ]
+        company_items.sort(
+            key=lambda item: (item.published or "", item.score),
+            reverse=True,
+        )
+        event_mix: dict[str, int] = {}
+        topic_mix: dict[str, int] = {}
+        action_mix: dict[str, int] = {}
+        source_ids: set[str] = set()
+        for item in company_items:
+            event_mix[item.business_event_type] = event_mix.get(item.business_event_type, 0) + 1
+            source_ids.update(item.source_ids)
+            for group_name in ("targets", "modalities", "product_needs"):
+                for value in item.intelligence.get(group_name, []):
+                    topic_mix[value] = topic_mix.get(value, 0) + 1
+            action_label = item.recommended_action.get("label", "")
+            if action_label:
+                action_mix[action_label] = action_mix.get(action_label, 0) + 1
+
+        timelines.append(
+            {
+                "company_id": company_id,
+                "company": company.get("display_name", company_id),
+                "item_count": len(company_items),
+                "selected_count": sum(
+                    item.tier in {"immediate", "daily"} for item in company_items
+                ),
+                "high_relevance_count": sum(
+                    item.acro_relevance.get("level") == "high" for item in company_items
+                ),
+                "source_count": len(source_ids),
+                "latest_activity": latest_calendar_value(
+                    [item.published for item in company_items if item.published]
+                ),
+                "event_mix": event_mix,
+                "top_topics": [
+                    {"label": label, "count": count}
+                    for label, count in sorted(
+                        topic_mix.items(), key=lambda pair: (-pair[1], pair[0])
+                    )[:8]
+                ],
+                "top_actions": [
+                    {"label": label, "count": count}
+                    for label, count in sorted(
+                        action_mix.items(), key=lambda pair: (-pair[1], pair[0])
+                    )[:5]
+                ],
+                "item_ids": [item.key for item in company_items],
+            }
+        )
+    return timelines
+
+
 def build_report(
     candidates: list[Candidate],
     errors: list[str],
@@ -1750,6 +1854,7 @@ def build_dashboard_payload(
     source_config: list[dict[str, Any]],
     source_runtime: dict[str, Any],
     company_source_coverage: dict[str, Any],
+    source_experiments: dict[str, Any],
     max_age_days: int,
     ai_summaries: dict[str, str] | None = None,
     summary_methods: dict[str, str] | None = None,
@@ -1762,6 +1867,8 @@ def build_dashboard_payload(
     summary_providers = summary_providers or {}
     summary_models = summary_models or {}
     summary_pipeline = summary_pipeline or {"status": "rules_only", "requested": False}
+    generated_at = dt.datetime.now().isoformat(timespec="seconds")
+    source_lookup = {source["id"]: source for source in source_config}
     new_items = [item for item in candidates if item.key not in seen]
     tiers = {
         "immediate": [item for item in candidates if item.tier == "immediate"],
@@ -1845,7 +1952,7 @@ def build_dashboard_payload(
         )
 
     return {
-        "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
+        "generated_at": generated_at,
         "window_days": max_age_days,
         "summary": {
             "new_candidates": len(new_items),
@@ -1867,7 +1974,9 @@ def build_dashboard_payload(
         "category_mix": categories,
         "signal_type_mix": signal_types,
         "source_health": source_health,
+        "source_experiments": source_experiments,
         "company_source_coverage": company_source_coverage,
+        "company_timelines": build_company_timelines(candidates, company_lookup),
         "companies": [
             {
                 "id": company["id"],
@@ -1921,6 +2030,8 @@ def build_dashboard_payload(
                     if item.summary and not is_low_information_summary(item.summary, item.title)
                     else "structured_inference"
                 ),
+                "evidence": build_evidence_record(item, source_lookup, generated_at),
+                "workflow_status": "new",
                 "score": item.score,
                 "tier": item.tier,
                 "category": item.category,
@@ -1968,6 +2079,8 @@ def write_static_api(payload: dict[str, Any]) -> None:
         "source_mix": payload["source_mix"],
         "signal_type_mix": payload["signal_type_mix"],
         "companies": payload["companies"],
+        "company_timelines": payload.get("company_timelines", []),
+        "source_experiments": payload.get("source_experiments", {}),
     })
 
 
@@ -2056,6 +2169,12 @@ def main() -> int:
     }
     intelligence_rules = load_json(CONFIG_DIR / "intelligence_rules.json")
     company_source_coverage = load_json(CONFIG_DIR / "company_source_coverage.json")
+    source_experiments_path = CONFIG_DIR / "source_experiments.json"
+    source_experiments = (
+        load_json(source_experiments_path)
+        if source_experiments_path.exists()
+        else {"updated_at": "", "principle": "", "experiments": []}
+    )
     sources = load_json(CONFIG_DIR / "sources.json")["sources"]
     company_lookup = {company["id"]: company for company in companies}
     source_lookup = {source["id"]: source for source in sources}
@@ -2205,6 +2324,7 @@ def main() -> int:
         sources,
         source_runtime,
         company_source_coverage,
+        source_experiments,
         args.days,
         ai_summaries,
         summary_methods,

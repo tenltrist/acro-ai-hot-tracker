@@ -1,0 +1,74 @@
+{
+  "updated_at": "2026-08-24",
+  "principle": "试验来源与生产来源分开记录。只有稳定、可重复且无需绕过平台限制的入口才进入自动抓取。",
+  "experiments": [
+    {
+      "id": "rsshub_linkedin_company_posts",
+      "provider": "RSSHub",
+      "capability": "LinkedIn 公司动态",
+      "target": "ACROBiosystems LinkedIn company posts",
+      "test_url": "https://rsshub.app/linkedin/company/acrobiosystems/posts",
+      "tested_at": "2026-08-24",
+      "status": "blocked_public_demo",
+      "result": "RSSHub 公共演示实例返回 HTTP 403；该路由还需要浏览器渲染能力，不作为 GitHub Actions 生产来源。",
+      "decision": "保留人工核对；以后只有在获得合规授权并自托管 RSSHub 时复测。"
+    },
+    {
+      "id": "rsshub_youtube_company_channel",
+      "provider": "RSSHub",
+      "capability": "官方 YouTube 频道",
+      "target": "ACROBiosystems official YouTube",
+      "test_url": "https://rsshub.app/youtube/user/@ACROBiosystems",
+      "tested_at": "2026-08-24",
+      "status": "replaced_by_direct",
+      "result": "RSSHub 公共演示实例返回 HTTP 403；平台现有公开视频页解析器可直接获得频道内容。",
+      "decision": "继续使用直接公开频道入口，RSSHub 只作为未来自托管备选。",
+      "replacement_source_ids": [
+        "acro_youtube_official"
+      ]
+    },
+    {
+      "id": "rsshub_sitemap_transform",
+      "provider": "RSSHub",
+      "capability": "官网 Sitemap 转 RSS",
+      "target": "ACRO product and solution sitemap",
+      "test_url": "https://rsshub.app/rsshub/transform/sitemap/https%3A%2F%2Fconsole.acrobiosystems.com%2Fsitemap-en.xml",
+      "tested_at": "2026-08-24",
+      "status": "replaced_by_direct",
+      "result": "RSSHub 公共演示实例返回 HTTP 403，且通用转换路由需要服务端允许目标域名。",
+      "decision": "继续使用平台内置 Sitemap 快照差分，避免引入额外服务。",
+      "replacement_source_ids": [
+        "acro_product_sitemap"
+      ]
+    },
+    {
+      "id": "builtin_public_page_monitor",
+      "provider": "AI Hot Tracker",
+      "capability": "公开列表页新增链接监测",
+      "target": "活动、协会、监管与竞品公开页面",
+      "tested_at": "2026-08-24",
+      "status": "active_alternative",
+      "result": "现有 html_links 入口直接读取公开列表，通过 URL 去重识别新增内容；无需外部服务。",
+      "decision": "作为 changedetection.io 的轻量 MVP 替代，继续通过数据源健康页观察稳定性。",
+      "replacement_source_ids": [
+        "linkj_life_science_events",
+        "shonan_ipark_news_events",
+        "jba_public_life_science_events",
+        "jsrm_public_events",
+        "biojapan_public_pages",
+        "pmda_life_science_updates",
+        "stemcell_official_multimedia_index"
+      ]
+    },
+    {
+      "id": "changedetection_self_hosted",
+      "provider": "changedetection.io",
+      "capability": "页面正文变化与通知",
+      "target": "没有 RSS 且需要监测正文变化的产品页",
+      "tested_at": "2026-08-24",
+      "status": "deferred_server",
+      "result": "能力适合后续产品页正文变化监控，但需要持续运行的服务和存储，当前 GitHub Pages 无法承载。",
+      "decision": "MVP 先用 Sitemap 与公开列表差分；确认正文变化有业务价值后再部署。"
+    }
+  ]
+}

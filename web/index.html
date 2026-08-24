@@ -21,6 +21,7 @@
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="timeline" title="公司时间线"><span class="nav-icon">↕</span><span>公司时间线</span></button>
           <button type="button" data-page-target="japan-customers" title="日本客户池"><span class="nav-icon">日</span><span>日本客户池</span></button>
           <button type="button" data-page-target="relationships" title="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
           <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
@@ -235,6 +236,32 @@
         <div class="company-pool-groups" id="companyPoolGroups"></div>
       </section>
 
+      <section class="company-timeline-section page-panel" data-page="timeline" aria-label="Company activity timeline">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">公司长期档案</p>
+            <h2>把零散新闻沉淀为持续更新的公司动态时间线</h2>
+          </div>
+          <span class="timestamp" id="companyTimelineTimestamp">时间线加载中</span>
+        </div>
+        <div class="timeline-controls" aria-label="公司时间线筛选">
+          <label>
+            <span>选择公司</span>
+            <select id="companyTimelineSelect" aria-label="选择时间线公司"></select>
+          </label>
+          <div class="segmented-control" id="timelineScopeControl" aria-label="时间线范围">
+            <button class="active" type="button" data-timeline-scope="selected">日报信号</button>
+            <button type="button" data-timeline-scope="all">全部记录</button>
+          </div>
+          <small>时间线按公司聚合；每条记录保留原始来源、摘要依据和建议动作。</small>
+        </div>
+        <div class="timeline-metrics" id="companyTimelineMetrics"></div>
+        <div class="timeline-layout">
+          <aside class="living-profile" id="companyLivingProfile" aria-label="公司动态档案"></aside>
+          <div class="company-timeline-list" id="companyTimelineList" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section class="japan-customers-section page-panel" data-page="japan-customers" aria-label="Japan customer pool">
         <div class="section-head">
           <div>
@@ -400,6 +427,15 @@
         </div>
 
         <div class="source-view-metrics" id="sourceViewMetrics"></div>
+
+        <details class="source-experiment-panel">
+          <summary>
+            <span><strong>开放源接入试验</strong><small>RSSHub 与网页变化监测的真实测试结果</small></span>
+            <b id="sourceExperimentSummary">加载中</b>
+          </summary>
+          <div class="source-experiment-principle" id="sourceExperimentPrinciple"></div>
+          <div class="source-experiment-grid" id="sourceExperimentGrid"></div>
+        </details>
 
         <div id="sourceLibraryIntro" hidden>
           <div class="rule-story">

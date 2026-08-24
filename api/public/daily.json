@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-24T00:53:11",
+  "generated_at": "2026-08-24T18:07:36",
   "window_days": 90,
   "summary": {
-    "new_candidates": 256,
+    "new_candidates": 56,
     "immediate": 0,
-    "daily": 88,
-    "archive": 1385,
+    "daily": 58,
+    "archive": 1397,
     "errors": 0,
     "companies": 15,
     "sources": 106
@@ -54,6 +54,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMk5BUy0tVFIzbU80NGM4UW05MFgtVy1xSkdIX09VX1NTTkJ1WEV1TUd5SDJKS0YtLVl0TVdNTkxWUGpvT1B5N1Q3ajF2alV0SnZEZFJHS2dhZWg4VEtIUElBeGc3RmpDLVVyM2FuWktQWnBDOF9aZnMtamcxQnp2ZDlOdmRoR1JzcnlUeWhUejFvRXBkQUp3WWctLXZmVHZOM0xWMDhYWlVsRU1tU3Q4OERKZlQxLTUxX2tRWFVnRFdWWXJYcnVneDNzaTZ5RHpCcTBHNF9iWm5EOU5Vd1E?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMk5BUy0tVFIzbU80NGM4UW05MFgtVy1xSkdIX09VX1NTTkJ1WEV1TUd5SDJKS0YtLVl0TVdNTkxWUGpvT1B5N1Q3ajF2alV0SnZEZFJHS2dhZWg4VEtIUElBeGc3RmpDLVVyM2FuWktQWnBDOF9aZnMtamcxQnp2ZDlOdmRoR1JzcnlUeWhUejFvRXBkQUp3WWctLXZmVHZOM0xWMDhYWlVsRU1tU3Q4OERKZlQxLTUxX2tRWFVnRFdWWXJYcnVneDNzaTZ5RHpCcTBHNF9iWm5EOU5Vd1E?oc=5"
+        ],
+        "source_ids": [
+          "google_news_acro"
+        ],
+        "source_labels": [
+          "Google News RSS - ACROBiosystems"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-16",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 76,
       "tier": "daily",
       "category": "product",
@@ -136,6 +161,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQkJCV0lVQ3U2T2NFVUFuemlPb2hJOFRZb2FnVTdycjdfaHVpQVZGUWp3VmZvYVRvZ2JjSXc4SXJnNHVuLWRwSVFYZHl5cXc2MEFIZERWcERxSXBjMzd0ODRsdHZWVDM4YWRNSlNfRG9nNEpfNC1Hamgyd3I5TUVOeXVmMDJIVm1EYVp6T202TW5rUDFobk1HaUJrSkY3VEZ4dmNLZFhQMGJpZHNtSGFlZDJycWRpZDVmV2llSWJ0SHNCTUQ0Z2FsNzZDT1h0RVJscS1Jc1BwQXJaYmpWaVRrN0d1SVZ3a1dQbjJ0Q1ZKTUtuXy1RTVI1NEctMFltQlgwUW5xTA?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQkJCV0lVQ3U2T2NFVUFuemlPb2hJOFRZb2FnVTdycjdfaHVpQVZGUWp3VmZvYVRvZ2JjSXc4SXJnNHVuLWRwSVFYZHl5cXc2MEFIZERWcERxSXBjMzd0ODRsdHZWVDM4YWRNSlNfRG9nNEpfNC1Hamgyd3I5TUVOeXVmMDJIVm1EYVp6T202TW5rUDFobk1HaUJrSkY3VEZ4dmNLZFhQMGJpZHNtSGFlZDJycWRpZDVmV2llSWJ0SHNCTUQ0Z2FsNzZDT1h0RVJscS1Jc1BwQXJaYmpWaVRrN0d1SVZ3a1dQbjJ0Q1ZKTUtuXy1RTVI1NEctMFltQlgwUW5xTA?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-07-29",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 72,
       "tier": "daily",
       "category": "partnership",
@@ -182,6 +232,105 @@
       "days_until_event": null
     },
     {
+      "id": "aaa9dca935c1153f",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - BioSpace",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
+      "published": "2026-06-22",
+      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 BioSpace",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-22",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
+      "score": 72,
+      "tier": "daily",
+      "category": "regulatory",
+      "business_event_type": "clinical_regulatory",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "战略主题命中: clinical development, manufacturing, AI-enabled research",
+        "业务动作命中: clinical, manufacturing",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 26,
+        "label": "中相关",
+        "explanation": "竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "包含监管或注册信号"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-06-22",
+      "event_start_at": "",
+      "age_days": 63,
+      "days_until_event": null
+    },
+    {
       "id": "7b5b1e59e7db16ce",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -215,6 +364,34 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNSFJqSWxMOEViQTdMY0l5SVBnR0tVcG1WcjRhenV1cE1xQXpXejdKMlRINE5tcE04Y0RrN3BkbEZDT2s1a1J3aDlMa28tamxqQXpKNlRURkhuMXZaaE9sbUpkVjBiZ1F5UDh3dGJkaW1MblpnVkgxdUZhN3JpZHZPeVNNRHRvYzdyclBUTEVpa3liS2RLUHNLbURJZ2xoRXVFaVo5MGZXUWhrbFdtNjljbDhobTE2Z0ZqZ1hfM3lGZm1aRDZaMGlrS3BrLTZjTzdod3VwR25xSmxrVGU5VVc1UFJmTjZRcXRyUXBhNk0zSUxWNWEzcTBHQ1hOeHZ5VWVuZXBUaDRudUZybjhNZG5QdHlURzAzaXExbjZSOFlEVTVSTGlJ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMipAJBVV95cUxNSFJqSWxMOEViQTdMY0l5SVBnR0tVcG1WcjRhenV1cE1xQXpXejdKMlRINE5tcE04Y0RrN3BkbEZDT2s1a1J3aDlMa28tamxqQXpKNlRURkhuMXZaaE9sbUpkVjBiZ1F5UDh3dGJkaW1MblpnVkgxdUZhN3JpZHZPeVNNRHRvYzdyclBUTEVpa3liS2RLUHNLbURJZ2xoRXVFaVo5MGZXUWhrbFdtNjljbDhobTE2Z0ZqZ1hfM3lGZm1aRDZaMGlrS3BrLTZjTzdod3VwR25xSmxrVGU5VVc1UFJmTjZRcXRyUXBhNk0zSUxWNWEzcTBHQ1hOeHZ5VWVuZXBUaDRudUZybjhNZG5QdHlURzAzaXExbjZSOFlEVTVSTGlJ?oc=5",
+          "https://news.google.com/rss/articles/CBMijgJBVV95cUxQblhZNTFEMk90c2ZEdDN1eFM1XzZuMWFvdlgwd1M1SXBYZFNvUjRhLXNiYlNhNjFtUUJYaFUzSTBXLWk5MV8zenhsMG1WaVlFdEFXWFlkSGdZRXE4bDcxRzZiWXMzLS10cXl6SWRmNWVrOHA4MWhaM2NmQmZ5bG1oUGt4QzB6N2V2LXFFSVRmMVgxMnRIeXBZN2lzWjlrY1VUR0FwWUNWVERaQWpsZkl5a0hOZDI3Zmh0UUptVF9veVlCV2p4OTVrNFVaajZZZlUwMUNfb1hDYjJRS1ZHaUZ0SXI1VFV5dk1jMFlRRW9zQUxxcEVZTjcyaHNTb3M4dUZvbWI5aXVUbXhNeDNQdUE?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index",
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS",
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-08-11",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 66,
       "tier": "daily",
       "category": "market",
@@ -292,6 +469,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRHpkSHRCeHloNW9WWDZsWG83T2Vvc2x2M3AyZzREb0M5c0R5SnFYVExXSTlCVDFFQzN5MklKUG9lbFl3VWdrdU9oSS1BSkExeE1FRkVkbTlQSzNBOVh4UjVJa2tZNFB2WGZDZmQ0Vm1id0ZteGhSV0lCZ0VhdHFjbWRZbzdWWDN5ZDBfSFhLc1g5bXZaSUpvZWt2THlFV0Z6VFRodGExTnJta19zd0J3bHhpZlllN2k1YjJMZ3NvZkIxVVpLYVA0YmJfcEUyNEYwTzFYdEdwYVk4NC1lYXdCSzBJVE9wUjJzdGZtWEU2RmQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRHpkSHRCeHloNW9WWDZsWG83T2Vvc2x2M3AyZzREb0M5c0R5SnFYVExXSTlCVDFFQzN5MklKUG9lbFl3VWdrdU9oSS1BSkExeE1FRkVkbTlQSzNBOVh4UjVJa2tZNFB2WGZDZmQ0Vm1id0ZteGhSV0lCZ0VhdHFjbWRZbzdWWDN5ZDBfSFhLc1g5bXZaSUpvZWt2THlFV0Z6VFRodGExTnJta19zd0J3bHhpZlllN2k1YjJMZ3NvZkIxVVpLYVA0YmJfcEUyNEYwTzFYdEdwYVk4NC1lYXdCSzBJVE9wUjJzdGZtWEU2RmQ?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-05-04",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 66,
       "tier": "daily",
       "category": "product",
@@ -370,6 +572,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOVWd6UzVVay1zSXVnSVJSNmRIeTFtSTdmTXR5MV9jZDF6anVlZFVxc25kNjhSWkhkOFFSWWlJQ2stcVpORncyMGc2UWFrY1VPQzVLWHk3cndlZjlkMGUyOVBaV3FENzdTcDhWQVlQSjhTc1pBSzRoZ2x4Y3BHV3NjU1ZKd0FCZzJnbHJhX3VUZU96MUduSFdqZ0xEVzdTMlV1ckxDaFlWS2lvV1Y5cWc1QjFfeUxWMHZHT0dHTmN1ck1wcjlpTW5xY2RQbU96a2J0WnBDZ1Y2ZmFfQmxsRVhUdG9xS0tabEJWS191cXBLeTRpb1ZuNHdlcGhhZ3FwelJWcmZYSHMxSXp2Y2I2c21zag?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMikAJBVV95cUxOVWd6UzVVay1zSXVnSVJSNmRIeTFtSTdmTXR5MV9jZDF6anVlZFVxc25kNjhSWkhkOFFSWWlJQ2stcVpORncyMGc2UWFrY1VPQzVLWHk3cndlZjlkMGUyOVBaV3FENzdTcDhWQVlQSjhTc1pBSzRoZ2x4Y3BHV3NjU1ZKd0FCZzJnbHJhX3VUZU96MUduSFdqZ0xEVzdTMlV1ckxDaFlWS2lvV1Y5cWc1QjFfeUxWMHZHT0dHTmN1ck1wcjlpTW5xY2RQbU96a2J0WnBDZ1Y2ZmFfQmxsRVhUdG9xS0tabEJWS191cXBLeTRpb1ZuNHdlcGhhZ3FwelJWcmZYSHMxSXp2Y2I2c21zag?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-04-02",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 66,
       "tier": "daily",
       "category": "product",
@@ -448,6 +675,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE40ZURXWVc1Z3lMN29FWkZCUmxxOEdNdGhZUjVfUHdzMmVmV2pHY2hLbVAyVm9vVDRGTlhmOU8xM3F4WUJ2UXcxNDh3R293TzV2UU5UYU1SV1FMNEJQT1QyUnZJTU9mUllYVDUtNUZoZEZZRDlBRHpmUTlBWk54Zw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMifkFVX3lxTE40ZURXWVc1Z3lMN29FWkZCUmxxOEdNdGhZUjVfUHdzMmVmV2pHY2hLbVAyVm9vVDRGTlhmOU8xM3F4WUJ2UXcxNDh3R293TzV2UU5UYU1SV1FMNEJQT1QyUnZJTU9mUllYVDUtNUZoZEZZRDlBRHpmUTlBWk54Zw?oc=5"
+        ],
+        "source_ids": [
+          "pharmcube_company_pool_index"
+        ],
+        "source_labels": [
+          "Pharmcube / ByDrug - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-18",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 66,
       "tier": "daily",
       "category": "partnership",
@@ -530,6 +782,33 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNWS1Yd1BjZDE4bjF3TzdsOXFiVGY0cDU0aEpnZklSZUhPUWVDMW15Qmxudlc2Sm13UXVpQjdiaXBrVEhsOUo1S2VpVWhhZDlJd0h6VWZJWVNuUGM5djJIS2o4VjNIWkJvR28yME84S3d1akpHaFh0YlptbDk2UUtDdHhGRDlZRGdZbndBTHFQd1JuRW5NSHBYNmw2eVhON1cxX2tMdWxtMkNCdXNlSklxeGUxZl96cmRxSFVERXA0aEJ3cWlxcklONGxucVliS0NDVEkyaTFEczRDMlZDZnJfTjViX2U2cXNabW4wbEhHMXRBdG01blVGZGp3aGwxck0zZ2dOMGdn?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMihgJBVV95cUxNWS1Yd1BjZDE4bjF3TzdsOXFiVGY0cDU0aEpnZklSZUhPUWVDMW15Qmxudlc2Sm13UXVpQjdiaXBrVEhsOUo1S2VpVWhhZDlJd0h6VWZJWVNuUGM5djJIS2o4VjNIWkJvR28yME84S3d1akpHaFh0YlptbDk2UUtDdHhGRDlZRGdZbndBTHFQd1JuRW5NSHBYNmw2eVhON1cxX2tMdWxtMkNCdXNlSklxeGUxZl96cmRxSFVERXA0aEJ3cWlxcklONGxucVliS0NDVEkyaTFEczRDMlZDZnJfTjViX2U2cXNabW4wbEhHMXRBdG01blVGZGp3aGwxck0zZ2dOMGdn?oc=5"
+        ],
+        "source_ids": [
+          "google_news_stemcell_technologies",
+          "businesswire_expanded_company_pool_index"
+        ],
+        "source_labels": [
+          "Google News RSS - STEMCELL Technologies",
+          "Business Wire - expanded competitor pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-08",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 66,
       "tier": "daily",
       "category": "partnership",
@@ -576,88 +855,6 @@
       "days_until_event": null
     },
     {
-      "id": "6433ce51c19be4d1",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "bing_news_acro_backup",
-      "source_label": "Bing News RSS - ACROBiosystems backup",
-      "source_ids": [
-        "bing_news_acro_backup"
-      ],
-      "source_labels": [
-        "Bing News RSS - ACROBiosystems backup"
-      ],
-      "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8b95ba3c774786acaf637eb97d6442&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f07%2f15%2ftmt-newswire%2fpr-newswire%2facrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process%2f2384463&c=16154244222104438913&mkt=en-us"
-      ],
-      "source_trust": "aggregator",
-      "title": "ACROBiosystems Obtains PMDA Material Suitability Confirmation for GMP-grade IL-15, Ensuring Reliable Quality and Strengthening the Biopharmaceutical Approval Process",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8b95ba3c774786acaf637eb97d6442&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f07%2f15%2ftmt-newswire%2fpr-newswire%2facrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process%2f2384463&c=16154244222104438913&mkt=en-us",
-      "published": "2026-07-14",
-      "summary": "NEWARK, Del., July 15, 2026 /PRNewswire/ -- Recently, ACROBiosystems has officially received the \"Material Suitability Confirmation for Regenerative Medicine Products\" (Certificate No.: 薬機審長発第47号) ...",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及GMP 级原料。 原始摘要要点：NEWARK, Del., July 15, 2026 /PRNewswire/ -- Recently, ACROBiosystems has officially received the \"Material Sui...。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 62,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "quality_supply",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: ACROBiosystems",
-        "战略主题命中: GMP",
-        "业务动作命中: PMDA, GMP-grade",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "GMP 级原料"
-        ],
-        "development_stages": [
-          "注册 / 审批"
-        ],
-        "business_actions": [
-          "注册 / 监管动作"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "high",
-        "score": 67,
-        "label": "高相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "可映射到 ACRO 产品或服务需求",
-          "研发阶段可识别",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-14",
-      "event_start_at": "",
-      "age_days": 41,
-      "days_until_event": null
-    },
-    {
       "id": "f610ddd76a80d18c",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -688,6 +885,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZUdVczVlSHhUY1A5ZDN4amhkbkVHbVdaTXI0ZHJqYS1nWDV5MDc5ZUpuVm53cGhheERoWDZJalVRYWlIMnVWLW5UNVFNdi0wSEZxSzVKaDRSMTJ3U1ZLWTNsTS13a1N5S21YemxwdktjNjliYWpjd2k5cnp1N1NPSlBOZEd2cmJMYUhSNGVlVklxTUhLSXQxajFOZVRHWGtlNC1kUnpxSHpEd1Vqa0ZqeXZJdkNHcEZ5QmVxNVlHYTFJa0M4UzdxZWtwazh1d3RxWGhMVHMtMVZkOXl5aVRBY2EwM0lPcnBQSXdZb1FHa08?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZUdVczVlSHhUY1A5ZDN4amhkbkVHbVdaTXI0ZHJqYS1nWDV5MDc5ZUpuVm53cGhheERoWDZJalVRYWlIMnVWLW5UNVFNdi0wSEZxSzVKaDRSMTJ3U1ZLWTNsTS13a1N5S21YemxwdktjNjliYWpjd2k5cnp1N1NPSlBOZEd2cmJMYUhSNGVlVklxTUhLSXQxajFOZVRHWGtlNC1kUnpxSHpEd1Vqa0ZqeXZJdkNHcEZ5QmVxNVlHYTFJa0M4UzdxZWtwazh1d3RxWGhMVHMtMVZkOXl5aVRBY2EwM0lPcnBQSXdZb1FHa08?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-06-30",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 56,
       "tier": "daily",
       "category": "partnership",
@@ -767,6 +989,34 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQRGc4ZXRNT3lRWUV3aFJ6OUxvekVEZkJ2N1dQanBWMWg3cHJDWmRkVGN2T2pINGdUcWlNeE9kMUZ3UWt3a2RwR2FEMlRqY2RqWkZHOTV1TDBnTEhOQ0l6OUtZOWtaY0N4MEZIZWUwQTZwSlQtaWljWnBCanlNZ0piRVBYeEFwMTh3cHhNVWEtcXlrRTFBSVFZZlBYOVJHU295OXl4RHowbDB3WDB1bGU5MXI2OHFwQW15QW9yWFJoUzRjTWlxUjM0TXdQSkhDd1QzT0FrSDhQbTl2YmpGeTVYMUJoeGZOeFk5OC01WWFDRFlNVUpaTVlMUnNiT0k1SU00VlYzOU1GdDhmZlFqdmN3cUZ3OTI4SWxMVmc?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMimgJBVV95cUxQRGc4ZXRNT3lRWUV3aFJ6OUxvekVEZkJ2N1dQanBWMWg3cHJDWmRkVGN2T2pINGdUcWlNeE9kMUZ3UWt3a2RwR2FEMlRqY2RqWkZHOTV1TDBnTEhOQ0l6OUtZOWtaY0N4MEZIZWUwQTZwSlQtaWljWnBCanlNZ0piRVBYeEFwMTh3cHhNVWEtcXlrRTFBSVFZZlBYOVJHU295OXl4RHowbDB3WDB1bGU5MXI2OHFwQW15QW9yWFJoUzRjTWlxUjM0TXdQSkhDd1QzT0FrSDhQbTl2YmpGeTVYMUJoeGZOeFk5OC01WWFDRFlNVUpaTVlMUnNiT0k1SU00VlYzOU1GdDhmZlFqdmN3cUZ3OTI4SWxMVmc?oc=5",
+          "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQQjBra0t6dFFQeS1kVlFoY0d0VlA4dmdGM1FoZUZUNmF3ckJSS2pZRnRUd2tWYk83WExyVkROVnFxWDQtSVpaZExUN0tYWm1acmNFQzFiZHdhd2l1emN0V3cwU2t3QXFlUGltODJBYmVFMTdOeldwZ3NJSFpkdDEyNDdrbVpyT0ZfSjZYcmt2azhETDBtbHNvRHNPR0RQQkJtYnZvQnJNV2hmZXdYcWpBeFlHNzFuZHBuYkYwWE1nUnE1cGc3VG9KQk80d3R4ak5rQlZhY2U1T0Q0NTYyUFcxOVRPYm1yZmZJOW53Q25ndExkcU9VSzZJc1NrellqUzlpS2lSN2hZUG1ad1JYeUk1X1J3bTFMM3VUREhhclA0ckh0VGRWRGQ1T0xzc3IxY0c3ZGVtdU1pYmN6QmJ2ZW8ycw?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index",
+          "thermo_official_rss"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS",
+          "Thermo Fisher official press releases - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-05-28",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 56,
       "tier": "daily",
       "category": "product",
@@ -843,6 +1093,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5"
+        ],
+        "source_ids": [
+          "sartorius_official_news_index"
+        ],
+        "source_labels": [
+          "Sartorius official Newsroom - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-23",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 56,
       "tier": "daily",
       "category": "partnership",
@@ -919,6 +1194,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5"
+        ],
+        "source_ids": [
+          "google_news_sartorius"
+        ],
+        "source_labels": [
+          "Google News RSS - Sartorius"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-23",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 56,
       "tier": "daily",
       "category": "partnership",
@@ -994,6 +1294,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1d6cTQ4dERHMXp4MzU1dWFUQUVLNmlPU1RmNnBuVkhBUE5ocERaTW95WlBUX0hvek1xSndSdzZaX1NYT095RE9pZ1g5a3N6WWdjNGd4WkUtS0stZW5uVWZqWk01T1Y5Snh0ZTJJSjZxMGZ1M3RaUDN4WW1CUTF3SkJEbjk0aDRUMDVCSHpSWndQY093Y1VzZWlXSXczN3hkNk5HRzhFNTNUaG5BOVhRTkhn?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1d6cTQ4dERHMXp4MzU1dWFUQUVLNmlPU1RmNnBuVkhBUE5ocERaTW95WlBUX0hvek1xSndSdzZaX1NYT095RE9pZ1g5a3N6WWdjNGd4WkUtS0stZW5uVWZqWk01T1Y5Snh0ZTJJSjZxMGZ1M3RaUDN4WW1CUTF3SkJEbjk0aDRUMDVCSHpSWndQY093Y1VzZWlXSXczN3hkNk5HRzhFNTNUaG5BOVhRTkhn?oc=5"
+        ],
+        "source_ids": [
+          "google_news_sartorius"
+        ],
+        "source_labels": [
+          "Google News RSS - Sartorius"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-23",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 56,
       "tier": "daily",
       "category": "partnership",
@@ -1039,160 +1364,6 @@
       "days_until_event": null
     },
     {
-      "id": "99a9b0255ef6689e",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/cd20-human-cd0-hf2d3"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: cd20 human cd0 hf2d3",
-      "url": "https://www.acrobiosystems.com/products/protein/cd20-human-cd0-hf2d3",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及CD20。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 54,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "战略主题命中: CD20",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [
-          "CD20"
-        ],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 37,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "出现明确靶点"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "75d613f31b989f34",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/cd20-human-cd0-ha2d4"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: cd20 human cd0 ha2d4",
-      "url": "https://www.acrobiosystems.com/products/protein/cd20-human-cd0-ha2d4",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及CD20。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 54,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "战略主题命中: CD20",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [
-          "CD20"
-        ],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 37,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "出现明确靶点"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
       "id": "91be4db09d618590",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma",
@@ -1223,6 +1394,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5"
+        ],
+        "source_ids": [
+          "google_news_merck_life_science"
+        ],
+        "source_labels": [
+          "Google News RSS - Merck KGaA Life Science"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-20",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 54,
       "tier": "daily",
       "category": "product",
@@ -1299,6 +1495,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWVZaSDlwTW1MME5NUTBXNmhhQXRUMFc0LTRYcHdaTmE3Y2IxbTZDLURlNzhZcWdNeU9ZSEpHbkVUbXk1Qlp2aG50T1JmUWk1T0t2Und2SVlFTmRfLXpRSzd3WkFjNEVqeXJaUVJCOEFXeVozVlcya3UtMkFwQUtJSzlGQUFSZmFOZ3RYTlhUNmN2VFZXaUtfdU5BaElOV3dkUl9JNW9SNVVPWlJ6eTV3b1Uxd3ZucjBFOUF2bEpyRGRKODlPSnR3MVB0NktINWFVeGRyX2p6T1dWdU1JRFVOMzJtMFNfRmM?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWVZaSDlwTW1MME5NUTBXNmhhQXRUMFc0LTRYcHdaTmE3Y2IxbTZDLURlNzhZcWdNeU9ZSEpHbkVUbXk1Qlp2aG50T1JmUWk1T0t2Und2SVlFTmRfLXpRSzd3WkFjNEVqeXJaUVJCOEFXeVozVlcya3UtMkFwQUtJSzlGQUFSZmFOZ3RYTlhUNmN2VFZXaUtfdU5BaElOV3dkUl9JNW9SNVVPWlJ6eTV3b1Uxd3ZucjBFOUF2bEpyRGRKODlPSnR3MVB0NktINWFVeGRyX2p6T1dWdU1JRFVOMzJtMFNfRmM?oc=5"
+        ],
+        "source_ids": [
+          "google_news_merck_life_science"
+        ],
+        "source_labels": [
+          "Google News RSS - Merck KGaA Life Science"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-16",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 54,
       "tier": "daily",
       "category": "product",
@@ -1376,6 +1597,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-03",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 54,
       "tier": "daily",
       "category": "partnership",
@@ -1445,13 +1691,38 @@
       "source_trust": "owned",
       "title": "BIO International Convention 2026 Recap Day 3",
       "url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-3/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-3",
-      "published": "2026-06-25",
+      "published": "2026-06-26",
       "summary": "Day three of the 2026 BIO International Convention centered on one overarching theme: acceleration. Whether through artificial intelligence, manufacturing innovation, or new approaches to collaboration, speakers throughout the day focused on how the industry can shorten development timelines while m...",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Day three of the 2026 BIO International Convention centered on one overarching theme: acceleration.。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Day three of the 2026 BIO International Convention centered on one overarching theme: acceleration.",
+        "primary_url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-3/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-3",
+        "related_urls": [
+          "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-3/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-3"
+        ],
+        "source_ids": [
+          "thermo_biotech_blog_rss"
+        ],
+        "source_labels": [
+          "Thermo Fisher Biotech at Scale RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-26",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 52,
       "tier": "daily",
       "category": "company",
@@ -1492,87 +1763,9 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-25",
+      "published_at": "2026-06-26",
       "event_start_at": "",
-      "age_days": 60,
-      "days_until_event": null
-    },
-    {
-      "id": "0733849fb482ca4b",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "bing_news_acro_backup",
-      "source_label": "Bing News RSS - ACROBiosystems backup",
-      "source_ids": [
-        "bing_news_acro_backup"
-      ],
-      "source_labels": [
-        "Bing News RSS - ACROBiosystems backup"
-      ],
-      "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8b95ba3c774786acaf637eb97d6442&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8b95ba3c774786acaf637eb97d6442&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f05%2f10%2ftmt-newswire%2fpr-newswire%2facrobiosystems-launches-global-license-solution-upgrade-for-hek293-functional-cell-lines-streamlining-compliance-to-accelerate-biopharmaceutical-rd%2f2340083&c=6088159886962232871&mkt=en-us"
-      ],
-      "source_trust": "aggregator",
-      "title": "ACROBiosystems Launches Global License Solution Upgrade for HEK293 Functional Cell Lines, Streamlining Compliance to Accelerate Biopharmaceutical R&D",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8b95ba3c774786acaf637eb97d6442&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-      "published": "2026-05-10",
-      "summary": "The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools. Functional cell lines serve as a versatile vital engine driving full-cycle breakthroughs in innovative ...",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及细胞系 / 工程细胞。 原始摘要要点：The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 52,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: ACROBiosystems",
-        "战略主题命中: HEK293",
-        "业务动作命中: launch, license",
-        "高价值分类加成 +10: product",
-        "超过时效窗口 106天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "细胞系 / 工程细胞"
-        ],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 47,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "可映射到 ACRO 产品或服务需求"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-05-10",
-      "event_start_at": "",
-      "age_days": 106,
+      "age_days": 59,
       "days_until_event": null
     },
     {
@@ -1599,13 +1792,38 @@
       "source_trust": "owned",
       "title": "On-Demand GMP Human T Cell Expansion Course - STEMCELL Technologies",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd001WURwdk1nbmxvYkdTc0dGdEQydlViTzBFajN1ampad1ZMaEVCakN6WDlOanpPaUVndTNvUGVHMTRINUQyYTNoQU1Pb0hULVRKU1R6UEdJTzNtSlFJMzB2SXVWeVNSeWpPSnBqR01QVlRaUTNLTFc4TFlzb2pDeDRFcjFWOGxwX2ZpbUdn?oc=5",
-      "published": "2026-03-18",
+      "published": "2026-03-19",
       "summary": "On-Demand GMP Human T Cell Expansion Course STEMCELL Technologies",
       "ai_summary": "竞品 STEMCELL Technologies 出现市场活动信息。 竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd001WURwdk1nbmxvYkdTc0dGdEQydlViTzBFajN1ampad1ZMaEVCakN6WDlOanpPaUVndTNvUGVHMTRINUQyYTNoQU1Pb0hULVRKU1R6UEdJTzNtSlFJMzB2SXVWeVNSeWpPSnBqR01QVlRaUTNLTFc4TFlzb2pDeDRFcjFWOGxwX2ZpbUdn?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd001WURwdk1nbmxvYkdTc0dGdEQydlViTzBFajN1ampad1ZMaEVCakN6WDlOanpPaUVndTNvUGVHMTRINUQyYTNoQU1Pb0hULVRKU1R6UEdJTzNtSlFJMzB2SXVWeVNSeWpPSnBqR01QVlRaUTNLTFc4TFlzb2pDeDRFcjFWOGxwX2ZpbUdn?oc=5"
+        ],
+        "source_ids": [
+          "stemcell_official_webinars_index"
+        ],
+        "source_labels": [
+          "STEMCELL Technologies official webinars and events - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-03-19",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 52,
       "tier": "daily",
       "category": "event",
@@ -1618,7 +1836,7 @@
         "战略主题命中: GMP",
         "业务动作命中: expansion, GMP",
         "高价值分类加成 +10: event",
-        "超过时效窗口 159天，因业务动作匹配保留"
+        "超过时效窗口 158天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -1649,9 +1867,9 @@
       },
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "",
-      "event_start_at": "2026-03-18",
+      "event_start_at": "2026-03-19",
       "age_days": null,
-      "days_until_event": -159
+      "days_until_event": -158
     },
     {
       "id": "0d4166b974c394be",
@@ -1684,6 +1902,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSVhHYmlXUW1qV3NpQkExOU1VRUJiZjJDWFl2V1Q3c2JPYy1OWTdnSjJpZUdXQ2xzSDF5VDB2Z2JBVWZ5V1lTZXJONm9keHFqTEFmZVNUWkdldlRTMzI4S2RFdWg5NTdPd1hidHBCelZ3bHZpWG10MDBuUXlpTUlhYw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSVhHYmlXUW1qV3NpQkExOU1VRUJiZjJDWFl2V1Q3c2JPYy1OWTdnSjJpZUdXQ2xzSDF5VDB2Z2JBVWZ5V1lTZXJONm9keHFqTEFmZVNUWkdldlRTMzI4S2RFdWg5NTdPd1hidHBCelZ3bHZpWG10MDBuUXlpTUlhYw?oc=5"
+        ],
+        "source_ids": [
+          "stemcell_official_webinars_index"
+        ],
+        "source_labels": [
+          "STEMCELL Technologies official webinars and events - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-01",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 52,
       "tier": "daily",
       "category": "event",
@@ -1760,6 +2003,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1DeVNMNHJrMnd6QnUwMkctZGozM0hSZ0RwajlQV0d0eGFJVzV0aldWR1FTOFhicEM2UGpQeFZIN0xMSUhoNE1EaQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1DeVNMNHJrMnd6QnUwMkctZGozM0hSZ0RwajlQV0d0eGFJVzV0aldWR1FTOFhicEM2UGpQeFZIN0xMSUhoNE1EaQ?oc=5"
+        ],
+        "source_ids": [
+          "nikkanyaku_life_science_index"
+        ],
+        "source_labels": [
+          "Nikkan Yakugyo - life science indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-05-13",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 50,
       "tier": "daily",
       "category": "company",
@@ -1837,6 +2105,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOUhhWWozMjNUZXh4Q0Y3NVFpMlV1dExiclBrTUtQNUVhTnBwNjE1TE9TUmt4c0FITnJvWGl2eTZxUng3MFNMMkhCQTh3RTdvNDhpX2s0VExEdzBSNzZNNzU5eXl4NzFUazdoSGRmbl9fN2VPUW16TUNhMjJNZ216ZkJSX29pYl9yMGhF?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOUhhWWozMjNUZXh4Q0Y3NVFpMlV1dExiclBrTUtQNUVhTnBwNjE1TE9TUmt4c0FITnJvWGl2eTZxUng3MFNMMkhCQTh3RTdvNDhpX2s0VExEdzBSNzZNNzU5eXl4NzFUazdoSGRmbl9fN2VPUW16TUNhMjJNZ216ZkJSX29pYl9yMGhF?oc=5"
+        ],
+        "source_ids": [
+          "miltenyi_official_news_index"
+        ],
+        "source_labels": [
+          "Miltenyi group official news - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-15",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 50,
       "tier": "daily",
       "category": "company",
@@ -1883,2056 +2176,6 @@
       "days_until_event": null
     },
     {
-      "id": "aa884df0f133a2f6",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/cell-grade-beads/cd14-human-mbs-s026"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: cd14 human mbs s026",
-      "url": "https://www.acrobiosystems.com/products/cell-grade-beads/cd14-human-mbs-s026",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "ee7fc9917e90310d",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/cd38-rat-cd8-r52h3"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: cd38 rat cd8 r52h3",
-      "url": "https://www.acrobiosystems.com/products/protein/cd38-rat-cd8-r52h3",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及CD38。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [
-          "CD38"
-        ],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 37,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "出现明确靶点"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "94b078872cdbb99f",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/cd38-rabbit-cd8-r52h4"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: cd38 rabbit cd8 r52h4",
-      "url": "https://www.acrobiosystems.com/products/protein/cd38-rabbit-cd8-r52h4",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及CD38。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [
-          "CD38"
-        ],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 37,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "出现明确靶点"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "5d9ca6b5189532f4",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/tnfr1-human-tn1-h82e6"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: tnfr1 human tn1 h82e6",
-      "url": "https://www.acrobiosystems.com/products/protein/tnfr1-human-tn1-h82e6",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "5aef151d4cce61c2",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/cell/trop-2-human-chek-atp036"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: trop 2 human chek atp036",
-      "url": "https://www.acrobiosystems.com/products/cell/trop-2-human-chek-atp036",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "072d9ba90d005c8c",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/protein-a-frt-td10"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: protein a frt td10",
-      "url": "https://www.acrobiosystems.com/products/protein/protein-a-frt-td10",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "6db358a264af8b52",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/protein-a-frt-ta10"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: protein a frt ta10",
-      "url": "https://www.acrobiosystems.com/products/protein/protein-a-frt-ta10",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "3ae6ec5e9bd1ab23",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/cell/ccho-atp312"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: ccho atp312",
-      "url": "https://www.acrobiosystems.com/products/cell/ccho-atp312",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "8b59786f278d5dce",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/cd7-cynomolgus-cd7-c5253"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: cd7 cynomolgus cd7 c5253",
-      "url": "https://www.acrobiosystems.com/products/protein/cd7-cynomolgus-cd7-c5253",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "937f65448bbb2bb6",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/tl1a-rat-tla-r5244"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: tl1a rat tla r5244",
-      "url": "https://www.acrobiosystems.com/products/protein/tl1a-rat-tla-r5244",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "41846e3809dbe24b",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/claudin-18-2-human-cl2-h51d3"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: claudin 18 2 human cl2 h51d3",
-      "url": "https://www.acrobiosystems.com/products/protein/claudin-18-2-human-cl2-h51d3",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "4e072f2648733b1a",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/steap1-human-st1-h5287"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: steap1 human st1 h5287",
-      "url": "https://www.acrobiosystems.com/products/protein/steap1-human-st1-h5287",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "cbfd8c98bd8399aa",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/folr3-human-fo3-h82e3"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: folr3 human fo3 h82e3",
-      "url": "https://www.acrobiosystems.com/products/protein/folr3-human-fo3-h82e3",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "9dfe7e43bcc68652",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/vaccinia-capping-system-vaccinia-virus-vam-v5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: vaccinia capping system vaccinia virus vam v5143",
-      "url": "https://www.acrobiosystems.com/products/protein/vaccinia-capping-system-vaccinia-virus-vam-v5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "8f17e9f524127d42",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/t7-rna-polymerase-e-coli-t7e-e5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: t7 rna polymerase e coli t7e e5143",
-      "url": "https://www.acrobiosystems.com/products/protein/t7-rna-polymerase-e-coli-t7e-e5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "f1feeda1a891387d",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/t7-rna-polymerase-e-coli-t7e-e5146"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: t7 rna polymerase e coli t7e e5146",
-      "url": "https://www.acrobiosystems.com/products/protein/t7-rna-polymerase-e-coli-t7e-e5146",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "3fad3d658c27172f",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/rnase-inhibitor-mus-musculus-rnr-m5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: rnase inhibitor mus musculus rnr m5143",
-      "url": "https://www.acrobiosystems.com/products/protein/rnase-inhibitor-mus-musculus-rnr-m5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "f7ed354d9c6f3a47",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/pyrophosphatase-thermococcus-litoralis-pye-t5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: pyrophosphatase thermococcus litoralis pye t5143",
-      "url": "https://www.acrobiosystems.com/products/protein/pyrophosphatase-thermococcus-litoralis-pye-t5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "3125b167eec9af09",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/pyrophosphatase-saccharomyces-cerevisiae-pye-s5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: pyrophosphatase saccharomyces cerevisiae pye s5143",
-      "url": "https://www.acrobiosystems.com/products/protein/pyrophosphatase-saccharomyces-cerevisiae-pye-s5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "303d692bc3038b37",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/dnase-i-bovine-dni-b52h3"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: dnase i bovine dni b52h3",
-      "url": "https://www.acrobiosystems.com/products/protein/dnase-i-bovine-dni-b52h3",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "0c2896ee44465ff8",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/nuclease-serratia-marcescens-bee-n3116"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: nuclease serratia marcescens bee n3116",
-      "url": "https://www.acrobiosystems.com/products/protein/nuclease-serratia-marcescens-bee-n3116",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "7e5acccbdb09fd32",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/ribonuclease-3-escherichia-coli-k12-ri3-e5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: ribonuclease 3 escherichia coli k12 ri3 e5143",
-      "url": "https://www.acrobiosystems.com/products/protein/ribonuclease-3-escherichia-coli-k12-ri3-e5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "20e267ca1957b9ac",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/rnase-r-escherichia-coli-k12-rnr-e5146"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: rnase r escherichia coli k12 rnr e5146",
-      "url": "https://www.acrobiosystems.com/products/protein/rnase-r-escherichia-coli-k12-rnr-e5146",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "73992cef4ddb3219",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/t4-rna-ligase-1-escherichia-phage-t4-t41-e5143"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: t4 rna ligase 1 escherichia phage t4 t41 e5143",
-      "url": "https://www.acrobiosystems.com/products/protein/t4-rna-ligase-1-escherichia-phage-t4-t41-e5143",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "d1ab6c0d9e36ca71",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/alkaline-phosphatase-antarctic-bacterium-tab5-ale-a5113"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: alkaline phosphatase antarctic bacterium tab5 ale a5113",
-      "url": "https://www.acrobiosystems.com/products/protein/alkaline-phosphatase-antarctic-bacterium-tab5-ale-a5113",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "f3c35ac715ba9530",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/xbai-xanthomonas-campestris-xbl-x51h3"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: xbai xanthomonas campestris xbl x51h3",
-      "url": "https://www.acrobiosystems.com/products/protein/xbai-xanthomonas-campestris-xbl-x51h3",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "90b8d9bc38c0a38f",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/gpr75-human-gpd-h82d8"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: gpr75 human gpd h82d8",
-      "url": "https://www.acrobiosystems.com/products/protein/gpr75-human-gpd-h82d8",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "ab57afe2a9f9adb2",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "acro_product_sitemap",
-      "source_label": "ACRO official product and solution sitemap monitor",
-      "source_ids": [
-        "acro_product_sitemap"
-      ],
-      "source_labels": [
-        "ACRO official product and solution sitemap monitor"
-      ],
-      "related_urls": [
-        "https://www.acrobiosystems.com/products/protein/rnase-h-e-coli-rnh-e5113"
-      ],
-      "source_trust": "owned",
-      "title": "ACRO new product or solution page: rnase h e coli rnh e5113",
-      "url": "https://www.acrobiosystems.com/products/protein/rnase-h-e-coli-rnh-e5113",
-      "published": "2026-08-22",
-      "summary": "New URL detected in the official sitemap.",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态。 原始摘要要点：New URL detected in the official sitemap.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +15: ACROBiosystems",
-        "公司自有来源",
-        "业务动作命中: EMA",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 25,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-22",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
       "id": "f934f57e25353f69",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
@@ -3956,13 +2199,38 @@
       "source_trust": "owned",
       "title": "Advancing cell therapy manufacturing: Efficiency, quality and scalability - ACROBiosystems",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ja2Y2by1EMXhXd1FuLW9NUFlBSlNpUHNBTW1xblNvTU5KNVRDdkZTU3JfUjRnbFlxc3VFVzRXVTBuSVYxTVJCd0cwLWJWLWpJeUNneWZYLUNIWE92VV85UExDZGo?oc=5",
-      "published": "2026-06-03",
+      "published": "2026-06-04",
       "summary": "Advancing cell therapy manufacturing: Efficiency, quality and scalability ACROBiosystems",
       "ai_summary": "ACROBiosystems / 百普赛斯更新了市场活动信息，重点涉及细胞治疗。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ja2Y2by1EMXhXd1FuLW9NUFlBSlNpUHNBTW1xblNvTU5KNVRDdkZTU3JfUjRnbFlxc3VFVzRXVTBuSVYxTVJCd0cwLWJWLWpJeUNneWZYLUNIWE92VV85UExDZGo?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ja2Y2by1EMXhXd1FuLW9NUFlBSlNpUHNBTW1xblNvTU5KNVRDdkZTU3JfUjRnbFlxc3VFVzRXVTBuSVYxTVJCd0cwLWJWLWpJeUNneWZYLUNIWE92VV85UExDZGo?oc=5"
+        ],
+        "source_ids": [
+          "acro_official_activities_index"
+        ],
+        "source_labels": [
+          "ACRO official Events and Webinars - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-04",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "event",
@@ -4003,9 +2271,9 @@
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-03",
+      "published_at": "2026-06-04",
       "event_start_at": "",
-      "age_days": 82,
+      "age_days": 81,
       "days_until_event": null
     },
     {
@@ -4035,6 +2303,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "A month after Chai Discovery tied up a major $400 million series C funding round, the AI drug discovery firm has teamed up with Bristol Myers Squibb.",
+        "primary_url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
+        "related_urls": [
+          "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal"
+        ],
+        "source_ids": [
+          "fierce_biotech_rss"
+        ],
+        "source_labels": [
+          "Fierce Biotech - official RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-20",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "product",
@@ -4116,6 +2409,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sc1dYZkdvN0tNaE5qUGxjX1ZZejdmeFNSYzlocm1iTEZhMHZqU2RUQzQ3bmdKYzhVU1d2bDZqelZldkhMdV81VXdtSlE3Wmo4Z2U5WTFJYmdyRm45SjMzZi1KbVdDY2x6aXMycWdHMUJnV1M4V0U1WVZuT25IQQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sc1dYZkdvN0tNaE5qUGxjX1ZZejdmeFNSYzlocm1iTEZhMHZqU2RUQzQ3bmdKYzhVU1d2bDZqelZldkhMdV81VXdtSlE3Wmo4Z2U5WTFJYmdyRm45SjMzZi1KbVdDY2x6aXMycWdHMUJnV1M4V0U1WVZuT25IQQ?oc=5"
+        ],
+        "source_ids": [
+          "pharmcube_company_pool_index"
+        ],
+        "source_labels": [
+          "Pharmcube / ByDrug - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-18",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "market",
@@ -4193,6 +2511,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObWtTWkRDVk9wN3FjSHhEVkw0dG11aWlRc1pwUG1sRjc5Wnl3dDA2T2VyLXFFT3VtSVlqakszNlZPcDVyT2lyekhuV2FOUkxKbnJUbTJOZzRPVHkzTHdENUpBLVpmcGdkSGJlbk1PZFp0U1lubFNUX3prMUpCMlNmWF9IMEZld0U?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxObWtTWkRDVk9wN3FjSHhEVkw0dG11aWlRc1pwUG1sRjc5Wnl3dDA2T2VyLXFFT3VtSVlqakszNlZPcDVyT2lyekhuV2FOUkxKbnJUbTJOZzRPVHkzTHdENUpBLVpmcGdkSGJlbk1PZFp0U1lubFNUX3prMUpCMlNmWF9IMEZld0U?oc=5"
+        ],
+        "source_ids": [
+          "merck_life_science_official_index"
+        ],
+        "source_labels": [
+          "Merck KGaA Life Science official news - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-25",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "partnership",
@@ -4269,6 +2612,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOXJjVWd3ZjNkekxvRTZRTHRYQVowb2VFMnNBblNJdWROTDRJMldkMC0ycTVwbVlFLVluRjVCS2RWcVBiamhmVTZRdUMya2FfdkFLajQxU0ZVTVhrMC1nUGlKZDZPNHJXa0JrbktWa0g3ZW9yQUhSVTh6VFJuS1RqOTlUWl9SNE90cDljcU5HQmtjaDdmNE1LQlAyQ2JVVDFMcHoxOW5TeE1RQUFRUVVJZg?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOXJjVWd3ZjNkekxvRTZRTHRYQVowb2VFMnNBblNJdWROTDRJMldkMC0ycTVwbVlFLVluRjVCS2RWcVBiamhmVTZRdUMya2FfdkFLajQxU0ZVTVhrMC1nUGlKZDZPNHJXa0JrbktWa0g3ZW9yQUhSVTh6VFJuS1RqOTlUWl9SNE90cDljcU5HQmtjaDdmNE1LQlAyQ2JVVDFMcHoxOW5TeE1RQUFRUVVJZg?oc=5"
+        ],
+        "source_ids": [
+          "google_news_sartorius"
+        ],
+        "source_labels": [
+          "Google News RSS - Sartorius"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-01",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "partnership",
@@ -4347,6 +2715,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalJWNVNGRkFGbF9nc1JZWjhJRmdZUks5eFRlamlOUE1QcGFaNGFnUXZ2U3RTZVdwaDdIT21qd2UwdWVya2U3MzZHYWZJZGdFNkFVRTFKX3NDNGRqQS02VlRaOG1rc1FVU0ExVGVHVWRvYnFja3NwYVo3WjFwSURRZV9XWUNzWExvZHg0VTZ0RVd5bTM1SlFtVnRHamZjMkFINmx6UnZ1ZXhTUnV4b2xrckY1cWpNZmhjU2Rn?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalJWNVNGRkFGbF9nc1JZWjhJRmdZUks5eFRlamlOUE1QcGFaNGFnUXZ2U3RTZVdwaDdIT21qd2UwdWVya2U3MzZHYWZJZGdFNkFVRTFKX3NDNGRqQS02VlRaOG1rc1FVU0ExVGVHVWRvYnFja3NwYVo3WjFwSURRZV9XWUNzWExvZHg0VTZ0RVd5bTM1SlFtVnRHamZjMkFINmx6UnZ1ZXhTUnV4b2xrckY1cWpNZmhjU2Rn?oc=5"
+        ],
+        "source_ids": [
+          "google_news_sartorius"
+        ],
+        "source_labels": [
+          "Google News RSS - Sartorius"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-03",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "product",
@@ -4415,13 +2808,38 @@
       "source_trust": "owned",
       "title": "BIO 2026 Wrap-Up: Innovation, Collaboration, and a Shared Commitment to Patients",
       "url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-4/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-4",
-      "published": "2026-06-26",
+      "published": "2026-06-27",
       "summary": "As the 2026 BIO International Convention came to a close, one thing was clear: biotechnology continues to move forward because of the people behind it.",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 原始摘要要点：As the 2026 BIO International Convention came to a close, one thing was clear: biotechnology continues to move...。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "As the 2026 BIO International Convention came to a close, one thing was clear: biotechnology continues to move forward because of the people behind it.",
+        "primary_url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-4/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-4",
+        "related_urls": [
+          "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-4/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-4"
+        ],
+        "source_ids": [
+          "thermo_biotech_blog_rss"
+        ],
+        "source_labels": [
+          "Thermo Fisher Biotech at Scale RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-27",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "partnership",
@@ -4462,9 +2880,9 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-26",
+      "published_at": "2026-06-27",
       "event_start_at": "",
-      "age_days": 59,
+      "age_days": 58,
       "days_until_event": null
     },
     {
@@ -4498,6 +2916,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-10",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "product",
@@ -4573,6 +3016,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUJhMGo1WWluUjVHeVpVck5nVnVhWU83dzRUYS1WU0RLbnRobU9rWFc0Ui1WLVo3QmxRek5KVUlpb2VBQVJHcTR2MGlMWk5pTTZ4Y0l4UEowbXk2ZEtFVDhRYk9QRzRWN3NwY2RPY2xwZHpxRzY0akM4eHd2VmJ5NVJIU29GNjRiaHBGWmVvN0dRcVcxYU5KZWZJd3pINlF0V1lNX3BCbWVQS1E?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUJhMGo1WWluUjVHeVpVck5nVnVhWU83dzRUYS1WU0RLbnRobU9rWFc0Ui1WLVo3QmxRek5KVUlpb2VBQVJHcTR2MGlMWk5pTTZ4Y0l4UEowbXk2ZEtFVDhRYk9QRzRWN3NwY2RPY2xwZHpxRzY0akM4eHd2VmJ5NVJIU29GNjRiaHBGWmVvN0dRcVcxYU5KZWZJd3pINlF0V1lNX3BCbWVQS1E?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-24",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "partnership",
@@ -4648,6 +3116,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNWTJOZU1PQy1IVldXYWQyMUVTdTIzQTdaQ3ZZX0x0TC1fcmNlOWJjV21XX2c5eHd2VUFsOW1rS0RYWktNdVdJdjFmVFd5QTNSSWVpUVcybG9vX1p4WGszX1RILUNSV0RJVFE3QjM1Uk9VZmhlaFZNejdNWHRkOHJ3M0w1TUgxWnpzM3FWMkRHX253QnFXcFBaSnBLWnNrSjJoVmdtMF9xQkZUcDlRTnZQT3FtbFFkN1UzR1hFRTZ5MURkdGFEeTk0OENfMDlvMmZoWnJoRXlJU3B3TllidW03V0Q4TURJeWxwci13VzhXQm1FbXI1TFc0eUZqQlExbEVsQ3pvLUNCczlGT2ZTTUpRZ3oyMi15Y3RGQkphSVc0aUhKeGs?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiowJBVV95cUxNWTJOZU1PQy1IVldXYWQyMUVTdTIzQTdaQ3ZZX0x0TC1fcmNlOWJjV21XX2c5eHd2VUFsOW1rS0RYWktNdVdJdjFmVFd5QTNSSWVpUVcybG9vX1p4WGszX1RILUNSV0RJVFE3QjM1Uk9VZmhlaFZNejdNWHRkOHJ3M0w1TUgxWnpzM3FWMkRHX253QnFXcFBaSnBLWnNrSjJoVmdtMF9xQkZUcDlRTnZQT3FtbFFkN1UzR1hFRTZ5MURkdGFEeTk0OENfMDlvMmZoWnJoRXlJU3B3TllidW03V0Q4TURJeWxwci13VzhXQm1FbXI1TFc0eUZqQlExbEVsQ3pvLUNCczlGT2ZTTUpRZ3oyMi15Y3RGQkphSVc0aUhKeGs?oc=5"
+        ],
+        "source_ids": [
+          "google_news_sino_biological"
+        ],
+        "source_labels": [
+          "Google News RSS - Sino Biological"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-04",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 48,
       "tier": "daily",
       "category": "product",
@@ -4723,6 +3216,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa25NdDQ2a2xmUzdpTExic3dqcW5BU3J3ZW1kUVI0N3BGYVFFeEZVV1JraUllUHloYXloM0M3ZFJENDBra0lROXJXV0xLZVR6WGIzeGVhWUJqR0JWTGFscl9NZlV1SFpYSUE5WnRKUllZVUlaX29iZTRSSXJHN3Q1WUptY3JLUHBhemF4c3pxckRoWGlOSmc?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa25NdDQ2a2xmUzdpTExic3dqcW5BU3J3ZW1kUVI0N3BGYVFFeEZVV1JraUllUHloYXloM0M3ZFJENDBra0lROXJXV0xLZVR6WGIzeGVhWUJqR0JWTGFscl9NZlV1SFpYSUE5WnRKUllZVUlaX29iZTRSSXJHN3Q1WUptY3JLUHBhemF4c3pxckRoWGlOSmc?oc=5"
+        ],
+        "source_ids": [
+          "acro_official_insights_index"
+        ],
+        "source_labels": [
+          "ACRO official Insights - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-10",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "product",
@@ -4802,6 +3320,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNUUphaG9ubWJLWGpQWFNlcW5XMGRjVUs1enJxZWdhZlFPMlRNMDBqQXNWR2FvLXk2ZEFsNlhQWi04T1Y5OEJEeVI0TE9CakE4THBVMzRGWTB1UDZKejQtY2VZRFZmbjlzVnhJZ1pyOHBOOUJkNUw0ZnFXOEFIYV9KYTAwWmFYajhReERaWXRORkJjUVpNaGJlWlJSV1N3MEhMOWt4UjJBVjFhb05YOFNMZm5udGg3cXh6SUg2U2VMMzlrWU1CLThObE0zNzk2NnRxU1FSajRZdmpNQXRZSFV5bUtsMVR6QTRoWTM2SjV5WVdXZERLRU5ZNkZKSFJaNmQ2NGpyMWJ4OTJzLXE1ZEE?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMijgJBVV95cUxNUUphaG9ubWJLWGpQWFNlcW5XMGRjVUs1enJxZWdhZlFPMlRNMDBqQXNWR2FvLXk2ZEFsNlhQWi04T1Y5OEJEeVI0TE9CakE4THBVMzRGWTB1UDZKejQtY2VZRFZmbjlzVnhJZ1pyOHBOOUJkNUw0ZnFXOEFIYV9KYTAwWmFYajhReERaWXRORkJjUVpNaGJlWlJSV1N3MEhMOWt4UjJBVjFhb05YOFNMZm5udGg3cXh6SUg2U2VMMzlrWU1CLThObE0zNzk2NnRxU1FSajRZdmpNQXRZSFV5bUtsMVR6QTRoWTM2SjV5WVdXZERLRU5ZNkZKSFJaNmQ2NGpyMWJ4OTJzLXE1ZEE?oc=5"
+        ],
+        "source_ids": [
+          "businesswire_company_pool_index"
+        ],
+        "source_labels": [
+          "Business Wire - company pool indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "wire",
+        "published_at": "2026-07-07",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "company",
@@ -4876,12 +3419,37 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Three fatalities occurring recently in China clinical trials have spurred two members of U.S.",
+        "primary_url": "https://www.biospace.com/policy/lawmakers-urge-fda-to-enact-new-china-policies-after-3-gene-therapy-deaths",
+        "related_urls": [
+          "https://www.biospace.com/policy/lawmakers-urge-fda-to-enact-new-china-policies-after-3-gene-therapy-deaths"
+        ],
+        "source_ids": [
+          "biospace_all_news_rss"
+        ],
+        "source_labels": [
+          "BioSpace - All News official RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-21",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: gene therapy, clinical trial",
@@ -4944,13 +3512,38 @@
       "source_trust": "media",
       "title": "Ultragenyx, after FDA speed bump, lands 1st gene therapy nod with green light in glycogen storage disease",
       "url": "https://www.fiercepharma.com/pharma/ultragenyx-after-fda-speed-bump-lands-1st-gene-therapy-nod-green-light-glycogen-storage",
-      "published": "2026-08-19",
+      "published": "2026-08-20",
       "summary": "If at first you don’t succeed in gene therapy, then try, try again, is the lesson Ultragenyx likely took home this week, pocketing its first FDA nod in the class a little over a year after a separate program stalled on manufacturing grounds.",
       "ai_summary": "该来源捕捉到一条临床监管信号，重点涉及基因治疗。 原始摘要要点：If at first you don’t succeed in gene therapy, then try, try again, is the lesson Ultragenyx likely took home...。 该信号命中基因治疗，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“法规影响核对”处理：核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "If at first you don’t succeed in gene therapy, then try, try again, is the lesson Ultragenyx likely took home this week, pocketing its first FDA nod in the class a little over a year after a separate program stalled on m...",
+        "primary_url": "https://www.fiercepharma.com/pharma/ultragenyx-after-fda-speed-bump-lands-1st-gene-therapy-nod-green-light-glycogen-storage",
+        "related_urls": [
+          "https://www.fiercepharma.com/pharma/ultragenyx-after-fda-speed-bump-lands-1st-gene-therapy-nod-green-light-glycogen-storage"
+        ],
+        "source_ids": [
+          "fierce_pharma_rss"
+        ],
+        "source_labels": [
+          "Fierce Pharma - official RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-20",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "regulatory",
@@ -4994,9 +3587,9 @@
         "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-19",
+      "published_at": "2026-08-20",
       "event_start_at": "",
-      "age_days": 5,
+      "age_days": 4,
       "days_until_event": null
     },
     {
@@ -5019,13 +3612,38 @@
       "source_trust": "media",
       "title": "中外製薬 テセントリクでMSI-Highを有する結腸がんの術後補助療法を承認申請",
       "url": "/tabid55.html?artid=80708",
-      "published": "2026-08-20",
+      "published": "2026-08-21",
       "summary": "中外製薬は８月14日、抗PD-L1抗体・テセントリク点滴静注について、高頻度マイクロサテライト不安定性（MSI-High）を有する結腸がんにおける術後補助療法の適応拡大を承認申請したと発表した。",
       "ai_summary": "该来源捕捉到一条临床监管信号，重点涉及PD-1 / PD-L1、抗体。 原始摘要要点：中外製薬は８月14日、抗PD-L1抗体・テセントリク点滴静注について、高頻度マイクロサテライト不安定性（MSI-High）を有する結腸がんにおける術後補助療法の適応拡大を承認申請したと発表した。。 该信号涉及注册 / 审批，可能产生抗体需求，适合纳入潜在客户筛选。 建议按“潜客识别”处理：确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "中外製薬は８月14日、抗PD-L1抗体・テセントリク点滴静注について、高頻度マイクロサテライト不安定性（MSI-High）を有する結腸がんにおける術後補助療法の適応拡大を承認申請したと発表した。",
+        "primary_url": "/tabid55.html?artid=80708",
+        "related_urls": [
+          "/tabid55.html?artid=80708"
+        ],
+        "source_ids": [
+          "mixonline_official_rss"
+        ],
+        "source_labels": [
+          "Mix Online - official Japan pharma RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-21",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "regulatory",
@@ -5074,9 +3692,9 @@
         "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-20",
+      "published_at": "2026-08-21",
       "event_start_at": "",
-      "age_days": 4,
+      "age_days": 3,
       "days_until_event": null
     },
     {
@@ -5115,6 +3733,34 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjJPY29tb1diSWd6SEtEbEdKajdEdFh4RU5nZUtNQVZlNjc2bk9lOVg5WmZZODdBWVJicjI5VmpmN2puby1HWkFSTVgzaGNZLVJrcWVMQ3hBNXI3QmFMRDVoS3pyUjZTcTg0dDI2THVTOVdNTmFra203NzhuYW92SjU3ZnFSaEpRQVBoeEN1UlVfZUEyNWF5eGx4ZFNkMnJnY05NN3k5WTJ4RVY1MG9UZzM5ZEtERWdhWmZR?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSjJPY29tb1diSWd6SEtEbEdKajdEdFh4RU5nZUtNQVZlNjc2bk9lOVg5WmZZODdBWVJicjI5VmpmN2puby1HWkFSTVgzaGNZLVJrcWVMQ3hBNXI3QmFMRDVoS3pyUjZTcTg0dDI2THVTOVdNTmFra203NzhuYW92SjU3ZnFSaEpRQVBoeEN1UlVfZUEyNWF5eGx4ZFNkMnJnY05NN3k5WTJ4RVY1MG9UZzM5ZEtERWdhWmZR?oc=5",
+          "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5"
+        ],
+        "source_ids": [
+          "google_news_merck_life_science",
+          "google_news_biotechne"
+        ],
+        "source_labels": [
+          "Google News RSS - Merck KGaA Life Science",
+          "Google News RSS - Bio-Techne"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-25",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "market",
@@ -5190,6 +3836,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUmJMdEtUU3l5UUV4ZzR3TnJMQ3JmMFBLbUN1TS13ZUN4UmJuLVRhek10UEpibjY4ZmMyaEwtTW9WR2hCS0laZC1sZEFJN0NoU1FKbGwzOTJpcWg4STNSc2RJREo3U21vMGNnWFg1TERDbDMyeFZwNFFRNER4WlBlYkY4ajAwV01SVFJ2SnJhTm9FUmFXdVVaaDlqakYxck1sT3dIRzE3cGNDT2xEZmhLRU5EemNndlE5dzVNVWE0OXBfQzFHTU5j?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUmJMdEtUU3l5UUV4ZzR3TnJMQ3JmMFBLbUN1TS13ZUN4UmJuLVRhek10UEpibjY4ZmMyaEwtTW9WR2hCS0laZC1sZEFJN0NoU1FKbGwzOTJpcWg4STNSc2RJREo3U21vMGNnWFg1TERDbDMyeFZwNFFRNER4WlBlYkY4ajAwV01SVFJ2SnJhTm9FUmFXdVVaaDlqakYxck1sT3dIRzE3cGNDT2xEZmhLRU5EemNndlE5dzVNVWE0OXBfQzFHTU5j?oc=5"
+        ],
+        "source_ids": [
+          "google_news_merck_life_science"
+        ],
+        "source_labels": [
+          "Google News RSS - Merck KGaA Life Science"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-26",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "market",
@@ -5266,6 +3937,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU3MxMllKbHF5MjJlN1ZTeV9nZFpIZmR2MTZFWWM4UUxDNnRnUmQ2VGpJajFkRmxHbUFKWXJJT0otSFZHUGc2LUVIMnFPTDFjcEJqa25hd08xVjFGclhCTlhHemRBczlVTlJPNGtaZzBVTnJtdmI3SFZNNExhTXQwRnoybVJUWTFJY1ZEVFBPZ3dNdGVmV1J1a2hUVWVaYWlISS0xOXBpSE8waUptZl9hbERGS3pMMjByNDNvQXRmc1otTG12ZFlPSUtrdGIxM1FhVjEwU1hCV1UzU20yZUlQZUx0bG1vYXBF?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU3MxMllKbHF5MjJlN1ZTeV9nZFpIZmR2MTZFWWM4UUxDNnRnUmQ2VGpJajFkRmxHbUFKWXJJT0otSFZHUGc2LUVIMnFPTDFjcEJqa25hd08xVjFGclhCTlhHemRBczlVTlJPNGtaZzBVTnJtdmI3SFZNNExhTXQwRnoybVJUWTFJY1ZEVFBPZ3dNdGVmV1J1a2hUVWVaYWlISS0xOXBpSE8waUptZl9hbERGS3pMMjByNDNvQXRmc1otTG12ZFlPSUtrdGIxM1FhVjEwU1hCV1UzU20yZUlQZUx0bG1vYXBF?oc=5"
+        ],
+        "source_ids": [
+          "miltenyi_official_news_index"
+        ],
+        "source_labels": [
+          "Miltenyi group official news - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-05-28",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "regulatory",
@@ -5343,6 +4039,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNalQza2h1UmhFQlVsM3ZXUG1OaVpnSFREdElaelJpWmtrWXlFdEhjNzlkaXdSOWNpZ2JwNmlsNW9HTGRUcHg3UGxFZ0w5U0I0enF2YUF4cEduRW9XcjRZRlZIczJCUXdiY2M0Sy1BaHRwWUFjMXp0cEtrOG1fNFp0RDBFTGYxN1NWTThoeHpTOVZ3aDJLODFlaElOMkJ6bFJYUkpJd2Q5bG5zbmVSaDRPcFlLRjJ4N19mb3pTVVo1Rk9HdTJHSEU4ZWtiTXg3Wlg0VHplMk1GTWlWODYzOEdXOGpZeDhtOEV6d1N0QmZLVGtiRUtpTlR1ZWYyNVc?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNalQza2h1UmhFQlVsM3ZXUG1OaVpnSFREdElaelJpWmtrWXlFdEhjNzlkaXdSOWNpZ2JwNmlsNW9HTGRUcHg3UGxFZ0w5U0I0enF2YUF4cEduRW9XcjRZRlZIczJCUXdiY2M0Sy1BaHRwWUFjMXp0cEtrOG1fNFp0RDBFTGYxN1NWTThoeHpTOVZ3aDJLODFlaElOMkJ6bFJYUkpJd2Q5bG5zbmVSaDRPcFlLRjJ4N19mb3pTVVo1Rk9HdTJHSEU4ZWtiTXg3Wlg0VHplMk1GTWlWODYzOEdXOGpZeDhtOEV6d1N0QmZLVGtiRUtpTlR1ZWYyNVc?oc=5"
+        ],
+        "source_ids": [
+          "miltenyi_official_news_index"
+        ],
+        "source_labels": [
+          "Miltenyi group official news - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-08-09",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "partnership",
@@ -5419,6 +4140,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Another day at the BIO International Convention 2026 reinforced a theme that continues to surface across conversations, presentations, and partnering meetings: bringing therapies to patients faster increasingly depends o...",
+        "primary_url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-2/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-2",
+        "related_urls": [
+          "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-2/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-2"
+        ],
+        "source_ids": [
+          "thermo_biotech_blog_rss"
+        ],
+        "source_labels": [
+          "Thermo Fisher Biotech at Scale RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-25",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "company",
@@ -5494,6 +4240,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPanRwNFczbERxU1VmSVdUYXRLWHRwNDhuN2ZHRFYtSExBZEhCMVJnWmNQYVlZVVdZZWdMSUNNZWt0U3dUd21yMWlwOHdfV0stcGVHZkVsOHVIbHU0b0s4MldMSXhjTEtRTFg4OXl1TTAtLUF1RjV0eTJXamxkMUdfRGk0N2RBTkl5dC1fakhVVTA3aHR6RW9JTDlldUlva2hRVjEzdjU3WXJjYXVYczdyTi02d1BJQy1pamNaSTduMDFweW9jRWt1WTNpWC1CT3BDX0pPMVFTSDNmTi1LRnRJ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPanRwNFczbERxU1VmSVdUYXRLWHRwNDhuN2ZHRFYtSExBZEhCMVJnWmNQYVlZVVdZZWdMSUNNZWt0U3dUd21yMWlwOHdfV0stcGVHZkVsOHVIbHU0b0s4MldMSXhjTEtRTFg4OXl1TTAtLUF1RjV0eTJXamxkMUdfRGk0N2RBTkl5dC1fakhVVTA3aHR6RW9JTDlldUlva2hRVjEzdjU3WXJjYXVYczdyTi02d1BJQy1pamNaSTduMDFweW9jRWt1WTNpWC1CT3BDX0pPMVFTSDNmTi1LRnRJ?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-28",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 46,
       "tier": "daily",
       "category": "market",
@@ -5540,6 +4311,109 @@
       "days_until_event": null
     },
     {
+      "id": "c4e8df188d60b21c",
+      "company_id": "stemcell_technologies",
+      "company": "STEMCELL Technologies",
+      "matched_company_ids": [
+        "stemcell_technologies"
+      ],
+      "matched_companies": [
+        "STEMCELL Technologies"
+      ],
+      "source_id": "stemcell_official_webinars_index",
+      "source_label": "STEMCELL Technologies official webinars and events - indexed RSS",
+      "source_ids": [
+        "stemcell_official_webinars_index"
+      ],
+      "source_labels": [
+        "STEMCELL Technologies official webinars and events - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREd3M1E3ZDBBalhQQUIyUmlWbzhLYlo2azVBMTVrMkJXRmZvcUdldk85YVhOTXcxRlBQS25VTlpoVF9oVTVYSHRFUi1Zd1NLVi1Rc3BJcC1nNWxsa3AzazBibFJJQjd0T3ZIVmM2eEhwX3NILThZRzV2LUxVeGJ5SUpEdU5RQUFBVzBDbzFLSHBlMk5wbEE?oc=5",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZUI5b2VNeWR3ZXlSQ0EzMXNRTE5HZlVrdXlyYlpuZzV0RURmcGMxQ3lUb3VNUDd0LUdVN0dLZXI1OWlyN2dkMV95Ym0xcFZ3T1lwalNxSFVjbUxNNElyMzJJZy1JV3lWYUVnMWJBTl9ENGRhX1dFcW1nYUs2M214ZjBHdkN4NV9mWFZJR3lJcUZzZThVU1E?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "Register: On-Demand Application of HSPCs in Cell Therapy Course - STEMCELL Technologies",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREd3M1E3ZDBBalhQQUIyUmlWbzhLYlo2azVBMTVrMkJXRmZvcUdldk85YVhOTXcxRlBQS25VTlpoVF9oVTVYSHRFUi1Zd1NLVi1Rc3BJcC1nNWxsa3AzazBibFJJQjd0T3ZIVmM2eEhwX3NILThZRzV2LUxVeGJ5SUpEdU5RQUFBVzBDbzFLSHBlMk5wbEE?oc=5",
+      "published": "2026-05-26",
+      "summary": "Register: On-Demand Application of HSPCs in Cell Therapy Course STEMCELL Technologies",
+      "ai_summary": "竞品 STEMCELL Technologies 出现市场活动信息，重点涉及细胞治疗。 竞品正在推进细胞治疗相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREd3M1E3ZDBBalhQQUIyUmlWbzhLYlo2azVBMTVrMkJXRmZvcUdldk85YVhOTXcxRlBQS25VTlpoVF9oVTVYSHRFUi1Zd1NLVi1Rc3BJcC1nNWxsa3AzazBibFJJQjd0T3ZIVmM2eEhwX3NILThZRzV2LUxVeGJ5SUpEdU5RQUFBVzBDbzFLSHBlMk5wbEE?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREd3M1E3ZDBBalhQQUIyUmlWbzhLYlo2azVBMTVrMkJXRmZvcUdldk85YVhOTXcxRlBQS25VTlpoVF9oVTVYSHRFUi1Zd1NLVi1Rc3BJcC1nNWxsa3AzazBibFJJQjd0T3ZIVmM2eEhwX3NILThZRzV2LUxVeGJ5SUpEdU5RQUFBVzBDbzFLSHBlMk5wbEE?oc=5",
+          "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZUI5b2VNeWR3ZXlSQ0EzMXNRTE5HZlVrdXlyYlpuZzV0RURmcGMxQ3lUb3VNUDd0LUdVN0dLZXI1OWlyN2dkMV95Ym0xcFZ3T1lwalNxSFVjbUxNNElyMzJJZy1JV3lWYUVnMWJBTl9ENGRhX1dFcW1nYUs2M214ZjBHdkN4NV9mWFZJR3lJcUZzZThVU1E?oc=5"
+        ],
+        "source_ids": [
+          "stemcell_official_webinars_index"
+        ],
+        "source_labels": [
+          "STEMCELL Technologies official webinars and events - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-05-26",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
+      "score": 46,
+      "tier": "daily",
+      "category": "event",
+      "business_event_type": "market_activity",
+      "signal_type": "event",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: STEMCELL Technologies, STEMCELL Tech, Stemcell Technologies",
+        "公司自有来源",
+        "战略主题命中: cell therapy",
+        "高价值分类加成 +10: event"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "细胞治疗"
+        ],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 30,
+        "label": "中相关",
+        "explanation": "竞品正在推进细胞治疗相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "命中重点疗法或技术"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "",
+      "event_start_at": "2026-05-26",
+      "age_days": null,
+      "days_until_event": -90
+    },
+    {
       "id": "6d3561c7f3242295",
       "company_id": "takara_bio",
       "company": "Takara Bio / 宝生物",
@@ -5570,6 +4444,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA3eTF2allmMmViRjJ0QUhGc0tXem5MWXNzNWZxZktqbWRwRkpuUlg3bHo4U3Z4RURrRW5pNXgtYTZmUDZCdXRNbFZoSFdtMFBwVUZrdkZvZlRTSVFCNTZ3UXZONExQUQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA3eTF2allmMmViRjJ0QUhGc0tXem5MWXNzNWZxZktqbWRwRkpuUlg3bHo4U3Z4RURrRW5pNXgtYTZmUDZCdXRNbFZoSFdtMFBwVUZrdkZvZlRTSVFCNTZ3UXZONExQUQ?oc=5"
+        ],
+        "source_ids": [
+          "takara_bio_official_news_index"
+        ],
+        "source_labels": [
+          "Takara Bio official news releases - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-07-21",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 45,
       "tier": "daily",
       "category": "partnership",
@@ -5616,84 +4515,6 @@
       "days_until_event": null
     },
     {
-      "id": "861c38d9a16e6ce2",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "fierce_pharma_rss",
-      "source_label": "Fierce Pharma - official RSS",
-      "source_ids": [
-        "fierce_pharma_rss"
-      ],
-      "source_labels": [
-        "Fierce Pharma - official RSS"
-      ],
-      "related_urls": [
-        "https://www.fiercepharma.com/pharma/biokin-bispecific-adc-iza-bren-hits-goal-lung-cancer-trial-boosting-case-bms-global-test"
-      ],
-      "source_trust": "media",
-      "title": "Biokin bispecific ADC iza-bren hits goal in lung cancer trial, boosting case for BMS’ global test",
-      "url": "https://www.fiercepharma.com/pharma/biokin-bispecific-adc-iza-bren-hits-goal-lung-cancer-trial-boosting-case-bms-global-test",
-      "published": "2026-08-18",
-      "summary": "Biokin Pharma’s iza-bren, a first-in-class antibody-drug conjugate partnered with Bristol Myers Squibb, has posted another positive phase 3 readout.",
-      "ai_summary": "该来源捕捉到一条市场与区域动态，重点涉及ADC、双抗 / 多抗、抗体。 原始摘要要点：Biokin Pharma’s iza-bren, a first-in-class antibody-drug conjugate partnered with Bristol Myers Squibb, has po...。 该信号涉及III 期临床，可能产生抗体需求，适合纳入潜在客户筛选。 建议按“潜客识别”处理：确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "score": 44,
-      "tier": "daily",
-      "category": "market",
-      "business_event_type": "customer_demand",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: ADC, antibody, bispecific",
-        "业务动作命中: phase 3",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "ADC",
-          "双抗 / 多抗"
-        ],
-        "product_needs": [
-          "抗体"
-        ],
-        "development_stages": [
-          "III 期临床"
-        ],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 44,
-        "label": "中相关",
-        "explanation": "该信号涉及III 期临床，可能产生抗体需求，适合纳入潜在客户筛选。",
-        "reasons": [
-          "命中重点疗法或技术",
-          "可映射到 ACRO 产品或服务需求",
-          "研发阶段可识别"
-        ]
-      },
-      "recommended_action": {
-        "type": "lead",
-        "label": "潜客识别",
-        "owner": "BD / 区域市场",
-        "priority": "medium",
-        "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-18",
-      "event_start_at": "",
-      "age_days": 6,
-      "days_until_event": null
-    },
-    {
       "id": "4beff6cc21d45f28",
       "company_id": "sartorius",
       "company": "Sartorius / Sartorius Stedim Biotech",
@@ -5724,6 +4545,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQWlON01xWWRaNXB6TUtDZ0I5WjRnTkg5RFNaeTU0akNpdG5xUGVObEVKSFJDNllTRXRILWhNQ1U4VE01Qzl2RTFjdjRfQ01hSUNFaV9mMkF6a0hYQVl5XzQ3UXlVRGRMZGJ0YWctNnZ3bFlFZnlYM2hsNFRVNEd1WUFzdXBEQVhuY3RIUXJRbUgzSU9kNko4RTNKR0Y0b0JaSXl6bnhiUG50NDNNMWtkRGtkM2c0OGdoX3NlQlZWZ0lucUpOeEJUUlZBODRMRE9QUXdxcXFfbE8tYlkzZlVPajVXTk1TUlJBaWFUMHdiYnA?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQWlON01xWWRaNXB6TUtDZ0I5WjRnTkg5RFNaeTU0akNpdG5xUGVObEVKSFJDNllTRXRILWhNQ1U4VE01Qzl2RTFjdjRfQ01hSUNFaV9mMkF6a0hYQVl5XzQ3UXlVRGRMZGJ0YWctNnZ3bFlFZnlYM2hsNFRVNEd1WUFzdXBEQVhuY3RIUXJRbUgzSU9kNko4RTNKR0Y0b0JaSXl6bnhiUG50NDNNMWtkRGtkM2c0OGdoX3NlQlZWZ0lucUpOeEJUUlZBODRMRE9QUXdxcXFfbE8tYlkzZlVPajVXTk1TUlJBaWFUMHdiYnA?oc=5"
+        ],
+        "source_ids": [
+          "sartorius_official_news_index"
+        ],
+        "source_labels": [
+          "Sartorius official Newsroom - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-03-16",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 44,
       "tier": "daily",
       "category": "product",
@@ -5798,6 +4644,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORGZMR2xZbUFxRzRLWlVYaTZXSG1RZWM1OUlWdmdWb2x3bWpMVC14REMtaGJHN0JHTDV1Ymh0bXZvRmszcGpPeGVRMmw4YlBLSmZjX2lHRFlMM2pYOTZ0SVF2RV93TFJwTVo3QXhGMElqekZpb3NZTEFybGtobk44M29PMnJvazA4dV9OdXYxNncycXhXRmNZNXBYMXN6d0gwQ0JNeS1JSWdSczUxX1h0Qy0wU1JNR1pwdHRfYWttYmtqUE5LTGJOY2k3c19lUHdh?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORGZMR2xZbUFxRzRLWlVYaTZXSG1RZWM1OUlWdmdWb2x3bWpMVC14REMtaGJHN0JHTDV1Ymh0bXZvRmszcGpPeGVRMmw4YlBLSmZjX2lHRFlMM2pYOTZ0SVF2RV93TFJwTVo3QXhGMElqekZpb3NZTEFybGtobk44M29PMnJvazA4dV9OdXYxNncycXhXRmNZNXBYMXN6d0gwQ0JNeS1JSWdSczUxX1h0Qy0wU1JNR1pwdHRfYWttYmtqUE5LTGJOY2k3c19lUHdh?oc=5"
+        ],
+        "source_ids": [
+          "selectscience_life_science_index"
+        ],
+        "source_labels": [
+          "SelectScience - life science product indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-06-09",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 42,
       "tier": "daily",
       "category": "partnership",
@@ -5876,6 +4747,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wT3VfODhxclBrOGJuUTV4ekUzTVk2eUZEM1NycVI2VV9lNkVreVhFYzRUVE1wN3oxRFlBekp3b3dCa1BFbWJUYm45OGN3OFVQaVRNc3VoOVJNMHNyRkF4SC1sc1FoYTg?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wT3VfODhxclBrOGJuUTV4ekUzTVk2eUZEM1NycVI2VV9lNkVreVhFYzRUVE1wN3oxRFlBekp3b3dCa1BFbWJUYm45OGN3OFVQaVRNc3VoOVJNMHNyRkF4SC1sc1FoYTg?oc=5"
+        ],
+        "source_ids": [
+          "takara_bio_official_news_index"
+        ],
+        "source_labels": [
+          "Takara Bio official news releases - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-23",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 41,
       "tier": "daily",
       "category": "partnership",
@@ -5951,6 +4847,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZNVZYM3lnc2VxU0R3ZFNXem5pXzBVVUpZWWsxcEcxWDhfX1NXOTZVdGQ2ckR5dlNDcVdRTEkxVmIxT0dvd1dHZzVXUGJUNUpTSjdBanNiVWpISk5wTU5yR1Q1WTA0WUU0?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZNVZYM3lnc2VxU0R3ZFNXem5pXzBVVUpZWWsxcEcxWDhfX1NXOTZVdGQ2ckR5dlNDcVdRTEkxVmIxT0dvd1dHZzVXUGJUNUpTSjdBanNiVWpISk5wTU5yR1Q1WTA0WUU0?oc=5"
+        ],
+        "source_ids": [
+          "acro_official_activities_index"
+        ],
+        "source_labels": [
+          "ACRO official Events and Webinars - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-07-08",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "event",
@@ -6019,6 +4940,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Regeneron's Pasatru has crossed the finish line with FDA approval after more than ten years of development.",
+        "primary_url": "https://www.fiercepharma.com/pharma/regeneron-approval-fop",
+        "related_urls": [
+          "https://www.fiercepharma.com/pharma/regeneron-approval-fop"
+        ],
+        "source_ids": [
+          "fierce_pharma_rss"
+        ],
+        "source_labels": [
+          "Fierce Pharma - official RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-18",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "regulatory",
@@ -6068,6 +5014,109 @@
       "days_until_event": null
     },
     {
+      "id": "82a831f34229606e",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "bioprocess_online_index",
+      "source_label": "BioProcess Online - bioprocess topic indexed RSS",
+      "source_ids": [
+        "bioprocess_online_index"
+      ],
+      "source_labels": [
+        "BioProcess Online - bioprocess topic indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdUc0SU5HUHNoZ3duaDVpM2NRUURGdmduUW01OTlod2VrMnR1cUJxSjg5Y0ItTGFMVHAyeTloU1lPcmFMYWVHM0kzaC1Wd3liamRQWjVHSW1ZeVZnME9Ba2hrQXpyRUJFbmxmdGtRUlVpSlNscXRSeFlJdDhTUmFTd09PVVlkX1RIQnUtbXliaEhBRC1aamFsVkxMVDFDaWItNjRJNjl5bkpPdw?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "Analytical Methods For Bispecific Antibody Final Product Release - Bioprocess Online",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdUc0SU5HUHNoZ3duaDVpM2NRUURGdmduUW01OTlod2VrMnR1cUJxSjg5Y0ItTGFMVHAyeTloU1lPcmFMYWVHM0kzaC1Wd3liamRQWjVHSW1ZeVZnME9Ba2hrQXpyRUJFbmxmdGtRUlVpSlNscXRSeFlJdDhTUmFTd09PVVlkX1RIQnUtbXliaEhBRC1aamFsVkxMVDFDaWItNjRJNjl5bkpPdw?oc=5",
+      "published": "2026-07-11",
+      "summary": "Analytical Methods For Bispecific Antibody Final Product Release Bioprocess Online",
+      "ai_summary": "该来源捕捉到一条产品与平台动态，重点涉及双抗 / 多抗、抗体、生物工艺。 该信号涉及业务推进，可能产生抗体、生物工艺需求，适合纳入潜在客户筛选。 建议按“潜客识别”处理：确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdUc0SU5HUHNoZ3duaDVpM2NRUURGdmduUW01OTlod2VrMnR1cUJxSjg5Y0ItTGFMVHAyeTloU1lPcmFMYWVHM0kzaC1Wd3liamRQWjVHSW1ZeVZnME9Ba2hrQXpyRUJFbmxmdGtRUlVpSlNscXRSeFlJdDhTUmFTd09PVVlkX1RIQnUtbXliaEhBRC1aamFsVkxMVDFDaWItNjRJNjl5bkpPdw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdUc0SU5HUHNoZ3duaDVpM2NRUURGdmduUW01OTlod2VrMnR1cUJxSjg5Y0ItTGFMVHAyeTloU1lPcmFMYWVHM0kzaC1Wd3liamRQWjVHSW1ZeVZnME9Ba2hrQXpyRUJFbmxmdGtRUlVpSlNscXRSeFlJdDhTUmFTd09PVVlkX1RIQnUtbXliaEhBRC1aamFsVkxMVDFDaWItNjRJNjl5bkpPdw?oc=5"
+        ],
+        "source_ids": [
+          "bioprocess_online_index"
+        ],
+        "source_labels": [
+          "BioProcess Online - bioprocess topic indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-07-11",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
+      "score": 40,
+      "tier": "daily",
+      "category": "product",
+      "business_event_type": "customer_demand",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: antibody, bispecific",
+        "业务动作命中: FDA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "双抗 / 多抗"
+        ],
+        "product_needs": [
+          "抗体",
+          "生物工艺"
+        ],
+        "development_stages": [],
+        "business_actions": [
+          "产品发布"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 44,
+        "label": "中相关",
+        "explanation": "该信号涉及业务推进，可能产生抗体、生物工艺需求，适合纳入潜在客户筛选。",
+        "reasons": [
+          "命中重点疗法或技术",
+          "可映射到 ACRO 产品或服务需求",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "lead",
+        "label": "潜客识别",
+        "owner": "BD / 区域市场",
+        "priority": "medium",
+        "text": "确认公司主体、管线阶段与地区，匹配 ACRO 产品后决定是否纳入潜在客户池。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-07-11",
+      "event_start_at": "",
+      "age_days": 44,
+      "days_until_event": null
+    },
+    {
       "id": "041ed5fe146fb6cf",
       "company_id": "sartorius",
       "company": "Sartorius / Sartorius Stedim Biotech",
@@ -6098,6 +5147,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThQT2JzcDhSSzlzMTFJQ19XYmJhUXQ1Vko0a0UwODYwdm5HVWRMOHVteFJRdllJVW9rWWtac2JZNjdBWVNTZkh0U2hVbklQMk9JMWJIUXF6YWg1LWFGM2N0ZndGZEtGdmd4MVhQcFlVZVlicXBOa2dQVHJXMnVSRzU4TFVIbTh5VnMxSGdxekRQVVJYRGV2Sm9XSUZaaVdLZU5pTVExbk1zYXlsN1R3Y1FKVEJwMVhYaVQ1SXpKZ1JfYkJnOV8zMDQ5Y1VBT2pTRjBzbUxYdklxYUoxZUdkaDJaMTdrOGt4QnpsOHFWS1FqU1pSampqMUFGTQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThQT2JzcDhSSzlzMTFJQ19XYmJhUXQ1Vko0a0UwODYwdm5HVWRMOHVteFJRdllJVW9rWWtac2JZNjdBWVNTZkh0U2hVbklQMk9JMWJIUXF6YWg1LWFGM2N0ZndGZEtGdmd4MVhQcFlVZVlicXBOa2dQVHJXMnVSRzU4TFVIbTh5VnMxSGdxekRQVVJYRGV2Sm9XSUZaaVdLZU5pTVExbk1zYXlsN1R3Y1FKVEJwMVhYaVQ1SXpKZ1JfYkJnOV8zMDQ5Y1VBT2pTRjBzbUxYdklxYUoxZUdkaDJaMTdrOGt4QnpsOHFWS1FqU1pSampqMUFGTQ?oc=5"
+        ],
+        "source_ids": [
+          "sartorius_official_news_index"
+        ],
+        "source_labels": [
+          "Sartorius official Newsroom - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-03-03",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "product",
@@ -6175,6 +5249,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRGxqUEJUdFEyMV9WXzF4ZXRqc1lUV3VYWk5iQUVFOHpwcDdVRjBSOXlneXgzdERseURvTHVuNEtRd2pzT01lb3Y0SWFHczBXcDcyRUdnUFNvckRCVE9iWGV4bGJMSGFVMXg3MUNjYXRfeHQ5Rl9ZRGFRMGRHbnM0QzUydFhFQVQ2NU5vclU3aXF5Z3NwSXRMb29aTkFDbU5Id3htZlBQYUlGUHhvQ2JjOHZmMFZkV05HbnBmLTduWEhGa0MzY3RuS2szcTRfdndIc3AzUmVzT01aOXRSNHVPc3N5SHFpMjF1aFJpY1lXVVB2MUJiX1E?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRGxqUEJUdFEyMV9WXzF4ZXRqc1lUV3VYWk5iQUVFOHpwcDdVRjBSOXlneXgzdERseURvTHVuNEtRd2pzT01lb3Y0SWFHczBXcDcyRUdnUFNvckRCVE9iWGV4bGJMSGFVMXg3MUNjYXRfeHQ5Rl9ZRGFRMGRHbnM0QzUydFhFQVQ2NU5vclU3aXF5Z3NwSXRMb29aTkFDbU5Id3htZlBQYUlGUHhvQ2JjOHZmMFZkV05HbnBmLTduWEhGa0MzY3RuS2szcTRfdndIc3AzUmVzT01aOXRSNHVPc3N5SHFpMjF1aFJpY1lXVVB2MUJiX1E?oc=5"
+        ],
+        "source_ids": [
+          "sartorius_official_news_index"
+        ],
+        "source_labels": [
+          "Sartorius official Newsroom - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-05-21",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "company",
@@ -6255,6 +5354,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBERmc1LXM0RGV3QUdNRVVoY3BVekhFcE45eGhaazFWSmdkNHhQY3dWRVhKQy0wc1JRTU9BQzNQYXdjR3BvcXNFdGxFNTZzc0NHZzRuUWtJOGgtY3pLQ3cxN200akh1eVQzY2JLbXJPUkNUVlZIYlFVNXln?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiekFVX3lxTFBERmc1LXM0RGV3QUdNRVVoY3BVekhFcE45eGhaazFWSmdkNHhQY3dWRVhKQy0wc1JRTU9BQzNQYXdjR3BvcXNFdGxFNTZzc0NHZzRuUWtJOGgtY3pLQ3cxN200akh1eVQzY2JLbXJPUkNUVlZIYlFVNXln?oc=5"
+        ],
+        "source_ids": [
+          "miltenyi_official_news_index"
+        ],
+        "source_labels": [
+          "Miltenyi group official news - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-03-09",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "company",
@@ -6331,6 +5455,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
+        "primary_url": "https://www.link-j.org/member_event/article-53581.html",
+        "related_urls": [
+          "https://www.link-j.org/member_event/article-53581.html"
+        ],
+        "source_ids": [
+          "linkj_life_science_events"
+        ],
+        "source_labels": [
+          "LINK-J - life science ecosystem events"
+        ],
+        "source_types": [
+          "html_links"
+        ],
+        "source_trust": "ecosystem",
+        "published_at": "2026-08-27",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "event",
@@ -6405,19 +5554,44 @@
       "source_trust": "owned",
       "title": "In Situ Cell Death Detection Kit, Fluorescein Protocol & Troubleshooting - Merck Millipore",
       "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPdVQ5OVNHUkhhcDZzUE96RHVwVnRYdWF6eDBiNFg1ejliNHM2WmRFSHhpUVpwYzRBQ01GNUxITVFuSGNVcHNUOE95clVWa0hsUm9mc2pORzNNWi1lQWxZXzdFcEh3Wl9LUjkzbml2ekhuMUV6ek5vaFl5Z3B1OWpLYlBsS3d5Zno0eU5iWG5FeVdZMEs0a2VuNzF5eUlqUjhfaXFMRWFoMF9pUGk2QjVkUnlCbENiYnpiWmNwX2JYZFZkM0E0TXBFOFRsTUVPY2FQVlRSLWRsN043aU5NbHQwMXM0RDJRRlVjbzRsOVloTUdVeHVRc2Focnpqb3dfbmNGNmFmQTgweGZNVGJkX2U5Vw?oc=5",
-      "published": "2026-07-11",
+      "published": "2026-07-12",
       "summary": "In Situ Cell Death Detection Kit, Fluorescein Protocol & Troubleshooting Merck Millipore",
       "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现产品与平台动态，重点涉及检测试剂盒。 竞品正在推进检测试剂盒相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPdVQ5OVNHUkhhcDZzUE96RHVwVnRYdWF6eDBiNFg1ejliNHM2WmRFSHhpUVpwYzRBQ01GNUxITVFuSGNVcHNUOE95clVWa0hsUm9mc2pORzNNWi1lQWxZXzdFcEh3Wl9LUjkzbml2ekhuMUV6ek5vaFl5Z3B1OWpLYlBsS3d5Zno0eU5iWG5FeVdZMEs0a2VuNzF5eUlqUjhfaXFMRWFoMF9pUGk2QjVkUnlCbENiYnpiWmNwX2JYZFZkM0E0TXBFOFRsTUVPY2FQVlRSLWRsN043aU5NbHQwMXM0RDJRRlVjbzRsOVloTUdVeHVRc2Focnpqb3dfbmNGNmFmQTgweGZNVGJkX2U5Vw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMikAJBVV95cUxPdVQ5OVNHUkhhcDZzUE96RHVwVnRYdWF6eDBiNFg1ejliNHM2WmRFSHhpUVpwYzRBQ01GNUxITVFuSGNVcHNUOE95clVWa0hsUm9mc2pORzNNWi1lQWxZXzdFcEh3Wl9LUjkzbml2ekhuMUV6ek5vaFl5Z3B1OWpLYlBsS3d5Zno0eU5iWG5FeVdZMEs0a2VuNzF5eUlqUjhfaXFMRWFoMF9pUGk2QjVkUnlCbENiYnpiWmNwX2JYZFZkM0E0TXBFOFRsTUVPY2FQVlRSLWRsN043aU5NbHQwMXM0RDJRRlVjbzRsOVloTUdVeHVRc2Focnpqb3dfbmNGNmFmQTgweGZNVGJkX2U5Vw?oc=5"
+        ],
+        "source_ids": [
+          "merck_life_science_resources_index"
+        ],
+        "source_labels": [
+          "Merck Life Science official events and resources - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-07-12",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "product",
       "business_event_type": "product_platform",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Merck Millipore",
         "公司自有来源",
@@ -6451,9 +5625,9 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-11",
+      "published_at": "2026-07-12",
       "event_start_at": "",
-      "age_days": 44,
+      "age_days": 43,
       "days_until_event": null
     },
     {
@@ -6487,6 +5661,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXVpaUg2WTRFTU50TS1tZGdOS2VhcXlRYjRRZkhXVGZlVW52MHBWMW82M01MLTJPVWJNNWlfckFPQWJwbjNSS2hBT2hNWHBJYUJ3cTJ2Zkg4REhSN1FBbDRfV0ZQNGQ3Vm5jc2kwRzFIWHRoSHotSS1nYjUwaGxDZmtVdmQzV3FJMmNZTm9UZUI0c0xRUlN1VEJrN2lMd24zS3FaRTFsRGhQZXg4bnAwQS15cjh0QQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXVpaUg2WTRFTU50TS1tZGdOS2VhcXlRYjRRZkhXVGZlVW52MHBWMW82M01MLTJPVWJNNWlfckFPQWJwbjNSS2hBT2hNWHBJYUJ3cTJ2Zkg4REhSN1FBbDRfV0ZQNGQ3Vm5jc2kwRzFIWHRoSHotSS1nYjUwaGxDZmtVdmQzV3FJMmNZTm9UZUI0c0xRUlN1VEJrN2lMd24zS3FaRTFsRGhQZXg4bnAwQS15cjh0QQ?oc=5"
+        ],
+        "source_ids": [
+          "sartorius_official_resources_index"
+        ],
+        "source_labels": [
+          "Sartorius official events and knowledge - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-03-03",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "company",
@@ -6564,6 +5763,31 @@
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5"
+        ],
+        "source_ids": [
+          "biotechne_official_resources_index"
+        ],
+        "source_labels": [
+          "Bio-Techne official technical resources and videos - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-06-17",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "event",
@@ -6632,19 +5856,44 @@
       "source_trust": "owned",
       "title": "RNA-Seq解析 超入門！実験の流れ、データの見方の基礎講座 - タカラバイオ技術セミナー",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5",
-      "published": "2026-06-30",
+      "published": "2026-07-01",
       "summary": "RNA-Seq解析 超入門！実験の流れ、データの見方の基礎講座 タカラバイオ技術セミナー",
       "ai_summary": "竞品 Takara Bio / 宝生物 出现市场活动信息。 竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
       "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5"
+        ],
+        "source_ids": [
+          "takara_bio_japan_official_index"
+        ],
+        "source_labels": [
+          "Takara Bio Japan official pages - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-07-01",
+        "checked_at": "2026-08-24T18:07:36"
+      },
+      "workflow_status": "new",
       "score": 40,
       "tier": "daily",
       "category": "event",
       "business_event_type": "market_activity",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: タカラバイオ",
         "公司自有来源",
@@ -6678,9 +5927,9 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-30",
+      "published_at": "2026-07-01",
       "event_start_at": "",
-      "age_days": 55,
+      "age_days": 54,
       "days_until_event": null
     }
   ]

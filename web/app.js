@@ -1,5 +1,6 @@
 const FEEDBACK_STORE_KEY = "aihot_feedback";
 const TRANSLATION_LANGUAGE_KEY = "aihot_translation_language";
+const SIGNAL_WORKFLOW_STORE_KEY = "aihot_signal_workflow_v1";
 
 function loadFeedback() {
   try {
@@ -37,6 +38,25 @@ function saveTranslationLanguage(value) {
   }
 }
 
+function loadSignalWorkflow() {
+  try {
+    return JSON.parse(localStorage.getItem(SIGNAL_WORKFLOW_STORE_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveSignalWorkflow(id, status) {
+  const workflow = loadSignalWorkflow();
+  workflow[id] = { status, updated_at: new Date().toISOString() };
+  try {
+    localStorage.setItem(SIGNAL_WORKFLOW_STORE_KEY, JSON.stringify(workflow));
+  } catch {
+    // The static dashboard remains readable when browser storage is unavailable.
+  }
+  return workflow;
+}
+
 const state = {
   payload: null,
   tier: "daily",
@@ -58,6 +78,8 @@ const state = {
   healthCompany: "all",
   healthStatus: "all",
   coverageCompany: "acro",
+  timelineCompany: "acro",
+  timelineScope: "selected",
   relationshipType: "all",
   relationshipEvidence: "all",
   relationshipGraphLayer: "all",
@@ -70,6 +92,7 @@ const state = {
   dockOpenRoles: new Set(["self"]),
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
+  signalWorkflow: loadSignalWorkflow(),
   history: null,
 };
 
@@ -1846,6 +1869,7 @@ const sourceInventory = [
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
+  timeline: ["Company Timeline", "公司动态时间线与长期档案"],
   "japan-customers": ["Japan Customer Pool", "日本客户名单与机会发现"],
   relationships: ["Relationship Intelligence", "ACRO 企业关系与客户线索"],
   "company-sources": ["Company Sources", "公司数据源档案"],
@@ -1991,11 +2015,20 @@ const els = {
   sourceViewMetrics: document.querySelector("#sourceViewMetrics"),
   sourceViewTitle: document.querySelector("#sourceViewTitle"),
   sourceLibraryIntro: document.querySelector("#sourceLibraryIntro"),
+  sourceExperimentSummary: document.querySelector("#sourceExperimentSummary"),
+  sourceExperimentPrinciple: document.querySelector("#sourceExperimentPrinciple"),
+  sourceExperimentGrid: document.querySelector("#sourceExperimentGrid"),
   sourceStageFilter: document.querySelector("#sourceStageFilter"),
   sourceStageCount: document.querySelector("#sourceStageCount"),
   companyPoolTimestamp: document.querySelector("#companyPoolTimestamp"),
   companyRoleSummary: document.querySelector("#companyRoleSummary"),
   companyPoolGroups: document.querySelector("#companyPoolGroups"),
+  companyTimelineTimestamp: document.querySelector("#companyTimelineTimestamp"),
+  companyTimelineSelect: document.querySelector("#companyTimelineSelect"),
+  timelineScopeControl: document.querySelector("#timelineScopeControl"),
+  companyTimelineMetrics: document.querySelector("#companyTimelineMetrics"),
+  companyLivingProfile: document.querySelector("#companyLivingProfile"),
+  companyTimelineList: document.querySelector("#companyTimelineList"),
   competitorLaneCount: document.querySelector("#competitorLaneCount"),
   opportunityLaneCount: document.querySelector("#opportunityLaneCount"),
   partnerLaneCount: document.querySelector("#partnerLaneCount"),
@@ -3248,6 +3281,7 @@ function render() {
 
   renderTranslationToggle();
   renderOverviewScope();
+  renderCompanyTimeline();
   renderRules();
   renderPage();
 }
@@ -3848,6 +3882,7 @@ function renderRules() {
   if (!els.ruleGrid || !els.sourceStageFilter) return;
   const healthRows = getSourceHealthRows().filter((row) => row.enabled !== false);
   const allMethods = sourceInventory.flatMap((category) => category.sources);
+  renderSourceExperiments();
   hydrateSourceStageFilter();
   renderSourceViewMetrics(healthRows, allMethods);
   els.sourceLibraryIntro.hidden = state.sourceView !== "library";
@@ -3884,6 +3919,42 @@ function renderRules() {
     els.sourceStageCount.textContent = `显示 ${visible.length} / ${healthRows.length} 个真实运行入口`;
   }
   renderRuntimeSourceBoard(visible);
+}
+
+function renderSourceExperiments() {
+  if (!els.sourceExperimentGrid) return;
+  const payload = state.payload?.source_experiments || {};
+  const experiments = payload.experiments || [];
+  const statusMeta = {
+    blocked_public_demo: { label: "公共实例受限", className: "blocked" },
+    replaced_by_direct: { label: "已有直连替代", className: "replaced" },
+    active_alternative: { label: "替代方案运行中", className: "active" },
+    deferred_server: { label: "需服务器，暂缓", className: "deferred" },
+  };
+  const running = experiments.filter((item) => item.status === "active_alternative").length;
+  const replaced = experiments.filter((item) => item.status === "replaced_by_direct").length;
+  const blocked = experiments.filter((item) => item.status === "blocked_public_demo").length;
+  els.sourceExperimentSummary.textContent = `${experiments.length} 项 · ${running + replaced} 项已有可运行方案`;
+  els.sourceExperimentPrinciple.innerHTML = `
+    <strong>接入结论</strong>
+    <span>${escapeHtml(payload.principle || "试验来源与生产来源分开记录。")}</span>
+    <small>${blocked ? `${blocked} 项公共服务受限，未计入运行来源` : "没有未说明的阻断项"}</small>
+  `;
+  els.sourceExperimentGrid.innerHTML = experiments.map((experiment) => {
+    const meta = statusMeta[experiment.status] || { label: experiment.status, className: "deferred" };
+    const replacementCount = experiment.replacement_source_ids?.length || 0;
+    return `
+      <article class="source-experiment-card status-${escapeAttr(meta.className)}">
+        <header>
+          <div><span>${escapeHtml(experiment.provider)}</span><strong>${escapeHtml(experiment.capability)}</strong></div>
+          <b>${escapeHtml(meta.label)}</b>
+        </header>
+        <p>${escapeHtml(experiment.result)}</p>
+        <div class="source-experiment-decision"><span>处理决定</span><strong>${escapeHtml(experiment.decision)}</strong></div>
+        <footer><span>${escapeHtml(experiment.target)}</span><small>${escapeHtml(experiment.tested_at || "")}${replacementCount ? ` · ${replacementCount} 个替代入口` : ""}</small></footer>
+      </article>
+    `;
+  }).join("");
 }
 
 function renderOfficialSourceGroups(sources) {
@@ -4071,6 +4142,127 @@ function liveSourceResult(source) {
   }
   if (!total) return `监控正在运行，时效窗口内 0 条，最后内容：${latest}`;
   return `候选 ${total} 条 · 日报 ${selected} 条 · 归档 ${archive} 条 · 最后内容 ${latest}`;
+}
+
+const signalWorkflowDefinitions = {
+  new: { label: "新发现", className: "new" },
+  reviewed: { label: "已阅读", className: "reviewed" },
+  confirmed: { label: "已核验", className: "confirmed" },
+  actioned: { label: "已分配行动", className: "actioned" },
+  archived: { label: "已归档", className: "archived" },
+};
+
+function getSignalWorkflowStatus(item) {
+  const stored = state.signalWorkflow[item.id]?.status;
+  return signalWorkflowDefinitions[stored] ? stored : item.workflow_status || "new";
+}
+
+function getTimelineProfile(companyId) {
+  const profile = (state.payload?.company_timelines || []).find(
+    (row) => row.company_id === companyId,
+  );
+  if (profile) return profile;
+  const items = (state.payload?.items || []).filter((item) =>
+    (item.matched_company_ids || []).includes(companyId),
+  );
+  return {
+    company_id: companyId,
+    item_count: items.length,
+    selected_count: items.filter((item) => ["daily", "immediate"].includes(item.tier)).length,
+    high_relevance_count: items.filter((item) => item.acro_relevance?.level === "high").length,
+    source_count: new Set(items.flatMap((item) => item.source_ids || [item.source_id])).size,
+    latest_activity: items.map((item) => item.published || item.event_start_at || "").sort().at(-1) || "",
+    event_mix: {},
+    top_topics: [],
+    top_actions: [],
+    item_ids: items.map((item) => item.id),
+  };
+}
+
+function renderCompanyTimeline() {
+  if (!els.companyTimelineSelect || !state.payload) return;
+  const companies = sortCompaniesForDisplay(state.payload.companies || []);
+  if (!companies.some((company) => company.id === state.timelineCompany)) {
+    state.timelineCompany = companies[0]?.id || "acro";
+  }
+  const previousOptions = [...els.companyTimelineSelect.options].map((option) => option.value);
+  const currentOptions = companies.map((company) => company.id);
+  if (previousOptions.join("|") !== currentOptions.join("|")) {
+    els.companyTimelineSelect.innerHTML = companies.map((company) => `
+      <option value="${escapeAttr(company.id)}">${escapeHtml(compactCompanyName(company))}</option>
+    `).join("");
+  }
+  els.companyTimelineSelect.value = state.timelineCompany;
+  els.timelineScopeControl.querySelectorAll("[data-timeline-scope]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.timelineScope === state.timelineScope);
+  });
+
+  const company = companies.find((row) => row.id === state.timelineCompany) || companies[0];
+  if (!company) return;
+  const profile = getTimelineProfile(company.id);
+  const itemMap = new Map((state.payload.items || []).map((item) => [item.id, item]));
+  let items = (profile.item_ids || []).map((id) => itemMap.get(id)).filter(Boolean);
+  if (state.timelineScope === "selected") {
+    items = items.filter((item) => ["daily", "immediate"].includes(item.tier));
+  }
+  items.sort((a, b) => {
+    const dateDelta = String(b.event_start_at || b.published_at || b.published || "")
+      .localeCompare(String(a.event_start_at || a.published_at || a.published || ""));
+    return dateDelta || (Number(b.score) || 0) - (Number(a.score) || 0);
+  });
+  const visibleItems = items.slice(0, 80);
+  const sourceBacked = items.filter((item) => item.evidence?.verification_status === "source_backed").length;
+  els.companyTimelineTimestamp.textContent = `${compactCompanyName(company)} · 更新 ${formatDateTime(state.payload.generated_at)}`;
+  els.companyTimelineMetrics.innerHTML = `
+    <article><span>累计信号</span><strong>${profile.item_count || 0}</strong><small>当前数据窗口全部记录</small></article>
+    <article><span>进入日报</span><strong>${profile.selected_count || 0}</strong><small>通过相关性与动作门槛</small></article>
+    <article><span>运行来源</span><strong>${profile.source_count || 0}</strong><small>实际命中过该公司的入口</small></article>
+    <article><span>本页证据充分</span><strong>${sourceBacked}</strong><small>摘要包含独立原始信息</small></article>
+  `;
+
+  const topicMarkup = profile.top_topics?.length
+    ? profile.top_topics.map((topic) => `<span>${escapeHtml(topic.label)} <b>${topic.count}</b></span>`).join("")
+    : "<small>当前还没有稳定形成的结构化主题。</small>";
+  const actionMarkup = profile.top_actions?.length
+    ? profile.top_actions.map((action) => `<li><span>${escapeHtml(action.label)}</span><b>${action.count}</b></li>`).join("")
+    : "<li><span>暂无建议动作统计</span><b>0</b></li>";
+  els.companyLivingProfile.innerHTML = `
+    <header><span>${escapeHtml(company.role_label || "公司档案")}</span><h3>${escapeHtml(company.display_name)}</h3></header>
+    <div class="living-profile-block"><span>监测重点</span><p>${escapeHtml(company.monitoring_focus || "尚未配置监测重点。")}</p></div>
+    <div class="living-profile-block"><span>持续出现的主题</span><div class="living-topic-list">${topicMarkup}</div></div>
+    <div class="living-profile-block"><span>建议动作分布</span><ul>${actionMarkup}</ul></div>
+    <footer><span>最近动态</span><strong>${escapeHtml(profile.latest_activity || "暂无日期")}</strong></footer>
+  `;
+
+  if (!visibleItems.length) {
+    els.companyTimelineList.innerHTML = `<div class="empty">${state.timelineScope === "selected" ? "该公司暂时没有达到日报门槛的信号，可切换到“全部记录”查看归档。" : "该公司当前没有命中记录。"}</div>`;
+    return;
+  }
+  els.companyTimelineList.innerHTML = visibleItems.map((item) => {
+    const evidence = item.evidence || {};
+    const workflow = signalWorkflowDefinitions[getSignalWorkflowStatus(item)] || signalWorkflowDefinitions.new;
+    const date = item.event_start_at || item.published_at || item.published || "日期待核对";
+    return `
+      <article class="timeline-entry">
+        <div class="timeline-rail"><i></i><time>${escapeHtml(date)}</time></div>
+        <div class="timeline-entry-body">
+          <header>
+            <div><span>${escapeHtml(labelBusinessEventLanguage(getBusinessEventType(item), true))}</span><b>${item.score} 分</b></div>
+            <small class="workflow-badge status-${escapeAttr(workflow.className)}">${escapeHtml(workflow.label)}</small>
+          </header>
+          <a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(getDisplayTitle(item))}</a>
+          <p>${escapeHtml(firstReadableSentence(getDisplaySummary(item), 150))}</p>
+          <footer>
+            <span class="evidence-quality ${escapeAttr(evidence.verification_status || "needs_original_check")}">${escapeHtml(evidence.verification_label || "需打开原文核验")}</span>
+            <span>${escapeHtml(item.recommended_action?.label || "归档观察")} · ${escapeHtml(item.recommended_action?.owner || "系统")}</span>
+          </footer>
+        </div>
+      </article>
+    `;
+  }).join("");
+  if (items.length > visibleItems.length) {
+    els.companyTimelineList.insertAdjacentHTML("beforeend", `<div class="timeline-limit-note">当前显示最新 ${visibleItems.length} 条，共 ${items.length} 条。</div>`);
+  }
 }
 
 function renderPage() {
@@ -4288,6 +4480,55 @@ function renderBusinessSummary(item, compact) {
   </details>`;
 }
 
+function renderEvidenceBlock(item) {
+  const evidence = item.evidence || {};
+  const kind = evidence.kind || "index";
+  const verification = evidence.verification_status || "needs_original_check";
+  const excerpt = evidence.source_excerpt || "当前来源没有提供独立摘要，页面判断主要来自标题、公司身份和结构化规则。";
+  const relatedCount = evidence.related_urls?.length || item.related_urls?.length || 1;
+  return `
+    <div class="signal-evidence-block">
+      <div class="signal-evidence-head">
+        <span class="evidence-kind kind-${escapeAttr(kind)}">${escapeHtml(evidence.kind_label || "聚合索引线索")}</span>
+        <span class="evidence-quality ${escapeAttr(verification)}">${escapeHtml(evidence.verification_label || "需打开原文核验")}</span>
+        <a href="${escapeAttr(evidence.primary_url || item.url)}" target="_blank" rel="noreferrer">打开原文</a>
+      </div>
+      <p>${escapeHtml(excerpt)}</p>
+      <small>${escapeHtml(getSourceLabelText(item))} · ${relatedCount} 个关联入口 · ${escapeHtml(evidence.summary_basis === "source_excerpt" ? "摘要来自原始内容" : "摘要来自标题与规则")}</small>
+    </div>
+  `;
+}
+
+function renderSignalWorkflow(item) {
+  const current = getSignalWorkflowStatus(item);
+  return `
+    <label class="signal-workflow-control">
+      <span>本机处理状态<small>仅保存在当前浏览器</small></span>
+      <select class="signal-workflow-select" data-signal-workflow-id="${escapeAttr(item.id)}" aria-label="更新信号处理状态">
+        ${Object.entries(signalWorkflowDefinitions).map(([status, meta]) => `
+          <option value="${escapeAttr(status)}"${status === current ? " selected" : ""}>${escapeHtml(meta.label)}</option>
+        `).join("")}
+      </select>
+    </label>
+  `;
+}
+
+function renderSignalDecisionDetails(item) {
+  return `
+    <details class="signal-decision-details">
+      <summary><span>证据与结构化字段</span><small>展开查看原文依据、六组字段和处理状态</small><i>⌄</i></summary>
+      <div class="signal-decision-body">
+        ${renderEvidenceBlock(item)}
+        ${renderIntelligenceFields(item)}
+        <div class="signal-review-row">
+          <div><span>进入当前层级的原因</span><ul class="reason-list">${item.reasons.slice(0, 4).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}</ul></div>
+          ${renderSignalWorkflow(item)}
+        </div>
+      </div>
+    </details>
+  `;
+}
+
 function buildClientBusinessSummaryEn(item) {
   const company = item.matched_companies?.length ? item.matched_companies.slice(0, 2).join(" / ") : "an industry signal";
   const eventLabel = labelBusinessEventLanguage(getBusinessEventType(item), false, "en").toLowerCase();
@@ -4423,7 +4664,8 @@ function renderSignalCards(container, items, compact) {
   );
   for (const item of items) {
     const card = document.createElement("article");
-    card.className = `signal-card${compact ? " compact" : ""}`;
+    const workflowStatus = getSignalWorkflowStatus(item);
+    card.className = `signal-card${compact ? " compact" : ""} workflow-${escapeAttr(workflowStatus)}`;
     const fb = state.feedback[item.id];
     const fbClass = fb ? `voted-${fb.value}` : "";
     const role = getItemRole(item, companyRoles);
@@ -4456,10 +4698,8 @@ function renderSignalCards(container, items, compact) {
       </div>
       ${renderBusinessSummary(item, compact)}
       ${renderBusinessInsight(item, compact)}
-      ${compact ? "" : renderIntelligenceFields(item)}
-      ${compact ? "" : `<ul class="reason-list">
-        ${item.reasons.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
-      </ul>
+      ${compact ? "" : renderSignalDecisionDetails(item)}
+      ${compact ? "" : `
       <div class="feedback-row ${fbClass}">
         <span class="feedback-label">这条有用吗？</span>
         <button class="fb-btn fb-up${fb && fb.value === "up" ? " active" : ""}" data-id="${item.id}" data-action="up" title="有用">有用</button>
@@ -4478,6 +4718,13 @@ function renderSignalCards(container, items, compact) {
       const newValue = current && current.value === action ? null : action;
       state.feedback = saveFeedback(id, newValue);
       renderSignals();
+    });
+  });
+  container.querySelectorAll(".signal-workflow-select").forEach((select) => {
+    select.addEventListener("change", () => {
+      state.signalWorkflow = saveSignalWorkflow(select.dataset.signalWorkflowId, select.value);
+      renderSignals();
+      renderCompanyTimeline();
     });
   });
 }
@@ -5083,6 +5330,7 @@ els.translationToggles.forEach((toggle) => {
     saveTranslationLanguage(state.translationLanguage);
     renderTranslationToggle();
     renderOverviewScope();
+    renderCompanyTimeline();
   });
 });
 
@@ -5115,6 +5363,18 @@ els.companyFilter.addEventListener("change", (event) => {
 els.companyCoverageSelect.addEventListener("change", (event) => {
   state.coverageCompany = event.target.value;
   renderCompanySourceCoverage();
+});
+
+els.companyTimelineSelect.addEventListener("change", (event) => {
+  state.timelineCompany = event.target.value;
+  renderCompanyTimeline();
+});
+
+els.timelineScopeControl.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-timeline-scope]");
+  if (!button) return;
+  state.timelineScope = button.dataset.timelineScope === "all" ? "all" : "selected";
+  renderCompanyTimeline();
 });
 
 els.companySourceCrosswalk.addEventListener("click", (event) => {
