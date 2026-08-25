@@ -1215,7 +1215,7 @@ select {
 .business-lane-item {
   display: grid;
   gap: 5px;
-  min-height: 100px;
+  min-height: 130px;
   padding: 10px;
   border: 1px solid #e1e7ea;
   border-radius: 6px;
@@ -1266,8 +1266,45 @@ select {
 }
 
 .business-lane-item small {
-  align-self: end;
   color: #89969d;
+}
+
+.business-lane-action {
+  align-self: end;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 6px;
+  align-items: center;
+  padding-top: 7px;
+  border-top: 1px solid #e3e9eb;
+}
+
+.business-lane-action span,
+.business-lane-action b,
+.business-lane-action i {
+  min-width: 0;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.business-lane-action span {
+  overflow: hidden;
+  color: #1d656a;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.business-lane-action b {
+  color: #62727a;
+  font-weight: 750;
+}
+
+.business-lane-action i {
+  padding: 2px 5px;
+  background: #edf2f3;
+  color: #65757c;
+  font-weight: 750;
 }
 
 .business-lane-empty {
@@ -3265,6 +3302,23 @@ select {
   text-align: center;
 }
 
+.customer-load-more {
+  width: 100%;
+  min-height: 42px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: #f4f8f8;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.customer-load-more:hover {
+  background: #eaf4f3;
+}
+
 .customer-detail-panel {
   position: sticky;
   top: 18px;
@@ -4181,6 +4235,8 @@ select {
 }
 
 .profile-block strong {
+  color: #253740;
+  font-size: 21px;
   line-height: 1.35;
 }
 
@@ -4411,6 +4467,29 @@ select {
 .question-list span {
   color: var(--muted);
   line-height: 1.5;
+}
+
+.decision-register div {
+  grid-template-columns: 78px 132px minmax(0, 1fr);
+  align-items: center;
+  border-left: 3px solid var(--teal);
+}
+
+.decision-register div.next {
+  border-left-color: var(--gold);
+}
+
+.decision-register b {
+  justify-self: start;
+  padding: 3px 6px;
+  background: #dff1ed;
+  color: #17675e;
+  font-size: 10px;
+}
+
+.decision-register .next b {
+  background: #fff0ce;
+  color: #87601b;
 }
 
 .layout {
@@ -6636,27 +6715,27 @@ select {
           <strong>AI Hot Tracker</strong>
           <span>ACRO Market Intelligence</span>
         </div>
-        <span class="live-badge"><i></i>LIVE</span>
+        <span class="live-badge"><i></i>DAILY</span>
       </div>
       <nav class="nav" aria-label="页面导航">
         <div class="nav-group">
           <span class="nav-group-label">情报工作台</span>
-          <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
-          <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
-          <button type="button" data-page-target="timeline" title="公司时间线"><span class="nav-icon">↕</span><span>公司时间线</span></button>
-          <button type="button" data-page-target="japan-customers" title="日本账户情报"><span class="nav-icon">日</span><span>日本账户情报</span></button>
-          <button type="button" data-page-target="relationships" title="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
-          <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
-          <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
-          <button type="button" data-page-target="sources" title="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
-          <button type="button" data-page-target="acro" title="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
+          <button class="active" type="button" data-page-target="overview" title="总览" aria-label="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
+          <button type="button" data-page-target="companies" title="公司池" aria-label="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+          <button type="button" data-page-target="timeline" title="公司时间线" aria-label="公司时间线"><span class="nav-icon">↕</span><span>公司时间线</span></button>
+          <button type="button" data-page-target="japan-customers" title="日本账户情报" aria-label="日本账户情报"><span class="nav-icon">日</span><span>日本账户情报</span></button>
+          <button type="button" data-page-target="relationships" title="关系情报" aria-label="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
+          <button type="button" data-page-target="company-sources" title="公司来源" aria-label="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
+          <button type="button" data-page-target="signals" title="情报明细" aria-label="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
+          <button type="button" data-page-target="sources" title="数据源地图" aria-label="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
+          <button type="button" data-page-target="acro" title="ACRO 档案" aria-label="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
         </div>
         <div class="nav-group">
           <span class="nav-group-label">运行管理</span>
-          <button type="button" data-page-target="structured-rules" title="结构化规则"><span class="nav-icon">6</span><span>结构化规则</span></button>
-          <button type="button" data-page-target="source-health" title="数据源健康"><span class="nav-icon">✓</span><span>数据源健康</span></button>
-          <button type="button" data-page-target="pipeline" title="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
-          <button type="button" data-page-target="questions" title="待确认"><span class="nav-icon">?</span><span>待确认</span></button>
+          <button type="button" data-page-target="structured-rules" title="结构化规则" aria-label="结构化规则"><span class="nav-icon">6</span><span>结构化规则</span></button>
+          <button type="button" data-page-target="source-health" title="数据源健康" aria-label="数据源健康"><span class="nav-icon">✓</span><span>数据源健康</span></button>
+          <button type="button" data-page-target="pipeline" title="系统链路" aria-label="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
+          <button type="button" data-page-target="questions" title="产品决策" aria-label="产品决策"><span class="nav-icon">决</span><span>产品决策</span></button>
         </div>
       </nav>
 
@@ -6671,7 +6750,7 @@ select {
       <div class="sidebar-panel">
         <div class="sidebar-status"><i></i><strong>数据链路正常</strong></div>
         <p>工作日自动更新 · 公开免费来源</p>
-        <span>MVP 阶段</span>
+        <span>公开试用版</span>
       </div>
     </aside>
 
@@ -6766,7 +6845,7 @@ select {
         <article class="metric warn executive">
           <span>账户动态信号</span>
           <strong id="metricImmediate">--</strong>
-          <small id="metricCustomerNote">账户目录待接入</small>
+          <small id="metricCustomerNote">账户目录加载中</small>
         </article>
         <article class="metric regional executive">
           <span>亚太地区动态</span>
@@ -6785,6 +6864,33 @@ select {
           <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
           <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
           <div><span>当前范围</span><strong id="windowDays">30 天</strong></div>
+        </div>
+      </section>
+
+      <section class="business-lanes-section page-panel" data-page="overview" aria-label="Supervisor action desk">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">主管行动台</p>
+            <h2>先看该做什么，再看趋势和统计依据</h2>
+          </div>
+          <button class="text-button" id="openRelationshipsButton" type="button">查看关系证据</button>
+        </div>
+        <div class="business-lanes">
+          <article class="business-lane lane-competitor">
+            <header><span>竞品对标</span><strong id="competitorLaneCount">--</strong></header>
+            <p>产品、技术、扩产与区域动作，交给产品市场判断是否需要调整定位和话术。</p>
+            <div id="competitorActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-opportunity">
+            <header><span>账户与机会</span><strong id="opportunityLaneCount">--</strong></header>
+            <p>客户或潜在账户动态、产品需求和高相关信号，交给销售、BD 或区域市场。</p>
+            <div id="opportunityActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-partner">
+            <header><span>合作与生态</span><strong id="partnerLaneCount">--</strong></header>
+            <p>合作、授权、共同开发和生态活动，判断是否需要关系核验或市场参与。</p>
+            <div id="partnerActionList" class="business-lane-list"></div>
+          </article>
         </div>
       </section>
 
@@ -6819,40 +6925,13 @@ select {
         </article>
       </section>
 
-      <section class="business-lanes-section page-panel" data-page="overview" aria-label="Business action signals">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">业务行动面板</p>
-            <h2>把新闻拆成竞争、机会与合作三条线</h2>
-          </div>
-          <button class="text-button" id="openRelationshipsButton" type="button">查看关系证据</button>
-        </div>
-        <div class="business-lanes">
-          <article class="business-lane lane-competitor">
-            <header><span>竞品动作</span><strong id="competitorLaneCount">--</strong></header>
-            <p>新产品、平台、扩产与区域动作，用于产品和话术对比。</p>
-            <div id="competitorActionList" class="business-lane-list"></div>
-          </article>
-          <article class="business-lane lane-opportunity">
-            <header><span>ACRO 机会</span><strong id="opportunityLaneCount">--</strong></header>
-            <p>高相关技术、产品需求与建议动作，用于市场和 BD 判断。</p>
-            <div id="opportunityActionList" class="business-lane-list"></div>
-          </article>
-          <article class="business-lane lane-partner">
-            <header><span>合作信号</span><strong id="partnerLaneCount">--</strong></header>
-            <p>合作、授权、MOU 与共同开发，保留原文证据和关系等级。</p>
-            <div id="partnerActionList" class="business-lane-list"></div>
-          </article>
-        </div>
-      </section>
-
       <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
         <div class="section-head">
           <div>
             <p class="eyebrow">公司池</p>
             <h2>一家公司可拥有多个业务角色，但每个角色都要有证据</h2>
           </div>
-          <span class="timestamp" id="companyPoolTimestamp">MVP 阶段：13 家公司已分类</span>
+          <span class="timestamp" id="companyPoolTimestamp">公司池加载中</span>
         </div>
         <div class="company-role-summary" id="companyRoleSummary" aria-label="公司角色统计"></div>
         <div class="company-pool-groups" id="companyPoolGroups"></div>
@@ -7105,31 +7184,34 @@ select {
       <section class="profile-section page-panel" data-page="acro" id="acro-profile" aria-label="ACRO source profile">
         <div class="section-head">
           <div>
-            <p class="eyebrow">ACRO 样本档案</p>
-            <h2>同一家公司先建档，再决定哪些源进入 MVP</h2>
+            <p class="eyebrow">ACRO 运营档案</p>
+            <h2>用本轮真实配置和产出说明 ACRO 正在监测什么</h2>
           </div>
-          <span class="timestamp">样本公司：ACROBiosystems / 百普赛斯</span>
+          <div class="section-actions">
+            <span class="timestamp" id="acroProfileTimestamp">运行数据加载中</span>
+            <button class="text-button" id="openAcroSourcesButton" type="button">查看详细来源</button>
+          </div>
         </div>
         <div class="profile-grid">
           <div class="profile-block">
-            <span>当前自动运行</span>
-            <strong>Google News RSS / 定向新闻稿搜索</strong>
-            <p>用于免费补漏，配合关键词、去重和评分控制噪音。</p>
+            <span>实际运行入口</span>
+            <strong id="acroProfileSourceCount">--</strong>
+            <p id="acroProfileSourceDetail">专属与共享来源正在汇总。</p>
           </div>
           <div class="profile-block">
-            <span>试运行观察</span>
-            <strong>ACRO 官网 News / 日本官网</strong>
-            <p>官方价值高，但需要观察页面结构、防护脚本和抓取稳定性。</p>
+            <span>监测板块覆盖</span>
+            <strong id="acroProfileCoverageCount">--</strong>
+            <p>新闻、产品、活动、技术、地区、视频、媒体与研究入口。</p>
           </div>
           <div class="profile-block">
-            <span>记录但不自动抓</span>
-            <strong>LinkedIn / 微信公众号 / 展会 / 视频</strong>
-            <p>有业务信号，但第一阶段用人工复核或后续半自动方式处理。</p>
+            <span>本轮信号产出</span>
+            <strong id="acroProfileSignalCount">--</strong>
+            <p id="acroProfileSignalDetail">候选和日报信号正在汇总。</p>
           </div>
           <div class="profile-block">
-            <span>暂缓或后期评估</span>
-            <strong>登录平台 / 反爬网站 / 付费数据库</strong>
-            <p>等 MVP 验证价值后，再决定 API、商业数据服务或内部部署。</p>
+            <span>来源运行健康</span>
+            <strong id="acroProfileHealth">--</strong>
+            <p id="acroProfileHealthDetail">异常和有效产出正在核对。</p>
           </div>
         </div>
       </section>
@@ -7247,19 +7329,20 @@ select {
         <div id="structuredRuleGrid" class="structured-rule-grid"></div>
       </section>
 
-      <section class="questions-section page-panel" data-page="questions" aria-label="Open questions">
+      <section class="questions-section page-panel" data-page="questions" aria-label="Product decisions">
         <div class="section-head">
           <div>
-            <p class="eyebrow">待确认事项</p>
-            <h2>给领导确认的不是技术细节，而是边界和优先级</h2>
+            <p class="eyebrow">产品决策记录</p>
+            <h2>已确定的边界不再反复讨论，只保留真正影响下一阶段的选择</h2>
           </div>
         </div>
-        <div class="question-list">
-          <div><strong>公司范围</strong><span>第一批是 ACRO + 竞品，还是也包含客户、合作伙伴、潜在客户？</span></div>
-          <div><strong>推送标准</strong><span>什么内容要即时提醒，什么只进日报，什么只归档？</span></div>
-          <div><strong>数据边界</strong><span>LinkedIn、微信、登录平台是人工看，还是后续申请付费/API？</span></div>
-          <div><strong>公开性</strong><span>公司名单和结果能否放 GitHub Pages，还是需要内部部署？</span></div>
-          <div><strong>展示语言</strong><span>中文、英文、日文，还是给日本团队做双语？</span></div>
+        <div class="question-list decision-register">
+          <div class="decided"><b>已确定</b><strong>监测范围</strong><span>ACRO + 18 家竞品 + 232 家日本客户与潜在账户；合作伙伴和生态平台分层管理。</span></div>
+          <div class="decided"><b>已确定</b><strong>准入标准</strong><span>高分即时提醒、中分进入日报、低分归档；低 ACRO 相关内容不进入主管视图。</span></div>
+          <div class="decided"><b>已确定</b><strong>公开边界</strong><span>GitHub Pages 只展示公开数据；销售表中的内部关系状态不发布。</span></div>
+          <div class="next"><b>下一阶段</b><strong>协作闭环</strong><span>确认谁负责核验、分派和关闭信号，并决定是否接入多人共享数据库。</span></div>
+          <div class="next"><b>下一阶段</b><strong>AI 摘要预算</strong><span>确定模型、每轮摘要条数和月度预算，把规则提要升级为稳定的事实摘要。</span></div>
+          <div class="next"><b>下一阶段</b><strong>销售系统连接</strong><span>决定账户跟进结果进入 CRM、飞书多维表格，还是先保留平台内轻量状态。</span></div>
         </div>
       </section>
 
@@ -162018,6 +162101,7 @@ const state = {
   accountOrganizationType: "all",
   accountSignalStatus: "all",
   selectedAccountId: null,
+  accountLimit: 40,
   dockOpenRoles: new Set(["self"]),
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
@@ -163804,10 +163888,10 @@ const pageMeta = {
   "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
-  acro: ["Company Profile", "ACRO 样本档案"],
+  acro: ["Company Profile", "ACRO 运营档案"],
   "structured-rules": ["Intelligence Operations", "六组结构化情报规则"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
-  questions: ["Open Questions", "待确认事项"],
+  questions: ["Product Decisions", "已确定边界与下一阶段决策"],
   "source-health": ["Source Operations", "数据源健康与产出质量"],
 };
 
@@ -163992,6 +164076,15 @@ const els = {
   japanCustomerResultCount: document.querySelector("#japanCustomerResultCount"),
   japanCustomerList: document.querySelector("#japanCustomerList"),
   japanCustomerDetail: document.querySelector("#japanCustomerDetail"),
+  acroProfileTimestamp: document.querySelector("#acroProfileTimestamp"),
+  acroProfileSourceCount: document.querySelector("#acroProfileSourceCount"),
+  acroProfileSourceDetail: document.querySelector("#acroProfileSourceDetail"),
+  acroProfileCoverageCount: document.querySelector("#acroProfileCoverageCount"),
+  acroProfileSignalCount: document.querySelector("#acroProfileSignalCount"),
+  acroProfileSignalDetail: document.querySelector("#acroProfileSignalDetail"),
+  acroProfileHealth: document.querySelector("#acroProfileHealth"),
+  acroProfileHealthDetail: document.querySelector("#acroProfileHealthDetail"),
+  openAcroSourcesButton: document.querySelector("#openAcroSourcesButton"),
   companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
   companyCoverageTimestamp: document.querySelector("#companyCoverageTimestamp"),
   companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
@@ -164032,6 +164125,7 @@ function renderLoadedData() {
   renderJapanAccountIntelligence();
   renderCompanyRelationships();
   renderCompanySourceCoverage();
+  renderAcroOperationalProfile();
   renderStructuredRules();
   render();
   renderSourceHealth();
@@ -164246,7 +164340,7 @@ function renderJapanAccountIntelligence() {
     : "all";
 
   const query = state.accountQuery.toLowerCase().trim();
-  const visible = accounts.filter((account) => {
+  const matchingAccounts = accounts.filter((account) => {
     const matches = signalIndex.get(account.id) || [];
     const haystack = `${account.name} ${(account.aliases || []).join(" ")}`.toLowerCase();
     return (!query || haystack.includes(query)) &&
@@ -164260,12 +164354,13 @@ function renderJapanAccountIntelligence() {
     const signalDelta = (signalIndex.get(b.id) || []).length - (signalIndex.get(a.id) || []).length;
     return stageDelta || signalDelta || a.name.localeCompare(b.name);
   });
-  els.japanCustomerResultCount.textContent = `显示 ${visible.length} / ${accounts.length} 个账户锚点`;
-  if (!visible.some((account) => account.id === state.selectedAccountId)) {
-    state.selectedAccountId = visible[0]?.id || null;
+  const renderedAccounts = matchingAccounts.slice(0, state.accountLimit);
+  els.japanCustomerResultCount.textContent = `匹配 ${matchingAccounts.length} 个 · 当前显示 ${renderedAccounts.length} 个`;
+  if (!matchingAccounts.some((account) => account.id === state.selectedAccountId)) {
+    state.selectedAccountId = matchingAccounts[0]?.id || null;
   }
 
-  els.japanCustomerList.innerHTML = visible.length ? visible.map((account) => {
+  const accountRows = renderedAccounts.map((account) => {
     const matches = signalIndex.get(account.id) || [];
     return `
       <button class="customer-directory-row ${account.id === state.selectedAccountId ? "active" : ""}" type="button" data-japan-account-id="${escapeAttr(account.id)}">
@@ -164274,7 +164369,13 @@ function renderJapanAccountIntelligence() {
         <span class="customer-parent-cell">${escapeHtml(account.organization_label || "待分类")}</span>
         <span class="customer-signal-count ${matches.length ? "has-signal" : ""}">${matches.length ? `${matches.length} 条候选` : "暂无"}</span>
       </button>`;
-  }).join("") : '<div class="customer-directory-empty">当前筛选范围内没有账户记录。</div>';
+  }).join("");
+  const loadMore = renderedAccounts.length < matchingAccounts.length
+    ? `<button class="customer-load-more" type="button" data-load-more-accounts>继续显示 ${Math.min(40, matchingAccounts.length - renderedAccounts.length)} 个</button>`
+    : "";
+  els.japanCustomerList.innerHTML = matchingAccounts.length
+    ? accountRows + loadMore
+    : '<div class="customer-directory-empty">当前筛选范围内没有账户记录。</div>';
 
   const selected = accounts.find((account) => account.id === state.selectedAccountId);
   if (!selected) {
@@ -165165,6 +165266,37 @@ function renderCompanySourceCoverage() {
   }).join("");
 }
 
+function renderAcroOperationalProfile() {
+  if (!els.acroProfileSourceCount || !state.payload) return;
+  const coverage = state.payload.company_source_coverage || {};
+  const definitions = coverage.slot_definitions || [];
+  const profile = getCompanyCoverageProfile("acro") || { slots: {} };
+  const sourceIds = getCoverageSourceIds(profile);
+  const rowsById = new Map(getSourceHealthRows().map((row) => [row.source_id, row]));
+  const sourceRows = sourceIds.map((id) => rowsById.get(id)).filter(Boolean);
+  const dedicated = sourceRows.filter((row) => row.company_id === "acro").length;
+  const shared = sourceRows.length - dedicated;
+  const coveredSlots = definitions.filter((definition) =>
+    ["active", "covered"].includes(profile.slots?.[definition.id]?.status),
+  ).length;
+  const acroItems = (state.payload.items || []).filter((item) =>
+    (item.matched_company_ids || []).includes("acro"),
+  );
+  const selectedItems = acroItems.filter((item) => ["daily", "immediate"].includes(item.tier));
+  const producingSources = sourceRows.filter((row) => Number(row.total) > 0).length;
+  const selectedSources = sourceRows.filter((row) => Number(row.immediate) + Number(row.daily) > 0).length;
+  const errors = sourceRows.filter((row) => row.operational_status === "error" || row.status === "error").length;
+
+  els.acroProfileTimestamp.textContent = `本轮运行 ${formatDateTime(state.payload.generated_at)}`;
+  els.acroProfileSourceCount.textContent = `${sourceRows.length} 个入口`;
+  els.acroProfileSourceDetail.textContent = `${dedicated} 个公司专属 · ${shared} 个跨公司共享；均来自本轮真实运行配置。`;
+  els.acroProfileCoverageCount.textContent = `${coveredSlots} / ${definitions.length} 类`;
+  els.acroProfileSignalCount.textContent = `${selectedItems.length} 条日报`;
+  els.acroProfileSignalDetail.textContent = `当前数据窗口累计命中 ${acroItems.length} 条，其中 ${selectedItems.length} 条通过日报门槛。`;
+  els.acroProfileHealth.textContent = errors ? `${errors} 个异常` : "运行正常";
+  els.acroProfileHealthDetail.textContent = `${producingSources} 个入口有产出 · ${selectedSources} 个贡献日报 · ${errors} 个异常。`;
+}
+
 async function loadData() {
   const canLoadLiveData = ["http:", "https:"].includes(window.location.protocol);
   const previousPayload = state.payload;
@@ -165373,7 +165505,8 @@ function renderBusinessLanes(items, companyRoles) {
   const opportunityItems = items.filter((item) => {
     const role = getItemRole(item, companyRoles);
     const productNeeds = item.intelligence?.product_needs || [];
-    return item.recommended_action?.type === "lead" ||
+    return role === "customer" ||
+      item.recommended_action?.type === "lead" ||
       (item.acro_relevance?.level === "high" && role !== "competitor") ||
       (productNeeds.length && role === "industry");
   });
@@ -165406,11 +165539,14 @@ function renderBusinessLaneItems(container, items, emptyText, laneType) {
       : laneType === "partner"
         ? (intelligence.business_actions || [])[0] || labelBusinessEvent(getBusinessEventType(item), true)
         : (intelligence.modalities || [])[0] || labelBusinessEvent(getBusinessEventType(item), true);
+    const action = item.recommended_action || { label: "人工判断", owner: "待分派" };
+    const workflow = signalWorkflowDefinitions[getSignalWorkflowStatus(item)] || signalWorkflowDefinitions.new;
     return `
       <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
         <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
         <strong>${escapeHtml(item.title)}</strong>
         <small>${escapeHtml(getItemDateLabel(item))} · ${Number(item.score) || 0} 分</small>
+        <div class="business-lane-action"><span>${escapeHtml(action.label || "人工判断")}</span><b>${escapeHtml(action.owner || "待分派")}</b><i>${escapeHtml(workflow.label)}</i></div>
       </a>
     `;
   }).join("");
@@ -167471,6 +167607,14 @@ els.openRelationshipsButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+els.openAcroSourcesButton.addEventListener("click", () => {
+  state.coverageCompany = "acro";
+  state.page = "company-sources";
+  renderCompanySourceCoverage();
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 els.refreshButton.addEventListener("click", () => loadData());
 
 els.companyTopicMatrix.addEventListener("click", (event) => {
@@ -167525,25 +167669,34 @@ els.healthStatusFilter.addEventListener("change", (event) => {
 
 els.japanCustomerSearch.addEventListener("input", (event) => {
   state.accountQuery = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerTypeFilter.addEventListener("change", (event) => {
   state.accountStage = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerSapFilter.addEventListener("change", (event) => {
   state.accountOrganizationType = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerSignalFilter.addEventListener("change", (event) => {
   state.accountSignalStatus = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerList.addEventListener("click", (event) => {
+  if (event.target.closest("[data-load-more-accounts]")) {
+    state.accountLimit += 40;
+    renderJapanAccountIntelligence();
+    return;
+  }
   const row = event.target.closest("[data-japan-account-id]");
   if (!row) return;
   state.selectedAccountId = row.dataset.japanAccountId;

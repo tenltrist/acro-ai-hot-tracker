@@ -1208,7 +1208,7 @@ select {
 .business-lane-item {
   display: grid;
   gap: 5px;
-  min-height: 100px;
+  min-height: 130px;
   padding: 10px;
   border: 1px solid #e1e7ea;
   border-radius: 6px;
@@ -1259,8 +1259,45 @@ select {
 }
 
 .business-lane-item small {
-  align-self: end;
   color: #89969d;
+}
+
+.business-lane-action {
+  align-self: end;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 6px;
+  align-items: center;
+  padding-top: 7px;
+  border-top: 1px solid #e3e9eb;
+}
+
+.business-lane-action span,
+.business-lane-action b,
+.business-lane-action i {
+  min-width: 0;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.business-lane-action span {
+  overflow: hidden;
+  color: #1d656a;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.business-lane-action b {
+  color: #62727a;
+  font-weight: 750;
+}
+
+.business-lane-action i {
+  padding: 2px 5px;
+  background: #edf2f3;
+  color: #65757c;
+  font-weight: 750;
 }
 
 .business-lane-empty {
@@ -3258,6 +3295,23 @@ select {
   text-align: center;
 }
 
+.customer-load-more {
+  width: 100%;
+  min-height: 42px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: #f4f8f8;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.customer-load-more:hover {
+  background: #eaf4f3;
+}
+
 .customer-detail-panel {
   position: sticky;
   top: 18px;
@@ -4174,6 +4228,8 @@ select {
 }
 
 .profile-block strong {
+  color: #253740;
+  font-size: 21px;
   line-height: 1.35;
 }
 
@@ -4404,6 +4460,29 @@ select {
 .question-list span {
   color: var(--muted);
   line-height: 1.5;
+}
+
+.decision-register div {
+  grid-template-columns: 78px 132px minmax(0, 1fr);
+  align-items: center;
+  border-left: 3px solid var(--teal);
+}
+
+.decision-register div.next {
+  border-left-color: var(--gold);
+}
+
+.decision-register b {
+  justify-self: start;
+  padding: 3px 6px;
+  background: #dff1ed;
+  color: #17675e;
+  font-size: 10px;
+}
+
+.decision-register .next b {
+  background: #fff0ce;
+  color: #87601b;
 }
 
 .layout {

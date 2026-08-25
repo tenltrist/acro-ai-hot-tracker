@@ -89,6 +89,7 @@ const state = {
   accountOrganizationType: "all",
   accountSignalStatus: "all",
   selectedAccountId: null,
+  accountLimit: 40,
   dockOpenRoles: new Set(["self"]),
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
@@ -1875,10 +1876,10 @@ const pageMeta = {
   "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
-  acro: ["Company Profile", "ACRO 样本档案"],
+  acro: ["Company Profile", "ACRO 运营档案"],
   "structured-rules": ["Intelligence Operations", "六组结构化情报规则"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
-  questions: ["Open Questions", "待确认事项"],
+  questions: ["Product Decisions", "已确定边界与下一阶段决策"],
   "source-health": ["Source Operations", "数据源健康与产出质量"],
 };
 
@@ -2063,6 +2064,15 @@ const els = {
   japanCustomerResultCount: document.querySelector("#japanCustomerResultCount"),
   japanCustomerList: document.querySelector("#japanCustomerList"),
   japanCustomerDetail: document.querySelector("#japanCustomerDetail"),
+  acroProfileTimestamp: document.querySelector("#acroProfileTimestamp"),
+  acroProfileSourceCount: document.querySelector("#acroProfileSourceCount"),
+  acroProfileSourceDetail: document.querySelector("#acroProfileSourceDetail"),
+  acroProfileCoverageCount: document.querySelector("#acroProfileCoverageCount"),
+  acroProfileSignalCount: document.querySelector("#acroProfileSignalCount"),
+  acroProfileSignalDetail: document.querySelector("#acroProfileSignalDetail"),
+  acroProfileHealth: document.querySelector("#acroProfileHealth"),
+  acroProfileHealthDetail: document.querySelector("#acroProfileHealthDetail"),
+  openAcroSourcesButton: document.querySelector("#openAcroSourcesButton"),
   companyCoverageTitle: document.querySelector("#companyCoverageTitle"),
   companyCoverageTimestamp: document.querySelector("#companyCoverageTimestamp"),
   companyCoverageDescription: document.querySelector("#companyCoverageDescription"),
@@ -2103,6 +2113,7 @@ function renderLoadedData() {
   renderJapanAccountIntelligence();
   renderCompanyRelationships();
   renderCompanySourceCoverage();
+  renderAcroOperationalProfile();
   renderStructuredRules();
   render();
   renderSourceHealth();
@@ -2317,7 +2328,7 @@ function renderJapanAccountIntelligence() {
     : "all";
 
   const query = state.accountQuery.toLowerCase().trim();
-  const visible = accounts.filter((account) => {
+  const matchingAccounts = accounts.filter((account) => {
     const matches = signalIndex.get(account.id) || [];
     const haystack = `${account.name} ${(account.aliases || []).join(" ")}`.toLowerCase();
     return (!query || haystack.includes(query)) &&
@@ -2331,12 +2342,13 @@ function renderJapanAccountIntelligence() {
     const signalDelta = (signalIndex.get(b.id) || []).length - (signalIndex.get(a.id) || []).length;
     return stageDelta || signalDelta || a.name.localeCompare(b.name);
   });
-  els.japanCustomerResultCount.textContent = `显示 ${visible.length} / ${accounts.length} 个账户锚点`;
-  if (!visible.some((account) => account.id === state.selectedAccountId)) {
-    state.selectedAccountId = visible[0]?.id || null;
+  const renderedAccounts = matchingAccounts.slice(0, state.accountLimit);
+  els.japanCustomerResultCount.textContent = `匹配 ${matchingAccounts.length} 个 · 当前显示 ${renderedAccounts.length} 个`;
+  if (!matchingAccounts.some((account) => account.id === state.selectedAccountId)) {
+    state.selectedAccountId = matchingAccounts[0]?.id || null;
   }
 
-  els.japanCustomerList.innerHTML = visible.length ? visible.map((account) => {
+  const accountRows = renderedAccounts.map((account) => {
     const matches = signalIndex.get(account.id) || [];
     return `
       <button class="customer-directory-row ${account.id === state.selectedAccountId ? "active" : ""}" type="button" data-japan-account-id="${escapeAttr(account.id)}">
@@ -2345,7 +2357,13 @@ function renderJapanAccountIntelligence() {
         <span class="customer-parent-cell">${escapeHtml(account.organization_label || "待分类")}</span>
         <span class="customer-signal-count ${matches.length ? "has-signal" : ""}">${matches.length ? `${matches.length} 条候选` : "暂无"}</span>
       </button>`;
-  }).join("") : '<div class="customer-directory-empty">当前筛选范围内没有账户记录。</div>';
+  }).join("");
+  const loadMore = renderedAccounts.length < matchingAccounts.length
+    ? `<button class="customer-load-more" type="button" data-load-more-accounts>继续显示 ${Math.min(40, matchingAccounts.length - renderedAccounts.length)} 个</button>`
+    : "";
+  els.japanCustomerList.innerHTML = matchingAccounts.length
+    ? accountRows + loadMore
+    : '<div class="customer-directory-empty">当前筛选范围内没有账户记录。</div>';
 
   const selected = accounts.find((account) => account.id === state.selectedAccountId);
   if (!selected) {
@@ -3236,6 +3254,37 @@ function renderCompanySourceCoverage() {
   }).join("");
 }
 
+function renderAcroOperationalProfile() {
+  if (!els.acroProfileSourceCount || !state.payload) return;
+  const coverage = state.payload.company_source_coverage || {};
+  const definitions = coverage.slot_definitions || [];
+  const profile = getCompanyCoverageProfile("acro") || { slots: {} };
+  const sourceIds = getCoverageSourceIds(profile);
+  const rowsById = new Map(getSourceHealthRows().map((row) => [row.source_id, row]));
+  const sourceRows = sourceIds.map((id) => rowsById.get(id)).filter(Boolean);
+  const dedicated = sourceRows.filter((row) => row.company_id === "acro").length;
+  const shared = sourceRows.length - dedicated;
+  const coveredSlots = definitions.filter((definition) =>
+    ["active", "covered"].includes(profile.slots?.[definition.id]?.status),
+  ).length;
+  const acroItems = (state.payload.items || []).filter((item) =>
+    (item.matched_company_ids || []).includes("acro"),
+  );
+  const selectedItems = acroItems.filter((item) => ["daily", "immediate"].includes(item.tier));
+  const producingSources = sourceRows.filter((row) => Number(row.total) > 0).length;
+  const selectedSources = sourceRows.filter((row) => Number(row.immediate) + Number(row.daily) > 0).length;
+  const errors = sourceRows.filter((row) => row.operational_status === "error" || row.status === "error").length;
+
+  els.acroProfileTimestamp.textContent = `本轮运行 ${formatDateTime(state.payload.generated_at)}`;
+  els.acroProfileSourceCount.textContent = `${sourceRows.length} 个入口`;
+  els.acroProfileSourceDetail.textContent = `${dedicated} 个公司专属 · ${shared} 个跨公司共享；均来自本轮真实运行配置。`;
+  els.acroProfileCoverageCount.textContent = `${coveredSlots} / ${definitions.length} 类`;
+  els.acroProfileSignalCount.textContent = `${selectedItems.length} 条日报`;
+  els.acroProfileSignalDetail.textContent = `当前数据窗口累计命中 ${acroItems.length} 条，其中 ${selectedItems.length} 条通过日报门槛。`;
+  els.acroProfileHealth.textContent = errors ? `${errors} 个异常` : "运行正常";
+  els.acroProfileHealthDetail.textContent = `${producingSources} 个入口有产出 · ${selectedSources} 个贡献日报 · ${errors} 个异常。`;
+}
+
 async function loadData() {
   const canLoadLiveData = ["http:", "https:"].includes(window.location.protocol);
   const previousPayload = state.payload;
@@ -3444,7 +3493,8 @@ function renderBusinessLanes(items, companyRoles) {
   const opportunityItems = items.filter((item) => {
     const role = getItemRole(item, companyRoles);
     const productNeeds = item.intelligence?.product_needs || [];
-    return item.recommended_action?.type === "lead" ||
+    return role === "customer" ||
+      item.recommended_action?.type === "lead" ||
       (item.acro_relevance?.level === "high" && role !== "competitor") ||
       (productNeeds.length && role === "industry");
   });
@@ -3477,11 +3527,14 @@ function renderBusinessLaneItems(container, items, emptyText, laneType) {
       : laneType === "partner"
         ? (intelligence.business_actions || [])[0] || labelBusinessEvent(getBusinessEventType(item), true)
         : (intelligence.modalities || [])[0] || labelBusinessEvent(getBusinessEventType(item), true);
+    const action = item.recommended_action || { label: "人工判断", owner: "待分派" };
+    const workflow = signalWorkflowDefinitions[getSignalWorkflowStatus(item)] || signalWorkflowDefinitions.new;
     return `
       <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
         <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
         <strong>${escapeHtml(item.title)}</strong>
         <small>${escapeHtml(getItemDateLabel(item))} · ${Number(item.score) || 0} 分</small>
+        <div class="business-lane-action"><span>${escapeHtml(action.label || "人工判断")}</span><b>${escapeHtml(action.owner || "待分派")}</b><i>${escapeHtml(workflow.label)}</i></div>
       </a>
     `;
   }).join("");
@@ -5542,6 +5595,14 @@ els.openRelationshipsButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+els.openAcroSourcesButton.addEventListener("click", () => {
+  state.coverageCompany = "acro";
+  state.page = "company-sources";
+  renderCompanySourceCoverage();
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 els.refreshButton.addEventListener("click", () => loadData());
 
 els.companyTopicMatrix.addEventListener("click", (event) => {
@@ -5596,25 +5657,34 @@ els.healthStatusFilter.addEventListener("change", (event) => {
 
 els.japanCustomerSearch.addEventListener("input", (event) => {
   state.accountQuery = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerTypeFilter.addEventListener("change", (event) => {
   state.accountStage = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerSapFilter.addEventListener("change", (event) => {
   state.accountOrganizationType = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerSignalFilter.addEventListener("change", (event) => {
   state.accountSignalStatus = event.target.value;
+  state.accountLimit = 40;
   renderJapanAccountIntelligence();
 });
 
 els.japanCustomerList.addEventListener("click", (event) => {
+  if (event.target.closest("[data-load-more-accounts]")) {
+    state.accountLimit += 40;
+    renderJapanAccountIntelligence();
+    return;
+  }
   const row = event.target.closest("[data-japan-account-id]");
   if (!row) return;
   state.selectedAccountId = row.dataset.japanAccountId;
