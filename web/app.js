@@ -84,11 +84,11 @@ const state = {
   relationshipEvidence: "all",
   relationshipGraphLayer: "all",
   relationshipGraphFocus: "acro",
-  customerQuery: "",
-  customerType: "all",
-  customerSapType: "all",
-  customerSignalStatus: "all",
-  selectedCustomerId: null,
+  accountQuery: "",
+  accountStage: "all",
+  accountOrganizationType: "all",
+  accountSignalStatus: "all",
+  selectedAccountId: null,
   dockOpenRoles: new Set(["self"]),
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
@@ -1870,7 +1870,7 @@ const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   companies: ["Company Pool", "目标公司池"],
   timeline: ["Company Timeline", "公司动态时间线与长期档案"],
-  "japan-customers": ["Japan Customer Pool", "日本客户名单与机会发现"],
+  "japan-customers": ["Japan Account Intelligence", "日本客户与潜在账户情报"],
   relationships: ["Relationship Intelligence", "ACRO 企业关系与客户线索"],
   "company-sources": ["Company Sources", "公司数据源档案"],
   signals: ["Intelligence Detail", "情报明细与证据库"],
@@ -2053,8 +2053,8 @@ const els = {
   customerSegmentList: document.querySelector("#customerSegmentList"),
   japanCustomerTimestamp: document.querySelector("#japanCustomerTimestamp"),
   japanCustomerCount: document.querySelector("#japanCustomerCount"),
+  japanPublicRelationshipCount: document.querySelector("#japanPublicRelationshipCount"),
   japanIndustryCount: document.querySelector("#japanIndustryCount"),
-  japanAcademiaCount: document.querySelector("#japanAcademiaCount"),
   japanLinkedCount: document.querySelector("#japanLinkedCount"),
   japanCustomerSearch: document.querySelector("#japanCustomerSearch"),
   japanCustomerTypeFilter: document.querySelector("#japanCustomerTypeFilter"),
@@ -2100,7 +2100,7 @@ function renderLoadedData() {
   hydrateFilters();
   renderCompanyDock();
   renderCompanyPools();
-  renderJapanCustomerPool();
+  renderJapanAccountIntelligence();
   renderCompanyRelationships();
   renderCompanySourceCoverage();
   renderStructuredRules();
@@ -2124,7 +2124,7 @@ function hydrateCompanyMetadata(payload) {
 const companyRoleDockMeta = {
   self: { label: "本公司", empty: "尚未设置本公司" },
   competitor: { label: "竞品 / 对标池", empty: "尚未设置竞品" },
-  customer: { label: "客户池", empty: "客户名单待导入" },
+  customer: { label: "客户 / 账户", empty: "账户目录待导入" },
 };
 
 function compactCompanyName(company) {
@@ -2189,13 +2189,17 @@ function renderCompanyDock() {
   els.companyDockList.innerHTML = allButton + groups;
 }
 
-function getJapanCustomerData() {
-  return window.AIHOT_JAPAN_CUSTOMERS || {
+function getJapanAccountData() {
+  const data = window.AIHOT_JAPAN_ACCOUNTS || window.AIHOT_JAPAN_CUSTOMERS;
+  if (data?.accounts) return data;
+  if (data) return { ...data, accounts: data.customers || [] };
+  return {
     imported_at: "--",
-    source: "日本客户列表.xlsx",
-    semantics: "名单收录客户，不自动等同于已确认采购、合作项目或商业机会。",
-    import_summary: { source_rows: 0, unique_customers: 0, duplicate_rows_merged: 0, identity_review: 0 },
-    customers: [],
+    source: "Global Data-日本客户列表.xlsx",
+    semantics: "这是日本市场账户目录，不自动等于已成交客户。",
+    privacy_note: "内部销售状态不进入公开页面。",
+    import_summary: { source_rows: 0, unique_accounts: 0, duplicate_rows_merged: 0, public_relationships: 0 },
+    accounts: [],
   };
 }
 
@@ -2230,8 +2234,8 @@ function isStrongCustomerMatchTerm(value) {
   return !new Set(["unknown", "institute", "university", "laboratory", "hospital", "research"]).has(compact);
 }
 
-function getCustomerMatchTerms(customer) {
-  const values = [customer.name, customer.parent_company, ...(customer.aliases || [])];
+function getAccountMatchTerms(account) {
+  const values = [account.name, account.parent_company, ...(account.aliases || [])];
   const terms = new Set();
   for (const value of values) {
     const normalized = normalizeCustomerMatchText(value);
@@ -2242,12 +2246,12 @@ function getCustomerMatchTerms(customer) {
   return [...terms];
 }
 
-let japanCustomerSignalCache = { payload: null, data: null, index: new Map() };
+let japanAccountSignalCache = { payload: null, data: null, index: new Map() };
 
-function getJapanCustomerSignalIndex() {
-  const data = getJapanCustomerData();
-  if (japanCustomerSignalCache.payload === state.payload && japanCustomerSignalCache.data === data) {
-    return japanCustomerSignalCache.index;
+function getJapanAccountSignalIndex() {
+  const data = getJapanAccountData();
+  if (japanAccountSignalCache.payload === state.payload && japanAccountSignalCache.data === data) {
+    return japanAccountSignalCache.index;
   }
   const items = state.payload?.items || [];
   const itemText = items.map((item) => normalizeCustomerMatchText([
@@ -2258,28 +2262,26 @@ function getJapanCustomerSignalIndex() {
     ...(item.matched_companies || []),
   ].filter(Boolean).join(" ")));
   const index = new Map();
-  for (const customer of data.customers || []) {
-    const terms = getCustomerMatchTerms(customer);
+  for (const account of data.accounts || []) {
+    const terms = getAccountMatchTerms(account);
     const matches = items.filter((item, itemIndex) => terms.some((term) => itemText[itemIndex].includes(term)));
-    index.set(customer.id, [...matches].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)));
+    index.set(account.id, [...matches].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)));
   }
-  japanCustomerSignalCache = { payload: state.payload, data, index };
+  japanAccountSignalCache = { payload: state.payload, data, index };
   return index;
 }
 
-function getJapanCustomerMatchedItemIds() {
+function getJapanAccountMatchedItemIds() {
   const ids = new Set();
-  for (const matches of getJapanCustomerSignalIndex().values()) {
+  for (const matches of getJapanAccountSignalIndex().values()) {
     for (const item of matches) ids.add(item.id || item.url);
   }
   return ids;
 }
 
-function customerTagMarkup(customer) {
-  return [customer.customer_type, customer.sap_customer_type]
-    .filter(Boolean)
-    .map((value) => `<b>${escapeHtml(value)}</b>`)
-    .join("");
+function accountStageMarkup(account) {
+  const className = account.account_stage === "public_relationship" ? "public-relationship" : "market-account";
+  return `<b class="account-stage-badge ${className}">${escapeHtml(account.account_stage_label || "市场账户")}</b>`;
 }
 
 function customerDetailField(label, value) {
@@ -2287,88 +2289,113 @@ function customerDetailField(label, value) {
   return `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
 }
 
-function renderJapanCustomerPool() {
+function renderJapanAccountIntelligence() {
   if (!els.japanCustomerList || !els.japanCustomerDetail) return;
-  const data = getJapanCustomerData();
-  const customers = data.customers || [];
-  const signalIndex = getJapanCustomerSignalIndex();
-  const linkedCustomers = customers.filter((customer) => (signalIndex.get(customer.id) || []).length);
-  const academiaCount = customers.filter((customer) => customer.customer_type === "Academia").length;
-  const industryCount = customers.filter((customer) => customer.customer_type && customer.customer_type !== "Academia").length;
+  const data = getJapanAccountData();
+  const accounts = data.accounts || [];
+  const signalIndex = getJapanAccountSignalIndex();
+  const linkedAccounts = accounts.filter((account) => (signalIndex.get(account.id) || []).length);
+  const publicRelationshipCount = accounts.filter((account) => account.account_stage === "public_relationship").length;
+  const pharmaCount = accounts.filter((account) => account.organization_type === "pharma_biotech").length;
 
-  els.japanCustomerTimestamp.textContent = `导入 ${data.imported_at || "--"} · ${data.import_summary?.duplicate_rows_merged || 0} 条重复已合并`;
-  els.japanCustomerCount.textContent = customers.length;
-  els.japanIndustryCount.textContent = industryCount;
-  els.japanAcademiaCount.textContent = academiaCount;
-  els.japanLinkedCount.textContent = linkedCustomers.length;
+  els.japanCustomerTimestamp.textContent = `更新 ${data.imported_at || "--"} · ${data.import_summary?.source_rows || accounts.length} 条源记录`;
+  els.japanCustomerCount.textContent = accounts.length;
+  els.japanPublicRelationshipCount.textContent = publicRelationshipCount;
+  els.japanIndustryCount.textContent = pharmaCount;
+  els.japanLinkedCount.textContent = linkedAccounts.length;
 
-  const customerTypes = [...new Set(customers.map((customer) => customer.customer_type).filter(Boolean))].sort();
-  const sapTypes = [...new Set(customers.map((customer) => customer.sap_customer_type).filter(Boolean))].sort();
-  els.japanCustomerTypeFilter.innerHTML = '<option value="all">全部客户大类</option>' + customerTypes
-    .map((value) => `<option value="${escapeAttr(value)}">${escapeHtml(value)}</option>`).join("");
-  els.japanCustomerSapFilter.innerHTML = '<option value="all">全部业务类型</option>' + sapTypes
-    .map((value) => `<option value="${escapeAttr(value)}">${escapeHtml(value)}</option>`).join("");
-  els.japanCustomerTypeFilter.value = customerTypes.includes(state.customerType) ? state.customerType : "all";
-  els.japanCustomerSapFilter.value = sapTypes.includes(state.customerSapType) ? state.customerSapType : "all";
+  const stageOptions = [...new Map(accounts.map((account) => [account.account_stage, account.account_stage_label])).entries()];
+  const organizationOptions = [...new Map(accounts.map((account) => [account.organization_type, account.organization_label])).entries()]
+    .sort((a, b) => String(a[1]).localeCompare(String(b[1]), "zh-CN"));
+  els.japanCustomerTypeFilter.innerHTML = '<option value="all">全部账户状态</option>' + stageOptions
+    .map(([value, label]) => `<option value="${escapeAttr(value)}">${escapeHtml(label)}</option>`).join("");
+  els.japanCustomerSapFilter.innerHTML = '<option value="all">全部机构类型</option>' + organizationOptions
+    .map(([value, label]) => `<option value="${escapeAttr(value)}">${escapeHtml(label)}</option>`).join("");
+  els.japanCustomerTypeFilter.value = stageOptions.some(([value]) => value === state.accountStage) ? state.accountStage : "all";
+  els.japanCustomerSapFilter.value = organizationOptions.some(([value]) => value === state.accountOrganizationType)
+    ? state.accountOrganizationType
+    : "all";
 
-  const query = state.customerQuery.toLowerCase().trim();
-  const visible = customers.filter((customer) => {
-    const matches = signalIndex.get(customer.id) || [];
-    const haystack = `${customer.name} ${customer.parent_company || ""} ${(customer.aliases || []).join(" ")}`.toLowerCase();
+  const query = state.accountQuery.toLowerCase().trim();
+  const visible = accounts.filter((account) => {
+    const matches = signalIndex.get(account.id) || [];
+    const haystack = `${account.name} ${(account.aliases || []).join(" ")}`.toLowerCase();
     return (!query || haystack.includes(query)) &&
-      (state.customerType === "all" || customer.customer_type === state.customerType) &&
-      (state.customerSapType === "all" || customer.sap_customer_type === state.customerSapType) &&
-      (state.customerSignalStatus === "all" ||
-        (state.customerSignalStatus === "linked" && matches.length > 0) ||
-        (state.customerSignalStatus === "unlinked" && matches.length === 0) ||
-        (state.customerSignalStatus === "review" && customer.identity_status === "review"));
+      (state.accountStage === "all" || account.account_stage === state.accountStage) &&
+      (state.accountOrganizationType === "all" || account.organization_type === state.accountOrganizationType) &&
+      (state.accountSignalStatus === "all" ||
+        (state.accountSignalStatus === "linked" && matches.length > 0) ||
+        (state.accountSignalStatus === "unlinked" && matches.length === 0));
+  }).sort((a, b) => {
+    const stageDelta = Number(b.account_stage === "public_relationship") - Number(a.account_stage === "public_relationship");
+    const signalDelta = (signalIndex.get(b.id) || []).length - (signalIndex.get(a.id) || []).length;
+    return stageDelta || signalDelta || a.name.localeCompare(b.name);
   });
-  els.japanCustomerResultCount.textContent = `显示 ${visible.length} / ${customers.length} 个客户锚点`;
-  if (!visible.some((customer) => customer.id === state.selectedCustomerId)) {
-    state.selectedCustomerId = visible[0]?.id || null;
+  els.japanCustomerResultCount.textContent = `显示 ${visible.length} / ${accounts.length} 个账户锚点`;
+  if (!visible.some((account) => account.id === state.selectedAccountId)) {
+    state.selectedAccountId = visible[0]?.id || null;
   }
 
-  els.japanCustomerList.innerHTML = visible.length ? visible.map((customer) => {
-    const matches = signalIndex.get(customer.id) || [];
-    const parent = customer.parent_company && customer.parent_company !== customer.name ? customer.parent_company : "";
+  els.japanCustomerList.innerHTML = visible.length ? visible.map((account) => {
+    const matches = signalIndex.get(account.id) || [];
     return `
-      <button class="customer-directory-row ${customer.id === state.selectedCustomerId ? "active" : ""}" type="button" data-japan-customer-id="${escapeAttr(customer.id)}">
-        <span class="customer-name-cell"><strong>${escapeHtml(customer.name)}</strong>${customer.identity_status === "review" ? "<small>身份待规范</small>" : ""}</span>
-        <span class="customer-type-tags">${customerTagMarkup(customer)}</span>
-        <span class="customer-parent-cell">${escapeHtml(parent)}</span>
+      <button class="customer-directory-row ${account.id === state.selectedAccountId ? "active" : ""}" type="button" data-japan-account-id="${escapeAttr(account.id)}">
+        <span class="customer-name-cell"><strong>${escapeHtml(account.name)}</strong></span>
+        <span class="customer-type-tags">${accountStageMarkup(account)}</span>
+        <span class="customer-parent-cell">${escapeHtml(account.organization_label || "待分类")}</span>
         <span class="customer-signal-count ${matches.length ? "has-signal" : ""}">${matches.length ? `${matches.length} 条候选` : "暂无"}</span>
       </button>`;
-  }).join("") : '<div class="customer-directory-empty">当前筛选范围内没有客户记录。</div>';
+  }).join("") : '<div class="customer-directory-empty">当前筛选范围内没有账户记录。</div>';
 
-  const selected = customers.find((customer) => customer.id === state.selectedCustomerId);
+  const selected = accounts.find((account) => account.id === state.selectedAccountId);
   if (!selected) {
-    els.japanCustomerDetail.innerHTML = '<div class="customer-directory-empty">请选择一个客户锚点。</div>';
+    els.japanCustomerDetail.innerHTML = '<div class="customer-directory-empty">请选择一个账户锚点。</div>';
     return;
   }
   const matches = signalIndex.get(selected.id) || [];
   const aliases = (selected.aliases || []).join(" / ");
   const fields = [
-    customerDetailField("母公司", selected.parent_company && selected.parent_company !== selected.name ? selected.parent_company : ""),
-    customerDetailField("客户大类", selected.customer_type),
-    customerDetailField("SAP 分类", selected.sap_customer_type),
-    customerDetailField("地区", [selected.region, selected.country].filter(Boolean).join(" / ")),
-    customerDetailField("合并别名", aliases),
+    customerDetailField("账户状态", selected.account_stage_label),
+    customerDetailField("机构类型", selected.organization_label),
+    customerDetailField("总部", selected.headquarters),
+    customerDetailField("地区", selected.region),
+    customerDetailField("别名", aliases),
   ].filter(Boolean).join("");
+  const publicEvidence = selected.public_evidence || [];
+  const evidenceMarkup = publicEvidence.length ? `
+    <div class="customer-signal-list account-public-evidence"><span>公开关系依据</span>${publicEvidence.map((evidence) => `
+      <a href="${escapeAttr(evidence.source_url)}" target="_blank" rel="noreferrer">
+        <strong>${escapeHtml(evidence.summary)}</strong>
+        <span>${escapeHtml(evidence.source_title)}</span>
+      </a>`).join("")}</div>` : "";
   const signalMarkup = matches.length ? matches.slice(0, 5).map((item) => `
     <a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
       <strong>${escapeHtml(item.title)}</strong>
       <span>${escapeHtml(getItemDateLabel(item))} · ${escapeHtml(labelBusinessEvent(getBusinessEventType(item), true))}</span>
-    </a>`).join("") : '<p>当前抓取结果没有可靠名称命中，关系与机会保持待发现状态。</p>';
+    </a>`).join("") : '<p>当前抓取结果没有可靠名称命中，继续保留在账户观察池。</p>';
+  const isRelationship = selected.account_stage === "public_relationship";
+  const opportunityClass = isRelationship ? "relationship" : matches.length ? "candidate" : "quiet";
+  const opportunityTitle = isRelationship
+    ? "关系账户：判断需求与跟进时机"
+    : matches.length
+      ? `${matches.length} 条动态：进入潜客判断`
+      : "市场账户：等待有效外部动态";
+  const opportunityCopy = isRelationship
+    ? "公开关系已经存在；后续重点不是重复证明身份，而是结合动态判断需求、时机和下一步沟通。"
+    : matches.length
+      ? "先核对主体和事件，再判断是否存在 ACRO 产品需求、技术切入点或活动跟进机会。"
+      : "名单只负责建立公司锚点；没有外部信号时，不自动生成商业机会。";
   els.japanCustomerDetail.innerHTML = `
-    <header><span>名单客户锚点</span><h3>${escapeHtml(selected.name)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
+    <header><span>账户情报锚点</span><h3>${escapeHtml(selected.name)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
     <div class="customer-detail-fields">${fields}</div>
-    <div class="customer-opportunity-state ${matches.length ? "candidate" : "quiet"}">
-      <span>机会识别状态</span>
-      <strong>${matches.length ? `${matches.length} 条外部信号候选` : "暂无外部信号候选"}</strong>
-      <p>${matches.length ? "当前仅完成公司名称匹配，仍需核对主体、事件和 ACRO 产品需求。" : "保留为客户名单对象，等待官网、新闻或人工关系证据。"}</p>
+    <div class="customer-opportunity-state ${opportunityClass}">
+      <span>建议动作</span>
+      <strong>${escapeHtml(opportunityTitle)}</strong>
+      <p>${escapeHtml(opportunityCopy)}</p>
     </div>
-    <div class="customer-signal-list"><span>关联证据候选</span>${signalMarkup}</div>
-    <footer>原始行：${(selected.source_rows || []).join("、")}</footer>`;
+    ${evidenceMarkup}
+    <div class="customer-signal-list"><span>关联外部动态</span>${signalMarkup}</div>
+    <footer>${escapeHtml(data.privacy_note || "内部销售状态不进入公开页面。")}</footer>`;
 }
 
 const structuredRuleMeta = {
@@ -2438,6 +2465,9 @@ function renderCompanyPools() {
 
   const relationshipData = getRelationshipData();
   const relationshipRecords = relationshipData.records || [];
+  const accountData = getJapanAccountData();
+  const accounts = accountData.accounts || [];
+  const publicRelationshipCount = accounts.filter((account) => account.account_stage === "public_relationship").length;
   const asRelationshipMember = (record) => ({
     id: record.id,
     display_name: record.organization,
@@ -2478,10 +2508,18 @@ function renderCompanyPools() {
     },
     {
       id: "customer",
-      title: "已确认客户",
-      description: "只收录有采购、项目、客户案例或内部授权证据的公司。",
-      empty: "当前没有可对外展示的已确认客户，不用合作伙伴或参会公司填充。",
-      members: companies.filter((company) => company.business_role === "customer"),
+      title: "客户与潜在账户",
+      description: "与竞品分开管理：这里关注需求、跟进时机和潜客资格，不做产品对标排序。",
+      empty: "尚未接入客户与潜在账户目录。",
+      count: accounts.length,
+      members: accounts.length ? [{
+        id: "japan-account-directory",
+        display_name: `日本账户情报 · ${accounts.length} 家`,
+        role_label: `${publicRelationshipCount} 家公开关系 · ${accounts.length - publicRelationshipCount} 家市场账户`,
+        role_reason: "销售名单已建立公司锚点；内部关系状态保留在公司内部，不发布到公开站点。",
+        monitoring_focus: "关系账户关注需求与跟进时机，市场账户关注外部动态与潜客资格。",
+        customer_pool: true,
+      }] : [],
     },
     {
       id: "partner",
@@ -2502,17 +2540,19 @@ function renderCompanyPools() {
       title: "客户发现方向",
       description: "已知 ACRO 服务哪些类型客群，但具体公司需要逐条发现和确认。",
       empty: "尚未建立客户发现方向。",
-      members: getRelationshipSegments(relationshipData).map(asSegmentMember),
+      members: getRelationshipSegments(relationshipData)
+        .filter((segment) => segment.status !== "listed_pool")
+        .map(asSegmentMember),
     },
   ];
 
-  const counts = Object.fromEntries(roleDefinitions.map((role) => [role.id, role.members.length]));
+  const counts = Object.fromEntries(roleDefinitions.map((role) => [role.id, role.count ?? role.members.length]));
 
   els.companyPoolTimestamp.textContent = `${companies.length} 家监测公司 · ${relationshipRecords.length} 条关系证据`;
   els.companyRoleSummary.innerHTML = `
     <article><span>本公司</span><strong>${counts.self}</strong><small>系统标本</small></article>
     <article><span>竞品池</span><strong>${counts.competitor}</strong><small>行业对标</small></article>
-    <article><span>已确认客户</span><strong>${counts.customer}</strong><small>高证据门槛</small></article>
+    <article><span>客户与潜在账户</span><strong>${counts.customer}</strong><small>跟进与机会判断</small></article>
     <article><span>合作伙伴</span><strong>${counts.partner}</strong><small>具名公告 / MOU</small></article>
     <article class="needs-review"><span>披露待核对</span><strong>${counts.disclosed}</strong><small>不直接当客户</small></article>
     <article><span>客户发现方向</span><strong>${counts["customer-segment"]}</strong><small>逐条补公司名单</small></article>
@@ -2539,7 +2579,7 @@ function renderCompanyPools() {
               ${company.entity_kind === "relationship"
                 ? `<button class="company-profile-source-button" type="button" data-relationship-card-id="${escapeAttr(company.relationship_id)}">查看关系证据</button>`
                 : company.customer_pool
-                  ? '<button class="company-profile-source-button" type="button" data-open-japan-customers>查看客户名单</button>'
+                  ? '<button class="company-profile-source-button" type="button" data-open-japan-customers>查看账户情报</button>'
                 : company.entity_kind === "segment"
                   ? '<span class="company-profile-state">名单发现中</span>'
                   : `<button class="company-profile-source-button" type="button" data-company-coverage-id="${escapeHtml(company.id)}">查看数据源</button>`}
@@ -2550,7 +2590,7 @@ function renderCompanyPools() {
       return `
         <section class="company-pool-block role-${role.id}">
           <header>
-            <div><span>${escapeHtml(role.title)}</span><strong>${members.length} 家</strong></div>
+            <div><span>${escapeHtml(role.title)}</span><strong>${role.count ?? members.length} 家</strong></div>
             <p>${escapeHtml(role.description)}</p>
           </header>
           <div class="company-profile-list">${rows}</div>
@@ -2570,14 +2610,14 @@ function getRelationshipData() {
 
 function getRelationshipSegments(data = getRelationshipData()) {
   const segments = [...(data.customer_segments || [])];
-  const customerData = getJapanCustomerData();
-  const count = customerData.customers?.length || 0;
+  const accountData = getJapanAccountData();
+  const count = accountData.accounts?.length || 0;
   if (count) {
     segments.unshift({
-      label: `日本客户名单 · ${count} 家`,
+      label: `日本账户情报 · ${count} 家`,
       status: "listed_pool",
       count,
-      note: "已作为公司锚点导入；名单归属不自动等于已成交、合作项目或当前商业机会。",
+      note: "已作为公司锚点导入；公开关系与市场账户分开显示，内部销售状态不进入公开页面。",
     });
   }
   return segments;
@@ -2890,12 +2930,13 @@ function renderCompanyRelationships() {
   const data = getRelationshipData();
   const records = data.records || [];
   const segments = getRelationshipSegments(data);
-  const japanCustomerCount = getJapanCustomerData().customers?.length || 0;
+  const japanAccounts = getJapanAccountData().accounts || [];
+  const japanCustomerCount = japanAccounts.length;
+  const publicRelationshipCount = japanAccounts.filter((account) => account.account_stage === "public_relationship").length;
   const dynamicCandidates = getDynamicRelationshipCandidates();
   const allRecords = [...records, ...dynamicCandidates];
   const confirmed = records.filter((record) => record.evidence_level === "confirmed");
   const disclosed = records.filter((record) => record.evidence_level === "disclosed");
-  const customers = records.filter((record) => record.relationship_type === "confirmed_customer");
   const visible = allRecords.filter(
     (record) =>
       (state.relationshipType === "all" || record.relationship_type === state.relationshipType) &&
@@ -2906,7 +2947,7 @@ function renderCompanyRelationships() {
   els.relationshipConfirmedCount.textContent = confirmed.length;
   els.relationshipDisclosedCount.textContent = disclosed.length;
   els.relationshipCandidateCount.textContent = dynamicCandidates.length;
-  els.relationshipCustomerCount.textContent = customers.length;
+  els.relationshipCustomerCount.textContent = publicRelationshipCount;
   els.relationshipJapanCustomerCount.textContent = japanCustomerCount;
   els.relationshipSegmentCount.textContent = segments.length;
   els.relationshipResultCount.textContent = `显示 ${visible.length} / ${allRecords.length} 条`;
@@ -3362,7 +3403,7 @@ function renderOverviewScope() {
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  const customerCompanyCount = getJapanCustomerData().customers?.length || (state.payload.companies || []).filter(
+  const customerCompanyCount = getJapanAccountData().accounts?.length || (state.payload.companies || []).filter(
     (company) => company.business_role === "customer",
   ).length;
   const competitorCount = scoped.filter((item) => getItemRole(item, companyRoles) === "competitor").length;
@@ -3381,8 +3422,8 @@ function renderOverviewScope() {
     (state.payload.companies || []).filter((company) => company.business_role === "competitor").length
   } 家已确认竞品`;
   els.metricCustomerNote.textContent = customerCompanyCount
-    ? `${customerCompanyCount} 家日本客户名单`
-    : "客户池尚未导入名单";
+    ? `${customerCompanyCount} 家日本市场账户`
+    : "账户目录尚未导入";
   els.sourceCount.textContent = `${scoped.length} 条`;
   els.windowDays.textContent = state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`;
 
@@ -3484,7 +3525,7 @@ function getItemRole(item, companyRoles = null) {
   for (const role of ["customer", "competitor", "self"]) {
     if (matchedRoles.includes(role)) return role;
   }
-  if (getJapanCustomerMatchedItemIds().has(item.id || item.url)) return "customer";
+  if (getJapanAccountMatchedItemIds().has(item.id || item.url)) return "customer";
   return "industry";
 }
 
@@ -3492,7 +3533,7 @@ function labelRole(role) {
   return {
     self: "本公司",
     competitor: "竞品",
-    customer: "客户",
+    customer: "客户 / 潜在账户",
     industry: "行业观察",
   }[role] || role;
 }
@@ -3558,8 +3599,8 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount, custome
       ? `已识别地区中“${labelRegion(topRegion[0])}”最多，共 ${topRegion[1]} 条；其余全球内容仍需进一步结构化。`
       : "多数内容暂未识别出明确事件地区，地区结果目前只作线索。",
     customerCompanyCount
-      ? `日本客户名单已接入 ${customerCompanyCount} 家，当前范围识别到 ${customerSignalCount} 条名称匹配信号，仍需人工核对。`
-      : "客户池尚未导入，客户需求不显示为 0，避免造成“没有需求”的误判。",
+      ? `日本账户目录已接入 ${customerCompanyCount} 家，当前范围识别到 ${customerSignalCount} 条名称匹配动态，可继续判断跟进或潜客机会。`
+      : "账户目录尚未导入，不能把“未接入”解释成“没有客户需求”。",
   ];
   els.executivePoints.innerHTML = points.map((point) => `<li>${escapeHtml(point)}</li>`).join("");
 }
@@ -3569,7 +3610,7 @@ function renderSignalTrend(items, companyRoles) {
   const seriesDefinitions = [
     { id: "self", label: "本公司", color: "#087f8c" },
     { id: "competitor", label: "竞品", color: "#c95d42" },
-    { id: "customer", label: "客户", color: "#345f9f" },
+    { id: "customer", label: "客户 / 账户", color: "#345f9f" },
     { id: "industry", label: "行业", color: "#7b8790" },
   ].filter((series) => state.role === "all" || state.role === series.id);
   const values = Object.fromEntries(seriesDefinitions.map((series) => [series.id, Array(days).fill(0)]));
@@ -3611,7 +3652,7 @@ function renderSignalTrend(items, companyRoles) {
   els.signalTrendChart.innerHTML = `<svg class="trend-svg" viewBox="0 0 ${chartWidth} ${chartHeight}" role="img" aria-label="${state.timeRange} 天信号趋势">${grid}${lines}${xLabels}</svg>`;
   els.trendLegend.innerHTML = seriesDefinitions.map((series) => {
     const total = values[series.id].reduce((sum, value) => sum + value, 0);
-    const hasCustomerPool = (getJapanCustomerData().customers || []).length > 0;
+    const hasCustomerPool = (getJapanAccountData().accounts || []).length > 0;
     const suffix = series.id === "customer" && !total && !hasCustomerPool ? "未接入" : total;
     return `<span><i style="background:${series.color}"></i>${series.label} ${suffix}</span>`;
   }).join("");
@@ -4432,7 +4473,7 @@ function buildClientBusinessSummary(item) {
   } else if (role === "competitor") {
     opening = `竞品 ${company} 出现${eventLabel}信号`;
   } else if (role === "customer") {
-    opening = `客户池公司 ${company} 出现${eventLabel}信号`;
+    opening = `客户或潜在账户 ${company} 出现${eventLabel}信号`;
   } else if ((item.signal_type || "news") === "event") {
     opening = "这是一条市场活动或生态平台信号";
   } else {
@@ -4649,12 +4690,10 @@ function renderSignalCards(container, items, compact) {
   if (!container) return;
   container.innerHTML = "";
   if (!items.length) {
-    const customerEmpty = state.role === "customer" && !(state.payload.companies || []).some(
-      (company) => company.business_role === "customer",
-    );
+    const customerEmpty = state.role === "customer" && !(getJapanAccountData().accounts || []).length;
     container.innerHTML = `<div class="empty">${
       customerEmpty
-        ? "客户池尚未导入公司名单，因此不能把‘未接入’解释成‘没有客户信号’。"
+        ? "账户目录尚未导入，因此不能把‘未接入’解释成‘没有客户信号’。"
         : "当前筛选条件下没有需要展示的信号。"
     }</div>`;
     return;
@@ -5556,30 +5595,30 @@ els.healthStatusFilter.addEventListener("change", (event) => {
 });
 
 els.japanCustomerSearch.addEventListener("input", (event) => {
-  state.customerQuery = event.target.value;
-  renderJapanCustomerPool();
+  state.accountQuery = event.target.value;
+  renderJapanAccountIntelligence();
 });
 
 els.japanCustomerTypeFilter.addEventListener("change", (event) => {
-  state.customerType = event.target.value;
-  renderJapanCustomerPool();
+  state.accountStage = event.target.value;
+  renderJapanAccountIntelligence();
 });
 
 els.japanCustomerSapFilter.addEventListener("change", (event) => {
-  state.customerSapType = event.target.value;
-  renderJapanCustomerPool();
+  state.accountOrganizationType = event.target.value;
+  renderJapanAccountIntelligence();
 });
 
 els.japanCustomerSignalFilter.addEventListener("change", (event) => {
-  state.customerSignalStatus = event.target.value;
-  renderJapanCustomerPool();
+  state.accountSignalStatus = event.target.value;
+  renderJapanAccountIntelligence();
 });
 
 els.japanCustomerList.addEventListener("click", (event) => {
-  const row = event.target.closest("[data-japan-customer-id]");
+  const row = event.target.closest("[data-japan-account-id]");
   if (!row) return;
-  state.selectedCustomerId = row.dataset.japanCustomerId;
-  renderJapanCustomerPool();
+  state.selectedAccountId = row.dataset.japanAccountId;
+  renderJapanAccountIntelligence();
 });
 
 els.pageButtons.forEach((button) => {

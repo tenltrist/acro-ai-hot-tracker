@@ -10,11 +10,47 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "latest_run.json"
+JAPAN_ACCOUNTS_PATH = ROOT / "config" / "japan_accounts.json"
 
 
 def load_payload() -> dict[str, Any]:
     with DATA_PATH.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def validate_japan_accounts(errors: list[str]) -> int:
+    with JAPAN_ACCOUNTS_PATH.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+    accounts = payload.get("accounts", [])
+    ids = [account.get("id") for account in accounts]
+    names = [str(account.get("name", "")).casefold().strip() for account in accounts]
+    if len(ids) != len(set(ids)):
+        errors.append("Japan accounts contain duplicate ids")
+    if len(names) != len(set(names)):
+        errors.append("Japan accounts contain duplicate names")
+    if payload.get("import_summary", {}).get("unique_accounts") != len(accounts):
+        errors.append("Japan account summary does not match account rows")
+    allowed_stages = {"public_relationship", "market_account"}
+    allowed_types = {
+        "pharma_biotech",
+        "academic_research",
+        "hospital_clinical",
+        "public_research",
+        "channel_service",
+        "industrial_other",
+    }
+    for account in accounts:
+        account_id = account.get("id", "unknown")
+        if account.get("account_stage") not in allowed_stages:
+            errors.append(f"{account_id}: invalid account_stage")
+        if account.get("organization_type") not in allowed_types:
+            errors.append(f"{account_id}: invalid organization_type")
+        if account.get("account_stage") == "public_relationship" and not account.get("public_evidence"):
+            errors.append(f"{account_id}: public relationship is missing evidence")
+        forbidden = {"acro", "acro_flag", "internal_status", "internal_relationship"} & set(account)
+        if forbidden:
+            errors.append(f"{account_id}: public account exposes private keys {sorted(forbidden)}")
+    return len(accounts)
 
 
 def main() -> int:
@@ -25,6 +61,7 @@ def main() -> int:
     company_ids = {company.get("id") for company in companies}
     source_ids = {row.get("source_id") for row in health_rows}
     errors: list[str] = []
+    japan_account_count = validate_japan_accounts(errors)
 
     item_ids = [item.get("id") for item in items]
     urls = [item.get("url") for item in items]
@@ -152,7 +189,7 @@ def main() -> int:
     print(
         "Dashboard validation passed: "
         f"{len(items)} items, {daily_count} selected, {len(companies)} companies, "
-        f"{len(health_rows)} sources, health={status_counts}"
+        f"{len(health_rows)} sources, {japan_account_count} Japan accounts, health={status_counts}"
     )
     return 0
 

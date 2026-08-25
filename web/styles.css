@@ -3010,6 +3010,67 @@ select {
   white-space: nowrap;
 }
 
+.account-decision-router {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.account-decision-router article {
+  position: relative;
+  display: grid;
+  gap: 5px;
+  min-height: 126px;
+  padding: 13px 14px 36px;
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  border-radius: 7px;
+  background: #fbfcfc;
+}
+
+.account-decision-router article.competitor {
+  border-left-color: #c95d42;
+}
+
+.account-decision-router article.relationship {
+  border-left-color: var(--teal);
+}
+
+.account-decision-router article.prospect {
+  border-left-color: #41698f;
+}
+
+.account-decision-router span,
+.account-decision-router small {
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.account-decision-router span {
+  color: var(--muted);
+}
+
+.account-decision-router strong {
+  color: #243840;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.account-decision-router p {
+  margin: 0;
+  color: #64737a;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.account-decision-router small {
+  position: absolute;
+  right: 12px;
+  bottom: 11px;
+  color: #49616b;
+}
+
 .customer-pool-summary {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3157,6 +3218,16 @@ select {
   font-weight: 750;
 }
 
+.customer-type-tags .account-stage-badge.public-relationship {
+  background: #def2ea;
+  color: #176b51;
+}
+
+.customer-type-tags .account-stage-badge.market-account {
+  background: #edf1f5;
+  color: #536773;
+}
+
 .customer-parent-cell {
   min-width: 0;
   color: #69777e;
@@ -3267,6 +3338,11 @@ select {
   background: #fff8e9;
 }
 
+.customer-opportunity-state.relationship {
+  border-left-color: var(--teal);
+  background: #eaf7f5;
+}
+
 .customer-opportunity-state strong {
   color: #384951;
   font-size: 12px;
@@ -3300,6 +3376,17 @@ select {
 
 .customer-signal-list a:hover strong {
   color: var(--teal);
+}
+
+.account-public-evidence {
+  padding: 10px;
+  border: 1px solid #b9ddd2;
+  background: #f4fbf8;
+}
+
+.account-public-evidence a:first-of-type {
+  padding-top: 0;
+  border-top: 0;
 }
 
 .customer-detail-panel footer {
@@ -6429,6 +6516,10 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .account-decision-router {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .customer-pool-controls {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -6462,8 +6553,13 @@ select {
 
   .customer-pool-controls,
   .customer-pool-summary,
-  .customer-pool-principle {
+  .customer-pool-principle,
+  .account-decision-router {
     grid-template-columns: 1fr;
+  }
+
+  .account-decision-router article {
+    min-height: 0;
   }
 
   .customer-pool-principle strong {

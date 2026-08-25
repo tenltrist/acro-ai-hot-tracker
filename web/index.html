@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260817healthsummary" />
+    <link rel="stylesheet" href="./styles.css?v=20260825accounts" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -22,7 +22,7 @@
           <button class="active" type="button" data-page-target="overview" title="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
           <button type="button" data-page-target="companies" title="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
           <button type="button" data-page-target="timeline" title="公司时间线"><span class="nav-icon">↕</span><span>公司时间线</span></button>
-          <button type="button" data-page-target="japan-customers" title="日本客户池"><span class="nav-icon">日</span><span>日本客户池</span></button>
+          <button type="button" data-page-target="japan-customers" title="日本账户情报"><span class="nav-icon">日</span><span>日本账户情报</span></button>
           <button type="button" data-page-target="relationships" title="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
           <button type="button" data-page-target="company-sources" title="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
@@ -111,7 +111,7 @@
             <button class="active" type="button" data-role-filter="all">全部</button>
             <button type="button" data-role-filter="self">本公司</button>
             <button type="button" data-role-filter="competitor">竞品</button>
-            <button type="button" data-role-filter="customer">客户</button>
+            <button type="button" data-role-filter="customer">客户 / 账户</button>
           </div>
         </div>
         <label class="region-control">
@@ -142,9 +142,9 @@
           <small id="metricCompetitorNote">已确认竞品池</small>
         </article>
         <article class="metric warn executive">
-          <span>客户需求信号</span>
+          <span>账户动态信号</span>
           <strong id="metricImmediate">--</strong>
-          <small id="metricCustomerNote">客户池待接入</small>
+          <small id="metricCustomerNote">账户目录待接入</small>
         </article>
         <article class="metric regional executive">
           <span>亚太地区动态</span>
@@ -262,43 +262,48 @@
         </div>
       </section>
 
-      <section class="japan-customers-section page-panel" data-page="japan-customers" aria-label="Japan customer pool">
+      <section class="japan-customers-section page-panel" data-page="japan-customers" aria-label="Japan account intelligence">
         <div class="section-head">
           <div>
-            <p class="eyebrow">日本客户池</p>
-            <h2>先把名单变成公司锚点，再用外部信号补充关系和机会</h2>
+            <p class="eyebrow">客户与潜在账户</p>
+            <h2>以公司为锚点，把外部动态转成市场或销售动作</h2>
           </div>
-          <span class="timestamp" id="japanCustomerTimestamp">客户名单加载中</span>
+          <span class="timestamp" id="japanCustomerTimestamp">账户目录加载中</span>
         </div>
 
         <div class="customer-pool-principle">
-          <strong>当前边界</strong>
-          <span>名单收录不自动等于已成交、合作项目或商业机会；只有匹配到新闻或人工证据后，才进入关系与机会判断。</span>
+          <strong>公开边界</strong>
+          <span>销售名单已转成公开安全的账户目录；内部关系状态不进入 GitHub Pages。页面只展示公开关系证据和外部动态。</span>
         </div>
 
-        <div class="customer-pool-summary" aria-label="日本客户池统计">
-          <article><span>去重后客户</span><strong id="japanCustomerCount">--</strong><small>公司、机构与渠道对象</small></article>
-          <article><span>制药及产业客户</span><strong id="japanIndustryCount">--</strong><small>按原名单大类统计</small></article>
-          <article><span>科研及学术机构</span><strong id="japanAcademiaCount">--</strong><small>高校、医院与研究机构</small></article>
-          <article><span>命中客户</span><strong id="japanLinkedCount">--</strong><small>存在名称匹配候选</small></article>
+        <div class="account-decision-router" aria-label="客户与竞品分流逻辑">
+          <article class="competitor"><span>竞品动态</span><strong>判断别人正在做什么</strong><p>进入产品、技术、区域与市场话术对标。</p><small>市场部</small></article>
+          <article class="relationship"><span>公开关系账户</span><strong>判断需求与跟进时机</strong><p>结合新闻、活动和项目变化准备账户跟进。</p><small>销售 + 市场</small></article>
+          <article class="prospect"><span>市场账户</span><strong>判断是否值得开发</strong><p>出现有效信号后再做潜客资格与机会判断。</p><small>销售 / BD</small></article>
         </div>
 
-        <div class="customer-pool-controls" aria-label="日本客户筛选">
-          <input id="japanCustomerSearch" type="search" placeholder="搜索客户或母公司..." aria-label="搜索日本客户" />
-          <select id="japanCustomerTypeFilter" aria-label="按客户大类筛选"><option value="all">全部客户大类</option></select>
-          <select id="japanCustomerSapFilter" aria-label="按SAP客户类型筛选"><option value="all">全部业务类型</option></select>
+        <div class="customer-pool-summary" aria-label="日本账户情报统计">
+          <article><span>日本市场账户</span><strong id="japanCustomerCount">--</strong><small>销售名单去重后公司与机构</small></article>
+          <article><span>公开关系账户</span><strong id="japanPublicRelationshipCount">--</strong><small>存在可回溯公开证据</small></article>
+          <article><span>制药与生命科学</span><strong id="japanIndustryCount">--</strong><small>按机构名称自动初分</small></article>
+          <article><span>有外部动态</span><strong id="japanLinkedCount">--</strong><small>本轮新闻存在名称匹配</small></article>
+        </div>
+
+        <div class="customer-pool-controls" aria-label="日本账户筛选">
+          <input id="japanCustomerSearch" type="search" placeholder="搜索公司或机构..." aria-label="搜索日本账户" />
+          <select id="japanCustomerTypeFilter" aria-label="按账户状态筛选"><option value="all">全部账户状态</option></select>
+          <select id="japanCustomerSapFilter" aria-label="按机构类型筛选"><option value="all">全部机构类型</option></select>
           <select id="japanCustomerSignalFilter" aria-label="按外部信号状态筛选">
             <option value="all">全部信号状态</option>
-            <option value="linked">有外部信号候选</option>
-            <option value="unlinked">暂无外部信号</option>
-            <option value="review">身份待规范</option>
+            <option value="linked">有外部动态</option>
+            <option value="unlinked">暂无外部动态</option>
           </select>
           <span id="japanCustomerResultCount">--</span>
         </div>
 
         <div class="customer-pool-layout">
-          <div class="customer-directory" aria-label="日本客户名单">
-            <div class="customer-directory-head" aria-hidden="true"><span>客户锚点</span><span>名单分类</span><span>母公司</span><span>外部信号</span></div>
+          <div class="customer-directory" aria-label="日本账户目录">
+            <div class="customer-directory-head" aria-hidden="true"><span>账户锚点</span><span>账户状态</span><span>机构类型</span><span>外部动态</span></div>
             <div id="japanCustomerList" class="customer-directory-list"></div>
           </div>
           <aside id="japanCustomerDetail" class="customer-detail-panel" aria-live="polite"></aside>
@@ -318,8 +323,8 @@
           <article><span>已确认合作</span><strong id="relationshipConfirmedCount">--</strong><small>有具名公告或项目证据</small></article>
           <article><span>官网披露关系</span><strong id="relationshipDisclosedCount">--</strong><small>已披露，具体项目待核对</small></article>
           <article><span>动态关系候选</span><strong id="relationshipCandidateCount">--</strong><small>从新闻中自动识别，未经人工确认</small></article>
-          <article><span>已确认客户</span><strong id="relationshipCustomerCount">0</strong><small>不用合作或参会信息代替客户证据</small></article>
-          <article><span>日本客户名单</span><strong id="relationshipJapanCustomerCount">--</strong><small>名单收录，不自动生成关系线</small></article>
+          <article><span>公开关系账户</span><strong id="relationshipCustomerCount">0</strong><small>公开目录中存在客户展示</small></article>
+          <article><span>日本市场账户</span><strong id="relationshipJapanCustomerCount">--</strong><small>名单已接入，内部状态不公开</small></article>
           <article><span>客户发现方向</span><strong id="relationshipSegmentCount">--</strong><small>已确认客群，名单需逐条发现</small></article>
         </div>
 
@@ -712,7 +717,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260817healthsummary"></script>
-    <script src="./app.js?v=20260817healthsummary"></script>
+    <script src="./embedded-data.js?v=20260825accounts"></script>
+    <script src="./app.js?v=20260825accounts"></script>
   </body>
 </html>

@@ -151737,1931 +151737,2849 @@ window.AIHOT_COMPANY_RELATIONSHIPS = {
     }
   ]
 };
-window.AIHOT_JAPAN_CUSTOMERS = {
-  "version": 1,
-  "imported_at": "2026-08-04",
-  "source": "日本客户列表.xlsx / Sheet1",
-  "semantics": "名单收录客户，不自动等同于已确认采购、合作项目或商业机会。",
+window.AIHOT_JAPAN_ACCOUNTS = {
+  "version": 2,
+  "imported_at": "2026-08-25",
+  "source": "Global Data-日本客户列表.xlsx / 日本客户列表（公开展示版）",
+  "semantics": "这是日本市场账户目录，不自动等于已成交客户。公开页面只显示公开可验证关系与外部动态，销售内部状态不发布。",
+  "privacy_note": "源表中的内部 ACRO 标记未写入此配置，也不会进入 GitHub Pages。",
   "import_summary": {
-    "source_rows": 138,
-    "unique_customers": 137,
-    "duplicate_rows_merged": 1,
-    "identity_review": 19
+    "source_rows": 232,
+    "unique_accounts": 232,
+    "duplicate_rows_merged": 0,
+    "public_relationships": 4
   },
-  "customer_type_mix": {
-    "Other Pharma": 98,
-    "Academia": 33,
-    "Distributor": 1,
-    "TOP50 Pharma": 1
+  "organization_type_mix": {
+    "academic_research": 40,
+    "hospital_clinical": 13,
+    "industrial_other": 61,
+    "pharma_biotech": 113,
+    "public_research": 5
   },
-  "sap_type_mix": {
-    "Institute": 35,
-    "Others": 30,
-    "Distributor": 18,
-    "CGT": 14,
-    "CXO": 8,
-    "Biopharma": 7,
-    "Antibody": 6,
-    "Vaccine": 3
+  "account_stage_mix": {
+    "market_account": 228,
+    "public_relationship": 4
   },
-  "customers": [
+  "accounts": [
     {
-      "id": "jp-00d878de7f",
-      "name": "(ONProS) Mizunase Research Institut",
-      "parent_company": "(ONProS) Mizunase Research Institut",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-efba2a5ff0",
+      "name": "Astellas Pharma Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "public_relationship",
+      "account_stage_label": "公开关系",
       "identity_status": "listed",
-      "source_rows": [
-        33
+      "public_evidence": [
+        {
+          "label": "公开关系已找到",
+          "summary": "ACROBiosystems 公开产品目录将 Astellas Pharma 列入 Global Top Pharmaceuticals 客户示例。",
+          "source_title": "ACROBiosystems Product Catalog - Our Clients",
+          "source_url": "https://www.fishersci.co.uk/content/dam/fssite/eu/brands/a/acrobiosystems/27808_Product_Catalogue_flyer.pdf",
+          "evidence_kind": "official_catalog"
+        }
       ]
     },
     {
-      "id": "jp-499e3f0090",
-      "name": "52365",
-      "parent_company": "52365",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-fafdc85610",
+      "name": "Daiichi Sankyo Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        12
-      ]
-    },
-    {
-      "id": "jp-3d1c26fdad",
-      "name": "A-SEEDS Co., Ltd.",
-      "parent_company": "A-SEEDS Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
-      "region": "Japan",
-      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "public_relationship",
+      "account_stage_label": "公开关系",
       "identity_status": "listed",
-      "source_rows": [
-        111
+      "public_evidence": [
+        {
+          "label": "公开关系已找到",
+          "summary": "ACROBiosystems 公开产品目录将 Daiichi Sankyo 列入 Global Top Pharmaceuticals 客户示例。",
+          "source_title": "ACROBiosystems Product Catalog - Our Clients",
+          "source_url": "https://www.fishersci.co.uk/content/dam/fssite/eu/brands/a/acrobiosystems/27808_Product_Catalogue_flyer.pdf",
+          "evidence_kind": "official_catalog"
+        }
       ]
     },
     {
-      "id": "jp-da37fa8f8e",
-      "name": "ACEL",
-      "parent_company": "ACEL",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-3f15ddb6b5",
+      "name": "Eisai Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "public_relationship",
+      "account_stage_label": "公开关系",
       "identity_status": "listed",
-      "source_rows": [
-        81
+      "public_evidence": [
+        {
+          "label": "公开关系已找到",
+          "summary": "ACROBiosystems 公开产品目录将 Eisai 列入 Global Top Pharmaceuticals 客户示例。",
+          "source_title": "ACROBiosystems Product Catalog - Our Clients",
+          "source_url": "https://www.fishersci.co.uk/content/dam/fssite/eu/brands/a/acrobiosystems/27808_Product_Catalogue_flyer.pdf",
+          "evidence_kind": "official_catalog"
+        }
       ]
     },
     {
-      "id": "jp-bd6084c376",
-      "name": "aceRNA Technologies, Inc.",
-      "parent_company": "aceRNA Technologies, Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-e40d855a05",
+      "name": "Takeda Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "public_relationship",
+      "account_stage_label": "公开关系",
       "identity_status": "listed",
-      "source_rows": [
-        19
+      "public_evidence": [
+        {
+          "label": "公开关系已找到",
+          "summary": "ACROBiosystems 公开产品目录将 Takeda Pharmaceutical 列入 Global Top Pharmaceuticals 客户示例。",
+          "source_title": "ACROBiosystems Product Catalog - Our Clients",
+          "source_url": "https://www.fishersci.co.uk/content/dam/fssite/eu/brands/a/acrobiosystems/27808_Product_Catalogue_flyer.pdf",
+          "evidence_kind": "official_catalog"
+        }
       ]
     },
     {
-      "id": "jp-8ef3d7e87c",
-      "name": "Aichi Cancer Center Research Instit",
-      "parent_company": "Aichi Cancer Center Research Instit",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-324f7442b8",
+      "name": "A-Seeds Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        56
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6086453a66",
-      "name": "Alfresa Pharma Co., Ltd",
-      "parent_company": "Alfresa Pharma Co., Ltd",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-54ca689473",
+      "name": "Acerna Technologies Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        55
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ff017aa042",
-      "name": "Alpha Bio Co., Ltd.",
-      "aliases": [
-        "Alpha Bio"
-      ],
-      "parent_company": "Alpha Bio Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-63f53c21c8",
+      "name": "AdipoSeeds Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        72,
-        128
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-44af456e1e",
-      "name": "Alpha Purchase",
-      "parent_company": "Alpha Purchase",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-ae1a1021bc",
+      "name": "AIBIOS Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        51
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-501980063b",
-      "name": "Alrair",
-      "parent_company": "Alrair",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-72f9c5a24e",
+      "name": "Alchemedicine Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        21
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-23a786ab3e",
-      "name": "Aomori Prefectural Central Hospital",
-      "parent_company": "Aomori Prefectural Central Hospital",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-aa3144452c",
+      "name": "Alpha Fusion Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        122
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-e6b5c57029",
-      "name": "ARCALIS Inc.",
-      "parent_company": "ARCALIS Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-f8f06d704c",
+      "name": "AnexAPep Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        101
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6b7defa5cb",
-      "name": "AzBio",
-      "parent_company": "AzBio",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-2ce6c7db6e",
+      "name": "AnGes Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        24
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ac9dc00f42",
-      "name": "Bio Matrix Research, Inc.",
-      "parent_company": "Bio Matrix Research, Inc.",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-5b0c0ec2df",
+      "name": "ARC Therapies Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        129
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-11be53426a",
-      "name": "Biotech Lab Co., Ltd.",
-      "parent_company": "Biotech Lab Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-cf424f64aa",
+      "name": "Arktus Therapeutics Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        34
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-a452952e67",
-      "name": "Bluejay Diagnostics,Inc.",
-      "parent_company": "Bluejay Diagnostics,Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-c650577a6a",
+      "name": "Arrowsmith Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        67
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-38fd31d6cc",
-      "name": "Bruker Japan",
-      "parent_company": "Bruker",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-6dab90a831",
+      "name": "Asahi Kasei Corp",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        80
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-5f435eb302",
-      "name": "CELL Co., Ltd.",
-      "parent_company": "CELL Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-c5157269bd",
+      "name": "Asahikawa Medical University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        107
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-b832fbfb7f",
-      "name": "Cellex Corporation",
-      "parent_company": "Cellex Corporation",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-c86fbb6c15",
+      "name": "ASKA Pharmaceutical Holdings Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        14
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-490855e44d",
-      "name": "Center for New Generation Infectiou",
-      "parent_company": "Center for New Generation Infectiou",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-f337b90f17",
+      "name": "Axcelead Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        78
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-89fd3920d0",
-      "name": "Center for Transboundary Animal Dis",
-      "parent_company": "Center for Transboundary Animal Dis",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-7fa6ec09ca",
+      "name": "BFACT Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        63
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-11f6269607",
-      "name": "Central Link Co.",
-      "parent_company": "Central Link Co.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-b20e945eeb",
+      "name": "Biken Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        57
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-2a88772dc0",
-      "name": "DENSO Corporation",
-      "parent_company": "DENSO Corporation",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-563d2f24a6",
+      "name": "Bio Palette Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        95
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-a14e928f25",
-      "name": "Department of Infection Control Vir",
-      "parent_company": "Department of Infection Control Vir",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-a12c785fad",
+      "name": "Bio-Thera Clinic",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        37
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-95f2483549",
-      "name": "Department of Urology, Institute of",
-      "parent_company": "Department of Urology, Institute of",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-10b00ed948",
+      "name": "Biomimetics Sympathies Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        40
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-3950221cca",
-      "name": "Division of Vaccine Science departm",
-      "parent_company": "Division of Vaccine Science departm",
-      "customer_type": "Academia",
-      "sap_customer_type": "Vaccine",
-      "continent": "APAC",
+      "id": "jp-account-4fc763105c",
+      "name": "bitBiome Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        9
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-cfd367f56b",
-      "name": "E-ASL",
-      "parent_company": "E-ASL",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-8b8cb96ec0",
+      "name": "BrightPath Biotherapeutics Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        25
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-1b66ba2dbc",
-      "name": "EA Pharma Co., Ltd. (iPark)",
-      "parent_company": "EA Pharma Co., Ltd. (iPark)",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-f5f910562c",
+      "name": "CanBas Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        59
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-bf6593a721",
-      "name": "Ehime Prefectural Central Hospital",
-      "parent_company": "Ehime Prefectural Central Hospital",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-e89b9cb0cb",
+      "name": "Celaid Therapeutics Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        82
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-9bf5a386d6",
-      "name": "Ehime University",
-      "parent_company": "Ehime University",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-94253d104c",
+      "name": "Cell Exosome Therapeutics Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        53
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-e6512497e0",
-      "name": "EIKEN CHEMICAL CO.,LTD.",
-      "parent_company": "EIKEN CHEMICAL CO.,LTD.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-e206ffe8a3",
+      "name": "Cell Medicine Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        60
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-cda18fd02e",
-      "name": "Eurus Therapeutics",
-      "parent_company": "Eurus Therapeutics",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Antibody",
-      "continent": "APAC",
+      "id": "jp-account-1e11516472",
+      "name": "CellAxia Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        92
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-3c6ba4c60a",
-      "name": "Faculty of Science and Technology,",
-      "parent_company": "Faculty of Science and Technology,",
-      "customer_type": "Academia",
-      "sap_customer_type": "Vaccine",
-      "continent": "APAC",
+      "id": "jp-account-a124ac0899",
+      "name": "CellGenTech Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        8
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-15e448fba1",
-      "name": "Frontier Sciences Sapporo Branch",
-      "parent_company": "Frontier Sciences Sapporo Branch",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-2cdf50fde2",
+      "name": "CellSeed Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        31
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-48791048ce",
-      "name": "Fuji Chemical",
-      "parent_company": "Fuji Chemical",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-0dbd1432b4",
+      "name": "CellSource Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        113
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-03dac431fe",
-      "name": "Fuji Film Wako Junyaku （E/U: from w",
-      "continent": "APAC",
+      "id": "jp-account-61c79b29af",
+      "name": "Cellusion Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        137
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ba4148bd1a",
-      "name": "Fuji Kagaku Yakuhin （E/U: Confident",
-      "continent": "APAC",
+      "id": "jp-account-a1ca845874",
+      "name": "Center for iPS Cell Research and Application",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        136
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-96fd9826fb",
-      "name": "FUJIFILM",
-      "parent_company": "FUJIFILM",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-0dc55bba53",
+      "name": "Change Cure",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        123
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-8481cdedf5",
-      "name": "Fukushima Medical Universitv",
-      "parent_company": "Fukushima Medical Universitv",
-      "customer_type": "Academia",
-      "continent": "APAC",
+      "id": "jp-account-ee0fb464d4",
+      "name": "Chiba University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        132
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-8ea9110c4f",
-      "name": "Global Life Sciences Technologies J",
-      "parent_company": "Global Life Sciences Technologies J",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-a673380561",
+      "name": "Chiome Bioscience Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        28
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-99f4f44cdf",
-      "name": "Greene/Vogt Laboratory, Internation",
-      "parent_company": "Greene/Vogt Laboratory, Internation",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-6a58fd2de4",
+      "name": "Chugai Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        41
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-74623a1a77",
-      "name": "Hamasaki Laboratory, Division of Fu",
-      "parent_company": "Hamasaki Laboratory, Division of Fu",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-c4dc098988",
+      "name": "Cloverna Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        42
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-38162e886a",
-      "name": "Hamasaki Laboratory, iPS Cell Resea",
-      "parent_company": "Hamasaki Laboratory, iPS Cell Resea",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-2657da80ec",
+      "name": "Crafton Biotechnology Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        102
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-13e03d40a7",
-      "name": "Hayashi Kasei Co.",
-      "parent_company": "Hayashi Kasei Co.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-b545c3bc04",
+      "name": "CURED Inc.",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        30
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-e4b539abf2",
-      "name": "HIPUS Co., Ltd.",
-      "parent_company": "HIPUS Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-1f1e9086b1",
+      "name": "CynosBio Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        121
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-68a0eb8e36",
-      "name": "Hiroshima Institute of Life Science",
-      "parent_company": "Hiroshima Institute of Life Science",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-f8a529c84f",
+      "name": "Cytix Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        112
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-a13757abfd",
-      "name": "Hitachi, Ltd.",
-      "parent_company": "Hitachi, Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-74345b8045",
+      "name": "Cytlimic Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        23
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ca4b143a86",
-      "name": "Hourai medech",
-      "parent_company": "Hourai medech",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-bfdbb4bb5e",
+      "name": "DyDo Pharma Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        94
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ed633cc4dd",
-      "name": "Ichimaru Pharcos Co., Ltd.",
-      "parent_company": "Ichimaru Pharcos Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-d2d7cb526a",
+      "name": "EditForce Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        52
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-526e69b4cd",
-      "name": "Iedakagaku (via Fuji Film Wako Juny",
-      "continent": "APAC",
+      "id": "jp-account-dca7b498df",
+      "name": "Editpep",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        139
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-15317db2c5",
-      "name": "Institute of Microbial Diseases, Os",
-      "parent_company": "Institute of Microbial Diseases, Os",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-b53ab02330",
+      "name": "enU Pharma Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        61
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-4ca6d90ae2",
-      "name": "International Research Center for I",
-      "parent_company": "International Research Center for I",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-59b02b650b",
+      "name": "Epsilon Molecular Engineering Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        77
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ea3ddfa73e",
-      "name": "Iwai Kagaku",
-      "parent_company": "Iwai Kagaku",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-6a6cb04128",
+      "name": "EverMed Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        20
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-67a7e69851",
-      "name": "IWAKI SEIYAKU CO., LTD.",
-      "parent_company": "IWAKI SEIYAKU CO., LTD.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-d7e83fe1eb",
+      "name": "Exorphia Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        108
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-cfd83edba7",
+      "id": "jp-account-1360bcc174",
+      "name": "Fujifilm Holdings Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-07016af5f2",
+      "name": "Fukuoka University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-a675183dfe",
+      "name": "FunPep Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-f2413f8eb0",
+      "name": "GAiA BioMedicine Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-377665c624",
+      "name": "Gap Junction Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-e1c8247ed3",
+      "name": "GlyTech Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-10385b1f3a",
+      "name": "GNI Group Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-e850d31d2e",
+      "name": "Gunma University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-06059bdb35",
+      "name": "HanaVax Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-69ba09d5d0",
+      "name": "Healios KK",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c95a7e2db2",
+      "name": "Heartseed Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-0bf29bb3ae",
+      "name": "Himuka AM Pharma Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c58eb6a732",
+      "name": "Hiroshima University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-175e8ff25f",
+      "name": "Hokkaido University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-21d78ceab1",
+      "name": "Human Life CORD Japan Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-463b0e7a71",
+      "name": "I'rom Group Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c3d53da910",
+      "name": "IDAC Theranostics Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-dfaa967558",
+      "name": "iHeart Japan Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-67e0d4a918",
+      "name": "Immunorock Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-0ff9d137a3",
+      "name": "Immuse Therapeutics Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c499f535d7",
+      "name": "Innovacell Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c9f60a9e61",
+      "name": "Interprotein Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-d6c8f38831",
+      "name": "iXgene Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-4f9acbfd72",
+      "name": "J-mab Therapeutics Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c058ffe5bc",
       "name": "Japan Institute for Health Security",
-      "parent_company": "Japan Institute for Health Security",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        22
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-98121a14c6",
-      "name": "Japan Red Cross Society",
-      "parent_company": "Japan Red Cross Society",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-7e3077f744",
+      "name": "JCR Pharmaceuticals Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        65
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-8808b4b8e6",
-      "name": "Jiksak Bioengin",
-      "parent_company": "Jiksak Bioengin",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-c38f81d669",
+      "name": "Jichi Medical University Hospital",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        104
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-336de02855",
-      "name": "JSR Corporation",
-      "parent_company": "JSR Corporation",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-bfea1e18b5",
+      "name": "Jikei University School of Medicine",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        39
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-92d70b60cb",
-      "name": "Kakkennsha",
-      "parent_company": "Kakkennsha",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-f7e56c9e25",
+      "name": "Jocavio Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        18
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-7633ac3ec5",
-      "name": "Kikkoman",
-      "parent_company": "Kikkoman",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-aded8faee8",
+      "name": "Junten Bio Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        106
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-09b9530112",
-      "name": "Kinn Holdings",
-      "parent_company": "Kinn Holdings",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-51eefdced6",
+      "name": "Juntendo University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        73
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-a8e2a68072",
-      "name": "Kintetsu World Express, Inc.",
-      "parent_company": "Kintetsu World Express, Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-e7b0299ed8",
+      "name": "Juntendo University Hospital",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        58
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-dca646d49c",
-      "name": "KISHIDA CHEMICAL CO.,LTD.",
-      "parent_company": "KISHIDA CHEMICAL CO.,LTD.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-653343242b",
+      "name": "K Pharma Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        16
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-c9a0b1b7ed",
-      "name": "Kohjin Bio Co., Ltd.",
-      "parent_company": "Kohjin Bio Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-2fe9615ec8",
+      "name": "Kagawa University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        133
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-9c4b5ad7a9",
-      "name": "Konara Food Industry Co., Ltd.",
-      "parent_company": "Konara Food Industry Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-94c64433e5",
+      "name": "KAICO Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        98
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6a8db12d7d",
-      "name": "Koseki Hideo Shouten",
-      "parent_company": "Koseki Hideo Shouten",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-112ee72d51",
+      "name": "Kaken Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        114
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-be17834a32",
-      "name": "Kyom Bioscience Co., Ltd. Antibody",
-      "parent_company": "Kyom Bioscience Co., Ltd. Antibody",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Antibody",
-      "continent": "APAC",
+      "id": "jp-account-95fb6e7a3e",
+      "name": "Kamui Pharma Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        118
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-4086b0e53f",
-      "name": "Liberocera Corporation",
-      "parent_company": "Liberocera Corporation",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Antibody",
-      "continent": "APAC",
+      "id": "jp-account-c8329f9af2",
+      "name": "Kanazawa Medical University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        90
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-304d6f161a",
-      "name": "Liid Pharmaceuticals",
-      "parent_company": "Liid Pharmaceuticals",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-c1f919cd32",
+      "name": "Kanazawa University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        99
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-46e29cb649",
-      "name": "MALSvHereiftireod",
-      "parent_company": "MALSvHereiftireod",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-986e88d87d",
+      "name": "Kanazawa University Hospital",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        130
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-126c0adc7c",
-      "name": "Marine-Earth Science and Tech",
-      "parent_company": "Marine-Earth Science and Tech",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-a2a74b9ae1",
+      "name": "Kaneka Corp",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        70
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-bd19990094",
-      "name": "Medical Proteoscope Inc",
-      "parent_company": "Medical Proteoscope Inc",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-89cf2527b9",
+      "name": "Kawasaki Medical School Hospital",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        69
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-87000482fe",
-      "name": "Minaris Advanced Therapies",
-      "parent_company": "Minaris Advanced Therapies",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-42ee40d664",
+      "name": "Keio University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        117
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-221b0739a5",
-      "name": "Miyata Yakuhin",
-      "parent_company": "Miyata Yakuhin",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-6d8acd26d1",
+      "name": "Kidswell Bio Corp",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        74
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-1492c4cedf",
-      "name": "Mochida Pharmaceutical Co., Ltd.",
-      "parent_company": "Mochida Pharmaceutical Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-09e7b3b1e5",
+      "name": "Kirin Holdings Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        11
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-71ad61479e",
-      "name": "Nara Medical University",
-      "parent_company": "Nara Medical University",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-6960049811",
+      "name": "Kissei Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        62
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-d318f8d721",
-      "name": "National Cancer Center Hospital East",
-      "parent_company": "National Cancer Center Hospital East",
-      "customer_type": "Academia",
-      "continent": "APAC",
+      "id": "jp-account-695949a6e3",
+      "name": "Kobe University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        131
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-5ce2454ead",
+      "id": "jp-account-394afb6d3c",
+      "name": "Kochi University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-db93d72a11",
+      "name": "Koshikai Non-Profit Medical Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-b0a7ae9493",
+      "name": "Kowa Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-25d203720f",
+      "name": "Kringle Pharma Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-b636075fad",
+      "name": "Kubota Pharmaceutical Holding",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-45f9e80ad6",
+      "name": "Kumamoto University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-a564955a0b",
+      "name": "Kurume University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-4a22594788",
+      "name": "KYORIN Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-2ea5721fd8",
+      "name": "Kyorin University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-409eb17dbd",
+      "name": "Kyoto University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-cb33322760",
+      "name": "Kyushu University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-15db7e5fc7",
+      "name": "Linqmed Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-744f00c918",
+      "name": "Logomix, Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-232de87411",
+      "name": "LTT Bio-Pharma Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-5af0188316",
+      "name": "LUCA Science Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-b40ed05c1d",
+      "name": "M Bio Technology Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-ffbcd4ec9c",
+      "name": "Maruho Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-49ec741afd",
+      "name": "Medinet Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-b0be772022",
+      "name": "Medipreneur Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-5fbf9b50e2",
+      "name": "Meiji Holdings Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-cbb3de9017",
+      "name": "MeSCue-Janusys Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-cc5ce125f2",
+      "name": "Metabologenomics Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-d875fe9dc3",
+      "name": "Metcela Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-0f65681216",
+      "name": "Ministry of Economy, Trade and Industry, Japan",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "public_research",
+      "organization_label": "公共与国家研究机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-8d7332a9bf",
+      "name": "MiraBiologics Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-627b3fe782",
+      "name": "Mitsubishi Chemical Group Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-d041984a28",
+      "name": "Miyarisan Pharmaceutical Company Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c55bc61029",
+      "name": "Modalis Therapeutics Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-a6ac3f2289",
+      "name": "Molcure Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-893f420d9c",
+      "name": "Momotaro-Gene Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-536c52593d",
+      "name": "Nagasaki University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-8a93599892",
+      "name": "Nagasaki University Hospital",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-cdc6eb361a",
+      "name": "Nagoya University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-4cb42490d0",
+      "name": "Nagoya University Hospital",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-ede6ffd1f8",
+      "name": "National Cancer Center Hospital",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-f2494a5ca1",
       "name": "National Cancer Center Japan",
-      "parent_company": "National Cancer Center Japan",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        68
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-d496a5964c",
-      "name": "National Center for Global Health and Medicine - NCGM",
-      "parent_company": "National Center for Global Health and Medicine - NCGM",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-a36c7ce9ed",
+      "name": "National Center for Child Health and Development",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        38
-      ]
+      "organization_type": "public_research",
+      "organization_label": "公共与国家研究机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-815ab6f632",
-      "name": "National Center of Neurology and Ps",
-      "parent_company": "National Center of Neurology and Ps",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-4bf58f9152",
+      "name": "National Center for Global Health and Medicine",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        76
-      ]
+      "organization_type": "public_research",
+      "organization_label": "公共与国家研究机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-9992449789",
-      "name": "National Defense Medical College",
-      "parent_company": "National Defense Medical College",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-84684a5048",
+      "name": "National Cerebral and Cardiovascular Center",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        110
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-7b42dc6708",
-      "name": "National Institute for Health Crisi",
-      "parent_company": "National Institute for Health Crisi",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-c796588854",
+      "name": "National Institute of Infectious Diseases",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        109
-      ]
+      "organization_type": "public_research",
+      "organization_label": "公共与国家研究机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ed100f825c",
-      "name": "New Japan Science",
-      "parent_company": "New Japan Science",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-b3cd56011b",
+      "name": "NB Health Laboratory Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        91
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6cdeb5bfe9",
-      "name": "Nippi, Incorporated",
-      "parent_company": "Nippi, Incorporated",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-f1372a5b56",
+      "name": "NC Medical Research Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        46
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-45f39bf893",
-      "name": "Nippon Kayaku Co., Ltd.",
-      "parent_company": "Nippon Kayaku Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Antibody",
-      "continent": "APAC",
+      "id": "jp-account-504b94916d",
+      "name": "NEC Corp",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        120
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-3f119eddec",
-      "name": "Nippon Medical School",
-      "parent_company": "Nippon Medical School",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-e5226000a2",
+      "name": "Neo-Precision Therapeutics Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        71
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-c55376e611",
-      "name": "Nitto Trading Co., Ltd.",
-      "parent_company": "Nitto Denko Corporation",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-a8cdb36abd",
+      "name": "Nexuspiral Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        79
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ff8a4a88ad",
-      "name": "Noile-Immune Biotech Inc.",
-      "parent_company": "Noile-Immune Biotech Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-a7d265c37d",
+      "name": "Nichi-Iko Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        26
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-9949bdec76",
-      "name": "Okadai University (Medicine) Pharma",
-      "parent_company": "Okadai University (Medicine) Pharma",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-5b82a1d0a6",
+      "name": "Nihon University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        88
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-7f7d44a1a0",
-      "name": "Okinawa Institute of Science and Te",
-      "parent_company": "Okinawa Institute of Science and Te",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-4f0230889e",
+      "name": "Niigata University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        15
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-a6fd107b09",
-      "name": "Osaka Intensive Research Institute",
-      "parent_company": "Osaka Intensive Research Institute",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-decfbd6fbe",
+      "name": "Nippon Medical School Hospital",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        87
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-75c9564944",
-      "name": "Osaka Yakken (E/U: Osaka University",
-      "continent": "APAC",
+      "id": "jp-account-09810019e5",
+      "name": "Nobelpharma Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        138
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-26a461737b",
-      "name": "Peptidedream",
-      "parent_company": "Peptidedream",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-894704175a",
+      "name": "Noile-Immune Biotech Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        84
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-9282944745",
-      "name": "Phenix Bio",
-      "parent_company": "Phenix Bio",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-7242eff580",
+      "name": "Nxera Pharma Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        13
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-1674832ed0",
-      "name": "PRISM Biolab",
-      "parent_company": "PRISM",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-7d0ac870a3",
+      "name": "Okayama University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        29
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6dd537ad8e",
-      "name": "RACTHERA Co., Ltd. (Esaka)",
-      "parent_company": "RACTHERA Co., Ltd. (Esaka)",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-9e54b04a01",
+      "name": "Oligogen Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        45
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-b729e83bcb",
-      "name": "Rebomic",
-      "parent_company": "Rebomic",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-5d25d5ee02",
+      "name": "Oncolys BioPharma Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        17
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ae8720fa1f",
-      "name": "Rebornabiosciences",
-      "parent_company": "Rebornabiosciences",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-cdce9f6eec",
+      "name": "OncoTherapy Science Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        124
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6a293df65a",
-      "name": "Reoken",
-      "parent_company": "Reoken",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-f95219d645",
+      "name": "Ono Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        119
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-ab5e233ccc",
-      "name": "Reprocell Co., Ltd.",
-      "parent_company": "Reprocell Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-c684d2d966",
+      "name": "ONODERA GT Pharma Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        103
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-396a632038",
-      "name": "Research and Development Center, iP",
-      "parent_company": "Research and Development Center, iP",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-4753704e5c",
+      "name": "Onodera Medical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        50
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-e016f174b0",
-      "name": "Ribomic Inc.",
-      "parent_company": "Ribomic Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Antibody",
-      "continent": "APAC",
+      "id": "jp-account-ecf460e341",
+      "name": "ONSSI Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        4
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-f2b1024dd3",
-      "name": "RIKAKEN CO.,LTD.",
-      "parent_company": "RIKAKEN CO.,LTD.",
-      "customer_type": "Distributor",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-ec001393dc",
+      "name": "Optieum Biotechnologies Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        3
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-e35ab8589c",
-      "name": "Rocto-Science",
-      "parent_company": "Rocto-Science",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-1284cba8e2",
+      "name": "ORBIO Corp",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        44
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-934358232e",
-      "name": "ROHTO Pharmaceutical Co., Ltd.",
-      "parent_company": "ROHTO Pharmaceutical Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-4c3aff9be4",
+      "name": "Orizuru Therapeutics Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        10
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-d21e382dad",
-      "name": "Sanwa Kagaku Kenkyusho",
-      "parent_company": "Sanwa Kagaku Kenkyusho",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-c38f83fb6f",
+      "name": "Osaka City University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        5
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-37e77b4a20",
-      "name": "Seiko (E/U: NIPPON BIOMEDICAL LABOR",
-      "parent_company": "Seiko (E/U: NIPPON BIOMEDICAL LABOR",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-7cc417a531",
+      "name": "Osaka University",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        105
-      ]
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-357a3c77fc",
-      "name": "SEKISUI CHEMICAL CO.,LTD",
-      "parent_company": "SEKISUI",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-83c4c55495",
+      "name": "Otsuka Holdings Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        7
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-97a5010784",
-      "name": "SHINKO SEIKI CO., LTD.",
-      "parent_company": "SHINKO SEIKI CO., LTD.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-0392e3e1b0",
+      "name": "PancTherapy Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        6
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-f24d429482",
-      "name": "Site-Fact Co., Ltd.",
-      "parent_company": "Site-Fact Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-55559b1396",
+      "name": "PeptiAID Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        116
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-1b8378f930",
-      "name": "SNBL, Ltd.",
-      "parent_company": "SNBL, Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-c30f1cf46a",
+      "name": "PeptiDream Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        49
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-b903ee9397",
-      "name": "Stem Cell & Device Laboratory, Inc.",
-      "parent_company": "Stem Cell & Device Laboratory, Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-11a8e6e75c",
+      "name": "Periotherapia Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        75
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-af9e438075",
-      "name": "Sumika Analysis Center Co., Ltd. (P",
-      "parent_company": "Sumika Analysis Center Co., Ltd. (P",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-769271ab4e",
+      "name": "Perseus Proteomics Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        64
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-0139026acd",
-      "name": "Sumika Chemical Analysis Center Co.",
-      "parent_company": "Sumika Chemical Analysis Center Co.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CXO",
-      "continent": "APAC",
+      "id": "jp-account-6aaa0575ea",
+      "name": "PharmaBio Corp",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        35
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-91885fe22a",
-      "name": "Sun Thera Bio",
-      "parent_company": "Sun Thera Bio",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Antibody",
-      "continent": "APAC",
+      "id": "jp-account-d1e8b4c327",
+      "name": "PhotoQ3 Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        115
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-6e9378604f",
-      "name": "Syashima Yakuhin",
-      "parent_company": "Syashima Yakuhin",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-a9361ebc61",
+      "name": "PrimRNA Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        54
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-9dca782260",
-      "name": "Tada Yakuhinkogyo",
-      "parent_company": "Tada Yakuhinkogyo",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-fb53d1ee9f",
+      "name": "Protein Immuno-Engineering Laboratories Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        86
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-4233133533",
-      "name": "Tagsix Bio Co., Ltd",
-      "parent_company": "Tagsix Bio Co., Ltd",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-b20a414309",
+      "name": "Purec Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        66
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-3a711a5aba",
-      "name": "Takeda Pharmaceuticals",
-      "parent_company": "Takeda",
-      "customer_type": "TOP50 Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-ab998596c1",
+      "name": "Rainbow Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        96
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-d51c486fde",
-      "name": "Techno Suzuta",
-      "parent_company": "Techno Suzuta",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-296272f23d",
+      "name": "Rebirthel Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        27
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-63d1d60692",
-      "name": "Tele-b10",
-      "parent_company": "Tele-b10",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-1ca05c7e6c",
+      "name": "Red Arrow Therapeutics Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        125
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-5d46995724",
-      "name": "The Jikei University School of Medicine",
-      "parent_company": "The Jikei University School of Medicine",
-      "customer_type": "Academia",
-      "continent": "APAC",
+      "id": "jp-account-49028a1099",
+      "name": "ReEir Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        127
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-74fdc34a66",
-      "name": "Tokai University",
-      "parent_company": "Tokai University",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-c129b2787e",
+      "name": "Regcell Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        89
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-1bbc64ff53",
-      "name": "Tokyo Metropolitan Cancer and Infec",
-      "parent_company": "Tokyo Metropolitan Cancer and Infec",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-c9358b0d5a",
+      "name": "Rege Nephro Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        83
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-0a0733e5aa",
-      "name": "Tokyo Metropolitan University",
-      "parent_company": "Tokyo Metropolitan University",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-6d36ead3ba",
+      "name": "Regene4T Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        85
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-f574807cf0",
-      "name": "Toyobo Biotechnology Research Labor",
-      "parent_company": "Toyobo Biotechnology Research Labor",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Vaccine",
-      "continent": "APAC",
+      "id": "jp-account-5a2fd30e94",
+      "name": "ReproCELL Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        36
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-fe920339bb",
-      "name": "Trans Chromosomics, Inc.",
-      "parent_company": "Trans Chromosomics, Inc.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "CGT",
-      "continent": "APAC",
+      "id": "jp-account-301b1fee9a",
+      "name": "ReqMed Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        2
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-59f3120d04",
-      "name": "Triumph Co., Ltd. 21 Notice Meiji S",
-      "parent_company": "Triumph Co., Ltd. 21 Notice Meiji S",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Biopharma",
-      "continent": "APAC",
+      "id": "jp-account-e320be2b37",
+      "name": "Restore Vision Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        48
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-8579927082",
-      "name": "Tsutsumi Chemical Co., Ltd.",
-      "parent_company": "Tsutsumi Chemical Co., Ltd.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-de1050e00e",
+      "name": "Revolka Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        47
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-c014f856db",
-      "name": "Tuning Fork Bio",
-      "parent_company": "Tuning Fork Bio",
-      "customer_type": "Other Pharma",
-      "continent": "APAC",
+      "id": "jp-account-37ecee98ba",
+      "name": "RIKEN",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        135
-      ]
+      "organization_type": "public_research",
+      "organization_label": "公共与国家研究机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-a7b2d5cfb4",
-      "name": "UEC",
-      "parent_company": "UEC",
-      "customer_type": "Academia",
-      "continent": "APAC",
+      "id": "jp-account-75dc94e8d2",
+      "name": "Rin Institute Inc",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        134
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-4e41079f52",
-      "name": "University of Osaka iFReC",
-      "parent_company": "University of Osaka iFReC",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-77da7896f5",
+      "name": "Rohto Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        93
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-50d8b4a941",
-      "name": "Unknown",
-      "parent_company": "Unknown",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Others",
-      "continent": "APAC",
+      "id": "jp-account-b85a56b014",
+      "name": "SanBio Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        43
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-28a5a82801",
-      "name": "Waseda University",
-      "parent_company": "Waseda University",
-      "customer_type": "Academia",
-      "continent": "APAC",
+      "id": "jp-account-15f44561d5",
+      "name": "Santen Pharmaceutical China Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        126
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-7af39a7149",
-      "name": "Yasu Pharmaceutical Co.",
-      "parent_company": "Yasu Pharmaceutical Co.",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-ca26c3d427",
+      "name": "Secom Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        32
-      ]
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-e4304ff113",
-      "name": "プラ仆八久.八才株",
-      "parent_company": "プラ仆八久.八才株",
-      "customer_type": "Other Pharma",
-      "sap_customer_type": "Distributor",
-      "continent": "APAC",
+      "id": "jp-account-e43075249d",
+      "name": "Senju Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "review",
-      "source_rows": [
-        97
-      ]
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     },
     {
-      "id": "jp-04d207b3d0",
-      "name": "名古屋大学農学部 分子生物工学",
-      "parent_company": "名古屋大学農学部 分子生物工学",
-      "customer_type": "Academia",
-      "sap_customer_type": "Institute",
-      "continent": "APAC",
+      "id": "jp-account-1b1ee0a348",
+      "name": "Seta Medical Clinic",
+      "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
-      "identity_status": "listed",
-      "source_rows": [
-        100
-      ]
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-bd853a389b",
+      "name": "Shiga University of Medical Science",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-6a26504bee",
+      "name": "Shimane University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-a599425260",
+      "name": "Shinshu University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-e1f2b6c9f0",
+      "name": "Shionogi & Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-d365207924",
+      "name": "Shizuoka Cancer Center",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-9c33d97c70",
+      "name": "St. Marianna University School of Medicine",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-301375f963",
+      "name": "STAND Therapeutics",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-97c09555b3",
+      "name": "Stem Cell & Device Laboratory Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-6c68f8c6c2",
+      "name": "StemRIM Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-a7f78344ee",
+      "name": "Sumitomo Chemical Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-6e69574ac1",
+      "name": "Surv BioPharma Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-9fea972291",
+      "name": "Sysmex Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-004f3bc520",
+      "name": "T Cell Nouveau Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-da2d105ffc",
+      "name": "Takara Holdings Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-83e92c2552",
+      "name": "Tanabe Pharma Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-7b52e64cae",
+      "name": "Teijin Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-1cbaff0997",
+      "name": "Teikyo Heisei University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-231673cf89",
+      "name": "tella Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-9b7d61c965",
+      "name": "The Tokyo Metropolitan Institute of Medical Science",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-12413680b5",
+      "name": "TNAX Biopharma Corp",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-c414857eb7",
+      "name": "Tohoku University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-9b8c04cdef",
+      "name": "Tokushima University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-0d19c45e01",
+      "name": "Tokyo University of Agriculture and Technology",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-bbff458fc5",
+      "name": "Tokyo University of Science",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-b106ac4c30",
+      "name": "Toray Industries Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-941cfdb027",
+      "name": "Toregem BioPharma Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-4c631a2532",
+      "name": "Two Cells Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-2b828eb44e",
+      "name": "United Immunity Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-9fedac31e5",
+      "name": "University of Fukui Hospital",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "hospital_clinical",
+      "organization_label": "医院与临床机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-f1a4568cb1",
+      "name": "University of Tokyo",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-42f641c079",
+      "name": "University Of Toyama",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-21c5982ff4",
+      "name": "University of Tsukuba",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-4583a50c7c",
+      "name": "VCCT Inc",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-e75502ecea",
+      "name": "Veneno Technologies Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "industrial_other",
+      "organization_label": "其他产业机构",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-49b7551004",
+      "name": "Wakunaga Pharmaceutical Co Ltd",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "pharma_biotech",
+      "organization_label": "制药与生命科学",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-16ae2202e9",
+      "name": "Yamaguchi University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
+    },
+    {
+      "id": "jp-account-56fbff0ddd",
+      "name": "Yokohama City University",
+      "headquarters": "Japan",
+      "region": "Japan",
+      "country": "Japan",
+      "organization_type": "academic_research",
+      "organization_label": "高校与学术研究",
+      "account_stage": "market_account",
+      "account_stage_label": "市场账户",
+      "identity_status": "listed"
     }
   ]
 };
