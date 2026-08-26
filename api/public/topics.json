@@ -1,95 +1,94 @@
 {
-  "generated_at": "2026-08-25T00:52:25",
+  "generated_at": "2026-08-26T00:53:52",
   "category_mix": {
-    "event": 167,
-    "company": 593,
-    "product": 234,
-    "regulatory": 172,
+    "event": 169,
+    "regulatory": 174,
+    "product": 244,
+    "company": 587,
     "video": 60,
-    "partnership": 76,
-    "market": 48,
-    "finance": 29,
-    "award": 8,
-    "research": 76
+    "partnership": 69,
+    "market": 45,
+    "finance": 33,
+    "award": 10,
+    "research": 75
   },
   "source_mix": {
     "ACRO official Events and Webinars - indexed RSS": 3,
-    "ACRO official Insights - indexed RSS": 5,
-    "ACRO Japan official pages - indexed RSS": 9,
+    "ACRO official Insights - indexed RSS": 15,
+    "ACRO Japan official pages - indexed RSS": 8,
     "ACRO official YouTube channel": 20,
-    "Google News RSS - ACROBiosystems": 35,
-    "Google News RSS - ACROBiosystems Japan": 1,
-    "Google News RSS - ACROBiosystems PR Newswire": 6,
+    "Google News RSS - ACROBiosystems": 34,
+    "Google News RSS - ACROBiosystems PR Newswire": 7,
     "Business Wire - company pool indexed RSS": 30,
-    "Thermo Fisher official press releases - indexed RSS": 7,
-    "Google News RSS - Thermo Fisher": 99,
-    "Bing News RSS - Thermo Fisher backup": 10,
-    "GlobeNewswire - Biotechnology official RSS": 19,
+    "Google News RSS - Thermo Fisher": 98,
+    "Thermo Fisher official press releases - indexed RSS": 6,
+    "Bing News RSS - Thermo Fisher backup": 11,
+    "GlobeNewswire - Biotechnology official RSS": 17,
     "BioSpace - All News official RSS": 20,
     "Fierce Biotech - official RSS": 25,
     "Fierce Pharma - official RSS": 21,
     "GEN - official biotechnology RSS": 9,
-    "Technology Networks - life science topic indexed RSS": 22,
+    "Technology Networks - life science topic indexed RSS": 23,
     "Labiotech - official European biotech RSS": 12,
-    "Pharmaceutical Technology - manufacturing topic indexed RSS": 8,
+    "Pharmaceutical Technology - manufacturing topic indexed RSS": 9,
     "BioProcess Online - bioprocess topic indexed RSS": 6,
-    "SelectScience - life science product indexed RSS": 9,
+    "SelectScience - life science product indexed RSS": 8,
     "BioSpectrum Asia - APAC biotech indexed RSS": 24,
     "Korea Biomedical Review - indexed RSS": 20,
-    "BioSpectrum India - indexed RSS": 13,
+    "BioSpectrum India - indexed RSS": 12,
     "Nikkan Yakugyo - life science indexed RSS": 30,
     "AnswersNews - official Japan pharma RSS": 10,
     "Mix Online - official Japan pharma RSS": 30,
     "Nikkei Biotech - company pool indexed RSS": 7,
-    "Google News RSS - Thermo Fisher Japan": 51,
     "Pharmcube / ByDrug - company pool indexed RSS": 20,
     "Merck KGaA Life Science official news - indexed RSS": 8,
     "Google News RSS - Merck KGaA Life Science": 30,
     "Google News RSS - Bio-Techne": 30,
-    "PR Newswire - expanded competitor pool indexed RSS": 11,
+    "PR Newswire - expanded competitor pool indexed RSS": 10,
     "Google News RSS - Merck Life Science Japan": 4,
     "Sartorius official Newsroom - indexed RSS": 10,
-    "Google News RSS - Sartorius": 17,
+    "Google News RSS - Sartorius": 18,
     "Miltenyi group official news - indexed RSS": 6,
     "Google News RSS - Miltenyi Biotec Japan": 2,
     "Thermo Fisher Biotech at Scale RSS": 10,
-    "Thermo Fisher official Events and Webinars - indexed RSS": 2,
-    "Thermo Fisher Japan official pages - indexed RSS": 7,
-    "PR Times - monitored company pool indexed RSS": 21,
+    "Thermo Fisher official Events and Webinars - indexed RSS": 3,
+    "Thermo Fisher Japan official pages - indexed RSS": 9,
+    "Google News RSS - Thermo Fisher Japan": 50,
+    "PR Times - monitored company pool indexed RSS": 20,
     "Bing News RSS - ACROBiosystems backup": 3,
     "Sartorius official YouTube channel": 20,
     "Miltenyi Biotec official YouTube channel": 20,
     "SEC EDGAR - Thermo Fisher filings indexed RSS": 1,
-    "AMED - Japan life science funding and policy indexed RSS": 16,
+    "AMED - Japan life science funding and policy indexed RSS": 15,
     "Science Portal - Japan life science indexed RSS": 5,
     "LINK-J - life science ecosystem events": 28,
-    "PR Times - Japan biotech indexed RSS": 29,
     "Kinki Bio - official seminar and ecosystem RSS": 4,
     "Shonan iPark - official news and event announcements": 10,
     "PubMed - ACROBiosystems research signals": 6,
     "Crossref - ACROBiosystems affiliation records": 7,
+    "PR Times - Japan biotech indexed RSS": 29,
     "Yakuji Nippo - official Japan pharma RSS": 24,
-    "Bioon - China life science indexed RSS": 18,
+    "Bioon - China life science indexed RSS": 17,
     "Jiemian Health - China pharma indexed RSS": 30,
     "36Kr Health - China biotech indexed RSS": 30,
-    "MEDISO / JHVS - public healthcare venture updates": 26,
+    "MEDISO / JHVS - public healthcare venture updates": 27,
     "JBA - public life science events": 9,
     "CPHI Japan - official RSS": 6,
-    "JSRM - regenerative medicine events": 17,
+    "JSRM - regenerative medicine events": 18,
     "BioJapan - public event pages": 2,
     "PMDA - life science and regenerative medicine updates": 12,
     "Crossref - Miltenyi Biotec affiliation records": 20,
     "ClinicalTrials.gov - monitored company sponsors and collaborators": 99,
     "Google News RSS - Abcam": 4,
-    "Google News RSS - Promega": 5,
-    "Promega official press releases - indexed RSS": 21,
-    "Business Wire - expanded competitor pool indexed RSS": 14,
+    "Google News RSS - Promega": 4,
+    "Promega official press releases - indexed RSS": 20,
+    "Business Wire - expanded competitor pool indexed RSS": 13,
     "Google News RSS - R&D Systems": 3,
     "Google News RSS - Proteintech": 9,
     "Google News RSS - Sigma-Aldrich": 1,
     "Google News RSS - STEMCELL Technologies": 2,
-    "Google News RSS - Sino Biological": 10,
-    "Google News RSS - Takara Bio": 11,
+    "Google News RSS - Sino Biological": 9,
+    "Google News RSS - Takara Bio": 12,
     "Nikkei Biotech - expanded competitor pool indexed RSS": 18,
     "FIRM - regenerative medicine events official RSS": 3,
     "FIRM - regenerative medicine industry updates official RSS": 3,
@@ -100,31 +99,31 @@
     "Bio-Techne official press releases - indexed RSS": 30,
     "BD Biosciences official newsroom - indexed RSS": 16,
     "BD Biosciences single-cell product updates - indexed RSS": 25,
-    "STEMCELL Technologies official webinars and events - indexed RSS": 11,
+    "STEMCELL Technologies official webinars and events - indexed RSS": 12,
     "Takara Bio official news releases - indexed RSS": 10,
     "Takara Bio official technical events - indexed RSS": 1,
     "PR Times - expanded competitor pool indexed RSS": 1,
-    "Merck Life Science official events and resources - indexed RSS": 10,
-    "Merck Life Science Japan official pages - indexed RSS": 4,
+    "Merck Life Science official events and resources - indexed RSS": 12,
+    "Merck Life Science Japan official pages - indexed RSS": 5,
     "Sartorius official events and knowledge - indexed RSS": 16,
-    "Miltenyi Biotec official events - indexed RSS": 7,
+    "Miltenyi Biotec official events - indexed RSS": 6,
     "Miltenyi Biotec Japan official pages - indexed RSS": 1,
     "Abcam official products, resources and videos - indexed RSS": 1,
     "Crossref - Abcam affiliation records": 10,
-    "Promega Japan official pages - indexed RSS": 3,
+    "Promega Japan official pages - indexed RSS": 1,
     "Crossref - Promega affiliation records": 20,
     "Bio-Techne official technical resources and videos - indexed RSS": 7,
-    "BD Biosciences official technical talks and videos - indexed RSS": 5,
-    "BD Biosciences Japan official pages - indexed RSS": 2,
+    "BD Biosciences official technical talks and videos - indexed RSS": 7,
+    "BD Biosciences Japan official pages - indexed RSS": 1,
     "Sino Biological official products, resources and videos - indexed RSS": 16,
     "Takara Bio Japan official pages - indexed RSS": 10
   },
   "signal_type_mix": {
-    "news": 1086,
+    "news": 1088,
     "video": 60,
     "filing": 1,
-    "funding": 16,
-    "event": 129,
+    "funding": 15,
+    "event": 131,
     "research": 60,
     "regulatory": 12,
     "clinical_trial": 99
@@ -715,44 +714,44 @@
     {
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
-      "item_count": 92,
-      "selected_count": 7,
+      "item_count": 100,
+      "selected_count": 11,
       "high_relevance_count": 8,
-      "source_count": 10,
+      "source_count": 9,
       "latest_activity": "2026-08-23",
       "event_mix": {
-        "corporate_strategy": 28,
-        "quality_supply": 7,
+        "corporate_strategy": 31,
+        "quality_supply": 8,
         "market_activity": 19,
-        "product_platform": 9,
+        "product_platform": 11,
         "regional_expansion": 2,
-        "target_therapy": 16,
-        "partnership_deal": 6,
-        "clinical_regulatory": 5
+        "clinical_regulatory": 7,
+        "target_therapy": 18,
+        "partnership_deal": 4
       },
       "top_topics": [
         {
+          "label": "ADC",
+          "count": 10
+        },
+        {
           "label": "类器官",
           "count": 8
+        },
+        {
+          "label": "CAR-T",
+          "count": 5
         },
         {
           "label": "细胞治疗",
           "count": 5
         },
         {
-          "label": "ADC",
+          "label": "抗体",
           "count": 4
         },
         {
           "label": "细胞系 / 工程细胞",
-          "count": 4
-        },
-        {
-          "label": "CAR-T",
-          "count": 3
-        },
-        {
-          "label": "抗体",
           "count": 3
         },
         {
@@ -767,7 +766,7 @@
       "top_actions": [
         {
           "label": "口径与传播跟进",
-          "count": 92
+          "count": 100
         }
       ],
       "item_ids": [
@@ -776,11 +775,13 @@
         "54f90637f3df7c67",
         "9ee828aa851c91c5",
         "554ba6d85bad0a53",
+        "33bbfabc2df84637",
         "9be9fbf801bd5087",
         "cb582bed07d28e07",
-        "ffd0c8fb74eae6fd",
+        "4c9fa3b6e2414811",
         "a41941946c8bfd79",
         "14cbaa87595699d1",
+        "bf7008445cdfc33d",
         "7dd40653cf4cd1b7",
         "2c5ba74c71c5e550",
         "95708edb84f0f18c",
@@ -789,27 +790,32 @@
         "32fb0adbfd7664d8",
         "fb7f99df074265e9",
         "ba0321fc0609d53a",
+        "c3944558211d8045",
+        "823b74a1bffffc60",
+        "42d3b5afda096715",
         "0d395415a89b5ba9",
         "f934f57e25353f69",
         "8c40a5e37d1b226a",
+        "c63ec9f715c46aad",
+        "e6ee7e4147076b3e",
         "215970a468628d24",
-        "dfa27701ec74d016",
+        "7afc27ed885ce9d2",
+        "e3e2b86a81b669c9",
         "42500f1f752e1c5c",
         "327f37f80b9fda7b",
-        "ecef8a89ddcb7329",
-        "baaa873f9646cf2d",
+        "305a23a769e18ccb",
         "9a31bd6e6dcf1248",
-        "4d22a91626d6be8f",
-        "ba83016cd9c38e60",
-        "b9dac43137d8e823",
+        "58d6c51c97dc111b",
+        "48e0a299214c2b7d",
         "40b84bb2e0497bc3",
+        "b9dac43137d8e823",
         "6186e83e0e6ed4dc",
         "825f396af864626a",
         "e45347a1eca86527",
         "b9e7b7e99ea45a0a",
         "eb33d0c7d246adec",
-        "3da5fd11b8c9c38d",
         "4212a1a35e128a5f",
+        "58c11d5b1f952fab",
         "a287ae39aea9fb0a",
         "5d72888ae09cbaf5",
         "1e69e32aec55a4f4",
@@ -852,6 +858,7 @@
         "7fc07801a4315852",
         "8a45e0a2f3004934",
         "f0a44703afb2e533",
+        "47b294d935be82b2",
         "6caf2a969c9b2862",
         "f9615021f4c53153",
         "75bbf26be3cd893f",
@@ -868,32 +875,31 @@
     {
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
-      "item_count": 222,
-      "selected_count": 18,
+      "item_count": 220,
+      "selected_count": 19,
       "high_relevance_count": 7,
       "source_count": 13,
-      "latest_activity": "2026-08-24",
+      "latest_activity": "2026-08-25",
       "event_mix": {
-        "regional_expansion": 18,
-        "corporate_strategy": 130,
-        "clinical_regulatory": 22,
-        "partnership_deal": 27,
-        "product_platform": 13,
-        "quality_supply": 1,
-        "market_activity": 10,
-        "target_therapy": 1
+        "product_platform": 17,
+        "corporate_strategy": 125,
+        "regional_expansion": 17,
+        "clinical_regulatory": 25,
+        "partnership_deal": 24,
+        "quality_supply": 2,
+        "market_activity": 10
       },
       "top_topics": [
         {
-          "label": "CRO / CDMO 服务",
-          "count": 3
+          "label": "抗体",
+          "count": 4
+        },
+        {
+          "label": "生物工艺",
+          "count": 4
         },
         {
           "label": "基因治疗",
-          "count": 3
-        },
-        {
-          "label": "抗体",
           "count": 3
         },
         {
@@ -901,8 +907,8 @@
           "count": 3
         },
         {
-          "label": "AAV / 病毒载体",
-          "count": 1
+          "label": "CRO / CDMO 服务",
+          "count": 2
         },
         {
           "label": "HER2",
@@ -913,41 +919,45 @@
           "count": 1
         },
         {
-          "label": "生物工艺",
+          "label": "细胞系 / 工程细胞",
           "count": 1
         }
       ],
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 156
+          "count": 149
         },
         {
           "label": "竞品对比",
-          "count": 66
+          "count": 71
         }
       ],
       "item_ids": [
+        "7ea2e6160997106d",
+        "d6c09bf8153ee534",
+        "1628764e0ef17910",
+        "535c719b5deec032",
+        "d6b628dff8cca4af",
+        "fed26d46fdfc0f6f",
+        "3c850386525d05f9",
         "73535777c5f770a3",
-        "3a8ae60a2e9b4b7c",
+        "8288eb3f2d21ce93",
         "80732271e19df9bc",
         "8cb794362be1d2d8",
         "dc3119f50a7e5cdf",
         "2d60cf1762f162ee",
         "967596c3b2096e5d",
-        "6800fb19c66b3095",
         "3c4e2511d9e7506a",
-        "4dd08489f52203f6",
         "59d4a264e8ebc04d",
-        "8bbec27a3844512f",
-        "8ecf9886b335a6e1",
+        "6aa90418e6e7c4c8",
         "afb937be8b4808ef",
         "2f41c1f555506f85",
         "02c1e5f517def4c7",
         "8a6a46862dcd05b6",
         "afcdfc53e0a4605d",
-        "55365a6ddb5b0f5e",
         "7c9c0cfe48c0e818",
+        "55365a6ddb5b0f5e",
         "6f9eac810f359817",
         "1d77f5944f10089e",
         "d5d2d792fb591aa8",
@@ -956,32 +966,27 @@
         "b39b353b8ccc0365",
         "e851dd2bd054f5d9",
         "2c51b32fc99ff060",
-        "b378256c778a74b7",
         "af76aa10cc38a035",
+        "b378256c778a74b7",
         "1ce5c8b7210c94b6",
         "956cb77fe049d04d",
         "e8b2d18c77c09bf1",
         "95c7f8c390adc158",
         "a21559e5c546cc14",
-        "534f5b4a6c23183c",
+        "80a795cc6bd61970",
         "8992448041c2dbb7",
         "e93de8c5b11ba4e8",
         "d659cf061c1788b6",
-        "2a1cd980a84f8eb3",
         "6d6e8f3a1df2de4f",
-        "54971044a228a5bc",
         "803650870d75ab04",
         "df8b9ff6c4dba399",
-        "a9411d7000ecf661",
         "3a2b5ad522778971",
         "ae1804053be53854",
         "4d691ab54f88f95b",
         "15525617413fa745",
-        "55e6b682075cc2d0",
         "ff7568b8f7ce457a",
+        "1f63987aca751184",
         "02c072d42b232c2f",
-        "005f9905adbab209",
-        "cc23b3cda3f41172",
         "38f4e938f56efc1f",
         "15a4c50a65c51873",
         "d87b8804f2a320e5",
@@ -991,31 +996,16 @@
         "bc135a4ab3533036",
         "f619f27324db606e",
         "9ad87450622513ea",
-        "0e1a394de04b64f4",
         "7ffc013bc1564023",
-        "b9926265b15f41b9",
         "24e5af6e7ee07eb5",
-        "2c111be2f96df2d0",
-        "7c0e5c4a7dca6767",
-        "d755a38b0ddd8c0d",
-        "26f9b9b148b0bbe9",
-        "b8650d784e59de58",
-        "ccfa4c7d03fd650f",
-        "2f19e36469e70d1a",
-        "9943fc80a06a7f1b",
-        "ad4c40a3fdcb5b96",
-        "a2a3e502cf2d70c9",
-        "32f0cc2f5e1dce62",
-        "d9fe07aa396a9383",
         "fd9f4398d806402f",
         "651eb516e5df0382",
-        "bb6cea30174c2a88",
         "bd23e9d67c703f79",
-        "6c9e375305f14cf4",
+        "a3e0511d63c17fa2",
         "fe18a7eb319f6733",
         "a0a4b840dd549058",
         "649925961ce8ce38",
-        "00d0cd7d5b2fad53",
+        "dfcc44f8f77c5e43",
         "e572b2806db1005a",
         "7b5b1e59e7db16ce",
         "de47388a83ceee53",
@@ -1024,36 +1014,41 @@
         "c302686d90937569",
         "8d914b9b9978e418",
         "5a2965863179fcc4",
+        "d92cd8cb231f482e",
         "a4d01f9fb6838a64",
         "23dcc25c53faae2b",
         "0a01e356f878f895",
-        "ee478f20fc716c45",
         "8a6be19e04ef782b",
+        "ee478f20fc716c45",
         "28c21759b98f34dc",
         "6e4ac1d380f3d670",
         "086ac9d278ba62ce",
         "4bd9db8feb5f8de9",
+        "7605862a5ad68278",
+        "d3fa0bd5a3eab19a",
         "a9ab9efb45e6f9a5",
-        "28b7b42245bc11d9",
         "9c2ca4836ff411a0",
         "1a6e3ea185e48024",
         "223d59d54e74bcc6",
         "cab09309ec8a9915",
-        "a89a8b4e97d1b2f1",
         "763411116dbec188",
+        "0b9befc98dd039bd",
         "44e2fa23ba58e53d",
+        "28d27320104620f4",
         "6d07f4f9f814f937",
+        "6ed0dc99eb1a86fc",
         "02c370f7da497967",
-        "92d421d37ba27c29",
         "19c42d5ac45bf31a",
         "bba3bb2949d4ad8d",
         "bcea010a3f1de7df",
         "bb8a821c6af6f2c7",
+        "a1445c6fea612973",
+        "05e398ed2f59501d",
         "11d0555366a49133",
+        "85950deafb120541",
         "e735cfa97567e552",
         "6e9ac55b265d023b",
         "628093e3771fc6b1",
-        "ccf9c1f1c9d6aea9",
         "f610ddd76a80d18c",
         "8da12e594df93fc4",
         "8944f11a22b96440",
@@ -1064,45 +1059,56 @@
         "aaa9dca935c1153f",
         "1e7c621d12794433",
         "9e0647467154297b",
+        "02b4e24c13d41b6b",
         "ec6d627cda748074",
         "2c3834e263f50da2",
+        "4e4c357417fafeba",
         "28af198e5ba8e155",
         "a85354aefa9a6a77",
+        "8373a72c04a11830",
+        "159ddfe8aa82c7a5",
         "e3d149cf6e81927a",
         "1c8a7ef3a5881646",
         "e2afab33e13818be",
-        "c839cd277687a0ae",
         "79669df1b50e2759",
+        "c839cd277687a0ae",
         "7b485a48b2cec143",
         "0a525e319f25bf4b",
         "926994e0441bedca",
         "d0ac1be77c1e4154",
+        "3f77ad1cd6bb04d3",
+        "a96e9640205d0f2b",
         "806fdea524dd3b74",
+        "e679a9f142b13fa9",
         "b0609318287b9bb5",
         "c849048f87b80afa",
         "739893aeee305a56",
         "6a2e9cbc1c3ccdf4",
         "a86cc405e75beda4",
         "4ec493ac0fc572a7",
+        "185432f18408656f",
         "5f6aff94aa0a872a",
         "31aa713a325fb54a",
         "8ca7d4d2e6737ad8",
         "74e248f18db16e7d",
+        "eb1167ca5ca74c27",
         "955a568e3b9c3d4a",
-        "042c88c9c131ca01",
         "e8ec174963f6bf6d",
         "933edb1ae44f3abf",
         "c0151a70d9b59d60",
+        "42ee01860121cbfd",
         "f733dae8abf1cdf3",
         "94ff06b22c129c7d",
         "3a42f3309d40d054",
         "7e3e28a366f90a76",
+        "2b07355908da86d3",
         "468a56e69262367c",
         "cf455f4d20528d09",
         "c9b5e1f19d82ea92",
         "6646b5383531aac3",
         "a1936e12fd6f7f19",
         "79fa2a14548e4438",
+        "6fd03c58e4d393f6",
         "ba216fee1a574fb5",
         "a39dc2d1bc671b62",
         "b9b3216f197a8cda",
@@ -1118,7 +1124,6 @@
         "2de8d396cb721f77",
         "5af3c55dc7d6d696",
         "3103063de02afd5c",
-        "8c700a64d9271962",
         "13d8a383f6a99ca5",
         "85d3a756c76e023d",
         "8396d8021b4b8bb1",
@@ -1128,7 +1133,6 @@
         "a94cb48f19ea26af",
         "5220d2169d8c2981",
         "c5bd2ad0e24ba236",
-        "9cbdc9b9003bc942",
         "30607cea2b81f25b",
         "fef5b681c296566f",
         "cb1d3cded9ad60b0",
@@ -1155,16 +1159,16 @@
     {
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma",
-      "item_count": 148,
+      "item_count": 151,
       "selected_count": 7,
       "high_relevance_count": 2,
       "source_count": 13,
-      "latest_activity": "2026-08-24",
+      "latest_activity": "2026-08-25",
       "event_mix": {
         "clinical_regulatory": 89,
-        "corporate_strategy": 28,
+        "corporate_strategy": 30,
         "partnership_deal": 20,
-        "regional_expansion": 4,
+        "regional_expansion": 5,
         "product_platform": 5,
         "target_therapy": 1,
         "quality_supply": 1
@@ -1210,41 +1214,42 @@
         },
         {
           "label": "归档观察",
-          "count": 26
+          "count": 29
         }
       ],
       "item_ids": [
+        "37c0373dc5a29aaa",
         "dae9a6188cd3003a",
         "edf6369130287e70",
         "9ad7f5584e39426e",
         "326acfbb50717cc3",
         "9d0b2b64bd45140a",
-        "3747911ee473ee32",
         "f9a7699c3d287659",
+        "3747911ee473ee32",
         "2d7c7797cfcefb24",
         "81b2bc7480a8bbcc",
-        "fc074af1bb67a56d",
+        "74018f07271e6a38",
         "6a3b846a57eb77f7",
-        "fdb05fcb27516931",
+        "fc074af1bb67a56d",
         "33290c3cdf89679d",
-        "46d2cb107b6a7e5e",
+        "fdb05fcb27516931",
         "15b9876110981424",
+        "46d2cb107b6a7e5e",
         "5922bb7e951e063b",
-        "333d9dc4d4693020",
         "6c9d4884ab27845b",
+        "333d9dc4d4693020",
         "6c0617f43340ce06",
-        "305aa58f2fd85bda",
         "c879a9d675900227",
-        "0b86b333c51c6378",
+        "305aa58f2fd85bda",
         "fcc5576d360bf01c",
-        "64b8a0d9fa88e711",
+        "0b86b333c51c6378",
         "a039f6e336d17525",
+        "64b8a0d9fa88e711",
         "4728c7c008c76be0",
         "2a51f780282e4b2b",
         "f4ab05edd938805f",
         "31205268d9a30ebb",
         "8a5c61a35a37fe0e",
-        "d5420535eb0114d3",
         "35d2b19c3dcca5bc",
         "73f11a8721f44608",
         "6d54059dec792dfc",
@@ -1255,6 +1260,7 @@
         "bf2d8fbcc6c52cf4",
         "4004ab4fd61c88ec",
         "91be4db09d618590",
+        "4defcedc25b31c99",
         "48b12ab832b14442",
         "8fa79b5800a33dfb",
         "ae352b222c5ca2a7",
@@ -1285,10 +1291,10 @@
         "439433ef70682802",
         "870d1349cc38c8c3",
         "597342a223f325e5",
-        "810e18d0e7fc01bf",
         "b37a4204000f1fa6",
         "184fc9b6b0390698",
         "6c812f21703ff9b6",
+        "152c7ff04e7aa014",
         "63edffa787ef06a0",
         "8a127b184e7824bc",
         "8c6a429c7e59c0f1",
@@ -1301,25 +1307,26 @@
         "1e3bb1994a372415",
         "7f8ab20c94f2974c",
         "ce13ae3864406c02",
-        "ca4ee0208abec37b",
         "936e4d1da2b84a91",
+        "ca4ee0208abec37b",
         "5a60ae906fa5269f",
         "bd85e024e866a501",
         "d316dfca7742a294",
         "d03104693c937d9b",
         "fd6678c0cc51ee55",
+        "8d7fe6cdb75d7120",
+        "e6abba30ef96a725",
+        "5e797b12ef3490f9",
         "c363d6a898864f95",
         "d1df5221623e306c",
-        "5e797b12ef3490f9",
-        "e6abba30ef96a725",
         "09c8141a3fa9faa5",
         "baa3c990f15d4484",
         "86d92d757012c20f",
-        "5ab3ba21937c58d5",
         "eb434dca7fa4bf88",
+        "5ab3ba21937c58d5",
         "cb756383d7bca05b",
-        "7b76a3be3b5ec92c",
         "6a16e885870e794f",
+        "7b76a3be3b5ec92c",
         "c974d3198a79a5a6",
         "c43c7883f9742841",
         "f33a325948caf65f",
@@ -1341,8 +1348,8 @@
         "70c7c130bb8e2a73",
         "5d8a3a8ebd9568ed",
         "0d951c0d1585cd64",
-        "97638d825face658",
         "32355ddec5526467",
+        "97638d825face658",
         "ef9f7481377f8ad3",
         "b04ad1fc53846be5",
         "cd7f4d1fc06a68c6",
@@ -1350,7 +1357,6 @@
         "bfb55bdaeea6e6a1",
         "ee70f8ed635fd7d9",
         "bd5931d9a3f4fdd6",
-        "37c0373dc5a29aaa",
         "eaf5038224eeb11e",
         "ff6e73efdf7d518c",
         "227c1382f19b374d",
@@ -1360,6 +1366,7 @@
         "f75e1302ae3edf08",
         "2a0e6b70bb7d2dc0",
         "cebd7705e7e56878",
+        "92cb2f40a955d23d",
         "5672e53bbf6c66f2",
         "66c93908f4298bd2"
       ]
@@ -1367,13 +1374,13 @@
     {
       "company_id": "sartorius",
       "company": "Sartorius / Sartorius Stedim Biotech",
-      "item_count": 64,
+      "item_count": 65,
       "selected_count": 9,
       "high_relevance_count": 3,
       "source_count": 5,
       "latest_activity": "2026-08-24",
       "event_mix": {
-        "clinical_regulatory": 4,
+        "clinical_regulatory": 5,
         "corporate_strategy": 27,
         "market_activity": 18,
         "partnership_deal": 5,
@@ -1417,11 +1424,11 @@
       ],
       "top_actions": [
         {
-          "label": "归档观察",
-          "count": 32
+          "label": "竞品对比",
+          "count": 33
         },
         {
-          "label": "竞品对比",
+          "label": "归档观察",
           "count": 32
         }
       ],
@@ -1435,6 +1442,7 @@
         "f61f24db49d43d78",
         "de17a8836c72c34e",
         "9803e9e7a1ccda46",
+        "feca85c0f763347f",
         "28013a61483cb549",
         "ed1ada6643764795",
         "1929538740fbe7b1",
@@ -1495,15 +1503,15 @@
     {
       "company_id": "miltenyi_biotec",
       "company": "Miltenyi Biotec / 美天旎",
-      "item_count": 63,
+      "item_count": 62,
       "selected_count": 4,
-      "high_relevance_count": 2,
+      "high_relevance_count": 1,
       "source_count": 8,
       "latest_activity": "2026-08-25",
       "event_mix": {
         "target_therapy": 17,
         "clinical_regulatory": 14,
-        "market_activity": 24,
+        "market_activity": 23,
         "partnership_deal": 4,
         "quality_supply": 2,
         "corporate_strategy": 2
@@ -1511,11 +1519,11 @@
       "top_topics": [
         {
           "label": "CAR-T",
-          "count": 13
+          "count": 12
         },
         {
           "label": "基因治疗",
-          "count": 6
+          "count": 5
         },
         {
           "label": "细胞治疗",
@@ -1523,7 +1531,7 @@
         },
         {
           "label": "抗体",
-          "count": 3
+          "count": 2
         },
         {
           "label": "AAV / 病毒载体",
@@ -1545,7 +1553,7 @@
       "top_actions": [
         {
           "label": "竞品对比",
-          "count": 36
+          "count": 35
         },
         {
           "label": "归档观察",
@@ -1557,6 +1565,7 @@
         "f545dcf486a5aae6",
         "e68524b56173ef05",
         "c0e8bcf8a95d909a",
+        "c076c9dab40e6cb6",
         "d201df8704f8cee8",
         "1cc035f4f3724f9f",
         "ffef74841b2c7706",
@@ -1601,13 +1610,11 @@
         "a841747ffed8fdd6",
         "4bac829d660c4eb8",
         "befbdab2640843ad",
-        "adc559f18667c1fe",
         "99684ad373059a57",
         "401e06c3b64fa1e8",
         "b72a3dcc48cacaf5",
         "204b617b2e860bed",
         "338181cb3d62d541",
-        "1361212d92cb77ab",
         "550485589e28bb4c",
         "db6200b656d8fbc3",
         "7b7624b59ce212c0",
@@ -1628,8 +1635,8 @@
       "latest_activity": "2026-7-28",
       "event_mix": {
         "target_therapy": 8,
-        "partnership_deal": 6,
-        "corporate_strategy": 8,
+        "partnership_deal": 7,
+        "corporate_strategy": 7,
         "product_platform": 3,
         "clinical_regulatory": 4,
         "market_activity": 2,
@@ -1639,7 +1646,7 @@
       "top_topics": [
         {
           "label": "抗体",
-          "count": 3
+          "count": 4
         },
         {
           "label": "TROP2",
@@ -1649,11 +1656,11 @@
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 24
+          "count": 23
         },
         {
           "label": "竞品对比",
-          "count": 13
+          "count": 14
         }
       ],
       "item_ids": [
@@ -1680,26 +1687,26 @@
         "cfe745b5b6f1723c",
         "2c2ae7a2fb1f7cc8",
         "a3d380ee489429c4",
-        "ca35096f906ff421",
         "04045722c45bb1fe",
+        "7923c23b91f20b71",
         "400810f983851f52",
         "97effc9b7339d266",
         "23dc3814c93fec69",
         "29b236376e694e18",
         "d76187620ba815ea",
+        "4fb38a06496bf10c",
         "5492637514aef69f",
         "53f124b5389f2c1f",
         "7d6004076602dbe4",
         "be76fdf189428df9",
         "94a4a3ecb19be14d",
-        "ec1dfb3cd22e29da",
-        "8749d072db49eff2"
+        "6fa3129419ea30f2"
       ]
     },
     {
       "company_id": "promega",
       "company": "Promega",
-      "item_count": 57,
+      "item_count": 54,
       "selected_count": 0,
       "high_relevance_count": 4,
       "source_count": 7,
@@ -1707,10 +1714,10 @@
       "event_mix": {
         "target_therapy": 20,
         "regional_expansion": 3,
-        "corporate_strategy": 13,
+        "corporate_strategy": 11,
         "partnership_deal": 8,
         "product_platform": 3,
-        "market_activity": 5,
+        "market_activity": 4,
         "clinical_regulatory": 5
       },
       "top_topics": [
@@ -1750,7 +1757,7 @@
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 32
+          "count": 29
         },
         {
           "label": "竞品对比",
@@ -1761,8 +1768,8 @@
         "73ac260c813681b7",
         "d521c81dbf02238d",
         "e266b9a9e91c986d",
-        "974d06f409e7b131",
         "5d60bfb24f574f1a",
+        "974d06f409e7b131",
         "d4e75cee85557dee",
         "0411f0800e800381",
         "a7c70ae0b9838159",
@@ -1772,7 +1779,6 @@
         "7891b7dd8c6805c8",
         "221691b9a1504046",
         "87004d68504a1446",
-        "22d8c8f8fe513c8b",
         "b3ea2f168c9aa568",
         "ce6356ea9ab1d467",
         "51e2cea10f3e5529",
@@ -1781,8 +1787,8 @@
         "c053cd40b7be1729",
         "b4c7e6944a857d47",
         "98bde546874c83ea",
-        "a7c40182146da6a6",
         "6d1d73cb80d4aef8",
+        "a7c40182146da6a6",
         "5d2808d3f2a31ad1",
         "1029291831e1c71f",
         "45bacf11aead6aec",
@@ -1803,9 +1809,7 @@
         "13dbc89b0618ce53",
         "41851707710766b3",
         "9f2902436ded183e",
-        "8f245427841eb321",
         "b303585f3a2a9daa",
-        "80a7894bf440e62d",
         "eff16fd655949615",
         "78f2a301979bdc9e",
         "d37b444ee8a0370b",
@@ -1856,27 +1860,27 @@
     {
       "company_id": "bd_biosciences",
       "company": "BD Biosciences",
-      "item_count": 48,
+      "item_count": 49,
       "selected_count": 0,
       "high_relevance_count": 0,
       "source_count": 4,
       "latest_activity": "2026-08-23",
       "event_mix": {
-        "corporate_strategy": 18,
-        "product_platform": 27,
-        "market_activity": 2,
+        "corporate_strategy": 19,
+        "product_platform": 28,
+        "market_activity": 1,
         "clinical_regulatory": 1
       },
       "top_topics": [
         {
           "label": "流式 / 细胞分析",
-          "count": 2
+          "count": 3
         }
       ],
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 43
+          "count": 44
         },
         {
           "label": "竞品对比",
@@ -1887,9 +1891,9 @@
         "e2d675aacb0fac2c",
         "0560b6a4f71ae047",
         "09d9c1b4c39cf6a9",
+        "508881d7522abe70",
         "b1f00822937d8175",
         "02d6e035e3910967",
-        "f1ce70864ecccaf0",
         "0e302932693cccef",
         "2cccc623f08b5bed",
         "aa8ee23f0bc4ceaa",
@@ -1899,6 +1903,7 @@
         "7af8f9935ea0bd4b",
         "459df64b88e62660",
         "e1e767179dd1e269",
+        "860b63bc517f66d4",
         "4eedfee5a23dbb9b",
         "47828b246d6d3d26",
         "a06c55a442740304",
@@ -1950,15 +1955,15 @@
     {
       "company_id": "stemcell_technologies",
       "company": "STEMCELL Technologies",
-      "item_count": 13,
+      "item_count": 14,
       "selected_count": 3,
       "high_relevance_count": 0,
       "source_count": 3,
-      "latest_activity": "2026-08-20",
+      "latest_activity": "2026-08-25",
       "event_mix": {
         "corporate_strategy": 1,
         "quality_supply": 3,
-        "market_activity": 9
+        "market_activity": 10
       },
       "top_topics": [
         {
@@ -1977,7 +1982,7 @@
         },
         {
           "label": "归档观察",
-          "count": 3
+          "count": 4
         }
       ],
       "item_ids": [
@@ -1993,19 +1998,20 @@
         "12955a757998c360",
         "7e12341b226631d0",
         "9f117dfa801016cc",
+        "ccc85f71bd66eff0",
         "ecfed407323bfac2"
       ]
     },
     {
       "company_id": "sino_biological",
       "company": "Sino Biological / 义翘神州",
-      "item_count": 26,
+      "item_count": 25,
       "selected_count": 1,
       "high_relevance_count": 2,
       "source_count": 2,
       "latest_activity": "2026-08-13",
       "event_mix": {
-        "product_platform": 17,
+        "product_platform": 16,
         "clinical_regulatory": 2,
         "corporate_strategy": 7
       },
@@ -2030,7 +2036,7 @@
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 14
+          "count": 13
         },
         {
           "label": "竞品对比",
@@ -2040,7 +2046,6 @@
       "item_ids": [
         "5325ed4e8e746126",
         "70973dc169123f5c",
-        "f6b1fa32e972a688",
         "5ba3709515e65561",
         "8cd12cc00742c32f",
         "4484f0dd042f949e",
@@ -2237,20 +2242,20 @@
     {
       "company_id": "sigma_aldrich",
       "company": "Sigma-Aldrich",
-      "item_count": 8,
+      "item_count": 9,
       "selected_count": 0,
       "high_relevance_count": 0,
       "source_count": 4,
       "latest_activity": "2026-08-20",
       "event_mix": {
-        "corporate_strategy": 7,
+        "corporate_strategy": 8,
         "partnership_deal": 1
       },
       "top_topics": [],
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 7
+          "count": 8
         },
         {
           "label": "竞品对比",
@@ -2260,6 +2265,7 @@
       "item_ids": [
         "2d7c7797cfcefb24",
         "81b2bc7480a8bbcc",
+        "74018f07271e6a38",
         "93ed02ed5130603a",
         "ef9f7481377f8ad3",
         "227c1382f19b374d",
@@ -2271,14 +2277,14 @@
     {
       "company_id": "biotechne",
       "company": "Bio-Techne",
-      "item_count": 80,
+      "item_count": 79,
       "selected_count": 3,
       "high_relevance_count": 2,
       "source_count": 11,
       "latest_activity": "2026-08-18",
       "event_mix": {
         "partnership_deal": 25,
-        "corporate_strategy": 20,
+        "corporate_strategy": 19,
         "product_platform": 21,
         "target_therapy": 5,
         "regional_expansion": 2,
@@ -2323,7 +2329,7 @@
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 43
+          "count": 42
         },
         {
           "label": "竞品对比",
@@ -2354,7 +2360,6 @@
         "439433ef70682802",
         "870d1349cc38c8c3",
         "597342a223f325e5",
-        "810e18d0e7fc01bf",
         "b37a4204000f1fa6",
         "184fc9b6b0390698",
         "7e015b5264cfd280",
@@ -2366,6 +2371,7 @@
         "98b2bddb1015eb9c",
         "cff05387ab109dcf",
         "6c812f21703ff9b6",
+        "152c7ff04e7aa014",
         "63edffa787ef06a0",
         "18eb63f029cccd93",
         "034d9a0e994e52de",
@@ -2380,7 +2386,6 @@
         "dd4519e24615a015",
         "30c0b56fc7886b16",
         "48df114241819a96",
-        "65227a618751e483",
         "29445dac947f3f42",
         "dcadc8a4885b56c4",
         "3b8e69304c4196cc",
