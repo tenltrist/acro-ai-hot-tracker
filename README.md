@@ -14,7 +14,7 @@
 - 公开关系账户：结合外部动态判断需求与跟进时机。
 - 市场账户：出现有效动态后，再判断是否值得开发为潜客。
 
-日本账户公开配置写在 `config/japan_accounts.json`。源销售表中的 `ACRO` 内部标记只在导入时校验，不会写入配置或 GitHub Pages；公开页面只显示公开可验证关系与外部动态。
+日本账户公开配置写在 `config/japan_accounts.json`。源销售表中的内部销售状态只在导入时校验，不会写入配置或 GitHub Pages；公开页面只显示公开可验证关系与外部动态。
 
 当前活动生态来源：
 
@@ -56,7 +56,7 @@ python3 ai_hot_tracker/scripts/run_daily.py
 更新日本账户目录时，传入销售工作簿路径：
 
 ```bash
-python3 ai_hot_tracker/scripts/import_japan_accounts.py "/path/to/Global Data-日本客户列表.xlsx"
+python3 ai_hot_tracker/scripts/import_japan_accounts.py "/path/to/Global Data-日本客户列表.xlsx" --private-status-column "<内部字段名>"
 ```
 
 该命令只生成公开安全的账户目录，不导出工作簿中的内部关系状态。

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Create a public-safe Japan account directory from the sales workbook.
 
-The workbook's internal ACRO flag is validated during import but is never
-written to the public dashboard configuration.
+The workbook's private relationship field is validated during import but is
+never written to the public dashboard configuration.
 """
 
 from __future__ import annotations
@@ -48,6 +48,11 @@ ORGANIZATION_LABELS = {
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("workbook", type=Path, help="Path to Global Data-日本客户列表.xlsx")
+    parser.add_argument(
+        "--private-status-column",
+        required=True,
+        help="Name of the private 0/1 relationship-status column; values are validated but never exported",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     return parser.parse_args()
 
@@ -177,7 +182,7 @@ def main() -> int:
     if not rows:
         raise ValueError("workbook is empty")
     headers = rows[0]
-    required = ["UniName", "ParentHeadquarters", "ACRO"]
+    required = ["UniName", "ParentHeadquarters", args.private_status_column]
     missing = [header for header in required if header not in headers]
     if missing:
         raise ValueError(f"missing columns: {', '.join(missing)}")
@@ -185,17 +190,17 @@ def main() -> int:
 
     accounts: list[dict[str, Any]] = []
     seen: set[str] = set()
-    private_flag_counts: Counter[str] = Counter()
+    private_status_counts: Counter[str] = Counter()
     duplicate_count = 0
     for source_row, row in enumerate(rows[1:], start=2):
         value = lambda key: row[positions[key]].strip() if positions[key] < len(row) else ""
         name = value("UniName")
         if not name:
             continue
-        private_flag = value("ACRO")
-        if private_flag not in {"0", "1"}:
-            raise ValueError(f"row {source_row}: ACRO flag must be 0 or 1")
-        private_flag_counts[private_flag] += 1
+        private_status = value(args.private_status_column)
+        if private_status not in {"0", "1"}:
+            raise ValueError(f"row {source_row}: private relationship status must be 0 or 1")
+        private_status_counts[private_status] += 1
         key = normalize_name(name)
         if key in seen:
             duplicate_count += 1
@@ -211,9 +216,9 @@ def main() -> int:
         "imported_at": "2026-08-25",
         "source": f"{args.workbook.name} / {SHEET_NAME}（公开展示版）",
         "semantics": "这是日本市场账户目录，不自动等于已成交客户。公开页面只显示公开可验证关系与外部动态，销售内部状态不发布。",
-        "privacy_note": "源表中的内部 ACRO 标记未写入此配置，也不会进入 GitHub Pages。",
+        "privacy_note": "源表中的内部销售状态不会写入公开配置或 GitHub Pages。",
         "import_summary": {
-            "source_rows": sum(private_flag_counts.values()),
+            "source_rows": sum(private_status_counts.values()),
             "unique_accounts": len(accounts),
             "duplicate_rows_merged": duplicate_count,
             "public_relationships": stage_mix["public_relationship"],
@@ -225,7 +230,7 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {len(accounts)} public-safe accounts to {args.output}")
-    print(f"Validated private flags in memory: {dict(sorted(private_flag_counts.items()))}; none were exported")
+    print(f"Validated private statuses in memory: {dict(sorted(private_status_counts.items()))}; none were exported")
     return 0
 
 
