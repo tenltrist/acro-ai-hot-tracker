@@ -31,6 +31,7 @@ SEEN_PATH = DATA_DIR / "seen_urls.json"
 LATEST_RUN_PATH = DATA_DIR / "latest_run.json"
 SOURCE_SNAPSHOTS_PATH = DATA_DIR / "source_snapshots.json"
 API_DIR = ROOT / "api" / "public"
+PRIORITY_ACCOUNT_MONITORING_PATH = CONFIG_DIR / "priority_account_monitoring.json"
 
 
 USER_AGENT = (
@@ -175,6 +176,158 @@ def save_json(path: Path, data: Any) -> None:
     with path.open("w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
+
+
+def upsert_records(
+    base: list[dict[str, Any]],
+    additions: list[dict[str, Any]],
+    key: str,
+) -> list[dict[str, Any]]:
+    """Merge configuration rows while preserving the base file's display order."""
+    merged = [dict(row) for row in base]
+    positions = {row.get(key): index for index, row in enumerate(merged)}
+    for addition in additions:
+        record_id = addition.get(key)
+        if not record_id:
+            raise ValueError(f"configuration row is missing {key}")
+        if record_id in positions:
+            merged[positions[record_id]] = dict(addition)
+        else:
+            positions[record_id] = len(merged)
+            merged.append(dict(addition))
+    return merged
+
+
+def normalize_priority_source(source: dict[str, Any]) -> dict[str, Any]:
+    """Turn a readable priority-account source spec into a runtime source row."""
+    normalized = {
+        key: value
+        for key, value in source.items()
+        if not key.startswith("coverage_")
+    }
+    if normalized.get("type") != "google_news":
+        return normalized
+
+    query = str(normalized.pop("query", "")).strip()
+    if not query:
+        raise ValueError(f"{normalized.get('id', 'unknown')}: Google News query is empty")
+    language = normalized.pop("language", "ja")
+    region = normalized.pop("region", "JP")
+    edition = normalized.pop("edition", f"{region}:{language}")
+    normalized["type"] = "rss"
+    normalized["url"] = (
+        "https://news.google.com/rss/search?q="
+        f"{urllib.parse.quote(query, safe='')}&hl={language}&gl={region}"
+        f"&ceid={urllib.parse.quote(edition, safe=':')}"
+    )
+    return normalized
+
+
+def build_priority_account_extension(
+    config: dict[str, Any],
+    slot_definitions: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    """Expand one account record into company, source and coverage runtime rows."""
+    companies: list[dict[str, Any]] = []
+    sources: list[dict[str, Any]] = []
+    profiles: list[dict[str, Any]] = []
+    slot_ids = [slot["id"] for slot in slot_definitions]
+
+    for account in config.get("accounts", []):
+        company = dict(account.get("company", {}))
+        company_id = company.get("id")
+        if not company_id:
+            raise ValueError("priority account is missing company.id")
+        company["account_origin_id"] = account.get("account_id", "")
+        company.setdefault("account_monitoring_stage", "priority_market_account")
+        company.setdefault("relationship_status", "unverified")
+        companies.append(company)
+
+        slots = {
+            slot_id: {
+                "status": "pending",
+                "mode": "none",
+                "source_ids": [],
+                "note": "该类来源尚未加入本轮重点账户测试。",
+            }
+            for slot_id in slot_ids
+        }
+        for raw_source in account.get("sources", []):
+            normalized = normalize_priority_source(raw_source)
+            if normalized.get("company_id") not in {None, "", company_id}:
+                raise ValueError(
+                    f"{normalized.get('id')}: source company does not match {company_id}"
+                )
+            normalized["company_id"] = company_id
+            sources.append(normalized)
+            for slot_id in raw_source.get("coverage_slots", []):
+                if slot_id not in slots:
+                    raise ValueError(
+                        f"{raw_source.get('id')}: unknown coverage slot {slot_id}"
+                    )
+                slot = slots[slot_id]
+                slot["source_ids"].append(normalized["id"])
+                incoming_status = raw_source.get("coverage_status", "active")
+                if slot["status"] == "pending" or incoming_status == "active":
+                    slot["status"] = incoming_status
+                incoming_mode = raw_source.get("coverage_mode", "dedicated")
+                if slot["mode"] == "none":
+                    slot["mode"] = incoming_mode
+                elif slot["mode"] != incoming_mode:
+                    slot["mode"] = "mixed"
+                slot["note"] = raw_source.get(
+                    "coverage_note",
+                    normalized.get("health_note", "重点账户专属公开来源。"),
+                )
+
+        for slot_id, shared in account.get("shared_coverage", {}).items():
+            if slot_id not in slots:
+                raise ValueError(f"{company_id}: unknown shared coverage slot {slot_id}")
+            slots[slot_id] = {
+                "status": shared.get("status", "covered"),
+                "mode": shared.get("mode", "shared"),
+                "source_ids": list(shared.get("source_ids", [])),
+                "note": shared.get("note", "由跨公司公开来源共享覆盖。"),
+            }
+
+        profiles.append({"company_id": company_id, "slots": slots})
+
+    return companies, sources, profiles
+
+
+def load_runtime_configuration() -> tuple[
+    dict[str, Any],
+    dict[str, Any],
+    list[dict[str, Any]],
+]:
+    """Load the dashboard configuration, including generated account extensions."""
+    company_config = load_json(CONFIG_DIR / "companies.json")
+    coverage = load_json(CONFIG_DIR / "company_source_coverage.json")
+    sources = load_json(CONFIG_DIR / "sources.json")["sources"]
+    if not PRIORITY_ACCOUNT_MONITORING_PATH.exists():
+        return company_config, coverage, sources
+
+    extension_config = load_json(PRIORITY_ACCOUNT_MONITORING_PATH)
+    extension_companies, extension_sources, extension_profiles = (
+        build_priority_account_extension(
+            extension_config,
+            coverage.get("slot_definitions", []),
+        )
+    )
+    company_config["companies"] = upsert_records(
+        company_config.get("companies", []), extension_companies, "id"
+    )
+    sources = upsert_records(sources, extension_sources, "id")
+    coverage["profiles"] = upsert_records(
+        coverage.get("profiles", []), extension_profiles, "company_id"
+    )
+    coverage["priority_account_extension"] = {
+        "version": extension_config.get("version", ""),
+        "account_count": len(extension_companies),
+        "source_count": len(extension_sources),
+        "principle": extension_config.get("principle", ""),
+    }
+    return company_config, coverage, sources
 
 
 def fetch_text(url: str, retry_http_codes: set[int] | None = None) -> str:
@@ -2049,6 +2202,9 @@ def build_dashboard_payload(
                 "competitive_relevance_rank": company.get("competitive_relevance_rank"),
                 "competitive_relevance_scope": company.get("competitive_relevance_scope", ""),
                 "parent_company_id": company.get("parent_company_id", ""),
+                "account_origin_id": company.get("account_origin_id", ""),
+                "account_monitoring_stage": company.get("account_monitoring_stage", ""),
+                "relationship_status": company.get("relationship_status", ""),
                 "markets": company.get("markets", []),
                 "strategic_topics": company.get("strategic_topics", []),
             }
@@ -2222,21 +2378,19 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    company_config = load_json(CONFIG_DIR / "companies.json")
+    company_config, company_source_coverage, sources = load_runtime_configuration()
     companies = company_config["companies"]
     source_profiles = {
         profile["id"]: profile
         for profile in company_config.get("source_profiles", [])
     }
     intelligence_rules = load_json(CONFIG_DIR / "intelligence_rules.json")
-    company_source_coverage = load_json(CONFIG_DIR / "company_source_coverage.json")
     source_experiments_path = CONFIG_DIR / "source_experiments.json"
     source_experiments = (
         load_json(source_experiments_path)
         if source_experiments_path.exists()
         else {"updated_at": "", "principle": "", "experiments": []}
     )
-    sources = load_json(CONFIG_DIR / "sources.json")["sources"]
     company_lookup = {company["id"]: company for company in companies}
     source_lookup = {source["id"]: source for source in sources}
     seen = load_json(SEEN_PATH) if SEEN_PATH.exists() else {}

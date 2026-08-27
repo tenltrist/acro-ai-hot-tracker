@@ -91,6 +91,7 @@ const state = {
   selectedAccountId: null,
   accountLimit: 40,
   dockOpenRoles: new Set(["self"]),
+  assistantQuestion: "今天市场部应该先做什么？",
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
@@ -498,12 +499,12 @@ const sourceInventory = [
       {
         name: "日本重点账户官方动态",
         contentGroup: "company_news",
-        companyTag: "武田 / Astellas / 第一三共 / Eisai",
+        companyTag: "公开关系账户 + 重点市场账户",
         regionTag: "全球 + 日本",
         status: "active",
         trust: "A",
         method: "官方 RSS / 公告 JSON / 官网定向索引",
-        note: "4 家公开关系重点账户已进入正式跑批。Astellas 使用官方 RSS，第一三共使用官网公开 JSON，武田与 Eisai 使用官网路径定向索引；Google News 只作补漏。",
+        note: "重点账户从统一配置自动进入公司池、来源健康、覆盖档案与日报。优先使用官方 RSS、公告 JSON 或官方公开页；Google News 只作补漏。",
         sourceIds: [
           "takeda_official_news_index",
           "takeda_japan_official_index",
@@ -513,6 +514,15 @@ const sourceInventory = [
           "daiichi_japan_press_json",
           "eisai_official_news_index",
           "eisai_japan_official_index",
+          "chugai_official_news_rss",
+          "ono_official_news_page",
+          "shionogi_official_news_page",
+          "tanabe_official_news_page",
+          "jcr_official_press_page",
+          "peptidream_official_ir_blog",
+          "peptidream_official_news_index",
+          "kaken_official_news_index",
+          "kissei_official_news_page",
         ],
       },
       {
@@ -2000,6 +2010,14 @@ const els = {
   regionFilter: document.querySelector("#regionFilter"),
   executiveHeadline: document.querySelector("#executiveHeadline"),
   executivePoints: document.querySelector("#executivePoints"),
+  assistantMode: document.querySelector("#assistantMode"),
+  assistantDisclosure: document.querySelector("#assistantDisclosure"),
+  assistantQuestion: document.querySelector("#assistantQuestion"),
+  intelligenceAssistantForm: document.querySelector("#intelligenceAssistantForm"),
+  assistantPrompts: document.querySelector(".assistant-prompts"),
+  customerPriorityScope: document.querySelector("#customerPriorityScope"),
+  customerPriorityMatrix: document.querySelector("#customerPriorityMatrix"),
+  openJapanAccountsButton: document.querySelector("#openJapanAccountsButton"),
   signalTrendChart: document.querySelector("#signalTrendChart"),
   trendLegend: document.querySelector("#trendLegend"),
   regionBars: document.querySelector("#regionBars"),
@@ -2509,6 +2527,20 @@ function renderCompanyPools() {
   const monitoredCustomerCompanies = sortCompaniesForDisplay(
     companies.filter((company) => company.business_role === "customer"),
   );
+  const monitoredPublicRelationshipCount = monitoredCustomerCompanies.filter((company) => {
+    const account = accounts.find((row) => row.id === company.account_origin_id);
+    return account?.account_stage === "public_relationship" || company.role_label?.includes("公开关系");
+  }).length;
+  const monitoredMarketAccountCount = Math.max(
+    0,
+    monitoredCustomerCompanies.length - monitoredPublicRelationshipCount,
+  );
+  const selfCount = companies.filter((company) => company.business_role === "self").length;
+  const competitorCount = companies.filter((company) => company.business_role === "competitor").length;
+  const monitoringScope = document.querySelector("#decisionMonitoringScope");
+  if (monitoringScope) {
+    monitoringScope.textContent = `${selfCount} 家本公司 + ${competitorCount} 家竞品 + ${accounts.length} 家日本账户目录（${monitoredCustomerCompanies.length} 家已持续监测）；合作伙伴和生态平台分层管理。`;
+  }
   const asRelationshipMember = (record) => ({
     id: record.id,
     display_name: record.organization,
@@ -2550,7 +2582,7 @@ function renderCompanyPools() {
     {
       id: "customer",
       title: "客户与潜在账户",
-      description: "与竞品分开管理：232 家账户用于市场发现，4 家公开关系重点账户已接入持续监测。这里关注需求、跟进时机和潜客资格。",
+      description: `与竞品分开管理：${accounts.length} 家账户用于市场发现，${monitoredCustomerCompanies.length} 家已接入持续监测（${monitoredPublicRelationshipCount} 家公开关系，${monitoredMarketAccountCount} 家关系待确认）。这里关注需求、跟进时机和潜客资格。`,
       empty: "尚未接入客户与潜在账户目录。",
       count: accounts.length,
       countLabel: `${accounts.length} 家目录 · ${monitoredCustomerCompanies.length} 家监测`,
@@ -3503,7 +3535,9 @@ function renderOverviewScope() {
   els.sourceCount.textContent = `${scoped.length} 条`;
   els.windowDays.textContent = state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`;
 
-  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount);
+  const customerPriorities = buildCustomerAccountPriorities();
+  renderCustomerPriorityMatrix(customerPriorities);
+  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount, customerPriorities);
   renderSignalTrend(scoped, companyRoles);
   renderRegionDistribution(scoped);
   renderCompanyTopicMatrix();
@@ -3618,71 +3652,267 @@ function labelRole(role) {
   }[role] || role;
 }
 
-function renderExecutiveBrief(items, companyRoles, customerCompanyCount, customerSignalCount = 0) {
-  const competitorCompanyCounts = {};
-  const categoryCounts = {};
-  const regionCounts = {};
-  const intelligenceCounts = {};
-  const actionCounts = {};
-  const relevanceCounts = { high: 0, medium: 0, low: 0 };
-  for (const item of items) {
-    for (const companyId of item.matched_company_ids || []) {
-      if (companyRoles.get(companyId) === "competitor") {
-        competitorCompanyCounts[companyId] = (competitorCompanyCounts[companyId] || 0) + 1;
-      }
+function buildCustomerAccountPriorities(days = 90) {
+  const companies = (state.payload.companies || []).filter(
+    (company) => company.business_role === "customer",
+  );
+  const allItems = state.payload.items || [];
+  return companies.map((company) => {
+    const items = allItems.filter((item) =>
+      itemIsWithinRange(item, days) && (item.matched_company_ids || []).includes(company.id),
+    ).sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0));
+    const selectedItems = items.filter((item) => ["daily", "immediate"].includes(item.tier));
+    const highItems = items.filter((item) => item.acro_relevance?.level === "high");
+    const mediumItems = items.filter((item) => item.acro_relevance?.level === "medium");
+    const recent7 = items.filter((item) => itemIsWithinRange(item, 7));
+    const recent30 = items.filter((item) => itemIsWithinRange(item, 30));
+    const sourceIds = new Set(items.flatMap((item) => item.source_ids || [item.source_id]).filter(Boolean));
+    const eventCounts = {};
+    const eventBasis = selectedItems.length ? selectedItems : highItems.length ? highItems : items;
+    for (const item of eventBasis) {
+      const eventType = getBusinessEventType(item);
+      eventCounts[eventType] = (eventCounts[eventType] || 0) + 1;
     }
-    const businessEvent = getBusinessEventType(item);
-    categoryCounts[businessEvent] = (categoryCounts[businessEvent] || 0) + 1;
-    const region = inferItemRegion(item);
-    regionCounts[region] = (regionCounts[region] || 0) + 1;
-    const relevance = item.acro_relevance?.level || "low";
-    relevanceCounts[relevance] = (relevanceCounts[relevance] || 0) + 1;
-    for (const value of [
-      ...(item.intelligence?.targets || []),
-      ...(item.intelligence?.modalities || []),
-      ...(item.intelligence?.product_needs || []),
-    ]) {
-      intelligenceCounts[value] = (intelligenceCounts[value] || 0) + 1;
-    }
-    const actionLabel = item.recommended_action?.label;
-    if (actionLabel && actionLabel !== "归档观察") {
-      actionCounts[actionLabel] = (actionCounts[actionLabel] || 0) + 1;
-    }
-  }
-  const topCompanyEntry = Object.entries(competitorCompanyCounts).sort((a, b) => b[1] - a[1])[0];
-  const topCompany = topCompanyEntry
-    ? state.payload.companies.find((company) => company.id === topCompanyEntry[0])
-    : null;
-  const topCategory = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1])[0];
-  const topRegion = Object.entries(regionCounts)
-    .filter(([region]) => region !== "global")
-    .sort((a, b) => b[1] - a[1])[0];
-  const topIntelligence = Object.entries(intelligenceCounts).sort((a, b) => b[1] - a[1])[0];
-  const topAction = Object.entries(actionCounts).sort((a, b) => b[1] - a[1])[0];
+    const dominantEvent = Object.entries(eventCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || "corporate_strategy";
+    const density = items.length
+      ? Math.round(((highItems.length + mediumItems.length * 0.55) / items.length) * 100)
+      : 0;
+    const publicRelationship = /公开关系/.test(`${company.role_label || ""} ${company.role_reason || ""}`);
+    const freshnessScore = recent7.length ? 12 : recent30.length ? 7 : items.length ? 2 : 0;
+    const priorityScore = Math.min(99, Math.round(
+      Math.log2(1 + selectedItems.length) * 6 +
+      Math.log2(1 + highItems.length) * 4 +
+      density * 0.14 +
+      freshnessScore +
+      Math.log2(1 + sourceIds.size) * 2.5 +
+      Math.min(Object.keys(eventCounts).length, 4) +
+      (publicRelationship ? 3 : 0),
+    ));
+    const keyItem = selectedItems[0] || items[0] || null;
+    const action = buildCustomerPriorityAction(dominantEvent, publicRelationship, selectedItems.length);
+    const urgency = priorityScore >= 76 && selectedItems.length >= 2
+      ? { label: "优先核验", className: "urgent" }
+      : priorityScore >= 54 && selectedItems.length
+        ? { label: "本周跟进", className: "active" }
+        : { label: "持续观察", className: "watch" };
+    return {
+      company,
+      items,
+      selectedItems,
+      highCount: highItems.length,
+      mediumCount: mediumItems.length,
+      recent30Count: recent30.length,
+      sourceCount: sourceIds.size,
+      density,
+      priorityScore,
+      dominantEvent,
+      publicRelationship,
+      keyItem,
+      action,
+      urgency,
+    };
+  }).sort((a, b) =>
+    b.priorityScore - a.priorityScore ||
+    b.density - a.density ||
+    b.selectedItems.length - a.selectedItems.length,
+  );
+}
 
-  els.executiveHeadline.textContent = items.length
-    ? `${state.timeRange} 天内 ${items.length} 条信号：${relevanceCounts.high} 条 ACRO 高相关，${relevanceCounts.medium} 条中相关`
-    : "当前筛选范围内没有达到日报门槛的信号";
-  const points = [
-    topCompany
-      ? `竞品活跃度最高：${shortCompanyName(topCompany.display_name)}，共 ${topCompanyEntry[1]} 条。`
-      : "当前范围内没有明确命中竞品池的信号。",
-    topIntelligence
-      ? `结构化情报中“${topIntelligence[0]}”出现最多，共 ${topIntelligence[1]} 条。`
-      : topCategory
-        ? `当前主要集中于“${labelBusinessEvent(topCategory[0])}”，尚需补充靶点和疗法字段。`
-        : "主题信号暂不足以形成判断。",
-    topAction
-      ? `建议动作最多的是“${topAction[0]}”，共 ${topAction[1]} 条待评估。`
-      : "当前没有信号达到需要人工行动的程度。",
-    topRegion
-      ? `已识别地区中“${labelRegion(topRegion[0])}”最多，共 ${topRegion[1]} 条；其余全球内容仍需进一步结构化。`
-      : "多数内容暂未识别出明确事件地区，地区结果目前只作线索。",
-    customerCompanyCount
-      ? `日本账户目录已接入 ${customerCompanyCount} 家，当前范围识别到 ${customerSignalCount} 条名称匹配动态，可继续判断跟进或潜客机会。`
-      : "账户目录尚未导入，不能把“未接入”解释成“没有客户需求”。",
-  ];
-  els.executivePoints.innerHTML = points.map((point) => `<li>${escapeHtml(point)}</li>`).join("");
+function buildCustomerPriorityAction(eventType, publicRelationship, selectedCount) {
+  const actions = {
+    product_platform: ["匹配产品与平台需求", "产品市场 + 销售"],
+    target_therapy: ["按靶点和疗法匹配产品", "产品市场 + BD"],
+    clinical_regulatory: ["核对管线阶段与实验需求", "销售 + 技术支持"],
+    partnership_deal: ["核验合作方与外包机会", "BD + 销售"],
+    customer_demand: ["调取账户记录并确认需求", "销售 / BD"],
+    market_activity: ["安排活动触达或参会跟进", "区域市场 + 销售"],
+    regional_expansion: ["核对日本团队与渠道触点", "区域市场"],
+    quality_supply: ["评估 GMP 原料与供应机会", "销售 + 质量团队"],
+    corporate_strategy: ["观察组织变化并寻找联系人", "销售运营"],
+  };
+  const [label, owner] = actions[eventType] || actions.corporate_strategy;
+  if (!selectedCount) return { label: "继续采集，暂不触达", owner: "市场情报" };
+  if (publicRelationship) return { label: `调取内部记录，${label}`, owner };
+  return { label: `先核验关系，再${label}`, owner };
+}
+
+function renderCustomerPriorityMatrix(priorities) {
+  if (!els.customerPriorityMatrix) return;
+  const withSignals = priorities.filter((entry) => entry.items.length).length;
+  els.customerPriorityScope.textContent = `近 90 天 · ${priorities.length} 家持续监测 · ${withSignals} 家已有信号`;
+  if (!priorities.length) {
+    els.customerPriorityMatrix.innerHTML = '<div class="empty">尚未配置持续监测的客户或市场账户。</div>';
+    return;
+  }
+  const header = `
+    <div class="customer-priority-row customer-priority-header">
+      <span>账户（优先级高 → 低）</span><span>优先指数</span><span>ACRO 相关密度</span>
+      <span>近 30 天</span><span>主要动向</span><span>建议下一步</span>
+    </div>`;
+  const rows = priorities.map((entry, index) => {
+    const relationship = entry.publicRelationship ? "公开关系证据" : "关系待确认";
+    const keyTitle = entry.keyItem?.title || "暂无可用原文";
+    return `
+      <button class="customer-priority-row" type="button" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
+        <span class="customer-priority-company">
+          <b>${String(index + 1).padStart(2, "0")}</b>
+          <i><strong>${escapeHtml(shortCompanyName(entry.company.display_name))}</strong><small>${escapeHtml(relationship)} · ${entry.sourceCount} 个来源</small></i>
+        </span>
+        <span class="customer-priority-score"><strong>${entry.priorityScore}</strong><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
+        <span class="customer-priority-density"><strong>${entry.density}%</strong><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
+        <span class="customer-priority-count"><strong>${entry.recent30Count}</strong><small>${entry.selectedItems.length} 条进入日报</small></span>
+        <span class="customer-priority-topic"><strong>${escapeHtml(labelBusinessEvent(entry.dominantEvent, true))}</strong><small>${escapeHtml(keyTitle)}</small></span>
+        <span class="customer-priority-action"><b class="${entry.urgency.className}">${entry.urgency.label}</b><strong>${escapeHtml(entry.action.label)}</strong><small>${escapeHtml(entry.action.owner)}</small></span>
+      </button>`;
+  }).join("");
+  els.customerPriorityMatrix.innerHTML = `<div class="customer-priority-scroll">${header}${rows}</div>`;
+}
+
+function groupCompanyActivity(items, role) {
+  const companies = (state.payload.companies || []).filter((company) => company.business_role === role);
+  return companies.map((company) => {
+    const matches = items.filter((item) => (item.matched_company_ids || []).includes(company.id));
+    const eventCounts = {};
+    for (const item of matches) {
+      const eventType = getBusinessEventType(item);
+      eventCounts[eventType] = (eventCounts[eventType] || 0) + 1;
+    }
+    const dominantEvent = Object.entries(eventCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || "corporate_strategy";
+    return {
+      company,
+      items: matches,
+      selectedCount: matches.filter((item) => ["daily", "immediate"].includes(item.tier)).length,
+      highCount: matches.filter((item) => item.acro_relevance?.level === "high").length,
+      dominantEvent,
+      keyItem: [...matches].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0))[0] || null,
+    };
+  }).filter((entry) => entry.items.length).sort((a, b) =>
+    b.selectedCount - a.selectedCount || b.highCount - a.highCount || b.items.length - a.items.length,
+  );
+}
+
+function topEventEntries(items, limit = 3) {
+  const counts = {};
+  for (const item of items) {
+    const eventType = getBusinessEventType(item);
+    counts[eventType] = (counts[eventType] || 0) + 1;
+  }
+  return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, limit);
+}
+
+function classifyAssistantQuestion(question) {
+  if (/客户|账户|销售|跟进|crm|机会/i.test(question)) return "account";
+  if (/竞品|竞争|对标|回应/i.test(question)) return "competitor";
+  if (/先做什么|接下来|应该|怎么做|行动|建议/i.test(question)) return "action";
+  if (/日本|亚太|地区|市场|热点|趋势/i.test(question)) return "market";
+  if (/数据源|来源|健康|抓取|数据质量/i.test(question)) return "source";
+  return "action";
+}
+
+function buildAssistantResponse(question, items, customerPriorities) {
+  const intent = classifyAssistantQuestion(question);
+  const competitorActivity = groupCompanyActivity(items, "competitor");
+  const japanItems = items.filter((item) => inferItemRegion(item) === "japan");
+  const accountEntries = customerPriorities.filter((entry) => entry.items.length).slice(0, 3);
+  const actionForAccount = (entry) => ({
+    label: entry.urgency.label,
+    title: `${shortCompanyName(entry.company.display_name)}：${entry.action.label}`,
+    detail: `优先指数 ${entry.priorityScore}，ACRO 中高相关密度 ${entry.density}%，近 30 天 ${entry.recent30Count} 条，${entry.selectedItems.length} 条进入日报。`,
+    owner: entry.action.owner,
+    company: entry.company.display_name,
+    category: entry.dominantEvent,
+  });
+  const actionForCompetitor = (entry) => ({
+    label: "竞品应对",
+    title: `${shortCompanyName(entry.company.display_name)}：${labelBusinessEvent(entry.dominantEvent)}`,
+    detail: `${entry.items.length} 条相关动态，其中 ${entry.selectedCount} 条进入日报、${entry.highCount} 条 ACRO 高相关；先对比产品定位、话术和区域覆盖。`,
+    owner: "产品市场",
+    company: entry.company.display_name,
+    category: entry.dominantEvent,
+  });
+  if (intent === "account") {
+    return {
+      headline: accountEntries.length ? "销售与市场优先核验这 3 家账户" : "当前没有足够的账户行动证据",
+      actions: accountEntries.map(actionForAccount),
+    };
+  }
+  if (intent === "competitor") {
+    return {
+      headline: competitorActivity.length ? "这些竞品动作最值得产品市场回应" : "当前范围内没有明确竞品动作",
+      actions: competitorActivity.slice(0, 3).map(actionForCompetitor),
+    };
+  }
+  if (intent === "market") {
+    const marketBase = japanItems.length ? japanItems : items;
+    return {
+      headline: japanItems.length ? `日本市场的 ${japanItems.length} 条信号集中在这些方向` : "当前范围的地区热点尚未形成日本样本",
+      actions: topEventEntries(marketBase).map(([eventType, count]) => {
+        const keyItem = marketBase.find((item) => getBusinessEventType(item) === eventType);
+        return {
+          label: "市场主题",
+          title: labelBusinessEvent(eventType),
+          detail: `${count} 条相关信号。代表事件：${keyItem?.title || "暂无代表事件"}`,
+          owner: eventType === "market_activity" ? "区域市场" : "产品市场",
+          company: keyItem?.matched_companies?.[0] || "",
+          category: eventType,
+        };
+      }),
+    };
+  }
+  if (intent === "source") {
+    const rows = getSourceHealthRows().filter((row) => row.enabled !== false);
+    const productive = rows.filter((row) => row.status === "productive").length;
+    const quiet = rows.filter((row) => row.status === "quiet").length;
+    const errors = rows.filter((row) => row.status === "error").length;
+    return {
+      headline: `${rows.length} 个运行来源中，${productive} 个本轮有有效产出`,
+      actions: [
+        { label: "可用产出", title: `${productive} 个来源正在产生有效信号`, detail: "优先保留连续产出且能命中日报的来源。", owner: "系统" },
+        { label: "低产观察", title: `${quiet} 个来源本轮安静`, detail: "安静不等于失效，需要结合发布频率连续观察。", owner: "数据运营" },
+        { label: errors ? "需要修复" : "链路正常", title: errors ? `${errors} 个来源抓取异常` : "本轮没有抓取错误", detail: errors ? "进入数据源健康页查看错误和替代入口。" : "继续观察下一轮连续性。", owner: "数据运营" },
+      ],
+    };
+  }
+  const actions = [];
+  if (accountEntries[0]) actions.push(actionForAccount(accountEntries[0]));
+  if (competitorActivity[0]) actions.push(actionForCompetitor(competitorActivity[0]));
+  const topMarketEvent = topEventEntries(japanItems.length ? japanItems : items, 1)[0];
+  if (topMarketEvent) {
+    actions.push({
+      label: "市场内容",
+      title: `围绕“${labelBusinessEvent(topMarketEvent[0])}”准备本周内容或活动判断`,
+      detail: `${japanItems.length ? "日本" : "当前范围"}共有 ${topMarketEvent[1]} 条该主题信号，可用代表事件校准选题和销售话术。`,
+      owner: "市场运营",
+      category: topMarketEvent[0],
+    });
+  }
+  return {
+    headline: actions.length ? "今天建议先做这 3 件事" : "当前筛选范围暂时没有可执行信号",
+    actions,
+  };
+}
+
+function renderExecutiveBrief(items, companyRoles, customerCompanyCount, customerSignalCount = 0, customerPriorities = []) {
+  const response = buildAssistantResponse(state.assistantQuestion, items, customerPriorities);
+  const summaryPipeline = state.payload.summary_pipeline || {};
+  const hasModelSummaries = summaryPipeline.status === "complete" && Number(summaryPipeline.generated) > 0;
+  els.executiveHeadline.textContent = response.headline;
+  els.assistantMode.textContent = hasModelSummaries
+    ? `AI 摘要 ${summaryPipeline.generated} 条 + 规则决策`
+    : "证据驱动规则分析";
+  els.assistantQuestion.value = state.assistantQuestion;
+  els.assistantDisclosure.textContent = hasModelSummaries
+    ? `已在 ${items.length} 条当前信号上结合模型摘要与结构化规则；点击建议可查看对应证据。`
+    : `已分析当前 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前未调用外部大模型。`;
+  els.executivePoints.innerHTML = response.actions.length
+    ? response.actions.map((action, index) => `
+        <li>
+          <button type="button" data-assistant-company="${escapeAttr(action.company || "")}" data-assistant-category="${escapeAttr(action.category || "")}">
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <i><small>${escapeHtml(action.label)}</small><strong>${escapeHtml(action.title)}</strong><em>${escapeHtml(action.detail)}</em><b>${escapeHtml(action.owner)}</b></i>
+          </button>
+        </li>`).join("")
+    : '<li class="assistant-empty">调整观察周期或筛选条件后再试。</li>';
 }
 
 function renderSignalTrend(items, companyRoles) {
@@ -5583,6 +5813,78 @@ els.relationshipLayerControl.querySelectorAll("[data-graph-layer]").forEach((but
   });
 });
 
+function openOverviewEvidence(company = "", category = "") {
+  state.sourceOutputId = "all";
+  state.sourceOutputLabel = "";
+  state.searchQuery = "";
+  state.signalType = "all";
+  state.relevance = "all";
+  state.region = "all";
+  state.company = company || "all";
+  state.category = category || "all";
+  state.tier = "all";
+  state.role = "all";
+  state.timeRange = 90;
+  state.page = "signals";
+  els.searchInput.value = "";
+  els.signalTypeFilter.value = "all";
+  els.relevanceFilter.value = "all";
+  els.regionFilter.value = "all";
+  els.companyFilter.value = state.company;
+  els.categoryFilter.value = state.category;
+  els.tierFilter.value = "all";
+  els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
+    button.classList.toggle("active", Number(button.dataset.timeRange) === 90);
+  });
+  els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.roleFilter === "all");
+  });
+  renderPage();
+  renderOverviewScope();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+els.intelligenceAssistantForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const question = els.assistantQuestion.value.trim();
+  state.assistantQuestion = question || "今天市场部应该先做什么？";
+  renderOverviewScope();
+});
+
+els.assistantPrompts.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-assistant-prompt]");
+  if (!button) return;
+  state.assistantQuestion = button.dataset.assistantPrompt;
+  renderOverviewScope();
+});
+
+els.executivePoints.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-assistant-company][data-assistant-category]");
+  if (!button) return;
+  if (!button.dataset.assistantCompany && !button.dataset.assistantCategory) {
+    if (classifyAssistantQuestion(state.assistantQuestion) === "source") {
+      state.page = "source-health";
+      renderPage();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    return;
+  }
+  openOverviewEvidence(button.dataset.assistantCompany, button.dataset.assistantCategory);
+});
+
+els.customerPriorityMatrix.addEventListener("click", (event) => {
+  const row = event.target.closest("[data-customer-priority-company]");
+  if (!row) return;
+  openOverviewEvidence(row.dataset.customerPriorityCompany);
+});
+
+els.openJapanAccountsButton.addEventListener("click", () => {
+  state.page = "japan-customers";
+  renderJapanAccountIntelligence();
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
   button.addEventListener("click", () => {
     state.sourceOutputId = "all";
@@ -5635,24 +5937,7 @@ els.refreshButton.addEventListener("click", () => loadData());
 els.companyTopicMatrix.addEventListener("click", (event) => {
   const cell = event.target.closest("[data-matrix-company][data-matrix-category]");
   if (!cell) return;
-  state.company = cell.dataset.matrixCompany;
-  state.category = cell.dataset.matrixCategory;
-  state.tier = "all";
-  state.role = "all";
-  state.timeRange = 90;
-  state.page = "signals";
-  els.companyFilter.value = state.company;
-  els.categoryFilter.value = state.category;
-  els.tierFilter.value = "all";
-  els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
-    button.classList.toggle("active", Number(button.dataset.timeRange) === 90);
-  });
-  els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.roleFilter === "all");
-  });
-  renderPage();
-  renderOverviewScope();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  openOverviewEvidence(cell.dataset.matrixCompany, cell.dataset.matrixCategory);
 });
 
 els.sourceStageFilter.addEventListener("change", (event) => {

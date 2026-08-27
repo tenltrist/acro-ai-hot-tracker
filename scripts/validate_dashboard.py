@@ -11,6 +11,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "latest_run.json"
 JAPAN_ACCOUNTS_PATH = ROOT / "config" / "japan_accounts.json"
+PRIORITY_ACCOUNT_MONITORING_PATH = ROOT / "config" / "priority_account_monitoring.json"
 
 
 def load_payload() -> dict[str, Any]:
@@ -70,6 +71,26 @@ def main() -> int:
         "daiichi_sankyo",
         "eisai",
     }
+    priority_account_links: dict[str, str] = {}
+    if PRIORITY_ACCOUNT_MONITORING_PATH.exists():
+        with PRIORITY_ACCOUNT_MONITORING_PATH.open("r", encoding="utf-8") as handle:
+            priority_config = json.load(handle)
+        priority_account_links = {
+            account.get("company", {}).get("id", ""): account.get("account_id", "")
+            for account in priority_config.get("accounts", [])
+            if account.get("company", {}).get("id")
+        }
+        priority_customer_ids.update(priority_account_links)
+
+        with JAPAN_ACCOUNTS_PATH.open("r", encoding="utf-8") as handle:
+            japan_account_ids = {
+                account.get("id") for account in json.load(handle).get("accounts", [])
+            }
+        missing_directory_links = set(priority_account_links.values()) - japan_account_ids
+        if missing_directory_links:
+            errors.append(
+                f"priority monitoring accounts are missing from Japan directory {sorted(missing_directory_links)}"
+            )
     missing_priority_customers = priority_customer_ids - company_ids
     if missing_priority_customers:
         errors.append(
@@ -78,6 +99,9 @@ def main() -> int:
     for company_id in priority_customer_ids & company_ids:
         if companies_by_id[company_id].get("business_role") != "customer":
             errors.append(f"{company_id}: priority account is not classified as customer")
+        expected_account_id = priority_account_links.get(company_id)
+        if expected_account_id and companies_by_id[company_id].get("account_origin_id") != expected_account_id:
+            errors.append(f"{company_id}: dashboard company is disconnected from Japan account directory")
 
     item_ids = [item.get("id") for item in items]
     urls = [item.get("url") for item in items]

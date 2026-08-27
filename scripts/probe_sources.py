@@ -26,7 +26,15 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    candidate_sources = tracker.load_json(args.config)["sources"]
+    probe_config = tracker.load_json(args.config)
+    if "accounts" in probe_config:
+        runtime_company_config, runtime_coverage, _ = tracker.load_runtime_configuration()
+        _, candidate_sources, _ = tracker.build_priority_account_extension(
+            probe_config,
+            runtime_coverage.get("slot_definitions", []),
+        )
+    else:
+        candidate_sources = probe_config["sources"]
     if args.only:
         candidate_sources = [
             source
@@ -35,7 +43,7 @@ def main() -> int:
         ]
     if not candidate_sources:
         parser.error("no candidate sources matched --only")
-    company_config = tracker.load_json(tracker.CONFIG_DIR / "companies.json")
+    company_config, _, _ = tracker.load_runtime_configuration()
     company_lookup = {company["id"]: company for company in company_config["companies"]}
     profiles = {
         profile["id"]: profile

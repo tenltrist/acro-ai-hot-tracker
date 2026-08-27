@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260827customers" />
+    <link rel="stylesheet" href="./styles.css?v=20260828crm" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -153,17 +153,55 @@
         </article>
       </section>
 
-      <section class="decision-band dashboard-brief page-panel" data-page="overview" aria-label="Executive brief">
-        <div class="brief-copy">
-          <p class="eyebrow">老板摘要</p>
-          <h2 id="executiveHeadline">正在生成本期判断</h2>
-          <ul id="executivePoints" class="executive-points"></ul>
+      <section class="decision-band marketing-assistant page-panel" data-page="overview" aria-label="AI intelligence assistant">
+        <div class="assistant-brief">
+          <div class="assistant-title-row">
+            <div>
+              <p class="eyebrow">AI 情报助手</p>
+              <h2 id="executiveHeadline">正在整理今天最值得做的事</h2>
+            </div>
+            <span class="assistant-mode" id="assistantMode">证据驱动分析</span>
+          </div>
+          <ol id="executivePoints" class="assistant-action-list"></ol>
         </div>
-        <div class="brief-status-grid">
-          <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
-          <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
-          <div><span>当前范围</span><strong id="windowDays">30 天</strong></div>
+        <aside class="assistant-query-panel">
+          <div class="assistant-query-head">
+            <strong>问当前数据</strong>
+            <small>答案只引用本轮公开情报</small>
+          </div>
+          <div class="assistant-prompts" aria-label="常用问题">
+            <button type="button" data-assistant-prompt="今天市场部应该先做什么？">今日先做什么</button>
+            <button type="button" data-assistant-prompt="哪些客户账户最值得销售跟进？">账户跟进</button>
+            <button type="button" data-assistant-prompt="竞品最近有什么值得回应的动作？">竞品应对</button>
+            <button type="button" data-assistant-prompt="日本市场最近有哪些热点？">日本热点</button>
+          </div>
+          <form id="intelligenceAssistantForm" class="assistant-form">
+            <label class="sr-only" for="assistantQuestion">向情报助手提问</label>
+            <input id="assistantQuestion" type="text" autocomplete="off" placeholder="例如：接下来最该跟进哪家公司？">
+            <button type="submit">分析</button>
+          </form>
+          <p class="assistant-disclosure" id="assistantDisclosure">当前为规则分析 MVP；接入模型后可在同一入口进行开放问答。</p>
+          <div class="brief-status-grid assistant-status-grid">
+            <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
+            <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
+            <div><span>当前范围</span><strong id="windowDays">30 天</strong></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="customer-priority-section page-panel" data-page="overview" aria-label="Customer account priority matrix">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">销售市场 CRM 视角</p>
+            <h2>重点账户行动矩阵</h2>
+          </div>
+          <div class="section-actions">
+            <span id="customerPriorityScope">近 90 天公开信号相对排序</span>
+            <button class="text-button" id="openJapanAccountsButton" type="button">查看账户目录</button>
+          </div>
         </div>
+        <div id="customerPriorityMatrix" class="customer-priority-matrix"></div>
+        <p class="matrix-method-note">优先级综合 ACRO 中高相关密度、进入日报信号、时效性和来源多样性；它用于安排跟进顺序，不代表成交概率或内部客户关系。</p>
       </section>
 
       <section class="business-lanes-section page-panel" data-page="overview" aria-label="Supervisor action desk">
@@ -636,7 +674,7 @@
           </div>
         </div>
         <div class="question-list decision-register">
-          <div class="decided"><b>已确定</b><strong>监测范围</strong><span>ACRO + 18 家竞品 + 232 家日本客户与潜在账户；合作伙伴和生态平台分层管理。</span></div>
+          <div class="decided"><b>已确定</b><strong>监测范围</strong><span id="decisionMonitoringScope">根据当前公司池与日本账户目录自动计算。</span></div>
           <div class="decided"><b>已确定</b><strong>准入标准</strong><span>高分即时提醒、中分进入日报、低分归档；低 ACRO 相关内容不进入主管视图。</span></div>
           <div class="decided"><b>已确定</b><strong>公开边界</strong><span>GitHub Pages 只展示公开数据；销售表中的内部关系状态不发布。</span></div>
           <div class="next"><b>下一阶段</b><strong>协作闭环</strong><span>确认谁负责核验、分派和关闭信号，并决定是否接入多人共享数据库。</span></div>
@@ -721,7 +759,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260827customers"></script>
-    <script src="./app.js?v=20260827customers"></script>
+    <script src="./embedded-data.js?v=20260828crm"></script>
+    <script src="./app.js?v=20260828crm"></script>
   </body>
 </html>

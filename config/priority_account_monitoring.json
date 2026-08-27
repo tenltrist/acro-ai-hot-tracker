@@ -1,0 +1,386 @@
+{
+  "version": "2026-08-28",
+  "principle": "从 232 家日本账户目录中选取优先市场账户进行公开信息监测。进入公司池只表示持续监测，不代表已成交、已合作或经内部确认的客户关系。",
+  "accounts": [
+    {
+      "account_id": "jp-account-6a58fd2de4",
+      "company": {
+        "id": "chugai_pharma",
+        "display_name": "Chugai Pharmaceutical / 中外制药",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；本轮仅建立市场情报监测，不将名单记录解读为成交或合作证据。",
+        "monitoring_focus": "抗体药物、肿瘤管线、临床与申报、技术授权、共同研发与生物标志物",
+        "aliases": ["Chugai Pharmaceutical", "Chugai Pharma", "中外制药", "中外製薬"],
+        "markets": ["japan", "global", "biopharma", "priority-account"],
+        "strategic_topics": ["antibody", "bispecific", "ADC", "oncology", "biomarker", "clinical trial", "GMP", "抗体", "バイオマーカー", "臨床"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "agreement", "launch", "manufacturing", "承認", "申請", "契約", "共同研究"],
+        "noise_terms": ["financial results", "earnings", "dividend", "stock", "決算", "株価", "配当", "人事"]
+      },
+      "sources": [
+        {
+          "id": "chugai_official_news_rss",
+          "label": "Chugai newsroom - official RSS",
+          "type": "rss",
+          "url": "https://www.chugai-pharm.co.jp/rss/news_releases.php",
+          "trust": "owned",
+          "max_age_days": 365,
+          "max_items": 40,
+          "health_note": "中外制药 Newsroom 公开的官方 RSS，保留标题、日期和原文链接。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_chugai_account",
+          "label": "Google News RSS - Chugai Pharmaceutical",
+          "type": "google_news",
+          "query": "\"Chugai Pharmaceutical\" OR 中外製薬 OR 中外制药",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 35,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "中外制药日英公司名新闻补漏，不作为官方证据源。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "全球新闻稿平台共享补漏。"},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 共享公开临床记录。"}
+      }
+    },
+    {
+      "account_id": "jp-account-f95219d645",
+      "company": {
+        "id": "ono_pharma",
+        "display_name": "Ono Pharmaceutical / 小野药品",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；监测公司动作与潜在需求，不推断内部客户状态。",
+        "monitoring_focus": "肿瘤与免疫、抗体药物、新靶点、临床试验、授权合作和区域获批",
+        "aliases": ["Ono Pharmaceutical", "Ono Pharmaceutical Co.", "小野药品", "小野薬品", "小野薬品工業"],
+        "markets": ["japan", "global", "biopharma", "priority-account"],
+        "strategic_topics": ["antibody", "immuno-oncology", "oncology", "fibrosis", "clinical trial", "biomarker", "抗体医药", "創薬", "研究開発"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "option agreement", "launch", "承認", "申請", "創薬提携", "ライセンス"],
+        "noise_terms": ["financial results", "treasury stock", "dividend", "stock", "決算", "自己株式", "株価", "人事"]
+      },
+      "sources": [
+        {
+          "id": "ono_official_news_page",
+          "label": "Ono Pharmaceutical Japan news - official page",
+          "type": "html_links",
+          "url": "https://www.ono-pharma.com/ja/news",
+          "trust": "owned",
+          "include_url_terms": ["/ja/news/"],
+          "max_age_days": 365,
+          "max_items": 45,
+          "health_note": "小野药品日本官网 News 公开列表，重点保留研发、获批与授权动作。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_ono_account",
+          "label": "Google News RSS - Ono Pharmaceutical",
+          "type": "google_news",
+          "query": "\"Ono Pharmaceutical\" OR 小野薬品 OR 小野药品",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 35,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "小野药品公司名定向补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公开 Sponsor / Collaborator 记录。"}
+      }
+    },
+    {
+      "account_id": "jp-account-e1f2b6c9f0",
+      "company": {
+        "id": "shionogi",
+        "display_name": "Shionogi / 盐野义制药",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；目录中的机构分类不作为商业关系证据，本轮只开启公开信息监测。",
+        "monitoring_focus": "感染、罕见病、新药研发、技术平台、授权交易、申报获批与数字化研发",
+        "aliases": ["Shionogi", "Shionogi & Co.", "盐野义制药", "塩野義製薬", "SHIONOGI"],
+        "markets": ["japan", "global", "biopharma", "priority-account"],
+        "strategic_topics": ["infectious disease", "antibody", "rare disease", "AI drug discovery", "clinical trial", "GMP", "感染症", "創薬", "希少疾患"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "acquisition", "launch", "承認", "申請", "契約", "買収"],
+        "noise_terms": ["financial results", "briefing materials", "dividend", "stock", "決算", "説明会資料", "株価", "人事"]
+      },
+      "sources": [
+        {
+          "id": "shionogi_official_news_page",
+          "label": "Shionogi Japan news - official page",
+          "type": "html_links",
+          "url": "https://www.shionogi.com/jp/ja/news.html",
+          "trust": "owned",
+          "include_url_terms": ["/jp/ja/news/"],
+          "max_age_days": 365,
+          "max_items": 50,
+          "health_note": "盐野义制药日本官网公开 News 列表，可读取新闻稿与对外公告。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_shionogi_account",
+          "label": "Google News RSS - Shionogi",
+          "type": "google_news",
+          "query": "Shionogi OR 塩野義製薬 OR 盐野义制药",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 35,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "Shionogi 日英公司名聚合补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"]}
+      }
+    },
+    {
+      "account_id": "jp-account-83e92c2552",
+      "company": {
+        "id": "tanabe_pharma",
+        "display_name": "Tanabe Pharma / 田边制药",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；本轮监测采用公司现名与历史名别名，不推断采购或合作关系。",
+        "monitoring_focus": "罕见病、神经科学、免疫与代谢、管线进展、权益交易、获批和生产变化",
+        "aliases": ["Tanabe Pharma", "Tanabe Pharma Corporation", "Mitsubishi Tanabe Pharma", "田边制药", "田辺ファーマ", "田辺三菱製薬"],
+        "markets": ["japan", "global", "biopharma", "priority-account"],
+        "strategic_topics": ["rare disease", "neurology", "immunology", "antibody", "clinical trial", "GMP", "希少疾患", "神経", "免疫"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "agreement", "divest", "launch", "承認", "申請", "契約", "譲渡"],
+        "noise_terms": ["financial results", "dividend", "stock", "決算", "株価", "人事", "議決権"]
+      },
+      "sources": [
+        {
+          "id": "tanabe_official_news_page",
+          "label": "Tanabe Pharma Japan news - official page",
+          "type": "html_links",
+          "url": "https://www.tanabe-pharma.com/ja/index.html",
+          "trust": "owned",
+          "include_url_terms": ["/ja/news/"],
+          "max_age_days": 365,
+          "max_items": 40,
+          "health_note": "田边制药官网首页的公开最新信息入口，保留药品、管线和交易动作。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_tanabe_account",
+          "label": "Google News RSS - Tanabe Pharma",
+          "type": "google_news",
+          "query": "\"Tanabe Pharma\" OR \"Mitsubishi Tanabe Pharma\" OR 田辺ファーマ OR 田辺三菱製薬",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 35,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "公司现名与历史名聚合补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"]}
+      }
+    },
+    {
+      "account_id": "jp-account-7e3077f744",
+      "company": {
+        "id": "jcr_pharma",
+        "display_name": "JCR Pharmaceuticals / JCR Pharma",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；作为生物制药重点账户进行公开动态监测，不表示商业关系已确认。",
+        "monitoring_focus": "罕见病、酶替代疗法、血脑屏障技术、基因治疗、生产质量、授权与海外获批",
+        "aliases": ["JCR Pharmaceuticals", "JCR Pharma", "JCRファーマ", "ＪＣＲファーマ"],
+        "markets": ["japan", "global", "biopharma", "rare-disease", "priority-account"],
+        "strategic_topics": ["rare disease", "enzyme replacement", "blood-brain barrier", "gene therapy", "AAV", "GMP", "希少疾患", "遺伝子治療"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "partnership", "manufacturing", "launch", "承認", "申請", "ライセンス", "製造"],
+        "noise_terms": ["financial results", "treasury stock", "dividend", "stock", "決算", "自己株式", "株価", "株主総会"]
+      },
+      "sources": [
+        {
+          "id": "jcr_official_press_page",
+          "label": "JCR Pharmaceuticals press releases - official page",
+          "type": "html_links",
+          "url": "https://www.jcrpharm.co.jp/pressrelease/",
+          "trust": "owned",
+          "include_url_terms": ["/news/", "/pressrelease/"],
+          "exclude_url_terms": ["/pressrelease/$"],
+          "max_age_days": 365,
+          "max_items": 45,
+          "health_note": "JCR Pharma 日本官网 Press Releases，包含产品、研发、授权与对外合作。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_jcr_account",
+          "label": "Google News RSS - JCR Pharmaceuticals",
+          "type": "google_news",
+          "query": "\"JCR Pharmaceuticals\" OR JCRファーマ OR ＪＣＲファーマ",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 35,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "JCR Pharma 日英公司名聚合补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"]}
+      }
+    },
+    {
+      "account_id": "jp-account-c30f1cf46a",
+      "company": {
+        "id": "peptidream",
+        "display_name": "PeptiDream / 肽梦",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；作为技术平台型生物医药账户持续监测，不将名单记录视为已有客户关系。",
+        "monitoring_focus": "特殊环肽、肽药物偶联物、放射性药物、PDPS 平台、新靶点、合作研发与技术授权",
+        "aliases": ["PeptiDream", "PeptiDream Inc.", "肽梦", "ペプチドリーム"],
+        "markets": ["japan", "global", "biopharma", "drug-discovery", "priority-account"],
+        "strategic_topics": ["peptide", "macrocyclic peptide", "radiopharmaceutical", "drug conjugate", "PDPS", "target discovery", "ペプチド", "放射性医药品"],
+        "business_actions": ["clinical", "collaboration", "license", "partnership", "nomination", "IND", "agreement", "臨床試験", "共同研究", "ライセンス"],
+        "noise_terms": ["financial results", "stock", "dividend", "決算", "株価", "株主総会", "人事"]
+      },
+      "sources": [
+        {
+          "id": "peptidream_official_ir_blog",
+          "label": "PeptiDream R&D and IR blog - official page",
+          "type": "html_links",
+          "url": "https://www.peptidream.com/ir/blog/",
+          "trust": "owned",
+          "include_url_terms": ["/ir/blog/"],
+          "max_age_days": 365,
+          "max_items": 45,
+          "exclude_title_terms": ["決算", "株主総会", "配当"],
+          "health_note": "PeptiDream 官方 IR Blog 中的研发进展、技术方向与行业活动。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "peptidream_official_news_index",
+          "label": "PeptiDream official news - indexed RSS",
+          "type": "google_news",
+          "query": "site:peptidream.com (PeptiDream OR ペプチドリーム) (news OR 開発 OR 臨床 OR 契約 OR 研究)",
+          "trust": "owned",
+          "max_age_days": 365,
+          "max_items": 35,
+          "health_note": "官方域名定向公开索引，补足动态页的前端渲染限制。",
+          "coverage_slots": ["official_news"]
+        },
+        {
+          "id": "google_news_peptidream_account",
+          "label": "Google News RSS - PeptiDream",
+          "type": "google_news",
+          "query": "PeptiDream OR ペプチドリーム",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 35,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "PeptiDream 公司名新闻补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"]}
+      }
+    },
+    {
+      "account_id": "jp-account-112ee72d51",
+      "company": {
+        "id": "kaken_pharma",
+        "display_name": "Kaken Pharmaceutical / 科研制药",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；作为日本研发型药企建立持续监测，不代表已有业务关系。",
+        "monitoring_focus": "皮肤科、骨科、临床开发、产品获批与上市、对外授权、研发与生产合作",
+        "aliases": ["Kaken Pharmaceutical", "KAKEN", "科研制药", "科研製薬"],
+        "markets": ["japan", "biopharma", "priority-account"],
+        "strategic_topics": ["dermatology", "orthopedics", "antibody", "clinical trial", "drug discovery", "GMP", "皮膚科", "研究開発"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "agreement", "launch", "承認", "申請", "契約", "発売"],
+        "noise_terms": ["financial results", "stock", "dividend", "決算", "株価", "配当", "人事"]
+      },
+      "sources": [
+        {
+          "id": "kaken_official_news_index",
+          "label": "Kaken Pharmaceutical official news - indexed RSS",
+          "type": "google_news",
+          "query": "site:kaken.co.jp (科研製薬 OR 科研制药 OR \"Kaken Pharmaceutical\") (承認 OR 申請 OR 契約 OR 研究 OR 開発 OR 発売)",
+          "trust": "owned",
+          "max_age_days": 365,
+          "max_items": 40,
+          "health_note": "科研制药新闻列表由前端动态载入，因此使用官方域名定向索引，仅保留承认、申报、契约和研发页。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_kaken_account",
+          "label": "Google News RSS - Kaken Pharmaceutical",
+          "type": "google_news",
+          "query": "\"Kaken Pharmaceutical\" OR 科研製薬 OR 科研制药",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 30,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "Kaken 日英公司名聚合补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"]}
+      }
+    },
+    {
+      "account_id": "jp-account-6960049811",
+      "company": {
+        "id": "kissei_pharma",
+        "display_name": "Kissei Pharmaceutical / 杏林制药",
+        "business_role": "customer",
+        "role_label": "重点市场账户 / 关系待确认",
+        "role_reason": "来自公开日本账户名单；本轮只根据公开官网和新闻建立重点账户监测，不声称已成交。",
+        "monitoring_focus": "肾脏、内分泌与代谢、罕见病、临床管线、技术导入导出、新药申报与上市",
+        "aliases": ["Kissei Pharmaceutical", "Kissei", "杏林制药", "キッセイ薬品", "キッセイ薬品工業"],
+        "markets": ["japan", "biopharma", "priority-account"],
+        "strategic_topics": ["rare disease", "nephrology", "endocrinology", "oncology", "clinical trial", "GMP", "希少疾患", "腎臓", "代謝"],
+        "business_actions": ["approval", "application", "clinical", "collaboration", "license", "agreement", "launch", "承認", "申請", "技術導出", "新発売"],
+        "noise_terms": ["financial results", "treasury stock", "stock", "dividend", "決算", "自己株式", "株価", "人事"]
+      },
+      "sources": [
+        {
+          "id": "kissei_official_news_page",
+          "label": "Kissei Pharmaceutical news - official page",
+          "type": "html_links",
+          "url": "https://www.kissei.co.jp/news/",
+          "trust": "owned",
+          "include_url_terms": ["/news/"],
+          "exclude_url_terms": ["?num="],
+          "max_age_days": 365,
+          "max_items": 45,
+          "health_note": "杏林制药日本官网 News，可读取药品、研发、技术授权和公司公告。",
+          "coverage_slots": ["official_news", "product_updates", "events_webinars", "technical_content", "regional_official"]
+        },
+        {
+          "id": "google_news_kissei_account",
+          "label": "Google News RSS - Kissei Pharmaceutical",
+          "type": "google_news",
+          "query": "\"Kissei Pharmaceutical\" OR キッセイ薬品 OR 杏林製薬 OR 杏林制药",
+          "trust": "aggregator",
+          "max_age_days": 180,
+          "max_items": 30,
+          "exclude_text_terms": ["stock", "share price", "earnings", "株価", "決算", "人事"],
+          "health_note": "Kissei 日英公司名聚合补漏。",
+          "coverage_slots": ["global_news", "regional_media"]
+        }
+      ],
+      "shared_coverage": {
+        "press_wires": {"source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"]},
+        "research_regulatory_org": {"status": "active", "source_ids": ["clinicaltrials_company_pool"]}
+      }
+    }
+  ]
+}
