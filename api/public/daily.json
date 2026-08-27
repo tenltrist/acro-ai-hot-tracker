@@ -1326,7 +1326,7 @@
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "source_backed",
+      "summary_quality": "structured_inference",
       "evidence": {
         "kind": "secondary",
         "kind_label": "公开二手证据",
@@ -1373,7 +1373,7 @@
           "注册 / 审批"
         ],
         "business_actions": [
-          "注册 / 监管动作"
+          "合作 / 共同开发"
         ],
         "event_signals": []
       },
@@ -10506,7 +10506,7 @@
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-07-12",
       "event_start_at": "",
-      "age_days": 46,
+      "age_days": 47,
       "days_until_event": null
     },
     {
@@ -10808,7 +10808,7 @@
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-07-01",
       "event_start_at": "",
-      "age_days": 57,
+      "age_days": 58,
       "days_until_event": null
     },
     {
