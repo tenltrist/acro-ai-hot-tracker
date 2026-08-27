@@ -72598,5 +72598,111 @@
     "tier": "archive",
     "score": 30,
     "signal_type": "news"
+  },
+  "94017f6b6a9159af": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "93e1233e2e5bdab3": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3A%2F%2Fwww.kyodo.co.jp%2Fpr%2F2026-05-11_4010148%2F&c=7291193430946626862&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "54470f980831e6bd": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "Abbott vs. Thermo Fisher: Which is the Better Investment, Diversification or Recovery?",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Fabbott-vs-thermo-fisher-better-224317862.html&c=3311711520048760582&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e5c97854ff344c90": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "[Sci-Tech NOW] KAIST and Thermo Fisher Scientific sign SHARE Hub autonomous lab partnership",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3A%2F%2Fwww.dongascience.com%2Fen%2Fnews%2F79633&c=5328164657038947297&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "a77c7dc4e5abd421": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "Delta Air, Target, Thermo Fisher Scientific and a financial stock on CNBC’s ‘Final ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fnews%2Fother%2Fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2Far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "4dfebe072ddefb7f": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "Thermo Fisher Scientific (NYSE:TMO) Gains Fresh Market Attention",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3A%2F%2Fkalkinemedia.com%2Fus%2Fstocks%2Fhealthcare%2Fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "4ccccf8906b0fcf2": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "Thermo Fisher Scientific: Biopharma Recovery And Share Gains Support The Upside",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3A%2F%2Fseekingalpha.com%2Farticle%2F4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "d27389358d8de085": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "Medtronic vs. Thermo Fisher: Which Healthcare Turnaround Offers More Upside?",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "6ecd7d523f867890": {
+    "first_seen": "2026-08-27T20:58:11",
+    "title": "复肿乳腺肿瘤团队为ADC药物增敏提供新思路- 进展专区 - 生物谷",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZbVJCNVhiQUR2RU10WDRhUDNFUGY1MGpnZXZNWlVxNXNQdFdQemVJbnk0dkdLQXJJRFlMQU4tWUNXbHZfZlc2SzJ1T3VGOHNEUW5WMzlHUGI2aEU?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
   }
 }

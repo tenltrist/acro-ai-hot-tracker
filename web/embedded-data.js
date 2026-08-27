@@ -1,11 +1,11 @@
 window.AIHOT_EMBEDDED_PAYLOAD = {
-  "generated_at": "2026-08-27T20:51:31",
+  "generated_at": "2026-08-27T20:58:11",
   "window_days": 90,
   "summary": {
-    "new_candidates": 43,
+    "new_candidates": 9,
     "immediate": 1,
     "daily": 107,
-    "archive": 1607,
+    "archive": 1606,
     "errors": 0,
     "companies": 19,
     "sources": 117
@@ -30,7 +30,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Google News RSS - ACROBiosystems": 34,
     "Google News RSS - ACROBiosystems PR Newswire": 7,
     "Business Wire - company pool indexed RSS": 30,
-    "Google News RSS - Thermo Fisher": 97,
+    "Google News RSS - Thermo Fisher": 98,
     "Thermo Fisher official press releases - indexed RSS": 6,
     "GlobeNewswire - Biotechnology official RSS": 14,
     "BioSpace - All News official RSS": 19,
@@ -42,7 +42,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Pharmaceutical Technology - manufacturing topic indexed RSS": 10,
     "BioProcess Online - bioprocess topic indexed RSS": 7,
     "SelectScience - life science product indexed RSS": 8,
-    "BioSpectrum Asia - APAC biotech indexed RSS": 23,
+    "BioSpectrum Asia - APAC biotech indexed RSS": 22,
     "Korea Biomedical Review - indexed RSS": 22,
     "BioSpectrum India - indexed RSS": 12,
     "Nikkan Yakugyo - life science indexed RSS": 30,
@@ -63,10 +63,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Thermo Fisher Biotech at Scale RSS": 10,
     "Thermo Fisher official Events and Webinars - indexed RSS": 1,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
-    "Bing News RSS - Thermo Fisher backup": 8,
-    "Google News RSS - Thermo Fisher Japan": 50,
+    "Bing News RSS - Thermo Fisher backup": 11,
+    "Google News RSS - Thermo Fisher Japan": 51,
     "PR Times - monitored company pool indexed RSS": 22,
-    "Bing News RSS - ACROBiosystems backup": 4,
+    "Bing News RSS - ACROBiosystems backup": 2,
     "Merck Life Science official YouTube channel": 20,
     "Sartorius official YouTube channel": 20,
     "Miltenyi Biotec official YouTube channel": 20,
@@ -80,7 +80,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     "Crossref - ACROBiosystems affiliation records": 7,
     "PR Times - Japan biotech indexed RSS": 30,
     "Yakuji Nippo - official Japan pharma RSS": 25,
-    "Bioon - China life science indexed RSS": 15,
+    "Bioon - China life science indexed RSS": 14,
     "Jiemian Health - China pharma indexed RSS": 30,
     "36Kr Health - China biotech indexed RSS": 30,
     "MEDISO / JHVS - public healthcare venture updates": 29,
@@ -144,17 +144,17 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
   "category_mix": {
     "event": 164,
     "regulatory": 227,
-    "company": 689,
+    "company": 691,
     "product": 284,
     "video": 80,
     "award": 10,
-    "partnership": 89,
-    "market": 61,
+    "partnership": 87,
+    "market": 60,
     "finance": 34,
     "research": 77
   },
   "signal_type_mix": {
-    "news": 1317,
+    "news": 1316,
     "video": 80,
     "filing": 1,
     "funding": 17,
@@ -187,7 +187,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:48",
+      "last_checked": "2026-08-27T20:56:41",
       "raw_candidate_count": 0
     },
     {
@@ -213,7 +213,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 6429,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:52",
+      "last_checked": "2026-08-27T20:56:45",
       "raw_candidate_count": 0
     },
     {
@@ -239,7 +239,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:52",
+      "last_checked": "2026-08-27T20:56:45",
       "raw_candidate_count": 3
     },
     {
@@ -265,7 +265,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:53",
+      "last_checked": "2026-08-27T20:56:46",
       "raw_candidate_count": 18
     },
     {
@@ -291,7 +291,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:54",
+      "last_checked": "2026-08-27T20:56:46",
       "raw_candidate_count": 3
     },
     {
@@ -317,7 +317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:54",
+      "last_checked": "2026-08-27T20:56:46",
       "raw_candidate_count": 20
     },
     {
@@ -343,7 +343,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:54",
+      "last_checked": "2026-08-27T20:56:47",
       "raw_candidate_count": 34
     },
     {
@@ -369,7 +369,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:55",
+      "last_checked": "2026-08-27T20:56:47",
       "raw_candidate_count": 0
     },
     {
@@ -395,7 +395,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:55",
+      "last_checked": "2026-08-27T20:56:47",
       "raw_candidate_count": 7
     },
     {
@@ -421,7 +421,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:56",
+      "last_checked": "2026-08-27T20:56:48",
       "raw_candidate_count": 30
     },
     {
@@ -447,7 +447,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:57",
+      "last_checked": "2026-08-27T20:56:49",
       "raw_candidate_count": 14
     },
     {
@@ -473,7 +473,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:57",
+      "last_checked": "2026-08-27T20:56:49",
       "raw_candidate_count": 19
     },
     {
@@ -499,7 +499,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:58",
+      "last_checked": "2026-08-27T20:56:50",
       "raw_candidate_count": 25
     },
     {
@@ -525,7 +525,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:58",
+      "last_checked": "2026-08-27T20:56:50",
       "raw_candidate_count": 22
     },
     {
@@ -551,7 +551,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:58",
+      "last_checked": "2026-08-27T20:56:50",
       "raw_candidate_count": 10
     },
     {
@@ -577,7 +577,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:58",
+      "last_checked": "2026-08-27T20:56:50",
       "raw_candidate_count": 22
     },
     {
@@ -603,7 +603,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:59",
+      "last_checked": "2026-08-27T20:56:50",
       "raw_candidate_count": 12
     },
     {
@@ -629,7 +629,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:49:59",
+      "last_checked": "2026-08-27T20:56:51",
       "raw_candidate_count": 10
     },
     {
@@ -655,7 +655,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:00",
+      "last_checked": "2026-08-27T20:56:52",
       "raw_candidate_count": 7
     },
     {
@@ -681,7 +681,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:01",
+      "last_checked": "2026-08-27T20:56:53",
       "raw_candidate_count": 8
     },
     {
@@ -696,10 +696,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "archive_only",
       "operational_status": "reachable",
       "output_status": "archive_only",
-      "total": 23,
+      "total": 22,
       "immediate": 0,
       "daily": 0,
-      "archive": 23,
+      "archive": 22,
       "selected_rate": 0,
       "last_published": "2026-08-24",
       "error": "",
@@ -707,8 +707,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:01",
-      "raw_candidate_count": 24
+      "last_checked": "2026-08-27T20:56:53",
+      "raw_candidate_count": 23
     },
     {
       "source_id": "koreabiomed_apac_index",
@@ -733,7 +733,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:02",
+      "last_checked": "2026-08-27T20:56:54",
       "raw_candidate_count": 22
     },
     {
@@ -759,8 +759,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:03",
-      "raw_candidate_count": 13
+      "last_checked": "2026-08-27T20:56:55",
+      "raw_candidate_count": 12
     },
     {
       "source_id": "nikkanyaku_life_science_index",
@@ -785,7 +785,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:03",
+      "last_checked": "2026-08-27T20:56:55",
       "raw_candidate_count": 30
     },
     {
@@ -811,7 +811,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:04",
+      "last_checked": "2026-08-27T20:56:56",
       "raw_candidate_count": 10
     },
     {
@@ -823,10 +823,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_type": "rss",
       "signal_type": "news",
       "enabled": true,
-      "status": "error",
-      "operational_status": "error",
-      "output_status": "none",
-      "total": 0,
+      "status": "productive",
+      "operational_status": "reachable",
+      "output_status": "productive",
+      "total": 30,
       "immediate": 0,
       "daily": 5,
       "archive": 25,
@@ -837,7 +837,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:04",
+      "last_checked": "2026-08-27T20:56:57",
       "raw_candidate_count": 30
     },
     {
@@ -863,7 +863,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:05",
+      "last_checked": "2026-08-27T20:56:57",
       "raw_candidate_count": 6
     },
     {
@@ -889,7 +889,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:06",
+      "last_checked": "2026-08-27T20:56:58",
       "raw_candidate_count": 20
     },
     {
@@ -915,7 +915,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:07",
+      "last_checked": "2026-08-27T20:56:58",
       "raw_candidate_count": 8
     },
     {
@@ -941,7 +941,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:07",
+      "last_checked": "2026-08-27T20:56:59",
       "raw_candidate_count": 30
     },
     {
@@ -967,7 +967,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:08",
+      "last_checked": "2026-08-27T20:57:00",
       "raw_candidate_count": 4
     },
     {
@@ -993,7 +993,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:09",
+      "last_checked": "2026-08-27T20:57:00",
       "raw_candidate_count": 9
     },
     {
@@ -1019,7 +1019,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:09",
+      "last_checked": "2026-08-27T20:57:01",
       "raw_candidate_count": 18
     },
     {
@@ -1045,7 +1045,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:10",
+      "last_checked": "2026-08-27T20:57:02",
       "raw_candidate_count": 0
     },
     {
@@ -1071,7 +1071,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:10",
+      "last_checked": "2026-08-27T20:57:02",
       "raw_candidate_count": 6
     },
     {
@@ -1097,7 +1097,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:11",
+      "last_checked": "2026-08-27T20:57:02",
       "raw_candidate_count": 0
     },
     {
@@ -1123,7 +1123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:12",
+      "last_checked": "2026-08-27T20:57:03",
       "raw_candidate_count": 1
     },
     {
@@ -1138,18 +1138,18 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "productive",
       "operational_status": "reachable",
       "output_status": "productive",
-      "total": 5,
+      "total": 6,
       "immediate": 0,
       "daily": 1,
-      "archive": 4,
-      "selected_rate": 20,
+      "archive": 5,
+      "selected_rate": 17,
       "last_published": "2026-08-12",
       "error": "",
       "note": "Thermo Fisher IR 直连 RSS 现由 Cloudflare 验证页拦截；改用官方 IR 新闻详情页的定向索引 RSS，结果仍指向官方发布。",
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:12",
+      "last_checked": "2026-08-27T20:57:03",
       "raw_candidate_count": 6
     },
     {
@@ -1175,7 +1175,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:13",
+      "last_checked": "2026-08-27T20:57:04",
       "raw_candidate_count": 10
     },
     {
@@ -1201,7 +1201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:14",
+      "last_checked": "2026-08-27T20:57:04",
       "raw_candidate_count": 1
     },
     {
@@ -1227,7 +1227,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:14",
+      "last_checked": "2026-08-27T20:57:05",
       "raw_candidate_count": 9
     },
     {
@@ -1242,10 +1242,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "productive",
       "operational_status": "reachable",
       "output_status": "productive",
-      "total": 97,
+      "total": 98,
       "immediate": 0,
       "daily": 11,
-      "archive": 86,
+      "archive": 87,
       "selected_rate": 11,
       "last_published": "2026-08-27",
       "error": "",
@@ -1253,7 +1253,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:15",
+      "last_checked": "2026-08-27T20:57:06",
       "raw_candidate_count": 100
     },
     {
@@ -1279,8 +1279,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:16",
-      "raw_candidate_count": 50
+      "last_checked": "2026-08-27T20:57:06",
+      "raw_candidate_count": 51
     },
     {
       "source_id": "bing_news_acro_backup",
@@ -1294,19 +1294,19 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "archive_only",
       "operational_status": "reachable",
       "output_status": "archive_only",
-      "total": 4,
+      "total": 2,
       "immediate": 0,
       "daily": 0,
-      "archive": 4,
+      "archive": 2,
       "selected_rate": 0,
-      "last_published": "2026-08-13",
+      "last_published": "2026-05-11",
       "error": "",
       "note": "",
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:16",
-      "raw_candidate_count": 6
+      "last_checked": "2026-08-27T20:57:07",
+      "raw_candidate_count": 4
     },
     {
       "source_id": "bing_news_thermo_backup",
@@ -1320,19 +1320,19 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "productive",
       "operational_status": "reachable",
       "output_status": "productive",
-      "total": 8,
+      "total": 11,
       "immediate": 0,
       "daily": 2,
-      "archive": 6,
-      "selected_rate": 25,
+      "archive": 9,
+      "selected_rate": 18,
       "last_published": "2026-08-27",
       "error": "",
       "note": "",
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:18",
-      "raw_candidate_count": 8
+      "last_checked": "2026-08-27T20:57:07",
+      "raw_candidate_count": 11
     },
     {
       "source_id": "thermo_youtube_official",
@@ -1357,7 +1357,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:18",
+      "last_checked": "2026-08-27T20:57:07",
       "raw_candidate_count": 0
     },
     {
@@ -1383,7 +1383,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:18",
+      "last_checked": "2026-08-27T20:57:08",
       "raw_candidate_count": 20
     },
     {
@@ -1409,7 +1409,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:19",
+      "last_checked": "2026-08-27T20:57:08",
       "raw_candidate_count": 20
     },
     {
@@ -1435,7 +1435,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:19",
+      "last_checked": "2026-08-27T20:57:08",
       "raw_candidate_count": 20
     },
     {
@@ -1461,7 +1461,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:19",
+      "last_checked": "2026-08-27T20:57:09",
       "raw_candidate_count": 2
     },
     {
@@ -1487,7 +1487,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:20",
+      "last_checked": "2026-08-27T20:57:09",
       "raw_candidate_count": 0
     },
     {
@@ -1513,7 +1513,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:21",
+      "last_checked": "2026-08-27T20:57:10",
       "raw_candidate_count": 17
     },
     {
@@ -1539,7 +1539,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:21",
+      "last_checked": "2026-08-27T20:57:11",
       "raw_candidate_count": 28
     },
     {
@@ -1565,7 +1565,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:22",
+      "last_checked": "2026-08-27T20:57:11",
       "raw_candidate_count": 4
     },
     {
@@ -1591,7 +1591,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:22",
+      "last_checked": "2026-08-27T20:57:11",
       "raw_candidate_count": 10
     },
     {
@@ -1617,7 +1617,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:22",
+      "last_checked": "2026-08-27T20:57:11",
       "raw_candidate_count": 6
     },
     {
@@ -1643,7 +1643,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:25",
+      "last_checked": "2026-08-27T20:57:12",
       "raw_candidate_count": 30
     },
     {
@@ -1669,7 +1669,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:26",
+      "last_checked": "2026-08-27T20:57:13",
       "raw_candidate_count": 22
     },
     {
@@ -1695,7 +1695,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:26",
+      "last_checked": "2026-08-27T20:57:13",
       "raw_candidate_count": 25
     },
     {
@@ -1721,7 +1721,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:26",
+      "last_checked": "2026-08-27T20:57:13",
       "raw_candidate_count": 6
     },
     {
@@ -1736,10 +1736,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "archive_only",
       "operational_status": "reachable",
       "output_status": "archive_only",
-      "total": 15,
+      "total": 14,
       "immediate": 0,
       "daily": 0,
-      "archive": 15,
+      "archive": 14,
       "selected_rate": 0,
       "last_published": "2026-08-27",
       "error": "",
@@ -1747,8 +1747,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:27",
-      "raw_candidate_count": 15
+      "last_checked": "2026-08-27T20:57:14",
+      "raw_candidate_count": 14
     },
     {
       "source_id": "jiemian_health_index",
@@ -1773,7 +1773,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:28",
+      "last_checked": "2026-08-27T20:57:15",
       "raw_candidate_count": 30
     },
     {
@@ -1799,7 +1799,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:29",
+      "last_checked": "2026-08-27T20:57:16",
       "raw_candidate_count": 30
     },
     {
@@ -1825,7 +1825,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:29",
+      "last_checked": "2026-08-27T20:57:16",
       "raw_candidate_count": 29
     },
     {
@@ -1851,7 +1851,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:30",
+      "last_checked": "2026-08-27T20:57:17",
       "raw_candidate_count": 9
     },
     {
@@ -1877,7 +1877,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:33",
+      "last_checked": "2026-08-27T20:57:19",
       "raw_candidate_count": 6
     },
     {
@@ -1903,7 +1903,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:33",
+      "last_checked": "2026-08-27T20:57:20",
       "raw_candidate_count": 18
     },
     {
@@ -1929,7 +1929,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:34",
+      "last_checked": "2026-08-27T20:57:20",
       "raw_candidate_count": 2
     },
     {
@@ -1955,7 +1955,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:34",
+      "last_checked": "2026-08-27T20:57:21",
       "raw_candidate_count": 12
     },
     {
@@ -1981,7 +1981,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:35",
+      "last_checked": "2026-08-27T20:57:21",
       "raw_candidate_count": 7
     },
     {
@@ -2007,7 +2007,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:36",
+      "last_checked": "2026-08-27T20:57:22",
       "raw_candidate_count": 20
     },
     {
@@ -2033,7 +2033,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:38",
+      "last_checked": "2026-08-27T20:57:24",
       "raw_candidate_count": 98
     },
     {
@@ -2059,7 +2059,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:40",
+      "last_checked": "2026-08-27T20:57:25",
       "raw_candidate_count": 3
     },
     {
@@ -2085,7 +2085,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:40",
+      "last_checked": "2026-08-27T20:57:26",
       "raw_candidate_count": 4
     },
     {
@@ -2111,7 +2111,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:41",
+      "last_checked": "2026-08-27T20:57:27",
       "raw_candidate_count": 3
     },
     {
@@ -2137,7 +2137,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:41",
+      "last_checked": "2026-08-27T20:57:27",
       "raw_candidate_count": 9
     },
     {
@@ -2163,7 +2163,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:42",
+      "last_checked": "2026-08-27T20:57:27",
       "raw_candidate_count": 0
     },
     {
@@ -2189,7 +2189,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:42",
+      "last_checked": "2026-08-27T20:57:28",
       "raw_candidate_count": 0
     },
     {
@@ -2215,7 +2215,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:43",
+      "last_checked": "2026-08-27T20:57:29",
       "raw_candidate_count": 1
     },
     {
@@ -2241,7 +2241,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:43",
+      "last_checked": "2026-08-27T20:57:30",
       "raw_candidate_count": 30
     },
     {
@@ -2267,7 +2267,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:44",
+      "last_checked": "2026-08-27T20:57:30",
       "raw_candidate_count": 0
     },
     {
@@ -2293,7 +2293,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:44",
+      "last_checked": "2026-08-27T20:57:31",
       "raw_candidate_count": 0
     },
     {
@@ -2319,7 +2319,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:45",
+      "last_checked": "2026-08-27T20:57:31",
       "raw_candidate_count": 0
     },
     {
@@ -2345,7 +2345,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:46",
+      "last_checked": "2026-08-27T20:57:32",
       "raw_candidate_count": 2
     },
     {
@@ -2371,7 +2371,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:46",
+      "last_checked": "2026-08-27T20:57:32",
       "raw_candidate_count": 11
     },
     {
@@ -2386,10 +2386,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "status": "archive_only",
       "operational_status": "reachable",
       "output_status": "archive_only",
-      "total": 13,
+      "total": 12,
       "immediate": 0,
       "daily": 0,
-      "archive": 13,
+      "archive": 12,
       "selected_rate": 0,
       "last_published": "2026-08-25",
       "error": "",
@@ -2397,7 +2397,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:47",
+      "last_checked": "2026-08-27T20:57:33",
       "raw_candidate_count": 12
     },
     {
@@ -2423,7 +2423,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:47",
+      "last_checked": "2026-08-27T20:57:33",
       "raw_candidate_count": 3
     },
     {
@@ -2449,7 +2449,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:47",
+      "last_checked": "2026-08-27T20:57:33",
       "raw_candidate_count": 3
     },
     {
@@ -2475,7 +2475,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:48",
+      "last_checked": "2026-08-27T20:57:34",
       "raw_candidate_count": 20
     },
     {
@@ -2501,7 +2501,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:48",
+      "last_checked": "2026-08-27T20:57:34",
       "raw_candidate_count": 1
     },
     {
@@ -2527,7 +2527,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:49",
+      "last_checked": "2026-08-27T20:57:35",
       "raw_candidate_count": 20
     },
     {
@@ -2553,7 +2553,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:49",
+      "last_checked": "2026-08-27T20:57:35",
       "raw_candidate_count": 3
     },
     {
@@ -2579,7 +2579,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:50",
+      "last_checked": "2026-08-27T20:57:36",
       "raw_candidate_count": 30
     },
     {
@@ -2605,7 +2605,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:51",
+      "last_checked": "2026-08-27T20:57:36",
       "raw_candidate_count": 0
     },
     {
@@ -2631,7 +2631,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:51",
+      "last_checked": "2026-08-27T20:57:36",
       "raw_candidate_count": 16
     },
     {
@@ -2657,7 +2657,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:52",
+      "last_checked": "2026-08-27T20:57:37",
       "raw_candidate_count": 25
     },
     {
@@ -2683,7 +2683,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:52",
+      "last_checked": "2026-08-27T20:57:37",
       "raw_candidate_count": 0
     },
     {
@@ -2709,7 +2709,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:53",
+      "last_checked": "2026-08-27T20:57:38",
       "raw_candidate_count": 0
     },
     {
@@ -2735,7 +2735,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:54",
+      "last_checked": "2026-08-27T20:57:39",
       "raw_candidate_count": 0
     },
     {
@@ -2761,7 +2761,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:54",
+      "last_checked": "2026-08-27T20:57:39",
       "raw_candidate_count": 12
     },
     {
@@ -2787,7 +2787,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:55",
+      "last_checked": "2026-08-27T20:57:40",
       "raw_candidate_count": 0
     },
     {
@@ -2813,7 +2813,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:56",
+      "last_checked": "2026-08-27T20:57:41",
       "raw_candidate_count": 0
     },
     {
@@ -2839,7 +2839,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:56",
+      "last_checked": "2026-08-27T20:57:42",
       "raw_candidate_count": 10
     },
     {
@@ -2865,7 +2865,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:57",
+      "last_checked": "2026-08-27T20:57:42",
       "raw_candidate_count": 1
     },
     {
@@ -2891,7 +2891,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:58",
+      "last_checked": "2026-08-27T20:57:43",
       "raw_candidate_count": 12
     },
     {
@@ -2917,7 +2917,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:50:59",
+      "last_checked": "2026-08-27T20:57:43",
       "raw_candidate_count": 12
     },
     {
@@ -2943,7 +2943,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:00",
+      "last_checked": "2026-08-27T20:57:44",
       "raw_candidate_count": 1
     },
     {
@@ -2969,7 +2969,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:01",
+      "last_checked": "2026-08-27T20:57:44",
       "raw_candidate_count": 18
     },
     {
@@ -2995,7 +2995,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:02",
+      "last_checked": "2026-08-27T20:57:45",
       "raw_candidate_count": 11
     },
     {
@@ -3021,7 +3021,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:02",
+      "last_checked": "2026-08-27T20:57:46",
       "raw_candidate_count": 6
     },
     {
@@ -3047,7 +3047,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:03",
+      "last_checked": "2026-08-27T20:57:47",
       "raw_candidate_count": 15
     },
     {
@@ -3073,7 +3073,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:04",
+      "last_checked": "2026-08-27T20:57:47",
       "raw_candidate_count": 0
     },
     {
@@ -3099,7 +3099,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:05",
+      "last_checked": "2026-08-27T20:57:48",
       "raw_candidate_count": 5
     },
     {
@@ -3125,7 +3125,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:06",
+      "last_checked": "2026-08-27T20:57:49",
       "raw_candidate_count": 1
     },
     {
@@ -3151,7 +3151,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:06",
+      "last_checked": "2026-08-27T20:57:49",
       "raw_candidate_count": 1
     },
     {
@@ -3177,7 +3177,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:07",
+      "last_checked": "2026-08-27T20:57:50",
       "raw_candidate_count": 0
     },
     {
@@ -3203,7 +3203,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:08",
+      "last_checked": "2026-08-27T20:57:50",
       "raw_candidate_count": 10
     },
     {
@@ -3229,7 +3229,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:09",
+      "last_checked": "2026-08-27T20:57:51",
       "raw_candidate_count": 8
     },
     {
@@ -3255,7 +3255,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:10",
+      "last_checked": "2026-08-27T20:57:52",
       "raw_candidate_count": 1
     },
     {
@@ -3281,7 +3281,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:11",
+      "last_checked": "2026-08-27T20:57:53",
       "raw_candidate_count": 20
     },
     {
@@ -3307,7 +3307,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:12",
+      "last_checked": "2026-08-27T20:57:54",
       "raw_candidate_count": 7
     },
     {
@@ -3333,7 +3333,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:13",
+      "last_checked": "2026-08-27T20:57:55",
       "raw_candidate_count": 0
     },
     {
@@ -3359,7 +3359,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:13",
+      "last_checked": "2026-08-27T20:57:55",
       "raw_candidate_count": 7
     },
     {
@@ -3385,7 +3385,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:14",
+      "last_checked": "2026-08-27T20:57:56",
       "raw_candidate_count": 2
     },
     {
@@ -3411,7 +3411,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:15",
+      "last_checked": "2026-08-27T20:57:56",
       "raw_candidate_count": 0
     },
     {
@@ -3437,7 +3437,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:16",
+      "last_checked": "2026-08-27T20:57:57",
       "raw_candidate_count": 0
     },
     {
@@ -3463,7 +3463,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:17",
+      "last_checked": "2026-08-27T20:57:57",
       "raw_candidate_count": 0
     },
     {
@@ -3489,7 +3489,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:17",
+      "last_checked": "2026-08-27T20:57:58",
       "raw_candidate_count": 0
     },
     {
@@ -3515,7 +3515,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:18",
+      "last_checked": "2026-08-27T20:57:59",
       "raw_candidate_count": 0
     },
     {
@@ -3541,7 +3541,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:19",
+      "last_checked": "2026-08-27T20:57:59",
       "raw_candidate_count": 0
     },
     {
@@ -3567,7 +3567,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:19",
+      "last_checked": "2026-08-27T20:58:00",
       "raw_candidate_count": 15
     },
     {
@@ -3593,7 +3593,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:20",
+      "last_checked": "2026-08-27T20:58:00",
       "raw_candidate_count": 0
     },
     {
@@ -3619,7 +3619,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:21",
+      "last_checked": "2026-08-27T20:58:01",
       "raw_candidate_count": 10
     },
     {
@@ -3645,7 +3645,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:21",
+      "last_checked": "2026-08-27T20:58:02",
       "raw_candidate_count": 0
     },
     {
@@ -3671,7 +3671,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:22",
+      "last_checked": "2026-08-27T20:58:03",
       "raw_candidate_count": 2
     },
     {
@@ -3697,7 +3697,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:22",
+      "last_checked": "2026-08-27T20:58:04",
       "raw_candidate_count": 14
     },
     {
@@ -3723,7 +3723,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:23",
+      "last_checked": "2026-08-27T20:58:04",
       "raw_candidate_count": 30
     },
     {
@@ -3749,7 +3749,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:24",
+      "last_checked": "2026-08-27T20:58:05",
       "raw_candidate_count": 5
     },
     {
@@ -3775,7 +3775,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:24",
+      "last_checked": "2026-08-27T20:58:05",
       "raw_candidate_count": 4
     },
     {
@@ -3801,7 +3801,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:25",
+      "last_checked": "2026-08-27T20:58:06",
       "raw_candidate_count": 30
     },
     {
@@ -3827,7 +3827,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:26",
+      "last_checked": "2026-08-27T20:58:06",
       "raw_candidate_count": 30
     },
     {
@@ -3853,7 +3853,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:26",
+      "last_checked": "2026-08-27T20:58:07",
       "raw_candidate_count": 30
     },
     {
@@ -3879,7 +3879,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:26",
+      "last_checked": "2026-08-27T20:58:07",
       "raw_candidate_count": 30
     },
     {
@@ -3905,7 +3905,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:27",
+      "last_checked": "2026-08-27T20:58:07",
       "raw_candidate_count": 17
     },
     {
@@ -3931,7 +3931,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:28",
+      "last_checked": "2026-08-27T20:58:08",
       "raw_candidate_count": 14
     },
     {
@@ -3957,7 +3957,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "snapshot_count": 0,
       "new_urls": 0,
       "initial_snapshot": false,
-      "last_checked": "2026-08-27T20:51:29",
+      "last_checked": "2026-08-27T20:58:09",
       "raw_candidate_count": 30
     }
   ],
@@ -6099,14 +6099,14 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     {
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
-      "item_count": 99,
+      "item_count": 97,
       "selected_count": 9,
       "high_relevance_count": 8,
       "source_count": 10,
       "latest_activity": "2026-08-24",
       "event_mix": {
         "corporate_strategy": 29,
-        "partnership_deal": 6,
+        "partnership_deal": 4,
         "quality_supply": 6,
         "market_activity": 19,
         "product_platform": 10,
@@ -6151,14 +6151,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "top_actions": [
         {
           "label": "口径与传播跟进",
-          "count": 99
+          "count": 97
         }
       ],
       "item_ids": [
         "658c29acbde78c09",
         "650f5de82699623c",
         "54f90637f3df7c67",
-        "8ec43144b17cb686",
         "9ee828aa851c91c5",
         "554ba6d85bad0a53",
         "9be9fbf801bd5087",
@@ -6186,13 +6185,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "319ecd543a1a0454",
         "c63ec9f715c46aad",
         "215970a468628d24",
-        "04f05e4b28586313",
         "7afc27ed885ce9d2",
         "e3e2b86a81b669c9",
         "327f37f80b9fda7b",
-        "52d1f25074d48d98",
+        "93e1233e2e5bdab3",
         "9a31bd6e6dcf1248",
-        "7b6481a968854291",
+        "94017f6b6a9159af",
         "58d6c51c97dc111b",
         "40b84bb2e0497bc3",
         "e807ffe816e4cea8",
@@ -6259,7 +6257,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
     {
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
-      "item_count": 215,
+      "item_count": 218,
       "selected_count": 23,
       "high_relevance_count": 8,
       "source_count": 12,
@@ -6267,7 +6265,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "event_mix": {
         "partnership_deal": 30,
         "product_platform": 21,
-        "corporate_strategy": 113,
+        "corporate_strategy": 116,
         "regional_expansion": 17,
         "clinical_regulatory": 22,
         "quality_supply": 3,
@@ -6311,7 +6309,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "top_actions": [
         {
           "label": "归档观察",
-          "count": 138
+          "count": 141
         },
         {
           "label": "竞品对比",
@@ -6319,7 +6317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         }
       ],
       "item_ids": [
-        "3fcdf82583d75ad9",
+        "e5c97854ff344c90",
         "e1ecb246a1f16924",
         "180b86b986dbcf42",
         "f87c11fe0376d188",
@@ -6329,16 +6327,17 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "d6c09bf8153ee534",
         "439aa43cf9f6355a",
         "1628764e0ef17910",
-        "f1b05ca8ad3799bc",
+        "535c719b5deec032",
         "d6b628dff8cca4af",
         "8dcb2b4b103afaaa",
-        "4b9514548c4829de",
+        "a77c7dc4e5abd421",
         "7ea2e6160997106d",
         "f1b05ca8ad3799bc",
         "8288eb3f2d21ce93",
         "8cb794362be1d2d8",
         "73535777c5f770a3",
-        "f0316c0a6aba49e7",
+        "54470f980831e6bd",
+        "d27389358d8de085",
         "3c4e2511d9e7506a",
         "afb937be8b4808ef",
         "2f41c1f555506f85",
@@ -6353,7 +6352,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "956cb77fe049d04d",
         "a21559e5c546cc14",
         "d87b8804f2a320e5",
-        "da1a4077c52da4a0",
+        "4dfebe072ddefb7f",
         "8992448041c2dbb7",
         "15a4c50a65c51873",
         "a5f0c56391e05c46",
@@ -6363,12 +6362,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "24e5af6e7ee07eb5",
         "fd9f4398d806402f",
         "651eb516e5df0382",
-        "bb6cea30174c2a88",
         "bd23e9d67c703f79",
-        "a3ce36ac621cb252",
+        "4ccccf8906b0fcf2",
         "fe18a7eb319f6733",
         "a0a4b840dd549058",
-        "52f503ef7809434a",
         "649925961ce8ce38",
         "d1452bdfd3949159",
         "e572b2806db1005a",
@@ -6387,7 +6384,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "28c21759b98f34dc",
         "cb0ceac71ea07825",
         "6e4ac1d380f3d670",
+        "086ac9d278ba62ce",
         "4bd9db8feb5f8de9",
+        "7605862a5ad68278",
         "d3fa0bd5a3eab19a",
         "9c2ca4836ff411a0",
         "a9ab9efb45e6f9a5",
@@ -6398,6 +6397,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "0b9befc98dd039bd",
         "44e2fa23ba58e53d",
         "28d27320104620f4",
+        "6d07f4f9f814f937",
         "6ed0dc99eb1a86fc",
         "02c370f7da497967",
         "928b5c3cb8e28aeb",
@@ -6423,7 +6423,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "2a6dab8a135c09ba",
         "79d9de2d60e2fb23",
         "d3ee6e6531ea3a0d",
-        "a64b324f499d43a3",
         "8f2cef89c7a21753",
         "a64b324f499d43a3",
         "1e7c621d12794433",
@@ -6446,7 +6445,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "e3d149cf6e81927a",
         "b96017dca1d77935",
         "1c8a7ef3a5881646",
-        "e1a0b30c807ce701",
         "e2afab33e13818be",
         "7b485a48b2cec143",
         "0a525e319f25bf4b",
@@ -6476,6 +6474,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "eb1167ca5ca74c27",
         "955a568e3b9c3d4a",
         "042c88c9c131ca01",
+        "614992a5da6f2971",
         "933edb1ae44f3abf",
         "c0151a70d9b59d60",
         "42ee01860121cbfd",
@@ -6495,6 +6494,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "ba216fee1a574fb5",
         "b9b3216f197a8cda",
         "4306cf31fe993e78",
+        "28c8ae6873b59b4e",
         "c5ea3190e3337484",
         "3ce7ca145c420fbd",
         "421900999bd07475",
@@ -6557,7 +6557,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "top_topics": [
         {
           "label": "生物工艺",
-          "count": 4
+          "count": 5
         },
         {
           "label": "ADC",
@@ -6699,7 +6699,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "f75e1302ae3edf08",
         "456ba8ed22c72278",
         "2a0e6b70bb7d2dc0",
-        "b2f02f9e6a8ff407",
         "cebd7705e7e56878",
         "92cb2f40a955d23d",
         "5672e53bbf6c66f2",
@@ -6785,13 +6784,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "28013a61483cb549",
         "1929538740fbe7b1",
         "1e0c1237824d97df",
+        "c371828473731a01",
         "d82df69496cf9b0f",
         "399361886eeb4e54",
         "ec99270c514ac378",
         "359139878321b822",
         "730d0781fa55d919",
-        "28013a61483cb549",
-        "c371828473731a01",
         "e701417678014282",
         "082482ad5284111e",
         "871354bccc075a54",
@@ -6839,7 +6837,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "company": "Miltenyi Biotec / 美天旎",
       "item_count": 54,
       "selected_count": 4,
-      "high_relevance_count": 1,
+      "high_relevance_count": 2,
       "source_count": 7,
       "latest_activity": "2026-08-24",
       "event_mix": {
@@ -6887,11 +6885,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "top_actions": [
         {
           "label": "竞品对比",
-          "count": 29
+          "count": 30
         },
         {
           "label": "归档观察",
-          "count": 25
+          "count": 24
         }
       ],
       "item_ids": [
@@ -6899,6 +6897,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "f545dcf486a5aae6",
         "e68524b56173ef05",
         "c0e8bcf8a95d909a",
+        "c076c9dab40e6cb6",
         "d201df8704f8cee8",
         "1cc035f4f3724f9f",
         "ffef74841b2c7706",
@@ -6933,7 +6932,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "79fe8d64c5b0d7c1",
         "69ad7892ac1b2320",
         "8f27f8adf2450749",
-        "fbfd979660b3dd57",
         "a841747ffed8fdd6",
         "4bac829d660c4eb8",
         "befbdab2640843ad",
@@ -7117,10 +7115,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "a7c40182146da6a6",
         "5d2808d3f2a31ad1",
         "45bacf11aead6aec",
-        "237e4ad7608be253",
         "1029291831e1c71f",
-        "9f96def52c18a702",
+        "237e4ad7608be253",
         "c67a44a4b240b4c5",
+        "9f96def52c18a702",
         "7abac8d98897e465",
         "552afe2f84cd73b7",
         "28f6bffca9a98ec6",
@@ -7448,7 +7446,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "7f52581d5d85e4e3",
         "91f5e2c541fe50b9",
         "ab4924cccde5167c",
-        "e486d962e246568b",
         "6d3561c7f3242295",
         "e486d962e246568b",
         "b987cf413ce69f0e",
@@ -7487,7 +7484,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "6a17a120f4c4c815",
         "a69e20c00207da02",
         "87d89920b6beb4d6",
-        "30e8234ec0f91508",
         "62efe6b0695f2f5f",
         "440f22afcc2fc231",
         "2c83be07e02b5cd1",
@@ -7581,15 +7577,17 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         },
         {
           "label": "竞品对比",
-          "count": 2
+          "count": 1
         }
       ],
       "item_ids": [
+        "2d7c7797cfcefb24",
+        "81b2bc7480a8bbcc",
+        "74018f07271e6a38",
         "93ed02ed5130603a",
         "e72619996055e2d4",
         "ef9f7481377f8ad3",
-        "0530f7f1e32230de",
-        "0db08db9d5e4af06",
+        "227c1382f19b374d",
         "3f47c34ac012058c",
         "f75e1302ae3edf08",
         "456ba8ed22c72278",
@@ -7698,6 +7696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "63edffa787ef06a0",
         "18eb63f029cccd93",
         "034d9a0e994e52de",
+        "77279c247835778a",
         "077650a760f56e84",
         "49c13030d229842e",
         "8e8c22e7a4c8e57a",
@@ -7736,6 +7735,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "fae76f92257a5f6f",
         "ef763b8e31886c67",
         "a56d1d783ad2d618",
+        "b8b23d4b68bd5f4e",
         "1d3997847c770f08",
         "88f5e4760242c2b7",
         "bcf8b80298f9d080"
@@ -7885,7 +7885,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "a24812321751f993",
         "b4b6fbd5b56567d0",
         "9af4af2d8a010a21",
-        "202f42b2af58850a",
         "ce23a420f54bb28f",
         "54568a3d96be12a6",
         "01d3710ebd85fe23",
@@ -7913,6 +7912,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "a4ab01b91068a2d1",
         "f50191491fe3a827",
         "3327ae5f67d2f54c",
+        "979e3d6a6abc41a2",
         "9b3505475589be04",
         "1dce1f176c4f982e",
         "abf0e2bcfb340b37",
@@ -9665,7 +9665,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 90,
@@ -9673,7 +9673,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "product",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 第一三共",
         "行业编辑媒体",
@@ -9777,7 +9777,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -9878,7 +9878,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -9982,7 +9982,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -10086,7 +10086,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -10187,7 +10187,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -10288,7 +10288,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -10392,7 +10392,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -10496,7 +10496,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 84,
@@ -10600,7 +10600,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -10701,7 +10701,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -10802,7 +10802,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -10903,7 +10903,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11004,7 +11004,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11105,7 +11105,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11206,7 +11206,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11307,7 +11307,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11408,7 +11408,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11509,7 +11509,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11616,7 +11616,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11720,7 +11720,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11824,7 +11824,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -11925,7 +11925,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12032,7 +12032,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12136,7 +12136,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12237,7 +12237,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12338,7 +12338,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12439,7 +12439,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12546,7 +12546,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12650,7 +12650,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12751,7 +12751,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 78,
@@ -12858,7 +12858,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 76,
@@ -12965,7 +12965,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 76,
@@ -13075,7 +13075,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13178,7 +13178,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13277,7 +13277,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13383,7 +13383,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13487,7 +13487,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13588,7 +13588,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13689,7 +13689,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13790,7 +13790,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13891,7 +13891,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -13992,7 +13992,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14093,7 +14093,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14194,7 +14194,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14295,7 +14295,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14396,7 +14396,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14497,7 +14497,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14598,7 +14598,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14699,7 +14699,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14803,7 +14803,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -14904,7 +14904,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15005,7 +15005,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15106,7 +15106,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15210,7 +15210,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15311,7 +15311,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15412,7 +15412,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15513,7 +15513,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15614,7 +15614,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15715,7 +15715,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15816,7 +15816,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -15917,7 +15917,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16018,7 +16018,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16119,7 +16119,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16220,7 +16220,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16321,7 +16321,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16422,7 +16422,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16523,7 +16523,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16624,7 +16624,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16725,7 +16725,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16826,7 +16826,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -16927,7 +16927,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17028,7 +17028,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17129,7 +17129,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17230,7 +17230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17331,7 +17331,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17432,7 +17432,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17533,7 +17533,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17634,7 +17634,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17738,7 +17738,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17839,7 +17839,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -17940,7 +17940,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -18041,7 +18041,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -18148,7 +18148,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 70,
@@ -18253,7 +18253,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 68,
@@ -18366,7 +18366,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -18468,7 +18468,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-05-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -18571,7 +18571,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -18674,7 +18674,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -18783,7 +18783,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -18884,7 +18884,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 64,
@@ -18989,7 +18989,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 64,
@@ -19091,7 +19091,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 64,
@@ -19197,7 +19197,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 64,
@@ -19293,7 +19293,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 62,
@@ -19395,7 +19395,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 62,
@@ -19499,7 +19499,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 61,
@@ -19598,7 +19598,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 60,
@@ -19694,7 +19694,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 60,
@@ -19796,7 +19796,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 60,
@@ -19894,7 +19894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -19941,7 +19941,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "ACRO 相关性较低，仅归档",
       "published_at": "2026-08-24",
       "event_start_at": "",
-      "age_days": 4,
+      "age_days": 3,
       "days_until_event": null
     },
     {
@@ -19997,7 +19997,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20096,7 +20096,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20195,7 +20195,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20294,7 +20294,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20393,7 +20393,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20492,7 +20492,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20591,7 +20591,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20693,7 +20693,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20792,7 +20792,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20894,7 +20894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -20993,7 +20993,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21092,7 +21092,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21191,7 +21191,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21290,7 +21290,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21389,7 +21389,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21491,7 +21491,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21590,7 +21590,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21692,7 +21692,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21791,7 +21791,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21890,7 +21890,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 58,
@@ -21989,7 +21989,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 57,
@@ -22064,14 +22064,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "related_urls": [
         "https://news.google.com/rss/articles/CBMirwJBVV95cUxNUHBVcTNrMnZOeGZaejh0U2J1ZlpHY2QyOE8xd2ZoNkNpUG1aXzFCbWx3NExJNnRqcGRkOXkzSVpia3NBMEcySmtFOVBWN1JMY3VkVDJjR211Tkk1RzNFLVBBdzFyb0VtUGZjTzhmTVRyMDVwTFlaVTJHYzRKT1BCUVllS0txZ0doUkw0aW5BZUQ0T3hUaGYwemVNVlFFRmpIVlV3Sk90MDlBa1JWQ19BWU5HaGE2TEF0Q3htaEdWVE5halY1clFoSVBCWHg1c05MZHJMR1RhNTlwVFFMeW15OWxNbXlDWUQ4ekJWNmJXSXZ0WHozcTNvQWlQalBockJyQ2dxazVmMHNfSFdkTGVveHRBTDlwRUJKNFV4Sm9qSXpkN1NzLWRBbXoycGp3a2s?oc=5",
         "https://news.google.com/rss/articles/CBMimAJBVV95cUxPZ1pQNXgyQ2pBVHNsTGt2ODJ2eTZ5MzZMV1FrbTkzNDNwZnZoNWVLUmlzYjFDN29sbVhtZDVWLTk3bWZrc0xjVENjOE0tckQzR3hUVm16b1M1NjQzaHlEdEZRQWxMRlFSd05xaXZDY254OS1xdFdNQ1htVHN0ZXVlckN1Rm5hOHJjUWlmUUpQZE52RG5EUTlqNnFMa21Cc2NYNW1pWnd6SDBPSW5wSENaQXZRYTRjZTl6SVpjVWlmaUxQUGt0UWY3c2loWlk4QlBSUDZRZEgwa2F4eGZrU1UtTzVVSHpKT2dxdGV1eWVXUlZVdndvTWI4UHdfLUtXM0publh2OXBQckdiV0dQUDZIN3prcTUxMnFq?oc=5",
-        "https://news.google.com/rss/articles/CBMimgJBVV95cUxOdDM5Z21ncWRyYjZQYkkxUDNQXzZjdC02cGNUWXczeGdXVF8zbjdUX0ljUllaeGdLNy1kRjBoZER3aWtET2R0NGhkMWZWa2lJVUg4MlAyLUhweTZHVTJ3LVBuWGYyT09FcXl2M1dBLTVjR3pRZkdjQWNzRnBIM1o0RUhOQjlfNnRDRlVPdXBsVThSeEhLOGM0Z2VpaU1oRTBkeG9QNFBqX09uSW9nOFhBMU5oTDNKT3NrYUxpRkRIUmZiUkdIY3NzN3NxVXo0UjdEd083dDNzdWNCWGRmdEVsNlloS0hRYUtfUm5rczAyaVB6dWh6UzdTQmFJdENoQXRYT3V1TUpTd3JrOHZ0cTQ2cGg2aVJKXzQ4RXc?oc=5",
-        "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQalByM0F4T1Q1dmhvczc2Zm4xd0lrUUZFVHY3LWFXbTg2ZFBVS2NTM3R2Y1FpcG5MX0lJVDhBaHhuNG1uQTk3Rk9ESzFRcWlBai14alhFT2YzY1NnMlZKT2s2d2tNUjBwTzdzcm9qZHRDN3hGeHcySjhBTXpwSC11NjhSWXFHcUd4eVc5NTZLeWhGTlhRdDRFM2s4YlNsODZobU10WjI2RXZUZkh0YWNHRVIxSjdINGR5eGJDdFhaLXJ2QVQ1WFppZTdGYjBpbHBLRjBIbWxjR2RzSXZQdm44RmltcDZQWGxmSXFRWFZSQ0tLbnQ4c2NJRVNuaDZrZ0hHcTFKeC1GRFBQRGZ5M2p5SkkwMkhQTzluWWtkc0p4ZFhWRk41Vmpncw?oc=5"
+        "https://news.google.com/rss/articles/CBMimgJBVV95cUxOdDM5Z21ncWRyYjZQYkkxUDNQXzZjdC02cGNUWXczeGdXVF8zbjdUX0ljUllaeGdLNy1kRjBoZER3aWtET2R0NGhkMWZWa2lJVUg4MlAyLUhweTZHVTJ3LVBuWGYyT09FcXl2M1dBLTVjR3pRZkdjQWNzRnBIM1o0RUhOQjlfNnRDRlVPdXBsVThSeEhLOGM0Z2VpaU1oRTBkeG9QNFBqX09uSW9nOFhBMU5oTDNKT3NrYUxpRkRIUmZiUkdIY3NzN3NxVXo0UjdEd083dDNzdWNCWGRmdEVsNlloS0hRYUtfUm5rczAyaVB6dWh6UzdTQmFJdENoQXRYT3V1TUpTd3JrOHZ0cTQ2cGg2aVJKXzQ4RXc?oc=5"
       ],
       "source_trust": "wire",
       "title": "Thermo Fisher Scientific Launches First Orbitrap Mass Spectrometers for Isotope Ratio Analysis, Enabling More Labs to Decode the Story Behind a Sample - Business Wire",
       "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNUHBVcTNrMnZOeGZaejh0U2J1ZlpHY2QyOE8xd2ZoNkNpUG1aXzFCbWx3NExJNnRqcGRkOXkzSVpia3NBMEcySmtFOVBWN1JMY3VkVDJjR211Tkk1RzNFLVBBdzFyb0VtUGZjTzhmTVRyMDVwTFlaVTJHYzRKT1BCUVllS0txZ0doUkw0aW5BZUQ0T3hUaGYwemVNVlFFRmpIVlV3Sk90MDlBa1JWQ19BWU5HaGE2TEF0Q3htaEdWVE5halY1clFoSVBCWHg1c05MZHJMR1RhNTlwVFFMeW15OWxNbXlDWUQ4ekJWNmJXSXZ0WHozcTNvQWlQalBockJyQ2dxazVmMHNfSFdkTGVveHRBTDlwRUJKNFV4Sm9qSXpkN1NzLWRBbXoycGp3a2s?oc=5",
       "published": "2026-08-25",
-      "summary": "Thermo Fisher Scientific Launches First Orbitrap Mass Spectrometers for Isotope Ratio Analysis, Enabling More Labs to Decode the Story Behind a Sample bastillepost.com",
+      "summary": "Thermo Fisher Scientific Launches First Orbitrap Mass Spectrometers for Isotope Ratio Analysis, Enabling More Labs to Decode the Story Behind a Sample itemonline.com",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -22088,8 +22087,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "related_urls": [
           "https://news.google.com/rss/articles/CBMirwJBVV95cUxNUHBVcTNrMnZOeGZaejh0U2J1ZlpHY2QyOE8xd2ZoNkNpUG1aXzFCbWx3NExJNnRqcGRkOXkzSVpia3NBMEcySmtFOVBWN1JMY3VkVDJjR211Tkk1RzNFLVBBdzFyb0VtUGZjTzhmTVRyMDVwTFlaVTJHYzRKT1BCUVllS0txZ0doUkw0aW5BZUQ0T3hUaGYwemVNVlFFRmpIVlV3Sk90MDlBa1JWQ19BWU5HaGE2TEF0Q3htaEdWVE5halY1clFoSVBCWHg1c05MZHJMR1RhNTlwVFFMeW15OWxNbXlDWUQ4ekJWNmJXSXZ0WHozcTNvQWlQalBockJyQ2dxazVmMHNfSFdkTGVveHRBTDlwRUJKNFV4Sm9qSXpkN1NzLWRBbXoycGp3a2s?oc=5",
           "https://news.google.com/rss/articles/CBMimAJBVV95cUxPZ1pQNXgyQ2pBVHNsTGt2ODJ2eTZ5MzZMV1FrbTkzNDNwZnZoNWVLUmlzYjFDN29sbVhtZDVWLTk3bWZrc0xjVENjOE0tckQzR3hUVm16b1M1NjQzaHlEdEZRQWxMRlFSd05xaXZDY254OS1xdFdNQ1htVHN0ZXVlckN1Rm5hOHJjUWlmUUpQZE52RG5EUTlqNnFMa21Cc2NYNW1pWnd6SDBPSW5wSENaQXZRYTRjZTl6SVpjVWlmaUxQUGt0UWY3c2loWlk4QlBSUDZRZEgwa2F4eGZrU1UtTzVVSHpKT2dxdGV1eWVXUlZVdndvTWI4UHdfLUtXM0publh2OXBQckdiV0dQUDZIN3prcTUxMnFq?oc=5",
-          "https://news.google.com/rss/articles/CBMimgJBVV95cUxOdDM5Z21ncWRyYjZQYkkxUDNQXzZjdC02cGNUWXczeGdXVF8zbjdUX0ljUllaeGdLNy1kRjBoZER3aWtET2R0NGhkMWZWa2lJVUg4MlAyLUhweTZHVTJ3LVBuWGYyT09FcXl2M1dBLTVjR3pRZkdjQWNzRnBIM1o0RUhOQjlfNnRDRlVPdXBsVThSeEhLOGM0Z2VpaU1oRTBkeG9QNFBqX09uSW9nOFhBMU5oTDNKT3NrYUxpRkRIUmZiUkdIY3NzN3NxVXo0UjdEd083dDNzdWNCWGRmdEVsNlloS0hRYUtfUm5rczAyaVB6dWh6UzdTQmFJdENoQXRYT3V1TUpTd3JrOHZ0cTQ2cGg2aVJKXzQ4RXc?oc=5",
-          "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQalByM0F4T1Q1dmhvczc2Zm4xd0lrUUZFVHY3LWFXbTg2ZFBVS2NTM3R2Y1FpcG5MX0lJVDhBaHhuNG1uQTk3Rk9ESzFRcWlBai14alhFT2YzY1NnMlZKT2s2d2tNUjBwTzdzcm9qZHRDN3hGeHcySjhBTXpwSC11NjhSWXFHcUd4eVc5NTZLeWhGTlhRdDRFM2s4YlNsODZobU10WjI2RXZUZkh0YWNHRVIxSjdINGR5eGJDdFhaLXJ2QVQ1WFppZTdGYjBpbHBLRjBIbWxjR2RzSXZQdm44RmltcDZQWGxmSXFRWFZSQ0tLbnQ4c2NJRVNuaDZrZ0hHcTFKeC1GRFBQRGZ5M2p5SkkwMkhQTzluWWtkc0p4ZFhWRk41Vmpncw?oc=5"
+          "https://news.google.com/rss/articles/CBMimgJBVV95cUxOdDM5Z21ncWRyYjZQYkkxUDNQXzZjdC02cGNUWXczeGdXVF8zbjdUX0ljUllaeGdLNy1kRjBoZER3aWtET2R0NGhkMWZWa2lJVUg4MlAyLUhweTZHVTJ3LVBuWGYyT09FcXl2M1dBLTVjR3pRZkdjQWNzRnBIM1o0RUhOQjlfNnRDRlVPdXBsVThSeEhLOGM0Z2VpaU1oRTBkeG9QNFBqX09uSW9nOFhBMU5oTDNKT3NrYUxpRkRIUmZiUkdIY3NzN3NxVXo0UjdEd083dDNzdWNCWGRmdEVsNlloS0hRYUtfUm5rczAyaVB6dWh6UzdTQmFJdENoQXRYT3V1TUpTd3JrOHZ0cTQ2cGg2aVJKXzQ4RXc?oc=5"
         ],
         "source_ids": [
           "businesswire_company_pool_index",
@@ -22104,7 +22102,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22203,7 +22201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22304,7 +22302,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22405,7 +22403,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22505,7 +22503,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22605,7 +22603,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22703,7 +22701,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22801,7 +22799,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -22901,7 +22899,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -23002,7 +23000,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -23101,7 +23099,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -23200,7 +23198,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23301,7 +23299,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23403,7 +23401,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23504,7 +23502,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23615,7 +23613,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23714,7 +23712,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23813,7 +23811,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -23915,7 +23913,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -24013,7 +24011,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 53,
@@ -24112,7 +24110,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 53,
@@ -24211,7 +24209,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 53,
@@ -24310,7 +24308,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 53,
@@ -24415,7 +24413,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 53,
@@ -24517,7 +24515,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-8-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 53,
@@ -24616,7 +24614,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -24719,7 +24717,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -24823,7 +24821,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -24927,7 +24925,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25024,7 +25022,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25069,7 +25067,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-06-26",
       "event_start_at": "",
-      "age_days": 63,
+      "age_days": 62,
       "days_until_event": null
     },
     {
@@ -25125,7 +25123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25227,7 +25225,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25242,7 +25240,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "战略主题命中: GMP",
         "业务动作命中: expansion, GMP",
         "高价值分类加成 +10: event",
-        "超过时效窗口 162天，因业务动作匹配保留"
+        "超过时效窗口 161天，因业务动作匹配保留"
       ],
       "intelligence": {
         "targets": [],
@@ -25275,7 +25273,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2026-03-19",
       "age_days": null,
-      "days_until_event": -162
+      "days_until_event": -161
     },
     {
       "id": "0d4166b974c394be",
@@ -25330,7 +25328,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25431,7 +25429,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25530,7 +25528,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25633,7 +25631,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25737,7 +25735,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25845,7 +25843,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25950,7 +25948,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -25958,7 +25956,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Daiichi Sankyo",
         "公司自有来源",
@@ -26053,7 +26051,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -26159,7 +26157,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -26268,7 +26266,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-07-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 51,
@@ -26370,7 +26368,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 51,
@@ -26472,7 +26470,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-5-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 51,
@@ -26572,7 +26570,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-7-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 51,
@@ -26674,7 +26672,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-7-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 51,
@@ -26777,7 +26775,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -26875,7 +26873,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -26977,7 +26975,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -27078,7 +27076,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -27176,7 +27174,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -27279,7 +27277,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -27381,7 +27379,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -27488,7 +27486,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 49,
@@ -27591,7 +27589,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 49,
@@ -27694,7 +27692,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -27739,7 +27737,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-06-04",
       "event_start_at": "",
-      "age_days": 85,
+      "age_days": 84,
       "days_until_event": null
     },
     {
@@ -27791,7 +27789,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -27891,7 +27889,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -27994,7 +27992,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28098,7 +28096,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28139,7 +28137,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "ACRO 相关性较低，仅归档",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -28191,7 +28189,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28291,7 +28289,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28395,7 +28393,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28495,7 +28493,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28593,7 +28591,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28691,7 +28689,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28789,7 +28787,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28889,7 +28887,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -28990,7 +28988,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29093,7 +29091,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29193,7 +29191,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29238,7 +29236,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-06-27",
       "event_start_at": "",
-      "age_days": 62,
+      "age_days": 61,
       "days_until_event": null
     },
     {
@@ -29254,14 +29252,16 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_thermo"
+        "google_news_thermo",
+        "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher"
+        "Google News RSS - Thermo Fisher",
+        "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Industry Roundup: Thermo Fisher Unveils Orbitrap Isora IRMS System - Chromatography Online",
@@ -29272,31 +29272,33 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "structured_inference",
+      "summary_quality": "source_backed",
       "evidence": {
         "kind": "index",
         "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Intact-molecule, ESI-based Orbitrap detection preserves structural context while quantifying isotope ratios, overcoming information loss inherent to gas-phase conversion workflows in classical IRMS.",
         "primary_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
         "related_urls": [
           "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
         ],
         "source_ids": [
-          "google_news_thermo"
+          "google_news_thermo",
+          "bing_news_thermo_backup"
         ],
         "source_labels": [
-          "Google News RSS - Thermo Fisher"
+          "Google News RSS - Thermo Fisher",
+          "Bing News RSS - Thermo Fisher backup"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29396,7 +29398,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29438,105 +29440,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "ACRO 相关性较低，仅归档",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "439aa43cf9f6355a",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMTFMM2JiTkMtZkx2NU1OYjlRUmdYdTV5M2lkRTRfbWdvck5lWUN6bVVkcnFwX1M2OFIxcUFmUGZNMmRlQUVVVkhYUU1tbWZkdFNWay1CNnRYT2FoMHgwbUZOMXMyTnVYaDIza2otYnVORGtpR0FWLVN5MDgxVkhSaVN2Q1YwYTd4RnZhT0hUOVNBbDZwa1lYbEtlcTdEekN1OUhMZ1lNMnhkb1RGdG9QaHN1bGVEeWk0QUFGbnJaWTVETzUwMkk4MzhBb09Pel9QZGNNTQ?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Introduces Orbitrap Mass Spectrometers for Molecular-Level Isotope Ratio Analysis - Food Safety Magazine",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMTFMM2JiTkMtZkx2NU1OYjlRUmdYdTV5M2lkRTRfbWdvck5lWUN6bVVkcnFwX1M2OFIxcUFmUGZNMmRlQUVVVkhYUU1tbWZkdFNWay1CNnRYT2FoMHgwbUZOMXMyTnVYaDIza2otYnVORGtpR0FWLVN5MDgxVkhSaVN2Q1YwYTd4RnZhT0hUOVNBbDZwa1lYbEtlcTdEekN1OUhMZ1lNMnhkb1RGdG9QaHN1bGVEeWk0QUFGbnJaWTVETzUwMkk4MzhBb09Pel9QZGNNTQ?oc=5",
-      "published": "2026-08-25",
-      "summary": "Thermo Fisher Introduces Orbitrap Mass Spectrometers for Molecular-Level Isotope Ratio Analysis Food Safety Magazine",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMTFMM2JiTkMtZkx2NU1OYjlRUmdYdTV5M2lkRTRfbWdvck5lWUN6bVVkcnFwX1M2OFIxcUFmUGZNMmRlQUVVVkhYUU1tbWZkdFNWay1CNnRYT2FoMHgwbUZOMXMyTnVYaDIza2otYnVORGtpR0FWLVN5MDgxVkhSaVN2Q1YwYTd4RnZhT0hUOVNBbDZwa1lYbEtlcTdEekN1OUhMZ1lNMnhkb1RGdG9QaHN1bGVEeWk0QUFGbnJaWTVETzUwMkk4MzhBb09Pel9QZGNNTQ?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMTFMM2JiTkMtZkx2NU1OYjlRUmdYdTV5M2lkRTRfbWdvck5lWUN6bVVkcnFwX1M2OFIxcUFmUGZNMmRlQUVVVkhYUU1tbWZkdFNWay1CNnRYT2FoMHgwbUZOMXMyTnVYaDIza2otYnVORGtpR0FWLVN5MDgxVkhSaVN2Q1YwYTd4RnZhT0hUOVNBbDZwa1lYbEtlcTdEekN1OUhMZ1lNMnhkb1RGdG9QaHN1bGVEeWk0QUFGbnJaWTVETzUwMkk4MzhBb09Pel9QZGNNTQ?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 48,
-      "tier": "archive",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "业务动作命中: introduce",
-        "高价值分类加成 +10: product",
-        "日报准入：低相关信号降为归档"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "ACRO 相关性较低，仅归档",
-      "published_at": "2026-08-25",
-      "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -29592,7 +29496,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29634,7 +29538,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "ACRO 相关性较低，仅归档",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -29690,7 +29594,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29748,47 +29652,53 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_thermo"
+        "google_news_thermo",
+        "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher"
+        "Google News RSS - Thermo Fisher",
+        "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVm1KNTE1WHFQdTluNUdRSVoyRmtlVUdNNWpSMm1RdlNoLWlkd0FnQU1UdmxVTXFvUWQ5WDJPc0V2VTlJMHJnNTJrcDFCRDJJaE8zMm1RejE0SDBudC1RUGJLTEN6amhQeHJSYjZQaDNueFc5TjBsOWU4dmFxcDF1YlA4VWhZTTVwRFExdF9YNmh5TUJDZmI1OEhET1ZEOUhBQTdwWDhIWnM?oc=5"
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVm1KNTE1WHFQdTluNUdRSVoyRmtlVUdNNWpSMm1RdlNoLWlkd0FnQU1UdmxVTXFvUWQ5WDJPc0V2VTlJMHJnNTJrcDFCRDJJaE8zMm1RejE0SDBudC1RUGJLTEN6amhQeHJSYjZQaDNueFc5TjBsOWU4dmFxcDF1YlA4VWhZTTVwRFExdF9YNmh5TUJDZmI1OEhET1ZEOUhBQTdwWDhIWnM?oc=5",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.foodengineeringmag.com%2farticles%2f103859-thermo-fisher-scientific-introduces-instaflux-workflow&c=4168504193325522015&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific Introduces InstaFlux Workflow - foodengineeringmag.com",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVm1KNTE1WHFQdTluNUdRSVoyRmtlVUdNNWpSMm1RdlNoLWlkd0FnQU1UdmxVTXFvUWQ5WDJPc0V2VTlJMHJnNTJrcDFCRDJJaE8zMm1RejE0SDBudC1RUGJLTEN6amhQeHJSYjZQaDNueFc5TjBsOWU4dmFxcDF1YlA4VWhZTTVwRFExdF9YNmh5TUJDZmI1OEhET1ZEOUhBQTdwWDhIWnM?oc=5",
       "published": "2026-08-17",
-      "summary": "Thermo Fisher Scientific Introduces InstaFlux Workflow foodengineeringmag.com",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary": "The InstaFlux workflow enables food microbiology laboratories to prepare media on demand in less than 30 minutes and supports a simplified process to sample incubation.",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 原始摘要要点：The InstaFlux workflow enables food microbiology laboratories to prepare media on demand in less than 30 minut...。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "structured_inference",
+      "summary_quality": "source_backed",
       "evidence": {
         "kind": "index",
         "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "The InstaFlux workflow enables food microbiology laboratories to prepare media on demand in less than 30 minutes and supports a simplified process to sample incubation.",
         "primary_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVm1KNTE1WHFQdTluNUdRSVoyRmtlVUdNNWpSMm1RdlNoLWlkd0FnQU1UdmxVTXFvUWQ5WDJPc0V2VTlJMHJnNTJrcDFCRDJJaE8zMm1RejE0SDBudC1RUGJLTEN6amhQeHJSYjZQaDNueFc5TjBsOWU4dmFxcDF1YlA4VWhZTTVwRFExdF9YNmh5TUJDZmI1OEhET1ZEOUhBQTdwWDhIWnM?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVm1KNTE1WHFQdTluNUdRSVoyRmtlVUdNNWpSMm1RdlNoLWlkd0FnQU1UdmxVTXFvUWQ5WDJPc0V2VTlJMHJnNTJrcDFCRDJJaE8zMm1RejE0SDBudC1RUGJLTEN6amhQeHJSYjZQaDNueFc5TjBsOWU4dmFxcDF1YlA4VWhZTTVwRFExdF9YNmh5TUJDZmI1OEhET1ZEOUhBQTdwWDhIWnM?oc=5"
+          "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVm1KNTE1WHFQdTluNUdRSVoyRmtlVUdNNWpSMm1RdlNoLWlkd0FnQU1UdmxVTXFvUWQ5WDJPc0V2VTlJMHJnNTJrcDFCRDJJaE8zMm1RejE0SDBudC1RUGJLTEN6amhQeHJSYjZQaDNueFc5TjBsOWU4dmFxcDF1YlA4VWhZTTVwRFExdF9YNmh5TUJDZmI1OEhET1ZEOUhBQTdwWDhIWnM?oc=5",
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.foodengineeringmag.com%2farticles%2f103859-thermo-fisher-scientific-introduces-instaflux-workflow&c=4168504193325522015&mkt=ja-jp"
         ],
         "source_ids": [
-          "google_news_thermo"
+          "google_news_thermo",
+          "bing_news_thermo_backup"
         ],
         "source_labels": [
-          "Google News RSS - Thermo Fisher"
+          "Google News RSS - Thermo Fisher",
+          "Bing News RSS - Thermo Fisher backup"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29886,7 +29796,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -29984,7 +29894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30084,7 +29994,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30184,7 +30094,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30284,7 +30194,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30330,7 +30240,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "3fcdf82583d75ad9",
+      "id": "e5c97854ff344c90",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -30348,11 +30258,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "[Sci-Tech NOW] KAIST and Thermo Fisher Scientific sign SHARE Hub autonomous lab partnership",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
       "published": "2026-08-27",
       "summary": "KAIST partnered with Thermo Fisher to build the AI- and robot-based autonomous SHARE Hub. DGIST signed an MOU with the NIS branch to strengthen security for advanced AI research results. GIST’s ...",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 原始摘要要点：KAIST partnered with Thermo Fisher to build the AI- and robot-based autonomous SHARE Hub.。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
@@ -30367,9 +30277,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "KAIST partnered with Thermo Fisher to build the AI- and robot-based autonomous SHARE Hub.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_thermo_backup"
@@ -30382,7 +30292,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30478,7 +30388,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30579,7 +30489,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30683,7 +30593,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30785,7 +30695,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30883,7 +30793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -30983,7 +30893,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -31081,7 +30991,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -31185,7 +31095,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -31286,7 +31196,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -31385,7 +31295,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -31428,7 +31338,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "ACRO 相关性较低，仅归档",
       "published_at": "2026-08-13",
       "event_start_at": "",
-      "age_days": 15,
+      "age_days": 14,
       "days_until_event": null
     },
     {
@@ -31484,7 +31394,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -31585,7 +31495,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 47,
@@ -31683,7 +31593,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 47,
@@ -31789,7 +31699,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -31893,7 +31803,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -31996,7 +31906,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-03-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32096,7 +32006,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-03-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32202,7 +32112,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32300,7 +32210,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32403,7 +32313,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32514,7 +32424,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32610,7 +32520,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32708,7 +32618,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32815,7 +32725,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -32908,7 +32818,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33025,7 +32935,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33125,7 +33035,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33226,7 +33136,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33327,7 +33237,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33427,7 +33337,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33520,7 +33430,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33625,7 +33535,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33728,7 +33638,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-05-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33828,7 +33738,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -33926,7 +33836,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34029,7 +33939,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34132,7 +34042,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34235,7 +34145,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34335,7 +34245,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34438,7 +34348,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34543,7 +34453,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34646,7 +34556,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34747,7 +34657,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34850,7 +34760,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -34951,7 +34861,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -35064,7 +34974,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -35162,7 +35072,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -35268,7 +35178,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -35371,7 +35281,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -35468,7 +35378,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -35565,7 +35475,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 45,
@@ -35663,7 +35573,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 45,
@@ -35764,7 +35674,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-7-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 45,
@@ -35862,7 +35772,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 45,
@@ -35960,7 +35870,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-7-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 45,
@@ -36064,7 +35974,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36161,7 +36071,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36257,7 +36167,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36354,7 +36264,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36455,7 +36365,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36556,7 +36466,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36653,7 +36563,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36750,7 +36660,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36822,7 +36732,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS0s4NHFOc0taUThBNTByZXYtTVlybGJORXYwVnB2SWNCRWJFYXAwYzlMYmRuVkFySEVqMnhuOW9lcVc3eW1UMWtkcjVmWlN2a3J6ZHl1Zk11ZFJjbVdFMUJPWHp3bFNJZUJvSGJqSXplU2pYUmRqYjI4VHNELU84c0o2R1czOW83NHRr?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.miragenews.com%2fuq-thermo-fisher-forge-minerals-biomedical-pact-1733129%2f&c=14594015252630562096&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.miragenews.com%2fuq-thermo-fisher-forge-minerals-biomedical-pact-1733129%2f&c=14594015252630562096&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "UQ, Thermo Fisher Forge Minerals, Biomedical Pact - Mirage News",
@@ -36844,7 +36754,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "primary_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS0s4NHFOc0taUThBNTByZXYtTVlybGJORXYwVnB2SWNCRWJFYXAwYzlMYmRuVkFySEVqMnhuOW9lcVc3eW1UMWtkcjVmWlN2a3J6ZHl1Zk11ZFJjbVdFMUJPWHp3bFNJZUJvSGJqSXplU2pYUmRqYjI4VHNELU84c0o2R1czOW83NHRr?oc=5",
         "related_urls": [
           "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS0s4NHFOc0taUThBNTByZXYtTVlybGJORXYwVnB2SWNCRWJFYXAwYzlMYmRuVkFySEVqMnhuOW9lcVc3eW1UMWtkcjVmWlN2a3J6ZHl1Zk11ZFJjbVdFMUJPWHp3bFNJZUJvSGJqSXplU2pYUmRqYjI4VHNELU84c0o2R1czOW83NHRr?oc=5",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.miragenews.com%2fuq-thermo-fisher-forge-minerals-biomedical-pact-1733129%2f&c=14594015252630562096&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.miragenews.com%2fuq-thermo-fisher-forge-minerals-biomedical-pact-1733129%2f&c=14594015252630562096&mkt=ja-jp"
         ],
         "source_ids": [
           "google_news_thermo",
@@ -36859,7 +36769,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -36952,7 +36862,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37050,7 +36960,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37152,7 +37062,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37257,7 +37167,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37362,7 +37272,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37467,7 +37377,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37572,7 +37482,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37673,7 +37583,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37770,7 +37680,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37871,7 +37781,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -37969,7 +37879,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38066,7 +37976,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38163,7 +38073,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38261,7 +38171,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38365,7 +38275,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38472,7 +38382,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38571,7 +38481,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38678,7 +38588,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38785,7 +38695,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38890,7 +38800,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -38987,7 +38897,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -39091,7 +39001,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -39160,7 +39070,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "title": "Pharma Xchange Forum 2026 Insights, Trends & Collaboration Burkhard Schaefer, Splashlake Interv",
       "url": "https://www.youtube.com/watch?v=doStmyLS1SQ",
       "published": "2026-08-06",
-      "summary": "Official YouTube channel video. 85 views · 3 weeks ago",
+      "summary": "Official YouTube channel video. 86 views · 3 weeks ago",
       "ai_summary": "竞品 Sartorius / Sartorius Stedim Biotech 出现视频或 Webinar 内容。 原始摘要要点：Official YouTube channel video.。 竞品正在推进video相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -39188,7 +39098,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 43,
@@ -39290,7 +39200,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 43,
@@ -39392,7 +39302,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -39492,7 +39402,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -39589,7 +39499,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -39686,7 +39596,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -39786,7 +39696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -39887,7 +39797,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -39995,7 +39905,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -40099,7 +40009,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -40195,7 +40105,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -40295,7 +40205,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -40396,7 +40306,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -40496,7 +40406,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -40570,7 +40480,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "title": "Organoid Cryosectioning",
       "url": "https://www.youtube.com/watch?v=b55IDA5tARE",
       "published": "2026-06-28",
-      "summary": "Official YouTube channel video. 254 views · 2 months ago",
+      "summary": "Official YouTube channel video. 253 views · 2 months ago",
       "ai_summary": "ACROBiosystems / 百普赛斯更新了视频或 Webinar 内容，重点涉及类器官。 原始摘要要点：Official YouTube channel video.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -40598,7 +40508,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -40700,7 +40610,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -40802,7 +40712,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -40904,7 +40814,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41006,7 +40916,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41108,7 +41018,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41207,7 +41117,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41305,7 +41215,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41403,7 +41313,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41502,7 +41412,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41601,7 +41511,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41700,7 +41610,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41799,7 +41709,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41898,7 +41808,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -41997,7 +41907,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42068,7 +41978,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "title": "Installing Milli-Q® SQ 240XL Lab Water System",
       "url": "https://www.youtube.com/watch?v=LmJFQP0Dtp4",
       "published": "2026-08-13",
-      "summary": "Official YouTube channel video. 28 views · 2 weeks ago",
+      "summary": "Official YouTube channel video. 29 views · 2 weeks ago",
       "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现视频或 Webinar 内容。 原始摘要要点：Official YouTube channel video.。 竞品正在推进video相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -42096,7 +42006,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42195,7 +42105,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42294,7 +42204,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42393,7 +42303,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42492,7 +42402,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42591,7 +42501,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42690,7 +42600,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42789,7 +42699,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42888,7 +42798,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -42987,7 +42897,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43089,7 +42999,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43160,7 +43070,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "title": "Webinar | Overcoming Large Scale Filtration Challenges in Biopharmaceutical Processes",
       "url": "https://www.youtube.com/watch?v=o4zKlHDlUJ0",
       "published": "2026-07-30",
-      "summary": "Official YouTube channel video. 67 views · 4 weeks ago",
+      "summary": "Official YouTube channel video. 70 views · 4 weeks ago",
       "ai_summary": "竞品 Sartorius / Sartorius Stedim Biotech 出现视频或 Webinar 内容，重点涉及生物工艺。 原始摘要要点：Official YouTube channel video.。 竞品正在推进生物工艺相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -43188,7 +43098,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43290,7 +43200,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43395,7 +43305,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43497,7 +43407,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43599,7 +43509,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 41,
@@ -43701,7 +43611,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -43798,7 +43708,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-03-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -43902,7 +43812,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44006,7 +43916,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-03-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44103,7 +44013,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44202,7 +44112,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44210,7 +44120,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "product",
       "business_event_type": "product_platform",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: bioprocessing, manufacturing",
@@ -44299,7 +44209,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44317,10 +44227,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "intelligence": {
         "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "生物工艺"
+        "modalities": [
+          "基因治疗"
         ],
+        "product_needs": [],
         "development_stages": [],
         "business_actions": [],
         "event_signals": []
@@ -44396,7 +44306,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44404,7 +44314,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: cell therapy, manufacturing",
@@ -44493,7 +44403,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44596,7 +44506,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44652,7 +44562,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "f1b05ca8ad3799bc",
+      "id": "fe18a7eb319f6733",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -44670,13 +44580,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Pharmcube / ByDrug - company pool indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkOFI5c0U1Qk1TRlRIbjRJT1VQUnNVdE13OTdjOXdDUkxWRWVvOGJpMnhDTTc3U0pEdFVNOXItOWYyUlk1N3JXQkp1YVVic3EySTB0SHlJTE9FWFVpU2dPUmZ3cXVuLVRtalZ1OUVTOGZqU1haZGNKT0l4S1NRQQ?oc=5"
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTFBvZ0VnMnFISXRqUDVVSVZsU1Q4Z0drdFkxUG8zRWdMaHNUUk16R1RQanFoSWNXTTk3VnVwdWsxQ1QzQURvSjVpV044TjlfXzNQZktXVUcyU09GNTJaaF9VZy1kakppZUNqODkxblNjSjBpeWYwc0Etb3dZMV9YQQ?oc=5"
       ],
       "source_trust": "media",
-      "title": "冲向百亿！小核酸药物商业爆发，瑞博生物、倍臻生物、赛默飞技术专家拆解研发创新到CMC全链条实战路径 - ByDrug",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkOFI5c0U1Qk1TRlRIbjRJT1VQUnNVdE13OTdjOXdDUkxWRWVvOGJpMnhDTTc3U0pEdFVNOXItOWYyUlk1N3JXQkp1YVVic3EySTB0SHlJTE9FWFVpU2dPUmZ3cXVuLVRtalZ1OUVTOGZqU1haZGNKT0l4S1NRQQ?oc=5",
-      "published": "2026-08-25",
-      "summary": "冲向百亿！小核酸药物商业爆发，瑞博生物、倍臻生物、赛默飞技术专家拆解研发创新到CMC全链条实战路径 ByDrug",
+      "title": "10.75亿美元！赛默飞\"割肉\"出售微生物业务，Astorg接盘 - ByDrug",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBvZ0VnMnFISXRqUDVVSVZsU1Q4Z0drdFkxUG8zRWdMaHNUUk16R1RQanFoSWNXTTk3VnVwdWsxQ1QzQURvSjVpV044TjlfXzNQZktXVUcyU09GNTJaaF9VZy1kakppZUNqODkxblNjSjBpeWYwc0Etb3dZMV9YQQ?oc=5",
+      "published": "2026-08-14",
+      "summary": "10.75亿美元！赛默飞\"割肉\"出售微生物业务，Astorg接盘 ByDrug",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -44689,9 +44599,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
         "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkOFI5c0U1Qk1TRlRIbjRJT1VQUnNVdE13OTdjOXdDUkxWRWVvOGJpMnhDTTc3U0pEdFVNOXItOWYyUlk1N3JXQkp1YVVic3EySTB0SHlJTE9FWFVpU2dPUmZ3cXVuLVRtalZ1OUVTOGZqU1haZGNKT0l4S1NRQQ?oc=5",
+        "primary_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBvZ0VnMnFISXRqUDVVSVZsU1Q4Z0drdFkxUG8zRWdMaHNUUk16R1RQanFoSWNXTTk3VnVwdWsxQ1QzQURvSjVpV044TjlfXzNQZktXVUcyU09GNTJaaF9VZy1kakppZUNqODkxblNjSjBpeWYwc0Etb3dZMV9YQQ?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkOFI5c0U1Qk1TRlRIbjRJT1VQUnNVdE13OTdjOXdDUkxWRWVvOGJpMnhDTTc3U0pEdFVNOXItOWYyUlk1N3JXQkp1YVVic3EySTB0SHlJTE9FWFVpU2dPUmZ3cXVuLVRtalZ1OUVTOGZqU1haZGNKT0l4S1NRQQ?oc=5"
+          "https://news.google.com/rss/articles/CBMifkFVX3lxTFBvZ0VnMnFISXRqUDVVSVZsU1Q4Z0drdFkxUG8zRWdMaHNUUk16R1RQanFoSWNXTTk3VnVwdWsxQ1QzQURvSjVpV044TjlfXzNQZktXVUcyU09GNTJaaF9VZy1kakppZUNqODkxblNjSjBpeWYwc0Etb3dZMV9YQQ?oc=5"
         ],
         "source_ids": [
           "pharmcube_company_pool_index"
@@ -44704,7 +44614,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44712,7 +44622,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 赛默飞",
         "行业编辑媒体",
@@ -44743,7 +44653,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "selection_reason": "ACRO 相关性较低，仅归档",
-      "published_at": "2026-08-25",
+      "published_at": "2026-08-14",
       "event_start_at": "",
       "age_days": 13,
       "days_until_event": null
@@ -44801,7 +44711,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -44898,7 +44808,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45004,7 +44914,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45103,7 +45013,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45202,7 +45112,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45304,7 +45214,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45409,7 +45319,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45512,7 +45422,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45617,7 +45527,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45715,7 +45625,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45814,7 +45724,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -45915,7 +45825,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46011,7 +45921,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46110,7 +46020,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46209,7 +46119,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46305,7 +46215,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46349,106 +46259,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "8ec43144b17cb686",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.sohu.com%2fa%2f1062302101_121653759&c=7290165910954004820&mkt=ja-jp"
-      ],
-      "source_trust": "aggregator",
-      "title": "百林科与ACROBiosystems百普赛斯签约战略合作，打造AI赋能的下一代亲和 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.sohu.com%2fa%2f1062302101_121653759&c=7290165910954004820&mkt=ja-jp",
-      "published": "2026-08-13",
-      "summary": "北京2026年8月13日-- 8月10日，百林科医药科技（上海）股份有限公司（以下简称\"百林科\"）与北京百普赛斯生物科技股份有限公司（以下简称\"ACROBiosystems百普赛斯\"）正式举行战略合作签约仪式，百林科创始人兼董事长陈志，副总裁张天勇等；ACROBiosystems百普赛斯创始人、董事长兼CEO陈宜顶，首席运营官苗景赟等出席签约仪式。 双方将围绕AI赋能的下一代亲和纯化配基及亲和层析 ...",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了合作或交易信号。 原始摘要要点：北京2026年8月13日-- 8月10日，百林科医药科技（上海）股份有限公司（以下简称\"百林科\"）与北京百普赛斯生物科技股份有限公司（以下简称\"ACROBiosystems百普赛斯\"）正式举行战略合作签约仪式，百林科创始...。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "北京2026年8月13日-- 8月10日，百林科医药科技（上海）股份有限公司（以下简称\"百林科\"）与北京百普赛斯生物科技股份有限公司（以下简称\"ACROBiosystems百普赛斯\"）正式举行战略合作签约仪式，百林科创始人兼董事长陈志，副总裁张天勇等；ACROBiosystems百普赛斯创始人、董事长兼CEO陈宜顶，首席运营官苗景赟等出席签约仪式。",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.sohu.com%2fa%2f1062302101_121653759&c=7290165910954004820&mkt=ja-jp",
-        "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.sohu.com%2fa%2f1062302101_121653759&c=7290165910954004820&mkt=ja-jp"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 40,
-      "tier": "archive",
-      "category": "partnership",
-      "business_event_type": "partnership_deal",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: ACROBiosystems, 百普赛斯",
-        "高价值分类加成 +10: partnership"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "合作 / 共同开发"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 35,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-13",
-      "event_start_at": "",
-      "age_days": 14,
-      "days_until_event": null
-    },
-    {
-      "id": "7b6481a968854291",
+      "id": "94017f6b6a9159af",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -46466,12 +46277,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
       "published": "2026-05-07",
       "summary": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
       "ai_summary": "ACROBiosystems / 百普赛斯更新了公司战略与组织动态，重点涉及CD20、抗体。 原始摘要要点：」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品...。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
@@ -46486,10 +46297,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "」 ACROBiosystemsについて ACROBiosystems Groupは2010年に設立され、2021年に上場したバイオテクノロジー企業であり、革新的な製品とビジネスモデルを提供することで、世界のバイオ医薬品・ヘルスケア産業の礎となることを目指しています。",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31166247%2f&c=8193742174988905637&mkt=ja-jp",
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-07_4009616%2f&c=10431324159575250108&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_acro_backup"
@@ -46502,7 +46313,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46606,7 +46417,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46702,7 +46513,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46797,7 +46608,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46899,7 +46710,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-04-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -46998,7 +46809,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-04-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47097,7 +46908,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47197,7 +47008,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47293,7 +47104,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47389,7 +47200,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47485,7 +47296,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47553,10 +47364,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "https://news.google.com/rss/articles/CBMixAFBVV95cUxNa1pnNHlDV3cwWmFEdy1qeXNLd0VlbzNWdzA5SFhKTzRJZ00zU1VhVFNQbEZmY2Q0QnUwX3ZESzg1WUZhQnV1RkRIQ1dOU1hkZWJUU1p0ZFJHMzNVTUE4alVodUE5ODBvalpFOGo4dFRKTmZOc09Kc1k4Nm81Mk1JRGxzQmNubERpVHh5Z2JhY19Qc0dpM2FHQzZoV09uRENsazdQeUFhN3l1cWZXZ1ZSdTJSTGVuRVExbUo4eUZNTWJEN0NJ?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "10x Genomics boosts single cell proteomics with acquisition of Proteintech Genomics - SelectScience",
+      "title": "10x Genomics boosts single cell proteomics with acquisition of Proteintech Genomics - Select Science",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNa1pnNHlDV3cwWmFEdy1qeXNLd0VlbzNWdzA5SFhKTzRJZ00zU1VhVFNQbEZmY2Q0QnUwX3ZESzg1WUZhQnV1RkRIQ1dOU1hkZWJUU1p0ZFJHMzNVTUE4alVodUE5ODBvalpFOGo4dFRKTmZOc09Kc1k4Nm81Mk1JRGxzQmNubERpVHh5Z2JhY19Qc0dpM2FHQzZoV09uRENsazdQeUFhN3l1cWZXZ1ZSdTJSTGVuRVExbUo4eUZNTWJEN0NJ?oc=5",
       "published": "2026-06-19",
-      "summary": "10x Genomics boosts single cell proteomics with acquisition of Proteintech Genomics SelectScience",
+      "summary": "10x Genomics boosts single cell proteomics with acquisition of Proteintech Genomics Select Science",
       "ai_summary": "竞品 Proteintech 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -47584,7 +47395,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47683,7 +47494,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47779,7 +47590,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47875,7 +47686,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -47971,7 +47782,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48070,7 +47881,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48173,7 +47984,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48275,7 +48086,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48376,7 +48187,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48474,7 +48285,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48570,7 +48381,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48675,7 +48486,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48785,7 +48596,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48885,7 +48696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -48985,7 +48796,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49083,7 +48894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49181,7 +48992,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49278,7 +49089,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49375,7 +49186,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49419,7 +49230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-07-12",
       "event_start_at": "",
-      "age_days": 47,
+      "age_days": 46,
       "days_until_event": null
     },
     {
@@ -49475,7 +49286,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49577,7 +49388,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49677,7 +49488,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49775,7 +49586,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49819,7 +49630,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-07-01",
       "event_start_at": "",
-      "age_days": 58,
+      "age_days": 57,
       "days_until_event": null
     },
     {
@@ -49875,7 +49686,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -49971,7 +49782,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50067,7 +49878,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50163,7 +49974,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50260,7 +50071,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50268,7 +50079,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: アステラス製薬, アステラス",
         "高价值分类加成 +10: partnership"
@@ -50356,7 +50167,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50364,7 +50175,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: アステラス製薬, アステラス",
         "高价值分类加成 +10: partnership"
@@ -50452,7 +50263,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50548,7 +50359,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50556,7 +50367,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: アステラス製薬, アステラス",
         "高价值分类加成 +10: partnership"
@@ -50647,7 +50458,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50743,7 +50554,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50839,7 +50650,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -50938,7 +50749,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -51034,7 +50845,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -51142,7 +50953,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -51238,7 +51049,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -51338,7 +51149,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -51440,7 +51251,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -51538,7 +51349,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 39,
@@ -51546,7 +51357,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "research",
       "business_event_type": "target_therapy",
       "signal_type": "funding",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "监管机构结构化来源",
         "战略主题命中: 創薬",
@@ -51633,7 +51444,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 39,
@@ -51728,7 +51539,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 39,
@@ -51823,7 +51634,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 39,
@@ -51924,7 +51735,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 39,
@@ -52023,7 +51834,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52120,7 +51931,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52212,7 +52023,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52312,7 +52123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52414,7 +52225,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52513,7 +52324,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52609,7 +52420,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52708,7 +52519,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52753,7 +52564,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-06-20",
       "event_start_at": "",
-      "age_days": 69,
+      "age_days": 68,
       "days_until_event": null
     },
     {
@@ -52778,10 +52589,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaURlNWRvSDRGcl9PbUV4aTdZcDh5emRIaUwyb2RBYW9pc1pKd251ckRmN0I0X1JNekZ3SkE5ZUI3eUJDTVlyalN2eGN0b0dzSS14U1VQS2MwOW9QSm9MNVdxVU56M0w3ZjVodnFnVEVpVDEzalNoLThSMHZqTGV6a29ob3o4QUFGNUhmVjBZMXpXODdyWDZqTnhzbjBxNjV1TTI5VG5GMlllMGR1c01SejZaNUI?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook - Bloomberg",
+      "title": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook - Bloomberg.com",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaURlNWRvSDRGcl9PbUV4aTdZcDh5emRIaUwyb2RBYW9pc1pKd251ckRmN0I0X1JNekZ3SkE5ZUI3eUJDTVlyalN2eGN0b0dzSS14U1VQS2MwOW9QSm9MNVdxVU56M0w3ZjVodnFnVEVpVDEzalNoLThSMHZqTGV6a29ob3o4QUFGNUhmVjBZMXpXODdyWDZqTnhzbjBxNjV1TTI5VG5GMlllMGR1c01SejZaNUI?oc=5",
       "published": "2026-07-23",
-      "summary": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook Bloomberg",
+      "summary": "Thermo Fisher Rises as Instrument Demand Recovery Lifts Outlook Bloomberg.com",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -52809,7 +52620,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -52854,7 +52665,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "f0316c0a6aba49e7",
+      "id": "d27389358d8de085",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -52866,124 +52677,24 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "bing_news_thermo_backup",
       "source_label": "Bing News RSS - Thermo Fisher backup",
       "source_ids": [
-        "jiemian_health_index"
+        "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Jiemian Health - China pharma indexed RSS"
+        "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Medtronic vs. Thermo Fisher: Which Healthcare Turnaround Offers More Upside?",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp",
       "published": "2026-08-23",
       "summary": "Turnarounds in the healthcare sector do not all look the same. Some companies recover because management executes better, launches stronger products, and improves operations, while others do so ...",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Turnarounds in the healthcare sector do not all look the same.。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jNElhSTN5VGtIOW9SQzNXUC1ySlFHU3dRSU9say1yMGo2YkNnWUtWT3RxNmNSMXdvZGVuTVZWZTFMbFB4Y0tDVEJubTI5amc2UldwZFNFM2I?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jNElhSTN5VGtIOW9SQzNXUC1ySlFHU3dRSU9say1yMGo2YkNnWUtWT3RxNmNSMXdvZGVuTVZWZTFMbFB4Y0tDVEJubTI5amc2UldwZFNFM2I?oc=5"
-        ],
-        "source_ids": [
-          "jiemian_health_index"
-        ],
-        "source_labels": [
-          "Jiemian Health - China pharma indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "media",
-        "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 38,
-      "tier": "archive",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: mRNA, 创新药, 疫苗",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "mRNA / RNA",
-          "疫苗"
-        ],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 12,
-        "label": "低相关",
-        "explanation": "该信号命中mRNA / RNA、疫苗，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术"
-        ]
-      },
-      "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "low",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-26",
-      "event_start_at": "",
-      "age_days": 1,
-      "days_until_event": null
-    },
-    {
-      "id": "dfcea7cf1d38f904",
-      "company_id": "biotechne",
-      "company": "Bio-Techne",
-      "matched_company_ids": [
-        "biotechne"
-      ],
-      "matched_companies": [
-        "Bio-Techne"
-      ],
-      "source_id": "google_news_biotechne",
-      "source_label": "Google News RSS - Bio-Techne",
-      "source_ids": [
-        "google_news_biotechne"
-      ],
-      "source_labels": [
-        "Google News RSS - Bio-Techne"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMmFKRU40bXBPUTBkaEo0UU9XQkJNd1paUUlrNVpSbTAzclNGckU0NnJBbUVGall1T2NPQ0E3Q2ROenpUTHVLcHNfYlhxR0dvTzg4bkRYQ1YzRzEtOEJvd0FxeWdLX3NsaXRCdG1KX3lRY29vWjRNb1B0QmlOS09MT1BJUUJsRDFrVU43TVhYSnpmMnh6WE0zbXlISl9wS0FaeXlKV1NDSdIBrAFBVV95cUxOUUVKaTlZZmxJMG02R0RFZWhfRV9HOVA3emVmc3BZLUN6eE1KbzBERVkyblRRV2I0T1ZCczFGXzlqeVJkNVhNdWw3LUtOVnYxQjlnMVVWc0RfOVBpTU1WTjV6VVNTSnZGa0dtNFNuRnZoNTBVZHc2MkNFbDNTejJKanJNWHdOeE5CVEFqTVB5NGhFb3FBVHhzNVNTVHNxUU14ZWJtaFFYaXFjYWQ0?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Bio-Techne: GAAP Operating Income Surges 146% As Adjusted Profit Growth Remains Modest - Pulse 2.0",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMmFKRU40bXBPUTBkaEo0UU9XQkJNd1paUUlrNVpSbTAzclNGckU0NnJBbUVGall1T2NPQ0E3Q2ROenpUTHVLcHNfYlhxR0dvTzg4bkRYQ1YzRzEtOEJvd0FxeWdLX3NsaXRCdG1KX3lRY29vWjRNb1B0QmlOS09MT1BJUUJsRDFrVU43TVhYSnpmMnh6WE0zbXlISl9wS0FaeXlKV1NDSdIBrAFBVV95cUxOUUVKaTlZZmxJMG02R0RFZWhfRV9HOVA3emVmc3BZLUN6eE1KbzBERVkyblRRV2I0T1ZCczFGXzlqeVJkNVhNdWw3LUtOVnYxQjlnMVVWc0RfOVBpTU1WTjV6VVNTSnZGa0dtNFNuRnZoNTBVZHc2MkNFbDNTejJKanJNWHdOeE5CVEFqTVB5NGhFb3FBVHhzNVNTVHNxUU14ZWJtaFFYaXFjYWQ0?oc=5",
-      "published": "2026-08-12",
-      "summary": "Bio-Techne: GAAP Operating Income Surges 146% As Adjusted Profit Growth Remains Modest Pulse 2.0",
-      "ai_summary": "竞品 Bio-Techne 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "summary_quality": "source_backed",
       "evidence": {
         "kind": "index",
         "kind_label": "聚合索引线索",
@@ -52991,30 +52702,30 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "Turnarounds in the healthcare sector do not all look the same.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=11492968609211258158&mkt=ja-jp"
         ],
         "source_ids": [
-          "google_news_biotechne"
+          "bing_news_thermo_backup"
         ],
         "source_labels": [
-          "Google News RSS - Bio-Techne"
+          "Bing News RSS - Thermo Fisher backup"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
       "tier": "archive",
-      "category": "regulatory",
-      "business_event_type": "clinical_regulatory",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": false,
+      "is_new": true,
       "reasons": [
         "公司池命中 +30: Thermo Fisher",
         "业务动作命中: launch"
@@ -53028,21 +52739,20 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "event_signals": []
       },
       "acro_relevance": {
-        "level": "medium",
-        "score": 26,
-        "label": "中相关",
-        "explanation": "竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
         "reasons": [
-          "竞品公司动态",
-          "包含监管或注册信号"
+          "竞品公司动态"
         ]
       },
       "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-23",
@@ -53099,7 +52809,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53199,7 +52909,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53296,7 +53006,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-07-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53395,7 +53105,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53491,7 +53201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53601,7 +53311,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53699,7 +53409,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53805,7 +53515,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -53910,7 +53620,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54013,7 +53723,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54110,7 +53820,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54213,7 +53923,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54316,7 +54026,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54416,7 +54126,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54520,7 +54230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54624,7 +54334,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54722,7 +54432,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54730,7 +54440,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Eisai",
         "公司自有来源",
@@ -54820,7 +54530,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -54923,7 +54633,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 38,
@@ -55026,7 +54736,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55119,7 +54829,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55218,7 +54928,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55317,7 +55027,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55415,7 +55125,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55514,7 +55224,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55613,7 +55323,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55709,7 +55419,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55773,47 +55483,53 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "source_id": "google_news_thermo",
       "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_thermo"
+        "google_news_thermo",
+        "bing_news_thermo_backup"
       ],
       "source_labels": [
-        "Google News RSS - Thermo Fisher"
+        "Google News RSS - Thermo Fisher",
+        "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR2doYUNfQUotQ0JxUUpyaXNmZXZFLVB0dGN1UkYza2d3MVRkX2lMU29KSUlHZ2pGZUJ2RHJFdWM0RjRRNUFIZ3hSbkxXVG9tRkhvbEozRmVVUDFyVmVZU0JTOC1FLWl2LUlDVmlMNXZRRktCYWRVaC1LZGR2di1UYjhZOW1KZEJoRmhLWUxCblY4bl9tUFp1MDNXOG03c0E?oc=5"
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR2doYUNfQUotQ0JxUUpyaXNmZXZFLVB0dGN1UkYza2d3MVRkX2lMU29KSUlHZ2pGZUJ2RHJFdWM0RjRRNUFIZ3hSbkxXVG9tRkhvbEozRmVVUDFyVmVZU0JTOC1FLWl2LUlDVmlMNXZRRktCYWRVaC1LZGR2di1UYjhZOW1KZEJoRmhLWUxCblY4bl9tUFp1MDNXOG03c0E?oc=5",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.theglobeandmail.com%2finvesting%2fmarkets%2fstocks%2fA%2fpressreleases%2f3577642%2fhow-thermo-fisher-is-riding-bioproduction-and-ai-led-growth-trends%2f&c=5428166781949125602&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "How Thermo Fisher Is Riding Bioproduction and AI-Led Growth Trends - Yahoo Finance",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR2doYUNfQUotQ0JxUUpyaXNmZXZFLVB0dGN1UkYza2d3MVRkX2lMU29KSUlHZ2pGZUJ2RHJFdWM0RjRRNUFIZ3hSbkxXVG9tRkhvbEozRmVVUDFyVmVZU0JTOC1FLWl2LUlDVmlMNXZRRktCYWRVaC1LZGR2di1UYjhZOW1KZEJoRmhLWUxCblY4bl9tUFp1MDNXOG03c0E?oc=5",
       "published": "2026-07-31",
-      "summary": "How Thermo Fisher Is Riding Bioproduction and AI-Led Growth Trends Yahoo Finance",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary": "Detailed price information for Agilent Technologies (A-N) from The Globe and Mail including charting and trades.",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Detailed price information for Agilent Technologies (A-N) from The Globe and Mail including charting and trade...。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "structured_inference",
+      "summary_quality": "source_backed",
       "evidence": {
         "kind": "index",
         "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Detailed price information for Agilent Technologies (A-N) from The Globe and Mail including charting and trades.",
         "primary_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR2doYUNfQUotQ0JxUUpyaXNmZXZFLVB0dGN1UkYza2d3MVRkX2lMU29KSUlHZ2pGZUJ2RHJFdWM0RjRRNUFIZ3hSbkxXVG9tRkhvbEozRmVVUDFyVmVZU0JTOC1FLWl2LUlDVmlMNXZRRktCYWRVaC1LZGR2di1UYjhZOW1KZEJoRmhLWUxCblY4bl9tUFp1MDNXOG03c0E?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR2doYUNfQUotQ0JxUUpyaXNmZXZFLVB0dGN1UkYza2d3MVRkX2lMU29KSUlHZ2pGZUJ2RHJFdWM0RjRRNUFIZ3hSbkxXVG9tRkhvbEozRmVVUDFyVmVZU0JTOC1FLWl2LUlDVmlMNXZRRktCYWRVaC1LZGR2di1UYjhZOW1KZEJoRmhLWUxCblY4bl9tUFp1MDNXOG03c0E?oc=5"
+          "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR2doYUNfQUotQ0JxUUpyaXNmZXZFLVB0dGN1UkYza2d3MVRkX2lMU29KSUlHZ2pGZUJ2RHJFdWM0RjRRNUFIZ3hSbkxXVG9tRkhvbEozRmVVUDFyVmVZU0JTOC1FLWl2LUlDVmlMNXZRRktCYWRVaC1LZGR2di1UYjhZOW1KZEJoRmhLWUxCblY4bl9tUFp1MDNXOG03c0E?oc=5",
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.theglobeandmail.com%2finvesting%2fmarkets%2fstocks%2fA%2fpressreleases%2f3577642%2fhow-thermo-fisher-is-riding-bioproduction-and-ai-led-growth-trends%2f&c=5428166781949125602&mkt=ja-jp"
         ],
         "source_ids": [
-          "google_news_thermo"
+          "google_news_thermo",
+          "bing_news_thermo_backup"
         ],
         "source_labels": [
-          "Google News RSS - Thermo Fisher"
+          "Google News RSS - Thermo Fisher",
+          "Bing News RSS - Thermo Fisher backup"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -55905,7 +55621,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56005,7 +55721,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56104,7 +55820,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56212,7 +55928,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56315,7 +56031,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56411,7 +56127,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56510,7 +56226,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56609,7 +56325,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56708,7 +56424,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56805,7 +56521,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -56902,7 +56618,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -57001,7 +56717,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -57105,7 +56821,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -57208,7 +56924,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 36,
@@ -57305,7 +57021,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57403,7 +57119,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57501,7 +57217,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57599,7 +57315,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57697,7 +57413,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57798,7 +57514,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57896,7 +57612,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -57997,7 +57713,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58098,7 +57814,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58196,7 +57912,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58294,7 +58010,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58392,7 +58108,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58490,7 +58206,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58588,7 +58304,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58686,7 +58402,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58756,7 +58472,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "title": "Webinar | Your mRNA Process Simplified Increase pDNA Purity and Yields",
       "url": "https://www.youtube.com/watch?v=JoBgrLcierY",
       "published": "2026-07-28",
-      "summary": "Official YouTube channel video. 49 views · 1 month ago",
+      "summary": "Official YouTube channel video. 50 views · 1 month ago",
       "ai_summary": "竞品 Sartorius / Sartorius Stedim Biotech 出现视频或 Webinar 内容，重点涉及mRNA / RNA。 原始摘要要点：Official YouTube channel video.。 竞品正在推进mRNA / RNA相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -58784,7 +58500,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58885,7 +58601,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -58983,7 +58699,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59081,7 +58797,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59182,7 +58898,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59280,7 +58996,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59378,7 +59094,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59476,7 +59192,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59574,7 +59290,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59672,7 +59388,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59773,7 +59489,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59871,7 +59587,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 35,
@@ -59965,7 +59681,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -59973,7 +59689,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: FDA, approval",
@@ -60070,7 +59786,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60169,7 +59885,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60268,7 +59984,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60312,7 +60028,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-06",
       "event_start_at": "",
-      "age_days": 22,
+      "age_days": 21,
       "days_until_event": null
     },
     {
@@ -60364,7 +60080,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60463,7 +60179,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60555,7 +60271,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60595,7 +60311,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-25",
       "event_start_at": "",
-      "age_days": 3,
+      "age_days": 2,
       "days_until_event": null
     },
     {
@@ -60647,7 +60363,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60739,7 +60455,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60779,7 +60495,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -60831,7 +60547,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -60923,7 +60639,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61015,7 +60731,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61107,7 +60823,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61203,7 +60919,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61299,7 +61015,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61398,7 +61114,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61497,7 +61213,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61593,7 +61309,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61697,7 +61413,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61796,7 +61512,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61895,7 +61611,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -61993,7 +61709,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62092,7 +61808,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62188,7 +61904,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62287,7 +62003,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62386,7 +62102,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62394,7 +62110,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "product",
       "business_event_type": "product_platform",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 创新药",
@@ -62482,7 +62198,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62580,7 +62296,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62675,7 +62391,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62768,7 +62484,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62861,7 +62577,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -62960,7 +62676,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -63053,7 +62769,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 34,
@@ -63146,7 +62862,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 33,
@@ -63240,7 +62956,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63339,7 +63055,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63435,7 +63151,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63535,7 +63251,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63634,7 +63350,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63728,7 +63444,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63823,7 +63539,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -63867,7 +63583,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-06-19",
       "event_start_at": "",
-      "age_days": 70,
+      "age_days": 69,
       "days_until_event": null
     },
     {
@@ -63919,7 +63635,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64014,7 +63730,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64117,7 +63833,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64214,7 +63930,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64312,7 +64028,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64412,7 +64128,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64503,7 +64219,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64560,13 +64276,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
       "matched_companies": [],
-      "source_id": "nikkanyaku_life_science_index",
-      "source_label": "Nikkan Yakugyo - life science indexed RSS",
+      "source_id": "mixonline_official_rss",
+      "source_label": "Mix Online - official Japan pharma RSS",
       "source_ids": [
-        "nikkanyaku_life_science_index"
+        "mixonline_official_rss"
       ],
       "source_labels": [
-        "Nikkan Yakugyo - life science indexed RSS"
+        "Mix Online - official Japan pharma RSS"
       ],
       "related_urls": [
         "/tabid55.html?artid=80759"
@@ -64580,7 +64296,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "structured_inference",
+      "summary_quality": "source_backed",
       "evidence": {
         "kind": "secondary",
         "kind_label": "公开二手证据",
@@ -64593,25 +64309,25 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
           "/tabid55.html?artid=80759"
         ],
         "source_ids": [
-          "nikkanyaku_life_science_index"
+          "mixonline_official_rss"
         ],
         "source_labels": [
-          "Nikkan Yakugyo - life science indexed RSS"
+          "Mix Online - official Japan pharma RSS"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
       "tier": "archive",
-      "category": "regulatory",
+      "category": "company",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 製薬",
@@ -64622,7 +64338,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "modalities": [],
         "product_needs": [],
         "development_stages": [
-          "注册 / 审批"
+          "上市 / 商业化"
         ],
         "business_actions": [],
         "event_signals": []
@@ -64698,7 +64414,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64740,32 +64456,32 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
-      "id": "0a5d2252af2e4c3f",
+      "id": "91c498638894630e",
       "company_id": "",
       "company": "行业观察（未命中公司池）",
       "matched_company_ids": [],
       "matched_companies": [],
-      "source_id": "jiemian_health_index",
-      "source_label": "Jiemian Health - China pharma indexed RSS",
+      "source_id": "bioon_life_science_index",
+      "source_label": "Bioon - China life science indexed RSS",
       "source_ids": [
-        "jiemian_health_index"
+        "bioon_life_science_index"
       ],
       "source_labels": [
-        "Jiemian Health - China pharma indexed RSS"
+        "Bioon - China life science indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzWElEaTFyWUNpSmVDckc0dVBiVjUxclRpNC0xZDJBbVlmYXd2SFdXekdnYk1BSTFqRXo3Vm1sVlo5U1JrNEtRUl84N21lMFZaRWV3ZDZsaXU?oc=5"
+        "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00WDNPeXV2eDdHREVRQkRJSVpEZ3lGZFZKSzlxVkxqR05pNXFrRThWY05fRURuMjczVld1UlhEbzd5clVXWEhMUU1qZXIzbVg0aEc4TVNxX3Q4cVl5?oc=5"
       ],
       "source_trust": "media",
-      "title": "翰森制药绩后狂涨13%，创新药收入占比超85%！莫德纳癌症疫苗 - Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzWElEaTFyWUNpSmVDckc0dVBiVjUxclRpNC0xZDJBbVlmYXd2SFdXekdnYk1BSTFqRXo3Vm1sVlo5U1JrNEtRUl84N21lMFZaRWV3ZDZsaXU?oc=5",
-      "published": "2026-08-27",
-      "summary": "翰森制药绩后狂涨13%，创新药收入占比超85%！莫德纳癌症疫苗 Jiemian.com",
-      "ai_summary": "该来源捕捉到一条产品与平台动态，重点涉及疫苗。 该信号命中疫苗，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“技术趋势观察”处理：并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。",
+      "title": "Nature Medicine：西安交大吴岳/袁祖贻团队发布AAV基因治疗临床实验结果，一次治疗，长期降血脂 - 生物谷",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00WDNPeXV2eDdHREVRQkRJSVpEZ3lGZFZKSzlxVkxqR05pNXFrRThWY05fRURuMjczVld1UlhEbzd5clVXWEhMUU1qZXIzbVg0aEc4TVNxX3Q4cVl5?oc=5",
+      "published": "2026-06-07",
+      "summary": "Nature Medicine：西安交大吴岳/袁祖贻团队发布AAV基因治疗临床实验结果，一次治疗，长期降血脂 生物谷",
+      "ai_summary": "该来源捕捉到一条临床监管信号，重点涉及基因治疗、AAV / 病毒载体。 该信号命中基因治疗、AAV / 病毒载体，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“法规影响核对”处理：核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -64777,63 +64493,69 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
         "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzWElEaTFyWUNpSmVDckc0dVBiVjUxclRpNC0xZDJBbVlmYXd2SFdXekdnYk1BSTFqRXo3Vm1sVlo5U1JrNEtRUl84N21lMFZaRWV3ZDZsaXU?oc=5",
+        "primary_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00WDNPeXV2eDdHREVRQkRJSVpEZ3lGZFZKSzlxVkxqR05pNXFrRThWY05fRURuMjczVld1UlhEbzd5clVXWEhMUU1qZXIzbVg0aEc4TVNxX3Q4cVl5?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzWElEaTFyWUNpSmVDckc0dVBiVjUxclRpNC0xZDJBbVlmYXd2SFdXekdnYk1BSTFqRXo3Vm1sVlo5U1JrNEtRUl84N21lMFZaRWV3ZDZsaXU?oc=5"
+          "https://news.google.com/rss/articles/CBMiXEFVX3lxTE00WDNPeXV2eDdHREVRQkRJSVpEZ3lGZFZKSzlxVkxqR05pNXFrRThWY05fRURuMjczVld1UlhEbzd5clVXWEhMUU1qZXIzbVg0aEc4TVNxX3Q4cVl5?oc=5"
         ],
         "source_ids": [
-          "jiemian_health_index"
+          "bioon_life_science_index"
         ],
         "source_labels": [
-          "Jiemian Health - China pharma indexed RSS"
+          "Bioon - China life science indexed RSS"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "media",
         "published_at": "2026-06-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
       "tier": "archive",
-      "category": "product",
-      "business_event_type": "product_platform",
+      "category": "regulatory",
+      "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
-        "战略主题命中: 创新药, 疫苗",
-        "高价值分类加成 +10: product"
+        "战略主题命中: 基因治疗",
+        "业务动作命中: 发布",
+        "高价值分类加成 +8: regulatory"
       ],
       "intelligence": {
         "targets": [],
         "modalities": [
-          "疫苗"
+          "基因治疗",
+          "AAV / 病毒载体"
         ],
         "product_needs": [],
         "development_stages": [],
-        "business_actions": [],
+        "business_actions": [
+          "产品发布"
+        ],
         "event_signals": []
       },
       "acro_relevance": {
-        "level": "low",
-        "score": 12,
-        "label": "低相关",
-        "explanation": "该信号命中疫苗，对技术趋势有参考价值，但尚未出现明确商业需求。",
+        "level": "medium",
+        "score": 30,
+        "label": "中相关",
+        "explanation": "该信号命中基因治疗、AAV / 病毒载体，对技术趋势有参考价值，但尚未出现明确商业需求。",
         "reasons": [
-          "命中重点疗法或技术"
+          "命中重点疗法或技术",
+          "出现明确业务动作",
+          "包含监管或注册信号"
         ]
       },
       "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "low",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
+        "type": "regulatory",
+        "label": "法规影响核对",
+        "owner": "产品 / 法规",
+        "priority": "medium",
+        "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
       "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-27",
+      "published_at": "2026-06-07",
       "event_start_at": "",
       "age_days": 81,
       "days_until_event": null
@@ -64887,7 +64609,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -64982,7 +64704,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -65077,7 +64799,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -65172,7 +64894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 32,
@@ -65267,7 +64989,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 31,
@@ -65361,7 +65083,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 31,
@@ -65459,7 +65181,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -65467,7 +65189,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: ACROBiosystems",
         "公司自有来源"
@@ -65561,7 +65283,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -65569,7 +65291,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: ACROBiosystems",
         "公司自有来源"
@@ -65663,7 +65385,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -65702,7 +65424,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-24",
       "event_start_at": "",
-      "age_days": 4,
+      "age_days": 3,
       "days_until_event": null
     },
     {
@@ -65754,7 +65476,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -65855,7 +65577,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -65956,7 +65678,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66051,7 +65773,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66059,7 +65781,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: bioprocessing, manufacturing",
@@ -66142,7 +65864,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66241,7 +65963,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66343,7 +66065,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66449,7 +66171,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66553,7 +66275,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66654,7 +66376,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66758,7 +66480,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66859,7 +66581,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -66963,7 +66685,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67067,7 +66789,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67171,7 +66893,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67268,7 +66990,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67369,7 +67091,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67469,7 +67191,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67569,7 +67291,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67667,7 +67389,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67762,7 +67484,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67857,7 +67579,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -67953,7 +67675,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68048,7 +67770,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68143,7 +67865,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68239,7 +67961,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68279,7 +68001,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-12",
       "event_start_at": "",
-      "age_days": 16,
+      "age_days": 15,
       "days_until_event": null
     },
     {
@@ -68335,7 +68057,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68378,7 +68100,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-07-29",
       "event_start_at": "",
-      "age_days": 30,
+      "age_days": 29,
       "days_until_event": null
     },
     {
@@ -68434,7 +68156,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68474,7 +68196,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-07-15",
       "event_start_at": "",
-      "age_days": 44,
+      "age_days": 43,
       "days_until_event": null
     },
     {
@@ -68530,7 +68252,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68570,102 +68292,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-06-24",
       "event_start_at": "",
-      "age_days": 65,
-      "days_until_event": null
-    },
-    {
-      "id": "9cd981b02968f4f2",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS1NnRUYxVERacEs3aEYzOF9TaDBuSjRTaUdfbXptbGpEbXRVTWZlZlN1TmlTd3ZXdWM5bDNYaTZBYi1aTVJvZVRrdWl3X1kwNkdhYm1LR0hmWE04TTdzX3F3SjdzU0NhQjdVMzJYbGhWYXNlRnUxbTA5TkZfNGFUMXJXckRZTTdaRzBCcnM5TGgxaGpCekFBaHJhZmdIcnFyN2hXNFlxQ3F2OTVTYURLeTlVa18yVzM4ak52NUZmQTNQNDkyQnVxN3Baenlfdw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Here's How Much $1000 Invested In Thermo Fisher Scientific 10 Years Ago Would Be Worth Today - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS1NnRUYxVERacEs3aEYzOF9TaDBuSjRTaUdfbXptbGpEbXRVTWZlZlN1TmlTd3ZXdWM5bDNYaTZBYi1aTVJvZVRrdWl3X1kwNkdhYm1LR0hmWE04TTdzX3F3SjdzU0NhQjdVMzJYbGhWYXNlRnUxbTA5TkZfNGFUMXJXckRZTTdaRzBCcnM5TGgxaGpCekFBaHJhZmdIcnFyN2hXNFlxQ3F2OTVTYURLeTlVa18yVzM4ak52NUZmQTNQNDkyQnVxN3Baenlfdw?oc=5",
-      "published": "2026-08-26",
-      "summary": "Here's How Much $1000 Invested In Thermo Fisher Scientific 10 Years Ago Would Be Worth Today Benzinga",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS1NnRUYxVERacEs3aEYzOF9TaDBuSjRTaUdfbXptbGpEbXRVTWZlZlN1TmlTd3ZXdWM5bDNYaTZBYi1aTVJvZVRrdWl3X1kwNkdhYm1LR0hmWE04TTdzX3F3SjdzU0NhQjdVMzJYbGhWYXNlRnUxbTA5TkZfNGFUMXJXckRZTTdaRzBCcnM5TGgxaGpCekFBaHJhZmdIcnFyN2hXNFlxQ3F2OTVTYURLeTlVa18yVzM4ak52NUZmQTNQNDkyQnVxN3Baenlfdw?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS1NnRUYxVERacEs3aEYzOF9TaDBuSjRTaUdfbXptbGpEbXRVTWZlZlN1TmlTd3ZXdWM5bDNYaTZBYi1aTVJvZVRrdWl3X1kwNkdhYm1LR0hmWE04TTdzX3F3SjdzU0NhQjdVMzJYbGhWYXNlRnUxbTA5TkZfNGFUMXJXckRZTTdaRzBCcnM5TGgxaGpCekFBaHJhZmdIcnFyN2hXNFlxQ3F2OTVTYURLeTlVa18yVzM4ak52NUZmQTNQNDkyQnVxN3Baenlfdw?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-26",
-      "event_start_at": "",
-      "age_days": 1,
+      "age_days": 64,
       "days_until_event": null
     },
     {
@@ -68721,7 +68348,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68816,7 +68443,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68911,7 +68538,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -68950,7 +68577,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-25",
       "event_start_at": "",
-      "age_days": 3,
+      "age_days": 2,
       "days_until_event": null
     },
     {
@@ -69006,7 +68633,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T06:33:33"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69104,301 +68731,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-23",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-23",
-      "event_start_at": "",
-      "age_days": 4,
-      "days_until_event": null
-    },
-    {
-      "id": "a0a4b840dd549058",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo",
-        "bing_news_thermo_backup"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher",
-        "Bing News RSS - Thermo Fisher backup"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzlia0xsSndfRENNM2cxdlE3TEI0MERpXzdnaTVMUWxlXzJFbDI0dTFxMERTc2ZKRWhSNTJRZmgxT1dyUnh1ZG9LX3FnU2gtZHNERDAzRm5XTi1JRi1qLWRjYXBrT09iXy02TFlLb3RMQjA4ZEN3QzMwdm9EMEdyVmtnMDQxVmU3dlplTzViRl85eXotZ0dRREdodnlKa2JRYnQtdg?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8fda06cc6847b4b2b0df0b533b50d3&url=https%3a%2f%2fwww.medtechdive.com%2fnews%2fthermo-fisher-closes-11b-sale-of-microbiology-unit-to-pe-firm%2f827811%2f&c=13539879891705849442&mkt=en-us"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher closes $1.1B sale of microbiology unit to PE firm - MedTech Dive",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzlia0xsSndfRENNM2cxdlE3TEI0MERpXzdnaTVMUWxlXzJFbDI0dTFxMERTc2ZKRWhSNTJRZmgxT1dyUnh1ZG9LX3FnU2gtZHNERDAzRm5XTi1JRi1qLWRjYXBrT09iXy02TFlLb3RMQjA4ZEN3QzMwdm9EMEdyVmtnMDQxVmU3dlplTzViRl85eXotZ0dRREdodnlKa2JRYnQtdg?oc=5",
-      "published": "2026-08-13",
-      "summary": "European private equity firm Astorg will run the business as an independent diagnostics company, led by former PerkinElmer CEO Dirk Bontridder.",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：European private equity firm Astorg will run the business as an independent diagnostics company, led by former...。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "European private equity firm Astorg will run the business as an independent diagnostics company, led by former PerkinElmer CEO Dirk Bontridder.",
-        "primary_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzlia0xsSndfRENNM2cxdlE3TEI0MERpXzdnaTVMUWxlXzJFbDI0dTFxMERTc2ZKRWhSNTJRZmgxT1dyUnh1ZG9LX3FnU2gtZHNERDAzRm5XTi1JRi1qLWRjYXBrT09iXy02TFlLb3RMQjA4ZEN3QzMwdm9EMEdyVmtnMDQxVmU3dlplTzViRl85eXotZ0dRREdodnlKa2JRYnQtdg?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzlia0xsSndfRENNM2cxdlE3TEI0MERpXzdnaTVMUWxlXzJFbDI0dTFxMERTc2ZKRWhSNTJRZmgxT1dyUnh1ZG9LX3FnU2gtZHNERDAzRm5XTi1JRi1qLWRjYXBrT09iXy02TFlLb3RMQjA4ZEN3QzMwdm9EMEdyVmtnMDQxVmU3dlplTzViRl85eXotZ0dRREdodnlKa2JRYnQtdg?oc=5",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a8fda06cc6847b4b2b0df0b533b50d3&url=https%3a%2f%2fwww.medtechdive.com%2fnews%2fthermo-fisher-closes-11b-sale-of-microbiology-unit-to-pe-firm%2f827811%2f&c=13539879891705849442&mkt=en-us"
-        ],
-        "source_ids": [
-          "google_news_thermo",
-          "bing_news_thermo_backup"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher",
-          "Bing News RSS - Thermo Fisher backup"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-13",
-      "event_start_at": "",
-      "age_days": 14,
-      "days_until_event": null
-    },
-    {
-      "id": "159ddfe8aa82c7a5",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMikgJBVV95cUxNczJFZXdhcHB6LUJWSFRhNTAxaDRHaml4N1F0RmlXU2tqRG1rWW44dmJXR2tfaEMtY082YnFkM2JET3I2WHYweXpBZTlpaG9LZ1BCb0ktTlQ1di01U2F0RDNOc3VkRzMzeUR1TVZ3b0p0OEpfbTZJel9DeWpHazhiT1l1ZzBvTXMyX2lpVTFybGVpRmZkeVZ3NlVqeDU1SEpFMUwwdGotWDRwazFnTXVFMzNiRDdOclpMV0UyZ01EZHIzLWZsWlh0eDdvVjRtd1BYUmpGTTJqRVFTTWxiaXc2c2JqU09mOEQ2dktyMUpmRlpseE9SWFU0dXZHN09JWER2YnB0SXZyYlpYbGlHTUlXaHd3?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Shapiro Administration Highlights the Need for Funding to Grow Pennsylvania’s Innovation Economy During Visit to Thermo Fisher Scientific in Dauphin County - PA Department of Community & Economic Development (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNczJFZXdhcHB6LUJWSFRhNTAxaDRHaml4N1F0RmlXU2tqRG1rWW44dmJXR2tfaEMtY082YnFkM2JET3I2WHYweXpBZTlpaG9LZ1BCb0ktTlQ1di01U2F0RDNOc3VkRzMzeUR1TVZ3b0p0OEpfbTZJel9DeWpHazhiT1l1ZzBvTXMyX2lpVTFybGVpRmZkeVZ3NlVqeDU1SEpFMUwwdGotWDRwazFnTXVFMzNiRDdOclpMV0UyZ01EZHIzLWZsWlh0eDdvVjRtd1BYUmpGTTJqRVFTTWxiaXc2c2JqU09mOEQ2dktyMUpmRlpseE9SWFU0dXZHN09JWER2YnB0SXZyYlpYbGlHTUlXaHd3?oc=5",
-      "published": "2026-08-21",
-      "summary": "Shapiro Administration Highlights the Need for Funding to Grow Pennsylvania’s Innovation Economy During Visit to Thermo Fisher Scientific in Dauphin County PA Department of Community & Economic Development (.gov)",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNczJFZXdhcHB6LUJWSFRhNTAxaDRHaml4N1F0RmlXU2tqRG1rWW44dmJXR2tfaEMtY082YnFkM2JET3I2WHYweXpBZTlpaG9LZ1BCb0ktTlQ1di01U2F0RDNOc3VkRzMzeUR1TVZ3b0p0OEpfbTZJel9DeWpHazhiT1l1ZzBvTXMyX2lpVTFybGVpRmZkeVZ3NlVqeDU1SEpFMUwwdGotWDRwazFnTXVFMzNiRDdOclpMV0UyZ01EZHIzLWZsWlh0eDdvVjRtd1BYUmpGTTJqRVFTTWxiaXc2c2JqU09mOEQ2dktyMUpmRlpseE9SWFU0dXZHN09JWER2YnB0SXZyYlpYbGlHTUlXaHd3?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMikgJBVV95cUxNczJFZXdhcHB6LUJWSFRhNTAxaDRHaml4N1F0RmlXU2tqRG1rWW44dmJXR2tfaEMtY082YnFkM2JET3I2WHYweXpBZTlpaG9LZ1BCb0ktTlQ1di01U2F0RDNOc3VkRzMzeUR1TVZ3b0p0OEpfbTZJel9DeWpHazhiT1l1ZzBvTXMyX2lpVTFybGVpRmZkeVZ3NlVqeDU1SEpFMUwwdGotWDRwazFnTXVFMzNiRDdOclpMV0UyZ01EZHIzLWZsWlh0eDdvVjRtd1BYUmpGTTJqRVFTTWxiaXc2c2JqU09mOEQ2dktyMUpmRlpseE9SWFU0dXZHN09JWER2YnB0SXZyYlpYbGlHTUlXaHd3?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "融资"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-21",
-      "event_start_at": "",
-      "age_days": 6,
-      "days_until_event": null
-    },
-    {
-      "id": "3c4e2511d9e7506a",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjZKWHJqSmVTUjNCb0tJLVYxOTFhcXpGOWlSeG44b1cxQzBQNTFpSDBCWnh0U05xSnBERWxaN1dnMzJnMlo5cWhQQ1JMcTZwX3dsNDc1RWY5ZFcyTTlvLUNrNXl0WER5LV9YRXRoMlBXTkUwUjA3QXZkWURZdUNjVGJhNnk1UkctUGxJSW11U0puT1NLM2d1SFUzSWdaTnBzZFJvVkktY2ZmblpRVnlzSUFB?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher Has Rallied 45% Off Its Lows to Near a 52-Week High. Is It Too Late to Buy? - TIKR.com",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjZKWHJqSmVTUjNCb0tJLVYxOTFhcXpGOWlSeG44b1cxQzBQNTFpSDBCWnh0U05xSnBERWxaN1dnMzJnMlo5cWhQQ1JMcTZwX3dsNDc1RWY5ZFcyTTlvLUNrNXl0WER5LV9YRXRoMlBXTkUwUjA3QXZkWURZdUNjVGJhNnk1UkctUGxJSW11U0puT1NLM2d1SFUzSWdaTnBzZFJvVkktY2ZmblpRVnlzSUFB?oc=5",
-      "published": "2026-08-23",
-      "summary": "Thermo Fisher Has Rallied 45% Off Its Lows to Near a 52-Week High. Is It Too Late to Buy? TIKR.com",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjZKWHJqSmVTUjNCb0tJLVYxOTFhcXpGOWlSeG44b1cxQzBQNTFpSDBCWnh0U05xSnBERWxaN1dnMzJnMlo5cWhQQ1JMcTZwX3dsNDc1RWY5ZFcyTTlvLUNrNXl0WER5LV9YRXRoMlBXTkUwUjA3QXZkWURZdUNjVGJhNnk1UkctUGxJSW11U0puT1NLM2d1SFUzSWdaTnBzZFJvVkktY2ZmblpRVnlzSUFB?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjZKWHJqSmVTUjNCb0tJLVYxOTFhcXpGOWlSeG44b1cxQzBQNTFpSDBCWnh0U05xSnBERWxaN1dnMzJnMlo5cWhQQ1JMcTZwX3dsNDc1RWY5ZFcyTTlvLUNrNXl0WER5LV9YRXRoMlBXTkUwUjA3QXZkWURZdUNjVGJhNnk1UkctUGxJSW11U0puT1NLM2d1SFUzSWdaTnBzZFJvVkktY2ZmblpRVnlzSUFB?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69493,7 +68826,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69557,7 +68890,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWExtZWpaOGlkMTlRNFRfOE9hdnRWZ2VaelMzUW9xcWVveGt3VW4zcEtVNmFXLXU2NkhBTFkyVTNLc0hydGt2NFpBS3p5WVAzeW1nWXlpYVotLVg3OFhuY19jZjJEZ3hZQWRRWW81Q2xaTFEzdGQwaV9rTGlqU0VJNWczb1ZsOF80MmdHOWtxTjhlSHRNNWxXcWVDTklGUXRY?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-could-150925473.html&c=12107923266688557830&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-could-150925473.html&c=12107923266688557830&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific (TMO) Could Be Fully Valued On Parkinsons Proteomics Progress - Yahoo Finance",
@@ -69579,7 +68912,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "primary_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWExtZWpaOGlkMTlRNFRfOE9hdnRWZ2VaelMzUW9xcWVveGt3VW4zcEtVNmFXLXU2NkhBTFkyVTNLc0hydGt2NFpBS3p5WVAzeW1nWXlpYVotLVg3OFhuY19jZjJEZ3hZQWRRWW81Q2xaTFEzdGQwaV9rTGlqU0VJNWczb1ZsOF80MmdHOWtxTjhlSHRNNWxXcWVDTklGUXRY?oc=5",
         "related_urls": [
           "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWExtZWpaOGlkMTlRNFRfOE9hdnRWZ2VaelMzUW9xcWVveGt3VW4zcEtVNmFXLXU2NkhBTFkyVTNLc0hydGt2NFpBS3p5WVAzeW1nWXlpYVotLVg3OFhuY19jZjJEZ3hZQWRRWW81Q2xaTFEzdGQwaV9rTGlqU0VJNWczb1ZsOF80MmdHOWtxTjhlSHRNNWxXcWVDTklGUXRY?oc=5",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-could-150925473.html&c=12107923266688557830&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fuk.finance.yahoo.com%2fnews%2fthermo-fisher-scientific-tmo-could-150925473.html&c=12107923266688557830&mkt=ja-jp"
         ],
         "source_ids": [
           "google_news_thermo",
@@ -69594,7 +68927,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69689,7 +69022,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69787,7 +69120,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69882,7 +69215,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -69977,7 +69310,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70072,7 +69405,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70167,7 +69500,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70262,7 +69595,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70357,7 +69690,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70452,7 +69785,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70547,7 +69880,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70642,7 +69975,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70737,7 +70070,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70832,7 +70165,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -70927,7 +70260,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71022,7 +70355,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71120,7 +70453,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71184,10 +70517,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "https://news.google.com/rss/articles/CBMizgFBVV95cUxOalN0S2JWNGpGN0V1R2ZNT0pZd3F0aDhrRDRHOEQzT01OQXo2cE5qdUlvNElMdkVzWkVNZ3kxT2JRWEFody1nRElDcDdKaFlzTFNnMlVtdFFoQmJyTk1DeGZaYjU0TFNET2h0R3h1aW5GZkliV3VIRHpsTUxmd1pMMUNyR0syNllJM2d6VzY1YUFZRDVlNl9IUGZ5REJLTzlGei1xb2g3MEJoYkZWWklFMlRIbTVxdTg0eHcyVTJiaHljWExMSkV5cFhyZnlEZw?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific’s latest mass spec innovations: new Orbitrap, AI capabilities, and complete workflows - SelectScience",
+      "title": "Thermo Fisher Scientific’s latest mass spec innovations: new Orbitrap, AI capabilities, and complete workflows - Select Science",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOalN0S2JWNGpGN0V1R2ZNT0pZd3F0aDhrRDRHOEQzT01OQXo2cE5qdUlvNElMdkVzWkVNZ3kxT2JRWEFody1nRElDcDdKaFlzTFNnMlVtdFFoQmJyTk1DeGZaYjU0TFNET2h0R3h1aW5GZkliV3VIRHpsTUxmd1pMMUNyR0syNllJM2d6VzY1YUFZRDVlNl9IUGZ5REJLTzlGei1xb2g3MEJoYkZWWklFMlRIbTVxdTg0eHcyVTJiaHljWExMSkV5cFhyZnlEZw?oc=5",
       "published": "2026-06-19",
-      "summary": "Thermo Fisher Scientific’s latest mass spec innovations: new Orbitrap, AI capabilities, and complete workflows SelectScience",
+      "summary": "Thermo Fisher Scientific’s latest mass spec innovations: new Orbitrap, AI capabilities, and complete workflows Select Science",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -71215,7 +70548,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71310,7 +70643,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71405,7 +70738,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71500,7 +70833,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71598,7 +70931,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71696,7 +71029,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71791,7 +71124,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71889,7 +71222,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -71984,7 +71317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72079,7 +71412,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72174,7 +71507,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72275,7 +71608,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72315,6 +71648,101 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-08-12",
       "event_start_at": "",
       "age_days": 15,
+      "days_until_event": null
+    },
+    {
+      "id": "6d07f4f9f814f937",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo_jp",
+      "source_label": "Google News RSS - Thermo Fisher Japan",
+      "source_ids": [
+        "google_news_thermo_jp"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher Japan"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNWFWLTBiMkxUaGdnZFgycjUwYmxnVzFRWGxCTVpTRXNKdDRpVFdvR0VKZERHdzQtYmY4WXVCTTlVWEY4YkwyMEJFZmdRa2pkQVo3c1JDdWRVaUswVFQtUDR4RTI3MTZXdG9qNHI5TDE2RjRSSDlya0tnSnlCdDlYU3MxeS1JaHhLam8zcWVR?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "7月23日のThermo Fisher Scientific Inc (TMO) 値動きは9.89%上昇：値動きの背後にある要因 - TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNWFWLTBiMkxUaGdnZFgycjUwYmxnVzFRWGxCTVpTRXNKdDRpVFdvR0VKZERHdzQtYmY4WXVCTTlVWEY4YkwyMEJFZmdRa2pkQVo3c1JDdWRVaUswVFQtUDR4RTI3MTZXdG9qNHI5TDE2RjRSSDlya0tnSnlCdDlYU3MxeS1JaHhLam8zcWVR?oc=5",
+      "published": "2026-07-23",
+      "summary": "7月23日のThermo Fisher Scientific Inc (TMO) 値動きは9.89%上昇：値動きの背後にある要因 TradingKey",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNWFWLTBiMkxUaGdnZFgycjUwYmxnVzFRWGxCTVpTRXNKdDRpVFdvR0VKZERHdzQtYmY4WXVCTTlVWEY4YkwyMEJFZmdRa2pkQVo3c1JDdWRVaUswVFQtUDR4RTI3MTZXdG9qNHI5TDE2RjRSSDlya0tnSnlCdDlYU3MxeS1JaHhLam8zcWVR?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNWFWLTBiMkxUaGdnZFgycjUwYmxnVzFRWGxCTVpTRXNKdDRpVFdvR0VKZERHdzQtYmY4WXVCTTlVWEY4YkwyMEJFZmdRa2pkQVo3c1JDdWRVaUswVFQtUDR4RTI3MTZXdG9qNHI5TDE2RjRSSDlya0tnSnlCdDlYU3MxeS1JaHhLam8zcWVR?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo_jp"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher Japan"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-23",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 30,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-07-23",
+      "event_start_at": "",
+      "age_days": 35,
       "days_until_event": null
     },
     {
@@ -72370,7 +71798,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72410,6 +71838,101 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-07-24",
       "event_start_at": "",
       "age_days": 34,
+      "days_until_event": null
+    },
+    {
+      "id": "54470f980831e6bd",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "bing_news_thermo_backup",
+      "source_label": "Bing News RSS - Thermo Fisher backup",
+      "source_ids": [
+        "bing_news_thermo_backup"
+      ],
+      "source_labels": [
+        "Bing News RSS - Thermo Fisher backup"
+      ],
+      "related_urls": [
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fabbott-vs-thermo-fisher-better-224317862.html&c=3311711520048760582&mkt=ja-jp"
+      ],
+      "source_trust": "aggregator",
+      "title": "Abbott vs. Thermo Fisher: Which is the Better Investment, Diversification or Recovery?",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fabbott-vs-thermo-fisher-better-224317862.html&c=3311711520048760582&mkt=ja-jp",
+      "published": "2026-08-24",
+      "summary": "Healthcare investors are often faced with a choice between companies that generate steady growth across diversified businesses and those positioned to benefit from improving industry conditions.",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Healthcare investors are often faced with a choice between companies that generate steady growth across divers...。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Healthcare investors are often faced with a choice between companies that generate steady growth across diversified businesses and those positioned to benefit from improving industry conditions.",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fabbott-vs-thermo-fisher-better-224317862.html&c=3311711520048760582&mkt=ja-jp",
+        "related_urls": [
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2ffinance.yahoo.com%2fhealthcare%2farticles%2fabbott-vs-thermo-fisher-better-224317862.html&c=3311711520048760582&mkt=ja-jp"
+        ],
+        "source_ids": [
+          "bing_news_thermo_backup"
+        ],
+        "source_labels": [
+          "Bing News RSS - Thermo Fisher backup"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-24",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 30,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-08-24",
+      "event_start_at": "",
+      "age_days": 3,
       "days_until_event": null
     },
     {
@@ -72461,7 +71984,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72557,7 +72080,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72653,7 +72176,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72745,7 +72268,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72840,7 +72363,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -72931,7 +72454,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73022,7 +72545,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73113,7 +72636,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73208,7 +72731,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73303,7 +72826,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73398,7 +72921,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-05-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73497,7 +73020,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73592,7 +73115,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73690,7 +73213,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73788,7 +73311,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73886,7 +73409,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -73981,7 +73504,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74079,7 +73602,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74174,7 +73697,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74269,7 +73792,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74369,7 +73892,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74469,7 +73992,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74567,7 +74090,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74666,7 +74189,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74765,7 +74288,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74856,7 +74379,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -74947,7 +74470,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75042,7 +74565,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75141,7 +74664,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75237,7 +74760,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75336,7 +74859,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75432,7 +74955,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75528,7 +75051,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75574,7 +75097,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-06-28",
       "event_start_at": "",
-      "age_days": 61,
+      "age_days": 60,
       "days_until_event": null
     },
     {
@@ -75630,7 +75153,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75670,7 +75193,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-22",
       "event_start_at": "",
-      "age_days": 6,
+      "age_days": 5,
       "days_until_event": null
     },
     {
@@ -75726,7 +75249,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75766,7 +75289,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-06",
       "event_start_at": "",
-      "age_days": 22,
+      "age_days": 21,
       "days_until_event": null
     },
     {
@@ -75822,7 +75345,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -75918,7 +75441,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76014,7 +75537,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76110,7 +75633,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76206,7 +75729,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76302,7 +75825,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76398,7 +75921,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76494,7 +76017,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76590,7 +76113,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76685,7 +76208,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76780,7 +76303,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76875,7 +76398,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -76970,7 +76493,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77065,7 +76588,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77160,7 +76683,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77255,7 +76778,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77356,7 +76879,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77400,101 +76923,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-08-27",
       "event_start_at": "",
       "age_days": 0,
-      "days_until_event": null
-    },
-    {
-      "id": "202f42b2af58850a",
-      "company_id": "astellas_pharma",
-      "company": "Astellas Pharma / 安斯泰来制药",
-      "matched_company_ids": [
-        "astellas_pharma"
-      ],
-      "matched_companies": [
-        "Astellas Pharma / 安斯泰来制药"
-      ],
-      "source_id": "google_news_astellas_customer",
-      "source_label": "Google News RSS - Astellas Pharma",
-      "source_ids": [
-        "google_news_astellas_customer"
-      ],
-      "source_labels": [
-        "Google News RSS - Astellas Pharma"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE55XzJ5NURIOVpvWGtoVkZGOFQyUEtKQllQTFFJLWhIbHRqMmFUUUJUa2JheVJ6OGZteXIzOXNSeFhUMFQ1eEhjdTlTMkZHOHJaaHloUDltTXV6Zm1vTGRvWGhJVi1tS254bHJQaEJYbw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "リスキリング 変革の礎／アステラス製薬常務担当役員・河野順氏 - 日刊工業新聞",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55XzJ5NURIOVpvWGtoVkZGOFQyUEtKQllQTFFJLWhIbHRqMmFUUUJUa2JheVJ6OGZteXIzOXNSeFhUMFQ1eEhjdTlTMkZHOHJaaHloUDltTXV6Zm1vTGRvWGhJVi1tS254bHJQaEJYbw?oc=5",
-      "published": "2026-08-26",
-      "summary": "リスキリング 変革の礎／アステラス製薬常務担当役員・河野順氏 日刊工業新聞",
-      "ai_summary": "客户池公司 Astellas Pharma / 安斯泰来制药 出现公司战略与组织动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55XzJ5NURIOVpvWGtoVkZGOFQyUEtKQllQTFFJLWhIbHRqMmFUUUJUa2JheVJ6OGZteXIzOXNSeFhUMFQ1eEhjdTlTMkZHOHJaaHloUDltTXV6Zm1vTGRvWGhJVi1tS254bHJQaEJYbw?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMib0FVX3lxTE55XzJ5NURIOVpvWGtoVkZGOFQyUEtKQllQTFFJLWhIbHRqMmFUUUJUa2JheVJ6OGZteXIzOXNSeFhUMFQ1eEhjdTlTMkZHOHJaaHloUDltTXV6Zm1vTGRvWGhJVi1tS254bHJQaEJYbw?oc=5"
-        ],
-        "source_ids": [
-          "google_news_astellas_customer"
-        ],
-        "source_labels": [
-          "Google News RSS - Astellas Pharma"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 30,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: アステラス製薬, アステラス"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 30,
-        "label": "中相关",
-        "explanation": "客户池公司出现新的研发信号，可评估相关试剂与服务需求。",
-        "reasons": [
-          "客户池公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-26",
-      "event_start_at": "",
-      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -77550,7 +76978,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77649,7 +77077,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77744,7 +77172,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77845,7 +77273,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -77940,7 +77368,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78037,7 +77465,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78132,7 +77560,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78227,7 +77655,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78322,7 +77750,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78417,7 +77845,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78457,6 +77885,101 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-07-12",
       "event_start_at": "",
       "age_days": 46,
+      "days_until_event": null
+    },
+    {
+      "id": "979e3d6a6abc41a2",
+      "company_id": "astellas_pharma",
+      "company": "Astellas Pharma / 安斯泰来制药",
+      "matched_company_ids": [
+        "astellas_pharma"
+      ],
+      "matched_companies": [
+        "Astellas Pharma / 安斯泰来制药"
+      ],
+      "source_id": "google_news_astellas_customer",
+      "source_label": "Google News RSS - Astellas Pharma",
+      "source_ids": [
+        "google_news_astellas_customer"
+      ],
+      "source_labels": [
+        "Google News RSS - Astellas Pharma"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZkhDZTcxdkZ4STQwU1I4Ti1tcUFaUjZxbnI3SlY0aGdjRXduQm96ZzFTMUdPOXRJMUdkSl82UTFfcW1qM3JHQmFiUDFnMVVGZ2s1Nk9Mb0NXMXlsNUo1YnpOVnAtenh5dDY1NFdZUkhzaS1IcUl5aWlKcThQa005V29od3Iwa0E?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "【アナリスト予想】アステラス製薬、27年3月期経常予想。対前週0.4%下降。(アイフィス株予報) - Yahoo!ファイナンス",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZkhDZTcxdkZ4STQwU1I4Ti1tcUFaUjZxbnI3SlY0aGdjRXduQm96ZzFTMUdPOXRJMUdkSl82UTFfcW1qM3JHQmFiUDFnMVVGZ2s1Nk9Mb0NXMXlsNUo1YnpOVnAtenh5dDY1NFdZUkhzaS1IcUl5aWlKcThQa005V29od3Iwa0E?oc=5",
+      "published": "2026-08-14",
+      "summary": "【アナリスト予想】アステラス製薬、27年3月期経常予想。対前週0.4%下降。(アイフィス株予報) Yahoo!ファイナンス",
+      "ai_summary": "客户池公司 Astellas Pharma / 安斯泰来制药 出现公司战略与组织动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZkhDZTcxdkZ4STQwU1I4Ti1tcUFaUjZxbnI3SlY0aGdjRXduQm96ZzFTMUdPOXRJMUdkSl82UTFfcW1qM3JHQmFiUDFnMVVGZ2s1Nk9Mb0NXMXlsNUo1YnpOVnAtenh5dDY1NFdZUkhzaS1IcUl5aWlKcThQa005V29od3Iwa0E?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZkhDZTcxdkZ4STQwU1I4Ti1tcUFaUjZxbnI3SlY0aGdjRXduQm96ZzFTMUdPOXRJMUdkSl82UTFfcW1qM3JHQmFiUDFnMVVGZ2s1Nk9Mb0NXMXlsNUo1YnpOVnAtenh5dDY1NFdZUkhzaS1IcUl5aWlKcThQa005V29od3Iwa0E?oc=5"
+        ],
+        "source_ids": [
+          "google_news_astellas_customer"
+        ],
+        "source_labels": [
+          "Google News RSS - Astellas Pharma"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-14",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 30,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: アステラス製薬, アステラス"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 30,
+        "label": "中相关",
+        "explanation": "客户池公司出现新的研发信号，可评估相关试剂与服务需求。",
+        "reasons": [
+          "客户池公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "customer",
+        "label": "客户需求跟进",
+        "owner": "BD / 销售",
+        "priority": "high",
+        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-08-14",
+      "event_start_at": "",
+      "age_days": 13,
       "days_until_event": null
     },
     {
@@ -78512,7 +78035,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78611,7 +78134,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78713,7 +78236,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78815,7 +78338,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -78911,7 +78434,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79007,7 +78530,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79102,7 +78625,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79200,7 +78723,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79298,7 +78821,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79396,7 +78919,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79491,7 +79014,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79589,7 +79112,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79684,7 +79207,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79779,7 +79302,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79874,7 +79397,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -79969,7 +79492,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80064,7 +79587,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80159,7 +79682,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80254,7 +79777,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80349,7 +79872,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80444,7 +79967,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80539,7 +80062,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80634,7 +80157,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80729,7 +80252,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80824,7 +80347,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -80919,7 +80442,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81014,7 +80537,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81109,7 +80632,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81204,7 +80727,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81299,7 +80822,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81394,7 +80917,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81490,7 +81013,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81586,7 +81109,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81685,7 +81208,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81781,7 +81304,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81876,7 +81399,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -81971,7 +81494,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82066,7 +81589,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82161,7 +81684,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82256,7 +81779,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82355,7 +81878,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82450,7 +81973,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82458,7 +81981,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: エーザイ"
       ],
@@ -82545,7 +82068,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 30,
@@ -82640,7 +82163,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 29,
@@ -82737,7 +82260,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 29,
@@ -82830,7 +82353,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -82928,7 +82451,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -82936,7 +82459,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: partnership",
@@ -83023,7 +82546,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83114,7 +82637,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83209,7 +82732,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83306,7 +82829,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83401,7 +82924,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83496,7 +83019,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83587,7 +83110,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83678,7 +83201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83773,7 +83296,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83871,7 +83394,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -83969,7 +83492,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84067,7 +83590,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84171,7 +83694,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84270,7 +83793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84369,7 +83892,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84468,7 +83991,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84567,7 +84090,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84665,7 +84188,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84763,7 +84286,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -84809,205 +84332,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       },
       "selection_reason": "未达到日报基础分数",
       "published_at": "",
-      "event_start_at": "2026-09-03",
-      "age_days": null,
-      "days_until_event": 7
-    },
-    {
-      "id": "567f6c4c882dcc8d",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "linkj_life_science_events",
-      "source_label": "LINK-J - life science ecosystem events",
-      "source_ids": [
-        "linkj_life_science_events"
-      ],
-      "source_labels": [
-        "LINK-J - life science ecosystem events"
-      ],
-      "related_urls": [
-        "https://www.link-j.org/member_event/article-53461.html"
-      ],
-      "source_trust": "ecosystem",
-      "title": "【LINK-J会員様限定】バイオ・ラッドDroplet Digital PCRセミナー＆実験相談会",
-      "url": "https://www.link-j.org/member_event/article-53461.html",
-      "published": "2026-09-03",
-      "summary": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
-      "ai_summary": "该来源捕捉到一条市场活动信号。 原始摘要要点：行业平台主办、共办或会员发布的生命科学活动与 Webinar。。 该活动聚焦生命科学，可评估参会、登台、赞助或合作伙伴接触价值。 建议按“活动价值评估”处理：核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
-        "primary_url": "https://www.link-j.org/member_event/article-53461.html",
-        "related_urls": [
-          "https://www.link-j.org/member_event/article-53461.html"
-        ],
-        "source_ids": [
-          "linkj_life_science_events"
-        ],
-        "source_labels": [
-          "LINK-J - life science ecosystem events"
-        ],
-        "source_types": [
-          "html_links"
-        ],
-        "source_trust": "ecosystem",
-        "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 28,
-      "tier": "archive",
-      "category": "event",
-      "business_event_type": "market_activity",
-      "signal_type": "event",
-      "is_new": true,
-      "reasons": [
-        "行业生态平台公开来源",
-        "战略主题命中: セミナー",
-        "高价值分类加成 +10: event"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "产品发布"
-        ],
-        "event_signals": [
-          "Webinar / 线上会议",
-          "研讨会 / 讲座"
-        ]
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 16,
-        "label": "低相关",
-        "explanation": "该活动聚焦生命科学，可评估参会、登台、赞助或合作伙伴接触价值。",
-        "reasons": [
-          "出现明确业务动作",
-          "可转化为活动运营线索"
-        ]
-      },
-      "recommended_action": {
-        "type": "event",
-        "label": "活动价值评估",
-        "owner": "区域市场",
-        "priority": "low",
-        "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "",
-      "event_start_at": "2026-09-03",
-      "age_days": null,
-      "days_until_event": 7
-    },
-    {
-      "id": "046522403d805563",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "linkj_life_science_events",
-      "source_label": "LINK-J - life science ecosystem events",
-      "source_ids": [
-        "linkj_life_science_events"
-      ],
-      "source_labels": [
-        "LINK-J - life science ecosystem events"
-      ],
-      "related_urls": [
-        "https://www.link-j.org/member_event/article-53450.html"
-      ],
-      "source_trust": "ecosystem",
-      "title": "「CopeLab.」研究紹介セミナー 第69回 アスリートを支える糖質摂取の科学",
-      "url": "https://www.link-j.org/member_event/article-53450.html",
-      "published": "2026-09-03",
-      "summary": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
-      "ai_summary": "该来源捕捉到一条市场活动信号。 原始摘要要点：行业平台主办、共办或会员发布的生命科学活动与 Webinar。。 该活动聚焦生命科学，可评估参会、登台、赞助或合作伙伴接触价值。 建议按“活动价值评估”处理：核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "行业平台主办、共办或会员发布的生命科学活动与 Webinar。",
-        "primary_url": "https://www.link-j.org/member_event/article-53450.html",
-        "related_urls": [
-          "https://www.link-j.org/member_event/article-53450.html"
-        ],
-        "source_ids": [
-          "linkj_life_science_events"
-        ],
-        "source_labels": [
-          "LINK-J - life science ecosystem events"
-        ],
-        "source_types": [
-          "html_links"
-        ],
-        "source_trust": "ecosystem",
-        "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 28,
-      "tier": "archive",
-      "category": "event",
-      "business_event_type": "market_activity",
-      "signal_type": "event",
-      "is_new": true,
-      "reasons": [
-        "行业生态平台公开来源",
-        "战略主题命中: セミナー",
-        "高价值分类加成 +10: event"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "产品发布"
-        ],
-        "event_signals": [
-          "Webinar / 线上会议",
-          "研讨会 / 讲座"
-        ]
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 16,
-        "label": "低相关",
-        "explanation": "该活动聚焦生命科学，可评估参会、登台、赞助或合作伙伴接触价值。",
-        "reasons": [
-          "出现明确业务动作",
-          "可转化为活动运营线索"
-        ]
-      },
-      "recommended_action": {
-        "type": "event",
-        "label": "活动价值评估",
-        "owner": "区域市场",
-        "priority": "low",
-        "text": "核对日期、参会公司和议题，评估报名、登台、赞助或 Partnering 价值。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "",
-      "event_start_at": "2026-09-03",
+      "event_start_at": "2026-09-02",
       "age_days": null,
       "days_until_event": 6
     },
@@ -85060,7 +84385,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85159,7 +84484,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85258,7 +84583,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85357,7 +84682,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85453,7 +84778,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85548,7 +84873,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85594,7 +84919,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -85646,7 +84971,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85692,7 +85017,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -85744,103 +85069,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 28,
-      "tier": "archive",
-      "category": "event",
-      "business_event_type": "market_activity",
-      "signal_type": "event",
-      "is_new": false,
-      "reasons": [
-        "行业生态平台公开来源",
-        "战略主题命中: 遺伝子",
-        "高价值分类加成 +10: event"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "基因治疗",
-          "AAV / 病毒载体"
-        ],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 12,
-        "label": "低相关",
-        "explanation": "该信号命中基因治疗、AAV / 病毒载体，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术"
-        ]
-      },
-      "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "low",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "",
-      "event_start_at": "2026-08-20",
-      "age_days": null,
-      "days_until_event": -7
-    },
-    {
-      "id": "ef37650823210be9",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "mediso_jhvs_public_index",
-      "source_label": "MEDISO / JHVS - public healthcare venture updates",
-      "source_ids": [
-        "mediso_jhvs_public_index"
-      ],
-      "source_labels": [
-        "MEDISO / JHVS - public healthcare venture updates"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JMEFfLS1QOEd6bGNSRkczcWVKNEdtTUlmSldabXV4MWtiNndPRmV6Y2RrVDFrUUFMcjRRSDNha01PTEI1SHY2YVN5dUtQcnl0bEticUNOYkZVMEpDTEdz?oc=5"
-      ],
-      "source_trust": "ecosystem",
-      "title": "「アデノ随伴ウイルス（AAV）を用いた遺伝子治療用製品の製造工程の開発」に関する座学研修及び技術研修（実習） - MEDISO ( Medical Innovation Support Office )",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JMEFfLS1QOEd6bGNSRkczcWVKNEdtTUlmSldabXV4MWtiNndPRmV6Y2RrVDFrUUFMcjRRSDNha01PTEI1SHY2YVN5dUtQcnl0bEticUNOYkZVMEpDTEdz?oc=5",
-      "published": "2026-08-20",
-      "summary": "「アデノ随伴ウイルス（AAV）を用いた遺伝子治療用製品の製造工程の開発」に関する座学研修及び技術研修（実習） MEDISO ( Medical Innovation Support Office )",
-      "ai_summary": "该来源捕捉到一条市场活动信号，重点涉及基因治疗、AAV / 病毒载体。 该信号命中基因治疗、AAV / 病毒载体，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“技术趋势观察”处理：并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JMEFfLS1QOEd6bGNSRkczcWVKNEdtTUlmSldabXV4MWtiNndPRmV6Y2RrVDFrUUFMcjRRSDNha01PTEI1SHY2YVN5dUtQcnl0bEticUNOYkZVMEpDTEdz?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JMEFfLS1QOEd6bGNSRkczcWVKNEdtTUlmSldabXV4MWtiNndPRmV6Y2RrVDFrUUFMcjRRSDNha01PTEI1SHY2YVN5dUtQcnl0bEticUNOYkZVMEpDTEdz?oc=5"
-        ],
-        "source_ids": [
-          "mediso_jhvs_public_index"
-        ],
-        "source_labels": [
-          "MEDISO / JHVS - public healthcare venture updates"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "ecosystem",
-        "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T06:33:33"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -85936,7 +85165,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86027,7 +85256,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86122,7 +85351,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86217,7 +85446,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86313,7 +85542,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86408,7 +85637,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86504,7 +85733,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86596,7 +85825,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86688,7 +85917,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 28,
@@ -86779,7 +86008,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -86874,7 +86103,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -86967,7 +86196,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87061,7 +86290,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87099,105 +86328,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "owner": "系统",
         "priority": "low",
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-26",
-      "event_start_at": "",
-      "age_days": 2,
-      "days_until_event": null
-    },
-    {
-      "id": "ab77137b8d4ed6e7",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "fierce_biotech_rss",
-      "source_label": "Fierce Biotech - official RSS",
-      "source_ids": [
-        "fierce_biotech_rss"
-      ],
-      "source_labels": [
-        "Fierce Biotech - official RSS"
-      ],
-      "related_urls": [
-        "https://www.fiercebiotech.com/medtech/fda-green-lights-abbotts-wearable-sensor-capturing-diabetic-ketoacidosis"
-      ],
-      "source_trust": "media",
-      "title": "FDA greenlights Abbott’s wearable sensor for capturing diabetic ketoacidosis",
-      "url": "https://www.fiercebiotech.com/medtech/fda-green-lights-abbotts-wearable-sensor-capturing-diabetic-ketoacidosis",
-      "published": "2026-08-26",
-      "summary": "The FDA has approved Abbott’s first-of-its-kind bio-wearable sensor that can warn diabetics of increased ketones that can lead to diabetic ketoacidosis.",
-      "ai_summary": "该来源捕捉到一条临床监管信号。 原始摘要要点：The FDA has approved Abbott’s first-of-its-kind bio-wearable sensor that can warn diabetics of increased keton...。 当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。 建议按“法规影响核对”处理：核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "The FDA has approved Abbott’s first-of-its-kind bio-wearable sensor that can warn diabetics of increased ketones that can lead to diabetic ketoacidosis.",
-        "primary_url": "https://www.fiercebiotech.com/medtech/fda-green-lights-abbotts-wearable-sensor-capturing-diabetic-ketoacidosis",
-        "related_urls": [
-          "https://www.fiercebiotech.com/medtech/fda-green-lights-abbotts-wearable-sensor-capturing-diabetic-ketoacidosis"
-        ],
-        "source_ids": [
-          "fierce_biotech_rss"
-        ],
-        "source_labels": [
-          "Fierce Biotech - official RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "media",
-        "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 26,
-      "tier": "archive",
-      "category": "regulatory",
-      "business_event_type": "clinical_regulatory",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "行业编辑媒体",
-        "业务动作命中: FDA",
-        "高价值分类加成 +8: regulatory"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "注册 / 审批"
-        ],
-        "business_actions": [
-          "注册 / 监管动作"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": [
-          "研发阶段可识别",
-          "出现明确业务动作",
-          "包含监管或注册信号"
-        ]
-      },
-      "recommended_action": {
-        "type": "regulatory",
-        "label": "法规影响核对",
-        "owner": "产品 / 法规",
-        "priority": "medium",
-        "text": "核对原始监管文件、生效范围和相关产品，必要时同步产品与销售团队。"
       },
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
@@ -87254,7 +86384,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87350,7 +86480,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87446,7 +86576,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87545,7 +86675,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87638,7 +86768,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87734,7 +86864,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87829,7 +86959,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -87872,7 +87002,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-21",
       "event_start_at": "",
-      "age_days": 7,
+      "age_days": 6,
       "days_until_event": null
     },
     {
@@ -87924,7 +87054,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88019,7 +87149,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88114,7 +87244,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88210,7 +87340,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88305,7 +87435,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88400,7 +87530,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88499,7 +87629,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88594,7 +87724,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88689,7 +87819,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88784,7 +87914,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88879,7 +88009,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -88974,7 +88104,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89069,7 +88199,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89160,7 +88290,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89204,7 +88334,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-06",
       "event_start_at": "",
-      "age_days": 22,
+      "age_days": 21,
       "days_until_event": null
     },
     {
@@ -89256,7 +88386,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89355,7 +88485,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89446,7 +88576,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89541,7 +88671,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89639,7 +88769,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89734,7 +88864,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89832,7 +88962,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -89930,7 +89060,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90032,7 +89162,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90123,7 +89253,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90214,7 +89344,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90305,7 +89435,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90396,7 +89526,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90487,7 +89617,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90578,7 +89708,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90669,7 +89799,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90760,7 +89890,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90851,7 +89981,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -90942,7 +90072,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91033,7 +90163,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91131,7 +90261,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91222,7 +90352,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91313,7 +90443,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91404,7 +90534,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91499,7 +90629,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91507,7 +90637,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "product",
       "business_event_type": "product_platform",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 创新药",
@@ -91590,7 +90720,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91681,7 +90811,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91772,7 +90902,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91863,7 +90993,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -91954,7 +91084,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 26,
@@ -92051,7 +91181,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92149,7 +91279,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92250,7 +91380,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92347,7 +91477,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92451,7 +91581,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92553,7 +91683,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92656,7 +91786,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92753,7 +91883,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92855,7 +91985,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -92952,7 +92082,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93059,7 +92189,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93156,7 +92286,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93168,7 +92298,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: ACROBiosystems",
         "公司自有来源",
-        "超过默认时效窗口: 111 天前"
+        "超过默认时效窗口: 110 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -93253,7 +92383,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93350,7 +92480,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93449,7 +92579,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93552,7 +92682,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93654,7 +92784,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93753,7 +92883,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93856,7 +92986,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -93959,7 +93089,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94061,7 +93191,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94164,7 +93294,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94263,7 +93393,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94362,7 +93492,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94461,7 +93591,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94566,7 +93696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94663,7 +93793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94765,7 +93895,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-02-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94866,7 +93996,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2023-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -94967,7 +94097,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2018-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95063,7 +94193,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95161,7 +94291,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2020-10-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95257,7 +94387,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95358,7 +94488,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95460,7 +94590,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2018-01-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95535,8 +94665,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "summary_model": "",
       "summary_quality": "structured_inference",
       "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
         "verification_status": "needs_original_check",
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
@@ -95556,7 +94686,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2024-12-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95656,7 +94786,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-07-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95762,13 +94892,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
       "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
+      "category": "market",
+      "business_event_type": "regional_expansion",
       "signal_type": "news",
       "is_new": false,
       "reasons": [
@@ -95783,7 +94913,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "modalities": [],
         "product_needs": [],
         "development_stages": [],
-        "business_actions": [],
+        "business_actions": [
+          "扩产 / 新设施"
+        ],
         "event_signals": []
       },
       "acro_relevance": {
@@ -95862,7 +94994,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-09-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -95960,7 +95092,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-11-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96067,7 +95199,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-05-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96179,7 +95311,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-01-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96281,7 +95413,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96384,7 +95516,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96486,7 +95618,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96585,7 +95717,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-09-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96686,7 +95818,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96786,7 +95918,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-04-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96893,7 +96025,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-03-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -96991,7 +96123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97100,7 +96232,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-11-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97209,7 +96341,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-11-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97310,7 +96442,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97407,7 +96539,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-01-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97504,7 +96636,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-10-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97602,7 +96734,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-10-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97706,7 +96838,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-12-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97721,7 +96853,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "战略主题命中: CliniMACS",
         "业务动作命中: 合作",
         "高价值分类加成 +10: partnership",
-        "超过硬性时效上限: 267 天前"
+        "超过硬性时效上限: 266 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -97754,7 +96886,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-12-04",
       "event_start_at": "",
-      "age_days": 267,
+      "age_days": 266,
       "days_until_event": null
     },
     {
@@ -97810,7 +96942,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -97909,7 +97041,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98006,7 +97138,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98110,7 +97242,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98207,7 +97339,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98304,7 +97436,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98401,7 +97533,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98498,7 +97630,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98595,7 +97727,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98607,7 +97739,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Miltenyi Biomedicine",
         "公司自有来源",
-        "超过默认时效窗口: 176 天前"
+        "超过默认时效窗口: 175 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -98636,7 +97768,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-03-05",
       "event_start_at": "",
-      "age_days": 176,
+      "age_days": 175,
       "days_until_event": null
     },
     {
@@ -98692,7 +97824,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98705,7 +97837,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Miltenyi Bioindustry",
         "公司自有来源",
         "战略主题命中: gene therapy, viral vector, lentiviral vector",
-        "超过默认时效窗口: 171 天前"
+        "超过默认时效窗口: 170 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -98797,7 +97929,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98897,7 +98029,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -98994,7 +98126,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99091,7 +98223,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99192,7 +98324,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99289,7 +98421,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99390,7 +98522,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99491,7 +98623,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99592,7 +98724,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99689,7 +98821,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99790,7 +98922,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99802,7 +98934,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
         "公司自有来源",
-        "超过默认时效窗口: 148 天前"
+        "超过默认时效窗口: 147 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -99831,7 +98963,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-04-02",
       "event_start_at": "",
-      "age_days": 148,
+      "age_days": 147,
       "days_until_event": null
     },
     {
@@ -99887,7 +99019,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99899,7 +99031,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
         "公司自有来源",
-        "超过默认时效窗口: 141 天前"
+        "超过默认时效窗口: 140 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -99928,7 +99060,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-04-09",
       "event_start_at": "",
-      "age_days": 141,
+      "age_days": 140,
       "days_until_event": null
     },
     {
@@ -99984,7 +99116,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -99992,7 +99124,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Thermo Fisher, Thermo Fisher Scientific",
         "公司自有来源",
@@ -100081,7 +99213,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100177,7 +99309,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100273,7 +99405,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100373,7 +99505,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100469,7 +99601,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100571,7 +99703,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100667,7 +99799,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100765,7 +99897,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100861,7 +99993,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -100902,6 +100034,102 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-04-15",
       "event_start_at": "",
       "age_days": 134,
+      "days_until_event": null
+    },
+    {
+      "id": "614992a5da6f2971",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaURTZ2s0Z2d1ZHZVYzI2ZTVfblFVNVhOMGNuMTh1Z1I5QTVqZUkwSHFwTm5EOGpMWllMSlhKb3lRNkc1OElZX2gwMTJWd1VsemNCZG9wS0U1S2MzcU9ZZEhFMGtPdnJvLW9DTTdCdkNfdGVDSmtnVmlRdmI2RHZKd2kxcHlCbDFCN2p3N3NPYkNMZUJ2XzNCM3VCWUdkVndXanVrZ1Frb1pJR3c?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "President Trump Participates in a Site Visit at Thermo Fisher Scientific - The White House (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaURTZ2s0Z2d1ZHZVYzI2ZTVfblFVNVhOMGNuMTh1Z1I5QTVqZUkwSHFwTm5EOGpMWllMSlhKb3lRNkc1OElZX2gwMTJWd1VsemNCZG9wS0U1S2MzcU9ZZEhFMGtPdnJvLW9DTTdCdkNfdGVDSmtnVmlRdmI2RHZKd2kxcHlCbDFCN2p3N3NPYkNMZUJ2XzNCM3VCWUdkVndXanVrZ1Frb1pJR3c?oc=5",
+      "published": "2026-03-11",
+      "summary": "President Trump Participates in a Site Visit at Thermo Fisher Scientific The White House (.gov)",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaURTZ2s0Z2d1ZHZVYzI2ZTVfblFVNVhOMGNuMTh1Z1I5QTVqZUkwSHFwTm5EOGpMWllMSlhKb3lRNkc1OElZX2gwMTJWd1VsemNCZG9wS0U1S2MzcU9ZZEhFMGtPdnJvLW9DTTdCdkNfdGVDSmtnVmlRdmI2RHZKd2kxcHlCbDFCN2p3N3NPYkNMZUJ2XzNCM3VCWUdkVndXanVrZ1Frb1pJR3c?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaURTZ2s0Z2d1ZHZVYzI2ZTVfblFVNVhOMGNuMTh1Z1I5QTVqZUkwSHFwTm5EOGpMWllMSlhKb3lRNkc1OElZX2gwMTJWd1VsemNCZG9wS0U1S2MzcU9ZZEhFMGtPdnJvLW9DTTdCdkNfdGVDSmtnVmlRdmI2RHZKd2kxcHlCbDFCN2p3N3NPYkNMZUJ2XzNCM3VCWUdkVndXanVrZ1Frb1pJR3c?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-03-11",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "超过默认时效窗口: 169 天前"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-03-11",
+      "event_start_at": "",
+      "age_days": 169,
       "days_until_event": null
     },
     {
@@ -100963,7 +100191,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101068,7 +100296,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-09-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101165,7 +100393,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-02-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101264,7 +100492,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2022-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101360,7 +100588,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2022-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101465,7 +100693,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2014-02-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101506,102 +100734,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2014-02-05",
       "event_start_at": "",
       "age_days": 4586,
-      "days_until_event": null
-    },
-    {
-      "id": "05fe9e2c7a6a73b4",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo_jp",
-      "source_label": "Google News RSS - Thermo Fisher Japan",
-      "source_ids": [
-        "google_news_thermo_jp"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher Japan"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "サーモフィッシャーサイエンティフィックが新しいガスクロマトグラフを発表 - PR TIMES",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5",
-      "published": "2012-04-26",
-      "summary": "サーモフィッシャーサイエンティフィックが新しいガスクロマトグラフを発表 PR TIMES",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo_jp"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher Japan"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2012-04-26",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: サーモフィッシャー, サーモフィッシャーサイエンティフィック",
-        "超过硬性时效上限: 5236 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2012-04-26",
-      "event_start_at": "",
-      "age_days": 5236,
       "days_until_event": null
     },
     {
@@ -101657,7 +100789,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2021-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101759,7 +100891,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2022-10-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101807,6 +100939,102 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2022-10-28",
       "event_start_at": "",
       "age_days": 1399,
+      "days_until_event": null
+    },
+    {
+      "id": "05fe9e2c7a6a73b4",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo_jp",
+      "source_label": "Google News RSS - Thermo Fisher Japan",
+      "source_ids": [
+        "google_news_thermo_jp"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher Japan"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "サーモフィッシャーサイエンティフィックが新しいガスクロマトグラフを発表 - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5",
+      "published": "2012-04-26",
+      "summary": "サーモフィッシャーサイエンティフィックが新しいガスクロマトグラフを発表 PR TIMES",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwQmoyN0VzVTJ5dkhaU3pwMnRadEtabU01RFNhU2NIaTRIUGxsVHU4djNFblI5REppeGdBZ2tOZk9VX1U3U3JlcDZRNy01Y3pQbDZPa01NWDVQZzZ2Uy1GdG5ZeWlta0tYRkE?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo_jp"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher Japan"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2012-04-26",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: サーモフィッシャー, サーモフィッシャーサイエンティフィック",
+        "超过硬性时效上限: 5236 天前"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2012-04-26",
+      "event_start_at": "",
+      "age_days": 5236,
       "days_until_event": null
     },
     {
@@ -101862,7 +101090,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -101960,7 +101188,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2017-09-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102058,7 +101286,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2014-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102161,7 +101389,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2019-09-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102259,7 +101487,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-02-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102304,104 +101532,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-02-16",
       "event_start_at": "",
       "age_days": 192,
-      "days_until_event": null
-    },
-    {
-      "id": "c5bd2ad0e24ba236",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo_jp",
-      "source_label": "Google News RSS - Thermo Fisher Japan",
-      "source_ids": [
-        "google_news_thermo_jp"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher Japan"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "日本の重炭酸アンモニウム市場調査、規模、予測、傾向、2036年 - researchnester.jp",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5",
-      "published": "2025-01-31",
-      "summary": "日本の重炭酸アンモニウム市場調査、規模、予測、傾向、2036年 researchnester.jp",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现市场与区域动态。 竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo_jp"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher Japan"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2025-01-31",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "market",
-      "business_event_type": "regional_expansion",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "专属来源公司归属 +15",
-        "战略主题命中: 日本",
-        "高价值分类加成 +8: market",
-        "超过硬性时效上限: 573 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2025-01-31",
-      "event_start_at": "",
-      "age_days": 573,
       "days_until_event": null
     },
     {
@@ -102457,7 +101587,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2011-07-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102557,7 +101687,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2014-12-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102605,7 +101735,105 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "52d1f25074d48d98",
+      "id": "c5bd2ad0e24ba236",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo_jp",
+      "source_label": "Google News RSS - Thermo Fisher Japan",
+      "source_ids": [
+        "google_news_thermo_jp"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher Japan"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "日本の重炭酸アンモニウム市場調査、規模、予測、傾向、2036年 - researchnester.jp",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5",
+      "published": "2025-01-31",
+      "summary": "日本の重炭酸アンモニウム市場調査、規模、予測、傾向、2036年 researchnester.jp",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现市场与区域动态。 竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjM2UDZyUDZHTTNSaGtEY3pxRG5aNlFQWWU1SE5PME5zMXZOc0s0bVpXS3FENFlEQ254UHdFUm00RTVVMFFIU2ZGM3JYTTRxZHpkWHZrSXlMcVRtdmxmWmMyS1ZTU0RSeDR4UVVRTEo4T1hCcnNQWGdIZ1BiLUQtS2txcEZyRUx2b0pCbk04Yw?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo_jp"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher Japan"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2025-01-31",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "market",
+      "business_event_type": "regional_expansion",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "专属来源公司归属 +15",
+        "战略主题命中: 日本",
+        "高价值分类加成 +8: market",
+        "超过硬性时效上限: 573 天前"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2025-01-31",
+      "event_start_at": "",
+      "age_days": 573,
+      "days_until_event": null
+    },
+    {
+      "id": "93e1233e2e5bdab3",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -102623,12 +101851,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - ACROBiosystems backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.chibanippo.co.jp%2fprwire%2f1613116&c=2893214970637406377&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.chibanippo.co.jp%2fprwire%2f1613116&c=2893214970637406377&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
       "published": "2026-05-11",
       "summary": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス・ソリューション・アップグレードを開始し、バイオ医薬品の研究開発を加速させるためにコンプライアンスの合理化を図る 2026.05.11 11:09 ...",
       "ai_summary": "ACROBiosystems / 百普赛斯更新了公司战略与组织动态，重点涉及细胞系 / 工程细胞。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
@@ -102643,10 +101871,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
         "source_excerpt": "",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2fwww.chibanippo.co.jp%2fprwire%2f1613116&c=2893214970637406377&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.kyodo.co.jp%2fpr%2f2026-05-11_4010148%2f&c=7291193430946626862&mkt=ja-jp",
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613b2394c598dc06f45c7bd6bca&url=https%3a%2f%2fwww.chibanippo.co.jp%2fprwire%2f1613116&c=2893214970637406377&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_acro_backup"
@@ -102659,7 +101887,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102704,106 +101932,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-05-11",
       "event_start_at": "",
       "age_days": 108,
-      "days_until_event": null
-    },
-    {
-      "id": "04f05e4b28586313",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "bing_news_acro_backup",
-      "source_label": "Bing News RSS - ACROBiosystems backup",
-      "source_ids": [
-        "bing_news_acro_backup"
-      ],
-      "source_labels": [
-        "Bing News RSS - ACROBiosystems backup"
-      ],
-      "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2ffinance.ifeng.com%2fc%2f8tKahjBK8fF&c=3565586837897049217&mkt=ja-jp"
-      ],
-      "source_trust": "aggregator",
-      "title": "ACROBiosystems百普赛斯与国家干细胞转化资源库达成战略合作，共促干 ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2ffinance.ifeng.com%2fc%2f8tKahjBK8fF&c=3565586837897049217&mkt=ja-jp",
-      "published": "2026-05-22",
-      "summary": "2026年5月14日,北京百普赛斯生物科技股份有限公司(以下简称“ACROBiosystems百普赛斯”)与国家干细胞转化资源库在上海第六届BIOSeedin春季创新合作峰会上正式签署战略合作框架协议。依托创新主题峰会,双方共探技术与产业深度融合创新的新路径。ACROBiosystems百普赛 ...",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了合作或交易信号。 原始摘要要点：2026年5月14日,北京百普赛斯生物科技股份有限公司(以下简称“ACROBiosystems百普赛斯”)与国家干细胞转化资源库在上海第六届BIOSeedin春季创新合作峰会上正式签署战略合作框架协议。依托创新主题峰会...。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "2026年5月14日,北京百普赛斯生物科技股份有限公司(以下简称“ACROBiosystems百普赛斯”)与国家干细胞转化资源库在上海第六届BIOSeedin春季创新合作峰会上正式签署战略合作框架协议。依托创新主题峰会,双方共探技术与产业深度融合创新的新路径。ACROBiosystems百普赛 ...",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2ffinance.ifeng.com%2fc%2f8tKahjBK8fF&c=3565586837897049217&mkt=ja-jp",
-        "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902478939645f79ef977815d67bccc&url=https%3a%2f%2ffinance.ifeng.com%2fc%2f8tKahjBK8fF&c=3565586837897049217&mkt=ja-jp"
-        ],
-        "source_ids": [
-          "bing_news_acro_backup"
-        ],
-        "source_labels": [
-          "Bing News RSS - ACROBiosystems backup"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-05-22",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "partnership",
-      "business_event_type": "partnership_deal",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: ACROBiosystems, 百普赛斯",
-        "高价值分类加成 +10: partnership",
-        "超过默认时效窗口: 97 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "合作 / 共同开发"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 35,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-05-22",
-      "event_start_at": "",
-      "age_days": 97,
       "days_until_event": null
     },
     {
@@ -102859,7 +101987,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -102958,7 +102086,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103057,7 +102185,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103156,7 +102284,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103255,7 +102383,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103354,7 +102482,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103455,7 +102583,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-01-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103549,7 +102677,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103557,7 +102685,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "research",
       "business_event_type": "target_therapy",
       "signal_type": "funding",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "监管机构结构化来源",
         "高价值分类加成 +5: research",
@@ -103642,7 +102770,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103735,7 +102863,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-05-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103830,7 +102958,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -103923,7 +103051,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-03-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104018,7 +103146,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-05-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104112,7 +103240,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104208,7 +103336,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-04-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104303,7 +103431,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104401,7 +103529,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-03-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104498,7 +103626,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-03-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104609,7 +103737,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-04-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104708,7 +103836,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-01-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104811,7 +103939,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-01-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -104920,7 +104048,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-09-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105026,7 +104154,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105125,7 +104253,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-01-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105223,7 +104351,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105317,7 +104445,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-03-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105413,7 +104541,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-02-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105510,7 +104638,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-03-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105610,7 +104738,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105710,7 +104838,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-02-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105802,7 +104930,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105898,7 +105026,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-09-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -105994,7 +105122,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-09-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106090,7 +105218,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106187,7 +105315,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106279,7 +105407,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106371,7 +105499,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-02-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106467,7 +105595,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-10-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106560,7 +105688,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-02-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106660,7 +105788,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-02-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106757,7 +105885,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106849,7 +105977,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -106945,7 +106073,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107041,7 +106169,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-02-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107137,7 +106265,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-01-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107234,7 +106362,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107331,7 +106459,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107428,7 +106556,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-03-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107524,7 +106652,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107621,7 +106749,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-02-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107718,7 +106846,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107816,7 +106944,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -107913,7 +107041,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108009,7 +107137,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-01-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108106,7 +107234,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108198,7 +107326,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108296,7 +107424,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-05-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108390,7 +107518,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-04-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108487,7 +107615,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-04-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108587,7 +107715,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "regulator",
         "published_at": "2026-04-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108684,7 +107812,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108789,7 +107917,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-2-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108838,7 +107966,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "d900a8b6352f49b3",
+      "id": "a841747ffed8fdd6",
       "company_id": "miltenyi_biotec",
       "company": "Miltenyi Biotec / 美天旎",
       "matched_company_ids": [
@@ -108856,14 +107984,14 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Crossref - Miltenyi Biotec affiliation records"
       ],
       "related_urls": [
-        "https://doi.org/10.3389/fimmu.2026.1761397"
+        "https://doi.org/10.1136/jitc-2025-itoc11.49"
       ],
       "source_trust": "research",
-      "title": "Automated manufacturing of clinical-grade BDCA2 CAR NK cells in a closed system for the treatment of blastic plasmacytoid dendritic cell neoplasm",
-      "url": "https://doi.org/10.3389/fimmu.2026.1761397",
-      "published": "2026-2-27",
-      "summary": "Crossref publication metadata. Affiliations: Lentigen Technology, Inc., a Miltenyi Biotec Company; Miltenyi Biotec B.V. & Co. KG. Venue: Frontiers in Immunology. DOI: 10.3389/fimmu.2026.1761397",
-      "ai_summary": "竞品 Miltenyi Biotec / 美天旎 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "title": "P-08.04 Impact of variability of CD4+/CD8+ T cell ratios on the functional properties of CAR T cell products",
+      "url": "https://doi.org/10.1136/jitc-2025-itoc11.49",
+      "published": "2025-3-24",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2025-itoc11.49",
+      "ai_summary": "竞品 Miltenyi Biotec / 美天旎 出现技术与研究内容，重点涉及CAR-T。 原始摘要要点：Crossref publication metadata.。 竞品正在推进CAR-T相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -108875,9 +108003,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.3389/fimmu.2026.1761397",
+        "primary_url": "https://doi.org/10.1136/jitc-2025-itoc11.49",
         "related_urls": [
-          "https://doi.org/10.3389/fimmu.2026.1761397"
+          "https://doi.org/10.1136/jitc-2025-itoc11.49"
         ],
         "source_ids": [
           "crossref_miltenyi_affiliations"
@@ -108890,7 +108018,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-3-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -108902,38 +108030,39 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +30: Miltenyi Biotec",
         "科研数据库结构化来源",
-        "战略主题命中: CAR NK",
-        "业务动作命中: manufacturing, clinical",
         "高价值分类加成 +5: research",
         "超过硬性时效上限: 521 天前",
         "专题信号：不进入默认新闻日报"
       ],
       "intelligence": {
         "targets": [],
-        "modalities": [],
+        "modalities": [
+          "CAR-T"
+        ],
         "product_needs": [],
         "development_stages": [],
         "business_actions": [],
         "event_signals": []
       },
       "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "level": "medium",
+        "score": 30,
+        "label": "中相关",
+        "explanation": "竞品正在推进CAR-T相关动作，值得对比产品定位、市场话术和区域覆盖。",
         "reasons": [
-          "竞品公司动态"
+          "竞品公司动态",
+          "命中重点疗法或技术"
         ]
       },
       "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-2-27",
+      "published_at": "2025-3-24",
       "event_start_at": "",
       "age_days": 521,
       "days_until_event": null
@@ -108991,7 +108120,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109090,7 +108219,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-3-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109192,7 +108321,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109298,7 +108427,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109397,7 +108526,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-3-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109499,7 +108628,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109530,6 +108659,213 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "score": 30,
         "label": "中相关",
         "explanation": "竞品正在推进CAR-T相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "命中重点疗法或技术"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-4-3",
+      "event_start_at": "",
+      "age_days": 146,
+      "days_until_event": null
+    },
+    {
+      "id": "adc559f18667c1fe",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1136/jitc-2025-itoc11.50"
+      ],
+      "source_trust": "research",
+      "title": "P-08.05 Dried antibody cocktails are setting the benchmark for fast and robust CAR T cell flow cytometric analysis",
+      "url": "https://doi.org/10.1136/jitc-2025-itoc11.50",
+      "published": "2025-3-24",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. and Co. KG, Bergisch Gladbach, Germany. Venue: Poster Presentations. DOI: 10.1136/jitc-2025-itoc11.50",
+      "ai_summary": "竞品 Miltenyi Biotec / 美天旎 出现技术与研究内容，重点涉及CAR-T、抗体。 原始摘要要点：Crossref publication metadata.。 竞品正在推进CAR-T、抗体相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Crossref publication metadata.",
+        "primary_url": "https://doi.org/10.1136/jitc-2025-itoc11.50",
+        "related_urls": [
+          "https://doi.org/10.1136/jitc-2025-itoc11.50"
+        ],
+        "source_ids": [
+          "crossref_miltenyi_affiliations"
+        ],
+        "source_labels": [
+          "Crossref - Miltenyi Biotec affiliation records"
+        ],
+        "source_types": [
+          "crossref"
+        ],
+        "source_trust": "research",
+        "published_at": "2025-3-24",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "business_event_type": "target_therapy",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 521 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "CAR-T"
+        ],
+        "product_needs": [
+          "抗体"
+        ],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "high",
+        "score": 52,
+        "label": "高相关",
+        "explanation": "竞品正在推进CAR-T、抗体相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "命中重点疗法或技术",
+          "可映射到 ACRO 产品或服务需求"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "high",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2025-3-24",
+      "event_start_at": "",
+      "age_days": 521,
+      "days_until_event": null
+    },
+    {
+      "id": "c076c9dab40e6cb6",
+      "company_id": "miltenyi_biotec",
+      "company": "Miltenyi Biotec / 美天旎",
+      "matched_company_ids": [
+        "miltenyi_biotec"
+      ],
+      "matched_companies": [
+        "Miltenyi Biotec / 美天旎"
+      ],
+      "source_id": "crossref_miltenyi_affiliations",
+      "source_label": "Crossref - Miltenyi Biotec affiliation records",
+      "source_ids": [
+        "crossref_miltenyi_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Miltenyi Biotec affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2026-742"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 742: Unlocking 3D: TumorMACS media as a dual-purpose solution for primary 2D and 3D tumor organoid cultures.",
+      "url": "https://doi.org/10.1158/1538-7445.am2026-742",
+      "published": "2026-4-3",
+      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. & Co. KG, Bergisch Gladbach, Germany.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2026-742",
+      "ai_summary": "竞品 Miltenyi Biotec / 美天旎 出现技术与研究内容，重点涉及类器官。 原始摘要要点：Crossref publication metadata.。 竞品正在推进类器官相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Crossref publication metadata.",
+        "primary_url": "https://doi.org/10.1158/1538-7445.am2026-742",
+        "related_urls": [
+          "https://doi.org/10.1158/1538-7445.am2026-742"
+        ],
+        "source_ids": [
+          "crossref_miltenyi_affiliations"
+        ],
+        "source_labels": [
+          "Crossref - Miltenyi Biotec affiliation records"
+        ],
+        "source_types": [
+          "crossref"
+        ],
+        "source_trust": "research",
+        "published_at": "2026-4-3",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "business_event_type": "target_therapy",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Miltenyi Biotec",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过默认时效窗口: 146 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "类器官"
+        ],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 30,
+        "label": "中相关",
+        "explanation": "竞品正在推进类器官相关动作，值得对比产品定位、市场话术和区域覆盖。",
         "reasons": [
           "竞品公司动态",
           "命中重点疗法或技术"
@@ -109601,7 +108937,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-12-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -109657,205 +108993,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "936e4d1da2b84a91",
-      "company_id": "merck_life_science",
-      "company": "Merck KGaA Life Science / MilliporeSigma",
-      "matched_company_ids": [
-        "merck_life_science"
-      ],
-      "matched_companies": [
-        "Merck KGaA Life Science / MilliporeSigma"
-      ],
-      "source_id": "clinicaltrials_company_pool",
-      "source_label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
-      "source_ids": [
-        "clinicaltrials_company_pool"
-      ],
-      "source_labels": [
-        "ClinicalTrials.gov - monitored company sponsors and collaborators"
-      ],
-      "related_urls": [
-        "https://clinicaltrials.gov/study/NCT05882734"
-      ],
-      "source_trust": "regulator",
-      "title": "Clinical trial update NCT05882734: Tuvusertib (M1774) in Combination With Cemiplimab in Participants With Non-Squamous NSCLC (DDRiver NSCLC 322)",
-      "url": "https://clinicaltrials.gov/study/NCT05882734",
-      "published": "2026-05-28",
-      "summary": "Lead sponsor: EMD Serono Research & Development Institute, Inc.. Collaborators: Merck KGaA, Darmstadt, Germany. Status: ACTIVE_NOT_RECRUITING. Conditions: Non-Small Cell Lung Cancer. Interventions: M1774; Cemiplimab.",
-      "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现临床监管信号。 原始摘要要点：Lead sponsor: EMD Serono Research & Development Institute, Inc..。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "Lead sponsor: EMD Serono Research & Development Institute, Inc..",
-        "primary_url": "https://clinicaltrials.gov/study/NCT05882734",
-        "related_urls": [
-          "https://clinicaltrials.gov/study/NCT05882734"
-        ],
-        "source_ids": [
-          "clinicaltrials_company_pool"
-        ],
-        "source_labels": [
-          "ClinicalTrials.gov - monitored company sponsors and collaborators"
-        ],
-        "source_types": [
-          "clinical_trials"
-        ],
-        "source_trust": "research",
-        "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "research",
-      "business_event_type": "target_therapy",
-      "signal_type": "research",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Miltenyi Biotec",
-        "科研数据库结构化来源",
-        "高价值分类加成 +5: research",
-        "超过默认时效窗口: 146 天前",
-        "专题信号：不进入默认新闻日报"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 26,
-        "label": "中相关",
-        "explanation": "竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "包含监管或注册信号"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-05-28",
-      "event_start_at": "",
-      "age_days": 146,
-      "days_until_event": null
-    },
-    {
-      "id": "fbfd979660b3dd57",
-      "company_id": "miltenyi_biotec",
-      "company": "Miltenyi Biotec / 美天旎",
-      "matched_company_ids": [
-        "miltenyi_biotec"
-      ],
-      "matched_companies": [
-        "Miltenyi Biotec / 美天旎"
-      ],
-      "source_id": "crossref_miltenyi_affiliations",
-      "source_label": "Crossref - Miltenyi Biotec affiliation records",
-      "source_ids": [
-        "crossref_miltenyi_affiliations"
-      ],
-      "source_labels": [
-        "Crossref - Miltenyi Biotec affiliation records"
-      ],
-      "related_urls": [
-        "https://doi.org/10.1158/1538-7445.am2025-5656"
-      ],
-      "source_trust": "research",
-      "title": "Abstract 5656: Next-level efficiency: StraightFrom Spleen Isolation Kits - standardizing isolation of untouched B cells with minimal hands-on time",
-      "url": "https://doi.org/10.1158/1538-7445.am2025-5656",
-      "published": "2025-4-21",
-      "summary": "Crossref publication metadata. Affiliations: Miltenyi Biotec B.V. & Co. KG, Bergisch Gladbach, Germany.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-5656",
-      "ai_summary": "竞品 Miltenyi Biotec / 美天旎 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-5656",
-        "related_urls": [
-          "https://doi.org/10.1158/1538-7445.am2025-5656"
-        ],
-        "source_ids": [
-          "crossref_miltenyi_affiliations"
-        ],
-        "source_labels": [
-          "Crossref - Miltenyi Biotec affiliation records"
-        ],
-        "source_types": [
-          "crossref"
-        ],
-        "source_trust": "research",
-        "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "research",
-      "business_event_type": "target_therapy",
-      "signal_type": "research",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Miltenyi Biotec",
-        "科研数据库结构化来源",
-        "高价值分类加成 +5: research",
-        "超过硬性时效上限: 493 天前",
-        "专题信号：不进入默认新闻日报"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2025-4-21",
-      "event_start_at": "",
-      "age_days": 493,
-      "days_until_event": null
-    },
-    {
       "id": "a24406d8be29a9e8",
       "company_id": "abcam",
       "company": "Abcam",
@@ -109908,7 +109045,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110004,7 +109141,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110102,7 +109239,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110212,7 +109349,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110312,7 +109449,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110409,7 +109546,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110417,7 +109554,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "product",
       "business_event_type": "product_platform",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Sino Biological",
         "高价值分类加成 +10: product",
@@ -110506,7 +109643,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110607,7 +109744,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-02-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110707,7 +109844,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-09-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110805,7 +109942,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -110909,7 +110046,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111010,7 +110147,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111106,7 +110243,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111205,7 +110342,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111307,7 +110444,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111405,7 +110542,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111502,7 +110639,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111600,7 +110737,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111702,7 +110839,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111801,7 +110938,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111898,7 +111035,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -111998,7 +111135,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112095,7 +111232,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112196,7 +111333,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112296,7 +111433,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112396,7 +111533,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112494,7 +111631,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112592,7 +111729,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112690,7 +111827,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112791,7 +111928,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112888,7 +112025,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -112990,7 +112127,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113089,7 +112226,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113192,7 +112329,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113305,7 +112442,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113407,7 +112544,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113511,7 +112648,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113614,7 +112751,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113725,7 +112862,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113824,7 +112961,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -113922,7 +113059,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114027,7 +113164,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-09-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114124,7 +113261,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114221,7 +113358,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114319,7 +113456,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-02-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114420,7 +113557,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114523,7 +113660,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114626,7 +113763,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114639,7 +113776,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Promega, Promega Corporation",
         "公司自有来源",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 317 天前"
+        "超过硬性时效上限: 316 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -114731,7 +113868,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114744,7 +113881,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Promega, Promega Corporation",
         "公司自有来源",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 310 天前"
+        "超过硬性时效上限: 309 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -114777,7 +113914,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2025-10-22",
       "age_days": null,
-      "days_until_event": -310
+      "days_until_event": -309
     },
     {
       "id": "ce6356ea9ab1d467",
@@ -114832,7 +113969,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -114930,7 +114067,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-12-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115029,7 +114166,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115127,7 +114264,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-02-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115230,7 +114367,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115330,7 +114467,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115429,7 +114566,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-01-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115530,7 +114667,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-09-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115634,7 +114771,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-10-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115731,7 +114868,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115832,7 +114969,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -115929,7 +115066,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-05-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116026,7 +115163,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116123,7 +115260,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-04-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116225,7 +115362,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-02-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116324,7 +115461,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-02-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116423,7 +115560,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-01-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116520,7 +115657,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116618,7 +115755,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116717,7 +115854,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116814,7 +115951,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -116913,7 +116050,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117012,7 +116149,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-11-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117114,7 +116251,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-10-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117213,7 +116350,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117315,7 +116452,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117415,7 +116552,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117512,7 +116649,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-11-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117610,7 +116747,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117707,7 +116844,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117804,7 +116941,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -117903,7 +117040,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-07-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118001,7 +117138,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-02-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118098,7 +117235,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118195,7 +117332,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118294,7 +117431,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118391,7 +117528,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118488,7 +117625,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118585,7 +117722,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118685,7 +117822,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-10-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118782,7 +117919,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-10-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118879,7 +118016,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -118980,7 +118117,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-01-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119080,7 +118217,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119182,7 +118319,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119280,7 +118417,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-01-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119378,7 +118515,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119476,7 +118613,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119574,7 +118711,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119672,7 +118809,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119770,7 +118907,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119868,7 +119005,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -119966,7 +119103,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-01-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120064,7 +119201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120162,7 +119299,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-03-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120261,7 +119398,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120359,7 +119496,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-01-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120457,7 +119594,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120555,7 +119692,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120653,7 +119790,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120751,7 +119888,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120849,7 +119986,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -120947,7 +120084,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121045,7 +120182,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121143,7 +120280,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121241,7 +120378,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2024-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121339,7 +120476,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121441,7 +120578,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121539,7 +120676,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121552,7 +120689,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: STEMCELL Technologies, STEMCELL Tech, Stemcell Technologies",
         "公司自有来源",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 200 天前"
+        "超过硬性时效上限: 199 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -121582,7 +120719,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2026-02-09",
       "age_days": null,
-      "days_until_event": -200
+      "days_until_event": -199
     },
     {
       "id": "c4e8df188d60b21c",
@@ -121639,7 +120776,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121653,7 +120790,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司自有来源",
         "战略主题命中: cell therapy",
         "高价值分类加成 +10: event",
-        "超过默认时效窗口: 94 天前"
+        "超过默认时效窗口: 93 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -121686,7 +120823,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2026-05-26",
       "age_days": null,
-      "days_until_event": -94
+      "days_until_event": -93
     },
     {
       "id": "865aeafeb0970612",
@@ -121741,7 +120878,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121755,7 +120892,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司自有来源",
         "战略主题命中: cell therapy",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 257 天前"
+        "超过硬性时效上限: 256 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -121788,7 +120925,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2025-12-14",
       "age_days": null,
-      "days_until_event": -257
+      "days_until_event": -256
     },
     {
       "id": "9f117dfa801016cc",
@@ -121843,7 +120980,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121944,7 +121081,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -121958,7 +121095,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司自有来源",
         "战略主题命中: organoid",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 286 天前"
+        "超过硬性时效上限: 285 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -121991,7 +121128,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2025-11-15",
       "age_days": null,
-      "days_until_event": -286
+      "days_until_event": -285
     },
     {
       "id": "ccc85f71bd66eff0",
@@ -122046,7 +121183,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122145,7 +121282,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122248,7 +121385,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122349,7 +121486,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122455,7 +121592,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122559,7 +121696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122660,7 +121797,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122757,7 +121894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122858,7 +121995,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -122957,7 +122094,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-02-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123056,7 +122193,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-12-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123156,7 +122293,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-05-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123257,7 +122394,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-02-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123354,7 +122491,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123454,7 +122591,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-02-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123563,7 +122700,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-11-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123660,7 +122797,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-11-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123757,7 +122894,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-09-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123854,7 +122991,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-02-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -123952,7 +123089,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-02-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124051,7 +123188,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124064,7 +123201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Sigma-Aldrich",
         "公司自有来源",
         "战略主题命中: Sigma-Aldrich",
-        "超过硬性时效上限: 288 天前"
+        "超过硬性时效上限: 287 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -124093,7 +123230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-11-13",
       "event_start_at": "",
-      "age_days": 288,
+      "age_days": 287,
       "days_until_event": null
     },
     {
@@ -124149,7 +123286,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124161,7 +123298,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Merck Millipore",
         "公司自有来源",
-        "超过硬性时效上限: 335 天前"
+        "超过硬性时效上限: 334 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -124190,7 +123327,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-09-27",
       "event_start_at": "",
-      "age_days": 335,
+      "age_days": 334,
       "days_until_event": null
     },
     {
@@ -124248,7 +123385,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124261,7 +123398,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Sigma-Aldrich",
         "公司自有来源",
         "战略主题命中: Sigma-Aldrich",
-        "超过硬性时效上限: 349 天前"
+        "超过硬性时效上限: 348 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -124346,7 +123483,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124358,7 +123495,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Merck Millipore",
         "公司自有来源",
-        "超过硬性时效上限: 345 天前"
+        "超过硬性时效上限: 344 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -124387,7 +123524,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-09-17",
       "event_start_at": "",
-      "age_days": 345,
+      "age_days": 344,
       "days_until_event": null
     },
     {
@@ -124445,7 +123582,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124543,7 +123680,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124643,7 +123780,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124656,7 +123793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Merck Millipore",
         "公司自有来源",
         "战略主题命中: reagent",
-        "超过硬性时效上限: 335 天前"
+        "超过硬性时效上限: 334 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -124685,7 +123822,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-09-27",
       "event_start_at": "",
-      "age_days": 335,
+      "age_days": 334,
       "days_until_event": null
     },
     {
@@ -124741,7 +123878,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124840,7 +123977,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124887,7 +124024,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "456ba8ed22c72278",
+      "id": "227c1382f19b374d",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma / Sigma-Aldrich",
       "matched_company_ids": [
@@ -124898,22 +124035,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Merck KGaA Life Science / MilliporeSigma",
         "Sigma-Aldrich"
       ],
-      "source_id": "merck_life_science_resources_index",
-      "source_label": "Merck Life Science official events and resources - indexed RSS",
+      "source_id": "merck_life_science_japan_official_index",
+      "source_label": "Merck Life Science Japan official pages - indexed RSS",
       "source_ids": [
-        "merck_life_science_resources_index"
+        "merck_life_science_japan_official_index"
       ],
       "source_labels": [
-        "Merck Life Science official events and resources - indexed RSS"
+        "Merck Life Science Japan official pages - indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPdnVPclVTVERSV0F3NVo4YzBFYnh6MFNjU3pFbXFEM1d4MW1mc192TGp1dlgwTjlVOXBVUy02R0x5UUllX3NrSGpIXy0zTnktdWVEbEF0NGtDd2t6YlFDaEdyS3Q2WDVaRHpOZTl4cmRCMFN5TkQzV3JxRjBFbnNFemxUb0lfWHllcW9HTEdPdEJpREhjSWN3Yk5CU3RleGlRZnotRWdsSmNOalhGcHhXZjdvOGp3Y0JxZzdfYmFNQkM1b3piemhyNW9nYkNVWWs0MGpmdUFEOUJEZXhhTmdINzNRWlFzd2htLXdqWU1NWkMwUF8xLUlrbjhlWFZXQQ?oc=5"
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX29HNnZYMlFBekZzNDVmYUI0QnByMkstZWc5WEo0ZzBPU2I0SmZyOUhTNFlqQU5nc3Y1dHMzU1ZZcGw4dG5CQ1B0bnJ1QXlqWktXRW9RZFpLRWwteGk0NnN2eG5fVTRpWGN0RFNhU3UyU3dsSmxXOGdKTFI0N0pPNHExZjZRWl95NlFtdkFCbXBLc0NqZGhLd3YySDVLX3VSZzNFNGRzNjdyNUNtZGlndUpidXJjQQ?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Protocol Guide: Neuron and Microglia Co-Culture Assay - Sigma-Aldrich",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPdnVPclVTVERSV0F3NVo4YzBFYnh6MFNjU3pFbXFEM1d4MW1mc192TGp1dlgwTjlVOXBVUy02R0x5UUllX3NrSGpIXy0zTnktdWVEbEF0NGtDd2t6YlFDaEdyS3Q2WDVaRHpOZTl4cmRCMFN5TkQzV3JxRjBFbnNFemxUb0lfWHllcW9HTEdPdEJpREhjSWN3Yk5CU3RleGlRZnotRWdsSmNOalhGcHhXZjdvOGp3Y0JxZzdfYmFNQkM1b3piemhyNW9nYkNVWWs0MGpmdUFEOUJEZXhhTmdINzNRWlFzd2htLXdqWU1NWkMwUF8xLUlrbjhlWFZXQQ?oc=5",
-      "published": "2025-11-12",
-      "summary": "Protocol Guide: Neuron and Microglia Co-Culture Assay Sigma-Aldrich",
+      "title": "Fn1 - Sigma-Aldrich",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX29HNnZYMlFBekZzNDVmYUI0QnByMkstZWc5WEo0ZzBPU2I0SmZyOUhTNFlqQU5nc3Y1dHMzU1ZZcGw4dG5CQ1B0bnJ1QXlqWktXRW9RZFpLRWwteGk0NnN2eG5fVTRpWGN0RFNhU3UyU3dsSmxXOGdKTFI0N0pPNHExZjZRWl95NlFtdkFCbXBLc0NqZGhLd3YySDVLX3VSZzNFNGRzNjdyNUNtZGlndUpidXJjQQ?oc=5",
+      "published": "2025-12-03",
+      "summary": "Fn1 Sigma-Aldrich",
       "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma / Sigma-Aldrich 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -124926,22 +124063,22 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
         "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPdnVPclVTVERSV0F3NVo4YzBFYnh6MFNjU3pFbXFEM1d4MW1mc192TGp1dlgwTjlVOXBVUy02R0x5UUllX3NrSGpIXy0zTnktdWVEbEF0NGtDd2t6YlFDaEdyS3Q2WDVaRHpOZTl4cmRCMFN5TkQzV3JxRjBFbnNFemxUb0lfWHllcW9HTEdPdEJpREhjSWN3Yk5CU3RleGlRZnotRWdsSmNOalhGcHhXZjdvOGp3Y0JxZzdfYmFNQkM1b3piemhyNW9nYkNVWWs0MGpmdUFEOUJEZXhhTmdINzNRWlFzd2htLXdqWU1NWkMwUF8xLUlrbjhlWFZXQQ?oc=5",
+        "primary_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX29HNnZYMlFBekZzNDVmYUI0QnByMkstZWc5WEo0ZzBPU2I0SmZyOUhTNFlqQU5nc3Y1dHMzU1ZZcGw4dG5CQ1B0bnJ1QXlqWktXRW9RZFpLRWwteGk0NnN2eG5fVTRpWGN0RFNhU3UyU3dsSmxXOGdKTFI0N0pPNHExZjZRWl95NlFtdkFCbXBLc0NqZGhLd3YySDVLX3VSZzNFNGRzNjdyNUNtZGlndUpidXJjQQ?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPdnVPclVTVERSV0F3NVo4YzBFYnh6MFNjU3pFbXFEM1d4MW1mc192TGp1dlgwTjlVOXBVUy02R0x5UUllX3NrSGpIXy0zTnktdWVEbEF0NGtDd2t6YlFDaEdyS3Q2WDVaRHpOZTl4cmRCMFN5TkQzV3JxRjBFbnNFemxUb0lfWHllcW9HTEdPdEJpREhjSWN3Yk5CU3RleGlRZnotRWdsSmNOalhGcHhXZjdvOGp3Y0JxZzdfYmFNQkM1b3piemhyNW9nYkNVWWs0MGpmdUFEOUJEZXhhTmdINzNRWlFzd2htLXdqWU1NWkMwUF8xLUlrbjhlWFZXQQ?oc=5"
+          "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX29HNnZYMlFBekZzNDVmYUI0QnByMkstZWc5WEo0ZzBPU2I0SmZyOUhTNFlqQU5nc3Y1dHMzU1ZZcGw4dG5CQ1B0bnJ1QXlqWktXRW9RZFpLRWwteGk0NnN2eG5fVTRpWGN0RFNhU3UyU3dsSmxXOGdKTFI0N0pPNHExZjZRWl95NlFtdkFCbXBLc0NqZGhLd3YySDVLX3VSZzNFNGRzNjdyNUNtZGlndUpidXJjQQ?oc=5"
         ],
         "source_ids": [
-          "merck_life_science_resources_index"
+          "merck_life_science_japan_official_index"
         ],
         "source_labels": [
-          "Merck Life Science official events and resources - indexed RSS"
+          "Merck Life Science Japan official pages - indexed RSS"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "owned",
         "published_at": "2025-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -124981,7 +124118,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "selection_reason": "未达到日报基础分数",
-      "published_at": "2025-11-12",
+      "published_at": "2025-12-03",
       "event_start_at": "",
       "age_days": 267,
       "days_until_event": null
@@ -125041,7 +124178,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125141,7 +124278,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125239,7 +124376,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125339,7 +124476,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125440,7 +124577,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125542,7 +124679,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125639,7 +124776,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125653,7 +124790,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司自有来源",
         "战略主题命中: cell culture",
         "高价值分类加成 +10: product",
-        "超过硬性时效上限: 261 天前"
+        "超过硬性时效上限: 260 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -125688,7 +124825,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-12-10",
       "event_start_at": "",
-      "age_days": 261,
+      "age_days": 260,
       "days_until_event": null
     },
     {
@@ -125744,7 +124881,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125845,7 +124982,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125946,7 +125083,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -125960,7 +125097,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司自有来源",
         "战略主题命中: bioreactor, cell culture",
         "高价值分类加成 +10: product",
-        "超过硬性时效上限: 242 天前"
+        "超过硬性时效上限: 241 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -125992,7 +125129,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-12-29",
       "event_start_at": "",
-      "age_days": 242,
+      "age_days": 241,
       "days_until_event": null
     },
     {
@@ -126048,7 +125185,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126061,7 +125198,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Sartorius",
         "公司自有来源",
         "战略主题命中: cell line development",
-        "超过硬性时效上限: 285 天前"
+        "超过硬性时效上限: 284 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -126093,7 +125230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-11-16",
       "event_start_at": "",
-      "age_days": 285,
+      "age_days": 284,
       "days_until_event": null
     },
     {
@@ -126149,7 +125286,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126249,7 +125386,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126354,7 +125491,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126362,7 +125499,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "product",
       "business_event_type": "product_platform",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Sartorius",
         "公司自有来源",
@@ -126456,7 +125593,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126558,7 +125695,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126657,7 +125794,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126671,7 +125808,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司自有来源",
         "战略主题命中: MACSQuant, Tyto",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 339 天前"
+        "超过硬性时效上限: 338 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -126701,7 +125838,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2025-09-23",
       "age_days": null,
-      "days_until_event": -339
+      "days_until_event": -338
     },
     {
       "id": "f412b461f86ac5bc",
@@ -126756,7 +125893,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126771,7 +125908,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "战略主题命中: cell therapy",
         "业务动作命中: manufacturing",
         "高价值分类加成 +10: event",
-        "超过硬性时效上限: 302 天前"
+        "超过硬性时效上限: 301 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -126805,7 +125942,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "",
       "event_start_at": "2025-10-30",
       "age_days": null,
-      "days_until_event": -302
+      "days_until_event": -301
     },
     {
       "id": "08a4c54f6337b32a",
@@ -126860,7 +125997,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -126868,7 +126005,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "event",
       "business_event_type": "clinical_regulatory",
       "signal_type": "event",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Miltenyi Biotec",
         "公司自有来源",
@@ -126963,7 +126100,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127060,7 +126197,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127158,7 +126295,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127260,7 +126397,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11-1",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127366,7 +126503,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127465,7 +126602,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-2-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127564,7 +126701,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127664,7 +126801,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-1-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127770,7 +126907,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127782,7 +126919,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Promega, Promega Corporation",
         "公司自有来源",
-        "超过硬性时效上限: 202 天前"
+        "超过硬性时效上限: 201 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -127811,7 +126948,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-02-07",
       "event_start_at": "",
-      "age_days": 202,
+      "age_days": 201,
       "days_until_event": null
     },
     {
@@ -127867,7 +127004,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127879,7 +127016,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Promega, Promega Corporation",
         "公司自有来源",
-        "超过硬性时效上限: 307 天前"
+        "超过硬性时效上限: 306 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -127908,7 +127045,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-10-25",
       "event_start_at": "",
-      "age_days": 307,
+      "age_days": 306,
       "days_until_event": null
     },
     {
@@ -127964,7 +127101,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -127976,7 +127113,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Promega, Promega Corporation",
         "公司自有来源",
-        "超过硬性时效上限: 270 天前"
+        "超过硬性时效上限: 269 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -128008,7 +127145,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-12-01",
       "event_start_at": "",
-      "age_days": 270,
+      "age_days": 269,
       "days_until_event": null
     },
     {
@@ -128064,7 +127201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128077,7 +127214,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Promega, Promega Corporation",
         "公司自有来源",
         "高价值分类加成 +10: product",
-        "超过硬性时效上限: 293 天前"
+        "超过硬性时效上限: 292 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -128109,7 +127246,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-11-08",
       "event_start_at": "",
-      "age_days": 293,
+      "age_days": 292,
       "days_until_event": null
     },
     {
@@ -128165,7 +127302,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128267,7 +127404,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11-1",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128370,7 +127507,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128475,7 +127612,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128522,7 +127659,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "6d1d73cb80d4aef8",
+      "id": "a7c40182146da6a6",
       "company_id": "promega",
       "company": "Promega",
       "matched_company_ids": [
@@ -128540,13 +127677,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Crossref - Promega affiliation records"
       ],
       "related_urls": [
-        "https://doi.org/10.1158/1538-7445.am2025-2192"
+        "https://doi.org/10.1158/1538-7445.am2025-4855"
       ],
       "source_trust": "research",
-      "title": "Abstract 2192: Enhancing veterinary cancer drug development with innovative bioanalytical assays",
-      "url": "https://doi.org/10.1158/1538-7445.am2025-2192",
+      "title": "Abstract 4855: Metabolic and functional dynamics of T cell activation: bioluminescent assays for immune monitoring and modulation",
+      "url": "https://doi.org/10.1158/1538-7445.am2025-4855",
       "published": "2025-4-21",
-      "summary": "Crossref publication metadata. Affiliations: Promega Corporation, Fitchburg, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-2192",
+      "summary": "Crossref publication metadata. Affiliations: Promega Corporation, Madison, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-4855",
       "ai_summary": "竞品 Promega 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -128559,9 +127696,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-2192",
+        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-4855",
         "related_urls": [
-          "https://doi.org/10.1158/1538-7445.am2025-2192"
+          "https://doi.org/10.1158/1538-7445.am2025-4855"
         ],
         "source_ids": [
           "crossref_promega_affiliations"
@@ -128574,7 +127711,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128673,7 +127810,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11-1",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128775,7 +127912,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128874,7 +128011,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -128976,7 +128113,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129020,108 +128157,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-4-3",
       "event_start_at": "",
       "age_days": 146,
-      "days_until_event": null
-    },
-    {
-      "id": "552afe2f84cd73b7",
-      "company_id": "promega",
-      "company": "Promega",
-      "matched_company_ids": [
-        "promega"
-      ],
-      "matched_companies": [
-        "Promega"
-      ],
-      "source_id": "crossref_promega_affiliations",
-      "source_label": "Crossref - Promega affiliation records",
-      "source_ids": [
-        "crossref_promega_affiliations"
-      ],
-      "source_labels": [
-        "Crossref - Promega affiliation records"
-      ],
-      "related_urls": [
-        "https://doi.org/10.1128/jvi.00991-25"
-      ],
-      "source_trust": "research",
-      "title": "A HiBiT-tagged pseudovirus-like particle platform for safe, rapid quantification of virus neutralization and antibody-dependent enhancement",
-      "url": "https://doi.org/10.1128/jvi.00991-25",
-      "published": "2025-11-25",
-      "summary": "Crossref publication metadata. Affiliations: Promega Corporation. Venue: Journal of Virology. DOI: 10.1128/jvi.00991-25",
-      "ai_summary": "竞品 Promega 出现技术与研究内容，重点涉及抗体。 原始摘要要点：Crossref publication metadata.。 竞品正在推进抗体相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.1128/jvi.00991-25",
-        "related_urls": [
-          "https://doi.org/10.1128/jvi.00991-25"
-        ],
-        "source_ids": [
-          "crossref_promega_affiliations"
-        ],
-        "source_labels": [
-          "Crossref - Promega affiliation records"
-        ],
-        "source_types": [
-          "crossref"
-        ],
-        "source_trust": "research",
-        "published_at": "2025-11-25",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "research",
-      "business_event_type": "target_therapy",
-      "signal_type": "research",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Promega, Promega Corporation",
-        "科研数据库结构化来源",
-        "高价值分类加成 +5: research",
-        "超过硬性时效上限: 275 天前",
-        "专题信号：不进入默认新闻日报"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "抗体"
-        ],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 40,
-        "label": "中相关",
-        "explanation": "竞品正在推进抗体相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "可映射到 ACRO 产品或服务需求"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2025-11-25",
-      "event_start_at": "",
-      "age_days": 275,
       "days_until_event": null
     },
     {
@@ -129177,7 +128212,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129188,6 +128223,105 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "is_new": false,
       "reasons": [
         "公司池命中 +30: Promega, Promega Corporation",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 493 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2025-4-21",
+      "event_start_at": "",
+      "age_days": 493,
+      "days_until_event": null
+    },
+    {
+      "id": "1029291831e1c71f",
+      "company_id": "promega",
+      "company": "Promega",
+      "matched_company_ids": [
+        "promega"
+      ],
+      "matched_companies": [
+        "Promega"
+      ],
+      "source_id": "crossref_promega_affiliations",
+      "source_label": "Crossref - Promega affiliation records",
+      "source_ids": [
+        "crossref_promega_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Promega affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2025-5491"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 5491: High throughput bioluminescent homogenous assay to monitor N6-methyladenoisne (m6A)",
+      "url": "https://doi.org/10.1158/1538-7445.am2025-5491",
+      "published": "2025-4-21",
+      "summary": "Crossref publication metadata. Affiliations: Promega, Madison, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-5491",
+      "ai_summary": "竞品 Promega 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Crossref publication metadata.",
+        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-5491",
+        "related_urls": [
+          "https://doi.org/10.1158/1538-7445.am2025-5491"
+        ],
+        "source_ids": [
+          "crossref_promega_affiliations"
+        ],
+        "source_labels": [
+          "Crossref - Promega affiliation records"
+        ],
+        "source_types": [
+          "crossref"
+        ],
+        "source_trust": "research",
+        "published_at": "2025-4-21",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "business_event_type": "target_therapy",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Promega",
         "科研数据库结构化来源",
         "高价值分类加成 +5: research",
         "超过硬性时效上限: 493 天前",
@@ -129276,7 +128410,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129318,105 +128452,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "owner": "产品市场",
         "priority": "medium",
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2025-4-21",
-      "event_start_at": "",
-      "age_days": 493,
-      "days_until_event": null
-    },
-    {
-      "id": "1029291831e1c71f",
-      "company_id": "promega",
-      "company": "Promega",
-      "matched_company_ids": [
-        "promega"
-      ],
-      "matched_companies": [
-        "Promega"
-      ],
-      "source_id": "crossref_promega_affiliations",
-      "source_label": "Crossref - Promega affiliation records",
-      "source_ids": [
-        "crossref_promega_affiliations"
-      ],
-      "source_labels": [
-        "Crossref - Promega affiliation records"
-      ],
-      "related_urls": [
-        "https://doi.org/10.1158/1538-7445.am2025-5491"
-      ],
-      "source_trust": "research",
-      "title": "Abstract 5491: High throughput bioluminescent homogenous assay to monitor N6-methyladenoisne (m6A)",
-      "url": "https://doi.org/10.1158/1538-7445.am2025-5491",
-      "published": "2025-4-21",
-      "summary": "Crossref publication metadata. Affiliations: Promega, Madison, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-5491",
-      "ai_summary": "竞品 Promega 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-5491",
-        "related_urls": [
-          "https://doi.org/10.1158/1538-7445.am2025-5491"
-        ],
-        "source_ids": [
-          "crossref_promega_affiliations"
-        ],
-        "source_labels": [
-          "Crossref - Promega affiliation records"
-        ],
-        "source_types": [
-          "crossref"
-        ],
-        "source_trust": "research",
-        "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "research",
-      "business_event_type": "target_therapy",
-      "signal_type": "research",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Promega",
-        "科研数据库结构化来源",
-        "高价值分类加成 +5: research",
-        "超过硬性时效上限: 493 天前",
-        "专题信号：不进入默认新闻日报"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
       },
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-4-21",
@@ -129477,7 +128512,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129527,7 +128562,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "9f96def52c18a702",
+      "id": "552afe2f84cd73b7",
       "company_id": "promega",
       "company": "Promega",
       "matched_company_ids": [
@@ -129545,14 +128580,14 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Crossref - Promega affiliation records"
       ],
       "related_urls": [
-        "https://doi.org/10.1158/1538-7445.am2025-5479"
+        "https://doi.org/10.1128/jvi.00991-25"
       ],
       "source_trust": "research",
-      "title": "Abstract 5479: Development of novel luminescent assays for sensitive and specific quantitation of double-stranded RNA in mRNA vaccines",
-      "url": "https://doi.org/10.1158/1538-7445.am2025-5479",
-      "published": "2025-4-21",
-      "summary": "Crossref publication metadata. Affiliations: Promega, Fitchburg, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-5479",
-      "ai_summary": "竞品 Promega 出现技术与研究内容，重点涉及mRNA / RNA。 原始摘要要点：Crossref publication metadata.。 竞品正在推进mRNA / RNA相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "title": "A HiBiT-tagged pseudovirus-like particle platform for safe, rapid quantification of virus neutralization and antibody-dependent enhancement",
+      "url": "https://doi.org/10.1128/jvi.00991-25",
+      "published": "2025-11-25",
+      "summary": "Crossref publication metadata. Affiliations: Promega Corporation. Venue: Journal of Virology. DOI: 10.1128/jvi.00991-25",
+      "ai_summary": "竞品 Promega 出现技术与研究内容，重点涉及抗体。 原始摘要要点：Crossref publication metadata.。 竞品正在推进抗体相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -129564,9 +128599,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-5479",
+        "primary_url": "https://doi.org/10.1128/jvi.00991-25",
         "related_urls": [
-          "https://doi.org/10.1158/1538-7445.am2025-5479"
+          "https://doi.org/10.1128/jvi.00991-25"
         ],
         "source_ids": [
           "crossref_promega_affiliations"
@@ -129578,8 +128613,8 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
           "crossref"
         ],
         "source_trust": "research",
-        "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "published_at": "2025-11-25",
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129589,30 +128624,30 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "research",
       "is_new": false,
       "reasons": [
-        "公司池命中 +30: Promega",
+        "公司池命中 +30: Promega, Promega Corporation",
         "科研数据库结构化来源",
         "高价值分类加成 +5: research",
-        "超过硬性时效上限: 493 天前",
+        "超过硬性时效上限: 275 天前",
         "专题信号：不进入默认新闻日报"
       ],
       "intelligence": {
         "targets": [],
-        "modalities": [
-          "mRNA / RNA"
+        "modalities": [],
+        "product_needs": [
+          "抗体"
         ],
-        "product_needs": [],
         "development_stages": [],
         "business_actions": [],
         "event_signals": []
       },
       "acro_relevance": {
         "level": "medium",
-        "score": 30,
+        "score": 40,
         "label": "中相关",
-        "explanation": "竞品正在推进mRNA / RNA相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "explanation": "竞品正在推进抗体相关动作，值得对比产品定位、市场话术和区域覆盖。",
         "reasons": [
           "竞品公司动态",
-          "命中重点疗法或技术"
+          "可映射到 ACRO 产品或服务需求"
         ]
       },
       "recommended_action": {
@@ -129623,9 +128658,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "未达到日报基础分数",
-      "published_at": "2025-4-21",
+      "published_at": "2025-11-25",
       "event_start_at": "",
-      "age_days": 493,
+      "age_days": 275,
       "days_until_event": null
     },
     {
@@ -129681,7 +128716,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-4-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129728,106 +128763,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2025-4-21",
       "event_start_at": "",
       "age_days": 493,
-      "days_until_event": null
-    },
-    {
-      "id": "974d06f409e7b131",
-      "company_id": "promega",
-      "company": "Promega",
-      "matched_company_ids": [
-        "promega"
-      ],
-      "matched_companies": [
-        "Promega"
-      ],
-      "source_id": "crossref_promega_affiliations",
-      "source_label": "Crossref - Promega affiliation records",
-      "source_ids": [
-        "crossref_promega_affiliations"
-      ],
-      "source_labels": [
-        "Crossref - Promega affiliation records"
-      ],
-      "related_urls": [
-        "https://doi.org/10.1158/1538-7445.am2026-288"
-      ],
-      "source_trust": "research",
-      "title": "Abstract 288: Two-color bioluminescence analyses pairing NanoLuc® and red-shifted NanoPrism™ luciferases.",
-      "url": "https://doi.org/10.1158/1538-7445.am2026-288",
-      "published": "2026-4-3",
-      "summary": "Crossref publication metadata. Affiliations: Promega Corporation, Madison, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2026-288",
-      "ai_summary": "竞品 Promega 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "Crossref publication metadata.",
-        "primary_url": "https://doi.org/10.1158/1538-7445.am2026-288",
-        "related_urls": [
-          "https://doi.org/10.1158/1538-7445.am2026-288"
-        ],
-        "source_ids": [
-          "crossref_promega_affiliations"
-        ],
-        "source_labels": [
-          "Crossref - Promega affiliation records"
-        ],
-        "source_types": [
-          "crossref"
-        ],
-        "source_trust": "research",
-        "published_at": "2026-4-3",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "research",
-      "business_event_type": "target_therapy",
-      "signal_type": "research",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Promega, Promega Corporation",
-        "科研数据库结构化来源",
-        "战略主题命中: luciferase",
-        "高价值分类加成 +5: research",
-        "超过默认时效窗口: 146 天前",
-        "专题信号：不进入默认新闻日报"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-4-3",
-      "event_start_at": "",
-      "age_days": 146,
       "days_until_event": null
     },
     {
@@ -129883,7 +128818,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11-1",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -129930,6 +128865,108 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2025-11-1",
       "event_start_at": "",
       "age_days": 299,
+      "days_until_event": null
+    },
+    {
+      "id": "9f96def52c18a702",
+      "company_id": "promega",
+      "company": "Promega",
+      "matched_company_ids": [
+        "promega"
+      ],
+      "matched_companies": [
+        "Promega"
+      ],
+      "source_id": "crossref_promega_affiliations",
+      "source_label": "Crossref - Promega affiliation records",
+      "source_ids": [
+        "crossref_promega_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Promega affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2025-5479"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 5479: Development of novel luminescent assays for sensitive and specific quantitation of double-stranded RNA in mRNA vaccines",
+      "url": "https://doi.org/10.1158/1538-7445.am2025-5479",
+      "published": "2025-4-21",
+      "summary": "Crossref publication metadata. Affiliations: Promega, Fitchburg, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2025-5479",
+      "ai_summary": "竞品 Promega 出现技术与研究内容，重点涉及mRNA / RNA。 原始摘要要点：Crossref publication metadata.。 竞品正在推进mRNA / RNA相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Crossref publication metadata.",
+        "primary_url": "https://doi.org/10.1158/1538-7445.am2025-5479",
+        "related_urls": [
+          "https://doi.org/10.1158/1538-7445.am2025-5479"
+        ],
+        "source_ids": [
+          "crossref_promega_affiliations"
+        ],
+        "source_labels": [
+          "Crossref - Promega affiliation records"
+        ],
+        "source_types": [
+          "crossref"
+        ],
+        "source_trust": "research",
+        "published_at": "2025-4-21",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "business_event_type": "target_therapy",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Promega",
+        "科研数据库结构化来源",
+        "高价值分类加成 +5: research",
+        "超过硬性时效上限: 493 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "mRNA / RNA"
+        ],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 30,
+        "label": "中相关",
+        "explanation": "竞品正在推进mRNA / RNA相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "命中重点疗法或技术"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2025-4-21",
+      "event_start_at": "",
+      "age_days": 493,
       "days_until_event": null
     },
     {
@@ -129985,7 +129022,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "research",
         "published_at": "2025-11-1",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130029,6 +129066,106 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2025-11-1",
       "event_start_at": "",
       "age_days": 299,
+      "days_until_event": null
+    },
+    {
+      "id": "974d06f409e7b131",
+      "company_id": "promega",
+      "company": "Promega",
+      "matched_company_ids": [
+        "promega"
+      ],
+      "matched_companies": [
+        "Promega"
+      ],
+      "source_id": "crossref_promega_affiliations",
+      "source_label": "Crossref - Promega affiliation records",
+      "source_ids": [
+        "crossref_promega_affiliations"
+      ],
+      "source_labels": [
+        "Crossref - Promega affiliation records"
+      ],
+      "related_urls": [
+        "https://doi.org/10.1158/1538-7445.am2026-288"
+      ],
+      "source_trust": "research",
+      "title": "Abstract 288: Two-color bioluminescence analyses pairing NanoLuc® and red-shifted NanoPrism™ luciferases.",
+      "url": "https://doi.org/10.1158/1538-7445.am2026-288",
+      "published": "2026-4-3",
+      "summary": "Crossref publication metadata. Affiliations: Promega Corporation, Madison, WI.. Venue: Cancer Research. DOI: 10.1158/1538-7445.am2026-288",
+      "ai_summary": "竞品 Promega 出现技术与研究内容。 原始摘要要点：Crossref publication metadata.。 竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "source_backed",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "source_backed",
+        "verification_label": "有原始摘要支持",
+        "summary_basis": "source_excerpt",
+        "source_excerpt": "Crossref publication metadata.",
+        "primary_url": "https://doi.org/10.1158/1538-7445.am2026-288",
+        "related_urls": [
+          "https://doi.org/10.1158/1538-7445.am2026-288"
+        ],
+        "source_ids": [
+          "crossref_promega_affiliations"
+        ],
+        "source_labels": [
+          "Crossref - Promega affiliation records"
+        ],
+        "source_types": [
+          "crossref"
+        ],
+        "source_trust": "research",
+        "published_at": "2026-4-3",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 25,
+      "tier": "archive",
+      "category": "research",
+      "business_event_type": "target_therapy",
+      "signal_type": "research",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Promega, Promega Corporation",
+        "科研数据库结构化来源",
+        "战略主题命中: luciferase",
+        "高价值分类加成 +5: research",
+        "超过默认时效窗口: 146 天前",
+        "专题信号：不进入默认新闻日报"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进research相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-4-3",
+      "event_start_at": "",
+      "age_days": 146,
       "days_until_event": null
     },
     {
@@ -130084,7 +129221,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130188,7 +129325,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130201,7 +129338,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: Bio-Techne",
         "公司自有来源",
         "高价值分类加成 +10: event",
-        "超过默认时效窗口: 161 天前"
+        "超过默认时效窗口: 160 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -130233,7 +129370,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-03-20",
       "event_start_at": "",
-      "age_days": 161,
+      "age_days": 160,
       "days_until_event": null
     },
     {
@@ -130289,7 +129426,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130393,7 +129530,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130405,7 +129542,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Bio-Techne",
         "公司自有来源",
-        "超过硬性时效上限: 333 天前"
+        "超过硬性时效上限: 332 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -130434,7 +129571,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-09-29",
       "event_start_at": "",
-      "age_days": 333,
+      "age_days": 332,
       "days_until_event": null
     },
     {
@@ -130490,7 +129627,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130588,7 +129725,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130689,7 +129826,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130787,7 +129924,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130889,7 +130026,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130986,7 +130123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -130998,7 +130135,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: BD FACS",
         "公司自有来源",
-        "超过默认时效窗口: 128 天前"
+        "超过默认时效窗口: 127 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -131027,107 +130164,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-04-22",
       "event_start_at": "",
-      "age_days": 128,
-      "days_until_event": null
-    },
-    {
-      "id": "f1ce70864ecccaf0",
-      "company_id": "bd_biosciences",
-      "company": "BD Biosciences",
-      "matched_company_ids": [
-        "bd_biosciences"
-      ],
-      "matched_companies": [
-        "BD Biosciences"
-      ],
-      "source_id": "bd_biosciences_japan_official_index",
-      "source_label": "BD Biosciences Japan official pages - indexed RSS",
-      "source_ids": [
-        "bd_biosciences_japan_official_index"
-      ],
-      "source_labels": [
-        "BD Biosciences Japan official pages - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiowFBVV95cUxObl9hQ3MwNWJhbjZ5SnFZWVhwWVZKZjZOa0JiREZGZUdnRmQ1QXB6TEhtakYtVFZRcHlFRHBEOWlhRzRiMlFqRzdCYjBGRWZEWmJ6bUVCdXlNMkxKN1F2RDU0aUxwX2diRVFUM1g0d2VSY2pJYnJOTW0yd2VhcFZnSlZpSU53aU1TU0l3aFBGNlFiZlRrWlVYUXVYX0UyRC1hVm9V?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "2026 Horizon NEXT Webinar - bdbiosciences.com",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObl9hQ3MwNWJhbjZ5SnFZWVhwWVZKZjZOa0JiREZGZUdnRmQ1QXB6TEhtakYtVFZRcHlFRHBEOWlhRzRiMlFqRzdCYjBGRWZEWmJ6bUVCdXlNMkxKN1F2RDU0aUxwX2diRVFUM1g0d2VSY2pJYnJOTW0yd2VhcFZnSlZpSU53aU1TU0l3aFBGNlFiZlRrWlVYUXVYX0UyRC1hVm9V?oc=5",
-      "published": "2026-05-20",
-      "summary": "2026 Horizon NEXT Webinar bdbiosciences.com",
-      "ai_summary": "竞品 BD Biosciences 出现市场活动信息。 竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObl9hQ3MwNWJhbjZ5SnFZWVhwWVZKZjZOa0JiREZGZUdnRmQ1QXB6TEhtakYtVFZRcHlFRHBEOWlhRzRiMlFqRzdCYjBGRWZEWmJ6bUVCdXlNMkxKN1F2RDU0aUxwX2diRVFUM1g0d2VSY2pJYnJOTW0yd2VhcFZnSlZpSU53aU1TU0l3aFBGNlFiZlRrWlVYUXVYX0UyRC1hVm9V?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiowFBVV95cUxObl9hQ3MwNWJhbjZ5SnFZWVhwWVZKZjZOa0JiREZGZUdnRmQ1QXB6TEhtakYtVFZRcHlFRHBEOWlhRzRiMlFqRzdCYjBGRWZEWmJ6bUVCdXlNMkxKN1F2RDU0aUxwX2diRVFUM1g0d2VSY2pJYnJOTW0yd2VhcFZnSlZpSU53aU1TU0l3aFBGNlFiZlRrWlVYUXVYX0UyRC1hVm9V?oc=5"
-        ],
-        "source_ids": [
-          "bd_biosciences_japan_official_index"
-        ],
-        "source_labels": [
-          "BD Biosciences Japan official pages - indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "owned",
-        "published_at": "2026-05-20",
-        "checked_at": "2026-08-27T06:33:33"
-      },
-      "workflow_status": "new",
-      "score": 25,
-      "tier": "archive",
-      "category": "event",
-      "business_event_type": "market_activity",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司自有来源",
-        "高价值分类加成 +10: event",
-        "超过默认时效窗口: 99 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": [
-          "Webinar / 线上会议"
-        ]
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 24,
-        "label": "中相关",
-        "explanation": "竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "可转化为活动运营线索"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-05-20",
-      "event_start_at": "",
-      "age_days": 99,
+      "age_days": 127,
       "days_until_event": null
     },
     {
@@ -131183,7 +130220,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131280,7 +130317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131377,7 +130414,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131478,7 +130515,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131580,7 +130617,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131682,7 +130719,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131779,7 +130816,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131877,7 +130914,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -131979,7 +131016,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132081,7 +131118,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132183,7 +131220,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132280,7 +131317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132382,7 +131419,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132479,7 +131516,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132576,7 +131613,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132678,7 +131715,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132775,7 +131812,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132787,7 +131824,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "公司池命中 +15: Sino Biological",
         "公司自有来源",
-        "超过硬性时效上限: 242 天前"
+        "超过硬性时效上限: 241 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -132875,7 +131912,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -132972,7 +132009,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133073,7 +132110,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133170,7 +132207,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133183,7 +132220,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: タカラバイオ",
         "公司自有来源",
         "高价值分类加成 +10: event",
-        "超过默认时效窗口: 132 天前"
+        "超过默认时效窗口: 131 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -133218,7 +132255,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-04-18",
       "event_start_at": "",
-      "age_days": 132,
+      "age_days": 131,
       "days_until_event": null
     },
     {
@@ -133274,7 +132311,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133287,7 +132324,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "公司池命中 +15: タカラバイオ",
         "公司自有来源",
         "高价值分类加成 +10: product",
-        "超过硬性时效上限: 307 天前"
+        "超过硬性时效上限: 306 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -133316,7 +132353,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2025-10-25",
       "event_start_at": "",
-      "age_days": 307,
+      "age_days": 306,
       "days_until_event": null
     },
     {
@@ -133372,7 +132409,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133473,7 +132510,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133570,7 +132607,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133667,7 +132704,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133764,7 +132801,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133861,7 +132898,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -133962,7 +132999,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134068,7 +133105,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134165,7 +133202,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134262,7 +133299,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134359,7 +133396,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134456,7 +133493,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134553,7 +133590,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134650,7 +133687,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134746,7 +133783,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134842,7 +133879,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -134938,7 +133975,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135034,7 +134071,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135130,7 +134167,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135228,7 +134265,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135326,7 +134363,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135422,7 +134459,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135518,7 +134555,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135616,7 +134653,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135727,7 +134764,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135831,7 +134868,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -135930,7 +134967,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136027,7 +135064,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136125,7 +135162,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136222,7 +135259,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136330,7 +135367,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136427,7 +135464,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136535,7 +135572,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136640,7 +135677,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136737,7 +135774,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136838,7 +135875,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -136940,7 +135977,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137037,7 +136074,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137135,7 +136172,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137240,7 +136277,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137348,7 +136385,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137456,7 +136493,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137553,7 +136590,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137661,7 +136698,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-05-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137759,7 +136796,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137856,7 +136893,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -137953,7 +136990,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138059,7 +137096,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138167,7 +137204,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138264,7 +137301,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138366,7 +137403,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138474,7 +137511,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138576,7 +137613,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138673,7 +137710,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138781,7 +137818,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138879,7 +137916,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -138987,7 +138024,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-02-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139084,7 +138121,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139180,7 +138217,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139280,7 +138317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139380,7 +138417,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139483,7 +138520,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139580,7 +138617,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139677,7 +138714,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139778,7 +138815,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139881,7 +138918,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -139984,7 +139021,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140084,7 +139121,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-09-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140181,7 +139218,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140285,7 +139322,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-10-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140393,7 +139430,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140492,7 +139529,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-01-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140601,7 +139638,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140698,7 +139735,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-03-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140797,7 +139834,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-12-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140894,7 +139931,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -140990,7 +140027,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141086,7 +140123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141182,7 +140219,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141280,7 +140317,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141376,7 +140413,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141474,7 +140511,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141570,7 +140607,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 25,
@@ -141662,7 +140699,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-09-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -141758,7 +140795,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -141766,7 +140803,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "新闻稿分发平台",
         "业务动作命中: clinical",
@@ -141851,7 +140888,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -141950,7 +140987,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -141997,7 +141034,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -142049,7 +141086,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142092,7 +141129,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -142144,7 +141181,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142152,7 +141189,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "customer_demand",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: antibody",
@@ -142248,7 +141285,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142274,10 +141311,12 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       },
       "acro_relevance": {
         "level": "low",
-        "score": 0,
+        "score": 10,
         "label": "低相关",
         "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": []
+        "reasons": [
+          "出现明确业务动作"
+        ]
       },
       "recommended_action": {
         "type": "archive",
@@ -142341,7 +141380,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142380,7 +141419,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -142432,7 +141471,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142527,7 +141566,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142618,7 +141657,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142716,7 +141755,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142811,7 +141850,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142907,7 +141946,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -142998,7 +142037,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -143089,7 +142128,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -143132,7 +142171,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 0,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -143184,7 +142223,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -143280,7 +142319,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 24,
@@ -143320,101 +142359,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-08-26",
       "event_start_at": "",
       "age_days": 1,
-      "days_until_event": null
-    },
-    {
-      "id": "cf06abc993b969b3",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "bioon_life_science_index",
-      "source_label": "Bioon - China life science indexed RSS",
-      "source_ids": [
-        "bioon_life_science_index"
-      ],
-      "source_labels": [
-        "Bioon - China life science indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KbGdxOFRmRlBNNVVpSDJjdTRGSmxkTFdfMHBNNzgtamg4UzhpY1FHNTExX1c2QnpXNUNib3BOc1Zva2ZLSFhpdGJnMWhTcXhI?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "注册-第四届中国类器官转化医学大会暨2026（第六届）类器官大会（北京站） - 生物谷",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KbGdxOFRmRlBNNVVpSDJjdTRGSmxkTFdfMHBNNzgtamg4UzhpY1FHNTExX1c2QnpXNUNib3BOc1Zva2ZLSFhpdGJnMWhTcXhI?oc=5",
-      "published": "2026-06-17",
-      "summary": "注册-第四届中国类器官转化医学大会暨2026（第六届）类器官大会（北京站） 生物谷",
-      "ai_summary": "该来源捕捉到一条市场与区域动态，重点涉及类器官。 该信号命中类器官，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“技术趋势观察”处理：并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KbGdxOFRmRlBNNVVpSDJjdTRGSmxkTFdfMHBNNzgtamg4UzhpY1FHNTExX1c2QnpXNUNib3BOc1Zva2ZLSFhpdGJnMWhTcXhI?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KbGdxOFRmRlBNNVVpSDJjdTRGSmxkTFdfMHBNNzgtamg4UzhpY1FHNTExX1c2QnpXNUNib3BOc1Zva2ZLSFhpdGJnMWhTcXhI?oc=5"
-        ],
-        "source_ids": [
-          "bioon_life_science_index"
-        ],
-        "source_labels": [
-          "Bioon - China life science indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "media",
-        "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 24,
-      "tier": "archive",
-      "category": "market",
-      "business_event_type": "regional_expansion",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: 类器官",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "类器官"
-        ],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 12,
-        "label": "低相关",
-        "explanation": "该信号命中类器官，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术"
-        ]
-      },
-      "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "low",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-06-17",
-      "event_start_at": "",
-      "age_days": 71,
       "days_until_event": null
     },
     {
@@ -143470,7 +142414,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -143567,7 +142511,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2024-07-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -143668,7 +142612,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2024-10-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -143680,7 +142624,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "reasons": [
         "专属来源公司归属 +15",
         "高价值分类加成 +8: market",
-        "超过硬性时效上限: 692 天前"
+        "超过硬性时效上限: 691 天前"
       ],
       "intelligence": {
         "targets": [],
@@ -143709,7 +142653,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2024-10-05",
       "event_start_at": "",
-      "age_days": 692,
+      "age_days": 691,
       "days_until_event": null
     },
     {
@@ -143765,7 +142709,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2024-04-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -143862,7 +142806,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2022-10-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -143966,7 +142910,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -144064,7 +143008,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 23,
@@ -144163,7 +143107,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144260,7 +143204,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144354,7 +143298,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144444,7 +143388,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-04-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144539,7 +143483,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144629,7 +143573,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144720,7 +143664,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144810,7 +143754,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144900,7 +143844,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -144997,7 +143941,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145094,7 +144038,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145191,7 +144135,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145288,7 +144232,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145385,7 +144329,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145483,7 +144427,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145580,7 +144524,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145677,7 +144621,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145772,7 +144716,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145867,7 +144811,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -145958,7 +144902,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146051,7 +144995,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146145,7 +145089,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146235,7 +145179,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-04-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146326,7 +145270,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146416,7 +145360,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146507,7 +145451,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-02-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146598,7 +145542,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146689,7 +145633,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146779,7 +145723,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146874,7 +145818,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -146964,7 +145908,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-10-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147055,7 +145999,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147145,7 +146089,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147235,7 +146179,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147330,7 +146274,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147420,7 +146364,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147510,7 +146454,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-04-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147605,7 +146549,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2025-12-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147696,7 +146640,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147790,7 +146734,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 22,
@@ -147884,7 +146828,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 21,
@@ -147984,7 +146928,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 21,
@@ -148081,7 +147025,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 21,
@@ -148181,7 +147125,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 21,
@@ -148281,7 +147225,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 21,
@@ -148383,7 +147327,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 21,
@@ -148478,7 +147422,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -148568,7 +147512,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -148658,7 +147602,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -148748,7 +147692,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -148838,7 +147782,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -148932,7 +147876,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149022,7 +147966,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149112,7 +148056,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149168,8 +148112,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "BioSpectrum India - indexed RSS"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakJwZF8zRE9uT00yeWJCTXpORUd0eVh1cndSM1l3cmtOTEVkalU1SFd6M2VwWE5RSVFBZFI1RXdUY3ZvNHFUS2VsNmdwbDVCV19CclZ4ZFFnakJ3cjRKRFFTcmRBcE9odmpiTi11dmVrMnItYkJvSVZGUnM3Zk5NQ1dpSWxvQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMidkFVX3lxTFBoOXlYWDFPb0tUVU1LYXRnM1JDRnpuQ2FnSXZkV2RxaHV0TGRDWVBFM1owRG5MUFhfcVRWYjg4NWUyUlhRaUVpTUFyT2NMbW01X0Q2cTZBZ3BIR0pjWld4emY2eVZnRFlfSnlhYTBwYU9qSnY0NUE?oc=5"
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakJwZF8zRE9uT00yeWJCTXpORUd0eVh1cndSM1l3cmtOTEVkalU1SFd6M2VwWE5RSVFBZFI1RXdUY3ZvNHFUS2VsNmdwbDVCV19CclZ4ZFFnakJ3cjRKRFFTcmRBcE9odmpiTi11dmVrMnItYkJvSVZGUnM3Zk5NQ1dpSWxvQQ?oc=5"
       ],
       "source_trust": "media",
       "title": "BioPharma, Healthcare, healthscience, Biotechnology, BioIT, Pharma news updates - BioSpectrum India",
@@ -149190,8 +148133,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "source_excerpt": "",
         "primary_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakJwZF8zRE9uT00yeWJCTXpORUd0eVh1cndSM1l3cmtOTEVkalU1SFd6M2VwWE5RSVFBZFI1RXdUY3ZvNHFUS2VsNmdwbDVCV19CclZ4ZFFnakJ3cjRKRFFTcmRBcE9odmpiTi11dmVrMnItYkJvSVZGUnM3Zk5NQ1dpSWxvQQ?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakJwZF8zRE9uT00yeWJCTXpORUd0eVh1cndSM1l3cmtOTEVkalU1SFd6M2VwWE5RSVFBZFI1RXdUY3ZvNHFUS2VsNmdwbDVCV19CclZ4ZFFnakJ3cjRKRFFTcmRBcE9odmpiTi11dmVrMnItYkJvSVZGUnM3Zk5NQ1dpSWxvQQ?oc=5",
-          "https://news.google.com/rss/articles/CBMidkFVX3lxTFBoOXlYWDFPb0tUVU1LYXRnM1JDRnpuQ2FnSXZkV2RxaHV0TGRDWVBFM1owRG5MUFhfcVRWYjg4NWUyUlhRaUVpTUFyT2NMbW01X0Q2cTZBZ3BIR0pjWld4emY2eVZnRFlfSnlhYTBwYU9qSnY0NUE?oc=5"
+          "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakJwZF8zRE9uT00yeWJCTXpORUd0eVh1cndSM1l3cmtOTEVkalU1SFd6M2VwWE5RSVFBZFI1RXdUY3ZvNHFUS2VsNmdwbDVCV19CclZ4ZFFnakJ3cjRKRFFTcmRBcE9odmpiTi11dmVrMnItYkJvSVZGUnM3Zk5NQ1dpSWxvQQ?oc=5"
         ],
         "source_ids": [
           "biospectrum_india_index"
@@ -149204,7 +148146,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149294,7 +148236,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149384,7 +148326,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149474,7 +148416,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149569,7 +148511,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149659,7 +148601,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 20,
@@ -149749,7 +148691,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -149839,7 +148781,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -149933,7 +148875,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -149941,7 +148883,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "regional_expansion",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: expansion"
@@ -150027,7 +148969,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150117,7 +149059,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150212,7 +149154,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150302,7 +149244,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150396,7 +149338,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150490,7 +149432,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150587,7 +149529,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150681,7 +149623,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150775,7 +149717,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150783,7 +149725,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "业务动作命中: deal"
@@ -150872,7 +149814,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -150969,7 +149911,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151059,7 +150001,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151149,7 +150091,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151239,7 +150181,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2025-12-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151330,7 +150272,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151424,7 +150366,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151514,7 +150456,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151609,7 +150551,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151704,7 +150646,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151801,7 +150743,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151895,7 +150837,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -151985,7 +150927,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152075,7 +151017,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152169,7 +151111,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152259,7 +151201,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152349,7 +151291,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152439,7 +151381,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152447,7 +151389,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "market",
       "business_event_type": "regional_expansion",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "高价值分类加成 +8: market"
@@ -152529,7 +151471,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 18,
@@ -152619,7 +151561,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -152709,7 +151651,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -152803,7 +151745,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -152897,7 +151839,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -152987,7 +151929,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153081,7 +152023,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153171,7 +152113,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153265,7 +152207,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153362,7 +152304,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153456,7 +152398,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153553,7 +152495,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153650,7 +152592,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153744,7 +152686,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153834,7 +152776,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153928,7 +152870,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -153967,100 +152909,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-06-25",
       "event_start_at": "",
       "age_days": 63,
-      "days_until_event": null
-    },
-    {
-      "id": "5a0607b8e5a4108a",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "biospectrum_asia_index",
-      "source_label": "BioSpectrum Asia - APAC biotech indexed RSS",
-      "source_ids": [
-        "biospectrum_asia_index"
-      ],
-      "source_labels": [
-        "BioSpectrum Asia - APAC biotech indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMia0FVX3lxTE9fUXZHQmRzTHlxWGNWeFB2ZmcxWnhiYl9GeUJpb2lQVnRqZk5ydXhKRnJiY1k4eGZLdW5ETDhFcWkzVU5MMFlVQjR3dy05VU1rVU9zZkk2Yml4RWxtUVpEb2NQRDRmN1RlZm1J?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "The CDMO Scale Race Is Over. The Integration Race Has Begun - BioSpectrum Asia",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9fUXZHQmRzTHlxWGNWeFB2ZmcxWnhiYl9GeUJpb2lQVnRqZk5ydXhKRnJiY1k4eGZLdW5ETDhFcWkzVU5MMFlVQjR3dy05VU1rVU9zZkk2Yml4RWxtUVpEb2NQRDRmN1RlZm1J?oc=5",
-      "published": "2026-07-16",
-      "summary": "The CDMO Scale Race Is Over. The Integration Race Has Begun BioSpectrum Asia",
-      "ai_summary": "该来源捕捉到一条公司战略与组织动态，重点涉及CRO / CDMO 服务。 当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9fUXZHQmRzTHlxWGNWeFB2ZmcxWnhiYl9GeUJpb2lQVnRqZk5ydXhKRnJiY1k4eGZLdW5ETDhFcWkzVU5MMFlVQjR3dy05VU1rVU9zZkk2Yml4RWxtUVpEb2NQRDRmN1RlZm1J?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMia0FVX3lxTE9fUXZHQmRzTHlxWGNWeFB2ZmcxWnhiYl9GeUJpb2lQVnRqZk5ydXhKRnJiY1k4eGZLdW5ETDhFcWkzVU5MMFlVQjR3dy05VU1rVU9zZkk2Yml4RWxtUVpEb2NQRDRmN1RlZm1J?oc=5"
-        ],
-        "source_ids": [
-          "biospectrum_asia_index"
-        ],
-        "source_labels": [
-          "BioSpectrum Asia - APAC biotech indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "media",
-        "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 16,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "customer_demand",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: CDMO"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "CRO / CDMO 服务"
-        ],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 22,
-        "label": "低相关",
-        "explanation": "当前未识别到明确的 ACRO 产品需求、客户动作或重点技术信号，建议保持归档。",
-        "reasons": [
-          "可映射到 ACRO 产品或服务需求"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-07-16",
-      "event_start_at": "",
-      "age_days": 42,
       "days_until_event": null
     },
     {
@@ -154112,7 +152960,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154207,7 +153055,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154301,7 +153149,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154391,7 +153239,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154486,7 +153334,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154576,7 +153424,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154670,7 +153518,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154760,7 +153608,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154854,7 +153702,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -154949,7 +153797,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155043,7 +153891,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155133,7 +153981,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155223,7 +154071,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155314,7 +154162,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155408,7 +154256,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-03-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155499,7 +154347,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155589,7 +154437,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155679,7 +154527,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-04-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155770,7 +154618,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-04-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155865,7 +154713,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -155955,7 +154803,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156045,7 +154893,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156135,7 +154983,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156230,7 +155078,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-09-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156321,7 +155169,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156412,7 +155260,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-09-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156503,7 +155351,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156593,7 +155441,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156687,7 +155535,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156777,7 +155625,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156820,6 +155668,100 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-08-24",
       "event_start_at": "",
       "age_days": 3,
+      "days_until_event": null
+    },
+    {
+      "id": "6ecd7d523f867890",
+      "company_id": "",
+      "company": "行业观察（未命中公司池）",
+      "matched_company_ids": [],
+      "matched_companies": [],
+      "source_id": "bioon_life_science_index",
+      "source_label": "Bioon - China life science indexed RSS",
+      "source_ids": [
+        "bioon_life_science_index"
+      ],
+      "source_labels": [
+        "Bioon - China life science indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZbVJCNVhiQUR2RU10WDRhUDNFUGY1MGpnZXZNWlVxNXNQdFdQemVJbnk0dkdLQXJJRFlMQU4tWUNXbHZfZlc2SzJ1T3VGOHNEUW5WMzlHUGI2aEU?oc=5"
+      ],
+      "source_trust": "media",
+      "title": "复肿乳腺肿瘤团队为ADC药物增敏提供新思路- 进展专区 - 生物谷",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZbVJCNVhiQUR2RU10WDRhUDNFUGY1MGpnZXZNWlVxNXNQdFdQemVJbnk0dkdLQXJJRFlMQU4tWUNXbHZfZlc2SzJ1T3VGOHNEUW5WMzlHUGI2aEU?oc=5",
+      "published": "2026-08-27",
+      "summary": "复肿乳腺肿瘤团队为ADC药物增敏提供新思路- 进展专区 生物谷",
+      "ai_summary": "该来源捕捉到一条公司战略与组织动态，重点涉及ADC。 该信号命中ADC，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“技术趋势观察”处理：并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "secondary",
+        "kind_label": "公开二手证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZbVJCNVhiQUR2RU10WDRhUDNFUGY1MGpnZXZNWlVxNXNQdFdQemVJbnk0dkdLQXJJRFlMQU4tWUNXbHZfZlc2SzJ1T3VGOHNEUW5WMzlHUGI2aEU?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZbVJCNVhiQUR2RU10WDRhUDNFUGY1MGpnZXZNWlVxNXNQdFdQemVJbnk0dkdLQXJJRFlMQU4tWUNXbHZfZlc2SzJ1T3VGOHNEUW5WMzlHUGI2aEU?oc=5"
+        ],
+        "source_ids": [
+          "bioon_life_science_index"
+        ],
+        "source_labels": [
+          "Bioon - China life science indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "media",
+        "published_at": "2026-08-27",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 16,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "target_therapy",
+      "signal_type": "news",
+      "is_new": true,
+      "reasons": [
+        "行业编辑媒体",
+        "战略主题命中: ADC"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [
+          "ADC"
+        ],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 12,
+        "label": "低相关",
+        "explanation": "该信号命中ADC，对技术趋势有参考价值，但尚未出现明确商业需求。",
+        "reasons": [
+          "命中重点疗法或技术"
+        ]
+      },
+      "recommended_action": {
+        "type": "trend",
+        "label": "技术趋势观察",
+        "owner": "产品市场",
+        "priority": "low",
+        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-08-27",
+      "event_start_at": "",
+      "age_days": 0,
       "days_until_event": null
     },
     {
@@ -156871,7 +155813,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -156914,100 +155856,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-08-20",
       "event_start_at": "",
       "age_days": 7,
-      "days_until_event": null
-    },
-    {
-      "id": "a742f6103fb1542c",
-      "company_id": "",
-      "company": "行业观察（未命中公司池）",
-      "matched_company_ids": [],
-      "matched_companies": [],
-      "source_id": "bioon_life_science_index",
-      "source_label": "Bioon - China life science indexed RSS",
-      "source_ids": [
-        "bioon_life_science_index"
-      ],
-      "source_labels": [
-        "Bioon - China life science indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DQmlKbGFCWHZDNlhVczNRUmFPRmdSRHB5T3pBM0sxUm1XNy1wMmlPUTdVRkRtWFh5Z2NvUHBkbW5tRTYtZVlYY09fQXY2bnlDRG1vOFRucVpoQW1F?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "复肿乳腺肿瘤团队为ADC药物增敏提供新思路- 进展专区 - 生物谷",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DQmlKbGFCWHZDNlhVczNRUmFPRmdSRHB5T3pBM0sxUm1XNy1wMmlPUTdVRkRtWFh5Z2NvUHBkbW5tRTYtZVlYY09fQXY2bnlDRG1vOFRucVpoQW1F?oc=5",
-      "published": "2026-08-27",
-      "summary": "复肿乳腺肿瘤团队为ADC药物增敏提供新思路- 进展专区 生物谷",
-      "ai_summary": "该来源捕捉到一条公司战略与组织动态，重点涉及ADC。 该信号命中ADC，对技术趋势有参考价值，但尚未出现明确商业需求。 建议按“技术趋势观察”处理：并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DQmlKbGFCWHZDNlhVczNRUmFPRmdSRHB5T3pBM0sxUm1XNy1wMmlPUTdVRkRtWFh5Z2NvUHBkbW5tRTYtZVlYY09fQXY2bnlDRG1vOFRucVpoQW1F?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DQmlKbGFCWHZDNlhVczNRUmFPRmdSRHB5T3pBM0sxUm1XNy1wMmlPUTdVRkRtWFh5Z2NvUHBkbW5tRTYtZVlYY09fQXY2bnlDRG1vOFRucVpoQW1F?oc=5"
-        ],
-        "source_ids": [
-          "bioon_life_science_index"
-        ],
-        "source_labels": [
-          "Bioon - China life science indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "media",
-        "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 16,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "target_therapy",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "行业编辑媒体",
-        "战略主题命中: ADC"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [
-          "ADC"
-        ],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 12,
-        "label": "低相关",
-        "explanation": "该信号命中ADC，对技术趋势有参考价值，但尚未出现明确商业需求。",
-        "reasons": [
-          "命中重点疗法或技术"
-        ]
-      },
-      "recommended_action": {
-        "type": "trend",
-        "label": "技术趋势观察",
-        "owner": "产品市场",
-        "priority": "low",
-        "text": "并入靶点与技术趋势统计，等待出现管线、合作或产品需求信号。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-27",
-      "event_start_at": "",
-      "age_days": 0,
       "days_until_event": null
     },
     {
@@ -157059,7 +155907,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157156,7 +156004,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157250,7 +156098,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157347,7 +156195,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157442,7 +156290,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157539,7 +156387,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157629,7 +156477,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157719,7 +156567,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157817,7 +156665,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 16,
@@ -157825,7 +156673,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "target_therapy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体",
         "战略主题命中: 疫苗"
@@ -157915,7 +156763,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158011,7 +156859,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158107,7 +156955,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158203,7 +157051,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158305,7 +157153,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158401,7 +157249,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158445,7 +157293,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "6c6745b7e01537ab",
+      "id": "a11c941ce296e24e",
       "company_id": "acro",
       "company": "ACROBiosystems / 百普赛斯",
       "matched_company_ids": [
@@ -158463,13 +157311,13 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Google News RSS - ACROBiosystems"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMijgFBVV95cUxORFVTNWxkVV9CQXphMk1IdjVqNWRTUGJuWVNZWm56YkIwUGI1bGNEVWdqUTRoU29wSTI0Q1JfdUJlOHRWaVBOSllRcFZ6MGRUUElCcE14TEJ2Z0ZxbHpHdzdmdFFfbnYxR0JFTFR6YThYcnRSLVdiWmxDR2xCMm5QY3JYcEZ3WGxLOGt6NkRn?oc=5"
+        "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX0FqTFlMTFNXcVZ4d016ZjdhamhXSlpDS1Vvd21OaXRpalpxaXBIcUNxaWtxSmpvQTJkamFUV0VZR2xITlZzX1dFM1ZGUVJQUXp6TDRCV1lVcmItTWZTdERnMDJhSXhhN2FqWW9PQnV3bUlTbUxaUEJOR2E0My05aFVkRmdaQUgtcUd0Z2h5UUVDX2luVHFWNDdEZ1hZRmI5ZXAwM0E1VmlSM0hUS3duVnFSQkV6bFZvVkk0Y1BzOEhEekJ0MmFXOTF3?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Breakthroughs in asthma therapy - News-Medical",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORFVTNWxkVV9CQXphMk1IdjVqNWRTUGJuWVNZWm56YkIwUGI1bGNEVWdqUTRoU29wSTI0Q1JfdUJlOHRWaVBOSllRcFZ6MGRUUElCcE14TEJ2Z0ZxbHpHdzdmdFFfbnYxR0JFTFR6YThYcnRSLVdiWmxDR2xCMm5QY3JYcEZ3WGxLOGt6NkRn?oc=5",
-      "published": "2026-01-06",
-      "summary": "Breakthroughs in asthma therapy News-Medical",
+      "title": "Reframing the Fc–FcR axis as a therapeutic anchor in autoimmune disease - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX0FqTFlMTFNXcVZ4d016ZjdhamhXSlpDS1Vvd21OaXRpalpxaXBIcUNxaWtxSmpvQTJkamFUV0VZR2xITlZzX1dFM1ZGUVJQUXp6TDRCV1lVcmItTWZTdERnMDJhSXhhN2FqWW9PQnV3bUlTbUxaUEJOR2E0My05aFVkRmdaQUgtcUd0Z2h5UUVDX2luVHFWNDdEZ1hZRmI5ZXAwM0E1VmlSM0hUS3duVnFSQkV6bFZvVkk0Y1BzOEhEekJ0MmFXOTF3?oc=5",
+      "published": "2026-01-19",
+      "summary": "Reframing the Fc–FcR axis as a therapeutic anchor in autoimmune disease News-Medical",
       "ai_summary": "ACROBiosystems / 百普赛斯更新了公司战略与组织动态。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -158482,9 +157330,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
         "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORFVTNWxkVV9CQXphMk1IdjVqNWRTUGJuWVNZWm56YkIwUGI1bGNEVWdqUTRoU29wSTI0Q1JfdUJlOHRWaVBOSllRcFZ6MGRUUElCcE14TEJ2Z0ZxbHpHdzdmdFFfbnYxR0JFTFR6YThYcnRSLVdiWmxDR2xCMm5QY3JYcEZ3WGxLOGt6NkRn?oc=5",
+        "primary_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX0FqTFlMTFNXcVZ4d016ZjdhamhXSlpDS1Vvd21OaXRpalpxaXBIcUNxaWtxSmpvQTJkamFUV0VZR2xITlZzX1dFM1ZGUVJQUXp6TDRCV1lVcmItTWZTdERnMDJhSXhhN2FqWW9PQnV3bUlTbUxaUEJOR2E0My05aFVkRmdaQUgtcUd0Z2h5UUVDX2luVHFWNDdEZ1hZRmI5ZXAwM0E1VmlSM0hUS3duVnFSQkV6bFZvVkk0Y1BzOEhEekJ0MmFXOTF3?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMijgFBVV95cUxORFVTNWxkVV9CQXphMk1IdjVqNWRTUGJuWVNZWm56YkIwUGI1bGNEVWdqUTRoU29wSTI0Q1JfdUJlOHRWaVBOSllRcFZ6MGRUUElCcE14TEJ2Z0ZxbHpHdzdmdFFfbnYxR0JFTFR6YThYcnRSLVdiWmxDR2xCMm5QY3JYcEZ3WGxLOGt6NkRn?oc=5"
+          "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX0FqTFlMTFNXcVZ4d016ZjdhamhXSlpDS1Vvd21OaXRpalpxaXBIcUNxaWtxSmpvQTJkamFUV0VZR2xITlZzX1dFM1ZGUVJQUXp6TDRCV1lVcmItTWZTdERnMDJhSXhhN2FqWW9PQnV3bUlTbUxaUEJOR2E0My05aFVkRmdaQUgtcUd0Z2h5UUVDX2luVHFWNDdEZ1hZRmI5ZXAwM0E1VmlSM0hUS3duVnFSQkV6bFZvVkk0Y1BzOEhEekJ0MmFXOTF3?oc=5"
         ],
         "source_ids": [
           "google_news_acro"
@@ -158497,7 +157345,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158535,7 +157383,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
       "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-01-06",
+      "published_at": "2026-01-19",
       "event_start_at": "",
       "age_days": 220,
       "days_until_event": null
@@ -158593,7 +157441,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-10-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158689,7 +157537,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158785,7 +157633,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2024-06-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158825,7 +157673,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2024-06-14",
       "event_start_at": "",
-      "age_days": 805,
+      "age_days": 804,
       "days_until_event": null
     },
     {
@@ -158881,7 +157729,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -158977,7 +157825,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159073,7 +157921,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2017-12-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159169,7 +158017,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159270,7 +158118,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159369,7 +158217,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159464,7 +158312,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159559,7 +158407,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159657,7 +158505,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-02-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159753,7 +158601,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2023-09-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159849,7 +158697,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -159945,7 +158793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-11-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160041,7 +158889,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-01-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160137,7 +158985,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-11-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160233,7 +159081,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-02-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160329,7 +159177,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2013-09-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160425,7 +159273,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-05-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160521,7 +159369,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160617,7 +159465,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-12-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160713,7 +159561,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-12-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160754,101 +159602,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2025-12-08",
       "event_start_at": "",
       "age_days": 262,
-      "days_until_event": null
-    },
-    {
-      "id": "28c21759b98f34dc",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo_jp",
-      "source_label": "Google News RSS - Thermo Fisher Japan",
-      "source_ids": [
-        "google_news_thermo_jp"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher Japan"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "次世代シーケンスの市場規模、シェア |レポート [2034] - Fortune Business Insights",
-      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5",
-      "published": "2026-08-03",
-      "summary": "次世代シーケンスの市場規模、シェア |レポート [2034] Fortune Business Insights",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo_jp"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher Japan"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-03",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 15,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "专属来源公司归属 +15"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2026-08-03",
-      "event_start_at": "",
-      "age_days": 24,
       "days_until_event": null
     },
     {
@@ -160904,7 +159657,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2023-12-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -160945,6 +159698,101 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2023-12-01",
       "event_start_at": "",
       "age_days": 1000,
+      "days_until_event": null
+    },
+    {
+      "id": "28c21759b98f34dc",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo_jp",
+      "source_label": "Google News RSS - Thermo Fisher Japan",
+      "source_ids": [
+        "google_news_thermo_jp"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher Japan"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "次世代シーケンスの市場規模、シェア |レポート [2034] - Fortune Business Insights",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5",
+      "published": "2026-08-03",
+      "summary": "次世代シーケンスの市場規模、シェア |レポート [2034] Fortune Business Insights",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMivgJBVV95cUxQMmVSU2dPMzRoUktPVHhFZFBZVzVUYUFqUTFJNVhBd1hNWWtqMllKV0MxeUxQc1Q5OEYwWXVyMXk4OXJOX1FHOWFqQngyaGZmTWhia1A4akxaRGxRcDJFR3dvSG1zbFozNExDX2FVckwwODN2N1ZSTlFmOWN4RHdaVVVudi1sQTYzWmFVZnRCUlVIaFA0eHpKZ2FNQ1hBb3RLeWhDbGJFbHIyZHBiSGR6ZnFQdTdNODFURXU0eVdfWjluLVFCUVlCbDBzYXB6akpyZzN3Rl85dHVQX1NxMlNPY1JCZ2JBUkRzNndESlNieFBZNzRMazMxSVY1d0pNYlFxSTVORDJLV3Y4a0lBRXBaWFkwVnNqZml3c1ZPcXNFSk9TSkE5RHFHS29UTWhnTWdCNXJzZnZQSU9IWl9mSlE?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo_jp"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher Japan"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-03",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 15,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "专属来源公司归属 +15"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2026-08-03",
+      "event_start_at": "",
+      "age_days": 24,
       "days_until_event": null
     },
     {
@@ -161000,7 +159848,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2023-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -161096,7 +159944,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2023-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -161192,7 +160040,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -161232,102 +160080,6 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2026-08-20",
       "event_start_at": "",
       "age_days": 7,
-      "days_until_event": null
-    },
-    {
-      "id": "dac51cd89a67395a",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo_jp",
-      "source_label": "Google News RSS - Thermo Fisher Japan",
-      "source_ids": [
-        "google_news_thermo_jp"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher Japan"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "PHCホールディングス株式会社：エプレディアによるLunaphoreとのLabSat Researchの独占販売にかかる契約締結について - Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5",
-      "published": "2020-06-18",
-      "summary": "PHCホールディングス株式会社：エプレディアによるLunaphoreとのLabSat Researchの独占販売にかかる契約締結について Business Wire",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo_jp"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher Japan"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2020-06-18",
-        "checked_at": "2026-08-27T20:51:31"
-      },
-      "workflow_status": "new",
-      "score": 15,
-      "tier": "archive",
-      "category": "company",
-      "business_event_type": "corporate_strategy",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "专属来源公司归属 +15",
-        "超过硬性时效上限: 2261 天前"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "low",
-        "score": 18,
-        "label": "低相关",
-        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "archive",
-        "label": "归档观察",
-        "owner": "系统",
-        "priority": "low",
-        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
-      },
-      "selection_reason": "未达到日报基础分数",
-      "published_at": "2020-06-18",
-      "event_start_at": "",
-      "age_days": 2261,
       "days_until_event": null
     },
     {
@@ -161383,7 +160135,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-07-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -161424,6 +160176,102 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "published_at": "2025-07-14",
       "event_start_at": "",
       "age_days": 409,
+      "days_until_event": null
+    },
+    {
+      "id": "dac51cd89a67395a",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo_jp",
+      "source_label": "Google News RSS - Thermo Fisher Japan",
+      "source_ids": [
+        "google_news_thermo_jp"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher Japan"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "PHCホールディングス株式会社：エプレディアによるLunaphoreとのLabSat Researchの独占販売にかかる契約締結について - Business Wire",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5",
+      "published": "2020-06-18",
+      "summary": "PHCホールディングス株式会社：エプレディアによるLunaphoreとのLabSat Researchの独占販売にかかる契約締結について Business Wire",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kTU00ck1vZXRNRldUX2V1Tlh5dzJDVlZibzFFSVJvYlRreWcwTHRwSXFjS19rclBjWE1OdlpnbF9tc0JsM3hzTHp1eVNkMzdHLUpTbkpUQnA5XzF0Rjk2dDJyeVdxWXc?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo_jp"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher Japan"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2020-06-18",
+        "checked_at": "2026-08-27T20:58:11"
+      },
+      "workflow_status": "new",
+      "score": 15,
+      "tier": "archive",
+      "category": "company",
+      "business_event_type": "corporate_strategy",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "专属来源公司归属 +15",
+        "超过硬性时效上限: 2261 天前"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "low",
+        "score": 18,
+        "label": "低相关",
+        "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态"
+        ]
+      },
+      "recommended_action": {
+        "type": "archive",
+        "label": "归档观察",
+        "owner": "系统",
+        "priority": "low",
+        "text": "暂不发起业务动作，保留为后续趋势和公司档案证据。"
+      },
+      "selection_reason": "未达到日报基础分数",
+      "published_at": "2020-06-18",
+      "event_start_at": "",
+      "age_days": 2261,
       "days_until_event": null
     },
     {
@@ -161479,7 +160327,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2025-12-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 15,
@@ -161571,7 +160419,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -161662,7 +160510,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -161752,7 +160600,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -161846,7 +160694,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -161936,7 +160784,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -162026,7 +160874,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -162116,7 +160964,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-10-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 14,
@@ -162207,7 +161055,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 12,
@@ -162304,7 +161152,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 11,
@@ -162399,7 +161247,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -162492,7 +161340,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -162581,7 +161429,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -162670,7 +161518,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -162759,7 +161607,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -162848,7 +161696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -162943,7 +161791,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163032,7 +161880,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163121,7 +161969,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163210,7 +162058,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163299,7 +162147,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163388,7 +162236,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163477,7 +162325,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163566,7 +162414,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163655,7 +162503,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163744,7 +162592,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163833,7 +162681,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -163922,7 +162770,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164011,7 +162859,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164100,7 +162948,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164199,7 +163047,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164288,7 +163136,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164377,7 +163225,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164466,7 +163314,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164555,7 +163403,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164648,7 +163496,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164741,7 +163589,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164830,7 +163678,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -164919,7 +163767,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165008,7 +163856,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165101,7 +163949,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165190,7 +164038,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165279,7 +164127,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165368,7 +164216,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165457,7 +164305,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165546,7 +164394,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165635,7 +164483,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165724,7 +164572,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165813,7 +164661,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165902,7 +164750,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -165991,7 +164839,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166080,7 +164928,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166169,7 +165017,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166258,7 +165106,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166347,7 +165195,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166436,7 +165284,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166525,7 +165373,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166614,7 +165462,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166703,7 +165551,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166792,7 +165640,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166881,7 +165729,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -166970,7 +165818,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167059,7 +165907,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167148,7 +165996,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167241,7 +166089,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167334,7 +166182,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-01-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167424,7 +166272,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167513,7 +166361,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167521,7 +166369,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体"
       ],
@@ -167602,7 +166450,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167691,7 +166539,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167780,7 +166628,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167869,7 +166717,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -167958,7 +166806,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168047,7 +166895,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168137,7 +166985,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168226,7 +167074,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168315,7 +167163,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168408,7 +167256,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168497,7 +167345,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168590,7 +167438,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168679,7 +167527,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168772,7 +167620,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168865,7 +167713,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -168954,7 +167802,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169043,7 +167891,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169132,7 +167980,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169140,7 +167988,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体"
       ],
@@ -169221,7 +168069,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169310,7 +168158,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169399,7 +168247,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169488,7 +168336,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169577,7 +168425,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169670,7 +168518,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169759,7 +168607,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169767,7 +168615,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体"
       ],
@@ -169848,7 +168696,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169937,7 +168785,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -169945,7 +168793,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体"
       ],
@@ -170026,7 +168874,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -170115,7 +168963,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -170123,7 +168971,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体"
       ],
@@ -170204,7 +169052,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -170293,7 +169141,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -170301,7 +169149,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "行业编辑媒体"
       ],
@@ -170382,7 +169230,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 10,
@@ -170475,7 +169323,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 9,
@@ -170582,7 +169430,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 9,
@@ -170680,7 +169528,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -170769,7 +169617,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -170858,7 +169706,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -170947,7 +169795,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171036,7 +169884,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171125,7 +169973,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171214,7 +170062,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171303,7 +170151,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171392,7 +170240,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171481,7 +170329,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171570,7 +170418,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171659,7 +170507,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171748,7 +170596,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171837,7 +170685,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171926,7 +170774,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -171934,7 +170782,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "新闻稿分发平台"
       ],
@@ -172015,7 +170863,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-01-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172105,7 +170953,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-12-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172199,7 +171047,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172289,7 +171137,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-12-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172379,7 +171227,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172468,7 +171316,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172558,7 +171406,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172648,7 +171496,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-11-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172738,7 +171586,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-12-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172828,7 +171676,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2025-12-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 8,
@@ -172926,7 +171774,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 5,
@@ -173026,7 +171874,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-05-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173124,7 +171972,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173224,7 +172072,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173324,7 +172172,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173422,7 +172270,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173520,7 +172368,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173569,7 +172417,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "a3ce36ac621cb252",
+      "id": "4ccccf8906b0fcf2",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -173587,11 +172435,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific: Biopharma Recovery And Share Gains Support The Upside",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp",
       "published": "2026-08-16",
       "summary": "Thermo Fisher rated Buy: accelerating organic growth, margin gains, and acquisitions boosting Pharma/Biotech exposure. Click for more on TMO stock.",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Thermo Fisher rated Buy: accelerating organic growth, margin gains, and acquisitions boosting Pharma/Biotech e...。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
@@ -173606,9 +172454,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "Thermo Fisher rated Buy: accelerating organic growth, margin gains, and acquisitions boosting Pharma/Biotech exposure.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4937111-thermo-fisher-scientific-biopharma-recovery-and-share-gains-support-the-upside&c=15182650229115470267&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_thermo_backup"
@@ -173621,7 +172469,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173718,7 +172566,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 3,
@@ -173815,7 +172663,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 1,
@@ -173915,7 +172763,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 1,
@@ -174012,7 +172860,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2020-02-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174109,7 +172957,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2018-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174202,7 +173050,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174297,7 +173145,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "wire",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174389,7 +173237,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174428,7 +173276,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-26",
       "event_start_at": "",
-      "age_days": 2,
+      "age_days": 1,
       "days_until_event": null
     },
     {
@@ -174480,7 +173328,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174580,7 +173428,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174618,7 +173466,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-25",
       "event_start_at": "",
-      "age_days": 3,
+      "age_days": 2,
       "days_until_event": null
     },
     {
@@ -174670,7 +173518,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-06-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174760,7 +173608,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174851,7 +173699,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-05-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -174947,7 +173795,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175042,7 +173890,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175141,7 +173989,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175239,7 +174087,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175335,7 +174183,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175343,7 +174191,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Sartorius, Sartorius Stedim",
         "噪音词命中: stock"
@@ -175431,7 +174279,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175439,7 +174287,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Sartorius, Sartorius Stedim",
         "噪音词命中: stock"
@@ -175527,7 +174375,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175623,7 +174471,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175719,7 +174567,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175815,7 +174663,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175911,7 +174759,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -175951,7 +174799,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "selection_reason": "未达到日报基础分数",
       "published_at": "2026-08-19",
       "event_start_at": "",
-      "age_days": 9,
+      "age_days": 8,
       "days_until_event": null
     },
     {
@@ -176007,7 +174855,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2025-11-06",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176105,7 +174953,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176113,7 +174961,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "company",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher",
         "噪音词命中: stock"
@@ -176201,7 +175049,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176297,7 +175145,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176393,7 +175241,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176403,7 +175251,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "signal_type": "news",
       "is_new": false,
       "reasons": [
-        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "公司池命中 +30: Thermo Fisher",
         "噪音词命中: stock"
       ],
       "intelligence": {
@@ -176489,7 +175337,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176585,7 +175433,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176681,7 +175529,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176777,7 +175625,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176873,7 +175721,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -176975,7 +175823,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177071,7 +175919,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177167,7 +176015,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177264,7 +176112,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177360,7 +176208,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177368,7 +176216,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "category": "finance",
       "business_event_type": "corporate_strategy",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
         "噪音词命中: quarterly dividend"
@@ -177456,7 +176304,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177552,7 +176400,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177649,7 +176497,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177693,7 +176541,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "4b9514548c4829de",
+      "id": "a77c7dc4e5abd421",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -177711,11 +176559,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Delta Air, Target, Thermo Fisher Scientific and a financial stock on CNBC’s ‘Final ...",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp",
       "published": "2026-08-26",
       "summary": "On CNBC’s “Halftime Report Final Trades,” Joshua Brown, co-founder and CEO of Ritholtz Wealth Management, picked Delta Air Lines, Inc. DAL. Lending support to his choice, Delta Air Lines, on July 10, ...",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：On CNBC’s “Halftime Report Final Trades,” Joshua Brown, co-founder and CEO of Ritholtz Wealth Management, pick...。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
@@ -177730,9 +176578,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "On CNBC’s “Halftime Report Final Trades,” Joshua Brown, co-founder and CEO of Ritholtz Wealth Management, picked Delta Air Lines, Inc.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2fdelta-air-target-thermo-fisher-scientific-and-a-financial-stock-on-cnbc-s-final-trades%2far-AA2aXWj8&c=3771560799264662032&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_thermo_backup"
@@ -177745,7 +176593,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177789,7 +176637,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     },
     {
-      "id": "da1a4077c52da4a0",
+      "id": "4dfebe072ddefb7f",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -177807,11 +176655,11 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher Scientific (NYSE:TMO) Gains Fresh Market Attention",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp",
       "published": "2026-08-20",
       "summary": "Thermo Fisher draws attention after strong quarterly results and a major Parkinson's proteomics project as valuation views remain divided.",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Thermo Fisher draws attention after strong quarterly results and a major Parkinson's proteomics project as val...。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“归档观察”处理：暂不发起业务动作，保留为后续趋势和公司档案证据。",
@@ -177826,9 +176674,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "Thermo Fisher draws attention after strong quarterly results and a major Parkinson's proteomics project as valuation views remain divided.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fkalkinemedia.com%2fus%2fstocks%2fhealthcare%2fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_thermo_backup"
@@ -177841,7 +176689,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -177937,7 +176785,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-08-05",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -178034,7 +176882,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -178131,7 +176979,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -178229,7 +177077,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         ],
         "source_trust": "owned",
         "published_at": "2026-04-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 0,
@@ -178275,9 +177123,7 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
       "days_until_event": null
     }
   ],
-  "errors": [
-    "mixonline_official_rss: The read operation timed out"
-  ],
+  "errors": [],
   "market_brief": {
     "audience": "ACRO marketing team and leadership dashboard",
     "scope": "Target-company, competitor, and field-level signals",
@@ -178291,10 +177137,10 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
 window.AIHOT_EMBEDDED_HISTORY = {
   "date": "2026-08-27",
   "summary": {
-    "new_candidates": 43,
+    "new_candidates": 9,
     "immediate": 1,
     "daily": 107,
-    "archive": 1607,
+    "archive": 1606,
     "errors": 0,
     "companies": 19,
     "sources": 117
@@ -178302,12 +177148,12 @@ window.AIHOT_EMBEDDED_HISTORY = {
   "category_mix": {
     "event": 164,
     "regulatory": 227,
-    "company": 689,
+    "company": 691,
     "product": 284,
     "video": 80,
     "award": 10,
-    "partnership": 89,
-    "market": 61,
+    "partnership": 87,
+    "market": 60,
     "finance": 34,
     "research": 77
   },
@@ -178319,7 +177165,7 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Google News RSS - ACROBiosystems": 34,
     "Google News RSS - ACROBiosystems PR Newswire": 7,
     "Business Wire - company pool indexed RSS": 30,
-    "Google News RSS - Thermo Fisher": 97,
+    "Google News RSS - Thermo Fisher": 98,
     "Thermo Fisher official press releases - indexed RSS": 6,
     "GlobeNewswire - Biotechnology official RSS": 14,
     "BioSpace - All News official RSS": 19,
@@ -178331,7 +177177,7 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Pharmaceutical Technology - manufacturing topic indexed RSS": 10,
     "BioProcess Online - bioprocess topic indexed RSS": 7,
     "SelectScience - life science product indexed RSS": 8,
-    "BioSpectrum Asia - APAC biotech indexed RSS": 23,
+    "BioSpectrum Asia - APAC biotech indexed RSS": 22,
     "Korea Biomedical Review - indexed RSS": 22,
     "BioSpectrum India - indexed RSS": 12,
     "Nikkan Yakugyo - life science indexed RSS": 30,
@@ -178352,10 +177198,10 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Thermo Fisher Biotech at Scale RSS": 10,
     "Thermo Fisher official Events and Webinars - indexed RSS": 1,
     "Thermo Fisher Japan official pages - indexed RSS": 9,
-    "Bing News RSS - Thermo Fisher backup": 8,
-    "Google News RSS - Thermo Fisher Japan": 50,
+    "Bing News RSS - Thermo Fisher backup": 11,
+    "Google News RSS - Thermo Fisher Japan": 51,
     "PR Times - monitored company pool indexed RSS": 22,
-    "Bing News RSS - ACROBiosystems backup": 4,
+    "Bing News RSS - ACROBiosystems backup": 2,
     "Merck Life Science official YouTube channel": 20,
     "Sartorius official YouTube channel": 20,
     "Miltenyi Biotec official YouTube channel": 20,
@@ -178369,7 +177215,7 @@ window.AIHOT_EMBEDDED_HISTORY = {
     "Crossref - ACROBiosystems affiliation records": 7,
     "PR Times - Japan biotech indexed RSS": 30,
     "Yakuji Nippo - official Japan pharma RSS": 25,
-    "Bioon - China life science indexed RSS": 15,
+    "Bioon - China life science indexed RSS": 14,
     "Jiemian Health - China pharma indexed RSS": 30,
     "36Kr Health - China biotech indexed RSS": 30,
     "MEDISO / JHVS - public healthcare venture updates": 29,

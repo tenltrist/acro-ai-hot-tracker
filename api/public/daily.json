@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-27T20:51:31",
+  "generated_at": "2026-08-27T20:58:11",
   "window_days": 90,
   "summary": {
-    "new_candidates": 43,
+    "new_candidates": 9,
     "immediate": 1,
     "daily": 107,
-    "archive": 1607,
+    "archive": 1606,
     "errors": 0,
     "companies": 19,
     "sources": 117
@@ -76,7 +76,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 90,
@@ -84,7 +84,7 @@
       "category": "product",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 第一三共",
         "行业编辑媒体",
@@ -188,7 +188,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 76,
@@ -295,7 +295,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 76,
@@ -405,7 +405,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -508,7 +508,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 72,
@@ -613,7 +613,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 70,
@@ -718,7 +718,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 68,
@@ -831,7 +831,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-08-11",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -933,7 +933,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-05-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1036,7 +1036,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-04-02",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1139,7 +1139,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1248,7 +1248,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1326,7 +1326,7 @@
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "structured_inference",
+      "summary_quality": "source_backed",
       "evidence": {
         "kind": "secondary",
         "kind_label": "公开二手证据",
@@ -1349,7 +1349,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1373,7 +1373,7 @@
           "注册 / 审批"
         ],
         "business_actions": [
-          "合作 / 共同开发"
+          "注册 / 监管动作"
         ],
         "event_signals": []
       },
@@ -1454,7 +1454,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1556,7 +1556,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 60,
@@ -1656,7 +1656,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 60,
@@ -1758,7 +1758,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -1859,7 +1859,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -1960,7 +1960,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2060,7 +2060,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2160,7 +2160,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2260,7 +2260,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2361,7 +2361,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2460,7 +2460,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2559,7 +2559,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-20",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -2660,7 +2660,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -2762,7 +2762,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -2863,7 +2863,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -2964,7 +2964,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 54,
@@ -3062,7 +3062,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3165,7 +3165,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3269,7 +3269,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3373,7 +3373,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3470,7 +3470,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3571,7 +3571,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3673,7 +3673,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3776,7 +3776,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3877,7 +3877,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -3980,7 +3980,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -4084,7 +4084,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -4192,7 +4192,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -4297,7 +4297,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -4305,7 +4305,7 @@
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Daiichi Sankyo",
         "公司自有来源",
@@ -4400,7 +4400,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -4506,7 +4506,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 52,
@@ -4615,7 +4615,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-05-13",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -4717,7 +4717,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -4818,7 +4818,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -4921,7 +4921,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -5023,7 +5023,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 50,
@@ -5130,7 +5130,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-04",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5227,7 +5227,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5327,7 +5327,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5430,7 +5430,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5538,7 +5538,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5640,7 +5640,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5741,7 +5741,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5844,7 +5844,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -5944,7 +5944,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6014,7 +6014,7 @@
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Industry Roundup: Thermo Fisher Unveils Orbitrap Isora IRMS System - Chromatography Online",
@@ -6036,7 +6036,7 @@
         "primary_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
         "related_urls": [
           "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
         ],
         "source_ids": [
           "google_news_thermo",
@@ -6051,7 +6051,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6151,7 +6151,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6251,7 +6251,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6351,7 +6351,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6399,7 +6399,7 @@
       "days_until_event": null
     },
     {
-      "id": "3fcdf82583d75ad9",
+      "id": "e5c97854ff344c90",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
@@ -6417,11 +6417,11 @@
         "Bing News RSS - Thermo Fisher backup"
       ],
       "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "[Sci-Tech NOW] KAIST and Thermo Fisher Scientific sign SHARE Hub autonomous lab partnership",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
       "published": "2026-08-27",
       "summary": "KAIST partnered with Thermo Fisher to build the AI- and robot-based autonomous SHARE Hub. DGIST signed an MOU with the NIS branch to strengthen security for advanced AI research results. GIST’s ...",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 原始摘要要点：KAIST partnered with Thermo Fisher to build the AI- and robot-based autonomous SHARE Hub.。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
@@ -6436,9 +6436,9 @@
         "verification_label": "有原始摘要支持",
         "summary_basis": "source_excerpt",
         "source_excerpt": "KAIST partnered with Thermo Fisher to build the AI- and robot-based autonomous SHARE Hub.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
+        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp",
         "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a90247aee90498696ff4a2599263274&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a902613395c4a36aa0fd6cede023f82&url=https%3a%2f%2fwww.dongascience.com%2fen%2fnews%2f79633&c=5328164657038947297&mkt=ja-jp"
         ],
         "source_ids": [
           "bing_news_thermo_backup"
@@ -6451,7 +6451,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6551,7 +6551,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6651,7 +6651,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 48,
@@ -6752,7 +6752,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-10",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -6856,7 +6856,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-07-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -6965,7 +6965,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7063,7 +7063,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7166,7 +7166,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7277,7 +7277,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7373,7 +7373,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7480,7 +7480,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7573,7 +7573,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7690,7 +7690,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7790,7 +7790,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7891,7 +7891,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -7992,7 +7992,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8092,7 +8092,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8197,7 +8197,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8298,7 +8298,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8401,7 +8401,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8502,7 +8502,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8615,7 +8615,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 46,
@@ -8713,7 +8713,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -8814,7 +8814,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-16",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -8917,7 +8917,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9015,7 +9015,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9119,7 +9119,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-24",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9226,7 +9226,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9325,7 +9325,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9432,7 +9432,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9539,7 +9539,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 44,
@@ -9644,7 +9644,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -9748,7 +9748,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 42,
@@ -9848,7 +9848,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -9945,7 +9945,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10047,7 +10047,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-21",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10152,7 +10152,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10255,7 +10255,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10356,7 +10356,7 @@
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10462,7 +10462,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-12",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10506,7 +10506,7 @@
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-07-12",
       "event_start_at": "",
-      "age_days": 47,
+      "age_days": 46,
       "days_until_event": null
     },
     {
@@ -10562,7 +10562,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-03",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10664,7 +10664,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10764,7 +10764,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-01",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10808,7 +10808,7 @@
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "2026-07-01",
       "event_start_at": "",
-      "age_days": 58,
+      "age_days": 57,
       "days_until_event": null
     },
     {
@@ -10864,7 +10864,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -10961,7 +10961,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-22",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
@@ -11069,7 +11069,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-30",
-        "checked_at": "2026-08-27T20:51:31"
+        "checked_at": "2026-08-27T20:58:11"
       },
       "workflow_status": "new",
       "score": 40,
