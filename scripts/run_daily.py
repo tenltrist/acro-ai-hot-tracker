@@ -1102,6 +1102,58 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
     return items
 
 
+def parse_json_announcements(source: dict[str, Any]) -> list[Candidate]:
+    """Parse public announcement APIs whose rows contain an HTML link snippet."""
+    payload = json.loads(fetch_text(source["url"]))
+    rows = payload.get(source.get("items_key", "item"), [])
+    if not isinstance(rows, list):
+        raise ValueError("announcement payload items must be a list")
+
+    base_url = source.get("base_url", source["url"])
+    items: list[Candidate] = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        parser = LinkExtractor()
+        parser.feed(str(row.get(source.get("html_field", "contents"), "")))
+        published = normalize_source_date(
+            str(row.get(source.get("date_field", "anndate"), ""))
+        )
+        for link in parser.links:
+            href = link.get("href", "")
+            title = clean_text(
+                link.get("heading")
+                or link.get("title_attr")
+                or link.get("text")
+            )
+            title = re.sub(
+                r"\s*\(\d+(?:\.\d+)?\s*(?:KB|MB)\)\s*$",
+                "",
+                title,
+                flags=re.IGNORECASE,
+            )
+            if not href or not title or is_html_noise(title):
+                continue
+            candidate = Candidate(
+                company_id=source.get("company_id", ""),
+                source_id=source["id"],
+                source_label=source["label"],
+                source_trust=source.get("trust", "unknown"),
+                title=title,
+                url=urllib.parse.urljoin(base_url, href),
+                published=published,
+                summary=source.get("item_summary", ""),
+                category_hint=source.get("category_hint", ""),
+                signal_type=source.get("signal_type", "news"),
+            )
+            if not source_allows_candidate(source, candidate):
+                continue
+            items.append(candidate)
+            if len(items) >= source.get("max_items", 1000):
+                return items
+    return items
+
+
 def collect_candidates(
     sources: list[dict[str, Any]],
     source_snapshots: dict[str, Any],
@@ -1146,6 +1198,8 @@ def collect_candidates(
                 candidates.extend(parse_clinical_trials(source))
             elif source["type"] == "html_links":
                 candidates.extend(parse_html_links(source))
+            elif source["type"] == "json_announcements":
+                candidates.extend(parse_json_announcements(source))
             else:
                 errors.append(f"{source['id']}: unsupported source type {source['type']}")
         except (
@@ -1583,6 +1637,13 @@ def score_candidate(
         alias_score = 15 if item.source_trust == "owned" else 30
         score += alias_score
         reasons.append(f"公司池命中 +{alias_score}: " + ", ".join(alias_hits[:3]))
+    elif item.company_id and any(
+        company.get("id") == item.company_id for company in matched_companies
+    ):
+        # A dedicated company feed already establishes the entity even when the
+        # article title does not repeat the publisher's company name.
+        score += 15
+        reasons.append("专属来源公司归属 +15")
 
     if item.source_trust == "owned":
         score += 15

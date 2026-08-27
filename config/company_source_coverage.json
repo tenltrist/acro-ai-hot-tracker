@@ -297,6 +297,66 @@
         "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_company_pool_index", "globenewswire_biotechnology_rss"], "note": "新闻稿平台共享覆盖。"},
         "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "临床公开数据库共享覆盖。"}
       }
+    },
+    {
+      "company_id": "takeda_pharma",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["takeda_official_news_index"], "note": "Takeda 全球 Press Releases 定向公开索引。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["takeda_official_news_index", "takeda_japan_official_index"], "note": "新品、获批和商业化动作由官方新闻覆盖。"},
+        "events_webinars": {"status": "covered", "mode": "dedicated", "source_ids": ["takeda_japan_official_index"], "note": "官方新闻发布的会议与活动公告，暂未独立抓活动库。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["takeda_official_news_index"], "note": "技术与管线里程碑暂由官方新闻覆盖。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["takeda_japan_official_index"], "note": "武田药品日本 Local News Releases。"},
+        "official_video": {"status": "pending", "mode": "none", "source_ids": [], "note": "官方视频频道待后续验证，当前不冒充已接入。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_takeda_customer"], "note": "武田药品公司名定向聚合补漏。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_takeda_customer"], "note": "日文 Google News 作为日本媒体补漏。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "全球新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "active", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 中的 Takeda Sponsor / Collaborator 记录。"}
+      }
+    },
+    {
+      "company_id": "astellas_pharma",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["astellas_official_rss"], "note": "Astellas 全球 Newsroom 官方 RSS。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["astellas_official_rss", "astellas_japan_official_rss"], "note": "新品、获批和商业化动作由官方 RSS 覆盖。"},
+        "events_webinars": {"status": "covered", "mode": "dedicated", "source_ids": ["astellas_japan_official_rss"], "note": "日本 Newsroom 公开的活动与会议动作。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["astellas_official_rss"], "note": "管线与技术里程碑暂由官方新闻覆盖。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["astellas_japan_official_rss"], "note": "アステラス製薬日本 Newsroom 官方 RSS。"},
+        "official_video": {"status": "pending", "mode": "none", "source_ids": [], "note": "官方视频频道待后续验证。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_astellas_customer"], "note": "Astellas 公司名定向聚合补漏。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_astellas_customer"], "note": "日文 Google News 补充地区媒体。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "全球新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "active", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 中的 Astellas Sponsor / Collaborator 记录。"}
+      }
+    },
+    {
+      "company_id": "daiichi_sankyo",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["daiichi_official_press_json"], "note": "Daiichi Sankyo 全球官网公开公告 JSON。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["daiichi_official_press_json", "daiichi_japan_press_json"], "note": "ADC、获批与产品动作由官方公告覆盖。"},
+        "events_webinars": {"status": "covered", "mode": "dedicated", "source_ids": ["daiichi_japan_press_json"], "note": "公开会议与对外活动暂由日本公告覆盖。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["daiichi_official_press_json"], "note": "ADC 平台与临床里程碑暂由官方公告覆盖。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["daiichi_japan_press_json"], "note": "第一三共日本官网公开公告 JSON。"},
+        "official_video": {"status": "pending", "mode": "none", "source_ids": [], "note": "官方视频频道待后续验证。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_daiichi_customer"], "note": "Daiichi Sankyo 公司名定向聚合补漏。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_daiichi_customer"], "note": "日文 Google News 补充日本媒体。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "全球新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "active", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 中的 Daiichi Sankyo Sponsor / Collaborator 记录。"}
+      }
+    },
+    {
+      "company_id": "eisai",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["eisai_official_news_index"], "note": "Eisai 全球官网 News 定向公开索引。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["eisai_official_news_index", "eisai_japan_official_index"], "note": "产品获批、商业化与合作动作由官方新闻覆盖。"},
+        "events_webinars": {"status": "covered", "mode": "dedicated", "source_ids": ["eisai_japan_official_index"], "note": "日本官网公开的会议与对外活动。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["eisai_official_news_index"], "note": "LEQEMBI、神经科学与肿瘤管线里程碑由官方新闻覆盖。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["eisai_japan_official_index"], "note": "エーザイ日本官网 News 定向公开索引。"},
+        "official_video": {"status": "pending", "mode": "none", "source_ids": [], "note": "官方视频频道待后续验证。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_eisai_customer"], "note": "Eisai 公司名定向聚合补漏。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_eisai_customer"], "note": "日文 Google News 补充日本媒体。"},
+        "press_wires": {"status": "covered", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "全球新闻稿平台共享覆盖。"},
+        "research_regulatory_org": {"status": "active", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 中的 Eisai Sponsor / Collaborator 记录。"}
+      }
     }
   ]
 }

@@ -496,6 +496,26 @@ const sourceInventory = [
         url: "takara-bio.com/en/news.html",
       },
       {
+        name: "日本重点账户官方动态",
+        contentGroup: "company_news",
+        companyTag: "武田 / Astellas / 第一三共 / Eisai",
+        regionTag: "全球 + 日本",
+        status: "active",
+        trust: "A",
+        method: "官方 RSS / 公告 JSON / 官网定向索引",
+        note: "4 家公开关系重点账户已进入正式跑批。Astellas 使用官方 RSS，第一三共使用官网公开 JSON，武田与 Eisai 使用官网路径定向索引；Google News 只作补漏。",
+        sourceIds: [
+          "takeda_official_news_index",
+          "takeda_japan_official_index",
+          "astellas_official_rss",
+          "astellas_japan_official_rss",
+          "daiichi_official_press_json",
+          "daiichi_japan_press_json",
+          "eisai_official_news_index",
+          "eisai_japan_official_index",
+        ],
+      },
+      {
         name: "新增公司官方 Events / Webinar",
         contentGroup: "events",
         companyTag: "8 家新增公司",
@@ -2486,6 +2506,9 @@ function renderCompanyPools() {
   const accountData = getJapanAccountData();
   const accounts = accountData.accounts || [];
   const publicRelationshipCount = accounts.filter((account) => account.account_stage === "public_relationship").length;
+  const monitoredCustomerCompanies = sortCompaniesForDisplay(
+    companies.filter((company) => company.business_role === "customer"),
+  );
   const asRelationshipMember = (record) => ({
     id: record.id,
     display_name: record.organization,
@@ -2527,17 +2550,21 @@ function renderCompanyPools() {
     {
       id: "customer",
       title: "客户与潜在账户",
-      description: "与竞品分开管理：这里关注需求、跟进时机和潜客资格，不做产品对标排序。",
+      description: "与竞品分开管理：232 家账户用于市场发现，4 家公开关系重点账户已接入持续监测。这里关注需求、跟进时机和潜客资格。",
       empty: "尚未接入客户与潜在账户目录。",
       count: accounts.length,
-      members: accounts.length ? [{
-        id: "japan-account-directory",
-        display_name: `日本账户情报 · ${accounts.length} 家`,
-        role_label: `${publicRelationshipCount} 家公开关系 · ${accounts.length - publicRelationshipCount} 家市场账户`,
-        role_reason: "销售名单已建立公司锚点；内部关系状态保留在公司内部，不发布到公开站点。",
-        monitoring_focus: "关系账户关注需求与跟进时机，市场账户关注外部动态与潜客资格。",
-        customer_pool: true,
-      }] : [],
+      countLabel: `${accounts.length} 家目录 · ${monitoredCustomerCompanies.length} 家监测`,
+      members: [
+        ...monitoredCustomerCompanies,
+        ...(accounts.length ? [{
+          id: "japan-account-directory",
+          display_name: `日本账户总目录 · ${accounts.length} 家`,
+          role_label: `${publicRelationshipCount} 家公开关系 · ${accounts.length - publicRelationshipCount} 家市场账户`,
+          role_reason: "销售名单已建立公司锚点；内部关系状态保留在公司内部，不发布到公开站点。",
+          monitoring_focus: "关系账户关注需求与跟进时机，市场账户关注外部动态与潜客资格。",
+          customer_pool: true,
+        }] : []),
+      ],
     },
     {
       id: "partner",
@@ -2608,7 +2635,7 @@ function renderCompanyPools() {
       return `
         <section class="company-pool-block role-${role.id}">
           <header>
-            <div><span>${escapeHtml(role.title)}</span><strong>${role.count ?? members.length} 家</strong></div>
+            <div><span>${escapeHtml(role.title)}</span><strong>${escapeHtml(role.countLabel || `${role.count ?? members.length} 家`)}</strong></div>
             <p>${escapeHtml(role.description)}</p>
           </header>
           <div class="company-profile-list">${rows}</div>

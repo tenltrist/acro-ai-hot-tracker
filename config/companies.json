@@ -579,6 +579,58 @@
       "strategic_topics": ["cytokine", "growth factor", "recombinant protein", "cell culture", "cell therapy", "GMP", "CGT", "Japan", "日本"],
       "business_actions": ["launch", "release", "collaboration", "partnership", "integration", "expansion", "GMP"],
       "noise_terms": ["job posting", "coupon", "protocol citation", "product citation"]
+    },
+    {
+      "id": "takeda_pharma",
+      "display_name": "Takeda Pharmaceutical / 武田药品",
+      "business_role": "customer",
+      "role_label": "公开关系重点账户 / 日本大型药企",
+      "role_reason": "ACROBiosystems 公开产品目录将 Takeda 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
+      "monitoring_focus": "抗体与蛋白药物、CGT、疫苗、GMP 生产、临床进展、合作授权与日本市场动作",
+      "aliases": ["Takeda Pharmaceutical", "Takeda Pharmaceutical Company", "Takeda Pharmaceuticals", "Takeda", "武田药品", "武田薬品", "武田薬品工業"],
+      "markets": ["global", "japan", "biopharma", "customer-account"],
+      "strategic_topics": ["antibody", "recombinant protein", "cell therapy", "gene therapy", "CGT", "vaccine", "GMP", "biomarker", "clinical trial", "Japan", "日本"],
+      "business_actions": ["launch", "approval", "FDA", "PMDA", "clinical", "collaboration", "partnership", "license", "agreement", "expansion", "manufacturing", "investment"],
+      "noise_terms": ["financial results", "quarterly results", "earnings", "dividend", "stock", "shareholder meeting", "job posting"]
+    },
+    {
+      "id": "astellas_pharma",
+      "display_name": "Astellas Pharma / 安斯泰来制药",
+      "business_role": "customer",
+      "role_label": "公开关系重点账户 / 日本大型药企",
+      "role_reason": "ACROBiosystems 公开产品目录将 Astellas 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
+      "monitoring_focus": "ADC、细胞与基因治疗、再生医学、肿瘤研发、开放创新、合作授权与日本市场动作",
+      "aliases": ["Astellas Pharma", "Astellas Pharma Inc.", "Astellas", "安斯泰来", "アステラス製薬", "アステラス"],
+      "markets": ["global", "japan", "biopharma", "customer-account"],
+      "strategic_topics": ["ADC", "antibody", "cell therapy", "gene therapy", "regenerative medicine", "immuno-oncology", "CLDN18.2", "biomarker", "clinical trial", "Japan", "日本"],
+      "business_actions": ["launch", "approval", "FDA", "PMDA", "clinical", "collaboration", "partnership", "license", "agreement", "expansion", "open innovation", "investment"],
+      "noise_terms": ["financial results", "quarterly results", "earnings", "dividend", "stock", "shareholder meeting", "job posting"]
+    },
+    {
+      "id": "daiichi_sankyo",
+      "display_name": "Daiichi Sankyo / 第一三共",
+      "business_role": "customer",
+      "role_label": "公开关系重点账户 / 日本大型药企",
+      "role_reason": "ACROBiosystems 公开产品目录将 Daiichi Sankyo 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
+      "monitoring_focus": "ADC 平台、HER2 与 TROP2 靶点、临床与监管进展、联合研发、授权交易和日本产品动作",
+      "aliases": ["Daiichi Sankyo", "Daiichi Sankyo Co.", "Daiichi Sankyo Company", "第一三共", "第一三共株式会社"],
+      "markets": ["global", "japan", "biopharma", "customer-account"],
+      "strategic_topics": ["ADC", "antibody-drug conjugate", "DXd", "HER2", "TROP2", "antibody", "biomarker", "oncology", "clinical trial", "Japan", "日本"],
+      "business_actions": ["launch", "approval", "FDA", "PMDA", "clinical", "collaboration", "partnership", "license", "agreement", "expansion", "manufacturing", "investment"],
+      "noise_terms": ["financial results", "quarterly results", "earnings", "dividend", "stock", "shareholder meeting", "job posting"]
+    },
+    {
+      "id": "eisai",
+      "display_name": "Eisai / 卫材",
+      "business_role": "customer",
+      "role_label": "公开关系重点账户 / 日本大型药企",
+      "role_reason": "ACROBiosystems 公开产品目录将 Eisai 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
+      "monitoring_focus": "神经科学与肿瘤研发、抗体药物、伴随诊断、生物标志物、临床进展、合作授权与日本市场动作",
+      "aliases": ["Eisai", "Eisai Co.", "Eisai Co., Ltd.", "卫材", "衛材", "エーザイ", "エーザイ株式会社"],
+      "markets": ["global", "japan", "biopharma", "customer-account"],
+      "strategic_topics": ["antibody", "lecanemab", "LEQEMBI", "Alzheimer", "oncology", "biomarker", "companion diagnostic", "clinical trial", "precision medicine", "Japan", "日本"],
+      "business_actions": ["launch", "approval", "FDA", "PMDA", "clinical", "collaboration", "partnership", "license", "agreement", "expansion", "manufacturing", "investment"],
+      "noise_terms": ["financial results", "quarterly results", "earnings", "dividend", "stock", "shareholder meeting", "job posting"]
     }
   ],
   "source_profiles": [

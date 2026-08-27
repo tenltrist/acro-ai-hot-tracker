@@ -418,6 +418,178 @@
       ],
       "max_age_days": 730,
       "max_items": 30
+    },
+    {
+      "id": "takeda_official_news_probe",
+      "label": "Takeda official press releases - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Atakeda.com%2Fnewsroom%2Fpress-releases%20(%22Takeda%20Pharmaceutical%22%20OR%20Takeda)&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "takeda_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "takeda_japan_official_probe",
+      "label": "Takeda Japan official releases - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Atakeda.com%2Fjp%2Fnewsroom%2Flocal-newsreleases%20(%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%20OR%20%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%E5%B7%A5%E6%A5%AD)&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "takeda_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "google_news_takeda_probe",
+      "label": "Google News RSS - Takeda customer account probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Takeda%20Pharmaceutical%22%20OR%20%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%20OR%20%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%E5%B7%A5%E6%A5%AD&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "takeda_pharma",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "astellas_official_news_probe",
+      "label": "Astellas official newsroom - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Anewsroom.astellas.com%2Fnews%20(%22Astellas%20Pharma%22%20OR%20Astellas)&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "astellas_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "astellas_japan_official_probe",
+      "label": "Astellas Japan official news - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aastellas.com%2Fjp%2Fnews%20(%E3%82%A2%E3%82%B9%E3%83%86%E3%83%A9%E3%82%B9%E8%A3%BD%E8%96%AC%20OR%20%E3%82%A2%E3%82%B9%E3%83%86%E3%83%A9%E3%82%B9)&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "astellas_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "google_news_astellas_probe",
+      "label": "Google News RSS - Astellas customer account probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Astellas%20Pharma%22%20OR%20%E3%82%A2%E3%82%B9%E3%83%86%E3%83%A9%E3%82%B9%E8%A3%BD%E8%96%AC&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "astellas_pharma",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "daiichi_official_news_probe",
+      "label": "Daiichi Sankyo official press releases - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Adaiichisankyo.com%2Fmedia%2Fpress_release%20(%22Daiichi%20Sankyo%22%20OR%20Enhertu%20OR%20Datroway)&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "daiichi_sankyo",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "daiichi_japan_official_probe",
+      "label": "Daiichi Sankyo Japan official releases - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Adaiichisankyo.co.jp%2Fmedia%2Fpress_release%20(%E7%AC%AC%E4%B8%80%E4%B8%89%E5%85%B1%20OR%20%E3%82%A8%E3%83%B3%E3%83%8F%E3%83%BC%E3%83%84%20OR%20%E3%83%80%E3%83%88%E3%83%AD%E3%82%A6%E3%82%A7%E3%82%A4)&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "daiichi_sankyo",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "google_news_daiichi_probe",
+      "label": "Google News RSS - Daiichi Sankyo customer account probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Daiichi%20Sankyo%22%20OR%20%E7%AC%AC%E4%B8%80%E4%B8%89%E5%85%B1&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "daiichi_sankyo",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "eisai_official_news_probe",
+      "label": "Eisai official news releases - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aeisai.com%2Fnews%20(Eisai%20OR%20LEQEMBI%20OR%20lecanemab)&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "eisai",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "eisai_japan_official_probe",
+      "label": "Eisai Japan official news - indexed RSS probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aeisai.co.jp%2Fnews%20(%E3%82%A8%E3%83%BC%E3%82%B6%E3%82%A4%20OR%20%E8%A1%9B%E6%9D%90%20OR%20%E3%83%AC%E3%82%B1%E3%83%B3%E3%83%93)&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "eisai",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "google_news_eisai_probe",
+      "label": "Google News RSS - Eisai customer account probe",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Eisai%20Co%22%20OR%20%E3%82%A8%E3%83%BC%E3%82%B6%E3%82%A4%20OR%20%E8%A1%9B%E6%9D%90&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "eisai",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30
+    },
+    {
+      "id": "takeda_official_rss_direct_probe",
+      "label": "Takeda official global news RSS direct probe",
+      "type": "rss",
+      "url": "https://www.takeda.com/system/news-releases-rss/",
+      "company_id": "takeda_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "astellas_official_rss_direct_probe",
+      "label": "Astellas official global press release RSS direct probe",
+      "type": "rss",
+      "url": "https://newsroom.astellas.com/news?pagetemplate=rss",
+      "company_id": "astellas_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "astellas_japan_rss_direct_probe",
+      "label": "Astellas official Japan press release RSS direct probe",
+      "type": "rss",
+      "url": "https://jp.newsroom.astellas.com/news?pagetemplate=rss",
+      "company_id": "astellas_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "daiichi_official_json_direct_probe",
+      "label": "Daiichi Sankyo official press release JSON direct probe",
+      "type": "json_announcements",
+      "url": "https://www.daiichisankyo.com/data/ann/828.json",
+      "base_url": "https://www.daiichisankyo.com/",
+      "company_id": "daiichi_sankyo",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
+    },
+    {
+      "id": "daiichi_japan_json_direct_probe",
+      "label": "Daiichi Sankyo official Japan releases JSON direct probe",
+      "type": "json_announcements",
+      "url": "https://www.daiichisankyo.co.jp/data/ann/1118.json",
+      "base_url": "https://www.daiichisankyo.co.jp/",
+      "company_id": "daiichi_sankyo",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30
     }
   ]
 }

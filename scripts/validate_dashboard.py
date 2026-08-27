@@ -59,9 +59,25 @@ def main() -> int:
     companies = payload.get("companies", [])
     health_rows = payload.get("source_health", [])
     company_ids = {company.get("id") for company in companies}
+    companies_by_id = {company.get("id"): company for company in companies}
     source_ids = {row.get("source_id") for row in health_rows}
     errors: list[str] = []
     japan_account_count = validate_japan_accounts(errors)
+
+    priority_customer_ids = {
+        "takeda_pharma",
+        "astellas_pharma",
+        "daiichi_sankyo",
+        "eisai",
+    }
+    missing_priority_customers = priority_customer_ids - company_ids
+    if missing_priority_customers:
+        errors.append(
+            f"priority customer companies are missing {sorted(missing_priority_customers)}"
+        )
+    for company_id in priority_customer_ids & company_ids:
+        if companies_by_id[company_id].get("business_role") != "customer":
+            errors.append(f"{company_id}: priority account is not classified as customer")
 
     item_ids = [item.get("id") for item in items]
     urls = [item.get("url") for item in items]
@@ -142,6 +158,14 @@ def main() -> int:
         errors.append("summary_pipeline has invalid status")
 
     coverage = payload.get("company_source_coverage", {})
+    coverage_company_ids = {
+        profile.get("company_id") for profile in coverage.get("profiles", [])
+    }
+    missing_customer_coverage = priority_customer_ids - coverage_company_ids
+    if missing_customer_coverage:
+        errors.append(
+            f"priority customer coverage is missing {sorted(missing_customer_coverage)}"
+        )
     for profile in coverage.get("profiles", []):
         if profile.get("company_id") not in company_ids:
             errors.append(f"coverage profile has unknown company {profile.get('company_id')}")
@@ -149,6 +173,14 @@ def main() -> int:
             unknown = set(slot.get("source_ids", [])) - source_ids
             if unknown:
                 errors.append(f"coverage profile {profile.get('company_id')} has unknown sources {sorted(unknown)}")
+
+    for company_id in priority_customer_ids:
+        if not any(
+            item.get("company_id") == company_id
+            or company_id in item.get("matched_company_ids", [])
+            for item in items
+        ):
+            errors.append(f"{company_id}: priority account has no traceable monitoring records")
 
     timelines = payload.get("company_timelines", [])
     timeline_company_ids = {timeline.get("company_id") for timeline in timelines}

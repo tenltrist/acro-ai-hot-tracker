@@ -1042,15 +1042,15 @@
       "id": "clinicaltrials_company_pool",
       "label": "ClinicalTrials.gov - monitored company sponsors and collaborators",
       "type": "clinical_trials",
-      "url": "https://clinicaltrials.gov/api/v2/studies?query.spons=%28%22ACROBiosystems%22%20OR%20%22Thermo%20Fisher%20Scientific%22%20OR%20%22Merck%20KGaA%22%20OR%20%22MilliporeSigma%22%20OR%20%22Sartorius%22%20OR%20%22Miltenyi%20Biotec%22%20OR%20%22Abcam%22%20OR%20%22Promega%22%20OR%20%22Bio-Techne%22%20OR%20%22BD%20Biosciences%22%20OR%20%22MedChemExpress%22%20OR%20%22STEMCELL%20Technologies%22%20OR%20%22Sino%20Biological%22%20OR%20%22Takara%20Bio%22%29&pageSize=100&countTotal=true&format=json&sort=LastUpdatePostDate%3Adesc",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.spons=%28%22ACROBiosystems%22%20OR%20%22Thermo%20Fisher%20Scientific%22%20OR%20%22Merck%20KGaA%22%20OR%20%22MilliporeSigma%22%20OR%20%22Sartorius%22%20OR%20%22Miltenyi%20Biotec%22%20OR%20%22Abcam%22%20OR%20%22Promega%22%20OR%20%22Bio-Techne%22%20OR%20%22BD%20Biosciences%22%20OR%20%22MedChemExpress%22%20OR%20%22STEMCELL%20Technologies%22%20OR%20%22Sino%20Biological%22%20OR%20%22Takara%20Bio%22%20OR%20%22Takeda%20Pharmaceutical%22%20OR%20%22Astellas%20Pharma%22%20OR%20%22Daiichi%20Sankyo%22%20OR%20%22Eisai%22%29&pageSize=100&countTotal=true&format=json&sort=LastUpdatePostDate%3Adesc",
       "scope_label": "公司池临床合作",
       "trust": "regulator",
       "signal_type": "clinical_trial",
       "category_hint": "regulatory",
-      "include_text_terms": ["ACROBiosystems", "Thermo Fisher", "Merck KGaA", "MilliporeSigma", "Sartorius", "Miltenyi Biotec", "Abcam", "Promega", "Bio-Techne", "BD Biosciences", "MedChemExpress", "STEMCELL Technologies", "Sino Biological", "Takara Bio"],
+      "include_text_terms": ["ACROBiosystems", "Thermo Fisher", "Merck KGaA", "MilliporeSigma", "Sartorius", "Miltenyi Biotec", "Abcam", "Promega", "Bio-Techne", "BD Biosciences", "MedChemExpress", "STEMCELL Technologies", "Sino Biological", "Takara Bio", "Takeda Pharmaceutical", "Astellas Pharma", "Daiichi Sankyo", "Eisai"],
       "max_age_days": 730,
       "max_items": 100,
-      "health_note": "ClinicalTrials.gov v2 官方 API；查询全部监控公司作为 Sponsor 或 Collaborator 的研究，按最后更新时间排序。"
+      "health_note": "ClinicalTrials.gov v2 官方 API；查询竞品与 4 家日本重点账户作为 Sponsor 或 Collaborator 的研究，按最后更新时间排序。"
     },
     {
       "id": "google_news_abcam",
@@ -1840,6 +1840,145 @@
       "max_items": 25,
       "include_title_terms": ["video", "webinar", "tutorial", "on-demand", "seminar", "workshop"],
       "health_note": "Takara Bio USA/Europe 官方视频、教程与 Webinar 回放入口。"
+    },
+    {
+      "id": "takeda_official_news_index",
+      "label": "Takeda official press releases - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Atakeda.com%2Fnewsroom%2Fpress-releases%20(%22Takeda%20Pharmaceutical%22%20OR%20Takeda)&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "takeda_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "Takeda 全球官网 Press Releases 的公开索引；旧官方 RSS 已失效，不冒充直连 RSS。"
+    },
+    {
+      "id": "takeda_japan_official_index",
+      "label": "Takeda Japan local news releases - indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Atakeda.com%2Fjp%2Fnewsroom%2Flocal-newsreleases%20(%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%20OR%20%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%E5%B7%A5%E6%A5%AD)&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "takeda_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "武田药品日本官网 Local News Releases 定向入口。"
+    },
+    {
+      "id": "google_news_takeda_customer",
+      "label": "Google News RSS - Takeda Pharmaceutical",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Takeda%20Pharmaceutical%22%20OR%20%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%20OR%20%E6%AD%A6%E7%94%B0%E8%96%AC%E5%93%81%E5%B7%A5%E6%A5%AD&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "takeda_pharma",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30,
+      "exclude_text_terms": ["stock", "share price", "株価", "決算", "人事"],
+      "health_note": "武田药品日英全称聚合补漏，不作为官方证据源。"
+    },
+    {
+      "id": "astellas_official_rss",
+      "label": "Astellas global newsroom - official RSS",
+      "type": "rss",
+      "url": "https://newsroom.astellas.com/news?pagetemplate=rss",
+      "company_id": "astellas_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "Astellas 全球 Newsroom 公开的官方 RSS。"
+    },
+    {
+      "id": "astellas_japan_official_rss",
+      "label": "Astellas Japan newsroom - official RSS",
+      "type": "rss",
+      "url": "https://jp.newsroom.astellas.com/news?pagetemplate=rss",
+      "company_id": "astellas_pharma",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "アステラス製薬日本 Newsroom 公开的官方 RSS。"
+    },
+    {
+      "id": "google_news_astellas_customer",
+      "label": "Google News RSS - Astellas Pharma",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Astellas%20Pharma%22%20OR%20%E3%82%A2%E3%82%B9%E3%83%86%E3%83%A9%E3%82%B9%E8%A3%BD%E8%96%AC&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "astellas_pharma",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30,
+      "exclude_text_terms": ["stock", "share price", "株価", "決算", "人事"],
+      "health_note": "Astellas 日英全称聚合补漏，与官方 RSS 去重。"
+    },
+    {
+      "id": "daiichi_official_press_json",
+      "label": "Daiichi Sankyo global press releases - official JSON",
+      "type": "json_announcements",
+      "url": "https://www.daiichisankyo.com/data/ann/828.json",
+      "base_url": "https://www.daiichisankyo.com",
+      "company_id": "daiichi_sankyo",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "Daiichi Sankyo 全球官网前端使用的公开公告 JSON，保留官方日期与原文链接。"
+    },
+    {
+      "id": "daiichi_japan_press_json",
+      "label": "Daiichi Sankyo Japan press releases - official JSON",
+      "type": "json_announcements",
+      "url": "https://www.daiichisankyo.co.jp/data/ann/1118.json",
+      "base_url": "https://www.daiichisankyo.co.jp",
+      "company_id": "daiichi_sankyo",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "exclude_text_terms": ["第一三共ヘルスケア", "ルル"],
+      "health_note": "第一三共日本官网公开公告 JSON，排除消费健康子品牌噪音。"
+    },
+    {
+      "id": "google_news_daiichi_customer",
+      "label": "Google News RSS - Daiichi Sankyo",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Daiichi%20Sankyo%22%20OR%20%E7%AC%AC%E4%B8%80%E4%B8%89%E5%85%B1&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "daiichi_sankyo",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30,
+      "exclude_text_terms": ["第一三共ヘルスケア", "ルル", "stock", "share price", "株価", "決算"],
+      "health_note": "第一三共公司名聚合补漏，排除消费健康品牌。"
+    },
+    {
+      "id": "eisai_official_news_index",
+      "label": "Eisai global news - official indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aeisai.com%2Fnews%20(Eisai%20OR%20LEQEMBI%20OR%20lecanemab)&hl=en-US&gl=US&ceid=US%3Aen",
+      "company_id": "eisai",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "Eisai 全球官网 News 路径定向公开索引。"
+    },
+    {
+      "id": "eisai_japan_official_index",
+      "label": "Eisai Japan news - official indexed RSS",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=site%3Aeisai.co.jp%2Fnews%20(%E3%82%A8%E3%83%BC%E3%82%B6%E3%82%A4%20OR%20%E8%A1%9B%E6%9D%90%20OR%20%E3%83%AC%E3%82%B1%E3%83%B3%E3%83%93)&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "eisai",
+      "trust": "owned",
+      "max_age_days": 365,
+      "max_items": 30,
+      "health_note": "エーザイ日本官网 News 路径定向公开索引。"
+    },
+    {
+      "id": "google_news_eisai_customer",
+      "label": "Google News RSS - Eisai",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=%22Eisai%20Co%22%20OR%20%E3%82%A8%E3%83%BC%E3%82%B6%E3%82%A4%20OR%20%E8%A1%9B%E6%9D%90&hl=ja&gl=JP&ceid=JP%3Aja",
+      "company_id": "eisai",
+      "trust": "aggregator",
+      "max_age_days": 180,
+      "max_items": 30,
+      "exclude_text_terms": ["stock", "share price", "株価", "決算", "人事"],
+      "health_note": "Eisai 日英公司名聚合补漏，与官网来源去重。"
     }
   ]
 }
