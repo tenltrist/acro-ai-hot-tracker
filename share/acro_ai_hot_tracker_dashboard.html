@@ -3627,6 +3627,12 @@ select {
 }
 
 .pipeline-storage-note > button {
+  height: auto;
+  min-height: 76px;
+  align-self: stretch;
+  display: grid;
+  align-content: center;
+  gap: 4px;
   border-color: #acd0d2;
   background: #f1f9f9;
   color: var(--teal);
@@ -5095,6 +5101,7 @@ select {
 
 .customer-directory-row {
   width: 100%;
+  height: auto;
   min-height: 58px;
   padding: 9px 12px;
   border: 0;
@@ -8447,7 +8454,15 @@ button.strip-score:focus-visible strong {
   }
 
   .company-source-crosswalk > i {
-    transform: rotate(90deg);
+    width: 100%;
+    height: 20px;
+    transform: none;
+    font-size: 0;
+  }
+
+  .company-source-crosswalk > i::after {
+    content: "↓";
+    font-size: 17px;
   }
 
   .company-coverage-slot > summary {
