@@ -3633,6 +3633,482 @@ select {
   outline-offset: 1px;
 }
 
+.system-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #76858e;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.system-breadcrumb i {
+  color: #b5c0c6;
+  font-style: normal;
+}
+
+.system-breadcrumb strong {
+  color: #304851;
+}
+
+.pipeline-positioning {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.8fr);
+  gap: 24px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 22px 24px;
+  border-top: 3px solid var(--teal);
+  border-bottom: 1px solid #bdd4d8;
+  background: #f0f8f8;
+}
+
+.pipeline-positioning > div > span,
+.pipeline-data-model header span,
+.capability-blueprint-head > div > span,
+.pipeline-roadmap header span,
+.pipeline-references header span {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.pipeline-positioning h3,
+.pipeline-data-model h3,
+.capability-blueprint h3,
+.pipeline-roadmap h3,
+.pipeline-references h3 {
+  margin: 5px 0 0;
+  color: #203139;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.pipeline-positioning p {
+  max-width: 780px;
+  margin: 9px 0 0;
+  color: #546872;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.pipeline-positioning dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  border-left: 1px solid #bfd6d8;
+}
+
+.pipeline-positioning dl div {
+  min-width: 0;
+  padding: 8px 14px;
+}
+
+.pipeline-positioning dl div:nth-child(odd) {
+  border-right: 1px solid #bfd6d8;
+}
+
+.pipeline-positioning dl div:nth-child(-n + 2) {
+  border-bottom: 1px solid #bfd6d8;
+}
+
+.pipeline-positioning dt {
+  color: #1e5f66;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.pipeline-positioning dd {
+  margin: 3px 0 0;
+  color: #64747c;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.pipeline-data-model,
+.capability-blueprint,
+.pipeline-roadmap,
+.pipeline-references {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.pipeline-data-model > header,
+.pipeline-references > header,
+.capability-blueprint-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 13px;
+}
+
+.pipeline-data-model > header small,
+.pipeline-references > header small {
+  color: #73828b;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.pipeline-entity-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 7px;
+}
+
+.pipeline-entity-flow > div {
+  flex: 1 1 0;
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid #d3dfe3;
+  border-radius: 7px;
+  background: #fbfcfc;
+}
+
+.pipeline-entity-flow > div.next {
+  border-color: #e3cc94;
+  background: #fffaf0;
+}
+
+.pipeline-entity-flow > div > span {
+  color: var(--teal);
+  font-size: 8px;
+  font-weight: 850;
+}
+
+.pipeline-entity-flow > div.next > span {
+  color: var(--gold);
+}
+
+.pipeline-entity-flow > div > strong {
+  color: #293b44;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.pipeline-entity-flow > div > small {
+  color: #718089;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.pipeline-entity-flow > i {
+  flex: 0 0 14px;
+  align-self: center;
+  color: #97aab1;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+}
+
+.capability-blueprint-head > div > p {
+  margin: 6px 0 0;
+  color: #6b7a83;
+  font-size: 11px;
+}
+
+.capability-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.capability-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #667780;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.capability-legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #94a4ac;
+}
+
+.capability-legend i.live {
+  background: #208267;
+}
+
+.capability-legend i.partial {
+  background: #bc8411;
+}
+
+.capability-legend i.planned {
+  background: #647996;
+}
+
+.capability-layer-list {
+  display: grid;
+  gap: 8px;
+}
+
+.capability-layer {
+  overflow: hidden;
+  border: 1px solid #d2dde2;
+  border-radius: 7px;
+  background: #ffffff;
+}
+
+.capability-layer > summary {
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) auto 24px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.capability-layer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.capability-layer > summary:hover,
+.capability-layer > summary:focus-visible {
+  background: #f7fafb;
+  outline: none;
+}
+
+.capability-layer > summary > b {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-size: 12px;
+}
+
+.capability-layer > summary > span {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.capability-layer > summary > span strong {
+  color: #273941;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.capability-layer > summary > span small {
+  color: #728089;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.capability-layer > summary > em {
+  min-width: 72px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 850;
+  text-align: center;
+}
+
+.capability-layer > summary > em.live {
+  background: #e1f3eb;
+  color: #17664f;
+}
+
+.capability-layer > summary > em.partial {
+  background: #fff1cf;
+  color: #8a5b00;
+}
+
+.capability-layer > summary > em.planned {
+  background: #e9eef5;
+  color: #506684;
+}
+
+.capability-layer > summary > i {
+  color: #6f8189;
+  font-size: 19px;
+  font-style: normal;
+  text-align: center;
+  transition: transform 160ms ease;
+}
+
+.capability-layer[open] > summary > i {
+  transform: rotate(45deg);
+}
+
+.capability-layer-body {
+  padding: 0 14px 15px 64px;
+  border-top: 1px solid #e2e8eb;
+}
+
+.capability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 0;
+}
+
+.capability-tags span {
+  padding: 5px 8px;
+  border: 1px solid #d7dfe4;
+  border-radius: 5px;
+  background: #f7f9fa;
+  color: #65747d;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.capability-tags span.live {
+  border-color: #b9dacd;
+  background: #edf8f3;
+  color: #216c57;
+}
+
+.capability-tags span.partial {
+  border-color: #e7d39e;
+  background: #fff9ec;
+  color: #805d15;
+}
+
+.capability-tags span.planned {
+  border-color: #d3dbe5;
+  background: #f0f3f7;
+  color: #586b84;
+}
+
+.capability-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid #dce4e8;
+}
+
+.capability-facts > div {
+  min-width: 0;
+  padding: 12px 14px 0 0;
+}
+
+.capability-facts > div + div {
+  padding-left: 14px;
+  border-left: 1px solid #dce4e8;
+}
+
+.capability-facts dt {
+  color: #344c55;
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.capability-facts dd {
+  margin: 5px 0 0;
+  color: #65757e;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.pipeline-roadmap header {
+  margin-bottom: 12px;
+}
+
+.pipeline-roadmap ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pipeline-roadmap li {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 10px;
+  padding: 14px;
+  border: 1px solid #d5dfe3;
+  border-top: 3px solid #71839b;
+  border-radius: 7px;
+  background: #fbfcfc;
+}
+
+.pipeline-roadmap li.done {
+  border-top-color: #208267;
+}
+
+.pipeline-roadmap li.next {
+  border-top-color: #bc8411;
+  background: #fffaf0;
+}
+
+.pipeline-roadmap li b {
+  color: #60717a;
+  font-size: 9px;
+}
+
+.pipeline-roadmap li strong {
+  grid-column: 1 / -1;
+  color: #2d4048;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.pipeline-roadmap li small {
+  grid-column: 2;
+  grid-row: 1;
+  color: #687983;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.pipeline-references > div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.pipeline-references a {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+  padding: 11px 12px;
+  border: 1px solid #d6e0e4;
+  border-radius: 7px;
+  background: #fbfcfc;
+  color: inherit;
+  text-decoration: none;
+}
+
+.pipeline-references a:hover,
+.pipeline-references a:focus-visible {
+  border-color: #8abac0;
+  background: #f1f8f8;
+  outline: 2px solid rgba(8, 127, 140, 0.12);
+  outline-offset: 1px;
+}
+
+.pipeline-references a strong {
+  color: #1f626a;
+  font-size: 11px;
+}
+
+.pipeline-references a span {
+  overflow-wrap: anywhere;
+  color: #6a7a83;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
 .company-role-summary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -8367,5 +8843,108 @@ button.strip-score:focus-visible strong {
 
   .customer-priority-action small {
     text-align: right;
+  }
+}
+
+@media (max-width: 980px) {
+  .pipeline-positioning {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pipeline-positioning dl {
+    border-top: 1px solid #bfd6d8;
+    border-left: 0;
+  }
+
+  .pipeline-entity-flow {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pipeline-entity-flow > i {
+    display: none;
+  }
+
+  .pipeline-roadmap ol {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline-references > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .pipeline-positioning {
+    padding: 17px 15px;
+  }
+
+  .pipeline-positioning dl div {
+    padding: 8px 10px;
+  }
+
+  .pipeline-data-model > header,
+  .pipeline-references > header,
+  .capability-blueprint-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .pipeline-data-model > header small,
+  .pipeline-references > header small {
+    text-align: left;
+  }
+
+  .pipeline-entity-flow,
+  .pipeline-references > div {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-legend {
+    justify-content: flex-start;
+  }
+
+  .capability-layer > summary {
+    grid-template-columns: 34px minmax(0, 1fr) 22px;
+    gap: 9px;
+    padding: 10px;
+  }
+
+  .capability-layer > summary > b {
+    width: 32px;
+    height: 32px;
+  }
+
+  .capability-layer > summary > em {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    min-width: 0;
+    padding: 4px 7px;
+  }
+
+  .capability-layer > summary > i {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .capability-layer-body {
+    padding: 0 11px 13px;
+  }
+
+  .capability-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-facts > div {
+    padding: 10px 0;
+  }
+
+  .capability-facts > div + div {
+    padding-left: 0;
+    border-top: 1px solid #dce4e8;
+    border-left: 0;
   }
 }

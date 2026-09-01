@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260901rules6" />
+    <link rel="stylesheet" href="./styles.css?v=20260901blueprint1" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -614,12 +614,17 @@
       </section>
 
       <section class="pipeline-section page-panel" data-page="pipeline" aria-label="System pipeline">
+        <nav class="system-breadcrumb" aria-label="当前位置">
+          <span>系统管理</span>
+          <i aria-hidden="true">/</i>
+          <strong>系统链路与能力蓝图</strong>
+        </nav>
         <div class="section-head">
           <div>
             <p class="eyebrow">系统链路</p>
-            <h2>这不是一个新闻列表，而是一条可维护的信息处理链</h2>
+            <h2>从当前运行链路，到以公司为锚点的市场事件数据库</h2>
           </div>
-          <span class="timestamp">MVP 到稳定版的路线</span>
+          <span class="timestamp">当前事实与未来规划分开标注</span>
         </div>
         <div class="pipeline-grid">
           <article>
@@ -649,6 +654,171 @@
           <div><span>当前容量</span><strong id="storagePipelineHistory">计算历史文件</strong><p>处理状态、反馈和语言偏好保存在当前浏览器 localStorage，不会多人同步。</p></div>
           <button type="button" data-methodology-target="data-storage"><span>查看完整边界</span><strong>数据保存在哪里、什么时候需要数据库 →</strong></button>
         </div>
+
+        <section class="pipeline-positioning" aria-labelledby="pipeline-positioning-title">
+          <div>
+            <span>平台定位</span>
+            <h3 id="pipeline-positioning-title">以公司为锚点的生命科学市场事件数据库</h3>
+            <p>新闻是证据，不是最终的数据单元。平台要长期回答的是：哪家公司在什么时间，围绕哪些产品、靶点、技术和合作对象，持续发生了什么市场事件。</p>
+          </div>
+          <dl>
+            <div><dt>公司</dt><dd>长期观察锚点</dd></div>
+            <div><dt>事件</dt><dd>聚合后的核心记录</dd></div>
+            <div><dt>文章</dt><dd>可回查的公开证据</dd></div>
+            <div><dt>LLM</dt><dd>最后一层解释工具</dd></div>
+          </dl>
+        </section>
+
+        <section class="pipeline-data-model" aria-labelledby="pipeline-data-model-title">
+          <header>
+            <div><span>数据模型</span><h3 id="pipeline-data-model-title">公司是锚点，事件连接证据与行动</h3></div>
+            <small>标注“下一阶段”的节点尚未正式运行</small>
+          </header>
+          <div class="pipeline-entity-flow" aria-label="来源到建议行动的数据关系">
+            <div><span>01</span><strong>来源</strong><small>RSS / 官网 / API</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>02</span><strong>文章证据</strong><small>标题、摘要、URL</small></div>
+            <i aria-hidden="true">→</i>
+            <div class="next"><span>03 · 下一阶段</span><strong>市场事件</strong><small>多篇文章合并为一件事</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>04</span><strong>业务实体</strong><small>公司、产品、靶点、地区</small></div>
+            <i aria-hidden="true">→</i>
+            <div class="next"><span>05 · 下一阶段</span><strong>关系沉淀</strong><small>合作、开发、参会、投资</small></div>
+            <i aria-hidden="true">→</i>
+            <div><span>06</span><strong>建议行动</strong><small>市场跟踪与人工判断</small></div>
+          </div>
+        </section>
+
+        <section class="capability-blueprint" aria-labelledby="capability-blueprint-title">
+          <header class="capability-blueprint-head">
+            <div>
+              <span>五层能力</span>
+              <h3 id="capability-blueprint-title">不是五选一，而是一条逐层加工的数据链</h3>
+              <p>点击每一层查看当前系统实际运行范围、下一阶段和使用边界。</p>
+            </div>
+            <div class="capability-legend" aria-label="能力状态图例">
+              <span><i class="live"></i>已运行</span>
+              <span><i class="partial"></i>部分运行</span>
+              <span><i class="planned"></i>规划</span>
+            </div>
+          </header>
+
+          <div class="capability-layer-list">
+            <details class="capability-layer" open>
+              <summary>
+                <b>01</b>
+                <span><strong>订阅与连接器</strong><small>持续、稳定地拿到公开数据</small></span>
+                <em class="partial">部分运行</em>
+                <i aria-hidden="true">+</i>
+              </summary>
+              <div class="capability-layer-body">
+                <div class="capability-tags" aria-label="连接器状态">
+                  <span class="live">RSS / Atom</span><span class="live">Google / Bing News RSS</span><span class="live">官网公开索引</span><span class="live">Sitemap 差分</span><span class="live">公开 API</span><span class="partial">网页链接提取</span><span class="planned">邮件 Newsletter</span><span class="planned">GDELT</span><span class="planned">通用 DOM 差异</span><span class="planned">浏览器自动化</span>
+                </div>
+                <dl class="capability-facts">
+                  <div><dt>当前实际</dt><dd>运行 RSS、聚合新闻 RSS、官网公开页、Sitemap，以及 ClinicalTrials.gov、OpenFDA、PubMed、Crossref 等免费公开接口。</dd></div>
+                  <div><dt>下一阶段</dt><dd>优先补邮件 Newsletter 和更稳定的页面变化记录；GDELT 先做小样本价值验证，浏览器自动化只用于确有必要的公开来源。</dd></div>
+                  <div><dt>边界</dt><dd>不自动登录会员站，不绕过付费墙或严重反爬，不把“入口已配置”写成“本轮一定有产出”。</dd></div>
+                </dl>
+              </div>
+            </details>
+
+            <details class="capability-layer">
+              <summary>
+                <b>02</b>
+                <span><strong>传统信息检索</strong><small>判断信息是否命中 ACRO 关注范围</small></span>
+                <em class="live">已运行</em>
+                <i aria-hidden="true">+</i>
+              </summary>
+              <div class="capability-layer-body">
+                <div class="capability-tags" aria-label="检索方法状态">
+                  <span class="live">关键词 / 布尔逻辑</span><span class="live">公司别名表</span><span class="live">正则与词组规则</span><span class="live">来源权重</span><span class="live">时效处理</span><span class="planned">BM25</span><span class="planned">TF-IDF 排序</span>
+                </div>
+                <dl class="capability-facts">
+                  <div><dt>当前实际</dt><dd>标题和来源摘要进入公司别名、业务主题、动作词、噪音词与来源可信度规则，生成信息筛选分和 ACRO 相关性。</dd></div>
+                  <div><dt>下一阶段</dt><dd>当历史语料继续增大时，引入 BM25 或 TF-IDF 作为检索与候选排序补充，不替换已经可解释的业务规则。</dd></div>
+                  <div><dt>边界</dt><dd>命中只表示“值得继续看”，不代表客户关系、采购意向、商业机会或新闻真实性已经确认。</dd></div>
+                </dl>
+              </div>
+            </details>
+
+            <details class="capability-layer">
+              <summary>
+                <b>03</b>
+                <span><strong>非生成式 NLP 与机器学习</strong><small>近重复、语义相似、事件聚类和抽取式摘要</small></span>
+                <em class="planned">下一阶段</em>
+                <i aria-hidden="true">+</i>
+              </summary>
+              <div class="capability-layer-body">
+                <div class="capability-tags" aria-label="非生成式模型状态">
+                  <span class="live">规范化精确去重</span><span class="live">确定性别名提取</span><span class="planned">MinHash</span><span class="planned">Sentence Transformers</span><span class="planned">DBSCAN / HDBSCAN</span><span class="planned">领域 NER</span><span class="planned">LexRank / TextRank</span>
+                </div>
+                <dl class="capability-facts">
+                  <div><dt>当前实际</dt><dd>现阶段只有 URL/标题规范化去重和基于别名词典的六组结构化提取，还没有运行语义向量、机器学习 NER 或事件聚类。</dd></div>
+                  <div><dt>下一阶段</dt><dd>先用 MinHash 解决转载与近重复，再用多语言向量和 HDBSCAN/DBSCAN 把多来源文章归并为同一市场事件。</dd></div>
+                  <div><dt>边界</dt><dd>这些方法不是生成式 LLM，但仍需模型算力、阈值调参和中英日语料验证，不能简单等同于“零成本且天然准确”。</dd></div>
+                </dl>
+              </div>
+            </details>
+
+            <details class="capability-layer">
+              <summary>
+                <b>04</b>
+                <span><strong>事件与关系知识层</strong><small>让公司、事件、实体与证据可以长期积累</small></span>
+                <em class="partial">基础运行</em>
+                <i aria-hidden="true">+</i>
+              </summary>
+              <div class="capability-layer-body">
+                <div class="capability-tags" aria-label="知识层状态">
+                  <span class="live">公司主数据</span><span class="live">文章与来源证据</span><span class="live">客户 / 竞品角色</span><span class="partial">公开关系证据</span><span class="planned">统一事件表</span><span class="planned">关系边与时间轴</span><span class="planned">图谱查询</span>
+                </div>
+                <dl class="capability-facts">
+                  <div><dt>当前实际</dt><dd>已经保存公司、账户、来源、文章、结构化标签和少量公开关系证据，但文章仍是主要记录单位，尚未形成完整事件实体。</dd></div>
+                  <div><dt>下一阶段</dt><dd>建立 Event 事件表和 Relation 关系表，把“公司 A 与公司 B 合作”等关系连接到日期、事件和原始 URL，先用 JSON/关系表即可。</dd></div>
+                  <div><dt>边界</dt><dd>不必一开始就引入图数据库。只有当关系查询规模和多跳分析真正超过当前数据结构能力时，再考虑 Neo4j 等方案。</dd></div>
+                </dl>
+              </div>
+            </details>
+
+            <details class="capability-layer">
+              <summary>
+                <b>05</b>
+                <span><strong>LLM 增强</strong><small>解释复杂数据，而不是代替平台主体</small></span>
+                <em class="partial">人工路线</em>
+                <i aria-hidden="true">+</i>
+              </summary>
+              <div class="capability-layer-body">
+                <div class="capability-tags" aria-label="LLM 能力状态">
+                  <span class="live">规则业务提要</span><span class="live">ChatGPT Pro 人工批处理</span><span class="planned">跨文章综合</span><span class="planned">证据问答</span><span class="planned">高价值事件自动解释</span><span class="planned">在线 LLM API</span>
+                </div>
+                <dl class="capability-facts">
+                  <div><dt>当前实际</dt><dd>日常自动任务使用规则提要，不调用付费 LLM API；重点信息可以导出后由 ChatGPT Pro 人工总结、核验再回填。</dd></div>
+                  <div><dt>下一阶段</dt><dd>先围绕聚类后的高价值事件做跨文章综合和“市场部下一步做什么”，避免给全部冷数据付费生成摘要。</dd></div>
+                  <div><dt>边界</dt><dd>LLM 只能解释已有证据，不能创建客户关系或商业事实；输出必须保留文章 ID、来源 URL 和人工核验状态。</dd></div>
+                </dl>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="pipeline-roadmap" aria-labelledby="pipeline-roadmap-title">
+          <header><span>实施顺序</span><h3 id="pipeline-roadmap-title">先把文章变成事件，再把事件沉淀为关系</h3></header>
+          <ol>
+            <li class="done"><b>当前基础</b><strong>连接器、字段标准化、公司归一、规则筛选、基础去重、证据展示</strong><small>已运行</small></li>
+            <li class="next"><b>最高优先</b><strong>MinHash 近重复、统一事件表、同事件聚类、多来源证据合并</strong><small>下一阶段</small></li>
+            <li><b>随后扩展</b><strong>公司关系表、长期趋势、混合检索、重点事件 LLM 解释与人工反馈</strong><small>稳定版方向</small></li>
+          </ol>
+        </section>
+
+        <section class="pipeline-references" aria-labelledby="pipeline-references-title">
+          <header><div><span>开源参考</span><h3 id="pipeline-references-title">借鉴方法，不等于已经集成</h3></div><small>点击在 GitHub 查看原项目</small></header>
+          <div>
+            <a href="https://github.com/soubhik-ai/aqua-news" target="_blank" rel="noreferrer"><strong>Aqua News</strong><span>TF-IDF + DBSCAN + LexRank</span></a>
+            <a href="https://github.com/dukeblue1994-glitch/chronicle" target="_blank" rel="noreferrer"><strong>Chronicle</strong><span>MinHash + Sentence Transformers + HDBSCAN</span></a>
+            <a href="https://github.com/UnbubbleHub/gdelt-pulse" target="_blank" rel="noreferrer"><strong>GDELT Pulse</strong><span>实体辅助聚类 + 向量/关键词混合检索</span></a>
+            <a href="https://github.com/NinjaCodeTurtle/heatwire" target="_blank" rel="noreferrer"><strong>Heatwire</strong><span>热度优先，只解释高价值事件</span></a>
+          </div>
+        </section>
       </section>
 
       <section class="methodology-section page-panel" data-page="methodology" aria-label="Metrics and rules center">
@@ -1190,7 +1360,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260901rules6"></script>
-    <script src="./app.js?v=20260901rules6"></script>
+    <script src="./embedded-data.js?v=20260901blueprint1"></script>
+    <script src="./app.js?v=20260901blueprint1"></script>
   </body>
 </html>

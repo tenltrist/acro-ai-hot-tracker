@@ -1930,7 +1930,7 @@ const pageMeta = {
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 运营档案"],
   methodology: ["Rules & Definitions", "规则中心：运行逻辑与指标口径"],
-  pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
+  pipeline: ["System Architecture", "系统链路、五层能力与实施蓝图"],
   questions: ["Product Decisions", "已确定边界与下一阶段决策"],
   "source-health": ["Source Operations", "数据源健康与产出质量"],
 };
