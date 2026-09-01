@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import urllib.parse
 from pathlib import Path
 from typing import Any
 
@@ -125,6 +126,9 @@ def main() -> int:
     }
     for item in items:
         item_id = item.get("id", "unknown")
+        parsed_url = urllib.parse.urlsplit(str(item.get("url", "")))
+        if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
+            errors.append(f"{item_id}: item URL is not absolute http(s)")
         orphan_companies = set(item.get("matched_company_ids", [])) - company_ids
         orphan_sources = set(item.get("source_ids", [item.get("source_id")])) - source_ids
         if orphan_companies:
@@ -139,6 +143,8 @@ def main() -> int:
             errors.append(f"{item_id}: LLM summary is missing provider provenance")
         if item.get("summary_method") == "manual_ai" and item.get("summary_provider") != "chatgpt_pro_manual":
             errors.append(f"{item_id}: manual AI summary is missing ChatGPT Pro provenance")
+        if item.get("title_zh") and len(str(item.get("title_zh"))) < 8:
+            errors.append(f"{item_id}: reviewed Chinese title is too short")
         if item.get("tier") in {"daily", "immediate"} and item.get("acro_relevance", {}).get("level") == "low":
             errors.append(f"{item_id}: low-relevance item entered the daily feed")
         if item.get("event_start_at") and item.get("published_at"):

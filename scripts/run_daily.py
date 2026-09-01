@@ -198,7 +198,11 @@ def load_manual_summary_map() -> dict[str, dict[str, str]]:
     return {
         str(item.get("id", "")): item
         for item in payload.get("items", [])
-        if item.get("id") and clean_text(item.get("summary", ""))
+        if item.get("id")
+        and (
+            clean_text(item.get("summary", ""))
+            or clean_text(item.get("title_zh", ""))
+        )
     }
 
 
@@ -749,7 +753,10 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
     items: list[Candidate] = []
     for item in root.findall(".//item"):
         title = xml_node_text(item.find("title"))
-        link = xml_node_text(item.find("link"))
+        link = urllib.parse.urljoin(
+            source.get("base_url", source["url"]),
+            xml_node_text(item.find("link")),
+        )
         if not title or not link or is_html_noise(title):
             continue
         raw_desc = item.findtext("description", "")
@@ -2096,12 +2103,14 @@ def build_dashboard_payload(
     summary_methods: dict[str, str] | None = None,
     summary_providers: dict[str, str] | None = None,
     summary_models: dict[str, str] | None = None,
+    translated_titles: dict[str, str] | None = None,
     summary_pipeline: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     ai_summaries = ai_summaries or {}
     summary_methods = summary_methods or {}
     summary_providers = summary_providers or {}
     summary_models = summary_models or {}
+    translated_titles = translated_titles or {}
     summary_pipeline = summary_pipeline or {"status": "rules_only", "requested": False}
     generated_at = dt.datetime.now().isoformat(timespec="seconds")
     source_lookup = {source["id"]: source for source in source_config}
@@ -2257,6 +2266,7 @@ def build_dashboard_payload(
                 "related_urls": item.related_urls,
                 "source_trust": item.source_trust,
                 "title": item.title,
+                "title_zh": translated_titles.get(item.key, ""),
                 "url": item.url,
                 "published": item.published,
                 "summary": item.summary,
@@ -2477,6 +2487,7 @@ def main() -> int:
     summary_methods = {item.key: "rule" for item in scored}
     summary_providers = {item.key: "rules" for item in scored}
     summary_models = {item.key: "" for item in scored}
+    translated_titles: dict[str, str] = {}
     reused_count = 0
     for item in scored:
         previous = previous_items.get(item.key, {})
@@ -2493,11 +2504,16 @@ def main() -> int:
         manual = manual_summary_map.get(item.key)
         if not manual:
             continue
-        ai_summaries[item.key] = clean_text(manual["summary"])
-        summary_methods[item.key] = "manual_ai"
-        summary_providers[item.key] = "chatgpt_pro_manual"
-        summary_models[item.key] = manual.get("model", "ChatGPT Pro")
-        manual_count += 1
+        manual_title = clean_text(manual.get("title_zh", ""))
+        manual_summary = clean_text(manual.get("summary", ""))
+        if manual_title:
+            translated_titles[item.key] = manual_title
+        if manual_summary:
+            ai_summaries[item.key] = manual_summary
+            summary_methods[item.key] = "manual_ai"
+            summary_providers[item.key] = "chatgpt_pro_manual"
+            summary_models[item.key] = manual.get("model", "ChatGPT Pro")
+            manual_count += 1
 
     summary_pipeline: dict[str, Any] = {
         "requested": args.ai_summary,
@@ -2587,6 +2603,7 @@ def main() -> int:
         summary_methods,
         summary_providers,
         summary_models,
+        translated_titles,
         summary_pipeline,
     )
     save_json(LATEST_RUN_PATH, payload)

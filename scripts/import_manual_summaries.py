@@ -33,8 +33,9 @@ def main() -> int:
     with args.input.open("r", encoding="utf-8-sig", newline="") as handle:
         for row_number, row in enumerate(csv.DictReader(handle), start=2):
             item_id = str(row.get("id", "")).strip()
+            title_zh = str(row.get("manual_title_zh") or row.get("title_zh") or "").strip()
             summary = str(row.get("manual_summary") or row.get("summary") or "").strip()
-            if not summary:
+            if not summary and not title_zh:
                 continue
             review_status = str(row.get("review_status") or "").strip().lower()
             if review_status not in {"verified", "approved", "已核验", "已确认"}:
@@ -43,11 +44,14 @@ def main() -> int:
                 )
             if item_id not in valid_items:
                 raise ValueError(f"row {row_number}: unknown item id {item_id!r}")
-            if len(summary) < 30 or len(summary) > 800:
+            if title_zh and (len(title_zh) < 8 or len(title_zh) > 180):
+                raise ValueError(f"row {row_number}: Chinese title must contain 8-180 characters")
+            if summary and (len(summary) < 30 or len(summary) > 800):
                 raise ValueError(f"row {row_number}: summary must contain 30-800 characters")
             source_item = valid_items[item_id]
             merged[item_id] = {
                 "id": item_id,
+                "title_zh": title_zh,
                 "summary": summary,
                 "model": str(row.get("model") or "ChatGPT Pro").strip(),
                 "reviewer_notes": str(row.get("reviewer_notes") or "").strip(),
@@ -69,7 +73,7 @@ def main() -> int:
         json.dumps(result, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"Imported {imported} reviewed summaries into {MANUAL_SUMMARIES_PATH}")
+    print(f"Imported {imported} reviewed translations and summaries into {MANUAL_SUMMARIES_PATH}")
     return 0
 
 

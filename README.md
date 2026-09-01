@@ -112,14 +112,14 @@ python3 ai_hot_tracker/scripts/run_daily.py --dry-run
 python3 scripts/export_manual_summary_batch.py --limit 20 --output /tmp/aihot-summary-batch.csv
 ```
 
-将 CSV 中的公开标题、来源摘要、结构化字段和原文链接提交给 ChatGPT Pro，填写 `manual_summary`。人工打开原文核对后，将 `review_status` 填为 `verified` 或 `已核验`，然后导入：
+将 CSV 中的公开标题、来源摘要、结构化字段和原文链接提交给 ChatGPT Pro，填写 `manual_title_zh` 与 `manual_summary`。人工打开原文核对后，将 `review_status` 填为 `verified` 或 `已核验`，然后导入：
 
 ```bash
 python3 scripts/import_manual_summaries.py /tmp/aihot-summary-batch.csv
 python3 scripts/run_daily.py --dry-run
 ```
 
-回填数据保存在 `data/manual_summaries.json`，以稳定 item id 与新闻关联，页面会显示 `ChatGPT Pro 人工复核摘要`的来源标识。未通过人工核对的摘要不允许导入。
+回填数据保存在 `data/manual_summaries.json`，以稳定 item id 与新闻关联；中文模式优先展示人工译题，摘要显示 `ChatGPT Pro 人工复核摘要`来源标识。未通过人工核对的译题或摘要不允许导入。
 
 生成后可以运行数据一致性检查：
 

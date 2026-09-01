@@ -2496,7 +2496,7 @@ function renderJapanAccountIntelligence() {
       </a>`).join("")}</div>` : "";
   const signalMarkup = matches.length ? matches.slice(0, 5).map((item) => `
     <a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
-      <strong>${escapeHtml(item.title)}</strong>
+      <strong>${escapeHtml(getDisplayTitle(item))}</strong>
       <span>${escapeHtml(getItemDateLabel(item))} · ${escapeHtml(labelBusinessEvent(getBusinessEventType(item), true))}</span>
     </a>`).join("") : '<p>当前抓取结果没有可靠名称命中，继续保留在账户观察池。</p>';
   const isRelationship = selected.account_stage === "public_relationship";
@@ -2702,7 +2702,7 @@ function renderMethodology() {
     const reasons = (topNews.reasons || []).slice(0, 4);
     els.methodologyNewsExample.innerHTML =
       "<span>当前数据示例 · " + (Number(topNews.score) || 0) + " 分</span>" +
-      "<p><strong>" + escapeHtml(firstReadableSentence(topNews.title, 96)) + "</strong></p>" +
+      "<p><strong>" + escapeHtml(firstReadableSentence(getDisplayTitle(topNews), 96)) + "</strong></p>" +
       "<div>" + (reasons.length
         ? reasons.map((reason) => "<i>" + escapeHtml(reason) + "</i>").join("")
         : "<i>该记录未保留逐项加分原因。</i>") + "</div>";
@@ -2718,7 +2718,7 @@ function renderMethodology() {
     els.methodologyRelevanceExample.innerHTML =
       "<span>当前数据示例 · " + (Number(relevance.score) || 0) + " 分 · " +
         escapeHtml(relevance.label || "待分析") + "</span>" +
-      "<p><strong>" + escapeHtml(firstReadableSentence(topRelevance.title, 96)) + "</strong></p>" +
+      "<p><strong>" + escapeHtml(firstReadableSentence(getDisplayTitle(topRelevance), 96)) + "</strong></p>" +
       "<div>" + (relevance.reasons || []).map(
         (reason) => "<i>" + escapeHtml(reason) + "</i>",
       ).join("") + "</div>";
@@ -3833,7 +3833,7 @@ function renderBusinessLaneItems(container, items, emptyText, laneType) {
     return `
       <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
         <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
-        <strong>${escapeHtml(item.title)}</strong>
+        <strong>${escapeHtml(getDisplayTitle(item))}</strong>
         <small>${escapeHtml(getItemDateLabel(item))} · ${Number(item.score) || 0} 分</small>
         <div class="business-lane-action"><span>${escapeHtml(action.label || "人工判断")}</span><b>${escapeHtml(action.owner || "待分派")}</b><i>${escapeHtml(workflow.label)}</i></div>
       </a>
@@ -4014,7 +4014,7 @@ function renderCustomerPriorityMatrix(priorities) {
     </div>`;
   const rows = priorities.map((entry, index) => {
     const relationship = entry.publicRelationship ? "公开关系证据" : "关系待确认";
-    const keyTitle = entry.keyItem?.title || "暂无可用原文";
+    const keyTitle = entry.keyItem ? getDisplayTitle(entry.keyItem) : "暂无可用原文";
     return `
       <div class="customer-priority-row" role="button" tabindex="0" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
         <span class="customer-priority-company">
@@ -4114,7 +4114,7 @@ function buildAssistantResponse(question, items, customerPriorities) {
         return {
           label: "市场主题",
           title: labelBusinessEvent(eventType),
-          detail: `${count} 条相关信号。代表事件：${keyItem?.title || "暂无代表事件"}`,
+          detail: `${count} 条相关信号。代表事件：${keyItem ? getDisplayTitle(keyItem) : "暂无代表事件"}`,
           owner: eventType === "market_activity" ? "区域市场" : "产品市场",
           company: keyItem?.matched_companies?.[0] || "",
           category: eventType,
@@ -5064,7 +5064,9 @@ function buildChineseSignalTitle(item) {
 }
 
 function getDisplayTitle(item) {
-  if (state.translationLanguage === "zh") return buildChineseSignalTitle(item);
+  if (state.translationLanguage === "zh") {
+    return String(item.title_zh || "").trim() || buildChineseSignalTitle(item);
+  }
   return item.title || buildClientBusinessSummaryEn(item);
 }
 
@@ -5129,11 +5131,14 @@ function getDisplaySummary(item) {
 function renderBusinessSummary(item, compact) {
   const isLlm = item.summary_method === "llm";
   const isManual = item.summary_method === "manual_ai";
+  const hasManualSummaryInCurrentLanguage = isManual && (
+    state.translationLanguage === "zh" || Boolean(String(item.ai_summary_en || "").trim())
+  );
   const label = state.translationLanguage === "en"
-    ? isManual ? "ChatGPT Pro reviewed brief" : isLlm ? "API model summary" : "Rule brief"
-    : isManual ? "ChatGPT Pro 人工复核摘要" : isLlm ? "API 模型摘要" : "规则提要";
+    ? hasManualSummaryInCurrentLanguage ? "ChatGPT Pro reviewed brief" : isLlm ? "API model summary" : "Rule brief"
+    : hasManualSummaryInCurrentLanguage ? "ChatGPT Pro 人工复核摘要" : isLlm ? "API 模型摘要" : "规则提要";
   const text = getDisplaySummary(item);
-  const summaryClass = isLlm || isManual ? "ai" : "rule";
+  const summaryClass = isLlm || hasManualSummaryInCurrentLanguage ? "ai" : "rule";
   if (!compact) {
     return `<p class="summary business-summary summary-${summaryClass}"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
   }
@@ -5862,7 +5867,7 @@ function getFilteredItems() {
     .filter((item) => {
       if (!query) return true;
       const intelligenceText = Object.values(item.intelligence || {}).flat().join(" ");
-      const haystack = `${item.title} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")} ${intelligenceText} ${item.acro_relevance?.explanation || ""} ${item.recommended_action?.label || ""} ${item.recommended_action?.text || ""}`.toLowerCase();
+      const haystack = `${item.title} ${item.title_zh || ""} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")} ${intelligenceText} ${item.acro_relevance?.explanation || ""} ${item.recommended_action?.label || ""} ${item.recommended_action?.text || ""}`.toLowerCase();
       return haystack.includes(query);
     })
     .sort((a, b) => b.score - a.score);
