@@ -35,7 +35,7 @@
 
 日报还会经过第二层准入：低 ACRO 相关性内容统一留在归档；未命中公司且没有明确业务动作的中相关内容也不进入日报。新闻发布日期与活动举办日期分别保存，避免把未来活动误判为刚发布的新闻。
 
-页面中的摘要会明确标注来源：配置模型 API 并运行 `--ai-summary` 时显示“AI 摘要”；没有模型结果时显示“规则提要”，不把规则模板冒充 AI 总结。
+页面中的摘要会明确标注来源：自动流水线使用“规则提要”；高价值条目可导出到 ChatGPT Pro 人工批处理，核对原文后以“ChatGPT Pro 人工复核摘要”回填。当前自动运行不调用付费 LLM API，也不把规则模板冒充 AI 总结。
 
 每条信息还会保存一组证据字段：原始入口、来源类型、可引用摘录、核验状态和关联链接。页面默认只突出业务摘要与建议动作，证据、六组结构化字段和处理状态放在展开区，避免单张卡片承载过多内容。
 
@@ -43,7 +43,7 @@
 
 重点账户行动矩阵从同一轮抓取结果动态计算。排序综合近 90 天进入日报信号、ACRO 中高相关密度、时效性和来源多样性；“公开关系证据”和“关系待确认”分开展示。该优先指数只用于安排市场与销售的核验顺序，不代表成交概率，也不会把 232 家账户目录自动解释成客户。
 
-静态页面中的情报助手目前是证据驱动的规则分析：支持提问账户跟进、竞品应对、日本热点和数据源健康，并可点击答案进入对应证据。它不在浏览器中保存模型密钥，也不会把规则答案伪装成大模型生成；需要真实生成式问答时，可继续复用同一 UI，改由 GitHub Actions 批量生成摘要，或接入带密钥保护的后端服务。
+静态页面中的情报助手目前是证据驱动的规则分析：支持提问账户跟进、竞品应对、日本热点和数据源健康，并可点击答案进入对应证据。它不在浏览器中保存模型密钥，也不会把规则答案伪装成大模型生成。
 
 “公司时间线”按公司沉淀全部命中记录、日报信号、来源数、主题和动作分布。信号的“待处理 / 已阅读 / 已核验 / 已行动 / 已归档”状态目前保存在当前浏览器，适合个人试用；多人共享状态仍需要后端数据库。
 
@@ -83,6 +83,17 @@ ai_hot_tracker/data/seen_urls.json
 ai_hot_tracker/data/latest_run.json
 ```
 
+当前没有数据库，而是按用途分开保存 Git 版本化 JSON：
+
+- `data/latest_run.json`：页面使用的最新完整快照。
+- `data/history/YYYY-MM-DD.json`：每日历史快照。
+- `data/seen_urls.json`：跨轮去重索引。
+- `data/source_snapshots.json`：官网页面变化检测状态。
+- `data/manual_summaries.json`：已核验的 ChatGPT Pro 人工摘要。
+- `api/public/*.json`：面向静态页面和后续 Agent 的公开快照。
+
+页面上的反馈、处理状态和语言偏好只保存在当前浏览器 `localStorage`，不会回写 GitHub，也不会在多个用户之间同步。
+
 每轮运行会在同一个 `latest_run.json` 中同时更新新闻列表、汇总指标和
 `source_health`。网页右上角的同步按钮会重新读取这份最新结果，因此数据源健康与
 日报保持同一轮时间；该按钮只同步已完成的结果，不会直接在静态网页中启动抓取。
@@ -93,34 +104,28 @@ ai_hot_tracker/data/latest_run.json
 python3 ai_hot_tracker/scripts/run_daily.py --dry-run
 ```
 
-### 可选的真实 AI 摘要
+### ChatGPT Pro 人工批处理摘要
 
-默认运行只使用免费规则提要，不会调用付费模型。只有同时显式配置提供商、API Key、模型并加上 `--ai-summary` 时，才会对日报候选进行二次摘要。
-
-OpenAI Responses API 示例：
+当前策略是“自动规则 + 人工 AI 复核”，不使用自动付费 API。先导出日报/即时候选：
 
 ```bash
-AI_SUMMARY_PROVIDER=openai \
-OPENAI_API_KEY="..." \
-AI_SUMMARY_MODEL="你确认使用的模型" \
-python3 ai_hot_tracker/scripts/run_daily.py --ai-summary --ai-summary-limit 10
+python3 scripts/export_manual_summary_batch.py --limit 20 --output /tmp/aihot-summary-batch.csv
 ```
 
-Anthropic Messages API 示例：
+将 CSV 中的公开标题、来源摘要、结构化字段和原文链接提交给 ChatGPT Pro，填写 `manual_summary`。人工打开原文核对后，将 `review_status` 填为 `verified` 或 `已核验`，然后导入：
 
 ```bash
-AI_SUMMARY_PROVIDER=anthropic \
-ANTHROPIC_API_KEY="..." \
-AI_SUMMARY_MODEL="你确认使用的模型" \
-python3 ai_hot_tracker/scripts/run_daily.py --ai-summary --ai-summary-limit 10
+python3 scripts/import_manual_summaries.py /tmp/aihot-summary-batch.csv
+python3 scripts/run_daily.py --dry-run
 ```
 
-每轮默认最多生成 10 条新摘要，已生成的 AI 摘要会复用，避免每天重复花费。配置缺失或请求失败时，本轮仍保留规则提要，并在 `summary_pipeline` 中记录原因。
+回填数据保存在 `data/manual_summaries.json`，以稳定 item id 与新闻关联，页面会显示 `ChatGPT Pro 人工复核摘要`的来源标识。未通过人工核对的摘要不允许导入。
 
 生成后可以运行数据一致性检查：
 
 ```bash
 python3 ai_hot_tracker/scripts/validate_dashboard.py
+python3 ai_hot_tracker/scripts/validate_rule_contract.py
 ```
 
 GitHub 的定时更新会在发布前自动执行这项检查；公司、来源、日报门槛、日期语义或健康统计断链时，本轮数据不会发布。

@@ -32,6 +32,8 @@ LATEST_RUN_PATH = DATA_DIR / "latest_run.json"
 SOURCE_SNAPSHOTS_PATH = DATA_DIR / "source_snapshots.json"
 API_DIR = ROOT / "api" / "public"
 PRIORITY_ACCOUNT_MONITORING_PATH = CONFIG_DIR / "priority_account_monitoring.json"
+RULE_CATALOG_PATH = CONFIG_DIR / "rule_catalog.json"
+MANUAL_SUMMARIES_PATH = DATA_DIR / "manual_summaries.json"
 
 
 USER_AGENT = (
@@ -176,6 +178,28 @@ def save_json(path: Path, data: Any) -> None:
     with path.open("w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
+
+
+_RULE_CATALOG_CACHE: dict[str, Any] | None = None
+
+
+def get_rule_catalog() -> dict[str, Any]:
+    """Return the same machine-readable contract used by the rule-center UI."""
+    global _RULE_CATALOG_CACHE
+    if _RULE_CATALOG_CACHE is None:
+        _RULE_CATALOG_CACHE = load_json(RULE_CATALOG_PATH)
+    return _RULE_CATALOG_CACHE
+
+
+def load_manual_summary_map() -> dict[str, dict[str, str]]:
+    if not MANUAL_SUMMARIES_PATH.exists():
+        return {}
+    payload = load_json(MANUAL_SUMMARIES_PATH)
+    return {
+        str(item.get("id", "")): item
+        for item in payload.get("items", [])
+        if item.get("id") and clean_text(item.get("summary", ""))
+    }
 
 
 def upsert_records(
@@ -1598,44 +1622,48 @@ def build_acro_relevance(
     item: Candidate,
     matched_companies: list[dict[str, Any]],
 ) -> dict[str, Any]:
+    rule = get_rule_catalog()["acro_relevance"]
+    role_weights = rule["role_weights"]
+    signal_weights = rule["signal_weights"]
+    thresholds = rule["thresholds"]
     roles = {company.get("business_role", "unclassified") for company in matched_companies}
     signals = item.intelligence
     score = 0
     reasons: list[str] = []
 
     if "self" in roles:
-        score += 25
+        score += role_weights["self"]
         reasons.append("ACRO 自身动态")
     if "customer" in roles:
-        score += 30
+        score += role_weights["customer"]
         reasons.append("客户池公司动态")
     if "competitor" in roles:
-        score += 18
+        score += role_weights["competitor"]
         reasons.append("竞品公司动态")
     if signals.get("targets"):
-        score += 12
+        score += signal_weights["targets"]
         reasons.append("出现明确靶点")
     if signals.get("modalities"):
-        score += 12
+        score += signal_weights["modalities"]
         reasons.append("命中重点疗法或技术")
     if signals.get("product_needs"):
-        score += 22
+        score += signal_weights["product_needs"]
         reasons.append("可映射到 ACRO 产品或服务需求")
     if signals.get("development_stages"):
-        score += 10
+        score += signal_weights["development_stages"]
         reasons.append("研发阶段可识别")
     if signals.get("business_actions"):
-        score += 10
+        score += signal_weights["business_actions"]
         reasons.append("出现明确业务动作")
     if signals.get("event_signals"):
-        score += 6
+        score += signal_weights["event_signals"]
         reasons.append("可转化为活动运营线索")
     if item.source_trust == "regulator" or item.category == "regulatory":
-        score += 8
+        score += signal_weights["regulatory"]
         reasons.append("包含监管或注册信号")
 
-    score = min(score, 100)
-    level = "high" if score >= 50 else "medium" if score >= 24 else "low"
+    score = min(score, rule["maximum"])
+    level = "high" if score >= thresholds["high"] else "medium" if score >= thresholds["medium"] else "low"
     target_text = "、".join(signals.get("targets", [])[:2])
     modality_text = "、".join(signals.get("modalities", [])[:2])
     need_text = "、".join(signals.get("product_needs", [])[:2])
@@ -1746,25 +1774,31 @@ def enrich_candidate_intelligence(
 
 def apply_daily_admission_policy(item: Candidate) -> Candidate:
     """Keep the daily feed decision-grade while retaining rejected items in archive."""
+    rule = get_rule_catalog()["daily_admission"]
     if item.tier == "archive":
         item.selection_reason = "未达到日报基础分数"
         return item
 
     relevance = item.acro_relevance.get("level", "low")
     action_type = item.recommended_action.get("type", "archive")
-    if relevance == "low":
+    if rule["low_relevance_archive"] and relevance == "low":
         item.tier = "archive"
         item.selection_reason = "ACRO 相关性较低，仅归档"
         item.reasons.append("日报准入：低相关信号降为归档")
         return item
 
-    if not item.matched_company_ids and relevance == "medium" and action_type in {"archive", "trend"}:
+    if (
+        rule["medium_without_company_or_action_archive"]
+        and not item.matched_company_ids
+        and relevance == "medium"
+        and action_type in {"archive", "trend"}
+    ):
         item.tier = "archive"
         item.selection_reason = "未命中公司且暂无明确业务动作，仅归档"
         item.reasons.append("日报准入：未命中公司且缺少明确业务动作")
         return item
 
-    if item.tier == "immediate" and relevance != "high":
+    if rule["immediate_requires_high_relevance"] and item.tier == "immediate" and relevance != "high":
         item.tier = "daily"
     item.selection_reason = "命中公司或中高相关业务信号"
     return item
@@ -1776,6 +1810,12 @@ def score_candidate(
     matched_companies: list[dict[str, Any]],
     max_age_days: int,
 ) -> Candidate:
+    rule = get_rule_catalog()["information_score"]
+    alias_rule = rule["company_alias"]
+    trust_rule = rule["source_trust"]
+    topic_rule = rule["strategic_topic"]
+    action_rule = rule["business_action"]
+    age_rule = rule["age_policy"]
     blob = f"{item.title} {item.summary} {item.url}".lower()
     score = 0
     reasons: list[str] = []
@@ -1787,7 +1827,7 @@ def score_candidate(
         if alias.lower() in blob
     ]
     if alias_hits:
-        alias_score = 15 if item.source_trust == "owned" else 30
+        alias_score = alias_rule["owned"] if item.source_trust == "owned" else alias_rule["external"]
         score += alias_score
         reasons.append(f"公司池命中 +{alias_score}: " + ", ".join(alias_hits[:3]))
     elif item.company_id and any(
@@ -1795,55 +1835,40 @@ def score_candidate(
     ):
         # A dedicated company feed already establishes the entity even when the
         # article title does not repeat the publisher's company name.
-        score += 15
-        reasons.append("专属来源公司归属 +15")
+        score += alias_rule["dedicated_source"]
+        reasons.append(f"专属来源公司归属 +{alias_rule['dedicated_source']}")
 
-    if item.source_trust == "owned":
-        score += 15
-        reasons.append("公司自有来源")
-    elif item.source_trust == "ecosystem":
-        score += 12
-        reasons.append("行业生态平台公开来源")
-    elif item.source_trust == "regulator":
-        score += 20
-        reasons.append("监管机构结构化来源")
-    elif item.source_trust == "research":
-        score += 10
-        reasons.append("科研数据库结构化来源")
-    elif item.source_trust == "wire":
-        score += 8
-        reasons.append("新闻稿分发平台")
-    elif item.source_trust == "media":
-        score += 10
-        reasons.append("行业编辑媒体")
+    source_reason = {
+        "owned": "公司自有来源",
+        "ecosystem": "行业生态平台公开来源",
+        "regulator": "监管机构结构化来源",
+        "research": "科研数据库结构化来源",
+        "wire": "新闻稿分发平台",
+        "media": "行业编辑媒体",
+    }.get(item.source_trust)
+    if source_reason:
+        score += trust_rule[item.source_trust]
+        reasons.append(source_reason)
 
     topic_hits = [term for term in profile.get("strategic_topics", []) if term.lower() in blob]
     if topic_hits:
-        score += min(30, 6 * len(topic_hits))
+        score += min(topic_rule["maximum"], topic_rule["per_hit"] * len(topic_hits))
         reasons.append("战略主题命中: " + ", ".join(topic_hits[:5]))
 
     action_hits = [term for term in profile.get("business_actions", []) if term.lower() in blob]
     if action_hits:
-        score += min(25, 8 * len(action_hits))
+        score += min(action_rule["maximum"], action_rule["per_hit"] * len(action_hits))
         reasons.append("业务动作命中: " + ", ".join(action_hits[:4]))
 
     noise_hits = [term for term in profile.get("noise_terms", []) if term.lower() in blob]
     if noise_hits:
-        score -= 35
+        score -= rule["noise_penalty"]
         reasons.append("噪音词命中: " + ", ".join(noise_hits[:3]))
 
     item.category = item.category_hint or classify_item(item.title.lower())
 
     # Category bonus: high-value signal types get extra points
-    category_bonus = {
-        "partnership": 10,
-        "product": 10,
-        "regulatory": 8,
-        "market": 8,
-        "event": 10,
-        "video": 5,
-        "research": 5,
-    }
+    category_bonus = rule["category_bonus"]
     bonus = category_bonus.get(item.category, 0)
     if bonus:
         score += bonus
@@ -1852,21 +1877,21 @@ def score_candidate(
     item_age = age_days(item.published)
     has_action = bool(action_hits)
     if item_age is not None and item_age > max_age_days:
-        if item_age > max_age_days * 2:
-            score = min(score, 25)
+        if item_age > max_age_days * age_rule["hard_age_multiplier"]:
+            score = min(score, age_rule["hard_cap"])
             reasons.append(f"超过硬性时效上限: {item_age} 天前")
-        elif has_action and score >= 40:
+        elif has_action and score >= age_rule["action_floor"]:
             # Business-action items with solid base score survive age degradation
-            score = max(score - 10, 40)
+            score = max(score - age_rule["action_penalty"], age_rule["action_floor"])
             reasons.append(f"超过时效窗口 {item_age}天，因业务动作匹配保留")
         else:
-            score = min(score, 25)
+            score = min(score, age_rule["ordinary_cap"])
             reasons.append(f"超过默认时效窗口: {item_age} 天前")
 
-    item.score = max(0, score)
+    item.score = max(rule["minimum"], score)
     item.reasons = reasons or ["未命中强规则，默认归档"]
     item.tier = classify_tier(item.score, item.source_trust, has_action)
-    if item.signal_type in {"video", "research", "funding", "clinical_trial"}:
+    if item.signal_type in set(get_rule_catalog()["daily_admission"]["forced_archive_signal_types"]):
         item.tier = "archive"
         item.reasons.append("专题信号：不进入默认新闻日报")
     return item
@@ -1889,17 +1914,14 @@ def classify_item(blob: str) -> str:
 
 
 def classify_tier(score: int, trust: str, has_action: bool = False) -> str:
-    if score >= 80:
+    thresholds = get_rule_catalog()["daily_admission"]["base_thresholds"]
+    if score >= thresholds["immediate"]:
         return "immediate"
-    if score >= 50:
+    if score >= thresholds["daily"]:
         return "daily"
-    if trust == "owned" and score >= 40:
+    if trust in {"owned", "ecosystem", "media"} and score >= thresholds["owned_ecosystem_media"]:
         return "daily"
-    if trust == "ecosystem" and score >= 40:
-        return "daily"
-    if trust == "media" and score >= 40:
-        return "daily"
-    if has_action and score >= 45:
+    if has_action and score >= thresholds["business_action"]:
         return "daily"
     return "archive"
 
@@ -2340,7 +2362,11 @@ def render_section(
             lines.append(f"   - 摘要：{clean_text(item.summary)[:220]}")
         ai_text = ai_summaries.get(item.key, "")
         if ai_text:
-            summary_label = "AI 摘要" if summary_methods.get(item.key) == "llm" else "规则提要"
+            summary_label = {
+                "llm": "API 模型摘要",
+                "manual_ai": "ChatGPT Pro 人工复核摘要",
+                "rule": "规则提要",
+            }.get(summary_methods.get(item.key, "rule"), "规则提要")
             lines.append(f"   - {summary_label}：{ai_text}")
         if item.acro_relevance:
             lines.append(
@@ -2385,6 +2411,8 @@ def main() -> int:
         for profile in company_config.get("source_profiles", [])
     }
     intelligence_rules = load_json(CONFIG_DIR / "intelligence_rules.json")
+    rule_catalog = load_json(RULE_CATALOG_PATH)
+    automatic_llm_enabled = bool(rule_catalog.get("strategy", {}).get("automatic_llm_api", False))
     source_experiments_path = CONFIG_DIR / "source_experiments.json"
     source_experiments = (
         load_json(source_experiments_path)
@@ -2400,6 +2428,7 @@ def main() -> int:
         for item in previous_payload.get("items", [])
         if item.get("id")
     }
+    manual_summary_map = load_manual_summary_map()
     source_snapshots = (
         load_json(SOURCE_SNAPSHOTS_PATH)
         if SOURCE_SNAPSHOTS_PATH.exists()
@@ -2459,32 +2488,45 @@ def main() -> int:
         summary_models[item.key] = previous.get("summary_model", "")
         reused_count += 1
 
+    manual_count = 0
+    for item in scored:
+        manual = manual_summary_map.get(item.key)
+        if not manual:
+            continue
+        ai_summaries[item.key] = clean_text(manual["summary"])
+        summary_methods[item.key] = "manual_ai"
+        summary_providers[item.key] = "chatgpt_pro_manual"
+        summary_models[item.key] = manual.get("model", "ChatGPT Pro")
+        manual_count += 1
+
     summary_pipeline: dict[str, Any] = {
         "requested": args.ai_summary,
-        "status": "rules_only",
+        "status": "rules_plus_manual" if manual_count else "rules_only",
         "provider": "",
         "model": "",
         "limit": max(1, args.ai_summary_limit),
         "eligible": 0,
         "generated": 0,
         "reused": reused_count,
+        "manual_imported": manual_count,
+        "manual_tool": rule_catalog.get("strategy", {}).get("manual_summary_tool", "ChatGPT Pro"),
         "failed": 0,
         "error": "",
     }
     if args.ai_summary:
-        config, config_error = resolve_ai_summary_config()
+        config, config_error = (None, "自动 LLM API 已按当前策略关闭；请使用 ChatGPT Pro 人工批处理。") if not automatic_llm_enabled else resolve_ai_summary_config()
         summary_candidates = sorted(
             [
                 item
                 for item in scored
                 if item.tier in {"immediate", "daily"}
-                and summary_methods.get(item.key) != "llm"
+                and summary_methods.get(item.key) not in {"llm", "manual_ai"}
             ],
             key=lambda item: (item.tier != "immediate", -item.score),
         )
         summary_pipeline["eligible"] = len(summary_candidates)
         if config_error:
-            summary_pipeline["status"] = "configuration_error"
+            summary_pipeline["status"] = "policy_disabled" if not automatic_llm_enabled else "configuration_error"
             summary_pipeline["error"] = config_error
             print(f"AI summary disabled for this run: {config_error}", file=sys.stderr)
         else:

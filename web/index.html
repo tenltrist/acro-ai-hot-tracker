@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260901rules" />
+    <link rel="stylesheet" href="./styles.css?v=20260901rules6" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -20,26 +20,37 @@
         <div class="nav-group">
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总览" aria-label="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
-          <button type="button" data-page-target="companies" title="公司池" aria-label="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
-          <button type="button" data-page-target="timeline" title="公司时间线" aria-label="公司时间线"><span class="nav-icon">↕</span><span>公司时间线</span></button>
-          <button type="button" data-page-target="japan-customers" title="日本账户情报" aria-label="日本账户情报"><span class="nav-icon">日</span><span>日本账户情报</span></button>
-          <button type="button" data-page-target="relationships" title="关系情报" aria-label="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
-          <button type="button" data-page-target="company-sources" title="公司来源" aria-label="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
           <button type="button" data-page-target="signals" title="情报明细" aria-label="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
-          <button type="button" data-page-target="sources" title="数据源地图" aria-label="数据源地图"><span class="nav-icon">◇</span><span>数据源地图</span></button>
-          <button type="button" data-page-target="acro" title="ACRO 档案" aria-label="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
         </div>
+        <details class="nav-cluster" data-nav-cluster="companies">
+          <summary title="展开公司与账户"><span><i class="nav-icon">◉</i>公司与账户</span><b>5</b></summary>
+          <div class="nav-sublist">
+            <button type="button" data-page-target="companies" title="公司池" aria-label="公司池"><span class="nav-icon">◉</span><span>公司池</span></button>
+            <button type="button" data-page-target="timeline" title="公司时间线" aria-label="公司时间线"><span class="nav-icon">↕</span><span>公司时间线</span></button>
+            <button type="button" data-page-target="japan-customers" title="日本账户情报" aria-label="日本账户情报"><span class="nav-icon">日</span><span>日本账户</span></button>
+            <button type="button" data-page-target="relationships" title="关系情报" aria-label="关系情报"><span class="nav-icon">↔</span><span>关系情报</span></button>
+            <button type="button" data-page-target="acro" title="ACRO 档案" aria-label="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
+          </div>
+        </details>
+        <details class="nav-cluster" data-nav-cluster="sources">
+          <summary title="展开数据源中心"><span><i class="nav-icon">◇</i>数据源中心</span><b>3</b></summary>
+          <div class="nav-sublist">
+            <button type="button" data-page-target="sources" title="数据源地图" aria-label="数据源地图"><span class="nav-icon">◇</span><span>来源地图</span></button>
+            <button type="button" data-page-target="company-sources" title="公司来源" aria-label="公司来源"><span class="nav-icon">▦</span><span>公司来源</span></button>
+            <button type="button" data-page-target="source-health" title="数据源健康" aria-label="数据源健康"><span class="nav-icon">✓</span><span>健康与产出</span></button>
+          </div>
+        </details>
         <div class="nav-group">
-          <span class="nav-group-label">指标与规则</span>
-          <button type="button" data-page-target="methodology" title="指标说明" aria-label="指标说明"><span class="nav-icon">i</span><span>指标说明</span></button>
-          <button type="button" data-page-target="structured-rules" title="结构化提取" aria-label="结构化提取"><span class="nav-icon">6</span><span>结构化提取</span></button>
-          <button type="button" data-page-target="questions" title="产品决策" aria-label="产品决策"><span class="nav-icon">决</span><span>产品决策</span></button>
+          <span class="nav-group-label">方法与系统</span>
+          <button type="button" data-page-target="methodology" title="规则中心" aria-label="规则中心"><span class="nav-icon">i</span><span>规则中心</span></button>
         </div>
-        <div class="nav-group">
-          <span class="nav-group-label">运行管理</span>
-          <button type="button" data-page-target="source-health" title="数据源健康" aria-label="数据源健康"><span class="nav-icon">✓</span><span>数据源健康</span></button>
-          <button type="button" data-page-target="pipeline" title="系统链路" aria-label="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
-        </div>
+        <details class="nav-cluster system" data-nav-cluster="system">
+          <summary title="展开系统管理"><span><i class="nav-icon">↳</i>系统管理</span><b>2</b></summary>
+          <div class="nav-sublist">
+            <button type="button" data-page-target="pipeline" title="系统链路" aria-label="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
+            <button type="button" data-page-target="questions" title="产品决策" aria-label="产品决策"><span class="nav-icon">决</span><span>决策与待办</span></button>
+          </div>
+        </details>
       </nav>
 
       <div class="company-dock" aria-label="快捷筛选">
@@ -624,13 +635,19 @@
           <article>
             <span>03</span>
             <strong>数据存储</strong>
-            <p>MVP 先用 GitHub JSON；稳定版再考虑数据库和历史检索。</p>
+            <p>Git 版本化 JSON：最新快照、每日历史、去重索引和来源状态分开保存。</p>
+            <small id="storagePipelineSnapshot">计算当前快照</small>
           </article>
           <article>
             <span>04</span>
             <strong>数据展现</strong>
             <p>Dashboard、公司页、日报、主题热度、API / Agent 接入。</p>
           </article>
+        </div>
+        <div class="pipeline-storage-note">
+          <div><span>当前形式</span><strong>静态站点 + GitHub Actions + JSON</strong><p>GitHub Pages 只读取发布文件，不是可写数据库。服务器端拉取在 Actions 中完成后，网页才读到新结果。</p></div>
+          <div><span>当前容量</span><strong id="storagePipelineHistory">计算历史文件</strong><p>处理状态、反馈和语言偏好保存在当前浏览器 localStorage，不会多人同步。</p></div>
+          <button type="button" data-methodology-target="data-storage"><span>查看完整边界</span><strong>数据保存在哪里、什么时候需要数据库 →</strong></button>
         </div>
       </section>
 
@@ -651,87 +668,193 @@
 
         <div class="methodology-hero methodology-index-only">
           <div>
-            <p class="eyebrow">指标与规则中心</p>
-            <h2>每个数字都能回答：是什么、怎么算、怎么用</h2>
-            <p>平台里有两类判断：单篇信息判断“这条值不值得看”，公司级判断“这家值不值得先跟进”。下面的分数不是同一个“AI 总分”。</p>
+            <p class="eyebrow">规则与口径中心</p>
+            <h2>18 个运行模块，从原始来源一直追溯到页面数字</h2>
+            <p>这里不只放“分数”，也包含去重、公司识别、结构化提取、分层、摘要溯源、统计口径和存储边界。每项都标明是后端实际运行、前端实时计算，还是人工配置。</p>
           </div>
           <div class="methodology-version">
             <span>当前口径</span>
-            <strong>Rules v2026.09</strong>
-            <small>与现行抓取和前端公式对齐</small>
+            <strong id="methodologyVersion">Rules v--</strong>
+            <small id="methodologyVerifiedAt">等待规则契约校验</small>
           </div>
         </div>
 
         <div class="methodology-layout">
           <div class="methodology-content">
-            <section class="metric-family methodology-index-only" aria-labelledby="item-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="prepare-metric-family">
               <div class="metric-family-head">
                 <span>01</span>
-                <div><h3 id="item-metric-family">单篇信息判断</h3><p>先决定是否入库、是否进日报，再判断它与 ACRO 的业务距离。</p></div>
+                <div><h3 id="prepare-metric-family">数据准备与识别</h3><p>先合并重复记录、确认公司实体，再从标题与摘要中拆出六组业务字段。</p></div>
+              </div>
+              <div class="methodology-card-grid">
+                <button type="button" class="methodology-summary-card primary" data-methodology-target="deduplication">
+                  <span>后端实际运行</span><strong>去重与来源合并</strong><b>URL + 标题</b><p>同一事件被多个入口命中时，保留一条主记录并合并来源与关联公司。</p><small>查看判重键和保留策略</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="entity-matching">
+                  <span>后端实际运行</span><strong>公司实体识别</strong><b>别名表</b><p>用中英日别名与专属来源绑定判定一条信息涉及哪些公司。</p><small>查看误命中边界</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="structured-extraction">
+                  <span>后端实际运行</span><strong>六组结构化提取</strong><b>6 组</b><p>靶点、疗法技术、产品需求、研发阶段、业务动作和活动信号。</p><small>查看全部标签与别名</small>
+                </button>
+              </div>
+            </section>
+
+            <section class="metric-family methodology-index-only" aria-labelledby="item-metric-family">
+              <div class="metric-family-head">
+                <span>02</span>
+                <div><h3 id="item-metric-family">单篇信息判断</h3><p>所有候选记录都可保留；这一层决定优先级、ACRO 业务距离与最终展示分层。</p></div>
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="news-score">
-                  <span>新闻右上角</span><strong>信息筛选分</strong><b>0+分</b><p>公司命中、来源可信度、主题和业务动作的规则加减分。</p><small>查看加分表与时效规则</small>
+                  <span>后端实际运行</span><strong>信息筛选分</strong><b>0+分</b><p>公司命中、来源可信度、主题和业务动作的规则加减分。</p><small>查看加分表与时效规则</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="acro-relevance">
-                  <span>单篇业务距离</span><strong>ACRO 相关性分</strong><b>0–100</b><p>根据公司角色、靶点、疗法、产品需求和研发阶段计算。</p><small>查看高中低阈值</small>
+                  <span>后端实际运行</span><strong>ACRO 相关性分</strong><b>0–100</b><p>根据公司角色、靶点、疗法、产品需求和研发阶段计算。</p><small>查看加分项与高中低阈值</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="daily-admission">
-                  <span>最终去向</span><strong>日报准入与分层</strong><b>3 层</b><p>筛选分过线后，还要经过 ACRO 相关性和专题类型校验。</p><small>查看即时、日报、归档边界</small>
+                  <span>后端实际运行</span><strong>日报准入与分层</strong><b>3 阶段</b><p>基础分层后，继续校验 ACRO 相关性、公司/动作证据与专题类型。</p><small>查看即时、日报、归档边界</small>
+                </button>
+              </div>
+            </section>
+
+            <section class="metric-family methodology-index-only" aria-labelledby="output-metric-family">
+              <div class="metric-family-head">
+                <span>03</span>
+                <div><h3 id="output-metric-family">分类与业务输出</h3><p>把结构化结果转成商业事件、建议动作和可追溯摘要。</p></div>
+              </div>
+              <div class="methodology-card-grid">
+                <button type="button" class="methodology-summary-card primary" data-methodology-target="event-classification">
+                  <span>后端实际运行</span><strong>商业事件分类</strong><b>9 类</b><p>按明确的优先级顺序，将信息归到产品、合作、临床监管等商业事件。</p><small>查看分类顺序与冲突处理</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="action-routing">
+                  <span>后端实际运行</span><strong>建议动作与负责人</strong><b>8 路由</b><p>按公司角色和业务信号，生成跟进类型、负责团队与优先级。</p><small>查看路由顺序和限制</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="summary-provenance">
+                  <span>规则自动 + 人工复核</span><strong>摘要与证据溯源</strong><b>可追溯</b><p>自动用规则提要；高价值条目可经 ChatGPT Pro 人工批处理后回填。</p><small>查看摘要来源和审核边界</small>
                 </button>
               </div>
             </section>
 
             <section class="metric-family methodology-index-only" aria-labelledby="account-metric-family">
               <div class="metric-family-head">
-                <span>02</span>
+                <span>04</span>
                 <div><h3 id="account-metric-family">公司与账户排序</h3><p>用近 90 天的多条公开信号排序，不代表内部客户关系或成交概率。</p></div>
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="priority-index">
-                  <span>账户排序</span><strong>优先指数</strong><b>0–99</b><p>综合日报数、高相关数、密度、时效、来源多样性和公开关系证据。</p><small>查看完整公式与行动阈值</small>
+                  <span>前端实时计算</span><strong>账户优先指数</strong><b>0–99</b><p>综合日报数、高相关数、密度、时效、来源多样性和可验证公开关系。</p><small>查看完整公式与行动阈值</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="relevance-density">
-                  <span>账户信号质量</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司近 90 天所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
+                  <span>前端实时计算</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司近 90 天所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="competitor-matrix">
-                  <span>竞品分布</span><strong>竞品动作矩阵</strong><b>90 天</b><p>按竞品和商业事件计数，颜色只表示当前矩阵的相对集中度。</p><small>查看计数口径与限制</small>
+                  <span>人工排名 + 前端计数</span><strong>竞品动作矩阵</strong><b>90 天</b><p>行按已确认的竞争相关度排序，列为当前数据量最大的 5 类事件。</p><small>查看计数口径与限制</small>
                 </button>
               </div>
             </section>
 
             <section class="metric-family methodology-index-only" aria-labelledby="operations-metric-family">
               <div class="metric-family-head">
-                <span>03</span>
+                <span>05</span>
                 <div><h3 id="operations-metric-family">统计与运行口径</h3><p>说清图表数字的分母、时间窗口和来源状态。</p></div>
               </div>
               <div class="methodology-card-grid">
-                <button type="button" class="methodology-summary-card" data-methodology-target="trend-counts">
-                  <span>信号走势</span><strong>图例后的数字</strong><b id="methodologyTrendCount">--</b><p>是当前筛选范围内的信息条数，不是公司数或来源数。</p><small>查看筛选条件如何影响</small>
+                <button type="button" class="methodology-summary-card primary" data-methodology-target="trend-counts">
+                  <span>前端实时计算</span><strong>信号走势图例数字</strong><b id="methodologyTrendCount">--</b><p>是当前筛选范围内且可定位到历史日期的信息条数。</p><small>查看时间语义与筛选条件</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="dashboard-counts">
-                  <span>总览四项</span><strong>当前范围统计</strong><b id="methodologyScopedCount">--</b><p>重大信号、竞品、账户和亚太都会随当前筛选条件变化。</p><small>查看四个指标的具体分子</small>
+                  <span>前端实时计算</span><strong>总览四项统计</strong><b id="methodologyScopedCount">--</b><p>重大信号、竞品、账户和亚太都会随当前筛选条件变化。</p><small>查看四项的分子与重叠关系</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="source-health">
-                  <span>运行监控</span><strong>数据源健康</strong><b id="methodologyHealthySources">--</b><p>区分“请求成功”和“本轮有产出”，零新闻不等于链路中断。</p><small>查看生产、归档、安静、异常的区别</small>
+                  <span>后端实际运行</span><strong>数据源健康</strong><b id="methodologyHealthySources">--</b><p>区分“请求成功”和“本轮有产出”，零新闻不等于链路中断。</p><small>查看生产、归档、安静、待启用与异常</small>
+                </button>
+              </div>
+            </section>
+
+            <section class="metric-family methodology-index-only" aria-labelledby="governance-metric-family">
+              <div class="metric-family-head">
+                <span>06</span>
+                <div><h3 id="governance-metric-family">存储与规则治理</h3><p>区分“配置了多少”、“本轮用了多少”、“产出了多少”，并保证页面说明与代码同步。</p></div>
+              </div>
+              <div class="methodology-card-grid">
+                <button type="button" class="methodology-summary-card primary" data-methodology-target="source-coverage">
+                  <span>后端数据 + 前端联动</span><strong>来源覆盖与产出质量</strong><b>三层口径</b><p>已登记入口、已启用请求和本轮实际命中不再混为一个数。</p><small>查看覆盖、命中与准入分子</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="data-storage">
+                  <span>当前实际架构</span><strong>数据存储与共享边界</strong><b>Git JSON</b><p>说明最新快照、历史、去重索引、浏览器状态各自保存在哪里。</p><small>查看实时容量与数据库迁移条件</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="rule-governance">
+                  <span>机器可读契约</span><strong>规则版本与一致性</strong><b id="ruleCatalogCardVersion">v--</b><p>一份规则目录统一记录公式、阈值、执行顺序、AI 策略和存储方式。</p><small>查看如何防止“文案一套、运行一套”</small>
                 </button>
               </div>
             </section>
 
             <div class="methodology-index-footer methodology-index-only">
               <div class="methodology-callout"><strong>三个不等于</strong><p>信息筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
-              <button class="methodology-cross-link" type="button" data-rule-page-target="structured-rules"><span>需要看信息是怎么被拆解的？</span><strong>打开六组结构化提取 →</strong></button>
+              <div class="methodology-callout verified"><strong>口径声明</strong><p>公式与执行顺序来自 <code>config/rule_catalog.json</code>；页面动态数字使用当前数据集重新计算。</p></div>
             </div>
 
             <div class="methodology-detail-list" id="methodologyDetailList" hidden>
+              <article class="methodology-detail" id="metric-deduplication" data-methodology-detail="deduplication">
+                <header><div><span>数据准备 · 后端实际运行</span><h3>去重与来源合并</h3></div><b>scripts/run_daily.py</b></header>
+                <p class="methodology-lead">防止同一条新闻被官网、Google News 和新闻稿平台同时抓到后变成多条。去重不删除证据，而是把多个入口合并到一条主记录。</p>
+                <div class="methodology-rule-columns">
+                  <dl class="methodology-rule-list">
+                    <div><dt>第一判重键</dt><dd>规范化 URL，去掉可忽略的差异后比对</dd></div>
+                    <div><dt>第二判重键</dt><dd>规范化标题长度至少 30 字符时再用标题判重</dd></div>
+                    <div><dt>主记录</dt><dd>保留首次出现的候选项</dd></div>
+                  </dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>合并字段</dt><dd>来源 ID、来源名、关联 URL 和命中公司</dd></div>
+                    <div><dt>摘要保留</dt><dd>重复项的摘要更长时，用更长版替换</dd></div>
+                    <div><dt>日期保留</dt><dd>主记录没有发布日期时，补入重复项日期</dd></div>
+                  </dl>
+                </div>
+                <div class="methodology-boundary"><strong>当前限制</strong><p>标题被媒体大幅改写、转载页 URL 完全不同时，仍可能留下多条；当前没有使用语义向量判重。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-entity-matching" data-methodology-detail="entity-matching">
+                <header><div><span>数据准备 · 后端实际运行</span><h3>公司实体识别</h3></div><b>别名 + 专属来源</b></header>
+                <p class="methodology-lead">公司名是平台的锚点。系统先将标题与来源摘要合并成检索文本，再用每家公司的中英日别名表匹配；专属官网入口还会提供公司归属。URL 只参与信息筛选分的公司别名命中，不直接写入 matched_company_ids。</p>
+                <div class="admission-flow">
+                  <div><span>1</span><strong>文本别名命中</strong><p>中文、英文、日文全称、简称和历史品牌名逐项匹配。</p></div>
+                  <div><span>2</span><strong>专属来源绑定</strong><p>来源配置已绑定 company_id 时，即使标题不重复公司名也可识别。</p></div>
+                  <div><span>3</span><strong>一条可命中多家</strong><p>合作、投资或交易新闻可同时绑定多个公司 ID。</p></div>
+                </div>
+                <div class="methodology-boundary"><strong>不自动推断</strong><p>命中公司名只证明信息中出现该实体，不证明它是客户、已成交或与 ACRO 存在内部业务关系。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-structured-extraction" data-methodology-detail="structured-extraction">
+                <header><div><span>数据准备 · 后端实际运行</span><h3>六组结构化提取</h3></div><b id="structuredRuleVersion">规则加载中</b></header>
+                <p class="methodology-lead">系统对标题 + 来源摘要做确定性别名命中，将中英日表述归一到标准标签。它是后续相关性、事件分类和建议动作的共用输入，不是独立的附属页。</p>
+                <div class="structured-rule-summary">
+                  <article><span>规则组</span><strong id="structuredGroupCount">--</strong><small>独立业务维度</small></article>
+                  <article><span>标准标签</span><strong id="structuredTermCount">--</strong><small>多语言别名归一</small></article>
+                  <article><span>已命中情报</span><strong id="structuredHitCount">--</strong><small>当前完整数据集</small></article>
+                </div>
+                <div class="structured-rule-scope" aria-label="结构化规则适用范围">
+                  <article><span>全局提取规则</span><strong>适用于所有公司</strong><p>六组字段统一提取。</p></article>
+                  <article><span>公司识别配置</span><strong>每家公司单独设置</strong><p>别名、监测重点和噪音词分开维护。</p></article>
+                  <article><span>业务判断规则</span><strong>当前以 ACRO 为中心</strong><p>产品需求、相关性与建议动作使用 ACRO 视角。</p></article>
+                </div>
+                <div class="structured-flow" aria-label="Structured processing flow">
+                  <div><span>01</span><strong>读取文本</strong><small>标题 + 来源摘要</small></div>
+                  <div><span>02</span><strong>同义词归一</strong><small>中英日别名</small></div>
+                  <div><span>03</span><strong>输出标准标签</strong><small>一组可多选</small></div>
+                  <div><span>04</span><strong>进入业务判断</strong><small>相关性 + 路由</small></div>
+                </div>
+                <div id="structuredRuleGrid" class="structured-rule-grid"></div>
+                <div class="methodology-boundary"><strong>当前限制</strong><p>这是精确别名匹配，不是大模型语义抽取；原文没有进入来源摘要的细节无法被提取，歧义表达也需人工核验。</p></div>
+              </article>
+
               <article class="methodology-detail" id="metric-news-score" data-methodology-detail="news-score">
-                <header><div><span>单篇信息 · 筛选</span><h3>信息筛选分</h3></div><b>新闻卡右上角</b></header>
-                <p class="methodology-lead">衡量这条信息是否值得进入筛选流程。它不是概率、百分比或 AI 主观评分，而是可解释的规则加减分。</p>
+                <header><div><span>单篇信息 · 后端实际运行</span><h3>信息筛选分</h3></div><b>scripts/run_daily.py</b></header>
+                <p class="methodology-lead">衡量候选信息的来源可信度、公司/主题/动作命中与时效性，用于粗排与基础分层。所有抓取候选项仍可保留在归档；这个分数不决定“是否存储”，也不是概率或 AI 主观评分。</p>
                 <div class="methodology-equation"><span>公式</span><strong>公司命中 + 来源可信度 + 主题命中 + 业务动作 + 事件类型 - 噪音/过期处理</strong></div>
                 <div class="methodology-rule-columns">
                   <dl class="methodology-rule-list">
                     <div><dt>公司别名命中</dt><dd>外部来源 +30；官方自有来源 +15</dd></div>
-                    <div><dt>专属公司入口</dt><dd>标题未重复公司名时 +15</dd></div>
+                    <div><dt>专属公司入口</dt><dd>文本未命中别名，但来源已绑定该公司时 +15</dd></div>
                     <div><dt>来源可信度</dt><dd>监管 +20；官方 +15；生态 +12；媒体/科研 +10；新闻稿平台 +8</dd></div>
                     <div><dt>战略主题</dt><dd>每命中 1 个 +6，最多 +30</dd></div>
                     <div><dt>业务动作</dt><dd>每命中 1 个 +8，最多 +25</dd></div>
@@ -749,11 +872,11 @@
               </article>
 
               <article class="methodology-detail" id="metric-acro-relevance" data-methodology-detail="acro-relevance">
-                <header><div><span>单篇信息 · 业务判断</span><h3>ACRO 相关性分</h3></div><b>0–100</b></header>
+                <header><div><span>单篇信息 · 后端实际运行</span><h3>ACRO 相关性分</h3></div><b>0–100</b></header>
                 <p class="methodology-lead">衡量一条信息与 ACRO 公司角色、技术领域和产品需求的距离。这个分数会决定信息是否有资格进入主管视图。</p>
                 <div class="methodology-rule-columns">
                   <dl class="methodology-rule-list">
-                    <div><dt>公司角色</dt><dd>本公司 +25；客户/账户 +30；竞品 +18</dd></div>
+                    <div><dt>公司角色</dt><dd>本公司 +25；客户/账户 +30；竞品 +18；一条命中多种角色时可累加</dd></div>
                     <div><dt>技术与产品</dt><dd>明确靶点 +12；重点疗法/技术 +12；可映射产品需求 +22</dd></div>
                     <div><dt>进展与动作</dt><dd>研发阶段 +10；明确业务动作 +10；活动信号 +6</dd></div>
                     <div><dt>监管信号</dt><dd>来源为监管机构或归类为监管 +8</dd></div>
@@ -765,12 +888,12 @@
                   </div>
                 </div>
                 <div class="methodology-example" id="methodologyRelevanceExample"><span>当前数据示例</span><p>加载中</p></div>
-                <div class="methodology-boundary"><strong>不能说明</strong><p>不代表新闻真实性、客户关系已确认、采购意愿或成交概率。</p></div>
+                <div class="methodology-boundary"><strong>不能说明</strong><p>不代表新闻真实性、客户关系已确认、采购意愿或成交概率。卡片上的“命中理由”最多展示前 4 项，但计分使用全部已命中类别。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-daily-admission" data-methodology-detail="daily-admission">
-                <header><div><span>单篇信息 · 最终准入</span><h3>日报准入与分层</h3></div><b>两道门槛</b></header>
-                <p class="methodology-lead">第一道看信息筛选分，第二道看 ACRO 相关性和业务动作。因此“高分”不一定最终进入日报。</p>
+                <header><div><span>单篇信息 · 后端实际运行</span><h3>日报准入与分层</h3></div><b>三阶段校验</b></header>
+                <p class="methodology-lead">第一阶段按信息筛选分和来源类型做基础分层，第二阶段校验 ACRO 相关性与业务证据，第三阶段处理专题类型与仅归档来源。因此“高分”不一定最终进入日报。</p>
                 <div class="admission-flow">
                   <div><span>1</span><strong>基础分层</strong><p>≥80 即时；≥50 日报；官方/生态/媒体来源 ≥40 可日报；明确动作 ≥45 可日报。</p></div>
                   <div><span>2</span><strong>ACRO 准入</strong><p>低相关一律归档；即时提醒只有高相关可保留，非高相关降为日报。</p></div>
@@ -779,8 +902,67 @@
                 <div class="methodology-boundary"><strong>解释顺序</strong><p>先展示“信息筛选分”，再展示“ACRO 相关性分”，最后说明“准入结果”。三者不要混用。</p></div>
               </article>
 
+              <article class="methodology-detail" id="metric-event-classification" data-methodology-detail="event-classification">
+                <header><div><span>业务输出 · 后端实际运行</span><h3>商业事件分类</h3></div><b>单选主类</b></header>
+                <p class="methodology-lead">每条信息按固定顺序只输出一个主商业事件。先命中的高优先规则会截止后续分类，所以顺序本身就是口径的一部分。</p>
+                <div class="methodology-scope-list">
+                  <span>1 质量与供应</span><span>2 客户需求</span><span>3 合作与交易</span><span>4 临床与监管</span><span>5 市场活动</span><span>6 地区扩张</span><span>7 产品与平台</span><span>8 靶点与疗法</span><span>9 公司战略</span>
+                </div>
+                <div class="methodology-rule-columns">
+                  <dl class="methodology-rule-list">
+                    <div><dt>质量与供应</dt><dd>GMP、quality、supply chain、ISO、material suitability 等明确词</dd></div>
+                    <div><dt>客户需求</dt><dd>建议动作已路由为潜客，或无公司角色但出现产品需求</dd></div>
+                    <div><dt>合作/交易</dt><dd>合作类别，或提取到共同开发、授权、并购等动作</dd></div>
+                  </dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>临床/监管</dt><dd>监管类别、研发阶段或临床/注册动作</dd></div>
+                    <div><dt>市场/产品/技术</dt><dd>根据信号类型、活动标签、产品类别、靶点与疗法依次判定</dd></div>
+                    <div><dt>默认</dt><dd>无更强业务信号时归为“公司战略”</dd></div>
+                  </dl>
+                </div>
+                <div class="methodology-boundary"><strong>不是多标签</strong><p>一条信息可以同时有多个结构化字段，但商业事件矩阵只使用一个主类，便于计数不重复。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-action-routing" data-methodology-detail="action-routing">
+                <header><div><span>业务输出 · 后端实际运行</span><h3>建议动作与负责人</h3></div><b>规则建议</b></header>
+                <p class="methodology-lead">这是一个确定性业务路由器，不是 AI 自主下决定。系统按顺序先看公司角色，再看产品需求、活动、监管和技术信号，生成一个建议动作。</p>
+                <div class="methodology-rule-columns">
+                  <dl class="methodology-rule-list">
+                    <div><dt>ACRO 自身</dt><dd>口径与传播跟进 · 市场运营</dd></div>
+                    <div><dt>客户/账户</dt><dd>客户需求跟进 · BD / 销售</dd></div>
+                    <div><dt>竞品</dt><dd>中高相关时做竞品对比 · 产品市场</dd></div>
+                    <div><dt>潜在需求</dt><dd>产品需求 + 阶段/动作时进入潜客识别</dd></div>
+                  </dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>活动</dt><dd>活动价值评估 · 区域市场</dd></div>
+                    <div><dt>监管</dt><dd>法规影响核对 · 产品 / 法规</dd></div>
+                    <div><dt>靶点/疗法</dt><dd>技术趋势观察 · 产品市场</dd></div>
+                    <div><dt>无强信号</dt><dd>归档观察 · 系统</dd></div>
+                  </dl>
+                </div>
+                <div class="methodology-boundary"><strong>人工负责</strong><p>建议动作只是分流线索，不会自动向客户发送消息、更新 CRM 或代替市场/销售做商业判断。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-summary-provenance" data-methodology-detail="summary-provenance">
+                <header><div><span>业务输出 · 混合工作流</span><h3>摘要与证据溯源</h3></div><b id="summaryStrategyStatus">加载中</b></header>
+                <p class="methodology-lead">默认每轮自动使用可解释规则生成业务提要，不调用付费 LLM API。对真正需要高质量摘要的条目，可导出批次，用 ChatGPT Pro 人工处理并核对原文后回填。</p>
+                <div class="admission-flow">
+                  <div><span>1</span><strong>自动规则提要</strong><p>使用公司角色、结构化字段、原始摘要与建议动作组装。</p></div>
+                  <div><span>2</span><strong>ChatGPT Pro 批处理</strong><p>只导出高价值候选，人工提交给 Pro，不在 GitHub Actions 中消耗 API。</p></div>
+                  <div><span>3</span><strong>核对后回填</strong><p>按稳定 item id 导入，记录 provider、model、时间与审核状态。</p></div>
+                </div>
+                <div class="methodology-example"><span>当前运行状态</span><p id="summaryPipelineDetail">加载中</p></div>
+                <dl class="methodology-rule-list wide">
+                  <div><dt>原始证据</dt><dd>来源 URL、来源类型、可引用摘录、相关链接与核验状态</dd></div>
+                  <div><dt>摘要标识</dt><dd>rule_extractive / manual_ai / api_ai 分开展示</dd></div>
+                  <div><dt>人工导出</dt><dd><code>scripts/export_manual_summary_batch.py</code></dd></div>
+                  <div><dt>人工回填</dt><dd><code>scripts/import_manual_summaries.py</code></dd></div>
+                </dl>
+                <div class="methodology-boundary"><strong>真实性边界</strong><p>规则提要和 ChatGPT Pro 摘要都不是原始证据。需要用于对外传播、销售跟进或业务结论时，必须打开原文核对。</p></div>
+              </article>
+
               <article class="methodology-detail" id="metric-priority-index" data-methodology-detail="priority-index">
-                <header><div><span>公司级 · 行动排序</span><h3>账户优先指数</h3></div><b>0–99</b></header>
+                <header><div><span>公司级 · 前端实时计算</span><h3>账户优先指数</h3></div><b>0–99</b></header>
                 <p class="methodology-lead">把一家公司近 90 天的多条公开信号合成一个跟进顺序分。对信号数和来源数使用 log2，避免“发稿多”的大公司无限占优。</p>
                 <div class="methodology-equation"><span>公式</span><strong>min(99, 日报数权重 + 高相关数权重 + 密度权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
                 <dl class="methodology-rule-list wide">
@@ -790,7 +972,7 @@
                   <div><dt>时效</dt><dd>7 天内 +12；30 天内 +7；仅有更旧信号 +2</dd></div>
                   <div><dt>来源多样性</dt><dd>log2(1 + 去重后来源数) × 2.5</dd></div>
                   <div><dt>事件多样性</dt><dd>优先统计已入日报信号；没有时依次用高相关、全部信号。不同类型最多 +4</dd></div>
-                  <div><dt>公开关系证据</dt><dd>已有公开证据 +3</dd></div>
+                  <div><dt>公开关系证据</dt><dd>对应账户至少 1 条 public_evidence 同时包含 source_url 和 summary 时 +3</dd></div>
                 </dl>
                 <div class="methodology-thresholds horizontal">
                   <div class="level-high"><span>优先核验</span><strong>≥76</strong><p>且至少 2 条进入日报。</p></div>
@@ -802,7 +984,7 @@
               </article>
 
               <article class="methodology-detail" id="metric-relevance-density" data-methodology-detail="relevance-density">
-                <header><div><span>公司级 · 信号质量</span><h3>ACRO 相关密度</h3></div><b>0–100%</b></header>
+                <header><div><span>公司级 · 前端实时计算</span><h3>ACRO 相关密度</h3></div><b>0–100%</b></header>
                 <p class="methodology-lead">这是一家公司近 90 天信号的“质量占比”，而不是 ACRO 与该公司的关系强度。</p>
                 <div class="methodology-equation"><span>公式</span><strong>(高相关条数 + 中相关条数 × 0.55) ÷ 近 90 天全部命中条数 × 100%</strong></div>
                 <div class="density-explain-grid">
@@ -816,12 +998,12 @@
               </article>
 
               <article class="methodology-detail" id="metric-trend-counts" data-methodology-detail="trend-counts">
-                <header><div><span>图表 · 当前筛选</span><h3>信号走势图例数字</h3></div><b>条数</b></header>
-                <p class="methodology-lead">例如“本公司 29”表示：在当前页面筛选范围和观察周期内，被识别为“本公司”角色的信息共 29 条。</p>
+                <header><div><span>图表 · 前端实时计算</span><h3>信号走势图例数字</h3></div><b>条数</b></header>
+                <p class="methodology-lead" id="methodologyTrendExample">正在按当前筛选和观察周期计算。</p>
                 <div class="methodology-scope-list">
                   <span>观察周期</span><span>推送分层</span><span>ACRO 相关性</span><span>信息类型</span><span>公司</span><span>公司角色</span><span>地区</span><span>商业事件</span><span>搜索词</span>
                 </div>
-                <div class="methodology-boundary"><strong>不是什么</strong><p>不是公司数、数据源数或固定的日报总数；它严格继承当前页面的筛选状态。</p></div>
+                <div class="methodology-boundary"><strong>日期语义</strong><p>新闻使用发布日期；已举办活动使用活动日期。未来活动和无可用日期的记录不硬塞到“今天”的历史走势。该数字不是公司数或来源数。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-dashboard-counts" data-methodology-detail="dashboard-counts">
@@ -836,12 +1018,12 @@
               </article>
 
               <article class="methodology-detail" id="metric-competitor-matrix" data-methodology-detail="competitor-matrix">
-                <header><div><span>公司级 · 分布</span><h3>竞品动作矩阵</h3></div><b>近 90 天</b></header>
+                <header><div><span>公司级 · 人工排名 + 前端计数</span><h3>竞品动作矩阵</h3></div><b>近 90 天</b></header>
                 <p class="methodology-lead">每个单元格是某家竞品在某类商业事件上的全部命中信息条数。点击数字可回到原始证据。</p>
                 <div class="methodology-rule-columns">
                   <dl class="methodology-rule-list">
                     <div><dt>行</dt><dd>竞品公司，按已确认的竞争相关程度排序</dd></div>
-                    <div><dt>列</dt><dd>临床监管、产品平台、质量供应等商业事件</dd></div>
+                    <div><dt>列</dt><dd>9 类商业事件中，按当前 90 天全部竞品命中数动态选取前 5 类</dd></div>
                   </dl>
                   <dl class="methodology-rule-list">
                     <div><dt>数字</dt><dd>近 90 天当前公司 × 事件类型的信息条数</dd></div>
@@ -852,59 +1034,67 @@
               </article>
 
               <article class="methodology-detail" id="metric-source-health" data-methodology-detail="source-health">
-                <header><div><span>运行级 · 链路</span><h3>数据源健康状态</h3></div><b>请求 ≠ 产出</b></header>
+                <header><div><span>运行级 · 后端实际运行</span><h3>数据源健康状态</h3></div><b>请求 ≠ 产出</b></header>
                 <div class="health-definition-grid">
                   <div class="productive"><strong>有日报产出</strong><p>本轮有内容，且至少 1 条进入日报/即时层。</p></div>
                   <div class="archive"><strong>仅归档产出</strong><p>本轮抓到内容，但都未通过日报准入。</p></div>
                   <div class="quiet"><strong>正常安静</strong><p>请求成功但本轮无新内容，不等于链路中断。</p></div>
-                  <div class="pending"><strong>待配置/未运行</strong><p>入口已登记，但尚未启用、缺少必要配置或本轮没有发起请求。</p></div>
-                  <div class="error"><strong>异常/待处理</strong><p>请求失败或连续无法解析，需要运维核查。</p></div>
+                  <div class="pending"><strong>已登记未启用</strong><p>来源配置的 enabled=false，本轮不发起请求。</p></div>
+                  <div class="error"><strong>异常/待处理</strong><p>配置、请求或解析失败，需要运维核查。</p></div>
                 </div>
                 <div class="methodology-boundary"><strong>评估原则</strong><p>健康看链路是否可达，产出看是否有新内容，质量看是否有内容进日报。三个问题分开回答。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-source-coverage" data-methodology-detail="source-coverage">
+                <header><div><span>数据源 · 后端数据 + 前端联动</span><h3>来源覆盖与产出质量</h3></div><b>配置 ≠ 命中 ≠ 日报</b></header>
+                <p class="methodology-lead">数据源地图展示“方法库”，公司数据源档案展示“这家公司配了哪些入口”，健康与产出页展示“本轮实际请求和产出”。三个页面看的是同一链路的不同层，不应该拿总数直接比。</p>
+                <div class="admission-flow">
+                  <div><span>1</span><strong>方法库/已登记</strong><p>可能使用的来源类型和具体入口，包含待启用与未来付费方案。</p></div>
+                  <div><span>2</span><strong>已启用/已请求</strong><p>enabled=true 的运行来源；每轮仍可能因异常或无新内容而零产出。</p></div>
+                  <div><span>3</span><strong>实际命中/进入日报</strong><p>当轮匹配到公司的条目数，以及经过准入后的日报/即时数。</p></div>
+                </div>
+                <dl class="methodology-rule-list wide">
+                  <div><dt>公司档案覆盖</dt><dd>专属入口 + 适用该公司的共享入口</dd></div>
+                  <div><dt>实际命中</dt><dd>本轮候选项中 source_id 与 company_id 的真实关联</dd></div>
+                  <div><dt>日报产出</dt><dd>tier 为 daily 或 immediate 的命中数</dd></div>
+                  <div><dt>选择率</dt><dd>日报/即时数 ÷ 本轮实际命中数；分母为 0 时不计</dd></div>
+                </dl>
+                <div class="methodology-boundary"><strong>为什么数字不同</strong><p>一家公司可以配置 10 个入口，但本轮只有 2 个来源命中、1 条进日报。这不是数据断链，而是覆盖、产出和质量三种分子。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-data-storage" data-methodology-detail="data-storage">
+                <header><div><span>系统架构 · 当前实际实现</span><h3>数据存储与共享边界</h3></div><b>无数据库</b></header>
+                <p class="methodology-lead">当前 MVP 使用“Git 版本化 JSON + GitHub Pages 静态读取”。GitHub Actions 定时抓取后写入仓库，页面读取已发布的快照。它可以免费共享和回溯，但不具备多人实时写入、权限隔离和复杂查询能力。</p>
+                <div class="storage-profile-grid">
+                  <div><span>最新快照</span><strong id="storageLatestSnapshot">加载中</strong><p><code>data/latest_run.json</code></p></div>
+                  <div><span>每日历史</span><strong id="storageHistorySize">加载中</strong><p><code>data/history/*.json</code></p></div>
+                  <div><span>去重索引</span><strong id="storageDedupeCount">加载中</strong><p><code>data/seen_urls.json</code></p></div>
+                  <div><span>来源变化状态</span><strong id="storageSourceState">加载中</strong><p><code>data/source_snapshots.json</code></p></div>
+                </div>
+                <dl class="methodology-rule-list wide">
+                  <div><dt>公开 API 快照</dt><dd><code>api/public/*.json</code>，供静态页面和后续 Agent 读取</dd></div>
+                  <div><dt>离线页面</dt><dd><code>web/embedded-data.js</code> 和单文件 share HTML</dd></div>
+                  <div><dt>浏览器本地</dt><dd>反馈、已读/已核验/已行动状态和语言偏好只在当前设备 localStorage</dd></div>
+                  <div><dt>不会发生</dt><dd>访问者无法从 GitHub Pages 修改仓库数据，本地反馈也不会自动回写</dd></div>
+                </dl>
+                <div class="methodology-boundary"><strong>迁移触发条件</strong><p>当需要多人共享处理状态、按用户权限查看内部客户信息、跨数年快速检索或仓库体积持续增长时，再迁移到 Supabase/PostgreSQL 等数据库。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-rule-governance" data-methodology-detail="rule-governance">
+                <header><div><span>规则治理 · 机器可读契约</span><h3>规则版本与一致性</h3></div><b>config/rule_catalog.json</b></header>
+                <p class="methodology-lead">页面说明不再以某个人记得的口径为准。机器可读规则契约记录版本、执行顺序、分数权重、阈值、来源健康定义、AI 策略与存储方式。</p>
+                <div class="admission-flow">
+                  <div><span>1</span><strong>修改规则</strong><p>先修改实际执行代码与规则契约，再同步可读文案。</p></div>
+                  <div><span>2</span><strong>自动契约校验</strong><p>对公式、阈值、规则 ID、页面详情和摘要方法做回归检查。</p></div>
+                  <div><span>3</span><strong>通过才发布</strong><p>GitHub Actions 在生成页面前运行数据校验和规则契约校验。</p></div>
+                </div>
+                <div class="methodology-equation"><span>执行顺序</span><strong>去重合并 → 公司识别 → 信息筛选分 → 结构化提取 → ACRO 相关性 → 建议动作 → 商业事件 → 日报准入 → 来源归档策略 → 摘要 → 存储发布</strong></div>
+                <div class="methodology-boundary"><strong>真实性声明</strong><p>上述公式与执行顺序按当前代码审计后写入契约。人工配置的竞品排名和公司角色会明确标注，不伪装成算法推断。</p></div>
               </article>
             </div>
           </div>
 
         </div>
-      </section>
-
-      <section class="structured-rules-section page-panel" data-page="structured-rules" aria-label="Structured intelligence rules">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">结构化规则</p>
-            <h2>六组医药情报信息如何从新闻中被提取</h2>
-          </div>
-          <span class="timestamp" id="structuredRuleVersion">规则加载中</span>
-        </div>
-        <div class="structured-rule-summary">
-          <article><span>规则组</span><strong id="structuredGroupCount">--</strong><small>独立业务维度</small></article>
-          <article><span>标准标签</span><strong id="structuredTermCount">--</strong><small>多语言别名归一</small></article>
-          <article><span>已命中情报</span><strong id="structuredHitCount">--</strong><small>当前完整数据集</small></article>
-        </div>
-        <div class="structured-rule-scope" aria-label="结构化规则适用范围">
-          <article>
-            <span>全局提取规则</span>
-            <strong>适用于所有公司</strong>
-            <p>靶点、疗法、产品需求、研发阶段、业务动作和活动信号统一提取。</p>
-          </article>
-          <article>
-            <span>公司识别配置</span>
-            <strong>每家公司单独设置</strong>
-            <p>公司别名、监测重点、关键词和噪音词按照公司档案分别维护。</p>
-          </article>
-          <article>
-            <span>业务判断规则</span>
-            <strong>当前以 ACRO 为中心</strong>
-            <p>相关性、产品机会和建议动作从 ACRO 的市场与 BD 视角判断。</p>
-          </article>
-        </div>
-        <div class="structured-flow" aria-label="Structured processing flow">
-          <div><span>01</span><strong>读取原文</strong><small>标题 + 摘要</small></div>
-          <div><span>02</span><strong>同义词归一</strong><small>中英日别名</small></div>
-          <div><span>03</span><strong>判断 ACRO 相关性</strong><small>公司角色 + 产品需求</small></div>
-          <div><span>04</span><strong>生成建议动作</strong><small>负责人 + 优先级</small></div>
-        </div>
-        <div id="structuredRuleGrid" class="structured-rule-grid"></div>
       </section>
 
       <section class="questions-section page-panel" data-page="questions" aria-label="Product decisions">
@@ -919,7 +1109,7 @@
           <div class="decided"><b>已确定</b><strong>准入标准</strong><span>高分即时提醒、中分进入日报、低分归档；低 ACRO 相关内容不进入主管视图。</span></div>
           <div class="decided"><b>已确定</b><strong>公开边界</strong><span>GitHub Pages 只展示公开数据；销售表中的内部关系状态不发布。</span></div>
           <div class="next"><b>下一阶段</b><strong>协作闭环</strong><span>确认谁负责核验、分派和关闭信号，并决定是否接入多人共享数据库。</span></div>
-          <div class="next"><b>下一阶段</b><strong>AI 摘要预算</strong><span>确定模型、每轮摘要条数和月度预算，把规则提要升级为稳定的事实摘要。</span></div>
+          <div class="decided"><b>已确定</b><strong>AI 摘要策略</strong><span>自动链路继续使用可解释规则；高价值条目用 ChatGPT Pro 人工批处理、核对后回填，不接付费 LLM API。</span></div>
           <div class="next"><b>下一阶段</b><strong>销售系统连接</strong><span>决定账户跟进结果进入 CRM、飞书多维表格，还是先保留平台内轻量状态。</span></div>
         </div>
       </section>
@@ -1000,7 +1190,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260901rules"></script>
-    <script src="./app.js?v=20260901rules"></script>
+    <script src="./embedded-data.js?v=20260901rules6"></script>
+    <script src="./app.js?v=20260901rules6"></script>
   </body>
 </html>

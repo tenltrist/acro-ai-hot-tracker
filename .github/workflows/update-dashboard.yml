@@ -15,6 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate executable rule contract
+        run: python3 scripts/validate_rule_contract.py
+
       - name: Generate dashboard data
         run: python3 scripts/run_daily.py --days 90
 

@@ -219149,6 +219149,372 @@ window.AIHOT_INTELLIGENCE_RULES = {
     }
   }
 };
+window.AIHOT_RULE_CATALOG = {
+  "version": "2026.09.1",
+  "verified_at": "2026-09-01",
+  "strategy": {
+    "automatic_summary": "rules_only",
+    "automatic_llm_api": false,
+    "manual_summary_tool": "ChatGPT Pro",
+    "manual_summary_mode": "human_batch_review",
+    "note": "自动流水线使用可解释规则提要；高价值条目可导出后在 ChatGPT Pro 中人工批处理，经人工核对再回填。"
+  },
+  "execution_order": [
+    "deduplicate_and_merge_sources",
+    "match_companies",
+    "information_score",
+    "structured_extraction",
+    "acro_relevance",
+    "recommended_action",
+    "business_event_classification",
+    "daily_admission",
+    "source_archive_policy",
+    "rule_summary_or_manual_summary",
+    "persist_json_and_publish"
+  ],
+  "rule_modules": [
+    {
+      "id": "deduplication",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:dedupe"
+    },
+    {
+      "id": "entity-matching",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:match_companies"
+    },
+    {
+      "id": "structured-extraction",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:extract_intelligence"
+    },
+    {
+      "id": "news-score",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:score_candidate"
+    },
+    {
+      "id": "acro-relevance",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:build_acro_relevance"
+    },
+    {
+      "id": "daily-admission",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:apply_daily_admission_policy"
+    },
+    {
+      "id": "event-classification",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:classify_business_event_type"
+    },
+    {
+      "id": "action-routing",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:build_recommended_action"
+    },
+    {
+      "id": "summary-provenance",
+      "engine": "backend_and_manual",
+      "implementation": "scripts/run_daily.py and scripts/import_manual_summaries.py"
+    },
+    {
+      "id": "priority-index",
+      "engine": "frontend",
+      "implementation": "web/app.js:buildCustomerAccountPriorities"
+    },
+    {
+      "id": "relevance-density",
+      "engine": "frontend",
+      "implementation": "web/app.js:buildCustomerAccountPriorities"
+    },
+    {
+      "id": "competitor-matrix",
+      "engine": "manual_rank_and_frontend_count",
+      "implementation": "config/companies.json and web/app.js:renderCompanyTopicMatrix"
+    },
+    {
+      "id": "trend-counts",
+      "engine": "frontend",
+      "implementation": "web/app.js:getTrendAge and renderSignalTrend"
+    },
+    {
+      "id": "dashboard-counts",
+      "engine": "frontend",
+      "implementation": "web/app.js:renderOverviewScope"
+    },
+    {
+      "id": "source-health",
+      "engine": "backend",
+      "implementation": "scripts/run_daily.py:build_payload"
+    },
+    {
+      "id": "source-coverage",
+      "engine": "backend_and_frontend",
+      "implementation": "data/latest_run.json:company_source_coverage and web/app.js"
+    },
+    {
+      "id": "data-storage",
+      "engine": "build",
+      "implementation": "scripts/build_share_page.py"
+    },
+    {
+      "id": "rule-governance",
+      "engine": "validation",
+      "implementation": "scripts/validate_rule_contract.py"
+    }
+  ],
+  "deduplication": {
+    "primary_key": "normalized_url",
+    "secondary_key": "normalized_title when normalized title length is at least 30",
+    "merge_fields": [
+      "matched_company_ids",
+      "source_ids",
+      "source_labels",
+      "related_urls"
+    ],
+    "summary_policy": "keep the longer summary",
+    "published_policy": "fill a missing publication date from the duplicate"
+  },
+  "entity_matching": {
+    "search_fields": [
+      "title",
+      "summary"
+    ],
+    "company_configuration": "config/companies.json aliases",
+    "dedicated_source_binding": "source company_id",
+    "multiple_company_matches": true,
+    "relationship_inference": false
+  },
+  "structured_extraction": {
+    "input_fields": [
+      "title",
+      "summary"
+    ],
+    "configuration": "config/intelligence_rules.json",
+    "groups": [
+      "targets",
+      "modalities",
+      "product_needs",
+      "development_stages",
+      "business_actions",
+      "event_signals"
+    ],
+    "matching": "normalized deterministic alias matching",
+    "event_signal_gate": "event_signals only run for category=event or signal_type=event"
+  },
+  "information_score": {
+    "company_alias": {
+      "external": 30,
+      "owned": 15,
+      "dedicated_source": 15
+    },
+    "source_trust": {
+      "regulator": 20,
+      "owned": 15,
+      "ecosystem": 12,
+      "research": 10,
+      "media": 10,
+      "wire": 8
+    },
+    "strategic_topic": {
+      "per_hit": 6,
+      "maximum": 30
+    },
+    "business_action": {
+      "per_hit": 8,
+      "maximum": 25
+    },
+    "category_bonus": {
+      "partnership": 10,
+      "product": 10,
+      "event": 10,
+      "regulatory": 8,
+      "market": 8,
+      "video": 5,
+      "research": 5
+    },
+    "noise_penalty": 35,
+    "age_policy": {
+      "action_penalty": 10,
+      "action_floor": 40,
+      "ordinary_cap": 25,
+      "hard_age_multiplier": 2,
+      "hard_cap": 25
+    },
+    "minimum": 0,
+    "maximum": null
+  },
+  "acro_relevance": {
+    "role_weights": {
+      "self": 25,
+      "customer": 30,
+      "competitor": 18
+    },
+    "signal_weights": {
+      "targets": 12,
+      "modalities": 12,
+      "product_needs": 22,
+      "development_stages": 10,
+      "business_actions": 10,
+      "event_signals": 6,
+      "regulatory": 8
+    },
+    "maximum": 100,
+    "thresholds": {
+      "high": 50,
+      "medium": 24
+    }
+  },
+  "daily_admission": {
+    "base_thresholds": {
+      "immediate": 80,
+      "daily": 50,
+      "owned_ecosystem_media": 40,
+      "business_action": 45
+    },
+    "forced_archive_signal_types": [
+      "video",
+      "research",
+      "funding",
+      "clinical_trial"
+    ],
+    "low_relevance_archive": true,
+    "medium_without_company_or_action_archive": true,
+    "immediate_requires_high_relevance": true,
+    "archive_only_source_archive": true
+  },
+  "action_routing": {
+    "precedence": [
+      "self",
+      "customer",
+      "competitor_with_medium_or_high_relevance",
+      "product_need_with_stage_or_action",
+      "event",
+      "regulatory",
+      "target_or_modality",
+      "archive"
+    ],
+    "automatic_external_action": false,
+    "outputs": [
+      "type",
+      "label",
+      "owner",
+      "priority",
+      "text"
+    ]
+  },
+  "business_event_classification": {
+    "single_primary_class": true,
+    "precedence": [
+      "quality_supply",
+      "customer_demand",
+      "partnership_deal",
+      "clinical_regulatory",
+      "market_activity",
+      "regional_expansion",
+      "product_platform",
+      "target_therapy",
+      "customer_demand_without_role",
+      "corporate_strategy"
+    ]
+  },
+  "summary_provenance": {
+    "default_method": "rule_extractive",
+    "manual_method": "manual_ai",
+    "manual_provider": "chatgpt_pro_manual",
+    "legacy_api_method": "api_ai",
+    "manual_store": "data/manual_summaries.json",
+    "manual_requires_human_source_review": true
+  },
+  "account_priority": {
+    "window_days": 90,
+    "maximum": 99,
+    "selected_log_weight": 6,
+    "high_relevance_log_weight": 4,
+    "density_weight": 0.14,
+    "freshness": {
+      "within_7_days": 12,
+      "within_30_days": 7,
+      "older": 2
+    },
+    "source_diversity_log_weight": 2.5,
+    "event_diversity_maximum": 4,
+    "verified_public_relationship_bonus": 3,
+    "thresholds": {
+      "priority_check": 76,
+      "priority_check_minimum_selected": 2,
+      "follow_this_week": 54,
+      "follow_this_week_minimum_selected": 1
+    }
+  },
+  "relevance_density": {
+    "window_days": 90,
+    "weights": {
+      "high": 1.0,
+      "medium": 0.55,
+      "low": 0.0
+    }
+  },
+  "competitor_matrix": {
+    "window_days": 90,
+    "row_order": "competitive_relevance_rank ascending from config/companies.json",
+    "primary_scope_first": true,
+    "column_selection": "top business event classes by total matched item count",
+    "maximum_columns": 5,
+    "cell_value": "all matched item count",
+    "color_scale": "relative to the largest cell in the current matrix"
+  },
+  "source_health": {
+    "productive": "enabled, request completed, and at least one item entered daily or immediate",
+    "archive_only": "enabled, request completed, and items were collected but none entered daily or immediate",
+    "quiet": "enabled, no request error, and no item was collected in the current run",
+    "pending": "source is registered with enabled=false and was not requested",
+    "error": "configuration, request, or parsing failed"
+  },
+  "trend_counts": {
+    "news_date": "age_days derived from publication date",
+    "past_event_date": "absolute days_until_event when days_until_event <= 0",
+    "future_events_in_historical_trend": false,
+    "undated_items_in_historical_trend": false,
+    "inherits_current_filters": true
+  },
+  "source_coverage": {
+    "registered": "configured source entry, whether enabled or disabled",
+    "enabled": "source enabled=true and eligible to be requested",
+    "actual_hits": "current-run items associated with the source and company",
+    "selected": "actual hits whose tier is daily or immediate",
+    "selection_rate": "selected / actual_hits when actual_hits > 0"
+  },
+  "rule_governance": {
+    "catalog_is_machine_readable": true,
+    "detail_page_count": 18,
+    "validation_command": "python3 scripts/validate_rule_contract.py",
+    "publish_requires_validation": true
+  },
+  "storage": {
+    "mode": "git_versioned_json",
+    "database": false,
+    "latest_snapshot": "data/latest_run.json",
+    "daily_history": "data/history/YYYY-MM-DD.json",
+    "deduplication_index": "data/seen_urls.json",
+    "source_change_state": "data/source_snapshots.json",
+    "public_api": "api/public/*.json",
+    "offline_bundle": "web/embedded-data.js and share/acro_ai_hot_tracker_dashboard.html",
+    "browser_local_state": "localStorage: feedback, workflow status, and language preference",
+    "multi_user_write": false,
+    "note": "GitHub Pages 只读取静态文件；浏览器中的反馈与处理状态只保存在当前设备，不会回写 GitHub。"
+  }
+};
+window.AIHOT_STORAGE_PROFILE = {
+  "latest_snapshot_bytes": 9255490,
+  "latest_item_count": 2110,
+  "history_file_count": 36,
+  "history_total_bytes": 176743,
+  "deduplication_url_count": 7967,
+  "deduplication_index_bytes": 4120541,
+  "source_snapshot_bytes": 167069
+};
 window.AIHOT_COMPANY_RELATIONSHIPS = {
   "version": 1,
   "updated_at": "2026-08-02",

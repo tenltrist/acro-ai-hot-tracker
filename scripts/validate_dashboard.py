@@ -133,10 +133,12 @@ def main() -> int:
             errors.append(f"{item_id}: unknown source ids {sorted(orphan_sources)}")
         if item.get("business_event_type") not in allowed_events:
             errors.append(f"{item_id}: missing or invalid business_event_type")
-        if item.get("summary_method") not in {"rule", "llm"}:
+        if item.get("summary_method") not in {"rule", "llm", "manual_ai"}:
             errors.append(f"{item_id}: invalid summary_method")
         if item.get("summary_method") == "llm" and not item.get("summary_provider"):
             errors.append(f"{item_id}: LLM summary is missing provider provenance")
+        if item.get("summary_method") == "manual_ai" and item.get("summary_provider") != "chatgpt_pro_manual":
+            errors.append(f"{item_id}: manual AI summary is missing ChatGPT Pro provenance")
         if item.get("tier") in {"daily", "immediate"} and item.get("acro_relevance", {}).get("level") == "low":
             errors.append(f"{item_id}: low-relevance item entered the daily feed")
         if item.get("event_start_at") and item.get("published_at"):
@@ -174,6 +176,8 @@ def main() -> int:
     summary_pipeline = payload.get("summary_pipeline", {})
     if summary_pipeline.get("status") not in {
         "rules_only",
+        "rules_plus_manual",
+        "policy_disabled",
         "configuration_error",
         "request_error",
         "limit_reached",

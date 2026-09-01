@@ -100,15 +100,24 @@ const state = {
 };
 
 const methodologyDetailMeta = {
+  "deduplication": { family: "数据准备与识别", title: "去重与来源合并" },
+  "entity-matching": { family: "数据准备与识别", title: "公司实体识别" },
+  "structured-extraction": { family: "数据准备与识别", title: "六组结构化提取" },
   "news-score": { family: "单篇信息判断", title: "信息筛选分" },
   "acro-relevance": { family: "单篇信息判断", title: "ACRO 相关性分" },
   "daily-admission": { family: "单篇信息判断", title: "日报准入与分层" },
+  "event-classification": { family: "分类与业务输出", title: "商业事件分类" },
+  "action-routing": { family: "分类与业务输出", title: "建议动作与负责人" },
+  "summary-provenance": { family: "分类与业务输出", title: "摘要与证据溯源" },
   "priority-index": { family: "公司与账户排序", title: "优先指数" },
   "relevance-density": { family: "公司与账户排序", title: "ACRO 相关密度" },
   "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
   "trend-counts": { family: "统计与运行口径", title: "信号走势图例数字" },
   "dashboard-counts": { family: "统计与运行口径", title: "总览四项统计口径" },
   "source-health": { family: "统计与运行口径", title: "数据源健康状态" },
+  "source-coverage": { family: "存储与规则治理", title: "来源覆盖与产出质量" },
+  "data-storage": { family: "存储与规则治理", title: "数据存储与共享边界" },
+  "rule-governance": { family: "存储与规则治理", title: "规则契约与版本校验" },
 };
 
 const officialContentGroups = [
@@ -1920,8 +1929,7 @@ const pageMeta = {
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 运营档案"],
-  methodology: ["Metrics & Rules", "指标口径与判断依据"],
-  "structured-rules": ["Intelligence Operations", "六组结构化情报规则"],
+  methodology: ["Rules & Definitions", "规则中心：运行逻辑与指标口径"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
   questions: ["Product Decisions", "已确定边界与下一阶段决策"],
   "source-health": ["Source Operations", "数据源健康与产出质量"],
@@ -2146,13 +2154,25 @@ const els = {
   methodologyIndexBlocks: document.querySelectorAll(".methodology-index-only"),
   methodologyDetailList: document.querySelector("#methodologyDetailList"),
   methodologyDetails: document.querySelectorAll("[data-methodology-detail]"),
+  methodologyVersion: document.querySelector("#methodologyVersion"),
+  methodologyVerifiedAt: document.querySelector("#methodologyVerifiedAt"),
+  ruleCatalogCardVersion: document.querySelector("#ruleCatalogCardVersion"),
   methodologyTrendCount: document.querySelector("#methodologyTrendCount"),
+  methodologyTrendExample: document.querySelector("#methodologyTrendExample"),
   methodologyScopedCount: document.querySelector("#methodologyScopedCount"),
   methodologyHealthySources: document.querySelector("#methodologyHealthySources"),
   methodologyNewsExample: document.querySelector("#methodologyNewsExample"),
   methodologyRelevanceExample: document.querySelector("#methodologyRelevanceExample"),
   methodologyPriorityExample: document.querySelector("#methodologyPriorityExample"),
   methodologyDensityExample: document.querySelector("#methodologyDensityExample"),
+  summaryStrategyStatus: document.querySelector("#summaryStrategyStatus"),
+  summaryPipelineDetail: document.querySelector("#summaryPipelineDetail"),
+  storageLatestSnapshot: document.querySelector("#storageLatestSnapshot"),
+  storageHistorySize: document.querySelector("#storageHistorySize"),
+  storageDedupeCount: document.querySelector("#storageDedupeCount"),
+  storageSourceState: document.querySelector("#storageSourceState"),
+  storagePipelineSnapshot: document.querySelector("#storagePipelineSnapshot"),
+  storagePipelineHistory: document.querySelector("#storagePipelineHistory"),
   pagePanels: document.querySelectorAll("[data-page]"),
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
@@ -2301,7 +2321,7 @@ function isStrongCustomerMatchTerm(value) {
   const compact = value.replace(/[^a-z0-9一-鿿぀-ヿ]/g, "");
   const cjkCount = (compact.match(/[一-鿿぀-ヿ]/g) || []).length;
   if (cjkCount >= 3) return true;
-  if (compact.length < 6) return false;
+  if (compact.length < 5) return false;
   const tokens = value.split(/[^a-z0-9]+/).filter(Boolean);
   const genericTokens = new Set([
     "bio", "biotech", "biotechnology", "cell", "chemical", "diagnostics", "institute",
@@ -2322,6 +2342,27 @@ function getAccountMatchTerms(account) {
     if (simplified !== normalized && isStrongCustomerMatchTerm(simplified)) terms.add(simplified);
   }
   return [...terms];
+}
+
+function findAccountForCompany(company, accounts = getJapanAccountData().accounts || []) {
+  if (company.account_origin_id) {
+    const linked = accounts.find((account) => account.id === company.account_origin_id);
+    if (linked) return linked;
+  }
+  const companyTerms = new Set(
+    [company.display_name, ...(company.aliases || [])]
+      .flatMap((value) => [normalizeCustomerMatchText(value), stripCustomerCompanySuffix(value)])
+      .filter(isStrongCustomerMatchTerm),
+  );
+  return accounts.find((account) =>
+    getAccountMatchTerms(account).some((term) => companyTerms.has(term)),
+  ) || null;
+}
+
+function getVerifiedPublicRelationshipEvidence(account) {
+  return (account?.public_evidence || []).filter(
+    (evidence) => Boolean(evidence.source_url && evidence.summary),
+  );
 }
 
 let japanAccountSignalCache = { payload: null, data: null, index: new Map() };
@@ -2567,16 +2608,83 @@ function renderMethodologyView() {
   }
 }
 
+function formatStorageBytes(value) {
+  const bytes = Math.max(0, Number(value) || 0);
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
 function renderMethodology() {
   renderMethodologyView();
   if (!els.methodologyScopedCount || !state.payload) return;
+  const catalog = window.AIHOT_RULE_CATALOG || {};
+  const storageProfile = window.AIHOT_STORAGE_PROFILE || {};
+  const summaryPipeline = state.payload.summary_pipeline || {};
+  if (els.methodologyVersion) {
+    els.methodologyVersion.textContent = `Rules v${catalog.version || "--"}`;
+  }
+  if (els.ruleCatalogCardVersion) {
+    els.ruleCatalogCardVersion.textContent = `v${catalog.version || "--"}`;
+  }
+  if (els.methodologyVerifiedAt) {
+    els.methodologyVerifiedAt.textContent = catalog.verified_at
+      ? `代码与口径核验于 ${catalog.verified_at}`
+      : "等待规则契约校验";
+  }
+  if (els.summaryStrategyStatus) {
+    const manualCount = Number(summaryPipeline.manual_imported) || 0;
+    els.summaryStrategyStatus.textContent = manualCount
+      ? `规则自动处理 + ${manualCount} 条 ChatGPT Pro 人工复核`
+      : "规则自动处理；ChatGPT Pro 人工批处理按需回填";
+  }
+  if (els.summaryPipelineDetail) {
+    const status = summaryPipeline.status || "rules_only";
+    const statusLabel = {
+      rules_only: "仅规则提要",
+      rules_plus_manual: "规则提要 + 人工 AI 复核",
+      policy_disabled: "自动 LLM API 按策略关闭",
+      configuration_error: "模型配置异常",
+      request_error: "模型请求异常",
+      limit_reached: "模型摘要达到本轮上限",
+      complete: "模型摘要完成",
+    }[status] || status;
+    const manualCount = Number(summaryPipeline.manual_imported) || 0;
+    els.summaryPipelineDetail.textContent =
+      `本轮状态：${statusLabel}；人工回填 ${manualCount} 条；自动 LLM API：${catalog.strategy?.automatic_llm_api ? "已启用" : "未启用"}。`;
+  }
+  if (els.storageLatestSnapshot) {
+    els.storageLatestSnapshot.textContent = `${storageProfile.latest_item_count || 0} 条 · ${formatStorageBytes(storageProfile.latest_snapshot_bytes)}`;
+  }
+  if (els.storageHistorySize) {
+    els.storageHistorySize.textContent = `${storageProfile.history_file_count || 0} 份 · ${formatStorageBytes(storageProfile.history_total_bytes)}`;
+  }
+  if (els.storageDedupeCount) {
+    els.storageDedupeCount.textContent = `${storageProfile.deduplication_url_count || 0} 个 URL · ${formatStorageBytes(storageProfile.deduplication_index_bytes)}`;
+  }
+  if (els.storageSourceState) {
+    els.storageSourceState.textContent = formatStorageBytes(storageProfile.source_snapshot_bytes);
+  }
+  if (els.storagePipelineSnapshot) {
+    els.storagePipelineSnapshot.textContent = `${storageProfile.latest_item_count || 0} 条 / ${formatStorageBytes(storageProfile.latest_snapshot_bytes)}`;
+  }
+  if (els.storagePipelineHistory) {
+    els.storagePipelineHistory.textContent = `${storageProfile.history_file_count || 0} 份历史 / ${formatStorageBytes(storageProfile.history_total_bytes)}`;
+  }
   const allItems = state.payload.items || [];
   const scopedItems = getFilteredItems();
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  const selfCount = scopedItems.filter((item) => getItemRole(item, companyRoles) === "self").length;
+  const trendItems = scopedItems.filter((item) => {
+    const age = getTrendAge(item);
+    return age !== null && age < state.timeRange;
+  });
+  const selfCount = trendItems.filter((item) => getItemRole(item, companyRoles) === "self").length;
   els.methodologyTrendCount.textContent = "本公司 " + selfCount;
+  if (els.methodologyTrendExample) {
+    els.methodologyTrendExample.textContent = `例如“本公司 ${selfCount}”表示：在当前筛选和观察周期内，有 ${selfCount} 条可定位到走势日期且被识别为“本公司”的信息。`;
+  }
   els.methodologyScopedCount.textContent = scopedItems.length + " 条";
 
   const healthRows = (state.payload.source_health || []).filter((row) => row.enabled !== false);
@@ -2652,13 +2760,15 @@ function renderCompanyPools() {
   const relationshipRecords = relationshipData.records || [];
   const accountData = getJapanAccountData();
   const accounts = accountData.accounts || [];
-  const publicRelationshipCount = accounts.filter((account) => account.account_stage === "public_relationship").length;
+  const publicRelationshipCount = accounts.filter(
+    (account) => getVerifiedPublicRelationshipEvidence(account).length > 0,
+  ).length;
   const monitoredCustomerCompanies = sortCompaniesForDisplay(
     companies.filter((company) => company.business_role === "customer"),
   );
   const monitoredPublicRelationshipCount = monitoredCustomerCompanies.filter((company) => {
-    const account = accounts.find((row) => row.id === company.account_origin_id);
-    return account?.account_stage === "public_relationship" || company.role_label?.includes("公开关系");
+    const account = findAccountForCompany(company, accounts);
+    return getVerifiedPublicRelationshipEvidence(account).length > 0;
   }).length;
   const monitoredMarketAccountCount = Math.max(
     0,
@@ -3782,14 +3892,26 @@ function labelRole(role) {
   }[role] || role;
 }
 
-function buildCustomerAccountPriorities(days = 90) {
+function buildCustomerAccountPriorities(days = null) {
+  const priorityRule = window.AIHOT_RULE_CATALOG?.account_priority || {};
+  const densityRule = window.AIHOT_RULE_CATALOG?.relevance_density || {};
+  const windowDays = Number(days) || Number(priorityRule.window_days) || 90;
+  const densityWeights = densityRule.weights || { high: 1, medium: 0.55, low: 0 };
+  const freshnessRule = priorityRule.freshness || { within_7_days: 12, within_30_days: 7, older: 2 };
+  const thresholds = priorityRule.thresholds || {
+    priority_check: 76,
+    priority_check_minimum_selected: 2,
+    follow_this_week: 54,
+    follow_this_week_minimum_selected: 1,
+  };
   const companies = (state.payload.companies || []).filter(
     (company) => company.business_role === "customer",
   );
   const allItems = state.payload.items || [];
+  const accounts = getJapanAccountData().accounts || [];
   return companies.map((company) => {
     const items = allItems.filter((item) =>
-      itemIsWithinRange(item, days) && (item.matched_company_ids || []).includes(company.id),
+      itemIsWithinRange(item, windowDays) && (item.matched_company_ids || []).includes(company.id),
     ).sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0));
     const selectedItems = items.filter((item) => ["daily", "immediate"].includes(item.tier));
     const highItems = items.filter((item) => item.acro_relevance?.level === "high");
@@ -3805,24 +3927,32 @@ function buildCustomerAccountPriorities(days = 90) {
     }
     const dominantEvent = Object.entries(eventCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || "corporate_strategy";
     const density = items.length
-      ? Math.round(((highItems.length + mediumItems.length * 0.55) / items.length) * 100)
+      ? Math.round(((highItems.length * densityWeights.high + mediumItems.length * densityWeights.medium) / items.length) * 100)
       : 0;
-    const publicRelationship = /公开关系/.test(`${company.role_label || ""} ${company.role_reason || ""}`);
-    const freshnessScore = recent7.length ? 12 : recent30.length ? 7 : items.length ? 2 : 0;
-    const priorityScore = Math.min(99, Math.round(
-      Math.log2(1 + selectedItems.length) * 6 +
-      Math.log2(1 + highItems.length) * 4 +
-      density * 0.14 +
+    const account = findAccountForCompany(company, accounts);
+    const publicRelationshipEvidence = getVerifiedPublicRelationshipEvidence(account);
+    const publicRelationship = publicRelationshipEvidence.length > 0;
+    const freshnessScore = recent7.length
+      ? freshnessRule.within_7_days
+      : recent30.length
+        ? freshnessRule.within_30_days
+        : items.length
+          ? freshnessRule.older
+          : 0;
+    const priorityScore = Math.min(Number(priorityRule.maximum) || 99, Math.round(
+      Math.log2(1 + selectedItems.length) * (Number(priorityRule.selected_log_weight) || 6) +
+      Math.log2(1 + highItems.length) * (Number(priorityRule.high_relevance_log_weight) || 4) +
+      density * (Number(priorityRule.density_weight) || 0.14) +
       freshnessScore +
-      Math.log2(1 + sourceIds.size) * 2.5 +
-      Math.min(Object.keys(eventCounts).length, 4) +
-      (publicRelationship ? 3 : 0),
+      Math.log2(1 + sourceIds.size) * (Number(priorityRule.source_diversity_log_weight) || 2.5) +
+      Math.min(Object.keys(eventCounts).length, Number(priorityRule.event_diversity_maximum) || 4) +
+      (publicRelationship ? Number(priorityRule.verified_public_relationship_bonus) || 3 : 0),
     ));
     const keyItem = selectedItems[0] || items[0] || null;
     const action = buildCustomerPriorityAction(dominantEvent, publicRelationship, selectedItems.length);
-    const urgency = priorityScore >= 76 && selectedItems.length >= 2
+    const urgency = priorityScore >= thresholds.priority_check && selectedItems.length >= thresholds.priority_check_minimum_selected
       ? { label: "优先核验", className: "urgent" }
-      : priorityScore >= 54 && selectedItems.length
+      : priorityScore >= thresholds.follow_this_week && selectedItems.length >= thresholds.follow_this_week_minimum_selected
         ? { label: "本周跟进", className: "active" }
         : { label: "持续观察", className: "watch" };
     return {
@@ -3837,6 +3967,7 @@ function buildCustomerAccountPriorities(days = 90) {
       priorityScore,
       dominantEvent,
       publicRelationship,
+      publicRelationshipEvidenceCount: publicRelationshipEvidence.length,
       keyItem,
       action,
       urgency,
@@ -4028,14 +4159,19 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount, custome
   const response = buildAssistantResponse(state.assistantQuestion, items, customerPriorities);
   const summaryPipeline = state.payload.summary_pipeline || {};
   const hasModelSummaries = summaryPipeline.status === "complete" && Number(summaryPipeline.generated) > 0;
+  const manualSummaryCount = Number(summaryPipeline.manual_imported) || 0;
   els.executiveHeadline.textContent = response.headline;
-  els.assistantMode.textContent = hasModelSummaries
+  els.assistantMode.textContent = manualSummaryCount
+    ? `ChatGPT Pro 人工复核 ${manualSummaryCount} 条 + 规则决策`
+    : hasModelSummaries
     ? `AI 摘要 ${summaryPipeline.generated} 条 + 规则决策`
     : "证据驱动规则分析";
   els.assistantQuestion.value = state.assistantQuestion;
-  els.assistantDisclosure.textContent = hasModelSummaries
+  els.assistantDisclosure.textContent = manualSummaryCount
+    ? `当前 ${manualSummaryCount} 条摘要来自 ChatGPT Pro 人工批处理并回填；其余使用可解释规则，自动流水线不调用模型 API。`
+    : hasModelSummaries
     ? `已在 ${items.length} 条当前信号上结合模型摘要与结构化规则；点击建议可查看对应证据。`
-    : `已分析当前 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前未调用外部大模型。`;
+    : `已分析当前 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前为纯规则结果，自动流水线未调用大模型。`;
   els.executivePoints.innerHTML = response.actions.length
     ? response.actions.map((action, index) => `
         <li>
@@ -4045,6 +4181,17 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount, custome
           </button>
         </li>`).join("")
     : '<li class="assistant-empty">调整观察周期或筛选条件后再试。</li>';
+}
+
+function getTrendAge(item) {
+  if (item.event_start_at) {
+    const until = Number(item.days_until_event);
+    if (!Number.isFinite(until) || until > 0) return null;
+    return Math.abs(Math.floor(until));
+  }
+  if (item.age_days === null || item.age_days === undefined || item.age_days === "") return null;
+  const age = Number(item.age_days);
+  return Number.isFinite(age) && age >= 0 ? Math.floor(age) : null;
 }
 
 function renderSignalTrend(items, companyRoles) {
@@ -4057,8 +4204,8 @@ function renderSignalTrend(items, companyRoles) {
   ].filter((series) => state.role === "all" || state.role === series.id);
   const values = Object.fromEntries(seriesDefinitions.map((series) => [series.id, Array(days).fill(0)]));
   for (const item of items) {
-    const age = Math.max(0, Math.floor(Number(item.age_days) || 0));
-    if (age >= days) continue;
+    const age = getTrendAge(item);
+    if (age === null || age >= days) continue;
     const role = getItemRole(item, companyRoles);
     if (values[role]) values[role][days - age - 1] += 1;
   }
@@ -4114,6 +4261,9 @@ function renderRegionDistribution(items) {
 }
 
 function renderCompanyTopicMatrix() {
+  const matrixRule = window.AIHOT_RULE_CATALOG?.competitor_matrix || {};
+  const matrixDays = Number(matrixRule.window_days) || 90;
+  const maximumColumns = Number(matrixRule.maximum_columns) || 5;
   const competitorCompanies = (state.payload.companies || []).filter(
     (company) => company.business_role === "competitor",
   );
@@ -4123,7 +4273,7 @@ function renderCompanyTopicMatrix() {
   const companies = sortCompaniesForDisplay(primaryCompetitors.length ? primaryCompetitors : competitorCompanies);
   const matrixCompanyById = new Map(companies.map((company) => [company.id, company]));
   const items = (state.payload.items || []).filter((item) =>
-    itemIsWithinRange(item, 90) &&
+    itemIsWithinRange(item, matrixDays) &&
     (item.matched_company_ids || []).some((id) => matrixCompanyById.has(id)),
   );
   const resolveCompanyId = (item) => {
@@ -4139,9 +4289,9 @@ function renderCompanyTopicMatrix() {
     const eventType = getBusinessEventType(item);
     categoryTotals[eventType] = (categoryTotals[eventType] || 0) + 1;
   }
-  const categories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([category]) => category);
+  const categories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]).slice(0, maximumColumns).map(([category]) => category);
   if (!categories.length) {
-    els.companyTopicMatrix.innerHTML = '<div class="empty">近 90 天没有可形成矩阵的核心竞品信号。</div>';
+    els.companyTopicMatrix.innerHTML = `<div class="empty">近 ${matrixDays} 天没有可形成矩阵的核心竞品信号。</div>`;
     return;
   }
   const matrix = {};
@@ -4759,6 +4909,11 @@ function renderPage() {
   els.pageButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.pageTarget === state.page);
   });
+  document.querySelectorAll(".nav-cluster").forEach((cluster) => {
+    const containsActive = Boolean(cluster.querySelector("[data-page-target].active"));
+    cluster.classList.toggle("contains-active", containsActive);
+    if (containsActive) cluster.open = true;
+  });
 }
 
 function methodologyTargetFromHash() {
@@ -4973,16 +5128,18 @@ function getDisplaySummary(item) {
 
 function renderBusinessSummary(item, compact) {
   const isLlm = item.summary_method === "llm";
+  const isManual = item.summary_method === "manual_ai";
   const label = state.translationLanguage === "en"
-    ? isLlm ? "AI summary" : "Rule brief"
-    : isLlm ? "AI 摘要" : "规则提要";
+    ? isManual ? "ChatGPT Pro reviewed brief" : isLlm ? "API model summary" : "Rule brief"
+    : isManual ? "ChatGPT Pro 人工复核摘要" : isLlm ? "API 模型摘要" : "规则提要";
   const text = getDisplaySummary(item);
+  const summaryClass = isLlm || isManual ? "ai" : "rule";
   if (!compact) {
-    return `<p class="summary business-summary summary-${isLlm ? "ai" : "rule"}"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
+    return `<p class="summary business-summary summary-${summaryClass}"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
   }
   const preview = firstReadableSentence(text, state.translationLanguage === "en" ? 110 : 72) || text;
   const expandLabel = state.translationLanguage === "en" ? "Details" : "展开";
-  return `<details class="business-summary-toggle summary-${isLlm ? "ai" : "rule"}">
+  return `<details class="business-summary-toggle summary-${summaryClass}">
     <summary><span>${escapeHtml(label)}</span><b>${escapeHtml(preview)}</b><i>${escapeHtml(expandLabel)}</i></summary>
     <p>${escapeHtml(text)}</p>
   </details>`;
@@ -5629,7 +5786,7 @@ function exportCsv() {
         csvCell(state.translationLanguage === "en" ? translatedAction.label : item.recommended_action?.label || ""),
         csvCell(state.translationLanguage === "en" ? translatedAction.owner : item.recommended_action?.owner || ""),
         csvCell(item.reasons.slice(0, 3).join("; ")),
-        csvCell(item.summary_method === "llm" ? "AI 摘要" : "规则提要"),
+        csvCell(item.summary_method === "manual_ai" ? "ChatGPT Pro 人工复核摘要" : item.summary_method === "llm" ? "API 模型摘要" : "规则提要"),
         csvCell(getDisplaySummary(item)),
         item.url,
       ].join(",")
@@ -6231,4 +6388,8 @@ if (initialMetricHash || window.location.hash === "#methodology") {
 }
 renderMethodologyView();
 renderPage();
-loadData();
+loadData().then(() => {
+  if (initialMetricHash || window.location.hash === "#methodology") {
+    window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
+  }
+});
