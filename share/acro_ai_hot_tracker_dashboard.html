@@ -24,6 +24,724 @@
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+/* Metrics and rules center */
+.methodology-section {
+  margin-bottom: 20px;
+}
+
+.methodology-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: end;
+  gap: 28px;
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--teal);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.methodology-hero h2,
+.methodology-hero p {
+  margin: 0;
+}
+
+.methodology-hero h2 {
+  margin-top: 4px;
+  font-size: 25px;
+  line-height: 1.25;
+}
+
+.methodology-hero > div:first-child > p:last-child {
+  max-width: 850px;
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.methodology-version {
+  display: grid;
+  gap: 4px;
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+
+.methodology-version span,
+.methodology-version small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.methodology-version strong {
+  color: #2c4b57;
+  font-size: 16px;
+}
+
+.methodology-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 244px;
+  align-items: start;
+  gap: 16px;
+}
+
+.methodology-content,
+.methodology-detail-list {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+
+.metric-family {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.metric-family-head {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.metric-family-head > span {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #e7f3f3;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.metric-family-head h3,
+.metric-family-head p {
+  margin: 0;
+}
+
+.metric-family-head h3 {
+  color: #263740;
+  font-size: 16px;
+}
+
+.metric-family-head p {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.methodology-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.methodology-summary-card {
+  position: relative;
+  min-width: 0;
+  min-height: 166px;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto auto minmax(42px, 1fr) auto;
+  align-content: start;
+  gap: 5px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-top: 3px solid #8298a3;
+  border-radius: 7px;
+  background: #fbfcfc;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.methodology-summary-card.primary {
+  border-top-color: var(--coral);
+  background: #fffaf8;
+}
+
+.methodology-summary-card:nth-child(2) {
+  border-top-color: var(--blue);
+}
+
+.methodology-summary-card:nth-child(3) {
+  border-top-color: var(--gold);
+}
+
+.methodology-summary-card:hover,
+.methodology-summary-card:focus-visible {
+  border-color: #78b9bd;
+  background: #f4faf9;
+  outline: 2px solid rgba(8, 127, 140, 0.16);
+  outline-offset: 1px;
+}
+
+.methodology-summary-card > span,
+.methodology-summary-card > small {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.methodology-summary-card > strong {
+  color: #24343d;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.methodology-summary-card > b {
+  color: var(--teal);
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.methodology-summary-card > p {
+  margin: 0;
+  color: #53636c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.methodology-summary-card > small {
+  color: #116d75;
+}
+
+.methodology-detail {
+  min-width: 0;
+  padding: 20px;
+  scroll-margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.methodology-detail.is-focused {
+  border-color: #55afb5;
+  box-shadow: 0 0 0 4px rgba(8, 127, 140, 0.11);
+}
+
+.methodology-detail > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.methodology-detail > header span {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.methodology-detail > header h3 {
+  margin: 3px 0 0;
+  color: #22323a;
+  font-size: 20px;
+}
+
+.methodology-detail > header > b {
+  flex: 0 0 auto;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: var(--surface-2);
+  color: #52636c;
+  font-size: 11px;
+}
+
+.methodology-lead {
+  margin: 13px 0;
+  color: #43545d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.methodology-equation {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--blue);
+  background: #f2f6fa;
+}
+
+.methodology-equation span {
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.methodology-equation strong {
+  color: #324651;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.methodology-rule-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.methodology-rule-list {
+  display: grid;
+  align-content: start;
+  gap: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.methodology-rule-list.wide {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 12px;
+}
+
+.methodology-rule-list > div {
+  display: grid;
+  grid-template-columns: minmax(95px, 0.4fr) minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 11px;
+  border-top: 1px solid var(--line);
+}
+
+.methodology-rule-list > div:first-child,
+.methodology-rule-list.wide > div:nth-child(2) {
+  border-top: 0;
+}
+
+.methodology-rule-list.wide > div:nth-child(even) {
+  border-left: 1px solid var(--line);
+}
+
+.methodology-rule-list dt {
+  color: #344a55;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.methodology-rule-list dd {
+  margin: 0;
+  color: #5e6d75;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.methodology-thresholds,
+.density-explain-grid,
+.dashboard-definition-grid,
+.health-definition-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.methodology-thresholds > div,
+.density-explain-grid > div,
+.dashboard-definition-grid > div,
+.health-definition-grid > div {
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-left: 4px solid #8999a1;
+  background: #fbfcfc;
+}
+
+.methodology-thresholds.horizontal,
+.density-explain-grid,
+.dashboard-definition-grid,
+.health-definition-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
+.density-explain-grid,
+.dashboard-definition-grid,
+.health-definition-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.methodology-thresholds .level-high,
+.health-definition-grid .error {
+  border-left-color: var(--coral);
+}
+
+.methodology-thresholds .level-medium,
+.health-definition-grid .archive {
+  border-left-color: var(--gold);
+}
+
+.methodology-thresholds .level-low,
+.health-definition-grid .quiet {
+  border-left-color: #8798a1;
+}
+
+.health-definition-grid .pending {
+  border-left-color: var(--blue);
+}
+
+.health-definition-grid .productive {
+  border-left-color: #39987a;
+}
+
+.methodology-thresholds span,
+.density-explain-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.methodology-thresholds strong,
+.density-explain-grid strong,
+.dashboard-definition-grid strong,
+.health-definition-grid strong {
+  display: block;
+  margin-top: 2px;
+  color: #2f4650;
+  font-size: 14px;
+}
+
+.methodology-thresholds p,
+.density-explain-grid p,
+.dashboard-definition-grid p,
+.health-definition-grid p {
+  margin: 3px 0 0;
+  color: #687780;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.admission-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin: 12px 0;
+}
+
+.admission-flow > div {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 4px 8px;
+  align-content: start;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fbfcfc;
+}
+
+.admission-flow span {
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background: #e5f2f2;
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.admission-flow strong {
+  color: #334953;
+  font-size: 11px;
+}
+
+.admission-flow p {
+  margin: 0;
+  color: #667780;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.methodology-example {
+  display: grid;
+  gap: 5px;
+  padding: 11px 12px;
+  margin-top: 12px;
+  border: 1px dashed #a9c8cb;
+  border-radius: 7px;
+  background: #f6fbfb;
+}
+
+.methodology-example > span {
+  color: var(--teal);
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.methodology-example p {
+  margin: 0;
+  color: #3f525c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.methodology-example > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.methodology-example i {
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #e6f1f1;
+  color: #587078;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.methodology-boundary {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 11px 12px;
+  margin-top: 12px;
+  border-left: 4px solid var(--gold);
+  background: #fffaf0;
+}
+
+.methodology-boundary strong {
+  color: #795b1e;
+  font-size: 10px;
+}
+
+.methodology-boundary p {
+  margin: 0;
+  color: #625c4f;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.methodology-scope-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.methodology-scope-list span {
+  padding: 5px 8px;
+  border: 1px solid #cbd8dd;
+  border-radius: 5px;
+  background: #f5f8f9;
+  color: #526670;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.methodology-toc {
+  position: sticky;
+  top: 16px;
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.methodology-toc-head {
+  display: grid;
+  gap: 2px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.methodology-toc-head span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.methodology-toc-head strong {
+  color: #273a43;
+  font-size: 15px;
+}
+
+.methodology-toc nav {
+  display: grid;
+  gap: 3px;
+}
+
+.methodology-toc nav button {
+  width: 100%;
+  height: 34px;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  padding: 0 7px;
+  border: 0;
+  background: transparent;
+  color: #4e626c;
+  font-size: 10px;
+  font-weight: 750;
+  text-align: left;
+  cursor: pointer;
+}
+
+.methodology-toc nav button span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 22px;
+  border-radius: 4px;
+  background: #edf2f3;
+  color: #72828a;
+  font-size: 8px;
+}
+
+.methodology-toc nav button:hover,
+.methodology-toc nav button:focus-visible {
+  background: #edf7f7;
+  color: var(--teal);
+}
+
+.methodology-cross-link {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border-color: #b6d6d8;
+  background: #f3fafa;
+  color: #34525c;
+  text-align: left;
+  cursor: pointer;
+}
+
+.methodology-cross-link span {
+  font-size: 10px;
+}
+
+.methodology-cross-link strong {
+  color: var(--teal);
+  font-size: 11px;
+}
+
+.methodology-callout {
+  padding: 10px;
+  border-left: 4px solid var(--coral);
+  background: #fff7f4;
+}
+
+.methodology-callout strong {
+  color: #954d3d;
+  font-size: 10px;
+}
+
+.methodology-callout p {
+  margin: 3px 0 0;
+  color: #6b5a55;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1180px) {
+  .methodology-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .methodology-toc {
+    position: static;
+    grid-row: 1;
+  }
+
+  .methodology-toc nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .methodology-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .methodology-version {
+    padding: 10px 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .methodology-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .methodology-rule-columns,
+  .methodology-rule-list.wide,
+  .density-explain-grid,
+  .dashboard-definition-grid,
+  .health-definition-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .methodology-rule-list.wide > div:nth-child(even) {
+    border-left: 0;
+  }
+
+  .methodology-rule-list.wide > div:nth-child(2) {
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 620px) {
+  .methodology-hero,
+  .metric-family,
+  .methodology-detail {
+    padding: 14px;
+  }
+
+  .methodology-hero h2 {
+    font-size: 21px;
+  }
+
+  .methodology-card-grid,
+  .admission-flow,
+  .methodology-thresholds.horizontal {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .methodology-toc nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .methodology-summary-card {
+    min-height: 0;
+  }
+
+  .methodology-detail > header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .methodology-equation,
+  .methodology-boundary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .methodology-rule-list > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1036,6 +1754,26 @@ select {
   line-height: 1.45 !important;
 }
 
+.assistant-title-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.assistant-rules-link {
+  width: auto;
+  height: 26px;
+  padding: 0 8px;
+  border-color: #b9d5d7;
+  background: #f5fbfb;
+  color: var(--teal);
+  font-size: 9px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .assistant-status-grid {
   margin-top: 2px;
 }
@@ -1085,12 +1823,12 @@ select {
   text-align: left;
 }
 
-button.customer-priority-row {
+.customer-priority-row[role="button"] {
   cursor: pointer;
 }
 
-button.customer-priority-row:hover,
-button.customer-priority-row:focus-visible {
+.customer-priority-row[role="button"]:hover,
+.customer-priority-row[role="button"]:focus-visible {
   position: relative;
   z-index: 1;
   background: #f4faf9;
@@ -1121,6 +1859,32 @@ button.customer-priority-row:focus-visible {
   color: #56666f;
   font-size: 10px;
   font-weight: 850;
+}
+
+.column-help,
+.metric-label-help {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  padding: 0;
+  border: 1px solid #a9c9cc;
+  border-radius: 50%;
+  background: #f7fbfb;
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 850;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.column-help {
+  margin-left: 4px;
+}
+
+.metric-label-help {
+  display: inline-grid;
+  place-items: center;
+  vertical-align: 1px;
 }
 
 .customer-priority-company {
@@ -1175,12 +1939,28 @@ button.customer-priority-row:focus-visible {
   white-space: nowrap;
 }
 
-.customer-priority-score > strong,
-.customer-priority-density > strong,
+.customer-priority-value strong,
 .customer-priority-count > strong {
   color: #23404a;
   font-size: 17px;
   font-variant-numeric: tabular-nums;
+}
+
+.customer-priority-value {
+  width: fit-content;
+  height: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 1;
+  cursor: help;
+}
+
+.customer-priority-value:hover strong,
+.customer-priority-value:focus-visible strong {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .customer-priority-score > i {
@@ -4979,12 +5759,29 @@ button.customer-priority-row:focus-visible {
   gap: 7px 12px;
 }
 
-.chart-legend span {
+.chart-legend span,
+.trend-legend-item {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   color: var(--muted);
   font-size: 11px;
+}
+
+.trend-legend-item {
+  width: auto;
+  height: auto;
+  padding: 3px 5px;
+  border: 0;
+  background: transparent;
+  cursor: help;
+}
+
+.trend-legend-item:hover,
+.trend-legend-item:focus-visible {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .chart-legend i {
@@ -5442,6 +6239,8 @@ button.customer-priority-row:focus-visible {
 }
 
 .score {
+  height: auto;
+  border: 0;
   min-width: 46px;
   text-align: center;
   background: var(--teal-soft);
@@ -5449,6 +6248,12 @@ button.customer-priority-row:focus-visible {
   border-radius: 7px;
   padding: 5px 8px;
   font-weight: 800;
+  cursor: help;
+}
+
+.score:hover,
+.score:focus-visible {
+  box-shadow: inset 0 0 0 2px #68bbc0;
 }
 
 .meta-row {
@@ -5619,6 +6424,16 @@ button.customer-priority-row:focus-visible {
   gap: 2px;
 }
 
+button.strip-score {
+  width: fit-content;
+  height: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: help;
+}
+
 .strip-score strong {
   color: #26343c;
   font-size: 22px;
@@ -5681,9 +6496,29 @@ button.customer-priority-row:focus-visible {
   font-weight: 850;
 }
 
-.business-insight-title strong {
+.business-insight-title strong,
+.business-insight-score {
   color: #26343c;
   font-size: 19px;
+}
+
+.business-insight-score {
+  width: auto;
+  height: auto;
+  padding: 1px 4px;
+  border: 0;
+  background: transparent;
+  font-weight: 850;
+  cursor: help;
+}
+
+.business-insight-score:hover,
+.business-insight-score:focus-visible,
+button.strip-score:hover strong,
+button.strip-score:focus-visible strong {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .business-insight-copy p,
@@ -7292,11 +8127,15 @@ button.customer-priority-row:focus-visible {
           <button type="button" data-page-target="acro" title="ACRO 档案" aria-label="ACRO 档案"><span class="nav-icon">A</span><span>ACRO 档案</span></button>
         </div>
         <div class="nav-group">
+          <span class="nav-group-label">指标与规则</span>
+          <button type="button" data-page-target="methodology" title="指标说明" aria-label="指标说明"><span class="nav-icon">i</span><span>指标说明</span></button>
+          <button type="button" data-page-target="structured-rules" title="结构化提取" aria-label="结构化提取"><span class="nav-icon">6</span><span>结构化提取</span></button>
+          <button type="button" data-page-target="questions" title="产品决策" aria-label="产品决策"><span class="nav-icon">决</span><span>产品决策</span></button>
+        </div>
+        <div class="nav-group">
           <span class="nav-group-label">运行管理</span>
-          <button type="button" data-page-target="structured-rules" title="结构化规则" aria-label="结构化规则"><span class="nav-icon">6</span><span>结构化规则</span></button>
           <button type="button" data-page-target="source-health" title="数据源健康" aria-label="数据源健康"><span class="nav-icon">✓</span><span>数据源健康</span></button>
           <button type="button" data-page-target="pipeline" title="系统链路" aria-label="系统链路"><span class="nav-icon">↳</span><span>系统链路</span></button>
-          <button type="button" data-page-target="questions" title="产品决策" aria-label="产品决策"><span class="nav-icon">决</span><span>产品决策</span></button>
         </div>
       </nav>
 
@@ -7394,22 +8233,22 @@ button.customer-priority-row:focus-visible {
 
       <section class="summary-grid page-panel" data-page="overview" aria-label="Executive metrics">
         <article class="metric executive">
-          <span>重大信号</span>
+          <span>重大信号 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看重大信号统计口径">i</button></span>
           <strong id="metricCandidates">--</strong>
           <small>高分日报与即时提醒</small>
         </article>
         <article class="metric accent executive">
-          <span>竞品动态</span>
+          <span>竞品动态 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看竞品动态统计口径">i</button></span>
           <strong id="metricDaily">--</strong>
           <small id="metricCompetitorNote">已确认竞品池</small>
         </article>
         <article class="metric warn executive">
-          <span>账户动态信号</span>
+          <span>账户动态信号 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看账户动态统计口径">i</button></span>
           <strong id="metricImmediate">--</strong>
           <small id="metricCustomerNote">账户目录加载中</small>
         </article>
         <article class="metric regional executive">
-          <span>亚太地区动态</span>
+          <span>亚太地区动态 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看亚太地区动态统计口径">i</button></span>
           <strong id="metricArchive">--</strong>
           <small>日本、中国、韩国与东南亚</small>
         </article>
@@ -7422,7 +8261,10 @@ button.customer-priority-row:focus-visible {
               <p class="eyebrow">AI 情报助手</p>
               <h2 id="executiveHeadline">正在整理今天最值得做的事</h2>
             </div>
-            <span class="assistant-mode" id="assistantMode">证据驱动分析</span>
+            <div class="assistant-title-actions">
+              <span class="assistant-mode" id="assistantMode">证据驱动分析</span>
+              <button class="assistant-rules-link" type="button" data-rule-page-target="methodology">查看判断口径</button>
+            </div>
           </div>
           <ol id="executivePoints" class="assistant-action-list"></ol>
         </div>
@@ -7886,6 +8728,237 @@ button.customer-priority-row:focus-visible {
             <strong>数据展现</strong>
             <p>Dashboard、公司页、日报、主题热度、API / Agent 接入。</p>
           </article>
+        </div>
+      </section>
+
+      <section class="methodology-section page-panel" data-page="methodology" aria-label="Metrics and rules center">
+        <div class="methodology-hero">
+          <div>
+            <p class="eyebrow">指标与规则中心</p>
+            <h2>每个数字都能回答：是什么、怎么算、怎么用</h2>
+            <p>平台里有两类判断：单篇信息判断“这条值不值得看”，公司级判断“这家值不值得先跟进”。下面的分数不是同一个“AI 总分”。</p>
+          </div>
+          <div class="methodology-version">
+            <span>当前口径</span>
+            <strong>Rules v2026.09</strong>
+            <small>与现行抓取和前端公式对齐</small>
+          </div>
+        </div>
+
+        <div class="methodology-layout">
+          <div class="methodology-content">
+            <section class="metric-family" aria-labelledby="item-metric-family">
+              <div class="metric-family-head">
+                <span>01</span>
+                <div><h3 id="item-metric-family">单篇信息判断</h3><p>先决定是否入库、是否进日报，再判断它与 ACRO 的业务距离。</p></div>
+              </div>
+              <div class="methodology-card-grid">
+                <button type="button" class="methodology-summary-card primary" data-methodology-target="news-score">
+                  <span>新闻右上角</span><strong>信息筛选分</strong><b>0+分</b><p>公司命中、来源可信度、主题和业务动作的规则加减分。</p><small>查看加分表与时效规则</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="acro-relevance">
+                  <span>单篇业务距离</span><strong>ACRO 相关性分</strong><b>0–100</b><p>根据公司角色、靶点、疗法、产品需求和研发阶段计算。</p><small>查看高中低阈值</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="daily-admission">
+                  <span>最终去向</span><strong>日报准入与分层</strong><b>3 层</b><p>筛选分过线后，还要经过 ACRO 相关性和专题类型校验。</p><small>查看即时、日报、归档边界</small>
+                </button>
+              </div>
+            </section>
+
+            <section class="metric-family" aria-labelledby="account-metric-family">
+              <div class="metric-family-head">
+                <span>02</span>
+                <div><h3 id="account-metric-family">公司与账户排序</h3><p>用近 90 天的多条公开信号排序，不代表内部客户关系或成交概率。</p></div>
+              </div>
+              <div class="methodology-card-grid">
+                <button type="button" class="methodology-summary-card primary" data-methodology-target="priority-index">
+                  <span>账户排序</span><strong>优先指数</strong><b>0–99</b><p>综合日报数、高相关数、密度、时效、来源多样性和公开关系证据。</p><small>查看完整公式与行动阈值</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="relevance-density">
+                  <span>账户信号质量</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司近 90 天所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="competitor-matrix">
+                  <span>竞品分布</span><strong>竞品动作矩阵</strong><b>90 天</b><p>按竞品和商业事件计数，颜色只表示当前矩阵的相对集中度。</p><small>查看计数口径与限制</small>
+                </button>
+              </div>
+            </section>
+
+            <section class="metric-family" aria-labelledby="operations-metric-family">
+              <div class="metric-family-head">
+                <span>03</span>
+                <div><h3 id="operations-metric-family">统计与运行口径</h3><p>说清图表数字的分母、时间窗口和来源状态。</p></div>
+              </div>
+              <div class="methodology-card-grid">
+                <button type="button" class="methodology-summary-card" data-methodology-target="trend-counts">
+                  <span>信号走势</span><strong>图例后的数字</strong><b id="methodologyTrendCount">--</b><p>是当前筛选范围内的信息条数，不是公司数或来源数。</p><small>查看筛选条件如何影响</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="dashboard-counts">
+                  <span>总览四项</span><strong>当前范围统计</strong><b id="methodologyScopedCount">--</b><p>重大信号、竞品、账户和亚太都会随当前筛选条件变化。</p><small>查看四个指标的具体分子</small>
+                </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="source-health">
+                  <span>运行监控</span><strong>数据源健康</strong><b id="methodologyHealthySources">--</b><p>区分“请求成功”和“本轮有产出”，零新闻不等于链路中断。</p><small>查看生产、归档、安静、异常的区别</small>
+                </button>
+              </div>
+            </section>
+
+            <div class="methodology-detail-list">
+              <article class="methodology-detail" id="metric-news-score" data-methodology-detail="news-score">
+                <header><div><span>单篇信息 · 筛选</span><h3>信息筛选分</h3></div><b>新闻卡右上角</b></header>
+                <p class="methodology-lead">衡量这条信息是否值得进入筛选流程。它不是概率、百分比或 AI 主观评分，而是可解释的规则加减分。</p>
+                <div class="methodology-equation"><span>公式</span><strong>公司命中 + 来源可信度 + 主题命中 + 业务动作 + 事件类型 - 噪音/过期处理</strong></div>
+                <div class="methodology-rule-columns">
+                  <dl class="methodology-rule-list">
+                    <div><dt>公司别名命中</dt><dd>外部来源 +30；官方自有来源 +15</dd></div>
+                    <div><dt>专属公司入口</dt><dd>标题未重复公司名时 +15</dd></div>
+                    <div><dt>来源可信度</dt><dd>监管 +20；官方 +15；生态 +12；媒体/科研 +10；新闻稿平台 +8</dd></div>
+                    <div><dt>战略主题</dt><dd>每命中 1 个 +6，最多 +30</dd></div>
+                    <div><dt>业务动作</dt><dd>每命中 1 个 +8，最多 +25</dd></div>
+                  </dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>事件类型</dt><dd>合作/产品/活动 +10；监管/市场 +8；视频/研究 +5</dd></div>
+                    <div><dt>噪音词</dt><dd>命中明确噪音 -35</dd></div>
+                    <div><dt>超过时效窗口</dt><dd>有明确动作可 -10 后最低保留 40；否则封顶 25</dd></div>
+                    <div><dt>超过硬性时效</dt><dd>超过默认窗口 2 倍，总分封顶 25</dd></div>
+                    <div><dt>分数范围</dt><dd>最低 0；当前原始规则没有 100 分封顶</dd></div>
+                  </dl>
+                </div>
+                <div class="methodology-example" id="methodologyNewsExample"><span>当前数据示例</span><p>加载中</p></div>
+                <div class="methodology-boundary"><strong>正确用法</strong><p>用于粗排“值不值得继续看”。不能单独代表 ACRO 业务价值，最终是否进日报还要经过相关性准入规则。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-acro-relevance" data-methodology-detail="acro-relevance">
+                <header><div><span>单篇信息 · 业务判断</span><h3>ACRO 相关性分</h3></div><b>0–100</b></header>
+                <p class="methodology-lead">衡量一条信息与 ACRO 公司角色、技术领域和产品需求的距离。这个分数会决定信息是否有资格进入主管视图。</p>
+                <div class="methodology-rule-columns">
+                  <dl class="methodology-rule-list">
+                    <div><dt>公司角色</dt><dd>本公司 +25；客户/账户 +30；竞品 +18</dd></div>
+                    <div><dt>技术与产品</dt><dd>明确靶点 +12；重点疗法/技术 +12；可映射产品需求 +22</dd></div>
+                    <div><dt>进展与动作</dt><dd>研发阶段 +10；明确业务动作 +10；活动信号 +6</dd></div>
+                    <div><dt>监管信号</dt><dd>来源为监管机构或归类为监管 +8</dd></div>
+                  </dl>
+                  <div class="methodology-thresholds">
+                    <div class="level-high"><span>高相关</span><strong>≥50</strong><p>优先用于业务判断与建议动作。</p></div>
+                    <div class="level-medium"><span>中相关</span><strong>24–49</strong><p>结合公司命中和动作证据判断。</p></div>
+                    <div class="level-low"><span>低相关</span><strong>&lt;24</strong><p>保留归档，不进入默认主管视图。</p></div>
+                  </div>
+                </div>
+                <div class="methodology-example" id="methodologyRelevanceExample"><span>当前数据示例</span><p>加载中</p></div>
+                <div class="methodology-boundary"><strong>不能说明</strong><p>不代表新闻真实性、客户关系已确认、采购意愿或成交概率。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-daily-admission" data-methodology-detail="daily-admission">
+                <header><div><span>单篇信息 · 最终准入</span><h3>日报准入与分层</h3></div><b>两道门槛</b></header>
+                <p class="methodology-lead">第一道看信息筛选分，第二道看 ACRO 相关性和业务动作。因此“高分”不一定最终进入日报。</p>
+                <div class="admission-flow">
+                  <div><span>1</span><strong>基础分层</strong><p>≥80 即时；≥50 日报；官方/生态/媒体来源 ≥40 可日报；明确动作 ≥45 可日报。</p></div>
+                  <div><span>2</span><strong>ACRO 准入</strong><p>低相关一律归档；即时提醒只有高相关可保留，非高相关降为日报。</p></div>
+                  <div><span>3</span><strong>专题与来源例外</strong><p>未命中公司且缺少动作的中相关信息归档；视频、研究、资助、临床试验及仅归档来源不进新闻日报。</p></div>
+                </div>
+                <div class="methodology-boundary"><strong>解释顺序</strong><p>先展示“信息筛选分”，再展示“ACRO 相关性分”，最后说明“准入结果”。三者不要混用。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-priority-index" data-methodology-detail="priority-index">
+                <header><div><span>公司级 · 行动排序</span><h3>账户优先指数</h3></div><b>0–99</b></header>
+                <p class="methodology-lead">把一家公司近 90 天的多条公开信号合成一个跟进顺序分。对信号数和来源数使用 log2，避免“发稿多”的大公司无限占优。</p>
+                <div class="methodology-equation"><span>公式</span><strong>min(99, 日报数权重 + 高相关数权重 + 密度权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
+                <dl class="methodology-rule-list wide">
+                  <div><dt>进入日报</dt><dd>log2(1 + 日报/即时数) × 6</dd></div>
+                  <div><dt>高相关信号</dt><dd>log2(1 + 高相关数) × 4</dd></div>
+                  <div><dt>相关密度</dt><dd>密度 × 0.14</dd></div>
+                  <div><dt>时效</dt><dd>7 天内 +12；30 天内 +7；仅有更旧信号 +2</dd></div>
+                  <div><dt>来源多样性</dt><dd>log2(1 + 去重后来源数) × 2.5</dd></div>
+                  <div><dt>事件多样性</dt><dd>优先统计已入日报信号；没有时依次用高相关、全部信号。不同类型最多 +4</dd></div>
+                  <div><dt>公开关系证据</dt><dd>已有公开证据 +3</dd></div>
+                </dl>
+                <div class="methodology-thresholds horizontal">
+                  <div class="level-high"><span>优先核验</span><strong>≥76</strong><p>且至少 2 条进入日报。</p></div>
+                  <div class="level-medium"><span>本周跟进</span><strong>≥54</strong><p>且至少 1 条进入日报。</p></div>
+                  <div class="level-low"><span>持续观察</span><strong>其他</strong><p>继续积累公开证据。</p></div>
+                </div>
+                <div class="methodology-example" id="methodologyPriorityExample"><span>当前数据示例</span><p>加载中</p></div>
+                <div class="methodology-boundary"><strong>不能说明</strong><p>不是 CRM 内部客户等级，不代表已询价、已购买、销售额或成交概率。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-relevance-density" data-methodology-detail="relevance-density">
+                <header><div><span>公司级 · 信号质量</span><h3>ACRO 相关密度</h3></div><b>0–100%</b></header>
+                <p class="methodology-lead">这是一家公司近 90 天信号的“质量占比”，而不是 ACRO 与该公司的关系强度。</p>
+                <div class="methodology-equation"><span>公式</span><strong>(高相关条数 + 中相关条数 × 0.55) ÷ 近 90 天全部命中条数 × 100%</strong></div>
+                <div class="density-explain-grid">
+                  <div><span>高相关</span><strong>1.00</strong><p>完整计入分子。</p></div>
+                  <div><span>中相关</span><strong>0.55</strong><p>按 55% 权重计入。</p></div>
+                  <div><span>低相关</span><strong>0</strong><p>仅进入分母，不进分子。</p></div>
+                  <div><span>无信号</span><strong>0%</strong><p>表示未获取到数据，不是“不相关”。</p></div>
+                </div>
+                <div class="methodology-example" id="methodologyDensityExample"><span>当前数据示例</span><p>加载中</p></div>
+                <div class="methodology-boundary"><strong>正确用法</strong><p>与信号总量、时效和来源多样性一起看。仅 1 条高相关信号也会得到 100%，所以不能单看密度。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-trend-counts" data-methodology-detail="trend-counts">
+                <header><div><span>图表 · 当前筛选</span><h3>信号走势图例数字</h3></div><b>条数</b></header>
+                <p class="methodology-lead">例如“本公司 29”表示：在当前页面筛选范围和观察周期内，被识别为“本公司”角色的信息共 29 条。</p>
+                <div class="methodology-scope-list">
+                  <span>观察周期</span><span>推送分层</span><span>ACRO 相关性</span><span>信息类型</span><span>公司</span><span>公司角色</span><span>地区</span><span>商业事件</span><span>搜索词</span>
+                </div>
+                <div class="methodology-boundary"><strong>不是什么</strong><p>不是公司数、数据源数或固定的日报总数；它严格继承当前页面的筛选状态。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-dashboard-counts" data-methodology-detail="dashboard-counts">
+                <header><div><span>总览 · 当前筛选</span><h3>总览四项统计口径</h3></div><b>动态计数</b></header>
+                <div class="dashboard-definition-grid">
+                  <div><strong>重大信号</strong><p>当前结果中，属于日报/即时且 ACRO 高相关的信息条数。</p></div>
+                  <div><strong>竞品动态</strong><p>当前结果中，命中竞品角色的信息条数。</p></div>
+                  <div><strong>账户动态信号</strong><p>当前结果中，命中客户/潜在账户的信息条数。</p></div>
+                  <div><strong>亚太地区动态</strong><p>当前结果中，规则识别为日本、中国、韩国或东南亚的信息条数。</p></div>
+                </div>
+                <div class="methodology-boundary"><strong>注意</strong><p>四项可能重叠：一条日本竞品的高相关日报信号，会同时计入“重大信号”“竞品动态”和“亚太地区动态”。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-competitor-matrix" data-methodology-detail="competitor-matrix">
+                <header><div><span>公司级 · 分布</span><h3>竞品动作矩阵</h3></div><b>近 90 天</b></header>
+                <p class="methodology-lead">每个单元格是某家竞品在某类商业事件上的全部命中信息条数。点击数字可回到原始证据。</p>
+                <div class="methodology-rule-columns">
+                  <dl class="methodology-rule-list">
+                    <div><dt>行</dt><dd>竞品公司，按已确认的竞争相关程度排序</dd></div>
+                    <div><dt>列</dt><dd>临床监管、产品平台、质量供应等商业事件</dd></div>
+                  </dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>数字</dt><dd>近 90 天当前公司 × 事件类型的信息条数</dd></div>
+                    <div><dt>颜色</dt><dd>相对当前矩阵最大单元格的深浅，不是风险或优先级分</dd></div>
+                  </dl>
+                </div>
+                <div class="methodology-boundary"><strong>限制</strong><p>公开发布频率高的公司可能更显眼；矩阵用于发现集中动作，不能直接推断市场份额。</p></div>
+              </article>
+
+              <article class="methodology-detail" id="metric-source-health" data-methodology-detail="source-health">
+                <header><div><span>运行级 · 链路</span><h3>数据源健康状态</h3></div><b>请求 ≠ 产出</b></header>
+                <div class="health-definition-grid">
+                  <div class="productive"><strong>有日报产出</strong><p>本轮有内容，且至少 1 条进入日报/即时层。</p></div>
+                  <div class="archive"><strong>仅归档产出</strong><p>本轮抓到内容，但都未通过日报准入。</p></div>
+                  <div class="quiet"><strong>正常安静</strong><p>请求成功但本轮无新内容，不等于链路中断。</p></div>
+                  <div class="pending"><strong>待配置/未运行</strong><p>入口已登记，但尚未启用、缺少必要配置或本轮没有发起请求。</p></div>
+                  <div class="error"><strong>异常/待处理</strong><p>请求失败或连续无法解析，需要运维核查。</p></div>
+                </div>
+                <div class="methodology-boundary"><strong>评估原则</strong><p>健康看链路是否可达，产出看是否有新内容，质量看是否有内容进日报。三个问题分开回答。</p></div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="methodology-toc" aria-label="指标说明目录">
+            <div class="methodology-toc-head"><span>本页目录</span><strong>指标口径</strong></div>
+            <nav>
+              <button type="button" data-methodology-target="news-score"><span>01</span>信息筛选分</button>
+              <button type="button" data-methodology-target="acro-relevance"><span>02</span>ACRO 相关性分</button>
+              <button type="button" data-methodology-target="daily-admission"><span>03</span>日报准入</button>
+              <button type="button" data-methodology-target="priority-index"><span>04</span>账户优先指数</button>
+              <button type="button" data-methodology-target="relevance-density"><span>05</span>ACRO 相关密度</button>
+              <button type="button" data-methodology-target="trend-counts"><span>06</span>走势统计数</button>
+              <button type="button" data-methodology-target="dashboard-counts"><span>07</span>总览四项</button>
+              <button type="button" data-methodology-target="competitor-matrix"><span>08</span>竞品动作矩阵</button>
+              <button type="button" data-methodology-target="source-health"><span>09</span>数据源健康</button>
+            </nav>
+            <button class="methodology-cross-link" type="button" data-rule-page-target="structured-rules"><span>六组结构化提取</span><strong>另一张规则页 →</strong></button>
+            <div class="methodology-callout"><strong>三个不等于</strong><p>筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
+          </aside>
         </div>
       </section>
 
@@ -233699,6 +234772,7 @@ const pageMeta = {
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 运营档案"],
+  methodology: ["Metrics & Rules", "指标口径与判断依据"],
   "structured-rules": ["Intelligence Operations", "六组结构化情报规则"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
   questions: ["Product Decisions", "已确定边界与下一阶段决策"],
@@ -233917,6 +234991,13 @@ const els = {
   structuredTermCount: document.querySelector("#structuredTermCount"),
   structuredHitCount: document.querySelector("#structuredHitCount"),
   structuredRuleGrid: document.querySelector("#structuredRuleGrid"),
+  methodologyTrendCount: document.querySelector("#methodologyTrendCount"),
+  methodologyScopedCount: document.querySelector("#methodologyScopedCount"),
+  methodologyHealthySources: document.querySelector("#methodologyHealthySources"),
+  methodologyNewsExample: document.querySelector("#methodologyNewsExample"),
+  methodologyRelevanceExample: document.querySelector("#methodologyRelevanceExample"),
+  methodologyPriorityExample: document.querySelector("#methodologyPriorityExample"),
+  methodologyDensityExample: document.querySelector("#methodologyDensityExample"),
   pagePanels: document.querySelectorAll("[data-page]"),
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
@@ -233945,6 +235026,7 @@ function renderLoadedData() {
   renderCompanySourceCoverage();
   renderAcroOperationalProfile();
   renderStructuredRules();
+  renderMethodology();
   render();
   renderSourceHealth();
   renderSourceHealthPage();
@@ -234305,6 +235387,82 @@ function renderStructuredRules() {
       </article>
     `;
   }).join("");
+}
+
+function renderMethodology() {
+  if (!els.methodologyScopedCount || !state.payload) return;
+  const allItems = state.payload.items || [];
+  const scopedItems = getFilteredItems();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const selfCount = scopedItems.filter((item) => getItemRole(item, companyRoles) === "self").length;
+  els.methodologyTrendCount.textContent = "本公司 " + selfCount;
+  els.methodologyScopedCount.textContent = scopedItems.length + " 条";
+
+  const healthRows = (state.payload.source_health || []).filter((row) => row.enabled !== false);
+  const reachableRows = healthRows.filter((row) =>
+    row.operational_status === "reachable" || ["productive", "archive_only", "quiet"].includes(row.status),
+  );
+  els.methodologyHealthySources.textContent = healthRows.length
+    ? reachableRows.length + "/" + healthRows.length
+    : "未接入";
+
+  const topNews = [...allItems].sort(
+    (a, b) => (Number(b.score) || 0) - (Number(a.score) || 0),
+  )[0];
+  if (topNews) {
+    const reasons = (topNews.reasons || []).slice(0, 4);
+    els.methodologyNewsExample.innerHTML =
+      "<span>当前数据示例 · " + (Number(topNews.score) || 0) + " 分</span>" +
+      "<p><strong>" + escapeHtml(firstReadableSentence(topNews.title, 96)) + "</strong></p>" +
+      "<div>" + (reasons.length
+        ? reasons.map((reason) => "<i>" + escapeHtml(reason) + "</i>").join("")
+        : "<i>该记录未保留逐项加分原因。</i>") + "</div>";
+  } else {
+    els.methodologyNewsExample.innerHTML = "<span>当前数据示例</span><p>当前数据集暂无可用新闻。</p>";
+  }
+
+  const topRelevance = [...allItems].sort(
+    (a, b) => (Number(b.acro_relevance?.score) || 0) - (Number(a.acro_relevance?.score) || 0),
+  )[0];
+  if (topRelevance) {
+    const relevance = topRelevance.acro_relevance || {};
+    els.methodologyRelevanceExample.innerHTML =
+      "<span>当前数据示例 · " + (Number(relevance.score) || 0) + " 分 · " +
+        escapeHtml(relevance.label || "待分析") + "</span>" +
+      "<p><strong>" + escapeHtml(firstReadableSentence(topRelevance.title, 96)) + "</strong></p>" +
+      "<div>" + (relevance.reasons || []).map(
+        (reason) => "<i>" + escapeHtml(reason) + "</i>",
+      ).join("") + "</div>";
+  } else {
+    els.methodologyRelevanceExample.innerHTML = "<span>当前数据示例</span><p>当前数据集暂无相关性结果。</p>";
+  }
+
+  const priorities = buildCustomerAccountPriorities();
+  const priorityExample = priorities.find((entry) => entry.items.length);
+  if (priorityExample) {
+    els.methodologyPriorityExample.innerHTML =
+      "<span>当前数据示例 · " + escapeHtml(shortCompanyName(priorityExample.company.display_name)) + "</span>" +
+      "<p><strong>优先指数 " + priorityExample.priorityScore + "</strong>：" +
+        priorityExample.selectedItems.length + " 条进入日报，" +
+        priorityExample.highCount + " 条高相关，密度 " + priorityExample.density + "%，" +
+        priorityExample.sourceCount + " 个去重来源。</p>";
+  } else {
+    els.methodologyPriorityExample.innerHTML = "<span>当前数据示例</span><p>持续监测账户当前还没有可计算的公开信号。</p>";
+  }
+
+  const densityExample = [...priorities]
+    .filter((entry) => entry.items.length)
+    .sort((a, b) => b.density - a.density || b.items.length - a.items.length)[0];
+  if (densityExample) {
+    els.methodologyDensityExample.innerHTML =
+      "<span>当前数据示例 · " + escapeHtml(shortCompanyName(densityExample.company.display_name)) + "</span>" +
+      "<p><strong>(" + densityExample.highCount + " 高 + " + densityExample.mediumCount +
+        " 中 × 0.55) ÷ " + densityExample.items.length + " 条 = " + densityExample.density + "%</strong></p>";
+  } else {
+    els.methodologyDensityExample.innerHTML = "<span>当前数据示例</span><p>持续监测账户当前还没有可计算的公开信号。</p>";
+  }
 }
 
 function renderCompanyPools() {
@@ -235336,6 +236494,7 @@ function renderOverviewScope() {
   renderCategoryDistribution(scoped);
   renderBusinessLanes(scoped, companyRoles);
   renderSignals();
+  renderMethodology();
 }
 
 function renderBusinessLanes(items, companyRoles) {
@@ -235538,24 +236697,26 @@ function renderCustomerPriorityMatrix(priorities) {
   }
   const header = `
     <div class="customer-priority-row customer-priority-header">
-      <span>账户（优先级高 → 低）</span><span>优先指数</span><span>ACRO 相关密度</span>
+      <span>账户（优先级高 → 低）</span>
+      <span>优先指数 <button class="column-help" type="button" data-methodology-target="priority-index" aria-label="查看优先指数规则">i</button></span>
+      <span>ACRO 相关密度 <button class="column-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 相关密度规则">i</button></span>
       <span>近 30 天</span><span>主要动向</span><span>建议下一步</span>
     </div>`;
   const rows = priorities.map((entry, index) => {
     const relationship = entry.publicRelationship ? "公开关系证据" : "关系待确认";
     const keyTitle = entry.keyItem?.title || "暂无可用原文";
     return `
-      <button class="customer-priority-row" type="button" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
+      <div class="customer-priority-row" role="button" tabindex="0" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
         <span class="customer-priority-company">
           <b>${String(index + 1).padStart(2, "0")}</b>
           <i><strong>${escapeHtml(shortCompanyName(entry.company.display_name))}</strong><small>${escapeHtml(relationship)} · ${entry.sourceCount} 个来源</small></i>
         </span>
-        <span class="customer-priority-score"><strong>${entry.priorityScore}</strong><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
-        <span class="customer-priority-density"><strong>${entry.density}%</strong><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
+        <span class="customer-priority-score"><button class="customer-priority-value" type="button" data-methodology-target="priority-index" aria-label="优先指数 ${entry.priorityScore}，查看计算规则"><strong>${entry.priorityScore}</strong></button><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
+        <span class="customer-priority-density"><button class="customer-priority-value" type="button" data-methodology-target="relevance-density" aria-label="ACRO 相关密度 ${entry.density}%，查看计算规则"><strong>${entry.density}%</strong></button><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
         <span class="customer-priority-count"><strong>${entry.recent30Count}</strong><small>${entry.selectedItems.length} 条进入日报</small></span>
         <span class="customer-priority-topic"><strong>${escapeHtml(labelBusinessEvent(entry.dominantEvent, true))}</strong><small>${escapeHtml(keyTitle)}</small></span>
         <span class="customer-priority-action"><b class="${entry.urgency.className}">${entry.urgency.label}</b><strong>${escapeHtml(entry.action.label)}</strong><small>${escapeHtml(entry.action.owner)}</small></span>
-      </button>`;
+      </div>`;
   }).join("");
   els.customerPriorityMatrix.innerHTML = `<div class="customer-priority-scroll">${header}${rows}</div>`;
 }
@@ -235756,7 +236917,7 @@ function renderSignalTrend(items, companyRoles) {
     const total = values[series.id].reduce((sum, value) => sum + value, 0);
     const hasCustomerPool = (getJapanAccountData().accounts || []).length > 0;
     const suffix = series.id === "customer" && !total && !hasCustomerPool ? "未接入" : total;
-    return `<span><i style="background:${series.color}"></i>${series.label} ${suffix}</span>`;
+    return `<button class="trend-legend-item" type="button" data-methodology-target="trend-counts" aria-label="${series.label} ${suffix} 条，查看统计口径"><i style="background:${series.color}"></i>${series.label} ${suffix}</button>`;
   }).join("");
 }
 
@@ -236421,6 +237582,30 @@ function renderPage() {
   });
 }
 
+function scrollToMethodologyTarget(target, updateHash = true) {
+  const section = document.querySelector("#metric-" + target);
+  if (!section) return;
+  document.querySelectorAll("[data-methodology-detail]").forEach((detail) => {
+    detail.classList.toggle("is-focused", detail === section);
+  });
+  if (updateHash && window.history?.replaceState) {
+    window.history.replaceState(null, "", "#metric-" + target);
+  }
+  section.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.setTimeout(() => section.classList.remove("is-focused"), 1800);
+}
+
+function openMethodology(target = "") {
+  state.page = "methodology";
+  renderMethodology();
+  renderPage();
+  if (target) {
+    window.requestAnimationFrame(() => scrollToMethodologyTarget(target));
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+
 function renderSignals() {
   const filtered = getFilteredItems();
   els.detailSignalCount.innerHTML = state.sourceOutputId !== "all"
@@ -236477,7 +237662,7 @@ function renderBusinessInsight(item, compact) {
     const actionOwner = isEnglish ? translatedAction.owner : action.owner || "待确认";
     const explanation = firstReadableSentence(getRelevanceExplanation(item), 74);
     return `<div class="business-insight-strip relevance-${escapeAttr(relevance.level || "low")}">
-      <div class="strip-score"><strong>${Number(relevance.score) || 0}</strong><span>ACRO ${escapeHtml(relevanceLabel)}</span></div>
+      <button class="strip-score" type="button" data-methodology-target="acro-relevance" aria-label="ACRO 相关性 ${Number(relevance.score) || 0} 分，查看计算规则"><strong>${Number(relevance.score) || 0}</strong><span>ACRO ${escapeHtml(relevanceLabel)}</span></button>
       <p>${escapeHtml(explanation)}</p>
       <div class="strip-action"><strong>${escapeHtml(actionLabel)}</strong><span>${escapeHtml(actionOwner)}</span></div>
     </div>`;
@@ -236486,7 +237671,7 @@ function renderBusinessInsight(item, compact) {
     <div class="business-insight-copy">
       <div class="business-insight-title">
         <span>${isEnglish ? `ACRO ${escapeHtml(getRelevanceLabel(item))}` : `ACRO ${escapeHtml(relevance.label || "待分析")}`}</span>
-        <strong>${Number(relevance.score) || 0}</strong>
+        <button class="business-insight-score" type="button" data-methodology-target="acro-relevance" aria-label="ACRO 相关性 ${Number(relevance.score) || 0} 分，查看计算规则">${Number(relevance.score) || 0}</button>
       </div>
       <p>${escapeHtml(getRelevanceExplanation(item))}</p>
     </div>
@@ -236819,7 +238004,7 @@ function renderSignalCards(container, items, compact) {
           <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(displayTitle)}</a>
           ${showOriginalTitle ? `<p class="original-title"><span>原文标题</span>${escapeHtml(item.title)}</p>` : ""}
         </div>
-        <span class="score">${item.score}</span>
+        <button class="score" type="button" data-methodology-target="news-score" aria-label="信息筛选分 ${item.score}，查看计算规则">${item.score}</button>
       </div>
       <div class="meta-row">
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
@@ -237665,8 +238850,17 @@ els.executivePoints.addEventListener("click", (event) => {
 });
 
 els.customerPriorityMatrix.addEventListener("click", (event) => {
+  if (event.target.closest("[data-methodology-target]")) return;
   const row = event.target.closest("[data-customer-priority-company]");
   if (!row) return;
+  openOverviewEvidence(row.dataset.customerPriorityCompany);
+});
+
+els.customerPriorityMatrix.addEventListener("keydown", (event) => {
+  if (!["Enter", " "].includes(event.key) || event.target.closest("button")) return;
+  const row = event.target.closest("[data-customer-priority-company]");
+  if (!row) return;
+  event.preventDefault();
   openOverviewEvidence(row.dataset.customerPriorityCompany);
 });
 
@@ -237798,11 +238992,44 @@ els.japanCustomerList.addEventListener("click", (event) => {
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     state.page = button.dataset.pageTarget;
+    if (state.page === "methodology") renderMethodology();
     renderPage();
+    if (window.location.hash.startsWith("#metric-") && state.page !== "methodology") {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
 
-loadData();
+document.addEventListener("click", (event) => {
+  const methodologyTarget = event.target.closest("[data-methodology-target]");
+  if (methodologyTarget) {
+    event.preventDefault();
+    event.stopPropagation();
+    openMethodology(methodologyTarget.dataset.methodologyTarget);
+    return;
+  }
+  const rulePageTarget = event.target.closest("[data-rule-page-target]");
+  if (!rulePageTarget) return;
+  if (rulePageTarget.dataset.rulePageTarget === "methodology") {
+    if (window.history?.replaceState) {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+    openMethodology();
+    return;
+  }
+  state.page = rulePageTarget.dataset.rulePageTarget;
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const initialMetricHash = window.location.hash.match(/^#metric-([a-z-]+)$/)?.[1] || "";
+if (initialMetricHash) state.page = "methodology";
+loadData().then(() => {
+  if (initialMetricHash) {
+    window.requestAnimationFrame(() => scrollToMethodologyTarget(initialMetricHash, false));
+  }
+});
 
     </script>
   </body>

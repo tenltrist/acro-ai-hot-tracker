@@ -1907,6 +1907,7 @@ const pageMeta = {
   signals: ["Intelligence Detail", "情报明细与证据库"],
   sources: ["Source Map", "数据源地图与接入边界"],
   acro: ["Company Profile", "ACRO 运营档案"],
+  methodology: ["Metrics & Rules", "指标口径与判断依据"],
   "structured-rules": ["Intelligence Operations", "六组结构化情报规则"],
   pipeline: ["System Pipeline", "数据获取、处理、存储、展现链路"],
   questions: ["Product Decisions", "已确定边界与下一阶段决策"],
@@ -2125,6 +2126,13 @@ const els = {
   structuredTermCount: document.querySelector("#structuredTermCount"),
   structuredHitCount: document.querySelector("#structuredHitCount"),
   structuredRuleGrid: document.querySelector("#structuredRuleGrid"),
+  methodologyTrendCount: document.querySelector("#methodologyTrendCount"),
+  methodologyScopedCount: document.querySelector("#methodologyScopedCount"),
+  methodologyHealthySources: document.querySelector("#methodologyHealthySources"),
+  methodologyNewsExample: document.querySelector("#methodologyNewsExample"),
+  methodologyRelevanceExample: document.querySelector("#methodologyRelevanceExample"),
+  methodologyPriorityExample: document.querySelector("#methodologyPriorityExample"),
+  methodologyDensityExample: document.querySelector("#methodologyDensityExample"),
   pagePanels: document.querySelectorAll("[data-page]"),
   pageButtons: document.querySelectorAll("[data-page-target]"),
 };
@@ -2153,6 +2161,7 @@ function renderLoadedData() {
   renderCompanySourceCoverage();
   renderAcroOperationalProfile();
   renderStructuredRules();
+  renderMethodology();
   render();
   renderSourceHealth();
   renderSourceHealthPage();
@@ -2513,6 +2522,82 @@ function renderStructuredRules() {
       </article>
     `;
   }).join("");
+}
+
+function renderMethodology() {
+  if (!els.methodologyScopedCount || !state.payload) return;
+  const allItems = state.payload.items || [];
+  const scopedItems = getFilteredItems();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const selfCount = scopedItems.filter((item) => getItemRole(item, companyRoles) === "self").length;
+  els.methodologyTrendCount.textContent = "本公司 " + selfCount;
+  els.methodologyScopedCount.textContent = scopedItems.length + " 条";
+
+  const healthRows = (state.payload.source_health || []).filter((row) => row.enabled !== false);
+  const reachableRows = healthRows.filter((row) =>
+    row.operational_status === "reachable" || ["productive", "archive_only", "quiet"].includes(row.status),
+  );
+  els.methodologyHealthySources.textContent = healthRows.length
+    ? reachableRows.length + "/" + healthRows.length
+    : "未接入";
+
+  const topNews = [...allItems].sort(
+    (a, b) => (Number(b.score) || 0) - (Number(a.score) || 0),
+  )[0];
+  if (topNews) {
+    const reasons = (topNews.reasons || []).slice(0, 4);
+    els.methodologyNewsExample.innerHTML =
+      "<span>当前数据示例 · " + (Number(topNews.score) || 0) + " 分</span>" +
+      "<p><strong>" + escapeHtml(firstReadableSentence(topNews.title, 96)) + "</strong></p>" +
+      "<div>" + (reasons.length
+        ? reasons.map((reason) => "<i>" + escapeHtml(reason) + "</i>").join("")
+        : "<i>该记录未保留逐项加分原因。</i>") + "</div>";
+  } else {
+    els.methodologyNewsExample.innerHTML = "<span>当前数据示例</span><p>当前数据集暂无可用新闻。</p>";
+  }
+
+  const topRelevance = [...allItems].sort(
+    (a, b) => (Number(b.acro_relevance?.score) || 0) - (Number(a.acro_relevance?.score) || 0),
+  )[0];
+  if (topRelevance) {
+    const relevance = topRelevance.acro_relevance || {};
+    els.methodologyRelevanceExample.innerHTML =
+      "<span>当前数据示例 · " + (Number(relevance.score) || 0) + " 分 · " +
+        escapeHtml(relevance.label || "待分析") + "</span>" +
+      "<p><strong>" + escapeHtml(firstReadableSentence(topRelevance.title, 96)) + "</strong></p>" +
+      "<div>" + (relevance.reasons || []).map(
+        (reason) => "<i>" + escapeHtml(reason) + "</i>",
+      ).join("") + "</div>";
+  } else {
+    els.methodologyRelevanceExample.innerHTML = "<span>当前数据示例</span><p>当前数据集暂无相关性结果。</p>";
+  }
+
+  const priorities = buildCustomerAccountPriorities();
+  const priorityExample = priorities.find((entry) => entry.items.length);
+  if (priorityExample) {
+    els.methodologyPriorityExample.innerHTML =
+      "<span>当前数据示例 · " + escapeHtml(shortCompanyName(priorityExample.company.display_name)) + "</span>" +
+      "<p><strong>优先指数 " + priorityExample.priorityScore + "</strong>：" +
+        priorityExample.selectedItems.length + " 条进入日报，" +
+        priorityExample.highCount + " 条高相关，密度 " + priorityExample.density + "%，" +
+        priorityExample.sourceCount + " 个去重来源。</p>";
+  } else {
+    els.methodologyPriorityExample.innerHTML = "<span>当前数据示例</span><p>持续监测账户当前还没有可计算的公开信号。</p>";
+  }
+
+  const densityExample = [...priorities]
+    .filter((entry) => entry.items.length)
+    .sort((a, b) => b.density - a.density || b.items.length - a.items.length)[0];
+  if (densityExample) {
+    els.methodologyDensityExample.innerHTML =
+      "<span>当前数据示例 · " + escapeHtml(shortCompanyName(densityExample.company.display_name)) + "</span>" +
+      "<p><strong>(" + densityExample.highCount + " 高 + " + densityExample.mediumCount +
+        " 中 × 0.55) ÷ " + densityExample.items.length + " 条 = " + densityExample.density + "%</strong></p>";
+  } else {
+    els.methodologyDensityExample.innerHTML = "<span>当前数据示例</span><p>持续监测账户当前还没有可计算的公开信号。</p>";
+  }
 }
 
 function renderCompanyPools() {
@@ -3544,6 +3629,7 @@ function renderOverviewScope() {
   renderCategoryDistribution(scoped);
   renderBusinessLanes(scoped, companyRoles);
   renderSignals();
+  renderMethodology();
 }
 
 function renderBusinessLanes(items, companyRoles) {
@@ -3746,24 +3832,26 @@ function renderCustomerPriorityMatrix(priorities) {
   }
   const header = `
     <div class="customer-priority-row customer-priority-header">
-      <span>账户（优先级高 → 低）</span><span>优先指数</span><span>ACRO 相关密度</span>
+      <span>账户（优先级高 → 低）</span>
+      <span>优先指数 <button class="column-help" type="button" data-methodology-target="priority-index" aria-label="查看优先指数规则">i</button></span>
+      <span>ACRO 相关密度 <button class="column-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 相关密度规则">i</button></span>
       <span>近 30 天</span><span>主要动向</span><span>建议下一步</span>
     </div>`;
   const rows = priorities.map((entry, index) => {
     const relationship = entry.publicRelationship ? "公开关系证据" : "关系待确认";
     const keyTitle = entry.keyItem?.title || "暂无可用原文";
     return `
-      <button class="customer-priority-row" type="button" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
+      <div class="customer-priority-row" role="button" tabindex="0" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
         <span class="customer-priority-company">
           <b>${String(index + 1).padStart(2, "0")}</b>
           <i><strong>${escapeHtml(shortCompanyName(entry.company.display_name))}</strong><small>${escapeHtml(relationship)} · ${entry.sourceCount} 个来源</small></i>
         </span>
-        <span class="customer-priority-score"><strong>${entry.priorityScore}</strong><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
-        <span class="customer-priority-density"><strong>${entry.density}%</strong><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
+        <span class="customer-priority-score"><button class="customer-priority-value" type="button" data-methodology-target="priority-index" aria-label="优先指数 ${entry.priorityScore}，查看计算规则"><strong>${entry.priorityScore}</strong></button><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
+        <span class="customer-priority-density"><button class="customer-priority-value" type="button" data-methodology-target="relevance-density" aria-label="ACRO 相关密度 ${entry.density}%，查看计算规则"><strong>${entry.density}%</strong></button><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
         <span class="customer-priority-count"><strong>${entry.recent30Count}</strong><small>${entry.selectedItems.length} 条进入日报</small></span>
         <span class="customer-priority-topic"><strong>${escapeHtml(labelBusinessEvent(entry.dominantEvent, true))}</strong><small>${escapeHtml(keyTitle)}</small></span>
         <span class="customer-priority-action"><b class="${entry.urgency.className}">${entry.urgency.label}</b><strong>${escapeHtml(entry.action.label)}</strong><small>${escapeHtml(entry.action.owner)}</small></span>
-      </button>`;
+      </div>`;
   }).join("");
   els.customerPriorityMatrix.innerHTML = `<div class="customer-priority-scroll">${header}${rows}</div>`;
 }
@@ -3964,7 +4052,7 @@ function renderSignalTrend(items, companyRoles) {
     const total = values[series.id].reduce((sum, value) => sum + value, 0);
     const hasCustomerPool = (getJapanAccountData().accounts || []).length > 0;
     const suffix = series.id === "customer" && !total && !hasCustomerPool ? "未接入" : total;
-    return `<span><i style="background:${series.color}"></i>${series.label} ${suffix}</span>`;
+    return `<button class="trend-legend-item" type="button" data-methodology-target="trend-counts" aria-label="${series.label} ${suffix} 条，查看统计口径"><i style="background:${series.color}"></i>${series.label} ${suffix}</button>`;
   }).join("");
 }
 
@@ -4629,6 +4717,30 @@ function renderPage() {
   });
 }
 
+function scrollToMethodologyTarget(target, updateHash = true) {
+  const section = document.querySelector("#metric-" + target);
+  if (!section) return;
+  document.querySelectorAll("[data-methodology-detail]").forEach((detail) => {
+    detail.classList.toggle("is-focused", detail === section);
+  });
+  if (updateHash && window.history?.replaceState) {
+    window.history.replaceState(null, "", "#metric-" + target);
+  }
+  section.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.setTimeout(() => section.classList.remove("is-focused"), 1800);
+}
+
+function openMethodology(target = "") {
+  state.page = "methodology";
+  renderMethodology();
+  renderPage();
+  if (target) {
+    window.requestAnimationFrame(() => scrollToMethodologyTarget(target));
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+
 function renderSignals() {
   const filtered = getFilteredItems();
   els.detailSignalCount.innerHTML = state.sourceOutputId !== "all"
@@ -4685,7 +4797,7 @@ function renderBusinessInsight(item, compact) {
     const actionOwner = isEnglish ? translatedAction.owner : action.owner || "待确认";
     const explanation = firstReadableSentence(getRelevanceExplanation(item), 74);
     return `<div class="business-insight-strip relevance-${escapeAttr(relevance.level || "low")}">
-      <div class="strip-score"><strong>${Number(relevance.score) || 0}</strong><span>ACRO ${escapeHtml(relevanceLabel)}</span></div>
+      <button class="strip-score" type="button" data-methodology-target="acro-relevance" aria-label="ACRO 相关性 ${Number(relevance.score) || 0} 分，查看计算规则"><strong>${Number(relevance.score) || 0}</strong><span>ACRO ${escapeHtml(relevanceLabel)}</span></button>
       <p>${escapeHtml(explanation)}</p>
       <div class="strip-action"><strong>${escapeHtml(actionLabel)}</strong><span>${escapeHtml(actionOwner)}</span></div>
     </div>`;
@@ -4694,7 +4806,7 @@ function renderBusinessInsight(item, compact) {
     <div class="business-insight-copy">
       <div class="business-insight-title">
         <span>${isEnglish ? `ACRO ${escapeHtml(getRelevanceLabel(item))}` : `ACRO ${escapeHtml(relevance.label || "待分析")}`}</span>
-        <strong>${Number(relevance.score) || 0}</strong>
+        <button class="business-insight-score" type="button" data-methodology-target="acro-relevance" aria-label="ACRO 相关性 ${Number(relevance.score) || 0} 分，查看计算规则">${Number(relevance.score) || 0}</button>
       </div>
       <p>${escapeHtml(getRelevanceExplanation(item))}</p>
     </div>
@@ -5027,7 +5139,7 @@ function renderSignalCards(container, items, compact) {
           <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(displayTitle)}</a>
           ${showOriginalTitle ? `<p class="original-title"><span>原文标题</span>${escapeHtml(item.title)}</p>` : ""}
         </div>
-        <span class="score">${item.score}</span>
+        <button class="score" type="button" data-methodology-target="news-score" aria-label="信息筛选分 ${item.score}，查看计算规则">${item.score}</button>
       </div>
       <div class="meta-row">
         <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
@@ -5873,8 +5985,17 @@ els.executivePoints.addEventListener("click", (event) => {
 });
 
 els.customerPriorityMatrix.addEventListener("click", (event) => {
+  if (event.target.closest("[data-methodology-target]")) return;
   const row = event.target.closest("[data-customer-priority-company]");
   if (!row) return;
+  openOverviewEvidence(row.dataset.customerPriorityCompany);
+});
+
+els.customerPriorityMatrix.addEventListener("keydown", (event) => {
+  if (!["Enter", " "].includes(event.key) || event.target.closest("button")) return;
+  const row = event.target.closest("[data-customer-priority-company]");
+  if (!row) return;
+  event.preventDefault();
   openOverviewEvidence(row.dataset.customerPriorityCompany);
 });
 
@@ -6006,8 +6127,41 @@ els.japanCustomerList.addEventListener("click", (event) => {
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     state.page = button.dataset.pageTarget;
+    if (state.page === "methodology") renderMethodology();
     renderPage();
+    if (window.location.hash.startsWith("#metric-") && state.page !== "methodology") {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
 
-loadData();
+document.addEventListener("click", (event) => {
+  const methodologyTarget = event.target.closest("[data-methodology-target]");
+  if (methodologyTarget) {
+    event.preventDefault();
+    event.stopPropagation();
+    openMethodology(methodologyTarget.dataset.methodologyTarget);
+    return;
+  }
+  const rulePageTarget = event.target.closest("[data-rule-page-target]");
+  if (!rulePageTarget) return;
+  if (rulePageTarget.dataset.rulePageTarget === "methodology") {
+    if (window.history?.replaceState) {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+    openMethodology();
+    return;
+  }
+  state.page = rulePageTarget.dataset.rulePageTarget;
+  renderPage();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const initialMetricHash = window.location.hash.match(/^#metric-([a-z-]+)$/)?.[1] || "";
+if (initialMetricHash) state.page = "methodology";
+loadData().then(() => {
+  if (initialMetricHash) {
+    window.requestAnimationFrame(() => scrollToMethodologyTarget(initialMetricHash, false));
+  }
+});
