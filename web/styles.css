@@ -1990,6 +1990,11 @@ select {
 }
 
 .customer-priority-header > span {
+  display: flex;
+  align-items: center;
+  align-content: normal;
+  gap: 4px;
+  white-space: nowrap;
   color: #56666f;
   font-size: 10px;
   font-weight: 850;
@@ -2012,7 +2017,7 @@ select {
 }
 
 .column-help {
-  margin-left: 4px;
+  margin-left: 0;
 }
 
 .metric-label-help {

@@ -2374,7 +2374,7 @@ def render_section(
         if ai_text:
             summary_label = {
                 "llm": "API 模型摘要",
-                "manual_ai": "ChatGPT Pro 人工复核摘要",
+                "manual_ai": "AI 情报精读",
                 "rule": "规则提要",
             }.get(summary_methods.get(item.key, "rule"), "规则提要")
             lines.append(f"   - {summary_label}：{ai_text}")

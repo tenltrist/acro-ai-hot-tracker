@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-01T15:58:46",
+  "generated_at": "2026-09-01T16:52:14",
   "window_days": 90,
   "summary": {
-    "new_candidates": 10,
+    "new_candidates": 24,
     "immediate": 2,
-    "daily": 175,
-    "archive": 1962,
+    "daily": 174,
+    "archive": 1951,
     "errors": 0,
     "companies": 29,
-    "sources": 137
+    "sources": 138
   },
   "summary_pipeline": {
     "requested": false,
@@ -19,7 +19,7 @@
     "eligible": 0,
     "generated": 0,
     "reused": 0,
-    "manual_imported": 24,
+    "manual_imported": 61,
     "manual_tool": "ChatGPT Pro",
     "failed": 0,
     "error": ""
@@ -79,7 +79,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 90,
@@ -192,7 +192,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 80,
@@ -299,7 +299,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-31",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 78,
@@ -406,7 +406,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 78,
@@ -509,7 +509,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 76,
@@ -619,7 +619,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 76,
@@ -730,7 +730,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 76,
@@ -839,7 +839,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 72,
@@ -942,7 +942,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 72,
@@ -1048,7 +1048,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-08-11",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1151,7 +1151,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-05-04",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1255,7 +1255,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-04-02",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1363,7 +1363,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1465,7 +1465,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1571,7 +1571,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1677,7 +1677,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1786,7 +1786,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-31",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 62,
@@ -1893,7 +1893,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-06",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 62,
@@ -1999,7 +1999,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-31",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2098,7 +2098,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2201,7 +2201,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2308,7 +2308,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2415,7 +2415,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-06-30",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2517,7 +2517,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2588,14 +2588,14 @@
       ],
       "source_trust": "owned",
       "title": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration - Sartorius",
-      "title_zh": "",
+      "title_zh": "Sartorius与LFB扩大合作，打通从细胞株开发到首批GMP原液的服务链",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5",
       "published": "2026-06-23",
       "summary": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration Sartorius",
-      "ai_summary": "竞品 Sartorius / Sartorius Stedim Biotech 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "Sartorius与LFB Biomanufacturing扩大2024年启动的合作：Sartorius负责细胞株开发和主细胞库建立，LFB提供上下游工艺开发、分析检测及GMP原液生产，目标是减少项目交接并缩短从细胞株到临床的周期。对ACRO而言，这是竞品向端到端生物工艺服务整合的信号，应持续对比其在细胞株、培养基、质量检测和GMP原料环节的客户覆盖。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -2619,7 +2619,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2689,15 +2689,15 @@
         "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Sartorius, LFB Biomanufacturing Expand Collaboration - contractpharma.com",
-      "title_zh": "",
+      "title": "Sartorius, LFB Biomanufacturing Expand Collaboration - Contract Pharma",
+      "title_zh": "Sartorius与LFB扩展生物制药CDMO合作，提供一体化临床转化路径",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5",
       "published": "2026-06-23",
-      "summary": "Sartorius, LFB Biomanufacturing Expand Collaboration contractpharma.com",
-      "ai_summary": "竞品 Sartorius / Sartorius Stedim Biotech 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "summary": "Sartorius, LFB Biomanufacturing Expand Collaboration Contract Pharma",
+      "ai_summary": "Sartorius与LFB Biomanufacturing将细胞株开发、主细胞库、工艺开发、分析检测及GMP原液生产串成一条服务路径，降低生物药项目在不同供应商之间切换的时间和执行风险。该报道与Sartorius官方公告属于同一事件，应合并观察；对ACRO的意义主要是竞品服务边界正在从单项工具向综合解决方案延伸。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -2721,7 +2721,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2791,14 +2791,14 @@
       ],
       "source_trust": "aggregator",
       "title": "Sartorius strengthens collaboration with LFB Biomanufacturing - BioSpectrum Asia",
-      "title_zh": "",
+      "title_zh": "Sartorius与LFB强化从细胞株开发到GMP生产的一体化合作",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1d6cTQ4dERHMXp4MzU1dWFUQUVLNmlPU1RmNnBuVkhBUE5ocERaTW95WlBUX0hvek1xSndSdzZaX1NYT095RE9pZ1g5a3N6WWdjNGd4WkUtS0stZW5uVWZqWk01T1Y5Snh0ZTJJSjZxMGZ1M3RaUDN4WW1CUTF3SkJEbjk0aDRUMDVCSHpSWndQY093Y1VzZWlXSXczN3hkNk5HRzhFNTNUaG5BOVhRTkhn?oc=5",
       "published": "2026-06-23",
       "summary": "Sartorius strengthens collaboration with LFB Biomanufacturing BioSpectrum Asia",
-      "ai_summary": "竞品 Sartorius / Sartorius Stedim Biotech 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "双方在既有合作基础上进一步整合能力，由Sartorius提供细胞株开发和主细胞库服务，LFB承接工艺开发、检测及GMP原液制造，为客户提供更连续的临床前转化路径。该条与另外两篇报道是同一事件的重复传播，平台应统一口径并避免把重复报道误判为三次独立竞争动作。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -2822,7 +2822,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2892,14 +2892,14 @@
       ],
       "source_trust": "owned",
       "title": "Execution of a Patent License Agreement with 10x Genomics, Inc. for Spatial Products “Seeker™” and “Trekker™” - takara-bio.com",
-      "title_zh": "",
+      "title_zh": "宝生物与10x Genomics签署专利许可，Seeker和Trekker空间分析产品可在全球销售",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wT3VfODhxclBrOGJuUTV4ekUzTVk2eUZEM1NycVI2VV9lNkVreVhFYzRUVE1wN3oxRFlBekp3b3dCa1BFbWJUYm45OGN3OFVQaVRNc3VoOVJNMHNyRkF4SC1sc1FoYTg?oc=5",
       "published": "2026-06-23",
       "summary": "Execution of a Patent License Agreement with 10x Genomics, Inc. for Spatial Products “Seeker™” and “Trekker™” takara-bio.com",
-      "ai_summary": "竞品 Takara Bio / 宝生物 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "宝生物美国控股子公司与10x Genomics就空间转录组产品Seeker和Trekker签署专利许可，由此解除销售区域限制并解决相关专利争议。这两项技术来自宝生物2025年收购的Curio Bioscience，被其视为空间多组学增长领域的核心产品。该事件属于研究工具平台和全球商业化能力扩张信号，不代表10x Genomics已成为ACRO客户。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -2923,7 +2923,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -2993,15 +2993,15 @@
         "https://news.google.com/rss/articles/CBMiWEFVX3lxTE95UzRtZXg3ZUY3MjVkMC1YYS1CUUFsYUIxb3laeEJRNlRpcGpnMG5DUldGSnZ0VE1xZkxkTjlYSk1hRnN1YXgwbmNTUnFuVmUtaGFCY01YWGI?oc=5"
       ],
       "source_trust": "owned",
-      "title": "1 LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Dis - Eisai",
-      "title_zh": "",
+      "title": "1 LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Dis - eisai.com",
+      "title_zh": "卫材与Biogen在美国推出LEQEMBI IQLIK自注射器，用于早期阿尔茨海默病起始治疗",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE95UzRtZXg3ZUY3MjVkMC1YYS1CUUFsYUIxb3laeEJRNlRpcGpnMG5DUldGSnZ0VE1xZkxkTjlYSk1hRnN1YXgwbmNTUnFuVmUtaGFCY01YWGI?oc=5",
       "published": "2026-08-25",
-      "summary": "1 LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Dis Eisai",
-      "ai_summary": "客户池公司 Eisai / 卫材 出现临床监管信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "summary": "1 LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Dis eisai.com",
+      "ai_summary": "卫材与Biogen已在美国供应LEQEMBI IQLIK每周一次皮下自注射方案，用于早期阿尔茨海默病的起始治疗。起始剂量为500 mg，由两支250 mg注射器连续给药，每支约15秒；治疗18个月后也可采用每周360 mg维持剂量。该产品降低静脉输注负担，但ARIA相关MRI监测要求仍然存在；本条是上市可及性节点，不应再次写成FDA新批准。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -3025,7 +3025,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3093,15 +3093,15 @@
         "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEaW5mcjBnUHZ6ZWllU3MxUDJnSmtpbzdzX2R1dDRYbm52R0tmZkFDTVdSenlzd3ZPbnJIbGJPT3I4dFlac3J6b1A4RVpOSmpRMG4xMEhNZnlMSzg?oc=5"
       ],
       "source_trust": "owned",
-      "title": "LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Disease - Eisai",
-      "title_zh": "",
+      "title": "LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Disease - eisai.com",
+      "title_zh": "LEQEMBI IQLIK自注射器在美国上市，覆盖早期阿尔茨海默病起始与维持治疗",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEaW5mcjBnUHZ6ZWllU3MxUDJnSmtpbzdzX2R1dDRYbm52R0tmZkFDTVdSenlzd3ZPbnJIbGJPT3I4dFlac3J6b1A4RVpOSmpRMG4xMEhNZnlMSzg?oc=5",
       "published": "2026-08-25",
-      "summary": "LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Disease Eisai",
-      "ai_summary": "客户池公司 Eisai / 卫材 出现临床监管信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "summary": "LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Disease eisai.com",
+      "ai_summary": "LEQEMBI IQLIK已在美国用于早期阿尔茨海默病起始治疗，使患者可以在家完成每周一次皮下注射，并可在静脉输注和皮下给药之间切换。起始治疗采用500 mg剂量，完成18个月治疗后可转为360 mg维持剂量。对市场观察而言，重点是给药便利性和治疗路径变化，而不是把此次上市供应与此前的监管批准重复计为两个产品里程碑。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -3125,7 +3125,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3194,14 +3194,14 @@
       ],
       "source_trust": "owned",
       "title": "中外製薬とカリフォルニア大学サンフランシスコ校（UCSF）、創薬研究に関する共同研究基本契約を締結～個別の研究プロジェクトを円滑に推進するための枠組みを構築～",
-      "title_zh": "",
+      "title_zh": "中外制药与UCSF建立多年药物发现合作框架，首个研究项目已启动",
       "url": "https://www.chugai-pharm.co.jp/news/detail/20260807070000_1608.html",
       "published": "2026-08-07",
       "summary": "",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "中外制药与加州大学旧金山分校签署多年共同研究框架，覆盖疾病生物学、新靶点发现和新治疗方式探索，首个具体研究项目已经启动。合作将结合UCSF的转化科学能力与中外制药的抗体工程、SnipeTide环肽及小分子技术。对ACRO而言，这是早期研发和开放创新需求信号，可跟踪后续项目披露，但不能据框架协议直接推断具体采购。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -3225,7 +3225,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3296,14 +3296,14 @@
       ],
       "source_trust": "aggregator",
       "title": "中外製薬、カリフォルニア大と創薬で共同研究契約 新薬開発で連携 - 日本経済新聞",
-      "title_zh": "",
+      "title_zh": "中外制药与加州大学旧金山分校签署药物发现共同研究协议",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QTmpkUVRsRlJHS3lkTG1YbVdGYXc3dGJKQlFUbFdwcTJfamFFVGVId3pEOGFGek9hTFVldDdnRld3eFFoSVRvMXlEN2JKTHpaaWRiMjc4RU5oYkdfOG1SWnp6a204V1V0MmRoag?oc=5",
       "published": "2026-08-07",
       "summary": "中外製薬、カリフォルニア大と創薬で共同研究契約 新薬開発で連携 日本経済新聞",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "该协议不是单一候选药合作，而是用于连续启动多个早期研究项目的多年框架，研究范围包括疾病机制、新靶点和新治疗方法。中外制药将提供抗体工程、环肽和小分子发现能力，UCSF提供前沿基础研究与转化科学。该媒体报道与中外制药官方公告属于同一事件，应合并为一条合作关系证据。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -3327,7 +3327,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3397,14 +3397,14 @@
       ],
       "source_trust": "owned",
       "title": "アトピー性皮膚炎治療薬「コレクチム®」の国内におけるローション剤の 剤形追加に関する製造販売承認申請について",
-      "title_zh": "",
+      "title_zh": "盐野义与鸟居药品在日本申报0.5% CORECTIM乳液新剂型",
       "url": "https://www.shionogi.com/jp/ja/news/2026/02/20260227_1.html",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Shionogi / 盐野义制药 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "盐野义与鸟居药品已为外用JAK抑制剂delgocitinib的0.5%乳液剂型提交日本制造销售批准申请。现有软膏剂已覆盖成人和儿童特应性皮炎，新乳液主要改善头皮及有毛部位的涂用便利性；申请依据包括I期皮肤安全性试验和III期与软膏剂的生物等效性试验。当前状态是已申报而非已批准，和ACRO核心蛋白业务的直接相关性较低。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -3428,7 +3428,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3482,12 +3482,12 @@
     {
       "id": "95f82e6a342421a4",
       "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
       "matched_company_ids": [
         "kissei_pharma"
       ],
       "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
+        "Kissei Pharmaceutical / Kissei药品工业"
       ],
       "source_id": "google_news_kissei_account",
       "source_label": "Google News RSS - Kissei Pharmaceutical",
@@ -3501,15 +3501,15 @@
         "https://news.google.com/rss/articles/CBMicEFVX3lxTFByb0pWSGdEX2s1YU83a1lVNzZhbjBBdlFPZnhPanVyaHJtTWlQSzlpZXJ1ZHhBdFVQQVNYeGdvbXVmbEZKMUdfR3dMbWJHOG9BWEZ2TUNlVk5oTER4Sno2WkVUTWk3YmpXeTlUZFY4MlI?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "キッセイ薬品、ぼうこうがん新薬で高い有効性を確認 国内でも承認申請へ - 信濃毎日新聞デジタル",
-      "title_zh": "",
+      "title": "キッセイ薬品、ぼうこうがん新薬で高い有効性を確認 国内でも承認申請へ - shinmai.co.jp",
+      "title_zh": "Kissei膀胱癌溶瘤免疫疗法III期结果发表，计划在美国申报完成后推进日本申请",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByb0pWSGdEX2s1YU83a1lVNzZhbjBBdlFPZnhPanVyaHJtTWlQSzlpZXJ1ZHhBdFVQQVNYeGdvbXVmbEZKMUdfR3dMbWJHOG9BWEZ2TUNlVk5oTER4Sno2WkVUTWk3YmpXeTlUZFY4MlI?oc=5",
       "published": "2026-08-17",
-      "summary": "キッセイ薬品、ぼうこうがん新薬で高い有効性を確認 国内でも承認申請へ 信濃毎日新聞デジタル",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "summary": "キッセイ薬品、ぼうこうがん新薬で高い有効性を確認 国内でも承認申請へ shinmai.co.jp",
+      "ai_summary": "Cretostimogene grenadenorepvec用于BCG无应答高风险非肌层浸润性膀胱癌的BOND-003 III期队列C达到75.5%完全缓解率；达到完全缓解者在12个月和24个月维持无病的比例分别为64.2%和60.1%，未观察到3级以上不良事件。Kissei拥有中国以外亚洲20国权益，计划在美国滚动申报完成后准备日本申请。这是明确的后期临床与区域商业化信号。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -3533,7 +3533,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3584,6 +3584,108 @@
       "days_until_event": null
     },
     {
+      "id": "91be4db09d618590",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma",
+      "matched_company_ids": [
+        "merck_life_science"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
+      "source_ids": [
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "New €25 Million BioReliance Testing Facility Opens at Merck KGaA Global Headquarters in Germany - Genetic Engineering and Biotechnology News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5",
+      "published": "2026-07-20",
+      "summary": "New €25 Million BioReliance Testing Facility Opens at Merck KGaA Global Headquarters in Germany Genetic Engineering and Biotechnology News",
+      "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5"
+        ],
+        "source_ids": [
+          "google_news_merck_life_science"
+        ],
+        "source_labels": [
+          "Google News RSS - Merck KGaA Life Science"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-20",
+        "checked_at": "2026-09-01T16:52:14"
+      },
+      "workflow_status": "new",
+      "score": 54,
+      "tier": "daily",
+      "category": "product",
+      "business_event_type": "regional_expansion",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA",
+        "战略主题命中: BioReliance",
+        "业务动作命中: opens",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "扩产 / 新设施"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-07-20",
+      "event_start_at": "",
+      "age_days": 43,
+      "days_until_event": null
+    },
+    {
       "id": "8fa79b5800a33dfb",
       "company_id": "merck_life_science",
       "company": "Merck KGaA Life Science / MilliporeSigma",
@@ -3606,14 +3708,14 @@
       ],
       "source_trust": "aggregator",
       "title": "MilliporeSigma Opens €25 Million BioReliance Testing Facility in Germany to Expand European Drug Release Services - citybiz",
-      "title_zh": "",
+      "title_zh": "MilliporeSigma在德国启用2500万欧元BioReliance检测中心，扩大欧洲放行与稳定性服务",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWVZaSDlwTW1MME5NUTBXNmhhQXRUMFc0LTRYcHdaTmE3Y2IxbTZDLURlNzhZcWdNeU9ZSEpHbkVUbXk1Qlp2aG50T1JmUWk1T0t2Und2SVlFTmRfLXpRSzd3WkFjNEVqeXJaUVJCOEFXeVozVlcya3UtMkFwQUtJSzlGQUFSZmFOZ3RYTlhUNmN2VFZXaUtfdU5BaElOV3dkUl9JNW9SNVVPWlJ6eTV3b1Uxd3ZucjBFOUF2bEpyRGRKODlPSnR3MVB0NktINWFVeGRyX2p6T1dWdU1JRFVOMzJtMFNfRmM?oc=5",
       "published": "2026-07-16",
       "summary": "MilliporeSigma Opens €25 Million BioReliance Testing Facility in Germany to Expand European Drug Release Services citybiz",
-      "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "Merck KGaA生命科学业务在达姆施塔特启用投资2500万欧元、面积约2000平方米的BioReliance检测设施，提供商业原液和制剂放行检测，以及符合GMP的稳定性研究，重点覆盖单抗和细胞治疗。新站点靠近欧洲临床试验枢纽，表明其正在加强从开发到商业化的本地检测服务。对ACRO而言，应将其视为质量检测和生物安全服务能力扩张，而不是一般办公设施投资。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -3637,7 +3739,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -3709,14 +3811,14 @@
       ],
       "source_trust": "aggregator",
       "title": "Astorg Completes Acquisition of Thermo Fisher Microbiology Business - Clinical Lab Products",
-      "title_zh": "",
+      "title_zh": "Astorg完成收购赛默飞全球微生物业务，拟将其打造为独立诊断公司",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeXhLNTd1aG5LTUIzTENPcEpUMnpOa1Ryc0g3S2JCcUJwX2xwbERyMVBCTmJ6TmFYb0M4QmVwSjRYQmQzM2toNU1faURGYVRfTnBvekZzcWhaU05QZmtsU0tCUzlPNXpDb1AwcENzcFpVLUxqcUU0cEdHcEFLdkNMU2JDdDNhRFgxSVcyakVRejFIMlh0NEF1bm9CNmxYS01KWU9N?oc=5",
       "published": "2026-08-12",
       "summary": "Astorg Completes Acquisition of Thermo Fisher Microbiology Business Clinical Lab Products",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "Astorg已完成对赛默飞全球微生物业务的收购，该业务将由独立管理团队运营，并计划在2026年晚些时候启用新品牌，继续服务临床诊断、食品安全和制药市场。对ACRO而言，这是赛默飞调整业务组合的竞争环境信号，而非新品发布；后续应观察新公司的品牌、渠道和制药客户策略是否发生变化。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -3740,7 +3842,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -3811,14 +3913,14 @@
       ],
       "source_trust": "aggregator",
       "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Clinical Trials Arena",
-      "title_zh": "",
+      "title_zh": "赛默飞与Arcturus合作，为囊性纤维化mRNA疗法ARCT-032的潜在III期和商业化做准备",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
       "published": "2026-07-03",
       "summary": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial Clinical Trials Arena",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "赛默飞将通过Accelerator Drug Development整合制造、临床研究和商业准备能力，支持Arcturus的吸入式mRNA候选药ARCT-032。若II期结果积极，Arcturus计划由赛默飞PPD业务执行III期，赛默飞还将提供临床供应，并在产品获批后取得独家商业生产权。III期决策预计在2026年第四季度，因此当前应写成后期开发准备，而不是已经启动III期试验。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -3842,7 +3944,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -3913,14 +4015,14 @@
       ],
       "source_trust": "aggregator",
       "title": "CEO of CDMO AustinPx on its exclusive agreement with Thermo Fisher’s Patheon division - drugdiscoverytrends.com",
-      "title_zh": "",
+      "title_zh": "AustinPx通过赛默飞Patheon合作扩大KinetiSol制剂技术的开发与商业化路径",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSWdRb24xTWxGb2FseGN2QkljSklmRFJVVEdnNEdtcEJKV21iZkoweGRDUDVJczEtdTVRbWJUUDl6a09oMTcxSEdFRzlIbE15T0xiMmJ1UkNrWmdiVDNBVUhwM3pEQWxJZUlSNVEwaWNvRUhZMUFUdHlMWmJSdEdsVkpfaW1SQk03eXZwRFZ3MkN0Y2JRSjNJY2lwODN0N18wd0xUX3A0SlRkeDhRQS0xcnBLdWVLTWFNSV9aTVF3?oc=5",
       "published": "2026-07-10",
       "summary": "CEO of CDMO AustinPx on its exclusive agreement with Thermo Fisher’s Patheon division drugdiscoverytrends.com",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号，重点涉及CRO / CDMO 服务。 竞品正在推进CRO / CDMO 服务相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "AustinPx与赛默飞Patheon合作，把KinetiSol无定形固体分散技术从可行性筛选和原型验证进一步衔接到放大及商业生产，为难溶性小分子项目提供更连续的开发路径。该事件体现赛默飞通过合作补充口服制剂开发能力，但与ACRO蛋白和细胞治疗核心业务的直接重叠较低，适合作为邻近CDMO生态和合作模式案例归档。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -3944,7 +4046,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-10",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4015,14 +4117,14 @@
       ],
       "source_trust": "aggregator",
       "title": "武田薬品、キムCEOが継いだ資金創出力 最多の新薬候補で再成長描く - 日本経済新聞",
-      "title_zh": "",
+      "title_zh": "武田新CEO朱莉·金依托现金创造力和历来最丰富的后期管线谋求重回增长",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyRTU3ZFV4bDA5S3lmWTZzb3FNSExHNzNtbXNoVTl3Qy1VV1hrcjZCclJYVElQZGRuWDB4NUllWGFXT2xxSDF0UzB2clhoM2pUdDdyWFRES0I0VXZNb0FDcFFDaWluSXQxb3ZNNw?oc=5",
       "published": "2026-08-18",
       "summary": "武田薬品、キムCEOが継いだ資金創出力 最多の新薬候補で再成長描く 日本経済新聞",
-      "ai_summary": "客户池公司 Takeda Pharmaceutical / 武田药品 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "日经将武田新管理层的主线概括为：朱莉·金接任CEO后，继续利用前任时期形成的现金创造能力，加快历来最丰富的后期管线转化。武田公开战略显示，近期重点是oveporexton、rusfertide和zasocitinib三项潜在新品上市，同时通过运营转型和去杠杆支持投入。该条属于公司战略与资本配置判断，应跟踪实际上市进度和收入贡献，不能把媒体的增长叙事当作已实现业绩。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -4046,7 +4148,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4114,14 +4216,14 @@
       ],
       "source_trust": "owned",
       "title": "バミキバルト、非感染性ぶどう膜炎に伴う黄斑浮腫に対し国内で製造販売承認申請",
-      "title_zh": "",
+      "title_zh": "中外制药在日本申报抗IL-6抗体vamikibart，用于葡萄膜炎相关黄斑水肿",
       "url": "https://www.chugai-pharm.co.jp/news/detail/20260825153000_1610.html",
       "published": "2026-08-25",
       "summary": "",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "中外制药已向日本厚生劳动省提交vamikibart上市申请，拟用于非感染性葡萄膜炎相关黄斑水肿。该药为玻璃体内给药的抗IL-6单克隆抗体，申请依据包括全球III期MEERKAT与SANDCAT研究；若获批，有望成为日本首个用于该适应症的抗IL-6抗体疗法。当前状态是已申报而非已获批，适合持续跟踪审评节点和抗体相关研究需求。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -4145,7 +4247,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4220,14 +4322,14 @@
       ],
       "source_trust": "aggregator",
       "title": "バミキバルト 非感染性ぶどう膜炎に伴う黄斑浮腫で国内製造販売承認申請 中外製薬 - 医薬通信社",
-      "title_zh": "",
+      "title_zh": "中外制药为vamikibart提交日本上市申请，瞄准非感染性葡萄膜炎相关黄斑水肿",
       "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQWktBS0x0d3N1N0p6U2RIVnJNNHBrczd6VlNrZkhUbnNDX0hiMUl5NTJiTmd1eVU0ZnM0SWRnbHBfWllrSXZ0eHNGYzRsLWFmb3A0anFIdDgyR2x6aFpma3pheVdwMlBWdUh5RTFZVTIyYjhKam9jU0JQMENscjhkY2UzNW9aVDMzc3ItWkMxUjJPQkNsMVFrWWRubGE5em9WYjNEWlJpQk5qMHVQY092aDMzWWo5UDZ2VTJXRlYwTkxPbFcyb3FtWXAtNmJab0tIRnczZTA1NWlhdDRreGpEMlVkanJNbUtJck0tYlpqZHYxSDlXNm5jZU5GTWNOOVFtNVdYUTFDOEc1WjU3UFl1cHptWWk0NGQxdHA2ZzRqclNScTJTNDBUdFJ4a3h2eUNzNW84UENzTEd1ZGlTNmJGeVVMY2h3YU9iMkNOdENZSm1HZUxENFBlb0Nn?oc=5",
       "published": "2026-08-28",
       "summary": "バミキバルト 非感染性ぶどう膜炎に伴う黄斑浮腫で国内製造販売承認申請 中外製薬 医薬通信社",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "vamikibart是一款玻璃体内给药的抗IL-6单抗，中外制药已依据MEERKAT和SANDCAT两项全球III期研究向日本监管部门提交上市申请。该节点代表项目已进入监管审评而不是获得批准。对市场与销售团队而言，可围绕抗体研发、临床检测和后续审评节点建立观察任务，但任何产品需求仍需客户侧证据确认。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -4251,7 +4353,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4325,14 +4427,14 @@
       ],
       "source_trust": "aggregator",
       "title": "中外製薬、「バミキバルト」を承認申請 ぶどう膜炎に伴う黄斑浮腫で - 日本経済新聞",
-      "title_zh": "",
+      "title_zh": "中外制药申报vamikibart，推进葡萄膜炎相关黄斑水肿治疗进入日本审评",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ESXQ5VWhFMWNEYy00WU1BMUx4ZXpnRlFndi1wWEJsSlpZcjhHTVEtLWoySzM2bWRkX1E5ZDY5eDAzbWpDLUlZbDg2VzlPSkVHdjJQelpHTE15czdQSm9wRkJIRWM3NTBobUlBcA?oc=5",
       "published": "2026-08-28",
       "summary": "中外製薬、「バミキバルト」を承認申請 ぶどう膜炎に伴う黄斑浮腫で 日本経済新聞",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "中外制药已在日本申报vamikibart，用于非感染性葡萄膜炎相关黄斑水肿。该候选药是眼内给药的抗IL-6单克隆抗体，关键证据来自两项全球III期研究；若最终获批，可能成为日本该适应症首个抗IL-6抗体疗法。此日经条目与官方公告是同一事件，平台应合并统计，避免把重复传播误判为多个研发动作。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -4356,7 +4458,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4430,14 +4532,14 @@
       ],
       "source_trust": "owned",
       "title": "グラム陰性菌感染症治療薬セフィデロコルの小児適応追加のための申請を米国FDAが受理 ～小児の薬剤耐性菌による感染症への新たな治療選択肢の提供を目指して～",
-      "title_zh": "",
+      "title_zh": "美国FDA受理盐野义cefiderocol儿童适应症补充申请，PDUFA日期为2027年2月23日",
       "url": "https://www.shionogi.com/jp/ja/news/2026/07/20260717.html",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Shionogi / 盐野义制药 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "FDA已受理盐野义抗革兰阴性菌药物cefiderocol的儿童适应症补充申请，拟覆盖特定病原体导致的院内或呼吸机相关肺炎，以及包括肾盂肾炎在内的复杂性尿路感染。申请基于154名儿童参与的三项临床研究，评估药代、安全性、耐受性和有效性；PDUFA目标日期为2027年2月23日。当前是受理审评，不是儿童适应症获批。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -4461,7 +4563,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4536,14 +4638,14 @@
       ],
       "source_trust": "owned",
       "title": "2026年7月3日 田辺ファーマファクトリー株式会社の株式譲渡の合意および製造販売承認の譲渡に関するお知らせ",
-      "title_zh": "",
+      "title_zh": "田边制药拟向东和药品转让制药工厂及17个产品的日本制造销售许可",
       "url": "https://www.tanabe-pharma.com/ja/news/rel_260703.html",
       "published": "2026-07-03",
       "summary": "",
-      "ai_summary": "客户池公司 Tanabe Pharma / 田边制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "田边制药计划于2026年11月底将田边制药工厂全部股权转让给东和药品，小野田和吉富工厂将成为东和药品子公司；另有17个产品35个规格的日本制造销售许可及相关权利计划自2027年4月起陆续承接。田边制药将转向不持有主要自有工厂、更加聚焦研发和业务开发的模式。该事件是组织、供应链和产品权利重构信号，应持续跟踪交割条件与后续委托生产安排。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -4567,7 +4669,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4673,7 +4775,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4779,7 +4881,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4884,7 +4986,112 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-05",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
+      },
+      "workflow_status": "new",
+      "score": 54,
+      "tier": "daily",
+      "category": "regulatory",
+      "business_event_type": "clinical_regulatory",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: 科研製薬",
+        "业务动作命中: 承認, 申請",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [
+          "注册 / 审批"
+        ],
+        "business_actions": [
+          "注册 / 监管动作"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "high",
+        "score": 58,
+        "label": "高相关",
+        "explanation": "客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。",
+        "reasons": [
+          "客户池公司动态",
+          "研发阶段可识别",
+          "出现明确业务动作",
+          "包含监管或注册信号"
+        ]
+      },
+      "recommended_action": {
+        "type": "customer",
+        "label": "客户需求跟进",
+        "owner": "BD / 销售",
+        "priority": "high",
+        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-06-05",
+      "event_start_at": "",
+      "age_days": 88,
+      "days_until_event": null
+    },
+    {
+      "id": "5109b7dbe3813510",
+      "company_id": "kaken_pharma",
+      "company": "Kaken Pharmaceutical / 科研制药",
+      "matched_company_ids": [
+        "kaken_pharma"
+      ],
+      "matched_companies": [
+        "Kaken Pharmaceutical / 科研制药"
+      ],
+      "source_id": "google_news_kaken_account",
+      "source_label": "Google News RSS - Kaken Pharmaceutical",
+      "source_ids": [
+        "google_news_kaken_account"
+      ],
+      "source_labels": [
+        "Google News RSS - Kaken Pharmaceutical"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Fd0N1bGNoT0JNT203enotX0tOYzMtVjlZQ0lhQ185N0FVLWhDQTVsQ1hydUd3X2hDRVZVLWc4aTVQMnI0dUdXemh0b09kNndFTXczVg?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "科研製薬、アタマジラミ症治療剤「ＫＡＲ」の製造販売承認を申請、既存治療で効果不十分な症例に期待 - kabu-ir.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Fd0N1bGNoT0JNT203enotX0tOYzMtVjlZQ0lhQ185N0FVLWhDQTVsQ1hydUd3X2hDRVZVLWc4aTVQMnI0dUdXemh0b09kNndFTXczVg?oc=5",
+      "published": "2026-06-05",
+      "summary": "科研製薬、アタマジラミ症治療剤「ＫＡＲ」の製造販売承認を申請、既存治療で効果不十分な症例に期待 kabu-ir.com",
+      "ai_summary": "客户池公司 Kaken Pharmaceutical / 科研制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Fd0N1bGNoT0JNT203enotX0tOYzMtVjlZQ0lhQ185N0FVLWhDQTVsQ1hydUd3X2hDRVZVLWc4aTVQMnI0dUdXemh0b09kNndFTXczVg?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Fd0N1bGNoT0JNT203enotX0tOYzMtVjlZQ0lhQ185N0FVLWhDQTVsQ1hydUd3X2hDRVZVLWc4aTVQMnI0dUdXemh0b09kNndFTXczVg?oc=5"
+        ],
+        "source_ids": [
+          "google_news_kaken_account"
+        ],
+        "source_labels": [
+          "Google News RSS - Kaken Pharmaceutical"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-05",
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4989,7 +5196,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-16",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5093,7 +5300,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5198,7 +5405,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5303,7 +5510,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5354,108 +5561,6 @@
       "published_at": "2026-07-21",
       "event_start_at": "",
       "age_days": 42,
-      "days_until_event": null
-    },
-    {
-      "id": "91be4db09d618590",
-      "company_id": "merck_life_science",
-      "company": "Merck KGaA Life Science / MilliporeSigma",
-      "matched_company_ids": [
-        "merck_life_science"
-      ],
-      "matched_companies": [
-        "Merck KGaA Life Science / MilliporeSigma"
-      ],
-      "source_id": "google_news_merck_life_science",
-      "source_label": "Google News RSS - Merck KGaA Life Science",
-      "source_ids": [
-        "google_news_merck_life_science"
-      ],
-      "source_labels": [
-        "Google News RSS - Merck KGaA Life Science"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "New €25 Million BioReliance Testing Facility Opens at Merck KGaA Global Headquarters in Germany - genengnews.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5",
-      "published": "2026-07-20",
-      "summary": "New €25 Million BioReliance Testing Facility Opens at Merck KGaA Global Headquarters in Germany genengnews.com",
-      "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现市场与区域动态。 竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQdUZuYTlvNndHZTdEVWk0bm1WZkV6Y1F5R0tKbld5QmRUSWJSajc2Z2M3bVBOS0prVHJnak9sbXZpQ2JNYTZZRGt6ZUJ1QmRwbUpyTUNpYWFmb29rN0xTQnRmSjhxaE1maF9wNWdncjdBRElIMFMzZlRHaDc5ZTZmR0RRLVZJbXF2V01QQTFuVThZdnVxMVdPdjM2b3E5VlphTHNGSVpZZDJWVTN1b2NGVmlvU2FERF9KNW9LY3JqZnk1TURjU1VRNEREd0lwWWF5NUg3Y0NrZkc2cE5f?oc=5"
-        ],
-        "source_ids": [
-          "google_news_merck_life_science"
-        ],
-        "source_labels": [
-          "Google News RSS - Merck KGaA Life Science"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-07-20",
-        "checked_at": "2026-09-01T15:58:46"
-      },
-      "workflow_status": "new",
-      "score": 52,
-      "tier": "daily",
-      "category": "market",
-      "business_event_type": "regional_expansion",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Merck KGaA",
-        "战略主题命中: BioReliance",
-        "业务动作命中: opens",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "扩产 / 新设施"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-20",
-      "event_start_at": "",
-      "age_days": 43,
       "days_until_event": null
     },
     {
@@ -5512,7 +5617,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5614,7 +5719,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-04-13",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5685,11 +5790,11 @@
         "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd001WURwdk1nbmxvYkdTc0dGdEQydlViTzBFajN1ampad1ZMaEVCakN6WDlOanpPaUVndTNvUGVHMTRINUQyYTNoQU1Pb0hULVRKU1R6UEdJTzNtSlFJMzB2SXVWeVNSeWpPSnBqR01QVlRaUTNLTFc4TFlzb2pDeDRFcjFWOGxwX2ZpbUdn?oc=5"
       ],
       "source_trust": "owned",
-      "title": "On-Demand GMP Human T Cell Expansion Course - STEMCELL Technologies",
+      "title": "On-Demand GMP Human T Cell Expansion Course - stemcell.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd001WURwdk1nbmxvYkdTc0dGdEQydlViTzBFajN1ampad1ZMaEVCakN6WDlOanpPaUVndTNvUGVHMTRINUQyYTNoQU1Pb0hULVRKU1R6UEdJTzNtSlFJMzB2SXVWeVNSeWpPSnBqR01QVlRaUTNLTFc4TFlzb2pDeDRFcjFWOGxwX2ZpbUdn?oc=5",
       "published": "2026-03-19",
-      "summary": "On-Demand GMP Human T Cell Expansion Course STEMCELL Technologies",
+      "summary": "On-Demand GMP Human T Cell Expansion Course stemcell.com",
       "ai_summary": "竞品 STEMCELL Technologies 出现市场活动信息。 竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -5717,7 +5822,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5727,7 +5832,7 @@
       "signal_type": "event",
       "is_new": false,
       "reasons": [
-        "公司池命中 +15: STEMCELL Technologies, STEMCELL Tech, Stemcell Technologies",
+        "专属来源公司归属 +15",
         "公司自有来源",
         "战略主题命中: GMP",
         "业务动作命中: expansion, GMP",
@@ -5790,14 +5895,14 @@
       ],
       "source_trust": "aggregator",
       "title": "武田薬品工業[4502]：真性多血症の治療パラダイム転換につながる可能性を有するMIMRYLO（rusfertide）の米国食品医薬品局（FDA）の承認取得について 2026年8月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-      "title_zh": "",
+      "title_zh": "武田Mimrylo获FDA批准，用于真性红细胞增多症",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qM2RYOTQ1ekhOMWQtMmhYR3hpQlNlTjJYM2ptcHNHNzZYVlZNMVN6cWdxNE8yQ1RsZDY2NzUyeG5DYUtna3pZWUVpMlpDUGlvV21NcTByZEgwZlJKdW03aTdQSl9vdUNmWWc?oc=5",
       "published": "2026-08-29",
       "summary": "武田薬品工業[4502]：真性多血症の治療パラダイム転換につながる可能性を有するMIMRYLO（rusfertide）の米国食品医薬品局（FDA）の承認取得について 2026年8月29日(適時開示) ：日経会社情報DIGITAL 日本経済新聞",
-      "ai_summary": "客户池公司 Takeda Pharmaceutical / 武田药品 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "美国FDA已批准武田的Mimrylo（rusfertide）用于治疗真性红细胞增多症。该药是每周一次皮下注射的hepcidin模拟肽，III期VERIFY研究显示其在标准治疗基础上可提高应答并减少放血治疗需求。这是上市批准节点；对ACRO的直接产品需求尚无公开证据，应继续跟踪上市后研究和检测需求。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -5821,7 +5926,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -5896,14 +6001,14 @@
       ],
       "source_trust": "owned",
       "title": "フェゾリネタント 閉経に伴う血管運動神経症状に対する治療薬として日本での製造販売承認を申請",
-      "title_zh": "",
+      "title_zh": "安斯泰来在日本申报fezolinetant，用于改善更年期血管舒缩症状",
       "url": "https://jp.newsroom.astellas.com/2026-08-07-submission-of-new-drug-application-for-fezolinetant-in-japan-for-the-treatment-of-vasomotor-symptoms-associated-with-menopause",
       "published": "2026-08-07",
       "summary": "",
-      "ai_summary": "客户池公司 Astellas Pharma / 安斯泰来制药 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "安斯泰来已向日本厚生劳动省提交fezolinetant的新药申请，用于治疗绝经相关血管舒缩症状。该药是口服选择性NK3受体拮抗剂，申请主要基于两项日本III期STARLIGHT研究。当前只是申报节点，并非日本已批准或已上市。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -5927,7 +6032,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6001,14 +6106,14 @@
       ],
       "source_trust": "owned",
       "title": "DS1025 Enters Clinical Development in Patients with Advanced Solid Tumors as Novel CD25 Directed ADC in Industry-Leading ADC Portfolio of Daiichi Sankyo",
-      "title_zh": "",
+      "title_zh": "第一三共CD25 ADC DS1025进入首次人体I期临床",
       "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202608/20260827_E.pdf",
       "published": "2026-08-27",
       "summary": "",
-      "ai_summary": "客户池公司 Daiichi Sankyo / 第一三共 出现临床监管信号，重点涉及ADC。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "第一三共已为DS1025的首例受试者给药，启动面向晚期或转移性实体瘤的首次人体I期研究。DS1025是面向CD25的ADC，采用针对免疫肿瘤学优化的细胞毒载荷，旨在清除肿瘤微环境中的调节性T细胞并激活抗肿瘤免疫。这是早期临床入组节点，尚不能得出疗效或商业化结论。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -6032,7 +6137,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6105,14 +6210,14 @@
       ],
       "source_trust": "owned",
       "title": "Enhertu® Demonstrated Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival as First-Line Treatment of Patients with HER2 Mutant Advanced Non-Small Cell Lung Cancer in DESTINY-Lung04 Phase 3 Trial",
-      "title_zh": "",
+      "title_zh": "优赫得一线治疗HER2突变晚期非小细胞肺癌III期达到PFS主要终点",
       "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202608/20260817_E.pdf",
       "published": "2026-08-17",
       "summary": "",
-      "ai_summary": "客户池公司 Daiichi Sankyo / 第一三共 出现临床监管信号，重点涉及HER2。 客户池公司出现III 期临床信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "优赫得在DESTINY-Lung04 III期研究中，与铂类加培美曲塞和pembrolizumab的对照方案相比，显著并具有临床意义地改善了一线HER2突变晚期非鳞状非小细胞肺癌患者的无进展生存期。总生存期数据仍在评估，且这是阳性顶线结果，不等于新适应症已获批。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -6136,7 +6241,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6243,7 +6348,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6322,14 +6427,14 @@
       ],
       "source_trust": "aggregator",
       "title": "中外製薬、MOG抗体関連疾患の再発予防に適応拡大申請 - 日本経済新聞",
-      "title_zh": "",
+      "title_zh": "中外制药在日本申报Enspryng，用于MOG抗体相关疾病复发预防",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TbFk5SlVZY3JTNXRPWkJXN3lDUkptNldtUjYxci02Yl9qMEVUUTdnSmdXc0pFbTl1TVFldllOcHpXMkJKT0dDNzFOby1uSXhfaWxLUVhJTlJBaWVDQXdxaGJHamUzZm1IdkQ4TQ?oc=5",
       "published": "2026-08-05",
       "summary": "中外製薬、MOG抗体関連疾患の再発予防に適応拡大申請 日本経済新聞",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号，重点涉及抗体。 客户池公司出现注册 / 审批信号，可评估抗体需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "中外制药已在日本提交Enspryng（satralizumab）的适应症扩大申请，用于预防MOG抗体相关疾病复发。申请基于全球III期METEOROID研究，官方披露与安慰剂相比复发风险降低68%。当前是监管申报，不是新适应症已获批。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -6353,7 +6458,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6430,14 +6535,14 @@
       ],
       "source_trust": "owned",
       "title": "2026.08.19 研究開発 台湾において、切除可能な非小細胞肺がんの治療法として、オプジーボと化学療法の併用による術前補助療法と、それに続く術後のオプジーボ単剤による術後補助療法に対する効能または効果の追加承認を取得",
-      "title_zh": "",
+      "title_zh": "欧狄沃围手术期方案在台湾获批，用于可切除非小细胞肺癌",
       "url": "https://www.ono-pharma.com/ja/news/20260819.html",
       "published": "2026-08-19",
       "summary": "",
-      "ai_summary": "客户池公司 Ono Pharmaceutical / 小野药品 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "台湾卫生福利部已批准欧狄沃加含铂双药化疗的术前辅助治疗，之后手术并继续欧狄沃单药术后辅助治疗，用于肿瘤至少4 cm或淋巴结阳性、且EGFR和ALK阴性的可切除非小细胞肺癌。批准主要基于CheckMate-77T研究，属于台湾适应症扩展节点。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -6461,7 +6566,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-19",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6537,14 +6642,14 @@
       ],
       "source_trust": "owned",
       "title": "2026.08.04 研究開発 韓国において、切除可能な非小細胞肺がんの治療法として、オプジーボと化学療法の併用による術前補助療法と、それに続く術後のオプジーボ単剤による術後補助療法に対する効能または効果の追加承認を取得",
-      "title_zh": "",
+      "title_zh": "欧狄沃围手术期方案在韩国获批，用于可切除非小细胞肺癌",
       "url": "https://www.ono-pharma.com/ja/news/20260804.html",
       "published": "2026-08-04",
       "summary": "",
-      "ai_summary": "客户池公司 Ono Pharmaceutical / 小野药品 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "韩国食品医药品安全处已批准欧狄沃加含铂双药化疗的术前辅助治疗，随后进行手术并使用欧狄沃单药术后辅助治疗，适用于特定EGFR和ALK阴性的可切除非小细胞肺癌。该批准同样基于CheckMate-77T，应与台湾获批分别记录为两个区域监管节点。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -6568,7 +6673,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-04",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6675,7 +6780,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6782,7 +6887,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6889,7 +6994,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -6965,14 +7070,14 @@
       ],
       "source_trust": "aggregator",
       "title": "田辺ファーマ、希少疾患薬候補をデンマーク社に譲渡 最大695億円 - 日本経済新聞",
-      "title_zh": "",
+      "title_zh": "田边制药将罕见病候选药MT-7117全球权益转让给LEO Pharma",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4yN3FDY0pSTTl5OU1Ta3NRQVlSMHNTb0J1LWxFN1RzMVdhWExnRnZtNkprdmVuQmRxRDVJbTN0NGlIbHVCNzNFNUJUVm9kTlJucDlFQ3kxNXM2azV3cEp2T1k1dnV2djdiRHVpYg?oc=5",
       "published": "2026-08-18",
       "summary": "田辺ファーマ、希少疾患薬候補をデンマーク社に譲渡 最大695億円 日本経済新聞",
-      "ai_summary": "客户池公司 Tanabe Pharma / 田边制药 出现市场与区域动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "田边制药已将口服MC1R激动剂MT-7117（dersimelagon）的全球开发与商业化权益转让给LEO Pharma。该药针对红细胞生成性原卟啉症和X连锁原卟啉症，美国NDA已于6月提交，田边将继续完成当前审评工作。媒体报道合同对价最高约695亿日元；这是资产组合与商业化责任转移信号，不是新药获批。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -6996,7 +7101,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -7095,7 +7200,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 52,
@@ -7201,7 +7306,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 50,
@@ -7303,7 +7408,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-24",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 50,
@@ -7376,14 +7481,14 @@
       ],
       "source_trust": "owned",
       "title": "トラスツズマブ デルクステカン（T-DXd/DS-8201）のHER2遺伝子変異を有する非小細胞肺がん一次治療を対象とした第3相臨床試験の結果について",
-      "title_zh": "",
+      "title_zh": "优赫得一线治疗HER2突变晚期非小细胞肺癌III期达到PFS主要终点",
       "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260817_J2.pdf",
       "published": "2026-08-17",
       "summary": "",
-      "ai_summary": "客户池公司 Daiichi Sankyo / 第一三共 出现临床监管信号，重点涉及HER2。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "第一三共和阿斯利康宣布，优赫得在DESTINY-Lung04 III期研究中显著改善了一线HER2突变晚期非鳞状非小细胞肺癌的无进展生存期。总生存期尚未成熟，公司计划将数据提交给监管机构。本条是日文官方版本，与英文公告为同一事件，应合并计数。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -7407,7 +7512,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 50,
@@ -7510,7 +7615,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 50,
@@ -7618,7 +7723,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-04",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -7722,7 +7827,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -7824,7 +7929,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -7928,7 +8033,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8029,7 +8134,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8099,18 +8204,18 @@
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9677510e2b43deb96256dad5e2f902&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
+        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9683d391cd4c6b8b11450256782dab&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
       ],
       "source_trust": "aggregator",
       "title": "Industry Roundup: Thermo Fisher Unveils Orbitrap Isora IRMS System - Chromatography Online",
-      "title_zh": "",
+      "title_zh": "赛默飞推出Orbitrap Isora同位素比值质谱系统",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
       "published": "2026-08-26",
       "summary": "Intact-molecule, ESI-based Orbitrap detection preserves structural context while quantifying isotope ratios, overcoming information loss inherent to gas-phase conversion workflows in classical IRMS.",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态，重点涉及生物工艺。 原始摘要要点：Intact-molecule, ESI-based Orbitrap detection preserves structural context while quantifying isotope ratios, o...。 竞品正在推进生物工艺相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "赛默飞发布Orbitrap Isora IRMS系统，用电喷雾电离与高分辨Orbitrap质谱测量完整分子的同位素和同位素异构体比值，并整合Vanquish Duo UHPLC与Isotope Discoverer软件。目标应用包括环境、地球化学、代谢及食品真伪分析。这是竞品仪器平台更新，与ACRO核心试剂业务的直接重叠较低，适合归入产品边界观察。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "source_backed",
       "evidence": {
         "kind": "index",
@@ -8122,7 +8227,7 @@
         "primary_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
         "related_urls": [
           "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9677510e2b43deb96256dad5e2f902&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
+          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9683d391cd4c6b8b11450256782dab&url=https%3a%2f%2fwww.chromatographyonline.com%2fview%2findustry-roundup-thermo-fisher-unveils-orbitrap-isora-irms-system&c=16649189687143484083&mkt=ja-jp"
         ],
         "source_ids": [
           "google_news_thermo",
@@ -8137,7 +8242,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8238,7 +8343,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-24",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8307,11 +8412,11 @@
         "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform - Yahoo Finance",
+      "title": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform - finance.yahoo.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5",
       "published": "2026-08-10",
-      "summary": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform Yahoo Finance",
+      "summary": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform finance.yahoo.com",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -8339,7 +8444,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-10",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8409,14 +8514,14 @@
       ],
       "source_trust": "aggregator",
       "title": "UQ-Thermo Fisher Scientific partnership to advance minerals, biomedical research - UQ News",
-      "title_zh": "",
+      "title_zh": "昆士兰大学与赛默飞建立长期合作框架，覆盖矿产、生物医药与先进制造",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdkdrZFE1czFZdjNNTWNHbTkzUnNUdURUQkRGaGZoRlR3WUM3eHRjamZNT1Z1YURtYlVkUFpZanVWWXloanRubTV3dDZNWWRIOVQ5ODJGSmVuRDMxRU9JN3lBdV84RG5FRHZ1QThFd0tNSko4X1NURkpqYTBkTWE2QWlCSEVWU09lUVFhVDJLVTVKVm9tT1NHMnJ5YlBfeE1QX3doM1NGSUhZS2c?oc=5",
       "published": "2026-08-26",
       "summary": "UQ-Thermo Fisher Scientific partnership to advance minerals, biomedical research UQ News",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "昆士兰大学与赛默飞签署框架协议，将在清洁能源、关键矿产、先进制造和生物医学研究等领域持续开展合作，并设立10万澳元原住民教育基金。这是长期产学研合作框架，不是单一设备采购或已落地的具体项目。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -8440,7 +8545,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8541,7 +8646,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8642,7 +8747,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8743,7 +8848,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8844,7 +8949,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-19",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -8949,7 +9054,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9022,14 +9127,14 @@
       ],
       "source_trust": "owned",
       "title": "Astellas enters voluntary agreement with U.S. government supporting affordable access to medicines",
-      "title_zh": "",
+      "title_zh": "安斯泰来与美国政府达成药价与供应自愿协议",
       "url": "https://newsroom.astellas.com/2026-09-01-astellas-enters-voluntary-agreement-with-us-government-supporting-affordable-access-to-medicines",
       "published": "2026-09-01",
       "summary": "",
-      "ai_summary": "客户池公司 Astellas Pharma / 安斯泰来制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "安斯泰来宣布与美国政府达成自愿协议，承诺下调Medicaid药品价格，并将未来美国价格与其他发达国家水平对齐。公司还将向美国战略原料药储备捐赠25公斤他克莫司原料药，其他条款未披露。这是定价、可及性与供应链政策信号，不应解读为新药进展。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -9053,7 +9158,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9120,11 +9225,11 @@
         "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92bjJZSWw4WU9vSmRwYktVc2FpUm9mcVBVb0YxNWNzRW5TU2hKV3FtOXBWRkpzTGYySFBxZWZyc1dpeWNlSE1XTlpNZGpWSUVheVJUZDl5d1dpbTA?oc=5"
       ],
       "source_trust": "owned",
-      "title": "UCL and Eisai renew partnership to accelerate treatments for neurodegenerative diseases - Eisai",
+      "title": "UCL and Eisai renew partnership to accelerate treatments for neurodegenerative diseases - eisai.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92bjJZSWw4WU9vSmRwYktVc2FpUm9mcVBVb0YxNWNzRW5TU2hKV3FtOXBWRkpzTGYySFBxZWZyc1dpeWNlSE1XTlpNZGpWSUVheVJUZDl5d1dpbTA?oc=5",
       "published": "2026-06-30",
-      "summary": "UCL and Eisai renew partnership to accelerate treatments for neurodegenerative diseases Eisai",
+      "summary": "UCL and Eisai renew partnership to accelerate treatments for neurodegenerative diseases eisai.com",
       "ai_summary": "客户池公司 Eisai / 卫材 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -9152,7 +9257,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9254,7 +9359,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9356,7 +9461,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9458,7 +9563,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9565,7 +9670,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9636,14 +9741,14 @@
       ],
       "source_trust": "aggregator",
       "title": "不眠症治療用アプリの販売提携契約終了 塩野義製薬/サスメド | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
-      "title_zh": "",
+      "title_zh": "盐野义终止与Susmed的失眠症治疗App销售合作",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1IWGFZd0lkM1JEN3pvMVE0RXZRX0R2ZmR0YXJCVFVlMlZycmJlSVFEdXZlcjBLRnRkVHJqQmRPUUszWEZST2twWA?oc=5",
       "published": "2026-08-26",
       "summary": "不眠症治療用アプリの販売提携契約終了 塩野義製薬/サスメド | 日刊薬業 - 医薬品産業の総合情報サイト 日刊薬業",
-      "ai_summary": "客户池公司 Shionogi / 盐野义制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "盐野义与Susmed宣布结束自2021年起的失眠症治疗App Medcle销售合作。该App已于2026年6月在日本获得保险适用并开始销售，双方只披露终止决定来自协商，未公布更详细原因。这属于数字疗法的渠道与合作关系调整，不直接指向试剂采购需求。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "index",
@@ -9667,7 +9772,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9737,14 +9842,14 @@
       ],
       "source_trust": "owned",
       "title": "2026年8月18日 EPPおよびXLPの治療薬として開発中のMT-7117に関する契約締結について",
-      "title_zh": "",
+      "title_zh": "田边制药将MT-7117全球开发与商业化权益转让给LEO Pharma",
       "url": "https://www.tanabe-pharma.com/ja/news/rel_260818.html",
       "published": "2026-08-18",
       "summary": "",
-      "ai_summary": "客户池公司 Tanabe Pharma / 田边制药 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "田边制药与LEO Pharma签署协议，将针对红细胞生成性原卟啉症和X连锁原卟啉症的MT-7117（dersimelagon）全球权益转交给LEO Pharma。合同包含首付款、近期里程碑、后续里程碑与特许权使用费；田边仍将继续推进已提交的美国NDA审评工作。对客户跟进而言，后续开发与商业化决策主体将逐步转向LEO Pharma。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -9768,7 +9873,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9867,7 +9972,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -9965,7 +10070,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10069,7 +10174,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-21",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10167,7 +10272,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-22",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10239,11 +10344,11 @@
         "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9fSlR4ZUdXTTZFQ0tuODJqS1ozSG54S3AwSHNBaVVkb19GVFVubWNMMklTYXJYeXFSRXVYaEx2SlJxSHR0MGtEOC1feGZ2N3kxSmtlSHM0SQ?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "JCRファーマ、導入のDMD治療薬givinostatを年内申請へ／ベーリンガー、肺線維症治療薬「ジャスケイド」発売 など｜製薬業界きょうのニュースまとめ読み（2026年7月15日） - Answers（アンサーズ）",
+      "title": "JCRファーマ、導入のDMD治療薬givinostatを年内申請へ／ベーリンガー、肺線維症治療薬「ジャスケイド」発売 など｜製薬業界きょうのニュースまとめ読み（2026年7月15日） - answers.and-pro.jp",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9fSlR4ZUdXTTZFQ0tuODJqS1ozSG54S3AwSHNBaVVkb19GVFVubWNMMklTYXJYeXFSRXVYaEx2SlJxSHR0MGtEOC1feGZ2N3kxSmtlSHM0SQ?oc=5",
       "published": "2026-07-15",
-      "summary": "JCRファーマ、導入のDMD治療薬givinostatを年内申請へ／ベーリンガー、肺線維症治療薬「ジャスケイド」発売 など｜製薬業界きょうのニュースまとめ読み（2026年7月15日） Answers（アンサーズ）",
+      "summary": "JCRファーマ、導入のDMD治療薬givinostatを年内申請へ／ベーリンガー、肺線維症治療薬「ジャスケイド」発売 など｜製薬業界きょうのニュースまとめ読み（2026年7月15日） answers.and-pro.jp",
       "ai_summary": "客户池公司 JCR Pharmaceuticals / JCR Pharma 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -10271,7 +10376,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-15",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10378,7 +10483,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10483,7 +10588,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-15",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10587,7 +10692,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10641,12 +10746,12 @@
     {
       "id": "aec4bd5d2dc6c41d",
       "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
       "matched_company_ids": [
         "kissei_pharma"
       ],
       "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
+        "Kissei Pharmaceutical / Kissei药品工业"
       ],
       "source_id": "google_news_kissei_account",
       "source_label": "Google News RSS - Kissei Pharmaceutical",
@@ -10665,7 +10770,7 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yRUJFa2lNUEVTWXVMYWJGOVZpVzM0NWMxbGRXTmF5eDhnVW5VZ0VuSWpYZkdXdEthTDlkSzhCY3FTNVhSOF80aFJSUU10RmROaGVCT1JYN0R6cUptNTFR?oc=5",
       "published": "2026-07-06",
       "summary": "血管炎治療薬で多数の死亡例､キッセイ薬品が直面する\"ジレンマ\"･･･欧米で承認撤回の動きも､開発元から｢詳細明かされず｣ 東洋経済オンライン",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "ai_summary": "客户池公司 Kissei Pharmaceutical / Kissei药品工业 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -10692,7 +10797,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-06",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10745,12 +10850,12 @@
     {
       "id": "afaef913b092cbb9",
       "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
       "matched_company_ids": [
         "kissei_pharma"
       ],
       "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
+        "Kissei Pharmaceutical / Kissei药品工业"
       ],
       "source_id": "google_news_kissei_account",
       "source_label": "Google News RSS - Kissei Pharmaceutical",
@@ -10764,12 +10869,12 @@
         "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDTVBXT1RfZnNNd3ZwQWF2OEpEWnBDZDl4Y3ByRHpVQUNfRWtVai1wQ1V4UkdheThCb1hyUHNUWnZtYldObXRWMFh5UVBJdHRFRVdJdWVzbXFtYVJXd1hNMHBzSG1ueDNUVFNGRlFtWF8?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "キッセイ薬品が国内で販売する血管炎治療薬、欧州で承認取り消し - 信濃毎日新聞デジタル",
+      "title": "キッセイ薬品が国内で販売する血管炎治療薬、欧州で承認取り消し - shinmai.co.jp",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDTVBXT1RfZnNNd3ZwQWF2OEpEWnBDZDl4Y3ByRHpVQUNfRWtVai1wQ1V4UkdheThCb1hyUHNUWnZtYldObXRWMFh5UVBJdHRFRVdJdWVzbXFtYVJXd1hNMHBzSG1ueDNUVFNGRlFtWF8?oc=5",
       "published": "2026-08-06",
-      "summary": "キッセイ薬品が国内で販売する血管炎治療薬、欧州で承認取り消し 信濃毎日新聞デジタル",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "summary": "キッセイ薬品が国内で販売する血管炎治療薬、欧州で承認取り消し shinmai.co.jp",
+      "ai_summary": "客户池公司 Kissei Pharmaceutical / Kissei药品工业 出现产品与平台动态。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -10796,7 +10901,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10900,7 +11005,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-22",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11002,7 +11107,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-10",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11107,7 +11212,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-07-07",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11211,7 +11316,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11317,7 +11422,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11418,7 +11523,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11520,7 +11625,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11622,7 +11727,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11691,11 +11796,11 @@
         "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUy1FWmU3aTFXck8zTjhuOWl1Q3FXcUY5elJDODVsLUFGWnU5dXJCNU5zZ1Q4ZXRabXRsNE9XbFpkRXFDTjN6MzJsUXRhR25lckJyTllZMXFjSURONEl3NU9KbWZlc1hOVmJVRHpGMGphczVwUlIyQXNWVVVENC1NamRUbWFBdm11UHdtbWdCaUlHQmlGc2M4QTQ2X2prWG8?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet Clinical Needs at ADLM 2026 - Yahoo Finance",
+      "title": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet Clinical Needs at ADLM 2026 - finance.yahoo.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUy1FWmU3aTFXck8zTjhuOWl1Q3FXcUY5elJDODVsLUFGWnU5dXJCNU5zZ1Q4ZXRabXRsNE9XbFpkRXFDTjN6MzJsUXRhR25lckJyTllZMXFjSURONEl3NU9KbWZlc1hOVmJVRHpGMGphczVwUlIyQXNWVVVENC1NamRUbWFBdm11UHdtbWdCaUlHQmlGc2M4QTQ2X2prWG8?oc=5",
       "published": "2026-07-27",
-      "summary": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet Clinical Needs at ADLM 2026 Yahoo Finance",
+      "summary": "Thermo Fisher Scientific Presents End-to-End Diagnostic and Lab Solutions Addressing Unmet Clinical Needs at ADLM 2026 finance.yahoo.com",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -11723,7 +11828,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11769,108 +11874,6 @@
       "days_until_event": null
     },
     {
-      "id": "28b7b42245bc11d9",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPanRwNFczbERxU1VmSVdUYXRLWHRwNDhuN2ZHRFYtSExBZEhCMVJnWmNQYVlZVVdZZWdMSUNNZWt0U3dUd21yMWlwOHdfV0stcGVHZkVsOHVIbHU0b0s4MldMSXhjTEtRTFg4OXl1TTAtLUF1RjV0eTJXamxkMUdfRGk0N2RBTkl5dC1fakhVVTA3aHR6RW9JTDlldUlva2hRVjEzdjU3WXJjYXVYczdyTi02d1BJQy1pamNaSTduMDFweW9jRWt1WTNpWC1CT3BDX0pPMVFTSDNmTi1LRnRJ?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional expansion project - richmondbizsense.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPanRwNFczbERxU1VmSVdUYXRLWHRwNDhuN2ZHRFYtSExBZEhCMVJnWmNQYVlZVVdZZWdMSUNNZWt0U3dUd21yMWlwOHdfV0stcGVHZkVsOHVIbHU0b0s4MldMSXhjTEtRTFg4OXl1TTAtLUF1RjV0eTJXamxkMUdfRGk0N2RBTkl5dC1fakhVVTA3aHR6RW9JTDlldUlva2hRVjEzdjU3WXJjYXVYczdyTi02d1BJQy1pamNaSTduMDFweW9jRWt1WTNpWC1CT3BDX0pPMVFTSDNmTi1LRnRJ?oc=5",
-      "published": "2026-07-28",
-      "summary": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional expansion project richmondbizsense.com",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现市场与区域动态。 竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPanRwNFczbERxU1VmSVdUYXRLWHRwNDhuN2ZHRFYtSExBZEhCMVJnWmNQYVlZVVdZZWdMSUNNZWt0U3dUd21yMWlwOHdfV0stcGVHZkVsOHVIbHU0b0s4MldMSXhjTEtRTFg4OXl1TTAtLUF1RjV0eTJXamxkMUdfRGk0N2RBTkl5dC1fakhVVTA3aHR6RW9JTDlldUlva2hRVjEzdjU3WXJjYXVYczdyTi02d1BJQy1pamNaSTduMDFweW9jRWt1WTNpWC1CT3BDX0pPMVFTSDNmTi1LRnRJ?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPanRwNFczbERxU1VmSVdUYXRLWHRwNDhuN2ZHRFYtSExBZEhCMVJnWmNQYVlZVVdZZWdMSUNNZWt0U3dUd21yMWlwOHdfV0stcGVHZkVsOHVIbHU0b0s4MldMSXhjTEtRTFg4OXl1TTAtLUF1RjV0eTJXamxkMUdfRGk0N2RBTkl5dC1fakhVVTA3aHR6RW9JTDlldUlva2hRVjEzdjU3WXJjYXVYczdyTi02d1BJQy1pamNaSTduMDFweW9jRWt1WTNpWC1CT3BDX0pPMVFTSDNmTi1LRnRJ?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-07-28",
-        "checked_at": "2026-09-01T15:58:46"
-      },
-      "workflow_status": "new",
-      "score": 46,
-      "tier": "daily",
-      "category": "market",
-      "business_event_type": "regional_expansion",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "业务动作命中: expansion",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "扩产 / 新设施",
-          "招聘 / 组织扩张"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-28",
-      "event_start_at": "",
-      "age_days": 35,
-      "days_until_event": null
-    },
-    {
       "id": "63a85e7f9c5d383d",
       "company_id": "astellas_pharma",
       "company": "Astellas Pharma / 安斯泰来制药",
@@ -11893,14 +11896,14 @@
       ],
       "source_trust": "owned",
       "title": "ASP2138 CLDN18.2陽性、HER2陰性の切除不能な局所進行性または転移性胃腺がんおよび食道胃接合部腺がんを対象とした国際共同第III相試験を開始",
-      "title_zh": "",
+      "title_zh": "安斯泰来启动ASP2138一线胃癌全球III期研究",
       "url": "https://jp.newsroom.astellas.com/2026-08-25-astellas-doses-first-patient-in-phase-3-study-of-asp2138-in-cldn18-2-postive-and-her2-negative-locally-advanced-unresectable-or-metastatic-gastric-or-gastroesophageal-junction-gej-adenocarcinoma",
       "published": "2026-08-25",
       "summary": "",
-      "ai_summary": "客户池公司 Astellas Pharma / 安斯泰来制药 出现合作或交易信号，重点涉及HER2、Claudin 18.2。 客户池公司出现III 期临床信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "安斯泰来已在ASP2138全球III期研究中完成首例患者给药，对象为CLDN18.2阳性、HER2阴性的局部晚期不可切除或转移性胃腺癌及胃食管结合部腺癌一线患者。ASP2138是同时面向CLDN18.2和CD3的双特异性抗体。这是III期启动与入组节点，并非疗效证明或获批。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -11924,7 +11927,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -11998,11 +12001,11 @@
         "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5td1M4cjZILXhWVGdfQl9CNVdsR2RsSWVORWhUQ05HYkxPOUI3QnctcXI3bHZ1THRxT3dtZVBiWllKSlBpREg4Qk1QUHY5b2pyRFZaaTdNX2E1TFk?oc=5"
       ],
       "source_trust": "owned",
-      "title": "WashU Medicine Honors CEO Haruo Naito and Eisai for Longstanding Contributions to Alzheimer’s Disease Research and Healthcare | News ReleaseNews Release：2026 | Eisai Co., Ltd. - Eisai",
+      "title": "WashU Medicine Honors CEO Haruo Naito and Eisai for Longstanding Contributions to Alzheimer’s Disease Research and Healthcare | News ReleaseNews Release：2026 | Eisai Co., Ltd. - eisai.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5td1M4cjZILXhWVGdfQl9CNVdsR2RsSWVORWhUQ05HYkxPOUI3QnctcXI3bHZ1THRxT3dtZVBiWllKSlBpREg4Qk1QUHY5b2pyRFZaaTdNX2E1TFk?oc=5",
       "published": "2026-08-18",
-      "summary": "WashU Medicine Honors CEO Haruo Naito and Eisai for Longstanding Contributions to Alzheimer’s Disease Research and Healthcare | News ReleaseNews Release：2026 | Eisai Co., Ltd. Eisai",
+      "summary": "WashU Medicine Honors CEO Haruo Naito and Eisai for Longstanding Contributions to Alzheimer’s Disease Research and Healthcare | News ReleaseNews Release：2026 | Eisai Co., Ltd. eisai.com",
       "ai_summary": "客户池公司 Eisai / 卫材 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -12030,7 +12033,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12100,11 +12103,11 @@
         "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiZHQzVWVTQ080VF9na3pLU3BqY1ZTSWlQTnRvVmxoV1k5WDFBanBQRHBfTmpNUDRNdFBTWGZZdWpmVXBZMGRNa0xPUDVNVWd0VHEwUVlhbE9LcE0?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Have Fun Exploring Sleep with Pokémon! Eisai Launches Awareness Campaign on Importance of Sleep Through \"Pokémon Sleep\" Collaboration | News ReleaseNews Release：2026 | Eisai Co., Ltd. - Eisai",
+      "title": "Have Fun Exploring Sleep with Pokémon! Eisai Launches Awareness Campaign on Importance of Sleep Through \"Pokémon Sleep\" Collaboration | News ReleaseNews Release：2026 | Eisai Co., Ltd. - eisai.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiZHQzVWVTQ080VF9na3pLU3BqY1ZTSWlQTnRvVmxoV1k5WDFBanBQRHBfTmpNUDRNdFBTWGZZdWpmVXBZMGRNa0xPUDVNVWd0VHEwUVlhbE9LcE0?oc=5",
       "published": "2026-03-12",
-      "summary": "Have Fun Exploring Sleep with Pokémon! Eisai Launches Awareness Campaign on Importance of Sleep Through \"Pokémon Sleep\" Collaboration | News ReleaseNews Release：2026 | Eisai Co., Ltd. Eisai",
+      "summary": "Have Fun Exploring Sleep with Pokémon! Eisai Launches Awareness Campaign on Importance of Sleep Through \"Pokémon Sleep\" Collaboration | News ReleaseNews Release：2026 | Eisai Co., Ltd. eisai.com",
       "ai_summary": "客户池公司 Eisai / 卫材 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -12132,7 +12135,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-12",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12204,11 +12207,11 @@
         "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVcW82QmVyTW5RQzBNaXZGMVRQQWhRb0xNLTFtVVJabXJZWmR2eTloTFBkNVJuTUpiNm12Y1ZodWw3WXp0NkZ6Wjl2ZU0tZnZXeHNUM3JHRHNsLXM?oc=5"
       ],
       "source_trust": "owned",
-      "title": "Eisai to Showcase Alzheimer’s Disease Portfolio with More Than 50 Presentations at the Alzheimer’s Association International Conference® 2026 (AAIC®) | News ReleaseNews Release：2026 | Eisai Co., Ltd. - Eisai",
+      "title": "Eisai to Showcase Alzheimer’s Disease Portfolio with More Than 50 Presentations at the Alzheimer’s Association International Conference® 2026 (AAIC®) | News ReleaseNews Release：2026 | Eisai Co., Ltd. - eisai.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVcW82QmVyTW5RQzBNaXZGMVRQQWhRb0xNLTFtVVJabXJZWmR2eTloTFBkNVJuTUpiNm12Y1ZodWw3WXp0NkZ6Wjl2ZU0tZnZXeHNUM3JHRHNsLXM?oc=5",
       "published": "2026-06-30",
-      "summary": "Eisai to Showcase Alzheimer’s Disease Portfolio with More Than 50 Presentations at the Alzheimer’s Association International Conference® 2026 (AAIC®) | News ReleaseNews Release：2026 | Eisai Co., Ltd. Eisai",
+      "summary": "Eisai to Showcase Alzheimer’s Disease Portfolio with More Than 50 Presentations at the Alzheimer’s Association International Conference® 2026 (AAIC®) | News ReleaseNews Release：2026 | Eisai Co., Ltd. eisai.com",
       "ai_summary": "客户池公司 Eisai / 卫材 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -12236,7 +12239,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12307,14 +12310,14 @@
       ],
       "source_trust": "owned",
       "title": "抗Aβ抗体「レケンビ®」の皮下注射製剤「LEQEMBI IQLIK®」、早期アルツハイマー病に対する初期療法として米国で新発売 - eisai.co.jp",
-      "title_zh": "",
+      "title_zh": "卫材与Biogen在美国推出LEQEMBI IQLIK自注射器，用于早期阿尔茨海默病起始治疗",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9zX0RSdTBwbDV3Zk50a01mSUNUR3ZkNk5MVlFFR2pmZklkNlA2eEhVQUpGUW5iNW9zLTJLMXhUbWxLS0EyaERLVnBWVERmV3cyT1VsQzJpZUtnNGxacHc?oc=5",
       "published": "2026-08-26",
       "summary": "抗Aβ抗体「レケンビ®」の皮下注射製剤「LEQEMBI IQLIK®」、早期アルツハイマー病に対する初期療法として米国で新発売 eisai.co.jp",
-      "ai_summary": "客户池公司 Eisai / 卫材 出现产品与平台动态，重点涉及抗体。 客户池公司出现上市 / 商业化信号，可评估抗体需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "卫材与Biogen已在美国供应LEQEMBI IQLIK每周一次皮下自注射方案，用于早期阿尔茨海默病的起始治疗。起始剂量为500 mg，治疗18个月后也可采用每周360 mg维持剂量。该产品降低了静脉输注负担，但ARIA相关MRI监测要求仍然存在；本条是日文转载，与既有英文公告为同一上市事件。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -12338,7 +12341,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12452,7 +12455,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12520,14 +12523,14 @@
       ],
       "source_trust": "owned",
       "title": "テセントリク、高頻度マイクロサテライト不安定性（MSI-High）を有する結腸がんに対する術後補助療法として適応拡大申請",
-      "title_zh": "",
+      "title_zh": "中外制药在日本申报Tecentriq，用于MSI-High结肠癌术后辅助治疗",
       "url": "https://www.chugai-pharm.co.jp/news/detail/20260814153000_1606.html",
       "published": "2026-08-14",
       "summary": "",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
+      "ai_summary": "中外制药已在日本提交Tecentriq的适应症扩大申请，方案为Tecentriq联合mFOLFOX6，用于成人和儿童MSI-High结肠癌术后辅助治疗。III期ATOMIC研究显示，联合组3年无病生存率为86.3%，对照组为76.2%，危险比0.50，未发现新的安全性信号。当前仍是申报节点，不是适应症已批准。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
       "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
@@ -12551,7 +12554,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-14",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12657,7 +12660,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12724,11 +12727,11 @@
         "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQWlFMy1hT3ZnRlBDN3pvNktVZE9PZjBFX2lxV1FvdVlVY2lZWWc5eVRJYlQxbUhnbzNhN3hTWFVhRnVGcFVIcG5aRHFFQnZSVS04OW1hZ1JxQTVVSXZTM2Q0OUdOWGxWUkt6YUZ6Z0tfRHZXb2tobTFVdk5rT05MQ9IBlAFBVV95cUxNU3A4TEp6TFFIQm00Zl8zeVd2MjZLMU1JU2o5ZVcwSWphNEdvNUlZbWlTY3pmQVpiblU2UkRuWmZTR2Y5bXBMWUZXOVhKWFRJbTM2aXNuLXo5UFBKQkZBWWtVVjJEMmQyck9QSFBLS0VXZ3VIWGE3b0d0SWppQzVDcC1qRjJabVF5X2dPQ1prbTFxRldP?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "JW中外製薬 2型糖尿病で보팡글루타イド第3相申請 - CHOSUNBIZ - biz.chosun.com",
+      "title": "JW中外製薬 2型糖尿病で보팡글루타イド第3相申請 - CHOSUNBIZ - Chosunbiz",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQWlFMy1hT3ZnRlBDN3pvNktVZE9PZjBFX2lxV1FvdVlVY2lZWWc5eVRJYlQxbUhnbzNhN3hTWFVhRnVGcFVIcG5aRHFFQnZSVS04OW1hZ1JxQTVVSXZTM2Q0OUdOWGxWUkt6YUZ6Z0tfRHZXb2tobTFVdk5rT05MQ9IBlAFBVV95cUxNU3A4TEp6TFFIQm00Zl8zeVd2MjZLMU1JU2o5ZVcwSWphNEdvNUlZbWlTY3pmQVpiblU2UkRuWmZTR2Y5bXBMWUZXOVhKWFRJbTM2aXNuLXo5UFBKQkZBWWtVVjJEMmQyck9QSFBLS0VXZ3VIWGE3b0d0SWppQzVDcC1qRjJabVF5X2dPQ1prbTFxRldP?oc=5",
       "published": "2026-08-28",
-      "summary": "JW中外製薬 2型糖尿病で보팡글루타イド第3相申請 - CHOSUNBIZ biz.chosun.com",
+      "summary": "JW中外製薬 2型糖尿病で보팡글루타イド第3相申請 - CHOSUNBIZ Chosunbiz",
       "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -12756,7 +12759,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12861,7 +12864,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -12959,7 +12962,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-04",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13057,7 +13060,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13156,7 +13159,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13262,7 +13265,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13368,7 +13371,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13474,7 +13477,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13573,7 +13576,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13671,7 +13674,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13777,7 +13780,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13882,7 +13885,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-09",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13930,12 +13933,12 @@
     {
       "id": "9d63bcf5808ead59",
       "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
       "matched_company_ids": [
         "kissei_pharma"
       ],
       "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
+        "Kissei Pharmaceutical / Kissei药品工业"
       ],
       "source_id": "kissei_official_news_page",
       "source_label": "Kissei Pharmaceutical news - official page",
@@ -13954,7 +13957,7 @@
       "url": "https://www.kissei.co.jp/news/uploaded/ac0d28038b8ced3e28ffd15df1f1d731.pdf",
       "published": "2026-08-17",
       "summary": "",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "ai_summary": "客户池公司 Kissei Pharmaceutical / Kissei药品工业 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -13981,7 +13984,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14029,12 +14032,12 @@
     {
       "id": "0bf6a5586ce0738b",
       "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
       "matched_company_ids": [
         "kissei_pharma"
       ],
       "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
+        "Kissei Pharmaceutical / Kissei药品工业"
       ],
       "source_id": "kissei_official_news_page",
       "source_label": "Kissei Pharmaceutical news - official page",
@@ -14053,7 +14056,7 @@
       "url": "https://www.kissei.co.jp/news/uploaded/d0cc7cb81a69b97ee9a429631ca688c3_1.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "ai_summary": "客户池公司 Kissei Pharmaceutical / Kissei药品工业 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -14080,7 +14083,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14133,119 +14136,14 @@
       "days_until_event": null
     },
     {
-      "id": "606d0801525c2935",
-      "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
-      "matched_company_ids": [
-        "kissei_pharma"
-      ],
-      "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
-      ],
-      "source_id": "google_news_kissei_account",
-      "source_label": "Google News RSS - Kissei Pharmaceutical",
-      "source_ids": [
-        "google_news_kissei_account"
-      ],
-      "source_labels": [
-        "Google News RSS - Kissei Pharmaceutical"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "「タブネオス」欧州で承認取り消し勧告、キッセイ薬品「日本での対応協議中」など｜製薬業界きょうのニュースまとめ読み（2026年6月29日） - Answers（アンサーズ）",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5",
-      "published": "2026-06-29",
-      "summary": "「タブネオス」欧州で承認取り消し勧告、キッセイ薬品「日本での対応協議中」など｜製薬業界きょうのニュースまとめ読み（2026年6月29日） Answers（アンサーズ）",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5"
-        ],
-        "source_ids": [
-          "google_news_kissei_account"
-        ],
-        "source_labels": [
-          "Google News RSS - Kissei Pharmaceutical"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-06-29",
-        "checked_at": "2026-09-01T15:58:46"
-      },
-      "workflow_status": "new",
-      "score": 46,
-      "tier": "daily",
-      "category": "regulatory",
-      "business_event_type": "clinical_regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: キッセイ薬品",
-        "业务动作命中: 承認",
-        "高价值分类加成 +8: regulatory"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "注册 / 审批"
-        ],
-        "business_actions": [
-          "注册 / 监管动作"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "high",
-        "score": 58,
-        "label": "高相关",
-        "explanation": "客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。",
-        "reasons": [
-          "客户池公司动态",
-          "研发阶段可识别",
-          "出现明确业务动作",
-          "包含监管或注册信号"
-        ]
-      },
-      "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-29",
-      "event_start_at": "",
-      "age_days": 64,
-      "days_until_event": null
-    },
-    {
       "id": "914220cc4f93f937",
       "company_id": "kissei_pharma",
-      "company": "Kissei Pharmaceutical / 杏林制药",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
       "matched_company_ids": [
         "kissei_pharma"
       ],
       "matched_companies": [
-        "Kissei Pharmaceutical / 杏林制药"
+        "Kissei Pharmaceutical / Kissei药品工业"
       ],
       "source_id": "google_news_kissei_account",
       "source_label": "Google News RSS - Kissei Pharmaceutical",
@@ -14264,7 +14162,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ScE95STRiaHhTT0ZPOFQ5dGpMTTNpYzVFc25QTGlzcW5hZDVMZzF3ZjFBWG1nVThPX2J2eTRrR2lpdm5ZMVhXYndqYWpDOG5fODcwaHBPeEJyRUJmWVQ0Nm9JdXFIVEU?oc=5",
       "published": "2026-07-03",
       "summary": "キッセイ薬品の血管炎薬、承認の根拠となった論文撤回 米医学誌 朝日新聞",
-      "ai_summary": "客户池公司 Kissei Pharmaceutical / 杏林制药 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "ai_summary": "客户池公司 Kissei Pharmaceutical / Kissei药品工业 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -14291,7 +14189,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14340,6 +14238,111 @@
       "published_at": "2026-07-03",
       "event_start_at": "",
       "age_days": 60,
+      "days_until_event": null
+    },
+    {
+      "id": "606d0801525c2935",
+      "company_id": "kissei_pharma",
+      "company": "Kissei Pharmaceutical / Kissei药品工业",
+      "matched_company_ids": [
+        "kissei_pharma"
+      ],
+      "matched_companies": [
+        "Kissei Pharmaceutical / Kissei药品工业"
+      ],
+      "source_id": "google_news_kissei_account",
+      "source_label": "Google News RSS - Kissei Pharmaceutical",
+      "source_ids": [
+        "google_news_kissei_account"
+      ],
+      "source_labels": [
+        "Google News RSS - Kissei Pharmaceutical"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "「タブネオス」欧州で承認取り消し勧告、キッセイ薬品「日本での対応協議中」など｜製薬業界きょうのニュースまとめ読み（2026年6月29日） - answers.and-pro.jp",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5",
+      "published": "2026-06-29",
+      "summary": "「タブネオス」欧州で承認取り消し勧告、キッセイ薬品「日本での対応協議中」など｜製薬業界きょうのニュースまとめ読み（2026年6月29日） answers.and-pro.jp",
+      "ai_summary": "客户池公司 Kissei Pharmaceutical / Kissei药品工业 出现临床监管信号。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hZmFQb2dyOE9mQThDMTBXUTBlM3F3blUxTjltUDhWM0R1NjM3SFJoWlB2X0EtSEZUV1N2SFB6T01oZjdSYWRzNVVsbmhkejJZdTdjdnYtOA?oc=5"
+        ],
+        "source_ids": [
+          "google_news_kissei_account"
+        ],
+        "source_labels": [
+          "Google News RSS - Kissei Pharmaceutical"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-29",
+        "checked_at": "2026-09-01T16:52:14"
+      },
+      "workflow_status": "new",
+      "score": 46,
+      "tier": "daily",
+      "category": "regulatory",
+      "business_event_type": "clinical_regulatory",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: キッセイ薬品",
+        "业务动作命中: 承認",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [
+          "注册 / 审批"
+        ],
+        "business_actions": [
+          "注册 / 监管动作"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "high",
+        "score": 58,
+        "label": "高相关",
+        "explanation": "客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。",
+        "reasons": [
+          "客户池公司动态",
+          "研发阶段可识别",
+          "出现明确业务动作",
+          "包含监管或注册信号"
+        ]
+      },
+      "recommended_action": {
+        "type": "customer",
+        "label": "客户需求跟进",
+        "owner": "BD / 销售",
+        "priority": "high",
+        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-06-29",
+      "event_start_at": "",
+      "age_days": 64,
       "days_until_event": null
     },
     {
@@ -14396,7 +14399,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -14498,7 +14501,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-16",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -14602,7 +14605,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -14701,7 +14704,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-12",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -14806,7 +14809,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-24",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -14914,7 +14917,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15022,7 +15025,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15125,7 +15128,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15225,7 +15228,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15333,7 +15336,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15441,7 +15444,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15547,7 +15550,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 44,
@@ -15649,7 +15652,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 42,
@@ -15750,7 +15753,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 42,
@@ -15851,7 +15854,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-03",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -15945,7 +15948,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16046,7 +16049,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16151,7 +16154,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16248,7 +16251,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-21",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16354,7 +16357,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16458,7 +16461,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16564,7 +16567,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16667,7 +16670,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16770,7 +16773,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-12",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -16815,107 +16818,6 @@
       "published_at": "2026-07-12",
       "event_start_at": "",
       "age_days": 51,
-      "days_until_event": null
-    },
-    {
-      "id": "18eb63f029cccd93",
-      "company_id": "biotechne",
-      "company": "Bio-Techne",
-      "matched_company_ids": [
-        "biotechne"
-      ],
-      "matched_companies": [
-        "Bio-Techne"
-      ],
-      "source_id": "biotechne_official_resources_index",
-      "source_label": "Bio-Techne official technical resources and videos - indexed RSS",
-      "source_ids": [
-        "biotechne_official_resources_index"
-      ],
-      "source_labels": [
-        "Bio-Techne official technical resources and videos - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "Webinar: RNAscope Spatial Profiling in Prostate Cancer - Bio-Techne",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5",
-      "published": "2026-06-17",
-      "summary": "Webinar: RNAscope Spatial Profiling in Prostate Cancer Bio-Techne",
-      "ai_summary": "竞品 Bio-Techne 出现市场活动信息。 竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUnJrWnNNakE4SlZSMjhuY0d3YU5YLTdPMjdYS0phdnBlaXU3TW01VlRtajBQc1U1VzIwUy1HbkVncjI2a0tJSE1HOEZNNkYxODNKVnpxU2lKc0liaEJwckhCbnFicjBNamxlWkdRV1ZQdUVDbG9UbVdZQWdsVmJuRy1leTA3UmVocnlBaGZfR3VXUQ?oc=5"
-        ],
-        "source_ids": [
-          "biotechne_official_resources_index"
-        ],
-        "source_labels": [
-          "Bio-Techne official technical resources and videos - indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "owned",
-        "published_at": "2026-06-17",
-        "checked_at": "2026-09-01T15:58:46"
-      },
-      "workflow_status": "new",
-      "score": 40,
-      "tier": "daily",
-      "category": "event",
-      "business_event_type": "market_activity",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +15: Bio-Techne",
-        "公司自有来源",
-        "高价值分类加成 +10: event"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": [
-          "Webinar / 线上会议"
-        ]
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 24,
-        "label": "中相关",
-        "explanation": "竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "可转化为活动运营线索"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-17",
-      "event_start_at": "",
-      "age_days": 76,
       "days_until_event": null
     },
     {
@@ -16972,7 +16874,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-01",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17073,7 +16975,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17171,7 +17073,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-22",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17280,7 +17182,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-02",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17384,7 +17286,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17488,7 +17390,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17586,7 +17488,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17690,7 +17592,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17791,7 +17693,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17889,7 +17791,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -17990,7 +17892,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-22",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -18091,7 +17993,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-04",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -18192,7 +18094,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-07",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,
@@ -18293,7 +18195,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-09-01T15:58:46"
+        "checked_at": "2026-09-01T16:52:14"
       },
       "workflow_status": "new",
       "score": 40,

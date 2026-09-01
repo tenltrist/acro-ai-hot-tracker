@@ -1,8 +1,20 @@
 {
   "version": 1,
-  "updated_at": "2026-09-01T15:56:28",
+  "updated_at": "2026-09-01T16:49:54",
   "source": "ChatGPT Pro human batch review",
   "items": [
+    {
+      "id": "07910f68cc00f6f3",
+      "title_zh": "美国FDA受理盐野义cefiderocol儿童适应症补充申请，PDUFA日期为2027年2月23日",
+      "summary": "FDA已受理盐野义抗革兰阴性菌药物cefiderocol的儿童适应症补充申请，拟覆盖特定病原体导致的院内或呼吸机相关肺炎，以及包括肾盂肾炎在内的复杂性尿路感染。申请基于154名儿童参与的三项临床研究，评估药代、安全性、耐受性和有效性；PDUFA目标日期为2027年2月23日。当前是受理审评，不是儿童适应症获批。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Shionogi 2026年7月16日至17日日美官方公告",
+      "review_status": "verified",
+      "source_title": "グラム陰性菌感染症治療薬セフィデロコルの小児適応追加のための申請を米国FDAが受理 ～小児の薬剤耐性菌による感染症への新たな治療選択肢の提供を目指して～",
+      "source_url": "https://www.shionogi.com/jp/ja/news/2026/07/20260717.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
     {
       "id": "0d385d1400e53451",
       "title_zh": "武田真性红细胞增多症药物Mimrylo获美国批准；GSK因讲演会信息提供受到日本监管指导",
@@ -16,6 +28,18 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "10441cf2c0d6077f",
+      "title_zh": "中外制药在日本申报Tecentriq，用于MSI-High结肠癌术后辅助治疗",
+      "summary": "中外制药已在日本提交Tecentriq的适应症扩大申请，方案为Tecentriq联合mFOLFOX6，用于成人和儿童MSI-High结肠癌术后辅助治疗。III期ATOMIC研究显示，联合组3年无病生存率为86.3%，对照组为76.2%，危险比0.50，未发现新的安全性信号。当前仍是申报节点，不是适应症已批准。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Chugai 2026年8月14日官方公告",
+      "review_status": "verified",
+      "source_title": "テセントリク、高頻度マイクロサテライト不安定性（MSI-High）を有する結腸がんに対する術後補助療法として適応拡大申請",
+      "source_url": "https://www.chugai-pharm.co.jp/news/detail/20260814153000_1606.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
       "id": "118436eb275cbfc5",
       "title_zh": "第一三共启动Dato-DXd尿路上皮癌术后辅助治疗III期试验；赛诺菲在日本推出Sarclisa皮下注射剂",
       "summary": "第一三共已启动全球III期试验，评估Dato-DXd联合rilvegostomig或Dato-DXd单药用于高复发风险肌层浸润性尿路上皮癌术后辅助治疗，并与多种标准方案比较，计划入组约915人。对ACRO而言，这是TROP2 ADC与双特异性抗体联合开发的明确临床进展，应独立跟踪第一三共项目，不能把同篇汇总中的赛诺菲新品混成同一客户动作。",
@@ -26,6 +50,114 @@
       "source_url": "https://answers.and-pro.jp/pharmanews/33106/",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "1e8017f8806ae3ba",
+      "title_zh": "昆士兰大学与赛默飞建立长期合作框架，覆盖矿产、生物医药与先进制造",
+      "summary": "昆士兰大学与赛默飞签署框架协议，将在清洁能源、关键矿产、先进制造和生物医学研究等领域持续开展合作，并设立10万澳元原住民教育基金。这是长期产学研合作框架，不是单一设备采购或已落地的具体项目。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对University of Queensland 2026年8月26日官方公告",
+      "review_status": "verified",
+      "source_title": "UQ-Thermo Fisher Scientific partnership to advance minerals, biomedical research - UQ News",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdkdrZFE1czFZdjNNTWNHbTkzUnNUdURUQkRGaGZoRlR3WUM3eHRjamZNT1Z1YURtYlVkUFpZanVWWXloanRubTV3dDZNWWRIOVQ5ODJGSmVuRDMxRU9JN3lBdV84RG5FRHZ1QThFd0tNSko4X1NURkpqYTBkTWE2QWlCSEVWU09lUVFhVDJLVTVKVm9tT1NHMnJ5YlBfeE1QX3doM1NGSUhZS2c?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "2fb1951ea24539d6",
+      "title_zh": "优赫得一线治疗HER2突变晚期非小细胞肺癌III期达到PFS主要终点",
+      "summary": "第一三共和阿斯利康宣布，优赫得在DESTINY-Lung04 III期研究中显著改善了一线HER2突变晚期非鳞状非小细胞肺癌的无进展生存期。总生存期尚未成熟，公司计划将数据提交给监管机构。本条是日文官方版本，与英文公告为同一事件，应合并计数。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Daiichi Sankyo日文官方公告；与英文公告为同一事件",
+      "review_status": "verified",
+      "source_title": "トラスツズマブ デルクステカン（T-DXd/DS-8201）のHER2遺伝子変異を有する非小細胞肺がん一次治療を対象とした第3相臨床試験の結果について",
+      "source_url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260817_J2.pdf",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "34cd5c5b8acdd97b",
+      "title_zh": "第一三共CD25 ADC DS1025进入首次人体I期临床",
+      "summary": "第一三共已为DS1025的首例受试者给药，启动面向晚期或转移性实体瘤的首次人体I期研究。DS1025是面向CD25的ADC，采用针对免疫肿瘤学优化的细胞毒载荷，旨在清除肿瘤微环境中的调节性T细胞并激活抗肿瘤免疫。这是早期临床入组节点，尚不能得出疗效或商业化结论。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Daiichi Sankyo 2026年8月27日官方公告",
+      "review_status": "verified",
+      "source_title": "DS1025 Enters Clinical Development in Patients with Advanced Solid Tumors as Novel CD25 Directed ADC in Industry-Leading ADC Portfolio of Daiichi Sankyo",
+      "source_url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202608/20260827_E.pdf",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "355b7e75bdc462f3",
+      "title_zh": "欧狄沃围手术期方案在韩国获批，用于可切除非小细胞肺癌",
+      "summary": "韩国食品医药品安全处已批准欧狄沃加含铂双药化疗的术前辅助治疗，随后进行手术并使用欧狄沃单药术后辅助治疗，适用于特定EGFR和ALK阴性的可切除非小细胞肺癌。该批准同样基于CheckMate-77T，应与台湾获批分别记录为两个区域监管节点。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Ono Pharmaceutical 2026年8月4日官方公告",
+      "review_status": "verified",
+      "source_title": "2026.08.04 研究開発 韓国において、切除可能な非小細胞肺がんの治療法として、オプジーボと化学療法の併用による術前補助療法と、それに続く術後のオプジーボ単剤による術後補助療法に対する効能または効果の追加承認を取得",
+      "source_url": "https://www.ono-pharma.com/ja/news/20260804.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "35f39b631e792318",
+      "title_zh": "中外制药在日本申报抗IL-6抗体vamikibart，用于葡萄膜炎相关黄斑水肿",
+      "summary": "中外制药已向日本厚生劳动省提交vamikibart上市申请，拟用于非感染性葡萄膜炎相关黄斑水肿。该药为玻璃体内给药的抗IL-6单克隆抗体，申请依据包括全球III期MEERKAT与SANDCAT研究；若获批，有望成为日本首个用于该适应症的抗IL-6抗体疗法。当前状态是已申报而非已获批，适合持续跟踪审评节点和抗体相关研究需求。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对中外制药2026年8月25日官方公告；与已精读条目统一口径",
+      "review_status": "verified",
+      "source_title": "バミキバルト、非感染性ぶどう膜炎に伴う黄斑浮腫に対し国内で製造販売承認申請",
+      "source_url": "https://www.chugai-pharm.co.jp/news/detail/20260825153000_1610.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "37ec971dc3f3d237",
+      "title_zh": "卫材与Biogen在美国推出LEQEMBI IQLIK自注射器，用于早期阿尔茨海默病起始治疗",
+      "summary": "卫材与Biogen已在美国供应LEQEMBI IQLIK每周一次皮下自注射方案，用于早期阿尔茨海默病的起始治疗。起始剂量为500 mg，由两支250 mg注射器连续给药，每支约15秒；治疗18个月后也可采用每周360 mg维持剂量。该产品降低静脉输注负担，但ARIA相关MRI监测要求仍然存在；本条是上市可及性节点，不应再次写成FDA新批准。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Eisai 2026年8月24日上市公告及7月13日FDA批准公告",
+      "review_status": "verified",
+      "source_title": "1 LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Dis - Eisai",
+      "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE95UzRtZXg3ZUY3MjVkMC1YYS1CUUFsYUIxb3laeEJRNlRpcGpnMG5DUldGSnZ0VE1xZkxkTjlYSk1hRnN1YXgwbmNTUnFuVmUtaGFCY01YWGI?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "3b1e730534809f67",
+      "title_zh": "田边制药将MT-7117全球开发与商业化权益转让给LEO Pharma",
+      "summary": "田边制药与LEO Pharma签署协议，将针对红细胞生成性原卟啉症和X连锁原卟啉症的MT-7117（dersimelagon）全球权益转交给LEO Pharma。合同包含首付款、近期里程碑、后续里程碑与特许权使用费；田边仍将继续推进已提交的美国NDA审评工作。对客户跟进而言，后续开发与商业化决策主体将逐步转向LEO Pharma。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Tanabe Pharma 2026年8月18日官方公告",
+      "review_status": "verified",
+      "source_title": "2026年8月18日 EPPおよびXLPの治療薬として開発中のMT-7117に関する契約締結について",
+      "source_url": "https://www.tanabe-pharma.com/ja/news/rel_260818.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "3eb4e504e20877ba",
+      "title_zh": "安斯泰来在日本申报fezolinetant，用于改善更年期血管舒缩症状",
+      "summary": "安斯泰来已向日本厚生劳动省提交fezolinetant的新药申请，用于治疗绝经相关血管舒缩症状。该药是口服选择性NK3受体拮抗剂，申请主要基于两项日本III期STARLIGHT研究。当前只是申报节点，并非日本已批准或已上市。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Astellas 2026年8月7日日本官方公告",
+      "review_status": "verified",
+      "source_title": "フェゾリネタント 閉経に伴う血管運動神経症状に対する治療薬として日本での製造販売承認を申請",
+      "source_url": "https://jp.newsroom.astellas.com/2026-08-07-submission-of-new-drug-application-for-fezolinetant-in-japan-for-the-treatment-of-vasomotor-symptoms-associated-with-menopause",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "3f312461934cd397",
+      "title_zh": "田边制药拟向东和药品转让制药工厂及17个产品的日本制造销售许可",
+      "summary": "田边制药计划于2026年11月底将田边制药工厂全部股权转让给东和药品，小野田和吉富工厂将成为东和药品子公司；另有17个产品35个规格的日本制造销售许可及相关权利计划自2027年4月起陆续承接。田边制药将转向不持有主要自有工厂、更加聚焦研发和业务开发的模式。该事件是组织、供应链和产品权利重构信号，应持续跟踪交割条件与后续委托生产安排。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对田边制药2026年7月3日官方公告",
+      "review_status": "verified",
+      "source_title": "2026年7月3日 田辺ファーマファクトリー株式会社の株式譲渡の合意および製造販売承認の譲渡に関するお知らせ",
+      "source_url": "https://www.tanabe-pharma.com/ja/news/rel_260703.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
     },
     {
       "id": "411e8520e5b8256c",
@@ -52,6 +184,30 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "447e26fb57557787",
+      "title_zh": "AustinPx通过赛默飞Patheon合作扩大KinetiSol制剂技术的开发与商业化路径",
+      "summary": "AustinPx与赛默飞Patheon合作，把KinetiSol无定形固体分散技术从可行性筛选和原型验证进一步衔接到放大及商业生产，为难溶性小分子项目提供更连续的开发路径。该事件体现赛默飞通过合作补充口服制剂开发能力，但与ACRO蛋白和细胞治疗核心业务的直接重叠较低，适合作为邻近CDMO生态和合作模式案例归档。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对公开采访与AustinPx合作资料；与已精读条目统一口径",
+      "review_status": "verified",
+      "source_title": "CEO of CDMO AustinPx on its exclusive agreement with Thermo Fisher’s Patheon division - drugdiscoverytrends.com",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSWdRb24xTWxGb2FseGN2QkljSklmRFJVVEdnNEdtcEJKV21iZkoweGRDUDVJczEtdTVRbWJUUDl6a09oMTcxSEdFRzlIbE15T0xiMmJ1UkNrWmdiVDNBVUhwM3pEQWxJZUlSNVEwaWNvRUhZMUFUdHlMWmJSdEdsVkpfaW1SQk03eXZwRFZ3MkN0Y2JRSjNJY2lwODN0N18wd0xUX3A0SlRkeDhRQS0xcnBLdWVLTWFNSV9aTVF3?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "448fa7e0ced9f107",
+      "title_zh": "Sartorius与LFB强化从细胞株开发到GMP生产的一体化合作",
+      "summary": "双方在既有合作基础上进一步整合能力，由Sartorius提供细胞株开发和主细胞库服务，LFB承接工艺开发、检测及GMP原液制造，为客户提供更连续的临床前转化路径。该条与另外两篇报道是同一事件的重复传播，平台应统一口径并避免把重复报道误判为三次独立竞争动作。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对BioSpectrum Asia报道并与Sartorius官方原文交叉确认",
+      "review_status": "verified",
+      "source_title": "Sartorius strengthens collaboration with LFB Biomanufacturing - BioSpectrum Asia",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1d6cTQ4dERHMXp4MzU1dWFUQUVLNmlPU1RmNnBuVkhBUE5ocERaTW95WlBUX0hvek1xSndSdzZaX1NYT095RE9pZ1g5a3N6WWdjNGd4WkUtS0stZW5uVWZqWk01T1Y5Snh0ZTJJSjZxMGZ1M3RaUDN4WW1CUTF3SkJEbjk0aDRUMDVCSHpSWndQY093Y1VzZWlXSXczN3hkNk5HRzhFNTNUaG5BOVhRTkhn?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "4811a948f33a6aa6",
       "title_zh": "美国政府通过Project BioShield采购盐野义cefiderocol，首笔选择权金额为3690万美元",
       "summary": "美国BARDA依据Project BioShield合同，行使首个采购选择权购买盐野义的cefiderocol，美国商品名Fetroja，盐野义集团将获得3690万美元。完整合同还包含美国制剂生产、重点生物威胁适应症开发及儿科补充申请等多年期选项。该条反映抗菌药公共采购和本土供应链建设，不应把3690万美元误写成3.69亿美元。",
@@ -62,6 +218,42 @@
       "source_url": "https://www.mixonline.jp/tabid55.html?artid=80795",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "4e98b27a0b73fe34",
+      "title_zh": "中外制药为vamikibart提交日本上市申请，瞄准非感染性葡萄膜炎相关黄斑水肿",
+      "summary": "vamikibart是一款玻璃体内给药的抗IL-6单抗，中外制药已依据MEERKAT和SANDCAT两项全球III期研究向日本监管部门提交上市申请。该节点代表项目已进入监管审评而不是获得批准。对市场与销售团队而言，可围绕抗体研发、临床检测和后续审评节点建立观察任务，但任何产品需求仍需客户侧证据确认。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对医药通信社标题并与中外制药官方公告交叉确认",
+      "review_status": "verified",
+      "source_title": "バミキバルト 非感染性ぶどう膜炎に伴う黄斑浮腫で国内製造販売承認申請 中外製薬 - 医薬通信社",
+      "source_url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQWktBS0x0d3N1N0p6U2RIVnJNNHBrczd6VlNrZkhUbnNDX0hiMUl5NTJiTmd1eVU0ZnM0SWRnbHBfWllrSXZ0eHNGYzRsLWFmb3A0anFIdDgyR2x6aFpma3pheVdwMlBWdUh5RTFZVTIyYjhKam9jU0JQMENscjhkY2UzNW9aVDMzc3ItWkMxUjJPQkNsMVFrWWRubGE5em9WYjNEWlJpQk5qMHVQY092aDMzWWo5UDZ2VTJXRlYwTkxPbFcyb3FtWXAtNmJab0tIRnczZTA1NWlhdDRreGpEMlVkanJNbUtJck0tYlpqZHYxSDlXNm5jZU5GTWNOOVFtNVdYUTFDOEc1WjU3UFl1cHptWWk0NGQxdHA2ZzRqclNScTJTNDBUdFJ4a3h2eUNzNW84UENzTEd1ZGlTNmJGeVVMY2h3YU9iMkNOdENZSm1HZUxENFBlb0Nn?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "52d55e8f78a9582b",
+      "title_zh": "中外制药与UCSF建立多年药物发现合作框架，首个研究项目已启动",
+      "summary": "中外制药与加州大学旧金山分校签署多年共同研究框架，覆盖疾病生物学、新靶点发现和新治疗方式探索，首个具体研究项目已经启动。合作将结合UCSF的转化科学能力与中外制药的抗体工程、SnipeTide环肽及小分子技术。对ACRO而言，这是早期研发和开放创新需求信号，可跟踪后续项目披露，但不能据框架协议直接推断具体采购。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对中外制药2026年8月7日日英双语官方公告",
+      "review_status": "verified",
+      "source_title": "中外製薬とカリフォルニア大学サンフランシスコ校（UCSF）、創薬研究に関する共同研究基本契約を締結～個別の研究プロジェクトを円滑に推進するための枠組みを構築～",
+      "source_url": "https://www.chugai-pharm.co.jp/news/detail/20260807070000_1608.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "5341f96a97832ceb",
+      "title_zh": "武田Mimrylo获FDA批准，用于真性红细胞增多症",
+      "summary": "美国FDA已批准武田的Mimrylo（rusfertide）用于治疗真性红细胞增多症。该药是每周一次皮下注射的hepcidin模拟肽，III期VERIFY研究显示其在标准治疗基础上可提高应答并减少放血治疗需求。这是上市批准节点；对ACRO的直接产品需求尚无公开证据，应继续跟踪上市后研究和检测需求。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对武田公告及既有精读；与其他Mimrylo报道为同一事件",
+      "review_status": "verified",
+      "source_title": "武田薬品工業[4502]：真性多血症の治療パラダイム転換につながる可能性を有するMIMRYLO（rusfertide）の米国食品医薬品局（FDA）の承認取得について 2026年8月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qM2RYOTQ1ekhOMWQtMmhYR3hpQlNlTjJYM2ptcHNHNzZYVlZNMVN6cWdxNE8yQ1RsZDY2NzUyeG5DYUtna3pZWUVpMlpDUGlvV21NcTByZEgwZlJKdW03aTdQSl9vdUNmWWc?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
     },
     {
       "id": "54568a3d96be12a6",
@@ -76,6 +268,18 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "57a472ed5652c649",
+      "title_zh": "LEQEMBI IQLIK自注射器在美国上市，覆盖早期阿尔茨海默病起始与维持治疗",
+      "summary": "LEQEMBI IQLIK已在美国用于早期阿尔茨海默病起始治疗，使患者可以在家完成每周一次皮下注射，并可在静脉输注和皮下给药之间切换。起始治疗采用500 mg剂量，完成18个月治疗后可转为360 mg维持剂量。对市场观察而言，重点是给药便利性和治疗路径变化，而不是把此次上市供应与此前的监管批准重复计为两个产品里程碑。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Eisai和Biogen官方公告；与上一条为同一上市事件",
+      "review_status": "verified",
+      "source_title": "LEQEMBI IQLIK® (lecanemab-irmb) Autoinjector for Initiation of Therapy Now Available in the U.S. for Early Alzheimer’s Disease - Eisai",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEaW5mcjBnUHZ6ZWllU3MxUDJnSmtpbzdzX2R1dDRYbm52R0tmZkFDTVdSenlzd3ZPbnJIbGJPT3I4dFlac3J6b1A4RVpOSmpRMG4xMEhNZnlMSzg?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "5f6aff94aa0a872a",
       "title_zh": "赛默飞推出Gibco CTS Compleo细胞治疗配制与灌装系统",
       "summary": "Gibco CTS Compleo是一套功能封闭、模块化的自动配制与灌装系统，面向细胞治疗生产，可支持低至0.5毫升的灌装、灵活输入输出及与21 CFR Part 11合规系统连接。它试图减少人工操作带来的污染、偏差和细胞浪费。对ACRO而言，这是竞品在细胞治疗下游制造环节补齐自动化能力的明确信号，适合用于产品组合与合作生态对标。",
@@ -86,6 +290,18 @@
       "source_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOVWd6UzVVay1zSXVnSVJSNmRIeTFtSTdmTXR5MV9jZDF6anVlZFVxc25kNjhSWkhkOFFSWWlJQ2stcVpORncyMGc2UWFrY1VPQzVLWHk3cndlZjlkMGUyOVBaV3FENzdTcDhWQVlQSjhTc1pBSzRoZ2x4Y3BHV3NjU1ZKd0FCZzJnbHJhX3VUZU96MUduSFdqZ0xEVzdTMlV1ckxDaFlWS2lvV1Y5cWc1QjFfeUxWMHZHT0dHTmN1ck1wcjlpTW5xY2RQbU96a2J0WnBDZ1Y2ZmFfQmxsRVhUdG9xS0tabEJWS191cXBLeTRpb1ZuNHdlcGhhZ3FwelJWcmZYSHMxSXp2Y2I2c21zag?oc=5",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "63a85e7f9c5d383d",
+      "title_zh": "安斯泰来启动ASP2138一线胃癌全球III期研究",
+      "summary": "安斯泰来已在ASP2138全球III期研究中完成首例患者给药，对象为CLDN18.2阳性、HER2阴性的局部晚期不可切除或转移性胃腺癌及胃食管结合部腺癌一线患者。ASP2138是同时面向CLDN18.2和CD3的双特异性抗体。这是III期启动与入组节点，并非疗效证明或获批。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Astellas 2026年8月25日官方公告",
+      "review_status": "verified",
+      "source_title": "ASP2138 CLDN18.2陽性、HER2陰性の切除不能な局所進行性または転移性胃腺がんおよび食道胃接合部腺がんを対象とした国際共同第III相試験を開始",
+      "source_url": "https://jp.newsroom.astellas.com/2026-08-25-astellas-doses-first-patient-in-phase-3-study-of-asp2138-in-cldn18-2-postive-and-her2-negative-locally-advanced-unresectable-or-metastatic-gastric-or-gastroesophageal-junction-gej-adenocarcinoma",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
     },
     {
       "id": "650f5de82699623c",
@@ -124,6 +340,18 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "6e9ac55b265d023b",
+      "title_zh": "赛默飞与Arcturus合作，为囊性纤维化mRNA疗法ARCT-032的潜在III期和商业化做准备",
+      "summary": "赛默飞将通过Accelerator Drug Development整合制造、临床研究和商业准备能力，支持Arcturus的吸入式mRNA候选药ARCT-032。若II期结果积极，Arcturus计划由赛默飞PPD业务执行III期，赛默飞还将提供临床供应，并在产品获批后取得独家商业生产权。III期决策预计在2026年第四季度，因此当前应写成后期开发准备，而不是已经启动III期试验。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Arcturus 2026年7月2日官方合作公告及8月6日管线更新",
+      "review_status": "verified",
+      "source_title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Clinical Trials Arena",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "6f36892d6bb06249",
       "title_zh": "武田与Protagonist的Mimrylo获FDA批准，分析师预计峰值销售可达20亿美元",
       "summary": "FDA批准武田与Protagonist共同开发的rusfertide，商品名Mimrylo，用于治疗真性红细胞增多症。批准依据包括III期VERIFY研究，且标签未要求患者必须先接受细胞减量治疗；杰富瑞分析师预计峰值销售额或达20亿美元。该信号代表武田新一轮增长产品进入商业化阶段，适合跟踪伴随检测、临床研究和上市后证据需求，但分析师预测不等同于公司业绩承诺。",
@@ -136,6 +364,18 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "6fede91478efe6b8",
+      "title_zh": "Sartorius与LFB扩展生物制药CDMO合作，提供一体化临床转化路径",
+      "summary": "Sartorius与LFB Biomanufacturing将细胞株开发、主细胞库、工艺开发、分析检测及GMP原液生产串成一条服务路径，降低生物药项目在不同供应商之间切换的时间和执行风险。该报道与Sartorius官方公告属于同一事件，应合并观察；对ACRO的意义主要是竞品服务边界正在从单项工具向综合解决方案延伸。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对报道并与Sartorius官方公告交叉确认，属于同一事件",
+      "review_status": "verified",
+      "source_title": "Sartorius, LFB Biomanufacturing Expand Collaboration - contractpharma.com",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTmQtSTMzUmhsT1NHYS1vRVAzUnAwem01R0FpUFQ1cTl3RUd3ZDVhUDNPZWJUYkxkcUEwbkdwSGpsd2lOWTFzWTVDc2FiSXE0eHNzSkhXT2RJUTlObjFtRUYzbVZIU0tnTy1xdC1HSVBWb0pYbGl4OXkwWE1kMzEzOTVRV05kcWZmUTRBOVdvNWVKVHJxMUFCOFpkNWNWdw?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "70e9c4f46a142fe2",
       "title_zh": "小野药品与Mediar签署纤维炎症性疾病抗体发现合作及选择权协议",
       "summary": "小野药品与Mediar Therapeutics将共同发现面向纤维炎症性疾病的新型抗体候选物。Mediar负责利用其抗体发现能力和纤维化研究平台开展研究，小野拥有对合作产生候选物进行全球独家开发、生产和商业化的选择权。该项目直接对应抗体早期发现和免疫炎症研究，可作为客户研发需求线索，但具体靶点、候选物和采购需求尚未公开。",
@@ -146,6 +386,18 @@
       "source_url": "https://www.ono-pharma.com/ja/news/20260806.html",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "727ccd206685c83a",
+      "title_zh": "中外制药在日本申报Enspryng，用于MOG抗体相关疾病复发预防",
+      "summary": "中外制药已在日本提交Enspryng（satralizumab）的适应症扩大申请，用于预防MOG抗体相关疾病复发。申请基于全球III期METEOROID研究，官方披露与安慰剂相比复发风险降低68%。当前是监管申报，不是新适应症已获批。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Chugai 2026年7月31日官方公告并与媒体报道交叉确认",
+      "review_status": "verified",
+      "source_title": "中外製薬、MOG抗体関連疾患の再発予防に適応拡大申請 - 日本経済新聞",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TbFk5SlVZY3JTNXRPWkJXN3lDUkptNldtUjYxci02Yl9qMEVUUTdnSmdXc0pFbTl1TVFldllOcHpXMkJKT0dDNzFOby1uSXhfaWxLUVhJTlJBaWVDQXdxaGJHamUzZm1IdkQ4TQ?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
     },
     {
       "id": "7b485a48b2cec143",
@@ -196,6 +448,18 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "8fa79b5800a33dfb",
+      "title_zh": "MilliporeSigma在德国启用2500万欧元BioReliance检测中心，扩大欧洲放行与稳定性服务",
+      "summary": "Merck KGaA生命科学业务在达姆施塔特启用投资2500万欧元、面积约2000平方米的BioReliance检测设施，提供商业原液和制剂放行检测，以及符合GMP的稳定性研究，重点覆盖单抗和细胞治疗。新站点靠近欧洲临床试验枢纽，表明其正在加强从开发到商业化的本地检测服务。对ACRO而言，应将其视为质量检测和生物安全服务能力扩张，而不是一般办公设施投资。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对MilliporeSigma 2026年7月16日官方发布内容",
+      "review_status": "verified",
+      "source_title": "MilliporeSigma Opens €25 Million BioReliance Testing Facility in Germany to Expand European Drug Release Services - citybiz",
+      "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWVZaSDlwTW1MME5NUTBXNmhhQXRUMFc0LTRYcHdaTmE3Y2IxbTZDLURlNzhZcWdNeU9ZSEpHbkVUbXk1Qlp2aG50T1JmUWk1T0t2Und2SVlFTmRfLXpRSzd3WkFjNEVqeXJaUVJCOEFXeVozVlcya3UtMkFwQUtJSzlGQUFSZmFOZ3RYTlhUNmN2VFZXaUtfdU5BaElOV3dkUl9JNW9SNVVPWlJ6eTV3b1Uxd3ZucjBFOUF2bEpyRGRKODlPSnR3MVB0NktINWFVeGRyX2p6T1dWdU1JRFVOMzJtMFNfRmM?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "90cd92b7eadcc655",
       "title_zh": "安进将日本列为重点市场，计划推进肥胖症药物和前列腺癌T细胞衔接器等新品",
       "summary": "这篇报道的主体是安进，重点是其继续提高日本市场优先级，并推进肥胖症药物及前列腺癌T细胞衔接器等管线。安斯泰来只在安进2020年结束双方合资公司的历史背景中被提及，不构成安斯泰来当前客户动作。该条应按安进行业信号或误命中复核处理，不宜据此发起安斯泰来销售跟进。",
@@ -220,6 +484,18 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "95f82e6a342421a4",
+      "title_zh": "Kissei膀胱癌溶瘤免疫疗法III期结果发表，计划在美国申报完成后推进日本申请",
+      "summary": "Cretostimogene grenadenorepvec用于BCG无应答高风险非肌层浸润性膀胱癌的BOND-003 III期队列C达到75.5%完全缓解率；达到完全缓解者在12个月和24个月维持无病的比例分别为64.2%和60.1%，未观察到3级以上不良事件。Kissei拥有中国以外亚洲20国权益，计划在美国滚动申报完成后准备日本申请。这是明确的后期临床与区域商业化信号。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Kissei 2026年8月17日官方公告及其Lancet Oncology数据说明",
+      "review_status": "verified",
+      "source_title": "キッセイ薬品、ぼうこうがん新薬で高い有効性を確認 国内でも承認申請へ - 信濃毎日新聞デジタル",
+      "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByb0pWSGdEX2s1YU83a1lVNzZhbjBBdlFPZnhPanVyaHJtTWlQSzlpZXJ1ZHhBdFVQQVNYeGdvbXVmbEZKMUdfR3dMbWJHOG9BWEZ2TUNlVk5oTER4Sno2WkVUTWk3YmpXeTlUZFY4MlI?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "9a10afdf46758bf0",
       "title_zh": "小野药品在日本申请扩展Velexbru适应症至恶性淋巴瘤中枢神经系统浸润",
       "summary": "小野药品已为BTK抑制剂Velexbru提交日本补充申请，拟用于既有治疗疗效不足或不适用的恶性淋巴瘤中枢神经系统浸润。申请依据为医生发起的II期临床研究，且该适应症目前尚无确立的标准治疗。该信息是明确的注册节点，但仍处审评阶段；建议跟踪批准结果和后续临床证据，不写成已经获批。",
@@ -230,6 +506,30 @@
       "source_url": "https://www.ono-pharma.com/ja/news/20260611_2.html",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "9cd807f39ffb8ed2",
+      "title_zh": "卫材与Biogen在美国推出LEQEMBI IQLIK自注射器，用于早期阿尔茨海默病起始治疗",
+      "summary": "卫材与Biogen已在美国供应LEQEMBI IQLIK每周一次皮下自注射方案，用于早期阿尔茨海默病的起始治疗。起始剂量为500 mg，治疗18个月后也可采用每周360 mg维持剂量。该产品降低了静脉输注负担，但ARIA相关MRI监测要求仍然存在；本条是日文转载，与既有英文公告为同一上市事件。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Eisai日文公告；与已精读的IQLIK上市事件重复",
+      "review_status": "verified",
+      "source_title": "抗Aβ抗体「レケンビ®」の皮下注射製剤「LEQEMBI IQLIK®」、早期アルツハイマー病に対する初期療法として米国で新発売 - eisai.co.jp",
+      "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9zX0RSdTBwbDV3Zk50a01mSUNUR3ZkNk5MVlFFR2pmZklkNlA2eEhVQUpGUW5iNW9zLTJLMXhUbWxLS0EyaERLVnBWVERmV3cyT1VsQzJpZUtnNGxacHc?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "a2e60f9f918a3e11",
+      "title_zh": "武田新CEO朱莉·金依托现金创造力和历来最丰富的后期管线谋求重回增长",
+      "summary": "日经将武田新管理层的主线概括为：朱莉·金接任CEO后，继续利用前任时期形成的现金创造能力，加快历来最丰富的后期管线转化。武田公开战略显示，近期重点是oveporexton、rusfertide和zasocitinib三项潜在新品上市，同时通过运营转型和去杠杆支持投入。该条属于公司战略与资本配置判断，应跟踪实际上市进度和收入贡献，不能把媒体的增长叙事当作已实现业绩。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对日经公开预览，并与武田2026年综合报告和年度业绩公告交叉确认",
+      "review_status": "verified",
+      "source_title": "武田薬品、キムCEOが継いだ資金創出力 最多の新薬候補で再成長描く - 日本経済新聞",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyRTU3ZFV4bDA5S3lmWTZzb3FNSExHNzNtbXNoVTl3Qy1VV1hrcjZCclJYVElQZGRuWDB4NUllWGFXT2xxSDF0UzB2clhoM2pUdDdyWFRES0I0VXZNb0FDcFFDaWluSXQxb3ZNNw?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
     },
     {
       "id": "afaf92cda6f80a73",
@@ -244,6 +544,78 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "b142009799e4474e",
+      "title_zh": "Sartorius与LFB扩大合作，打通从细胞株开发到首批GMP原液的服务链",
+      "summary": "Sartorius与LFB Biomanufacturing扩大2024年启动的合作：Sartorius负责细胞株开发和主细胞库建立，LFB提供上下游工艺开发、分析检测及GMP原液生产，目标是减少项目交接并缩短从细胞株到临床的周期。对ACRO而言，这是竞品向端到端生物工艺服务整合的信号，应持续对比其在细胞株、培养基、质量检测和GMP原料环节的客户覆盖。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Sartorius 2026年6月23日官方公告",
+      "review_status": "verified",
+      "source_title": "Sartorius and LFB BIOMANUFACTURING strengthen collaboration - Sartorius",
+      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRFFMOVRTV3RJRFQxWGJoaDJLVkRUX2t2Z0Nqb0pncVFFb2tmVnJtMVJnUVRJdEtGNVlQanNsZ09NUFBiY1ZJUnNOZXB0M3hacTlHaVpCaHF3S3N3alpFMnZWR0NaQmxTaGttUmRKcXF3anRGWml1OWhDOVR1YjhaTnU5Q3duY1dKRHJ2MWVXcEdtSWZfbTVRYm1uTmlaMDA3LVRDRUZaWHFqNUVRdWJyT0c5YWR1WUF1cjBRSDdnMHNROHRQ?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "b55a5b42dac749d0",
+      "title_zh": "盐野义终止与Susmed的失眠症治疗App销售合作",
+      "summary": "盐野义与Susmed宣布结束自2021年起的失眠症治疗App Medcle销售合作。该App已于2026年6月在日本获得保险适用并开始销售，双方只披露终止决定来自协商，未公布更详细原因。这属于数字疗法的渠道与合作关系调整，不直接指向试剂采购需求。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对日刊药业公开摘要并与盐野义、Susmed公告交叉确认",
+      "review_status": "verified",
+      "source_title": "不眠症治療用アプリの販売提携契約終了 塩野義製薬/サスメド | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
+      "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1IWGFZd0lkM1JEN3pvMVE0RXZRX0R2ZmR0YXJCVFVlMlZycmJlSVFEdXZlcjBLRnRkVHJqQmRPUUszWEZST2twWA?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "b55d823246655df2",
+      "title_zh": "中外制药与加州大学旧金山分校签署药物发现共同研究协议",
+      "summary": "该协议不是单一候选药合作，而是用于连续启动多个早期研究项目的多年框架，研究范围包括疾病机制、新靶点和新治疗方法。中外制药将提供抗体工程、环肽和小分子发现能力，UCSF提供前沿基础研究与转化科学。该媒体报道与中外制药官方公告属于同一事件，应合并为一条合作关系证据。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对日经报道标题并与中外制药官方公告交叉确认",
+      "review_status": "verified",
+      "source_title": "中外製薬、カリフォルニア大と創薬で共同研究契約 新薬開発で連携 - 日本経済新聞",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QTmpkUVRsRlJHS3lkTG1YbVdGYXc3dGJKQlFUbFdwcTJfamFFVGVId3pEOGFGek9hTFVldDdnRld3eFFoSVRvMXlEN2JKTHpaaWRiMjc4RU5oYkdfOG1SWnp6a204V1V0MmRoag?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "b7dfbb89d95d38f2",
+      "title_zh": "优赫得一线治疗HER2突变晚期非小细胞肺癌III期达到PFS主要终点",
+      "summary": "优赫得在DESTINY-Lung04 III期研究中，与铂类加培美曲塞和pembrolizumab的对照方案相比，显著并具有临床意义地改善了一线HER2突变晚期非鳞状非小细胞肺癌患者的无进展生存期。总生存期数据仍在评估，且这是阳性顶线结果，不等于新适应症已获批。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Daiichi Sankyo 2026年8月17日官方公告",
+      "review_status": "verified",
+      "source_title": "Enhertu® Demonstrated Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival as First-Line Treatment of Patients with HER2 Mutant Advanced Non-Small Cell Lung Cancer in DESTINY-Lung04 Phase 3 Trial",
+      "source_url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202608/20260817_E.pdf",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "bd79fc36000637d8",
+      "title_zh": "盐野义与鸟居药品在日本申报0.5% CORECTIM乳液新剂型",
+      "summary": "盐野义与鸟居药品已为外用JAK抑制剂delgocitinib的0.5%乳液剂型提交日本制造销售批准申请。现有软膏剂已覆盖成人和儿童特应性皮炎，新乳液主要改善头皮及有毛部位的涂用便利性；申请依据包括I期皮肤安全性试验和III期与软膏剂的生物等效性试验。当前状态是已申报而非已批准，和ACRO核心蛋白业务的直接相关性较低。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Shionogi 2026年2月27日官方公告",
+      "review_status": "verified",
+      "source_title": "アトピー性皮膚炎治療薬「コレクチム®」の国内におけるローション剤の 剤形追加に関する製造販売承認申請について",
+      "source_url": "https://www.shionogi.com/jp/ja/news/2026/02/20260227_1.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "ca7fdd02fe028310",
+      "title_zh": "宝生物与10x Genomics签署专利许可，Seeker和Trekker空间分析产品可在全球销售",
+      "summary": "宝生物美国控股子公司与10x Genomics就空间转录组产品Seeker和Trekker签署专利许可，由此解除销售区域限制并解决相关专利争议。这两项技术来自宝生物2025年收购的Curio Bioscience，被其视为空间多组学增长领域的核心产品。该事件属于研究工具平台和全球商业化能力扩张信号，不代表10x Genomics已成为ACRO客户。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Takara Bio 2026年6月23日官方公告",
+      "review_status": "verified",
+      "source_title": "Execution of a Patent License Agreement with 10x Genomics, Inc. for Spatial Products “Seeker™” and “Trekker™” - takara-bio.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wT3VfODhxclBrOGJuUTV4ekUzTVk2eUZEM1NycVI2VV9lNkVreVhFYzRUVE1wN3oxRFlBekp3b3dCa1BFbWJUYm45OGN3OFVQaVRNc3VoOVJNMHNyRkF4SC1sc1FoYTg?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
       "id": "cb582bed07d28e07",
       "title_zh": "百普赛斯GMP级人IL-15获得日本PMDA再生医疗产品材料适用性确认",
       "summary": "百普赛斯的GMP级人IL-15蛋白获得日本PMDA再生医疗产品材料适用性确认，适用场景涉及CAR-T、CAR-NK和TCR-T等再生医疗产品生产所需关键原料。该认定强化了产品在日本细胞治疗申报中的质量与合规证据，市场部可优先转化为日本客户沟通、销售培训和合规传播材料，并明确区分材料确认与药品本身获批。",
@@ -256,6 +628,42 @@
       "imported_at": "2026-09-01T15:56:28"
     },
     {
+      "id": "d50238d39d4b95e4",
+      "title_zh": "Astorg完成收购赛默飞全球微生物业务，拟将其打造为独立诊断公司",
+      "summary": "Astorg已完成对赛默飞全球微生物业务的收购，该业务将由独立管理团队运营，并计划在2026年晚些时候启用新品牌，继续服务临床诊断、食品安全和制药市场。对ACRO而言，这是赛默飞调整业务组合的竞争环境信号，而非新品发布；后续应观察新公司的品牌、渠道和制药客户策略是否发生变化。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Astorg 2026年8月12日官方公告；与已精读条目统一口径",
+      "review_status": "verified",
+      "source_title": "Astorg Completes Acquisition of Thermo Fisher Microbiology Business - Clinical Lab Products",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeXhLNTd1aG5LTUIzTENPcEpUMnpOa1Ryc0g3S2JCcUJwX2xwbERyMVBCTmJ6TmFYb0M4QmVwSjRYQmQzM2toNU1faURGYVRfTnBvekZzcWhaU05QZmtsU0tCUzlPNXpDb1AwcENzcFpVLUxqcUU0cEdHcEFLdkNMU2JDdDNhRFgxSVcyakVRejFIMlh0NEF1bm9CNmxYS01KWU9N?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
+    },
+    {
+      "id": "d6c09bf8153ee534",
+      "title_zh": "赛默飞推出Orbitrap Isora同位素比值质谱系统",
+      "summary": "赛默飞发布Orbitrap Isora IRMS系统，用电喷雾电离与高分辨Orbitrap质谱测量完整分子的同位素和同位素异构体比值，并整合Vanquish Duo UHPLC与Isotope Discoverer软件。目标应用包括环境、地球化学、代谢及食品真伪分析。这是竞品仪器平台更新，与ACRO核心试剂业务的直接重叠较低，适合归入产品边界观察。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Thermo Fisher官方产品资料并与行业报道交叉确认",
+      "review_status": "verified",
+      "source_title": "Industry Roundup: Thermo Fisher Unveils Orbitrap Isora IRMS System - Chromatography Online",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVJsMzJrQ19MX05ia2VMcHl4UWszVHpGeWtUbUo0c2tlX3BVTnFFeFV4QkNLYnRhRzQwY0VxeU43Q2IwVDI5NnFpOTlSQm1NSkU1T08zMF8ydXJsejlaaWlQODdMREJpOEFVcWdBSnJNVlFLSEtSNUtEUFVFdVpXUDdiTVJaTUIxei1XcERDOVdadFRTejFMR2hvRzRVTVVfX1E4UFhiQWtBTVk?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "d798a3eb839131eb",
+      "title_zh": "田边制药将罕见病候选药MT-7117全球权益转让给LEO Pharma",
+      "summary": "田边制药已将口服MC1R激动剂MT-7117（dersimelagon）的全球开发与商业化权益转让给LEO Pharma。该药针对红细胞生成性原卟啉症和X连锁原卟啉症，美国NDA已于6月提交，田边将继续完成当前审评工作。媒体报道合同对价最高约695亿日元；这是资产组合与商业化责任转移信号，不是新药获批。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Tanabe Pharma官方公告并与日经报道交叉确认",
+      "review_status": "verified",
+      "source_title": "田辺ファーマ、希少疾患薬候補をデンマーク社に譲渡 最大695億円 - 日本経済新聞",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4yN3FDY0pSTTl5OU1Ta3NRQVlSMHNTb0J1LWxFN1RzMVdhWExnRnZtNkprdmVuQmRxRDVJbTN0NGlIbHVCNzNFNUJUVm9kTlJucDlFQ3kxNXM2azV3cEp2T1k1dnV2djdiRHVpYg?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
       "id": "e5086191908386e2",
       "title_zh": "安斯泰来成为One Young World 2027东京峰会首家主办城市合作伙伴",
       "summary": "安斯泰来将作为One Young World 2027东京峰会的主办城市合作伙伴，支持来自190多个国家的青年领袖参与议题交流，并延续其自2018年以来的人才培养合作。该动作主要属于企业品牌、人才与可持续发展传播，不是药物研发或采购信号。市场部可观察其日本本地品牌活动与合作传播方式，但不应自动触发销售跟进。",
@@ -266,6 +674,30 @@
       "source_url": "https://www.mixonline.jp/tabid55.html?artid=80776",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "e787af7f45dbf4c8",
+      "title_zh": "安斯泰来与美国政府达成药价与供应自愿协议",
+      "summary": "安斯泰来宣布与美国政府达成自愿协议，承诺下调Medicaid药品价格，并将未来美国价格与其他发达国家水平对齐。公司还将向美国战略原料药储备捐赠25公斤他克莫司原料药，其他条款未披露。这是定价、可及性与供应链政策信号，不应解读为新药进展。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Astellas 2026年9月1日官方公告",
+      "review_status": "verified",
+      "source_title": "Astellas enters voluntary agreement with U.S. government supporting affordable access to medicines",
+      "source_url": "https://newsroom.astellas.com/2026-09-01-astellas-enters-voluntary-agreement-with-us-government-supporting-affordable-access-to-medicines",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
+    },
+    {
+      "id": "ed04209a9d9a544f",
+      "title_zh": "中外制药申报vamikibart，推进葡萄膜炎相关黄斑水肿治疗进入日本审评",
+      "summary": "中外制药已在日本申报vamikibart，用于非感染性葡萄膜炎相关黄斑水肿。该候选药是眼内给药的抗IL-6单克隆抗体，关键证据来自两项全球III期研究；若最终获批，可能成为日本该适应症首个抗IL-6抗体疗法。此日经条目与官方公告是同一事件，平台应合并统计，避免把重复传播误判为多个研发动作。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对日经标题并与中外制药官方公告交叉确认",
+      "review_status": "verified",
+      "source_title": "中外製薬、「バミキバルト」を承認申請 ぶどう膜炎に伴う黄斑浮腫で - 日本経済新聞",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ESXQ5VWhFMWNEYy00WU1BMUx4ZXpnRlFndi1wWEJsSlpZcjhHTVEtLWoySzM2bWRkX1E5ZDY5eDAzbWpDLUlZbDg2VzlPSkVHdjJQelpHTE15czdQSm9wRkJIRWM3NTBobUlBcA?oc=5",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:31:57"
     },
     {
       "id": "ef38eac71670a32f",
@@ -290,6 +722,18 @@
       "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZUdVczVlSHhUY1A5ZDN4amhkbkVHbVdaTXI0ZHJqYS1nWDV5MDc5ZUpuVm53cGhheERoWDZJalVRYWlIMnVWLW5UNVFNdi0wSEZxSzVKaDRSMTJ3U1ZLWTNsTS13a1N5S21YemxwdktjNjliYWpjd2k5cnp1N1NPSlBOZEd2cmJMYUhSNGVlVklxTUhLSXQxajFOZVRHWGtlNC1kUnpxSHpEd1Vqa0ZqeXZJdkNHcEZ5QmVxNVlHYTFJa0M4UzdxZWtwazh1d3RxWGhMVHMtMVZkOXl5aVRBY2EwM0lPcnBQSXdZb1FHa08?oc=5",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28"
+    },
+    {
+      "id": "ff1fe1fde07ed94a",
+      "title_zh": "欧狄沃围手术期方案在台湾获批，用于可切除非小细胞肺癌",
+      "summary": "台湾卫生福利部已批准欧狄沃加含铂双药化疗的术前辅助治疗，之后手术并继续欧狄沃单药术后辅助治疗，用于肿瘤至少4 cm或淋巴结阳性、且EGFR和ALK阴性的可切除非小细胞肺癌。批准主要基于CheckMate-77T研究，属于台湾适应症扩展节点。",
+      "model": "ChatGPT Pro",
+      "reviewer_notes": "已核对Ono Pharmaceutical 2026年8月19日官方公告",
+      "review_status": "verified",
+      "source_title": "2026.08.19 研究開発 台湾において、切除可能な非小細胞肺がんの治療法として、オプジーボと化学療法の併用による術前補助療法と、それに続く術後のオプジーボ単剤による術後補助療法に対する効能または効果の追加承認を取得",
+      "source_url": "https://www.ono-pharma.com/ja/news/20260819.html",
+      "reviewed": true,
+      "imported_at": "2026-09-01T16:49:54"
     }
   ]
 }

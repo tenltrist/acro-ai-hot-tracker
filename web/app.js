@@ -2635,14 +2635,14 @@ function renderMethodology() {
   if (els.summaryStrategyStatus) {
     const manualCount = Number(summaryPipeline.manual_imported) || 0;
     els.summaryStrategyStatus.textContent = manualCount
-      ? `规则自动处理 + ${manualCount} 条 ChatGPT Pro 人工复核`
-      : "规则自动处理；ChatGPT Pro 人工批处理按需回填";
+      ? `规则自动处理 + ${manualCount} 条 AI 情报精读`
+      : "规则自动处理；重点信息按需进行 AI 情报精读";
   }
   if (els.summaryPipelineDetail) {
     const status = summaryPipeline.status || "rules_only";
     const statusLabel = {
       rules_only: "仅规则提要",
-      rules_plus_manual: "规则提要 + 人工 AI 复核",
+      rules_plus_manual: "规则提要 + AI 情报精读",
       policy_disabled: "自动 LLM API 按策略关闭",
       configuration_error: "模型配置异常",
       request_error: "模型请求异常",
@@ -4162,13 +4162,13 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount, custome
   const manualSummaryCount = Number(summaryPipeline.manual_imported) || 0;
   els.executiveHeadline.textContent = response.headline;
   els.assistantMode.textContent = manualSummaryCount
-    ? `ChatGPT Pro 人工复核 ${manualSummaryCount} 条 + 规则决策`
+    ? `AI 情报精读 ${manualSummaryCount} 条 + 规则决策`
     : hasModelSummaries
     ? `AI 摘要 ${summaryPipeline.generated} 条 + 规则决策`
     : "证据驱动规则分析";
   els.assistantQuestion.value = state.assistantQuestion;
   els.assistantDisclosure.textContent = manualSummaryCount
-    ? `当前 ${manualSummaryCount} 条摘要来自 ChatGPT Pro 人工批处理并回填；其余使用可解释规则，自动流水线不调用模型 API。`
+    ? `当前 ${manualSummaryCount} 条重点内容已完成 AI 精读与原文核验；其余使用可解释规则，自动流水线不调用模型 API。`
     : hasModelSummaries
     ? `已在 ${items.length} 条当前信号上结合模型摘要与结构化规则；点击建议可查看对应证据。`
     : `已分析当前 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前为纯规则结果，自动流水线未调用大模型。`;
@@ -5135,8 +5135,8 @@ function renderBusinessSummary(item, compact) {
     state.translationLanguage === "zh" || Boolean(String(item.ai_summary_en || "").trim())
   );
   const label = state.translationLanguage === "en"
-    ? hasManualSummaryInCurrentLanguage ? "ChatGPT Pro reviewed brief" : isLlm ? "API model summary" : "Rule brief"
-    : hasManualSummaryInCurrentLanguage ? "ChatGPT Pro 人工复核摘要" : isLlm ? "API 模型摘要" : "规则提要";
+    ? hasManualSummaryInCurrentLanguage ? "AI intelligence brief" : isLlm ? "API model summary" : "Rule brief"
+    : hasManualSummaryInCurrentLanguage ? "AI 情报精读" : isLlm ? "API 模型摘要" : "规则提要";
   const text = getDisplaySummary(item);
   const summaryClass = isLlm || hasManualSummaryInCurrentLanguage ? "ai" : "rule";
   if (!compact) {
@@ -5791,7 +5791,7 @@ function exportCsv() {
         csvCell(state.translationLanguage === "en" ? translatedAction.label : item.recommended_action?.label || ""),
         csvCell(state.translationLanguage === "en" ? translatedAction.owner : item.recommended_action?.owner || ""),
         csvCell(item.reasons.slice(0, 3).join("; ")),
-        csvCell(item.summary_method === "manual_ai" ? "ChatGPT Pro 人工复核摘要" : item.summary_method === "llm" ? "API 模型摘要" : "规则提要"),
+        csvCell(item.summary_method === "manual_ai" ? "AI 情报精读" : item.summary_method === "llm" ? "API 模型摘要" : "规则提要"),
         csvCell(getDisplaySummary(item)),
         item.url,
       ].join(",")
