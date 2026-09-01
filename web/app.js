@@ -69,6 +69,7 @@ const state = {
   region: "all",
   searchQuery: "",
   page: "overview",
+  overviewMetric: "critical",
   methodologyDetail: "",
   sourceView: "effective",
   sourceStage: "all",
@@ -1921,6 +1922,7 @@ const sourceInventory = [
 
 const pageMeta = {
   overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
+  "overview-metric": ["Dashboard Metric Detail", "总览指标明细"],
   companies: ["Company Pool", "目标公司池"],
   timeline: ["Company Timeline", "公司动态时间线与长期档案"],
   "japan-customers": ["Japan Account Intelligence", "日本客户与潜在账户情报"],
@@ -1933,6 +1935,40 @@ const pageMeta = {
   pipeline: ["System Architecture", "系统链路、五层能力与实施蓝图"],
   questions: ["Product Decisions", "已确定边界与下一阶段决策"],
   "source-health": ["Source Operations", "数据源健康与产出质量"],
+};
+
+const overviewApacRegions = new Set(["japan", "china", "korea", "southeast_asia"]);
+
+const overviewMetricDefinitions = {
+  critical: {
+    label: "重大信号",
+    pageTitle: "重大信号明细",
+    description: "当前筛选范围内，同时属于“进入日报 / 即时提醒”且 ACRO 相关性为高的信息。这里用于回答哪些事件需要优先核验和安排动作。",
+    boundary: "这是优先级入口，不代表每条信息都已由内部确认；进入行动前仍应查看原文证据与业务边界。",
+    matches: (item) =>
+      ["daily", "immediate"].includes(item.tier) && item.acro_relevance?.level === "high",
+  },
+  competitor: {
+    label: "竞品动态",
+    pageTitle: "竞品动态明细",
+    description: "当前筛选范围内，命中已确认竞品池公司的产品、技术、合作、区域和组织动态。",
+    boundary: "竞品命中来自公司角色配置；同一条新闻可能涉及多家公司，也可能同时计入重大信号或亚太地区动态。",
+    matches: (item, companyRoles) => getItemRole(item, companyRoles) === "competitor",
+  },
+  customer: {
+    label: "账户动态信号",
+    pageTitle: "账户动态信号明细",
+    description: "当前筛选范围内，命中日本客户与潜在账户目录的公开动态，用于销售、BD 和区域市场安排核验与跟进。",
+    boundary: "账户目录代表监测对象，不等于已成交客户；公开新闻只能形成跟进线索，不能替代内部 CRM 关系确认。",
+    matches: (item, companyRoles) => getItemRole(item, companyRoles) === "customer",
+  },
+  apac: {
+    label: "亚太地区动态",
+    pageTitle: "亚太地区动态明细",
+    description: "当前筛选范围内，规则识别为日本、中国、韩国或东南亚的信息，用于观察地区市场、监管、活动与合作变化。",
+    boundary: "地区由标题、摘要和来源线索识别；“全球 / 未识别”不会进入本指标，边界不清的条目仍需人工核验。",
+    matches: (item) => overviewApacRegions.has(inferItemRegion(item)),
+  },
 };
 
 const companyIdToDisplayName = {
@@ -2021,6 +2057,19 @@ const els = {
   metricDaily: document.querySelector("#metricDaily"),
   metricImmediate: document.querySelector("#metricImmediate"),
   metricArchive: document.querySelector("#metricArchive"),
+  overviewMetricGrid: document.querySelector("#overviewMetricGrid"),
+  overviewMetricBackButton: document.querySelector("#overviewMetricBackButton"),
+  overviewMetricHero: document.querySelector("#overviewMetricHero"),
+  overviewMetricBreadcrumbTitle: document.querySelector("#overviewMetricBreadcrumbTitle"),
+  overviewMetricTitle: document.querySelector("#overviewMetricTitle"),
+  overviewMetricDescription: document.querySelector("#overviewMetricDescription"),
+  overviewMetricBoundary: document.querySelector("#overviewMetricBoundary"),
+  overviewMetricCount: document.querySelector("#overviewMetricCount"),
+  overviewMetricScope: document.querySelector("#overviewMetricScope"),
+  overviewMetricFacts: document.querySelector("#overviewMetricFacts"),
+  overviewMetricListTitle: document.querySelector("#overviewMetricListTitle"),
+  overviewMetricResultCount: document.querySelector("#overviewMetricResultCount"),
+  overviewMetricList: document.querySelector("#overviewMetricList"),
   updatedAt: document.querySelector("#updatedAt"),
   signalList: document.querySelector("#signalList"),
   topSignalList: document.querySelector("#topSignalList"),
@@ -3745,6 +3794,94 @@ function labelBusinessEventLanguage(eventType, short = false, language = state.t
   return short ? definition.short : definition.label;
 }
 
+function getOverviewMetricItems(metricKey, scopedItems, companyRoles) {
+  const definition = overviewMetricDefinitions[metricKey] || overviewMetricDefinitions.critical;
+  return scopedItems.filter((item) => definition.matches(item, companyRoles));
+}
+
+function getOverviewScopeLabel() {
+  const tierLabels = {
+    all: "全部分层",
+    immediate: "即时提醒",
+    daily: "进入日报",
+    archive: "归档观察",
+  };
+  const relevanceLabels = {
+    high: "ACRO 高相关",
+    medium: "ACRO 中相关",
+    low: "ACRO 低相关",
+  };
+  const parts = [
+    state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`,
+    tierLabels[state.tier] || "全部分层",
+  ];
+  if (state.role !== "all") parts.push(labelRole(state.role));
+  if (state.region !== "all") parts.push(labelRegion(state.region));
+  if (state.relevance !== "all") parts.push(relevanceLabels[state.relevance] || state.relevance);
+  if (state.signalType !== "all") parts.push(labelSignalType(state.signalType));
+  if (state.category !== "all") parts.push(labelBusinessEvent(state.category));
+  if (state.company !== "all") parts.push(state.company);
+  if (state.searchQuery) parts.push(`搜索：${state.searchQuery}`);
+  return parts.join(" · ");
+}
+
+function renderOverviewMetricDetail(scopedItems, companyRoles) {
+  if (!els.overviewMetricList) return;
+  const metricKey = overviewMetricDefinitions[state.overviewMetric]
+    ? state.overviewMetric
+    : "critical";
+  const definition = overviewMetricDefinitions[metricKey];
+  const items = getOverviewMetricItems(metricKey, scopedItems, companyRoles);
+  const companies = [...new Set(items.flatMap((item) => {
+    const matched = item.matched_companies || [];
+    return matched.length ? matched : [item.company];
+  }).filter(Boolean))];
+  const sources = new Set(items.flatMap((item) => {
+    const ids = item.source_ids || [];
+    return ids.length ? ids : [item.source_id || item.source_label];
+  }).filter(Boolean));
+  const eventCounts = items.reduce((acc, item) => {
+    const eventType = getBusinessEventType(item);
+    acc[eventType] = (acc[eventType] || 0) + 1;
+    return acc;
+  }, {});
+  const [topEventType, topEventCount = 0] = Object.entries(eventCounts)
+    .sort((a, b) => b[1] - a[1])[0] || ["", 0];
+  const latestDate = items
+    .map((item) => item.published_at || item.published || "")
+    .filter(Boolean)
+    .sort()
+    .at(-1) || "暂无";
+
+  els.overviewMetricHero.dataset.metric = metricKey;
+  els.overviewMetricBreadcrumbTitle.textContent = definition.label;
+  els.overviewMetricTitle.textContent = definition.pageTitle;
+  els.overviewMetricDescription.textContent = definition.description;
+  els.overviewMetricBoundary.textContent = definition.boundary;
+  els.overviewMetricCount.textContent = items.length;
+  els.overviewMetricScope.textContent = getOverviewScopeLabel();
+  els.overviewMetricListTitle.textContent = `${definition.label}包含哪些信息`;
+  els.overviewMetricResultCount.textContent = `${items.length} 条结果`;
+  els.overviewMetricFacts.innerHTML = `
+    <div>
+      <span>涉及公司</span>
+      <strong>${companies.length} 家</strong>
+      <small>${escapeHtml(companies.slice(0, 3).join(" / ") || "当前没有命中公司")}</small>
+    </div>
+    <div>
+      <span>主要业务动向</span>
+      <strong>${escapeHtml(topEventType ? labelBusinessEvent(topEventType) : "暂无")}</strong>
+      <small>${topEventCount ? `${topEventCount} 条，占当前结果 ${Math.round((topEventCount / items.length) * 100)}%` : "当前没有可统计事件"}</small>
+    </div>
+    <div>
+      <span>来源与时效</span>
+      <strong>${sources.size} 个来源</strong>
+      <small>最新发布 ${escapeHtml(latestDate)}</small>
+    </div>
+  `;
+  renderSignalCards(els.overviewMetricList, items, false);
+}
+
 function renderOverviewScope() {
   const scoped = getFilteredItems();
   const companyRoles = new Map(
@@ -3753,13 +3890,10 @@ function renderOverviewScope() {
   const customerCompanyCount = getJapanAccountData().accounts?.length || (state.payload.companies || []).filter(
     (company) => company.business_role === "customer",
   ).length;
-  const competitorCount = scoped.filter((item) => getItemRole(item, companyRoles) === "competitor").length;
-  const customerCount = scoped.filter((item) => getItemRole(item, companyRoles) === "customer").length;
-  const apacRegions = new Set(["japan", "china", "korea", "southeast_asia"]);
-  const apacCount = scoped.filter((item) => apacRegions.has(inferItemRegion(item))).length;
-  const criticalCount = scoped.filter(
-    (item) => ["daily", "immediate"].includes(item.tier) && item.acro_relevance?.level === "high",
-  ).length;
+  const criticalCount = getOverviewMetricItems("critical", scoped, companyRoles).length;
+  const competitorCount = getOverviewMetricItems("competitor", scoped, companyRoles).length;
+  const customerCount = getOverviewMetricItems("customer", scoped, companyRoles).length;
+  const apacCount = getOverviewMetricItems("apac", scoped, companyRoles).length;
 
   els.metricCandidates.textContent = criticalCount;
   els.metricDaily.textContent = competitorCount;
@@ -3784,6 +3918,9 @@ function renderOverviewScope() {
   renderBusinessLanes(scoped, companyRoles);
   renderSignals();
   renderMethodology();
+  if (state.page === "overview-metric") {
+    renderOverviewMetricDetail(scoped, companyRoles);
+  }
 }
 
 function renderBusinessLanes(items, companyRoles) {
@@ -4899,7 +5036,10 @@ function renderCompanyTimeline() {
 }
 
 function renderPage() {
-  const [eyebrow, title] = pageMeta[state.page] || pageMeta.overview;
+  const metricDefinition = overviewMetricDefinitions[state.overviewMetric] || overviewMetricDefinitions.critical;
+  const [eyebrow, title] = state.page === "overview-metric"
+    ? [pageMeta["overview-metric"][0], metricDefinition.pageTitle]
+    : pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
   els.toolbar.hidden = !["overview", "signals"].includes(state.page);
@@ -4907,13 +5047,46 @@ function renderPage() {
     panel.hidden = panel.dataset.page !== state.page;
   });
   els.pageButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.pageTarget === state.page);
+    const activePage = state.page === "overview-metric" ? "overview" : state.page;
+    button.classList.toggle("active", button.dataset.pageTarget === activePage);
   });
   document.querySelectorAll(".nav-cluster").forEach((cluster) => {
     const containsActive = Boolean(cluster.querySelector("[data-page-target].active"));
     cluster.classList.toggle("contains-active", containsActive);
     if (containsActive) cluster.open = true;
   });
+}
+
+function overviewMetricTargetFromHash() {
+  const target = window.location.hash.match(/^#overview-metric-([a-z-]+)$/)?.[1] || "";
+  return overviewMetricDefinitions[target] ? target : "";
+}
+
+function updateOverviewMetricUrl(target, historyMode) {
+  if (historyMode === "none") return;
+  const hash = target ? `#overview-metric-${target}` : "";
+  const url = window.location.pathname + window.location.search + hash;
+  const mode = historyMode === "replace" || window.location.hash === hash
+    ? "replaceState"
+    : "pushState";
+  window.history?.[mode]?.({ page: target ? "overview-metric" : "overview", target }, "", url);
+}
+
+function openOverviewMetric(target, historyMode = "push") {
+  const validTarget = overviewMetricDefinitions[target] ? target : "critical";
+  state.page = "overview-metric";
+  state.overviewMetric = validTarget;
+  renderOverviewScope();
+  renderPage();
+  updateOverviewMetricUrl(validTarget, historyMode);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function closeOverviewMetric(historyMode = "replace") {
+  state.page = "overview";
+  renderPage();
+  updateOverviewMetricUrl("", historyMode);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function methodologyTargetFromHash() {
@@ -5386,6 +5559,13 @@ function renderSignalCards(container, items, compact) {
       const newValue = current && current.value === action ? null : action;
       state.feedback = saveFeedback(id, newValue);
       renderSignals();
+      if (state.page === "overview-metric") {
+        const scoped = getFilteredItems();
+        const companyRoles = new Map(
+          (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+        );
+        renderOverviewMetricDetail(scoped, companyRoles);
+      }
     });
   });
   container.querySelectorAll(".signal-workflow-select").forEach((select) => {
@@ -5393,6 +5573,13 @@ function renderSignalCards(container, items, compact) {
       state.signalWorkflow = saveSignalWorkflow(select.dataset.signalWorkflowId, select.value);
       renderSignals();
       renderCompanyTimeline();
+      if (state.page === "overview-metric") {
+        const scoped = getFilteredItems();
+        const companyRoles = new Map(
+          (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+        );
+        renderOverviewMetricDetail(scoped, companyRoles);
+      }
     });
   });
 }
@@ -5939,16 +6126,15 @@ function clearSourceOutput() {
 
 // ── Event listeners ──
 
-// Metric cards: click to filter signals by tier
-document.querySelectorAll(".metric.clickable").forEach((card) => {
-  card.addEventListener("click", () => {
-    const tier = card.dataset.tier;
-    state.page = "overview";
-    state.tier = tier;
-    els.tierFilter.value = tier;
-    renderPage();
-    renderOverviewScope();
-  });
+els.overviewMetricGrid.addEventListener("click", (event) => {
+  if (event.target.closest("[data-methodology-target]")) return;
+  const card = event.target.closest("[data-overview-metric]");
+  if (!card) return;
+  openOverviewMetric(card.dataset.overviewMetric);
+});
+
+els.overviewMetricBackButton.addEventListener("click", () => {
+  closeOverviewMetric("replace");
 });
 
 // Sidebar company dock is rendered from companies.json, so one delegated listener
@@ -6341,7 +6527,11 @@ els.pageButtons.forEach((button) => {
     state.page = pageTarget;
     state.methodologyDetail = "";
     renderPage();
-    if (window.location.hash.startsWith("#metric-") || window.location.hash === "#methodology") {
+    if (
+      window.location.hash.startsWith("#metric-") ||
+      window.location.hash.startsWith("#overview-metric-") ||
+      window.location.hash === "#methodology"
+    ) {
       window.history.replaceState(null, "", window.location.pathname + window.location.search);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -6368,7 +6558,11 @@ document.addEventListener("click", (event) => {
   }
   state.page = rulePageTarget.dataset.rulePageTarget;
   state.methodologyDetail = "";
-  if (window.location.hash.startsWith("#metric-") || window.location.hash === "#methodology") {
+  if (
+    window.location.hash.startsWith("#metric-") ||
+    window.location.hash.startsWith("#overview-metric-") ||
+    window.location.hash === "#methodology"
+  ) {
     window.history.replaceState(null, "", window.location.pathname + window.location.search);
   }
   renderPage();
@@ -6376,6 +6570,15 @@ document.addEventListener("click", (event) => {
 });
 
 window.addEventListener("popstate", () => {
+  const overviewTarget = overviewMetricTargetFromHash();
+  if (overviewTarget) {
+    openOverviewMetric(overviewTarget, "none");
+    return;
+  }
+  if (state.page === "overview-metric" && !window.location.hash) {
+    closeOverviewMetric("none");
+    return;
+  }
   const target = methodologyTargetFromHash();
   if (target) {
     openMethodology(target, "none");
@@ -6386,15 +6589,19 @@ window.addEventListener("popstate", () => {
   }
 });
 
+const initialOverviewMetricHash = overviewMetricTargetFromHash();
 const initialMetricHash = methodologyTargetFromHash();
-if (initialMetricHash || window.location.hash === "#methodology") {
+if (initialOverviewMetricHash) {
+  state.page = "overview-metric";
+  state.overviewMetric = initialOverviewMetricHash;
+} else if (initialMetricHash || window.location.hash === "#methodology") {
   state.page = "methodology";
   state.methodologyDetail = initialMetricHash;
 }
 renderMethodologyView();
 renderPage();
 loadData().then(() => {
-  if (initialMetricHash || window.location.hash === "#methodology") {
+  if (initialOverviewMetricHash || initialMetricHash || window.location.hash === "#methodology") {
     window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
   }
 });
