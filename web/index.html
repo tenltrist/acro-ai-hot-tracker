@@ -635,7 +635,21 @@
       </section>
 
       <section class="methodology-section page-panel" data-page="methodology" aria-label="Metrics and rules center">
-        <div class="methodology-hero">
+        <div class="methodology-detail-bar" id="methodologyDetailBar" hidden>
+          <button class="methodology-back-button" id="methodologyBackButton" type="button" aria-label="返回指标总览">
+            <span aria-hidden="true">←</span>
+            <strong>返回指标总览</strong>
+          </button>
+          <nav class="methodology-breadcrumb" aria-label="当前位置">
+            <span>指标与规则</span>
+            <i aria-hidden="true">/</i>
+            <span id="methodologyBreadcrumbFamily">所属分组</span>
+            <i aria-hidden="true">/</i>
+            <strong id="methodologyBreadcrumbTitle">当前指标</strong>
+          </nav>
+        </div>
+
+        <div class="methodology-hero methodology-index-only">
           <div>
             <p class="eyebrow">指标与规则中心</p>
             <h2>每个数字都能回答：是什么、怎么算、怎么用</h2>
@@ -650,7 +664,7 @@
 
         <div class="methodology-layout">
           <div class="methodology-content">
-            <section class="metric-family" aria-labelledby="item-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="item-metric-family">
               <div class="metric-family-head">
                 <span>01</span>
                 <div><h3 id="item-metric-family">单篇信息判断</h3><p>先决定是否入库、是否进日报，再判断它与 ACRO 的业务距离。</p></div>
@@ -668,7 +682,7 @@
               </div>
             </section>
 
-            <section class="metric-family" aria-labelledby="account-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="account-metric-family">
               <div class="metric-family-head">
                 <span>02</span>
                 <div><h3 id="account-metric-family">公司与账户排序</h3><p>用近 90 天的多条公开信号排序，不代表内部客户关系或成交概率。</p></div>
@@ -686,7 +700,7 @@
               </div>
             </section>
 
-            <section class="metric-family" aria-labelledby="operations-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="operations-metric-family">
               <div class="metric-family-head">
                 <span>03</span>
                 <div><h3 id="operations-metric-family">统计与运行口径</h3><p>说清图表数字的分母、时间窗口和来源状态。</p></div>
@@ -704,7 +718,12 @@
               </div>
             </section>
 
-            <div class="methodology-detail-list">
+            <div class="methodology-index-footer methodology-index-only">
+              <div class="methodology-callout"><strong>三个不等于</strong><p>信息筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
+              <button class="methodology-cross-link" type="button" data-rule-page-target="structured-rules"><span>需要看信息是怎么被拆解的？</span><strong>打开六组结构化提取 →</strong></button>
+            </div>
+
+            <div class="methodology-detail-list" id="methodologyDetailList" hidden>
               <article class="methodology-detail" id="metric-news-score" data-methodology-detail="news-score">
                 <header><div><span>单篇信息 · 筛选</span><h3>信息筛选分</h3></div><b>新闻卡右上角</b></header>
                 <p class="methodology-lead">衡量这条信息是否值得进入筛选流程。它不是概率、百分比或 AI 主观评分，而是可解释的规则加减分。</p>
@@ -846,22 +865,6 @@
             </div>
           </div>
 
-          <aside class="methodology-toc" aria-label="指标说明目录">
-            <div class="methodology-toc-head"><span>本页目录</span><strong>指标口径</strong></div>
-            <nav>
-              <button type="button" data-methodology-target="news-score"><span>01</span>信息筛选分</button>
-              <button type="button" data-methodology-target="acro-relevance"><span>02</span>ACRO 相关性分</button>
-              <button type="button" data-methodology-target="daily-admission"><span>03</span>日报准入</button>
-              <button type="button" data-methodology-target="priority-index"><span>04</span>账户优先指数</button>
-              <button type="button" data-methodology-target="relevance-density"><span>05</span>ACRO 相关密度</button>
-              <button type="button" data-methodology-target="trend-counts"><span>06</span>走势统计数</button>
-              <button type="button" data-methodology-target="dashboard-counts"><span>07</span>总览四项</button>
-              <button type="button" data-methodology-target="competitor-matrix"><span>08</span>竞品动作矩阵</button>
-              <button type="button" data-methodology-target="source-health"><span>09</span>数据源健康</button>
-            </nav>
-            <button class="methodology-cross-link" type="button" data-rule-page-target="structured-rules"><span>六组结构化提取</span><strong>另一张规则页 →</strong></button>
-            <div class="methodology-callout"><strong>三个不等于</strong><p>筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
-          </aside>
         </div>
       </section>
 

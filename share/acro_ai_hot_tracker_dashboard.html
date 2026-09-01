@@ -29,6 +29,76 @@
   margin-bottom: 20px;
 }
 
+.methodology-section [hidden] {
+  display: none !important;
+}
+
+.methodology-detail-bar {
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd8dd;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 8px 24px rgba(34, 48, 64, 0.08);
+}
+
+.methodology-back-button {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border: 1px solid #a9ced1;
+  border-radius: 6px;
+  background: #eff8f8;
+  color: #126b73;
+  cursor: pointer;
+}
+
+.methodology-back-button:hover,
+.methodology-back-button:focus-visible {
+  border-color: var(--teal);
+  background: #e2f3f3;
+  outline: 2px solid rgba(8, 127, 140, 0.14);
+  outline-offset: 1px;
+}
+
+.methodology-back-button span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.methodology-back-button strong {
+  font-size: 11px;
+}
+
+.methodology-breadcrumb {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  color: #65747d;
+  font-size: 11px;
+}
+
+.methodology-breadcrumb i {
+  color: #a1adb3;
+  font-style: normal;
+}
+
+.methodology-breadcrumb strong {
+  color: #263b45;
+  font-size: 12px;
+}
+
 .methodology-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 220px;
@@ -81,10 +151,7 @@
 }
 
 .methodology-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 244px;
-  align-items: start;
-  gap: 16px;
+  display: block;
 }
 
 .methodology-content,
@@ -92,6 +159,18 @@
   display: grid;
   gap: 16px;
   min-width: 0;
+}
+
+.methodology-detail-list {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.methodology-index-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+  gap: 12px;
 }
 
 .metric-family {
@@ -215,19 +294,16 @@
   color: #116d75;
 }
 
+.methodology-summary-card > small::after {
+  content: "  →";
+}
+
 .methodology-detail {
   min-width: 0;
-  padding: 20px;
-  scroll-margin-top: 18px;
+  padding: 26px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-  transition: border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.methodology-detail.is-focused {
-  border-color: #55afb5;
-  box-shadow: 0 0 0 4px rgba(8, 127, 140, 0.11);
 }
 
 .methodology-detail > header {
@@ -545,74 +621,6 @@
   font-weight: 750;
 }
 
-.methodology-toc {
-  position: sticky;
-  top: 16px;
-  display: grid;
-  gap: 10px;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-}
-
-.methodology-toc-head {
-  display: grid;
-  gap: 2px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--line);
-}
-
-.methodology-toc-head span {
-  color: var(--muted);
-  font-size: 9px;
-  font-weight: 750;
-}
-
-.methodology-toc-head strong {
-  color: #273a43;
-  font-size: 15px;
-}
-
-.methodology-toc nav {
-  display: grid;
-  gap: 3px;
-}
-
-.methodology-toc nav button {
-  width: 100%;
-  height: 34px;
-  display: grid;
-  grid-template-columns: 26px minmax(0, 1fr);
-  align-items: center;
-  gap: 7px;
-  padding: 0 7px;
-  border: 0;
-  background: transparent;
-  color: #4e626c;
-  font-size: 10px;
-  font-weight: 750;
-  text-align: left;
-  cursor: pointer;
-}
-
-.methodology-toc nav button span {
-  display: grid;
-  place-items: center;
-  width: 24px;
-  height: 22px;
-  border-radius: 4px;
-  background: #edf2f3;
-  color: #72828a;
-  font-size: 8px;
-}
-
-.methodology-toc nav button:hover,
-.methodology-toc nav button:focus-visible {
-  background: #edf7f7;
-  color: var(--teal);
-}
-
 .methodology-cross-link {
   width: 100%;
   height: auto;
@@ -653,25 +661,19 @@
   line-height: 1.5;
 }
 
-@media (max-width: 1180px) {
-  .methodology-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .methodology-toc {
-    position: static;
-    grid-row: 1;
-  }
-
-  .methodology-toc nav {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 820px) {
+  .methodology-detail-bar,
   .methodology-hero {
     grid-template-columns: minmax(0, 1fr);
     gap: 14px;
+  }
+
+  .methodology-breadcrumb {
+    padding: 0 3px 2px;
+  }
+
+  .methodology-index-footer {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .methodology-version {
@@ -716,10 +718,6 @@
   .admission-flow,
   .methodology-thresholds.horizontal {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .methodology-toc nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .methodology-summary-card {
@@ -8732,7 +8730,21 @@ button.strip-score:focus-visible strong {
       </section>
 
       <section class="methodology-section page-panel" data-page="methodology" aria-label="Metrics and rules center">
-        <div class="methodology-hero">
+        <div class="methodology-detail-bar" id="methodologyDetailBar" hidden>
+          <button class="methodology-back-button" id="methodologyBackButton" type="button" aria-label="返回指标总览">
+            <span aria-hidden="true">←</span>
+            <strong>返回指标总览</strong>
+          </button>
+          <nav class="methodology-breadcrumb" aria-label="当前位置">
+            <span>指标与规则</span>
+            <i aria-hidden="true">/</i>
+            <span id="methodologyBreadcrumbFamily">所属分组</span>
+            <i aria-hidden="true">/</i>
+            <strong id="methodologyBreadcrumbTitle">当前指标</strong>
+          </nav>
+        </div>
+
+        <div class="methodology-hero methodology-index-only">
           <div>
             <p class="eyebrow">指标与规则中心</p>
             <h2>每个数字都能回答：是什么、怎么算、怎么用</h2>
@@ -8747,7 +8759,7 @@ button.strip-score:focus-visible strong {
 
         <div class="methodology-layout">
           <div class="methodology-content">
-            <section class="metric-family" aria-labelledby="item-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="item-metric-family">
               <div class="metric-family-head">
                 <span>01</span>
                 <div><h3 id="item-metric-family">单篇信息判断</h3><p>先决定是否入库、是否进日报，再判断它与 ACRO 的业务距离。</p></div>
@@ -8765,7 +8777,7 @@ button.strip-score:focus-visible strong {
               </div>
             </section>
 
-            <section class="metric-family" aria-labelledby="account-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="account-metric-family">
               <div class="metric-family-head">
                 <span>02</span>
                 <div><h3 id="account-metric-family">公司与账户排序</h3><p>用近 90 天的多条公开信号排序，不代表内部客户关系或成交概率。</p></div>
@@ -8783,7 +8795,7 @@ button.strip-score:focus-visible strong {
               </div>
             </section>
 
-            <section class="metric-family" aria-labelledby="operations-metric-family">
+            <section class="metric-family methodology-index-only" aria-labelledby="operations-metric-family">
               <div class="metric-family-head">
                 <span>03</span>
                 <div><h3 id="operations-metric-family">统计与运行口径</h3><p>说清图表数字的分母、时间窗口和来源状态。</p></div>
@@ -8801,7 +8813,12 @@ button.strip-score:focus-visible strong {
               </div>
             </section>
 
-            <div class="methodology-detail-list">
+            <div class="methodology-index-footer methodology-index-only">
+              <div class="methodology-callout"><strong>三个不等于</strong><p>信息筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
+              <button class="methodology-cross-link" type="button" data-rule-page-target="structured-rules"><span>需要看信息是怎么被拆解的？</span><strong>打开六组结构化提取 →</strong></button>
+            </div>
+
+            <div class="methodology-detail-list" id="methodologyDetailList" hidden>
               <article class="methodology-detail" id="metric-news-score" data-methodology-detail="news-score">
                 <header><div><span>单篇信息 · 筛选</span><h3>信息筛选分</h3></div><b>新闻卡右上角</b></header>
                 <p class="methodology-lead">衡量这条信息是否值得进入筛选流程。它不是概率、百分比或 AI 主观评分，而是可解释的规则加减分。</p>
@@ -8943,22 +8960,6 @@ button.strip-score:focus-visible strong {
             </div>
           </div>
 
-          <aside class="methodology-toc" aria-label="指标说明目录">
-            <div class="methodology-toc-head"><span>本页目录</span><strong>指标口径</strong></div>
-            <nav>
-              <button type="button" data-methodology-target="news-score"><span>01</span>信息筛选分</button>
-              <button type="button" data-methodology-target="acro-relevance"><span>02</span>ACRO 相关性分</button>
-              <button type="button" data-methodology-target="daily-admission"><span>03</span>日报准入</button>
-              <button type="button" data-methodology-target="priority-index"><span>04</span>账户优先指数</button>
-              <button type="button" data-methodology-target="relevance-density"><span>05</span>ACRO 相关密度</button>
-              <button type="button" data-methodology-target="trend-counts"><span>06</span>走势统计数</button>
-              <button type="button" data-methodology-target="dashboard-counts"><span>07</span>总览四项</button>
-              <button type="button" data-methodology-target="competitor-matrix"><span>08</span>竞品动作矩阵</button>
-              <button type="button" data-methodology-target="source-health"><span>09</span>数据源健康</button>
-            </nav>
-            <button class="methodology-cross-link" type="button" data-rule-page-target="structured-rules"><span>六组结构化提取</span><strong>另一张规则页 →</strong></button>
-            <div class="methodology-callout"><strong>三个不等于</strong><p>筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
-          </aside>
         </div>
       </section>
 
@@ -232934,6 +232935,7 @@ const state = {
   region: "all",
   searchQuery: "",
   page: "overview",
+  methodologyDetail: "",
   sourceView: "effective",
   sourceStage: "all",
   sourceFocusId: "",
@@ -232961,6 +232963,18 @@ const state = {
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
   history: null,
+};
+
+const methodologyDetailMeta = {
+  "news-score": { family: "单篇信息判断", title: "信息筛选分" },
+  "acro-relevance": { family: "单篇信息判断", title: "ACRO 相关性分" },
+  "daily-admission": { family: "单篇信息判断", title: "日报准入与分层" },
+  "priority-index": { family: "公司与账户排序", title: "优先指数" },
+  "relevance-density": { family: "公司与账户排序", title: "ACRO 相关密度" },
+  "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
+  "trend-counts": { family: "统计与运行口径", title: "信号走势图例数字" },
+  "dashboard-counts": { family: "统计与运行口径", title: "总览四项统计口径" },
+  "source-health": { family: "统计与运行口径", title: "数据源健康状态" },
 };
 
 const officialContentGroups = [
@@ -234991,6 +235005,13 @@ const els = {
   structuredTermCount: document.querySelector("#structuredTermCount"),
   structuredHitCount: document.querySelector("#structuredHitCount"),
   structuredRuleGrid: document.querySelector("#structuredRuleGrid"),
+  methodologyDetailBar: document.querySelector("#methodologyDetailBar"),
+  methodologyBackButton: document.querySelector("#methodologyBackButton"),
+  methodologyBreadcrumbFamily: document.querySelector("#methodologyBreadcrumbFamily"),
+  methodologyBreadcrumbTitle: document.querySelector("#methodologyBreadcrumbTitle"),
+  methodologyIndexBlocks: document.querySelectorAll(".methodology-index-only"),
+  methodologyDetailList: document.querySelector("#methodologyDetailList"),
+  methodologyDetails: document.querySelectorAll("[data-methodology-detail]"),
   methodologyTrendCount: document.querySelector("#methodologyTrendCount"),
   methodologyScopedCount: document.querySelector("#methodologyScopedCount"),
   methodologyHealthySources: document.querySelector("#methodologyHealthySources"),
@@ -235389,7 +235410,31 @@ function renderStructuredRules() {
   }).join("");
 }
 
+function renderMethodologyView() {
+  const meta = methodologyDetailMeta[state.methodologyDetail];
+  const isDetailView = Boolean(meta);
+  els.methodologyIndexBlocks.forEach((block) => {
+    block.hidden = isDetailView;
+  });
+  els.methodologyDetailBar.hidden = !isDetailView;
+  els.methodologyDetailList.hidden = !isDetailView;
+  els.methodologyDetails.forEach((detail) => {
+    const isCurrent = isDetailView && detail.dataset.methodologyDetail === state.methodologyDetail;
+    detail.hidden = !isCurrent;
+    if (isCurrent) {
+      detail.setAttribute("aria-current", "page");
+    } else {
+      detail.removeAttribute("aria-current");
+    }
+  });
+  if (meta) {
+    els.methodologyBreadcrumbFamily.textContent = meta.family;
+    els.methodologyBreadcrumbTitle.textContent = meta.title;
+  }
+}
+
 function renderMethodology() {
+  renderMethodologyView();
   if (!els.methodologyScopedCount || !state.payload) return;
   const allItems = state.payload.items || [];
   const scopedItems = getFilteredItems();
@@ -237582,28 +237627,29 @@ function renderPage() {
   });
 }
 
-function scrollToMethodologyTarget(target, updateHash = true) {
-  const section = document.querySelector("#metric-" + target);
-  if (!section) return;
-  document.querySelectorAll("[data-methodology-detail]").forEach((detail) => {
-    detail.classList.toggle("is-focused", detail === section);
-  });
-  if (updateHash && window.history?.replaceState) {
-    window.history.replaceState(null, "", "#metric-" + target);
-  }
-  section.scrollIntoView({ behavior: "smooth", block: "start" });
-  window.setTimeout(() => section.classList.remove("is-focused"), 1800);
+function methodologyTargetFromHash() {
+  const target = window.location.hash.match(/^#metric-([a-z-]+)$/)?.[1] || "";
+  return methodologyDetailMeta[target] ? target : "";
 }
 
-function openMethodology(target = "") {
+function updateMethodologyUrl(target, historyMode) {
+  if (historyMode === "none") return;
+  const hash = target ? "#metric-" + target : "#methodology";
+  const url = window.location.pathname + window.location.search + hash;
+  const mode = historyMode === "replace" || window.location.hash === hash
+    ? "replaceState"
+    : "pushState";
+  window.history?.[mode]?.({ page: "methodology", target }, "", url);
+}
+
+function openMethodology(target = "", historyMode = "push") {
+  const validTarget = methodologyDetailMeta[target] ? target : "";
   state.page = "methodology";
+  state.methodologyDetail = validTarget;
   renderMethodology();
   renderPage();
-  if (target) {
-    window.requestAnimationFrame(() => scrollToMethodologyTarget(target));
-  } else {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  updateMethodologyUrl(validTarget, historyMode);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderSignals() {
@@ -238991,14 +239037,23 @@ els.japanCustomerList.addEventListener("click", (event) => {
 
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    state.page = button.dataset.pageTarget;
-    if (state.page === "methodology") renderMethodology();
+    const pageTarget = button.dataset.pageTarget;
+    if (pageTarget === "methodology") {
+      openMethodology("", "replace");
+      return;
+    }
+    state.page = pageTarget;
+    state.methodologyDetail = "";
     renderPage();
-    if (window.location.hash.startsWith("#metric-") && state.page !== "methodology") {
+    if (window.location.hash.startsWith("#metric-") || window.location.hash === "#methodology") {
       window.history.replaceState(null, "", window.location.pathname + window.location.search);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+});
+
+els.methodologyBackButton.addEventListener("click", () => {
+  openMethodology("", "replace");
 });
 
 document.addEventListener("click", (event) => {
@@ -239012,24 +239067,37 @@ document.addEventListener("click", (event) => {
   const rulePageTarget = event.target.closest("[data-rule-page-target]");
   if (!rulePageTarget) return;
   if (rulePageTarget.dataset.rulePageTarget === "methodology") {
-    if (window.history?.replaceState) {
-      window.history.replaceState(null, "", window.location.pathname + window.location.search);
-    }
-    openMethodology();
+    openMethodology("", "replace");
     return;
   }
   state.page = rulePageTarget.dataset.rulePageTarget;
+  state.methodologyDetail = "";
+  if (window.location.hash.startsWith("#metric-") || window.location.hash === "#methodology") {
+    window.history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-const initialMetricHash = window.location.hash.match(/^#metric-([a-z-]+)$/)?.[1] || "";
-if (initialMetricHash) state.page = "methodology";
-loadData().then(() => {
-  if (initialMetricHash) {
-    window.requestAnimationFrame(() => scrollToMethodologyTarget(initialMetricHash, false));
+window.addEventListener("popstate", () => {
+  const target = methodologyTargetFromHash();
+  if (target) {
+    openMethodology(target, "none");
+    return;
+  }
+  if (window.location.hash === "#methodology" || (state.page === "methodology" && !window.location.hash)) {
+    openMethodology("", "none");
   }
 });
+
+const initialMetricHash = methodologyTargetFromHash();
+if (initialMetricHash || window.location.hash === "#methodology") {
+  state.page = "methodology";
+  state.methodologyDetail = initialMetricHash;
+}
+renderMethodologyView();
+renderPage();
+loadData();
 
     </script>
   </body>

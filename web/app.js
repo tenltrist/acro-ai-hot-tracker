@@ -69,6 +69,7 @@ const state = {
   region: "all",
   searchQuery: "",
   page: "overview",
+  methodologyDetail: "",
   sourceView: "effective",
   sourceStage: "all",
   sourceFocusId: "",
@@ -96,6 +97,18 @@ const state = {
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
   history: null,
+};
+
+const methodologyDetailMeta = {
+  "news-score": { family: "单篇信息判断", title: "信息筛选分" },
+  "acro-relevance": { family: "单篇信息判断", title: "ACRO 相关性分" },
+  "daily-admission": { family: "单篇信息判断", title: "日报准入与分层" },
+  "priority-index": { family: "公司与账户排序", title: "优先指数" },
+  "relevance-density": { family: "公司与账户排序", title: "ACRO 相关密度" },
+  "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
+  "trend-counts": { family: "统计与运行口径", title: "信号走势图例数字" },
+  "dashboard-counts": { family: "统计与运行口径", title: "总览四项统计口径" },
+  "source-health": { family: "统计与运行口径", title: "数据源健康状态" },
 };
 
 const officialContentGroups = [
@@ -2126,6 +2139,13 @@ const els = {
   structuredTermCount: document.querySelector("#structuredTermCount"),
   structuredHitCount: document.querySelector("#structuredHitCount"),
   structuredRuleGrid: document.querySelector("#structuredRuleGrid"),
+  methodologyDetailBar: document.querySelector("#methodologyDetailBar"),
+  methodologyBackButton: document.querySelector("#methodologyBackButton"),
+  methodologyBreadcrumbFamily: document.querySelector("#methodologyBreadcrumbFamily"),
+  methodologyBreadcrumbTitle: document.querySelector("#methodologyBreadcrumbTitle"),
+  methodologyIndexBlocks: document.querySelectorAll(".methodology-index-only"),
+  methodologyDetailList: document.querySelector("#methodologyDetailList"),
+  methodologyDetails: document.querySelectorAll("[data-methodology-detail]"),
   methodologyTrendCount: document.querySelector("#methodologyTrendCount"),
   methodologyScopedCount: document.querySelector("#methodologyScopedCount"),
   methodologyHealthySources: document.querySelector("#methodologyHealthySources"),
@@ -2524,7 +2544,31 @@ function renderStructuredRules() {
   }).join("");
 }
 
+function renderMethodologyView() {
+  const meta = methodologyDetailMeta[state.methodologyDetail];
+  const isDetailView = Boolean(meta);
+  els.methodologyIndexBlocks.forEach((block) => {
+    block.hidden = isDetailView;
+  });
+  els.methodologyDetailBar.hidden = !isDetailView;
+  els.methodologyDetailList.hidden = !isDetailView;
+  els.methodologyDetails.forEach((detail) => {
+    const isCurrent = isDetailView && detail.dataset.methodologyDetail === state.methodologyDetail;
+    detail.hidden = !isCurrent;
+    if (isCurrent) {
+      detail.setAttribute("aria-current", "page");
+    } else {
+      detail.removeAttribute("aria-current");
+    }
+  });
+  if (meta) {
+    els.methodologyBreadcrumbFamily.textContent = meta.family;
+    els.methodologyBreadcrumbTitle.textContent = meta.title;
+  }
+}
+
 function renderMethodology() {
+  renderMethodologyView();
   if (!els.methodologyScopedCount || !state.payload) return;
   const allItems = state.payload.items || [];
   const scopedItems = getFilteredItems();
@@ -4717,28 +4761,29 @@ function renderPage() {
   });
 }
 
-function scrollToMethodologyTarget(target, updateHash = true) {
-  const section = document.querySelector("#metric-" + target);
-  if (!section) return;
-  document.querySelectorAll("[data-methodology-detail]").forEach((detail) => {
-    detail.classList.toggle("is-focused", detail === section);
-  });
-  if (updateHash && window.history?.replaceState) {
-    window.history.replaceState(null, "", "#metric-" + target);
-  }
-  section.scrollIntoView({ behavior: "smooth", block: "start" });
-  window.setTimeout(() => section.classList.remove("is-focused"), 1800);
+function methodologyTargetFromHash() {
+  const target = window.location.hash.match(/^#metric-([a-z-]+)$/)?.[1] || "";
+  return methodologyDetailMeta[target] ? target : "";
 }
 
-function openMethodology(target = "") {
+function updateMethodologyUrl(target, historyMode) {
+  if (historyMode === "none") return;
+  const hash = target ? "#metric-" + target : "#methodology";
+  const url = window.location.pathname + window.location.search + hash;
+  const mode = historyMode === "replace" || window.location.hash === hash
+    ? "replaceState"
+    : "pushState";
+  window.history?.[mode]?.({ page: "methodology", target }, "", url);
+}
+
+function openMethodology(target = "", historyMode = "push") {
+  const validTarget = methodologyDetailMeta[target] ? target : "";
   state.page = "methodology";
+  state.methodologyDetail = validTarget;
   renderMethodology();
   renderPage();
-  if (target) {
-    window.requestAnimationFrame(() => scrollToMethodologyTarget(target));
-  } else {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  updateMethodologyUrl(validTarget, historyMode);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderSignals() {
@@ -6126,14 +6171,23 @@ els.japanCustomerList.addEventListener("click", (event) => {
 
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    state.page = button.dataset.pageTarget;
-    if (state.page === "methodology") renderMethodology();
+    const pageTarget = button.dataset.pageTarget;
+    if (pageTarget === "methodology") {
+      openMethodology("", "replace");
+      return;
+    }
+    state.page = pageTarget;
+    state.methodologyDetail = "";
     renderPage();
-    if (window.location.hash.startsWith("#metric-") && state.page !== "methodology") {
+    if (window.location.hash.startsWith("#metric-") || window.location.hash === "#methodology") {
       window.history.replaceState(null, "", window.location.pathname + window.location.search);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+});
+
+els.methodologyBackButton.addEventListener("click", () => {
+  openMethodology("", "replace");
 });
 
 document.addEventListener("click", (event) => {
@@ -6147,21 +6201,34 @@ document.addEventListener("click", (event) => {
   const rulePageTarget = event.target.closest("[data-rule-page-target]");
   if (!rulePageTarget) return;
   if (rulePageTarget.dataset.rulePageTarget === "methodology") {
-    if (window.history?.replaceState) {
-      window.history.replaceState(null, "", window.location.pathname + window.location.search);
-    }
-    openMethodology();
+    openMethodology("", "replace");
     return;
   }
   state.page = rulePageTarget.dataset.rulePageTarget;
+  state.methodologyDetail = "";
+  if (window.location.hash.startsWith("#metric-") || window.location.hash === "#methodology") {
+    window.history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-const initialMetricHash = window.location.hash.match(/^#metric-([a-z-]+)$/)?.[1] || "";
-if (initialMetricHash) state.page = "methodology";
-loadData().then(() => {
-  if (initialMetricHash) {
-    window.requestAnimationFrame(() => scrollToMethodologyTarget(initialMetricHash, false));
+window.addEventListener("popstate", () => {
+  const target = methodologyTargetFromHash();
+  if (target) {
+    openMethodology(target, "none");
+    return;
+  }
+  if (window.location.hash === "#methodology" || (state.page === "methodology" && !window.location.hash)) {
+    openMethodology("", "none");
   }
 });
+
+const initialMetricHash = methodologyTargetFromHash();
+if (initialMetricHash || window.location.hash === "#methodology") {
+  state.page = "methodology";
+  state.methodologyDetail = initialMetricHash;
+}
+renderMethodologyView();
+renderPage();
+loadData();
