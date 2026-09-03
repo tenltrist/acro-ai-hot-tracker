@@ -92966,5 +92966,195 @@
     "tier": "archive",
     "score": 30,
     "signal_type": "news"
+  },
+  "584b5e4e62b2457b": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8dede345dea4ba99c8638df18f&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "78644b4c31ba99ed": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8dede345dea4ba99c8638df18f&url=https%3A%2F%2Fwww.kyodo.co.jp%2Fpr%2F2026-05-11_4010148%2F&c=7291193430946626862&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6a2f5989103d28c2": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Scientific Launches Multiskan™ Ease Absorbance Microplate Reader to Help ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fwww.aol.com%2Farticles%2Fthermo-fisher-scientific-launches-multiskan-123000000.html&c=12235462926404843865&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "b1364c2c6c0d5fe4": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher ships EMPAD G2: detector that broke atomic imaging records",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fnews%2Fother%2Fthermo-fisher-ships-empad-g2-detector-that-broke-atomic-imaging-records%2Far-AA2bqecU&c=13806855704831518091&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "1f4d3d58908ace60": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Scientific Introduces the Thermo Scientific™ EMPAD™ G2 Electron Detector ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Ffinance.yahoo.com%2Ftechnology%2Farticles%2Fthermo-fisher-scientific-introduces-thermo-123000763.html&c=737351758283880644&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "73517586cda36489": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Strengthens China Focus as Biopharma Innovation Gains Global Momentum",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fbiopharmaapac.com%2Fnews%2F28%2F8378%2Fthermo-fisher-strengthens-china-focus-as-biopharma-innovation-gains-global-momentum.html&c=10908133710379246591&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "66627bcf57d52138": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Scientific (TMO) Unveils New Tools For Electron Microscopy And Isotope Analysis",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Fthermo-fisher-scientific-tmo-unveils-230701731.html&c=13554376364230888726&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 64,
+    "signal_type": "news"
+  },
+  "9d1362145103c7fb": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Scientific’s PPD Clinical Research Business Expands Bioanalytical ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fwww.businesswire.com%2Fnews%2Fhome%2F20260518017020%2Fen%2FThermo-Fisher-Scientifics-PPD-Clinical-Research-Business-Expands-Bioanalytical-Capabilities-with-New-Laboratory-in-Gothenburg-Sweden&c=17803998012051073690&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "2583a60605d46646": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Scientific (NYSE:TMO) Gains Fresh Market Attention",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fkalkinemedia.com%2Fus%2Fstocks%2Fhealthcare%2Fthermo-fisher-scientific-nysetmo-gains-fresh-market-attention&c=15266630146150286311&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "d7d19a56727a3598": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher unveils EMPAD G2 detector to advance 4D STEM materials research",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fwww.indianpharmapost.com%2Fnews%2Fthermo-fisher-unveils-empad-g2-detector-to-advance-4d-stem-materials-research-21648&c=8156663500631608991&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "ea80801225d6f4d6": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher (TMO) Stock Looks Fully Valued Following Its Microbiology Sale",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fthermo-fisher-tmo-stock-looks-120813286.html&c=17635423450994540859&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "34adc377fa580b36": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Thermo Fisher Scientific (TMO) Could Be Fully Valued On Parkinsons Proteomics Progress",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a993e8d8c904f21a45cdf92950cb75a&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fthermo-fisher-scientific-tmo-could-150925473.html&c=12107923266688557830&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "b8dac816e04a5e5f": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "十倍股也会老去，总有人正在年轻 - 36 Kr",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9yUnRHdkJzaFhwcmItNDBndXR0Mk5fUGF3ME5mZW5VU3lxd0wxYnFpYmV3NFdwMkpwRVdlVXdiU0NzMHZJckFCUFpKZ2dFOVk?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "8ff28664749609e9": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "Promega Authorizes UBC RNA & Formulation Core to Distribute NanoLuc-Encoding mRNA for LNP and mRNA Delivery Research - BioSpace",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOS3lUdlZVX1BOdlBhbVd1N01ldTRVT1AyYmQ2NTNDaDg5ckZsM0hPNmk4TzduZVdUSlNESzAzbU85NE5LVmtFNjhsTVhyTS1HRWZHcENkUDRPbl9vR3Y2TzlJb0trbWdXZHltOUdMV3JxTTZ1ZXhHcDU3a1pxcjVfWnFGYjA1SjFUX19JOUxrWG84LXZCNWluNUdLMXNxa1JQSjNFc3ZLSVNqSUNHZGxERnZYQTlmZkpzRFN6VTlpWkx3eEg2OVk1NGR6TElUQkJINHJQQ1o2NkZqRTdiWFlZX2llUnFwMkx0RFE?oc=5",
+    "company_id": "promega",
+    "matched_company_ids": [
+      "promega"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a31761a7aa58ec81": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "第一三共が新中計、30年度に売上収益3兆円以上／帝人、医薬品「希少疾患・難病に絞り込み」 など｜製薬業界きょうのニュースまとめ読み（2026年5月11日） - Answers（アンサーズ）",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBFY0RqWEg5WGRnejk5MUJZVDZTMFRmZ3J5U0x5SU5UY1ZackYyZGYzem82bm5faHlZcTBZZVJ1ejdGQ3E1QVdjcjBBNWNvUTQ5Z1JwR2tMOA?oc=5",
+    "company_id": "daiichi_sankyo",
+    "matched_company_ids": [
+      "daiichi_sankyo"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d261e9f84fe2f95e": {
+    "first_seen": "2026-09-03T18:33:30",
+    "title": "経営戦略特集２部 富士フイルム和光純薬、科学の発展に貢献し続ける - 化学工業日報 電子版",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EY2tSZG4xUEt2bEEwY1lfMTF3QWtCUGZTVWNNdWJEcGRtWTNBRjZtSGNqZzVTYTlkemozVGRiRWlHaXlHTWVOcEdqT0RGTWZMSXB3?oc=5",
+    "company_id": "fujifilm_wako",
+    "matched_company_ids": [
+      "fujifilm_wako"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
   }
 }

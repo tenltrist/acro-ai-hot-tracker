@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-03T18:28:23",
+  "generated_at": "2026-09-03T18:33:29",
   "window_days": 90,
   "summary": {
-    "new_candidates": 27,
+    "new_candidates": 16,
     "immediate": 1,
-    "daily": 208,
-    "archive": 2030,
+    "daily": 207,
+    "archive": 2018,
     "errors": 0,
     "companies": 32,
     "sources": 146
@@ -19,7 +19,7 @@
     "eligible": 0,
     "generated": 0,
     "reused": 0,
-    "manual_imported": 43,
+    "manual_imported": 44,
     "manual_tool": "ChatGPT Pro",
     "failed": 0,
     "error": ""
@@ -79,7 +79,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 90,
@@ -192,7 +192,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 86,
@@ -200,7 +200,7 @@
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: 小野薬品",
         "行业编辑媒体",
@@ -301,7 +301,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 78,
@@ -310,118 +310,6 @@
       "business_event_type": "partnership_deal",
       "signal_type": "news",
       "is_new": false,
-      "reasons": [
-        "公司池命中 +30: 小野薬品, 小野薬品工業",
-        "行业编辑媒体",
-        "战略主题命中: 創薬, 製薬",
-        "业务动作命中: 創薬提携, 提携",
-        "高价值分类加成 +10: partnership"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "CRO / CDMO 服务"
-        ],
-        "development_stages": [],
-        "business_actions": [
-          "合作 / 共同开发"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "high",
-        "score": 62,
-        "label": "高相关",
-        "explanation": "客户池公司出现新的研发信号，可评估CRO / CDMO 服务需求。",
-        "reasons": [
-          "客户池公司动态",
-          "可映射到 ACRO 产品或服务需求",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-09-02",
-      "event_start_at": "",
-      "age_days": 3,
-      "days_until_event": null
-    },
-    {
-      "id": "d8f1b9c2b5d94a16",
-      "company_id": "ono_pharma",
-      "company": "Ono Pharmaceutical / 小野药品",
-      "matched_company_ids": [
-        "ono_pharma"
-      ],
-      "matched_companies": [
-        "Ono Pharmaceutical / 小野药品"
-      ],
-      "source_id": "answersnews_official_rss",
-      "source_label": "AnswersNews - official Japan pharma RSS",
-      "source_ids": [
-        "answersnews_official_rss",
-        "google_news_ono_account"
-      ],
-      "source_labels": [
-        "AnswersNews - official Japan pharma RSS",
-        "Google News RSS - Ono Pharmaceutical"
-      ],
-      "related_urls": [
-        "https://answers.and-pro.jp/pharmanews/33137/",
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0zUDhOLUNLbkEtWnVqSjlOQnk1V3gzZ0c1U2cwWDIwSGNva01uQ1VTR2JvUmRhNkFqOWIwV251TktxMWZBSUlmdVE1Rk9Ed3JQbkV5RlY5UQ?oc=5"
-      ],
-      "source_trust": "media",
-      "title": "小野薬品、米AI創薬企業と提携／保土谷化学、核酸医薬CDMO子会社を設立｜製薬業界きょうのニュースまとめ読み（2026年9月2日）",
-      "title_zh": "",
-      "url": "https://answers.and-pro.jp/pharmanews/33137/",
-      "published": "2026-09-02",
-      "summary": "小野薬品、米AI創薬企業と提携…デジタルツインで標的探索 小野薬品工業は9月2日、米国のバイオテクノロジー企業アイティアと神経領域を対象とする創薬提携契約を結んだと発表した。提携では、アイティアがデジタルツ",
-      "ai_summary": "客户池公司 Ono Pharmaceutical / 小野药品 出现合作或交易信号，重点涉及CRO / CDMO 服务。 原始摘要要点：小野薬品、米AI創薬企業と提携…デジタルツインで標的探索 小野薬品工業は9月2日、米国のバイオテクノロジー企業アイティアと神経領域を対象とする創薬提携契約を結んだと発表した。提携では、アイティアがデジタルツ。 客户池公司出现新的研发信号，可评估CRO / CDMO 服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "secondary",
-        "kind_label": "公开二手证据",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "小野薬品、米AI創薬企業と提携…デジタルツインで標的探索 小野薬品工業は9月2日、米国のバイオテクノロジー企業アイティアと神経領域を対象とする創薬提携契約を結んだと発表した。提携では、アイティアがデジタルツ",
-        "primary_url": "https://answers.and-pro.jp/pharmanews/33137/",
-        "related_urls": [
-          "https://answers.and-pro.jp/pharmanews/33137/",
-          "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0zUDhOLUNLbkEtWnVqSjlOQnk1V3gzZ0c1U2cwWDIwSGNva01uQ1VTR2JvUmRhNkFqOWIwV251TktxMWZBSUlmdVE1Rk9Ed3JQbkV5RlY5UQ?oc=5"
-        ],
-        "source_ids": [
-          "answersnews_official_rss",
-          "google_news_ono_account"
-        ],
-        "source_labels": [
-          "AnswersNews - official Japan pharma RSS",
-          "Google News RSS - Ono Pharmaceutical"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "media",
-        "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T02:26:39"
-      },
-      "workflow_status": "new",
-      "score": 78,
-      "tier": "daily",
-      "category": "partnership",
-      "business_event_type": "partnership_deal",
-      "signal_type": "news",
-      "is_new": true,
       "reasons": [
         "公司池命中 +30: 小野薬品, 小野薬品工業",
         "行业编辑媒体",
@@ -490,7 +378,7 @@
       "title": "アムジェン「日本の優先順位は高い。今後も続々と新薬投入」…グローバル開発本部長のブラドナー氏、肥満症薬や前立腺がん向けTCEに期待",
       "title_zh": "安进将日本列为重点市场，计划推进肥胖症药物和前列腺癌T细胞衔接器等新品",
       "url": "https://answers.and-pro.jp/pharmanews/33111/",
-      "published": "2026-08-31",
+      "published": "2026-09-01",
       "summary": "2020年にアステラス製薬との合弁を解消し、本格的に日本市場に参入した米アムジェン。活発な新薬上市もあって25年の国内売上高は1453億円まで拡大しました。成長を支える研究開発について、グローバル開発本部長のジェームズ・",
       "ai_summary": "这篇报道的主体是安进，重点是其继续提高日本市场优先级，并推进肥胖症药物及前列腺癌T细胞衔接器等管线。安斯泰来只在安进2020年结束双方合资公司的历史背景中被提及，不构成安斯泰来当前客户动作。该条应按安进行业信号或误命中复核处理，不宜据此发起安斯泰来销售跟进。",
       "summary_method": "manual_ai",
@@ -519,7 +407,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 78,
@@ -563,7 +451,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-31",
+      "published_at": "2026-09-01",
       "event_start_at": "",
       "age_days": 2,
       "days_until_event": null
@@ -622,7 +510,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 76,
@@ -630,7 +518,7 @@
       "category": "product",
       "business_event_type": "quality_supply",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: ACROBiosystems",
         "战略主题命中: GMP, Japan",
@@ -730,7 +618,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 74,
@@ -800,15 +688,14 @@
         "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
-        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMEFKdVJsR3d2aDdKUUZ1SzUwSjlicWRoT0ktMUFtcTl2U1ZyRE9kam5wRWxIRlNIMlpVU1NfYmZIMDRZN21lXzgxVlI0T1gxcF95eWNLWDIzTVR4T2VpSXZtZjdmR3kzZDNGZFd4OG54Y25QODRzY2ZUQ0Ffa1dlM1ZiaFFwaU9JV1k5TmZ0dWhxekN1dEpYdFJfZmVHTUlySkE2cGtWWHdEODU0?oc=5"
+        "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - BioSpace",
+      "title": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 - biospace.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
       "published": "2026-06-22",
-      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 Yahoo Finance",
+      "summary": "Thermo Fisher Scientific Showcases New Capabilities Across Manufacturing, Clinical Development and AI-Enabled Research at BIO International 2026 biospace.com",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -823,8 +710,7 @@
         "source_excerpt": "",
         "primary_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5",
-          "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMEFKdVJsR3d2aDdKUUZ1SzUwSjlicWRoT0ktMUFtcTl2U1ZyRE9kam5wRWxIRlNIMlpVU1NfYmZIMDRZN21lXzgxVlI0T1gxcF95eWNLWDIzTVR4T2VpSXZtZjdmR3kzZDNGZFd4OG54Y25QODRzY2ZUQ0Ffa1dlM1ZiaFFwaU9JV1k5TmZ0dWhxekN1dEpYdFJfZmVHTUlySkE2cGtWWHdEODU0?oc=5"
+          "https://news.google.com/rss/articles/CBMikAJBVV95cUxPakNOMzlMQWRPYURJMUdvNGZkdVZkZFd1Q3REQ1F2elFLYTBIUG0yc1psTUtHV2dqT3E4NkJzeTFFaWN3VFQ4VTJuS0R5MnRMMmVjcE0xZWh1ZFJacjdwSkZnOG9fVm9qMFhCZXZ6dXlia0dvNzhScW80RTdOUHdLdjVlWU1pVWttdHdhR183WjU4SWYyRm1KcEVUX01rTUV0M1EtbVYzUldCTEJ3dS1qNUVJb1BrbEhiZTIxd1RKTnJTRnViRE96TWdxZG9pYk9keGVabm03cTA1dy1KcU9LUmV6S1BqUkRQajE4eVRZcGRPc0djZG1hRC05WFo3UThDVG1LR1dVdGc0cFk0TG5KaQ?oc=5"
         ],
         "source_ids": [
           "google_news_thermo"
@@ -837,7 +723,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 72,
@@ -937,7 +823,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 70,
@@ -1048,7 +934,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-08-11",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1151,7 +1037,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-05-04",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1255,7 +1141,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-04-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1359,7 +1245,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1464,7 +1350,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-08",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 66,
@@ -1537,7 +1423,7 @@
       "title": "Takeda bolsters blood cancer portfolio with FDA nod for Mimrylo in polycythemia vera",
       "title_zh": "武田Mimrylo获FDA批准，用于真性红细胞增多症",
       "url": "https://www.fiercepharma.com/pharma/takeda-bolsters-blood-cancer-portfolio-fda-approval-mimrylo-polycythemia-vera",
-      "published": "2026-08-28",
+      "published": "2026-08-29",
       "summary": "The FDA has approved Takeda’s Mimrylo (rusfertide) for polycythemia vera, introducing a new mechanism to the nonmalignant rare blood cancer and handing CEO Julie Kim another major regulatory win since taking the helm.",
       "ai_summary": "FDA批准武田的Mimrylo，即rusfertide，用于治疗真性红细胞增多症。该药为每周一次皮下注射的hepcidin模拟肽，III期VERIFY研究显示其在标准治疗基础上可提高应答并减少放血治疗需求。此批准强化武田罕见血液病产品组合；对ACRO的直接产品映射尚不明确，建议先跟踪上市后研究与相关检测需求，不把潜在需求写成已确认机会。",
       "summary_method": "manual_ai",
@@ -1566,7 +1452,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1613,7 +1499,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-28",
+      "published_at": "2026-08-29",
       "event_start_at": "",
       "age_days": 5,
       "days_until_event": null
@@ -1672,7 +1558,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1775,7 +1661,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-14",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1878,7 +1764,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-08",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1980,7 +1866,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-22",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 64,
@@ -1988,7 +1874,7 @@
       "category": "partnership",
       "business_event_type": "partnership_deal",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +30: Cytiva",
         "业务动作命中: collaboration, manufacturing, capacity",
@@ -2087,7 +1973,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-31",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 62,
@@ -2194,7 +2080,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-20",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 62,
@@ -2299,7 +2185,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-19",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 62,
@@ -2407,7 +2293,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 62,
@@ -2510,7 +2396,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-06",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 62,
@@ -2622,7 +2508,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-07-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2723,7 +2609,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2793,7 +2679,7 @@
       "title": "塩野義製薬 米政府との契約「Project BioShield」に基づきセフィデロコル調達で3億69...",
       "title_zh": "美国政府通过Project BioShield采购盐野义cefiderocol，首笔选择权金额为3690万美元",
       "url": "https://www.mixonline.jp/tabid55.html?artid=80795",
-      "published": "2026-08-30",
+      "published": "2026-08-31",
       "summary": "塩野義製薬は8月28日、米国政府によるグラム陰性菌感染症治療薬セフィデロコルの調達で3億6900万米ドルを受領すると発表した。",
       "ai_summary": "美国BARDA依据Project BioShield合同，行使首个采购选择权购买盐野义的cefiderocol，美国商品名Fetroja，盐野义集团将获得3690万美元。完整合同还包含美国制剂生产、重点生物威胁适应症开发及儿科补充申请等多年期选项。该条反映抗菌药公共采购和本土供应链建设，不应把3690万美元误写成3.69亿美元。",
       "summary_method": "manual_ai",
@@ -2822,7 +2708,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-31",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -2862,7 +2748,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-30",
+      "published_at": "2026-08-31",
       "event_start_at": "",
       "age_days": 3,
       "days_until_event": null
@@ -2921,7 +2807,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -3024,7 +2910,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -3127,7 +3013,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -3230,7 +3116,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-15",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -3333,7 +3219,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -3440,7 +3326,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 60,
@@ -3506,10 +3392,12 @@
       "source_id": "businesswire_company_pool_index",
       "source_label": "Business Wire - company pool indexed RSS",
       "source_ids": [
-        "businesswire_company_pool_index"
+        "businesswire_company_pool_index",
+        "google_news_thermo"
       ],
       "source_labels": [
-        "Business Wire - company pool indexed RSS"
+        "Business Wire - company pool indexed RSS",
+        "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
         "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZUdVczVlSHhUY1A5ZDN4amhkbkVHbVdaTXI0ZHJqYS1nWDV5MDc5ZUpuVm53cGhheERoWDZJalVRYWlIMnVWLW5UNVFNdi0wSEZxSzVKaDRSMTJ3U1ZLWTNsTS13a1N5S21YemxwdktjNjliYWpjd2k5cnp1N1NPSlBOZEd2cmJMYUhSNGVlVklxTUhLSXQxajFOZVRHWGtlNC1kUnpxSHpEd1Vqa0ZqeXZJdkNHcEZ5QmVxNVlHYTFJa0M4UzdxZWtwazh1d3RxWGhMVHMtMVZkOXl5aVRBY2EwM0lPcnBQSXdZb1FHa08?oc=5"
@@ -3537,17 +3425,19 @@
           "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZUdVczVlSHhUY1A5ZDN4amhkbkVHbVdaTXI0ZHJqYS1nWDV5MDc5ZUpuVm53cGhheERoWDZJalVRYWlIMnVWLW5UNVFNdi0wSEZxSzVKaDRSMTJ3U1ZLWTNsTS13a1N5S21YemxwdktjNjliYWpjd2k5cnp1N1NPSlBOZEd2cmJMYUhSNGVlVklxTUhLSXQxajFOZVRHWGtlNC1kUnpxSHpEd1Vqa0ZqeXZJdkNHcEZ5QmVxNVlHYTFJa0M4UzdxZWtwazh1d3RxWGhMVHMtMVZkOXl5aVRBY2EwM0lPcnBQSXdZb1FHa08?oc=5"
         ],
         "source_ids": [
-          "businesswire_company_pool_index"
+          "businesswire_company_pool_index",
+          "google_news_thermo"
         ],
         "source_labels": [
-          "Business Wire - company pool indexed RSS"
+          "Business Wire - company pool indexed RSS",
+          "Google News RSS - Thermo Fisher"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "wire",
         "published_at": "2026-06-30",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3620,7 +3510,7 @@
       "title": "アステラス製薬 One Young World 2027 Tokyo Summitのホストシティパー...",
       "title_zh": "安斯泰来成为One Young World 2027东京峰会首家主办城市合作伙伴",
       "url": "https://www.mixonline.jp/tabid55.html?artid=80776",
-      "published": "2026-08-27",
+      "published": "2026-08-28",
       "summary": "アステラス製薬は８月27日、世界最大級の次世代リーダーサミット「One Young World 2027 Tokyo Summit」のホストシティパートナーに就任したと発表した。",
       "ai_summary": "安斯泰来将作为One Young World 2027东京峰会的主办城市合作伙伴，支持来自190多个国家的青年领袖参与议题交流，并延续其自2018年以来的人才培养合作。该动作主要属于企业品牌、人才与可持续发展传播，不是药物研发或采购信号。市场部可观察其日本本地品牌活动与合作传播方式，但不应自动触发销售跟进。",
       "summary_method": "manual_ai",
@@ -3649,7 +3539,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3692,7 +3582,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-27",
+      "published_at": "2026-08-28",
       "event_start_at": "",
       "age_days": 6,
       "days_until_event": null
@@ -3751,7 +3641,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3853,7 +3743,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -3954,7 +3844,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4055,7 +3945,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4157,7 +4047,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4198,7 +4088,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-24",
+      "published_at": "2026-08-25",
       "event_start_at": "",
       "age_days": 9,
       "days_until_event": null
@@ -4257,7 +4147,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4357,7 +4247,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4457,7 +4347,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-24",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4532,7 +4422,7 @@
       "title": "中外製薬とカリフォルニア大学サンフランシスコ校（UCSF）、創薬研究に関する共同研究基本契約を締結～個別の研究プロジェクトを円滑に推進するための枠組みを構築～",
       "title_zh": "中外制药与UCSF建立多年药物发现合作框架，首个研究项目已启动",
       "url": "https://www.chugai-pharm.co.jp/news/detail/20260807070000_1608.html",
-      "published": "2026-08-06",
+      "published": "2026-08-07",
       "summary": "",
       "ai_summary": "中外制药与加州大学旧金山分校签署多年共同研究框架，覆盖疾病生物学、新靶点发现和新治疗方式探索，首个具体研究项目已经启动。合作将结合UCSF的转化科学能力与中外制药的抗体工程、SnipeTide环肽及小分子技术。对ACRO而言，这是早期研发和开放创新需求信号，可跟踪后续项目披露，但不能据框架协议直接推断具体采购。",
       "summary_method": "manual_ai",
@@ -4561,7 +4451,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4604,7 +4494,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-06",
+      "published_at": "2026-08-07",
       "event_start_at": "",
       "age_days": 27,
       "days_until_event": null
@@ -4663,7 +4553,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4764,7 +4654,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 56,
@@ -4869,7 +4759,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-20",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -4971,7 +4861,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-12",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5017,108 +4907,6 @@
       "published_at": "2026-08-12",
       "event_start_at": "",
       "age_days": 22,
-      "days_until_event": null
-    },
-    {
-      "id": "6e9ac55b265d023b",
-      "company_id": "thermo_fisher",
-      "company": "Thermo Fisher Scientific",
-      "matched_company_ids": [
-        "thermo_fisher"
-      ],
-      "matched_companies": [
-        "Thermo Fisher Scientific"
-      ],
-      "source_id": "google_news_thermo",
-      "source_label": "Google News RSS - Thermo Fisher",
-      "source_ids": [
-        "google_news_thermo"
-      ],
-      "source_labels": [
-        "Google News RSS - Thermo Fisher"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - Clinical Trials Arena",
-      "title_zh": "赛默飞与Arcturus合作，为囊性纤维化mRNA疗法ARCT-032的潜在III期和商业化做准备",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
-      "published": "2026-07-03",
-      "summary": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial Clinical Trials Arena",
-      "ai_summary": "赛默飞将通过Accelerator Drug Development整合制造、临床研究和商业准备能力，支持Arcturus的吸入式mRNA候选药ARCT-032。若II期结果积极，Arcturus计划由赛默飞PPD业务执行III期，赛默飞还将提供临床供应，并在产品获批后取得独家商业生产权。III期决策预计在2026年第四季度，因此当前应写成后期开发准备，而不是已经启动III期试验。",
-      "summary_method": "manual_ai",
-      "summary_provider": "chatgpt_pro_manual",
-      "summary_model": "ChatGPT Pro",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5"
-        ],
-        "source_ids": [
-          "google_news_thermo"
-        ],
-        "source_labels": [
-          "Google News RSS - Thermo Fisher"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-07-03",
-        "checked_at": "2026-09-03T18:28:23"
-      },
-      "workflow_status": "new",
-      "score": 54,
-      "tier": "daily",
-      "category": "partnership",
-      "business_event_type": "partnership_deal",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher",
-        "战略主题命中: clinical trials",
-        "业务动作命中: clinical",
-        "高价值分类加成 +10: partnership"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "III 期临床"
-        ],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "研发阶段可识别"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-03",
-      "event_start_at": "",
-      "age_days": 62,
       "days_until_event": null
     },
     {
@@ -5175,7 +4963,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-10",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5277,7 +5065,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5380,7 +5168,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5483,7 +5271,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5590,7 +5378,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5701,7 +5489,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5812,7 +5600,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-21",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -5923,7 +5711,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6034,7 +5822,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-14",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6145,7 +5933,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6257,7 +6045,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6364,7 +6152,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6467,7 +6255,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6517,6 +6305,111 @@
       "published_at": "2026-08-25",
       "event_start_at": "",
       "age_days": 9,
+      "days_until_event": null
+    },
+    {
+      "id": "4e98b27a0b73fe34",
+      "company_id": "chugai_pharma",
+      "company": "Chugai Pharmaceutical / 中外制药",
+      "matched_company_ids": [
+        "chugai_pharma"
+      ],
+      "matched_companies": [
+        "Chugai Pharmaceutical / 中外制药"
+      ],
+      "source_id": "google_news_chugai_account",
+      "source_label": "Google News RSS - Chugai Pharmaceutical",
+      "source_ids": [
+        "google_news_chugai_account"
+      ],
+      "source_labels": [
+        "Google News RSS - Chugai Pharmaceutical"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQWktBS0x0d3N1N0p6U2RIVnJNNHBrczd6VlNrZkhUbnNDX0hiMUl5NTJiTmd1eVU0ZnM0SWRnbHBfWllrSXZ0eHNGYzRsLWFmb3A0anFIdDgyR2x6aFpma3pheVdwMlBWdUh5RTFZVTIyYjhKam9jU0JQMENscjhkY2UzNW9aVDMzc3ItWkMxUjJPQkNsMVFrWWRubGE5em9WYjNEWlJpQk5qMHVQY092aDMzWWo5UDZ2VTJXRlYwTkxPbFcyb3FtWXAtNmJab0tIRnczZTA1NWlhdDRreGpEMlVkanJNbUtJck0tYlpqZHYxSDlXNm5jZU5GTWNOOVFtNVdYUTFDOEc1WjU3UFl1cHptWWk0NGQxdHA2ZzRqclNScTJTNDBUdFJ4a3h2eUNzNW84UENzTEd1ZGlTNmJGeVVMY2h3YU9iMkNOdENZSm1HZUxENFBlb0Nn?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "バミキバルト 非感染性ぶどう膜炎に伴う黄斑浮腫で国内製造販売承認申請 中外製薬 - 医薬通信社",
+      "title_zh": "中外制药为vamikibart提交日本上市申请，瞄准非感染性葡萄膜炎相关黄斑水肿",
+      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQWktBS0x0d3N1N0p6U2RIVnJNNHBrczd6VlNrZkhUbnNDX0hiMUl5NTJiTmd1eVU0ZnM0SWRnbHBfWllrSXZ0eHNGYzRsLWFmb3A0anFIdDgyR2x6aFpma3pheVdwMlBWdUh5RTFZVTIyYjhKam9jU0JQMENscjhkY2UzNW9aVDMzc3ItWkMxUjJPQkNsMVFrWWRubGE5em9WYjNEWlJpQk5qMHVQY092aDMzWWo5UDZ2VTJXRlYwTkxPbFcyb3FtWXAtNmJab0tIRnczZTA1NWlhdDRreGpEMlVkanJNbUtJck0tYlpqZHYxSDlXNm5jZU5GTWNOOVFtNVdYUTFDOEc1WjU3UFl1cHptWWk0NGQxdHA2ZzRqclNScTJTNDBUdFJ4a3h2eUNzNW84UENzTEd1ZGlTNmJGeVVMY2h3YU9iMkNOdENZSm1HZUxENFBlb0Nn?oc=5",
+      "published": "2026-08-28",
+      "summary": "バミキバルト 非感染性ぶどう膜炎に伴う黄斑浮腫で国内製造販売承認申請 中外製薬 医薬通信社",
+      "ai_summary": "vamikibart是一款玻璃体内给药的抗IL-6单抗，中外制药已依据MEERKAT和SANDCAT两项全球III期研究向日本监管部门提交上市申请。该节点代表项目已进入监管审评而不是获得批准。对市场与销售团队而言，可围绕抗体研发、临床检测和后续审评节点建立观察任务，但任何产品需求仍需客户侧证据确认。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQWktBS0x0d3N1N0p6U2RIVnJNNHBrczd6VlNrZkhUbnNDX0hiMUl5NTJiTmd1eVU0ZnM0SWRnbHBfWllrSXZ0eHNGYzRsLWFmb3A0anFIdDgyR2x6aFpma3pheVdwMlBWdUh5RTFZVTIyYjhKam9jU0JQMENscjhkY2UzNW9aVDMzc3ItWkMxUjJPQkNsMVFrWWRubGE5em9WYjNEWlJpQk5qMHVQY092aDMzWWo5UDZ2VTJXRlYwTkxPbFcyb3FtWXAtNmJab0tIRnczZTA1NWlhdDRreGpEMlVkanJNbUtJck0tYlpqZHYxSDlXNm5jZU5GTWNOOVFtNVdYUTFDOEc1WjU3UFl1cHptWWk0NGQxdHA2ZzRqclNScTJTNDBUdFJ4a3h2eUNzNW84UENzTEd1ZGlTNmJGeVVMY2h3YU9iMkNOdENZSm1HZUxENFBlb0Nn?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQWktBS0x0d3N1N0p6U2RIVnJNNHBrczd6VlNrZkhUbnNDX0hiMUl5NTJiTmd1eVU0ZnM0SWRnbHBfWllrSXZ0eHNGYzRsLWFmb3A0anFIdDgyR2x6aFpma3pheVdwMlBWdUh5RTFZVTIyYjhKam9jU0JQMENscjhkY2UzNW9aVDMzc3ItWkMxUjJPQkNsMVFrWWRubGE5em9WYjNEWlJpQk5qMHVQY092aDMzWWo5UDZ2VTJXRlYwTkxPbFcyb3FtWXAtNmJab0tIRnczZTA1NWlhdDRreGpEMlVkanJNbUtJck0tYlpqZHYxSDlXNm5jZU5GTWNOOVFtNVdYUTFDOEc1WjU3UFl1cHptWWk0NGQxdHA2ZzRqclNScTJTNDBUdFJ4a3h2eUNzNW84UENzTEd1ZGlTNmJGeVVMY2h3YU9iMkNOdENZSm1HZUxENFBlb0Nn?oc=5"
+        ],
+        "source_ids": [
+          "google_news_chugai_account"
+        ],
+        "source_labels": [
+          "Google News RSS - Chugai Pharmaceutical"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-28",
+        "checked_at": "2026-09-03T18:33:29"
+      },
+      "workflow_status": "new",
+      "score": 54,
+      "tier": "daily",
+      "category": "regulatory",
+      "business_event_type": "clinical_regulatory",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: 中外製薬",
+        "业务动作命中: 承認, 申請",
+        "高价值分类加成 +8: regulatory"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [
+          "注册 / 审批"
+        ],
+        "business_actions": [
+          "注册 / 监管动作"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "high",
+        "score": 58,
+        "label": "高相关",
+        "explanation": "客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。",
+        "reasons": [
+          "客户池公司动态",
+          "研发阶段可识别",
+          "出现明确业务动作",
+          "包含监管或注册信号"
+        ]
+      },
+      "recommended_action": {
+        "type": "customer",
+        "label": "客户需求跟进",
+        "owner": "BD / 销售",
+        "priority": "high",
+        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-08-28",
+      "event_start_at": "",
+      "age_days": 6,
       "days_until_event": null
     },
     {
@@ -6573,7 +6466,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6679,7 +6572,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6781,7 +6674,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6887,7 +6780,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -6993,7 +6886,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -7099,7 +6992,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -7204,7 +7097,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -7309,7 +7202,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-05",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -7414,7 +7307,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-05",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 54,
@@ -7519,7 +7412,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-16",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -7623,7 +7516,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -7728,7 +7621,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-31",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -7833,7 +7726,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-21",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -7940,7 +7833,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8009,7 +7902,7 @@
       "title": "BIO International Convention 2026 Recap Day 3",
       "title_zh": "",
       "url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-3/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-3",
-      "published": "2026-06-25",
+      "published": "2026-06-26",
       "summary": "Day three of the 2026 BIO International Convention centered on one overarching theme: acceleration. Whether through artificial intelligence, manufacturing innovation, or new approaches to collaboration, speakers throughout the day focused on how the industry can shorten development timelines while m...",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态。 原始摘要要点：Day three of the 2026 BIO International Convention centered on one overarching theme: acceleration.。 竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
@@ -8038,7 +7931,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8081,114 +7974,9 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-25",
+      "published_at": "2026-06-26",
       "event_start_at": "",
       "age_days": 69,
-      "days_until_event": null
-    },
-    {
-      "id": "851c36e55572e44e",
-      "company_id": "acro",
-      "company": "ACROBiosystems / 百普赛斯",
-      "matched_company_ids": [
-        "acro"
-      ],
-      "matched_companies": [
-        "ACROBiosystems / 百普赛斯"
-      ],
-      "source_id": "bing_news_acro_backup",
-      "source_label": "Bing News RSS - ACROBiosystems backup",
-      "source_ids": [
-        "bing_news_acro_backup"
-      ],
-      "source_labels": [
-        "Bing News RSS - ACROBiosystems backup"
-      ],
-      "related_urls": [
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a98da86ba354c0c8651f39345f41157&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-        "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a98da86ba354c0c8651f39345f41157&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f05%2f10%2ftmt-newswire%2fpr-newswire%2facrobiosystems-launches-global-license-solution-upgrade-for-hek293-functional-cell-lines-streamlining-compliance-to-accelerate-biopharmaceutical-rd%2f2340083&c=6088159886962232871&mkt=en-us"
-      ],
-      "source_trust": "aggregator",
-      "title": "ACROBiosystems Launches Global License Solution Upgrade for HEK293 Functional Cell Lines, Streamlining Compliance to Accelerate Biopharmaceutical R&D",
-      "title_zh": "",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a98da86ba354c0c8651f39345f41157&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-      "published": "2026-05-10",
-      "summary": "The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools. Functional cell lines serve as a versatile vital engine driving full-cycle breakthroughs in innovative ...",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了产品与平台动态，重点涉及细胞系 / 工程细胞。 原始摘要要点：The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools.。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "source_backed",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "source_backed",
-        "verification_label": "有原始摘要支持",
-        "summary_basis": "source_excerpt",
-        "source_excerpt": "The innovative development of biopharmaceuticals relies on stable, legally compliant R&D tools.",
-        "primary_url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a98da86ba354c0c8651f39345f41157&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-        "related_urls": [
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a98da86ba354c0c8651f39345f41157&url=https%3a%2f%2ffinance.yahoo.com%2fsectors%2fhealthcare%2farticles%2facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
-          "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a98da86ba354c0c8651f39345f41157&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f05%2f10%2ftmt-newswire%2fpr-newswire%2facrobiosystems-launches-global-license-solution-upgrade-for-hek293-functional-cell-lines-streamlining-compliance-to-accelerate-biopharmaceutical-rd%2f2340083&c=6088159886962232871&mkt=en-us"
-        ],
-        "source_ids": [
-          "bing_news_acro_backup"
-        ],
-        "source_labels": [
-          "Bing News RSS - ACROBiosystems backup"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-04-13",
-        "checked_at": "2026-09-03T18:28:23"
-      },
-      "workflow_status": "new",
-      "score": 52,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "product_platform",
-      "signal_type": "news",
-      "is_new": true,
-      "reasons": [
-        "公司池命中 +30: Thermo Fisher, PPD",
-        "战略主题命中: clinical trials",
-        "业务动作命中: collaboration, clinical",
-        "高价值分类加成 +10: partnership",
-        "超过时效窗口 143天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [
-          "细胞系 / 工程细胞"
-        ],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 47,
-        "label": "中相关",
-        "explanation": "ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。",
-        "reasons": [
-          "ACRO 自身动态",
-          "可映射到 ACRO 产品或服务需求"
-        ]
-      },
-      "recommended_action": {
-        "type": "content",
-        "label": "口径与传播跟进",
-        "owner": "市场运营",
-        "priority": "high",
-        "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-05-10",
-      "event_start_at": "",
-      "age_days": 143,
       "days_until_event": null
     },
     {
@@ -8245,7 +8033,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-19",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8291,7 +8079,7 @@
       },
       "selection_reason": "命中公司或中高相关业务信号",
       "published_at": "",
-      "event_start_at": "2026-03-18",
+      "event_start_at": "2026-03-19",
       "age_days": null,
       "days_until_event": -168
     },
@@ -8349,7 +8137,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8455,7 +8243,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8560,7 +8348,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-13",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8666,7 +8454,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8770,7 +8558,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8877,7 +8665,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -8987,7 +8775,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-23",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9091,7 +8879,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9193,7 +8981,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-05",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9301,7 +9089,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-19",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9408,7 +9196,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-04",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9515,7 +9303,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-26",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9622,7 +9410,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9729,7 +9517,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 52,
@@ -9835,7 +9623,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
@@ -9884,35 +9672,33 @@
       "days_until_event": null
     },
     {
-      "id": "1dfd34d05e17647d",
-      "company_id": "takeda_pharma",
-      "company": "Takeda Pharmaceutical / 武田药品 / Astellas Pharma / 安斯泰来制药",
+      "id": "955a568e3b9c3d4a",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
       "matched_company_ids": [
-        "takeda_pharma",
-        "astellas_pharma"
+        "thermo_fisher"
       ],
       "matched_companies": [
-        "Takeda Pharmaceutical / 武田药品",
-        "Astellas Pharma / 安斯泰来制药"
+        "Thermo Fisher Scientific"
       ],
-      "source_id": "google_news_takeda_customer",
-      "source_label": "Google News RSS - Takeda Pharmaceutical",
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
       "source_ids": [
-        "google_news_takeda_customer"
+        "google_news_thermo"
       ],
       "source_labels": [
-        "Google News RSS - Takeda Pharmaceutical"
+        "Google News RSS - Thermo Fisher"
       ],
       "related_urls": [
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkUTRqWFNMcUZQQTVrNUJKR0E2NEhtUkJpSTBXYUFCeWlnRmtBSmdHNXEzazBub2dTekFrQ2hYbmpERXIwMWp4cGtMLV9FU3g0OC12R1l3?oc=5"
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX1lhMGVnQzN5RnkzWGhQSV9GLURhdjUtS2NpYTBmbHJnaHNXeUZsQWFDZ1hpWW5JNE1uNXdHa3ZyUTFUd2xVT1R5RmJjLVo1NGhiOG1YRUVXSkVGa28tWktnUHl6dVh0MUVKMy02T2xud3QySEJvTnY4bndrOUFDQXg2cHRyYThmczZhMTFDQ3lIUkM1X2lsQnMySldFeXlLOWYw?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "武田薬品は90％、アステラスは86％が海外売り上げに…創薬大国・日本に何が起きたのか？ 製薬業界20年の地殻変動 - JBpress",
+      "title": "Thermo Fisher Completes $8.875 Billion Acquisition of Clario, Expanding Clinical Trial Data Capabilities - Applied Clinical Trials Online",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkUTRqWFNMcUZQQTVrNUJKR0E2NEhtUkJpSTBXYUFCeWlnRmtBSmdHNXEzazBub2dTekFrQ2hYbmpERXIwMWp4cGtMLV9FU3g0OC12R1l3?oc=5",
-      "published": "2026-07-01",
-      "summary": "武田薬品は90％、アステラスは86％が海外売り上げに…創薬大国・日本に何が起きたのか？ 製薬業界20年の地殻変動 JBpress",
-      "ai_summary": "客户池公司 Takeda Pharmaceutical / 武田药品 / Astellas Pharma / 安斯泰来制药 出现市场与区域动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX1lhMGVnQzN5RnkzWGhQSV9GLURhdjUtS2NpYTBmbHJnaHNXeUZsQWFDZ1hpWW5JNE1uNXdHa3ZyUTFUd2xVT1R5RmJjLVo1NGhiOG1YRUVXSkVGa28tWktnUHl6dVh0MUVKMy02T2xud3QySEJvTnY4bndrOUFDQXg2cHRyYThmczZhMTFDQ3lIUkM1X2lsQnMySldFeXlLOWYw?oc=5",
+      "published": "2026-03-24",
+      "summary": "Thermo Fisher Completes $8.875 Billion Acquisition of Clario, Expanding Clinical Trial Data Capabilities Applied Clinical Trials Online",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现临床监管信号。 竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
@@ -9924,28 +9710,28 @@
         "verification_label": "需打开原文核验",
         "summary_basis": "title_and_structured_rules",
         "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkUTRqWFNMcUZQQTVrNUJKR0E2NEhtUkJpSTBXYUFCeWlnRmtBSmdHNXEzazBub2dTekFrQ2hYbmpERXIwMWp4cGtMLV9FU3g0OC12R1l3?oc=5",
+        "primary_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX1lhMGVnQzN5RnkzWGhQSV9GLURhdjUtS2NpYTBmbHJnaHNXeUZsQWFDZ1hpWW5JNE1uNXdHa3ZyUTFUd2xVT1R5RmJjLVo1NGhiOG1YRUVXSkVGa28tWktnUHl6dVh0MUVKMy02T2xud3QySEJvTnY4bndrOUFDQXg2cHRyYThmczZhMTFDQ3lIUkM1X2lsQnMySldFeXlLOWYw?oc=5",
         "related_urls": [
-          "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkUTRqWFNMcUZQQTVrNUJKR0E2NEhtUkJpSTBXYUFCeWlnRmtBSmdHNXEzazBub2dTekFrQ2hYbmpERXIwMWp4cGtMLV9FU3g0OC12R1l3?oc=5"
+          "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX1lhMGVnQzN5RnkzWGhQSV9GLURhdjUtS2NpYTBmbHJnaHNXeUZsQWFDZ1hpWW5JNE1uNXdHa3ZyUTFUd2xVT1R5RmJjLVo1NGhiOG1YRUVXSkVGa28tWktnUHl6dVh0MUVKMy02T2xud3QySEJvTnY4bndrOUFDQXg2cHRyYThmczZhMTFDQ3lIUkM1X2lsQnMySldFeXlLOWYw?oc=5"
         ],
         "source_ids": [
-          "google_news_takeda_customer"
+          "google_news_thermo"
         ],
         "source_labels": [
-          "Google News RSS - Takeda Pharmaceutical"
+          "Google News RSS - Thermo Fisher"
         ],
         "source_types": [
           "rss"
         ],
         "source_trust": "aggregator",
         "published_at": "2026-03-24",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
       "tier": "daily",
-      "category": "market",
-      "business_event_type": "regional_expansion",
+      "category": "regulatory",
+      "business_event_type": "partnership_deal",
       "signal_type": "news",
       "is_new": false,
       "reasons": [
@@ -9960,27 +9746,31 @@
         "modalities": [],
         "product_needs": [],
         "development_stages": [],
-        "business_actions": [],
+        "business_actions": [
+          "并购 / 交易"
+        ],
         "event_signals": []
       },
       "acro_relevance": {
         "level": "medium",
-        "score": 30,
+        "score": 36,
         "label": "中相关",
-        "explanation": "客户池公司出现新的研发信号，可评估相关试剂与服务需求。",
+        "explanation": "竞品正在推进regulatory相关动作，值得对比产品定位、市场话术和区域覆盖。",
         "reasons": [
-          "客户池公司动态"
+          "竞品公司动态",
+          "出现明确业务动作",
+          "包含监管或注册信号"
         ]
       },
       "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-01",
+      "published_at": "2026-03-24",
       "event_start_at": "",
       "age_days": 163,
       "days_until_event": null
@@ -10041,7 +9831,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
@@ -10139,7 +9929,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
@@ -10242,7 +10032,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
@@ -10329,7 +10119,7 @@
       "summary_method": "rule",
       "summary_provider": "rules",
       "summary_model": "",
-      "summary_quality": "source_backed",
+      "summary_quality": "structured_inference",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -10354,7 +10144,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-18",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
@@ -10362,7 +10152,7 @@
       "category": "regulatory",
       "business_event_type": "clinical_regulatory",
       "signal_type": "news",
-      "is_new": true,
+      "is_new": false,
       "reasons": [
         "公司池命中 +15: Cytiva",
         "公司自有来源",
@@ -10374,7 +10164,7 @@
       "intelligence": {
         "targets": [],
         "modalities": [
-          "基因治疗"
+          "细胞治疗"
         ],
         "product_needs": [],
         "development_stages": [],
@@ -10462,7 +10252,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 50,
@@ -10562,7 +10352,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10666,7 +10456,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10772,7 +10562,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10874,7 +10664,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -10949,7 +10739,7 @@
       "title": "BIO 2026 Wrap-Up: Innovation, Collaboration, and a Shared Commitment to Patients",
       "title_zh": "",
       "url": "https://www.thermofisher.com/blog/biotechnology/bio-recap-day-4/?utm_source=rss&utm_medium=rss&utm_campaign=bio-recap-day-4",
-      "published": "2026-06-26",
+      "published": "2026-06-27",
       "summary": "As the 2026 BIO International Convention came to a close, one thing was clear: biotechnology continues to move forward because of the people behind it.",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 原始摘要要点：As the 2026 BIO International Convention came to a close, one thing was clear: biotechnology continues to move...。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
@@ -10978,7 +10768,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11027,6 +10817,208 @@
       "days_until_event": null
     },
     {
+      "id": "6e9ac55b265d023b",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial - clinicaltrialsarena.com",
+      "title_zh": "赛默飞与Arcturus合作，为囊性纤维化mRNA疗法ARCT-032的潜在III期和商业化做准备",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
+      "published": "2026-07-03",
+      "summary": "Thermo Fisher, Arcturus partner on Phase III ARCT-032 cystic fibrosis trial clinicaltrialsarena.com",
+      "ai_summary": "赛默飞将通过Accelerator Drug Development整合制造、临床研究和商业准备能力，支持Arcturus的吸入式mRNA候选药ARCT-032。若II期结果积极，Arcturus计划由赛默飞PPD业务执行III期，赛默飞还将提供临床供应，并在产品获批后取得独家商业生产权。III期决策预计在2026年第四季度，因此当前应写成后期开发准备，而不是已经启动III期试验。",
+      "summary_method": "manual_ai",
+      "summary_provider": "chatgpt_pro_manual",
+      "summary_model": "ChatGPT Pro",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeXVMRUxKU1F1MmRPOWFLOGlzNzl6UlBOUTZiVnJRd0dHNFpiRG92MjRXal9rb3RidlZrZWFVbzJTMTU1OHBaWGtTUEJKcmhKbkVsejA3S0c1V3pMb3l2eHB4Y3lJMWZtemFTa0RSOG9aLWczd25rSWRXMnVERU10dXBtdmVoQQ?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-07-03",
+        "checked_at": "2026-09-03T18:33:29"
+      },
+      "workflow_status": "new",
+      "score": 48,
+      "tier": "daily",
+      "category": "partnership",
+      "business_event_type": "partnership_deal",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher",
+        "业务动作命中: clinical",
+        "高价值分类加成 +10: partnership"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [
+          "III 期临床"
+        ],
+        "business_actions": [],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "研发阶段可识别"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-07-03",
+      "event_start_at": "",
+      "age_days": 62,
+      "days_until_event": null
+    },
+    {
+      "id": "c302686d90937569",
+      "company_id": "thermo_fisher",
+      "company": "Thermo Fisher Scientific",
+      "matched_company_ids": [
+        "thermo_fisher"
+      ],
+      "matched_companies": [
+        "Thermo Fisher Scientific"
+      ],
+      "source_id": "google_news_thermo",
+      "source_label": "Google News RSS - Thermo Fisher",
+      "source_ids": [
+        "google_news_thermo"
+      ],
+      "source_labels": [
+        "Google News RSS - Thermo Fisher"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform - Yahoo Finance",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5",
+      "published": "2026-08-10",
+      "summary": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform Yahoo Finance",
+      "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5"
+        ],
+        "source_ids": [
+          "google_news_thermo"
+        ],
+        "source_labels": [
+          "Google News RSS - Thermo Fisher"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-08-10",
+        "checked_at": "2026-09-03T18:33:29"
+      },
+      "workflow_status": "new",
+      "score": 48,
+      "tier": "daily",
+      "category": "product",
+      "business_event_type": "clinical_regulatory",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Thermo Fisher, Thermo Fisher Scientific",
+        "业务动作命中: FDA",
+        "高价值分类加成 +10: product"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "注册 / 监管动作"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-08-10",
+      "event_start_at": "",
+      "age_days": 24,
+      "days_until_event": null
+    },
+    {
       "id": "64aac44c8d3dc548",
       "company_id": "thermo_fisher",
       "company": "Thermo Fisher Scientific",
@@ -11048,11 +11040,11 @@
         "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMnkyMlhyVHZUWmUtMlZiWEI3aTBMcmJuVFI0VFFxbk4wOGtZZjMtOVJQQWs4Sl9Lamx3UWE5ank4WkFXcVRQTTdNMV80RmhOUGlGZGpmb19zNFJoeGdOWEpyV2cyUzNxajlMTm5nYmppbC1FS2FUWmQxdTIxbVAxZmJMLWE2NGlURWlyQzY5dkFoNk9USFFndlFPWHlBZFZsQlJwcVNlYk5Yd3lvU0dqTkxSb1Y3QXVzQi1HZEZuUV9YZjhxRGNwdw?oc=5"
       ],
       "source_trust": "aggregator",
-      "title": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development - biopharminternational.com",
+      "title": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development - BioPharm International",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMnkyMlhyVHZUWmUtMlZiWEI3aTBMcmJuVFI0VFFxbk4wOGtZZjMtOVJQQWs4Sl9Lamx3UWE5ank4WkFXcVRQTTdNMV80RmhOUGlGZGpmb19zNFJoeGdOWEpyV2cyUzNxajlMTm5nYmppbC1FS2FUWmQxdTIxbVAxZmJMLWE2NGlURWlyQzY5dkFoNk9USFFndlFPWHlBZFZsQlJwcVNlYk5Yd3lvU0dqTkxSb1Y3QXVzQi1HZEZuUV9YZjhxRGNwdw?oc=5",
       "published": "2026-07-16",
-      "summary": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development biopharminternational.com",
+      "summary": "Thermo Fisher Scientific’s Paul Jorjorian Discusses Genetic Medicine Diversification, Partnership Trust, and Raw Material Risk in Biopharma Development BioPharm International",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现合作或交易信号。 竞品正在推进partnership相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
       "summary_provider": "rules",
@@ -11080,7 +11072,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11181,7 +11173,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-04",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11282,7 +11274,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-19",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11387,7 +11379,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11462,7 +11454,7 @@
       "title": "Astellas enters voluntary agreement with U.S. government supporting affordable access to medicines",
       "title_zh": "安斯泰来与美国政府达成药价与供应自愿协议",
       "url": "https://newsroom.astellas.com/2026-09-01-astellas-enters-voluntary-agreement-with-us-government-supporting-affordable-access-to-medicines",
-      "published": "2026-08-31",
+      "published": "2026-09-01",
       "summary": "",
       "ai_summary": "安斯泰来宣布与美国政府达成自愿协议，承诺下调Medicaid药品价格，并将未来美国价格与其他发达国家水平对齐。公司还将向美国战略原料药储备捐赠25公斤他克莫司原料药，其他条款未披露。这是定价、可及性与供应链政策信号，不应解读为新药进展。",
       "summary_method": "manual_ai",
@@ -11491,7 +11483,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11531,7 +11523,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-31",
+      "published_at": "2026-09-01",
       "event_start_at": "",
       "age_days": 2,
       "days_until_event": null
@@ -11590,7 +11582,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11698,7 +11690,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11810,7 +11802,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -11921,7 +11913,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-14",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12031,7 +12023,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-06",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12138,7 +12130,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12239,7 +12231,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12341,7 +12333,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12443,7 +12435,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12550,7 +12542,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12652,7 +12644,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12753,7 +12745,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12852,7 +12844,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-19",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -12950,7 +12942,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-31",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -13054,7 +13046,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-07-15",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -13161,7 +13153,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -13210,111 +13202,6 @@
       "published_at": "2026-06-17",
       "event_start_at": "",
       "age_days": 78,
-      "days_until_event": null
-    },
-    {
-      "id": "5e7891e69fcc6c1a",
-      "company_id": "kaken_pharma",
-      "company": "Kaken Pharmaceutical / 科研制药",
-      "matched_company_ids": [
-        "kaken_pharma"
-      ],
-      "matched_companies": [
-        "Kaken Pharmaceutical / 科研制药"
-      ],
-      "source_id": "kaken_official_news_index",
-      "source_label": "Kaken Pharmaceutical official news - indexed RSS",
-      "source_ids": [
-        "kaken_official_news_index"
-      ],
-      "source_labels": [
-        "Kaken Pharmaceutical official news - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VcnVoMHBEa2tLbTdlWnZFX1o2QzJ6MmR6TS1kLXlQUE9fa0FuWnNJY0RMTC1jYTlYcm5VcVg4bVZNNTZPYXNqWVZPc0hVV0UtMjA3OWxDdXltUGctSFZFcW45WjVhTzM0WDRFdmlEdk1DZnBudGx3?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "フィブラストスプレー250/500のお知らせ情報 新発売・供給・中止 - medical-pro.kaken.co.jp",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VcnVoMHBEa2tLbTdlWnZFX1o2QzJ6MmR6TS1kLXlQUE9fa0FuWnNJY0RMTC1jYTlYcm5VcVg4bVZNNTZPYXNqWVZPc0hVV0UtMjA3OWxDdXltUGctSFZFcW45WjVhTzM0WDRFdmlEdk1DZnBudGx3?oc=5",
-      "published": "2026-06-15",
-      "summary": "フィブラストスプレー250/500のお知らせ情報 新発売・供給・中止 medical-pro.kaken.co.jp",
-      "ai_summary": "客户池公司 Kaken Pharmaceutical / 科研制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VcnVoMHBEa2tLbTdlWnZFX1o2QzJ6MmR6TS1kLXlQUE9fa0FuWnNJY0RMTC1jYTlYcm5VcVg4bVZNNTZPYXNqWVZPc0hVV0UtMjA3OWxDdXltUGctSFZFcW45WjVhTzM0WDRFdmlEdk1DZnBudGx3?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VcnVoMHBEa2tLbTdlWnZFX1o2QzJ6MmR6TS1kLXlQUE9fa0FuWnNJY0RMTC1jYTlYcm5VcVg4bVZNNTZPYXNqWVZPc0hVV0UtMjA3OWxDdXltUGctSFZFcW45WjVhTzM0WDRFdmlEdk1DZnBudGx3?oc=5"
-        ],
-        "source_ids": [
-          "kaken_official_news_index"
-        ],
-        "source_labels": [
-          "Kaken Pharmaceutical official news - indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "owned",
-        "published_at": "2026-06-15",
-        "checked_at": "2026-09-03T18:28:23"
-      },
-      "workflow_status": "new",
-      "score": 48,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "clinical_regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +15: KAKEN",
-        "公司自有来源",
-        "业务动作命中: 発売",
-        "高价值分类加成 +10: product"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "上市 / 商业化"
-        ],
-        "business_actions": [
-          "产品发布"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "high",
-        "score": 50,
-        "label": "高相关",
-        "explanation": "客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。",
-        "reasons": [
-          "客户池公司动态",
-          "研发阶段可识别",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-15",
-      "event_start_at": "",
-      "age_days": 80,
       "days_until_event": null
     },
     {
@@ -13371,7 +13258,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-06",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 48,
@@ -13475,7 +13362,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-10",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13580,7 +13467,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-07-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13690,7 +13577,7 @@
         ],
         "source_trust": "wire",
         "published_at": "2026-05-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13793,7 +13680,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13835,6 +13722,109 @@
       "published_at": "2026-09-01",
       "event_start_at": "",
       "age_days": 2,
+      "days_until_event": null
+    },
+    {
+      "id": "a02dc1b130d38ba4",
+      "company_id": "merck_life_science",
+      "company": "Merck KGaA Life Science / MilliporeSigma / Bio-Techne",
+      "matched_company_ids": [
+        "merck_life_science",
+        "biotechne"
+      ],
+      "matched_companies": [
+        "Merck KGaA Life Science / MilliporeSigma",
+        "Bio-Techne"
+      ],
+      "source_id": "google_news_merck_life_science",
+      "source_label": "Google News RSS - Merck KGaA Life Science",
+      "source_ids": [
+        "google_news_merck_life_science"
+      ],
+      "source_labels": [
+        "Google News RSS - Merck KGaA Life Science"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5"
+      ],
+      "source_trust": "aggregator",
+      "title": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion - Yahoo Finance",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5",
+      "published": "2026-06-25",
+      "summary": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion Yahoo Finance",
+      "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma / Bio-Techne 出现市场与区域动态。 竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "index",
+        "kind_label": "聚合索引线索",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5"
+        ],
+        "source_ids": [
+          "google_news_merck_life_science"
+        ],
+        "source_labels": [
+          "Google News RSS - Merck KGaA Life Science"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "aggregator",
+        "published_at": "2026-06-25",
+        "checked_at": "2026-09-03T18:33:29"
+      },
+      "workflow_status": "new",
+      "score": 46,
+      "tier": "daily",
+      "category": "market",
+      "business_event_type": "regional_expansion",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +30: Merck KGaA, Bio-Techne",
+        "业务动作命中: expansion",
+        "高价值分类加成 +8: market"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [
+          "扩产 / 新设施"
+        ],
+        "event_signals": []
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 28,
+        "label": "中相关",
+        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "出现明确业务动作"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-06-25",
+      "event_start_at": "",
+      "age_days": 70,
       "days_until_event": null
     },
     {
@@ -13891,7 +13881,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -13993,7 +13983,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-15",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14095,7 +14085,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14124,109 +14114,6 @@
         "score": 28,
         "label": "中相关",
         "explanation": "竞品正在推进company相关动作，值得对比产品定位、市场话术和区域覆盖。",
-        "reasons": [
-          "竞品公司动态",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "competitor",
-        "label": "竞品对比",
-        "owner": "产品市场",
-        "priority": "medium",
-        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-06-25",
-      "event_start_at": "",
-      "age_days": 70,
-      "days_until_event": null
-    },
-    {
-      "id": "a02dc1b130d38ba4",
-      "company_id": "biotechne",
-      "company": "Bio-Techne / Merck KGaA Life Science / MilliporeSigma",
-      "matched_company_ids": [
-        "biotechne",
-        "merck_life_science"
-      ],
-      "matched_companies": [
-        "Bio-Techne",
-        "Merck KGaA Life Science / MilliporeSigma"
-      ],
-      "source_id": "google_news_biotechne",
-      "source_label": "Google News RSS - Bio-Techne",
-      "source_ids": [
-        "google_news_biotechne"
-      ],
-      "source_labels": [
-        "Google News RSS - Bio-Techne"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion - Yahoo Finance",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5",
-      "published": "2026-06-25",
-      "summary": "Merck KGaA to buy Bio-Techne for $11.3bn in life science footprint expansion Yahoo Finance",
-      "ai_summary": "竞品 Bio-Techne / Merck KGaA Life Science / MilliporeSigma 出现市场与区域动态。 竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMijwFBVV95cUxNenBhaDFMUmtjU0NFWHkxbFppeTVidWZTN3g4Ukg5eW8yS0lLNkxteTA1bl9rN0VLSjEzN3Vpb21OODJJcUNqZnhqMkV2c3MwcThXM1k5NE9aSE1ZUHpnRTEzVlhfZnhVUkdwdWd1UnV4REoxdzNMRWNOaDNYOEdMU1VJNUJ3Qjl2Z3VVOGRoaw?oc=5"
-        ],
-        "source_ids": [
-          "google_news_biotechne"
-        ],
-        "source_labels": [
-          "Google News RSS - Bio-Techne"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-06-25",
-        "checked_at": "2026-09-03T18:28:23"
-      },
-      "workflow_status": "new",
-      "score": 46,
-      "tier": "daily",
-      "category": "market",
-      "business_event_type": "regional_expansion",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: Bio-Techne, Merck KGaA",
-        "业务动作命中: expansion",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [
-          "扩产 / 新设施"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 28,
-        "label": "中相关",
-        "explanation": "竞品正在推进market相关动作，值得对比产品定位、市场话术和区域覆盖。",
         "reasons": [
           "竞品公司动态",
           "出现明确业务动作"
@@ -14299,7 +14186,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14404,7 +14291,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14480,7 +14367,7 @@
       "title": "ASP2138 CLDN18.2陽性、HER2陰性の切除不能な局所進行性または転移性胃腺がんおよび食道胃接合部腺がんを対象とした国際共同第III相試験を開始",
       "title_zh": "安斯泰来启动ASP2138一线胃癌全球III期研究",
       "url": "https://jp.newsroom.astellas.com/2026-08-25-astellas-doses-first-patient-in-phase-3-study-of-asp2138-in-cldn18-2-postive-and-her2-negative-locally-advanced-unresectable-or-metastatic-gastric-or-gastroesophageal-junction-gej-adenocarcinoma",
-      "published": "2026-08-24",
+      "published": "2026-08-25",
       "summary": "",
       "ai_summary": "安斯泰来已在ASP2138全球III期研究中完成首例患者给药，对象为CLDN18.2阳性、HER2阴性的局部晚期不可切除或转移性胃腺癌及胃食管结合部腺癌一线患者。ASP2138是同时面向CLDN18.2和CD3的双特异性抗体。这是III期启动与入组节点，并非疗效证明或获批。",
       "summary_method": "manual_ai",
@@ -14509,7 +14396,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14556,7 +14443,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-24",
+      "published_at": "2026-08-25",
       "event_start_at": "",
       "age_days": 9,
       "days_until_event": null
@@ -14615,7 +14502,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14717,7 +14604,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-12",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14821,7 +14708,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-30",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14894,7 +14781,7 @@
       "title": "抗Aβ抗体「レケンビ®」の皮下注射製剤「LEQEMBI IQLIK®」、早期アルツハイマー病に対する初期療法として米国で新発売 - eisai.co.jp",
       "title_zh": "卫材与Biogen在美国推出LEQEMBI IQLIK自注射器，用于早期阿尔茨海默病起始治疗",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9zX0RSdTBwbDV3Zk50a01mSUNUR3ZkNk5MVlFFR2pmZklkNlA2eEhVQUpGUW5iNW9zLTJLMXhUbWxLS0EyaERLVnBWVERmV3cyT1VsQzJpZUtnNGxacHc?oc=5",
-      "published": "2026-08-25",
+      "published": "2026-08-26",
       "summary": "抗Aβ抗体「レケンビ®」の皮下注射製剤「LEQEMBI IQLIK®」、早期アルツハイマー病に対する初期療法として米国で新発売 eisai.co.jp",
       "ai_summary": "卫材与Biogen已在美国供应LEQEMBI IQLIK每周一次皮下自注射方案，用于早期阿尔茨海默病的起始治疗。起始剂量为500 mg，治疗18个月后也可采用每周360 mg维持剂量。该产品降低了静脉输注负担，但ARIA相关MRI监测要求仍然存在；本条是日文转载，与既有英文公告为同一上市事件。",
       "summary_method": "manual_ai",
@@ -14923,7 +14810,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-26",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -14972,7 +14859,7 @@
         "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-25",
+      "published_at": "2026-08-26",
       "event_start_at": "",
       "age_days": 8,
       "days_until_event": null
@@ -15031,7 +14918,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-14",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15137,7 +15024,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15242,7 +15129,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-08-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15284,104 +15171,6 @@
       "published_at": "2026-08-03",
       "event_start_at": "",
       "age_days": 31,
-      "days_until_event": null
-    },
-    {
-      "id": "14ca15c4fb0ddb70",
-      "company_id": "chugai_pharma",
-      "company": "Chugai Pharmaceutical / 中外制药",
-      "matched_company_ids": [
-        "chugai_pharma"
-      ],
-      "matched_companies": [
-        "Chugai Pharmaceutical / 中外制药"
-      ],
-      "source_id": "google_news_chugai_account",
-      "source_label": "Google News RSS - Chugai Pharmaceutical",
-      "source_ids": [
-        "google_news_chugai_account"
-      ],
-      "source_labels": [
-        "Google News RSS - Chugai Pharmaceutical"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMibEFVX3lxTFAxZFhFeFZ4MGVpVE5mbDZfbGZ2SHdwbUItZ1otc3FaR1VNWU15T3h6QzV6bjkyTkNVVXV6T29ISlBjOVZiU0hrOHVLMlE4RjlDMjMzNkZmVG9uWG5rUnBVOHg0U3R1VTJGVmpzcA?oc=5"
-      ],
-      "source_trust": "aggregator",
-      "title": "中外製薬が日本バスケ協会とパートナー契約 日本代表を支援 - 日本経済新聞",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAxZFhFeFZ4MGVpVE5mbDZfbGZ2SHdwbUItZ1otc3FaR1VNWU15T3h6QzV6bjkyTkNVVXV6T29ISlBjOVZiU0hrOHVLMlE4RjlDMjMzNkZmVG9uWG5rUnBVOHg0U3R1VTJGVmpzcA?oc=5",
-      "published": "2026-08-04",
-      "summary": "中外製薬が日本バスケ協会とパートナー契約 日本代表を支援 日本経済新聞",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现市场与区域动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "index",
-        "kind_label": "聚合索引线索",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAxZFhFeFZ4MGVpVE5mbDZfbGZ2SHdwbUItZ1otc3FaR1VNWU15T3h6QzV6bjkyTkNVVXV6T29ISlBjOVZiU0hrOHVLMlE4RjlDMjMzNkZmVG9uWG5rUnBVOHg0U3R1VTJGVmpzcA?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMibEFVX3lxTFAxZFhFeFZ4MGVpVE5mbDZfbGZ2SHdwbUItZ1otc3FaR1VNWU15T3h6QzV6bjkyTkNVVXV6T29ISlBjOVZiU0hrOHVLMlE4RjlDMjMzNkZmVG9uWG5rUnBVOHg0U3R1VTJGVmpzcA?oc=5"
-        ],
-        "source_ids": [
-          "google_news_chugai_account"
-        ],
-        "source_labels": [
-          "Google News RSS - Chugai Pharmaceutical"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "aggregator",
-        "published_at": "2026-08-04",
-        "checked_at": "2026-09-03T18:28:23"
-      },
-      "workflow_status": "new",
-      "score": 46,
-      "tier": "daily",
-      "category": "market",
-      "business_event_type": "regional_expansion",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +30: 中外製薬",
-        "业务动作命中: 契約",
-        "高价值分类加成 +8: market"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [],
-        "business_actions": [],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "medium",
-        "score": 30,
-        "label": "中相关",
-        "explanation": "客户池公司出现新的研发信号，可评估相关试剂与服务需求。",
-        "reasons": [
-          "客户池公司动态"
-        ]
-      },
-      "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-04",
-      "event_start_at": "",
-      "age_days": 30,
       "days_until_event": null
     },
     {
@@ -15438,7 +15227,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15543,7 +15332,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-06-11",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15648,7 +15437,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15747,7 +15536,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15853,7 +15642,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -15959,7 +15748,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16065,7 +15854,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16164,7 +15953,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-26",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16270,7 +16059,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-09",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16369,7 +16158,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16468,7 +16257,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16574,7 +16363,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16679,7 +16468,7 @@
         ],
         "source_trust": "aggregator",
         "published_at": "2026-05-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 46,
@@ -16784,7 +16573,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-16",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -16886,7 +16675,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-16",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -16990,7 +16779,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17089,7 +16878,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-12",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17194,7 +16983,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-24",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17302,7 +17091,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17410,7 +17199,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17513,7 +17302,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17613,7 +17402,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17721,7 +17510,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17829,7 +17618,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -17935,7 +17724,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -18043,7 +17832,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -18151,7 +17940,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-18",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 44,
@@ -18249,7 +18038,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 42,
@@ -18352,7 +18141,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-06-09",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 42,
@@ -18427,7 +18216,7 @@
       "title": "Cell and Gene Therapy Trends Shaping Commercial Success in 2026",
       "title_zh": "",
       "url": "https://www.thermofisher.com/blog/biotechnology/cell-gene-therapy-commercialization-trends-2026/?utm_source=rss&utm_medium=rss&utm_campaign=cell-gene-therapy-commercialization-trends-2026",
-      "published": "2026-08-31",
+      "published": "2026-09-01",
       "summary": "Cell and gene therapy (CGT) is entering a new phase of growth. After decades of scientific breakthroughs, the industry’s focus is shifting toward delivering therapies that are scalable, commercially viable, and accessible to more patients.",
       "ai_summary": "竞品 Thermo Fisher Scientific 出现公司战略与组织动态，重点涉及基因治疗。 原始摘要要点：Cell and gene therapy (CGT) is entering a new phase of growth.。 竞品正在推进基因治疗相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
@@ -18456,7 +18245,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 42,
@@ -18498,7 +18287,7 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-31",
+      "published_at": "2026-09-01",
       "event_start_at": "",
       "age_days": 2,
       "days_until_event": null
@@ -18553,7 +18342,7 @@
         ],
         "source_trust": "ecosystem",
         "published_at": "2026-09-09",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 42,
@@ -18662,7 +18451,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-23",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 42,
@@ -18763,7 +18552,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 42,
@@ -18871,7 +18660,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-04",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -18974,7 +18763,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-03",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19072,7 +18861,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19140,7 +18929,7 @@
       "title": "百普赛斯：2026年半年度报告 - ByDrug",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTnZYeUpfbVFTU2psVk9uQlVUTW0wclROZ3VTOEtIcWx2RjRVYmVPbFJzQ2xZdWpHY05wcjNKSnZuU2xGenBmUEVMWE1Ya2RqRXF2YW1HdUtlWmthS29kX2NKSzVwdUZjY2NoTEZZR2tEN0Y3bTIxank4OXFpU3p4aA?oc=5",
-      "published": "2026-08-28",
+      "published": "2026-08-29",
       "summary": "百普赛斯：2026年半年度报告 ByDrug",
       "ai_summary": "ACROBiosystems / 百普赛斯更新了公司战略与组织动态。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
       "summary_method": "rule",
@@ -19169,7 +18958,7 @@
         ],
         "source_trust": "media",
         "published_at": "2026-08-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19207,7 +18996,7 @@
         "text": "核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-08-28",
+      "published_at": "2026-08-29",
       "event_start_at": "",
       "age_days": 5,
       "days_until_event": null
@@ -19266,7 +19055,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-21",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19372,7 +19161,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-28",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19476,7 +19265,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19582,7 +19371,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-01",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19683,7 +19472,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-09-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19785,7 +19574,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19859,7 +19648,7 @@
       "title": "In Situ Cell Death Detection Kit, Fluorescein Protocol & Troubleshooting - Merck Millipore",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPdVQ5OVNHUkhhcDZzUE96RHVwVnRYdWF6eDBiNFg1ejliNHM2WmRFSHhpUVpwYzRBQ01GNUxITVFuSGNVcHNUOE95clVWa0hsUm9mc2pORzNNWi1lQWxZXzdFcEh3Wl9LUjkzbml2ekhuMUV6ek5vaFl5Z3B1OWpLYlBsS3d5Zno0eU5iWG5FeVdZMEs0a2VuNzF5eUlqUjhfaXFMRWFoMF9pUGk2QjVkUnlCbENiYnpiWmNwX2JYZFZkM0E0TXBFOFRsTUVPY2FQVlRSLWRsN043aU5NbHQwMXM0RDJRRlVjbzRsOVloTUdVeHVRc2Focnpqb3dfbmNGNmFmQTgweGZNVGJkX2U5Vw?oc=5",
-      "published": "2026-07-11",
+      "published": "2026-07-12",
       "summary": "In Situ Cell Death Detection Kit, Fluorescein Protocol & Troubleshooting Merck Millipore",
       "ai_summary": "竞品 Merck KGaA Life Science / MilliporeSigma 出现产品与平台动态，重点涉及检测试剂盒。 竞品正在推进检测试剂盒相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
       "summary_method": "rule",
@@ -19888,7 +19677,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-12",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -19930,7 +19719,7 @@
         "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
       },
       "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-07-11",
+      "published_at": "2026-07-12",
       "event_start_at": "",
       "age_days": 53,
       "days_until_event": null
@@ -19989,7 +19778,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20034,6 +19823,107 @@
       "published_at": "2026-06-17",
       "event_start_at": "",
       "age_days": 78,
+      "days_until_event": null
+    },
+    {
+      "id": "a63cebf1daea245c",
+      "company_id": "takara_bio",
+      "company": "Takara Bio / 宝生物",
+      "matched_company_ids": [
+        "takara_bio"
+      ],
+      "matched_companies": [
+        "Takara Bio / 宝生物"
+      ],
+      "source_id": "takara_bio_japan_official_index",
+      "source_label": "Takara Bio Japan official pages - indexed RSS",
+      "source_ids": [
+        "takara_bio_japan_official_index"
+      ],
+      "source_labels": [
+        "Takara Bio Japan official pages - indexed RSS"
+      ],
+      "related_urls": [
+        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5"
+      ],
+      "source_trust": "owned",
+      "title": "RNA-Seq解析 超入門！実験の流れ、データの見方の基礎講座 - タカラバイオ技術セミナー",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5",
+      "published": "2026-07-01",
+      "summary": "RNA-Seq解析 超入門！実験の流れ、データの見方の基礎講座 タカラバイオ技術セミナー",
+      "ai_summary": "竞品 Takara Bio / 宝生物 出现市场活动信息。 竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
+      "summary_method": "rule",
+      "summary_provider": "rules",
+      "summary_model": "",
+      "summary_quality": "structured_inference",
+      "evidence": {
+        "kind": "primary",
+        "kind_label": "一手或官方证据",
+        "verification_status": "needs_original_check",
+        "verification_label": "需打开原文核验",
+        "summary_basis": "title_and_structured_rules",
+        "source_excerpt": "",
+        "primary_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5",
+        "related_urls": [
+          "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JVlIwbnoybEoxdUpvTnYxc2xRSjlTSGtGYnM4WGpGRWc0SVJ3a2NwVDFQckkwX0xMVEllUmdjb0RveDFXQVBNX0dPVlpsYWJjWTlNdnd1RG5va2F3NWc5RGxNMA?oc=5"
+        ],
+        "source_ids": [
+          "takara_bio_japan_official_index"
+        ],
+        "source_labels": [
+          "Takara Bio Japan official pages - indexed RSS"
+        ],
+        "source_types": [
+          "rss"
+        ],
+        "source_trust": "owned",
+        "published_at": "2026-07-01",
+        "checked_at": "2026-09-03T18:33:29"
+      },
+      "workflow_status": "new",
+      "score": 40,
+      "tier": "daily",
+      "category": "event",
+      "business_event_type": "market_activity",
+      "signal_type": "news",
+      "is_new": false,
+      "reasons": [
+        "公司池命中 +15: タカラバイオ",
+        "公司自有来源",
+        "高价值分类加成 +10: event"
+      ],
+      "intelligence": {
+        "targets": [],
+        "modalities": [],
+        "product_needs": [],
+        "development_stages": [],
+        "business_actions": [],
+        "event_signals": [
+          "研讨会 / 讲座"
+        ]
+      },
+      "acro_relevance": {
+        "level": "medium",
+        "score": 24,
+        "label": "中相关",
+        "explanation": "竞品正在推进event相关动作，值得对比产品定位、市场话术和区域覆盖。",
+        "reasons": [
+          "竞品公司动态",
+          "可转化为活动运营线索"
+        ]
+      },
+      "recommended_action": {
+        "type": "competitor",
+        "label": "竞品对比",
+        "owner": "产品市场",
+        "priority": "medium",
+        "text": "对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。"
+      },
+      "selection_reason": "命中公司或中高相关业务信号",
+      "published_at": "2026-07-01",
+      "event_start_at": "",
+      "age_days": 64,
       "days_until_event": null
     },
     {
@@ -20090,7 +19980,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20188,7 +20078,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-22",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20297,7 +20187,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-27",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20395,7 +20285,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-02",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20499,7 +20389,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-03-09",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20602,7 +20492,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-04-29",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20705,7 +20595,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-04-14",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20808,7 +20698,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-13",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -20919,7 +20809,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-07-22",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21025,7 +20915,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-17",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21126,7 +21016,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21230,7 +21120,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21328,7 +21218,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21432,7 +21322,7 @@
         ],
         "source_trust": "owned",
         "published_at": "",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21530,7 +21420,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-08-25",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21631,7 +21521,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-06-22",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21732,7 +21622,7 @@
         ],
         "source_trust": "owned",
         "published_at": "2026-05-07",
-        "checked_at": "2026-09-03T18:28:23"
+        "checked_at": "2026-09-03T18:33:29"
       },
       "workflow_status": "new",
       "score": 40,
@@ -21777,112 +21667,6 @@
       "published_at": "2026-05-07",
       "event_start_at": "",
       "age_days": 119,
-      "days_until_event": null
-    },
-    {
-      "id": "118e43942bf27985",
-      "company_id": "kaken_pharma",
-      "company": "Kaken Pharmaceutical / 科研制药",
-      "matched_company_ids": [
-        "kaken_pharma"
-      ],
-      "matched_companies": [
-        "Kaken Pharmaceutical / 科研制药"
-      ],
-      "source_id": "kaken_official_news_index",
-      "source_label": "Kaken Pharmaceutical official news - indexed RSS",
-      "source_ids": [
-        "kaken_official_news_index"
-      ],
-      "source_labels": [
-        "Kaken Pharmaceutical official news - indexed RSS"
-      ],
-      "related_urls": [
-        "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4dklJZ1hTOW1raEVOTHNFVm4xRGxiYVlaWDJXNTBjbTF6TjZsbGVLYzhoUnNIYk5hVFoxa1FKeGxZWmNsTkoweTIxTU4ydm9IeGNzZTFEUUc3ajlQZjdjd0wtYXNUeFE3UFpVNjduYk8ta1pxWW9PTw?oc=5"
-      ],
-      "source_trust": "owned",
-      "title": "プロサイリン錠20のお知らせ情報 新発売・供給・中止 - medical-pro.kaken.co.jp",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4dklJZ1hTOW1raEVOTHNFVm4xRGxiYVlaWDJXNTBjbTF6TjZsbGVLYzhoUnNIYk5hVFoxa1FKeGxZWmNsTkoweTIxTU4ydm9IeGNzZTFEUUc3ajlQZjdjd0wtYXNUeFE3UFpVNjduYk8ta1pxWW9PTw?oc=5",
-      "published": "2026-03-09",
-      "summary": "プロサイリン錠20のお知らせ情報 新発売・供給・中止 medical-pro.kaken.co.jp",
-      "ai_summary": "客户池公司 Kaken Pharmaceutical / 科研制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
-      "evidence": {
-        "kind": "primary",
-        "kind_label": "一手或官方证据",
-        "verification_status": "needs_original_check",
-        "verification_label": "需打开原文核验",
-        "summary_basis": "title_and_structured_rules",
-        "source_excerpt": "",
-        "primary_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4dklJZ1hTOW1raEVOTHNFVm4xRGxiYVlaWDJXNTBjbTF6TjZsbGVLYzhoUnNIYk5hVFoxa1FKeGxZWmNsTkoweTIxTU4ydm9IeGNzZTFEUUc3ajlQZjdjd0wtYXNUeFE3UFpVNjduYk8ta1pxWW9PTw?oc=5",
-        "related_urls": [
-          "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4dklJZ1hTOW1raEVOTHNFVm4xRGxiYVlaWDJXNTBjbTF6TjZsbGVLYzhoUnNIYk5hVFoxa1FKeGxZWmNsTkoweTIxTU4ydm9IeGNzZTFEUUc3ajlQZjdjd0wtYXNUeFE3UFpVNjduYk8ta1pxWW9PTw?oc=5"
-        ],
-        "source_ids": [
-          "kaken_official_news_index"
-        ],
-        "source_labels": [
-          "Kaken Pharmaceutical official news - indexed RSS"
-        ],
-        "source_types": [
-          "rss"
-        ],
-        "source_trust": "owned",
-        "published_at": "2026-03-09",
-        "checked_at": "2026-09-03T18:28:23"
-      },
-      "workflow_status": "new",
-      "score": 40,
-      "tier": "daily",
-      "category": "product",
-      "business_event_type": "clinical_regulatory",
-      "signal_type": "news",
-      "is_new": false,
-      "reasons": [
-        "公司池命中 +15: KAKEN",
-        "公司自有来源",
-        "业务动作命中: 発売",
-        "高价值分类加成 +10: product",
-        "超过时效窗口 178天，因业务动作匹配保留"
-      ],
-      "intelligence": {
-        "targets": [],
-        "modalities": [],
-        "product_needs": [],
-        "development_stages": [
-          "上市 / 商业化"
-        ],
-        "business_actions": [
-          "产品发布"
-        ],
-        "event_signals": []
-      },
-      "acro_relevance": {
-        "level": "high",
-        "score": 50,
-        "label": "高相关",
-        "explanation": "客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。",
-        "reasons": [
-          "客户池公司动态",
-          "研发阶段可识别",
-          "出现明确业务动作"
-        ]
-      },
-      "recommended_action": {
-        "type": "customer",
-        "label": "客户需求跟进",
-        "owner": "BD / 销售",
-        "priority": "high",
-        "text": "调取客户档案和既有沟通记录，核对产品需求与跟进时机。"
-      },
-      "selection_reason": "命中公司或中高相关业务信号",
-      "published_at": "2026-03-09",
-      "event_start_at": "",
-      "age_days": 178,
       "days_until_event": null
     }
   ]
