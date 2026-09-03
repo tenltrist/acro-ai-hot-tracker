@@ -487,6 +487,48 @@
       "noise_terms": ["financial results", "earnings", "stock", "share price", "job posting", "coupon", "protocol citation"]
     },
     {
+      "id": "cytiva",
+      "display_name": "Cytiva / 思拓凡",
+      "business_role": "competitor",
+      "competitive_relevance_scope": "secondary",
+      "role_label": "竞品 / 生物工艺与蛋白分析平台",
+      "role_reason": "Cytiva 在层析、过滤、细胞培养、蛋白分析和细胞与基因治疗制造环节覆盖 ACRO 面向的生物制药客户，属于平台型竞品与供应链对标对象。",
+      "monitoring_focus": "生物工艺、层析与过滤、培养基、SPR 蛋白分析、CGT 制造、产能和日本市场合作",
+      "aliases": ["Cytiva", "Cytiva Life Sciences", "Cytiva Europe GmbH", "思拓凡", "サイティバ"],
+      "markets": ["global", "japan", "china", "bioprocessing", "cell-and-gene-therapy"],
+      "strategic_topics": ["bioprocessing", "chromatography", "filtration", "cell culture", "culture media", "protein purification", "SPR", "Biacore", "cell therapy", "gene therapy", "GMP", "Japan", "日本"],
+      "business_actions": ["launch", "release", "collaboration", "partnership", "expansion", "manufacturing", "capacity", "agreement", "FDA", "webinar"],
+      "noise_terms": ["financial results", "Danaher stock", "share price", "job posting", "market size", "market report", "coupon", "used equipment"]
+    },
+    {
+      "id": "fujifilm_wako",
+      "display_name": "FUJIFILM Wako Pure Chemical / 富士胶片和光纯药",
+      "business_role": "competitor",
+      "competitive_relevance_scope": "secondary",
+      "role_label": "竞品 / 日本生命科学与质量检测试剂",
+      "role_reason": "FUJIFILM Wako 在抗体、细胞培养、iPSC、ELISA、质量控制和生物制药生产试剂方面与 ACRO 的研究及生产客户存在产品和采购场景重叠。",
+      "monitoring_focus": "抗体与蛋白试剂、细胞培养与 iPSC、ELISA、无菌和内毒素检测、新产品、Webinar 与日本渠道动作",
+      "aliases": ["FUJIFILM Wako Pure Chemical", "FUJIFILM Wako Pure Chemical Corporation", "Fujifilm Wako", "Wako Pure Chemical", "富士胶片和光纯药", "富士フイルム和光純薬", "和光純薬"],
+      "markets": ["japan", "global", "research-reagents", "cell-culture", "quality-control"],
+      "strategic_topics": ["antibody", "recombinant protein", "ELISA", "cell culture", "iPSC", "sterility test", "endotoxin", "mRNA", "GMP", "quality control", "ライフサイエンス", "抗体", "細胞"],
+      "business_actions": ["launch", "release", "collaboration", "partnership", "distribution", "agreement", "webinar", "seminar", "発売", "新製品", "提携", "開催"],
+      "noise_terms": ["campaign", "discount", "40%OFF", "SDS", "maintenance", "メンテナンス", "キャンペーン", "株価", "決算", "求人"]
+    },
+    {
+      "id": "nacalai_tesque",
+      "display_name": "Nacalai Tesque / ナカライテスク",
+      "business_role": "competitor",
+      "competitive_relevance_scope": "secondary",
+      "role_label": "竞品 / 日本研究试剂与渠道",
+      "role_reason": "Nacalai Tesque 同时经营自有研究试剂、细胞培养和分析产品并代理多家生命科学品牌，与 ACRO 在日本科研采购、活动传播和渠道触达方面形成竞争与对标关系。",
+      "monitoring_focus": "研究试剂、细胞培养、抗体与蛋白、分析耗材、自有新品、代理品牌整合、学会活动和日本渠道",
+      "aliases": ["Nacalai Tesque", "Nacalai Tesque, Inc.", "Nacalai USA", "ナカライテスク", "ナカライテスク株式会社"],
+      "markets": ["japan", "global", "research-reagents", "distribution", "cell-culture"],
+      "strategic_topics": ["research reagent", "antibody", "protein", "cell culture", "stem cell", "small molecule", "chromatography", "ELISA", "mRNA", "Japan", "日本", "抗体", "細胞培養", "試薬"],
+      "business_actions": ["launch", "release", "collaboration", "partnership", "distribution", "brand integration", "webinar", "exhibition", "新製品", "提携", "統合", "発表", "出展", "開催"],
+      "noise_terms": ["SDS", "campaign", "discount", "キャンペーン", "モニター募集", "求人", "採用", "株価", "中古"]
+    },
+    {
       "id": "proteintech",
       "display_name": "Proteintech",
       "business_role": "competitor",

@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-12",
+  "version": "2026-09-03",
   "slot_definitions": [
     {"id": "official_news", "number": "01", "label": "官方新闻与公告", "description": "公司新闻稿、合作、收购、管理层和战略公告。"},
     {"id": "product_updates", "number": "02", "label": "产品与解决方案更新", "description": "新产品、新平台、新服务、产品页和解决方案变化。"},
@@ -206,6 +206,51 @@
         "regional_media": {"status": "active", "mode": "shared", "source_ids": ["prtimes_expanded_company_pool_index", "nikkei_biotech_expanded_company_pool_index"], "note": "PR Times 和日经生物技术对 Takara Bio 产出较完整。"},
         "press_wires": {"status": "active", "mode": "shared", "source_ids": ["businesswire_expanded_company_pool_index", "prnewswire_expanded_company_pool_index"], "note": "Business Wire 与 PR Newswire 已有实际命中。"},
         "research_regulatory_org": {"status": "covered", "mode": "shared", "source_ids": ["clinicaltrials_company_pool"], "note": "ClinicalTrials.gov 公司池覆盖。"}
+      }
+    },
+    {
+      "company_id": "cytiva",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["cytiva_official_news_index"], "note": "Cytiva 官网新闻的公开索引；主站 403，不冒充直连 RSS。"},
+        "product_updates": {"status": "covered", "mode": "dedicated", "source_ids": ["cytiva_official_news_index", "cytiva_official_insights_index"], "note": "官方新闻与 Insights 联合覆盖新品和平台更新。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["cytiva_official_webinars_links"], "note": "Cytiva Webinar Hub 公开页面已直连，缺少日期的内容仅归档。"},
+        "technical_content": {"status": "active", "mode": "dedicated", "source_ids": ["cytiva_official_insights_index", "cytiva_official_webinars_links"], "note": "Insights 与 Webinar Hub 覆盖技术文章、应用内容和回放。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["cytiva_japan_official_index"], "note": "Cytiva 日本官网定向公开索引；无内容时显示安静来源。"},
+        "official_video": {"status": "active", "mode": "dedicated", "source_ids": ["cytiva_official_webinars_links"], "note": "官方 Webinar 与技术视频回放。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_cytiva"], "note": "Cytiva 公司名和生物工艺主题聚合补漏。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_cytiva_japan"], "note": "日文 Google News 补充日本合作与制造动态。"},
+        "press_wires": {"status": "pending", "mode": "none", "source_ids": [], "note": "尚未确认稳定且高产出的 Cytiva 新闻稿平台专属入口。"},
+        "research_regulatory_org": {"status": "pending", "mode": "none", "source_ids": [], "note": "科研与监管来源需要先定义适合 Cytiva 的实体角色，当前不伪装为已接入。"}
+      }
+    },
+    {
+      "company_id": "fujifilm_wako",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["fujifilm_wako_official_news_links", "fujifilm_wako_japan_product_links", "fujifilm_wako_japan_event_links"], "note": "FUJIFILM Wako 英文与日本新闻列表可直接读取。"},
+        "product_updates": {"status": "active", "mode": "dedicated", "source_ids": ["fujifilm_wako_japan_product_links"], "note": "日本官网新品列表，保留生命科学、培养和质量检测产品。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["fujifilm_wako_japan_event_links"], "note": "日本官网 Seminar、Webinar 与展示活动。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["fujifilm_wako_japan_product_links"], "note": "产品页提供应用与检测方向线索，独立技术资源库尚未接入。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["fujifilm_wako_japan_product_links", "fujifilm_wako_japan_event_links"], "note": "富士フイルム和光純薬日本官网产品和活动入口。"},
+        "official_video": {"status": "pending", "mode": "none", "source_ids": [], "note": "官方视频频道待确认，当前不复用未核验账号。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_fujifilm_wako"], "note": "FUJIFILM Wako 公司全称聚合补漏。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_fujifilm_wako"], "note": "日文 Google News 补充日本媒体和合作方发布。"},
+        "press_wires": {"status": "pending", "mode": "none", "source_ids": [], "note": "尚未确认独立、稳定的新闻稿平台入口。"},
+        "research_regulatory_org": {"status": "pending", "mode": "none", "source_ids": [], "note": "研究与监管数据库匹配规则待验证。"}
+      }
+    },
+    {
+      "company_id": "nacalai_tesque",
+      "slots": {
+        "official_news": {"status": "active", "mode": "dedicated", "source_ids": ["nacalai_official_news_links"], "note": "Nacalai Tesque 官方公告列表可直接读取。"},
+        "product_updates": {"status": "active", "mode": "dedicated", "source_ids": ["nacalai_official_product_links"], "note": "官方新品列表覆盖细胞培养、抗体、分析和研究试剂。"},
+        "events_webinars": {"status": "active", "mode": "dedicated", "source_ids": ["nacalai_official_events_links"], "note": "官方学会、展示、Seminar 和研究发表入口。"},
+        "technical_content": {"status": "covered", "mode": "dedicated", "source_ids": ["nacalai_official_news_links", "nacalai_official_product_links"], "note": "公司研究发表与产品页暂时覆盖部分技术内容。"},
+        "regional_official": {"status": "active", "mode": "dedicated", "source_ids": ["nacalai_official_news_links", "nacalai_official_product_links", "nacalai_official_events_links"], "note": "日本总部官网的新闻、产品与活动列表。"},
+        "official_video": {"status": "pending", "mode": "none", "source_ids": [], "note": "官网虽链接 YouTube 账号，但稳定视频 Feed 尚未验证。"},
+        "global_news": {"status": "active", "mode": "dedicated", "source_ids": ["google_news_nacalai_tesque"], "note": "Nacalai Tesque 公司全称聚合补漏，允许保持安静。"},
+        "regional_media": {"status": "covered", "mode": "dedicated", "source_ids": ["google_news_nacalai_tesque"], "note": "日文 Google News 补充外部媒体提及。"},
+        "press_wires": {"status": "pending", "mode": "none", "source_ids": [], "note": "Nacalai 以日本官网自产内容为主，新闻稿平台入口暂不配置。"},
+        "research_regulatory_org": {"status": "pending", "mode": "none", "source_ids": [], "note": "论文和组织信号需要机构实体归一后再接入。"}
       }
     },
     {
