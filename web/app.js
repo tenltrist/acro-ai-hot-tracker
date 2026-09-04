@@ -93,7 +93,7 @@ const state = {
   selectedAccountId: null,
   accountLimit: 40,
   dockOpenRoles: new Set(["self"]),
-  assistantQuestion: "今天市场部应该先做什么？",
+  assistantView: "action",
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
@@ -2126,9 +2126,10 @@ const els = {
   executivePoints: document.querySelector("#executivePoints"),
   assistantMode: document.querySelector("#assistantMode"),
   assistantDisclosure: document.querySelector("#assistantDisclosure"),
-  assistantQuestion: document.querySelector("#assistantQuestion"),
-  intelligenceAssistantForm: document.querySelector("#intelligenceAssistantForm"),
   assistantPrompts: document.querySelector(".assistant-prompts"),
+  assistantViewLabel: document.querySelector("#assistantViewLabel"),
+  assistantViewBasis: document.querySelector("#assistantViewBasis"),
+  assistantViewBoundary: document.querySelector("#assistantViewBoundary"),
   customerPriorityScope: document.querySelector("#customerPriorityScope"),
   customerPriorityMatrix: document.querySelector("#customerPriorityMatrix"),
   openJapanAccountsButton: document.querySelector("#openJapanAccountsButton"),
@@ -4243,17 +4244,35 @@ function topEventEntries(items, limit = 3) {
   return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, limit);
 }
 
-function classifyAssistantQuestion(question) {
-  if (/客户|账户|销售|跟进|crm|机会/i.test(question)) return "account";
-  if (/竞品|竞争|对标|回应/i.test(question)) return "competitor";
-  if (/先做什么|接下来|应该|怎么做|行动|建议/i.test(question)) return "action";
-  if (/日本|亚太|地区|市场|热点|趋势/i.test(question)) return "market";
-  if (/数据源|来源|健康|抓取|数据质量/i.test(question)) return "source";
-  return "action";
-}
+const assistantViewMeta = {
+  action: {
+    label: "今日优先",
+    basis: "优先指数、相关密度、近期信号与日报门槛",
+    boundary: "跨账户、竞品与市场主题的相对排序",
+  },
+  account: {
+    label: "重点账户",
+    basis: "账户信号量、ACRO 中高相关密度与事件紧迫度",
+    boundary: "公开信号不等于已确认需求或客户意向",
+  },
+  competitor: {
+    label: "竞品动作",
+    basis: "竞品入选信号、高相关事件与主导商业动作",
+    boundary: "用于确定对标顺序，不直接判断市场输赢",
+  },
+  market: {
+    label: "日本市场",
+    basis: "日本地区信号量、商业事件分类与代表事件",
+    boundary: "反映当前来源覆盖，不代表完整市场规模",
+  },
+  source: {
+    label: "来源运行",
+    basis: "来源请求状态、候选产出、日报入选与归档数量",
+    boundary: "单轮安静不等于来源失效，需要连续观察",
+  },
+};
 
-function buildAssistantResponse(question, items, customerPriorities) {
-  const intent = classifyAssistantQuestion(question);
+function buildAssistantResponse(intent, items, customerPriorities) {
   const competitorActivity = groupCompanyActivity(items, "competitor");
   const japanItems = items.filter((item) => inferItemRegion(item) === "japan");
   const accountEntries = customerPriorities.filter((entry) => entry.items.length).slice(0, 3);
@@ -4336,22 +4355,31 @@ function buildAssistantResponse(question, items, customerPriorities) {
 }
 
 function renderExecutiveBrief(items, companyRoles, customerCompanyCount, customerSignalCount = 0, customerPriorities = []) {
-  const response = buildAssistantResponse(state.assistantQuestion, items, customerPriorities);
+  const activeView = assistantViewMeta[state.assistantView] ? state.assistantView : "action";
+  const viewMeta = assistantViewMeta[activeView];
+  const response = buildAssistantResponse(activeView, items, customerPriorities);
   const summaryPipeline = state.payload.summary_pipeline || {};
   const hasModelSummaries = summaryPipeline.status === "complete" && Number(summaryPipeline.generated) > 0;
   const manualSummaryCount = Number(summaryPipeline.manual_imported) || 0;
   els.executiveHeadline.textContent = response.headline;
   els.assistantMode.textContent = manualSummaryCount
-    ? `AI 情报精读 ${manualSummaryCount} 条 + 规则决策`
+    ? `已核验精读 ${manualSummaryCount} 条 · 规则决策`
     : hasModelSummaries
-    ? `AI 摘要 ${summaryPipeline.generated} 条 + 规则决策`
-    : "证据驱动规则分析";
-  els.assistantQuestion.value = state.assistantQuestion;
+    ? `模型摘要 ${summaryPipeline.generated} 条 · 规则决策`
+    : "规则计算 · 可追溯";
+  els.assistantViewLabel.textContent = viewMeta.label;
+  els.assistantViewBasis.textContent = viewMeta.basis;
+  els.assistantViewBoundary.textContent = viewMeta.boundary;
+  els.assistantPrompts.querySelectorAll("[data-assistant-view]").forEach((button) => {
+    const isActive = button.dataset.assistantView === activeView;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-selected", String(isActive));
+  });
   els.assistantDisclosure.textContent = manualSummaryCount
-    ? `当前 ${manualSummaryCount} 条重点内容已完成 AI 精读与原文核验；其余使用可解释规则，自动流水线不调用模型 API。`
+    ? `${manualSummaryCount} 条重点内容已完成人工 AI 精读与原文核验；当前行动建议由固定规则计算，不调用模型 API。`
     : hasModelSummaries
-    ? `已在 ${items.length} 条当前信号上结合模型摘要与结构化规则；点击建议可查看对应证据。`
-    : `已分析当前 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前为纯规则结果，自动流水线未调用大模型。`;
+    ? `当前信号包含 ${summaryPipeline.generated} 条模型摘要；行动建议仍由结构化规则计算并链接原文证据。`
+    : `已计算 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前不调用模型 API。`;
   els.executivePoints.innerHTML = response.actions.length
     ? response.actions.map((action, index) => `
         <li>
@@ -6392,17 +6420,10 @@ function openOverviewEvidence(company = "", category = "") {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-els.intelligenceAssistantForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const question = els.assistantQuestion.value.trim();
-  state.assistantQuestion = question || "今天市场部应该先做什么？";
-  renderOverviewScope();
-});
-
 els.assistantPrompts.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-assistant-prompt]");
+  const button = event.target.closest("[data-assistant-view]");
   if (!button) return;
-  state.assistantQuestion = button.dataset.assistantPrompt;
+  state.assistantView = button.dataset.assistantView;
   renderOverviewScope();
 });
 
@@ -6410,7 +6431,7 @@ els.executivePoints.addEventListener("click", (event) => {
   const button = event.target.closest("[data-assistant-company][data-assistant-category]");
   if (!button) return;
   if (!button.dataset.assistantCompany && !button.dataset.assistantCategory) {
-    if (classifyAssistantQuestion(state.assistantQuestion) === "source") {
+    if (state.assistantView === "source") {
       state.page = "source-health";
       renderPage();
       window.scrollTo({ top: 0, behavior: "smooth" });

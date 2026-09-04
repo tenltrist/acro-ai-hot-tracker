@@ -2054,57 +2054,83 @@ select {
 }
 
 .assistant-prompts button {
-  min-height: 32px;
-  padding: 6px 8px;
+  display: grid;
+  gap: 2px;
+  align-content: center;
+  min-height: 44px;
+  padding: 7px 9px;
   border: 1px solid var(--line);
   border-radius: 5px;
   background: #f8fafb;
   color: #4d626c;
-  font-size: 10px;
   font-weight: 750;
+  text-align: left;
   cursor: pointer;
 }
 
 .assistant-prompts button:hover,
-.assistant-prompts button:focus-visible {
+.assistant-prompts button:focus-visible,
+.assistant-prompts button.active {
   border-color: #8fc7ca;
   background: #eef8f7;
   color: #175f66;
 }
 
-.assistant-form {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 6px;
+.assistant-prompts button span {
+  font-size: 10px;
+  font-weight: 820;
 }
 
-.assistant-form input {
-  width: 100%;
-  min-width: 0;
-  height: 38px;
-  padding: 0 10px;
+.assistant-prompts button small {
+  color: #7b8b93;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.assistant-prompts button.active small {
+  color: #4f777b;
+}
+
+.assistant-prompts button[data-assistant-view="source"] {
+  grid-column: 1 / -1;
+}
+
+.assistant-view-basis {
+  margin: 0;
+  overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 5px;
-  color: var(--text);
-  font: inherit;
-  font-size: 11px;
+  border-radius: 6px;
+  background: #fbfcfc;
 }
 
-.assistant-form button {
-  height: 38px;
-  padding: 0 14px;
-  border: 0;
-  border-radius: 5px;
-  background: #176f77;
-  color: #ffffff;
-  font-size: 11px;
+.assistant-view-basis > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 9px;
+  padding: 7px 9px;
+  border-bottom: 1px solid #e6ecef;
+}
+
+.assistant-view-basis > div:last-child {
+  border-bottom: 0;
+}
+
+.assistant-view-basis dt,
+.assistant-view-basis dd {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.assistant-view-basis dt {
+  color: #7a8991;
+  font-size: 8px;
   font-weight: 800;
-  cursor: pointer;
 }
 
-.assistant-form button:hover,
-.assistant-form button:focus-visible {
-  background: #105d64;
+.assistant-view-basis dd {
+  color: #40545e;
+  font-size: 9px;
+  font-weight: 650;
 }
 
 .assistant-disclosure {

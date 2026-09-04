@@ -2061,57 +2061,83 @@ select {
 }
 
 .assistant-prompts button {
-  min-height: 32px;
-  padding: 6px 8px;
+  display: grid;
+  gap: 2px;
+  align-content: center;
+  min-height: 44px;
+  padding: 7px 9px;
   border: 1px solid var(--line);
   border-radius: 5px;
   background: #f8fafb;
   color: #4d626c;
-  font-size: 10px;
   font-weight: 750;
+  text-align: left;
   cursor: pointer;
 }
 
 .assistant-prompts button:hover,
-.assistant-prompts button:focus-visible {
+.assistant-prompts button:focus-visible,
+.assistant-prompts button.active {
   border-color: #8fc7ca;
   background: #eef8f7;
   color: #175f66;
 }
 
-.assistant-form {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 6px;
+.assistant-prompts button span {
+  font-size: 10px;
+  font-weight: 820;
 }
 
-.assistant-form input {
-  width: 100%;
-  min-width: 0;
-  height: 38px;
-  padding: 0 10px;
+.assistant-prompts button small {
+  color: #7b8b93;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.assistant-prompts button.active small {
+  color: #4f777b;
+}
+
+.assistant-prompts button[data-assistant-view="source"] {
+  grid-column: 1 / -1;
+}
+
+.assistant-view-basis {
+  margin: 0;
+  overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 5px;
-  color: var(--text);
-  font: inherit;
-  font-size: 11px;
+  border-radius: 6px;
+  background: #fbfcfc;
 }
 
-.assistant-form button {
-  height: 38px;
-  padding: 0 14px;
-  border: 0;
-  border-radius: 5px;
-  background: #176f77;
-  color: #ffffff;
-  font-size: 11px;
+.assistant-view-basis > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 9px;
+  padding: 7px 9px;
+  border-bottom: 1px solid #e6ecef;
+}
+
+.assistant-view-basis > div:last-child {
+  border-bottom: 0;
+}
+
+.assistant-view-basis dt,
+.assistant-view-basis dd {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.assistant-view-basis dt {
+  color: #7a8991;
+  font-size: 8px;
   font-weight: 800;
-  cursor: pointer;
 }
 
-.assistant-form button:hover,
-.assistant-form button:focus-visible {
-  background: #105d64;
+.assistant-view-basis dd {
+  color: #40545e;
+  font-size: 9px;
+  font-weight: 650;
 }
 
 .assistant-disclosure {
@@ -9424,15 +9450,15 @@ button.strip-score:focus-visible strong {
         <div id="overviewMetricList" class="signal-list overview-metric-signal-list" aria-live="polite"></div>
       </section>
 
-      <section class="decision-band marketing-assistant page-panel" data-page="overview" aria-label="AI intelligence assistant">
+      <section class="decision-band marketing-assistant page-panel" data-page="overview" aria-label="市场情报决策快报">
         <div class="assistant-brief">
           <div class="assistant-title-row">
             <div>
-              <p class="eyebrow">AI 情报助手</p>
+              <p class="eyebrow">市场情报决策台</p>
               <h2 id="executiveHeadline">正在整理今天最值得做的事</h2>
             </div>
             <div class="assistant-title-actions">
-              <span class="assistant-mode" id="assistantMode">证据驱动分析</span>
+              <span class="assistant-mode" id="assistantMode">规则计算 · 可追溯</span>
               <button class="assistant-rules-link" type="button" data-rule-page-target="methodology">查看判断口径</button>
             </div>
           </div>
@@ -9440,21 +9466,22 @@ button.strip-score:focus-visible strong {
         </div>
         <aside class="assistant-query-panel">
           <div class="assistant-query-head">
-            <strong>问当前数据</strong>
-            <small>答案只引用本轮公开情报</small>
+            <strong>切换决策视角</strong>
+            <small>本轮公开数据</small>
           </div>
-          <div class="assistant-prompts" aria-label="常用问题">
-            <button type="button" data-assistant-prompt="今天市场部应该先做什么？">今日先做什么</button>
-            <button type="button" data-assistant-prompt="哪些客户账户最值得销售跟进？">账户跟进</button>
-            <button type="button" data-assistant-prompt="竞品最近有什么值得回应的动作？">竞品应对</button>
-            <button type="button" data-assistant-prompt="日本市场最近有哪些热点？">日本热点</button>
+          <div class="assistant-prompts" role="tablist" aria-label="决策视角">
+            <button class="active" type="button" role="tab" aria-selected="true" data-assistant-view="action"><span>今日优先</span><small>综合行动</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="account"><span>重点账户</span><small>销售线索</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="competitor"><span>竞品动作</span><small>产品对标</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="market"><span>日本市场</span><small>区域趋势</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="source"><span>来源运行</span><small>链路质量</small></button>
           </div>
-          <form id="intelligenceAssistantForm" class="assistant-form">
-            <label class="sr-only" for="assistantQuestion">向情报助手提问</label>
-            <input id="assistantQuestion" type="text" autocomplete="off" placeholder="例如：接下来最该跟进哪家公司？">
-            <button type="submit">分析</button>
-          </form>
-          <p class="assistant-disclosure" id="assistantDisclosure">当前为规则分析 MVP；接入模型后可在同一入口进行开放问答。</p>
+          <dl class="assistant-view-basis">
+            <div><dt>当前视角</dt><dd id="assistantViewLabel">今日优先</dd></div>
+            <div><dt>判断依据</dt><dd id="assistantViewBasis">优先指数、相关密度、近期信号与日报门槛</dd></div>
+            <div><dt>结果边界</dt><dd id="assistantViewBoundary">公开信号的相对优先级，不等于已确认客户意向</dd></div>
+          </dl>
+          <p class="assistant-disclosure" id="assistantDisclosure">固定规则计算；重点摘要由人工核验后回填，不调用模型 API。</p>
           <div class="brief-status-grid assistant-status-grid">
             <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
             <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
@@ -248821,7 +248848,7 @@ const state = {
   selectedAccountId: null,
   accountLimit: 40,
   dockOpenRoles: new Set(["self"]),
-  assistantQuestion: "今天市场部应该先做什么？",
+  assistantView: "action",
   translationLanguage: loadTranslationLanguage(),
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
@@ -250854,9 +250881,10 @@ const els = {
   executivePoints: document.querySelector("#executivePoints"),
   assistantMode: document.querySelector("#assistantMode"),
   assistantDisclosure: document.querySelector("#assistantDisclosure"),
-  assistantQuestion: document.querySelector("#assistantQuestion"),
-  intelligenceAssistantForm: document.querySelector("#intelligenceAssistantForm"),
   assistantPrompts: document.querySelector(".assistant-prompts"),
+  assistantViewLabel: document.querySelector("#assistantViewLabel"),
+  assistantViewBasis: document.querySelector("#assistantViewBasis"),
+  assistantViewBoundary: document.querySelector("#assistantViewBoundary"),
   customerPriorityScope: document.querySelector("#customerPriorityScope"),
   customerPriorityMatrix: document.querySelector("#customerPriorityMatrix"),
   openJapanAccountsButton: document.querySelector("#openJapanAccountsButton"),
@@ -252971,17 +252999,35 @@ function topEventEntries(items, limit = 3) {
   return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, limit);
 }
 
-function classifyAssistantQuestion(question) {
-  if (/客户|账户|销售|跟进|crm|机会/i.test(question)) return "account";
-  if (/竞品|竞争|对标|回应/i.test(question)) return "competitor";
-  if (/先做什么|接下来|应该|怎么做|行动|建议/i.test(question)) return "action";
-  if (/日本|亚太|地区|市场|热点|趋势/i.test(question)) return "market";
-  if (/数据源|来源|健康|抓取|数据质量/i.test(question)) return "source";
-  return "action";
-}
+const assistantViewMeta = {
+  action: {
+    label: "今日优先",
+    basis: "优先指数、相关密度、近期信号与日报门槛",
+    boundary: "跨账户、竞品与市场主题的相对排序",
+  },
+  account: {
+    label: "重点账户",
+    basis: "账户信号量、ACRO 中高相关密度与事件紧迫度",
+    boundary: "公开信号不等于已确认需求或客户意向",
+  },
+  competitor: {
+    label: "竞品动作",
+    basis: "竞品入选信号、高相关事件与主导商业动作",
+    boundary: "用于确定对标顺序，不直接判断市场输赢",
+  },
+  market: {
+    label: "日本市场",
+    basis: "日本地区信号量、商业事件分类与代表事件",
+    boundary: "反映当前来源覆盖，不代表完整市场规模",
+  },
+  source: {
+    label: "来源运行",
+    basis: "来源请求状态、候选产出、日报入选与归档数量",
+    boundary: "单轮安静不等于来源失效，需要连续观察",
+  },
+};
 
-function buildAssistantResponse(question, items, customerPriorities) {
-  const intent = classifyAssistantQuestion(question);
+function buildAssistantResponse(intent, items, customerPriorities) {
   const competitorActivity = groupCompanyActivity(items, "competitor");
   const japanItems = items.filter((item) => inferItemRegion(item) === "japan");
   const accountEntries = customerPriorities.filter((entry) => entry.items.length).slice(0, 3);
@@ -253064,22 +253110,31 @@ function buildAssistantResponse(question, items, customerPriorities) {
 }
 
 function renderExecutiveBrief(items, companyRoles, customerCompanyCount, customerSignalCount = 0, customerPriorities = []) {
-  const response = buildAssistantResponse(state.assistantQuestion, items, customerPriorities);
+  const activeView = assistantViewMeta[state.assistantView] ? state.assistantView : "action";
+  const viewMeta = assistantViewMeta[activeView];
+  const response = buildAssistantResponse(activeView, items, customerPriorities);
   const summaryPipeline = state.payload.summary_pipeline || {};
   const hasModelSummaries = summaryPipeline.status === "complete" && Number(summaryPipeline.generated) > 0;
   const manualSummaryCount = Number(summaryPipeline.manual_imported) || 0;
   els.executiveHeadline.textContent = response.headline;
   els.assistantMode.textContent = manualSummaryCount
-    ? `AI 情报精读 ${manualSummaryCount} 条 + 规则决策`
+    ? `已核验精读 ${manualSummaryCount} 条 · 规则决策`
     : hasModelSummaries
-    ? `AI 摘要 ${summaryPipeline.generated} 条 + 规则决策`
-    : "证据驱动规则分析";
-  els.assistantQuestion.value = state.assistantQuestion;
+    ? `模型摘要 ${summaryPipeline.generated} 条 · 规则决策`
+    : "规则计算 · 可追溯";
+  els.assistantViewLabel.textContent = viewMeta.label;
+  els.assistantViewBasis.textContent = viewMeta.basis;
+  els.assistantViewBoundary.textContent = viewMeta.boundary;
+  els.assistantPrompts.querySelectorAll("[data-assistant-view]").forEach((button) => {
+    const isActive = button.dataset.assistantView === activeView;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-selected", String(isActive));
+  });
   els.assistantDisclosure.textContent = manualSummaryCount
-    ? `当前 ${manualSummaryCount} 条重点内容已完成 AI 精读与原文核验；其余使用可解释规则，自动流水线不调用模型 API。`
+    ? `${manualSummaryCount} 条重点内容已完成人工 AI 精读与原文核验；当前行动建议由固定规则计算，不调用模型 API。`
     : hasModelSummaries
-    ? `已在 ${items.length} 条当前信号上结合模型摘要与结构化规则；点击建议可查看对应证据。`
-    : `已分析当前 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前为纯规则结果，自动流水线未调用大模型。`;
+    ? `当前信号包含 ${summaryPipeline.generated} 条模型摘要；行动建议仍由结构化规则计算并链接原文证据。`
+    : `已计算 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前不调用模型 API。`;
   els.executivePoints.innerHTML = response.actions.length
     ? response.actions.map((action, index) => `
         <li>
@@ -255120,17 +255175,10 @@ function openOverviewEvidence(company = "", category = "") {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-els.intelligenceAssistantForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const question = els.assistantQuestion.value.trim();
-  state.assistantQuestion = question || "今天市场部应该先做什么？";
-  renderOverviewScope();
-});
-
 els.assistantPrompts.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-assistant-prompt]");
+  const button = event.target.closest("[data-assistant-view]");
   if (!button) return;
-  state.assistantQuestion = button.dataset.assistantPrompt;
+  state.assistantView = button.dataset.assistantView;
   renderOverviewScope();
 });
 
@@ -255138,7 +255186,7 @@ els.executivePoints.addEventListener("click", (event) => {
   const button = event.target.closest("[data-assistant-company][data-assistant-category]");
   if (!button) return;
   if (!button.dataset.assistantCompany && !button.dataset.assistantCategory) {
-    if (classifyAssistantQuestion(state.assistantQuestion) === "source") {
+    if (state.assistantView === "source") {
       state.page = "source-health";
       renderPage();
       window.scrollTo({ top: 0, behavior: "smooth" });

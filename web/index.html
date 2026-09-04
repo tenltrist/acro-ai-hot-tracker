@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260901layout1" />
+    <link rel="stylesheet" href="./styles.css?v=20260904decision1" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -226,15 +226,15 @@
         <div id="overviewMetricList" class="signal-list overview-metric-signal-list" aria-live="polite"></div>
       </section>
 
-      <section class="decision-band marketing-assistant page-panel" data-page="overview" aria-label="AI intelligence assistant">
+      <section class="decision-band marketing-assistant page-panel" data-page="overview" aria-label="市场情报决策快报">
         <div class="assistant-brief">
           <div class="assistant-title-row">
             <div>
-              <p class="eyebrow">AI 情报助手</p>
+              <p class="eyebrow">市场情报决策台</p>
               <h2 id="executiveHeadline">正在整理今天最值得做的事</h2>
             </div>
             <div class="assistant-title-actions">
-              <span class="assistant-mode" id="assistantMode">证据驱动分析</span>
+              <span class="assistant-mode" id="assistantMode">规则计算 · 可追溯</span>
               <button class="assistant-rules-link" type="button" data-rule-page-target="methodology">查看判断口径</button>
             </div>
           </div>
@@ -242,21 +242,22 @@
         </div>
         <aside class="assistant-query-panel">
           <div class="assistant-query-head">
-            <strong>问当前数据</strong>
-            <small>答案只引用本轮公开情报</small>
+            <strong>切换决策视角</strong>
+            <small>本轮公开数据</small>
           </div>
-          <div class="assistant-prompts" aria-label="常用问题">
-            <button type="button" data-assistant-prompt="今天市场部应该先做什么？">今日先做什么</button>
-            <button type="button" data-assistant-prompt="哪些客户账户最值得销售跟进？">账户跟进</button>
-            <button type="button" data-assistant-prompt="竞品最近有什么值得回应的动作？">竞品应对</button>
-            <button type="button" data-assistant-prompt="日本市场最近有哪些热点？">日本热点</button>
+          <div class="assistant-prompts" role="tablist" aria-label="决策视角">
+            <button class="active" type="button" role="tab" aria-selected="true" data-assistant-view="action"><span>今日优先</span><small>综合行动</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="account"><span>重点账户</span><small>销售线索</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="competitor"><span>竞品动作</span><small>产品对标</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="market"><span>日本市场</span><small>区域趋势</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="source"><span>来源运行</span><small>链路质量</small></button>
           </div>
-          <form id="intelligenceAssistantForm" class="assistant-form">
-            <label class="sr-only" for="assistantQuestion">向情报助手提问</label>
-            <input id="assistantQuestion" type="text" autocomplete="off" placeholder="例如：接下来最该跟进哪家公司？">
-            <button type="submit">分析</button>
-          </form>
-          <p class="assistant-disclosure" id="assistantDisclosure">当前为规则分析 MVP；接入模型后可在同一入口进行开放问答。</p>
+          <dl class="assistant-view-basis">
+            <div><dt>当前视角</dt><dd id="assistantViewLabel">今日优先</dd></div>
+            <div><dt>判断依据</dt><dd id="assistantViewBasis">优先指数、相关密度、近期信号与日报门槛</dd></div>
+            <div><dt>结果边界</dt><dd id="assistantViewBoundary">公开信号的相对优先级，不等于已确认客户意向</dd></div>
+          </dl>
+          <p class="assistant-disclosure" id="assistantDisclosure">固定规则计算；重点摘要由人工核验后回填，不调用模型 API。</p>
           <div class="brief-status-grid assistant-status-grid">
             <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
             <div><span>数据源健康</span><strong id="healthStatus">--</strong></div>
@@ -1418,7 +1419,7 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260903competitors1"></script>
-    <script src="./app.js?v=20260903competitors1"></script>
+    <script src="./embedded-data.js?v=20260904decision1"></script>
+    <script src="./app.js?v=20260904decision1"></script>
   </body>
 </html>
