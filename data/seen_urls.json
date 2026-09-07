@@ -98625,5 +98625,407 @@
     "tier": "archive",
     "score": 25,
     "signal_type": "news"
+  },
+  "6858bf4b793b0b96": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Bridging ELISA: Advancing Bispecific Antibody Evaluation - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVG0zYnhfMXFtMjZuVjlyNXJyU0RhdGloSnJtQ3JTVWtsU09TM0t5a2JTd003VEVIMW1MZ29UYUJaTUVuT29HQU9RclFfcUwtZ1ZrNXVRSzZoZjY2MUJEUlZwNm1MbGxZMkl2UTBjUWp1VkVpRUVIc1RtZUtIaEJ0SVdSX3Q5SnhnN1lkdGt3?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "bc82f3fde013b7d3": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Bispecific Antibody Landscape: Clinical Advances, Challenges & Future Trends - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNeFFIYnY0R3Z0bVlwMFlITWQ4alBZc19uZGM0Ti04N1JSZVdLVHpjSGc1eEl6d0lNVF9sZzdFUDBydHVCd0JVMVNPYUswd0F0cDZWOVpwWVZneld2QlpEd2dHSWsxSHRXWFZzM1VQM3ZfMjE2VUZyeXJGdm1UOUlFYlM4RFlGdTQ?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "1aaa4a27fdc8e685": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "From Question to Action: Rethinking Pharma Engagement in the AI Era",
+    "url": "https://www.fiercepharma.com/sponsored/question-action-rethinking-pharma-engagement-ai-era",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "d43f1acce6e37b7c": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "初のゾレアBS、5月収載へ - 日刊薬業",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBoaXZXVjVCcFJxT2hYRkVtYWl1dWtEaDlxb3FtdkphLWVETmxXN3paUlBHSlE3VDFLUHpJdDdBTjB5bl9kTHhHLQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "907e2fd6c8a2b478": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "レケンビ皮下注、初期療法でFDA承認 エーザイ/米バイオジェン | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUX1BrdVJxaWtySEI1dGtSdWliVXVLTkJ2blFpQWdIYmdzU2Z2b2YyYnZxb2FsR0o0STZEQms3V0VzWEEtaEltQQ?oc=5",
+    "company_id": "eisai",
+    "matched_company_ids": [
+      "eisai"
+    ],
+    "tier": "daily",
+    "score": 70,
+    "signal_type": "news"
+  },
+  "051149a18da31df1": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher CEO: ‘Society broadly embraces the breakthroughs’ - Financial Times",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWk1Zc2hTS3poR0FEenVEOHZmM1RLM1F5Y0ZCSWJQZGdwTFhwRmh1TjRfUzV1TDNDaXBaTlRvbWQwMHJidlFnN3JPazhtQ3ZTT2tnZDVncVR3Z1NPeXNWQnZ5eTZhTkE1MnBlMmFhX0pDTzZfeHJaMWY1ZjVZN0liTFRwV1U?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "fd85d4b848aa6fd2": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "New Thermo Fisher Scientific drug facility for vaccine manufacture opens in Singapore - Singapore Economic Development Board (EDB)",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQlQyeEZ6SEVSVHlvT3hTenRiQ0pXOTRUWUVQQWw4cXhNb0d0amE3YUNrOFJfMW96WDkzMHhpbEFFNUxROVp1UzJOX3NmWG5TVmFRUDFyb21qMzRYc3dvTXU5T0NGbGlBNTRMTVhKYk9UTmk5M1o5Q0ppNFFLNjVEemx4MjU0QTdBcU5qa3lySERWVDhraGN0U0ItRlRJdFoyZzhqYm1XT1JzQ3g5ZHR6TmMxUFFVYVprUzdyRmRNSXl1dW1G?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "3dca7e5457594342": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher's Response to Antibody Image Controversy Sparks Outcry From Researchers - GenomeWeb",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMFZISEluSWhKQlgzM0Y3ZVZsWkRfWERIckFydzNORW9rWFdWal9tdGVybS1HbWpJaVYxUndpT213UzRPOXlvTzlvNVJxaWt4RUxjOWUtcnZpZ0s2d1phVUtSdzRVMDFjV0EyX2Q1YlB3WUl2VUU2VUFMLWZWUXozX3R5ejNyaW1XMkFwcFNtSVQ3OVlPYXVkZmRLREo4ZDN1cXFZOXBQZEhuZjJENG9lQXlWaWxtUDVf?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "006972640612c06c": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef49b1e4fcf92c2ba6e1a64ee9c&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "83cfb18af491e0d9": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef49b1e4fcf92c2ba6e1a64ee9c&url=https%3A%2F%2Fwww.kyodo.co.jp%2Fpr%2F2026-05-11_4010148%2F&c=7291193430946626862&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "40fbe206445aafd7": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Medtronic vs. Thermo Fisher: Which Healthcare Turnaround Offers More Upside?",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Ffinance.yahoo.com%2Fhealthcare%2Farticles%2Fmedtronic-vs-thermo-fisher-healthcare-225340177.html&c=13557648795566768811&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "4d5f9e0f8b69ae3d": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher Scientific",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Fwww.forbes.com%2Fcompanies%2Fthermo-fisher-scientific%2F&c=8903709626380927174&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "d4c890a7177ed7e9": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher unveils EMPAD G2 detector to advance 4D STEM materials research",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Fwww.indianpharmapost.com%2Fnews%2Fthermo-fisher-unveils-empad-g2-detector-to-advance-4d-stem-materials-research-21648&c=8156663500631608991&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "f073fc8feb304ccb": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher ships EMPAD G2: Detector that broke atomic imaging records",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Ftechnology%2Fgeneral%2Fthermo-fisher-ships-empad-g2-detector-that-broke-atomic-imaging-records%2Far-AA2bqecU&c=10694690623972591212&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "65cae02c2436f5fb": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher Scientific Introduces the Thermo Scientific™ EMPAD™ G2 Electron Detector ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Ffinance.yahoo.com%2Ftechnology%2Farticles%2Fthermo-fisher-scientific-introduces-thermo-123000763.html&c=737351758283880644&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "08ca75e1837a1689": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thermo Fisher (TMO) Stock Looks Fully Valued Following Its Microbiology Sale",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Fuk.finance.yahoo.com%2Fnews%2Fthermo-fisher-tmo-stock-looks-120813286.html&c=17635423450994540859&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "b7043803c597aaac": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "UQ, Thermo Fisher Forge Minerals, Biomedical Pact",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a9e4ef5190342d58b8609413b6857f7&url=https%3A%2F%2Fwww.miragenews.com%2Fuq-thermo-fisher-forge-minerals-biomedical-pact-1733129%2F&c=14594015252630562096&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 44,
+    "signal_type": "news"
+  },
+  "a5a911ebdd0a69b5": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "大阪医療大学が夏のオープンキャンパスを開催 福富康夫氏と髙森草平氏が特別講義で語る - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9pai1SR2tKRjFacXBRQjRHR3FCOUU5SkZNY3dLandoRml4aWJ6dzlCTHBrUGwzWHVfQ3BsZ2EzMFdYUUJUdlpZb0Q3Q1I5NnB0Q0JXV2VfLU03YlhCeGpraHJmVzZXdXQ0NGc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "e455a0e2b0b9683f": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Angel Bridge、投資先企業のバリューアップに特化した専門支援チーム「AB Growth Partners」を設立 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02a1dXMElaRDJjR3U1UzI5c3pLNGRsWVhMd3ptbGhUa0V5SE5wcVFMQTJwYkdUeGRrOWRxZkl2S004eGw0Q0xPTVRpaEZkZ0VWSTNta2R1akNETUhZdnV5bnU0aDdBQnRjd1E?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "2f598406efa4f1a3": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "株式会社ANRis、総額約2.2億円の資金調達を実施 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE44SUp6WWVjdU0tYmtaaGFFWnhVVGlXa0ZrU0dOMldZSUk3SEpQMmxnY3Y5UkhGWFpPdzdBcTdvbVJQdG9TOWZCcHpadXJNay1TczNJZ0ZjbjRlVG10THdSRWh5MEpuaEZwVHc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "e87d53640e393c9c": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "コンテンツIPの総合プロデュースを担う「スモール・プラネット」へ出資～戦略的業務提携から資本提携へ、両社のシナジー創出をさらに加速～ - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qNEtham5xSVc4SWJWUGlXZ0FmLTVQTkxSYmhseGhIelpWanN0eDZhQkg4bHFiYXBTeE1RNVJOUjhhQVhpTktLb05hdEZ2RlcwOTNyMmduYkU3MTBTNkFIUHpqQVk0aVNnQUE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "ec13bf4b4e637bdd": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "投資家1,800名超が参加──注目企業4社が登壇「第13回 個人投資家サミット」開催レポート - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXSGlKcXhOM1ZxcUlnLW55ZTl6c0pLdm9pVGx2UzRSLTU1RmJjNDJPWTBTNkRBeHR3QXhTMG5IX2FYQ0dHMVctX2tibnZLdUg2OVB4ckVHVk9SWEF2YVRid3ZiNGRaSEJ4N2c?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "e5677b2a3b2cdf9a": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "10月22日(木)「光電融合CPO・光インターコネクトと2030年を見据えたNVIDIA・TSMCのロードマップ解析 ～データンセンターを支える光デバイス・高速伝送・実装技術～」Zoomセミナーを開講 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aQVlqUllhWUhkNi11TGRkNTVfLTV3Ym5XdmtoSUhUVHYzX3RuczRESm9YNDBSUDZCVElVdGNBWGJPMW5sQmVmLWVKTXl2VHJiMGFZVm9BVlhLU0hIUmR2N0pKQXdybFRJSmc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "fd96d4ba02687bbb": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "10月19日(月)「トヨタの樹脂部品開発に学ぶCAE解析とデジタルエンジニアリング～GEMBAでの実測・検証からAI・デジタルツインへの展開～」Zoomセミナーを開講予定 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RZXJfbmMwdTY1YXppcU00ZlJCdFZ0WEhkUGtMT2xEd3VyTm9fRTB4UE12SktabFlHM0tyQkQwb2h1ZVpvMjFuZ18xRk8zQm1fYXFJNlR4OV9NYVlGT09PWnlROWpOTmVmd2c?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "2297f2586ad02cc3": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "大阪医科薬科大学 研修会 2026/10",
+    "url": "https://www.yakuji.co.jp/entry138840.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "282a7a90914fb1da": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "石川県薬剤師会 研修会 2026/09",
+    "url": "https://www.yakuji.co.jp/entry138944.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "140378e78fe2045f": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "我国首款AI辅助创新药获批上市，港股创新药ETF博时(520690)备受市场关注 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1aR0FUNi15VkRmcGlTRzF4SUlldHBMWlU1d1JnV2hrT3oyZndsRFVsdkR2Qnp2RUhBUmZjeXJKUnpnMVJ2WVJRU3k3N2NDTlV1amJGOWNkYWE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "49365fcdb36bcbc5": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "国内首款！创新药大消息！科创创新药ETF汇添富(589120)近10日吸金1亿元！AIDD从理论迈向现实，创新药拐点还远吗？ - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5NaFQxenNwQlRmMlFaUVJxQ2R0TWdRT05GOGMtTWlmUmotWTItLXRHNHVfdTNaRTl0cWRNaE40eEhrWTNJblVkRFJmRC1LWks3bElLQ1YxNXQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "debe545b6623356e": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "一个还没进临床的分子，凭什么卖出12.95亿美元 - 36 Kr",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5BbjNwRTJnUkpmVmNIeTk2a0huOEZMVEpOV0xTVnRHeEhKXzFBUktMaW9TV3JMNFFLYktmdnp0MmdCOVprVTBPazVuQ3NfUQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "890ddc0d5ffc3a55": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "8点1氪丨耐克将被移出标普100指数；iPhone折叠版定价或14999元起；财政部将发行特别国债，支持8家中央金融企业补充资本 - 36 Kr",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GQTFMTWZvbEc0NHhjRHNCYmRMYmgxMXR1aFRsdExBdG1pVXZJWThfSmp0TDhsc3FvbWdBOEpqX2UxODlhUDF3akh6X1ZhZw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "0dc5913dcd7c512d": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "臨床研究中核病院×MEDISO連携企画 ～臨床研究中核病院ベンチャー支援窓口の有効活用法～ - MEDISO ( Medical Innovation Support Office )",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzRzhWekxSMVJmRWxBS3A1VC0zQmxuSjVzVWxfemRVNEtZMm95NXpVMVVzQWVWeS1xYTNscjJqc2RsNnNVaHh3SDl5YW5uNGlyOTVvVlhtemk2VkhR?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "event"
+  },
+  "bd33824772413f7f": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Promega to Showcase Oncology Research Tools and Companion Diagnostics at AACR Annual Meeting 2026 - BioSpace",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTFd0c1hOc1dVenBHVzY5eDdlZGhUQmVBSFpNSkxPR3hrazFFdkJla1B4YWE2WFZCWkhmVGtUQ0pKcFVkUHdmek15QTc4U19PREswWkhxV1VYV0llQzR1S1ZqaUZfdUhXYkFxMzFDdkNQNF96UVpMZExiVmdxdzVGbnpkV1ZpNENOTXdnMy1vMzZTRThwdExVS2FKcW16bU9uSzM1eUVNaEgtVVN6cDlsTmFNYjBOLU1IVkhpZ0J1QURzVzIwMDdoN2JRaHBnMFoyZ3VN?oc=5",
+    "company_id": "promega",
+    "matched_company_ids": [
+      "promega"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "7164d965c1c6119e": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "Thra - Sigma-Aldrich",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd3RSLUYwZDNPNXV1NzRRamJtZ3hseUlfbl84NG9EMGpNSW50STZmNnRSSHl1QWRvMXljQ0lhSmwwSTZEUF9rNHUtQzBQc0pON0dQU1h0RC00Wlp1YUFOX20yb1BuY29RSUk0cjFpZTFSS3M0OV91UnZ2UTJTLVBnX0gxek5LRS13NVluV0VlSVlKTERhdTVUTlFxcVVEd3Fia01nYUdfcjBrdkJnVDQ4MnRqZ1NYRkNI?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science",
+      "sigma_aldrich"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "873f1a562b2b654e": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "分析化学学習ハブ - Sigma-Aldrich",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWUNWWVZsTWVtUmpzY3V5cjFjV2lZcFRZWklsS2ZMczhSNlYtTUJLNzhGNmR1WWdoZWZEamdmempteHZwakptNWp4MGpOMWdvRXZ1TXVPMTJQcnRlMVRzc2dsY0xiYWNpcW9pcW9HZzh3M254QUFJY1JlMG1VYVBkRDZaREZ1d0xwX2xibQ?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science",
+      "sigma_aldrich"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "20fb5f7a59c3a4c4": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "2026年09月07日｜リサイクリング抗体技術を生んだ中外製薬のイノベーションの源泉｜ストーリー - chugai-pharm.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE83NmZoWmU2cW9DN2JIREs3T0xaRDNCNlEyV09iM25la196Z2pRMkJsWU9CMHA5RGJqTHc5bldlUVA3S216cWtaNVdjQ3NRMUgzc0dWVDJsYUJPRlJnM1l3dlJhNXpzRzJycnV3ZXh4RE16OUhWZUE?oc=5",
+    "company_id": "chugai_pharma",
+    "matched_company_ids": [
+      "chugai_pharma"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "52cc3683003b03d1": {
+    "first_seen": "2026-09-07T14:44:43",
+    "title": "塩野義製薬が「定年」を実質廃止、戸惑う人が知らない「これから日本企業で起きること」 (Diamond Online) - newspicks.com",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGQ01JVWdUUG5uYlhmeUNKUEpycTY4UkI1YjhDbXJ4blBycHcxUGN1T2RsTFp2c2pjNlQxQ0ZwZjRQdUxFWV90ems4RUgzaEVfVzF5WnFaNDlWRmo1VG5kSFRTMWx2STg?oc=5",
+    "company_id": "shionogi",
+    "matched_company_ids": [
+      "shionogi"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
   }
 }
