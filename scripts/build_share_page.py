@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 import run_daily as tracker
+from event_archive import update_archive
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,6 +27,7 @@ SHARE_DIR = ROOT / "share"
 OUT_PATH = SHARE_DIR / "acro_ai_hot_tracker_dashboard.html"
 EMBEDDED_DATA_PATH = WEB_DIR / "embedded-data.js"
 COMPANY_LOGOS_PATH = ROOT / "config" / "company_logos.json"
+EVENT_ARCHIVE_PATH = ROOT / "data" / "event_archive.json"
 
 
 def load_company_logos() -> dict:
@@ -56,6 +58,8 @@ def main() -> int:
     html = (WEB_DIR / "index.html").read_text(encoding="utf-8")
     css = (WEB_DIR / "styles.css").read_text(encoding="utf-8")
     js = (WEB_DIR / "app.js").read_text(encoding="utf-8")
+    overview_model = (WEB_DIR / "overview-model.js").read_text(encoding="utf-8")
+    overview_js = (WEB_DIR / "overview.js").read_text(encoding="utf-8")
     payload_data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     company_config, _, _ = tracker.load_runtime_configuration()
     intelligence_rules = json.loads(INTELLIGENCE_RULES_PATH.read_text(encoding="utf-8"))
@@ -96,6 +100,7 @@ def main() -> int:
     relationships_payload = json.dumps(company_relationships, ensure_ascii=False, indent=2)
     japan_accounts_payload = json.dumps(japan_accounts, ensure_ascii=False, indent=2)
     seen_urls = json.loads(SEEN_URLS_PATH.read_text(encoding="utf-8")) if SEEN_URLS_PATH.exists() else {}
+    archive = update_archive(EVENT_ARCHIVE_PATH, payload_data)
     storage_profile = {
         "latest_snapshot_bytes": DATA_PATH.stat().st_size,
         "latest_item_count": len(payload_data.get("items", [])),
@@ -104,9 +109,15 @@ def main() -> int:
         "deduplication_url_count": len(seen_urls),
         "deduplication_index_bytes": SEEN_URLS_PATH.stat().st_size if SEEN_URLS_PATH.exists() else 0,
         "source_snapshot_bytes": SOURCE_SNAPSHOTS_PATH.stat().st_size if SOURCE_SNAPSHOTS_PATH.exists() else 0,
+        "event_archive_bytes": EVENT_ARCHIVE_PATH.stat().st_size,
+        "retained_event_record_count": len(archive["items"]),
+        "event_retention_started_at": archive["retention_started_at"],
     }
     storage_profile_payload = json.dumps(storage_profile, ensure_ascii=False, indent=2)
     logos_payload = json.dumps(load_company_logos(), ensure_ascii=False)
+    current_ids = {item["id"] for item in payload_data.get("items", [])}
+    # Current items already exist in the embedded payload; embed only retained older items.
+    archive_payload = json.dumps({**archive, "items": [item for item in archive["items"] if item["id"] not in current_ids]}, ensure_ascii=False, separators=(",", ":"))
     embedded = (
         f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\n"
         f"window.AIHOT_EMBEDDED_HISTORY = {history_payload};\n"
@@ -116,6 +127,7 @@ def main() -> int:
         f"window.AIHOT_COMPANY_RELATIONSHIPS = {relationships_payload};\n"
         f"window.AIHOT_JAPAN_ACCOUNTS = {japan_accounts_payload};\n"
         f"window.AIHOT_COMPANY_LOGOS = {logos_payload};\n"
+        f"window.AIHOT_EVENT_ARCHIVE = {archive_payload};\n"
     )
     EMBEDDED_DATA_PATH.write_text(embedded, encoding="utf-8")
 
@@ -128,6 +140,18 @@ def main() -> int:
     html = re.sub(
         r'    <script src="\./embedded-data\.js(?:\?v=[^"]+)?"></script>',
         lambda _: f"    <script>\n{embedded}    </script>",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'    <script src="\./overview-model\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{overview_model}\n    </script>",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'    <script src="\./overview\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{overview_js}\n    </script>",
         html,
         count=1,
     )

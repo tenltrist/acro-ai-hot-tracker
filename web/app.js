@@ -98,6 +98,9 @@ const state = {
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
   history: null,
+  eventArchive: null,
+  archiveSyncFailed: false,
+  payloadSyncFailed: false,
 };
 
 const methodologyDetailMeta = {
@@ -112,9 +115,9 @@ const methodologyDetailMeta = {
   "summary-provenance": { family: "分类与业务输出", title: "摘要与证据溯源" },
   "priority-index": { family: "公司与账户排序", title: "优先指数" },
   "relevance-density": { family: "公司与账户排序", title: "ACRO 相关密度" },
-  "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
-  "trend-counts": { family: "统计与运行口径", title: "信号走势图例数字" },
-  "dashboard-counts": { family: "统计与运行口径", title: "总览四项统计口径" },
+  "competitor-matrix": { family: "公司与账户排序", title: "公司动态与排序" },
+  "trend-counts": { family: "统计与运行口径", title: "周期发布节奏" },
+  "dashboard-counts": { family: "统计与运行口径", title: "周期概况统计口径" },
   "source-health": { family: "统计与运行口径", title: "数据源健康状态" },
   "source-coverage": { family: "存储与规则治理", title: "来源覆盖与产出质量" },
   "data-storage": { family: "存储与规则治理", title: "数据存储与共享边界" },
@@ -1961,7 +1964,8 @@ const sourceInventory = [
 ];
 
 const pageMeta = {
-  overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
+  overview: ["Company Intelligence", "市场情报总览"],
+  "period-detail": ["Company Intelligence", "公司、事件与证据"],
   "overview-metric": ["Dashboard Metric Detail", "总览指标明细"],
   companies: ["Company Pool", "目标公司池"],
   timeline: ["Company Timeline", "公司动态时间线与长期档案"],
@@ -2778,6 +2782,8 @@ function renderMethodology() {
   if (els.storageSourceState) {
     els.storageSourceState.textContent = formatStorageBytes(storageProfile.source_snapshot_bytes);
   }
+  const retainedStorage = document.querySelector("#storageEventArchive");
+  if (retainedStorage) retainedStorage.textContent = `公开记录 ${storageProfile.retained_event_record_count || 0} 条 · ${formatStorageBytes(storageProfile.event_archive_bytes)} · 保留起点 ${String(storageProfile.event_retention_started_at || "未生成").slice(0, 10)}。旧每日 history 文件仍只是统计；更早文章为回溯样本，不代表完整历史。`;
   if (els.storagePipelineSnapshot) {
     els.storagePipelineSnapshot.textContent = `${storageProfile.latest_item_count || 0} 条 / ${formatStorageBytes(storageProfile.latest_snapshot_bytes)}`;
   }
@@ -2789,16 +2795,12 @@ function renderMethodology() {
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  const trendItems = scopedItems.filter((item) => {
-    const age = getTrendAge(item);
-    return age !== null && age < state.timeRange;
-  });
-  const selfCount = trendItems.filter((item) => getItemRole(item, companyRoles) === "self").length;
-  els.methodologyTrendCount.textContent = "本公司 " + selfCount;
+  const periodItems = periodView.events.length ? boardItems() : [];
+  els.methodologyTrendCount.textContent = "本期 " + periodItems.length;
   if (els.methodologyTrendExample) {
-    els.methodologyTrendExample.textContent = `例如“本公司 ${selfCount}”表示：在当前筛选和观察周期内，有 ${selfCount} 条可定位到走势日期且被识别为“本公司”的信息。`;
+    els.methodologyTrendExample.textContent = `${boardRangeText()}：当前周期与筛选命中 ${periodItems.length} 条事件记录。每日柱形的条数之和等于本期事件记录数，未知日期与未来发布日期不计入。`;
   }
-  els.methodologyScopedCount.textContent = scopedItems.length + " 条";
+  els.methodologyScopedCount.textContent = periodItems.length + " 条";
 
   const healthRows = (state.payload.source_health || []).filter((row) => row.enabled !== false);
   const reachableRows = healthRows.filter((row) =>
@@ -3736,6 +3738,18 @@ async function loadData() {
     }
   }
 
+  state.archiveSyncFailed = false;
+  state.payloadSyncFailed = syncFailed;
+  if (canLoadLiveData) {
+    try {
+      state.eventArchive = await fetchJson("../data/event_archive.json");
+    } catch {
+      state.eventArchive = window.AIHOT_EVENT_ARCHIVE || { items: [] };
+      state.archiveSyncFailed = true;
+    }
+  } else {
+    state.eventArchive = window.AIHOT_EVENT_ARCHIVE || { items: [] };
+  }
   renderLoadedData();
   if (syncFailed) {
     const previousRun = formatDateTime(state.payload.generated_at);
@@ -3949,44 +3963,9 @@ function renderOverviewMetricDetail(scopedItems, companyRoles) {
 }
 
 function renderOverviewScope() {
-  const scoped = getFilteredItems();
-  const companyRoles = new Map(
-    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
-  );
-  const customerCompanyCount = getJapanAccountData().accounts?.length || (state.payload.companies || []).filter(
-    (company) => company.business_role === "customer",
-  ).length;
-  const criticalCount = getOverviewMetricItems("critical", scoped, companyRoles).length;
-  const competitorCount = getOverviewMetricItems("competitor", scoped, companyRoles).length;
-  const customerCount = getOverviewMetricItems("customer", scoped, companyRoles).length;
-  const apacCount = getOverviewMetricItems("apac", scoped, companyRoles).length;
-
-  els.metricCandidates.textContent = criticalCount;
-  els.metricDaily.textContent = competitorCount;
-  els.metricImmediate.textContent = customerCompanyCount ? customerCount : "未接入";
-  els.metricArchive.textContent = apacCount;
-  els.metricCompetitorNote.textContent = `${
-    (state.payload.companies || []).filter((company) => company.business_role === "competitor").length
-  } 家已确认竞品`;
-  els.metricCustomerNote.textContent = customerCompanyCount
-    ? `${customerCompanyCount} 家日本市场账户`
-    : "账户目录尚未导入";
-  els.sourceCount.textContent = `${scoped.length} 条`;
-  els.windowDays.textContent = state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`;
-
-  const customerPriorities = buildCustomerAccountPriorities();
-  renderCustomerPriorityMatrix(customerPriorities);
-  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount, customerPriorities);
-  renderSignalTrend(scoped, companyRoles);
-  renderRegionDistribution(scoped);
-  renderCompanyTopicMatrix();
-  renderCategoryDistribution(scoped);
-  renderBusinessLanes(scoped, companyRoles);
-  renderSignals();
+  renderPeriodOverview();
+  if (state.page === "signals") renderSignals();
   renderMethodology();
-  if (state.page === "overview-metric") {
-    renderOverviewMetricDetail(scoped, companyRoles);
-  }
 }
 
 function renderBusinessLanes(items, companyRoles) {
@@ -5136,12 +5115,13 @@ function renderPage() {
     : pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
-  els.toolbar.hidden = !["overview", "signals"].includes(state.page);
+  els.toolbar.hidden = state.page !== "signals";
   els.pagePanels.forEach((panel) => {
     panel.hidden = panel.dataset.page !== state.page;
+    if (panel.id === "periodControls") panel.hidden = !["overview", "period-detail"].includes(state.page);
   });
   els.pageButtons.forEach((button) => {
-    const activePage = state.page === "overview-metric" ? "overview" : state.page;
+    const activePage = ["overview-metric", "period-detail"].includes(state.page) ? "overview" : state.page;
     button.classList.toggle("active", button.dataset.pageTarget === activePage);
   });
   document.querySelectorAll(".nav-cluster").forEach((cluster) => {
@@ -5167,13 +5147,12 @@ function updateOverviewMetricUrl(target, historyMode) {
 }
 
 function openOverviewMetric(target, historyMode = "push") {
-  const validTarget = overviewMetricDefinitions[target] ? target : "critical";
-  state.page = "overview-metric";
-  state.overviewMetric = validTarget;
-  renderOverviewScope();
-  renderPage();
-  updateOverviewMetricUrl(validTarget, historyMode);
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  const route = {
+    competitor: { type: "list", field: "roles", value: "competitor" },
+    customer: { type: "list", field: "roles", value: "customer" },
+    apac: { type: "list", value: "all" },
+  }[target] || { type: "list", value: "all" };
+  openBoardRoute(route, historyMode === "none" ? "replace" : historyMode);
 }
 
 function closeOverviewMetric(historyMode = "replace") {
@@ -5786,7 +5765,7 @@ function renderSourceHealth() {
   const archiveCount = rows.filter((row) => row.status === "archive_only").length;
   const pendingCount = rows.filter((row) => row.status === "pending").length;
   const quietCount = rows.filter((row) => row.status === "quiet").length;
-  els.healthStatus.textContent = `${productiveCount} 有效 · ${archiveCount} 仅归档 · ${quietCount} 无内容 · ${errors.length} 异常${pendingCount ? ` · ${pendingCount} 待配置` : ""}`;
+  if (els.healthStatus) els.healthStatus.textContent = `${productiveCount} 有效 · ${archiveCount} 仅归档 · ${quietCount} 无内容 · ${errors.length} 异常${pendingCount ? ` · ${pendingCount} 待配置` : ""}`;
 
   if (!els.healthList) return;
   if (errors.length === 0) {
@@ -6220,14 +6199,14 @@ function clearSourceOutput() {
 
 // ── Event listeners ──
 
-els.overviewMetricGrid.addEventListener("click", (event) => {
+els.overviewMetricGrid?.addEventListener("click", (event) => {
   if (event.target.closest("[data-methodology-target]")) return;
   const card = event.target.closest("[data-overview-metric]");
   if (!card) return;
   openOverviewMetric(card.dataset.overviewMetric);
 });
 
-els.overviewMetricBackButton.addEventListener("click", () => {
+els.overviewMetricBackButton?.addEventListener("click", () => {
   closeOverviewMetric("replace");
 });
 
@@ -6252,8 +6231,12 @@ els.companyDockList.addEventListener("click", (event) => {
     state.company = hasOption ? companyName : "all";
     els.companyFilter.value = hasOption ? companyName : "all";
   }
+  periodView.company = companyId === "all" ? "all" : companyId;
+  periodView.route = null;
+  writeBoardUrl();
   renderCompanyDock();
   renderOverviewScope();
+  renderPage();
 });
 
 els.companyDockList.addEventListener("toggle", (event) => {
@@ -6443,14 +6426,14 @@ function openOverviewEvidence(company = "", category = "") {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-els.assistantPrompts.addEventListener("click", (event) => {
+els.assistantPrompts?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-assistant-view]");
   if (!button) return;
   state.assistantView = button.dataset.assistantView;
   renderOverviewScope();
 });
 
-els.executivePoints.addEventListener("click", (event) => {
+els.executivePoints?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-assistant-company][data-assistant-category]");
   if (!button) return;
   if (!button.dataset.assistantCompany && !button.dataset.assistantCategory) {
@@ -6464,14 +6447,14 @@ els.executivePoints.addEventListener("click", (event) => {
   openOverviewEvidence(button.dataset.assistantCompany, button.dataset.assistantCategory);
 });
 
-els.customerPriorityMatrix.addEventListener("click", (event) => {
+els.customerPriorityMatrix?.addEventListener("click", (event) => {
   if (event.target.closest("[data-methodology-target]")) return;
   const row = event.target.closest("[data-customer-priority-company]");
   if (!row) return;
   openOverviewEvidence(row.dataset.customerPriorityCompany);
 });
 
-els.customerPriorityMatrix.addEventListener("keydown", (event) => {
+els.customerPriorityMatrix?.addEventListener("keydown", (event) => {
   if (!["Enter", " "].includes(event.key) || event.target.closest("button")) return;
   const row = event.target.closest("[data-customer-priority-company]");
   if (!row) return;
@@ -6479,7 +6462,7 @@ els.customerPriorityMatrix.addEventListener("keydown", (event) => {
   openOverviewEvidence(row.dataset.customerPriorityCompany);
 });
 
-els.openJapanAccountsButton.addEventListener("click", () => {
+els.openJapanAccountsButton?.addEventListener("click", () => {
   state.page = "japan-customers";
   renderJapanAccountIntelligence();
   renderPage();
@@ -6513,13 +6496,13 @@ els.regionFilter.addEventListener("change", (event) => {
   renderOverviewScope();
 });
 
-els.openSignalDetailButton.addEventListener("click", () => {
+els.openSignalDetailButton?.addEventListener("click", () => {
   state.page = "signals";
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-els.openRelationshipsButton.addEventListener("click", () => {
+els.openRelationshipsButton?.addEventListener("click", () => {
   state.page = "relationships";
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -6535,7 +6518,7 @@ els.openAcroSourcesButton.addEventListener("click", () => {
 
 els.refreshButton.addEventListener("click", () => loadData());
 
-els.companyTopicMatrix.addEventListener("click", (event) => {
+els.companyTopicMatrix?.addEventListener("click", (event) => {
   const cell = event.target.closest("[data-matrix-company][data-matrix-category]");
   if (!cell) return;
   openOverviewEvidence(cell.dataset.matrixCompany, cell.dataset.matrixCategory);
@@ -6607,12 +6590,23 @@ els.japanCustomerList.addEventListener("click", (event) => {
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const pageTarget = button.dataset.pageTarget;
+    if (pageTarget === "signals") {
+      openBoardRoute({ type: "list", value: "all" });
+      return;
+    }
     if (pageTarget === "methodology") {
       openMethodology("", "replace");
       return;
     }
     state.page = pageTarget;
     state.methodologyDetail = "";
+    if (pageTarget === "overview") {
+      periodView.route = null;
+      writeBoardUrl();
+      renderPeriodOverview();
+    } else if (pageTarget === "signals") {
+      renderSignals();
+    }
     renderPage();
     if (
       window.location.hash.startsWith("#metric-") ||
@@ -6685,9 +6679,12 @@ if (initialOverviewMetricHash) {
   state.page = "methodology";
   state.methodologyDetail = initialMetricHash;
 }
+initPeriodOverview();
 renderMethodologyView();
 renderPage();
 loadData().then(() => {
+  if (initialOverviewMetricHash) openOverviewMetric(initialOverviewMetricHash, "replace");
+  else if (state.page === "overview" && !location.hash) writeBoardUrl("replace");
   if (initialOverviewMetricHash || initialMetricHash || window.location.hash === "#methodology") {
     window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
   }

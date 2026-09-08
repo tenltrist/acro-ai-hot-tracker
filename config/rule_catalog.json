@@ -1,6 +1,6 @@
 {
-  "version": "2026.09.1",
-  "verified_at": "2026-09-01",
+  "version": "2026.09.8-period",
+  "verified_at": "2026-09-08",
   "strategy": {
     "automatic_summary": "rules_only",
     "automatic_llm_api": false,
@@ -33,9 +33,9 @@
     {"id": "summary-provenance", "engine": "backend_and_manual", "implementation": "scripts/run_daily.py and scripts/import_manual_summaries.py"},
     {"id": "priority-index", "engine": "frontend", "implementation": "web/app.js:buildCustomerAccountPriorities"},
     {"id": "relevance-density", "engine": "frontend", "implementation": "web/app.js:buildCustomerAccountPriorities"},
-    {"id": "competitor-matrix", "engine": "manual_rank_and_frontend_count", "implementation": "config/companies.json and web/app.js:renderCompanyTopicMatrix"},
-    {"id": "trend-counts", "engine": "frontend", "implementation": "web/app.js:getTrendAge and renderSignalTrend"},
-    {"id": "dashboard-counts", "engine": "frontend", "implementation": "web/app.js:renderOverviewScope"},
+    {"id": "competitor-matrix", "engine": "period_frontend_count", "implementation": "web/overview.js:boardCompanyRows"},
+    {"id": "trend-counts", "engine": "frontend", "implementation": "web/overview.js:renderBoardTrend and web/overview-model.js:select"},
+    {"id": "dashboard-counts", "engine": "frontend", "implementation": "web/overview.js:renderPeriodOverview and web/overview-model.js:buildEvents"},
     {"id": "source-health", "engine": "backend", "implementation": "scripts/run_daily.py:build_payload"},
     {"id": "source-coverage", "engine": "backend_and_frontend", "implementation": "data/latest_run.json:company_source_coverage and web/app.js"},
     {"id": "data-storage", "engine": "build", "implementation": "scripts/build_share_page.py"},
@@ -121,6 +121,7 @@
     "weights": {"high": 1.0, "medium": 0.55, "low": 0.0}
   },
   "competitor_matrix": {
+    "overview_status": "replaced_by_period_company_activity; legacy parameters retained for reference only",
     "window_days": 90,
     "row_order": "competitive_relevance_rank ascending from config/companies.json",
     "primary_scope_first": true,
@@ -137,11 +138,30 @@
     "error": "configuration, request, or parsing failed"
   },
   "trend_counts": {
-    "news_date": "age_days derived from publication date",
-    "past_event_date": "absolute days_until_event when days_until_event <= 0",
+    "news_date": "validated YYYY-MM-DD publication date within selected calendar period",
+    "past_event_date": "not substituted for publication date; legacy untyped event dates excluded",
     "future_events_in_historical_trend": false,
     "undated_items_in_historical_trend": false,
     "inherits_current_filters": true
+  },
+  "period_overview": {
+    "default_period": "calendar_week",
+    "calendar_timezone": "Asia/Tokyo",
+    "week_start": "Monday",
+    "shared_filters": ["period", "company", "role", "regions", "business_event", "product_technology_topic", "query"],
+    "tier_or_score_gate": false,
+    "source_date_exclusions": ["legacy_event_date_without_provenance", "sitemap_discovery_date", "clinical_trial_update_date", "unknown_date", "future_publication_date"],
+    "metrics": ["event_record_count", "distinct_monitored_company_ids", "product_platform_or_target_therapy_count", "partnership_deal_count"],
+    "merge_policy": "same canonical URL + publication date + normalized title; or same-day normalized title >=35 characters with overlapping companies (also identical unanchored headlines)",
+    "semantic_cross_language_merge": false,
+    "latest_news_order": "publication_date_descending; stable id tie-break, never score",
+    "company_order": "period_event_count_descending, configured_competitive_rank, company_id",
+    "summary_policy": "manual_ai when available; otherwise original source excerpt; never template advice as factual summary",
+    "region_basis": "title and original source excerpt only; multiple literal matches; not headquarters or connector name",
+    "topic_basis": "literal topic aliases in title/source excerpt, plus literal matches for existing target/modality extraction; never inferred product needs",
+    "automatic_assignment": false,
+    "archive": "data/event_archive.json; current and retained historical records combined by id",
+    "historical_coverage": "partial retrospective samples before retention start; daily history files are aggregate-only"
   },
   "source_coverage": {
     "registered": "configured source entry, whether enabled or disabled",
@@ -161,6 +181,7 @@
     "database": false,
     "latest_snapshot": "data/latest_run.json",
     "daily_history": "data/history/YYYY-MM-DD.json",
+    "event_archive": "data/event_archive.json",
     "deduplication_index": "data/seen_urls.json",
     "source_change_state": "data/source_snapshots.json",
     "public_api": "api/public/*.json",

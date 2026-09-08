@@ -29,8 +29,12 @@ async function navigate(page, target) {
       await page.goto(pathToFileURL(path.join(root, 'web/index.html')).href);
       await page.waitForFunction(() => document.querySelectorAll('#companyDockList [data-company-logo]').length === 34);
       assert.equal(await page.locator('#companyDockList [data-company-logo-image]').count(), 30);
-      assert.equal(await page.locator('#companyTopicMatrix [data-company-logo]').count(), 11);
-      assert.equal(await page.locator('#customerPriorityMatrix [data-company-logo-image]').count(), 12);
+      await page.locator('[data-board-mode="month"]').click();
+      const competitorCount = Number(await page.locator('[data-board-tab="competitor"] b').innerText());
+      assert.equal(await page.locator('#boardCompanyRows [data-company-logo]').count(), competitorCount);
+      await page.locator('[data-board-tab="customer"]').click();
+      const customerCount = Number(await page.locator('[data-board-tab="customer"] b').innerText());
+      assert.equal(await page.locator('#boardCompanyRows [data-company-logo-image]').count(), customerCount);
       const decoded = await page.evaluate(async () => {
         const failed = [];
         for (const [id, logo] of Object.entries(window.AIHOT_COMPANY_LOGOS)) {
@@ -58,8 +62,9 @@ async function navigate(page, target) {
       });
       assert.deepEqual(decoded, []);
       if (width === 1440) {
-        await page.locator('#companyTopicMatrix').screenshot({ path: path.join(output, 'competitors.png') });
-        await page.locator('#customerPriorityMatrix').screenshot({ path: path.join(output, 'customers.png') });
+        await page.locator('#boardCompanyRows').screenshot({ path: path.join(output, 'customers.png') });
+        await page.locator('[data-board-tab="competitor"]').click();
+        await page.locator('#boardCompanyRows').screenshot({ path: path.join(output, 'competitors.png') });
       }
       await navigate(page, 'companies');
       assert.equal(await page.locator('#companyPoolGroups [data-company-logo]').count(), 34);
