@@ -127,6 +127,12 @@ function boardFilterSummary() {
 }
 
 function syncBoardControls() {
+  if (["overview", "period-detail"].includes(state.page)) {
+    const selectedCompany = boardCompany(periodView.company);
+    state.company = selectedCompany?.display_name || "all";
+    els.companyFilter.value = state.company;
+    renderCompanyDock();
+  }
   const root = document.querySelector("#periodControls");
   root.querySelectorAll("[data-board-mode]").forEach(button => {
     const active = button.dataset.boardMode === periodView.mode;

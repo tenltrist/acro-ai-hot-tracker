@@ -130,6 +130,16 @@ async function assertLayout(page, width) {
       const topic = await page.evaluate(() => boardItems()[0]?.topics[0]);
       if (topic) { await page.locator('#boardTopic').selectOption(topic); await assertSynced(page); }
       await page.locator('[data-board-clear]').click();
+      await page.locator('#boardCompany').selectOption('takeda_pharma');
+      await assertSynced(page);
+      assert.match(await page.locator('#companyFilter').inputValue(), /Takeda/);
+      assert.equal(await page.evaluate(() => boardItems().every(event => event.companyIds.includes('takeda_pharma'))), true);
+      await page.locator('[data-board-clear]').click();
+      assert.equal(await page.locator('#companyFilter').inputValue(), 'all');
+      const beforeLanguage = (await snapshot(page)).ids;
+      await page.locator('[data-board-language="en"]').click();
+      assert.deepEqual((await snapshot(page)).ids, beforeLanguage);
+      await page.locator('[data-board-language="zh"]').click();
       await page.locator('#boardMonthDate').fill('2026-08');
       await page.locator('#boardMonthDate').dispatchEvent('change');
       const historical = await assertSynced(page);

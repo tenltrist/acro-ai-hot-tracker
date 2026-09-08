@@ -9642,7 +9642,7 @@ button.strip-score:focus-visible strong {
           <button type="button" class="board-arrow" data-board-shift="1" title="下一周期" aria-label="下一周期">→</button>
           <button type="button" class="text-button" id="boardCurrentPeriod" data-board-current>本周</button>
           <strong id="boardRangeLabel"></strong>
-          <div class="board-language segmented-control" aria-label="摘要显示语言"><button type="button" data-board-language="zh">中</button><button type="button" data-board-language="en">EN</button></div>
+          <div class="board-language segmented-control" aria-label="摘要显示语言"><button type="button" data-board-language="zh" title="显示已有中文译文与精读；缺失时保留原文">中</button><button type="button" data-board-language="en" title="显示已有英文精读；缺失时保留原文">EN</button></div>
           <button type="button" class="board-arrow" data-board-refresh title="同步最新已采集数据" aria-label="同步最新已采集数据">↻</button>
         </div>
         <details class="board-filter-panel" id="boardFilterPanel" open>
@@ -256064,6 +256064,12 @@ function boardFilterSummary() {
 }
 
 function syncBoardControls() {
+  if (["overview", "period-detail"].includes(state.page)) {
+    const selectedCompany = boardCompany(periodView.company);
+    state.company = selectedCompany?.display_name || "all";
+    els.companyFilter.value = state.company;
+    renderCompanyDock();
+  }
   const root = document.querySelector("#periodControls");
   root.querySelectorAll("[data-board-mode]").forEach(button => {
     const active = button.dataset.boardMode === periodView.mode;
