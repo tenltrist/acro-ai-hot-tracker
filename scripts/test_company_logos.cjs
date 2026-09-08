@@ -29,7 +29,7 @@ async function navigate(page, target) {
       await page.goto(pathToFileURL(path.join(root, 'web/index.html')).href);
       await page.waitForFunction(() => document.querySelectorAll('#companyDockList [data-company-logo]').length === 34);
       assert.equal(await page.locator('#companyDockList [data-company-logo-image]').count(), 30);
-      await page.locator('[data-board-mode="month"]').click();
+      await page.locator('.nav [data-period-entry="month"]').click();
       const competitorCount = Number(await page.locator('[data-board-tab="competitor"] b').innerText());
       assert.equal(await page.locator('#boardCompanyRows [data-company-logo]').count(), competitorCount);
       await page.locator('[data-board-tab="customer"]').click();

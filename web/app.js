@@ -1964,7 +1964,8 @@ const sourceInventory = [
 ];
 
 const pageMeta = {
-  overview: ["Company Intelligence", "市场情报总览"],
+  overview: ["Company Intelligence", "市场情报总看板"],
+  "period-overview": ["Period Intelligence", "周期市场看板"],
   "period-detail": ["Company Intelligence", "公司、事件与证据"],
   "overview-metric": ["Dashboard Metric Detail", "总览指标明细"],
   companies: ["Company Pool", "目标公司池"],
@@ -2798,7 +2799,7 @@ function renderMethodology() {
   const periodItems = periodView.events.length ? boardItems() : [];
   els.methodologyTrendCount.textContent = "本期 " + periodItems.length;
   if (els.methodologyTrendExample) {
-    els.methodologyTrendExample.textContent = `${boardRangeText()}：当前周期与筛选命中 ${periodItems.length} 条事件记录。每日柱形的条数之和等于本期事件记录数，未知日期与未来发布日期不计入。`;
+    els.methodologyTrendExample.textContent = `${boardRangeText()}：当前周期与筛选命中 ${periodItems.length} 条事件记录。${periodView.level === "main" ? "总看板按 3 / 7 天分组" : "周月看板按日分组"}，柱形条数之和等于当前事件记录数，未知日期与未来发布日期不计入。`;
   }
   els.methodologyScopedCount.textContent = periodItems.length + " 条";
 
@@ -5115,14 +5116,21 @@ function renderPage() {
     : pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
+  if (state.page === "period-overview") els.pageTitle.textContent = boardRootLabel();
   els.toolbar.hidden = state.page !== "signals";
   els.pagePanels.forEach((panel) => {
     panel.hidden = panel.dataset.page !== state.page;
-    if (panel.id === "periodControls") panel.hidden = !["overview", "period-detail"].includes(state.page);
+    if (panel.id === "periodControls") panel.hidden = !["overview", "period-overview", "period-detail"].includes(state.page);
   });
   els.pageButtons.forEach((button) => {
-    const activePage = ["overview-metric", "period-detail"].includes(state.page) ? "overview" : state.page;
+    const activePage = state.page === "period-detail" ? boardRootPage() : state.page === "overview-metric" ? "overview" : state.page;
     button.classList.toggle("active", button.dataset.pageTarget === activePage);
+  });
+  document.querySelectorAll(".nav [data-period-entry]").forEach(button => {
+    const active = ["period-overview", "period-detail"].includes(state.page) && periodView.level === "period" && button.dataset.periodEntry === periodView.mode;
+    button.classList.toggle("active", active);
+    if (active) button.setAttribute("aria-current", "page");
+    else button.removeAttribute("aria-current");
   });
   document.querySelectorAll(".nav-cluster").forEach((cluster) => {
     const containsActive = Boolean(cluster.querySelector("[data-page-target].active"));
@@ -5150,8 +5158,9 @@ function openOverviewMetric(target, historyMode = "push") {
   const route = {
     competitor: { type: "list", field: "roles", value: "competitor" },
     customer: { type: "list", field: "roles", value: "customer" },
-    apac: { type: "list", value: "all" },
-  }[target] || { type: "list", value: "all" };
+    apac: { type: "list", value: "apac" },
+  }[target] || { type: "list", value: "critical" };
+  periodView.level = "main";
   openBoardRoute(route, historyMode === "none" ? "replace" : historyMode);
 }
 
@@ -6216,7 +6225,7 @@ els.companyDockList.addEventListener("click", (event) => {
   const chip = event.target.closest("[data-filter-company]");
   if (!chip) return;
   const companyId = chip.dataset.filterCompany;
-  state.page = "overview";
+  state.page = boardRootPage();
   renderPage();
 
   if (companyId === "all") {
@@ -6601,9 +6610,8 @@ els.pageButtons.forEach((button) => {
     state.page = pageTarget;
     state.methodologyDetail = "";
     if (pageTarget === "overview") {
-      periodView.route = null;
-      writeBoardUrl();
-      renderPeriodOverview();
+      openMainOverview();
+      return;
     } else if (pageTarget === "signals") {
       renderSignals();
     }

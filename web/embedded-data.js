@@ -241927,6 +241927,7 @@ window.AIHOT_RULE_CATALOG = {
     "inherits_current_filters": true
   },
   "period_overview": {
+    "navigation_level": "secondary_under_main_dashboard",
     "default_period": "calendar_week",
     "calendar_timezone": "Asia/Tokyo",
     "week_start": "Monday",
@@ -241963,6 +241964,21 @@ window.AIHOT_RULE_CATALOG = {
     "automatic_assignment": false,
     "archive": "data/event_archive.json; current and retained historical records combined by id",
     "historical_coverage": "partial retrospective samples before retention start; daily history files are aggregate-only"
+  },
+  "main_dashboard": {
+    "default_window_days": 30,
+    "window_options_days": [
+      30,
+      90
+    ],
+    "shared_model": "web/overview-model.js; same filtering and evidence model as period pages",
+    "critical": "any merged report is daily/immediate and ACRO high relevance",
+    "competitor_and_account_counts": "events containing the corresponding company role; roles may overlap",
+    "apac": "any literal region match in japan, china, korea, southeast_asia",
+    "competitor_matrix": "configured competitor order; current-scope company/category intersections; top five categories and all-category total",
+    "account_matrix": "current-scope record count descending; no task assignment or confirmed-customer inference",
+    "trend": "three-day bins for 30-day view, seven-day bins for 90-day view; disjoint publication-date buckets",
+    "retains_previous_data_and_collection_frequency": true
   },
   "source_coverage": {
     "registered": "configured source entry, whether enabled or disabled",

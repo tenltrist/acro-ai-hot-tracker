@@ -92,6 +92,7 @@ async function assertLayout(page, width) {
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(baseUrl);
+      await page.locator('.nav [data-period-entry="week"]').click();
       await page.waitForFunction(() => document.querySelector('#boardMetrics strong'));
       await page.waitForFunction(() => !document.querySelector('#refreshButton').classList.contains('is-loading'));
       await assertSynced(page);
@@ -111,7 +112,7 @@ async function assertLayout(page, width) {
       assert.ok(Number(firstCount) > 0);
       await page.locator('#periodDetail .board-event-link').first().click();
       assert.ok(await page.locator('.board-evidence-links a').count() > 0);
-      assert.match(await page.locator('.board-breadcrumbs').innerText(), /总览.*事件与证据/s);
+      assert.match(await page.locator('#periodDetail .board-breadcrumbs').innerText(), /总看板.*月看板.*事件与证据/s);
       const detailUrl = page.url();
       await assertLayout(page, width);
       await page.screenshot({ path: path.join(output, `evidence-${width}.png`) });
@@ -137,9 +138,9 @@ async function assertLayout(page, width) {
       await page.locator('[data-board-clear]').click();
       assert.equal(await page.locator('#companyFilter').inputValue(), 'all');
       const beforeLanguage = (await snapshot(page)).ids;
-      await page.locator('[data-board-language="en"]').click();
+      await page.locator('[data-board-language="en"]:visible').click();
       assert.deepEqual((await snapshot(page)).ids, beforeLanguage);
-      await page.locator('[data-board-language="zh"]').click();
+      await page.locator('[data-board-language="zh"]:visible').click();
       await page.locator('#boardMonthDate').fill('2026-08');
       await page.locator('#boardMonthDate').dispatchEvent('change');
       const historical = await assertSynced(page);
@@ -147,13 +148,13 @@ async function assertLayout(page, width) {
       assert.notDeepEqual(historical.ids, monthly.ids);
       for (const role of ['competitor', 'customer', 'self']) {
         await page.locator(`[data-board-tab="${role}"]`).click();
-        const rows = await page.locator('.board-company-row').count();
+        const rows = await page.locator('#boardCompanyRows .board-company-row').count();
         const count = Number(await page.locator(`[data-board-tab="${role}"] b`).innerText());
         assert.equal(rows, count);
       }
       await page.locator('[data-board-tab="customer"]').click();
-      if (await page.locator('.board-company-row').count()) {
-        const row = page.locator('.board-company-row').first();
+      if (await page.locator('#boardCompanyRows .board-company-row').count()) {
+        const row = page.locator('#boardCompanyRows .board-company-row').first();
         const n = Number(await row.locator(':scope > b').innerText());
         await row.click();
         assert.equal(Number(await page.locator('[data-board-result-count]').getAttribute('data-board-result-count')), n);
@@ -165,7 +166,7 @@ async function assertLayout(page, width) {
         assert.equal(await page.locator('#periodDetail').isVisible(), true);
         await page.locator('[data-board-back]').click();
       }
-      await page.locator('[data-board-unknown]').click();
+      await page.locator('[data-board-unknown]:visible').click();
       assert.equal(await page.locator('#periodDetail time').evaluateAll(nodes => nodes.every(node => node.textContent.includes('日期待核对'))), true);
       await page.locator('[data-board-back]').click();
       await page.locator('#boardMonthDate').fill('2000-01');
@@ -187,6 +188,7 @@ async function assertLayout(page, width) {
     const share = await browser.newPage();
     await share.route(/^https?:/, route => route.abort());
     await share.goto(pathToFileURL(path.join(root, 'share/acro_ai_hot_tracker_dashboard.html')).href);
+    await share.locator('.nav [data-period-entry="week"]').click();
     await share.waitForSelector('[data-board-count="all"]');
     await assertSynced(share);
     console.log('PASS offline standalone bundle');
@@ -204,6 +206,7 @@ async function assertLayout(page, width) {
       const errors = [];
       live.on('pageerror', error => errors.push(error.message));
       await live.goto(`http://127.0.0.1:${server.address().port}/web/index.html`);
+      await live.locator('.nav [data-period-entry="week"]').click();
       await live.waitForFunction(() => document.querySelector('#boardMetrics strong') && !document.querySelector('#refreshButton').classList.contains('is-loading'));
       assert.equal(await live.evaluate(() => state.eventArchive.items.length), JSON.parse(fs.readFileSync(path.join(root, 'data/event_archive.json'))).items.length);
       await assertSynced(live);
@@ -217,12 +220,13 @@ async function assertLayout(page, width) {
         if (await button.count()) { await button.click(); assert.equal(await live.locator(`[data-page="${target}"]`).first().isVisible(), true); }
       }
       await live.locator('.nav [data-page-target="overview"]').click();
+      await live.locator('.nav [data-period-entry="week"]').click();
       await live.route(/\/data\/event_archive\.json(?:\?|$)/, route => route.abort());
-      await live.locator('[data-board-refresh]').click();
+      await live.locator('[data-board-refresh]:visible').click();
       await live.waitForFunction(() => state.archiveSyncFailed && !document.querySelector('#refreshButton').classList.contains('is-loading'));
       assert.match(await live.locator('#boardCoverage').innerText(), /历史文件同步失败/);
       await live.route(/\/data\/latest_run\.json(?:\?|$)/, route => route.abort());
-      await live.locator('[data-board-refresh]').click();
+      await live.locator('[data-board-refresh]:visible').click();
       await live.waitForFunction(() => state.payloadSyncFailed && !document.querySelector('#refreshButton').classList.contains('is-loading'));
       assert.match(await live.locator('#boardSnapshot').innerText(), /同步失败/);
       assert.deepEqual(errors, []);

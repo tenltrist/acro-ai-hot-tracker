@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260908period2" />
+    <link rel="stylesheet" href="./styles.css?v=20260908home1" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -19,7 +19,11 @@
       <nav class="nav" aria-label="页面导航">
         <div class="nav-group">
           <span class="nav-group-label">情报工作台</span>
-          <button class="active" type="button" data-page-target="overview" title="总览" aria-label="总览"><span class="nav-icon">⌂</span><span>总览</span></button>
+          <button class="active" type="button" data-page-target="overview" title="总看板" aria-label="总看板"><span class="nav-icon">⌂</span><span>总看板</span></button>
+          <div class="nav-sublist dashboard-subnav" aria-label="总看板的周期分类">
+            <button type="button" data-period-entry="week"><span class="nav-icon">周</span><span>周看板</span></button>
+            <button type="button" data-period-entry="month"><span class="nav-icon">月</span><span>月看板</span></button>
+          </div>
           <button type="button" data-page-target="signals" title="情报明细" aria-label="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
         </div>
         <details class="nav-cluster" data-nav-cluster="companies">
@@ -145,7 +149,14 @@
         <small>地区为标题与摘要规则识别，后续将升级为结构化提取。</small>
       </section>
 
-      <section class="board-controls page-panel" data-page="overview" id="periodControls" aria-label="周期与市场筛选">
+      <section class="board-controls page-panel" data-page="period-overview" id="periodControls" aria-label="周期与市场筛选">
+        <nav class="board-breadcrumbs board-root-breadcrumb" aria-label="看板位置"><button type="button" data-main-home>总看板</button><span>/</span><strong id="boardRootLabel">周看板</strong></nav>
+        <div class="main-period-toolbar">
+          <div class="segmented-control" aria-label="总看板范围"><button type="button" data-main-days="30">近 30 天</button><button type="button" data-main-days="90">近 90 天</button></div>
+          <span id="mainRangeLabel"></span>
+          <div class="segmented-control" aria-label="总看板摘要语言"><button type="button" data-board-language="zh">中</button><button type="button" data-board-language="en">EN</button></div>
+          <button class="board-arrow" type="button" data-board-refresh title="同步最新已采集数据" aria-label="同步最新已采集数据">↻</button>
+        </div>
         <div class="board-period-toolbar">
           <div class="segmented-control" aria-label="周期类型"><button class="active" type="button" data-board-mode="week">周</button><button type="button" data-board-mode="month">月</button></div>
           <button type="button" class="board-arrow" data-board-shift="-1" title="上一周期" aria-label="上一周期">←</button>
@@ -172,7 +183,30 @@
         <p id="boardFilterScope" class="board-scope" aria-live="polite"></p>
       </section>
 
-      <section class="period-board page-panel" data-page="overview" id="periodOverview">
+      <section class="main-dashboard page-panel" data-page="overview" id="mainDashboard">
+        <header class="main-dashboard-head"><div><p class="board-kicker">整体概况</p><h2>市场情报总看板</h2><p id="mainBrief"></p></div><div class="main-period-links"><button class="text-button" type="button" data-period-entry="week">周看板 →</button><button class="text-button" type="button" data-period-entry="month">月看板 →</button></div></header>
+        <p class="board-muted" id="mainSnapshot"></p>
+        <div class="board-coverage" id="mainCoverage" role="status"></div>
+        <div class="summary-grid" id="mainMetrics" aria-label="总看板核心指标"></div>
+        <section class="main-brief-band">
+          <div><header class="board-section-head"><div><p class="eyebrow">情报速览</p><h2>最新公开动态</h2></div><button class="text-button" type="button" data-board-list="all">全部事件 →</button></header><div id="mainLatest"></div></div>
+          <aside class="main-brief-status"><h3>当前数据范围</h3><dl><div><dt>已保留事件</dt><dd><button type="button" data-board-list="all" id="mainRecordCount"></button></dd></div><div><dt>涉及公司</dt><dd><button type="button" data-board-list="companies" id="mainCompanyCount"></button></dd></div><div><dt>采集来源</dt><dd id="mainHealth"></dd></div></dl><p>公开信息按公司归集；账户不等于已确认客户，事件不等于内部业务结论。</p></aside>
+        </section>
+        <section class="board-band main-account-band"><header class="board-section-head"><div><p class="eyebrow">客户 / 账户</p><h2>账户动态矩阵</h2></div><button class="text-button" type="button" data-rule-page-target="japan-customers">日本账户目录 →</button></header><p class="board-muted">按当前范围的事件数量排列；不生成销售任务或推定客户关系。</p><div id="mainAccountMatrix"></div></section>
+        <div class="main-lanes">
+          <section class="board-band"><header class="board-section-head"><h2>竞品对标</h2><button class="text-button" type="button" data-board-field="roles" data-board-value="competitor" id="mainCompetitorCount"></button></header><div id="mainCompetitorRows"></div></section>
+          <section class="board-band"><header class="board-section-head"><h2>合作与生态</h2><button class="text-button" type="button" data-board-list="partnerships" id="mainPartnerCount"></button></header><div id="mainPartnerRows"></div></section>
+        </div>
+        <div class="main-analytics">
+          <section class="board-band"><header class="board-section-head"><h2>信号走势</h2><span id="mainTrendScope"></span></header><div id="mainTrend"></div></section>
+          <section class="board-band"><header class="board-section-head"><h2>地区信号分布</h2><span>原文地区词，可多地命中</span></header><div class="board-bars" id="mainRegions"></div></section>
+          <section class="board-band main-competitor-band"><header class="board-section-head"><div><p class="eyebrow">竞品 × 商业事件</p><h2>竞品动作矩阵</h2></div><span>按已有竞争相关性排序</span></header><div id="mainCompetitorMatrix"></div></section>
+          <section class="board-band"><header class="board-section-head"><h2>商业事件构成</h2><span>当前范围</span></header><div class="board-bars" id="mainCategories"></div></section>
+        </div>
+        <details class="board-methods"><summary>总看板统计口径</summary><p>全部模块共用上方时间与筛选条件，按已确认的新闻发布日期计算。重大信号沿用“日报 / 提醒入选且 ACRO 高相关”的现有筛选结果，不代表事实已获人工确认。多公司、多地区可以重复计入各自分组；总事件数按保守合并后的记录去重。</p><p>仅恢复旧版看板的展示结构，不回退当前公司、账户或事件数据。按自然周 / 月查询及历史选期位于二级看板；未确认日期单列，不补猜项目周期。</p></details>
+      </section>
+
+      <section class="period-board page-panel" data-page="period-overview" id="periodOverview">
         <header class="board-intro">
           <div><p class="board-kicker" id="boardPeriodStatus">周期市场概览</p><h2>市场发生了什么</h2><p id="boardPeriodBrief" aria-live="polite"></p></div>
           <div class="board-snapshot"><span id="boardSnapshot"></span><span id="updatedAt" hidden></span><span id="windowDays" hidden></span></div>
@@ -1092,8 +1126,8 @@
               <article class="methodology-detail" id="metric-trend-counts" data-methodology-detail="trend-counts">
                 <header><div><span>周期图表 · 前端实时计算</span><h3>周期发布节奏</h3></div><b>事件记录数</b></header>
                 <p class="methodology-lead" id="methodologyTrendExample">正在按当前周期与筛选计算。</p>
-                <div class="methodology-scope-list"><span>自然周 / 月</span><span>公司</span><span>公司角色</span><span>地区多选</span><span>商业事件</span><span>产品 / 技术主题</span><span>搜索词</span></div>
-                <div class="methodology-boundary"><strong>日期语义</strong><p>使用原始记录的新闻发布日期，不使用评分、采集发现时间或活动日期代替。旧活动日期字段、Sitemap 发现日期、临床试验更新日期没有独立发布时间证据时单列待核对。未知与未来日期不计入周期；每天的柱形计数之和等于本期事件记录总数。周一至周日、自然月，按日本时间日历。</p></div>
+                <div class="methodology-scope-list"><span>总看板近 30 / 90 天，二级页自然周 / 月</span><span>公司</span><span>公司角色</span><span>地区多选</span><span>商业事件</span><span>产品 / 技术主题</span><span>搜索词</span></div>
+                <div class="methodology-boundary"><strong>日期语义</strong><p>使用原始记录的新闻发布日期，不使用评分、采集发现时间或活动日期代替。旧活动日期字段、Sitemap 发现日期、临床试验更新日期没有独立发布时间证据时单列待核对。未知与未来日期不计入。总看板近 30 / 90 天分别每 3 / 7 天分组；周月看板每天一柱，各柱形计数之和等于当前范围事件记录总数。按日本时间日历。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-dashboard-counts" data-methodology-detail="dashboard-counts">
@@ -1104,13 +1138,14 @@
                   <div><strong>产品与技术动态</strong><p>同一结果中，主商业事件为 product_platform 或 target_therapy 的记录数量。</p></div>
                   <div><strong>合作与交易动态</strong><p>同一结果中，主商业事件为 partnership_deal 的记录数量。</p></div>
                 </div>
+                <div class="methodology-boundary"><strong>总看板四项指标</strong><p>总看板默认近 30 天，可切换近 90 天。重大信号：合并记录中至少一条原始记录属于日报 / 即时提醒且 ACRO 高相关；竞品 / 账户动态：事件命中对应角色公司；亚太：原文命中日本、中国、韩国或东南亚任一地区。同一事件可以进入多个指标，不能将四项相加。点击数字进入同范围子集，不额外切换天数。</p></div>
                 <div class="methodology-boundary"><strong>合并与边界</strong><p>相同链接、日期和标题，或同日同标题（规范化后至少 35 字符）且命中同一公司时保守合并，保留多个原文链接。跨语言和相近标题未进行语义合并。产品与合作是事件总数的子集，不是四项相加；公司数的单位不同。地区与主题可多命中，其分项之和不一定等于事件总数。</p></div>
                 <div class="methodology-boundary"><strong>历史范围</strong><p>历史周 / 月查询使用已保留的事件明细；旧 history 文件只有统计。此前的数据仅为来源返回的回溯样本。没有结果不等于市场没有事件，页面明确提示未覆盖或部分覆盖。所有指标、列表与下钻详情沿用同一筛选；公司“已保留历史”是明确标注的跨周期视图。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-competitor-matrix" data-methodology-detail="competitor-matrix">
                 <header><div><span>公司级 · 本期前端计数</span><h3>公司动态与排序</h3></div><b>当前周期</b></header>
-                <p class="methodology-lead">新版总览已用公司动态列表替换旧的固定 90 天动作矩阵。竞品、客户 / 账户、本公司分开查看，只显示当前条件下有记录的公司，不删除零产出的公司配置。</p>
+                <p class="methodology-lead">总看板保留竞品动作矩阵，行按已有竞争相关性排列，列为当前记录最多的五类商业事件；“全部”包含其余分类，各数字可查看对应原文。时间和筛选跟随总看板，不再固定为另一套 90 天。账户矩阵按当前事件数量排列。二级周 / 月看板则用分角色公司列表呈现，只显示本期有记录的公司。</p>
                 <div class="methodology-rule-columns">
                   <dl class="methodology-rule-list"><div><dt>排序</dt><dd>本期事件记录数量降序；相同数量时沿用已配置的竞争相关顺序，再按公司 ID 排列。</dd></div><div><dt>数量</dt><dd>该公司 ID 命中的本期事件记录数量，同一事件可以同时命中多家公司。</dd></div></dl>
                   <dl class="methodology-rule-list"><div><dt>主要变化</dt><dd>该公司本期最常见的前两类商业事件及其数量。</dd></div><div><dt>公司档案</dt><dd>点击查看同一范围的事件，或明确切换至全部已保留历史；可继续查看原文证据和数据源档案。</dd></div></dl>
@@ -1276,9 +1311,9 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260908period2"></script>
-    <script src="./overview-model.js?v=20260908period2"></script>
-    <script src="./overview.js?v=20260908period2"></script>
-    <script src="./app.js?v=20260908period2"></script>
+    <script src="./embedded-data.js?v=20260908home1"></script>
+    <script src="./overview-model.js?v=20260908home1"></script>
+    <script src="./overview.js?v=20260908home1"></script>
+    <script src="./app.js?v=20260908home1"></script>
   </body>
 </html>
