@@ -1,0 +1,362 @@
+{
+  "updated_at": "2026-09-08",
+  "usage_note": "公司识别用标识，权利归各品牌所有；不表示合作、客户认证或官方背书。未核实的标识不展示。",
+  "companies": {
+    "merck_life_science": {
+      "website": "https://www.merckgroup.com/en",
+      "source_url": "https://www.merckgroup.com/content/dam/web/corporate/images/general/global/logos/merck.svg",
+      "resolved_url": "https://www.merckgroup.com/content/dam/web/corporate/images/general/global/logos/merck.svg",
+      "asset": "web/assets/company-logos/merck_life_science.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "568c28a59b29fcd66108eef174e65c9bb475d3423b686fa9481d06bdcb8d5ed1",
+      "evidence_page": "https://www.merckgroup.com/en",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "sartorius": {
+      "website": "https://www.sartorius.com/en",
+      "source_url": "https://www.sartorius.com/resource/crblob/5108/736ffdaf13a438d0fa6a38bc24dfa7ab/sartorius-logo-data.svg",
+      "resolved_url": "https://www.sartorius.com/resource/crblob/5108/736ffdaf13a438d0fa6a38bc24dfa7ab/sartorius-logo-data.svg",
+      "asset": "web/assets/company-logos/sartorius.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "d69cf7447c88daf07391fce64608ba6e639d6bd74ae9c0409fd233ecbf8a5240",
+      "evidence_page": "https://www.sartorius.com/en",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "miltenyi_biotec": {
+      "website": "https://www.miltenyibiotec.com/US-en/",
+      "source_url": "https://www.miltenyibiotec.com/assets/images/Miltenyi_logo_180x180.png",
+      "resolved_url": "https://www.miltenyibiotec.com/assets/images/Miltenyi_logo_180x180.png",
+      "asset": "web/assets/company-logos/miltenyi_biotec.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "288398f9d1cb071e0186f2906e9914cdbf8c0878ded2aca48076e7157d867577",
+      "evidence_page": "https://www.miltenyibiotec.com/US-en/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "stemcell_technologies": {
+      "website": "https://www.stemcell.com/",
+      "source_url": "https://www.stemcell.com/static/version1788476109/frontend/Magento/Stemcell/en_US/images/stemcell_logo.png",
+      "resolved_url": "https://www.stemcell.com/static/version1788476109/frontend/Magento/Stemcell/en_US/images/stemcell_logo.png",
+      "asset": "web/assets/company-logos/stemcell_technologies.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "c9542f93607d30dbd100b256eb2b97acf3cf77e6e4719cb549d92e3a83c99e21",
+      "evidence_page": "https://www.stemcell.com/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "takara_bio": {
+      "website": "https://www.takara-bio.com/en/index.html",
+      "source_url": "https://www.takara-bio.com/en/common/site-logo/main/0/teaserItems1/010/binaryNodeName/logo-en.svg",
+      "resolved_url": "https://www.takara-bio.com/en/common/site-logo/main/0/teaserItems1/010/binaryNodeName/logo-en.svg",
+      "asset": "web/assets/company-logos/takara_bio.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "4232b280bd013e482db523d42d51346cd1f52bb14323735c0565e2d1fc03b49c",
+      "evidence_page": "https://www.takara-bio.com/en/index.html",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "fujifilm_wako": {
+      "website": "https://labchem-wako.fujifilm.com/us/index.html",
+      "source_url": "https://labchem-wako.fujifilm.com/us/img/wk_logo.svg",
+      "resolved_url": "https://labchem-wako.fujifilm.com/us/img/wk_logo.svg",
+      "asset": "web/assets/company-logos/fujifilm_wako.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "3a551cd93c0bf6ccd0fcaafbaf423d8ef1f3c788904d46142d1a1e3d209c8236",
+      "evidence_page": "https://labchem-wako.fujifilm.com/us/index.html",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "nacalai_tesque": {
+      "website": "https://www.nacalai.com/global/",
+      "source_url": "https://www.nacalai.com/global/source/img/common/h_logo.png",
+      "resolved_url": "https://www.nacalai.com/global/source/img/common/h_logo.png",
+      "asset": "web/assets/company-logos/nacalai_tesque.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "ef83e1f3ba8647b4746e78c342630f985506f87bd6cb0c1168e83778333fe4c3",
+      "evidence_page": "https://www.nacalai.com/global/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "proteintech": {
+      "website": "https://www.ptglab.com/",
+      "source_url": "https://www.ptglab.com/img/logos/Logo_Ptg_Main.png",
+      "resolved_url": "https://www.ptglab.com/img/logos/Logo_Ptg_Main.png",
+      "asset": "web/assets/company-logos/proteintech.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "8784addf8c9ae05d469baada45b48069515a369287941968f497103b8a7b583a",
+      "evidence_page": "https://www.ptglab.com/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "takeda_pharma": {
+      "website": "https://www.takeda.com/",
+      "source_url": "https://res.cloudinary.com/takeda/image/upload/v1652260163/migration/dd376054054162cb1dd2807ef9d39eee5effe406-720x257.svg",
+      "resolved_url": "https://res.cloudinary.com/takeda/image/upload/v1652260163/migration/dd376054054162cb1dd2807ef9d39eee5effe406-720x257.svg",
+      "asset": "web/assets/company-logos/takeda_pharma.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "45fcc1ad469ca2ab7ffbbeb7ba01191ed84267715107fba46d4e92a6e1e17fdf",
+      "evidence_page": "https://www.takeda.com/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "astellas_pharma": {
+      "website": "https://www.astellas.com/en/",
+      "source_url": "https://assets.astellas.com/is/content/astellas/Astellas-logo-1?ts=1779692078071&$transperant$&dpr=off",
+      "resolved_url": "https://assets.astellas.com/is/content/astellas/Astellas-logo-1?ts=1779692078071&$transperant$&dpr=off",
+      "asset": "web/assets/company-logos/astellas_pharma.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "b9754a52a2f86741216720ae6745b2758c967ec66aca123512adae5cc9a7756e",
+      "background": "dark",
+      "evidence_page": "https://www.astellas.com/en/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "daiichi_sankyo": {
+      "website": "https://www.daiichisankyo.com/",
+      "source_url": "https://www.daiichisankyo.com/Portals/0/files/common/images/logo_en_2.png",
+      "resolved_url": "https://www.daiichisankyo.com/Portals/0/files/common/images/logo_en_2.png",
+      "asset": "web/assets/company-logos/daiichi_sankyo.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "205033e7deb9681f74a6d1a91430fe4ce0cf9d80d54ef43de772604b80f37b36",
+      "evidence_page": "https://www.daiichisankyo.com/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "eisai": {
+      "website": "https://www.eisai.com/index.html",
+      "source_url": "https://www.eisai.com/common/images/header/logo.svg",
+      "resolved_url": "https://www.eisai.com/common/images/header/logo.svg",
+      "asset": "web/assets/company-logos/eisai.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "b22c4fc3f8dd4282a1a73367aaafa1bfa88e69c90534a0b649b10c59f5508699",
+      "evidence_page": "https://www.eisai.com/index.html",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "chugai_pharma": {
+      "website": "https://www.chugai-pharm.co.jp/english/",
+      "source_url": "https://www.chugai-pharm.co.jp/assets/images/ist/icons/english/icon-header-logo.svg",
+      "resolved_url": "https://www.chugai-pharm.co.jp/assets/images/ist/icons/english/icon-header-logo.svg",
+      "asset": "web/assets/company-logos/chugai_pharma.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "304a5f8f40e9bfdd4bb3ba404dab9d415691e937fc4eb08509142b7d6385b369",
+      "evidence_page": "https://www.chugai-pharm.co.jp/english/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "ono_pharma": {
+      "website": "https://www.ono-pharma.com/en",
+      "source_url": "https://www.ono-pharma.com/themes/onocorporate_theme/img/common/img_header_logo_en.png",
+      "resolved_url": "https://www.ono-pharma.com/themes/onocorporate_theme/img/common/img_header_logo_en.png",
+      "asset": "web/assets/company-logos/ono_pharma.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "7161f6f714962281c77256f7c9ed407c0be0e160c29c2bd5c593c5a23e1da4ef",
+      "evidence_page": "https://www.ono-pharma.com/en",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "shionogi": {
+      "website": "https://www.shionogi.com/global/en/",
+      "source_url": "https://www.shionogi.com/content/dam/shionogi/global/top/top-logo-03.png",
+      "resolved_url": "https://www.shionogi.com/content/dam/shionogi/global/top/top-logo-03.png",
+      "asset": "web/assets/company-logos/shionogi.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "45e9a06925ba302870b5ae13d9d217dd7b3469da5249e876c0a14e9be0c9d9aa",
+      "evidence_page": "https://www.shionogi.com/global/en/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "jcr_pharma": {
+      "website": "https://www.jcrpharm.co.jp/en/",
+      "source_url": "https://www.jcrpharm.co.jp/assets/img/common/logo_01.svg",
+      "resolved_url": "https://www.jcrpharm.co.jp/assets/img/common/logo_01.svg",
+      "asset": "web/assets/company-logos/jcr_pharma.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "93ba1572099aa593bc177695a062328b07578b9b6712c0c324fee48688c1953d",
+      "background": "dark",
+      "evidence_page": "https://www.jcrpharm.co.jp/en/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "peptidream": {
+      "website": "https://www.peptidream.com/en/",
+      "source_url": "https://www.peptidream.com/assets/images/common/logo_pepti_4c.png",
+      "resolved_url": "https://www.peptidream.com/assets/images/common/logo_pepti_4c.png",
+      "asset": "web/assets/company-logos/peptidream.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "3e78c035e9c1ca0d10b6f3f4e0b0ae321bf468b7193b1f2321235f9a1f8f9a1d",
+      "evidence_page": "https://www.peptidream.com/en/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "kaken_pharma": {
+      "website": "https://www.kaken.co.jp/english/",
+      "source_url": "https://www.kaken.co.jp/english/common/img/logo_new.png",
+      "resolved_url": "https://www.kaken.co.jp/english/common/img/logo_new.png",
+      "asset": "web/assets/company-logos/kaken_pharma.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "96530c1abfebf00105d297d70114fb9d09b67078a6639d4351fec6cb05ac6f98",
+      "evidence_page": "https://www.kaken.co.jp/english/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "kissei_pharma": {
+      "website": "https://www.kissei.co.jp/e_contents/",
+      "source_url": "https://www.kissei.co.jp/assets/img/header_logo.svg",
+      "resolved_url": "https://www.kissei.co.jp/assets/img/header_logo.svg",
+      "asset": "web/assets/company-logos/kissei_pharma.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "1806e268350136e7ab89e261ae590c545e269121112cb86adf74655e71699dde",
+      "evidence_page": "https://www.kissei.co.jp/e_contents/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "promega": {
+      "website": "https://www.promega.jp/",
+      "source_url": "https://www.promega.jp/assets/images/logos/promega-logo-wide.svg",
+      "resolved_url": "https://www.promega.jp/assets/images/logos/promega-logo-wide.svg",
+      "asset": "web/assets/company-logos/promega.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "26ee168cc1aaf51a36abfdf70ba630126c0105f68f79fdef5d85e229e2da1df8",
+      "evidence_page": "https://www.promega.jp/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "tanabe_pharma": {
+      "website": "https://www.tanabe-pharma.com/en/",
+      "source_url": "https://www.tanabe-pharma.com/en/common/site-logo/main/0/teaserItems1/0/binaryNodeName/logologo.svg",
+      "resolved_url": "https://www.tanabe-pharma.com/en/common/site-logo/main/0/teaserItems1/0/binaryNodeName/logologo.svg",
+      "asset": "web/assets/company-logos/tanabe_pharma.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "879f86aab117103f5f157bb98a68438f24fed8e00a9e3c49cc45441abb863f75",
+      "evidence_page": "https://www.tanabe-pharma.com/en/common/header-include/pc-header-include/header-content.html",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "acro": {
+      "website": "https://www.acrobiosystems.com/",
+      "source_url": "https://console.acrobiosystems.com/public/images/LOGO-download.png",
+      "resolved_url": "https://console.acrobiosystems.com/public/images/LOGO-download.png",
+      "asset": "web/assets/company-logos/acro.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "aa01074d787085f07cc9d1e073f982962e2610bbdaf83fa443baf52cb26fab6d",
+      "evidence_page": "https://www.acrobiosystems.com/news/1061",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "cytiva": {
+      "website": "https://www.cytivalifesciences.com/en/us",
+      "source_url": "https://cdn.cytivalifesciences.com/api/public/content/7059157tab6843?v=9bba7f58",
+      "resolved_url": "https://cdn.cytivalifesciences.com/api/public/content/7059157tab6843?v=9bba7f58",
+      "asset": "web/assets/company-logos/cytiva.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "1457c9a967da27430e56600735f39f1582c41e9782e8281a6ef8af23ba30998a",
+      "evidence_page": "https://www.cytivalifesciences.com/en/us",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "thermo_fisher": {
+      "website": "https://www.thermofisher.com/us/en/home.html",
+      "source_url": "https://www.thermofisher.com/jp/ja/home.html",
+      "asset": "web/assets/company-logos/thermo_fisher.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "5b99b53d6df79610b339e70d3f432d7b21e9d244aa46a370ad60379508dd642e",
+      "source_note": "官网页眉内嵌 SVG，保留原始标识。",
+      "evidence_page": "https://www.thermofisher.com/us/en/home.html",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "bd_biosciences": {
+      "website": "https://investors.bd.com/",
+      "source_url": "https://d1io3yog0oux5.cloudfront.net/_65e08bb30263ecb60a753bafd97125d6/bd/files/theme/site-files/20240821/www.bd.com/content/dam/bdcom-assets/en/en-us/images/graphic/icon/header-bd-logo.svg",
+      "resolved_url": "https://d1io3yog0oux5.cloudfront.net/_65e08bb30263ecb60a753bafd97125d6/bd/files/theme/site-files/20240821/www.bd.com/content/dam/bdcom-assets/en/en-us/images/graphic/icon/header-bd-logo.svg",
+      "asset": "web/assets/company-logos/bd_biosciences.svg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "f9cdc754616ded7d816cb81084ccd70f3a0df3d8f7414c0ce8c3c53efec1525f",
+      "evidence_page": "https://investors.bd.com/",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "biolegend": {
+      "website": "https://www.biolegend.com/",
+      "source_url": "https://resources.revvity.com/images/img-biolegend-from-revvity-logo.png",
+      "resolved_url": "https://resources.revvity.com/images/img-biolegend-from-revvity-logo.png",
+      "asset": "web/assets/company-logos/biolegend.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "72c048e149b6fc08d628c3b258cec2df258986b330708131968e9ddc94d15d50",
+      "evidence_page": "https://www.revvity.com/our-brands",
+      "source_kind": "official_website",
+      "status": "available"
+    },
+    "abcam": {
+      "website": "https://www.abcam.cn/",
+      "source_url": "https://mma.prnewswire.com/media/1061261/Abcam_Logo.jpg?p=publish",
+      "resolved_url": "https://mma.prnewswire.com/media/1061261/Abcam_Logo.jpg?p=publish",
+      "asset": "web/assets/company-logos/abcam.jpg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "b4808710bb37880462330e4809a7bb13b0d54972cefde07f1876cf583a842ad3",
+      "evidence_page": "https://www.newswire.ca/news-releases/abcam-reveals-new-cell-engineering-facility-in-bay-area-891624242.html",
+      "source_kind": "official_press_release",
+      "status": "available",
+      "source_note": "公司官方新闻稿所附品牌素材；官网访问受限，未核实最新品牌规范。"
+    },
+    "sino_biological": {
+      "website": "https://www.sinobiological.com.cn/",
+      "source_url": "https://ml.globenewswire.com/Resource/Download/00946475-b71a-4a2b-a96d-111ee545d71c",
+      "resolved_url": "https://ml.globenewswire.com/Resource/Download/00946475-b71a-4a2b-a96d-111ee545d71c",
+      "asset": "web/assets/company-logos/sino_biological.png",
+      "retrieved_at": "2026-09-08",
+      "sha256": "21c81e078e4087b3fccb22d5b157a79c7262fec7b1d28add82e177a8aa6c1ae0",
+      "evidence_page": "https://www.globenewswire.com/news-release/2023/10/09/2756840/0/en/Sino-Biological-Announces-the-Opening-of-Its-New-US-Based-Center-for-Bioprocessing.html",
+      "source_kind": "official_press_release",
+      "status": "available",
+      "source_note": "公司官方新闻稿所附品牌素材；官网访问受限，未核实最新品牌规范。"
+    },
+    "sigma_aldrich": {
+      "website": "https://www.sigmaaldrich.com/JP/ja",
+      "source_url": "https://photos.prnewswire.com/prnfull/20050215/CGSIGMAALLOGO",
+      "resolved_url": "https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_cpwaar3m/def_height/2700/def_width/2700/version/100012/type/1",
+      "asset": "web/assets/company-logos/sigma_aldrich.jpg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "0abc7ccbf5b201d95bc740a8175732c56e45d8606e10a5dad82d241c78d48cbb",
+      "evidence_page": "https://www.prnewswire.com/news-releases/sigma-aldrich-meets-evolving-quality-and-regulatory-needs-with-iso-13485-expansion-provides-diagnostic-customers-with-reliable-critical-raw-materials-300117317.html",
+      "source_kind": "official_press_release",
+      "status": "available",
+      "source_note": "公司官方新闻稿所附品牌素材；官网访问受限，未核实最新品牌规范。"
+    },
+    "biotechne": {
+      "website": "https://www.bio-techne.com/",
+      "source_url": "https://mma.prnewswire.com/media/2470019/Bio_Techne_Corporation__logo.jpg?p=twitter",
+      "resolved_url": "https://mma.prnewswire.com/media/2470019/Bio_Techne_Corporation__logo.jpg?p=twitter",
+      "asset": "web/assets/company-logos/biotechne.jpg",
+      "retrieved_at": "2026-09-08",
+      "sha256": "436191334db1fbdd3e57a77607ec91fc9ddbd78266b137a26954e15a1da23583",
+      "evidence_page": "https://www.prnewswire.com/news-releases/bio-techne-announces-new-distribution-agreement-with-leader-life-sciences-302311108.html",
+      "source_kind": "official_press_release",
+      "status": "available",
+      "source_note": "公司官方新闻稿所附品牌素材；官网访问受限，未核实最新品牌规范。"
+    },
+    "rd_systems": {
+      "website": "https://www.rndsystems.com",
+      "status": "pending",
+      "note": "官网多次超时，暂未取得可核实的独立品牌原图。"
+    },
+    "medchemexpress": {
+      "website": "https://www.medchemexpress.cn/",
+      "status": "pending",
+      "note": "官网访问受限，未使用第三方重绘或无法核实的图片。"
+    },
+    "cellgenix": {
+      "website": "https://www.cellgenix.com/",
+      "status": "pending",
+      "note": "原官网连接失败，不以 Sartorius 集团标识代替 CellGenix。"
+    },
+    "peprotech": {
+      "website": "https://www.thermofisher.com/jp/ja/home/brands/peprotech.html",
+      "status": "pending",
+      "note": "官方品牌页暂无独立标识可直接使用，不以 Thermo Fisher 标识代替 PeproTech。"
+    }
+  }
+}

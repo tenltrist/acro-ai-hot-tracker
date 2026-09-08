@@ -1110,11 +1110,79 @@ a {
 }
 
 .company-chip-main strong {
-  overflow: hidden;
   font-size: 13px;
   font-weight: 750;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+}
+
+.company-logo {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 58px;
+  height: 36px;
+  flex: 0 0 58px;
+  overflow: hidden;
+  border: 1px solid #e0e7e9;
+  border-radius: 4px;
+  background: #fff;
+  color: #52636c;
+  vertical-align: middle;
+}
+
+.company-logo-fallback {
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+}
+
+.company-logo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.company-logo--profile {
+  width: 80px;
+  height: 46px;
+  flex-basis: 80px;
+}
+
+.company-logo--dark,
+.company-logo--dark img {
+  background: #34434b;
+  border-color: #34434b;
+}
+
+.company-name-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.company-name-with-logo > :last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.company-chip-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.company-chip .company-chip-copy small {
+  padding-left: 0;
+  line-height: 1.4;
 }
 
 .company-dot {
@@ -2195,7 +2263,7 @@ select {
 
 .customer-priority-row {
   display: grid;
-  grid-template-columns: minmax(230px, 1.45fr) minmax(94px, 0.55fr) minmax(112px, 0.65fr) minmax(100px, 0.55fr) minmax(160px, 0.9fr) minmax(240px, 1.35fr);
+  grid-template-columns: minmax(290px, 1.45fr) minmax(94px, 0.55fr) minmax(112px, 0.65fr) minmax(100px, 0.55fr) minmax(160px, 0.9fr) minmax(240px, 1.35fr);
   align-items: stretch;
   width: 100%;
   height: auto;
@@ -2279,8 +2347,13 @@ select {
 }
 
 .customer-priority-company {
-  grid-template-columns: 30px minmax(0, 1fr);
+  grid-template-columns: 30px 58px minmax(0, 1fr);
   align-items: center;
+}
+
+.customer-priority-company > i > strong {
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .customer-priority-company > b {
@@ -5124,7 +5197,7 @@ select {
   font-variant-numeric: tabular-nums;
 }
 
-.company-profile-title span {
+.company-profile-title > .company-role-label {
   color: #a05b32;
   font-size: 11px;
   font-weight: 800;
@@ -6858,7 +6931,7 @@ select {
   font-variant-numeric: tabular-nums;
 }
 
-.matrix-company > span {
+.matrix-company > .matrix-company-copy {
   display: grid;
   gap: 2px;
   min-width: 0;

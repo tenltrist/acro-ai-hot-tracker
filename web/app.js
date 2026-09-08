@@ -2323,6 +2323,24 @@ function compactCompanyName(company) {
   return (company.display_name || company.id).split(" / ")[0];
 }
 
+function companyLogoMarkup(company, size = "compact") {
+  if (!company || company.entity_kind || company.customer_pool) return "";
+  const name = compactCompanyName(company);
+  const logo = window.AIHOT_COMPANY_LOGOS?.[company.id];
+  const initials = name.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "").slice(0, 2).toUpperCase();
+  return `<span class="company-logo company-logo--${size}${logo?.background === "dark" ? " company-logo--dark" : ""}" data-company-logo="${escapeAttr(company.id)}" title="${escapeAttr(name)}${logo?.src ? "" : " · Logo 待补"}" aria-hidden="true">
+    <span class="company-logo-fallback">${escapeHtml(initials)}</span>
+    ${logo?.src ? `<img src="${escapeAttr(logo.src)}" alt="" loading="lazy" decoding="async" data-company-logo-image />` : ""}
+  </span>`;
+}
+
+document.addEventListener("error", (event) => {
+  if (event.target instanceof HTMLImageElement && event.target.hasAttribute("data-company-logo-image")) {
+    event.target.parentElement.title += " · Logo 暂不可用";
+    event.target.remove();
+  }
+}, true);
+
 function getCompetitiveRank(company) {
   const rank = Number(company?.competitive_relevance_rank);
   return Number.isFinite(rank) && rank > 0 ? rank : Number.POSITIVE_INFINITY;
@@ -2361,8 +2379,9 @@ function renderCompanyDock() {
     const rows = members.length
       ? members.map((company) => `
           <button class="company-chip ${state.company === company.display_name ? "active" : ""}" type="button" data-filter-company="${escapeHtml(company.id)}">
-            <span class="company-chip-main"><i class="company-dot role-${role}"></i><strong>${escapeHtml(compactCompanyName(company))}</strong></span>
-            <small>${role === "competitor" && Number.isFinite(getCompetitiveRank(company)) ? `#${formatCompetitiveRank(company)} · ` : ""}${escapeHtml(company.role_label || meta.label)}</small>
+            <span class="company-chip-main">${companyLogoMarkup(company)}<span class="company-chip-copy"><strong>${escapeHtml(compactCompanyName(company))}</strong>
+              <small>${role === "competitor" && Number.isFinite(getCompetitiveRank(company)) ? `#${formatCompetitiveRank(company)} · ` : ""}${escapeHtml(company.role_label || meta.label)}</small>
+            </span></span>
           </button>
         `).join("")
       : `<div class="company-dock-empty">${escapeHtml(meta.empty)}</div>`;
@@ -2551,9 +2570,10 @@ function renderJapanAccountIntelligence() {
 
   const accountRows = renderedAccounts.map((account) => {
     const matches = signalIndex.get(account.id) || [];
+    const company = (state.payload.companies || []).find((entry) => findAccountForCompany(entry, [account]));
     return `
       <button class="customer-directory-row ${account.id === state.selectedAccountId ? "active" : ""}" type="button" data-japan-account-id="${escapeAttr(account.id)}">
-        <span class="customer-name-cell"><strong>${escapeHtml(account.name)}</strong></span>
+        <span class="customer-name-cell company-name-with-logo">${companyLogoMarkup(company)}<strong>${escapeHtml(account.name)}</strong></span>
         <span class="customer-type-tags">${accountStageMarkup(account)}</span>
         <span class="customer-parent-cell">${escapeHtml(account.organization_label || "待分类")}</span>
         <span class="customer-signal-count ${matches.length ? "has-signal" : ""}">${matches.length ? `${matches.length} 条候选` : "暂无"}</span>
@@ -2605,7 +2625,7 @@ function renderJapanAccountIntelligence() {
       ? "先核对主体和事件，再判断是否存在 ACRO 产品需求、技术切入点或活动跟进机会。"
       : "名单只负责建立公司锚点；没有外部信号时，不自动生成商业机会。";
   els.japanCustomerDetail.innerHTML = `
-    <header><span>账户情报锚点</span><h3>${escapeHtml(selected.name)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
+    <header><span>账户情报锚点</span><h3 class="company-name-with-logo">${companyLogoMarkup((state.payload.companies || []).find((entry) => findAccountForCompany(entry, [selected])), "profile")}<span>${escapeHtml(selected.name)}</span></h3><p>${escapeHtml(data.semantics || "")}</p></header>
     <div class="customer-detail-fields">${fields}</div>
     <div class="customer-opportunity-state ${opportunityClass}">
       <span>建议动作</span>
@@ -2974,8 +2994,9 @@ function renderCompanyPools() {
         ? members.map((company) => `
             <article class="company-profile-row">
               <div class="company-profile-title">
+                <div class="company-name-with-logo">${companyLogoMarkup(company, "profile")}
                 <strong>${Number.isFinite(getCompetitiveRank(company)) ? `<i class="competitor-rank-badge">${formatCompetitiveRank(company)}</i>` : ""}${escapeHtml(company.display_name)}</strong>
-                <span>${escapeHtml(company.role_label || role.title)}</span>
+                </div><span class="company-role-label">${escapeHtml(company.role_label || role.title)}</span>
               </div>
               <div>
                 <small>判断依据</small>
@@ -3558,8 +3579,9 @@ function renderCompanySourceCoverage() {
   );
   const companySelected = companyItems.filter((item) => ["immediate", "daily"].includes(item.tier));
 
-  els.companyCoverageTitle.textContent = company
-    ? `${company.display_name} · ${definitions.length} 类公司监测板块`
+  els.companyCoverageTitle.classList.add("company-name-with-logo");
+  els.companyCoverageTitle.innerHTML = company
+    ? `${companyLogoMarkup(company, "profile")}<span>${escapeHtml(company.display_name)} · ${definitions.length} 类公司监测板块</span>`
     : "公司监测档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
     ? `监测重点：${company.monitoring_focus}。点开任一监测板块，可查看它实际使用的具体入口、所属来源方法和本轮产出。`
@@ -4200,6 +4222,7 @@ function renderCustomerPriorityMatrix(priorities) {
       <div class="customer-priority-row" role="button" tabindex="0" data-customer-priority-company="${escapeAttr(entry.company.display_name)}" title="查看 ${escapeAttr(keyTitle)}">
         <span class="customer-priority-company">
           <b>${String(index + 1).padStart(2, "0")}</b>
+          ${companyLogoMarkup(entry.company)}
           <i><strong>${escapeHtml(shortCompanyName(entry.company.display_name))}</strong><small>${escapeHtml(relationship)} · ${entry.sourceCount} 个来源</small></i>
         </span>
         <span class="customer-priority-score"><button class="customer-priority-value" type="button" data-methodology-target="priority-index" aria-label="优先指数 ${entry.priorityScore}，查看计算规则"><strong>${entry.priorityScore}</strong></button><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
@@ -4525,11 +4548,11 @@ function renderCompanyTopicMatrix() {
       max = Math.max(max, matrix[company.id][category]);
     }
   }
-  const columns = `minmax(178px, 1.65fr) repeat(${categories.length}, minmax(72px, 1fr))`;
+  const columns = `minmax(265px, 1.65fr) repeat(${categories.length}, minmax(72px, 1fr))`;
   const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>相关竞品（高 → 低）</span>${categories.map((category) => `<span>${escapeHtml(labelBusinessEvent(category, true))}</span>`).join("")}</div>`;
   const rows = companies.map((company) => `
     <div class="matrix-row" style="grid-template-columns:${columns}">
-      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b><span>${escapeHtml(shortCompanyName(company.display_name))}<small>${companyTotals[company.id]} 条监测信号</small></span></span>
+      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b>${companyLogoMarkup(company)}<span class="matrix-company-copy">${escapeHtml(shortCompanyName(company.display_name))}<small>${companyTotals[company.id]} 条监测信号</small></span></span>
       ${categories.map((category) => {
         const count = matrix[company.id][category];
         const selected = selectedMatrix[company.id][category];

@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+import base64
 import json
+import mimetypes
 import re
 from pathlib import Path
 
@@ -23,6 +25,31 @@ HISTORY_DIR = ROOT / "data" / "history"
 SHARE_DIR = ROOT / "share"
 OUT_PATH = SHARE_DIR / "acro_ai_hot_tracker_dashboard.html"
 EMBEDDED_DATA_PATH = WEB_DIR / "embedded-data.js"
+COMPANY_LOGOS_PATH = ROOT / "config" / "company_logos.json"
+
+
+def load_company_logos() -> dict:
+    if not COMPANY_LOGOS_PATH.exists():
+        return {}
+    manifest = json.loads(COMPANY_LOGOS_PATH.read_text(encoding="utf-8"))
+    logos = {}
+    for company_id, record in manifest.get("companies", {}).items():
+        asset = record.get("asset")
+        if not asset:
+            continue
+        path = (ROOT / asset).resolve()
+        if not path.is_relative_to((WEB_DIR / "assets" / "company-logos").resolve()):
+            raise ValueError(f"Logo outside asset directory: {company_id}")
+        mime = mimetypes.guess_type(path.name)[0]
+        if mime not in {"image/svg+xml", "image/png", "image/jpeg", "image/webp", "image/gif", "image/vnd.microsoft.icon", "image/x-icon"}:
+            raise ValueError(f"Unsupported logo format: {company_id}")
+        logos[company_id] = {
+            "src": f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode('ascii')}",
+            "website": record["website"],
+            "source_url": record["source_url"],
+            "background": record.get("background", "light"),
+        }
+    return logos
 
 
 def main() -> int:
@@ -79,6 +106,7 @@ def main() -> int:
         "source_snapshot_bytes": SOURCE_SNAPSHOTS_PATH.stat().st_size if SOURCE_SNAPSHOTS_PATH.exists() else 0,
     }
     storage_profile_payload = json.dumps(storage_profile, ensure_ascii=False, indent=2)
+    logos_payload = json.dumps(load_company_logos(), ensure_ascii=False)
     embedded = (
         f"window.AIHOT_EMBEDDED_PAYLOAD = {payload};\n"
         f"window.AIHOT_EMBEDDED_HISTORY = {history_payload};\n"
@@ -87,6 +115,7 @@ def main() -> int:
         f"window.AIHOT_STORAGE_PROFILE = {storage_profile_payload};\n"
         f"window.AIHOT_COMPANY_RELATIONSHIPS = {relationships_payload};\n"
         f"window.AIHOT_JAPAN_ACCOUNTS = {japan_accounts_payload};\n"
+        f"window.AIHOT_COMPANY_LOGOS = {logos_payload};\n"
     )
     EMBEDDED_DATA_PATH.write_text(embedded, encoding="utf-8")
 
