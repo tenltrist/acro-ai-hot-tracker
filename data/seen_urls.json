@@ -100241,5 +100241,1842 @@
     "tier": "archive",
     "score": 40,
     "signal_type": "news"
+  },
+  "0f11ab3151b7b1ea": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Why CAR‑T Works in Blood Cancers but Struggles in Solid Tumors - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNT2lrVENraEVWUUVXRi1nQVpEYnhnY2o4aVBYaVBRVTlyRTR2cGxnaGRqRm1fOWJsMzVMa0VqRmhkZzNFRERTcGtRaFpmQ0FJYW0xVzA0aGIwLUlGakFPNDVjWV9Fak90bjF6aTVYSk9DczZoTVVlOWdRUFpjcEtrb3BOSjU?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "4ff2ec36cab354bc": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AI Protein Engineering for Cell Therapy & Regenerative Medicine - ACROBiosystems",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA5QmduQmI1ZTlEd0hoM0J3VmIyRFd6TktjSHF0OUFxbk9TM3I3Yi1YY2dMZTRfT25JbFVRUEg1QlNvSEtwY0dGQWphc3pvQS1wZ090OV9ZTjZqam9ILVlCSS1TMGdYbHQwLUZ3RlFyZmViYkFk?oc=5",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "9c1a9cc0d87e84eb": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ICG-21 Opens in Shenzhen, Spotlighting Bio-Generative Intelligence for Health and New Frontiers in Genomics",
+    "url": "https://www.globenewswire.com/news-release/2026/09/09/3358273/0/en/icg-21-opens-in-shenzhen-spotlighting-bio-generative-intelligence-for-health-and-new-frontiers-in-genomics.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "news"
+  },
+  "c8cfdd26a98ab14c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ImageneBio to Participate in H.C. Wainwright 28th Annual Global Investment Conference in New York",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358135/0/en/imagenebio-to-participate-in-h-c-wainwright-28th-annual-global-investment-conference-in-new-york.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "82c453ae63a288f0": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "BBOT Announces New BBO-8520 Data; Highlights Strategic Focus on 2L+ NSCLC BBO-8520 Combination as Well as BBO-11818 and BBO-10203 Combinations in KRAS-Mutant Cancers",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358113/0/en/bbot-announces-new-bbo-8520-data-highlights-strategic-focus-on-2l-nsclc-bbo-8520-combination-as-well-as-bbo-11818-and-bbo-10203-combinations-in-kras-mutant-cancers.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "02d4c1eae9dcc49b": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Acquisition of Own Shares",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358098/0/en/acquisition-of-own-shares.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "f9d1178c455dca2a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Inkoop van eigen aandelen",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358098/0/nl/inkoop-van-eigen-aandelen.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "4ade132e1c8512b9": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Lakefront to Present at the Morgan Stanley 24th Annual Global Healthcare Conference",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358093/0/en/lakefront-to-present-at-the-morgan-stanley-24th-annual-global-healthcare-conference.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "81976a5bad8a71fa": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Lakefront presenteert op de 24e jaarlijkse Global Healthcare Conference van Morgan Stanley",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358093/0/nl/lakefront-presenteert-op-de-24e-jaarlijkse-global-healthcare-conference-van-morgan-stanley.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "ae49b1615d9b07e1": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Starton Therapeutics Appoints Experienced Finance Executive Saleem Elmasri, CPA, as Chief Financial Officer",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358088/0/en/starton-therapeutics-appoints-experienced-finance-executive-saleem-elmasri-cpa-as-chief-financial-officer.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "f34f65443ca5ff90": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Capital Increase in Genmab as a Result of Employee Warrant Exercise",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3358063/0/en/capital-increase-in-genmab-as-a-result-of-employee-warrant-exercise.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "36dd591b1b4180d0": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Akari Therapeutics Selected to Showcase Novel PH1 ADC Payload Platform at Leading Global Oncology, ADC and Healthcare Forums",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357752/0/en/akari-therapeutics-selected-to-showcase-novel-ph1-adc-payload-platform-at-leading-global-oncology-adc-and-healthcare-forums.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "33e19b8bba15244f": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Bionano Laboratories Announces New York State Department of Health Approval of Lab Developed Tests Based on Optical Genome Mapping",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357702/0/en/bionano-laboratories-announces-new-york-state-department-of-health-approval-of-lab-developed-tests-based-on-optical-genome-mapping.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "fe8ef3d50f6c1d97": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Artelo Biosciences to Present at the H.C. Wainwright 28th Annual Global Investment Conference",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357718/0/en/artelo-biosciences-to-present-at-the-h-c-wainwright-28th-annual-global-investment-conference.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "2df4ef8eeb48d435": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Applied Biologics Welcomes New CMS RAPID Pathway and Expanded CMS-FDA Coordination for Innovative Medical Technologies",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357690/0/en/applied-biologics-welcomes-new-cms-rapid-pathway-and-expanded-cms-fda-coordination-for-innovative-medical-technologies.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "372807c04eae30a7": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "HCW Biologics Entered an Exclusive Distribution Agreement with Akron Biotech to Commercialize HCW11-006 as Reagent Used to Support Production of Highly Functional Human CAR-T Cells",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357687/0/en/hcw-biologics-entered-an-exclusive-distribution-agreement-with-akron-biotech-to-commercialize-hcw11-006-as-reagent-used-to-support-production-of-highly-functional-human-car-t-cells.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "d42ffd5c18cfbd9c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Vericel to Present at the 24th Annual Morgan Stanley Global Healthcare Conference on Tuesday, September 15, 2026",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357642/34447/en/vericel-to-present-at-the-24th-annual-morgan-stanley-global-healthcare-conference-on-tuesday-september-15-2026.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "10bd4a2b3c783ba4": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Surrozen Announces Submission of IND Application for SZN-8141 for the Treatment of Diabetic Macular Edema",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357649/0/en/surrozen-announces-submission-of-ind-application-for-szn-8141-for-the-treatment-of-diabetic-macular-edema.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "38925c1ff1fb4daf": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Merakris Therapeutics Launches Patent-Pending AmnioSurge™ With 360 Medical, Opening New Surgical Revenue Channel",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357652/0/en/merakris-therapeutics-launches-patent-pending-amniosurge-with-360-medical-opening-new-surgical-revenue-channel.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "d3758be1fea30a8e": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "A Micro-Cap Biotech Just Cleared a Milestone Most Never Reach",
+    "url": "https://www.globenewswire.com/news-release/2026/09/08/3357653/0/en/a-micro-cap-biotech-just-cleared-a-milestone-most-never-reach.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 14,
+    "signal_type": "news"
+  },
+  "306bad38814f2cc8": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Inhibrx’s OX40 agonist add-on beats Keytruda alone in head and neck cancer",
+    "url": "https://www.biospace.com/drug-development/inhibrxs-ox40-agonist-add-on-beats-keytruda-alone-in-head-and-neck-cancer",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "fdcf253f94a8cae7": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Structure’s obesity portfolio impresses on GLP-1 and amylin fronts in dual data drop",
+    "url": "https://www.biospace.com/drug-development/structures-obesity-portfolio-impresses-on-glp-1-and-amylin-fronts-in-dual-data-drop",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "e9822be8d7c4d469": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Novo shutters 2 more heart disease studies, indicating IL-6 is ‘invalid target’",
+    "url": "https://www.biospace.com/drug-development/novo-shutters-2-more-heart-disease-studies-indicating-il-6-is-invalid-target",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "38b1eb319a023756": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Roivant's pulmonary hypertension drug shines with ‘blowout’ Phase 2 data",
+    "url": "https://www.biospace.com/drug-development/roivants-pulmonary-hypertension-drug-shines-with-blowout-phase-2-data",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "a060755a280867f3": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AstraZeneca’s SERD pill overcomes adcomm defeat to win FDA nod in breast cancer",
+    "url": "https://www.biospace.com/fda/astrazenecas-serd-pill-overcomes-adcomm-defeat-to-win-fda-nod-in-breast-cancer",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "06170efd2bcd08d0": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Novartis’ $12B Avidity acquisition hits Phase 3 speedbump as dystrophy drug disappoints",
+    "url": "https://www.biospace.com/drug-development/novartis-12b-avidity-acquisition-hits-phase-3-speedbump-as-dystrophy-drug-disappoints",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "55e67b8fa9cf47de": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Moonwalk pulls in $70M to take fat-targeting RNAi obesity candidate to clinic",
+    "url": "https://www.biospace.com/business/moonwalk-pulls-in-70m-to-take-fat-targeting-rnai-obesity-candidate-to-clinic",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "9c99ede0747695dc": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Novartis’ cholesterol-lowering medicine fails Phase 3, clouding Lp(a) horizons",
+    "url": "https://www.biospace.com/drug-development/novartis-cholesterol-lowering-medicine-fails-phase-3-clouding-lpa-horizons",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "a690e62cc6164d9b": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "BrainChild Bio targets deadly pediatric brain cancer with $116M series A",
+    "url": "https://www.biospace.com/business/brainchild-bio-targets-deadly-brain-cancer-in-children-with-116m-series-a",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "00c2ce4333575965": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Can Benelux turn scientific strength into larger biotech scale?",
+    "url": "https://www.biospace.com/drug-development/can-benelux-turn-scientific-strength-into-larger-biotech-scale",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "0fb535fa4873b47c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AI will only revolutionize drug discovery and development if we play to its strengths",
+    "url": "https://www.biospace.com/drug-development/opinion-ai-will-only-revolutionize-drug-discovery-and-development-if-we-play-to-its-strengths",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "982223240789940a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "4 CDMOs to consider when outsourcing manufacturing",
+    "url": "https://www.biospace.com/business/4-cdmos-to-consider-when-outsourcing-manufacturing",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "171bcdf5aaa36c96": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Moderna and Merck’s mRNA success fuels focus on ‘scaling out and scaling down’",
+    "url": "https://www.biospace.com/drug-delivery/moderna-and-mercks-mrna-success-fuels-focus-on-scaling-out-and-scaling-down",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "news"
+  },
+  "3e2a1c2c772b920a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Reeling from past failures, Parkinson's pipeline enters 'era of diversification'",
+    "url": "https://www.biospace.com/drug-development/reeling-from-past-failures-parkinsons-pipeline-enters-era-of-diversification",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "f7ef82a50fe3d27e": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Boston Scientific cyberattack likely to have ‘material impact’ on financial results",
+    "url": "https://www.fiercebiotech.com/medtech/boston-scientific-making-strong-progress-restoring-its-operations-post-cyberattack",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "5ec715346bf783cd": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AZ's R&D chief Barr touts internal 'science success story' after IL-33 antibody's stellar showing in COPD",
+    "url": "https://www.fiercebiotech.com/biotech/az-rd-chief-barr-touts-internal-science-success-story-after-il-33-antibodys-stellar-showing",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "a01fe3774611e553": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "FDA approves AstraZeneca’s Etcamah, opening ctDNA-guided treatment paradigm in breast cancer",
+    "url": "https://www.fiercebiotech.com/pharma/fda-approves-astrazeneca-etcamah-opening-ctdna-guided-treatment-shift-breast-cancer",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "41f3f125b5de7877": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Spyre's 3-pronged IBD strategy on track as IL-23 antibody rounds off trio of phase 2 wins",
+    "url": "https://www.fiercebiotech.com/biotech/spyre-snags-phase-2-win-il-23-antibody-round-ulcerative-colitis-program",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "6950284414585f13": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Inhibrx CEO says progression-free survival data leave ‘no question’ about OX40 agonist’s durability",
+    "url": "https://www.fiercebiotech.com/biotech/inhibrxs-profound-dataset-boosts-hopes-accelerated-approval-ox40-agonist",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "c831eb27b67446b9": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Pharvaris' latest phase 3 win builds case for HAE drug with FDA verdict pending",
+    "url": "https://www.fiercebiotech.com/biotech/pharvaris-builds-case-hae-drug-awaiting-fda-verdict-another-phase-3-win",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "7e2ad940cf251723": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Bristol Myers’ pivotal CAR-T multiple myeloma trial hits primary endpoint",
+    "url": "https://www.fiercebiotech.com/biotech/bristol-myers-pivotal-car-t-multiple-myeloma-trial-hits-primary-endpoint",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "c000b18770f83c11": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Boston Scientific recalls spinal cord implant in wake of more than 1k serious injuries",
+    "url": "https://www.fiercebiotech.com/medtech/boston-scientific-recalls-spinal-cord-implant-wake-more-1k-serious-injuries",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "6d644830b81e5d4d": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Building the Data Foundation for AI-Driven Clinical Development",
+    "url": "https://www.fiercebiotech.com/sponsored/building-data-foundation-ai-driven-clinical-development",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "349174268dde147e": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "BrainChild Bio masterminds $116M series A for CAR-T's pivotal push in pediatric brain cancer",
+    "url": "https://www.fiercebiotech.com/biotech/brainchild-bio-masterminds-116m-series-pivotal-push-pediatric-brain-cancer",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "2b4e95da9a064a50": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Roivant’s $14M bet on Bayer’s inhaled hypertension med pays off with phase 2 win",
+    "url": "https://www.fiercebiotech.com/biotech/roivants-14m-bet-bayers-inhaled-hypertension-med-pays-phase-2-win",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "22239b60223c1238": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Novartis stock slides as centerpiece of $12B Avidity buyout flunks ‘crucial’ phase 3 test",
+    "url": "https://www.fiercebiotech.com/biotech/novartis-centerpiece-12b-avidity-buyout-flunks-crucial-phase-3-test",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "bc3bc811a8e6f9a8": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Guardant wins FDA nod for diagnostic guiding use of AstraZeneca’s Etcamah",
+    "url": "https://www.fiercebiotech.com/medtech/guardant-nabs-fda-approval-diagnostic-seeking-out-patients-astrazenecas-new-cancer-med",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "0f6e74b6015cbe43": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Sandoz sets sights on 100 biosimilars in new 2040 strategy, with $300M facility build",
+    "url": "https://www.fiercepharma.com/pharma/sandoz-aims-biosimilar-dominance-under-new-strategy-300m-facility-sweetener-slovenia",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "a0bcb6881b4e1db1": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Eight Trends Reshaping Patient-Centric Drug Development",
+    "url": "https://www.fiercepharma.com/partner-content/eight-trends-reshaping-patient-centric-drug-development",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "5abccb785ade9c83": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Amgen’s DLL3-targeted Imdelltra scores overall survival win in first-line small cell lung cancer",
+    "url": "https://www.fiercepharma.com/pharma/amgen-dll3-targeted-imdelltra-scores-overall-survival-win-first-line-small-cell-lung-cancer",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "078476e21e52d5bd": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Novo Nordisk’s Wegovy helps free 40% of kids from obesity in phase 3 trial",
+    "url": "https://www.fiercepharma.com/pharma/novo-nordisks-wegovy-helps-free-40-kids-obesity-phase-3-trial",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "398c4373ccb9e980": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "UCB turns to art for ‘Expressing Epilepsy’ awareness campaign",
+    "url": "https://www.fiercepharma.com/marketing/ucb-launches-expressing-epilepsy-through-art-awareness-campaign",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "60831d0302cd931a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Ardelyx launches first connected TV ad for GI drug Ibsrela",
+    "url": "https://www.fiercepharma.com/marketing/ardelyx-launches-first-connected-tv-ad-gi-drug-ibsrela",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "d81a920dc9c0c9e9": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Sanofi enlists another celeb mom in actress Keke Palmer to spread the Beyfortus word",
+    "url": "https://www.fiercepharma.com/marketing/sanofi-enlists-celeb-mom-actress-keke-palmer-spread-beyfortus-word-ahead-rsv-season",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "27bffebcb9f57fc5": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Roche sweeps neurology corporate reputation rankings once again",
+    "url": "https://www.fiercepharma.com/marketing/roche-sweeps-neurology-corporate-reputation-rankings-once-again",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "4646c45996062c37": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Novartis Shares Slide After Neuromuscular Candidate Acquired with Avidity Fails Phase III Trial",
+    "url": "https://www.genengnews.com/topics/translational-medicine/novartis-shares-slide-after-neuromuscular-candidate-acquired-with-avidity-fails-phase-iii-trial",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "2c23b56cc9bb0073": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "NRAS Mutations May Require Mutation-Guided Combination Therapies",
+    "url": "https://www.genengnews.com/topics/cancer/nras-mutations-may-require-mutation-guided-combination-therapies",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "97e2857ac237ac71": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "The Multi-Attribute Method (MAM) as a Biologics Lifecycle Backbone",
+    "url": "https://www.genengnews.com/sponsored/the-multi-attribute-method-mam-as-a-biologics-lifecycle-backbone",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "59b64bc2e30fbdab": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ADCs, mAbs, CAR Ts: One Bioluminescent Platform Measures Them All",
+    "url": "https://www.genengnews.com/sponsored/adcs-mabs-car-ts-one-bioluminescent-platform-measures-them-all",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "2adb77a8061c6763": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AI Drug Discovery Hits a New Bottleneck: Experimental Validation",
+    "url": "https://www.genengnews.com/sponsored/ai-drug-discovery-hits-a-new-bottleneck-experimental-validation",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "507be5b173cfd6cc": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Targeted Lentiviral Delivery Without Vector Reengineering",
+    "url": "https://www.genengnews.com/sponsored/targeted-lentiviral-delivery-without-vector-reengineering",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "824855f0726faea2": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ProBioGen Grants Transgene Additional License for AGE1.CR.pIX Cell Line",
+    "url": "https://www.genengnews.com/topics/bioprocessing/probiogen-grants-transgene-additional-license-for-age1-cr-pix-cell-line",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "869c471a3de1edfb": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Anticancer Candidate Strengthens Bones and Prevents Weight Gain in Postmenopausal Mice",
+    "url": "https://www.genengnews.com/topics/drug-discovery/anticancer-candidate-strengthens-bones-and-prevents-weight-gain-in-postmenopausal-mice",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "news"
+  },
+  "3997c59fc1391645": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Regenerative Medicine in the Bronze Age: MSCs and MSC-EVs Leading the Way",
+    "url": "https://www.genengnews.com/sponsored/regenerative-medicine-in-the-bronze-age-mscs-and-msc-evs-leading-the-way",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "a84546118ddfa273": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "RNAV8 Bio Joins ARPA-H Team to Pioneer Programmable RNA Medicines",
+    "url": "https://www.genengnews.com/topics/omics/rnav8-bio-joins-arpa-h-team-to-pioneer-programmable-rna-medicines",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "fcc30ce3b9fe67c1": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Streamlining stable cell line development from the start",
+    "url": "https://www.labiotech.eu/partner/streamlining-stable-cell-line-development-from-the-start",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "72d322874d7f6543": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Partner Case Study Accelerating CAR T-Cell Therapy Manufacturing For Autoimmune Disease - Bioprocess Online",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRGNpNWd3RWhpV2JTb2NZd3k0RHBKN1FqSi1RLXBBSzB2VmJBRW9pWXdIcTFJaDQwbERPUk95WDVTN3J5VnpYTnE2R3c2Z2NqclR4M0RSV2RGUjROVkdPT3lkMjhSLWRLTEFkQ01VS194Z3FyajkxNDlVSTUtTTNkVndJWDhZYU1XcXI4OFVjbi1vcnRPWW5lYmx4NWw5UWktdkZMOGhndmcyYV9vMXN6U1Nsa3ZJakZURnR2NEhFRzY1UzFjRVdBOQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "e7bd8d21c95d39f3": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Secondary antibodies for veterinary diagnostics - SelectScience",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdEJMTF9QelIycFZtYmVGcThLOVVTNW5Bd0ttend5LXpWWXNZM1NwT2FtSVA5ZlRZYTdJamk1UXg5dmxCUWh0WE94UjI1RzBVZS1MYkx6ZmtyYnB3SXBVMkI5VzdxZWFzQnBBb2xJMkRDbWdzaVFsU0x2a1FNelVXZUlHN2dxcnNMY2NMajhldw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "802aef988d4024c3": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Chasing 13 new drugs, Celltrion takes startup hunt to 3 continents - Korea Biomedical Review",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1qMGNSTngyWmpMSy0tbXIxUkVpaXh6UWxMMnhURjRCNXRfT205ZHVHTzFJckxmU3YyRTRUMTN5b0VoWWx4WUwwX19lUi1iM1BDR28wbktsZTRTeGpNUUQ5WkN6NEl4bXE5MzdhZE1iWnB3QdIBckFVX3lxTE1qMGNSTngyWmpMSy0tbXIxUkVpaXh6UWxMMnhURjRCNXRfT205ZHVHTzFJckxmU3YyRTRUMTN5b0VoWWx4WUwwX19lUi1iM1BDR28wbktsZTRTeGpNUUQ5WkN6NEl4bXE5MzdhZE1iWnB3QQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "eb8c97752e4be89a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "BioPharma, Healthcare, healthscience, Biotechnology, BioIT, Pharma news updates - biospectrumindia.com",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ZUTdZcC1DNkZ6NElFbjJlNWJfN2dNaDNHenRlbTg5bDhLd3NPNjJBbjZVRUM3R3BXMTIycXlacUxCQmJXUFgxVUs3OEVaMTR5aWx3UlcxVTJyRXYwZkZGYjZQdGF6N0FWZjNzdHpqalFMTkpROWk0eXZB?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "news"
+  },
+  "fee18c6d59aa1521": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "塩野義製薬、国内事業の再構築加速…鳥居薬品買収で非感染症領域を拡大、売上収益2000億円視野",
+    "url": "https://answers.and-pro.jp/pharmanews/33173",
+    "company_id": "shionogi",
+    "matched_company_ids": [
+      "shionogi"
+    ],
+    "tier": "daily",
+    "score": 60,
+    "signal_type": "news"
+  },
+  "bde4550cda70202b": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "メディパルHD、今川氏が社長に昇格…渡辺氏は会長に／MOLCURE、ペプチド創薬でAxcelead DDPと協業｜製薬業界きょうのニュースまとめ読み（2026年9月8日）",
+    "url": "https://answers.and-pro.jp/pharmanews/33178",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "fd11062fef0d186c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AZ 九州電力送配電とEV充電サービスの実証開始 現地MRが参画 EV環境整備と業務効率化へ",
+    "url": "https://www.mixonline.jp/tabid55.html?artid=80843",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "7a93927ede125881": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "メディパルHD 次期社長に今川国明氏 渡辺秀一氏は会長に 10月１日付トップ人事",
+    "url": "https://www.mixonline.jp/tabid55.html?artid=80842",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "efb428449f98e851": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "日薬連・安川会長 27年度予算概算要求「従来にない規模」と評価 革新的新薬生みだす好循環創出に期待",
+    "url": "https://www.mixonline.jp/tabid55.html?artid=80838",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "57c6fbdd8826b66a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "中外製薬 ネモリズマブでJBDA創薬大賞を受賞",
+    "url": "https://www.mixonline.jp/tabid55.html?artid=80840",
+    "company_id": "chugai_pharma",
+    "matched_company_ids": [
+      "chugai_pharma"
+    ],
+    "tier": "daily",
+    "score": 64,
+    "signal_type": "news"
+  },
+  "dbc4f9be80905ea2": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "MOLCUREとAxcelead DDP AI創薬プラットフォームを活用したペプチド医薬品候補の創製...",
+    "url": "https://www.mixonline.jp/tabid55.html?artid=80839",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "news"
+  },
+  "15b9ecd0a583dccb": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "又一家跨国企业中国区换帅 - ByDrug",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBfa0lRM2ZlNUR2bHdqNDFsZEVTeFNSc2gwSGxaWHZHNVZ3ZElyNm5KRlJQeWFFZXNQY3ctMHBqQmNCNjNqNFFNRDNidFhBeE10QmxtcFQxRlJCVFlYQ01XMHdwYlBSQkNzVXpnWWxUYmFlX0xpd1V4cHJQa2JiQQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "3d5748fc2b67bd66": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "专访赛多利斯谢智，解析Incucyte®CX3技术新突破 - ByDrug",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBLRmI0UDJGYUM0Q2k4bDNBMExUeWVUZTlLTFJIdDBRUXdBUXhsX2xkMURkY2VqeHMzQ1dNWWl1MmFfUzhqRjFmNy0xUXZuc2lBbllCZXhrYkNJZDFVZFJYX2VGSnhyV25ydXE3VGVVZVFGZlJIaVN6elZ2cXV3QQ?oc=5",
+    "company_id": "sartorius",
+    "matched_company_ids": [
+      "sartorius"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "49c93ec974fa1db4": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "MilliporeSigma Executive Details Operational and Financial Challenges of Multi-Modality Manufacturing - geneonline.com",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM19yMkFMV3ZMek85d0t0dDlvN3pwUmF0WUUwdVlKZGJpUU1ZQ1FfNkwyUHFjWGNzRmpQX3AxRnJPSVB2bEZRb1lYWjZEVFhSbU52eE9YTGJmbEd6cllXTVduR3loRWdRQm42M3RLSFd3OW5fdmg4dkdESzZOQ0R2QzQwTEpFZ2xSZURvZF9nNUZBTFF6cDBoSktPOURyV2dteDR5eVBCTS1rdmhuM2VfUnNUc3kxOEhqYVRqcTk1SklFYy1Wejg5Mw?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "7955d97802a5c1e3": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "SLAS 2026 - thermofisher.com",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5kVE5wYV9LeGRSVFdnQUFtTWJROGdmU1I0aE91NTJPX0lwTGdwNnA1dFI1RmRLN1luTTRSRm1mSWg3UmVYVTl4Z1NVb3pHOUJMS3NiM19CN1pudHRvd2o3eVRIcXlzaXFpa1M3WFBn?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "1f686768ce64f09f": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "If You Invested $1000 In Thermo Fisher Scientific Stock 15 Years Ago, You Would Have This Much Today - Benzinga",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOc3c0VGQ2UXpSSURXeVA1NFJ1VHBsZGFteGxWWnVGVEpJbVJWNXJ4U2tOQ0t3YmtOR2s1QmIwaVpjdkpNR2JldlhhMnZoMmhTUzVsYnplQ2Vod3U3MjBYcEs5ZW80a1Rjem5JWEFySFJTQzB3R0VtVUpNTUNHTFJmT2JiYlVocUtCRGhhVnBLUTdkQ2J3RkZmcUpaMnI5eWVmR3ZWNWRNenplQy13SkdKdWI0YkFWeTVwLWgyZG8xRVp4ODh3T0xwNFlrazF3czB0?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "316450ed17018679": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Thermo Fisher Scientific Inc. stock falls Tuesday, underperforms market - marketwatch.com",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQR214TkJsVmwyMWpsVy1wSW45bDZpTjBrN2FZX0tRZEdtbWxPZE9Kck8xbkpjeFhyXzB2NzFwZy1UVUtTcU1GTmlMalFBMUhEbGtiYmlMUUk4TmFNZm1EWjFtelByTjNSM0JZU2g4MkRweWtHVDdzRldiQ2JvN0p3b1N6MmJiZlVQZ0h2bVJ3OTkzaGVzSU9XMF9jQ2R5WEZqY3E1aXFueUt2WlNZUlYzYlJSTkFKZXNxMGJMa2tmVlFoblEwdlN6OGJ2YnVNU2hVNTFZVmN1M3JiWGFaVlhIZQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "e31f3f41892b6a1a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Thermo Fisher launches Multiskan™ Ease Absorbance Microplate Reader - BioSpectrum Asia",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbVVJUDBaRjlmZHRJbThobDcwTDZqQXhMN1VlSW1zQ2s5LXJ2amJLSnlPVUJNNDJRZVI3YkdPT1RTOHliNUs1QlNrOUdLR0JDSjhOZHNKTV9MdXcyTHpCaXFHU0ZjYmJCWFVkNHFocmRJOXhMYm5ZZGxCSkdmY3ZXc1hpNlEyYkFaN1dqY1hKTFVncWp4V3NoVFhxNnY2Z2U2VFFuSFJzRS1KZ2dudjlqMmZLaGNiU1Np?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "063180e7f6f5f79a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Managing Global Trial Supply Risk: Expert Insights - PharmTech.com",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVjRTVnRjU3lQc2NqbEp1SWNCZ0JTQ29MUDBtOHo0UnJ3aHJvTzFBRGFXdHNad1p1a3ZwOWJVUFBpNXYtempTVFk4YzNUUEdMN08zTEhPdnlFMVdZak4xVDVzdzJ6RThQclVHeUxLUFpET1owbUZJZzRxS0dCVVB5bW11emExZEk?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 23,
+    "signal_type": "news"
+  },
+  "1535461a4b7136fb": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Research Use Recombinant Protein Market Report Now Available — Forecasts Market Growth from $1.11B (2026) to $1.55B by 2031, Profiling Thermo Fisher, Bio-Techne, Merck KGaA, Danaher, Revvity, and Others - Yahoo Finance UK",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSFM5NC0xRUo2ZV8zM00xd1V4a0pxZUk4cFJwM3JkZWxUckpiNWxZZE5TSkxrbV93Zm85TFBrenV0dWJjRFotclFNa0I3UldZZUVkOC1GR2g3MktOVTRMZmtYNTBRU3JYR2JyTWhNdlVfd2EtazNmVjhIVG5OcHQzX1BOVlNaZXNUcklCdUFmTE9VUm95SUE?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher",
+      "biotechne",
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 11,
+    "signal_type": "news"
+  },
+  "0e99b0edf45919ea": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "How Thermo Fisher’s New Workflow-Focused Lab Instruments At Thermo Fisher Scientific (TMO) Has Changed Its Investment Story - webull.com",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB3S29udktOTFYtYS1yaDVqV3VlVWJORk5TNnNlRTNsaDUzYU5LVzhNRjFZV2pUdUpPQkZQTzAtSXp2NXJWTldWeTN3UllwXzFra19HR3BfQzY?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "372e1ab032006ac2": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Thermo Fisher Launches Multiskan Ease Absorbance Microplate Reader for Routine Biological Assays - BioPharma APAC",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZjZQU3VQVGJONUpybWR2NVViVk9kUFo4amx0RUhPbDZUZ2VjVF9yMWFLZ3FiQ3BZbXkzaXpOVVdrUFM0YzN3dFRUT2FBaDg2SGM3RmIzM1JIdmRmWTViNU14TjRmUXRyTWk2Vkw3NGphVFcwRUExX0VfTDhwQV8tWUhUR0JucXV5cmFYcmMzcTVjSER5bGl3ektmVHBDUG5ld3dkNXFFRUxHeWthU0RuR08yeUJEV0oyTGdOejF0U1lzY2oxTmU0bkE4Nm5qdlRLMGRmdXRrOA?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "91f64e54084848fa": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Thermo Fisher (NYSE:TMO): Can New Products Justify Its Valuation? - Kalkine Media",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1lVZ3daN1B5Yl9kZUU1RzN3YjNoWDZuVFdubWlRR0s3ZzYxNEJZd3BMZU05a1VrbW5Zdk0zMmQwazAwYnA4ZHBQa3lxby14cmwweDh4NDVMc193UU5GMmJacFFieFhGQk1MV3k5NVVyNFZrTmFzazNLeTh5Y2o5blVNUjh0Y0lWVkZRSFhQQm41QjVjLVlNTHU2VTA0WFNlVUFQMWJLTXQ4UQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7971688f68533144": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Is Thermo Fisher Scientific (NYSE:TMO) Ready for Another Breakout? - Kalkine Media",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaEdJdzZZRzRhMDlJaDloUmNuS2drVVNKVEdWOTJlX3JyS1VPR25vdWhnMFNYaERhWlRWMGY3VXItV1BFN3lOUlBad20yRWlWcmVzbEdqOWc5NGFKRF8yeVVYQjZVejNQeUFmcFZQM2hzUTMxRXg0RzVhOEhYMDhncnJubnBONXZWZU1xa3Q0aEFRWHFpV0RxTVNGbUxDbjc1bUhySkhGNDVwSTZL?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "195f320d8a1af738": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Thermo Fisher stock heads into the open after a modest recent gain - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObGZwSHVaVTNaTk5oM3V1ZlZQNDh3MXNxZXNSZEltRm11WmFrR0R2VWxiN0s0WTVSWE1VMnVFTDllX3gzSm5MdG9ETC1GemN5dVZrOVBkNUg3SjlaVy1TdFFodmdBTlVlYVR4THpFOTZZZWlmMHdzTmREUlluc2xoaHVnRTZ0VjRFcUtFRmhGU2g2azZabXdXMXEzMXF4eS1Nakl3SDdfNGw5MS0zRDQ5UUNyVlpybXhQSTRVVlppemhCR21vNW5KNQ?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "3f6e16a3d31d9b2d": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ゲノミクス市場規模・シェア・予測レポート（2026〜2035年） - Global Market Insights Inc.",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1HREx3ZTBGNmFMVmktNEdVaWRFNFE4MklNR3FNVll0a2o3eHJNN0VCcVFvZkZCbWp5R2g3VmFQV2J0S1dKQ19zT2V6RXMxdzZsTTUwdzdrdkZrQjJaQ0NXaGNoWUxXdmgxZXA1X1JHQks?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 23,
+    "signal_type": "news"
+  },
+  "9baed6deca588f97": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ACROBiosystems Launches Global License Solution Upgrade for HEK293 Functional Cell Lines, Streamlining Compliance to Accelerate Biopharmaceutical R&D",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aa0c43510454174b3d58a29fa88d51e&url=https%3A%2F%2Ffinance.yahoo.com%2Fsectors%2Fhealthcare%2Farticles%2Facrobiosystems-launches-global-license-solution-000000669.html&c=15292182824623203993&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "25a1608b05a21785": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ACROBiosystems Obtains PMDA Material Suitability Confirmation for GMP-grade IL-15, Ensuring Reliable Quality and Strengthening the Biopharmaceutical Approval Process",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aa0c43510454174b3d58a29fa88d51e&url=https%3A%2F%2Fwww.manilatimes.net%2F2026%2F07%2F15%2Ftmt-newswire%2Fpr-newswire%2Facrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process%2F2384463&c=16154244222104438913&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "daily",
+    "score": 62,
+    "signal_type": "news"
+  },
+  "668462c22b90fbad": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ACROBiosystems Wins CiteAb Award, Gaining Worldwide Recognition",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aa0c43510454174b3d58a29fa88d51e&url=https%3A%2F%2Fwww.morningstar.com%2Fnews%2Fpr-newswire%2F20260428cn45521%2Facrobiosystems-wins-citeab-award-gaining-worldwide-recognition&c=5910144310094876269&mkt=en-us",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "ca320302b781aa15": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Baron Durable Advantage Fund initiates Arxis, exits Intuit and Thermo Fisher among Q2 moves",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aa0c435add94eab86421646afdba258&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fnews%2Fother%2Fbaron-durable-advantage-fund-initiates-arxis-exits-intuit-and-thermo-fisher-among-q2-moves%2Far-AA2bOKtX&c=3659249630638858939&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "1ed2d64d4e099e7f": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Thermo Fisher Scientific",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aa0c435add94eab86421646afdba258&url=https%3A%2F%2Fwww.forbes.com%2Fcompanies%2Fthermo-fisher-scientific%2F&c=8903709626380927174&mkt=en-us",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9220367247602eb8": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ゲノム医療実現バイオバンク利活用プログラム（東北メディカル・メガバンク計画） - amed.go.jp",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pSlpxWGZuVnZJQW40ZXc5S00wRS1GTVRpQkxTZ3N2d0FIWS0wU01tMGFJVnpoSlNhQXlSM1dVdU9kVGNoWWZaWmVfSWppUzhoSXlCRW1kLUp2Sk1SZDl4eQ?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "funding"
+  },
+  "5e596ffc6fe65796": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "MedTech Angels Season 6【応募者向け説明会】プレモパートナー株式会社 主催",
+    "url": "https://www.link-j.org/member_event/article-53760.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "event"
+  },
+  "2fc8cefbf18b44be": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "From Immune Repertoires to Antibodies: Advancing Discovery with Single-Cell Technologies and AI（シングルセル解析とAI技術が拓く次世代抗体探索）",
+    "url": "https://www.link-j.org/member_event/article-53751.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "f9cba3df7b6500ff": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【無料ウェビナー 9/16】研究開発の「Wet依存」を脱却！Dry解析の基礎と導入～最適なツール・環境選定の基準～",
+    "url": "https://www.link-j.org/member_event/article-53704.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "event"
+  },
+  "3bbd33b7cafb0449": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "医工連携セミナー｜AI 搭載医療機器開発の最前線 -概論編-",
+    "url": "https://www.link-j.org/member_event/article-53545.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 42,
+    "signal_type": "event"
+  },
+  "4ae502d642941384": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AI創薬企業ElixとAxcelead DDP、タンパク質分解誘導剤に関する共同研究契約を締結 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50TTRLbzA5TGo0Yy1KZ1Vwei1ZNFQ2cUNSNmdJM3VkM2hKLUlhLXVhbUNQdjFHVENxNVNGZ29FSWxOdDlfNW90dWZ6RF80dUNZbGlodGgyLVY4VnVmaTVXNVJCVjZ2MG0zRWc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "e16ba6701eca22e2": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "中国AI創薬企業との協業、最大の障壁は「技術」ではなく「データ規制」──SUGENA、実務レポート2026を無料公開 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wNHI3bTVlWFdVQ1VpM3RfQktLcHhnQlhTczVfMVd6aEZmNW03SG81VWFDM3BQOUo2dXVUWEJoS01WeWRLdnhmcktkaW1UckFYeFAxMGhLWDNOb1BEQ3REdExDOVM1dl90aGc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 24,
+    "signal_type": "news"
+  },
+  "c42b6ae7eba226d6": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "再生医療等製品の治験薬製造を体系的に学ぶ公開セミナーを開催 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1MLUJBOHp3RzRRLVNQcjJmODliMC02emZKSVpRTl9tLVgzcGJLZTNPd29FQUJSazRMdm9Cc3ZQY3pKWFRvczByMVdzVHM3R0w3OXozMkhRdGlIX0N6WG0tTWx1RDhXN2tfVVE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f964a93893d170ce": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Cytiva、「Cytiva Forum Japan 2026」を開催：バイオ医薬品の実用化を支える課題と技術動向を共有 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13dFVjWDBZOGZjSXlyQ0piTm80bkhJUWkwekVtdk1sa3BVaTJJV0Zxdy0teHRvemF4b080U0d5NUxTWXQtNXY5X2w4TDhsWGI3elZEbUFfQzlXRzVwMWUxUTJXZU9QSjJ4QWc?oc=5",
+    "company_id": "cytiva",
+    "matched_company_ids": [
+      "cytiva"
+    ],
+    "tier": "archive",
+    "score": 64,
+    "signal_type": "news"
+  },
+  "c99a53cec02c5d4f": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "大分大学発・化学視覚AIのピクシオム、ライフタイムベンチャーズよりシードラウンドで資金調達 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KSmt4QjB6eUlWR29SaDlxM2RyMnI0eUFpU21qRWxIS2d0NEEteGE4UlMwUXRCQ0FFb2JEbXVRTlBJSFhjNGhKZWJNVGZxLTk3cGdvRmFuS0stS2RjSVNqMVdhb0pHR252TEE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "e8142af1f5df69dc": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "日本通運とＮＸワンビシアーカイブズ、「インターフェックス大阪」に出展 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oVjFKRkRlRG1zSWszQWxGczhuUVZFOXFRRTZqVXFIU201MTlialBBbjlWSGI3ODRhN0RUSTBqbjNmV1VjM1ZMdFdPWlNtVV9tRnFzTnQ3OTJpaGpyUkJFSV83ZVZvaVQ0Unc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "85d3d38367528794": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【9月26日は大腸を考える日】米国発の腸活トレンド『Fibermaxxing（ファイバーマキシング）』とは？ - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLOUthSHRlbUFUSHRuMTRYSXhyV3NtSjJfUWVTV0Q4NTNWM2Z5djFpa0VZd3p2MVRoWEV5ZkhVa1IyaTVjRVFhS01uYXotRXBOeEx6LWdab0pvN0JxQjNBeXdhMTdWQ0Vtc2c?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "d0924cbd0fc51c53": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "リーガルテック社、農業・種苗・農薬メーカー向け「農業R&D情報整理・知財活用ワークフロー」を提供開始【IPGenius】 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNenZQekw2VFlSdWZWNXVVVkdSeEQ0NVBUNjQ1cXZhQlE1bFpkQ3FkcWhxM0xSQ1dUWWVPanZDMlVlSWQxRk1fMTV2Uk5GSmt6MDVlXzNfNzJSSG1ra0VCXzRPTEMxd3JSSnc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "d881e6037eb41efc": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【技術動向レポート】熟練技術者の暗黙知をAIで継承 ― 化学産業向けバーティカルAI特許出願が急増、主要6社の技術戦略を分析 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94VW92aXFJbU85MGM1N05pUGEtaGplU0Z5a3FQdjJtTmdUUVlncmJJeGw1bVhQY1k0dEQ3aDF4anRNZWRkVXZhajZ2WWZFSU5nenNxZDhseDk1dlpGVEJadDdGdmRrU3pJMUE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "7f51dfffb872ce48": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "「世界を前進させる」を掲げ、RENOSYとITANDIを擁する「GA technologies」のリサーチ・カバレッジを9/10より開始｜次世代型の株式リサーチ「ENVALITH（エンヴァリス）」 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNbUJIUW91ZUptZGdMVHBXZFhYV1dXM2l6Q2VtbjBCc1hwTDJGOFd0TUFMdTRvQnNMNUo0djJQSHUwaEZYeVlVOTNlcUdhVFFqdl9EMEF2Q1p0R2pIdGwwbnIxdUpaLUZVTVE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "45cab9bd1e9d93f9": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "「こどもキャリアサミット2026」に協賛 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uNGpLVjdkZTVWUWpXZm9FSV9vYUZoRU5rb2pab2tZT3NQYzVxSGp4ZXhiRzhuQy1Od0FUV1FIX0U1VnI1MXJrQmJrd0lRUTlKVFRtNHBmWkdRY1c5SGNveENGdFFsMFdpWUE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "53d6f0d9918052ff": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【ライブ配信/Zoom】「メタノール合成の触媒と反応器」セミナー開催！10月27日（火）主催：(株)シーエムシー・リサーチ - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RRjVFQWN0R0oxbFVCRk9tWWZrMGR3YnFXVXhtYl94ZzlMLWNFTEdLS212WXR1Rk1yM2tIRm9nckk2eWw1dUxuaUpuMzhFck1jNUhpcF8tY0NKZnZqd0NuQk85aXpIOWpPQVE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "cee41348d6ca884d": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【製薬協調査】日本人治験なし品目増加‐通知で開発戦略に変化か",
+    "url": "https://www.yakuji.co.jp/entry139057.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "23b20b42fa0cc30f": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【帝京平成大薬学部】27年度から地域枠新設‐全国21県で42人を募集",
+    "url": "https://www.yakuji.co.jp/entry139064.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "15e531d464a72211": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【日立製作所】Nokia ECE製ドローンの国内初の販売権取得‐自動飛行・遠隔運用に強み",
+    "url": "https://www.yakuji.co.jp/entry139121.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "46345eb2c5e5c0b4": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【パラマウントベッド】中学生向け睡眠教育プログラム、全国の中学生1万人に無料提供へ",
+    "url": "https://www.yakuji.co.jp/entry139119.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "3e4975f79b39d702": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "オリンパスのグローバル本社、第39回日経ニューオフィス賞「ニューオフィス推進賞」を受賞",
+    "url": "https://www.yakuji.co.jp/entry139117.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "1bc964cc029fc812": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【西川】「秋の睡眠の日」に『460周年特設サイト』公開",
+    "url": "https://www.yakuji.co.jp/entry139114.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "1c4c3c10c3a9a8f2": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【西川の日本睡眠科学研究所】カネカの機能性表示食品、科学的根拠に基づき推奨商品に認定",
+    "url": "https://www.yakuji.co.jp/entry139109.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "d07ab33820201d54": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【NISSHA】「メディカルクリエーションふくしま」に出展",
+    "url": "https://www.yakuji.co.jp/entry139108.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "80578dac1a46c327": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【コニカミノルタジャパン】多言語通訳サービス「KOTOBAL」、「防災放送」機能を追加",
+    "url": "https://www.yakuji.co.jp/entry139105.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "3a32a054d00fb5bb": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "「メイクプロポーション ウルトラキープアイライナー」、LDK the Beauty2026年上半期ベストコスメ1位受賞 ウィルミナ",
+    "url": "https://www.yakuji.co.jp/entry139079.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "9a0c8788191891e5": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【井本監麻課長】GMP調査は社会実装実験‐管理薬剤師兼務を問題視",
+    "url": "https://www.yakuji.co.jp/entry139058.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "aa99d15c18e8c686": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【都薬】小規模薬局の役割可視化‐地域貢献データを提示へ",
+    "url": "https://www.yakuji.co.jp/entry139061.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "85a62c5dca99c28d": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【新製品】「ポリデントマウスピース用洗浄フォーム」発売 Haleonジャパン",
+    "url": "https://www.yakuji.co.jp/entry139052.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "news"
+  },
+  "3c5ce751a5c44115": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【新製品】咳に効く五つの成分配合‐「ジキニン」から新製品 全薬工業",
+    "url": "https://www.yakuji.co.jp/entry139050.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "964c3e4e797bb090": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【新製品】「イオナエフ」に新シリーズ‐天然由来の美容保湿成分 ゼリア新薬",
+    "url": "https://www.yakuji.co.jp/entry139048.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 28,
+    "signal_type": "news"
+  },
+  "b407296c2cb74b3e": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "薬事日報 2026/09/09",
+    "url": "https://www.yakuji.co.jp/entry139053.html",
+    "company_id": "daiichi_sankyo",
+    "matched_company_ids": [
+      "daiichi_sankyo"
+    ],
+    "tier": "archive",
+    "score": 68,
+    "signal_type": "news"
+  },
+  "3a8fd1ace6c9e3bd": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "行政情報リスト 2026/09/08",
+    "url": "https://www.yakuji.co.jp/entry139100.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "bbff0ec36083bfe5": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "プレスリリース・タイトルリスト：新製品 2026/09/08",
+    "url": "https://www.yakuji.co.jp/entry139040.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "b6bd68f0b9f98e4e": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "プレスリリース・タイトルリスト 2026/09/08",
+    "url": "https://www.yakuji.co.jp/entry139039.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "c7d40f306228331f": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "GMPとは？三原則や省令改正、医薬品・医薬部外品・食品・化粧品の違いを解説",
+    "url": "https://www.yakuji.co.jp/entry139054.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 22,
+    "signal_type": "news"
+  },
+  "41579691cd119077": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "米FDA、真性多血症に対するファースト・イン・クラスの薬剤を承認",
+    "url": "https://www.yakuji.co.jp/entry139044.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "7a38ffc027d14621": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "最新研究事例セミナー「畜産×バイオインフォマティクスの最前線～ ゲノム情報を活用した 希少和牛『土佐あかうし』の保全と改良 ～」 - Science Portal",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1sajNJNl92VXlpSHlBMjJienhHa2lZSnVsV0pKalRNSU1RYVVjeUlWNW5vRUJmRDFnY2otZ1JUZHhPWG5mSDlidll2eTRmaDB5UTNwNUw1Nzc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 20,
+    "signal_type": "news"
+  },
+  "a02278e137102cbd": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "诺诚健华首款双抗ADC获批临床，用于治疗前列腺癌等实体瘤 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fanpjaEhpZTNRVV95LVdvUnZoVFRpYnR1UEpWTm40Tmdnazdja2VXRFd4R29WVEdsS2RTVDVCb2VWWlprQjZ0RWI1dTNxdl9wRDlGMHdxVmM?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "b2c96d8c789ea3d3": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "医药行业寻找下个百亿美元 ADC - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qX21oWGoxSEdyOE04T2huNlh6VDdJWGI1XzBoeEY3NkxNWmZ6aXhLNXFOMFFIV0tPQm5oeWszNlFQamZNalo5Vy03UmZianRfX243YXBR?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "34d6ec3bb7f09f05": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "2026国谈第五日：商保创新药目录价格协商开始，多家药企携核药、CAR-T新药等重磅药物进场 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UR3oxaDlfX2pIS1pMVzFYMkFWV1o3b2tGY3J2cUZGV2lJZFZGVjV1UEl4d2gxbFZKd2h3RHloZHFQTHdHSHk5U2doTVZIZGI4dkRLV1VKQzc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "beee0e925aa9a58c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "商保创新药目录谈判收官，南方基金蔡强持续关注创新药产业链 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZZjYxRFRfbTdRZHY3dTFfeGN6SnFkZkg1b21EVVFuSnpvNTUzYnFxVU1Ta0M1V2NuamZzdWxVQURmRDg1YmdFY3VFd3FPa3c1Rm5ZVXhR?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "ba5f4a6ed9a95778": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "CRO概念大幅反弹，泰格医药涨超8%，凯莱英涨近5%！生物医药ETF汇添富(159839) - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xWWV2aTFRdnFSRExqczlCai1YOXhPY2ZYbTNwajg4S0RMOGl4TFFZamxNeGJscmFTY0MwV1NfTTVPUWJ0TVpJYUV5bWhXUWt6clVIclltNEY?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "11ca63c362065c23": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "创新药板块迎商业化收获期，港股通创新药ETF易方达(159316)标的指数翻红上扬 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mWkZnM0NiYll4M1BNVk9IcmtTZ040a0lLMnJJbFRad2gzTy1DX2M1aFhQczFNWXljQ2ZrbGRUbWF4a2JHYzNlZXJHRVF3b3h6QVZmMjRiLTE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "61165f6305bfe843": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "医保谈判打开创新药放量空间，疫苗、创新药午后拉升！机构：关注ESMO、WCLC肺癌大会等密集催化 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1OM25NaGVDdXE2Rm1MbURMLWJNZUdkQkdTWVI2ZXZ6ek11a3JSX1Q3YVctYW9udmRGNEpIUFhDeU1UdHl1WDVJOU9LVFBhcHdmdFY1bDd5R1E?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "c5269a08a928bed0": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "医保谈判进入冲刺阶段！科创创新药ETF汇添富(589120)近10日吸金8400万元！AI重构研发底座，创新药降本增效空间打开 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1teHBFVXJsVmN4dHUxMXh3NjNpUTVTZXhWem1qV1U3MkJtbzJXdkNJRWtra2o4UHh6eFdNSUVVZlhZTmpMaEpPeEd5amhwb2pJVmJxX1V1WWw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "9bae7bcef8d70b07": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "重磅授权交易验证中国创新药企全球竞争力，医疗创新ETF平安(516820)备受关注 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DNzVMcmloZHhDMzZUdy1RVzhRV0ZfY29uZFBPdjVHSU9fcmlGSDBweTdsNV9mN1pzSXRKc0kyNENWVV9TSjgwcnBfU2hocGxHd1RraE9GNl8?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "d9a870868d19d86a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "2026上半年997亿美元出海BD撑腰，南方基金旗下港股通创新药ETF南方(159297)标的指数续涨0.28% - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1CR0pxNjd5dmVIMXhuNmtLYjBXV1lPUm05eE1nRkQtUVZzN0FIQlR0X3FsUk9NeWcwNGdwZWNSYXdmcElKeF81WjJCU01ZS1BkY1VDTDhyMnE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "28eeaad99fdf300b": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "英矽智能与墨卓生物达成战略合作，赋能AI制药模型迭代，港股创新药ETF博时(520690)跟踪指数拉升涨近1% - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9QbXJmT0daNDZ0dGc3dC1EREZKcGZKbDVQSVRiS3pzQ0tncmRxNVhoa0dHX0g4MUV6cFB4aG1SeUVXa1Zkalp3VnkzdllPYUVPMnVEU3ZPcHc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 34,
+    "signal_type": "news"
+  },
+  "dd6c7d49eec287c7": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【医药突发】2026国谈新进展！疫苗ETF招商(561920)暴力拉升，沃森生物、康希诺领涨 - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE50RmEwQXI5aE83ZGN0SWtOanBOdHVzeV9uNHhLU2FDNGkxTngzSzJ4UXJPMVVzZHpsX0ZZNzhuX3dobmI2b0VreWVLbmJ0T0UwRlBXa1hB?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "6618480068d8ac34": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "AI制药产业迎来高速发展窗口期，恒生沪深港创新药精选50指数午后涨超1% - 界面新闻",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBvX1B2eUlQbDdFc1B1bDQtNGR0RHRMQjhJNnVqSnNJVVNPTnlLYkZJb2c3T0ZKaVdIR1NSSk9wczUzLVdnejZWbEdwQUNfQ1dDbVBWVU5RRmw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "de482fcaa09568aa": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "诺华接连两次III期失败的启示 - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4Q1hTWHpGcm02QWZLbzlJZFFWU0E5bDRJak9Yamx2YklST3NzNXJuVFY2Tm9HXzhGNFlJdnRGcUhGSUlGQTFlakp2enBEZnc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "8da1f058b0ae3b11": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "“准万亿”计划单列市，开始“补”产业了 - 36 Kr",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA2dUk4VTJYTXEwdEU0azhIUHVzODRLaGJvcDYtZ0hjZGptVnE3QTdnbDY3R1hIU0hjdjZNTHdRWFp1a1lUbHVtaV8xM3dvNDFTLXk4?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "565c00e9b9c8cd5a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "互换人生：Moderna和BioNTech的十五年岔路 - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBiWTVEWjBUZDRfelI5c0FBVlJsV0w1by1LLU44bnF0UDZiN3JyTmZJeWdfS3BlOWZrQ0EwLThvUjBiS3ZUNVVQMmM1OA?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "bd79b58f0ed6f98d": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "对话艾博生物CEO英博：“一人一药”，Moderna，AI制药，癌症疫苗的边界与未来_精彩视频为您呈现 - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tMnNxbjB1aTVVRmNBcXg2T29fSnAxaE01RVZfRFl6Q3J0T0VfMS1fd2NaOWVDUlJab3U2NkJSS19XTm40UDZTT3BZYlNJV29qdUNr?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "fd60a951465f2486": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "医疗AI投资人扎堆香港抢博士 顶尖人才争夺战升级 - 36 Kr",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qcG01dG1QcXdjY2Z0YlhnN3pPUEJia3JKLVBXaWVEWHJtRkVNN3V5RzItLUxTZThQZnBnaU5FYXdQSmJkajh0SGMtXzJzLTFkUHNF?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "0ac10dc24a1effae": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "海外年轻人在关心什么？和耶鲁、宾大学子聊AI、泡沫与周期、机器人与未来能源 - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wNllGZm5yV0hrZENnd1QxZnhBQ0VmSXdSZU90MWNLTjdLRmlEM24zQW5Xc0x5REduN0JUbDAwMlU2YmFNcWN4QkxTS0lGem8?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "65c7fdc2e484e95c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "人口最少的万亿城市，年轻人来了又走 - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBLQUtFWnZiMF9OMVhJbjlxWHZLNXVaVUFXOFI2N2VmVk85NTdVdFFxNENIT095SG5za2tra3NVTEltOGZCZkZMWFdKaDZQWDhY?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "80cccf8fd86d1388": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "如何从零孵化一家千亿药企？ - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5BN0JRTU5lVFkzalo1RXFOaHdVTENaa214Rl8xTFg0TXpxR2VXZnl3RFRNaUVmVUIwU3NrLWZkLS1zbUF6NFZobkxRbnJEZw?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 10,
+    "signal_type": "news"
+  },
+  "abd0c777d254738d": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "国资产业资本下注，矩量光启天使轮累计融资 5 亿元 - 36kr.com",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0yaXVEcDhiWVVqcVdDbklCV2xCX3VzMEFseWRDdUJ3UHR3ZjhUOFg1RnlvbzNSTjVWakVwSXE5ZHNCb0FsSmdRU2JPVjBtMzBu?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "8e6f3675dceefe2a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Universal Transfection Reagent Protocol - Merck Millipore",
+    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPdDJzY0NKSHhDOHJXQ3pwd2pROUZwVm5BdEo2YXYtVGlWOWVZRTBxb2ppTmxaVFBiMnkxc2JDYkxEMUlTeHA3a2V6Z1JwZ1ROcEpqQ2lmWUhTOFNReWFkdW51RGRDUGtiVzkwcl9YLVZFSVFkX1VzUU8xTWxGSWpTTVZqTlltZ1oxWVZsSUtDTHloNjBiWFZtWUxEajIwY0hwbS02VVZ2eEpiOGt5YXRsMWFobkxLMFBJem9zeUxJWFpyV09qdHctQ2FhNzNiOWJkbnpxcDBwLTVUalNNN2s5OXZUS3pPWWMwMlZxZEhWbnhXN1k1d1pFeE10dEZTRHdqYjBB?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a193d3009d0bd9ac": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Dcp2 - Sigma-Aldrich",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaWNWOHFlcDVaV1JJYWFvcGxoMGxlNnhFRFhObFZ1bWd5cF94cWdidEI4ODV3bDFKTGI0QllsTnQtcGZoWXZ1bjJwanR3eW5rRkVsMTVLTFFYXzJUTEkwcXZOS1M5VDV4MVlIUmNwMHJ6YUNvT2k4Y0dKanJNUWhieVZETzd0aVB6VVlOaV9aZnJBalNMZl94SE5MRzNnTENuX04wcUYzWWl1ZnJHXzJxOVZkemZURFBh?oc=5",
+    "company_id": "merck_life_science",
+    "matched_company_ids": [
+      "merck_life_science",
+      "sigma_aldrich"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "0b9b44e09714105e": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "Combining Single-Cell RNA-Seq and Proteomics Webinar - BD Biosciences",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUlhmT1pLc2YzeV9weWVTZmJvQkNnRWZqaWRUc2FWSXJKUjVzZDZMalpUSUlKOHh3QlBoYWdjLU1LYnduUWZESFdpd3ZUZFhCNEJibUlRZkJBR3E5UGVJdHJoQm9rUmFLb0k5Z1VBSXZXdTRQY2J4Zl9vWWtYNFFUMkdCYTJ3V01OVmxBMVZEUWRwYzBybHBfZC1DMVpWbmZtajhGWVVmeWpkN1pVU2UxNm5aaVUwMzlLcVVWZ1ZTVkY?oc=5",
+    "company_id": "bd_biosciences",
+    "matched_company_ids": [
+      "bd_biosciences"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "db2511ec71dc35a0": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "研究成果発表のお知らせ（第85回日本癌学会学術総会） - takara-bio.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYmllYVNUcGRkLTdKWExlOWEzcnpHdnEtMmtBTTNQQVdRalFpNGNtdUNMYU5BU2tYUVZGZWtkR1pQXzlnQjJORTJLOW9GYVNId1JQdVo5aHdXbEt2RlNIV212MUlMam5sTFJqLWtQMXBFM1ZUSmZlOFkta3FBQnlPZQ?oc=5",
+    "company_id": "takara_bio",
+    "matched_company_ids": [
+      "takara_bio"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "38da8b006334b391": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "武田薬品工業：日本発のナルコレプシー新薬「オーゼイフル」、国内での承認取得［新薬開発・販売 FRONTLINE］ - 日本医事新報社",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJSDcwc3pmaXNqcS1iVGlxbXpMOVJEWmlTaFNhTjBzSHZ6WmxPSVNvY0RvWk5lS3FiYzBVLVlPZGVOTXJZLW5ESUQ0anFOeEhhN2xlY1gtSlY0cjdHUnlDOA?oc=5",
+    "company_id": "takeda_pharma",
+    "matched_company_ids": [
+      "takeda_pharma"
+    ],
+    "tier": "archive",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "ab97dff69b9b1654": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "第一三共の挑戦、AIエージェントを相棒にしてデータドリブン創薬研究の「次のボトルネック」を解く - EnterpriseZine",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfWDhaYWhJTnU4NU0zYXBMQjNoQzJRUl9fcGp0bjhrYWJ5UU0teGNySE1xbDZCcWx4TkZnLTNmMnRHdmI5cldhY21wSUROQ3RQM1BnbS1QbE9JZw?oc=5",
+    "company_id": "daiichi_sankyo",
+    "matched_company_ids": [
+      "daiichi_sankyo"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "1e8dce5eb34fec35": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "（開示事項の変更）第一三共ビジネスアソシエの吸収合併（簡易合併・略式合併）の効力発生日変更に関するお知らせ 投稿日時： 2026/08/28 15:30[適時開示] - みんかぶ",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE03OWUzd3A2eVdkNWZBTEZQQWZuZjJaMWp2Y1lYbklGRG01VHJjbFE3aHJQYjRfT1gyZi11bTdPQVpXOUJCTlE?oc=5",
+    "company_id": "daiichi_sankyo",
+    "matched_company_ids": [
+      "daiichi_sankyo"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "3a0072ff51ed4639": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "第一三共、今期最終を3％下方修正 - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56bGdYanZIX2xTZ05XbDNVUktwSG1iRFI3cEFLUGhlYzJDYUJ6cXlyWHZwbW16djFRU2F4Sm5Qb0FiV3ZfMy1ncFRYNTBpdVZLVnc?oc=5",
+    "company_id": "daiichi_sankyo",
+    "matched_company_ids": [
+      "daiichi_sankyo"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "3161588a9d08062c": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "週刊東洋経済2026年9月12日号 - 東洋経済STORE",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jMVRYM3h1OGp3OE5OQ1Y1UUliem00VGhxVXBrakJGMW5EWERpSGZLSUlscWdzSlJxa0dpODQtamNzbHJFcnQyR2c1OE45cDBvTWtF?oc=5",
+    "company_id": "eisai",
+    "matched_company_ids": [
+      "eisai"
+    ],
+    "tier": "archive",
+    "score": 15,
+    "signal_type": "news"
+  },
+  "fc2421a2d8bc16fb": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "富士フイルム和光純薬、ｍＲＮＡ合成用試薬を発売 - 化学工業日報 電子版",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE04aENkcnB4d19ZWTVNUDZHSGl3cWJtRWFnM1RZZUJOMDlfeGdVazR4UUk3b2VNcDVBNW83VHZTN1JFU0tIMFhndDVobVN2dDJBWkpF?oc=5",
+    "company_id": "fujifilm_wako",
+    "matched_company_ids": [
+      "fujifilm_wako"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "d925111fa148cc65": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "イベントレポート｜「人とのつながりこそが宝」、中外製薬100周年の節目に誓う共創の未来 - オフィシャル・アルムナイ",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5wVEU3eTFuWFNGbFJ0UV9hMXV2elhUb0ttVTVidmxZdWptb1RYVVpVZnBNeDlHQjk3ajlZQTdpaGZGZERxZ2hxcHVSdTZRN1V3ZG41X2lpcnRkdlVGVW9RazhRT0FVWFZBTmpLQWRncldOZw?oc=5",
+    "company_id": "chugai_pharma",
+    "matched_company_ids": [
+      "chugai_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "4e9e4ee3e7c5d559": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "JCRファーマ - FY2026 First Quarter Results Briefing Session Material - newspicks.com",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10VE43TU0yYTQ1Y2tRb1pIUHR1SXc5NFJWNFVFUm00Qy0yRlN4YjVSLXRnUXZNeGpqLUlyZXJWN2NiamdoSlFuWW4xOVU?oc=5",
+    "company_id": "jcr_pharma",
+    "matched_company_ids": [
+      "jcr_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "981c80b8c6eecb16": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "【アナリスト予想】ペプチドリーム、26年12月期経常予想。対前週40.4%下降。(アイフィス株予報) - finance.yahoo.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZjU0OHJ0VkxmM1gyT245dTF1NUhHTDNaSnQ3LXI2QXlDVWIyTVgwRC1Calc3bVhEYzJvM3EwN1QydnVidDVoQmJhZDBlRDJENF9iTEllTmc1b0stdjlEN256akxQN21JbXRRNjdOM0hDRU0wdDJlS0FGbFZxUGRVdXNoREFyWnc?oc=5",
+    "company_id": "peptidream",
+    "matched_company_ids": [
+      "peptidream"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "8112d0a609ec93d8": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ペプチドリーム 舛屋圭一 取締役研究開発部長に聞く - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBvMXN2YWI3MmpYcEE3dWw4Qlp4RGFnd0JQNHVFUFFOcnNRYmdfZnJLX3R6aUljSGhqanhnSDEzMkVISU9WMklGZUNpeUIyMENDWXM3dkF6S0taVWVFWUM0TDZTZ0ZvaFppcTRfTUNNTQ?oc=5",
+    "company_id": "peptidream",
+    "matched_company_ids": [
+      "peptidream"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "604d2e7875f516f4": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "ペプチドリーム(株)【4587】：株つぶやき - finance.yahoo.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ockphYnlRN3g3dDBBYTYyTHUzRXAyRFVuLXFfb3dMRUJBdWI1cXIzcE1wVGV5aThUcndOci14Vk9abUZuMFlfMzdEQ0hoTW45UE9nbG9vUEE?oc=5",
+    "company_id": "peptidream",
+    "matched_company_ids": [
+      "peptidream"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "d1730a804758085a": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "水分補給サポートするゼリーのもとを発売へ キッセイ薬品（松本市） - 信濃毎日新聞デジタル",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ISl8yYkFMTS1aTlN3c2p3Sm9sd0R4aW5kWTNFaGxCNDR1bU41eWhrZlcxWXhvWXdYWlF3ODBVRktDZnhQMnRxSE11eml0M0EyN3dLc0hBUTFoRVNiNzEyTl9lVzFmNlRwTDJMOVQxTnA?oc=5",
+    "company_id": "kissei_pharma",
+    "matched_company_ids": [
+      "kissei_pharma"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "fe9e39c2a57917c2": {
+    "first_seen": "2026-09-09T02:31:53",
+    "title": "キッセイ薬品工業が水分補給ゼリーの素「ゼリファスト」を11月10日に新発売 - トレンドお届けメディア Trepo",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8zTnhHRmV3SjhscE40MGJPc0pObjdzVTFjVldQTWRWQ2hocEIyaGNKMmpMcC1UVV9BTTFMaG9hRElkMGM3OVE?oc=5",
+    "company_id": "kissei_pharma",
+    "matched_company_ids": [
+      "kissei_pharma"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
   }
 }
