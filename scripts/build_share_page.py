@@ -58,8 +58,12 @@ def main() -> int:
     html = (WEB_DIR / "index.html").read_text(encoding="utf-8")
     css = (WEB_DIR / "styles.css").read_text(encoding="utf-8")
     js = (WEB_DIR / "app.js").read_text(encoding="utf-8")
+    region_review_batch = (WEB_DIR / "region-review-batch.js").read_text(encoding="utf-8")
+    region_reviews = (WEB_DIR / "region-reviews.js").read_text(encoding="utf-8")
+    region_model = (WEB_DIR / "region-model.js").read_text(encoding="utf-8")
     overview_model = (WEB_DIR / "overview-model.js").read_text(encoding="utf-8")
     overview_js = (WEB_DIR / "overview.js").read_text(encoding="utf-8")
+    fusion_js = (WEB_DIR / "fusion.js").read_text(encoding="utf-8")
     payload_data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     company_config, _, _ = tracker.load_runtime_configuration()
     intelligence_rules = json.loads(INTELLIGENCE_RULES_PATH.read_text(encoding="utf-8"))
@@ -144,6 +148,24 @@ def main() -> int:
         count=1,
     )
     html = re.sub(
+        r'    <script src="\./region-review-batch\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{region_review_batch}\n    </script>",
+        html,
+        flags=re.S,
+    )
+    html = re.sub(
+        r'    <script src="\./region-reviews\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{region_reviews}\n    </script>",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'    <script src="\./region-model\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{region_model}\n    </script>",
+        html,
+        count=1,
+    )
+    html = re.sub(
         r'    <script src="\./overview-model\.js(?:\?v=[^"]+)?"></script>',
         lambda _: f"    <script>\n{overview_model}\n    </script>",
         html,
@@ -155,6 +177,14 @@ def main() -> int:
         html,
         count=1,
     )
+    for name in ("admission-model", "admission-reviews", "admission-ui"):
+        source = (WEB_DIR / f"{name}.js").read_text(encoding="utf-8")
+        html = re.sub(
+            rf'    <script src="\./{name}\.js(?:\?v=[^"]+)?"></script>',
+            lambda _, source=source: f"    <script>\n{source}\n    </script>",
+            html,
+            count=1,
+        )
     html = re.sub(
         r'    <script src="\./app\.js(?:\?v=[^"]+)?"></script>',
         lambda _: f"    <script>\n{js}\n    </script>",
@@ -162,6 +192,12 @@ def main() -> int:
         count=1,
     )
 
+    html = re.sub(
+        r'    <script src="\./fusion\.js(?:\?v=[^"]+)?"></script>',
+        lambda _: f"    <script>\n{fusion_js}\n    </script>",
+        html,
+        count=1,
+    )
     SHARE_DIR.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(html, encoding="utf-8")
     print(EMBEDDED_DATA_PATH)

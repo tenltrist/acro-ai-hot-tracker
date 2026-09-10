@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-09-09",
+  "reviewer": "Codex",
+  "method": "Source-grounded bilingual editorial summaries; no paid model API; limitations stated per article",
+  "groups": [
+    {
+      "event_key": "ono-specialty-reorganization-20261001",
+      "ids": ["6c91469a64ec7c2c"],
+      "title_zh": "小野药品拟于10月调整组织：相关部门由初级医疗转向专科定位",
+      "summary": "日刊药业的公开预览显示，小野药品拟于10月1日将开发、销售及医学事务中的相关组织名称由初级医疗改为专科，以适应产品组合变化。另据阿斯利康2月公告，双方已约定移交 Forxiga 在日本的流通销售并结束共同推广。此次组织调整的完整编制与人员安排尚未取得，不能据此推断裁员规模或新增采购需求。",
+      "summary_en": "A public Jiho preview reports that Ono plans to rename relevant development, sales and medical-affairs organizations from primary-care to specialty on October 1, reflecting its product mix. Separately, AstraZeneca's February release confirms an agreement to transfer Japanese Forxiga distribution and end co-promotion. The full reorganization and staffing details were not accessible; no headcount reduction or purchasing need is established.",
+      "scope_zh": "有限核对：原媒体全文未取得。组织名称及生效日仅依据日刊药业公开预览，Forxiga 背景依据阿斯利康公告；不是完整组织公告精读。",
+      "scope_en": "Limited review: the original full article was unavailable. Organization names and effective date come from Jiho's public preview; Forxiga background comes from AstraZeneca. This is not a full reorganization review.",
+      "evidence": [
+        {"label": "日刊药业 · 组织调整公开预览", "url": "https://nk.jiho.jp/article/304897"},
+        {"label": "阿斯利康 · Forxiga 销售移交公告", "url": "https://www.astrazeneca.co.jp/news/press-releases1/2026/202602271.html"}
+      ]
+    },
+    {
+      "event_key": "kaken-reorganization-20261001",
+      "ids": ["7bf450b4ffa3d817"],
+      "title_zh": "科研制药拟新设事业战略部，并重组质量保证与研发管理职能",
+      "summary": "科研制药计划10月1日新设事业战略部，负责重点产品的品牌、销售预测、商业评估及生命周期管理。同时组建 QA 部门，整合质量保证与药物警戒；原研发企划部拆为研发战略部和项目管理部，分别负责组合策略及引进评估、项目进度管理。这是预定生效的组织调整，并非已经完成的新产品上市或合作交易。",
+      "summary_en": "Kaken plans an October 1 reorganization, creating a business strategy department for priority-product branding, forecasting, valuation and lifecycle management. A QA division will bring together quality-assurance and pharmacovigilance functions. R&D planning will split into strategy and project management, separating portfolio and partnering assessments from project execution. These are planned organizational changes, not completed product launches or licensing deals.",
+      "scope_zh": "原 Mix Online 全文未取得；依据药事日报9月7日的公开报道核对职能与生效日期，不宣称已读公司内部组织文件。",
+      "scope_en": "Original Mix Online full text unavailable; functions and effective date checked against Yakujinippo's September 7 public report, not an internal organization document.",
+      "evidence": [{"label": "药事日报 · 科研制药组织调整", "url": "https://www.yakuji.co.jp/entry138966.html"}]
+    },
+    {
+      "event_key": "us-mfn-nine-manufacturers-20260831",
+      "ids": ["bc71e09403cf6b41", "23e7e3bcebc55ca1"],
+      "title_zh": "美国公布与九家药企达成 MFN 定价协议，包含安斯泰来与协和麒麟",
+      "summary": "白宫8月31日公布与九家药企达成最惠国药价协议，安斯泰来和协和麒麟在列，涉及美国 Medicaid 及未来创新药定价。安斯泰来另确认自愿协议及原料药捐赠，但未披露全部条款。这是美国政策与企业协议动态，不等于日本药价已经统一调整；两篇报道描述同一轮协议。",
+      "summary_en": "The White House announced MFN pricing agreements with nine manufacturers on August 31, including Astellas and Kyowa Kirin, addressing US Medicaid and future innovative-drug pricing. Astellas separately confirmed its voluntary agreement and an API donation while withholding some terms. This does not establish an implemented change to Japanese drug prices. Both articles cover the same agreement round.",
+      "scope_zh": "原媒体全文未取得；用白宫事实说明及安斯泰来官方声明补证协议事实，不复述未经核验的总统引语或日本定价预测。",
+      "scope_en": "Original media full texts unavailable; agreement facts corroborated with the White House fact sheet and Astellas statement. Unverified quotations and Japanese price forecasts are excluded.",
+      "evidence": [
+        {"label": "白宫 · 九家药企 MFN 协议事实说明", "url": "https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/"},
+        {"label": "安斯泰来 · 自愿协议官方声明", "url": "https://newsroom.astellas.com/2026-09-01-astellas-enters-voluntary-agreement-with-us-government-supporting-affordable-access-to-medicines"}
+      ]
+    },
+    {
+      "event_key": "mfn-supply-chain-commentary-20260906",
+      "ids": ["7f6d1f7200289674"],
+      "title_zh": "MFN 与供应链集中化评论：已核对美国制造承诺，尚非全面迁移事实",
+      "summary": "这是一篇围绕 MFN 与供应链布局的评论。可独立核对的背景是：白宫称九家药企承诺近期合计在美国制造领域投资至少196亿美元，部分公司另承诺捐赠原料药。承诺不等于产能已经建成，更不能证明全球供应链已集中到美国；原评论全文未取得，具体论证与关税豁免细节未作确认。",
+      "summary_en": "This is a commentary on MFN and supply-chain concentration. Its independently checked background is the White House announcement of at least $19.6 billion in collective near-term US manufacturing commitments, plus API donations by some companies. Commitments are not completed capacity or proof of global supply-chain relocation. The full commentary and its detailed tariff arguments were not available for verification.",
+      "scope_zh": "仅补证评论涉及的公开政策背景，不宣称已阅读全文，也不把作者判断当成已发生事实。",
+      "scope_en": "Public policy background only; this is not a full-text review or confirmation of the author's conclusions.",
+      "evidence": [{"label": "白宫 · 美国制造与原料药储备承诺", "url": "https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/"}]
+    },
+    {
+      "event_key": "answers-mfn-leqembi-roundup-20260901",
+      "ids": ["2be828aed6c3f57c"],
+      "title_zh": "日本制药业汇总：药企参与美国 MFN 协议；LEQEMBI 加拿大报销评估推进",
+      "summary": "报道分别汇总安斯泰来、协和麒麟参与美国 MFN 协议，以及卫材 LEQEMBI 在加拿大取得最终积极公共报销建议。后者仍需价格谈判和各地支付方决策，不是已全面报销。原文还包含其他企业动态，各段是不同公司的独立事件，不能全部归给卫材或理解为公司之间建立了合作。",
+      "summary_en": "The roundup separately covers Astellas and Kyowa Kirin joining US MFN agreements and a final positive Canadian public-reimbursement recommendation for Eisai's LEQEMBI. Pricing negotiations and regional payer decisions remain, so this is not nationwide coverage. Other sections concern different companies; the items are separate events, not all Eisai projects or evidence of partnerships between the named firms.",
+      "scope_zh": "已读公开新闻汇总；摘要聚焦 MFN 与卫材准入两部分，卫材事项另用公司原始公告核对。",
+      "scope_en": "Public roundup reviewed, with the summary limited to MFN and Eisai access developments; the Eisai section was cross-checked with the original company release.",
+      "evidence": [
+        {"label": "Answers · 9月1日新闻汇总", "url": "https://answers.and-pro.jp/pharmanews/33124/"},
+        {"label": "卫材 / 渤健 · 加拿大报销建议公告", "url": "https://www.newswire.ca/news-releases/final-cda-amc-recommendation-brings-canadians-with-early-stage-alzheimer-s-disease-one-step-closer-to-accessing-leqembi-r-lecanemab--874315267.html"}
+      ]
+    },
+    {
+      "event_key": "uniqure-amt130-filings-20260902",
+      "ids": ["980adbbbcaf48980"],
+      "title_zh": "uniQure 为亨廷顿病基因疗法 AMT-130 提交美英上市申请",
+      "summary": "uniQure 9月2日宣布，已为亨廷顿病候选基因疗法 AMT-130 向美国 FDA 提交寻求加速批准的 BLA，并向英国 MHRA 提交上市申请。公司以 I/II 期三年数据支持申报，并请求优先审评。提交申请和提出审评请求都不等于获批，也不代表确定了上市时间；仍需监管机构评估。",
+      "summary_en": "uniQure announced US and UK submissions for the investigational Huntington's disease gene therapy AMT-130 on September 2. The US BLA seeks accelerated approval, supported by three-year phase 1/2 data, and the company has requested priority review. Filing an application and requesting a review pathway are not approval or a confirmed launch timetable; regulatory assessment remains.",
+      "scope_zh": "已读 BioSpace 报道，并用 uniQure 原始公告与 SEC 披露核对申报状态；不以公司疗效表述代替独立临床评价。",
+      "scope_en": "BioSpace reporting checked against uniQure's original announcement and SEC disclosure; company efficacy statements are not an independent clinical appraisal.",
+      "evidence": [
+        {"label": "uniQure · AMT-130 申报公告", "url": "https://www.globenewswire.com/news-release/2026/09/02/3354993/0/en/uniqure-announces-submission-of-biologics-license-application-for-ifezuntirgene-inilparvovec-amt-130-in-huntington-s-disease.html"},
+        {"label": "uniQure · SEC 8-K 披露", "url": "https://www.sec.gov/Archives/edgar/data/1590560/000110465926104463/qure-20260902x8k.htm"}
+      ]
+    },
+    {
+      "event_key": "fortrea-worldwide-early-phase-20260902",
+      "ids": ["780708d9f2d51226"],
+      "title_zh": "Fortrea 拟以约4500万美元收购 Worldwide 的早期临床服务业务",
+      "summary": "Fortrea 与 Worldwide Clinical Trials 9月2日宣布签署协议，拟以约4500万美元现金收购后者的早期临床服务业务，包括得州生物分析实验室、200床位临床药理单元及样本储存设施，以扩充早期试验和大小分子分析能力。收购对象不是 Worldwide 整家公司；交易仍待监管、许可及相关服务协议等条件满足。",
+      "summary_en": "Fortrea agreed to acquire Worldwide Clinical Trials' Early Phase Services business for approximately $45 million in cash. The September 2 announcement covers a Texas bioanalytical lab, a 200-bed clinical pharmacology unit and specimen storage, expanding early-phase and large- and small-molecule analysis capabilities. This is not an acquisition of all Worldwide operations. Closing remains conditional on regulatory, licensing and related service arrangements.",
+      "scope_zh": "已核对双方联合原始公告，区分签约、业务范围和交割条件。",
+      "scope_en": "Joint original release reviewed; signing, acquired scope and closing conditions distinguished.",
+      "evidence": [{"label": "Fortrea / Worldwide · 联合收购公告", "url": "https://ir.fortrea.com/news-releases/news-release-details/fortrea-acquire-clinical-pharmacology-unit-and-bioanalytical"}]
+    },
+    {
+      "event_key": "american-regent-epinephrine-recall-20260903",
+      "ids": ["7a28708350c8df50"],
+      "title_zh": "American Regent 在美国自愿召回三批肾上腺素注射液",
+      "summary": "第一三共旗下 American Regent 9月3日公告，在美国自愿召回三批30 mg/30 mL 肾上腺素注射液，原因包括可见颗粒及瓶体泄漏、裂纹带来的无菌保证问题。公司称截至公告时未收到相关不良事件报告。召回范围是指定批次，不是全部产品；没有已报告事件也不代表不存在质量风险。",
+      "summary_en": "American Regent, a Daiichi Sankyo company, announced a voluntary US recall of three lots of epinephrine injection, 30 mg/30 mL, on September 3. Concerns include particulate matter and compromised sterility assurance associated with leaking or cracked vials. The company reported no related adverse events as of the announcement. The recall is lot-specific; absence of reported events does not eliminate quality risk.",
+      "scope_zh": "以 American Regent 发布的召回公告核对批次范围、原因和报告截止口径，不提供临床处置建议。",
+      "scope_en": "Recall scope, reasons and reporting cutoff checked in American Regent's release; no clinical management advice is provided.",
+      "evidence": [{"label": "American Regent · 三批产品召回公告", "url": "https://www.prnewswire.com/news-releases/american-regent-inc-issues-voluntary-nationwide-recall-of-three-lots-of-epinephrine-injection-usp-30-mg30-ml-1-mgml-due-to-the-presence-of-particulate-matter-and-lack-of-assurance-of-sterility-302869473.html"}]
+    },
+    {
+      "event_key": "reborna-ono-first-milestone-20260831",
+      "ids": ["9af268f4ae597903"],
+      "title_zh": "Reborna 与小野的 RNA 靶向小分子合作达成首个研究里程碑",
+      "summary": "Reborna Biosciences 8月31日宣布，与小野药品针对中枢神经系统罕见病的 RNA 靶向小分子合作达到首个研究里程碑，将获得里程碑款及下一阶段研究经费，金额未公开。双方依据2025年3月签订的协议推进先导化合物研究。这是早期研发与合作付款节点，并不代表临床疗效成立或药物获批。",
+      "summary_en": "Reborna announced the first research milestone in its Ono collaboration on RNA-targeted small molecules for rare CNS diseases on August 31. It will receive a milestone payment and funding for the next research phase; amounts were not disclosed. The work advances lead-compound research under a March 2025 agreement. This is an early research and funding milestone, not established clinical efficacy or approval.",
+      "scope_zh": "已读 Reborna 在 PR Times 发布的原始公告；与其另一个 Kissei 合作里程碑分开。",
+      "scope_en": "Reborna's original PR Times release reviewed; kept distinct from its separate Kissei collaboration milestone.",
+      "evidence": [{"label": "Reborna · 小野合作首个里程碑", "url": "https://prtimes.jp/main/html/rd/p/000000017.000078945.html"}]
+    },
+    {
+      "event_key": "tanabe-leo-dersimelagon-20260818",
+      "ids": ["4db218ef05ff6a6d"],
+      "title_zh": "田边制药与 LEO 签订 dersimelagon 全球权利转让协议",
+      "summary": "田边制药8月18日宣布，已签订协议，将口服候选药 dersimelagon（MT-7117）的全球开发、商业化等权利转让给 LEO Pharma。该药针对伴光敏症状的 EPP 和 XLP，6月30日已向 FDA 提交上市申请，公告时仍在争取批准。正在进行的试验将按计划继续，并拟在适当阶段移交；不能把签约或申报写成已经获批上市。",
+      "summary_en": "Tanabe announced an agreement on August 18 to transfer global development, commercialization and other rights to oral dersimelagon, MT-7117, to LEO Pharma. The candidate targets EPP and XLP with photosensitivity; a US NDA was submitted on June 30, with approval still being pursued. Ongoing trials are to continue and transfer at an appropriate stage. Signing and filing do not establish approval or launch.",
+      "scope_zh": "原索引指向的 note 文章未完整获取；以田边官方公告核对同一交易，不推断已交割，也不采用媒体标题作为到账金额。",
+      "scope_en": "Full indexed note article unavailable; the same transaction was checked against Tanabe's official release, without inferring closing or cash received from media headlines.",
+      "evidence": [{"label": "田边制药 · MT-7117 与 LEO 协议", "url": "https://us.tanabe-pharma.com/news-and-media/press-releases/2026/tanabe-pharma-enters-into-agreement-with-leo-pharma-for-mt-7117-for-epp-and-xlp"}]
+    },
+    {
+      "event_key": "kissei-jellyfast-launch-plan-20260907",
+      "ids": ["c7a04819717a0d7c"],
+      "title_zh": "Kissei 预告11月推出补水凝胶粉 Jellyfast，属于护理食品而非新药",
+      "summary": "Kissei 健康护理事业部9月7日公告，计划11月10日推出补水凝胶粉 Jellyfast，可与水或茶混合制成凝胶，不需加热冷却。其物性和制备时间来自公司特定条件下的测试，不能据此保证所有使用者都不会误吸。这是高龄及护理食品产品预告，不是药品批准，也不是9月已经发售。",
+      "summary_en": "Kissei's healthcare division announced a November 10 launch plan for Jellyfast hydration-jelly powder on September 7. It forms a gel when mixed with water or tea without heating and cooling. Physical properties and preparation timing reflect specific company tests, not a guarantee against aspiration for every user. This is a care-food product announcement, not a medicine approval or a September launch.",
+      "scope_zh": "已读 Kissei 经 @Press 发布的原始产品公告；未把研究条件或食品分类扩大为临床安全保证。",
+      "scope_en": "Kissei's original @Press product release reviewed; test conditions and food classification are not generalized into clinical safety guarantees.",
+      "evidence": [{"label": "Kissei · Jellyfast 新品公告", "url": "https://www.atpress.ne.jp/news/621964"}]
+    },
+    {
+      "event_key": "maruho-kaken-hisamitsu-school-20260904",
+      "ids": ["ed3cdaa97ca5b93b"],
+      "title_zh": "Maruho、科研制药与久光联合制作面向中学生的多汗症教育材料",
+      "summary": "Maruho、科研制药和久光制药9月4日公布，为初高中生共同制作多汗症教育材料，帮助学校开展疾病认知与健康教育。项目属于患者教育和跨企业传播合作，不是共同开发新药；公司页面注明2026年度申请已结束，不能把报道当作仍开放的报名通知。",
+      "summary_en": "Maruho, Kaken and Hisamitsu announced joint hyperhidrosis educational materials for junior- and senior-high-school students on September 4. The initiative supports disease awareness and school health education, not joint drug development. The company page states that fiscal-2026 applications have closed, so the report should not be treated as an open registration notice.",
+      "scope_zh": "原 Mix Online 全文未取得；已读 Maruho 官方项目公告并核对申请状态。",
+      "scope_en": "Original Mix Online full text unavailable; Maruho's official project announcement and application status reviewed.",
+      "evidence": [{"label": "Maruho · 三家公司多汗症学校教材", "url": "https://www.maruho.co.jp/information/20260904.html"}]
+    },
+    {
+      "event_key": "takeda-mimrylo-approval-20260828",
+      "ids": ["3fed214c977cf11a"],
+      "title_zh": "MIMRYLO 获批与武田业务布局：可确认的是美国特定适应证批准",
+      "summary": "武田8月28日公告，FDA 批准 MIMRYLO（rusfertide），用于成人真性红细胞增多症中的红细胞增多。该药为铁调素模拟物，通过调节铁分布和红细胞过度生成发挥作用，批准依据包括 VERIFY III 期结果。原文章属于投资评论；这里仅核对产品批准事实，不据此判断股价、收入或整个罕见病业务必然增长。",
+      "summary_en": "Takeda announced FDA approval of MIMRYLO, rusfertide, on August 28 for erythrocytosis in adults with polycythemia vera. The hepcidin mimetic regulates iron distribution and red-cell overproduction, with approval supported by phase 3 VERIFY results. The indexed article is investment commentary; this summary verifies the product event only, not stock performance, revenue or guaranteed growth across the rare-disease business.",
+      "scope_zh": "原投资评论全文未取得；仅依据武田官方公告核对药物、适应证及批准日期，不总结其估值论点。",
+      "scope_en": "Full investment commentary unavailable; medicine, indication and approval date checked against Takeda's release. Valuation arguments are not summarized.",
+      "evidence": [{"label": "武田 · MIMRYLO 美国批准公告", "url": "https://www.takeda.com/newsroom/newsreleases/2026/fda-approval-mimrylo/"}]
+    },
+    {
+      "event_key": "eisai-washu-recognition-20260818",
+      "ids": ["c478882870a7b0e0"],
+      "title_zh": "华盛顿大学医学院表彰卫材及内藤晴夫对阿尔茨海默病研究的长期贡献",
+      "summary": "卫材8月18日发布消息，圣路易斯华盛顿大学医学院为 CEO 内藤晴夫及卫材举行纪念牌揭幕，表彰其长期支持阿尔茨海默病研究。公告回顾双方与 DIAN-TU 的合作，包括探索抗 tau 抗体 etalanetug 的 Tau NexGen 研究。这是既有研究关系的公开表彰，不是新签合作合同、药品批准或临床成功结果。",
+      "summary_en": "Eisai reported on August 18 that Washington University School of Medicine in St. Louis unveiled a plaque honoring CEO Haruo Naito and Eisai's long-term Alzheimer's research contributions. The release recalls collaboration with DIAN-TU, including Tau NexGen research involving the anti-tau antibody etalanetug. This recognizes an existing research relationship; it is not a newly signed contract, drug approval or positive clinical readout.",
+      "scope_zh": "已读卫材美国官方公告；研究合作背景与本次表彰事件分开表述。",
+      "scope_en": "Eisai's US official release reviewed; research background distinguished from the recognition event.",
+      "evidence": [{"label": "卫材 · WashU 长期研究贡献表彰", "url": "https://us.eisai.com/press-releases/washu-medicine-honors-ceo-haruo-naito-and-eisai-for-longstanding-contributions-to-alzheimers-disease-research-and-healthcare"}]
+    },
+    {
+      "event_key": "ionis-zanvastro-approval-20260903",
+      "ids": ["ee6ee6e4fb930c3b"],
+      "title_zh": "Ionis 宣布 ZANVASTRO 获 FDA 批准，用于亚历山大病",
+      "summary": "Ionis 9月3日宣布，FDA 批准反义寡核苷酸药物 ZANVASTRO（zilganersen），用于儿童及成人亚历山大病患者。该药通过降低 GFAP 蛋白生成作用于疾病机制，成为公司独立推出的神经领域产品。消息对应美国的特定适应证批准，不代表治愈承诺、其他地区同步批准或所有神经疾病都适用。",
+      "summary_en": "Ionis announced FDA approval of the antisense medicine ZANVASTRO, zilganersen, for pediatric and adult patients with Alexander disease on September 3. It acts on the disease mechanism by reducing GFAP production and marks an independent neurological product launch for Ionis. This is a US indication-specific approval, not a cure guarantee, simultaneous approval elsewhere or applicability to all neurological diseases.",
+      "scope_zh": "已核对 Ionis 官方批准公告；依据公司披露提取事实，不替代说明书或独立疗效审评。",
+      "scope_en": "Ionis's approval announcement reviewed; company-disclosed facts are not a substitute for prescribing information or independent efficacy assessment.",
+      "evidence": [{"label": "Ionis · ZANVASTRO 批准公告", "url": "https://ir.ionis.com/news-releases/news-release-details/zanvastrotm-zilganersen-approved-fda-first-and-only-disease"}]
+    },
+    {
+      "event_key": "simcere-roche-sim0660-20260901",
+      "ids": ["068db4cf6a0c1513"],
+      "title_zh": "罗氏获得先声再明 SIM0660 全球许可，首付款7500万美元",
+      "summary": "先声再明宣布向罗氏授予 SIM0660 的全球独家开发、生产及商业化权利。这一多特异性抗体项目针对 B 细胞相关疾病。协议包含7500万美元首付款，潜在付款总额最高15.30亿美元并另有销售提成；最高金额含未来条件付款，不是已到账收入，也不能由许可交易推断药物已获临床验证或批准。",
+      "summary_en": "Simcere Zaiming licensed Roche exclusive worldwide rights to develop, manufacture and commercialize SIM0660, a multispecific-antibody program targeting B-cell-related disease. The agreement includes $75 million upfront, potential total payments up to $1.530 billion and additional sales royalties. The headline maximum includes conditional future payments, not cash already received; licensing is not proof of clinical validation or approval.",
+      "scope_zh": "已读 Fierce Biotech 报道并用先声再明原始新闻稿核对权利范围及金额，不混淆首付款和里程碑上限。",
+      "scope_en": "Fierce Biotech reporting checked against Simcere Zaiming's original release for rights and financial terms; upfront cash distinguished from potential milestones.",
+      "evidence": [{"label": "先声再明 · SIM0660 罗氏全球许可", "url": "https://www.prnewswire.com/news-releases/simcere-zaiming-enters-exclusive-license-agreement-with-roche-for-sim0660-global-development-302866239.html"}]
+    },
+    {
+      "event_key": "acro-half-year-2026",
+      "ids": ["94d852fd3e08d1f5"],
+      "title_zh": "百普赛斯2026半年报：营收约5亿元，同比增长28.97%",
+      "summary": "百普赛斯披露2026年上半年营收4.996亿元，同比增长28.97%；归母净利润9835.62万元，同比增长17.36%；扣非净利润8983.39万元，同比增长6.78%。经营活动现金流净额为9639.15万元。公告可用于追踪公司经营表现，但这些合并指标不能直接说明日本客户贡献、某条产品线增速或具体采购关系。",
+      "summary_en": "ACROBiosystems reported first-half 2026 revenue of RMB499.6 million, up 28.97%, and attributable net profit of RMB98.36 million, up 17.36%. Profit excluding nonrecurring items was RMB89.83 million, up 6.78%; operating cash flow was RMB96.39 million. These consolidated figures track company performance but do not identify Japanese customer contributions, product-line growth or specific purchasing relationships.",
+      "scope_zh": "以巨潮资讯刊载的公司半年度报告摘要核对财务数字；未声称已审阅半年报全文或内部客户分项。原记录日期保持不变，补证文件为8月29日披露。",
+      "scope_en": "Financial figures checked in the company's half-year report summary on CNINFO, not a full-report or internal customer audit. Original record date is preserved; corroborating filing is dated August 29.",
+      "evidence": [{"label": "百普赛斯 · 2026年半年度报告摘要", "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225526805.PDF"}]
+    },
+    {
+      "event_key": "thermo-morgan-stanley-preview-20260915",
+      "ids": ["7cc7a1c1a12296a4"],
+      "title_zh": "Thermo Fisher 预告9月15日参加摩根士丹利全球医疗会议",
+      "summary": "Thermo Fisher 9月1日公告，CEO Marc Casper 计划于9月15日美国东部时间上午9:15参加摩根士丹利第24届全球医疗会议，公司投资者网站将提供网络直播。它是投资者沟通活动预告，公告本身未发布新的产品、财务业绩或指引；不能把预定演讲写成已经发生。",
+      "summary_en": "Thermo Fisher announced on September 1 that CEO Marc Casper is scheduled to present at Morgan Stanley's 24th annual global healthcare conference on September 15 at 9:15 a.m. Eastern Time, with a webcast via the investor website. This is an investor-event preview, not a new product, earnings release or guidance announcement, and the presentation had not yet occurred at the review date.",
+      "scope_zh": "已读 Nasdaq 刊载的公司原始新闻稿；Business Wire 原链接未能打开，未核对尚未举办的演讲内容。",
+      "scope_en": "Company-distributed release on Nasdaq reviewed. The Business Wire original did not load; the future presentation itself was not reviewed.",
+      "evidence": [{"label": "Thermo Fisher · 投资者会议预告（Nasdaq 刊载）", "url": "https://www.nasdaq.com/press-release/thermo-fisher-scientific-present-morgan-stanley-24th-annual-global-healthcare"}]
+    },
+    {
+      "event_key": "bd-crispr-single-cell-webinar-abstract",
+      "ids": ["239abd95c265a3f1"],
+      "title_zh": "BD Rhapsody Webinar 简介：结合 CRISPR 干扰与单细胞 RNA 测序",
+      "summary": "官方视频简介介绍，EMBL 研究人员结合 CRISPR 干扰和靶向单细胞 RNA 测序，利用 BD Rhapsody HT Xpress 研究与免疫相关风险变异重叠的千余个调控元件，观察对目标基因及调控网络的影响。这是研究方法分享，不是药物临床结果。此次只核对文字简介，未观看完整视频，举办日期也未确认。",
+      "summary_en": "The official video description presents EMBL research combining CRISPR interference with targeted single-cell RNA sequencing using BD Rhapsody HT Xpress. The work examines more than 1,000 regulatory elements overlapping immune-related risk variants and their effects on target genes and networks. This is a research-method presentation, not a clinical drug result. Only the text description was reviewed; the full video and event date were not verified.",
+      "scope_zh": "有限核对：仅官方视频页文字简介，不是52分钟视频精读。页面现显示 Waters Biosciences 品牌；保留既有 BD 公司归属，不在本次调整集团与品牌关系。",
+      "scope_en": "Limited to the official video-page description, not the 52-minute recording. The page now displays Waters Biosciences; existing BD attribution is preserved because corporate-brand mapping is outside this change.",
+      "evidence": [{"label": "官方视频页 · CRISPR 与单细胞 RNA 测序简介", "url": "https://videos.bdbiosciences.com/detail/videos/all/video/6403283888112/combining-crispr-and-single-cell-rna-seq-webinar"}]
+    },
+    {
+      "event_key": "astellas-oyw-tokyo-2027",
+      "ids": ["ce3dab26f7d87e01"],
+      "title_zh": "安斯泰来成为2027年 One Young World 东京峰会主办城市合作伙伴",
+      "summary": "安斯泰来8月27日宣布，成为2027年 One Young World 东京峰会的主办城市合作伙伴。峰会计划于2027年9月28日至10月1日在东京国际论坛举行，聚焦青年领导力、可持续发展和社会影响。它属于企业社会责任及人才交流活动，不是药物研发合作；2026年公告日期与2027年活动时间不能混为一谈。",
+      "summary_en": "Astellas announced on August 27 that it is a Host City Partner for the 2027 One Young World Tokyo Summit, scheduled for September 28 to October 1, 2027 at Tokyo International Forum. The focus is young leadership, sustainability and social impact. This is a corporate-responsibility and talent-engagement event, not a drug-development partnership; the 2026 announcement and 2027 event dates are distinct.",
+      "scope_zh": "已读安斯泰来官方公告，核对合作身份及跨年度活动日期。",
+      "scope_en": "Astellas's official announcement reviewed for partnership role and the following year's event dates.",
+      "evidence": [{"label": "安斯泰来 · One Young World 2027 东京合作", "url": "https://newsroom.astellas.com/2026-08-27-astellas-becomes-host-city-partner-for-one-young-world-2027-tokyo-summit"}]
+    },
+    {
+      "event_key": "peptidream-radiopharma-seminar-20260824",
+      "ids": ["14f66fc10d29bdfc"],
+      "title_zh": "PeptiDream 分享放射性药物开发与制造议题，参与下一代治疗模式研讨会",
+      "summary": "PeptiDream 的8月25日官方博客回顾了前一天举行的第19届下一代治疗模式研讨会。公司及 PDR Pharma 管理层参与演讲和讨论，涉及放射性药物研发、制造、核素供应及跨机构协作。Alpha Fusion、Stella Pharma、LinKMed 等也参与活动，但共同出席不能作为彼此新签商业合同的证据。",
+      "summary_en": "PeptiDream's August 25 blog recaps the 19th next-generation modalities seminar held on August 24. PeptiDream and PDR Pharma leadership discussed radiopharmaceutical development, manufacturing, radionuclide supply and cross-institution collaboration. Alpha Fusion, Stella Pharma and LinKMed also participated, but shared attendance is not evidence of newly signed commercial agreements between them.",
+      "scope_zh": "已读公司 IR 博客；活动发生日为8月24日，文章发布日为8月25日，参与名单不扩写为合作关系。",
+      "scope_en": "Company IR blog reviewed; event date August 24 is distinguished from publication August 25, and participation is not rewritten as a partnership.",
+      "evidence": [{"label": "PeptiDream · 放射性药物研讨会回顾", "url": "https://www.peptidream.com/ir/blog/000655.html"}]
+    }
+  ]
+}

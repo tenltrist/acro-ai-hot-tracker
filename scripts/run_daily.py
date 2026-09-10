@@ -21,6 +21,7 @@ from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+from manual_reviews import apply_review_metadata
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -2511,8 +2512,13 @@ def main() -> int:
         if manual_summary:
             ai_summaries[item.key] = manual_summary
             summary_methods[item.key] = "manual_ai"
-            summary_providers[item.key] = "chatgpt_pro_manual"
-            summary_models[item.key] = manual.get("model", "ChatGPT Pro")
+            manual_model = manual.get("model", "Editorial review")
+            summary_providers[item.key] = (
+                "codex_source_review"
+                if str(manual_model).lower().startswith("codex")
+                else "human_source_review"
+            )
+            summary_models[item.key] = manual_model
             manual_count += 1
 
     summary_pipeline: dict[str, Any] = {
@@ -2525,12 +2531,12 @@ def main() -> int:
         "generated": 0,
         "reused": reused_count,
         "manual_imported": manual_count,
-        "manual_tool": rule_catalog.get("strategy", {}).get("manual_summary_tool", "ChatGPT Pro"),
+        "manual_tool": rule_catalog.get("strategy", {}).get("manual_summary_tool", "Codex 静态编辑"),
         "failed": 0,
         "error": "",
     }
     if args.ai_summary:
-        config, config_error = (None, "自动 LLM API 已按当前策略关闭；请使用 ChatGPT Pro 人工批处理。") if not automatic_llm_enabled else resolve_ai_summary_config()
+        config, config_error = (None, "自动 LLM API 已按当前策略关闭；新增记录需通过 Codex 编辑后静态回填。") if not automatic_llm_enabled else resolve_ai_summary_config()
         summary_candidates = sorted(
             [
                 item
@@ -2606,6 +2612,7 @@ def main() -> int:
         translated_titles,
         summary_pipeline,
     )
+    apply_review_metadata(payload, manual_summary_map)
     save_json(LATEST_RUN_PATH, payload)
     write_static_api(payload)
 

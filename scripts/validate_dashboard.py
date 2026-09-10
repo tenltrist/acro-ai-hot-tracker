@@ -141,8 +141,18 @@ def main() -> int:
             errors.append(f"{item_id}: invalid summary_method")
         if item.get("summary_method") == "llm" and not item.get("summary_provider"):
             errors.append(f"{item_id}: LLM summary is missing provider provenance")
-        if item.get("summary_method") == "manual_ai" and item.get("summary_provider") != "chatgpt_pro_manual":
-            errors.append(f"{item_id}: manual AI summary is missing ChatGPT Pro provenance")
+        if item.get("summary_method") == "manual_ai" and item.get("summary_provider") not in {
+            "chatgpt_pro_manual",
+            "codex_source_review",
+            "human_source_review",
+        }:
+            errors.append(f"{item_id}: manual AI summary is missing reviewer provenance")
+        if item.get("summary_provider") == "codex_source_review":
+            review = item.get("summary_review", {})
+            editorial_translation = review.get("kind") == "codex_editorial_translation"
+            required = item.get("title_zh") and item.get("ai_summary") and review.get("evidence") and review.get("scope_zh") and review.get("reviewed_at")
+            if not required or (not editorial_translation and not item.get("ai_summary_en")):
+                errors.append(f"{item_id}: source-checked review is missing required text or evidence")
         if item.get("title_zh") and len(str(item.get("title_zh"))) < 8:
             errors.append(f"{item_id}: reviewed Chinese title is too short")
         if item.get("tier") in {"daily", "immediate"} and item.get("acro_relevance", {}).get("level") == "low":

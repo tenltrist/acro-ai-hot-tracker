@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-09-09",
+  "reviewer": "Codex",
+  "method": "Source-grounded bilingual editorial summaries; no paid model API",
+  "groups": [
+    {
+      "event_key": "ono-aitia-neurology-20260902",
+      "ids": ["da2905226b97f5c4", "d8f1b9c2b5d94a16", "7bd9d3f61c6a6ccf", "63310979126797ec", "538348a00b06e091"],
+      "title_zh": "小野药品与 Aitia 合作，以因果 AI 探索神经疾病靶点",
+      "summary": "小野药品于9月2日公布与 Aitia 的神经疾病药物发现合作。双方将利用临床及组学数据构建的数字孪生，寻找新治疗靶点和生物标志物。小野获得的是针对所发现靶点的候选药物全球独家研发与商业化权利的选择权，并非已经完成全部授权或推出药物。公告未披露交易金额，也未提供候选药物的临床有效性结果。",
+      "summary_en": "Ono announced a neuroscience drug-discovery collaboration with Aitia on September 2. Causal-AI digital twins built from clinical and omics data will support target and biomarker discovery. Ono receives an option for exclusive worldwide development and commercialization rights to candidates against identified targets. This is not a completed exercise of those rights or a drug launch. Financial terms and clinical efficacy results were not disclosed.",
+      "scope_zh": "以小野官方公告核对合作事实；聚合报道不视为已阅读全文。",
+      "scope_en": "Collaboration facts checked against Ono's announcement; indexed reports were not treated as fully reviewed articles.",
+      "evidence": [{"label": "小野药品官方公告 · 2026-09-02", "url": "https://www.ono-pharma.com/ja/news/20260902.html"}],
+      "overrides": {
+        "d8f1b9c2b5d94a16": {
+          "title_zh": "日本制药业新闻汇总：小野与 Aitia 合作；保土谷化学设立核酸药物 CDMO 子公司",
+          "summary": "本篇为多则新闻汇总。与小野药品相关的部分：公司与 Aitia 合作，利用因果 AI 数字孪生探索神经疾病靶点及生物标志物，并取得相关候选药物全球独家研发和商业化权利的选择权。另一则报道为保土谷化学设立 NuChord，布局核酸药物 CDMO，拟在郡山建设原料药生产设备及洁净室；两家公司并非在同一项目中合作。",
+          "summary_en": "This is a multi-story industry roundup. Ono's item covers its Aitia collaboration on neuroscience targets and biomarkers, with an option for worldwide development and commercialization rights. Separately, Hodogaya Chemical established NuChord to build a nucleic-acid CDMO business, with production equipment and cleanrooms planned in Koriyama. The two stories do not describe a joint project between Ono and Hodogaya.",
+          "scope_zh": "已读新闻汇总，并用小野官方公告交叉核对；两则新闻分开表述。",
+          "scope_en": "Roundup read and Ono's announcement cross-checked; separate stories are not conflated.",
+          "evidence": [{"label": "Answers 新闻汇总 · 2026-09-02", "url": "https://answers.and-pro.jp/pharmanews/33137/"}, {"label": "小野药品官方公告", "url": "https://www.ono-pharma.com/ja/news/20260902.html"}]
+        }
+      }
+    },
+    {
+      "event_key": "shionogi-cefiderocol-australia-20260907",
+      "ids": ["8bb92253a8f59a2b", "0bcc7253861fa1df"],
+      "title_zh": "盐野义 cefiderocol 在澳大利亚获批，用于部分耐药革兰阴性菌感染",
+      "summary": "盐野义9月7日宣布，澳大利亚 TGA 批准 cefiderocol，用于治疗选择有限、涉及耐碳青霉烯类或疑似耐药革兰阴性菌的成人复杂性尿路感染及医院获得性、呼吸机相关肺炎。Link Medical Products 负责澳大利亚和新西兰的开发及销售合作。本次消息是澳大利亚获批，不代表新西兰同步获批，也不是新的临床试验结果公告。",
+      "summary_en": "Shionogi announced Australian TGA approval of cefiderocol on September 7 for specified adult infections involving resistant or suspected resistant Gram-negative pathogens where treatment options are limited, including complicated urinary tract infection and hospital- or ventilator-associated pneumonia. Link Medical Products is the development and sales partner for Australia and New Zealand. The announcement establishes Australian approval, not simultaneous New Zealand approval or a new clinical trial readout.",
+      "scope_zh": "媒体全文未完整核验；摘要依据盐野义官方批准公告补证。",
+      "scope_en": "Media articles were not fully reviewed; summary corroborated using Shionogi's official approval announcement.",
+      "evidence": [{"label": "盐野义官方公告 · 2026-09-07", "url": "https://www.shionogi.com/jp/ja/news/2026/09/20260907.html"}]
+    },
+    {
+      "event_key": "abcam-genedata-20260903",
+      "ids": ["bf4f2e275594a361", "d5020475aa0c47bf"],
+      "title_zh": "Abcam 扩大与 Genedata 的合作，统一抗体研发数据与工作流",
+      "summary": "Abcam 9月3日宣布扩大与 Genedata 的合作，在全球研发体系部署 Genedata Biologics。平台已覆盖英国总部及中国、美国的重要研发站点，用于整合样本历史、抗体表征和研发工作流，为自动化及 AI 应用提供统一数据基础。这是研发数字化合作进展，不是新抗体产品上市；公告没有给出经独立验证的研发提速或成本下降幅度。",
+      "summary_en": "Abcam announced an expanded Genedata collaboration on September 3, deploying Genedata Biologics across its global R&D organization. The system connects sample histories, antibody characterization and workflows across its UK headquarters and key sites in China and the US, supporting automation and AI. This is an R&D infrastructure update, not an antibody product launch. The announcement provides no independently verified percentage improvement in speed or cost.",
+      "scope_zh": "以 Abcam 官方公告核对；未把两条媒体索引当成独立合作。",
+      "scope_en": "Checked against Abcam's official announcement; the two indexed reports describe the same collaboration.",
+      "evidence": [{"label": "Abcam 官方合作公告", "url": "https://www.abcam.com/en-us/press-releases/abcam-and-genedata-collaborate-to-accelerate-ai-driven-antibody-development"}]
+    },
+    {
+      "event_key": "wako-oxytocin-4f1-product",
+      "ids": ["0388959ac0342a8d"],
+      "title_zh": "FUJIFILM Wako：用于小鼠组织染色的抗催产素重组兔单抗 4F1",
+      "summary": "Wako 产品页介绍抗催产素重组兔单克隆抗体 4F1，以合成催产素肽为抗原，列出的反应种属为小鼠，适用于冷冻组织切片免疫染色。它是用于识别催产素的研究用抗体，不是催产素药物。页面也列有其他宿主来源的多克隆抗体，规格不能混用；当前只能确认产品页内容，不能据抓取日期认定首次上市时间。",
+      "summary_en": "Wako's page describes the recombinant rabbit monoclonal anti-oxytocin antibody 4F1, raised against a synthetic oxytocin peptide and listed for mouse frozen-section immunohistochemistry. It is a research antibody that detects oxytocin, not an oxytocin medicine. Other polyclonal antibodies on the page have different specifications. The page supports product characteristics, but the collection date does not establish the initial launch date.",
+      "scope_zh": "已核对产品页的克隆号、宿主、种属与用途；首次上市日期未确认。",
+      "scope_en": "Clone, host, species and application checked on the product page; initial launch date is unconfirmed.",
+      "evidence": [{"label": "Wako 抗催产素抗体产品页", "url": "https://labchem-wako.fujifilm.com/jp/category/03263.html"}]
+    },
+    {
+      "event_key": "wako-cfos-product",
+      "ids": ["5363461214b7e7c4"],
+      "title_zh": "FUJIFILM Wako：用于神经活动研究的豚鼠抗 c-Fos 多克隆抗体",
+      "summary": "Wako 介绍豚鼠来源的抗 c-Fos 多克隆抗体，列出的用途为小鼠冷冻组织切片免疫染色。c-Fos 常作为神经活动研究标志，采用豚鼠宿主可方便与兔或小鼠来源抗体进行多重染色。页面展示的是特定小鼠实验条件下的染色数据，不等于对所有物种、样本或临床诊断用途均完成验证；产品首次上市时间未确认。",
+      "summary_en": "Wako describes a guinea-pig polyclonal anti-c-Fos antibody for mouse frozen-section immunohistochemistry. c-Fos is used as a neuronal activity marker, and the guinea-pig host can facilitate multiplex staining with rabbit or mouse antibodies. The examples document specific mouse experiments, not validation across all species, samples or clinical diagnostic applications. The initial product launch date is not established by this page.",
+      "scope_zh": "已核对官方产品页；研究用途与临床用途分开表述。",
+      "scope_en": "Official product page reviewed; research use is not presented as clinical validation.",
+      "evidence": [{"label": "Wako 抗 c-Fos 抗体产品页", "url": "https://labchem-wako.fujifilm.com/jp/category/03606.html"}]
+    },
+    {
+      "event_key": "daiichi-ds1025-phase1-20260828",
+      "ids": ["25585e893f5bb468"],
+      "title_zh": "第一三共抗 CD25 ADC DS1025 完成 I 期试验首例给药",
+      "summary": "第一三共8月28日宣布，新型抗 CD25 ADC DS1025 在晚期或转移性实体瘤患者中完成 I 期试验首例给药。该候选药物旨在作用于肿瘤微环境中的调节性 T 细胞。剂量递增研究计划在包括日本的亚洲及欧洲招募最多45人，重点评估安全性、耐受性并探索疗效。首例给药代表进入早期临床验证，不代表安全性和疗效已经确立。",
+      "summary_en": "Daiichi Sankyo announced first-patient dosing in a phase 1 study of the anti-CD25 ADC DS1025 on August 28. The candidate is designed to target regulatory T cells in the tumor microenvironment. The dose-escalation study plans up to 45 patients with advanced or metastatic solid tumors across Asia, including Japan, and Europe, assessing safety, tolerability and preliminary activity. First dosing is an early development milestone, not established efficacy or safety.",
+      "scope_zh": "已阅读全文：第一三共官方日文公告 PDF。",
+      "scope_en": "Daiichi Sankyo's Japanese announcement PDF reviewed.",
+      "evidence": [{"label": "第一三共 DS1025 官方公告 · 2026-08-28", "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260828_J.pdf"}]
+    },
+    {
+      "event_key": "daiichi-dato-urothelial-phase3-20260827",
+      "ids": ["1e26832cc0109438"],
+      "title_zh": "Dato-DXd 启动尿路上皮癌术后辅助治疗 III 期试验",
+      "summary": "第一三共8月27日公布 TROPION-Urothelial04 研究首例给药。该全球 III 期试验评估抗 TROP2 ADC Dato-DXd 单药或联合 PD-1/TIGIT 双特异性抗体 rilvegostomig，用于接受术前治疗和手术后、复发风险较高的肌层浸润性尿路上皮癌患者。研究计划约915人，以无病生存期为主要终点。消息是试验启动，不是已证明优于标准治疗的结果。",
+      "summary_en": "Daiichi Sankyo announced first dosing in TROPION-Urothelial04 on August 27. The global phase 3 trial evaluates the anti-TROP2 ADC Dato-DXd alone or with the PD-1/TIGIT bispecific rilvegostomig as adjuvant treatment for high-risk muscle-invasive urothelial cancer after neoadjuvant therapy and surgery. Around 915 participants are planned, with disease-free survival as the primary endpoint. This is trial initiation, not a positive comparative efficacy result.",
+      "scope_zh": "已核对官方公告中的方案、人数与主要终点。",
+      "scope_en": "Regimens, planned enrollment and primary endpoint checked in the official announcement.",
+      "evidence": [{"label": "第一三共 Dato-DXd 官方公告 · 2026-08-27", "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260827_J.pdf"}]
+    },
+    {
+      "event_key": "daiichi-enhertu-eu-20260901",
+      "ids": ["68a567e9d408dc14"],
+      "title_zh": "Enhertu 联合帕妥珠单抗在欧盟获批用于 HER2 阳性乳腺癌一线治疗",
+      "summary": "第一三共9月1日宣布，欧盟批准 Enhertu 联合帕妥珠单抗，用于不可切除或转移性 HER2 阳性乳腺癌的一线治疗，依据为 DESTINY-Breast09 III 期试验。公司将因此从阿斯利康获得1亿美元开发里程碑付款。这里同时包含特定地区的适应证扩展和合作付款节点，不应解读为所有乳腺癌人群或全球市场均获批。",
+      "summary_en": "Daiichi Sankyo announced EU approval of Enhertu plus pertuzumab for first-line treatment of unresectable or metastatic HER2-positive breast cancer on September 1, based on DESTINY-Breast09. Daiichi will receive a $100 million development milestone payment from AstraZeneca. The update combines a region-specific indication expansion with a partnership payment milestone; it does not establish approval for all breast cancer populations or all countries.",
+      "scope_zh": "已读第一三共官方日文公告；批准地区、适应证及付款节点分开记录。",
+      "scope_en": "Official Japanese release reviewed; approval scope and payment milestone distinguished.",
+      "evidence": [{"label": "第一三共欧盟批准公告 · 2026-09-01", "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202609/20260901_J.pdf"}]
+    },
+    {
+      "event_key": "daiichi-enhertu-china-202608",
+      "ids": ["5ef7608d1a33e25d", "dd6faede0348173c"],
+      "title_zh": "Enhertu 联合帕妥珠单抗在中国获批用于 HER2 阳性乳腺癌一线治疗",
+      "summary": "第一三共公告，中国 NMPA 批准 Enhertu 联合帕妥珠单抗，用于不可切除或转移性 HER2 阳性乳腺癌的一线治疗，依据为 DESTINY-Breast09 III 期研究。这是已上市 ADC 的适应证扩展，不是另一种新 ADC。英文8月12日和日文8月17日公告描述同一批准事件，不能作为两次独立进展；公告没有证明与 ACRO 存在采购关系。",
+      "summary_en": "Daiichi Sankyo announced Chinese NMPA approval of Enhertu plus pertuzumab as first-line therapy for unresectable or metastatic HER2-positive breast cancer, based on DESTINY-Breast09. This is an indication expansion for an existing ADC, not a different new ADC. The August 12 English and August 17 Japanese releases cover the same approval and should not be interpreted as separate milestones. They provide no evidence of an ACRO purchasing relationship.",
+      "scope_zh": "已核对中英对应的日文、英文官方公告；两条记录是同一批准事件。",
+      "scope_en": "English and Japanese company releases checked; both records cover the same approval.",
+      "evidence": [{"label": "第一三共英文公告 · 2026-08-12", "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202608/20260812_E.pdf"}, {"label": "第一三共日文公告 · 2026-08-17", "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260817_J1.pdf"}]
+    },
+    {
+      "event_key": "chugai-gsk-aid351-20260818",
+      "ids": ["9e3775de960f2865"],
+      "title_zh": "中外制药向 GSK 授予抗登革热抗体 AID351 的全球独家许可",
+      "summary": "中外制药8月18日公布与 GSK 的 AID351 全球独家许可协议，涵盖该抗登革热抗体的开发、生产及成功开发后的商业化。GSK 将主导 I 期临床开发和生产，中外制药有权获得未来产品销售提成及部分再许可收入。公告未披露具体首付款金额；这是早期抗体项目授权，不是产品已获批或商业化已经成功。",
+      "summary_en": "Chugai announced an exclusive worldwide license to GSK for the anti-dengue antibody AID351 on August 18, covering development, manufacturing and commercialization if development succeeds. GSK will lead phase 1 development and manufacturing. Chugai is entitled to future royalties and a share of sublicensing proceeds. The release does not disclose an upfront payment amount and does not establish regulatory approval or successful commercialization.",
+      "scope_zh": "已读中外制药官方公告；协议签订日为8月17日，公告日为8月18日。",
+      "scope_en": "Official release reviewed; agreement signed August 17 and announced August 18.",
+      "evidence": [{"label": "中外制药 AID351 官方许可公告", "url": "https://www.chugai-pharm.co.jp/news/detail/20260818113000_1599.html"}]
+    },
+    {
+      "event_key": "eisai-leqembi-sc-china-20260903",
+      "ids": ["4123d0fc133c0d2a", "d1e31bdb4b3fadf7"],
+      "title_zh": "LEQEMBI 皮下注射起始治疗方案在中国获批，用于早期阿尔茨海默病",
+      "summary": "卫材与渤健9月3日公告，中国 NMPA 批准 LEQEMBI 皮下自动注射制剂作为早期阿尔茨海默病的起始治疗，用于轻度认知障碍或轻度痴呆阶段。每周皮下注射是现有药物的新给药方式，计划在截至2027年3月的2026财年于中国上市。获批不等于已经上市；治疗仍有相关监测要求，不能将自动注射理解为无需医疗管理。",
+      "summary_en": "Eisai and Biogen announced Chinese approval of the LEQEMBI subcutaneous autoinjector for initiation treatment of early Alzheimer's disease on September 3, covering mild cognitive impairment or mild dementia stages. Weekly subcutaneous dosing is a new formulation of the existing medicine. A Chinese launch is planned during fiscal 2026, ending March 2027. Approval is not proof of commercial availability, and the autoinjector does not remove treatment monitoring requirements.",
+      "scope_zh": "已读卫材与渤健联合官方公告。",
+      "scope_en": "Joint Eisai and Biogen official announcement reviewed.",
+      "evidence": [{"label": "卫材 / 渤健联合官方公告 · 2026-09-03", "url": "https://investors.biogen.com/news-releases/news-release-details/leqembir-lecanemab-subcutaneous-formulation-initiation-treatment"}],
+      "overrides": {
+        "d1e31bdb4b3fadf7": {
+          "title_zh": "日本制药业新闻汇总：LEQEMBI 中国皮下给药获批；Nipro 生物类似药与 FRONTEO 合作动态",
+          "summary": "卫材相关部分：LEQEMBI 皮下注射起始治疗方案在中国获批，适用于早期阿尔茨海默病，卫材计划在2026财年上市。这是批准消息，不代表已经销售。原文还分别报道 Nipro 的乌司奴单抗生物类似药获批，以及 FRONTEO 与 Chiome 开展双特异性抗体发现合作；后两项不是卫材的项目。",
+          "summary_en": "The Eisai section reports Chinese approval of subcutaneous LEQEMBI initiation treatment for early Alzheimer's disease, with launch planned in fiscal 2026 rather than already completed. Separate items concern Nipro's ustekinumab biosimilar approval and a FRONTEO-Chiome bispecific-antibody discovery collaboration. Those projects are not Eisai programs.",
+          "scope_zh": "已读新闻汇总；卫材段落另用联合官方公告核对，避免把其他公司的项目归给卫材。",
+          "scope_en": "Roundup reviewed and Eisai section cross-checked against the joint official release; other companies' projects kept separate.",
+          "evidence": [{"label": "Answers 新闻汇总 · 2026-09-03", "url": "https://answers.and-pro.jp/pharmanews/33145/"}, {"label": "卫材 / 渤健联合官方公告", "url": "https://investors.biogen.com/news-releases/news-release-details/leqembir-lecanemab-subcutaneous-formulation-initiation-treatment"}]
+        }
+      }
+    },
+    {
+      "event_key": "eisai-leqembi-canada-reimbursement-20260831",
+      "ids": ["16a0bcfe253fa15a"],
+      "title_zh": "加拿大药品机构建议支持 LEQEMBI 公共报销，尚非全面覆盖落地",
+      "summary": "卫材与渤健8月31日发布消息，加拿大药品机构 CDA-AMC 对符合条件的早期阿尔茨海默病患者使用 LEQEMBI 给出最终积极公共报销建议。这为后续公共药物计划的准入讨论提供依据，但仍不同于各地公共支付方已经完成覆盖决策。该动态属于支付准入评估进展，不是新的药品上市批准或所有患者都可报销的承诺。",
+      "summary_en": "Eisai and Biogen reported a final positive CDA-AMC recommendation supporting public reimbursement of LEQEMBI for eligible patients with early Alzheimer's disease on August 31. It advances access discussions but is not equivalent to completed coverage decisions across Canadian public drug plans. This is a reimbursement-assessment milestone, not a new marketing authorization or a guarantee that all patients are covered.",
+      "scope_zh": "依据公司在新闻稿平台发布的原始公告核对；不是独立支付方最终覆盖决定。",
+      "scope_en": "Checked against the companies' original distributed release, not treated as a final payer coverage decision.",
+      "evidence": [{"label": "卫材 / 渤健公司原始新闻稿 · 2026-08-31", "url": "https://www.newswire.ca/news-releases/final-cda-amc-recommendation-brings-canadians-with-early-stage-alzheimer-s-disease-one-step-closer-to-accessing-leqembi-r-lecanemab--874315267.html"}]
+    },
+    {
+      "event_key": "takeda-orzeyful-approval-20260805",
+      "ids": ["4d6b2d8b0e16144b"],
+      "title_zh": "8月 FDA 新药批准回顾：含武田 ORZEYFUL 等药物",
+      "summary": "武田相关部分：FDA 于8月5日批准口服食欲素2受体激动剂 ORZEYFUL（oveporexton），用于成人1型发作性睡病，依据包括 FirstLight 和 RadiantLight III 期试验。武田公告称，美国供货仍需等待 DEA 管制分类程序。该报道是8月批准回顾，不能把9月的报道日期当作获批日，也不能将获批直接写成已上市供货。",
+      "summary_en": "Takeda-specific section: the FDA approved the oral orexin-2 receptor agonist ORZEYFUL (oveporexton) for adults with narcolepsy type 1 on August 5, supported by the FirstLight and RadiantLight phase 3 trials. Takeda said US availability remained subject to DEA scheduling. This is an August approvals roundup published in September; the article date is not the approval date, and approval does not establish immediate product availability.",
+      "scope_zh": "仅精读武田相关事件：媒体汇总全文未完整获取，以武田官方公告及 FDA 信息补证；不概括其他药物。",
+      "scope_en": "Takeda event only: full media roundup unavailable; corroborated with Takeda and FDA sources. Other drugs are not summarized.",
+      "evidence": [{"label": "武田 ORZEYFUL 官方批准公告", "url": "https://www.takeda.com/newsroom/newsreleases/2026/orzeyful-approved-narcolepsy/"}, {"label": "FDA 批准信息", "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/423c718"}]
+    },
+    {
+      "event_key": "kissei-cg0070-publication-20260817",
+      "ids": ["9d63bcf5808ead59"],
+      "title_zh": "Kissei：膀胱癌候选药 CG0070 的 III 期研究发表于 The Lancet Oncology",
+      "summary": "Kissei 8月17日公布，溶瘤病毒候选药 CG0070 的 BOND-003 队列 C III 期研究发表于 The Lancet Oncology，研究对象为 BCG 治疗无应答、伴原位癌的非肌层浸润性膀胱癌患者。这是单臂研究的数据发表，不是对照试验证明优效或已经获批。Kissei 拥有不含中国的亚洲20个国家和地区相关独家权利，公告中的日本申报仍为后续计划。",
+      "summary_en": "Kissei announced publication of phase 3 BOND-003 cohort C results for the oncolytic-virus candidate CG0070 in The Lancet Oncology on August 17. The single-arm study involves BCG-unresponsive non-muscle-invasive bladder cancer with carcinoma in situ. Publication is not comparative proof of superiority or regulatory approval. Kissei holds relevant exclusive rights in 20 Asian countries and territories excluding China; a Japanese filing remained a future step in the announcement.",
+      "scope_zh": "已读 Kissei 官方公告；未将公司概述替代期刊全文独立审评。",
+      "scope_en": "Kissei's official release reviewed; this is not an independent full-paper appraisal.",
+      "evidence": [{"label": "Kissei CG0070 官方公告 · 2026-08-17", "url": "https://www.kissei.co.jp/news/uploaded/ac0d28038b8ced3e28ffd15df1f1d731.pdf"}]
+    },
+    {
+      "event_key": "takara-uracil-polymerase-20260903",
+      "ids": ["627a72f75ff67cfb"],
+      "title_zh": "Takara Bio 推出适合含尿嘧啶 DNA 扩增的 PrimeSTAR GXL U-Tolerant 酶",
+      "summary": "Takara Bio 9月3日公告，将于9月4日推出 PrimeSTAR GXL U-Tolerant DNA Polymerase。该 PCR 酶针对含尿嘧啶的 DNA，覆盖 FFPE、环境或古 DNA，以及经亚硫酸氢盐处理的甲基化分析样本等扩增需求。产品由公司与长滨生物科学技术大学合作开发，属于研究工具更新，不是临床诊断试剂获批；应区分公告日与计划发售日。",
+      "summary_en": "Takara Bio announced PrimeSTAR GXL U-Tolerant DNA Polymerase on September 3, with release scheduled for September 4. The PCR enzyme supports uracil-containing DNA, including FFPE, environmental or ancient DNA and bisulfite-treated samples used in methylation analysis. It was developed with Nagahama Institute of Bio-Science and Technology. This is a research-tool update, not a clinical diagnostic approval; announcement and planned release dates are distinct.",
+      "scope_zh": "已读 Takara Bio 官方产品公告。",
+      "scope_en": "Takara Bio's official product announcement reviewed.",
+      "evidence": [{"label": "Takara Bio 官方公告 · 2026-09-03", "url": "https://www.takara-bio.co.jp/ja/news/newsr_26m0903trss.html"}]
+    },
+    {
+      "event_key": "thermo-cgt-commercialization-20260831",
+      "ids": ["a8300e5b5082d821"],
+      "title_zh": "Thermo Fisher 观点：细胞与基因治疗商业化需提前统筹制造、监管及支付",
+      "summary": "Thermo Fisher 8月31日的博客回顾其支持的 ASGCT 2026 专题讨论，将细胞与基因治疗商业化难点归纳为制造成本与规模化、监管要求，以及临床终点如何支撑支付价值。文章强调尽早规划材料、试剂、生产伙伴及目标患者信息，并讨论体内 CAR-T、AAV 等方向。它是企业赞助背景下的行业观点，不是新产品发布、合作签约或已证实的客户采购需求。",
+      "summary_en": "Thermo Fisher's August 31 blog recaps a company-supported ASGCT 2026 panel. It highlights manufacturing cost and scale, regulatory requirements, and clinical endpoints that demonstrate payer value as commercialization challenges for cell and gene therapies. Early planning of materials, reagents, manufacturing partners and patient evidence is emphasized, alongside in vivo CAR-T and AAV trends. This is sponsored industry commentary, not a product launch, signed partnership or confirmed customer purchasing need.",
+      "scope_zh": "已读公司博客；保留作者观点与事实事件的区别。",
+      "scope_en": "Company blog reviewed; commentary is distinguished from factual commercial events.",
+      "evidence": [{"label": "Thermo Fisher CGT 商业化博客 · 2026-08-31", "url": "https://www.thermofisher.com/blog/biotechnology/cell-gene-therapy-commercialization-trends-2026/"}]
+    },
+    {
+      "event_key": "thermo-antibody-purification-20260901",
+      "ids": ["1a01f03a67dbfd29"],
+      "title_zh": "Thermo Fisher 技术解读：新型抗体需按分子结构调整纯化策略",
+      "summary": "Thermo Fisher 9月1日的技术文章讨论双特异性抗体、抗体片段和 Fc 融合蛋白的纯化差异。Protein A 仍是常规 IgG 捕获的重要方法，但新分子格式可能需要亚结构域选择性亲和配基，并结合离子交换、疏水或混合模式层析控制聚集体及错配链。文章主张按分子设计工艺，并非宣布 Protein A 过时，也不是一款新树脂的上市公告。",
+      "summary_en": "Thermo Fisher's September 1 technical article discusses purification of bispecific antibodies, fragments and Fc-fusion proteins. Protein A remains important for conventional IgG, while engineered formats may need subdomain-selective affinity approaches and polishing steps such as ion exchange, hydrophobic interaction or mixed-mode chromatography to manage aggregates and mispaired chains. The point is molecule-specific process design, not that Protein A is obsolete or that a new resin has been launched.",
+      "scope_zh": "已读公司技术博客；未将工艺观点写成产品性能验证。",
+      "scope_en": "Company technical blog reviewed; process commentary is not presented as independently validated product performance.",
+      "evidence": [{"label": "Thermo Fisher 抗体纯化技术博客 · 2026-09-01", "url": "https://www.thermofisher.com/blog/biotechnology/beyond-protein-a-how-antibody-purification-strategies-are-evolving-for-next-generation-therapeutics/"}]
+    }
+  ]
+}

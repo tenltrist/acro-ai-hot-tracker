@@ -5,6 +5,7 @@ FIELDS = (
     "id", "company_id", "company", "matched_company_ids", "matched_companies",
     "title", "title_zh", "url", "published", "published_at", "event_start_at",
     "date_provenance", "summary", "summary_method", "summary_quality", "source_id",
+    "summary_review", "summary_provider", "summary_model",
     "source_label", "source_ids", "source_labels", "source_trust", "related_urls",
     "signal_type", "category", "business_event_type", "intelligence", "evidence",
 )
@@ -32,12 +33,26 @@ def update_archive(path, payload):
         record["archive_first_seen"] = old.get("archive_first_seen", stamp)
         record["archive_last_seen"] = stamp
         records[item["id"]] = record
+    archived_items = sorted(records.values(), key=lambda item: item["id"])
+    reviewed = [item for item in archived_items if item.get("summary_method") == "manual_ai"]
+    summary_pipeline = dict(previous.get("summary_pipeline") or payload.get("summary_pipeline") or {})
+    summary_pipeline["manual_imported"] = len(reviewed)
+    summary_pipeline["manual_tool"] = " / ".join(
+        sorted({item.get("summary_model") or "Unspecified" for item in reviewed})
+    )
+    review_stamps = [
+        item["summary_review"]["reviewed_at"]
+        for item in reviewed
+        if item.get("summary_review") and item["summary_review"].get("reviewed_at")
+    ]
     archive = {
         "schema_version": 1,
         "retention_started_at": previous.get("retention_started_at", stamp),
         "updated_at": stamp,
+        "summaries_updated_at": max(review_stamps) if review_stamps else previous.get("summaries_updated_at"),
+        "summary_pipeline": summary_pipeline,
         "coverage_note": "从保留功能上线起逐轮积累。此前文章仅为来源返回的回溯样本；旧 history 文件只有统计，不代表完整历史事件。",
-        "items": sorted(records.values(), key=lambda item: item["id"]),
+        "items": archived_items,
     }
     path.write_text(json.dumps(archive, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     return archive

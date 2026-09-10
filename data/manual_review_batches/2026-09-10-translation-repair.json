@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-09-10",
+  "reviewer": "Codex",
+  "method": "Bilingual translation and factual restatement of the current 90-day overview records that lacked Chinese titles; no paid model API and no full-text claim",
+  "defaults": {
+    "scope_zh": "有限核对：仅依据当前采集到的原标题及可用短摘录完成翻译和事实重述；未逐篇取得或核对全文，不视为全文精读。",
+    "scope_en": "Limited review: translation and factual restatement use the captured source title and any available short excerpt. Full text was not obtained or checked article by article.",
+    "review_kind": "translation_review",
+    "material_level": "title_or_excerpt",
+    "use_item_source": true
+  },
+  "groups": [
+    {
+      "event_key": "acro-il15-pmda-secondary-20260716",
+      "ids": ["29d3e8fc4cd5c6aa"],
+      "title_zh": "百普赛斯用于细胞治疗生产的 GMP 级 IL-15 获日本 PMDA 材料适用性确认",
+      "summary": "公开标题显示，百普赛斯的 GMP 级 IL-15 获得日本 PMDA 相关材料适用性确认，应用场景指向细胞治疗生产；这是材料确认信息，不等同于细胞治疗产品获批。",
+      "summary_en": "The headline reports a Japanese PMDA material-suitability confirmation for ACROBiosystems' GMP-grade IL-15 used in cell-therapy manufacturing. It is a material confirmation, not approval of a cell-therapy product."
+    },
+    {
+      "event_key": "leqembi-subcutaneous-fda-20260714",
+      "ids": ["907e2fd6c8a2b478"],
+      "title_zh": "卫材与百健的 LEQEMBI 皮下注射起始治疗方案获 FDA 批准",
+      "summary": "报道标题确认，卫材与百健的 LEQEMBI 皮下注射方案已获 FDA 批准用于起始治疗；当前材料未提供给药条件、适用人群或标签全文。",
+      "summary_en": "The captured headline states that the FDA approved the subcutaneous LEQEMBI regimen from Eisai and Biogen for treatment initiation. Dosing conditions, eligible patients and the full label were not available in the captured material."
+    },
+    {
+      "event_key": "acro-il15-pmda-primary-20260714",
+      "ids": ["46f3b05083ef327c"],
+      "title_zh": "百普赛斯 GMP 级 IL-15 获日本 PMDA 再生医疗产品材料适用性确认",
+      "summary": "现有摘录显示，百普赛斯取得了日本再生医疗产品材料适用性确认，涉及 GMP 级 IL-15，并列出证书编号。该信息支持原料质量与申报材料使用，不应表述为药品上市批准。",
+      "summary_en": "The available excerpt says ACROBiosystems received Japan's Material Suitability Confirmation for Regenerative Medicine Products for GMP-grade IL-15 and cites a certificate number. This supports material-quality and filing use, not marketing authorization for a medicine.",
+      "evidence": [
+        {
+          "label": "Yahoo Finance · ACROBiosystems PMDA material confirmation",
+          "url": "https://finance.yahoo.com/healthcare/articles/acrobiosystems-obtains-pmda-material-suitability-160000307.html"
+        }
+      ]
+    },
+    {
+      "event_key": "thermo-adlm-solutions-20260727",
+      "ids": ["223d59d54e74bcc6"],
+      "title_zh": "赛默飞在 ADLM 2026 展示端到端诊断与实验室解决方案",
+      "summary": "报道标题显示，赛默飞在 ADLM 2026 展示面向临床未满足需求的诊断及实验室工作流方案；当前材料未列出具体产品清单或性能数据。",
+      "summary_en": "The headline says Thermo Fisher presented end-to-end diagnostic and laboratory workflow solutions at ADLM 2026 to address unmet clinical needs. The captured material does not list individual products or performance data."
+    },
+    {
+      "event_key": "wako-sbp2l-antibody-20260715",
+      "ids": ["3e4c30453ac323e0"],
+      "title_zh": "FUJIFILM Wako 推出少突胶质细胞标志物 Sbp2l 兔多克隆抗体",
+      "summary": "Wako 日本官网的新产品页面新增抗 Sbp2l 兔多克隆抗体，并将 Sbp2l 描述为少突胶质细胞相关标志物；本条只确认产品页信息。",
+      "summary_en": "Wako's Japanese product page lists a new rabbit polyclonal antibody against Sbp2l, described as an oligodendrocyte-related marker. This review confirms only the captured product-page information."
+    },
+    {
+      "event_key": "merck-bioreliance-facility-secondary-20260720",
+      "ids": ["91be4db09d618590"],
+      "title_zh": "默克在德国总部启用投资 2500 万欧元的 BioReliance 检测设施",
+      "summary": "报道标题显示，默克在德国达姆施塔特全球总部启用一座投资 2500 万欧元的 BioReliance 检测设施；当前材料未说明全部检测能力或产能指标。",
+      "summary_en": "The headline reports the opening of a EUR 25 million BioReliance testing facility at Merck KGaA's global headquarters in Darmstadt, Germany. Detailed testing capabilities and capacity figures were not available in the captured material."
+    },
+    {
+      "event_key": "nacalai-nsf23-supplement-20260731",
+      "ids": ["3a566acc6b15d0ea"],
+      "title_zh": "Nacalai Tesque 推出神经细胞培养用无血清补充剂 NSF-23 Supplement（50×）",
+      "summary": "Nacalai Tesque 官网将 NSF-23 Supplement（50×）列为神经细胞培养用无血清补充剂新品；本条未取得配方、适用细胞类型或验证数据。",
+      "summary_en": "Nacalai Tesque lists NSF-23 Supplement (50x) as a new serum-free supplement for neuronal cell culture. The captured material does not provide its formulation, supported cell types or validation data."
+    },
+    {
+      "event_key": "jcr-izcargo-uae-approval-disclosure-20260721",
+      "ids": ["0e35cead610af0fc"],
+      "title_zh": "JCR Pharma 的亨特综合征酶制剂 IZCARGO 在阿联酋获批",
+      "summary": "JCR Pharma 的适时披露标题显示，血脑屏障穿透型亨特综合征酶替代疗法 IZCARGO 已在阿联酋取得生产销售批准；当前材料未包含当地标签与商业化时间表。",
+      "summary_en": "JCR Pharma's disclosure headline says the blood-brain-barrier-penetrating enzyme therapy IZCARGO for Hunter syndrome received manufacturing and marketing approval in the United Arab Emirates. The local label and launch schedule were not available."
+    },
+    {
+      "event_key": "jcr-izcargo-uae-approval-media-20260721",
+      "ids": ["162ff9debdd7e70e"],
+      "title_zh": "JCR Pharma 的亨特综合征治疗酶制剂 IZCARGO 获阿联酋生产销售批准",
+      "summary": "医药媒体标题报道，JCR Pharma 的 IZCARGO 已在阿联酋取得生产销售批准，适应证为亨特综合征；本条与公司披露描述同一批准事件。",
+      "summary_en": "A trade-media headline reports that JCR Pharma's IZCARGO received manufacturing and marketing approval in the United Arab Emirates for Hunter syndrome. This record describes the same approval event as the company disclosure."
+    },
+    {
+      "event_key": "acro-bridging-elisa-insight-20260713",
+      "ids": ["6858bf4b793b0b96"],
+      "title_zh": "桥接 ELISA：推进双特异性抗体评价",
+      "summary": "百普赛斯发布桥接 ELISA 技术内容，主题是双特异性抗体的双靶结合评价与检测应用；该记录属于技术内容更新，不是新药临床结果。",
+      "summary_en": "ACROBiosystems published technical content on bridging ELISA for evaluating dual-target binding and related testing of bispecific antibodies. This is a technical-content update, not a clinical result for a new medicine."
+    },
+    {
+      "event_key": "acro-dual-payload-adc-pkpd-20260616",
+      "ids": ["ea54a465b2563822"],
+      "title_zh": "双载荷 ADC 开发：PK/PD 挑战与临床洞见",
+      "summary": "百普赛斯的技术文章聚焦双载荷 ADC 开发中的药代动力学、药效学及临床转化挑战；当前记录没有披露某一候选药物的新临床数据。",
+      "summary_en": "ACROBiosystems' technical article focuses on pharmacokinetic, pharmacodynamic and clinical-translation challenges in dual-payload ADC development. The captured record does not report new clinical data for a specific drug candidate."
+    },
+    {
+      "event_key": "acro-adc-bioanalysis-pk-20260617",
+      "ids": ["c3944558211d8045"],
+      "title_zh": "用于总抗体及偶联抗体药代动力学分析的 ADC 生物分析检测",
+      "summary": "百普赛斯发布 ADC 生物分析技术内容，讨论总抗体与偶联抗体的药代动力学检测；本条是方法与检测资源更新，不代表特定 ADC 获批或进入临床。",
+      "summary_en": "ACROBiosystems published technical content on bioanalytical assays for measuring total and conjugated antibody pharmacokinetics in ADC programs. It is a methods resource, not evidence that a specific ADC was approved or entered clinical development."
+    },
+    {
+      "event_key": "acro-bcma-cd3-insight-20260721",
+      "ids": ["00be57c50625421b"],
+      "title_zh": "BCMA×CD3 双特异性抗体：作用机制、临床进展与挑战",
+      "summary": "百普赛斯发布 BCMA×CD3 双特异性抗体综述，覆盖作用机制、临床进展与开发挑战；它汇总的是技术领域信息，不是百普赛斯自身药物管线公告。",
+      "summary_en": "ACROBiosystems published an overview of BCMAxCD3 bispecific antibodies covering mechanism, clinical progress and development challenges. It is a field-level technical review, not an announcement of ACROBiosystems' own drug pipeline."
+    },
+    {
+      "event_key": "bio2026-recap-day3-20260625",
+      "ids": ["ec55e65a5bc00d6f"],
+      "title_zh": "BIO 2026 第三日回顾：AI、制造创新与合作推动研发提速",
+      "summary": "赛默飞的会展回顾将第三日主题概括为提速，重点涉及 AI、制造创新和新型合作方式如何缩短疗法开发周期；这是会议观察，不是单一项目进度公告。",
+      "summary_en": "Thermo Fisher's day-three recap frames acceleration as the central theme, highlighting AI, manufacturing innovation and new forms of collaboration as ways to shorten therapy-development timelines. It is a conference recap, not a schedule update for one project."
+    },
+    {
+      "event_key": "enhertu-tumor-agnostic-eu-approval-20260629",
+      "ids": ["bd3e5d13c60368ae"],
+      "title_zh": "Enhertu 在欧盟获批用于既往治疗过的 HER2 阳性转移性实体瘤",
+      "summary": "第一三共公告标题显示，Enhertu 获欧盟批准用于既往接受过治疗的 HER2 阳性转移性实体瘤，并将其描述为首个不按肿瘤原发部位限定的 HER2 靶向疗法及 ADC。",
+      "summary_en": "Daiichi Sankyo's release headline says Enhertu was approved in the EU for previously treated HER2-positive metastatic solid tumors and describes it as the first tumor-agnostic HER2-directed therapy and ADC."
+    },
+    {
+      "event_key": "cytiva-cgt-manufacturing-interview-20260617",
+      "ids": ["b8754e1bf51c4d54"],
+      "title_zh": "Cytiva 访谈：如何扩大细胞与基因治疗生产以提升全球可及性",
+      "summary": "BioPharm International 的问答标题聚焦 Cytiva 对细胞与基因治疗生产规模化及全球可及性的看法；当前材料未提供访谈中的具体产能、成本或项目承诺。",
+      "summary_en": "A BioPharm International Q&A focuses on Cytiva's perspective on scaling cell and gene therapy manufacturing for broader global access. The captured material does not include specific capacity, cost or program commitments from the interview."
+    },
+    {
+      "event_key": "peptidream-64cu-psma-dosing-complete-20260611",
+      "ids": ["664447d94b2cac63"],
+      "title_zh": "PeptiDream 等完成 64Cu-PSMA-I&T 日本临床试验的患者给药",
+      "summary": "报道标题显示，PeptiDream、PDR Pharma 与 Curium 集团已完成 64Cu-PSMA-I&T 临床试验患者给药，该放射性诊断剂面向前列腺癌并以日本获批为目标；结果与申报状态尚未披露。",
+      "summary_en": "The headline says PeptiDream, PDR Pharma and Curium completed patient dosing in a clinical trial of the prostate-cancer radiodiagnostic 64Cu-PSMA-I&T, with Japanese approval as the stated objective. Results and filing status were not available."
+    },
+    {
+      "event_key": "miltenyi-cgt-manufacturing-insight-20260615",
+      "ids": ["6c11d29671d535d3"],
+      "title_zh": "美天旎发布细胞与基因治疗生产洞见",
+      "summary": "美天旎官网新增细胞与基因治疗生产相关技术内容；现有标题不足以确认具体工艺、产品更新或客户项目，因此仅作为内容资源记录。",
+      "summary_en": "Miltenyi Bioindustry added technical content on cell and gene therapy manufacturing. The captured title does not establish a specific process change, product launch or customer program, so this is recorded only as a content resource."
+    },
+    {
+      "event_key": "japan-pharma-overseas-sales-analysis-20260701",
+      "ids": ["1dfd34d05e17647d"],
+      "title_zh": "日本制药业二十年变化：武田与安斯泰来海外销售占比已超过八成",
+      "summary": "JBpress 标题以武田海外销售约 90%、安斯泰来约 86% 为切入点，讨论日本制药业二十年的结构变化；这些比例来自媒体标题，尚未在本条中逐项核对财报口径。",
+      "summary_en": "A JBpress analysis uses overseas-sales shares of about 90% for Takeda and 86% for Astellas to discuss two decades of structural change in Japan's pharmaceutical industry. The figures come from the captured headline and were not reconciled here with each company's reporting definitions."
+    },
+    {
+      "event_key": "tdxd-pertuzumab-chmp-jp-release-20260727",
+      "ids": ["fbe8fb2bd6c2cede"],
+      "title_zh": "T-DXd 联合帕妥珠单抗一线治疗 HER2 阳性乳腺癌获欧洲 CHMP 推荐批准",
+      "summary": "第一三共公告称，欧洲药品管理局 CHMP 建议批准 T-DXd 与帕妥珠单抗联合用于 HER2 阳性乳腺癌一线治疗；推荐意见仍不同于欧盟委员会最终上市批准。",
+      "summary_en": "Daiichi Sankyo announced a positive CHMP recommendation for T-DXd plus pertuzumab as first-line treatment for HER2-positive breast cancer. A CHMP recommendation is not the same as final European Commission marketing authorization."
+    },
+    {
+      "event_key": "merck-bio-techne-acquisition-agreement-official-20260625",
+      "ids": ["63e45022cb500185"],
+      "title_zh": "默克签署收购 Bio-Techne 的协议",
+      "summary": "默克官网标题确认公司已签署收购 Bio-Techne 的协议；本条只确认协议阶段，不把拟议交易表述为已经完成交割。",
+      "summary_en": "Merck's official headline confirms an agreement to acquire Bio-Techne. This record confirms the agreement stage only and does not present the proposed transaction as completed."
+    },
+    {
+      "event_key": "sartorius-lfb-cell-line-partnership-20260701",
+      "ids": ["c79ae203a0efda78"],
+      "title_zh": "Sartorius 与 LFB 扩大细胞系开发合作",
+      "summary": "BioProcess International 标题显示，Sartorius 与 LFB 扩大了细胞系开发合作；现有材料未列出新增工作包、期限或财务条款。",
+      "summary_en": "A BioProcess International headline reports that Sartorius and LFB expanded their partnership in cell-line development. The captured material does not specify the added work packages, duration or financial terms."
+    },
+    {
+      "event_key": "bio2026-wrap-up-day4-20260626",
+      "ids": ["8944f11a22b96440"],
+      "title_zh": "BIO 2026 总结：创新、合作与以患者为中心的共同承诺",
+      "summary": "赛默飞的闭幕回顾把 BIO 2026 的共同主题归纳为创新、跨组织合作及面向患者的承诺；该文章是会议总结，不代表新增合作协议已经签署。",
+      "summary_en": "Thermo Fisher's closing recap summarizes BIO 2026 around innovation, cross-organization collaboration and a shared commitment to patients. It is a conference wrap-up and does not by itself confirm that a new partnership agreement was signed."
+    },
+    {
+      "event_key": "thermo-society-for-science-extension-20260624",
+      "ids": ["d3ee6e6531ea3a0d"],
+      "title_zh": "Society for Science 与赛默飞延长美国中学生 STEM 竞赛合作",
+      "summary": "Society for Science 的标题显示，双方延长合作，以支持美国中学生 STEM 研究竞赛；现有材料未披露合作期限或资助金额。",
+      "summary_en": "Society for Science reports that it and Thermo Fisher extended their partnership to support a US middle-school STEM research competition. The captured material does not disclose the partnership term or funding amount."
+    },
+    {
+      "event_key": "thermo-genetic-medicine-interview-20260716",
+      "ids": ["64aac44c8d3dc548"],
+      "title_zh": "赛默飞访谈：基因药物多元化、合作信任与原材料风险",
+      "summary": "BioPharm International 的访谈标题聚焦赛默飞对基因药物开发多元化、合作信任和原材料风险的看法；当前材料未提供可量化的供应承诺。",
+      "summary_en": "A BioPharm International interview focuses on Thermo Fisher's views on genetic-medicine diversification, trust in partnerships and raw-material risk. The captured material does not establish a quantified supply commitment."
+    },
+    {
+      "event_key": "sino-ptau217-protein-launch-20260729",
+      "ids": ["253c101021cba8de"],
+      "title_zh": "义翘神州推出全长 p-Tau217 蛋白，用于阿尔茨海默病标志物检测开发",
+      "summary": "报道标题显示，义翘神州推出经表征的全长 p-Tau217 蛋白，定位于下一代阿尔茨海默病生物标志物检测开发；当前材料未提供第三方性能对比。",
+      "summary_en": "The headline reports that Sino Biological launched a characterized full-length p-Tau217 protein for development of next-generation Alzheimer's biomarker assays. The captured material does not include third-party performance comparisons."
+    },
+    {
+      "event_key": "ucl-eisai-neurodegeneration-renewal-20260630",
+      "ids": ["dc1ead3212066064"],
+      "title_zh": "UCL 与卫材续签合作，加速神经退行性疾病治疗研究",
+      "summary": "卫材相关公告标题显示，UCL 与卫材续签神经退行性疾病治疗研发合作；现有材料未披露具体项目、里程碑或资金安排。",
+      "summary_en": "The captured Eisai headline says UCL and Eisai renewed their partnership to accelerate research on treatments for neurodegenerative diseases. Specific programs, milestones and funding terms were not available."
+    },
+    {
+      "event_key": "tanabe-towa-manufacturing-transfer-20260703",
+      "ids": ["140e2eb68041ff2e"],
+      "title_zh": "田边制药拟向东和药品转让制造子公司及 17 个产品",
+      "summary": "日刊药业标题显示，田边制药拟将制造子公司转让给东和药品，并计划承接包括长期收载品在内的 17 个产品；交易条件和完成时间未在当前材料中核对。",
+      "summary_en": "A Nikkan Yakugyo headline says Tanabe Pharma plans to transfer a manufacturing subsidiary to Towa Pharmaceutical together with 17 products, including long-listed medicines. Transaction conditions and completion timing were not checked in the captured material."
+    },
+    {
+      "event_key": "jcr-dmd-acceleration-analysis-20260722",
+      "ids": ["928ce7024da765b6"],
+      "title_zh": "JCR Pharma 提前推进肌营养不良治疗药日本审批的背景",
+      "summary": "这是一篇分析 JCR Pharma 为何提前推进肌营养不良治疗药日本审批的媒体文章；当前只取得标题，不能据此确认具体申报时间、审评结果或经营影响。",
+      "summary_en": "This is a media analysis of why JCR Pharma moved forward the Japanese approval timetable for a muscular-dystrophy treatment. Only the headline was captured, so the filing date, review outcome and business impact are not established here."
+    },
+    {
+      "event_key": "jcr-acumen-option-jbraincargo-20260617",
+      "ids": ["be5ae1cf92467df9"],
+      "title_zh": "Acumen 行使 J-Brain Cargo 阿尔茨海默病项目独家选择权",
+      "summary": "报道标题显示，Acumen 已行使基于 JCR Pharma J-Brain Cargo 技术的阿尔茨海默病治疗项目独家选择权，项目目标是在 2027 年年中推进 IND 申请；这不是 IND 已获批准。",
+      "summary_en": "The headline says Acumen exercised an exclusive option for an Alzheimer's program using JCR Pharma's J-Brain Cargo technology, with an IND filing targeted for mid-2027. It does not state that an IND has already been cleared."
+    },
+    {
+      "event_key": "jcr-dmd-sales-impact-analysis-20260731",
+      "ids": ["97d2ba56bde223c6"],
+      "title_zh": "JCR Pharma 肌营养不良治疗药提前推进日本审批，媒体测算销售影响",
+      "summary": "东洋经济文章标题讨论 JCR Pharma 提前推进肌营养不良治疗药日本审批，并以 350 亿日元销售额情景评估潜在影响；该数字是媒体情景，不是已实现销售额或公司业绩指引。",
+      "summary_en": "A Toyo Keizai headline discusses JCR Pharma's accelerated Japanese approval plan for a muscular-dystrophy treatment and considers a JPY 35 billion sales scenario. That figure is a media scenario, not realized revenue or company guidance."
+    },
+    {
+      "event_key": "jcr-givinostat-yearend-filing-roundup-20260715",
+      "ids": ["8876c76bb1b929b7"],
+      "title_zh": "JCR Pharma 计划年内申报引进的 DMD 治疗药 givinostat",
+      "summary": "Answers 新闻汇总标题显示，JCR Pharma 计划在年内申报引进的杜氏肌营养不良治疗药 givinostat；同一标题还包含其他公司的独立新闻，不能全部归为 JCR 事件。",
+      "summary_en": "An Answers news-roundup headline says JCR Pharma plans to file its in-licensed Duchenne muscular dystrophy treatment givinostat within the year. Other items in the same headline concern separate companies and should not be attributed to JCR."
+    },
+    {
+      "event_key": "jcr-givinostat-2027-target-20260715",
+      "ids": ["b108b8b49118ea45"],
+      "title_zh": "JCR Pharma 计划 2027 年内取得 givinostat 批准并启动销售",
+      "summary": "医药媒体标题显示，JCR Pharma 以 2027 年内获批并销售杜氏肌营养不良治疗药 givinostat 为目标；这是公司目标时间，不代表审批已经完成。",
+      "summary_en": "A pharmaceutical-trade headline says JCR Pharma aims to obtain approval and begin sales of givinostat for Duchenne muscular dystrophy during 2027. This is a target timeline, not a completed approval."
+    },
+    {
+      "event_key": "kaken-fiblast-spray-notice-20260615",
+      "ids": ["5e7891e69fcc6c1a"],
+      "title_zh": "科研制药发布 Fiblast Spray 250/500 上市、供应与停售信息",
+      "summary": "科研制药官网条目汇总 Fiblast Spray 250/500 的上市、供应或停售信息；标题本身没有说明哪一规格对应哪一种状态，需进入原通知确认。",
+      "summary_en": "Kaken Pharmaceutical's entry groups launch, supply and discontinuation notices for Fiblast Spray 250/500. The headline alone does not identify which strength corresponds to each status, so the original notice must be checked."
+    },
+    {
+      "event_key": "kissei-vasculitis-safety-analysis-20260706",
+      "ids": ["aec4bd5d2dc6c41d"],
+      "title_zh": "血管炎治疗药出现死亡病例报道，Kissei 药品面临欧美撤销批准动向",
+      "summary": "东洋经济标题称，一款由 Kissei 药品在日本销售的血管炎治疗药涉及多起死亡病例，并出现欧美撤销批准动向；因未取得全文及监管原始文件，本条不确认病例因果关系或最终监管结论。",
+      "summary_en": "A Toyo Keizai headline links a vasculitis medicine sold by Kissei in Japan with reported deaths and moves to withdraw approvals in Europe and the United States. Without the full article or original regulatory documents, this record does not establish causality or a final regulatory conclusion."
+    },
+    {
+      "event_key": "kissei-vasculitis-eu-withdrawal-20260806",
+      "ids": ["afaef913b092cbb9"],
+      "title_zh": "Kissei 药品在日本销售的血管炎治疗药在欧洲被撤销批准",
+      "summary": "信浓每日新闻标题报道，Kissei 药品在日本销售的一款血管炎治疗药在欧洲被撤销批准；当前材料未提供决定日期、适用国家或日本监管措施。",
+      "summary_en": "A Shinano Mainichi headline reports that European approval was withdrawn for a vasculitis medicine sold by Kissei in Japan. The captured material does not provide the decision date, affected jurisdictions or any Japanese regulatory action."
+    },
+    {
+      "event_key": "thermo-fbi-rapid-dna-codis-20260707",
+      "ids": ["e735cfa97567e552"],
+      "title_zh": "赛默飞快速 DNA 现场样本档案首次获 FBI 批准，可用于美国 CODIS 检索",
+      "summary": "Business Wire 标题显示，赛默飞的快速 DNA 犯罪现场样本档案获得 FBI 首次批准，相关档案可进入美国国家 CODIS 检索；当前材料未列出获批系统型号及使用限制。",
+      "summary_en": "A Business Wire headline says Thermo Fisher received the first FBI approval for rapid-DNA crime-scene profiles eligible for national CODIS searches. The captured material does not list the approved system configuration or use restrictions."
+    },
+    {
+      "event_key": "merck-biotechne-113bn-secondary-20260625",
+      "ids": ["6e0ca9ccbebfc675"],
+      "title_zh": "默克拟以 113 亿美元收购 Bio-Techne，扩大生命科学业务版图",
+      "summary": "Medical Device Network 标题称默克拟以 113 亿美元收购 Bio-Techne，以扩大生命科学业务；该记录描述拟议交易，不代表交割已完成。",
+      "summary_en": "A Medical Device Network headline says Merck KGaA plans to acquire Bio-Techne for USD 11.3 billion to expand its life-science footprint. The record describes a proposed transaction, not a completed closing."
+    },
+    {
+      "event_key": "merck-biotechne-113bn-ipreview-20260626",
+      "ids": ["6eb9504bc1181d72"],
+      "title_zh": "默克达成 113 亿美元收购协议，推进生命科学业务扩张",
+      "summary": "Life Sciences IP Review 标题报道，默克达成一项 113 亿美元的生命科学收购交易；结合公司名称，该报道与拟收购 Bio-Techne 的同一事件相关，但当前标题未说明全部交易条件。",
+      "summary_en": "A Life Sciences IP Review headline reports an USD 11.3 billion agreement by Merck in a major life-science expansion. It relates to the proposed Bio-Techne acquisition, while the captured headline does not provide all transaction conditions."
+    },
+    {
+      "event_key": "miltenyi-cdmo-partner-insight-20260615",
+      "ids": ["9da1ddd5209d7fc5"],
+      "title_zh": "美天旎观点：经验丰富的 CDMO 合作伙伴为何重要",
+      "summary": "美天旎发布关于选择有经验 CDMO 合作伙伴的技术观点内容；现有标题未披露新的客户合同、产能扩建或具体项目结果。",
+      "summary_en": "Miltenyi Bioindustry published an insight on the value of working with an experienced CDMO partner. The captured title does not announce a new customer contract, capacity expansion or specific program result."
+    },
+    {
+      "event_key": "bio2026-recap-day2-20260625",
+      "ids": ["2a6dab8a135c09ba"],
+      "title_zh": "BIO 2026 第二日回顾：合作成为加快疗法触达患者的关键",
+      "summary": "赛默飞的第二日回顾指出，会议讨论、演讲和商务洽谈反复强调跨生态合作，认为强合作关系有助于更快把疗法带给患者；这是会议主题总结，不是具体交易公告。",
+      "summary_en": "Thermo Fisher's day-two recap says discussions, presentations and partnering meetings repeatedly emphasized ecosystem collaboration as a way to bring therapies to patients faster. It summarizes a conference theme rather than announcing a specific transaction."
+    },
+    {
+      "event_key": "eisai-aaic-portfolio-20260630",
+      "ids": ["88a255f65615ec86"],
+      "title_zh": "卫材将在 AAIC 2026 以逾 50 场报告展示阿尔茨海默病产品组合",
+      "summary": "卫材公告标题显示，公司计划在 AAIC 2026 通过 50 多场报告展示阿尔茨海默病研究与产品组合；当前材料未列出全部报告题目或数据结论。",
+      "summary_en": "Eisai's headline says it plans to present more than 50 contributions covering its Alzheimer's disease portfolio at AAIC 2026. The captured material does not list every presentation or its data conclusions."
+    },
+    {
+      "event_key": "pfizer-eisai-nurtec-copromotion-japan-20260727",
+      "ids": ["393f1147e96daed9"],
+      "title_zh": "辉瑞与卫材在日本启动偏头痛药 NURTEC 的共同推广",
+      "summary": "官方标题显示，辉瑞与卫材已开始共同推广偏头痛预防及急性治疗药 NURTEC；当前材料未披露双方销售分工、期限或财务条款。",
+      "summary_en": "The official headline says Pfizer and Eisai began co-promoting NURTEC for migraine prevention and acute treatment in Japan. Sales responsibilities, duration and financial terms were not available in the captured material."
+    },
+    {
+      "event_key": "chugai-japan-basketball-partnership-official-20260803",
+      "ids": ["d5bceda2039cc617"],
+      "title_zh": "中外制药与日本篮球协会签署日本国家队合作协议",
+      "summary": "日本篮球协会公告标题确认，中外制药成为日本篮球国家队合作伙伴；本条属于品牌与体育赞助合作，不是医药研发或产品合作。",
+      "summary_en": "The Japan Basketball Association headline confirms a partnership with Chugai Pharmaceutical supporting Japan's national basketball teams. This is a brand and sports-sponsorship relationship, not a pharmaceutical R&D or product partnership."
+    },
+    {
+      "event_key": "chugai-japan-basketball-partnership-media-20260804",
+      "ids": ["14ca15c4fb0ddb70"],
+      "title_zh": "中外制药与日本篮球协会达成合作，支持日本国家队",
+      "summary": "日经标题报道，中外制药与日本篮球协会达成合作并支持日本国家队；该记录与协会公告描述同一体育赞助事件。",
+      "summary_en": "A Nikkei headline reports that Chugai Pharmaceutical entered a partnership with the Japan Basketball Association to support the national teams. It covers the same sports-sponsorship event as the association announcement."
+    },
+    {
+      "event_key": "tanabe-canalia-thailand-approval-20260626",
+      "ids": ["68f3e7468fa79f91"],
+      "title_zh": "田边制药的 2 型糖尿病药 CANALIA 在泰国获生产销售批准",
+      "summary": "田边制药公告标题显示，2 型糖尿病治疗药 CANALIA 已在泰国取得生产销售批准；当前材料未提供当地适应证全文、上市日期或销售合作安排。",
+      "summary_en": "Tanabe Pharma's headline says the type 2 diabetes medicine CANALIA received manufacturing and marketing approval in Thailand. The captured material does not provide the full local indication, launch date or commercial arrangement."
+    },
+    {
+      "event_key": "peptidream-ftse-index-retention-20260709",
+      "ids": ["8f9e736dbd46c602"],
+      "title_zh": "PeptiDream 继续入选两项 FTSE JPX Blossom Japan 指数",
+      "summary": "PeptiDream 公告称，公司继续被纳入 FTSE JPX Blossom Japan Index 及其 Sector Relative Index；这是指数成分调整信息，不是产品、合作或临床进展。",
+      "summary_en": "PeptiDream announced that it remained a constituent of the FTSE JPX Blossom Japan Index and the related Sector Relative Index. This is an index-membership update, not a product, partnership or clinical-development event."
+    },
+    {
+      "event_key": "kissei-vasculitis-paper-retraction-20260703",
+      "ids": ["914220cc4f93f937"],
+      "title_zh": "Kissei 药品血管炎药审批依据论文被美国医学期刊撤稿",
+      "summary": "朝日新闻标题称，Kissei 药品一款血管炎药获批所依据的论文已被美国医学期刊撤稿；当前材料未提供撤稿理由、监管复核范围或对日本标签的直接影响。",
+      "summary_en": "An Asahi headline says a paper supporting approval of a Kissei vasculitis medicine was retracted by a US medical journal. The captured material does not provide the retraction reason, scope of regulatory review or direct impact on the Japanese label."
+    },
+    {
+      "event_key": "tavneos-eu-withdrawal-recommendation-20260629",
+      "ids": ["606d0801525c2935"],
+      "title_zh": "TAVNEOS 在欧洲被建议撤销批准，Kissei 药品讨论日本应对",
+      "summary": "Answers 新闻汇总标题显示，TAVNEOS 在欧洲收到撤销批准建议，Kissei 药品表示正讨论日本市场的应对；建议阶段不等同最终撤销决定，同一标题还包含其他独立新闻。",
+      "summary_en": "An Answers roundup headline says TAVNEOS received a recommendation for withdrawal of approval in Europe and that Kissei was discussing its response in Japan. A recommendation is not the final withdrawal decision, and other items in the same headline are separate news."
+    },
+    {
+      "event_key": "merck-bioreliance-facility-official-20260716",
+      "ids": ["1dea0a8b3e5033e9"],
+      "title_zh": "默克在达姆施塔特启用 BioReliance 检测设施",
+      "summary": "默克官网标题确认，公司在德国达姆施塔特启用 BioReliance 检测设施；当前记录没有提供完整检测菜单、客户范围或产能数据。",
+      "summary_en": "Merck's official headline confirms the opening of a BioReliance testing facility in Darmstadt, Germany. The captured record does not provide the complete testing menu, customer scope or capacity data."
+    },
+    {
+      "event_key": "astellas-fezolinetant-japan-nda-20260807",
+      "ids": ["5965a7992597bbcc"],
+      "title_zh": "安斯泰来在日本提交 fezolinetant 新药申请，用于更年期血管舒缩症状",
+      "summary": "安斯泰来公告标题显示，公司已在日本提交 fezolinetant 新药申请，拟用于治疗与更年期相关的血管舒缩症状；提交申请不等于已经获批。",
+      "summary_en": "Astellas announced the submission of a Japanese new drug application for fezolinetant to treat vasomotor symptoms associated with menopause. Submission of the application does not mean approval has been granted."
+    },
+    {
+      "event_key": "enhertu-pertuzumab-chmp-en-release-20260724",
+      "ids": ["9ae204ef2d032d2a"],
+      "title_zh": "Enhertu 联合帕妥珠单抗一线治疗 HER2 阳性转移性乳腺癌获 CHMP 推荐批准",
+      "summary": "第一三共公告标题显示，Enhertu 与帕妥珠单抗联合方案获 CHMP 推荐，用于 HER2 阳性转移性乳腺癌一线治疗；该意见仍需后续欧盟最终审批。",
+      "summary_en": "Daiichi Sankyo's headline says CHMP recommended approval of Enhertu plus pertuzumab as first-line treatment for HER2-positive metastatic breast cancer. The opinion remains subject to the subsequent EU authorization process."
+    },
+    {
+      "event_key": "enhertu-eu-variation-solid-tumors-20260629",
+      "ids": ["fee6211b636283c2"],
+      "title_zh": "Enhertu 在欧盟获批扩大至多种 HER2 阳性实体瘤",
+      "summary": "第一三共日本公告称，Enhertu 在欧盟取得部分变更批准，适用范围涉及多种 HER2 阳性实体瘤；当前材料未列出各肿瘤类型及既往治疗条件。",
+      "summary_en": "Daiichi Sankyo's Japanese release says Enhertu received an EU variation approval covering multiple HER2-positive solid tumors. The captured material does not list each tumor type or prior-treatment condition."
+    },
+    {
+      "event_key": "datodxd-tnbc-firstline-chmp-20260629",
+      "ids": ["062869a7efb1f30a"],
+      "title_zh": "Dato-DXd 一线治疗三阴性乳腺癌获欧洲 CHMP 推荐批准",
+      "summary": "第一三共公告称，欧洲药品管理局 CHMP 建议批准 datopotamab deruxtecan（Dato-DXd）用于三阴性乳腺癌一线治疗；推荐意见不等同最终上市批准。",
+      "summary_en": "Daiichi Sankyo announced a positive CHMP recommendation for datopotamab deruxtecan (Dato-DXd) as first-line treatment for triple-negative breast cancer. The recommendation is not final marketing authorization."
+    },
+    {
+      "event_key": "takara-cell-processing-cdmo-succession-20260623",
+      "ids": ["8c23039911cec8e1"],
+      "title_zh": "Takara Bio 更新 GMP 细胞加工 CDMO 业务承继讨论进展",
+      "summary": "Takara Bio 官网标题显示，公司更新了符合 GMP 的细胞加工 CDMO 业务承继讨论；当前材料不足以确认承接方、交易条件或是否已经完成。",
+      "summary_en": "Takara Bio's headline provides an update on discussions about succession of its GMP-compliant cell-processing CDMO business. The captured material does not establish the successor, transaction terms or completion."
+    },
+    {
+      "event_key": "acro-isscr-annual-meeting-20260703",
+      "ids": ["2c5ba74c71c5e550"],
+      "title_zh": "百普赛斯发布 ISSCR 2026 年会活动页面",
+      "summary": "百普赛斯官网活动入口出现 ISSCR Annual Meeting 2026；现有标题未说明参展形式、展位、演讲安排或发布内容。",
+      "summary_en": "ACROBiosystems' event feed lists the ISSCR Annual Meeting 2026. The captured title does not specify its participation format, booth, presentation schedule or announced content."
+    },
+    {
+      "event_key": "merck-amicon-antibody-labeling-cleanup-20260722",
+      "ids": ["3afc2b25efbc63ef"],
+      "title_zh": "使用 Amicon Ultra 过滤器纯化抗体标记反应的技术方法",
+      "summary": "Merck Millipore 发布使用 Amicon Ultra 过滤器清理抗体标记反应的技术资源；该记录是实验方法内容，不是过滤器新品发布。",
+      "summary_en": "Merck Millipore published a technical resource on cleaning up antibody-labeling reactions with Amicon Ultra filters. The record concerns an experimental method, not the launch of a new filter product."
+    },
+    {
+      "event_key": "merck-cell-death-kit-protocol-20260711",
+      "ids": ["1b14a670d5149073"],
+      "title_zh": "原位细胞死亡荧光检测试剂盒：实验方案与故障排查",
+      "summary": "Merck Millipore 发布 In Situ Cell Death Detection Kit, Fluorescein 的实验方案与故障排查资源；当前记录不代表试剂盒发生配方或监管变化。",
+      "summary_en": "Merck Millipore published protocol and troubleshooting content for the In Situ Cell Death Detection Kit, Fluorescein. The captured record does not indicate a formulation or regulatory change to the kit."
+    },
+    {
+      "event_key": "biotechne-rnascope-prostate-webinar-20260617",
+      "ids": ["18eb63f029cccd93"],
+      "title_zh": "Bio-Techne 网络研讨会：前列腺癌中的 RNAscope 空间分析",
+      "summary": "Bio-Techne 技术资源入口发布一场关于前列腺癌 RNAscope 空间分析的网络研讨会；现有标题未提供讲者、日期或研究结果。",
+      "summary_en": "Bio-Techne's technical-resource feed lists a webinar on RNAscope spatial profiling in prostate cancer. The captured title does not provide the speakers, event date or study results."
+    },
+    {
+      "event_key": "eisai-lemborexant-uk-application-accepted-20260702",
+      "ids": ["c418dcf1f3c930af"],
+      "title_zh": "卫材失眠药 lemborexant 的英国上市申请获 MHRA 受理",
+      "summary": "卫材官网标题显示，其自主研发的失眠治疗药 lemborexant 上市许可申请已获英国 MHRA 受理；受理代表进入审查，不等于已获得上市批准。",
+      "summary_en": "Eisai's headline says the UK MHRA accepted the marketing-authorization application for its internally discovered insomnia medicine lemborexant. Acceptance starts review and does not mean marketing authorization has been granted."
+    },
+    {
+      "event_key": "nacalai-ladec-2026-session-20260617",
+      "ids": ["8ee7111897daff75"],
+      "title_zh": "Nacalai Tesque 公布 LADEC 2026 短讲与圆桌讨论安排",
+      "summary": "Nacalai Tesque 官网公告涉及 LADEC 2026 的短讲与圆桌讨论；当前记录未取得议题、讲者及具体时间表。",
+      "summary_en": "Nacalai Tesque announced a short talk and panel discussion associated with LADEC 2026. The captured record does not provide the topics, speakers or detailed schedule."
+    },
+    {
+      "event_key": "peptidream-joint-seminar-20260622",
+      "ids": ["01307febbeb56eba"],
+      "title_zh": "PeptiDream 将参加第四届医药、生物与医疗健康联合研讨会",
+      "summary": "PeptiDream 官网公告称公司将参加第四届医药、生物与医疗健康联合研讨会；当前记录未提供演讲主题、参会人员或合作成果。",
+      "summary_en": "PeptiDream announced that it would participate in the fourth joint pharmaceutical, biotechnology and healthcare seminar. The captured record does not provide the presentation topic, attendees or any resulting collaboration."
+    }
+  ]
+}

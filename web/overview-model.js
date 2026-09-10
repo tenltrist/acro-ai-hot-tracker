@@ -54,6 +54,7 @@
     return item.date_provenance?.event_verified ? date(item.event_start_at) : "";
   }
   const topicTerms = [
+    ["CGT", /\bCGT\b|cell and gene therap|细胞与基因治疗|細胞[・と]遺伝子治療/i],
     ["ADC", /\bADCs?\b|antibody.drug conjugate|抗体偶联|抗体薬物複合体/i],
     ["CAR-T", /\bCAR[ -]?T\b/i], ["CAR-NK", /\bCAR[ -]?NK\b/i],
     ["iPSC", /\biPSCs?\b|iPS細胞|诱导多能干细胞/i],
@@ -75,7 +76,8 @@
     const text = `${item.title || ""} ${item.summary || ""}`;
     const extracted = [...(item.intelligence?.targets || []), ...(item.intelligence?.modalities || [])]
       .filter(term => term && text.toLowerCase().includes(term.toLowerCase()));
-    return unique([...topicTerms.filter(([, pattern]) => pattern.test(text)).map(([label]) => label), ...extracted]);
+    const canonical = term => topicTerms.find(([, pattern]) => pattern.test(term))?.[0] || term;
+    return unique([...topicTerms.filter(([, pattern]) => pattern.test(text)).map(([label]) => label), ...extracted.map(canonical)]);
   }
   function titleKey(item) {
     return String(item.title || "").replace(/\s+[-|]\s+(?:Business Wire|PR Newswire|Yahoo Finance|GlobeNewswire|ACROBiosystems|Taiwan News)$/i, "")
@@ -125,6 +127,8 @@
       group.category = group.categories[0];
       group.roles = unique(group.companyIds.map(id => companies.find(c => c.id === id)?.business_role));
       if (!group.roles.length) group.roles = ["industry"];
+      group.regions = group.regions.filter(region => region !== "unknown");
+      if (group.regions.some(region => region !== "nonregional")) group.regions = group.regions.filter(region => region !== "nonregional");
       if (!group.regions.length) group.regions = ["unknown"];
       if (!group.topics.length) group.topics = ["unidentified"];
       const evidence = new Map();
@@ -153,6 +157,9 @@
       if (mode === "unknown" && event.published) return false;
       if (scope.company && scope.company !== "all" && !event.companyIds.includes(scope.company)) return false;
       if (scope.role && scope.role !== "all" && !event.roles.includes(scope.role)) return false;
+      if ((scope.signalType && scope.signalType !== "all") || (scope.relevance && scope.relevance !== "all")) {
+        if (!event.reports.some(report => (!scope.signalType || scope.signalType === "all" || report.signal_type === scope.signalType) && (!scope.relevance || scope.relevance === "all" || report.acro_relevance?.level === scope.relevance))) return false;
+      }
       if (scope.regions?.length && !scope.regions.some(region => event.regions.includes(region))) return false;
       if (scope.category && scope.category !== "all" && event.category !== scope.category) return false;
       if (scope.topic && scope.topic !== "all" && !event.topics.includes(scope.topic)) return false;

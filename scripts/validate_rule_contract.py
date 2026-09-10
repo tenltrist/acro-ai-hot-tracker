@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 from pathlib import Path
 
 import run_daily as tracker
@@ -23,6 +24,7 @@ EXPECTED_MODULES = {
     "acro-relevance",
     "daily-admission",
     "event-classification",
+    "region-classification",
     "action-routing",
     "summary-provenance",
     "priority-index",
@@ -58,7 +60,7 @@ def check_contract_shape(errors: list[str]) -> dict:
         errors.append("rule_catalog contains duplicate module ids")
     if set(module_ids) != EXPECTED_MODULES:
         errors.append(
-            "rule_catalog module ids differ from the expected 18 modules: "
+            f"rule_catalog module ids differ from the expected {len(EXPECTED_MODULES)} modules: "
             f"missing={sorted(EXPECTED_MODULES - set(module_ids))}, "
             f"extra={sorted(set(module_ids) - EXPECTED_MODULES)}"
         )
@@ -67,8 +69,16 @@ def check_contract_shape(errors: list[str]) -> dict:
     strategy = catalog.get("strategy", {})
     if strategy.get("automatic_llm_api") is not False:
         errors.append("automatic LLM API must remain disabled for the current strategy")
-    if strategy.get("manual_summary_tool") != "ChatGPT Pro":
-        errors.append("manual summary tool must be ChatGPT Pro")
+    if strategy.get("manual_summary_tool") != "Codex 静态编辑":
+        errors.append("manual summary tool must match the current Codex editorial workflow")
+    region = catalog.get("region_classification", {})
+    try:
+        result = subprocess.run(["node", "-e", "const m=require('./web/region-model.js'); console.log(JSON.stringify({version:m.version,families:m.families.map(x=>x.id),count:m.definitions.length,global:m.analyze({id:'contract-case',title:'Worldwide licensing rights'}).regions}));"], cwd=ROOT, capture_output=True, text=True, check=True)
+        runtime = json.loads(result.stdout)
+        if runtime != {"version": region.get("model_version"), "families": region.get("families"), "count": region.get("stored_region_count"), "global": ["global"]}:
+            errors.append("regional hierarchy or global-scope behavior differs from the public contract")
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError) as exc:
+        errors.append(f"unable to verify regional runtime: {exc}")
     return catalog
 
 
@@ -102,7 +112,7 @@ def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
         f"每命中 1 个 +{score['strategic_topic']['per_hit']}，最多 +{score['strategic_topic']['maximum']}",
         f"每命中 1 个 +{score['business_action']['per_hit']}，最多 +{score['business_action']['maximum']}",
         f"本公司 +{relevance['role_weights']['self']}；客户/账户 +{relevance['role_weights']['customer']}；竞品 +{relevance['role_weights']['competitor']}",
-        f"≥{admission['immediate']} 即时；≥{admission['daily']} 日报；官方/生态/媒体来源 ≥{admission['owned_ecosystem_media']} 可日报；明确动作 ≥{admission['business_action']} 可日报。",
+        f"≥{admission['immediate']} 为原即时层；≥{admission['daily']} 入选；自有/生态/媒体 ≥{admission['owned_ecosystem_media']} 可入选；命中评分动作 ≥{admission['business_action']} 可入选。",
         f"log2(1 + 日报/即时数) × {priority['selected_log_weight']}",
         f"log2(1 + 高相关数) × {priority['high_relevance_log_weight']}",
         f"密度 × {priority['density_weight']}",
@@ -128,8 +138,8 @@ def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
         fragment in evidence_helper.group("body") for fragment in ("source_url", "summary")
     ):
         errors.append("public-relationship bonus is not backed by source_url + summary evidence")
-    if catalog.get("strategy", {}).get("automatic_llm_api") is False and "ChatGPT Pro" not in html:
-        errors.append("manual ChatGPT Pro strategy is missing from the public rule center")
+    if catalog.get("strategy", {}).get("automatic_llm_api") is False and "Codex" not in html:
+        errors.append("Codex static editorial strategy is missing from the public rule center")
 
 
 def check_executable_rules(catalog: dict, errors: list[str]) -> None:

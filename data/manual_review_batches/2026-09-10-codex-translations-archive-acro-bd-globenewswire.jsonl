@@ -1,0 +1,48 @@
+{"id":"42d3b5afda096715","title_zh":"双载荷 ADC：靶点选择、载荷协同与研发管线","summary_zh":"ACRO 技术文章梳理双载荷抗体偶联药物的靶点选择、两种载荷的协同设计及相关研发管线。"}
+{"id":"b4cd1a9fab7c8978","title_zh":"用于定量分析 ADC 内吞的 pH 敏感荧光检测方法开发","summary_zh":"ACRO 介绍一种 pH 敏感荧光检测方案，用于定量评估抗体偶联药物进入细胞的内吞过程。"}
+{"id":"ea9fcd366e18e844","title_zh":"体内 CAR-T 的 tLNP 内吞检测：测量受体内化与递送效率","summary_zh":"ACRO 技术内容介绍如何通过 tLNP 内吞检测评估受体内化和递送效率，为体内 CAR-T 研究提供分析思路。"}
+{"id":"1b1db8c9766ccf18","title_zh":"TCR-CD3 复合物：发现天然 CD3 表位，支持更安全的 T 细胞衔接器开发","summary_zh":"ACRO 文章讨论利用 TCR-CD3 复合物识别天然 CD3 表位，以改进 T 细胞衔接器的安全性设计。"}
+{"id":"75ecb94d7ee6664d","title_zh":"什么是快速支原体检测：NAT 与 qPCR 检测方法解析","summary_zh":"ACRO 技术文章解释基于核酸扩增技术和 qPCR 的快速支原体检测原理与应用。"}
+{"id":"319ecd543a1a0454","title_zh":"不只看表达量：ADC 靶点评估中的功能生物学","summary_zh":"ACRO 文章强调 ADC 靶点评估不能只依赖表达量，还需要考察内吞、功能和肿瘤生物学等因素。"}
+{"id":"8501648bbe91e4f2","title_zh":"实体瘤中的 B7-H3（CD276）：ADC 进展与新兴免疫疗法","summary_zh":"ACRO 技术文章梳理 B7-H3 靶点在实体瘤 ADC 和其他免疫治疗方案中的研发进展。"}
+{"id":"d516672c4e8b75d4","title_zh":"下一代肥胖靶点聚焦：Activin E 的减脂与保肌潜力","summary_zh":"ACRO 文章介绍 Activin E 作为肥胖治疗候选靶点的研究方向，重点关注减脂同时保留肌肉的潜力。"}
+{"id":"df8f3bd63c00af1c","title_zh":"辉瑞 STING-ADC 技术回顾：FcγR 介导的髓系细胞摄取与胞内载荷滞留","summary_zh":"ACRO 文章解析辉瑞 STING-ADC 的作用机制，包括 FcγR 介导的髓系细胞摄取和载荷在细胞内的滞留。"}
+{"id":"e45347a1eca86527","title_zh":"欧洲药典 EP 2.6.7（12.2）正式强制实施：NAT 支原体检测成为监管标准","summary_zh":"ACRO 文章说明欧洲药典相关章节实施后，基于核酸扩增技术的支原体检测进入强制性监管要求。"}
+{"id":"fbef36eaa990da7b","title_zh":"BCMA 靶向疗法：CAR-T 成果、双特异性抗体与未来免疫治疗趋势","summary_zh":"ACRO 技术文章梳理 BCMA 靶向 CAR-T、双特异性抗体及后续免疫治疗方向。"}
+{"id":"d579c840a50e8c15","title_zh":"重组因子 C 内毒素检测：用于生物制药质量控制的高灵敏度 BET","summary_zh":"ACRO 介绍基于重组因子 C 的内毒素检测方法及其在生物制药质量控制中的应用。"}
+{"id":"4133e466b8414fe3","title_zh":"免疫治疗中的 CD8：CAR-T 工程、体内 CAR 与 CD8-LNP 应用","summary_zh":"ACRO 文章讨论 CD8 在 CAR-T 工程、体内生成 CAR 细胞及 CD8 靶向脂质纳米颗粒中的应用。"}
+{"id":"215970a468628d24","title_zh":"用于 CAR-T 流式检测与质量控制的通用 CAR 检测试剂","summary_zh":"ACRO 介绍可用于不同 CAR 构型的通用检测试剂，以及其在流式细胞分析和 CAR-T 质量控制中的用途。"}
+{"id":"aea321139b6f6f35","title_zh":"CAR-T 为何在血液肿瘤中有效，却难以攻克实体瘤","summary_zh":"ACRO 技术文章比较 CAR-T 在血液肿瘤与实体瘤中的疗效差异，并梳理实体瘤微环境等关键障碍。"}
+{"id":"0560b6a4f71ae047","title_zh":"BD 官方博客","summary_zh":"该条为 BD 新闻中心博客入口，不是单一新闻、产品或合作事件。"}
+{"id":"9c8aa8ec3c9b7e7c","title_zh":"BD 与 Opentrons 合作，以机器人自动化加快单细胞多组学研究","summary_zh":"BD 与 Opentrons 宣布合作，将机器人自动化接入单细胞多组学工作流程，以提高实验效率与一致性。"}
+{"id":"a06c55a442740304","title_zh":"BD 公布生物科学与诊断解决方案业务分拆的股权登记日","summary_zh":"BD 公布其生物科学与诊断解决方案业务分拆相关的股权登记日，属于交易执行进度公告。"}
+{"id":"0d0112d00aecb013","title_zh":"BD 发布融合光谱分析与实时细胞成像技术的新型细胞分析仪","summary_zh":"BD 推出一款细胞分析仪，将光谱流式分析与实时细胞成像能力集成到同一平台。"}
+{"id":"7c413b7e4a5bef01","title_zh":"Waters 将与 BD 生物科学及诊断解决方案业务合并，组建生命科学与诊断企业","summary_zh":"Waters 与 BD 宣布合并 BD 生物科学与诊断解决方案业务，计划组建聚焦受监管大批量检测的生命科学和诊断公司。"}
+{"id":"09127e3a43ca8bbd","title_zh":"BD 拟分拆生物科学与诊断解决方案业务，以强化业务聚焦和增长","summary_zh":"BD 宣布计划将生物科学与诊断解决方案业务从集团中分离，目标是提高业务聚焦度并释放价值。"}
+{"id":"4eedfee5a23dbb9b","title_zh":"BD 完成生物科学与诊断解决方案业务与 Waters 的合并","summary_zh":"BD 宣布其生物科学与诊断解决方案业务已完成与 Waters Corporation 的合并。"}
+{"id":"4f78f251c138abb9","title_zh":"BD 推出新的细胞分析仪配置，覆盖不同规模实验室","summary_zh":"BD 扩展细胞分析仪配置组合，使不同规模实验室能够选用相应的先进分析能力。"}
+{"id":"02b1e60283427fce","title_zh":"BD 以人工智能洞察和自动化支持免疫学与癌症研究","summary_zh":"BD 展示其将人工智能分析与实验自动化用于免疫学和癌症研究工作流程的方案。"}
+{"id":"90c51ca7a18583b0","title_zh":"BD 公布首席财务官交接计划","summary_zh":"BD 发布首席财务官职位的交接安排，属于管理层变动信息。"}
+{"id":"b590af8aed51bfbb","title_zh":"BD Rhapsody 系统安装量达到 1,000 台，持续拓展单细胞多组学应用","summary_zh":"BD 宣布第 1,000 台 Rhapsody System 投入使用，反映其单细胞多组学平台的部署规模。"}
+{"id":"0e302932693cccef","title_zh":"BD 任命 Vitor Roque 为首席财务官","summary_zh":"BD 宣布任命 Vitor Roque 担任公司首席财务官。"}
+{"id":"0b8ce5b7c010cca8","title_zh":"BD 推出机器人解决方案，实现单细胞研究自动化与标准化","summary_zh":"BD 发布新的机器人自动化方案，用于标准化单细胞研究中的重复实验步骤。"}
+{"id":"8090d877ff7ab5e4","title_zh":"Connor Bates 出任 BD 药物管理解决方案业务总裁","summary_zh":"BD 任命 Connor Bates 为 Medication Management Solutions 业务总裁。"}
+{"id":"1bf9f454d2d1eb63","title_zh":"BD 与宾夕法尼亚大学免疫学及免疫健康研究所合作推进流式细胞术免疫治疗研究","summary_zh":"BD 与宾夕法尼亚大学相关免疫研究机构开展合作，利用流式细胞术推进免疫治疗研究。"}
+{"id":"e0f13cfc0dcab11c","title_zh":"BD 与 Biosero 合作，将药物发现用流式细胞仪接入机器人系统","summary_zh":"BD 与 Biosero 宣布合作，使药物发现与开发中的流式细胞仪能够集成到机器人实验流程。"}
+{"id":"7b81fe6d2d0cfddb","title_zh":"Zorronet 推出无代码控制功能，用于人工智能驱动的自主响应流程","summary_zh":"Zorronet 发布无代码功能，使运营团队可连接摄像头、传感器和现场系统并配置响应逻辑；该条与生物医药公司 BiomX 无直接关系，属于聚合源误命中。"}
+{"id":"9996654adea9be23","title_zh":"Bright Minds Biosciences 将参加近期投资者会议","summary_zh":"Bright Minds Biosciences 宣布将出席近期会议，公司研发重点包括用于难治性癫痫、Prader-Willi 综合征和抑郁症的高选择性 5-HT2 激动剂。"}
+{"id":"0490681817304d7f","title_zh":"Intellia Therapeutics 将参加摩根士丹利第 24 届全球医疗健康大会","summary_zh":"Intellia Therapeutics 宣布将在摩根士丹利第 24 届全球医疗健康大会上进行公司展示。"}
+{"id":"b426fc49d820ac9d","title_zh":"Avalo Therapeutics 根据纳斯达克规则向新员工授予入职激励股权","summary_zh":"Avalo Therapeutics 根据纳斯达克上市规则 5635(c)(4) 向 6 名新员工授予入职激励股权。"}
+{"id":"94c5c64a1d60cda6","title_zh":"Spyre Therapeutics 公布员工入职激励授予","summary_zh":"Spyre Therapeutics 公布面向新员工的入职激励股权授予，属于人才与公司治理信息。"}
+{"id":"478ac41b11454673","title_zh":"股份总数与表决权数量公告","summary_zh":"该法文公告披露公司资本中的股份总数与表决权数量；现有条目未显示公司名称和具体数字。"}
+{"id":"359a9b8731e62cd0","title_zh":"Bavarian Nordic 公布股份回购计划相关交易","summary_zh":"Bavarian Nordic 披露其 2026 年 9 月 1 日启动的股份回购计划下的交易，计划期内最高回购 2.5 亿丹麦克朗股份。"}
+{"id":"85e000814e75e2ad","title_zh":"更正：管理层人员交易公告","summary_zh":"该条为第 23/2026 号公司公告的更正，涉及管理层人员证券交易；现有材料未披露更多细节。"}
+{"id":"997c854dd91b1419","title_zh":"管理层人员交易公告","summary_zh":"该条为第 23/2026 号公司公告，披露管理层人员相关证券交易；现有材料未显示具体主体与数量。"}
+{"id":"edad1723454db291","title_zh":"ORIC Pharmaceuticals 根据纳斯达克规则公布员工入职激励授予","summary_zh":"ORIC Pharmaceuticals 根据纳斯达克上市规则 5635(c)(4) 公布面向新员工的入职激励股权。"}
+{"id":"83171b39eee192af","title_zh":"Intellia Therapeutics 根据纳斯达克规则公布员工入职激励授予","summary_zh":"Intellia Therapeutics 于 2026 年 9 月 1 日向新员工授予入职激励股权，并依据纳斯达克规则进行披露。"}
+{"id":"7249c1e1db8f427a","title_zh":"Bavarian Nordic 披露管理层及其关联方股票与相关证券交易","summary_zh":"Bavarian Nordic 收到并披露公司管理层人员及其密切关联方进行的股票或相关证券交易。"}
+{"id":"6e298812ec07262a","title_zh":"Bavarian Nordic 申报管理层及其关联方股份与相关证券交易","summary_zh":"该丹麦语公告与英文公告指向同类事项，披露 Bavarian Nordic 管理层及关联方的证券交易。"}
+{"id":"27211142fee334a4","title_zh":"Valneva 公布截至 2026 年 8 月 31 日的股份与表决权情况","summary_zh":"Valneva 披露截至 2026 年 8 月 31 日的股份数量和表决权状态。"}
+{"id":"8a1790deb5a18875","title_zh":"Valneva 公布截至 2026 年 8 月 31 日的股份与表决权情况","summary_zh":"该法文公告与英文公告为同一事项，披露 Valneva 截至 2026 年 8 月 31 日的股份和表决权情况。"}
+{"id":"77eb76f778f4abc2","title_zh":"Intellia Therapeutics 获得 OrbiMed 最高 4 亿美元非稀释性债务融资","summary_zh":"Intellia Therapeutics 与 OrbiMed 达成最高 4 亿美元债务融资安排，首期到账 7,500 万美元，其余 3.25 亿美元与里程碑挂钩。"}
+{"id":"3e7839507cee5de3","title_zh":"Arcutis Biotherapeutics 根据纳斯达克规则公布员工入职激励授予","summary_zh":"Arcutis Biotherapeutics 根据纳斯达克上市规则 5635(c)(4) 授予合计 57,000 份限制性股票单位。"}

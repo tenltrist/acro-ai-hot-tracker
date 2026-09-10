@@ -64,7 +64,7 @@ const state = {
   signalType: "all",
   company: "all",
   category: "all",
-  timeRange: 30,
+  timeRange: 90,
   role: "all",
   region: "all",
   searchQuery: "",
@@ -98,26 +98,24 @@ const state = {
   feedback: loadFeedback(),
   signalWorkflow: loadSignalWorkflow(),
   history: null,
-  eventArchive: null,
-  archiveSyncFailed: false,
-  payloadSyncFailed: false,
 };
 
 const methodologyDetailMeta = {
   "deduplication": { family: "数据准备与识别", title: "去重与来源合并" },
   "entity-matching": { family: "数据准备与识别", title: "公司实体识别" },
-  "structured-extraction": { family: "数据准备与识别", title: "六组结构化提取" },
+  "structured-extraction": { family: "数据准备与识别", title: "关键词与词组识别" },
   "news-score": { family: "单篇信息判断", title: "信息筛选分" },
   "acro-relevance": { family: "单篇信息判断", title: "ACRO 相关性分" },
-  "daily-admission": { family: "单篇信息判断", title: "日报准入与分层" },
+  "daily-admission": { family: "单篇信息判断", title: "信息准入与分流" },
   "event-classification": { family: "分类与业务输出", title: "商业事件分类" },
+  "region-classification": { family: "分类与业务输出", title: "地区判读与统计" },
   "action-routing": { family: "分类与业务输出", title: "建议动作与负责人" },
   "summary-provenance": { family: "分类与业务输出", title: "摘要与证据溯源" },
   "priority-index": { family: "公司与账户排序", title: "优先指数" },
   "relevance-density": { family: "公司与账户排序", title: "ACRO 相关密度" },
-  "competitor-matrix": { family: "公司与账户排序", title: "公司动态与排序" },
-  "trend-counts": { family: "统计与运行口径", title: "周期发布节奏" },
-  "dashboard-counts": { family: "统计与运行口径", title: "周期概况统计口径" },
+  "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
+  "trend-counts": { family: "统计与运行口径", title: "信号走势图例数字" },
+  "dashboard-counts": { family: "统计与运行口径", title: "总览四项统计口径" },
   "source-health": { family: "统计与运行口径", title: "数据源健康状态" },
   "source-coverage": { family: "存储与规则治理", title: "来源覆盖与产出质量" },
   "data-storage": { family: "存储与规则治理", title: "数据存储与共享边界" },
@@ -1964,9 +1962,10 @@ const sourceInventory = [
 ];
 
 const pageMeta = {
-  overview: ["Company Intelligence", "市场情报总看板"],
-  "period-overview": ["Period Intelligence", "周期市场看板"],
-  "period-detail": ["Company Intelligence", "公司、事件与证据"],
+  "period-overview": ["Period Intelligence", "周 / 月市场事件"],
+  "period-detail": ["Period Evidence", "周期事件与原文证据"],
+  "fusion-evidence": ["Decision Evidence", "决策证据明细"],
+  overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
   "overview-metric": ["Dashboard Metric Detail", "总览指标明细"],
   companies: ["Company Pool", "目标公司池"],
   timeline: ["Company Timeline", "公司动态时间线与长期档案"],
@@ -1982,14 +1981,14 @@ const pageMeta = {
   "source-health": ["Source Operations", "数据源健康与产出质量"],
 };
 
-const overviewApacRegions = new Set(["japan", "china", "korea", "southeast_asia"]);
+const overviewApacRegions = new Set(window.AIHOT_REGION_MODEL.apac);
 
 const overviewMetricDefinitions = {
   critical: {
     label: "重大信号",
     pageTitle: "重大信号明细",
-    description: "当前筛选范围内，同时属于“进入日报 / 即时提醒”且 ACRO 相关性为高的信息。这里用于回答哪些事件需要优先核验和安排动作。",
-    boundary: "这是优先级入口，不代表每条信息都已由内部确认；进入行动前仍应查看原文证据与业务边界。",
+    description: "当前筛选范围内，通过既有入选门槛且 ACRO 相关性为高的公开信息。保留原有筛选规则，集中展示具体事件与证据。",
+    boundary: "这是规则筛选结果，不代表已由内部确认，也不是分派给任何团队的任务。",
     matches: (item) =>
       ["daily", "immediate"].includes(item.tier) && item.acro_relevance?.level === "high",
   },
@@ -2001,18 +2000,18 @@ const overviewMetricDefinitions = {
     matches: (item, companyRoles) => getItemRole(item, companyRoles) === "competitor",
   },
   customer: {
-    label: "账户动态信号",
-    pageTitle: "账户动态信号明细",
-    description: "当前筛选范围内，命中日本客户与潜在账户目录的公开动态，用于销售、BD 和区域市场安排核验与跟进。",
-    boundary: "账户目录代表监测对象，不等于已成交客户；公开新闻只能形成跟进线索，不能替代内部 CRM 关系确认。",
+    label: "客户动态",
+    pageTitle: "客户动态明细",
+    description: "当前筛选范围内，命中被监测客户或账户的具体公开事件，可继续查看公司与原文证据。",
+    boundary: "账户目录代表监测对象，不等于大客户或已成交客户；不根据新闻或公司规模推断销售关系。",
     matches: (item, companyRoles) => getItemRole(item, companyRoles) === "customer",
   },
   apac: {
     label: "亚太地区动态",
     pageTitle: "亚太地区动态明细",
-    description: "当前筛选范围内，规则识别为日本、中国、韩国或东南亚的信息，用于观察地区市场、监管、活动与合作变化。",
-    boundary: "地区由标题、摘要和来源线索识别；“全球 / 未识别”不会进入本指标，边界不清的条目仍需人工核验。",
-    matches: (item) => overviewApacRegions.has(inferItemRegion(item)),
+    description: "当前筛选范围内，涉及日本、中国及港澳台、韩国、东南亚、南亚、大洋洲或明确亚太的新闻，按记录去重。",
+    boundary: "地区由已保存的原文语义判读、标题与来源摘录中的明确线索共同决定；可切换为仅标题 / 摘录。不从已有摘要、媒体所在地或总部地址本身推断。泛称亚洲、全球、未限定地区和待确认不计入亚太；每条依据会区分部署、供应、试验、政策或参与机构等关系，不等于事件都在当地发生。",
+    matches: (item) => fusionRegions(item).some(region => overviewApacRegions.has(region)),
   },
 };
 
@@ -2263,6 +2262,12 @@ const els = {
   methodologyRelevanceExample: document.querySelector("#methodologyRelevanceExample"),
   methodologyPriorityExample: document.querySelector("#methodologyPriorityExample"),
   methodologyDensityExample: document.querySelector("#methodologyDensityExample"),
+  admissionCurrentTotal: document.querySelector("#admissionCurrentTotal"),
+  admissionCurrentSelected: document.querySelector("#admissionCurrentSelected"),
+  admissionCurrentOther: document.querySelector("#admissionCurrentOther"),
+  admissionShadowReview: document.querySelector("#admissionShadowReview"),
+  admissionShadowRetained: document.querySelector("#admissionShadowRetained"),
+  admissionShadowReasons: document.querySelector("#admissionShadowReasons"),
   summaryStrategyStatus: document.querySelector("#summaryStrategyStatus"),
   summaryPipelineDetail: document.querySelector("#summaryPipelineDetail"),
   storageLatestSnapshot: document.querySelector("#storageLatestSnapshot"),
@@ -2320,7 +2325,7 @@ function hydrateCompanyMetadata(payload) {
 const companyRoleDockMeta = {
   self: { label: "本公司", empty: "尚未设置本公司" },
   competitor: { label: "竞品 / 对标池", empty: "尚未设置竞品" },
-  customer: { label: "客户 / 账户", empty: "账户目录待导入" },
+  customer: { label: "客户", empty: "账户目录待导入" },
 };
 
 function compactCompanyName(company) {
@@ -2529,7 +2534,7 @@ function renderJapanAccountIntelligence() {
   if (!els.japanCustomerList || !els.japanCustomerDetail) return;
   const data = getJapanAccountData();
   const accounts = data.accounts || [];
-  const signalIndex = getJapanAccountSignalIndex();
+  const signalIndex = fusionScopedAccountIndex();
   const linkedAccounts = accounts.filter((account) => (signalIndex.get(account.id) || []).length);
   const publicRelationshipCount = accounts.filter((account) => account.account_stage === "public_relationship").length;
   const pharmaCount = accounts.filter((account) => account.organization_type === "pharma_biotech").length;
@@ -2568,7 +2573,7 @@ function renderJapanAccountIntelligence() {
     return stageDelta || signalDelta || a.name.localeCompare(b.name);
   });
   const renderedAccounts = matchingAccounts.slice(0, state.accountLimit);
-  els.japanCustomerResultCount.textContent = `匹配 ${matchingAccounts.length} 个 · 当前显示 ${renderedAccounts.length} 个`;
+  els.japanCustomerResultCount.textContent = `匹配 ${matchingAccounts.length} 个 · 当前显示 ${renderedAccounts.length} 个 · ${fusion.directoryScope ? "新闻沿用概览筛选" : "全库动态"}`;
   if (!matchingAccounts.some((account) => account.id === state.selectedAccountId)) {
     state.selectedAccountId = matchingAccounts[0]?.id || null;
   }
@@ -2593,7 +2598,7 @@ function renderJapanAccountIntelligence() {
 
   const selected = accounts.find((account) => account.id === state.selectedAccountId);
   if (!selected) {
-    els.japanCustomerDetail.innerHTML = '<div class="customer-directory-empty">请选择一个账户锚点。</div>';
+    els.japanCustomerDetail.innerHTML = `${fusionDirectoryBanner()}<div class="customer-directory-empty">请选择一个账户锚点。</div>`;
     return;
   }
   const matches = signalIndex.get(selected.id) || [];
@@ -2629,7 +2634,7 @@ function renderJapanAccountIntelligence() {
     : matches.length
       ? "先核对主体和事件，再判断是否存在 ACRO 产品需求、技术切入点或活动跟进机会。"
       : "名单只负责建立公司锚点；没有外部信号时，不自动生成商业机会。";
-  els.japanCustomerDetail.innerHTML = `
+  els.japanCustomerDetail.innerHTML = `${fusionDirectoryBanner()}
     <header><span>账户情报锚点</span><h3 class="company-name-with-logo">${companyLogoMarkup((state.payload.companies || []).find((entry) => findAccountForCompany(entry, [selected])), "profile")}<span>${escapeHtml(selected.name)}</span></h3><p>${escapeHtml(data.semantics || "")}</p></header>
     <div class="customer-detail-fields">${fields}</div>
     <div class="customer-opportunity-state ${opportunityClass}">
@@ -2638,7 +2643,7 @@ function renderJapanAccountIntelligence() {
       <p>${escapeHtml(opportunityCopy)}</p>
     </div>
     ${evidenceMarkup}
-    <div class="customer-signal-list"><span>关联外部动态</span>${signalMarkup}</div>
+    <div class="customer-signal-list"><span>关联外部动态 · ${matches.length} 条</span>${signalMarkup}<button type="button" class="text-button" data-fusion-account-news="${escapeAttr(selected.id)}">查看全部 ${matches.length} 条新闻 →</button></div>
     <footer>${escapeHtml(data.privacy_note || "内部销售状态不进入公开页面。")}</footer>`;
 }
 
@@ -2736,6 +2741,7 @@ function formatStorageBytes(value) {
 function renderMethodology() {
   renderMethodologyView();
   if (!els.methodologyScopedCount || !state.payload) return;
+  if (state.methodologyDetail === "region-classification") renderFusionRegionRules();
   const catalog = window.AIHOT_RULE_CATALOG || {};
   const storageProfile = window.AIHOT_STORAGE_PROFILE || {};
   const summaryPipeline = state.payload.summary_pipeline || {};
@@ -2753,14 +2759,14 @@ function renderMethodology() {
   if (els.summaryStrategyStatus) {
     const manualCount = Number(summaryPipeline.manual_imported) || 0;
     els.summaryStrategyStatus.textContent = manualCount
-      ? `规则自动处理 + ${manualCount} 条 AI 情报精读`
-      : "规则自动处理；重点信息按需进行 AI 情报精读";
+      ? `${manualCount} 条标题与摘要已整理`
+      : "标题与摘要待整理";
   }
   if (els.summaryPipelineDetail) {
     const status = summaryPipeline.status || "rules_only";
     const statusLabel = {
-      rules_only: "仅规则提要",
-      rules_plus_manual: "规则提要 + AI 情报精读",
+      rules_only: "摘要来源为自动采集与规则处理",
+      rules_plus_manual: "自动采集 + 编辑摘要回填",
       policy_disabled: "自动 LLM API 按策略关闭",
       configuration_error: "模型配置异常",
       request_error: "模型请求异常",
@@ -2769,7 +2775,7 @@ function renderMethodology() {
     }[status] || status;
     const manualCount = Number(summaryPipeline.manual_imported) || 0;
     els.summaryPipelineDetail.textContent =
-      `本轮状态：${statusLabel}；人工回填 ${manualCount} 条；自动 LLM API：${catalog.strategy?.automatic_llm_api ? "已启用" : "未启用"}。`;
+      `本轮状态：${statusLabel}；已静态回填 ${manualCount} 条中文标题与摘要${state.payload.summaries_updated_at ? `；更新于 ${state.payload.summaries_updated_at}` : ""}。页面正常显示整理后的内容，不在新闻卡片标注处理方式；自动 LLM API：${catalog.strategy?.automatic_llm_api ? "已启用" : "未启用"}。`;
   }
   if (els.storageLatestSnapshot) {
     els.storageLatestSnapshot.textContent = `${storageProfile.latest_item_count || 0} 条 · ${formatStorageBytes(storageProfile.latest_snapshot_bytes)}`;
@@ -2783,8 +2789,6 @@ function renderMethodology() {
   if (els.storageSourceState) {
     els.storageSourceState.textContent = formatStorageBytes(storageProfile.source_snapshot_bytes);
   }
-  const retainedStorage = document.querySelector("#storageEventArchive");
-  if (retainedStorage) retainedStorage.textContent = `公开记录 ${storageProfile.retained_event_record_count || 0} 条 · ${formatStorageBytes(storageProfile.event_archive_bytes)} · 保留起点 ${String(storageProfile.event_retention_started_at || "未生成").slice(0, 10)}。旧每日 history 文件仍只是统计；更早文章为回溯样本，不代表完整历史。`;
   if (els.storagePipelineSnapshot) {
     els.storagePipelineSnapshot.textContent = `${storageProfile.latest_item_count || 0} 条 / ${formatStorageBytes(storageProfile.latest_snapshot_bytes)}`;
   }
@@ -2792,16 +2796,33 @@ function renderMethodology() {
     els.storagePipelineHistory.textContent = `${storageProfile.history_file_count || 0} 份历史 / ${formatStorageBytes(storageProfile.history_total_bytes)}`;
   }
   const allItems = state.payload.items || [];
-  const scopedItems = getFilteredItems();
+  const scopedItems = getFilteredItems(true);
+  const admissionSummary = window.AIHOT_ADMISSION_UI?.summary?.();
+  if (admissionSummary) {
+    if (els.admissionCurrentTotal) els.admissionCurrentTotal.textContent = admissionSummary.total;
+    if (els.admissionCurrentSelected) els.admissionCurrentSelected.textContent = admissionSummary.selected;
+    if (els.admissionCurrentOther) els.admissionCurrentOther.textContent = admissionSummary.other;
+    if (els.admissionShadowReview) els.admissionShadowReview.textContent = admissionSummary.review;
+    if (els.admissionShadowRetained) els.admissionShadowRetained.textContent = admissionSummary.retained;
+    if (els.admissionShadowReasons) {
+      els.admissionShadowReasons.innerHTML = admissionSummary.counts.map(([key, count]) =>
+        `<button type="button" data-admission-shadow-open="${escapeAttr(key)}"><span>${escapeHtml(window.AIHOT_ADMISSION_MODEL.shadowLabels[key])}</span><strong>${count}</strong><i aria-hidden="true">→</i></button>`,
+      ).join("") || '<p class="board-empty">当前快照没有影子待复核项。</p>';
+    }
+  }
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  const periodItems = periodView.events.length ? boardItems() : [];
-  els.methodologyTrendCount.textContent = "本期 " + periodItems.length;
+  const trendItems = scopedItems.filter((item) => {
+    const age = getTrendAge(item);
+    return age !== null && age < state.timeRange;
+  });
+  const selfCount = trendItems.filter((item) => getItemRole(item, companyRoles) === "self").length;
+  els.methodologyTrendCount.textContent = "本公司 " + selfCount;
   if (els.methodologyTrendExample) {
-    els.methodologyTrendExample.textContent = `${boardRangeText()}：当前周期与筛选命中 ${periodItems.length} 条事件记录。${periodView.level === "main" ? "总看板按 3 / 7 天分组" : "周月看板按日分组"}，柱形条数之和等于当前事件记录数，未知日期与未来发布日期不计入。`;
+    els.methodologyTrendExample.textContent = `例如“本公司 ${selfCount}”表示：在当前筛选和观察周期内，有 ${selfCount} 条可定位到走势日期且被识别为“本公司”的信息。`;
   }
-  els.methodologyScopedCount.textContent = periodItems.length + " 条";
+  els.methodologyScopedCount.textContent = scopedItems.length + " 条";
 
   const healthRows = (state.payload.source_health || []).filter((row) => row.enabled !== false);
   const reachableRows = healthRows.filter((row) =>
@@ -2842,7 +2863,7 @@ function renderMethodology() {
     els.methodologyRelevanceExample.innerHTML = "<span>当前数据示例</span><p>当前数据集暂无相关性结果。</p>";
   }
 
-  const priorities = buildCustomerAccountPriorities();
+  const priorities = buildCustomerAccountPriorities(state.timeRange, scopedItems);
   const priorityExample = priorities.find((entry) => entry.items.length);
   if (priorityExample) {
     els.methodologyPriorityExample.innerHTML =
@@ -2871,6 +2892,7 @@ function renderMethodology() {
 function renderCompanyPools() {
   const companies = state.payload?.companies || [];
   if (!els.companyPoolGroups || !els.companyRoleSummary) return;
+  document.querySelector("#fusionCompanyScope").innerHTML = fusionDirectoryBanner();
 
   const relationshipData = getRelationshipData();
   const relationshipRecords = relationshipData.records || [];
@@ -3009,6 +3031,7 @@ function renderCompanyPools() {
                 <small>监测重点</small>
                 <p>${escapeHtml(company.monitoring_focus || (company.strategic_topics || []).slice(0, 5).join("、"))}</p>
               </div>
+              ${companies.some(entry => entry.id === company.id) ? `<button type="button" class="text-button fusion-pool-news" data-fusion-pool-news="${escapeAttr(company.id)}">${fusion.directoryScope ? "当前范围" : "全库"} ${fusionCompanyItems(company.id).length} 条新闻 →</button>` : ""}
               ${company.entity_kind === "relationship"
                 ? `<button class="company-profile-source-button" type="button" data-relationship-card-id="${escapeAttr(company.relationship_id)}">查看关系证据</button>`
                 : company.customer_pool
@@ -3739,18 +3762,6 @@ async function loadData() {
     }
   }
 
-  state.archiveSyncFailed = false;
-  state.payloadSyncFailed = syncFailed;
-  if (canLoadLiveData) {
-    try {
-      state.eventArchive = await fetchJson("../data/event_archive.json");
-    } catch {
-      state.eventArchive = window.AIHOT_EVENT_ARCHIVE || { items: [] };
-      state.archiveSyncFailed = true;
-    }
-  } else {
-    state.eventArchive = window.AIHOT_EVENT_ARCHIVE || { items: [] };
-  }
   renderLoadedData();
   if (syncFailed) {
     const previousRun = formatDateTime(state.payload.generated_at);
@@ -3830,12 +3841,15 @@ const businessEventDefinitions = {
   regional_expansion: { label: "地区扩张与市场进入", short: "地区扩张", en: "Regional expansion and market entry", shortEn: "Region" },
   quality_supply: { label: "质量、GMP 与供应链", short: "质量供应", en: "Quality, GMP and supply chain", shortEn: "Quality" },
   corporate_strategy: { label: "公司战略与组织动作", short: "公司战略", en: "Corporate strategy and organization", shortEn: "Strategy" },
+  unclassified: { label: "未分类", short: "未分类", en: "Unclassified", shortEn: "Unclassified" },
 };
 
 function getBusinessEventType(item) {
   if (item.business_event_type && businessEventDefinitions[item.business_event_type]) {
     return item.business_event_type;
   }
+  // Overview presents the stored primary classification without inventing a fallback event.
+  if (fusionIsHomeContext()) return "unclassified";
   const intelligence = item.intelligence || {};
   const actions = intelligence.business_actions || [];
   const text = `${item.title || ""} ${item.summary || ""} ${item.ai_summary || ""}`;
@@ -3894,7 +3908,7 @@ function getOverviewScopeLabel() {
   };
   const parts = [
     state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`,
-    tierLabels[state.tier] || "全部分层",
+    fusionIsHomeContext() || state.page === "methodology" ? "入选信息" : tierLabels[state.tier] || "全部分层",
   ];
   if (state.role !== "all") parts.push(labelRole(state.role));
   if (state.region !== "all") parts.push(labelRegion(state.region));
@@ -3903,6 +3917,8 @@ function getOverviewScopeLabel() {
   if (state.category !== "all") parts.push(labelBusinessEvent(state.category));
   if (state.company !== "all") parts.push(state.company);
   if (state.searchQuery) parts.push(`搜索：${state.searchQuery}`);
+  if (fusion.regions.length) parts.push(fusion.regions.map(labelRegion).join(" / "));
+  if (fusion.topic !== "all") parts.push(boardTopicLabel(fusion.topic));
   return parts.join(" · ");
 }
 
@@ -3929,7 +3945,7 @@ function renderOverviewMetricDetail(scopedItems, companyRoles) {
   const [topEventType, topEventCount = 0] = Object.entries(eventCounts)
     .sort((a, b) => b[1] - a[1])[0] || ["", 0];
   const latestDate = items
-    .map((item) => item.published_at || item.published || "")
+    .map((item) => periodModel.publicationDate(item))
     .filter(Boolean)
     .sort()
     .at(-1) || "暂无";
@@ -3964,9 +3980,48 @@ function renderOverviewMetricDetail(scopedItems, companyRoles) {
 }
 
 function renderOverviewScope() {
-  renderPeriodOverview();
-  if (state.page === "signals") renderSignals();
+  if (["period-overview", "period-detail"].includes(state.page)) { renderPeriodOverview(); return; }
+  periodView.level = "main";
+  const scoped = getFilteredItems();
+  const companyRoles = new Map(
+    (state.payload.companies || []).map((company) => [company.id, company.business_role]),
+  );
+  const customerCompanyCount = getJapanAccountData().accounts?.length || (state.payload.companies || []).filter(
+    (company) => company.business_role === "customer",
+  ).length;
+  const criticalCount = getOverviewMetricItems("critical", scoped, companyRoles).length;
+  const competitorCount = getOverviewMetricItems("competitor", scoped, companyRoles).length;
+  const customerCount = getOverviewMetricItems("customer", scoped, companyRoles).length;
+  const apacCount = getOverviewMetricItems("apac", scoped, companyRoles).length;
+
+  els.metricCandidates.textContent = criticalCount;
+  els.metricDaily.textContent = competitorCount;
+  els.metricImmediate.textContent = customerCompanyCount ? customerCount : "未接入";
+  els.metricArchive.textContent = apacCount;
+  els.metricCompetitorNote.textContent = `${
+    (state.payload.companies || []).filter((company) => company.business_role === "competitor").length
+  } 家已确认竞品`;
+  els.metricCustomerNote.textContent = customerCompanyCount
+    ? `${customerCompanyCount} 家日本市场账户`
+    : "账户目录尚未导入";
+  els.sourceCount.textContent = `${scoped.length} 条`;
+  els.windowDays.textContent = state.sourceOutputId !== "all" ? "来源全量" : `${state.timeRange} 天`;
+
+  const customerPriorities = buildCustomerAccountPriorities(state.timeRange, scoped);
+  renderFusionCustomers(scoped);
+  renderExecutiveBrief(scoped, companyRoles, customerCompanyCount, customerCount, customerPriorities);
+  renderSignalTrend(scoped, companyRoles);
+  renderRegionDistribution(scoped);
+  renderCompanyTopicMatrix(scoped);
+  renderCategoryDistribution(scoped);
+  renderFusionTopics(scoped);
+  renderBusinessLanes(scoped, companyRoles);
+  fusionSyncControls(scoped);
+  renderSignals();
   renderMethodology();
+  if (state.page === "overview-metric") {
+    renderOverviewMetricDetail(scoped, companyRoles);
+  }
 }
 
 function renderBusinessLanes(items, companyRoles) {
@@ -3976,11 +4031,7 @@ function renderBusinessLanes(items, companyRoles) {
   );
   const opportunityItems = items.filter((item) => {
     const role = getItemRole(item, companyRoles);
-    const productNeeds = item.intelligence?.product_needs || [];
-    return role === "customer" ||
-      item.recommended_action?.type === "lead" ||
-      (item.acro_relevance?.level === "high" && role !== "competitor") ||
-      (productNeeds.length && role === "industry");
+    return role === "customer";
   });
   const partnerItems = items.filter((item) =>
     item.category === "partnership" ||
@@ -3993,7 +4044,7 @@ function renderBusinessLanes(items, companyRoles) {
   els.opportunityLaneCount.textContent = opportunityItems.length;
   els.partnerLaneCount.textContent = partnerItems.length;
   renderBusinessLaneItems(els.competitorActionList, competitorItems, "当前范围内没有竞品行动。", "competitor");
-  renderBusinessLaneItems(els.opportunityActionList, opportunityItems, "尚无达到门槛的 ACRO 机会。", "opportunity");
+  renderBusinessLaneItems(els.opportunityActionList, opportunityItems, "当前范围内没有客户或账户新闻。", "opportunity");
   renderBusinessLaneItems(els.partnerActionList, partnerItems, "当前范围内没有新合作信号。", "partner");
 }
 
@@ -4007,47 +4058,25 @@ function renderBusinessLaneItems(container, items, emptyText, laneType) {
     const company = item.matched_companies?.[0] || item.company || "行业信号";
     const intelligence = item.intelligence || {};
     const context = laneType === "opportunity"
-      ? (intelligence.product_needs || [])[0] || item.recommended_action?.label || "待评估"
+      ? labelBusinessEvent(getBusinessEventType(item), true)
       : laneType === "partner"
         ? (intelligence.business_actions || [])[0] || labelBusinessEvent(getBusinessEventType(item), true)
         : (intelligence.modalities || [])[0] || labelBusinessEvent(getBusinessEventType(item), true);
-    const action = item.recommended_action || { label: "人工判断", owner: "待分派" };
-    const workflow = signalWorkflowDefinitions[getSignalWorkflowStatus(item)] || signalWorkflowDefinitions.new;
     return `
       <a class="business-lane-item" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">
         <span><b>${escapeHtml(shortCompanyName(company))}</b><i>${escapeHtml(context)}</i></span>
         <strong>${escapeHtml(getDisplayTitle(item))}</strong>
-        <small>${escapeHtml(getItemDateLabel(item))} · ${Number(item.score) || 0} 分</small>
-        <div class="business-lane-action"><span>${escapeHtml(action.label || "人工判断")}</span><b>${escapeHtml(action.owner || "待分派")}</b><i>${escapeHtml(workflow.label)}</i></div>
+        <small>${escapeHtml(fusionDateLabel(item))} · ${Number(item.score) || 0} 分</small>
+        <div class="business-lane-action"><span>${escapeHtml(getSourceLabelText(item))}</span><i>原文证据 →</i></div>
       </a>
     `;
   }).join("");
 }
 
-const regionDefinitions = [
-  { id: "japan", label: "日本" },
-  { id: "china", label: "中国" },
-  { id: "korea", label: "韩国" },
-  { id: "southeast_asia", label: "东南亚" },
-  { id: "north_america", label: "北美" },
-  { id: "europe", label: "欧洲" },
-  { id: "global", label: "全球 / 未识别" },
-];
-
-const regionPatterns = [
-  ["japan", /\b(japan|japanese|tokyo|osaka|kobe|kyoto|yokohama|biojapan)\b|日本|東京|东京|大阪|神戸|神户|京都|横浜|横滨|近畿|湘南/i],
-  ["china", /\b(china|chinese|beijing|shanghai|shenzhen|suzhou|guangzhou)\b|中国|北京|上海|深圳|苏州|广州/i],
-  ["korea", /\b(korea|korean|seoul|bio korea)\b|韩国|韓国|首尔|ソウル/i],
-  ["southeast_asia", /\b(singapore|malaysia|thailand|indonesia|vietnam|philippines)\b|新加坡|马来西亚|泰国|印度尼西亚|越南|菲律宾/i],
-  ["north_america", /\b(united states|u\.s\.|usa|canada|boston|california|san diego|new york)\b|美国|加拿大/i],
-  ["europe", /\b(europe|european|germany|france|uk|united kingdom|switzerland|netherlands|belgium)\b|欧洲|德国|法国|英国|瑞士|荷兰|比利时/i],
-];
+const regionDefinitions = window.AIHOT_REGION_MODEL.definitions;
 
 function inferItemRegion(item) {
-  const text = `${item.title || ""} ${item.summary || ""} ${item.ai_summary || ""} ${
-    (item.source_labels || [item.source_label]).join(" ")
-  }`;
-  return regionPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "global";
+  return fusionRegions(item)[0];
 }
 
 function labelRegion(region) {
@@ -4070,12 +4099,12 @@ function labelRole(role) {
   return {
     self: "本公司",
     competitor: "竞品",
-    customer: "客户 / 潜在账户",
+    customer: "客户",
     industry: "行业观察",
   }[role] || role;
 }
 
-function buildCustomerAccountPriorities(days = null) {
+function buildCustomerAccountPriorities(days = null, scopedItems = null) {
   const priorityRule = window.AIHOT_RULE_CATALOG?.account_priority || {};
   const densityRule = window.AIHOT_RULE_CATALOG?.relevance_density || {};
   const windowDays = Number(days) || Number(priorityRule.window_days) || 90;
@@ -4090,11 +4119,11 @@ function buildCustomerAccountPriorities(days = null) {
   const companies = (state.payload.companies || []).filter(
     (company) => company.business_role === "customer",
   );
-  const allItems = state.payload.items || [];
+  const allItems = scopedItems || state.payload.items || [];
   const accounts = getJapanAccountData().accounts || [];
   return companies.map((company) => {
     const items = allItems.filter((item) =>
-      itemIsWithinRange(item, windowDays) && (item.matched_company_ids || []).includes(company.id),
+      (scopedItems || itemIsWithinRange(item, windowDays)) && (item.matched_company_ids || []).includes(company.id),
     ).sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0));
     const selectedItems = items.filter((item) => ["daily", "immediate"].includes(item.tier));
     const highItems = items.filter((item) => item.acro_relevance?.level === "high");
@@ -4183,7 +4212,7 @@ function buildCustomerPriorityAction(eventType, publicRelationship, selectedCoun
 function renderCustomerPriorityMatrix(priorities) {
   if (!els.customerPriorityMatrix) return;
   const withSignals = priorities.filter((entry) => entry.items.length).length;
-  els.customerPriorityScope.textContent = `近 90 天 · ${priorities.length} 家持续监测 · ${withSignals} 家已有信号`;
+  els.customerPriorityScope.textContent = `同当前筛选 · ${state.timeRange} 天 · ${priorities.length} 家监测账户 · ${withSignals} 家有信号`;
   if (!priorities.length) {
     els.customerPriorityMatrix.innerHTML = '<div class="empty">尚未配置持续监测的客户或市场账户。</div>';
     return;
@@ -4193,7 +4222,7 @@ function renderCustomerPriorityMatrix(priorities) {
       <span>账户（优先级高 → 低）</span>
       <span>优先指数 <button class="column-help" type="button" data-methodology-target="priority-index" aria-label="查看优先指数规则">i</button></span>
       <span>ACRO 相关密度 <button class="column-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 相关密度规则">i</button></span>
-      <span>近 30 天</span><span>主要动向</span><span>建议下一步</span>
+      <span>当前范围</span><span>主要动向</span><span>参考判断（非派单）</span>
     </div>`;
   const rows = priorities.map((entry, index) => {
     const relationship = entry.publicRelationship ? "公开关系证据" : "关系待确认";
@@ -4207,7 +4236,7 @@ function renderCustomerPriorityMatrix(priorities) {
         </span>
         <span class="customer-priority-score"><button class="customer-priority-value" type="button" data-methodology-target="priority-index" aria-label="优先指数 ${entry.priorityScore}，查看计算规则"><strong>${entry.priorityScore}</strong></button><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
         <span class="customer-priority-density"><button class="customer-priority-value" type="button" data-methodology-target="relevance-density" aria-label="ACRO 相关密度 ${entry.density}%，查看计算规则"><strong>${entry.density}%</strong></button><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
-        <span class="customer-priority-count"><strong>${entry.recent30Count}</strong><small>${entry.selectedItems.length} 条进入日报</small></span>
+        <span class="customer-priority-count"><strong>${entry.items.length}</strong><small>${entry.selectedItems.length} 条入选</small></span>
         <span class="customer-priority-topic"><strong>${escapeHtml(labelBusinessEvent(entry.dominantEvent, true))}</strong><small>${escapeHtml(keyTitle)}</small></span>
         <span class="customer-priority-action"><b class="${entry.urgency.className}">${entry.urgency.label}</b><strong>${escapeHtml(entry.action.label)}</strong><small>${escapeHtml(entry.action.owner)}</small></span>
       </div>`;
@@ -4249,7 +4278,7 @@ function topEventEntries(items, limit = 3) {
 
 const assistantViewMeta = {
   action: {
-    label: "今日优先",
+    label: "综合研判",
     basis: "优先指数、相关密度、近期信号与日报门槛",
     boundary: "跨账户、竞品与市场主题的相对排序",
   },
@@ -4277,15 +4306,16 @@ const assistantViewMeta = {
 
 function buildAssistantResponse(intent, items, customerPriorities) {
   const competitorActivity = groupCompanyActivity(items, "competitor");
-  const japanItems = items.filter((item) => inferItemRegion(item) === "japan");
+  const japanItems = items.filter((item) => fusionRegions(item).includes("japan"));
   const accountEntries = customerPriorities.filter((entry) => entry.items.length).slice(0, 3);
   const actionForAccount = (entry) => ({
     label: entry.urgency.label,
     title: `${shortCompanyName(entry.company.display_name)}：${entry.action.label}`,
-    detail: `优先指数 ${entry.priorityScore}，ACRO 中高相关密度 ${entry.density}%，近 30 天 ${entry.recent30Count} 条，${entry.selectedItems.length} 条进入日报。`,
+    detail: `优先指数 ${entry.priorityScore}，ACRO 中高相关密度 ${entry.density}%，当前筛选 ${entry.items.length} 条，${entry.selectedItems.length} 条入选。仅作参考，不自动派单。`,
     owner: entry.action.owner,
     company: entry.company.display_name,
     category: entry.dominantEvent,
+    evidenceIds: entry.items.map(item => item.id),
   });
   const actionForCompetitor = (entry) => ({
     label: "竞品应对",
@@ -4294,16 +4324,17 @@ function buildAssistantResponse(intent, items, customerPriorities) {
     owner: "产品市场",
     company: entry.company.display_name,
     category: entry.dominantEvent,
+    evidenceIds: entry.items.map(item => item.id),
   });
   if (intent === "account") {
     return {
-      headline: accountEntries.length ? "销售与市场优先核验这 3 家账户" : "当前没有足够的账户行动证据",
+      headline: accountEntries.length ? "重点账户：公开信号与参考判断" : "当前没有足够的账户研判证据",
       actions: accountEntries.map(actionForAccount),
     };
   }
   if (intent === "competitor") {
     return {
-      headline: competitorActivity.length ? "这些竞品动作最值得产品市场回应" : "当前范围内没有明确竞品动作",
+      headline: competitorActivity.length ? "重点竞品：本期动向与对标线索" : "当前范围内没有明确竞品动作",
       actions: competitorActivity.slice(0, 3).map(actionForCompetitor),
     };
   }
@@ -4320,6 +4351,7 @@ function buildAssistantResponse(intent, items, customerPriorities) {
           owner: eventType === "market_activity" ? "区域市场" : "产品市场",
           company: keyItem?.matched_companies?.[0] || "",
           category: eventType,
+          evidenceIds: marketBase.filter(item => getBusinessEventType(item) === eventType).map(item => item.id),
         };
       }),
     };
@@ -4345,31 +4377,26 @@ function buildAssistantResponse(intent, items, customerPriorities) {
   if (topMarketEvent) {
     actions.push({
       label: "市场内容",
-      title: `围绕“${labelBusinessEvent(topMarketEvent[0])}”准备本周内容或活动判断`,
+      title: `“${labelBusinessEvent(topMarketEvent[0])}”：本期市场内容线索`,
       detail: `${japanItems.length ? "日本" : "当前范围"}共有 ${topMarketEvent[1]} 条该主题信号，可用代表事件校准选题和销售话术。`,
       owner: "市场运营",
       category: topMarketEvent[0],
+      evidenceIds: (japanItems.length ? japanItems : items).filter(item => getBusinessEventType(item) === topMarketEvent[0]).map(item => item.id),
     });
   }
   return {
-    headline: actions.length ? "今天建议先做这 3 件事" : "当前筛选范围暂时没有可执行信号",
+    headline: actions.length ? `本期值得关注的 ${actions.length} 项线索` : "当前筛选范围暂无明确研判线索",
     actions,
   };
 }
 
 function renderExecutiveBrief(items, companyRoles, customerCompanyCount, customerSignalCount = 0, customerPriorities = []) {
-  const activeView = assistantViewMeta[state.assistantView] ? state.assistantView : "action";
-  const viewMeta = assistantViewMeta[activeView];
-  const response = buildAssistantResponse(activeView, items, customerPriorities);
-  const summaryPipeline = state.payload.summary_pipeline || {};
-  const hasModelSummaries = summaryPipeline.status === "complete" && Number(summaryPipeline.generated) > 0;
-  const manualSummaryCount = Number(summaryPipeline.manual_imported) || 0;
+  const activeView = ["action", "account", "competitor"].includes(state.assistantView) ? state.assistantView : "action";
+  const viewMeta = { label: { action: "综合研判", account: "客户动态", competitor: "竞品动态" }[activeView], basis: "当前筛选范围内的公司、事件、发布时间和来源", boundary: "公开记录，不代表采购关系或已确定任务" };
+  const response = fusionAssistantResponse(activeView, items);
+  const availableSummaryCount = items.filter(item => !fusionSummary(item).missing).length;
   els.executiveHeadline.textContent = response.headline;
-  els.assistantMode.textContent = manualSummaryCount
-    ? `已核验精读 ${manualSummaryCount} 条 · 规则决策`
-    : hasModelSummaries
-    ? `模型摘要 ${summaryPipeline.generated} 条 · 规则决策`
-    : "规则计算 · 可追溯";
+  els.assistantMode.textContent = `本期摘要 ${availableSummaryCount} 条 · 公开证据`;
   els.assistantViewLabel.textContent = viewMeta.label;
   els.assistantViewBasis.textContent = viewMeta.basis;
   els.assistantViewBoundary.textContent = viewMeta.boundary;
@@ -4378,31 +4405,20 @@ function renderExecutiveBrief(items, companyRoles, customerCompanyCount, custome
     button.classList.toggle("active", isActive);
     button.setAttribute("aria-selected", String(isActive));
   });
-  els.assistantDisclosure.textContent = manualSummaryCount
-    ? `${manualSummaryCount} 条重点内容已完成人工 AI 精读与原文核验；当前行动建议由固定规则计算，不调用模型 API。`
-    : hasModelSummaries
-    ? `当前信号包含 ${summaryPipeline.generated} 条模型摘要；行动建议仍由结构化规则计算并链接原文证据。`
-    : `已计算 ${items.length} 条信号、${customerCompanyCount} 家日本账户目录和 ${customerSignalCount} 条账户动态；当前不调用模型 API。`;
+  els.assistantDisclosure.textContent = `当前筛选 ${items.length} 条新闻，其中 ${customerSignalCount} 条账户动态；摘要与原文入口均按当前筛选范围展示，不自动派单。`;
   els.executivePoints.innerHTML = response.actions.length
     ? response.actions.map((action, index) => `
         <li>
-          <button type="button" data-assistant-company="${escapeAttr(action.company || "")}" data-assistant-category="${escapeAttr(action.category || "")}">
+          <button type="button" data-assistant-company="${escapeAttr(action.company || "")}" data-assistant-category="${escapeAttr(action.category || "")}" ${action.evidenceIds ? `data-assistant-evidence="${escapeAttr(JSON.stringify(action.evidenceIds))}"` : ""}>
             <span>${String(index + 1).padStart(2, "0")}</span>
-            <i><small>${escapeHtml(action.label)}</small><strong>${escapeHtml(action.title)}</strong><em>${escapeHtml(action.detail)}</em><b>${escapeHtml(action.owner)}</b></i>
+            <i><small>${escapeHtml(action.label)}</small><strong>${escapeHtml(action.title)}</strong><em>${escapeHtml(action.detail)}</em></i>
           </button>
         </li>`).join("")
     : '<li class="assistant-empty">调整观察周期或筛选条件后再试。</li>';
 }
 
 function getTrendAge(item) {
-  if (item.event_start_at) {
-    const until = Number(item.days_until_event);
-    if (!Number.isFinite(until) || until > 0) return null;
-    return Math.abs(Math.floor(until));
-  }
-  if (item.age_days === null || item.age_days === undefined || item.age_days === "") return null;
-  const age = Number(item.age_days);
-  return Number.isFinite(age) && age >= 0 ? Math.floor(age) : null;
+  return fusionAge(item);
 }
 
 function renderSignalTrend(items, companyRoles) {
@@ -4410,7 +4426,7 @@ function renderSignalTrend(items, companyRoles) {
   const seriesDefinitions = [
     { id: "self", label: "本公司", color: "#087f8c" },
     { id: "competitor", label: "竞品", color: "#c95d42" },
-    { id: "customer", label: "客户 / 账户", color: "#345f9f" },
+    { id: "customer", label: "客户", color: "#345f9f" },
     { id: "industry", label: "行业", color: "#7b8790" },
   ].filter((series) => state.role === "all" || state.role === series.id);
   const values = Object.fromEntries(seriesDefinitions.map((series) => [series.id, Array(days).fill(0)]));
@@ -4454,26 +4470,17 @@ function renderSignalTrend(items, companyRoles) {
     const total = values[series.id].reduce((sum, value) => sum + value, 0);
     const hasCustomerPool = (getJapanAccountData().accounts || []).length > 0;
     const suffix = series.id === "customer" && !total && !hasCustomerPool ? "未接入" : total;
-    return `<button class="trend-legend-item" type="button" data-methodology-target="trend-counts" aria-label="${series.label} ${suffix} 条，查看统计口径"><i style="background:${series.color}"></i>${series.label} ${suffix}</button>`;
+    return `<button class="trend-legend-item" type="button" data-fusion-role="${series.id}" aria-label="${series.label} ${suffix} 条，查看对应证据"><i style="background:${series.color}"></i>${series.label} ${suffix}</button>`;
   }).join("");
 }
 
 function renderRegionDistribution(items) {
-  const counts = Object.fromEntries(regionDefinitions.map((region) => [region.id, 0]));
-  for (const item of items) counts[inferItemRegion(item)] += 1;
-  const entries = regionDefinitions.map((region) => [region, counts[region.id]]).sort((a, b) => b[1] - a[1]);
-  const max = Math.max(1, ...entries.map(([, count]) => count));
-  els.regionBars.innerHTML = entries.map(([region, count]) => `
-    <div class="region-row">
-      <div><span>${escapeHtml(region.label)}</span><strong>${count}</strong></div>
-      <div class="region-track"><i style="width:${Math.max(count ? 7 : 0, Math.round((count / max) * 100))}%"></i></div>
-    </div>
-  `).join("");
+  fusionRegionChart(items);
 }
 
-function renderCompanyTopicMatrix() {
+function renderCompanyTopicMatrix(scopedItems = null) {
   const matrixRule = window.AIHOT_RULE_CATALOG?.competitor_matrix || {};
-  const matrixDays = Number(matrixRule.window_days) || 90;
+  const matrixDays = scopedItems ? state.timeRange : Number(matrixRule.window_days) || 90;
   const maximumColumns = Number(matrixRule.maximum_columns) || 5;
   const competitorCompanies = (state.payload.companies || []).filter(
     (company) => company.business_role === "competitor",
@@ -4483,8 +4490,8 @@ function renderCompanyTopicMatrix() {
   );
   const companies = sortCompaniesForDisplay(primaryCompetitors.length ? primaryCompetitors : competitorCompanies);
   const matrixCompanyById = new Map(companies.map((company) => [company.id, company]));
-  const items = (state.payload.items || []).filter((item) =>
-    itemIsWithinRange(item, matrixDays) &&
+  const items = (scopedItems || state.payload.items || []).filter((item) =>
+    (scopedItems || itemIsWithinRange(item, matrixDays)) &&
     (item.matched_company_ids || []).some((id) => matrixCompanyById.has(id)),
   );
   const resolveCompanyId = (item) => {
@@ -4515,12 +4522,12 @@ function renderCompanyTopicMatrix() {
   }
   for (const item of items) {
     const eventType = getBusinessEventType(item);
-    const primaryId = resolveCompanyId(item);
-    if (!primaryId) continue;
-    companyTotals[primaryId] += 1;
-    if (!categories.includes(eventType)) continue;
-    matrix[primaryId][eventType] += 1;
-    if (["daily", "immediate"].includes(item.tier)) selectedMatrix[primaryId][eventType] += 1;
+    for (const primaryId of (item.matched_company_ids || []).filter(id => matrixCompanyById.has(id))) {
+      companyTotals[primaryId] += 1;
+      if (!categories.includes(eventType)) continue;
+      matrix[primaryId][eventType] += 1;
+      if (["daily", "immediate"].includes(item.tier)) selectedMatrix[primaryId][eventType] += 1;
+    }
   }
   let max = 0;
   for (const company of companies) {
@@ -4538,7 +4545,7 @@ function renderCompanyTopicMatrix() {
         const selected = selectedMatrix[company.id][category];
         const intensity = count ? Math.max(1, Math.ceil((count / Math.max(max, 1)) * 4)) : 0;
         if (!count) return '<span class="matrix-cell intensity-0">–</span>';
-        return `<button class="matrix-cell intensity-${intensity}" type="button" data-matrix-company="${escapeAttr(company.display_name)}" data-matrix-category="${escapeAttr(category)}" title="查看 ${count} 条监测信号，其中 ${selected} 条进入日报">${count}</button>`;
+        return `<button class="matrix-cell intensity-${intensity}" type="button" data-matrix-company="${escapeAttr(company.display_name)}" data-matrix-category="${escapeAttr(category)}" title="查看 ${count} 条监测信号，其中 ${selected} 条通过入选门槛">${count}</button>`;
       }).join("")}
     </div>
   `).join("");
@@ -4551,13 +4558,13 @@ function renderCategoryDistribution(items) {
     const eventType = getBusinessEventType(item);
     counts[eventType] = (counts[eventType] || 0) + 1;
   }
-  const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   const max = Math.max(1, ...entries.map(([, count]) => count));
   els.categoryBars.innerHTML = entries.length ? entries.map(([category, count]) => `
-    <div class="category-row">
+    <button type="button" class="category-row fusion-chart-row" data-fusion-category="${escapeAttr(category)}">
       <div><span>${escapeHtml(labelBusinessEvent(category))}</span><strong>${count}</strong></div>
       <div class="category-track"><i style="width:${Math.round((count / max) * 100)}%"></i></div>
-    </div>
+    </button>
   `).join("") : '<div class="empty">当前范围内没有商业事件数据。</div>';
 }
 
@@ -5116,22 +5123,34 @@ function renderPage() {
     : pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
-  if (state.page === "period-overview") els.pageTitle.textContent = boardRootLabel();
-  els.toolbar.hidden = state.page !== "signals";
-  els.pagePanels.forEach((panel) => {
-    panel.hidden = panel.dataset.page !== state.page;
-    if (panel.id === "periodControls") panel.hidden = !["overview", "period-overview", "period-detail"].includes(state.page);
-  });
-  els.pageButtons.forEach((button) => {
-    const activePage = state.page === "period-detail" ? boardRootPage() : state.page === "overview-metric" ? "overview" : state.page;
-    button.classList.toggle("active", button.dataset.pageTarget === activePage);
-  });
-  document.querySelectorAll(".nav [data-period-entry]").forEach(button => {
-    const active = ["period-overview", "period-detail"].includes(state.page) && periodView.level === "period" && button.dataset.periodEntry === periodView.mode;
-    button.classList.toggle("active", active);
-    if (active) button.setAttribute("aria-current", "page");
+  if (state.page === "fusion-evidence" && fusion.detail?.kind === "region-rules") {
+    els.pageEyebrow.textContent = "Regional Evidence Rules";
+    els.pageTitle.textContent = "地区准入与划分";
+  }
+  const recordsRoot = state.page === "period-detail" && periodView.level === "records" && periodView.route?.type === "list" && periodView.route.value === "all" && !periodView.route.field;
+  const browseRoot = state.page === "overview" || state.page === "period-overview" || recordsRoot;
+  document.querySelector("main").dataset.browseRoot = String(browseRoot);
+  if (["period-overview", "period-detail"].includes(state.page)) els.pageTitle.textContent = boardRootLabel();
+  els.toolbar.hidden = !["overview", "signals"].includes(state.page);
+  els.toolbar.classList.toggle("overview-toolbar", state.page === "overview");
+  els.tierFilter.hidden = state.page !== "signals";
+  document.querySelectorAll("#fusionCategoryControl, #fusionProductControl, #fusionRegionControl").forEach(node => { node.hidden = state.page !== "overview"; });
+  document.querySelector("#browseNavigation").hidden = !browseRoot;
+  document.querySelectorAll("[data-browse]").forEach(button => {
+    const active = state.page === "overview" ? "overview" : periodView.level === "records" ? "records" : periodView.mode;
+    if (button.dataset.browse === active) button.setAttribute("aria-current", "page");
     else button.removeAttribute("aria-current");
   });
+  els.categoryFilter.hidden = state.page === "overview";
+  els.pagePanels.forEach((panel) => {
+    panel.hidden = panel.dataset.page !== state.page;
+    if (panel.id === "periodControls") panel.hidden = state.page !== "period-overview" && !recordsRoot;
+  });
+  els.pageButtons.forEach((button) => {
+    const activePage = ["overview-metric", "fusion-evidence"].includes(state.page) ? "overview" : state.page;
+    button.classList.toggle("active", button.dataset.pageTarget === activePage);
+  });
+  document.querySelectorAll(".nav [data-period-entry]").forEach(button => button.classList.toggle("active", ["period-overview", "period-detail"].includes(state.page) && periodView.level === "period" && periodView.mode === button.dataset.periodEntry));
   document.querySelectorAll(".nav-cluster").forEach((cluster) => {
     const containsActive = Boolean(cluster.querySelector("[data-page-target].active"));
     cluster.classList.toggle("contains-active", containsActive);
@@ -5155,13 +5174,13 @@ function updateOverviewMetricUrl(target, historyMode) {
 }
 
 function openOverviewMetric(target, historyMode = "push") {
-  const route = {
-    competitor: { type: "list", field: "roles", value: "competitor" },
-    customer: { type: "list", field: "roles", value: "customer" },
-    apac: { type: "list", value: "apac" },
-  }[target] || { type: "list", value: "critical" };
-  periodView.level = "main";
-  openBoardRoute(route, historyMode === "none" ? "replace" : historyMode);
+  const validTarget = overviewMetricDefinitions[target] ? target : "critical";
+  state.page = "overview-metric";
+  state.overviewMetric = validTarget;
+  renderOverviewScope();
+  renderPage();
+  updateOverviewMetricUrl(validTarget, historyMode);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function closeOverviewMetric(historyMode = "replace") {
@@ -5201,7 +5220,13 @@ function renderSignals() {
   els.detailSignalCount.innerHTML = state.sourceOutputId !== "all"
     ? `${filtered.length} 条结果 · 来源：${escapeHtml(state.sourceOutputLabel)} · 本轮全部记录 <button type="button" data-clear-source-output>清除来源筛选</button>`
     : `${filtered.length} 条结果`;
-  renderSignalCards(els.topSignalList, filtered.slice(0, 5), true);
+  const latest = fusionLatest(filtered);
+  renderSignalCards(els.topSignalList, latest, true);
+  document.querySelector("#fusionLatestScope").textContent = `当前范围最新 ${latest.length} 条 · 按可信发布时间倒序，同精度以记录 ID 稳定排序，不按评分 · ${fusionRangeLabel()}`;
+  const unknownCount = getFilteredItems(true, "unknown").length;
+  const unknownButton = document.querySelector("#fusionUnknownDates");
+  unknownButton.textContent = `另有 ${unknownCount} 条发布日期待核对（不计入周期） →`;
+  unknownButton.hidden = !unknownCount;
   renderSignalCards(els.signalList, filtered, false);
 }
 
@@ -5245,6 +5270,7 @@ function renderBusinessInsight(item, compact) {
     text: "暂不发起业务动作。",
   };
   const isEnglish = state.translationLanguage === "en";
+  if (fusionIsHomeContext()) return `<div class="fusion-relevance-note"><button type="button" data-methodology-target="acro-relevance">ACRO ${escapeHtml(isEnglish ? getRelevanceLabel(item) : relevance.label || "待分析")} · ${Number(relevance.score) || 0}</button><small>${isEnglish ? "Rule-based relevance, not a task or confirmed demand" : "规则相关性，不代表确定任务或已确认需求"}</small></div>`;
   const translatedAction = translateRecommendedAction(action);
   if (compact) {
     const relevanceLabel = isEnglish ? getRelevanceLabel(item) : relevance.label || "待分析";
@@ -5320,9 +5346,9 @@ function buildChineseSignalTitle(item) {
 
 function getDisplayTitle(item) {
   if (state.translationLanguage === "zh") {
-    return String(item.title_zh || "").trim() || buildChineseSignalTitle(item);
+    return String(item.title_zh || "").trim() || item.title || "标题缺失";
   }
-  return item.title || buildClientBusinessSummaryEn(item);
+  return item.title || "Title unavailable";
 }
 
 function getSourceLabelText(item) {
@@ -5371,37 +5397,31 @@ function buildClientBusinessSummary(item) {
 }
 
 function getDisplaySummary(item) {
-  if (state.translationLanguage === "en") {
-    return item.ai_summary_en || buildClientBusinessSummaryEn(item);
-  }
-  const aiSummary = String(item.ai_summary || "").trim();
-  if (aiSummary) return aiSummary;
-  return buildClientBusinessSummary(item) || (
-    isLowInformationSummary(item.summary, item.title)
-      ? "暂无可用摘要，建议打开原文核对。"
-      : item.summary
-  );
+  const summary = fusionSummary(item);
+  return fusionIsHomeContext() ? fusionFactualText(summary.text) || (state.translationLanguage === "en" ? "No factual summary available. See the original source." : "暂无可用事实摘要，请查看原文。") : summary.text;
+}
+
+function renderSummaryReview(item, language = state.translationLanguage) {
+  // Editorial provenance stays in the data record; the reader sees one normal summary.
+  return "";
 }
 
 function renderBusinessSummary(item, compact) {
-  const isLlm = item.summary_method === "llm";
-  const isManual = item.summary_method === "manual_ai";
-  const hasManualSummaryInCurrentLanguage = isManual && (
-    state.translationLanguage === "zh" || Boolean(String(item.ai_summary_en || "").trim())
-  );
-  const label = state.translationLanguage === "en"
-    ? hasManualSummaryInCurrentLanguage ? "AI intelligence brief" : isLlm ? "API model summary" : "Rule brief"
-    : hasManualSummaryInCurrentLanguage ? "AI 情报精读" : isLlm ? "API 模型摘要" : "规则提要";
+  const summary = fusionSummary(item);
+  const label = summary.label;
   const text = getDisplaySummary(item);
-  const summaryClass = isLlm || hasManualSummaryInCurrentLanguage ? "ai" : "rule";
+  const summaryClass = summary.ai ? "ai" : "rule";
+  const sourceLink = `<a class="summary-original" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${state.translationLanguage === "en" ? "Original source" : "查看原文"} ↗</a>`;
   if (!compact) {
-    return `<p class="summary business-summary summary-${summaryClass}"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>`;
+    return `<p class="summary business-summary summary-${summaryClass}"><span>${escapeHtml(label)}</span>${escapeHtml(text)}</p>${sourceLink}${renderSummaryReview(item)}`;
   }
   const preview = firstReadableSentence(text, state.translationLanguage === "en" ? 110 : 72) || text;
   const expandLabel = state.translationLanguage === "en" ? "Details" : "展开";
   return `<details class="business-summary-toggle summary-${summaryClass}">
     <summary><span>${escapeHtml(label)}</span><b>${escapeHtml(preview)}</b><i>${escapeHtml(expandLabel)}</i></summary>
     <p>${escapeHtml(text)}</p>
+    ${sourceLink}
+    ${renderSummaryReview(item)}
   </details>`;
 }
 
@@ -5419,7 +5439,7 @@ function renderEvidenceBlock(item) {
         <a href="${escapeAttr(evidence.primary_url || item.url)}" target="_blank" rel="noreferrer">打开原文</a>
       </div>
       <p>${escapeHtml(excerpt)}</p>
-      <small>${escapeHtml(getSourceLabelText(item))} · ${relatedCount} 个关联入口 · ${escapeHtml(evidence.summary_basis === "source_excerpt" ? "摘要来自原始内容" : "摘要来自标题与规则")}</small>
+      <small>${escapeHtml(getSourceLabelText(item))} · ${relatedCount} 个关联入口 · ${escapeHtml(evidence.summary_basis === "source_excerpt" ? "原始来源提供了摘录" : item.summary_review ? "摘要已整理，原始证据以来源链接为准" : "摘要来自标题与规则")}</small>
     </div>
   `;
 }
@@ -5596,6 +5616,7 @@ function renderSignalCards(container, items, compact) {
     const displayTitle = getDisplayTitle(item);
     const showOriginalTitle = state.translationLanguage === "zh" && displayTitle !== item.title;
     card.innerHTML = `
+      <div class="fusion-card-logos">${(item.matched_company_ids || []).map(id => state.payload.companies.find(company => company.id === id)).filter(Boolean).map(company => companyLogoMarkup(company)).join("")}</div>
       <div class="signal-top">
         <div class="signal-title-stack">
           <a class="signal-title" href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(displayTitle)}</a>
@@ -5604,9 +5625,9 @@ function renderSignalCards(container, items, compact) {
         <button class="score" type="button" data-methodology-target="news-score" aria-label="信息筛选分 ${item.score}，查看计算规则">${item.score}</button>
       </div>
       <div class="meta-row">
-        <span class="tag ${item.tier}">${labelTier(item.tier)}</span>
+        ${fusionIsHomeContext() ? "" : `<span class="tag ${item.tier}">${labelTier(item.tier)}</span>`}
         <span class="tag role-tag role-${role}">${labelRole(role)}</span>
-        <span class="tag region-tag">${escapeHtml(labelRegion(region))}</span>
+        ${fusionRegionMarkup(item)}
         <span class="tag type-tag">${labelSignalType(item.signal_type || "news")}</span>
         <span class="tag business-event-tag">${labelBusinessEventLanguage(getBusinessEventType(item), true)}</span>
         <span class="tag company-match ${
@@ -5616,12 +5637,12 @@ function renderSignalCards(container, items, compact) {
             ? `命中：${item.matched_companies.join(" / ")}`
             : "未命中公司池",
         )}</span>
-        <span class="tag date-tag ${item.event_start_at ? "event-date" : "published-date"}">${escapeHtml(getItemDateLabel(item))}</span>
+        <span class="tag date-tag ${item.event_start_at ? "event-date" : "published-date"}">${escapeHtml(fusionIsHomeContext() ? fusionDateLabel(item) : getItemDateLabel(item))}</span>
         <span class="tag source-origin">${escapeHtml(getSourceLabelText(item))}</span>
       </div>
       ${renderBusinessSummary(item, compact)}
       ${renderBusinessInsight(item, compact)}
-      ${compact ? "" : renderSignalDecisionDetails(item)}
+      ${compact ? "" : fusionIsHomeContext() ? renderEvidenceBlock(item) : renderSignalDecisionDetails(item)}
       ${compact ? "" : `
       <div class="feedback-row ${fbClass}">
         <span class="feedback-label">这条有用吗？</span>
@@ -5641,6 +5662,7 @@ function renderSignalCards(container, items, compact) {
       const newValue = current && current.value === action ? null : action;
       state.feedback = saveFeedback(id, newValue);
       renderSignals();
+      if (state.page === "fusion-evidence") renderFusionEvidence();
       if (state.page === "overview-metric") {
         const scoped = getFilteredItems();
         const companyRoles = new Map(
@@ -5655,6 +5677,7 @@ function renderSignalCards(container, items, compact) {
       state.signalWorkflow = saveSignalWorkflow(select.dataset.signalWorkflowId, select.value);
       renderSignals();
       renderCompanyTimeline();
+      if (state.page === "fusion-evidence") renderFusionEvidence();
       if (state.page === "overview-metric") {
         const scoped = getFilteredItems();
         const companyRoles = new Map(
@@ -5774,7 +5797,7 @@ function renderSourceHealth() {
   const archiveCount = rows.filter((row) => row.status === "archive_only").length;
   const pendingCount = rows.filter((row) => row.status === "pending").length;
   const quietCount = rows.filter((row) => row.status === "quiet").length;
-  if (els.healthStatus) els.healthStatus.textContent = `${productiveCount} 有效 · ${archiveCount} 仅归档 · ${quietCount} 无内容 · ${errors.length} 异常${pendingCount ? ` · ${pendingCount} 待配置` : ""}`;
+  els.healthStatus.textContent = `${productiveCount} 有效 · ${archiveCount} 仅归档 · ${quietCount} 无内容 · ${errors.length} 异常${pendingCount ? ` · ${pendingCount} 待配置` : ""}`;
 
   if (!els.healthList) return;
   if (errors.length === 0) {
@@ -5878,6 +5901,7 @@ function getCompanyScopedHealthRows(rows, company) {
 
 function renderSourceHealthPage() {
   const rows = getSourceHealthRows();
+  fusionSourceStages();
   const companies = [...new Set(rows.map((row) => row.scope || row.company).filter(Boolean))].sort();
   const previousCompany = els.healthCompanyFilter.value || state.healthCompany;
   els.healthCompanyFilter.innerHTML = '<option value="all">全部监测范围</option>';
@@ -5890,7 +5914,7 @@ function renderSourceHealthPage() {
   state.healthCompany = companies.includes(previousCompany) ? previousCompany : "all";
   els.healthCompanyFilter.value = state.healthCompany;
 
-  els.healthGeneratedAt.textContent = `本轮运行 ${formatDateTime(state.payload.generated_at)}`;
+  els.healthGeneratedAt.textContent = `本轮运行 ${String(state.payload.generated_at || "时间未记录").replace("T", " ")}`;
   const selectedCompany = (state.payload.companies || [])
     .find((company) => company.display_name === state.healthCompany);
   const metricRows = selectedCompany
@@ -6060,7 +6084,7 @@ function exportCsv() {
         csvCell(state.translationLanguage === "en" ? translatedAction.label : item.recommended_action?.label || ""),
         csvCell(state.translationLanguage === "en" ? translatedAction.owner : item.recommended_action?.owner || ""),
         csvCell(item.reasons.slice(0, 3).join("; ")),
-        csvCell(item.summary_method === "manual_ai" ? "AI 情报精读" : item.summary_method === "llm" ? "API 模型摘要" : "规则提要"),
+        csvCell(fusionSummary(item).label),
         csvCell(getDisplaySummary(item)),
         item.url,
       ].join(",")
@@ -6107,20 +6131,20 @@ function getItemDateLabel(item) {
     : "日期待核对";
 }
 
-function getFilteredItems() {
+function getFilteredItems(homeScope = fusionIsHomeContext(), dateMode = "period") {
   const query = state.searchQuery.toLowerCase().trim();
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  return state.payload.items
+  return fusionUniqueItems(state.payload.items)
     .filter((item) =>
-      state.sourceOutputId !== "all" || itemIsWithinRange(item, state.timeRange),
+      dateMode === "unknown" ? !periodModel.publicationDate(item) : state.sourceOutputId !== "all" || (homeScope ? fusionWithinRange(item, state.timeRange) : itemIsWithinRange(item, state.timeRange)),
     )
     .filter((item) =>
       state.sourceOutputId === "all" ||
       (item.source_ids || [item.source_id]).includes(state.sourceOutputId),
     )
-    .filter((item) => state.tier === "all" || item.tier === state.tier)
+    .filter((item) => homeScope ? ["daily", "immediate"].includes(item.tier) : state.tier === "all" || item.tier === state.tier)
     .filter(
       (item) => state.relevance === "all" || (item.acro_relevance?.level || "low") === state.relevance,
     )
@@ -6131,12 +6155,13 @@ function getFilteredItems() {
         (item.matched_companies || [item.company]).includes(state.company),
     )
     .filter((item) => state.role === "all" || getItemRole(item, companyRoles) === state.role)
-    .filter((item) => state.region === "all" || inferItemRegion(item) === state.region)
+    .filter((item) => fusionMatchesRegion(item, homeScope))
     .filter((item) => state.category === "all" || getBusinessEventType(item) === state.category)
+    .filter((item) => !homeScope || fusion.topic === "all" || fusionTopics(item).includes(fusion.topic))
     .filter((item) => {
       if (!query) return true;
       const intelligenceText = Object.values(item.intelligence || {}).flat().join(" ");
-      const haystack = `${item.title} ${item.title_zh || ""} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${item.reasons.join(" ")} ${intelligenceText} ${item.acro_relevance?.explanation || ""} ${item.recommended_action?.label || ""} ${item.recommended_action?.text || ""}`.toLowerCase();
+      const haystack = `${item.title} ${item.title_zh || ""} ${item.summary} ${item.ai_summary || ""} ${item.company} ${(item.source_labels || [item.source_label]).join(" ")} ${(item.reasons || []).join(" ")} ${intelligenceText} ${item.acro_relevance?.explanation || ""} ${item.recommended_action?.label || ""} ${item.recommended_action?.text || ""}`.toLowerCase();
       return haystack.includes(query);
     })
     .sort((a, b) => b.score - a.score);
@@ -6208,14 +6233,14 @@ function clearSourceOutput() {
 
 // ── Event listeners ──
 
-els.overviewMetricGrid?.addEventListener("click", (event) => {
+els.overviewMetricGrid.addEventListener("click", (event) => {
   if (event.target.closest("[data-methodology-target]")) return;
   const card = event.target.closest("[data-overview-metric]");
   if (!card) return;
   openOverviewMetric(card.dataset.overviewMetric);
 });
 
-els.overviewMetricBackButton?.addEventListener("click", () => {
+els.overviewMetricBackButton.addEventListener("click", () => {
   closeOverviewMetric("replace");
 });
 
@@ -6225,7 +6250,7 @@ els.companyDockList.addEventListener("click", (event) => {
   const chip = event.target.closest("[data-filter-company]");
   if (!chip) return;
   const companyId = chip.dataset.filterCompany;
-  state.page = boardRootPage();
+  state.page = "overview";
   renderPage();
 
   if (companyId === "all") {
@@ -6240,12 +6265,8 @@ els.companyDockList.addEventListener("click", (event) => {
     state.company = hasOption ? companyName : "all";
     els.companyFilter.value = hasOption ? companyName : "all";
   }
-  periodView.company = companyId === "all" ? "all" : companyId;
-  periodView.route = null;
-  writeBoardUrl();
   renderCompanyDock();
   renderOverviewScope();
-  renderPage();
 });
 
 els.companyDockList.addEventListener("toggle", (event) => {
@@ -6405,46 +6426,30 @@ els.relationshipLayerControl.querySelectorAll("[data-graph-layer]").forEach((but
 });
 
 function openOverviewEvidence(company = "", category = "") {
-  state.sourceOutputId = "all";
-  state.sourceOutputLabel = "";
-  state.searchQuery = "";
-  state.signalType = "all";
-  state.relevance = "all";
-  state.region = "all";
-  state.company = company || "all";
-  state.category = category || "all";
-  state.tier = "all";
-  state.role = "all";
-  state.timeRange = 90;
-  state.page = "signals";
-  els.searchInput.value = "";
-  els.signalTypeFilter.value = "all";
-  els.relevanceFilter.value = "all";
-  els.regionFilter.value = "all";
-  els.companyFilter.value = state.company;
-  els.categoryFilter.value = state.category;
-  els.tierFilter.value = "all";
-  els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
-    button.classList.toggle("active", Number(button.dataset.timeRange) === 90);
-  });
-  els.roleControl.querySelectorAll("[data-role-filter]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.roleFilter === "all");
-  });
-  renderPage();
-  renderOverviewScope();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  const companyRecord = state.payload.companies.find(entry => entry.display_name === company);
+  const items = getFilteredItems().filter(item =>
+    (!company || (item.matched_company_ids || []).includes(companyRecord?.id) || (item.matched_companies || [item.company]).includes(company)) &&
+    (!category || getBusinessEventType(item) === category)
+  );
+  const title = [company && shortCompanyName(company), category && labelBusinessEvent(category)].filter(Boolean).join(" · ") || "决策证据";
+  openFusionEvidence(title, items);
 }
 
-els.assistantPrompts?.addEventListener("click", (event) => {
+els.assistantPrompts.addEventListener("click", (event) => {
   const button = event.target.closest("[data-assistant-view]");
   if (!button) return;
   state.assistantView = button.dataset.assistantView;
   renderOverviewScope();
 });
 
-els.executivePoints?.addEventListener("click", (event) => {
+els.executivePoints.addEventListener("click", (event) => {
   const button = event.target.closest("[data-assistant-company][data-assistant-category]");
   if (!button) return;
+  if (button.dataset.assistantEvidence) {
+    const ids = new Set(JSON.parse(button.dataset.assistantEvidence));
+    openFusionEvidence(button.querySelector("strong").textContent, getFilteredItems().filter(item => ids.has(item.id)));
+    return;
+  }
   if (!button.dataset.assistantCompany && !button.dataset.assistantCategory) {
     if (state.assistantView === "source") {
       state.page = "source-health";
@@ -6456,14 +6461,14 @@ els.executivePoints?.addEventListener("click", (event) => {
   openOverviewEvidence(button.dataset.assistantCompany, button.dataset.assistantCategory);
 });
 
-els.customerPriorityMatrix?.addEventListener("click", (event) => {
+els.customerPriorityMatrix.addEventListener("click", (event) => {
   if (event.target.closest("[data-methodology-target]")) return;
   const row = event.target.closest("[data-customer-priority-company]");
   if (!row) return;
   openOverviewEvidence(row.dataset.customerPriorityCompany);
 });
 
-els.customerPriorityMatrix?.addEventListener("keydown", (event) => {
+els.customerPriorityMatrix.addEventListener("keydown", (event) => {
   if (!["Enter", " "].includes(event.key) || event.target.closest("button")) return;
   const row = event.target.closest("[data-customer-priority-company]");
   if (!row) return;
@@ -6471,11 +6476,8 @@ els.customerPriorityMatrix?.addEventListener("keydown", (event) => {
   openOverviewEvidence(row.dataset.customerPriorityCompany);
 });
 
-els.openJapanAccountsButton?.addEventListener("click", () => {
-  state.page = "japan-customers";
-  renderJapanAccountIntelligence();
-  renderPage();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+els.openJapanAccountsButton.addEventListener("click", () => {
+  fusionOpenDirectory("japan-customers");
 });
 
 els.timeRangeControl.querySelectorAll("[data-time-range]").forEach((button) => {
@@ -6505,13 +6507,11 @@ els.regionFilter.addEventListener("change", (event) => {
   renderOverviewScope();
 });
 
-els.openSignalDetailButton?.addEventListener("click", () => {
-  state.page = "signals";
-  renderPage();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+els.openSignalDetailButton.addEventListener("click", () => {
+  openFusionEvidence("当前范围全部新闻", getFilteredItems());
 });
 
-els.openRelationshipsButton?.addEventListener("click", () => {
+els.openRelationshipsButton.addEventListener("click", () => {
   state.page = "relationships";
   renderPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -6527,7 +6527,7 @@ els.openAcroSourcesButton.addEventListener("click", () => {
 
 els.refreshButton.addEventListener("click", () => loadData());
 
-els.companyTopicMatrix?.addEventListener("click", (event) => {
+els.companyTopicMatrix.addEventListener("click", (event) => {
   const cell = event.target.closest("[data-matrix-company][data-matrix-category]");
   if (!cell) return;
   openOverviewEvidence(cell.dataset.matrixCompany, cell.dataset.matrixCategory);
@@ -6599,22 +6599,17 @@ els.japanCustomerList.addEventListener("click", (event) => {
 els.pageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const pageTarget = button.dataset.pageTarget;
-    if (pageTarget === "signals") {
-      openBoardRoute({ type: "list", value: "all" });
+    if (pageTarget === "overview") { fusionHome(); return; }
+    if (["companies", "japan-customers"].includes(pageTarget) && fusionIsHomeContext()) {
+      fusionOpenDirectory(pageTarget);
       return;
     }
     if (pageTarget === "methodology") {
-      openMethodology("", "replace");
+      openMethodology();
       return;
     }
     state.page = pageTarget;
     state.methodologyDetail = "";
-    if (pageTarget === "overview") {
-      openMainOverview();
-      return;
-    } else if (pageTarget === "signals") {
-      renderSignals();
-    }
     renderPage();
     if (
       window.location.hash.startsWith("#metric-") ||
@@ -6642,7 +6637,7 @@ document.addEventListener("click", (event) => {
   const rulePageTarget = event.target.closest("[data-rule-page-target]");
   if (!rulePageTarget) return;
   if (rulePageTarget.dataset.rulePageTarget === "methodology") {
-    openMethodology("", "replace");
+    openMethodology();
     return;
   }
   state.page = rulePageTarget.dataset.rulePageTarget;
@@ -6688,11 +6683,10 @@ if (initialOverviewMetricHash) {
   state.methodologyDetail = initialMetricHash;
 }
 initPeriodOverview();
+initFusion();
 renderMethodologyView();
 renderPage();
 loadData().then(() => {
-  if (initialOverviewMetricHash) openOverviewMetric(initialOverviewMetricHash, "replace");
-  else if (state.page === "overview" && !location.hash) writeBoardUrl("replace");
   if (initialOverviewMetricHash || initialMetricHash || window.location.hash === "#methodology") {
     window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
   }

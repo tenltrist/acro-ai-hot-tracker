@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ACRO AI Hot Tracker</title>
-    <link rel="stylesheet" href="./styles.css?v=20260908home1" />
+    <title>ACRO AI Hot Tracker · 融合预览</title>
+    <link rel="stylesheet" href="./styles.css?v=20260908fusion1" />
   </head>
   <body>
     <aside class="sidebar" aria-label="Primary navigation">
@@ -14,16 +14,13 @@
           <strong>AI Hot Tracker</strong>
           <span>ACRO Market Intelligence</span>
         </div>
-        <span class="live-badge"><i></i>PUBLIC</span>
+        <span class="live-badge"><i></i>DAILY</span>
       </div>
       <nav class="nav" aria-label="页面导航">
         <div class="nav-group">
           <span class="nav-group-label">情报工作台</span>
           <button class="active" type="button" data-page-target="overview" title="总看板" aria-label="总看板"><span class="nav-icon">⌂</span><span>总看板</span></button>
-          <div class="nav-sublist dashboard-subnav" aria-label="总看板的周期分类">
-            <button type="button" data-period-entry="week"><span class="nav-icon">周</span><span>周看板</span></button>
-            <button type="button" data-period-entry="month"><span class="nav-icon">月</span><span>月看板</span></button>
-          </div>
+          <div class="nav-sublist dashboard-subnav"><button type="button" data-period-entry="week"><span class="nav-icon">周</span><span>周看板</span></button><button type="button" data-period-entry="month"><span class="nav-icon">月</span><span>月看板</span></button></div>
           <button type="button" data-page-target="signals" title="情报明细" aria-label="情报明细"><span class="nav-icon">≡</span><span>情报明细</span></button>
         </div>
         <details class="nav-cluster" data-nav-cluster="companies">
@@ -66,9 +63,9 @@
       </div>
 
       <div class="sidebar-panel">
-        <div class="sidebar-status"><i></i><strong>数据链路正常</strong></div>
-        <p>工作日自动更新 · 公开免费来源</p>
-        <span>公开试用版</span>
+        <button class="text-button" type="button" data-page-target="source-health">来源维护 →</button>
+        <p>公开信息 · 原始证据</p>
+        <span>本地融合预览</span>
       </div>
     </aside>
 
@@ -78,6 +75,8 @@
           <p class="eyebrow" id="pageEyebrow">老板视角 Dashboard</p>
           <h1 id="pageTitle">目标公司与行业热点雷达</h1>
         </div>
+      </header>
+      <nav class="browse-tabs" id="browseNavigation" aria-label="信息浏览方式"><button type="button" data-browse="overview" aria-current="page">总览</button><button type="button" data-browse="week">周看板</button><button type="button" data-browse="month">月看板</button><button type="button" data-browse="records">历史记录</button></nav>
         <div class="toolbar" aria-label="Dashboard controls">
           <input type="search" id="searchInput" placeholder="搜索标题或摘要..." aria-label="搜索信号" />
           <select id="signalTypeFilter" aria-label="按情报类型筛选">
@@ -90,7 +89,7 @@
             <option value="funding">研发资助 / 政策</option>
             <option value="research">论文研究</option>
           </select>
-          <select id="tierFilter" aria-label="按推送分层筛选">
+          <select id="tierFilter" aria-label="按内部入选分层筛选" hidden>
             <option value="all">全部分层</option>
             <option value="immediate">即时提醒</option>
             <option value="daily" selected>进入日报</option>
@@ -108,32 +107,26 @@
           <select id="categoryFilter" aria-label="按商业事件筛选">
             <option value="all">全部商业事件</option>
           </select>
+          <label class="overview-top-filter" id="fusionCategoryControl">商业事件<select id="fusionCategory" aria-label="概览商业事件"></select></label>
+          <label class="overview-top-filter" id="fusionProductControl">产品 / 技术<select id="fusionProduct" aria-label="概览产品技术主题"><option value="all">全部产品 / 技术</option></select></label>
+          <details class="fusion-region-menu overview-top-filter" id="fusionRegionControl"><summary>地区 · <span id="fusionRegionLabel">全部地区</span></summary><div id="fusionRegionOptions"></div><div class="fusion-region-actions"><button type="button" data-fusion-regions-all>全选</button><button type="button" data-fusion-regions-clear>清除选择</button></div></details>
           <button class="icon-button" id="exportCsvButton" type="button" title="导出CSV" aria-label="导出CSV">CSV</button>
           <button class="icon-button" id="refreshButton" type="button" title="同步已完成的最新抓取结果" aria-label="同步已完成的最新抓取结果">
             <span aria-hidden="true">↻</span>
           </button>
         </div>
-      </header>
-
-      <section class="analysis-controls page-panel" data-page="signals" id="overview" aria-label="原始情报筛选">
+      <section class="analysis-controls page-panel" data-page="overview" id="overview" aria-label="Dashboard filters">
+        <div class="overview-window" id="timeRangeControl"><span>概览范围</span><strong>近 90 天 · 入选信息</strong></div>
         <div class="control-group">
-          <span>观察周期</span>
-          <div class="segmented-control" id="timeRangeControl" aria-label="观察周期">
-            <button type="button" data-time-range="7">7 天</button>
-            <button class="active" type="button" data-time-range="30">30 天</button>
-            <button type="button" data-time-range="90">90 天</button>
-          </div>
-        </div>
-        <div class="control-group">
-          <span>公司角色</span>
-          <div class="segmented-control" id="roleControl" aria-label="公司角色">
+          <span>监测对象</span>
+          <div class="segmented-control" id="roleControl" aria-label="监测对象">
             <button class="active" type="button" data-role-filter="all">全部</button>
             <button type="button" data-role-filter="self">本公司</button>
             <button type="button" data-role-filter="competitor">竞品</button>
-            <button type="button" data-role-filter="customer">客户 / 账户</button>
+            <button type="button" data-role-filter="customer" title="被监测的客户类账户，不代表已成交">客户</button>
           </div>
         </div>
-        <label class="region-control">
+        <label class="region-control" hidden>
           <span>事件地区</span>
           <select id="regionFilter" aria-label="按事件地区筛选">
             <option value="all">全部地区</option>
@@ -146,70 +139,44 @@
             <option value="global">全球 / 未识别</option>
           </select>
         </label>
-        <small>地区为标题与摘要规则识别，后续将升级为结构化提取。</small>
+        <p class="fusion-scope" id="fusionScope"></p>
       </section>
 
       <section class="board-controls page-panel" data-page="period-overview" id="periodControls" aria-label="周期与市场筛选">
-        <nav class="board-breadcrumbs board-root-breadcrumb" aria-label="看板位置"><button type="button" data-main-home>总看板</button><span>/</span><strong id="boardRootLabel">周看板</strong></nav>
-        <div class="main-period-toolbar">
-          <div class="segmented-control" aria-label="总看板范围"><button type="button" data-main-days="30">近 30 天</button><button type="button" data-main-days="90">近 90 天</button></div>
-          <span id="mainRangeLabel"></span>
-          <div class="segmented-control" aria-label="总看板摘要语言"><button type="button" data-board-language="zh">中</button><button type="button" data-board-language="en">EN</button></div>
-          <button class="board-arrow" type="button" data-board-refresh title="同步最新已采集数据" aria-label="同步最新已采集数据">↻</button>
-        </div>
+        <span id="boardRootLabel" hidden>周看板</span>
         <div class="board-period-toolbar">
-          <div class="segmented-control" aria-label="周期类型"><button class="active" type="button" data-board-mode="week">周</button><button type="button" data-board-mode="month">月</button></div>
           <button type="button" class="board-arrow" data-board-shift="-1" title="上一周期" aria-label="上一周期">←</button>
           <label id="boardWeekPicker">所在周<input type="date" id="boardWeekDate" aria-label="选择历史周中的任意一天" /></label>
           <label id="boardMonthPicker" hidden>月份<input type="month" id="boardMonthDate" aria-label="选择历史月份" /></label>
           <button type="button" class="board-arrow" data-board-shift="1" title="下一周期" aria-label="下一周期">→</button>
           <button type="button" class="text-button" id="boardCurrentPeriod" data-board-current>本周</button>
           <strong id="boardRangeLabel"></strong>
-          <div class="board-language segmented-control" aria-label="摘要显示语言"><button type="button" data-board-language="zh" title="显示已有中文译文与精读；缺失时保留原文">中</button><button type="button" data-board-language="en" title="显示已有英文精读；缺失时保留原文">EN</button></div>
+          <div class="board-language segmented-control" aria-label="摘要显示语言"><button type="button" data-board-language="zh" title="显示已有中文标题与摘要；缺失时提示并保留原文">中</button><button type="button" data-board-language="en" title="显示已有英文标题与摘要；缺失时提示并保留原文">EN</button></div>
           <button type="button" class="board-arrow" data-board-refresh title="同步最新已采集数据" aria-label="同步最新已采集数据">↻</button>
         </div>
+        <div class="board-record-modes" id="boardRecordModes" hidden><div class="segmented-control" aria-label="历史记录筛选"><button type="button" data-board-records="all">全部记录 <b></b></button><button type="button" data-board-records="selected">入选信息 <b></b></button><button type="button" data-board-records="other">其他留存资料 <b></b></button></div><span>所有记录均已保存；入选状态不是保存状态</span></div>
         <details class="board-filter-panel" id="boardFilterPanel" open>
-        <summary>筛选：地区、商业事件、产品 / 技术与公司</summary>
+        <summary>筛选条件</summary>
         <div class="board-filters">
-          <details class="board-region-menu"><summary id="boardRegionsSummary">全部地区</summary><div class="board-region-popover"><button type="button" class="text-button" data-board-regions-all>全部地区</button><div id="boardRegionsList"></div></div></details>
+          <label class="board-query">检索<input type="search" id="boardQuery" placeholder="公司、产品或事件" /></label>
+          <label class="board-type-filter">信息类型<select id="boardSignalType" aria-label="周期信息类型"></select></label>
+          <label class="board-type-filter">ACRO 相关性<select id="boardRelevance" aria-label="周期ACRO相关性"></select></label>
+          <label class="board-company-filter">公司<select id="boardCompany" aria-label="总览公司"></select></label>
           <label>商业事件<select id="boardCategory" aria-label="总览商业事件"></select></label>
           <label>产品 / 技术<select id="boardTopic" aria-label="总览产品技术主题"></select></label>
-          <label>公司角色<select id="boardRole"><option value="all">全部角色</option><option value="self">本公司</option><option value="competitor">竞品</option><option value="customer">客户 / 账户</option><option value="industry">行业观察</option></select></label>
-          <label>公司<select id="boardCompany" aria-label="总览公司"></select></label>
-          <label class="board-query">检索<input type="search" id="boardQuery" placeholder="公司、产品或事件" /></label>
+          <label>监测对象<select id="boardRole" aria-label="监测对象"><option value="all">全部对象</option><option value="self">本公司</option><option value="competitor">竞品</option><option value="customer">客户</option><option value="industry">行业观察</option></select></label>
+          <details class="board-region-menu"><summary id="boardRegionsSummary">全部地区</summary><div class="board-region-popover"><button type="button" class="text-button" data-board-regions-all>全部地区</button><div id="boardRegionsList"></div></div></details>
           <button type="button" class="board-arrow" data-board-clear aria-label="清除非时间筛选" title="清除非时间筛选">×</button>
         </div>
         </details>
         <p id="boardFilterScope" class="board-scope" aria-live="polite"></p>
-      </section>
-
-      <section class="main-dashboard page-panel" data-page="overview" id="mainDashboard">
-        <header class="main-dashboard-head"><div><p class="board-kicker">整体概况</p><h2>市场情报总看板</h2><p id="mainBrief"></p></div><div class="main-period-links"><button class="text-button" type="button" data-period-entry="week">周看板 →</button><button class="text-button" type="button" data-period-entry="month">月看板 →</button></div></header>
-        <p class="board-muted" id="mainSnapshot"></p>
-        <div class="board-coverage" id="mainCoverage" role="status"></div>
-        <div class="summary-grid" id="mainMetrics" aria-label="总看板核心指标"></div>
-        <section class="main-brief-band">
-          <div><header class="board-section-head"><div><p class="eyebrow">情报速览</p><h2>最新公开动态</h2></div><button class="text-button" type="button" data-board-list="all">全部事件 →</button></header><div id="mainLatest"></div></div>
-          <aside class="main-brief-status"><h3>当前数据范围</h3><dl><div><dt>已保留事件</dt><dd><button type="button" data-board-list="all" id="mainRecordCount"></button></dd></div><div><dt>涉及公司</dt><dd><button type="button" data-board-list="companies" id="mainCompanyCount"></button></dd></div><div><dt>采集来源</dt><dd id="mainHealth"></dd></div></dl><p>公开信息按公司归集；账户不等于已确认客户，事件不等于内部业务结论。</p></aside>
-        </section>
-        <section class="board-band main-account-band"><header class="board-section-head"><div><p class="eyebrow">客户 / 账户</p><h2>账户动态矩阵</h2></div><button class="text-button" type="button" data-rule-page-target="japan-customers">日本账户目录 →</button></header><p class="board-muted">按当前范围的事件数量排列；不生成销售任务或推定客户关系。</p><div id="mainAccountMatrix"></div></section>
-        <div class="main-lanes">
-          <section class="board-band"><header class="board-section-head"><h2>竞品对标</h2><button class="text-button" type="button" data-board-field="roles" data-board-value="competitor" id="mainCompetitorCount"></button></header><div id="mainCompetitorRows"></div></section>
-          <section class="board-band"><header class="board-section-head"><h2>合作与生态</h2><button class="text-button" type="button" data-board-list="partnerships" id="mainPartnerCount"></button></header><div id="mainPartnerRows"></div></section>
-        </div>
-        <div class="main-analytics">
-          <section class="board-band"><header class="board-section-head"><h2>信号走势</h2><span id="mainTrendScope"></span></header><div id="mainTrend"></div></section>
-          <section class="board-band"><header class="board-section-head"><h2>地区信号分布</h2><span>原文地区词，可多地命中</span></header><div class="board-bars" id="mainRegions"></div></section>
-          <section class="board-band main-competitor-band"><header class="board-section-head"><div><p class="eyebrow">竞品 × 商业事件</p><h2>竞品动作矩阵</h2></div><span>按已有竞争相关性排序</span></header><div id="mainCompetitorMatrix"></div></section>
-          <section class="board-band"><header class="board-section-head"><h2>商业事件构成</h2><span>当前范围</span></header><div class="board-bars" id="mainCategories"></div></section>
-        </div>
-        <details class="board-methods"><summary>总看板统计口径</summary><p>全部模块共用上方时间与筛选条件，按已确认的新闻发布日期计算。重大信号沿用“日报 / 提醒入选且 ACRO 高相关”的现有筛选结果，不代表事实已获人工确认。多公司、多地区可以重复计入各自分组；总事件数按保守合并后的记录去重。</p><p>仅恢复旧版看板的展示结构，不回退当前公司、账户或事件数据。按自然周 / 月查询及历史选期位于二级看板；未确认日期单列，不补猜项目周期。</p></details>
+        <label class="fusion-region-mode" hidden>地区依据<select id="boardRegionMode"><option value="reviewed">原文判读 + 明确线索</option><option value="content">仅标题 / 来源摘录</option></select></label>
       </section>
 
       <section class="period-board page-panel" data-page="period-overview" id="periodOverview">
         <header class="board-intro">
-          <div><p class="board-kicker" id="boardPeriodStatus">周期市场概览</p><h2>市场发生了什么</h2><p id="boardPeriodBrief" aria-live="polite"></p></div>
-          <div class="board-snapshot"><span id="boardSnapshot"></span><span id="updatedAt" hidden></span><span id="windowDays" hidden></span></div>
+          <div><p class="board-kicker" id="boardPeriodStatus">周期市场概览</p><h2 id="boardPeriodHeading">本期市场动态</h2><p id="boardPeriodBrief" aria-live="polite"></p></div>
+          <div class="board-snapshot"><span id="boardSnapshot"></span></div>
         </header>
         <div class="board-coverage" id="boardCoverage" role="status"></div>
         <div id="boardMetrics" class="board-metrics" aria-label="周期概况"></div>
@@ -226,6 +193,10 @@
             <header class="board-section-head"><h2>产品与技术主题</h2><span>原文关键词，可多选命中</span></header>
             <div id="boardTopicBars" class="board-bars board-topic-bars"></div>
           </section>
+          <section class="board-band">
+            <header class="board-section-head"><h2>地区构成</h2><span>跨地区事件可重复计入</span></header>
+            <div id="boardRegionBars" class="board-bars"></div>
+          </section>
         </div>
         <section class="board-band">
           <header class="board-section-head"><h2>事件时间轴</h2><button type="button" class="text-button" data-board-list="all">全部事件 →</button></header>
@@ -238,17 +209,17 @@
         </div>
         <section class="board-band">
           <header class="board-section-head"><h2>公司动态</h2><span>按本期事件记录数量排列</span></header>
-          <div class="board-company-tabs" role="tablist" aria-label="公司动态角色">
+          <div class="board-company-tabs" role="tablist" aria-label="监测对象">
             <button type="button" role="tab" data-board-tab="competitor" class="active">竞品 <b>0</b></button>
-            <button type="button" role="tab" data-board-tab="customer">客户 / 账户 <b>0</b></button>
+            <button type="button" role="tab" data-board-tab="customer">客户 <b>0</b></button>
             <button type="button" role="tab" data-board-tab="self">本公司 <b>0</b></button>
           </div>
-          <p class="board-muted">账户是市场监测对象，不代表已确认客户；一条事件可以涉及多家公司。</p>
+          <p class="board-muted">客户为监测分类，不代表已成交；一条事件可以涉及多家公司。</p>
           <div id="boardCompanyRows"></div>
         </section>
         <section class="board-band board-latest-band"><header class="board-section-head"><h2>最新 3 条新闻</h2><span>按发布日，同日不分先后</span></header><div id="boardLatestRows"></div></section>
         <details class="board-methods"><summary>统计口径与历史覆盖</summary>
-          <p>本页使用同一套周期与筛选后的事件记录，不以日报等级或评分决定是否显示。类别沿用现有商业事件规则；产品 / 技术主题只采用标题与来源摘录中命中的词。地区独立筛选、多地区命中，不使用公司总部或来源名称推定地区。</p>
+          <p>本页使用同一套周期与筛选后的事件记录，不以入选等级或评分决定是否显示。类别沿用现有商业事件规则；产品 / 技术主题采用标题与来源摘录中的依据。地区使用规则中心登记的原文判读与明确线索，不以总部或媒体所在地推定。总览显示近90天入选信息，本页回顾自然周／月全部已留存事件，两者范围不同。</p>
           <p>同链接同日期同标题，或同日同标题且命中同一公司时保守合并；多个出处仍保留。跨语言、相近标题的同一事件尚未完成语义合并，因此事件记录数不等于完全去重后的现实事件数。</p>
           <p>本周为周一至周日，本月为自然月，使用日本时间日历。周期统计按已确认的新闻发布日期计入，未知日期单列，未来发布日期不计入。事件发生时间没有独立依据时标为未确认，不绘制项目周期。</p>
           <p>旧的每日历史文件只有统计快照，无法还原当时全部文章。从本版开始逐轮保留公开事件记录；更早日期是来源返回的回溯样本，不是完整历史。采集频率不变，未覆盖与无结果不能等同于市场没有事件。</p>
@@ -256,7 +227,203 @@
       </section>
       <section class="period-detail page-panel" data-page="period-detail" id="periodDetail" aria-live="polite"></section>
 
+      <section class="fusion-evidence page-panel" data-page="fusion-evidence" id="fusionEvidence"></section>
+      <section class="fusion-totals page-panel" data-page="overview" id="fusionTotals" aria-label="本期新闻总数"></section>
+      <section class="summary-grid page-panel" id="overviewMetricGrid" data-page="overview" aria-label="Executive metrics">
+        <article class="metric executive overview-metric-card">
+          <button class="overview-metric-hit-area" type="button" data-overview-metric="critical" aria-label="查看重大信号明细"></button>
+          <span>重大信号 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看重大信号统计口径">i</button></span>
+          <strong id="metricCandidates">--</strong>
+          <small>入选信息中的 ACRO 高相关事件</small>
+          <span class="metric-drill-icon" aria-hidden="true">→</span>
+        </article>
+        <article class="metric accent executive overview-metric-card">
+          <button class="overview-metric-hit-area" type="button" data-overview-metric="competitor" aria-label="查看竞品动态明细"></button>
+          <span>竞品动态 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看竞品动态统计口径">i</button></span>
+          <strong id="metricDaily">--</strong>
+          <small id="metricCompetitorNote">已确认竞品池</small>
+          <span class="metric-drill-icon" aria-hidden="true">→</span>
+        </article>
+        <article class="metric warn executive overview-metric-card">
+          <button class="overview-metric-hit-area" type="button" data-overview-metric="customer" aria-label="查看账户动态信号明细"></button>
+          <span>客户动态 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看账户动态统计口径">i</button></span>
+          <strong id="metricImmediate">--</strong>
+          <small id="metricCustomerNote">账户目录加载中</small>
+          <span class="metric-drill-icon" aria-hidden="true">→</span>
+        </article>
+        <article class="metric regional executive overview-metric-card">
+          <button class="overview-metric-hit-area" type="button" data-overview-metric="apac" aria-label="查看亚太地区动态明细"></button>
+          <span>亚太地区动态 <button class="metric-label-help" type="button" data-methodology-target="dashboard-counts" aria-label="查看亚太地区动态统计口径">i</button></span>
+          <strong id="metricArchive">--</strong>
+          <small>东亚、东南亚、南亚、大洋洲及明确亚太</small>
+          <span class="metric-drill-icon" aria-hidden="true">→</span>
+        </article>
+      </section>
+
+      <section class="overview-metric-detail page-panel" data-page="overview-metric" aria-label="Overview metric detail">
+        <div class="metric-detail-navigation">
+          <button class="methodology-back-button" id="overviewMetricBackButton" type="button" aria-label="返回总览">
+            <span aria-hidden="true">←</span>
+            <strong>返回总览</strong>
+          </button>
+          <nav class="methodology-breadcrumb" aria-label="当前位置">
+            <span>总览</span>
+            <i aria-hidden="true">/</i>
+            <span>核心指标</span>
+            <i aria-hidden="true">/</i>
+            <strong id="overviewMetricBreadcrumbTitle">当前指标</strong>
+          </nav>
+        </div>
+
+        <div class="overview-metric-hero" id="overviewMetricHero">
+          <div class="overview-metric-copy">
+            <p class="eyebrow">指标明细与原文证据</p>
+            <h2 id="overviewMetricTitle">指标明细</h2>
+            <p id="overviewMetricDescription">正在整理当前筛选范围内的对应信息。</p>
+            <small id="overviewMetricBoundary">同一条信息可能同时进入多个总览指标。</small>
+          </div>
+          <div class="overview-metric-count">
+            <span>当前命中</span>
+            <strong id="overviewMetricCount">--</strong>
+            <small id="overviewMetricScope">读取当前范围</small>
+          </div>
+        </div>
+
+        <div class="overview-metric-facts" id="overviewMetricFacts" aria-label="指标概况"></div>
+
+        <div class="section-head metric-detail-list-head">
+          <div>
+            <p class="eyebrow">对应信息</p>
+            <h2 id="overviewMetricListTitle">这个数字包含哪些信息</h2>
+          </div>
+          <div class="section-actions">
+            <label class="translation-control">
+              <span>分析语言</span>
+              <div class="translation-toggle" aria-label="切换指标明细分析语言">
+                <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
+                <button type="button" data-translation-language="en" title="Show English brief">EN</button>
+              </div>
+            </label>
+            <span id="overviewMetricResultCount" class="timestamp">加载中</span>
+          </div>
+        </div>
+        <div id="overviewMetricList" class="signal-list overview-metric-signal-list" aria-live="polite"></div>
+      </section>
+
+      <section class="decision-band marketing-assistant page-panel" data-page="overview" aria-label="市场情报决策快报">
+        <div class="assistant-brief">
+          <div class="assistant-title-row">
+            <div>
+              <p class="eyebrow">市场情报决策台</p>
+              <h2 id="executiveHeadline">正在整理本期研判线索</h2>
+            </div>
+            <div class="assistant-title-actions">
+              <span class="assistant-mode" id="assistantMode">规则计算 · 可追溯</span>
+              <button class="assistant-rules-link" type="button" data-rule-page-target="methodology">查看判断口径</button>
+            </div>
+          </div>
+          <ol id="executivePoints" class="assistant-action-list"></ol>
+        </div>
+        <aside class="assistant-query-panel">
+          <div class="assistant-query-head">
+            <strong>切换决策视角</strong>
+            <small>本轮公开数据</small>
+          </div>
+          <div class="assistant-prompts" role="tablist" aria-label="决策视角">
+            <button class="active" type="button" role="tab" aria-selected="true" data-assistant-view="action"><span>综合研判</span><small>重点线索</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="account"><span>客户动态</span><small>公开事件</small></button>
+            <button type="button" role="tab" aria-selected="false" data-assistant-view="competitor"><span>竞品动作</span><small>产品对标</small></button>
+          </div>
+          <dl class="assistant-view-basis">
+            <div><dt>当前视角</dt><dd id="assistantViewLabel">综合研判</dd></div>
+            <div><dt>判断依据</dt><dd id="assistantViewBasis">优先指数、相关密度、近期信号与日报门槛</dd></div>
+            <div><dt>结果边界</dt><dd id="assistantViewBoundary">公开信号的相对优先级，不等于已确认客户意向</dd></div>
+          </dl>
+          <p class="assistant-disclosure" id="assistantDisclosure">公开事件与出处；不代表采购关系或已确定任务。</p>
+          <div class="brief-status-grid assistant-status-grid">
+            <div><span>数据更新</span><strong id="updatedAt">加载中</strong></div>
+            <div><span>当前范围</span><strong id="windowDays">30 天</strong></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="customer-priority-section page-panel" data-page="overview" aria-label="Customer account priority matrix">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">监测账户 · 公开事件</p>
+            <h2>客户动态</h2>
+          </div>
+          <div class="section-actions">
+            <span id="customerPriorityScope">当前筛选范围内公开信号相对排序</span>
+            <button class="text-button" id="openJapanAccountsButton" type="button">查看账户目录</button>
+            <button class="text-button" type="button" data-fusion-company-pool>查看公司池</button>
+          </div>
+        </div>
+        <div id="customerPriorityMatrix" class="customer-priority-matrix"></div>
+        <p class="matrix-method-note">当前范围有新闻的监测账户，按新闻数量排列；同一新闻可能涉及多个账户。相关密度与优先指数仍为原有规则指标，不代表成交客户、采购意愿或确定任务。232家日本账户目录另行保留。</p>
+      </section>
+
+      <section class="business-lanes-section page-panel" data-page="overview" aria-label="Supervisor action desk">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">公开事件</p>
+            <h2>竞品、账户与合作线索</h2>
+          </div>
+          <button class="text-button" id="openRelationshipsButton" type="button">查看关系证据</button>
+        </div>
+        <div class="business-lanes">
+          <article class="business-lane lane-competitor">
+            <header><span>竞品对标</span><strong id="competitorLaneCount">--</strong></header>
+            <p>当前范围的产品、技术、扩产与区域事件。</p>
+            <div id="competitorActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-opportunity">
+            <header><span>客户动态</span><strong id="opportunityLaneCount">--</strong></header>
+            <p>监测账户的公开动态，不据此推断采购关系。</p>
+            <div id="opportunityActionList" class="business-lane-list"></div>
+          </article>
+          <article class="business-lane lane-partner">
+            <header><span>合作与生态</span><strong id="partnerLaneCount">--</strong></header>
+            <p>已报道的合作、授权与共同开发，具体内容以原文为准。</p>
+            <div id="partnerActionList" class="business-lane-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="analytics-grid page-panel" data-page="overview" aria-label="Intelligence analytics">
+        <article class="analysis-panel trend-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">趋势</p><h2>信号走势</h2></div>
+            <div id="trendLegend" class="chart-legend"></div>
+          </div>
+          <div id="signalTrendChart" class="trend-chart" aria-label="信号趋势图"></div>
+        </article>
+        <article class="analysis-panel region-panel" id="regionPanel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">地区</p><h2>地区构成</h2></div>
+          </div>
+          <div id="regionBars" class="region-bars"></div>
+        </article>
+        <article class="analysis-panel matrix-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">核心竞品 × 主题</p><h2>竞品动作矩阵</h2></div>
+            <span id="fusionMatrixScope">当前范围 · 点击数字查看对应原文</span>
+          </div>
+          <div id="companyTopicMatrix" class="company-topic-matrix"></div>
+        </article>
+        <article class="analysis-panel category-panel">
+          <div class="section-head compact">
+            <div><p class="eyebrow">结构</p><h2>商业事件构成</h2></div>
+            <span id="sourceCount">-- 条</span>
+          </div>
+          <div id="categoryBars" class="category-bars"></div>
+          <small>每条新闻一个既有主分类；未分类项单列。</small>
+        </article>
+        <article class="analysis-panel fusion-topics-panel"><div class="section-head compact"><div><p class="eyebrow">产品 / 技术领域</p><h2>主题热点</h2></div><span id="fusionTopicScope"></span></div><div id="fusionTopicRows"></div><small>仅统计已监测新闻，不是全网热度或市场规模。公司按已识别的监测公司 ID 去重；主题允许重叠，分类之和可能超过新闻总数；未知项保留。</small></article>
+      </section>
+
       <section class="companies-section page-panel" data-page="companies" id="company-pool" aria-label="Company pool">
+        <div id="fusionCompanyScope"></div>
         <div class="section-head">
           <div>
             <p class="eyebrow">公司池</p>
@@ -415,7 +582,7 @@
       </section>
 
       <section class="company-sources-section page-panel" data-page="company-sources" aria-label="公司数据源档案">
-        <button type="button" id="boardProfileReturn" class="methodology-back-button" hidden>← 返回周期公司档案</button>
+        <button type="button" class="methodology-back-button" id="boardProfileReturn" hidden>← 返回周期公司档案</button>
         <div class="section-head">
           <div>
             <p class="eyebrow">公司来源</p>
@@ -548,6 +715,29 @@
         </div>
       </section>
 
+      <section class="top-signals page-panel" data-page="overview" id="signals">
+        <div class="feed">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">决策证据</p>
+            <h2>最新信息</h2>
+            </div>
+            <div class="section-actions">
+              <label class="translation-control">
+                <span>分析语言</span>
+                <div class="translation-toggle" aria-label="切换新闻分析语言">
+                  <button class="active" type="button" data-translation-language="zh" title="显示中文分析">中</button>
+                  <button type="button" data-translation-language="en" title="Show English brief">EN</button>
+                </div>
+              </label>
+              <button class="text-button" id="openSignalDetailButton" type="button">查看全部情报</button>
+            </div>
+          </div>
+          <div id="topSignalList" class="signal-list compact-signal-list" aria-live="polite"></div>
+          <p id="fusionLatestScope" class="fusion-scope"></p>
+          <button type="button" class="text-button" id="fusionUnknownDates" data-fusion-unknown-dates>发布日期待核对</button>
+        </div>
+      </section>
 
       <section class="signals-detail-section page-panel" data-page="signals" aria-label="Intelligence detail">
         <div class="section-head">
@@ -745,10 +935,10 @@
               </summary>
               <div class="capability-layer-body">
                 <div class="capability-tags" aria-label="LLM 能力状态">
-                  <span class="live">规则业务提要</span><span class="live">ChatGPT Pro 人工批处理</span><span class="planned">跨文章综合</span><span class="planned">证据问答</span><span class="planned">高价值事件自动解释</span><span class="planned">在线 LLM API</span>
+                  <span class="live">中文标题</span><span class="live">事件摘要</span><span class="planned">跨文章综合</span><span class="planned">证据问答</span><span class="planned">高价值事件自动解释</span><span class="planned">在线 LLM API</span>
                 </div>
                 <dl class="capability-facts">
-                  <div><dt>当前实际</dt><dd>日常自动任务使用规则提要，不调用付费 LLM API；重点信息可以导出后由 ChatGPT Pro 人工总结、核验再回填。</dd></div>
+                  <div><dt>当前实际</dt><dd>日常自动任务保留原标题、来源摘录与规则处理记录，不调用付费 LLM API；现有外语标题和摘要由 Codex 离线编辑后静态回填，中文界面直接显示整理后的内容，原文仍可追溯。</dd></div>
                   <div><dt>下一阶段</dt><dd>先围绕聚类后的高价值事件做跨文章综合和“市场部下一步做什么”，避免给全部冷数据付费生成摘要。</dd></div>
                   <div><dt>边界</dt><dd>LLM 只能解释已有证据，不能创建客户关系或商业事实；输出必须保留文章 ID、来源 URL 和人工核验状态。</dd></div>
                 </dl>
@@ -795,7 +985,7 @@
         <div class="methodology-hero methodology-index-only">
           <div>
             <p class="eyebrow">规则与口径中心</p>
-            <h2>18 个运行模块，从原始来源一直追溯到页面数字</h2>
+            <h2>规则与指标，从原始来源追溯到页面数字</h2>
             <p>这里不只放“分数”，也包含去重、公司识别、结构化提取、分层、摘要溯源、统计口径和存储边界。每项都标明是后端实际运行、前端实时计算，还是人工配置。</p>
           </div>
           <div class="methodology-version">
@@ -805,12 +995,26 @@
           </div>
         </div>
 
+        <section class="decision-pipeline methodology-index-only" aria-labelledby="decision-pipeline-title">
+          <header>
+            <div><span>单条信息处理链路</span><h3 id="decision-pipeline-title">从“识别到什么”到“最后去哪里”</h3></div>
+            <p>四层各自回答不同问题，点击任一层查看实际运行口径。</p>
+          </header>
+          <div class="decision-pipeline-steps">
+            <button type="button" data-methodology-target="structured-extraction"><span>01 识别器</span><strong>关键词与词组</strong><small>这条信息具体说了什么？</small></button>
+            <button type="button" data-methodology-target="news-score"><span>02 粗筛器</span><strong>信息筛选分</strong><small>来源、主题和动作值不值得继续看？</small></button>
+            <button type="button" data-methodology-target="acro-relevance"><span>03 业务距离</span><strong>ACRO 相关性分</strong><small>内容与 ACRO 的公司、技术和产品有多近？</small></button>
+            <button type="button" data-methodology-target="daily-admission"><span>04 门控器</span><strong>信息准入与分流</strong><small>进入精选、降级或作为其他资料留存？</small></button>
+          </div>
+          <footer><strong>关键词命中 ≠ 信息分足够 ≠ ACRO 高相关 ≠ 最终入选</strong><span>入选是前三层结果再叠加类型和来源限制后的分流结果，不是第三个分数。</span></footer>
+        </section>
+
         <div class="methodology-layout">
           <div class="methodology-content">
             <section class="metric-family methodology-index-only" aria-labelledby="prepare-metric-family">
               <div class="metric-family-head">
                 <span>01</span>
-                <div><h3 id="prepare-metric-family">数据准备与识别</h3><p>先合并重复记录、确认公司实体，再从标题与摘要中拆出六组业务字段。</p></div>
+                <div><h3 id="prepare-metric-family">数据准备与识别</h3><p>先合并重复记录、确认公司实体，再用关键词与词组拆出六组业务字段。</p></div>
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="deduplication">
@@ -820,7 +1024,7 @@
                   <span>后端实际运行</span><strong>公司实体识别</strong><b>别名表</b><p>用中英日别名与专属来源绑定判定一条信息涉及哪些公司。</p><small>查看误命中边界</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="structured-extraction">
-                  <span>后端实际运行</span><strong>六组结构化提取</strong><b>6 组</b><p>靶点、疗法技术、产品需求、研发阶段、业务动作和活动信号。</p><small>查看全部标签与别名</small>
+                  <span>后端实际运行</span><strong>关键词与词组识别</strong><b>6 组</b><p>将靶点、疗法技术、产品需求、研发阶段、业务动作和活动信号归一为标准标签。</p><small>查看词组、别名与输出字段</small>
                 </button>
               </div>
             </section>
@@ -828,7 +1032,7 @@
             <section class="metric-family methodology-index-only" aria-labelledby="item-metric-family">
               <div class="metric-family-head">
                 <span>02</span>
-                <div><h3 id="item-metric-family">单篇信息判断</h3><p>所有候选记录都可保留；这一层决定优先级、ACRO 业务距离与最终展示分层。</p></div>
+                <div><h3 id="item-metric-family">单篇信息判断</h3><p>信息分负责粗筛，ACRO 相关性负责业务距离，准入规则再决定最终去向。</p></div>
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="news-score">
@@ -838,7 +1042,7 @@
                   <span>后端实际运行</span><strong>ACRO 相关性分</strong><b>0–100</b><p>根据公司角色、靶点、疗法、产品需求和研发阶段计算。</p><small>查看加分项与高中低阈值</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="daily-admission">
-                  <span>后端实际运行</span><strong>日报准入与分层</strong><b>3 阶段</b><p>基础分层后，继续校验 ACRO 相关性、公司/动作证据与专题类型。</p><small>查看即时、日报、归档边界</small>
+                  <span>现行规则已运行</span><strong>信息准入与分流</strong><b>现行 + 影子</b><p>先按真实后台规则分流，再用不改结果的 V1.1 影子规则找出待复核项。</p><small>对比已生效规则与未生效候选</small>
                 </button>
               </div>
             </section>
@@ -852,11 +1056,12 @@
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="event-classification">
                   <span>后端实际运行</span><strong>商业事件分类</strong><b>9 类</b><p>按明确的优先级顺序，将信息归到产品、合作、临床监管等商业事件。</p><small>查看分类顺序与冲突处理</small>
                 </button>
+                <button type="button" class="methodology-summary-card" data-methodology-target="region-classification"><span>共享前端规则</span><strong>地区判读与统计</strong><p>会议会址、业务范围、父子地区与缺失证据。</p><small>查看准入依据、处理进度和逐条记录</small></button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="action-routing">
                   <span>后端实际运行</span><strong>建议动作与负责人</strong><b>8 路由</b><p>按公司角色和业务信号，生成跟进类型、负责团队与优先级。</p><small>查看路由顺序和限制</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="summary-provenance">
-                  <span>规则自动 + 人工复核</span><strong>摘要与证据溯源</strong><b>可追溯</b><p>自动用规则提要；高价值条目可经 ChatGPT Pro 人工批处理后回填。</p><small>查看摘要来源和审核边界</small>
+                  <span>来源摘录 + 精读回填</span><strong>摘要与证据溯源</strong><b>可追溯</b><p>按语言显示已有摘要、来源摘录或缺失提示，不以模板补齐。</p><small>查看摘要来源和核对边界</small>
                 </button>
               </div>
             </section>
@@ -864,17 +1069,17 @@
             <section class="metric-family methodology-index-only" aria-labelledby="account-metric-family">
               <div class="metric-family-head">
                 <span>04</span>
-                <div><h3 id="account-metric-family">公司与账户排序</h3><p>用近 90 天的多条公开信号排序，不代表内部客户关系或成交概率。</p></div>
+                <div><h3 id="account-metric-family">公司与账户排序</h3><p>用当前筛选范围内的多条公开信号排序，不代表内部客户关系或成交概率。</p></div>
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="priority-index">
                   <span>前端实时计算</span><strong>账户优先指数</strong><b>0–99</b><p>综合日报数、高相关数、密度、时效、来源多样性和可验证公开关系。</p><small>查看完整公式与行动阈值</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="relevance-density">
-                  <span>前端实时计算</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司近 90 天所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
+                  <span>前端实时计算</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司当前筛选范围内所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="competitor-matrix">
-                  <span>周期前端计数</span><strong>公司动态与排序</strong><b>周 / 月</b><p>竞品与账户分开，按本期事件记录数量排序。</p><small>查看公司计数与历史范围</small>
+                  <span>人工排名 + 前端计数</span><strong>竞品动作矩阵</strong><b>当前范围</b><p>行按已确认的竞争相关度排序，列为当前数据量最大的 5 类事件。</p><small>查看计数口径与限制</small>
                 </button>
               </div>
             </section>
@@ -886,10 +1091,10 @@
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="trend-counts">
-                  <span>前端实时计算</span><strong>周期发布节奏</strong><b id="methodologyTrendCount">--</b><p>按发布日期计数，各日期相加等于本期事件记录数。</p><small>查看日期与筛选条件</small>
+                  <span>前端实时计算</span><strong>信号走势图例数字</strong><b id="methodologyTrendCount">--</b><p>是当前筛选范围内且可定位到历史日期的信息条数。</p><small>查看时间语义与筛选条件</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="dashboard-counts">
-                  <span>前端实时计算</span><strong>周期概况统计</strong><b id="methodologyScopedCount">--</b><p>事件记录、涉及公司、产品技术与合作动态使用同一筛选。</p><small>查看计数、合并与历史边界</small>
+                  <span>前端实时计算</span><strong>总览四项统计</strong><b id="methodologyScopedCount">--</b><p>重大信号、竞品、账户和亚太都会随当前筛选条件变化。</p><small>查看四项的分子与重叠关系</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="source-health">
                   <span>后端实际运行</span><strong>数据源健康</strong><b id="methodologyHealthySources">--</b><p>区分“请求成功”和“本轮有产出”，零新闻不等于链路中断。</p><small>查看生产、归档、安静、待启用与异常</small>
@@ -916,11 +1121,15 @@
             </section>
 
             <div class="methodology-index-footer methodology-index-only">
-              <div class="methodology-callout"><strong>三个不等于</strong><p>信息筛选分 ≠ ACRO 相关性分 ≠ 公司优先指数。</p></div>
+              <div class="methodology-callout"><strong>四层不等于</strong><p>词组命中 ≠ 信息筛选分 ≠ ACRO 相关性分 ≠ 准入结果；公司优先指数是多条信息聚合后的另一个指标。</p></div>
               <div class="methodology-callout verified"><strong>口径声明</strong><p>公式与执行顺序来自 <code>config/rule_catalog.json</code>；页面动态数字使用当前数据集重新计算。</p></div>
             </div>
 
             <div class="methodology-detail-list" id="methodologyDetailList" hidden>
+              <article class="methodology-detail" id="metric-region-classification" data-methodology-detail="region-classification">
+                <label class="fusion-region-mode">地区依据<select id="fusionRegionMode"><option value="reviewed">原文判读 + 明确线索</option><option value="content">仅标题 / 来源摘录</option></select></label>
+                <div id="regionRulesContent"></div>
+              </article>
               <article class="methodology-detail" id="metric-deduplication" data-methodology-detail="deduplication">
                 <header><div><span>数据准备 · 后端实际运行</span><h3>去重与来源合并</h3></div><b>scripts/run_daily.py</b></header>
                 <p class="methodology-lead">防止同一条新闻被官网、Google News 和新闻稿平台同时抓到后变成多条。去重不删除证据，而是把多个入口合并到一条主记录。</p>
@@ -951,8 +1160,8 @@
               </article>
 
               <article class="methodology-detail" id="metric-structured-extraction" data-methodology-detail="structured-extraction">
-                <header><div><span>数据准备 · 后端实际运行</span><h3>六组结构化提取</h3></div><b id="structuredRuleVersion">规则加载中</b></header>
-                <p class="methodology-lead">系统对标题 + 来源摘要做确定性别名命中，将中英日表述归一到标准标签。它是后续相关性、事件分类和建议动作的共用输入，不是独立的附属页。</p>
+                <header><div><span>数据准备 · 后端实际运行</span><h3>关键词与词组识别</h3></div><b id="structuredRuleVersion">规则加载中</b></header>
+                <p class="methodology-lead">系统对标题 + 来源摘要做确定性别名命中，将中英日表述归一到六组标准字段。它只回答“文本里识别到了什么”：结果会提供给相关性和事件分类，但词组命中本身不等于入选。</p>
                 <div class="structured-rule-summary">
                   <article><span>规则组</span><strong id="structuredGroupCount">--</strong><small>独立业务维度</small></article>
                   <article><span>标准标签</span><strong id="structuredTermCount">--</strong><small>多语言别名归一</small></article>
@@ -1018,14 +1227,37 @@
               </article>
 
               <article class="methodology-detail" id="metric-daily-admission" data-methodology-detail="daily-admission">
-                <header><div><span>单篇信息 · 后端实际运行</span><h3>日报准入与分层</h3></div><b>三阶段校验</b></header>
-                <p class="methodology-lead">第一阶段按信息筛选分和来源类型做基础分层，第二阶段校验 ACRO 相关性与业务证据，第三阶段处理专题类型与仅归档来源。因此“高分”不一定最终进入日报。</p>
-                <div class="admission-flow">
-                  <div><span>1</span><strong>基础分层</strong><p>≥80 即时；≥50 日报；官方/生态/媒体来源 ≥40 可日报；明确动作 ≥45 可日报。</p></div>
-                  <div><span>2</span><strong>ACRO 准入</strong><p>低相关一律归档；即时提醒只有高相关可保留，非高相关降为日报。</p></div>
-                  <div><span>3</span><strong>专题与来源例外</strong><p>未命中公司且缺少动作的中相关信息归档；视频、研究、资助、临床试验及仅归档来源不进新闻日报。</p></div>
-                </div>
-                <div class="methodology-boundary"><strong>解释顺序</strong><p>先展示“信息筛选分”，再展示“ACRO 相关性分”，最后说明“准入结果”。三者不要混用。</p></div>
+                <header><div><span>单篇信息 · 现行规则已运行</span><h3>信息准入与分流</h3></div><b>现行 v1 + 影子 V1.1</b></header>
+                <p class="methodology-lead">准入规则是最后的门控，不是新的评分项。它使用已算好的信息分、ACRO 相关性、专题类型和来源状态，决定记录是入选还是作为其他资料留存。</p>
+                <section class="admission-stage-comparison current" aria-labelledby="current-admission-title">
+                  <header><div><span>现行 v1 · 已生效</span><h4 id="current-admission-title">当前运行结果</h4></div><small>数字来自当前完整数据集</small></header>
+                  <div class="admission-outcomes">
+                    <div><span>全部留存</span><strong id="admissionCurrentTotal">--</strong></div>
+                    <div><span>现行入选</span><strong id="admissionCurrentSelected">--</strong></div>
+                    <div><span>其他留存资料</span><strong id="admissionCurrentOther">--</strong></div>
+                    <div><span>已应用影子变更</span><strong>0</strong></div>
+                  </div>
+                  <div class="admission-flow">
+                    <div><span>1</span><strong>信息分与基础分层</strong><p>≥80 为原即时层；≥50 入选；自有/生态/媒体 ≥40 可入选；命中评分动作 ≥45 可入选。视频、研究、资助和临床试验类型在此处直接归入其他资料。</p></div>
+                    <div><span>2</span><strong>ACRO 相关性门控</strong><p>仅对第 1 步未归档的记录继续判断：低相关改为其他资料；未命中公司且缺少动作的中相关记录也不入选。</p></div>
+                    <div><span>3</span><strong>来源限制</strong><p>前两步通过后，若所有贡献来源均标记为“仅归档 / 观察”，最终仍作为其他资料留存。</p></div>
+                  </div>
+                </section>
+                <section class="admission-stage-comparison shadow" aria-labelledby="shadow-admission-title">
+                  <header><div><span>V1.1 影子规则 · 未生效</span><h4 id="shadow-admission-title">先找候选，不自动改入选</h4></div><button type="button" class="text-button" data-admission-shadow-open="">查看待复核记录 →</button></header>
+                  <div class="admission-outcomes shadow-outcomes">
+                    <div><span>影子待复核</span><strong id="admissionShadowReview">--</strong></div>
+                    <div><span>维持现行结果</span><strong id="admissionShadowRetained">--</strong></div>
+                  </div>
+                  <div class="admission-shadow-reasons" id="admissionShadowReasons" aria-label="V1.1 待复核原因"></div>
+                  <ul class="admission-shadow-rule-list">
+                    <li><strong>抽查复议</strong><span>已有抽查意见为“建议复议”或“需补证/拆分”的当前快照。</span></li>
+                    <li><strong>接近门槛</strong><span>近 90 天、信息分 45–49 且 ACRO 为中高相关，不包含硬性类型与观察来源。</span></li>
+                    <li><strong>提取断点</strong><span>评分词表已命中动作，但结构化词组未输出业务动作，导致相关性过低。</span></li>
+                  </ul>
+                  <p class="admission-candidate-terms"><strong>待验证词组，尚未写入运行配置：</strong>launch 词形变化、co-marketing agreement、engineered / designer protein、Ki-67 assay。</p>
+                </section>
+                <div class="methodology-boundary"><strong>解释顺序</strong><p>先说词组识别结果，再分别展示“信息筛选分”和“ACRO 相关性分”，最后说明“准入结果”。影子候选是复核队列，不是第五个分数，也不改动现行结果。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-event-classification" data-methodology-detail="event-classification">
@@ -1071,25 +1303,25 @@
 
               <article class="methodology-detail" id="metric-summary-provenance" data-methodology-detail="summary-provenance">
                 <header><div><span>业务输出 · 混合工作流</span><h3>摘要与证据溯源</h3></div><b id="summaryStrategyStatus">加载中</b></header>
-                <p class="methodology-lead">默认每轮自动使用可解释规则生成业务提要，不调用付费 LLM API。对真正需要高质量摘要的条目，可导出批次，用 ChatGPT Pro 人工处理并核对原文后回填。</p>
+                <p class="methodology-lead">不调用付费 LLM API。现有外语标题和摘要由 Codex 离线编辑并静态回填；中文界面直接显示整理后的标题与摘要，不在新闻卡片标注处理方式。原标题、来源摘录和原文入口继续保留，旧规则处理记录不再拼装成可见摘要。</p>
                 <div class="admission-flow">
-                  <div><span>1</span><strong>自动规则提要</strong><p>使用公司角色、结构化字段、原始摘要与建议动作组装。</p></div>
-                  <div><span>2</span><strong>ChatGPT Pro 批处理</strong><p>只导出高价值候选，人工提交给 Pro，不在 GitHub Actions 中消耗 API。</p></div>
+                  <div><span>1</span><strong>摘要与语言检查</strong><p>排除重复标题和通用模板，中文、英文分别检查。只有一个语言版本时，不冒充已经翻译另一版本。</p></div>
+                  <div><span>2</span><strong>内容编辑</strong><p>由 Codex 依据现有标题、来源摘录和可用公开证据整理中文，区分事实、计划与观点；不在 GitHub Actions 中调用模型 API。</p></div>
                   <div><span>3</span><strong>核对后回填</strong><p>按稳定 item id 导入，记录 provider、model、时间与审核状态。</p></div>
                 </div>
                 <div class="methodology-example"><span>当前运行状态</span><p id="summaryPipelineDetail">加载中</p></div>
                 <dl class="methodology-rule-list wide">
                   <div><dt>原始证据</dt><dd>来源 URL、来源类型、可引用摘录、相关链接与核验状态</dd></div>
-                  <div><dt>摘要标识</dt><dd>rule_extractive / manual_ai / api_ai 分开展示</dd></div>
+                  <div><dt>页面展示</dt><dd>用户侧统一显示“摘要”，不额外显示翻译、润色或处理工具标签；信息不足时在摘要内容中如实说明。</dd></div>
                   <div><dt>人工导出</dt><dd><code>scripts/export_manual_summary_batch.py</code></dd></div>
-                  <div><dt>人工回填</dt><dd><code>scripts/import_manual_summaries.py</code></dd></div>
+                  <div><dt>静态回填</dt><dd>CSV：<code>scripts/import_manual_summaries.py</code>；带出处的批次：<code>scripts/import_review_batch.py</code>；Codex 编辑批次：<code>scripts/import_codex_translations.py</code></dd></div>
                 </dl>
-                <div class="methodology-boundary"><strong>真实性边界</strong><p>规则提要和 ChatGPT Pro 摘要都不是原始证据。需要用于对外传播、销售跟进或业务结论时，必须打开原文核对。</p></div>
+                <div class="methodology-boundary"><strong>真实性边界</strong><p>摘要不能替代原始证据，也不等于业务或医学专业审阅。对外传播或形成业务结论前，仍需核查原文与适用范围。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-priority-index" data-methodology-detail="priority-index">
                 <header><div><span>公司级 · 前端实时计算</span><h3>账户优先指数</h3></div><b>0–99</b></header>
-                <p class="methodology-lead">把一家公司近 90 天的多条公开信号合成一个跟进顺序分。对信号数和来源数使用 log2，避免“发稿多”的大公司无限占优。</p>
+                <p class="methodology-lead">把一家公司当前筛选范围内的多条公开信号合成一个跟进顺序分。对信号数和来源数使用 log2，避免“发稿多”的大公司无限占优。</p>
                 <div class="methodology-equation"><span>公式</span><strong>min(99, 日报数权重 + 高相关数权重 + 密度权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
                 <dl class="methodology-rule-list wide">
                   <div><dt>进入日报</dt><dd>log2(1 + 日报/即时数) × 6</dd></div>
@@ -1111,8 +1343,8 @@
 
               <article class="methodology-detail" id="metric-relevance-density" data-methodology-detail="relevance-density">
                 <header><div><span>公司级 · 前端实时计算</span><h3>ACRO 相关密度</h3></div><b>0–100%</b></header>
-                <p class="methodology-lead">这是一家公司近 90 天信号的“质量占比”，而不是 ACRO 与该公司的关系强度。</p>
-                <div class="methodology-equation"><span>公式</span><strong>(高相关条数 + 中相关条数 × 0.55) ÷ 近 90 天全部命中条数 × 100%</strong></div>
+                <p class="methodology-lead">这是一家公司当前筛选范围内信号的“质量占比”，而不是 ACRO 与该公司的关系强度。</p>
+                <div class="methodology-equation"><span>公式</span><strong>(高相关条数 + 中相关条数 × 0.55) ÷ 当前筛选范围内全部命中条数 × 100%</strong></div>
                 <div class="density-explain-grid">
                   <div><span>高相关</span><strong>1.00</strong><p>完整计入分子。</p></div>
                   <div><span>中相关</span><strong>0.55</strong><p>按 55% 权重计入。</p></div>
@@ -1124,33 +1356,39 @@
               </article>
 
               <article class="methodology-detail" id="metric-trend-counts" data-methodology-detail="trend-counts">
-                <header><div><span>周期图表 · 前端实时计算</span><h3>周期发布节奏</h3></div><b>事件记录数</b></header>
-                <p class="methodology-lead" id="methodologyTrendExample">正在按当前周期与筛选计算。</p>
-                <div class="methodology-scope-list"><span>总看板近 30 / 90 天，二级页自然周 / 月</span><span>公司</span><span>公司角色</span><span>地区多选</span><span>商业事件</span><span>产品 / 技术主题</span><span>搜索词</span></div>
-                <div class="methodology-boundary"><strong>日期语义</strong><p>使用原始记录的新闻发布日期，不使用评分、采集发现时间或活动日期代替。旧活动日期字段、Sitemap 发现日期、临床试验更新日期没有独立发布时间证据时单列待核对。未知与未来日期不计入。总看板近 30 / 90 天分别每 3 / 7 天分组；周月看板每天一柱，各柱形计数之和等于当前范围事件记录总数。按日本时间日历。</p></div>
+                <header><div><span>图表 · 前端实时计算</span><h3>信号走势图例数字</h3></div><b>条数</b></header>
+                <p class="methodology-lead" id="methodologyTrendExample">正在按当前筛选和观察周期计算。</p>
+                <div class="methodology-scope-list">
+                  <span>观察周期</span><span>推送分层</span><span>ACRO 相关性</span><span>信息类型</span><span>公司</span><span>公司角色</span><span>地区</span><span>商业事件</span><span>搜索词</span>
+                </div>
+                <div class="methodology-boundary"><strong>日期语义</strong><p>融合版总看板按可信新闻发布日期统计，以当前快照日期为截止日；未知发布日期、Sitemap 发现日期和未经核实的活动日期不计入总看板与折线图，但原始记录没有删除。走势图例合计等于当前筛选结果条数。该数字不是公司数或来源数。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-dashboard-counts" data-methodology-detail="dashboard-counts">
-                <header><div><span>总览 · 同一周期与筛选</span><h3>周期概况统计口径</h3></div><b>动态计数</b></header>
+                <header><div><span>总览 · 当前筛选</span><h3>总览四项统计口径</h3></div><b>动态计数</b></header>
                 <div class="dashboard-definition-grid">
-                  <div><strong>事件记录</strong><p>本期去重事件记录数量，不以日报分层或评分截取。</p></div>
-                  <div><strong>涉及公司</strong><p>这些记录命中的监测公司 ID 的去重数量，不含未识别公司；不等于已配置公司数。</p></div>
-                  <div><strong>产品与技术动态</strong><p>同一结果中，主商业事件为 product_platform 或 target_therapy 的记录数量。</p></div>
-                  <div><strong>合作与交易动态</strong><p>同一结果中，主商业事件为 partnership_deal 的记录数量。</p></div>
+                  <div><strong>重大信号</strong><p>当前结果中，属于日报/即时且 ACRO 高相关的信息条数。</p></div>
+                  <div><strong>竞品动态</strong><p>当前结果中，命中竞品角色的信息条数。</p></div>
+                  <div><strong>账户动态信号</strong><p>当前结果中，命中客户/潜在账户的信息条数。</p></div>
+                  <div><strong>亚太地区动态</strong><p>当前结果中，涉及日本、中国及港澳台、韩国、东南亚、南亚、大洋洲或明确亚太的新闻条数。泛称亚洲、全球与未知不计入。</p></div>
                 </div>
-                <div class="methodology-boundary"><strong>总看板四项指标</strong><p>总看板默认近 30 天，可切换近 90 天。重大信号：合并记录中至少一条原始记录属于日报 / 即时提醒且 ACRO 高相关；竞品 / 账户动态：事件命中对应角色公司；亚太：原文命中日本、中国、韩国或东南亚任一地区。同一事件可以进入多个指标，不能将四项相加。点击数字进入同范围子集，不额外切换天数。</p></div>
-                <div class="methodology-boundary"><strong>合并与边界</strong><p>相同链接、日期和标题，或同日同标题（规范化后至少 35 字符）且命中同一公司时保守合并，保留多个原文链接。跨语言和相近标题未进行语义合并。产品与合作是事件总数的子集，不是四项相加；公司数的单位不同。地区与主题可多命中，其分项之和不一定等于事件总数。</p></div>
-                <div class="methodology-boundary"><strong>历史范围</strong><p>历史周 / 月查询使用已保留的事件明细；旧 history 文件只有统计。此前的数据仅为来源返回的回溯样本。没有结果不等于市场没有事件，页面明确提示未覆盖或部分覆盖。所有指标、列表与下钻详情沿用同一筛选；公司“已保留历史”是明确标注的跨周期视图。</p></div>
+                <div class="methodology-boundary"><strong>注意</strong><p>四项可能重叠：一条日本竞品的高相关日报信号，会同时计入“重大信号”“竞品动态”和“亚太地区动态”。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-competitor-matrix" data-methodology-detail="competitor-matrix">
-                <header><div><span>公司级 · 本期前端计数</span><h3>公司动态与排序</h3></div><b>当前周期</b></header>
-                <p class="methodology-lead">总看板保留竞品动作矩阵，行按已有竞争相关性排列，列为当前记录最多的五类商业事件；“全部”包含其余分类，各数字可查看对应原文。时间和筛选跟随总看板，不再固定为另一套 90 天。账户矩阵按当前事件数量排列。二级周 / 月看板则用分角色公司列表呈现，只显示本期有记录的公司。</p>
+                <header><div><span>公司级 · 人工排名 + 前端计数</span><h3>竞品动作矩阵</h3></div><b>当前筛选范围内</b></header>
+                <p class="methodology-lead">每个单元格是某家竞品在某类商业事件上的全部命中信息条数。点击数字可回到原始证据。</p>
                 <div class="methodology-rule-columns">
-                  <dl class="methodology-rule-list"><div><dt>排序</dt><dd>本期事件记录数量降序；相同数量时沿用已配置的竞争相关顺序，再按公司 ID 排列。</dd></div><div><dt>数量</dt><dd>该公司 ID 命中的本期事件记录数量，同一事件可以同时命中多家公司。</dd></div></dl>
-                  <dl class="methodology-rule-list"><div><dt>主要变化</dt><dd>该公司本期最常见的前两类商业事件及其数量。</dd></div><div><dt>公司档案</dt><dd>点击查看同一范围的事件，或明确切换至全部已保留历史；可继续查看原文证据和数据源档案。</dd></div></dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>行</dt><dd>竞品公司，按已确认的竞争相关程度排序</dd></div>
+                    <div><dt>列</dt><dd>9 类商业事件中，按当前范围的全部竞品命中数动态选取前 5 类</dd></div>
+                  </dl>
+                  <dl class="methodology-rule-list">
+                    <div><dt>数字</dt><dd>当前筛选范围内当前公司 × 事件类型的信息条数</dd></div>
+                    <div><dt>颜色</dt><dd>相对当前矩阵最大单元格的深浅，不是风险或优先级分</dd></div>
+                  </dl>
                 </div>
-                <div class="methodology-boundary"><strong>限制</strong><p>记录数量不是市场份额、成交概率或竞争强度；监测账户不代表已确认客户。旧 90 天优先指数与相关密度公式仍保留在规则中心，但不参与新版总览排序，不生成负责人或销售任务。</p></div>
+                <div class="methodology-boundary"><strong>限制</strong><p>公开发布频率高的公司可能更显眼；矩阵用于发现集中动作，不能直接推断市场份额。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-source-health" data-methodology-detail="source-health">
@@ -1183,7 +1421,6 @@
               </article>
 
               <article class="methodology-detail" id="metric-data-storage" data-methodology-detail="data-storage">
-                <div class="methodology-boundary"><strong>事件明细保留</strong><p id="storageEventArchive">随既有构建保留公开事件明细；旧每日 history 文件仍只是统计快照。</p></div>
                 <header><div><span>系统架构 · 当前实际实现</span><h3>数据存储与共享边界</h3></div><b>无数据库</b></header>
                 <p class="methodology-lead">当前 MVP 使用“Git 版本化 JSON + GitHub Pages 静态读取”。GitHub Actions 定时抓取后写入仓库，页面读取已发布的快照。它可以免费共享和回溯，但不具备多人实时写入、权限隔离和复杂查询能力。</p>
                 <div class="storage-profile-grid">
@@ -1230,7 +1467,7 @@
           <div class="decided"><b>已确定</b><strong>准入标准</strong><span>高分即时提醒、中分进入日报、低分归档；低 ACRO 相关内容不进入主管视图。</span></div>
           <div class="decided"><b>已确定</b><strong>公开边界</strong><span>GitHub Pages 只展示公开数据；销售表中的内部关系状态不发布。</span></div>
           <div class="next"><b>下一阶段</b><strong>协作闭环</strong><span>确认谁负责核验、分派和关闭信号，并决定是否接入多人共享数据库。</span></div>
-          <div class="decided"><b>已确定</b><strong>AI 摘要策略</strong><span>自动链路继续使用可解释规则；高价值条目用 ChatGPT Pro 人工批处理、核对后回填，不接付费 LLM API。</span></div>
+          <div class="decided"><b>已确定</b><strong>摘要整理策略</strong><span>自动链路继续采集并保留原始证据；现有内容由 Codex 离线编辑后静态回填，不接付费 LLM API，新闻卡片不标注处理方式。</span></div>
           <div class="next"><b>下一阶段</b><strong>销售系统连接</strong><span>决定账户跟进结果进入 CRM、飞书多维表格，还是先保留平台内轻量状态。</span></div>
         </div>
       </section>
@@ -1243,6 +1480,8 @@
           </div>
           <span class="timestamp" id="healthGeneratedAt">加载中</span>
         </div>
+        <p id="healthStatus" class="fusion-scope"></p>
+        <div id="fusionSourceStages" class="fusion-source-stages"></div>
 
         <div class="health-summary-grid">
           <article>
@@ -1311,9 +1550,16 @@
       </section>
     </main>
 
-    <script src="./embedded-data.js?v=20260908home1"></script>
-    <script src="./overview-model.js?v=20260908home1"></script>
-    <script src="./overview.js?v=20260908home1"></script>
-    <script src="./app.js?v=20260908home1"></script>
+    <script src="./embedded-data.js?v=20260908logos1"></script>
+    <script src="./region-review-batch.js?v=20260909full1"></script>
+    <script src="./region-reviews.js?v=20260909full1"></script>
+    <script src="./region-model.js?v=20260909ai1"></script>
+    <script src="./overview-model.js?v=20260908fusion1"></script>
+    <script src="./admission-model.js?v=20260909audit1"></script>
+    <script src="./admission-reviews.js?v=20260909audit1"></script>
+    <script src="./overview.js?v=20260908fusion1"></script>
+    <script src="./admission-ui.js?v=20260909audit1"></script>
+    <script src="./fusion.js?v=20260908fusion1"></script>
+    <script src="./app.js?v=20260908fusion1"></script>
   </body>
 </html>
