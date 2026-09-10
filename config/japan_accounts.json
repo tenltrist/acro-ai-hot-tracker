@@ -124,7 +124,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-324f7442b8"
     },
     {
       "id": "jp-account-54ca689473",
@@ -136,7 +137,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-54ca689473"
     },
     {
       "id": "jp-account-63f53c21c8",
@@ -148,7 +150,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-63f53c21c8"
     },
     {
       "id": "jp-account-ae1a1021bc",
@@ -160,7 +163,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ae1a1021bc"
     },
     {
       "id": "jp-account-72f9c5a24e",
@@ -172,7 +176,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-72f9c5a24e"
     },
     {
       "id": "jp-account-aa3144452c",
@@ -184,7 +189,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-aa3144452c"
     },
     {
       "id": "jp-account-f8f06d704c",
@@ -208,7 +214,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-2ce6c7db6e"
     },
     {
       "id": "jp-account-5b0c0ec2df",
@@ -220,7 +227,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-5b0c0ec2df"
     },
     {
       "id": "jp-account-cf424f64aa",
@@ -232,7 +240,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-cf424f64aa"
     },
     {
       "id": "jp-account-c650577a6a",
@@ -244,7 +253,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c650577a6a"
     },
     {
       "id": "jp-account-6dab90a831",
@@ -256,7 +266,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6dab90a831"
     },
     {
       "id": "jp-account-c5157269bd",
@@ -268,7 +279,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c5157269bd"
     },
     {
       "id": "jp-account-c86fbb6c15",
@@ -280,7 +292,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c86fbb6c15"
     },
     {
       "id": "jp-account-f337b90f17",
@@ -292,7 +305,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f337b90f17"
     },
     {
       "id": "jp-account-7fa6ec09ca",
@@ -316,7 +330,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b20e945eeb"
     },
     {
       "id": "jp-account-563d2f24a6",
@@ -340,7 +355,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a12c785fad"
     },
     {
       "id": "jp-account-10b00ed948",
@@ -352,7 +368,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-10b00ed948"
     },
     {
       "id": "jp-account-4fc763105c",
@@ -364,7 +381,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4fc763105c"
     },
     {
       "id": "jp-account-8b8cb96ec0",
@@ -376,7 +394,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-8b8cb96ec0"
     },
     {
       "id": "jp-account-f5f910562c",
@@ -388,7 +407,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f5f910562c"
     },
     {
       "id": "jp-account-e89b9cb0cb",
@@ -400,7 +420,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e89b9cb0cb"
     },
     {
       "id": "jp-account-94253d104c",
@@ -412,7 +433,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-94253d104c"
     },
     {
       "id": "jp-account-e206ffe8a3",
@@ -424,7 +446,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e206ffe8a3"
     },
     {
       "id": "jp-account-1e11516472",
@@ -436,7 +459,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1e11516472"
     },
     {
       "id": "jp-account-a124ac0899",
@@ -448,7 +472,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a124ac0899"
     },
     {
       "id": "jp-account-2cdf50fde2",
@@ -460,7 +485,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-2cdf50fde2"
     },
     {
       "id": "jp-account-0dbd1432b4",
@@ -472,7 +498,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0dbd1432b4"
     },
     {
       "id": "jp-account-61c79b29af",
@@ -484,7 +511,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-61c79b29af"
     },
     {
       "id": "jp-account-a1ca845874",
@@ -496,7 +524,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a1ca845874"
     },
     {
       "id": "jp-account-0dc55bba53",
@@ -508,7 +537,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0dc55bba53"
     },
     {
       "id": "jp-account-ee0fb464d4",
@@ -520,7 +550,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ee0fb464d4"
     },
     {
       "id": "jp-account-a673380561",
@@ -532,7 +563,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a673380561"
     },
     {
       "id": "jp-account-6a58fd2de4",
@@ -558,7 +590,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c4dc098988"
     },
     {
       "id": "jp-account-2657da80ec",
@@ -570,7 +603,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-2657da80ec"
     },
     {
       "id": "jp-account-b545c3bc04",
@@ -594,7 +628,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1f1e9086b1"
     },
     {
       "id": "jp-account-f8a529c84f",
@@ -606,7 +641,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f8a529c84f"
     },
     {
       "id": "jp-account-74345b8045",
@@ -630,7 +666,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-bfdbb4bb5e"
     },
     {
       "id": "jp-account-d2d7cb526a",
@@ -642,7 +679,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d2d7cb526a"
     },
     {
       "id": "jp-account-dca7b498df",
@@ -666,7 +704,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b53ab02330"
     },
     {
       "id": "jp-account-59b02b650b",
@@ -678,7 +717,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-59b02b650b"
     },
     {
       "id": "jp-account-6a6cb04128",
@@ -690,7 +730,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6a6cb04128"
     },
     {
       "id": "jp-account-d7e83fe1eb",
@@ -702,7 +743,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d7e83fe1eb"
     },
     {
       "id": "jp-account-1360bcc174",
@@ -714,7 +756,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1360bcc174"
     },
     {
       "id": "jp-account-07016af5f2",
@@ -726,7 +769,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-07016af5f2"
     },
     {
       "id": "jp-account-a675183dfe",
@@ -738,7 +782,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a675183dfe"
     },
     {
       "id": "jp-account-f2413f8eb0",
@@ -750,7 +795,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f2413f8eb0"
     },
     {
       "id": "jp-account-377665c624",
@@ -762,7 +808,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-377665c624"
     },
     {
       "id": "jp-account-e1c8247ed3",
@@ -774,7 +821,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e1c8247ed3"
     },
     {
       "id": "jp-account-10385b1f3a",
@@ -786,7 +834,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-10385b1f3a"
     },
     {
       "id": "jp-account-e850d31d2e",
@@ -798,7 +847,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e850d31d2e"
     },
     {
       "id": "jp-account-06059bdb35",
@@ -810,7 +860,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-06059bdb35"
     },
     {
       "id": "jp-account-69ba09d5d0",
@@ -822,7 +873,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-69ba09d5d0"
     },
     {
       "id": "jp-account-c95a7e2db2",
@@ -834,7 +886,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c95a7e2db2"
     },
     {
       "id": "jp-account-0bf29bb3ae",
@@ -846,7 +899,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0bf29bb3ae"
     },
     {
       "id": "jp-account-c58eb6a732",
@@ -858,7 +912,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c58eb6a732"
     },
     {
       "id": "jp-account-175e8ff25f",
@@ -870,7 +925,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-175e8ff25f"
     },
     {
       "id": "jp-account-21d78ceab1",
@@ -882,7 +938,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-21d78ceab1"
     },
     {
       "id": "jp-account-463b0e7a71",
@@ -894,7 +951,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-463b0e7a71"
     },
     {
       "id": "jp-account-c3d53da910",
@@ -906,7 +964,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c3d53da910"
     },
     {
       "id": "jp-account-dfaa967558",
@@ -918,7 +977,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-dfaa967558"
     },
     {
       "id": "jp-account-67e0d4a918",
@@ -930,7 +990,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-67e0d4a918"
     },
     {
       "id": "jp-account-0ff9d137a3",
@@ -942,7 +1003,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0ff9d137a3"
     },
     {
       "id": "jp-account-c499f535d7",
@@ -954,7 +1016,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c499f535d7"
     },
     {
       "id": "jp-account-c9f60a9e61",
@@ -966,7 +1029,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c9f60a9e61"
     },
     {
       "id": "jp-account-d6c8f38831",
@@ -978,7 +1042,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d6c8f38831"
     },
     {
       "id": "jp-account-4f9acbfd72",
@@ -990,7 +1055,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4f9acbfd72"
     },
     {
       "id": "jp-account-c058ffe5bc",
@@ -1002,7 +1068,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c058ffe5bc"
     },
     {
       "id": "jp-account-7e3077f744",
@@ -1028,7 +1095,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c38f81d669"
     },
     {
       "id": "jp-account-bfea1e18b5",
@@ -1040,7 +1108,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-bfea1e18b5"
     },
     {
       "id": "jp-account-f7e56c9e25",
@@ -1052,7 +1121,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f7e56c9e25"
     },
     {
       "id": "jp-account-aded8faee8",
@@ -1064,7 +1134,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-aded8faee8"
     },
     {
       "id": "jp-account-51eefdced6",
@@ -1076,7 +1147,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-51eefdced6"
     },
     {
       "id": "jp-account-e7b0299ed8",
@@ -1088,7 +1160,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e7b0299ed8"
     },
     {
       "id": "jp-account-653343242b",
@@ -1100,7 +1173,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-653343242b"
     },
     {
       "id": "jp-account-2fe9615ec8",
@@ -1112,7 +1186,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-2fe9615ec8"
     },
     {
       "id": "jp-account-94c64433e5",
@@ -1124,7 +1199,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-94c64433e5"
     },
     {
       "id": "jp-account-112ee72d51",
@@ -1150,7 +1226,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-95fb6e7a3e"
     },
     {
       "id": "jp-account-c8329f9af2",
@@ -1162,7 +1239,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c8329f9af2"
     },
     {
       "id": "jp-account-c1f919cd32",
@@ -1174,7 +1252,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c1f919cd32"
     },
     {
       "id": "jp-account-986e88d87d",
@@ -1186,7 +1265,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-986e88d87d"
     },
     {
       "id": "jp-account-a2a74b9ae1",
@@ -1198,7 +1278,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a2a74b9ae1"
     },
     {
       "id": "jp-account-89cf2527b9",
@@ -1210,7 +1291,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-89cf2527b9"
     },
     {
       "id": "jp-account-42ee40d664",
@@ -1222,7 +1304,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-42ee40d664"
     },
     {
       "id": "jp-account-6d8acd26d1",
@@ -1234,7 +1317,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6d8acd26d1"
     },
     {
       "id": "jp-account-09e7b3b1e5",
@@ -1246,7 +1330,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-09e7b3b1e5"
     },
     {
       "id": "jp-account-6960049811",
@@ -1272,7 +1357,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-695949a6e3"
     },
     {
       "id": "jp-account-394afb6d3c",
@@ -1284,7 +1370,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-394afb6d3c"
     },
     {
       "id": "jp-account-db93d72a11",
@@ -1296,7 +1383,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-db93d72a11"
     },
     {
       "id": "jp-account-b0a7ae9493",
@@ -1308,7 +1396,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b0a7ae9493"
     },
     {
       "id": "jp-account-25d203720f",
@@ -1320,7 +1409,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-25d203720f"
     },
     {
       "id": "jp-account-b636075fad",
@@ -1332,7 +1422,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b636075fad"
     },
     {
       "id": "jp-account-45f9e80ad6",
@@ -1344,7 +1435,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-45f9e80ad6"
     },
     {
       "id": "jp-account-a564955a0b",
@@ -1356,7 +1448,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a564955a0b"
     },
     {
       "id": "jp-account-4a22594788",
@@ -1368,7 +1461,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4a22594788"
     },
     {
       "id": "jp-account-2ea5721fd8",
@@ -1380,7 +1474,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-2ea5721fd8"
     },
     {
       "id": "jp-account-409eb17dbd",
@@ -1392,7 +1487,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-409eb17dbd"
     },
     {
       "id": "jp-account-cb33322760",
@@ -1404,7 +1500,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-cb33322760"
     },
     {
       "id": "jp-account-15db7e5fc7",
@@ -1416,7 +1513,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-15db7e5fc7"
     },
     {
       "id": "jp-account-744f00c918",
@@ -1428,7 +1526,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-744f00c918"
     },
     {
       "id": "jp-account-232de87411",
@@ -1440,7 +1539,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-232de87411"
     },
     {
       "id": "jp-account-5af0188316",
@@ -1452,7 +1552,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-5af0188316"
     },
     {
       "id": "jp-account-b40ed05c1d",
@@ -1464,7 +1565,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b40ed05c1d"
     },
     {
       "id": "jp-account-ffbcd4ec9c",
@@ -1476,7 +1578,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ffbcd4ec9c"
     },
     {
       "id": "jp-account-49ec741afd",
@@ -1488,7 +1591,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-49ec741afd"
     },
     {
       "id": "jp-account-b0be772022",
@@ -1500,7 +1604,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b0be772022"
     },
     {
       "id": "jp-account-5fbf9b50e2",
@@ -1512,7 +1617,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-5fbf9b50e2"
     },
     {
       "id": "jp-account-cbb3de9017",
@@ -1524,7 +1630,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-cbb3de9017"
     },
     {
       "id": "jp-account-cc5ce125f2",
@@ -1536,7 +1643,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-cc5ce125f2"
     },
     {
       "id": "jp-account-d875fe9dc3",
@@ -1548,7 +1656,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d875fe9dc3"
     },
     {
       "id": "jp-account-0f65681216",
@@ -1560,7 +1669,8 @@
       "organization_label": "公共与国家研究机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0f65681216"
     },
     {
       "id": "jp-account-8d7332a9bf",
@@ -1572,7 +1682,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-8d7332a9bf"
     },
     {
       "id": "jp-account-627b3fe782",
@@ -1584,7 +1695,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-627b3fe782"
     },
     {
       "id": "jp-account-d041984a28",
@@ -1596,7 +1708,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d041984a28"
     },
     {
       "id": "jp-account-c55bc61029",
@@ -1608,7 +1721,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c55bc61029"
     },
     {
       "id": "jp-account-a6ac3f2289",
@@ -1620,7 +1734,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a6ac3f2289"
     },
     {
       "id": "jp-account-893f420d9c",
@@ -1632,7 +1747,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-893f420d9c"
     },
     {
       "id": "jp-account-536c52593d",
@@ -1644,7 +1760,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-536c52593d"
     },
     {
       "id": "jp-account-8a93599892",
@@ -1656,7 +1773,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-8a93599892"
     },
     {
       "id": "jp-account-cdc6eb361a",
@@ -1668,7 +1786,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-cdc6eb361a"
     },
     {
       "id": "jp-account-4cb42490d0",
@@ -1680,7 +1799,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4cb42490d0"
     },
     {
       "id": "jp-account-ede6ffd1f8",
@@ -1692,7 +1812,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ede6ffd1f8"
     },
     {
       "id": "jp-account-f2494a5ca1",
@@ -1704,7 +1825,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f2494a5ca1"
     },
     {
       "id": "jp-account-a36c7ce9ed",
@@ -1716,7 +1838,8 @@
       "organization_label": "公共与国家研究机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a36c7ce9ed"
     },
     {
       "id": "jp-account-4bf58f9152",
@@ -1728,7 +1851,8 @@
       "organization_label": "公共与国家研究机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4bf58f9152"
     },
     {
       "id": "jp-account-84684a5048",
@@ -1740,7 +1864,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-84684a5048"
     },
     {
       "id": "jp-account-c796588854",
@@ -1752,7 +1877,8 @@
       "organization_label": "公共与国家研究机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c796588854"
     },
     {
       "id": "jp-account-b3cd56011b",
@@ -1764,7 +1890,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b3cd56011b"
     },
     {
       "id": "jp-account-f1372a5b56",
@@ -1776,7 +1903,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f1372a5b56"
     },
     {
       "id": "jp-account-504b94916d",
@@ -1788,7 +1916,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-504b94916d"
     },
     {
       "id": "jp-account-e5226000a2",
@@ -1800,7 +1929,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e5226000a2"
     },
     {
       "id": "jp-account-a8cdb36abd",
@@ -1824,7 +1954,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a7d265c37d"
     },
     {
       "id": "jp-account-5b82a1d0a6",
@@ -1836,7 +1967,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-5b82a1d0a6"
     },
     {
       "id": "jp-account-4f0230889e",
@@ -1848,7 +1980,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4f0230889e"
     },
     {
       "id": "jp-account-decfbd6fbe",
@@ -1860,7 +1993,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-decfbd6fbe"
     },
     {
       "id": "jp-account-09810019e5",
@@ -1872,7 +2006,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-09810019e5"
     },
     {
       "id": "jp-account-894704175a",
@@ -1884,7 +2019,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-894704175a"
     },
     {
       "id": "jp-account-7242eff580",
@@ -1896,7 +2032,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-7242eff580"
     },
     {
       "id": "jp-account-7d0ac870a3",
@@ -1908,7 +2045,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-7d0ac870a3"
     },
     {
       "id": "jp-account-9e54b04a01",
@@ -1920,7 +2058,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-9e54b04a01"
     },
     {
       "id": "jp-account-5d25d5ee02",
@@ -1932,7 +2071,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-5d25d5ee02"
     },
     {
       "id": "jp-account-cdce9f6eec",
@@ -1944,7 +2084,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-cdce9f6eec"
     },
     {
       "id": "jp-account-f95219d645",
@@ -1970,7 +2111,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c684d2d966"
     },
     {
       "id": "jp-account-4753704e5c",
@@ -1982,7 +2124,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4753704e5c"
     },
     {
       "id": "jp-account-ecf460e341",
@@ -1994,7 +2137,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ecf460e341"
     },
     {
       "id": "jp-account-ec001393dc",
@@ -2006,7 +2150,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ec001393dc"
     },
     {
       "id": "jp-account-1284cba8e2",
@@ -2018,7 +2163,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1284cba8e2"
     },
     {
       "id": "jp-account-4c3aff9be4",
@@ -2030,7 +2176,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4c3aff9be4"
     },
     {
       "id": "jp-account-c38f83fb6f",
@@ -2054,7 +2201,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-7cc417a531"
     },
     {
       "id": "jp-account-83c4c55495",
@@ -2066,7 +2214,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-83c4c55495"
     },
     {
       "id": "jp-account-0392e3e1b0",
@@ -2078,7 +2227,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0392e3e1b0"
     },
     {
       "id": "jp-account-55559b1396",
@@ -2115,7 +2265,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-11a8e6e75c"
     },
     {
       "id": "jp-account-769271ab4e",
@@ -2127,7 +2278,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-769271ab4e"
     },
     {
       "id": "jp-account-6aaa0575ea",
@@ -2139,7 +2291,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6aaa0575ea"
     },
     {
       "id": "jp-account-d1e8b4c327",
@@ -2151,7 +2304,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d1e8b4c327"
     },
     {
       "id": "jp-account-a9361ebc61",
@@ -2187,7 +2341,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b20a414309"
     },
     {
       "id": "jp-account-ab998596c1",
@@ -2199,7 +2354,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ab998596c1"
     },
     {
       "id": "jp-account-296272f23d",
@@ -2211,7 +2367,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-296272f23d"
     },
     {
       "id": "jp-account-1ca05c7e6c",
@@ -2223,7 +2380,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1ca05c7e6c"
     },
     {
       "id": "jp-account-49028a1099",
@@ -2235,7 +2393,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-49028a1099"
     },
     {
       "id": "jp-account-c129b2787e",
@@ -2247,7 +2406,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c129b2787e"
     },
     {
       "id": "jp-account-c9358b0d5a",
@@ -2259,7 +2419,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c9358b0d5a"
     },
     {
       "id": "jp-account-6d36ead3ba",
@@ -2271,7 +2432,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6d36ead3ba"
     },
     {
       "id": "jp-account-5a2fd30e94",
@@ -2283,7 +2445,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-5a2fd30e94"
     },
     {
       "id": "jp-account-301b1fee9a",
@@ -2295,7 +2458,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-301b1fee9a"
     },
     {
       "id": "jp-account-e320be2b37",
@@ -2307,7 +2471,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e320be2b37"
     },
     {
       "id": "jp-account-de1050e00e",
@@ -2319,7 +2484,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-de1050e00e"
     },
     {
       "id": "jp-account-37ecee98ba",
@@ -2331,7 +2497,8 @@
       "organization_label": "公共与国家研究机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-37ecee98ba"
     },
     {
       "id": "jp-account-75dc94e8d2",
@@ -2343,7 +2510,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-75dc94e8d2"
     },
     {
       "id": "jp-account-77da7896f5",
@@ -2355,7 +2523,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-77da7896f5"
     },
     {
       "id": "jp-account-b85a56b014",
@@ -2367,7 +2536,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b85a56b014"
     },
     {
       "id": "jp-account-15f44561d5",
@@ -2379,7 +2549,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-15f44561d5"
     },
     {
       "id": "jp-account-ca26c3d427",
@@ -2391,7 +2562,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-ca26c3d427"
     },
     {
       "id": "jp-account-e43075249d",
@@ -2403,7 +2575,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e43075249d"
     },
     {
       "id": "jp-account-1b1ee0a348",
@@ -2415,7 +2588,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1b1ee0a348"
     },
     {
       "id": "jp-account-bd853a389b",
@@ -2427,7 +2601,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-bd853a389b"
     },
     {
       "id": "jp-account-6a26504bee",
@@ -2439,7 +2614,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6a26504bee"
     },
     {
       "id": "jp-account-a599425260",
@@ -2451,7 +2627,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a599425260"
     },
     {
       "id": "jp-account-e1f2b6c9f0",
@@ -2477,7 +2654,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-d365207924"
     },
     {
       "id": "jp-account-9c33d97c70",
@@ -2489,7 +2667,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-9c33d97c70"
     },
     {
       "id": "jp-account-301375f963",
@@ -2513,7 +2692,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-97c09555b3"
     },
     {
       "id": "jp-account-6c68f8c6c2",
@@ -2525,7 +2705,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6c68f8c6c2"
     },
     {
       "id": "jp-account-a7f78344ee",
@@ -2537,7 +2718,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-a7f78344ee"
     },
     {
       "id": "jp-account-6e69574ac1",
@@ -2549,7 +2731,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-6e69574ac1"
     },
     {
       "id": "jp-account-9fea972291",
@@ -2561,7 +2744,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-9fea972291"
     },
     {
       "id": "jp-account-004f3bc520",
@@ -2573,7 +2757,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-004f3bc520"
     },
     {
       "id": "jp-account-da2d105ffc",
@@ -2585,7 +2770,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-da2d105ffc"
     },
     {
       "id": "jp-account-83e92c2552",
@@ -2611,7 +2797,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-7b52e64cae"
     },
     {
       "id": "jp-account-1cbaff0997",
@@ -2623,7 +2810,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-1cbaff0997"
     },
     {
       "id": "jp-account-231673cf89",
@@ -2635,7 +2823,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-231673cf89"
     },
     {
       "id": "jp-account-9b7d61c965",
@@ -2647,7 +2836,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-9b7d61c965"
     },
     {
       "id": "jp-account-12413680b5",
@@ -2659,7 +2849,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-12413680b5"
     },
     {
       "id": "jp-account-c414857eb7",
@@ -2671,7 +2862,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-c414857eb7"
     },
     {
       "id": "jp-account-9b8c04cdef",
@@ -2683,7 +2875,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-9b8c04cdef"
     },
     {
       "id": "jp-account-0d19c45e01",
@@ -2695,7 +2888,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-0d19c45e01"
     },
     {
       "id": "jp-account-bbff458fc5",
@@ -2707,7 +2901,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-bbff458fc5"
     },
     {
       "id": "jp-account-b106ac4c30",
@@ -2719,7 +2914,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-b106ac4c30"
     },
     {
       "id": "jp-account-941cfdb027",
@@ -2731,7 +2927,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-941cfdb027"
     },
     {
       "id": "jp-account-4c631a2532",
@@ -2743,7 +2940,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4c631a2532"
     },
     {
       "id": "jp-account-2b828eb44e",
@@ -2755,7 +2953,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-2b828eb44e"
     },
     {
       "id": "jp-account-9fedac31e5",
@@ -2767,7 +2966,8 @@
       "organization_label": "医院与临床机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-9fedac31e5"
     },
     {
       "id": "jp-account-f1a4568cb1",
@@ -2779,7 +2979,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-f1a4568cb1"
     },
     {
       "id": "jp-account-42f641c079",
@@ -2791,7 +2992,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-42f641c079"
     },
     {
       "id": "jp-account-21c5982ff4",
@@ -2803,7 +3005,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-21c5982ff4"
     },
     {
       "id": "jp-account-4583a50c7c",
@@ -2815,7 +3018,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-4583a50c7c"
     },
     {
       "id": "jp-account-e75502ecea",
@@ -2827,7 +3031,8 @@
       "organization_label": "其他产业机构",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-e75502ecea"
     },
     {
       "id": "jp-account-49b7551004",
@@ -2839,7 +3044,8 @@
       "organization_label": "制药与生命科学",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-49b7551004"
     },
     {
       "id": "jp-account-16ae2202e9",
@@ -2851,7 +3057,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-16ae2202e9"
     },
     {
       "id": "jp-account-56fbff0ddd",
@@ -2863,7 +3070,8 @@
       "organization_label": "高校与学术研究",
       "account_stage": "market_account",
       "account_stage_label": "市场账户",
-      "identity_status": "listed"
+      "identity_status": "listed",
+      "logo_id": "jp-account-56fbff0ddd"
     }
   ]
 }

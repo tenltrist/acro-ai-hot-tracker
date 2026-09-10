@@ -27,6 +27,23 @@ async function navigate(page, target) {
       page.on('pageerror', e => errors.push(e.message));
       await page.route(/^https?:/, route => route.abort());
       await page.goto(pathToFileURL(path.join(root, 'web/index.html')).href);
+      const accountLogoCoverage = await page.evaluate(() => {
+        const accounts = window.AIHOT_JAPAN_ACCOUNTS.accounts;
+        const logos = window.AIHOT_COMPANY_LOGOS;
+        const audits = window.AIHOT_COMPANY_LOGO_AUDIT;
+        return {
+          total: accounts.length,
+          available: accounts.filter(account => account.logo_id && logos[account.logo_id]).length,
+          auditedWithoutAsset: accounts.filter(account => !account.logo_id && audits[account.id]).length,
+          unaccounted: accounts.filter(account => !logos[account.logo_id] && !audits[account.id]).length,
+        };
+      });
+      assert.deepEqual(accountLogoCoverage, {
+        total: 232,
+        available: 220,
+        auditedWithoutAsset: 12,
+        unaccounted: 0,
+      });
       await page.waitForFunction(() => document.querySelectorAll('#companyDockList [data-company-logo]').length === 34);
       assert.equal(await page.locator('#companyDockList [data-company-logo-image]').count(), 30);
       assert.equal(await page.locator('#companyDockList [data-logo-status="placeholder"]').count(), 4);
@@ -34,8 +51,11 @@ async function navigate(page, target) {
       assert.equal(await page.locator('#companyDockList .company-bilingual-name > small').count(), 34);
       assert.equal(await page.locator('#companyTopicMatrix [data-company-logo]').count(), 11);
       assert.equal(await page.locator('#companyTopicMatrix .company-bilingual-name > small').count(), 11);
-      assert.equal(await page.locator('#customerPriorityMatrix [data-company-logo-image]').count(), 12);
-      assert.ok(await page.locator('#customerPriorityMatrix [data-logo-status="placeholder"]').count() > 0);
+      const priorityLogos = await page.locator('#customerPriorityMatrix [data-company-logo]').count();
+      const priorityImages = await page.locator('#customerPriorityMatrix [data-company-logo-image]').count();
+      const priorityPlaceholders = await page.locator('#customerPriorityMatrix [data-logo-status="placeholder"]').count();
+      assert.equal(priorityImages + priorityPlaceholders, priorityLogos);
+      assert.ok(priorityImages >= 12);
       const decoded = await page.evaluate(async () => {
         const failed = [];
         for (const [id, logo] of Object.entries(window.AIHOT_COMPANY_LOGOS)) {
@@ -82,8 +102,10 @@ async function navigate(page, target) {
       assert.equal(await page.locator('#japanCustomerList [data-company-logo]').count(), customerRows);
       assert.equal(await page.locator('#japanCustomerList .company-name-en').count(), customerRows);
       assert.equal(await page.locator('#japanCustomerList .company-bilingual-name > small').count(), customerRows);
-      assert.ok(await page.locator('#japanCustomerList [data-company-logo-image]').count() > 0);
-      assert.ok(await page.locator('#japanCustomerList [data-logo-status="placeholder"]').count() > 0);
+      const directoryImages = await page.locator('#japanCustomerList [data-company-logo-image]').count();
+      const directoryPlaceholders = await page.locator('#japanCustomerList [data-logo-status="placeholder"]').count();
+      assert.equal(directoryImages + directoryPlaceholders, customerRows);
+      assert.ok(directoryImages > 0);
       if (width === 1440) {
         await page.locator('#japanCustomerList').screenshot({ path: path.join(output, 'customer-directory.png') });
       }

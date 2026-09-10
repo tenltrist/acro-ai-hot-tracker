@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-09-10",
+  "applied": true,
+  "eligible": 6,
+  "inspected": 6,
+  "resolved": 6,
+  "official_website_logo": 6,
+  "official_site_icon": 0,
+  "unresolved": 0,
+  "inventory": {
+    "total_accounts": 232,
+    "accounts_with_verified_asset": 220,
+    "accounts_without_graphic_asset": 12,
+    "unresolved_reason_counts": {
+      "official_domain_unavailable_current": 5,
+      "official_site_text_only_identity": 3,
+      "official_identity_conflict": 1,
+      "organization_merged_legacy_identity": 1,
+      "official_parent_page_only": 2
+    }
+  },
+  "records": [
+    {
+      "id": "jp-account-695949a6e3",
+      "name": "Kobe University",
+      "status": "available",
+      "reason": "official_site_not_found",
+      "search_result_count": 2,
+      "source_kind": "official_website_logo",
+      "website": "https://www.kobe-u.ac.jp/en/",
+      "source_url": "https://www.kobe-u.ac.jp/static/img/logo_mv.svg",
+      "identity_score": 168
+    },
+    {
+      "id": "jp-account-cbb3de9017",
+      "name": "MeSCue-Janusys Inc",
+      "status": "available",
+      "reason": "official_site_not_found",
+      "search_result_count": 1,
+      "source_kind": "official_website_logo",
+      "website": "https://www.mescuejanusys2.com/en/",
+      "source_url": "https://www.mescuejanusys2.com/wp-content/uploads/logo.svg",
+      "identity_score": 172
+    },
+    {
+      "id": "jp-account-6a26504bee",
+      "name": "Shimane University",
+      "status": "available",
+      "reason": "official_site_not_found",
+      "search_result_count": 1,
+      "source_kind": "official_website_logo",
+      "website": "https://www.shimane-u.ac.jp/",
+      "source_url": "https://www.shimane-u.ac.jp/_themes/ud/common/images/footer_logo.svg",
+      "identity_score": 168
+    },
+    {
+      "id": "jp-account-c499f535d7",
+      "name": "Innovacell Co Ltd",
+      "status": "available",
+      "reason": "official_site_not_found",
+      "search_result_count": 1,
+      "source_kind": "official_website_logo",
+      "website": "https://innovacell.com/innovacell-publishes-sponsored-articles-by-leading-physicians-regarding-fecal-incontinence-treatment/?lang=en",
+      "source_url": "https://innovacell.com/_cms/wp-content/themes/innovacell-theme/assets/img/common/logo_white.svg",
+      "identity_score": 164
+    },
+    {
+      "id": "jp-account-d875fe9dc3",
+      "name": "Metcela Inc",
+      "status": "available",
+      "reason": "official_site_not_found",
+      "search_result_count": 4,
+      "source_kind": "official_website_logo",
+      "website": "https://www.metcela.com/pipeline-jp/",
+      "source_url": "https://www.metcela.com/wp-content/themes/metcela2025/img/logo_horizontal_white.svg",
+      "identity_score": 125
+    },
+    {
+      "id": "jp-account-1284cba8e2",
+      "name": "ORBIO Corp",
+      "status": "available",
+      "reason": "official_site_not_found",
+      "search_result_count": 8,
+      "source_kind": "official_website_logo",
+      "website": "https://orbio.jp/en/",
+      "source_url": "https://orbio.jp/en/wp-content/themes/orbioen/img/common/orbio_logo_wh.svg",
+      "identity_score": 164
+    }
+  ]
+}

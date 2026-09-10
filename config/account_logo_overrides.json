@@ -1,0 +1,367 @@
+{
+  "updated_at": "2026-09-10",
+  "usage_note": "仅保存已由官网自身内容或权威机构对外链接复核的官方站点候选；最终仍需通过官网身份与图像安全校验。",
+  "accounts": {
+    "jp-account-54ca689473": {
+      "account_name": "Acerna Technologies Co Ltd",
+      "website": "https://www.acernatec.com/en",
+      "logo_url": "https://static.wixstatic.com/media/0bb01f_e4929cb81df449498969dcb40a661968~mv2.png/v1/fill/w_128,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E9%AB%98%E7%94%BB%E8%B3%AA%E3%83%86%E3%82%B9%E3%83%882_PNG.png",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网页标题与公司英文名一致；Logo 直链由官网渲染后页眉图像核实。"
+    },
+    "jp-account-cf424f64aa": {
+      "account_name": "Arktus Therapeutics Inc",
+      "website": "https://arktustx.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网首页列明株式会社 Arktus Therapeutics 的名称与所在地。"
+    },
+    "jp-account-c650577a6a": {
+      "account_name": "Arrowsmith Inc",
+      "website": "https://arrowsmith.co.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网 About Us 列明 Arrowsmith Inc、成立时间与日本地址。"
+    },
+    "jp-account-7fa6ec09ca": {
+      "account_name": "BFACT Co Ltd",
+      "website": "https://bfact.jp/english/",
+      "no_graphic_logo": true,
+      "verified_at": "2026-09-10",
+      "verification_note": "官网英文页列明 BFACT Co., Ltd.；渲染后页面仅有文字字标，未见独立图形 Logo。"
+    },
+    "jp-account-a12c785fad": {
+      "account_name": "Bio-Thera Clinic",
+      "website": "https://www.bio-c.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网首页列明 Bio-Thera Clinic 的诊疗信息。"
+    },
+    "jp-account-10b00ed948": {
+      "account_name": "Biomimetics Sympathies Inc",
+      "website": "https://www.bm-s.biz/en/about/company/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网英文公司页列明 Biomimetics Sympathies Inc. 的基本信息。"
+    },
+    "jp-account-e89b9cb0cb": {
+      "account_name": "Celaid Therapeutics Inc",
+      "website": "https://celaidtx.com/en/about/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网 About 页列明 Celaid Therapeutics Inc. 的公司信息。"
+    },
+    "jp-account-61c79b29af": {
+      "account_name": "Cellusion Inc",
+      "website": "https://cellusion.jp/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网英文首页展示 Cellusion 公司身份与再生医疗业务。"
+    },
+    "jp-account-0dc55bba53": {
+      "account_name": "Change Cure",
+      "website": "https://www.change-cure.com/change-cure-%E6%97%A5%E6%9C%AC%E3%82%B5%E3%82%A4%E3%83%88",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网日文页展示 Change Cure 名称与业务介绍。"
+    },
+    "jp-account-c4dc098988": {
+      "account_name": "Cloverna Inc",
+      "website": "https://www.cloverna.com/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网英文首页展示 Cloverna 公司身份与 RNA 药物开发业务。"
+    },
+    "jp-account-f8f06d704c": {
+      "account_name": "AnexAPep Inc",
+      "website": "https://anexapep.co.jp/",
+      "evidence_page": "https://area34.smp.ne.jp/area/card/5697/j0TPhd/M?S=mbnal0pgs0k",
+      "unresolved_reason": "official_domain_unavailable_current",
+      "verified_at": "2026-09-10",
+      "verification_note": "日本生物产业协会企业目录曾登记 anexapep.co.jp 为公司网址；本轮核验时域名已无法解析，未从第三方目录截取 Logo。"
+    },
+    "jp-account-563d2f24a6": {
+      "account_name": "Bio Palette Co Ltd",
+      "website": "https://www.biopalette.co.jp/about/",
+      "unresolved_reason": "official_domain_unavailable_current",
+      "verified_at": "2026-09-10",
+      "verification_note": "已定位原官网 About 页面；本轮核验时官网域名无法正常解析，不能取得可验证的品牌资产。"
+    },
+    "jp-account-b545c3bc04": {
+      "account_name": "CURED Inc.",
+      "website": "https://www.cured-inc.net/",
+      "no_graphic_logo": true,
+      "verified_at": "2026-09-10",
+      "verification_note": "官网首页展示 CURED 名称、再生医疗研发业务与日本联系信息；浏览器渲染后仅见文字名称，未见独立图形 Logo。"
+    },
+    "jp-account-74345b8045": {
+      "account_name": "Cytlimic Inc",
+      "website": "http://www.cytlimic.com/",
+      "unresolved_reason": "official_domain_unavailable_current",
+      "verified_at": "2026-09-10",
+      "verification_note": "已定位 Cytlimic 历史官网域名；本轮核验时域名无法解析，未以历史合作方 Logo 替代。"
+    },
+    "jp-account-dca7b498df": {
+      "account_name": "Editpep",
+      "website": "https://www.editpep.bio/about",
+      "unresolved_reason": "official_identity_conflict",
+      "verified_at": "2026-09-10",
+      "verification_note": "同名官网显示主体位于美国加州，与日本账户记录不一致；在主体关系澄清前不绑定该 Logo。"
+    },
+    "jp-account-6a6cb04128": {
+      "account_name": "EverMed Inc",
+      "website": "https://evermed.jp/ja/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网日文页展示 EVerMed 品牌、公司业务与日本主体信息。"
+    },
+    "jp-account-d7e83fe1eb": {
+      "account_name": "Exorphia Co Ltd",
+      "website": "https://exorphia.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网首页展示 EXORPHIA 名称及外泌体相关研发业务。"
+    },
+    "jp-account-463b0e7a71": {
+      "account_name": "I'rom Group Co Ltd",
+      "website": "https://www.iromgroup.co.jp/corporate/about/",
+      "verified_at": "2026-09-10",
+      "verification_note": "集团官网公司概要列明 I'rom Group 主体与日本地址。"
+    },
+    "jp-account-dfaa967558": {
+      "account_name": "iHeart Japan Corp",
+      "website": "https://www.iheartjapan.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网首页展示 iHeart Japan 品牌及心脏再生医疗业务。"
+    },
+    "jp-account-c9f60a9e61": {
+      "account_name": "Interprotein Corp",
+      "website": "http://www.interprotein.com/",
+      "logo_url": "http://www.interprotein.com/jp/images/iprogo_664_123.jpg",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网当前仅通过 HTTP 提供页面；浏览器渲染确认页眉图像为 Interprotein 官方字标。"
+    },
+    "jp-account-d6c8f38831": {
+      "account_name": "iXgene Inc",
+      "website": "https://www.ixgene.inc/",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网首页展示 iXgene 品牌与基因治疗相关公司信息。"
+    },
+    "jp-account-986e88d87d": {
+      "account_name": "Kanazawa University Hospital",
+      "website": "https://web.hosp.kanazawa-u.ac.jp/",
+      "logo_url": "https://web.hosp.kanazawa-u.ac.jp/common/img/h1.svg",
+      "verified_at": "2026-09-10",
+      "verification_note": "金泽大学附属医院官网首页与机构名称一致；浏览器渲染确认 h1.svg 为医院页眉字标。"
+    },
+    "jp-account-a2a74b9ae1": {
+      "account_name": "Kaneka Corp",
+      "website": "https://www.kaneka.co.jp/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Kaneka 官方英文首页展示公司品牌与全球业务。"
+    },
+    "jp-account-6d8acd26d1": {
+      "account_name": "Kidswell Bio Corp",
+      "website": "https://www.kidswellbio.com/",
+      "logo_url": "https://www.kidswellbio.com/Portals/0/images/common/logo.png",
+      "verified_at": "2026-09-10",
+      "verification_note": "Kidswell Bio 官方日文首页展示公司品牌与生物医药业务；浏览器渲染确认页眉 logo.png 为现用日文字标。"
+    },
+    "jp-account-db93d72a11": {
+      "account_name": "Koshikai Non-Profit Medical Corp",
+      "website": "https://j-immunother.com/english/about/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Seta Clinic Group 官网 About 页明确列明 KOSHIKAI, Non-Profit Medical Corporation。"
+    },
+    "jp-account-b636075fad": {
+      "account_name": "Kubota Pharmaceutical Holding",
+      "website": "https://www.kubotaholdings.co.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Kubota Pharmaceutical Holdings 官网展示公司品牌与眼科药物研发业务。"
+    },
+    "jp-account-15db7e5fc7": {
+      "account_name": "Linqmed Inc",
+      "website": "https://linqmed.co.jp/company/profile/",
+      "verified_at": "2026-09-10",
+      "verification_note": "LinqMed 官网公司概要列明公司主体与日本地址。"
+    },
+    "jp-account-744f00c918": {
+      "account_name": "Logomix, Inc",
+      "website": "https://logomix.bio/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Logomix 官网公司信息列明 Logomix Biotechnology, Inc. 与 Geno-Writing 业务。"
+    },
+    "jp-account-232de87411": {
+      "account_name": "LTT Bio-Pharma Co Ltd",
+      "website": "https://www.ltt.co.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "LTT Bio-Pharma 官网展示公司品牌与药物开发业务。"
+    },
+    "jp-account-b0be772022": {
+      "account_name": "Medipreneur Co Ltd",
+      "website": "https://medipreneur-jp.com/company.html",
+      "verified_at": "2026-09-10",
+      "verification_note": "Medipreneur 官网公司页列明公司主体、代表与日本地址。"
+    },
+    "jp-account-cbb3de9017": {
+      "account_name": "MeSCue-Janusys Inc",
+      "website": "https://www.mescuejanusys2.com/en/",
+      "logo_url": "https://www.mescuejanusys2.com/wp-content/uploads/logo.svg",
+      "background": "dark",
+      "verified_at": "2026-09-10",
+      "verification_note": "官网英文首页展示 MeSCue-Janusys 品牌及核酸药物递送业务；浏览器渲染确认 logo.svg 为页眉 Logo。"
+    },
+    "jp-account-cc5ce125f2": {
+      "account_name": "Metabologenomics Inc",
+      "website": "https://metagen.co.jp/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "J-Startup 将 Metabologenomics, Inc. 对应到 metagen.co.jp；官网展示 Metagen 品牌及肠道设计业务。"
+    },
+    "jp-account-0f65681216": {
+      "account_name": "Ministry of Economy, Trade and Industry, Japan",
+      "website": "https://www.meti.go.jp/english/aboutmeti/",
+      "verified_at": "2026-09-10",
+      "verification_note": "日本经济产业省官方英文站 About METI 页面。"
+    },
+    "jp-account-c55bc61029": {
+      "account_name": "Modalis Therapeutics Corp",
+      "website": "https://modalistx.com/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Modalis Therapeutics 官网英文首页展示公司品牌与基因调控疗法业务。"
+    },
+    "jp-account-e5226000a2": {
+      "account_name": "Neo-Precision Therapeutics Co Ltd",
+      "website": "https://neopt.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "NPT 官网明确展示 Neo-Precision Therapeutics 名称及现用 NPT 品牌。"
+    },
+    "jp-account-a8cdb36abd": {
+      "account_name": "Nexuspiral Inc",
+      "website": "https://www.nexuspiral.com/",
+      "unresolved_reason": "official_domain_unavailable_current",
+      "verified_at": "2026-09-10",
+      "verification_note": "已定位 NexusPiral 对外登记域名；本轮在浏览器与 DNS 层均无法解析，未使用第三方资料中的图片。"
+    },
+    "jp-account-decfbd6fbe": {
+      "account_name": "Nippon Medical School Hospital",
+      "website": "https://www.nms.ac.jp/hosp/",
+      "logo_url": "https://www.nms.ac.jp/library/hosp/share/he_logo.png",
+      "verified_at": "2026-09-10",
+      "verification_note": "日本医科大学付属医院官方首页与机构名称一致；浏览器渲染确认 he_logo.png 为医院页眉 Logo。"
+    },
+    "jp-account-9e54b04a01": {
+      "account_name": "Oligogen Inc",
+      "website": "https://oligogen.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Oligogen 官网展示公司品牌及神经再生医疗业务。"
+    },
+    "jp-account-c38f83fb6f": {
+      "account_name": "Osaka City University",
+      "website": "https://www.omu.ac.jp/en/",
+      "evidence_page": "https://www.omu.ac.jp/en/about/history/",
+      "unresolved_reason": "organization_merged_legacy_identity",
+      "verified_at": "2026-09-10",
+      "verification_note": "大阪市立大学已于 2022 年与大阪府立大学合并为大阪公立大学；保留历史账户名称，不将大阪大学或继任机构 Logo 冒充原机构 Logo。"
+    },
+    "jp-account-55559b1396": {
+      "account_name": "PeptiAID Inc",
+      "website": "https://www.peptidream.com/en/company/profile/",
+      "evidence_page": "https://www.kishida.co.jp/english/news/000653.html",
+      "unresolved_reason": "official_parent_page_only",
+      "verified_at": "2026-09-10",
+      "verification_note": "PeptiDream 与 Kishida Chemical 官网均确认 PeptiAID 主体；未找到 PeptiAID 独立官网品牌资产，不借用股东 Logo。"
+    },
+    "jp-account-769271ab4e": {
+      "account_name": "Perseus Proteomics Inc",
+      "website": "https://www.ppmx.com/",
+      "logo_url": "https://www.ppmx.com/Portals/0/images/common/logo.png",
+      "verified_at": "2026-09-10",
+      "verification_note": "Perseus Proteomics 官网展示 PPMX 品牌与抗体药物开发业务；浏览器渲染确认 logo.png 为页眉 Logo。"
+    },
+    "jp-account-d1e8b4c327": {
+      "account_name": "PhotoQ3 Inc",
+      "website": "https://photoq3.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "PhotoQ3 官网展示公司品牌及光医学相关业务。"
+    },
+    "jp-account-a9361ebc61": {
+      "account_name": "PrimRNA Inc",
+      "website": "https://www.nanomrna.co.jp/company/group/",
+      "unresolved_reason": "official_parent_page_only",
+      "verified_at": "2026-09-10",
+      "verification_note": "NANO MRNA 官网公司集团页确认 PrimRNA 为其 100% 子公司；未发现 PrimRNA 独立品牌资产，不借用母公司 Logo。"
+    },
+    "jp-account-fb53d1ee9f": {
+      "account_name": "Protein Immuno-Engineering Laboratories Inc",
+      "website": "http://www.pi-bio.com/",
+      "evidence_page": "https://www.jba.or.jp/en/member/venture/",
+      "unresolved_reason": "official_domain_unavailable_current",
+      "verified_at": "2026-09-10",
+      "verification_note": "行业名录登记公司及原官网 pi-bio.com；本轮核验时域名无法解析，未从第三方名录取图。"
+    },
+    "jp-account-ab998596c1": {
+      "account_name": "Rainbow Inc",
+      "website": "https://rainbowinc.co.jp/about/",
+      "verified_at": "2026-09-10",
+      "verification_note": "RAINBOW 官网公司页列明主体信息与再生医疗业务。"
+    },
+    "jp-account-296272f23d": {
+      "account_name": "Rebirthel Co Ltd",
+      "website": "https://www.rebirthel.jp/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Rebirthel 官网展示公司品牌与细胞治疗相关研发业务。"
+    },
+    "jp-account-1ca05c7e6c": {
+      "account_name": "Red Arrow Therapeutics Co Ltd",
+      "website": "https://redarrowtx.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Red Arrow Therapeutics 官网展示公司品牌与药物递送业务。"
+    },
+    "jp-account-6d36ead3ba": {
+      "account_name": "Regene4T Inc",
+      "website": "https://www.regene4t.co.jp/",
+      "logo_url": "https://static.wixstatic.com/media/8893d7_f010f38312b54bda9b43ca298940866a~mv2.jpg/v1/fill/w_84,h_80,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Regene4T%E3%83%AD%E3%82%B4.jpg",
+      "verified_at": "2026-09-10",
+      "verification_note": "Regene4T 官网首页展示公司名称与再生医疗业务；浏览器渲染确认页眉中的 Regene4T Logo 图像。"
+    },
+    "jp-account-e320be2b37": {
+      "account_name": "Restore Vision Co Ltd",
+      "website": "https://restore-vis.com/our-team/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Restore Vision 官网团队页展示公司品牌与视觉恢复相关研发业务。"
+    },
+    "jp-account-301375f963": {
+      "account_name": "STAND Therapeutics",
+      "website": "https://www.stand-therapeutics.com/",
+      "no_graphic_logo": true,
+      "verified_at": "2026-09-10",
+      "verification_note": "STAND Therapeutics 官网展示公司身份与细胞内抗体业务；浏览器渲染后仅见文字名称，未见独立图形 Logo。"
+    },
+    "jp-account-97c09555b3": {
+      "account_name": "Stem Cell & Device Laboratory Inc",
+      "website": "https://scad-kyoto.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "SCAD 官网展示 Stem Cell & Device Laboratory 公司身份与干细胞业务。"
+    },
+    "jp-account-9fea972291": {
+      "account_name": "Sysmex Corp",
+      "website": "https://www.sysmex.co.jp/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "Sysmex 官方英文首页展示公司品牌与诊断业务。"
+    },
+    "jp-account-9b7d61c965": {
+      "account_name": "The Tokyo Metropolitan Institute of Medical Science",
+      "website": "https://www.igakuken.or.jp/english/",
+      "verified_at": "2026-09-10",
+      "verification_note": "东京都医学综合研究所官方英文站展示机构名称与研究领域。"
+    },
+    "jp-account-12413680b5": {
+      "account_name": "TNAX Biopharma Corp",
+      "website": "https://tnaxbio.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "TNAX Biopharma 官网展示公司品牌与抗体药物研发业务。"
+    },
+    "jp-account-4c631a2532": {
+      "account_name": "Two Cells Co Ltd",
+      "website": "https://www.twocells.com/",
+      "verified_at": "2026-09-10",
+      "verification_note": "TWOCELLS 官网展示公司品牌与软骨再生业务。"
+    },
+    "jp-account-9fedac31e5": {
+      "account_name": "University of Fukui Hospital",
+      "website": "https://www.hosp.u-fukui.ac.jp/en/",
+      "verified_at": "2026-09-10",
+      "verification_note": "福井大学医学部附属医院官方英文首页与机构名称一致。"
+    }
+  }
+}

@@ -35,7 +35,10 @@ def load_company_logos() -> dict:
         return {}
     manifest = json.loads(COMPANY_LOGOS_PATH.read_text(encoding="utf-8"))
     logos = {}
-    for company_id, record in manifest.get("companies", {}).items():
+    records = {}
+    records.update(manifest.get("companies", {}))
+    records.update(manifest.get("accounts", {}))
+    for company_id, record in records.items():
         asset = record.get("asset")
         if not asset:
             continue
@@ -50,8 +53,22 @@ def load_company_logos() -> dict:
             "website": record["website"],
             "source_url": record["source_url"],
             "background": record.get("background", "light"),
+            "source_kind": record.get("source_kind", "official_website_logo"),
+            "status": record.get("status", "available"),
         }
     return logos
+
+
+def load_company_logo_audit() -> dict:
+    if not COMPANY_LOGOS_PATH.exists():
+        return {}
+    manifest = json.loads(COMPANY_LOGOS_PATH.read_text(encoding="utf-8"))
+    fields = ("status", "reason", "note", "website", "evidence_page", "checked_at", "verification_note")
+    return {
+        account_id: {field: record[field] for field in fields if record.get(field)}
+        for account_id, record in manifest.get("accounts", {}).items()
+        if record.get("status") == "unresolved"
+    }
 
 
 def main() -> int:
@@ -122,6 +139,7 @@ def main() -> int:
     }
     storage_profile_payload = json.dumps(storage_profile, ensure_ascii=False, indent=2)
     logos_payload = json.dumps(load_company_logos(), ensure_ascii=False)
+    logo_audit_payload = json.dumps(load_company_logo_audit(), ensure_ascii=False)
     current_ids = {item["id"] for item in payload_data.get("items", [])}
     # Current items already exist in the embedded payload; embed only retained older items.
     archive_payload = json.dumps({**archive, "items": [item for item in archive["items"] if item["id"] not in current_ids]}, ensure_ascii=False, separators=(",", ":"))
@@ -134,6 +152,7 @@ def main() -> int:
         f"window.AIHOT_COMPANY_RELATIONSHIPS = {relationships_payload};\n"
         f"window.AIHOT_JAPAN_ACCOUNTS = {japan_accounts_payload};\n"
         f"window.AIHOT_COMPANY_LOGOS = {logos_payload};\n"
+        f"window.AIHOT_COMPANY_LOGO_AUDIT = {logo_audit_payload};\n"
         f"window.AIHOT_EVENT_ARCHIVE = {archive_payload};\n"
     )
     EMBEDDED_DATA_PATH.write_text(embedded, encoding="utf-8")

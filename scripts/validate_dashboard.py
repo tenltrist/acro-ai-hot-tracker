@@ -27,7 +27,11 @@ def validate_japan_accounts(errors: list[str]) -> int:
         payload = json.load(handle)
     accounts = payload.get("accounts", [])
     with COMPANY_LOGOS_PATH.open("r", encoding="utf-8") as handle:
-        logo_records = json.load(handle).get("companies", {})
+        logo_manifest = json.load(handle)
+    logo_records = {
+        **logo_manifest.get("companies", {}),
+        **logo_manifest.get("accounts", {}),
+    }
     ids = [account.get("id") for account in accounts]
     names = [str(account.get("name", "")).casefold().strip() for account in accounts]
     if len(ids) != len(set(ids)):
@@ -54,7 +58,10 @@ def validate_japan_accounts(errors: list[str]) -> int:
         if account.get("account_stage") == "public_relationship" and not account.get("public_evidence"):
             errors.append(f"{account_id}: public relationship is missing evidence")
         logo_id = account.get("logo_id")
-        if logo_id and not logo_records.get(logo_id, {}).get("asset"):
+        if logo_id and not (
+            logo_records.get(logo_id, {}).get("status") == "available"
+            and logo_records.get(logo_id, {}).get("asset")
+        ):
             errors.append(f"{account_id}: logo_id {logo_id} has no verified logo asset")
         forbidden = {"acro", "acro_flag", "internal_status", "internal_relationship"} & set(account)
         if forbidden:

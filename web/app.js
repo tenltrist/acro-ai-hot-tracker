@@ -2372,8 +2372,13 @@ function companyLogoMarkup(company, size = "compact") {
   const name = compactCompanyName(company);
   const logoId = company.logo_id || company.id;
   const logo = window.AIHOT_COMPANY_LOGOS?.[logoId];
+  const logoAudit = window.AIHOT_COMPANY_LOGO_AUDIT?.[logoId];
   const initials = name.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "").slice(0, 2).toUpperCase();
-  return `<span class="company-logo company-logo--${size}${logo?.background === "dark" ? " company-logo--dark" : ""}${logo?.src ? "" : " company-logo--placeholder"}" data-company-logo="${escapeAttr(company.id)}" data-logo-id="${escapeAttr(logoId)}" data-logo-status="${logo?.src ? "official" : "placeholder"}" title="${escapeAttr(name)}${logo?.src ? " · 已核实官方标识" : " · 暂无已核实官方 Logo，显示英文首字母占位"}" aria-hidden="true">
+  const sourceLabel = logo?.source_kind === "official_site_icon" ? "已核实官网站点图标" : "已核实官网 Logo";
+  const placeholderLabel = logoAudit?.note
+    ? `已核验：${logoAudit.note} 显示英文首字母占位。`
+    : "尚未找到可唯一核实的官网 Logo，显示英文首字母占位。";
+  return `<span class="company-logo company-logo--${size}${logo?.background === "dark" ? " company-logo--dark" : ""}${logo?.src ? "" : " company-logo--placeholder"}" data-company-logo="${escapeAttr(company.id)}" data-logo-id="${escapeAttr(logoId)}" data-logo-status="${logo?.src ? "official" : "placeholder"}" data-logo-kind="${escapeAttr(logo?.source_kind || logoAudit?.reason || "placeholder")}" title="${escapeAttr(name)} · ${escapeAttr(logo?.src ? sourceLabel : placeholderLabel)}" aria-hidden="true">
     <span class="company-logo-fallback">${escapeHtml(initials)}</span>
     ${logo?.src ? `<img src="${escapeAttr(logo.src)}" alt="" loading="lazy" decoding="async" data-company-logo-image />` : ""}
   </span>`;
