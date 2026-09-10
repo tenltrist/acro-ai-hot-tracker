@@ -115,7 +115,7 @@ def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
         f"≥{admission['immediate']} 为原即时层；≥{admission['daily']} 入选；自有/生态/媒体 ≥{admission['owned_ecosystem_media']} 可入选；命中评分动作 ≥{admission['business_action']} 可入选。",
         f"log2(1 + 日报/即时数) × {priority['selected_log_weight']}",
         f"log2(1 + 高相关数) × {priority['high_relevance_log_weight']}",
-        f"密度 × {priority['density_weight']}",
+        f"ACRO 关注内容占比</dt><dd>占比 × {priority['density_weight']}",
         f"中相关</span><strong>{density['medium']:.2f}</strong>",
     ]
     for fragment in public_fragments:

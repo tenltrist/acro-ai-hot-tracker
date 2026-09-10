@@ -336,7 +336,7 @@
           </div>
           <dl class="assistant-view-basis">
             <div><dt>当前视角</dt><dd id="assistantViewLabel">综合研判</dd></div>
-            <div><dt>判断依据</dt><dd id="assistantViewBasis">优先指数、相关密度、近期信号与日报门槛</dd></div>
+            <div><dt>判断依据</dt><dd id="assistantViewBasis">公开信号参考指数、ACRO 关注内容占比、近期信号与准入状态</dd></div>
             <div><dt>结果边界</dt><dd id="assistantViewBoundary">公开信号的相对优先级，不等于已确认客户意向</dd></div>
           </dl>
           <p class="assistant-disclosure" id="assistantDisclosure">公开事件与出处；不代表采购关系或已确定任务。</p>
@@ -360,7 +360,7 @@
           </div>
         </div>
         <div id="customerPriorityMatrix" class="customer-priority-matrix"></div>
-        <p class="matrix-method-note">当前范围有新闻的监测账户，按新闻数量排列；同一新闻可能涉及多个账户。相关密度与优先指数仍为原有规则指标，不代表成交客户、采购意愿或确定任务。232家日本账户目录另行保留。</p>
+        <p class="matrix-method-note" id="customerPriorityMethodNote">当前只展示本期有公开信息的账户；完整账户仍保留在账户目录。指标用于比较公开信息，不代表成交客户、采购意愿或确定任务。</p>
       </section>
 
       <section class="business-lanes-section page-panel" data-page="overview" aria-label="Supervisor action desk">
@@ -1073,10 +1073,10 @@
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="priority-index">
-                  <span>前端实时计算</span><strong>账户优先指数</strong><b>0–99</b><p>综合日报数、高相关数、密度、时效、来源多样性和可验证公开关系。</p><small>查看完整公式与行动阈值</small>
+                  <span>前端实时计算</span><strong>公开信号参考指数</strong><b>0–99</b><p>综合入选数、高相关数、内容占比、时效、来源多样性和可验证公开关系。</p><small>查看完整公式与分级阈值</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="relevance-density">
-                  <span>前端实时计算</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司当前筛选范围内所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
+                  <span>前端实时计算</span><strong>ACRO 关注内容占比</strong><b>0–100%</b><p>看一家公司当前筛选范围内所有信号中，中高相关内容占多大比例，不表示双方关系强弱。</p><small>查看 0.55 权重和分母</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="competitor-matrix">
                   <span>人工排名 + 前端计数</span><strong>竞品动作矩阵</strong><b>当前范围</b><p>行按已确认的竞争相关度排序，列为当前数据量最大的 5 类事件。</p><small>查看计数口径与限制</small>
@@ -1121,7 +1121,7 @@
             </section>
 
             <div class="methodology-index-footer methodology-index-only">
-              <div class="methodology-callout"><strong>四层不等于</strong><p>词组命中 ≠ 信息筛选分 ≠ ACRO 相关性分 ≠ 准入结果；公司优先指数是多条信息聚合后的另一个指标。</p></div>
+              <div class="methodology-callout"><strong>四层不等于</strong><p>词组命中 ≠ 信息筛选分 ≠ ACRO 相关性分 ≠ 准入结果；公开信号参考指数是多条信息聚合后的另一个指标。</p></div>
               <div class="methodology-callout verified"><strong>口径声明</strong><p>公式与执行顺序来自 <code>config/rule_catalog.json</code>；页面动态数字使用当前数据集重新计算。</p></div>
             </div>
 
@@ -1320,13 +1320,13 @@
               </article>
 
               <article class="methodology-detail" id="metric-priority-index" data-methodology-detail="priority-index">
-                <header><div><span>公司级 · 前端实时计算</span><h3>账户优先指数</h3></div><b>0–99</b></header>
+                <header><div><span>公司级 · 前端实时计算</span><h3>公开信号参考指数</h3></div><b>0–99</b></header>
                 <p class="methodology-lead">把一家公司当前筛选范围内的多条公开信号合成一个跟进顺序分。对信号数和来源数使用 log2，避免“发稿多”的大公司无限占优。</p>
-                <div class="methodology-equation"><span>公式</span><strong>min(99, 日报数权重 + 高相关数权重 + 密度权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
+                <div class="methodology-equation"><span>公式</span><strong>min(99, 入选数权重 + 高相关数权重 + 关注内容占比权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
                 <dl class="methodology-rule-list wide">
                   <div><dt>进入日报</dt><dd>log2(1 + 日报/即时数) × 6</dd></div>
                   <div><dt>高相关信号</dt><dd>log2(1 + 高相关数) × 4</dd></div>
-                  <div><dt>相关密度</dt><dd>密度 × 0.14</dd></div>
+                  <div><dt>ACRO 关注内容占比</dt><dd>占比 × 0.14</dd></div>
                   <div><dt>时效</dt><dd>7 天内 +12；30 天内 +7；仅有更旧信号 +2</dd></div>
                   <div><dt>来源多样性</dt><dd>log2(1 + 去重后来源数) × 2.5</dd></div>
                   <div><dt>事件多样性</dt><dd>优先统计已入日报信号；没有时依次用高相关、全部信号。不同类型最多 +4</dd></div>
@@ -1342,7 +1342,7 @@
               </article>
 
               <article class="methodology-detail" id="metric-relevance-density" data-methodology-detail="relevance-density">
-                <header><div><span>公司级 · 前端实时计算</span><h3>ACRO 相关密度</h3></div><b>0–100%</b></header>
+                <header><div><span>公司级 · 前端实时计算</span><h3>ACRO 关注内容占比</h3></div><b>0–100%</b></header>
                 <p class="methodology-lead">这是一家公司当前筛选范围内信号的“质量占比”，而不是 ACRO 与该公司的关系强度。</p>
                 <div class="methodology-equation"><span>公式</span><strong>(高相关条数 + 中相关条数 × 0.55) ÷ 当前筛选范围内全部命中条数 × 100%</strong></div>
                 <div class="density-explain-grid">
@@ -1352,7 +1352,7 @@
                   <div><span>无信号</span><strong>0%</strong><p>表示未获取到数据，不是“不相关”。</p></div>
                 </div>
                 <div class="methodology-example" id="methodologyDensityExample"><span>当前数据示例</span><p>加载中</p></div>
-                <div class="methodology-boundary"><strong>正确用法</strong><p>与信号总量、时效和来源多样性一起看。仅 1 条高相关信号也会得到 100%，所以不能单看密度。</p></div>
+                <div class="methodology-boundary"><strong>正确用法</strong><p>与信号总量、时效和来源多样性一起看。仅 1 条高相关信号也会得到 100%，所以不能单看占比。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-trend-counts" data-methodology-detail="trend-counts">

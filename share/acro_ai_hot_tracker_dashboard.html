@@ -208,15 +208,33 @@ main[data-browse-root="true"] .topbar h1 { font-size: 28px; line-height: 1.4; }
 .fusion-totals { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; padding: 12px 0; color: var(--muted); font-size: 13px; }
 .fusion-totals button { display: flex; align-items: center; gap: 12px; height: auto; padding: 6px 0; border: 0; background: transparent; color: var(--text); }
 .fusion-totals strong { font-size: 24px; }
-.fusion-customer-header, .fusion-customer-row { display: grid; grid-template-columns: minmax(270px, 1fr) 95px 125px 80px 105px; align-items: center; gap: 16px; }
-.fusion-customer-header { padding: 12px 0; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--line); }
-.fusion-customer-row { padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
-.fusion-customer-row > div { min-width: 0; }
-.fusion-customer-row .company-name-with-logo { font-size: 14px; }
-.fusion-customer-row small { display: block; color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
+.customer-priority-section.page-panel { padding: 0; border: 0; background: transparent; box-shadow: none; }
+.customer-priority-section .section-actions > span b { color: var(--teal); font-size: 14px; font-variant-numeric: tabular-nums; }
+#customerPriorityMatrix.customer-priority-matrix { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; overflow: visible; }
+.fusion-customer-header { display: none; }
+.fusion-customer-row { display: grid; align-content: start; gap: 14px; min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); font-size: 13px; }
+.fusion-customer-row > * { min-width: 0; }
+.fusion-customer-row small { display: block; color: var(--muted); line-height: 1.55; overflow-wrap: anywhere; }
+.fusion-customer-card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 38px; }
+.fusion-customer-card-head .company-name-with-logo { min-width: 0; font-size: 16px; line-height: 1.35; }
+.fusion-customer-card-head > span { flex: 0 0 auto; color: var(--teal); font-size: 11px; font-weight: 700; }
+.fusion-customer-latest { display: grid; align-content: start; min-height: 104px; }
+.fusion-customer-latest > span { color: var(--muted); font-size: 11px; font-weight: 700; }
 .fusion-event-link { height: auto; padding: 8px 0; width: 100%; background: none; border: 0; color: #176d75; text-align: left; white-space: normal; line-height: 1.6; overflow-wrap: anywhere; }
-.fusion-customer-row .customer-priority-count { min-height: 48px; height: auto; border: 0; background: #eef7f7; color: #176d75; padding: 8px; }
-.fusion-customer-row .customer-priority-count strong { font-size: 18px; }
+.fusion-customer-card-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--line); background: #f7f9fa; }
+.fusion-customer-card-metrics > * { display: grid; align-content: start; gap: 5px; min-height: 108px; padding: 12px; border: 0; border-left: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--text); text-align: left; }
+.fusion-customer-card-metrics > :first-child { border-left: 0; }
+.fusion-customer-card-metrics span { display: flex; align-items: center; gap: 5px; min-height: 20px; color: var(--muted); font-size: 11px; font-weight: 650; line-height: 1.35; }
+.fusion-customer-card-metrics strong { color: #23404a; font-size: 24px; font-style: normal; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.fusion-customer-card-metrics .customer-priority-count { cursor: pointer; }
+.fusion-customer-card-metrics .customer-priority-count:hover { background: #edf7f7; color: var(--teal); }
+.fusion-customer-card-metrics .customer-priority-count small:last-child { color: var(--teal); }
+.fusion-customer-card-metrics .fusion-reference-score { display: flex; align-items: baseline; gap: 4px; min-height: 28px; }
+.fusion-customer-card-metrics .fusion-reference-score .text-button { width: auto; height: auto; min-height: 0; padding: 0; border: 0; background: transparent; color: #23404a; font-size: 24px; font-weight: 750; }
+.fusion-customer-card-metrics .fusion-reference-score small { font-size: 11px; font-weight: 500; }
+.fusion-customer-row > footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 34px; }
+.fusion-customer-row > footer > span { color: var(--muted); font-size: 11px; }
+.fusion-customer-row > footer .text-button { flex: 0 0 auto; }
 .fusion-topics-panel { grid-column: 1 / -1; }
 .analytics-grid .category-panel, .analytics-grid .region-panel { align-self: start; }
 .fusion-topic-row { display: grid; grid-template-columns: minmax(130px, 1fr) 95px 90px 120px; align-items: center; gap: 16px; height: auto; padding: 12px 0; width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--line); text-align: left; font-size: 13px; color: var(--text); }
@@ -234,14 +252,21 @@ main[data-browse-root="true"] .topbar h1 { font-size: 28px; line-height: 1.4; }
 .fusion-source-stages strong { font-size: 24px; }
 .fusion-source-stages small { color: var(--muted); }
 @media (max-width: 1150px) {
-  .fusion-customer-header { display: none; }
-  .fusion-customer-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .fusion-customer-row > div { grid-column: 1 / -1; }
-  .fusion-customer-row .customer-priority-density::before { content: "相关密度 "; color: var(--muted); }
-  .fusion-reference-score::before { content: "参考指数 "; color: var(--muted); }
+  #customerPriorityMatrix.customer-priority-matrix { grid-template-columns: minmax(0, 1fr); }
+  .fusion-customer-latest { min-height: 0; }
 }
 @media (max-width: 650px) {
-  .fusion-customer-row { gap: 10px; font-size: 12px; grid-template-columns: 1fr 1fr; }
+  .customer-priority-section > .section-head { display: grid; }
+  .customer-priority-section .section-actions { justify-content: flex-start; }
+  .fusion-customer-row { gap: 12px; padding: 14px; font-size: 12px; }
+  .fusion-customer-card-head { align-items: flex-start; }
+  .fusion-customer-card-metrics { grid-template-columns: minmax(0, 1fr); }
+  .fusion-customer-card-metrics > * { grid-template-columns: minmax(0, 1fr) auto; align-items: center; min-height: 72px; border-top: 1px solid var(--line); border-left: 0; }
+  .fusion-customer-card-metrics > :first-child { border-top: 0; }
+  .fusion-customer-card-metrics > .customer-priority-count { grid-column: auto; grid-row: auto; border-left: 0 !important; }
+  .fusion-customer-card-metrics .customer-priority-count > strong { font-size: 24px; }
+  .fusion-customer-card-metrics > * > small:last-child { grid-column: 1 / -1; }
+  .fusion-customer-row > footer { align-items: flex-start; flex-direction: column; }
   .fusion-topic-row { grid-template-columns: minmax(0, 1fr) auto; gap: 6px; }
   .fusion-source-stages { grid-template-columns: 1fr 1fr; }
 }
@@ -10384,7 +10409,7 @@ button.strip-score:focus-visible strong {
           </div>
           <dl class="assistant-view-basis">
             <div><dt>当前视角</dt><dd id="assistantViewLabel">综合研判</dd></div>
-            <div><dt>判断依据</dt><dd id="assistantViewBasis">优先指数、相关密度、近期信号与日报门槛</dd></div>
+            <div><dt>判断依据</dt><dd id="assistantViewBasis">公开信号参考指数、ACRO 关注内容占比、近期信号与准入状态</dd></div>
             <div><dt>结果边界</dt><dd id="assistantViewBoundary">公开信号的相对优先级，不等于已确认客户意向</dd></div>
           </dl>
           <p class="assistant-disclosure" id="assistantDisclosure">公开事件与出处；不代表采购关系或已确定任务。</p>
@@ -10408,7 +10433,7 @@ button.strip-score:focus-visible strong {
           </div>
         </div>
         <div id="customerPriorityMatrix" class="customer-priority-matrix"></div>
-        <p class="matrix-method-note">当前范围有新闻的监测账户，按新闻数量排列；同一新闻可能涉及多个账户。相关密度与优先指数仍为原有规则指标，不代表成交客户、采购意愿或确定任务。232家日本账户目录另行保留。</p>
+        <p class="matrix-method-note" id="customerPriorityMethodNote">当前只展示本期有公开信息的账户；完整账户仍保留在账户目录。指标用于比较公开信息，不代表成交客户、采购意愿或确定任务。</p>
       </section>
 
       <section class="business-lanes-section page-panel" data-page="overview" aria-label="Supervisor action desk">
@@ -11121,10 +11146,10 @@ button.strip-score:focus-visible strong {
               </div>
               <div class="methodology-card-grid">
                 <button type="button" class="methodology-summary-card primary" data-methodology-target="priority-index">
-                  <span>前端实时计算</span><strong>账户优先指数</strong><b>0–99</b><p>综合日报数、高相关数、密度、时效、来源多样性和可验证公开关系。</p><small>查看完整公式与行动阈值</small>
+                  <span>前端实时计算</span><strong>公开信号参考指数</strong><b>0–99</b><p>综合入选数、高相关数、内容占比、时效、来源多样性和可验证公开关系。</p><small>查看完整公式与分级阈值</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="relevance-density">
-                  <span>前端实时计算</span><strong>ACRO 相关密度</strong><b>0–100%</b><p>看一家公司当前筛选范围内所有信号中，中高相关内容占多大比例。</p><small>查看 0.55 权重和分母</small>
+                  <span>前端实时计算</span><strong>ACRO 关注内容占比</strong><b>0–100%</b><p>看一家公司当前筛选范围内所有信号中，中高相关内容占多大比例，不表示双方关系强弱。</p><small>查看 0.55 权重和分母</small>
                 </button>
                 <button type="button" class="methodology-summary-card" data-methodology-target="competitor-matrix">
                   <span>人工排名 + 前端计数</span><strong>竞品动作矩阵</strong><b>当前范围</b><p>行按已确认的竞争相关度排序，列为当前数据量最大的 5 类事件。</p><small>查看计数口径与限制</small>
@@ -11169,7 +11194,7 @@ button.strip-score:focus-visible strong {
             </section>
 
             <div class="methodology-index-footer methodology-index-only">
-              <div class="methodology-callout"><strong>四层不等于</strong><p>词组命中 ≠ 信息筛选分 ≠ ACRO 相关性分 ≠ 准入结果；公司优先指数是多条信息聚合后的另一个指标。</p></div>
+              <div class="methodology-callout"><strong>四层不等于</strong><p>词组命中 ≠ 信息筛选分 ≠ ACRO 相关性分 ≠ 准入结果；公开信号参考指数是多条信息聚合后的另一个指标。</p></div>
               <div class="methodology-callout verified"><strong>口径声明</strong><p>公式与执行顺序来自 <code>config/rule_catalog.json</code>；页面动态数字使用当前数据集重新计算。</p></div>
             </div>
 
@@ -11368,13 +11393,13 @@ button.strip-score:focus-visible strong {
               </article>
 
               <article class="methodology-detail" id="metric-priority-index" data-methodology-detail="priority-index">
-                <header><div><span>公司级 · 前端实时计算</span><h3>账户优先指数</h3></div><b>0–99</b></header>
+                <header><div><span>公司级 · 前端实时计算</span><h3>公开信号参考指数</h3></div><b>0–99</b></header>
                 <p class="methodology-lead">把一家公司当前筛选范围内的多条公开信号合成一个跟进顺序分。对信号数和来源数使用 log2，避免“发稿多”的大公司无限占优。</p>
-                <div class="methodology-equation"><span>公式</span><strong>min(99, 日报数权重 + 高相关数权重 + 密度权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
+                <div class="methodology-equation"><span>公式</span><strong>min(99, 入选数权重 + 高相关数权重 + 关注内容占比权重 + 时效 + 来源多样性 + 事件多样性 + 公开关系)</strong></div>
                 <dl class="methodology-rule-list wide">
                   <div><dt>进入日报</dt><dd>log2(1 + 日报/即时数) × 6</dd></div>
                   <div><dt>高相关信号</dt><dd>log2(1 + 高相关数) × 4</dd></div>
-                  <div><dt>相关密度</dt><dd>密度 × 0.14</dd></div>
+                  <div><dt>ACRO 关注内容占比</dt><dd>占比 × 0.14</dd></div>
                   <div><dt>时效</dt><dd>7 天内 +12；30 天内 +7；仅有更旧信号 +2</dd></div>
                   <div><dt>来源多样性</dt><dd>log2(1 + 去重后来源数) × 2.5</dd></div>
                   <div><dt>事件多样性</dt><dd>优先统计已入日报信号；没有时依次用高相关、全部信号。不同类型最多 +4</dd></div>
@@ -11390,7 +11415,7 @@ button.strip-score:focus-visible strong {
               </article>
 
               <article class="methodology-detail" id="metric-relevance-density" data-methodology-detail="relevance-density">
-                <header><div><span>公司级 · 前端实时计算</span><h3>ACRO 相关密度</h3></div><b>0–100%</b></header>
+                <header><div><span>公司级 · 前端实时计算</span><h3>ACRO 关注内容占比</h3></div><b>0–100%</b></header>
                 <p class="methodology-lead">这是一家公司当前筛选范围内信号的“质量占比”，而不是 ACRO 与该公司的关系强度。</p>
                 <div class="methodology-equation"><span>公式</span><strong>(高相关条数 + 中相关条数 × 0.55) ÷ 当前筛选范围内全部命中条数 × 100%</strong></div>
                 <div class="density-explain-grid">
@@ -11400,7 +11425,7 @@ button.strip-score:focus-visible strong {
                   <div><span>无信号</span><strong>0%</strong><p>表示未获取到数据，不是“不相关”。</p></div>
                 </div>
                 <div class="methodology-example" id="methodologyDensityExample"><span>当前数据示例</span><p>加载中</p></div>
-                <div class="methodology-boundary"><strong>正确用法</strong><p>与信号总量、时效和来源多样性一起看。仅 1 条高相关信号也会得到 100%，所以不能单看密度。</p></div>
+                <div class="methodology-boundary"><strong>正确用法</strong><p>与信号总量、时效和来源多样性一起看。仅 1 条高相关信号也会得到 100%，所以不能单看占比。</p></div>
               </article>
 
               <article class="methodology-detail" id="metric-trend-counts" data-methodology-detail="trend-counts">
@@ -295513,29 +295538,41 @@ function fusionAccountRows(items) {
   const rows = (getJapanAccountData().accounts || []).map(account => {
     const company = companies.find(company => findAccountForCompany(company)?.id === account.id);
     const matches = index.get(account.id) || [];
-    return { key: account.id, name: account.name, account, company, items: matches, priority: priorities.get(company?.id) };
+    const priority = priorities.get(company?.id) || calculateCustomerAccountPriority(company, matches, account);
+    return { key: account.id, name: account.name, account, company, items: matches, priority };
   });
   for (const company of companies.filter(company => !rows.some(row => row.company?.id === company.id))) {
-    rows.push({ key: company.id, name: company.display_name, company, items: items.filter(item => (item.matched_company_ids || []).includes(company.id)), priority: priorities.get(company.id) });
+    const matches = items.filter(item => (item.matched_company_ids || []).includes(company.id));
+    const priority = priorities.get(company.id) || calculateCustomerAccountPriority(company, matches);
+    rows.push({ key: company.id, name: company.display_name, company, items: matches, priority });
   }
   return rows.filter(row => row.items.length).sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
 }
 
 function renderFusionCustomers(items) {
   const rows = fusionAccountRows(items);
-  els.customerPriorityScope.textContent = `${rows.length} 家账户 · ${fusionUniqueItems(rows.flatMap(row => row.items)).length} 条新闻 · 同当前筛选`;
-  els.customerPriorityMatrix.innerHTML = rows.length ? `<div class="fusion-customer-header"><span>监测账户 / 最新事件</span><span>当前新闻</span><span>ACRO 相关密度</span><span>参考指数</span><span>证据</span></div>` + rows.map(row => {
+  const accountTotal = (getJapanAccountData().accounts || []).length;
+  const newsTotal = fusionUniqueItems(rows.flatMap(row => row.items)).length;
+  const hiddenTotal = Math.max(0, accountTotal - rows.filter(row => row.account).length);
+  els.customerPriorityScope.innerHTML = `<b>${rows.length}</b> 家本期有动态 · <b>${accountTotal}</b> 家账户总库 · <b>${newsTotal}</b> 条公开信息`;
+  els.customerPriorityMatrix.innerHTML = rows.length ? rows.map(row => {
     const latest = fusionRecent(row.items)[0];
     const priority = row.priority;
-    return `<div class="fusion-customer-row" data-fusion-account-row="${escapeAttr(row.key)}">
-      <div><strong class="company-name-with-logo">${companyLogoMarkup(row.company)}${escapeHtml(row.name)}</strong>
+    return `<article class="fusion-customer-row" data-fusion-account-row="${escapeAttr(row.key)}">
+      <header class="fusion-customer-card-head"><strong class="company-name-with-logo">${companyLogoMarkup(row.company || { id: row.key, display_name: row.name })}${escapeHtml(row.name)}</strong><span>监测账户</span></header>
+      <div class="fusion-customer-latest"><span>最新公开事件</span>
         <button type="button" class="fusion-event-link" data-fusion-item="${escapeAttr(latest.id)}">${escapeHtml(getDisplayTitle(latest))}</button>
         <small>${escapeHtml(fusionDateLabel(latest))} · ${escapeHtml(getSourceLabelText(latest))}</small></div>
-      <button type="button" class="customer-priority-count" data-fusion-account="${escapeAttr(row.key)}"><strong>${row.items.length}</strong><small>相关新闻</small></button>
-      <span class="customer-priority-density">${priority ? `${priority.density}%` : "未计算"}</span>
-      <span class="fusion-reference-score">${priority ? `<button type="button" class="text-button" data-methodology-target="priority-index" aria-label="参考指数 ${priority.priorityScore}，查看原有规则">${priority.priorityScore}</button>` : "未计算"}</span>
-      <button type="button" class="text-button" data-fusion-profile="${escapeAttr(row.key)}">公司详情 →</button></div>`;
+      <div class="fusion-customer-card-metrics">
+        <button type="button" class="customer-priority-count" data-fusion-account="${escapeAttr(row.key)}"><span>当前新闻</span><strong>${row.items.length}</strong><small>查看公开证据</small></button>
+        <div><span>ACRO 关注内容占比 <button class="metric-label-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 关注内容占比规则">i</button></span><strong class="customer-priority-density">${priority.density}%</strong><small>内容匹配，不是客户关系</small></div>
+        <div><span>公开信号参考指数 <button class="metric-label-help" type="button" data-methodology-target="priority-index" aria-label="查看公开信号参考指数规则">i</button></span><strong class="fusion-reference-score"><button type="button" class="text-button" data-methodology-target="priority-index" aria-label="公开信号参考指数 ${priority.priorityScore}，查看计算规则">${priority.priorityScore}</button><small>/ 99</small></strong><small>用于同范围内横向比较</small></div>
+      </div>
+      <footer><span>${row.account?.organization_label ? escapeHtml(row.account.organization_label) : "公开动态监测对象"}</span><button type="button" class="text-button" data-fusion-profile="${escapeAttr(row.key)}">查看公司详情 →</button></footer>
+    </article>`;
   }).join("") : '<div class="empty">当前范围没有监测账户的公开新闻，不代表目录已删除或市场没有活动。</div>';
+  const methodNote = document.querySelector("#customerPriorityMethodNote");
+  if (methodNote) methodNote.textContent = `当前只展示本期有公开信息的账户；另有 ${hiddenTotal} 家仍保留在账户目录。ACRO 关注内容占比是该账户新闻中高相关与中相关内容的加权占比，不是 ACRO 与该公司的关系强度；公开信号参考指数综合新闻量、时效、来源和事件多样性，仅供浏览比较。`;
 }
 
 function fusionAssistantResponse(intent, items) {
@@ -295889,8 +295926,8 @@ const methodologyDetailMeta = {
   "region-classification": { family: "分类与业务输出", title: "地区判读与统计" },
   "action-routing": { family: "分类与业务输出", title: "建议动作与负责人" },
   "summary-provenance": { family: "分类与业务输出", title: "摘要与证据溯源" },
-  "priority-index": { family: "公司与账户排序", title: "优先指数" },
-  "relevance-density": { family: "公司与账户排序", title: "ACRO 相关密度" },
+  "priority-index": { family: "公司与账户排序", title: "公开信号参考指数" },
+  "relevance-density": { family: "公司与账户排序", title: "ACRO 关注内容占比" },
   "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
   "trend-counts": { family: "统计与运行口径", title: "信号走势图例数字" },
   "dashboard-counts": { family: "统计与运行口径", title: "总览四项统计口径" },
@@ -298646,9 +298683,9 @@ function renderMethodology() {
   if (priorityExample) {
     els.methodologyPriorityExample.innerHTML =
       "<span>当前数据示例 · " + escapeHtml(shortCompanyName(priorityExample.company.display_name)) + "</span>" +
-      "<p><strong>优先指数 " + priorityExample.priorityScore + "</strong>：" +
+      "<p><strong>公开信号参考指数 " + priorityExample.priorityScore + "</strong>：" +
         priorityExample.selectedItems.length + " 条进入日报，" +
-        priorityExample.highCount + " 条高相关，密度 " + priorityExample.density + "%，" +
+        priorityExample.highCount + " 条高相关，ACRO 关注内容占比 " + priorityExample.density + "%，" +
         priorityExample.sourceCount + " 个去重来源。</p>";
   } else {
     els.methodologyPriorityExample.innerHTML = "<span>当前数据示例</span><p>持续监测账户当前还没有可计算的公开信号。</p>";
@@ -299882,10 +299919,9 @@ function labelRole(role) {
   }[role] || role;
 }
 
-function buildCustomerAccountPriorities(days = null, scopedItems = null) {
+function calculateCustomerAccountPriority(company, inputItems, account = null) {
   const priorityRule = window.AIHOT_RULE_CATALOG?.account_priority || {};
   const densityRule = window.AIHOT_RULE_CATALOG?.relevance_density || {};
-  const windowDays = Number(days) || Number(priorityRule.window_days) || 90;
   const densityWeights = densityRule.weights || { high: 1, medium: 0.55, low: 0 };
   const freshnessRule = priorityRule.freshness || { within_7_days: 12, within_30_days: 7, older: 2 };
   const thresholds = priorityRule.thresholds || {
@@ -299894,6 +299930,71 @@ function buildCustomerAccountPriorities(days = null, scopedItems = null) {
     follow_this_week: 54,
     follow_this_week_minimum_selected: 1,
   };
+  const items = [...(inputItems || [])].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0));
+  const selectedItems = items.filter((item) => ["daily", "immediate"].includes(item.tier));
+  const highItems = items.filter((item) => item.acro_relevance?.level === "high");
+  const mediumItems = items.filter((item) => item.acro_relevance?.level === "medium");
+  const recent7 = items.filter((item) => itemIsWithinRange(item, 7));
+  const recent30 = items.filter((item) => itemIsWithinRange(item, 30));
+  const sourceIds = new Set(items.flatMap((item) => item.source_ids || [item.source_id]).filter(Boolean));
+  const eventCounts = {};
+  const eventBasis = selectedItems.length ? selectedItems : highItems.length ? highItems : items;
+  for (const item of eventBasis) {
+    const eventType = getBusinessEventType(item);
+    eventCounts[eventType] = (eventCounts[eventType] || 0) + 1;
+  }
+  const dominantEvent = Object.entries(eventCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || "corporate_strategy";
+  const density = items.length
+    ? Math.round(((highItems.length * densityWeights.high + mediumItems.length * densityWeights.medium) / items.length) * 100)
+    : 0;
+  const publicRelationshipEvidence = getVerifiedPublicRelationshipEvidence(account);
+  const publicRelationship = publicRelationshipEvidence.length > 0;
+  const freshnessScore = recent7.length
+    ? freshnessRule.within_7_days
+    : recent30.length
+      ? freshnessRule.within_30_days
+      : items.length
+        ? freshnessRule.older
+        : 0;
+  const priorityScore = Math.min(Number(priorityRule.maximum) || 99, Math.round(
+    Math.log2(1 + selectedItems.length) * (Number(priorityRule.selected_log_weight) || 6) +
+    Math.log2(1 + highItems.length) * (Number(priorityRule.high_relevance_log_weight) || 4) +
+    density * (Number(priorityRule.density_weight) || 0.14) +
+    freshnessScore +
+    Math.log2(1 + sourceIds.size) * (Number(priorityRule.source_diversity_log_weight) || 2.5) +
+    Math.min(Object.keys(eventCounts).length, Number(priorityRule.event_diversity_maximum) || 4) +
+    (publicRelationship ? Number(priorityRule.verified_public_relationship_bonus) || 3 : 0),
+  ));
+  const keyItem = selectedItems[0] || items[0] || null;
+  const action = buildCustomerPriorityAction(dominantEvent, publicRelationship, selectedItems.length);
+  const urgency = priorityScore >= thresholds.priority_check && selectedItems.length >= thresholds.priority_check_minimum_selected
+    ? { label: "优先核验", className: "urgent" }
+    : priorityScore >= thresholds.follow_this_week && selectedItems.length >= thresholds.follow_this_week_minimum_selected
+      ? { label: "本周跟进", className: "active" }
+      : { label: "持续观察", className: "watch" };
+  return {
+    company,
+    account,
+    items,
+    selectedItems,
+    highCount: highItems.length,
+    mediumCount: mediumItems.length,
+    recent30Count: recent30.length,
+    sourceCount: sourceIds.size,
+    density,
+    priorityScore,
+    dominantEvent,
+    publicRelationship,
+    publicRelationshipEvidenceCount: publicRelationshipEvidence.length,
+    keyItem,
+    action,
+    urgency,
+  };
+}
+
+function buildCustomerAccountPriorities(days = null, scopedItems = null) {
+  const priorityRule = window.AIHOT_RULE_CATALOG?.account_priority || {};
+  const windowDays = Number(days) || Number(priorityRule.window_days) || 90;
   const companies = (state.payload.companies || []).filter(
     (company) => company.business_role === "customer",
   );
@@ -299902,66 +300003,9 @@ function buildCustomerAccountPriorities(days = null, scopedItems = null) {
   return companies.map((company) => {
     const items = allItems.filter((item) =>
       (scopedItems || itemIsWithinRange(item, windowDays)) && (item.matched_company_ids || []).includes(company.id),
-    ).sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0));
-    const selectedItems = items.filter((item) => ["daily", "immediate"].includes(item.tier));
-    const highItems = items.filter((item) => item.acro_relevance?.level === "high");
-    const mediumItems = items.filter((item) => item.acro_relevance?.level === "medium");
-    const recent7 = items.filter((item) => itemIsWithinRange(item, 7));
-    const recent30 = items.filter((item) => itemIsWithinRange(item, 30));
-    const sourceIds = new Set(items.flatMap((item) => item.source_ids || [item.source_id]).filter(Boolean));
-    const eventCounts = {};
-    const eventBasis = selectedItems.length ? selectedItems : highItems.length ? highItems : items;
-    for (const item of eventBasis) {
-      const eventType = getBusinessEventType(item);
-      eventCounts[eventType] = (eventCounts[eventType] || 0) + 1;
-    }
-    const dominantEvent = Object.entries(eventCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || "corporate_strategy";
-    const density = items.length
-      ? Math.round(((highItems.length * densityWeights.high + mediumItems.length * densityWeights.medium) / items.length) * 100)
-      : 0;
+    );
     const account = findAccountForCompany(company, accounts);
-    const publicRelationshipEvidence = getVerifiedPublicRelationshipEvidence(account);
-    const publicRelationship = publicRelationshipEvidence.length > 0;
-    const freshnessScore = recent7.length
-      ? freshnessRule.within_7_days
-      : recent30.length
-        ? freshnessRule.within_30_days
-        : items.length
-          ? freshnessRule.older
-          : 0;
-    const priorityScore = Math.min(Number(priorityRule.maximum) || 99, Math.round(
-      Math.log2(1 + selectedItems.length) * (Number(priorityRule.selected_log_weight) || 6) +
-      Math.log2(1 + highItems.length) * (Number(priorityRule.high_relevance_log_weight) || 4) +
-      density * (Number(priorityRule.density_weight) || 0.14) +
-      freshnessScore +
-      Math.log2(1 + sourceIds.size) * (Number(priorityRule.source_diversity_log_weight) || 2.5) +
-      Math.min(Object.keys(eventCounts).length, Number(priorityRule.event_diversity_maximum) || 4) +
-      (publicRelationship ? Number(priorityRule.verified_public_relationship_bonus) || 3 : 0),
-    ));
-    const keyItem = selectedItems[0] || items[0] || null;
-    const action = buildCustomerPriorityAction(dominantEvent, publicRelationship, selectedItems.length);
-    const urgency = priorityScore >= thresholds.priority_check && selectedItems.length >= thresholds.priority_check_minimum_selected
-      ? { label: "优先核验", className: "urgent" }
-      : priorityScore >= thresholds.follow_this_week && selectedItems.length >= thresholds.follow_this_week_minimum_selected
-        ? { label: "本周跟进", className: "active" }
-        : { label: "持续观察", className: "watch" };
-    return {
-      company,
-      items,
-      selectedItems,
-      highCount: highItems.length,
-      mediumCount: mediumItems.length,
-      recent30Count: recent30.length,
-      sourceCount: sourceIds.size,
-      density,
-      priorityScore,
-      dominantEvent,
-      publicRelationship,
-      publicRelationshipEvidenceCount: publicRelationshipEvidence.length,
-      keyItem,
-      action,
-      urgency,
-    };
+    return calculateCustomerAccountPriority(company, items, account);
   }).sort((a, b) =>
     b.priorityScore - a.priorityScore ||
     b.density - a.density ||
@@ -299998,8 +300042,8 @@ function renderCustomerPriorityMatrix(priorities) {
   const header = `
     <div class="customer-priority-row customer-priority-header">
       <span>账户（优先级高 → 低）</span>
-      <span>优先指数 <button class="column-help" type="button" data-methodology-target="priority-index" aria-label="查看优先指数规则">i</button></span>
-      <span>ACRO 相关密度 <button class="column-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 相关密度规则">i</button></span>
+      <span>公开信号参考指数 <button class="column-help" type="button" data-methodology-target="priority-index" aria-label="查看公开信号参考指数规则">i</button></span>
+      <span>ACRO 关注内容占比 <button class="column-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 关注内容占比规则">i</button></span>
       <span>当前范围</span><span>主要动向</span><span>参考判断（非派单）</span>
     </div>`;
   const rows = priorities.map((entry, index) => {
@@ -300012,8 +300056,8 @@ function renderCustomerPriorityMatrix(priorities) {
           ${companyLogoMarkup(entry.company)}
           <i><strong>${escapeHtml(shortCompanyName(entry.company.display_name))}</strong><small>${escapeHtml(relationship)} · ${entry.sourceCount} 个来源</small></i>
         </span>
-        <span class="customer-priority-score"><button class="customer-priority-value" type="button" data-methodology-target="priority-index" aria-label="优先指数 ${entry.priorityScore}，查看计算规则"><strong>${entry.priorityScore}</strong></button><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
-        <span class="customer-priority-density"><button class="customer-priority-value" type="button" data-methodology-target="relevance-density" aria-label="ACRO 相关密度 ${entry.density}%，查看计算规则"><strong>${entry.density}%</strong></button><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
+        <span class="customer-priority-score"><button class="customer-priority-value" type="button" data-methodology-target="priority-index" aria-label="公开信号参考指数 ${entry.priorityScore}，查看计算规则"><strong>${entry.priorityScore}</strong></button><i><b style="width:${entry.priorityScore}%"></b></i><small>${entry.urgency.label}</small></span>
+        <span class="customer-priority-density"><button class="customer-priority-value" type="button" data-methodology-target="relevance-density" aria-label="ACRO 关注内容占比 ${entry.density}%，查看计算规则"><strong>${entry.density}%</strong></button><small>${entry.highCount} 高 / ${entry.mediumCount} 中</small></span>
         <span class="customer-priority-count"><strong>${entry.items.length}</strong><small>${entry.selectedItems.length} 条入选</small></span>
         <span class="customer-priority-topic"><strong>${escapeHtml(labelBusinessEvent(entry.dominantEvent, true))}</strong><small>${escapeHtml(keyTitle)}</small></span>
         <span class="customer-priority-action"><b class="${entry.urgency.className}">${entry.urgency.label}</b><strong>${escapeHtml(entry.action.label)}</strong><small>${escapeHtml(entry.action.owner)}</small></span>
@@ -300057,12 +300101,12 @@ function topEventEntries(items, limit = 3) {
 const assistantViewMeta = {
   action: {
     label: "综合研判",
-    basis: "优先指数、相关密度、近期信号与日报门槛",
+    basis: "公开信号参考指数、ACRO 关注内容占比、近期信号与准入状态",
     boundary: "跨账户、竞品与市场主题的相对排序",
   },
   account: {
     label: "重点账户",
-    basis: "账户信号量、ACRO 中高相关密度与事件紧迫度",
+    basis: "账户信号量、ACRO 关注内容占比与事件时效",
     boundary: "公开信号不等于已确认需求或客户意向",
   },
   competitor: {
@@ -300089,7 +300133,7 @@ function buildAssistantResponse(intent, items, customerPriorities) {
   const actionForAccount = (entry) => ({
     label: entry.urgency.label,
     title: `${shortCompanyName(entry.company.display_name)}：${entry.action.label}`,
-    detail: `优先指数 ${entry.priorityScore}，ACRO 中高相关密度 ${entry.density}%，当前筛选 ${entry.items.length} 条，${entry.selectedItems.length} 条入选。仅作参考，不自动派单。`,
+    detail: `公开信号参考指数 ${entry.priorityScore}，ACRO 关注内容占比 ${entry.density}%，当前筛选 ${entry.items.length} 条，${entry.selectedItems.length} 条入选。仅作参考，不自动派单。`,
     owner: entry.action.owner,
     company: entry.company.display_name,
     category: entry.dominantEvent,

@@ -201,15 +201,33 @@ main[data-browse-root="true"] .topbar h1 { font-size: 28px; line-height: 1.4; }
 .fusion-totals { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; padding: 12px 0; color: var(--muted); font-size: 13px; }
 .fusion-totals button { display: flex; align-items: center; gap: 12px; height: auto; padding: 6px 0; border: 0; background: transparent; color: var(--text); }
 .fusion-totals strong { font-size: 24px; }
-.fusion-customer-header, .fusion-customer-row { display: grid; grid-template-columns: minmax(270px, 1fr) 95px 125px 80px 105px; align-items: center; gap: 16px; }
-.fusion-customer-header { padding: 12px 0; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--line); }
-.fusion-customer-row { padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
-.fusion-customer-row > div { min-width: 0; }
-.fusion-customer-row .company-name-with-logo { font-size: 14px; }
-.fusion-customer-row small { display: block; color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
+.customer-priority-section.page-panel { padding: 0; border: 0; background: transparent; box-shadow: none; }
+.customer-priority-section .section-actions > span b { color: var(--teal); font-size: 14px; font-variant-numeric: tabular-nums; }
+#customerPriorityMatrix.customer-priority-matrix { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; overflow: visible; }
+.fusion-customer-header { display: none; }
+.fusion-customer-row { display: grid; align-content: start; gap: 14px; min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); font-size: 13px; }
+.fusion-customer-row > * { min-width: 0; }
+.fusion-customer-row small { display: block; color: var(--muted); line-height: 1.55; overflow-wrap: anywhere; }
+.fusion-customer-card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 38px; }
+.fusion-customer-card-head .company-name-with-logo { min-width: 0; font-size: 16px; line-height: 1.35; }
+.fusion-customer-card-head > span { flex: 0 0 auto; color: var(--teal); font-size: 11px; font-weight: 700; }
+.fusion-customer-latest { display: grid; align-content: start; min-height: 104px; }
+.fusion-customer-latest > span { color: var(--muted); font-size: 11px; font-weight: 700; }
 .fusion-event-link { height: auto; padding: 8px 0; width: 100%; background: none; border: 0; color: #176d75; text-align: left; white-space: normal; line-height: 1.6; overflow-wrap: anywhere; }
-.fusion-customer-row .customer-priority-count { min-height: 48px; height: auto; border: 0; background: #eef7f7; color: #176d75; padding: 8px; }
-.fusion-customer-row .customer-priority-count strong { font-size: 18px; }
+.fusion-customer-card-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--line); background: #f7f9fa; }
+.fusion-customer-card-metrics > * { display: grid; align-content: start; gap: 5px; min-height: 108px; padding: 12px; border: 0; border-left: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--text); text-align: left; }
+.fusion-customer-card-metrics > :first-child { border-left: 0; }
+.fusion-customer-card-metrics span { display: flex; align-items: center; gap: 5px; min-height: 20px; color: var(--muted); font-size: 11px; font-weight: 650; line-height: 1.35; }
+.fusion-customer-card-metrics strong { color: #23404a; font-size: 24px; font-style: normal; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.fusion-customer-card-metrics .customer-priority-count { cursor: pointer; }
+.fusion-customer-card-metrics .customer-priority-count:hover { background: #edf7f7; color: var(--teal); }
+.fusion-customer-card-metrics .customer-priority-count small:last-child { color: var(--teal); }
+.fusion-customer-card-metrics .fusion-reference-score { display: flex; align-items: baseline; gap: 4px; min-height: 28px; }
+.fusion-customer-card-metrics .fusion-reference-score .text-button { width: auto; height: auto; min-height: 0; padding: 0; border: 0; background: transparent; color: #23404a; font-size: 24px; font-weight: 750; }
+.fusion-customer-card-metrics .fusion-reference-score small { font-size: 11px; font-weight: 500; }
+.fusion-customer-row > footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 34px; }
+.fusion-customer-row > footer > span { color: var(--muted); font-size: 11px; }
+.fusion-customer-row > footer .text-button { flex: 0 0 auto; }
 .fusion-topics-panel { grid-column: 1 / -1; }
 .analytics-grid .category-panel, .analytics-grid .region-panel { align-self: start; }
 .fusion-topic-row { display: grid; grid-template-columns: minmax(130px, 1fr) 95px 90px 120px; align-items: center; gap: 16px; height: auto; padding: 12px 0; width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--line); text-align: left; font-size: 13px; color: var(--text); }
@@ -227,14 +245,21 @@ main[data-browse-root="true"] .topbar h1 { font-size: 28px; line-height: 1.4; }
 .fusion-source-stages strong { font-size: 24px; }
 .fusion-source-stages small { color: var(--muted); }
 @media (max-width: 1150px) {
-  .fusion-customer-header { display: none; }
-  .fusion-customer-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .fusion-customer-row > div { grid-column: 1 / -1; }
-  .fusion-customer-row .customer-priority-density::before { content: "相关密度 "; color: var(--muted); }
-  .fusion-reference-score::before { content: "参考指数 "; color: var(--muted); }
+  #customerPriorityMatrix.customer-priority-matrix { grid-template-columns: minmax(0, 1fr); }
+  .fusion-customer-latest { min-height: 0; }
 }
 @media (max-width: 650px) {
-  .fusion-customer-row { gap: 10px; font-size: 12px; grid-template-columns: 1fr 1fr; }
+  .customer-priority-section > .section-head { display: grid; }
+  .customer-priority-section .section-actions { justify-content: flex-start; }
+  .fusion-customer-row { gap: 12px; padding: 14px; font-size: 12px; }
+  .fusion-customer-card-head { align-items: flex-start; }
+  .fusion-customer-card-metrics { grid-template-columns: minmax(0, 1fr); }
+  .fusion-customer-card-metrics > * { grid-template-columns: minmax(0, 1fr) auto; align-items: center; min-height: 72px; border-top: 1px solid var(--line); border-left: 0; }
+  .fusion-customer-card-metrics > :first-child { border-top: 0; }
+  .fusion-customer-card-metrics > .customer-priority-count { grid-column: auto; grid-row: auto; border-left: 0 !important; }
+  .fusion-customer-card-metrics .customer-priority-count > strong { font-size: 24px; }
+  .fusion-customer-card-metrics > * > small:last-child { grid-column: 1 / -1; }
+  .fusion-customer-row > footer { align-items: flex-start; flex-direction: column; }
   .fusion-topic-row { grid-template-columns: minmax(0, 1fr) auto; gap: 6px; }
   .fusion-source-stages { grid-template-columns: 1fr 1fr; }
 }

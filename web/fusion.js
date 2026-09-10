@@ -185,29 +185,41 @@ function fusionAccountRows(items) {
   const rows = (getJapanAccountData().accounts || []).map(account => {
     const company = companies.find(company => findAccountForCompany(company)?.id === account.id);
     const matches = index.get(account.id) || [];
-    return { key: account.id, name: account.name, account, company, items: matches, priority: priorities.get(company?.id) };
+    const priority = priorities.get(company?.id) || calculateCustomerAccountPriority(company, matches, account);
+    return { key: account.id, name: account.name, account, company, items: matches, priority };
   });
   for (const company of companies.filter(company => !rows.some(row => row.company?.id === company.id))) {
-    rows.push({ key: company.id, name: company.display_name, company, items: items.filter(item => (item.matched_company_ids || []).includes(company.id)), priority: priorities.get(company.id) });
+    const matches = items.filter(item => (item.matched_company_ids || []).includes(company.id));
+    const priority = priorities.get(company.id) || calculateCustomerAccountPriority(company, matches);
+    rows.push({ key: company.id, name: company.display_name, company, items: matches, priority });
   }
   return rows.filter(row => row.items.length).sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
 }
 
 function renderFusionCustomers(items) {
   const rows = fusionAccountRows(items);
-  els.customerPriorityScope.textContent = `${rows.length} 家账户 · ${fusionUniqueItems(rows.flatMap(row => row.items)).length} 条新闻 · 同当前筛选`;
-  els.customerPriorityMatrix.innerHTML = rows.length ? `<div class="fusion-customer-header"><span>监测账户 / 最新事件</span><span>当前新闻</span><span>ACRO 相关密度</span><span>参考指数</span><span>证据</span></div>` + rows.map(row => {
+  const accountTotal = (getJapanAccountData().accounts || []).length;
+  const newsTotal = fusionUniqueItems(rows.flatMap(row => row.items)).length;
+  const hiddenTotal = Math.max(0, accountTotal - rows.filter(row => row.account).length);
+  els.customerPriorityScope.innerHTML = `<b>${rows.length}</b> 家本期有动态 · <b>${accountTotal}</b> 家账户总库 · <b>${newsTotal}</b> 条公开信息`;
+  els.customerPriorityMatrix.innerHTML = rows.length ? rows.map(row => {
     const latest = fusionRecent(row.items)[0];
     const priority = row.priority;
-    return `<div class="fusion-customer-row" data-fusion-account-row="${escapeAttr(row.key)}">
-      <div><strong class="company-name-with-logo">${companyLogoMarkup(row.company)}${escapeHtml(row.name)}</strong>
+    return `<article class="fusion-customer-row" data-fusion-account-row="${escapeAttr(row.key)}">
+      <header class="fusion-customer-card-head"><strong class="company-name-with-logo">${companyLogoMarkup(row.company || { id: row.key, display_name: row.name })}${escapeHtml(row.name)}</strong><span>监测账户</span></header>
+      <div class="fusion-customer-latest"><span>最新公开事件</span>
         <button type="button" class="fusion-event-link" data-fusion-item="${escapeAttr(latest.id)}">${escapeHtml(getDisplayTitle(latest))}</button>
         <small>${escapeHtml(fusionDateLabel(latest))} · ${escapeHtml(getSourceLabelText(latest))}</small></div>
-      <button type="button" class="customer-priority-count" data-fusion-account="${escapeAttr(row.key)}"><strong>${row.items.length}</strong><small>相关新闻</small></button>
-      <span class="customer-priority-density">${priority ? `${priority.density}%` : "未计算"}</span>
-      <span class="fusion-reference-score">${priority ? `<button type="button" class="text-button" data-methodology-target="priority-index" aria-label="参考指数 ${priority.priorityScore}，查看原有规则">${priority.priorityScore}</button>` : "未计算"}</span>
-      <button type="button" class="text-button" data-fusion-profile="${escapeAttr(row.key)}">公司详情 →</button></div>`;
+      <div class="fusion-customer-card-metrics">
+        <button type="button" class="customer-priority-count" data-fusion-account="${escapeAttr(row.key)}"><span>当前新闻</span><strong>${row.items.length}</strong><small>查看公开证据</small></button>
+        <div><span>ACRO 关注内容占比 <button class="metric-label-help" type="button" data-methodology-target="relevance-density" aria-label="查看 ACRO 关注内容占比规则">i</button></span><strong class="customer-priority-density">${priority.density}%</strong><small>内容匹配，不是客户关系</small></div>
+        <div><span>公开信号参考指数 <button class="metric-label-help" type="button" data-methodology-target="priority-index" aria-label="查看公开信号参考指数规则">i</button></span><strong class="fusion-reference-score"><button type="button" class="text-button" data-methodology-target="priority-index" aria-label="公开信号参考指数 ${priority.priorityScore}，查看计算规则">${priority.priorityScore}</button><small>/ 99</small></strong><small>用于同范围内横向比较</small></div>
+      </div>
+      <footer><span>${row.account?.organization_label ? escapeHtml(row.account.organization_label) : "公开动态监测对象"}</span><button type="button" class="text-button" data-fusion-profile="${escapeAttr(row.key)}">查看公司详情 →</button></footer>
+    </article>`;
   }).join("") : '<div class="empty">当前范围没有监测账户的公开新闻，不代表目录已删除或市场没有活动。</div>';
+  const methodNote = document.querySelector("#customerPriorityMethodNote");
+  if (methodNote) methodNote.textContent = `当前只展示本期有公开信息的账户；另有 ${hiddenTotal} 家仍保留在账户目录。ACRO 关注内容占比是该账户新闻中高相关与中相关内容的加权占比，不是 ACRO 与该公司的关系强度；公开信号参考指数综合新闻量、时效、来源和事件多样性，仅供浏览比较。`;
 }
 
 function fusionAssistantResponse(intent, items) {

@@ -42,6 +42,10 @@ async function verifyCounts(page) {
       assert.deepEqual(duplicateIds, []);
       assert.equal(await page.locator('#signalTrendChart svg polyline').count(), 4);
       assert.equal(await page.locator('#customerPriorityMatrix .customer-priority-density').count(), await page.evaluate(() => fusionAccountRows(getFilteredItems()).length));
+      const accountMetrics = await page.evaluate(() => fusionAccountRows(getFilteredItems()).map(row => ({ density: row.priority?.density, reference: row.priority?.priorityScore })));
+      assert.ok(accountMetrics.length > 0 && accountMetrics.every(row => Number.isFinite(row.density) && Number.isFinite(row.reference)));
+      assert.equal(await page.locator('#customerPriorityMatrix').getByText('未计算', { exact: true }).count(), 0);
+      assert.match(await page.locator('#customerPriorityScope').innerText(), /本期有动态.*232.*账户总库.*公开信息/);
       assert.equal(await page.locator('#topSignalList .signal-card').count(), 3);
       assert.ok(await page.locator('#topSignalList [data-company-logo]').count() > 0);
       await verifyCounts(page);
