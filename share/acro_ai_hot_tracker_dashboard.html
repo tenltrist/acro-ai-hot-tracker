@@ -301400,14 +301400,10 @@ function renderCompanyTimeline() {
   const topicMarkup = profile.top_topics?.length
     ? profile.top_topics.map((topic) => `<span>${escapeHtml(topic.label)} <b>${topic.count}</b></span>`).join("")
     : "<small>当前还没有稳定形成的结构化主题。</small>";
-  const actionMarkup = profile.top_actions?.length
-    ? profile.top_actions.map((action) => `<li><span>${escapeHtml(action.label)}</span><b>${action.count}</b></li>`).join("")
-    : "<li><span>暂无建议动作统计</span><b>0</b></li>";
   els.companyLivingProfile.innerHTML = `
     <header><span>${escapeHtml(company.role_label || "公司档案")}</span><h3 class="company-name-with-logo">${companyLogoMarkup(company, "profile")}${companyNameMarkup(company)}</h3></header>
     <div class="living-profile-block"><span>监测重点</span><p>${escapeHtml(company.monitoring_focus || "尚未配置监测重点。")}</p></div>
     <div class="living-profile-block"><span>持续出现的主题</span><div class="living-topic-list">${topicMarkup}</div></div>
-    <div class="living-profile-block"><span>建议动作分布</span><ul>${actionMarkup}</ul></div>
     <footer><span>最近动态</span><strong>${escapeHtml(profile.latest_activity || "暂无日期")}</strong></footer>
   `;
 
@@ -301431,7 +301427,6 @@ function renderCompanyTimeline() {
           <p>${escapeHtml(firstReadableSentence(getDisplaySummary(item), 150))}</p>
           <footer>
             <span class="evidence-quality ${escapeAttr(evidence.verification_status || "needs_original_check")}">${escapeHtml(evidence.verification_label || "需打开原文核验")}</span>
-            <span>${escapeHtml(item.recommended_action?.label || "归档观察")} · ${escapeHtml(item.recommended_action?.owner || "系统")}</span>
           </footer>
         </div>
       </article>

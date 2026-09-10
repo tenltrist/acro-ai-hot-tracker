@@ -96,6 +96,10 @@ async function navigate(page, target) {
       assert.equal(await page.locator('#companyCoverageTitle [data-company-logo]').getAttribute('data-company-logo'), 'takeda_pharma');
       await page.locator('#companyCoverageTitle').scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(output, `profile-${width}.png`) });
+      await navigate(page, 'timeline');
+      assert.equal(await page.locator('#companyLivingProfile').getByText('建议动作分布', { exact: true }).count(), 0);
+      assert.equal(await page.locator('#companyTimelineList').getByText('BD / 销售', { exact: true }).count(), 0);
+      assert.equal(await page.locator('#companyTimelineList').getByText('客户需求跟进', { exact: true }).count(), 0);
       await navigate(page, 'japan-customers');
       const customerRows = await page.locator('#japanCustomerList .customer-directory-row').count();
       assert.ok(customerRows > 0);
