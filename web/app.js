@@ -3664,7 +3664,7 @@ function renderCompanySourceCoverage() {
     <article><span>共享配置入口</span><strong>${sharedIds.length}</strong><small>可检索该公司，不代表命中</small></article>
     <article><span>已覆盖监测板块</span><strong>${coveredSlots}<b> / ${definitions.length}</b></strong><small>${gapSlots} 个监测板块尚未配置</small></article>
     <article class="${companyItems.length ? "has-output" : "needs-review"}"><span>本轮实际命中</span><strong>${companyItems.length}</strong><small>真正关联到该公司</small></article>
-    <article class="${companySelected.length ? "has-output" : "needs-review"}"><span>进入日报</span><strong>${companySelected.length}</strong><small>通过相关性与动作门槛</small></article>
+    <article class="${companySelected.length ? "has-output" : "needs-review"}"><span>进入日报</span><strong>${companySelected.length}</strong><small>通过当前日报准入门槛</small></article>
   `;
 
   els.companyCoverageGrid.innerHTML = definitions.map((definition) => {
@@ -5118,7 +5118,7 @@ function renderCompanyTimeline() {
   els.companyTimelineTimestamp.textContent = `${compactCompanyName(company)} · 更新 ${formatDateTime(state.payload.generated_at)}`;
   els.companyTimelineMetrics.innerHTML = `
     <article><span>累计信号</span><strong>${profile.item_count || 0}</strong><small>当前数据窗口全部记录</small></article>
-    <article><span>进入日报</span><strong>${profile.selected_count || 0}</strong><small>通过相关性与动作门槛</small></article>
+    <article><span>进入日报</span><strong>${profile.selected_count || 0}</strong><small>通过当前日报准入门槛</small></article>
     <article><span>运行来源</span><strong>${profile.source_count || 0}</strong><small>实际命中过该公司的入口</small></article>
     <article><span>本页证据充分</span><strong>${sourceBacked}</strong><small>摘要包含独立原始信息</small></article>
   `;
