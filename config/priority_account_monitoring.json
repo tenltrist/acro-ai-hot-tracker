@@ -7,6 +7,9 @@
       "company": {
         "id": "chugai_pharma",
         "display_name": "Chugai Pharmaceutical / 中外制药",
+        "display_name_en": "Chugai Pharmaceutical",
+        "display_name_zh": "中外制药",
+        "company_descriptor_zh": "抗体药与肿瘤研发制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；本轮仅建立市场情报监测，不将名单记录解读为成交或合作证据。",
@@ -52,6 +55,9 @@
       "company": {
         "id": "ono_pharma",
         "display_name": "Ono Pharmaceutical / 小野药品",
+        "display_name_en": "Ono Pharmaceutical",
+        "display_name_zh": "小野药品工业",
+        "company_descriptor_zh": "肿瘤、免疫与新药研发制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；监测公司动作与潜在需求，不推断内部客户状态。",
@@ -98,6 +104,9 @@
       "company": {
         "id": "shionogi",
         "display_name": "Shionogi / 盐野义制药",
+        "display_name_en": "Shionogi",
+        "display_name_zh": "盐野义制药",
+        "company_descriptor_zh": "感染、罕见病与新药研发制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；目录中的机构分类不作为商业关系证据，本轮只开启公开信息监测。",
@@ -144,6 +153,9 @@
       "company": {
         "id": "tanabe_pharma",
         "display_name": "Tanabe Pharma / 田边制药",
+        "display_name_en": "Tanabe Pharma",
+        "display_name_zh": "田边制药",
+        "company_descriptor_zh": "罕见病、神经科学与免疫制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；本轮监测采用公司现名与历史名别名，不推断采购或合作关系。",
@@ -190,6 +202,9 @@
       "company": {
         "id": "jcr_pharma",
         "display_name": "JCR Pharmaceuticals / JCR Pharma",
+        "display_name_en": "JCR Pharmaceuticals",
+        "display_name_zh": "JCR 制药",
+        "company_descriptor_zh": "罕见病与生物药制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；作为生物制药重点账户进行公开动态监测，不表示商业关系已确认。",
@@ -237,6 +252,9 @@
       "company": {
         "id": "peptidream",
         "display_name": "PeptiDream / 肽梦",
+        "display_name_en": "PeptiDream",
+        "display_name_zh": "",
+        "company_descriptor_zh": "特殊环肽、放射性药物与平台研发企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；作为技术平台型生物医药账户持续监测，不将名单记录视为已有客户关系。",
@@ -295,6 +313,9 @@
       "company": {
         "id": "kaken_pharma",
         "display_name": "Kaken Pharmaceutical / 科研制药",
+        "display_name_en": "Kaken Pharmaceutical",
+        "display_name_zh": "科研制药",
+        "company_descriptor_zh": "皮肤科、骨科与专科药制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；作为日本研发型药企建立持续监测，不代表已有业务关系。",
@@ -340,6 +361,9 @@
       "company": {
         "id": "kissei_pharma",
         "display_name": "Kissei Pharmaceutical / Kissei药品工业",
+        "display_name_en": "Kissei Pharmaceutical",
+        "display_name_zh": "Kissei 药品工业",
+        "company_descriptor_zh": "肾脏、内分泌与罕见病制药企业",
         "business_role": "customer",
         "role_label": "重点市场账户 / 关系待确认",
         "role_reason": "来自公开日本账户名单；本轮只根据公开官网和新闻建立重点账户监测，不声称已成交。",

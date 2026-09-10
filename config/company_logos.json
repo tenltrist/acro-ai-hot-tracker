@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08",
+  "updated_at": "2026-09-10",
   "usage_note": "公司识别用标识，权利归各品牌所有；不表示合作、客户认证或官方背书。未核实的标识不展示。",
   "companies": {
     "merck_life_science": {
@@ -346,7 +346,7 @@
     "medchemexpress": {
       "website": "https://www.medchemexpress.cn/",
       "status": "pending",
-      "note": "官网访问受限，未使用第三方重绘或无法核实的图片。"
+      "note": "官网公开页可浏览，但自动下载返回 Cloudflare 403；尚未取得可核实的官方原图，不使用第三方重绘。"
     },
     "cellgenix": {
       "website": "https://www.cellgenix.com/",

@@ -74,6 +74,9 @@ def main() -> int:
     for company in payload_data.get("companies", []):
         configured = company_metadata.get(company["id"], {})
         for field in (
+            "display_name_en",
+            "display_name_zh",
+            "company_descriptor_zh",
             "business_role",
             "role_label",
             "role_reason",

@@ -2329,16 +2329,51 @@ const companyRoleDockMeta = {
 };
 
 function compactCompanyName(company) {
-  if (company.id === "acro") return "ACRO";
-  return (company.display_name || company.id).split(" / ")[0];
+  if (!company) return "未命名机构";
+  if (company.id === "acro") return "ACROBiosystems";
+  return company.display_name_en || (company.display_name || company.id).split(" / ")[0];
+}
+
+function companyChineseLabel(company) {
+  if (!company) return "";
+  const chineseName = String(company.display_name_zh || "").trim();
+  const descriptor = String(company.company_descriptor_zh || "").trim();
+  if (chineseName && descriptor && chineseName !== descriptor) return `${chineseName} · ${descriptor}`;
+  return chineseName || descriptor;
+}
+
+function companyNameMarkup(company) {
+  const englishName = compactCompanyName(company);
+  const chineseLabel = companyChineseLabel(company);
+  return `<span class="company-bilingual-name"><span class="company-name-en">${escapeHtml(englishName)}</span>${chineseLabel ? `<small>${escapeHtml(chineseLabel)}</small>` : ""}</span>`;
+}
+
+function companySelectLabel(company) {
+  const englishName = compactCompanyName(company);
+  const chineseHint = String(company?.display_name_zh || company?.company_descriptor_zh || "").trim();
+  return chineseHint ? `${englishName} / ${chineseHint}` : englishName;
+}
+
+function accountCompanyIdentity(account, company = null) {
+  if (!account) return company;
+  return {
+    ...(company || {}),
+    id: account.id,
+    logo_id: account.logo_id || company?.logo_id || company?.id || account.id,
+    display_name: account.name,
+    display_name_en: account.name,
+    display_name_zh: account.name_zh || company?.display_name_zh || "",
+    company_descriptor_zh: company?.company_descriptor_zh || account.organization_label || "日本市场监测账户",
+  };
 }
 
 function companyLogoMarkup(company, size = "compact") {
   if (!company || company.entity_kind || company.customer_pool) return "";
   const name = compactCompanyName(company);
-  const logo = window.AIHOT_COMPANY_LOGOS?.[company.id];
+  const logoId = company.logo_id || company.id;
+  const logo = window.AIHOT_COMPANY_LOGOS?.[logoId];
   const initials = name.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "").slice(0, 2).toUpperCase();
-  return `<span class="company-logo company-logo--${size}${logo?.background === "dark" ? " company-logo--dark" : ""}" data-company-logo="${escapeAttr(company.id)}" title="${escapeAttr(name)}${logo?.src ? "" : " · Logo 待补"}" aria-hidden="true">
+  return `<span class="company-logo company-logo--${size}${logo?.background === "dark" ? " company-logo--dark" : ""}${logo?.src ? "" : " company-logo--placeholder"}" data-company-logo="${escapeAttr(company.id)}" data-logo-id="${escapeAttr(logoId)}" data-logo-status="${logo?.src ? "official" : "placeholder"}" title="${escapeAttr(name)}${logo?.src ? " · 已核实官方标识" : " · 暂无已核实官方 Logo，显示英文首字母占位"}" aria-hidden="true">
     <span class="company-logo-fallback">${escapeHtml(initials)}</span>
     ${logo?.src ? `<img src="${escapeAttr(logo.src)}" alt="" loading="lazy" decoding="async" data-company-logo-image />` : ""}
   </span>`;
@@ -2389,8 +2424,8 @@ function renderCompanyDock() {
     const rows = members.length
       ? members.map((company) => `
           <button class="company-chip ${state.company === company.display_name ? "active" : ""}" type="button" data-filter-company="${escapeHtml(company.id)}">
-            <span class="company-chip-main">${companyLogoMarkup(company)}<span class="company-chip-copy"><strong>${escapeHtml(compactCompanyName(company))}</strong>
-              <small>${role === "competitor" && Number.isFinite(getCompetitiveRank(company)) ? `#${formatCompetitiveRank(company)} · ` : ""}${escapeHtml(company.role_label || meta.label)}</small>
+            <span class="company-chip-main">${companyLogoMarkup(company)}<span class="company-chip-copy">${companyNameMarkup(company)}
+              <small class="company-chip-meta">${role === "competitor" && Number.isFinite(getCompetitiveRank(company)) ? `#${formatCompetitiveRank(company)} · ` : ""}${escapeHtml(company.role_label || meta.label)}</small>
             </span></span>
           </button>
         `).join("")
@@ -2564,7 +2599,7 @@ function renderJapanAccountIntelligence() {
   const query = state.accountQuery.toLowerCase().trim();
   const matchingAccounts = accounts.filter((account) => {
     const matches = signalIndex.get(account.id) || [];
-    const haystack = `${account.name} ${(account.aliases || []).join(" ")}`.toLowerCase();
+    const haystack = `${account.name} ${account.name_zh || ""} ${(account.aliases || []).join(" ")}`.toLowerCase();
     return (!query || haystack.includes(query)) &&
       (state.accountStage === "all" || account.account_stage === state.accountStage) &&
       (state.accountOrganizationType === "all" || account.organization_type === state.accountOrganizationType) &&
@@ -2585,9 +2620,10 @@ function renderJapanAccountIntelligence() {
   const accountRows = renderedAccounts.map((account) => {
     const matches = signalIndex.get(account.id) || [];
     const company = (state.payload.companies || []).find((entry) => findAccountForCompany(entry, [account]));
+    const identity = accountCompanyIdentity(account, company);
     return `
       <button class="customer-directory-row ${account.id === state.selectedAccountId ? "active" : ""}" type="button" data-japan-account-id="${escapeAttr(account.id)}">
-        <span class="customer-name-cell company-name-with-logo">${companyLogoMarkup(company)}<strong>${escapeHtml(account.name)}</strong></span>
+        <span class="customer-name-cell company-name-with-logo">${companyLogoMarkup(identity)}${companyNameMarkup(identity)}</span>
         <span class="customer-type-tags">${accountStageMarkup(account)}</span>
         <span class="customer-parent-cell">${escapeHtml(account.organization_label || "待分类")}</span>
         <span class="customer-signal-count ${matches.length ? "has-signal" : ""}">${matches.length ? `${matches.length} 条候选` : "暂无"}</span>
@@ -2606,6 +2642,8 @@ function renderJapanAccountIntelligence() {
     return;
   }
   const matches = signalIndex.get(selected.id) || [];
+  const selectedCompany = (state.payload.companies || []).find((entry) => findAccountForCompany(entry, [selected]));
+  const selectedIdentity = accountCompanyIdentity(selected, selectedCompany);
   const aliases = (selected.aliases || []).join(" / ");
   const fields = [
     customerDetailField("账户状态", selected.account_stage_label),
@@ -2639,7 +2677,7 @@ function renderJapanAccountIntelligence() {
       ? "先核对主体和事件，再判断是否存在 ACRO 产品需求、技术切入点或活动跟进机会。"
       : "名单只负责建立公司锚点；没有外部信号时，不自动生成商业机会。";
   els.japanCustomerDetail.innerHTML = `${fusionDirectoryBanner()}
-    <header><span>账户情报锚点</span><h3 class="company-name-with-logo">${companyLogoMarkup((state.payload.companies || []).find((entry) => findAccountForCompany(entry, [selected])), "profile")}<span>${escapeHtml(selected.name)}</span></h3><p>${escapeHtml(data.semantics || "")}</p></header>
+    <header><span>账户情报锚点</span><h3 class="company-name-with-logo">${companyLogoMarkup(selectedIdentity, "profile")}${companyNameMarkup(selectedIdentity)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
     <div class="customer-detail-fields">${fields}</div>
     <div class="customer-opportunity-state ${opportunityClass}">
       <span>建议动作</span>
@@ -3024,7 +3062,7 @@ function renderCompanyPools() {
             <article class="company-profile-row">
               <div class="company-profile-title">
                 <div class="company-name-with-logo">${companyLogoMarkup(company, "profile")}
-                <strong>${Number.isFinite(getCompetitiveRank(company)) ? `<i class="competitor-rank-badge">${formatCompetitiveRank(company)}</i>` : ""}${escapeHtml(company.display_name)}</strong>
+                <span class="company-profile-name-line">${Number.isFinite(getCompetitiveRank(company)) ? `<i class="competitor-rank-badge">${formatCompetitiveRank(company)}</i>` : ""}${companyNameMarkup(company)}</span>
                 </div><span class="company-role-label">${escapeHtml(company.role_label || role.title)}</span>
               </div>
               <div>
@@ -3591,7 +3629,7 @@ function renderCompanySourceCoverage() {
   if (!validIds.has(state.coverageCompany)) state.coverageCompany = companies[0]?.id || "";
 
   els.companyCoverageSelect.innerHTML = companies.map((company) => `
-    <option value="${escapeHtml(company.id)}" ${company.id === state.coverageCompany ? "selected" : ""}>${escapeHtml(company.display_name)}</option>
+    <option value="${escapeHtml(company.id)}" ${company.id === state.coverageCompany ? "selected" : ""}>${escapeHtml(companySelectLabel(company))}</option>
   `).join("");
 
   const company = companies.find((row) => row.id === state.coverageCompany);
@@ -3611,7 +3649,7 @@ function renderCompanySourceCoverage() {
 
   els.companyCoverageTitle.classList.add("company-name-with-logo");
   els.companyCoverageTitle.innerHTML = company
-    ? `${companyLogoMarkup(company, "profile")}<span>${escapeHtml(company.display_name)} · ${definitions.length} 类公司监测板块</span>`
+    ? `${companyLogoMarkup(company, "profile")}<span>${companyNameMarkup(company)}<small class="company-coverage-kind">${definitions.length} 类公司监测板块</small></span>`
     : "公司监测档案";
   els.companyCoverageDescription.textContent = company?.monitoring_focus
     ? `监测重点：${company.monitoring_focus}。点开任一监测板块，可查看它实际使用的具体入口、所属来源方法和本轮产出。`
@@ -3783,9 +3821,7 @@ async function loadData() {
 
 function hydrateFilters() {
   const categories = [...new Set(state.payload.items.map(getBusinessEventType))].sort();
-  const companies = (state.payload.companies || [])
-    .map((company) => company.display_name)
-    .sort();
+  const companies = sortCompaniesForDisplay(state.payload.companies || []);
   const current = els.categoryFilter.value;
   const currentCompany = els.companyFilter.value;
   els.categoryFilter.innerHTML = '<option value="all">全部商业事件</option>';
@@ -3800,11 +3836,11 @@ function hydrateFilters() {
   els.companyFilter.innerHTML = '<option value="all">全部公司</option>';
   for (const company of companies) {
     const option = document.createElement("option");
-    option.value = company;
-    option.textContent = company;
+    option.value = company.display_name;
+    option.textContent = companySelectLabel(company);
     els.companyFilter.appendChild(option);
   }
-  els.companyFilter.value = companies.includes(currentCompany) ? currentCompany : "all";
+  els.companyFilter.value = companies.some((company) => company.display_name === currentCompany) ? currentCompany : "all";
 }
 
 function render() {
@@ -4550,7 +4586,7 @@ function renderCompanyTopicMatrix(scopedItems = null) {
   const header = `<div class="matrix-row matrix-header" style="grid-template-columns:${columns}"><span>相关竞品（高 → 低）</span>${categories.map((category) => `<span>${escapeHtml(labelBusinessEvent(category, true))}</span>`).join("")}</div>`;
   const rows = companies.map((company) => `
     <div class="matrix-row" style="grid-template-columns:${columns}">
-      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b>${companyLogoMarkup(company)}<span class="matrix-company-copy">${escapeHtml(shortCompanyName(company.display_name))}<small>${companyTotals[company.id]} 条监测信号</small></span></span>
+      <span class="matrix-company"><b class="matrix-rank">${formatCompetitiveRank(company)}</b>${companyLogoMarkup(company)}<span class="matrix-company-copy">${companyNameMarkup(company)}<small>${companyTotals[company.id]} 条监测信号</small></span></span>
       ${categories.map((category) => {
         const count = matrix[company.id][category];
         const selected = selectedMatrix[company.id][category];
@@ -5051,7 +5087,7 @@ function renderCompanyTimeline() {
   const currentOptions = companies.map((company) => company.id);
   if (previousOptions.join("|") !== currentOptions.join("|")) {
     els.companyTimelineSelect.innerHTML = companies.map((company) => `
-      <option value="${escapeAttr(company.id)}">${escapeHtml(compactCompanyName(company))}</option>
+      <option value="${escapeAttr(company.id)}">${escapeHtml(companySelectLabel(company))}</option>
     `).join("");
   }
   els.companyTimelineSelect.value = state.timelineCompany;
@@ -5089,7 +5125,7 @@ function renderCompanyTimeline() {
     ? profile.top_actions.map((action) => `<li><span>${escapeHtml(action.label)}</span><b>${action.count}</b></li>`).join("")
     : "<li><span>暂无建议动作统计</span><b>0</b></li>";
   els.companyLivingProfile.innerHTML = `
-    <header><span>${escapeHtml(company.role_label || "公司档案")}</span><h3>${escapeHtml(company.display_name)}</h3></header>
+    <header><span>${escapeHtml(company.role_label || "公司档案")}</span><h3 class="company-name-with-logo">${companyLogoMarkup(company, "profile")}${companyNameMarkup(company)}</h3></header>
     <div class="living-profile-block"><span>监测重点</span><p>${escapeHtml(company.monitoring_focus || "尚未配置监测重点。")}</p></div>
     <div class="living-profile-block"><span>持续出现的主题</span><div class="living-topic-list">${topicMarkup}</div></div>
     <div class="living-profile-block"><span>建议动作分布</span><ul>${actionMarkup}</ul></div>

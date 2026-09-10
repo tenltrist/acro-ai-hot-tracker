@@ -1907,7 +1907,15 @@ a {
 .company-logo-fallback {
   font-size: 12px;
   font-weight: 750;
+  letter-spacing: 0;
   line-height: 1;
+}
+
+.company-logo--placeholder {
+  border-style: dashed;
+  border-color: #b9c9ce;
+  background: #eef3f4;
+  color: #36515b;
 }
 
 .company-logo img {
@@ -1944,6 +1952,49 @@ a {
 .company-name-with-logo > :last-child {
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.company-bilingual-name {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.company-name-en {
+  min-width: 0;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.company-bilingual-name > small {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 550;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.company-profile-name-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  min-width: 0;
+}
+
+.company-profile-name-line .company-bilingual-name {
+  flex: 1;
+}
+
+.company-chip-meta,
+.company-coverage-kind {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 550;
+  line-height: 1.4;
 }
 
 .company-chip-copy {
@@ -6227,6 +6278,15 @@ select {
   min-width: 0;
 }
 
+.customer-name-cell.company-name-with-logo {
+  display: flex;
+  align-items: center;
+}
+
+.customer-name-cell .company-bilingual-name {
+  flex: 1;
+}
+
 .customer-name-cell strong {
   font-size: 12px;
   line-height: 1.35;
@@ -6240,6 +6300,14 @@ select {
   color: #966024;
   font-size: 9px;
   font-weight: 800;
+}
+
+.customer-name-cell .company-bilingual-name > small {
+  padding: 0;
+  background: transparent;
+  color: #6b7b83;
+  font-size: 10px;
+  font-weight: 550;
 }
 
 .customer-type-tags {

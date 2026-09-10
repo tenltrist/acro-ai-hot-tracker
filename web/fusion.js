@@ -203,12 +203,12 @@ function fusionAccountRows(items) {
     const company = companies.find(company => findAccountForCompany(company)?.id === account.id);
     const matches = index.get(account.id) || [];
     const priority = priorities.get(company?.id) || calculateCustomerAccountPriority(company, matches, account);
-    return { key: account.id, name: account.name, account, company, items: matches, priority };
+    return { key: account.id, name: account.name, account, company, identity: accountCompanyIdentity(account, company), items: matches, priority };
   });
   for (const company of companies.filter(company => !rows.some(row => row.company?.id === company.id))) {
     const matches = items.filter(item => (item.matched_company_ids || []).includes(company.id));
     const priority = priorities.get(company.id) || calculateCustomerAccountPriority(company, matches);
-    rows.push({ key: company.id, name: company.display_name, company, items: matches, priority });
+    rows.push({ key: company.id, name: company.display_name, company, identity: company, items: matches, priority });
   }
   return rows.filter(row => row.items.length).sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
 }
@@ -223,7 +223,7 @@ function renderFusionCustomers(items) {
     const latest = fusionRecent(row.items)[0];
     const priority = row.priority;
     return `<article class="fusion-customer-row" data-fusion-account-row="${escapeAttr(row.key)}">
-      <header class="fusion-customer-card-head"><strong class="company-name-with-logo">${companyLogoMarkup(row.company || { id: row.key, display_name: row.name })}${escapeHtml(row.name)}</strong><span>监测账户</span></header>
+      <header class="fusion-customer-card-head"><strong class="company-name-with-logo">${companyLogoMarkup(row.identity)}${companyNameMarkup(row.identity)}</strong><span>监测账户</span></header>
       <div class="fusion-customer-latest"><span>最新公开事件</span>
         <button type="button" class="fusion-event-link" data-fusion-item="${escapeAttr(latest.id)}">${escapeHtml(getDisplayTitle(latest))}</button>
         <small>${escapeHtml(fusionDateLabel(latest))} · ${escapeHtml(getSourceLabelText(latest))}</small></div>

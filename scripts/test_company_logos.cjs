@@ -29,8 +29,13 @@ async function navigate(page, target) {
       await page.goto(pathToFileURL(path.join(root, 'web/index.html')).href);
       await page.waitForFunction(() => document.querySelectorAll('#companyDockList [data-company-logo]').length === 34);
       assert.equal(await page.locator('#companyDockList [data-company-logo-image]').count(), 30);
+      assert.equal(await page.locator('#companyDockList [data-logo-status="placeholder"]').count(), 4);
+      assert.equal(await page.locator('#companyDockList .company-bilingual-name').count(), 34);
+      assert.equal(await page.locator('#companyDockList .company-bilingual-name > small').count(), 34);
       assert.equal(await page.locator('#companyTopicMatrix [data-company-logo]').count(), 11);
+      assert.equal(await page.locator('#companyTopicMatrix .company-bilingual-name > small').count(), 11);
       assert.equal(await page.locator('#customerPriorityMatrix [data-company-logo-image]').count(), 12);
+      assert.ok(await page.locator('#customerPriorityMatrix [data-logo-status="placeholder"]').count() > 0);
       const decoded = await page.evaluate(async () => {
         const failed = [];
         for (const [id, logo] of Object.entries(window.AIHOT_COMPANY_LOGOS)) {
@@ -72,7 +77,16 @@ async function navigate(page, target) {
       await page.locator('#companyCoverageTitle').scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(output, `profile-${width}.png`) });
       await navigate(page, 'japan-customers');
+      const customerRows = await page.locator('#japanCustomerList .customer-directory-row').count();
+      assert.ok(customerRows > 0);
+      assert.equal(await page.locator('#japanCustomerList [data-company-logo]').count(), customerRows);
+      assert.equal(await page.locator('#japanCustomerList .company-name-en').count(), customerRows);
+      assert.equal(await page.locator('#japanCustomerList .company-bilingual-name > small').count(), customerRows);
       assert.ok(await page.locator('#japanCustomerList [data-company-logo-image]').count() > 0);
+      assert.ok(await page.locator('#japanCustomerList [data-logo-status="placeholder"]').count() > 0);
+      if (width === 1440) {
+        await page.locator('#japanCustomerList').screenshot({ path: path.join(output, 'customer-directory.png') });
+      }
       const overflow = await page.locator('.company-name-with-logo:visible, .company-chip-main:visible').evaluateAll(rows => rows.filter(row => {
         const outer = row.getBoundingClientRect();
         return Array.from(row.children).some(child => child.getBoundingClientRect().right > outer.right + 2);

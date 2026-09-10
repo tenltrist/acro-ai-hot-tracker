@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "latest_run.json"
 JAPAN_ACCOUNTS_PATH = ROOT / "config" / "japan_accounts.json"
 PRIORITY_ACCOUNT_MONITORING_PATH = ROOT / "config" / "priority_account_monitoring.json"
+COMPANIES_PATH = ROOT / "config" / "companies.json"
+COMPANY_LOGOS_PATH = ROOT / "config" / "company_logos.json"
 
 
 def load_payload() -> dict[str, Any]:
@@ -24,6 +26,8 @@ def validate_japan_accounts(errors: list[str]) -> int:
     with JAPAN_ACCOUNTS_PATH.open("r", encoding="utf-8") as handle:
         payload = json.load(handle)
     accounts = payload.get("accounts", [])
+    with COMPANY_LOGOS_PATH.open("r", encoding="utf-8") as handle:
+        logo_records = json.load(handle).get("companies", {})
     ids = [account.get("id") for account in accounts]
     names = [str(account.get("name", "")).casefold().strip() for account in accounts]
     if len(ids) != len(set(ids)):
@@ -49,6 +53,9 @@ def validate_japan_accounts(errors: list[str]) -> int:
             errors.append(f"{account_id}: invalid organization_type")
         if account.get("account_stage") == "public_relationship" and not account.get("public_evidence"):
             errors.append(f"{account_id}: public relationship is missing evidence")
+        logo_id = account.get("logo_id")
+        if logo_id and not logo_records.get(logo_id, {}).get("asset"):
+            errors.append(f"{account_id}: logo_id {logo_id} has no verified logo asset")
         forbidden = {"acro", "acro_flag", "internal_status", "internal_relationship"} & set(account)
         if forbidden:
             errors.append(f"{account_id}: public account exposes private keys {sorted(forbidden)}")
@@ -65,6 +72,21 @@ def main() -> int:
     source_ids = {row.get("source_id") for row in health_rows}
     errors: list[str] = []
     japan_account_count = validate_japan_accounts(errors)
+
+    with COMPANIES_PATH.open("r", encoding="utf-8") as handle:
+        configured_companies = json.load(handle).get("companies", [])
+    if PRIORITY_ACCOUNT_MONITORING_PATH.exists():
+        with PRIORITY_ACCOUNT_MONITORING_PATH.open("r", encoding="utf-8") as handle:
+            configured_companies.extend(
+                account.get("company", {})
+                for account in json.load(handle).get("accounts", [])
+            )
+    for company in configured_companies:
+        company_id = company.get("id", "unknown")
+        if not str(company.get("display_name_en", "")).strip():
+            errors.append(f"{company_id}: missing English display name")
+        if not str(company.get("display_name_zh", "")).strip() and not str(company.get("company_descriptor_zh", "")).strip():
+            errors.append(f"{company_id}: missing Chinese name or company descriptor")
 
     priority_customer_ids = {
         "takeda_pharma",

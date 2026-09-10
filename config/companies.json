@@ -3,6 +3,9 @@
     {
       "id": "acro",
       "display_name": "ACROBiosystems / 百普赛斯",
+      "display_name_en": "ACROBiosystems",
+      "display_name_zh": "百普赛斯",
+      "company_descriptor_zh": "重组蛋白、抗体与生命科学试剂",
       "business_role": "self",
       "role_label": "本公司 / MVP 标本",
       "role_reason": "以 ACRO 验证数据源、筛选、日报和展示的完整链路，不与外部公司混入竞品或客户统计。",
@@ -75,6 +78,9 @@
     {
       "id": "thermo_fisher",
       "display_name": "Thermo Fisher Scientific",
+      "display_name_en": "Thermo Fisher Scientific",
+      "display_name_zh": "赛默飞世尔科技",
+      "company_descriptor_zh": "综合生命科学工具与服务",
       "business_role": "competitor",
       "role_label": "竞品 / 综合型行业标杆",
       "role_reason": "与 ACRO 在生命科学研究工具、重组蛋白相关应用、细胞培养和生物制药服务等领域存在产品与客户场景重叠。",
@@ -160,6 +166,9 @@
     {
       "id": "merck_life_science",
       "display_name": "Merck KGaA Life Science / MilliporeSigma",
+      "display_name_en": "Merck KGaA Life Science / MilliporeSigma",
+      "display_name_zh": "默克生命科学",
+      "company_descriptor_zh": "试剂、检测与生物工艺平台",
       "business_role": "competitor",
       "role_label": "竞品 / 生命科学平台型公司",
       "role_reason": "生命科学试剂、生物工艺、检测与 CDMO 能力覆盖 ACRO 所处的研究和生物制药客户市场。此处仅监测 Merck KGaA Life Science，不包含 MSD。",
@@ -242,6 +251,9 @@
     {
       "id": "sartorius",
       "display_name": "Sartorius / Sartorius Stedim Biotech",
+      "display_name_en": "Sartorius / Sartorius Stedim Biotech",
+      "display_name_zh": "赛多利斯",
+      "company_descriptor_zh": "生物工艺与实验室技术",
       "business_role": "competitor",
       "role_label": "竞品 / 生物工艺与分析",
       "role_reason": "其生物工艺、细胞培养、分析平台及耗材面向相同的生物制药研发和生产客户，是能力边界上的对标公司。",
@@ -309,6 +321,9 @@
     {
       "id": "miltenyi_biotec",
       "display_name": "Miltenyi Biotec / 美天旎",
+      "display_name_en": "Miltenyi Biotec",
+      "display_name_zh": "美天旎生物技术",
+      "company_descriptor_zh": "细胞分选与细胞治疗技术",
       "business_role": "competitor",
       "competitive_relevance_rank": 3,
       "competitive_relevance_scope": "primary",
@@ -376,6 +391,9 @@
     {
       "id": "abcam",
       "display_name": "Abcam",
+      "display_name_en": "Abcam",
+      "display_name_zh": "艾博抗",
+      "company_descriptor_zh": "抗体与蛋白试剂",
       "business_role": "competitor",
       "competitive_relevance_rank": 8,
       "competitive_relevance_scope": "primary",
@@ -391,6 +409,9 @@
     {
       "id": "promega",
       "display_name": "Promega",
+      "display_name_en": "Promega",
+      "display_name_zh": "普洛麦格",
+      "company_descriptor_zh": "分子与细胞分析试剂",
       "business_role": "competitor",
       "competitive_relevance_rank": 2,
       "competitive_relevance_scope": "primary",
@@ -406,6 +427,9 @@
     {
       "id": "rd_systems",
       "display_name": "R&D Systems",
+      "display_name_en": "R&D Systems",
+      "display_name_zh": "",
+      "company_descriptor_zh": "蛋白、抗体与免疫分析品牌",
       "business_role": "competitor",
       "competitive_relevance_rank": 11,
       "competitive_relevance_scope": "primary",
@@ -422,6 +446,9 @@
     {
       "id": "bd_biosciences",
       "display_name": "BD Biosciences",
+      "display_name_en": "BD Biosciences",
+      "display_name_zh": "碧迪生物科学",
+      "company_descriptor_zh": "流式细胞与生命科学工具",
       "business_role": "competitor",
       "role_label": "竞品 / 流式与细胞分析",
       "role_reason": "BD Biosciences 的流式细胞仪、抗体、细胞分选和单细胞分析覆盖 ACRO 客户的细胞分析与 CGT 场景。",
@@ -435,6 +462,9 @@
     {
       "id": "medchemexpress",
       "display_name": "MedChemExpress / MCE",
+      "display_name_en": "MedChemExpress / MCE",
+      "display_name_zh": "MCE",
+      "company_descriptor_zh": "小分子、重组蛋白与生命科学试剂",
       "business_role": "competitor",
       "role_label": "竞品 / 小分子与研究试剂",
       "role_reason": "MCE 通过小分子、重组蛋白、抗体、试剂盒与药物研发服务竞争同一批科研和药企客户。",
@@ -448,6 +478,9 @@
     {
       "id": "stemcell_technologies",
       "display_name": "STEMCELL Technologies",
+      "display_name_en": "STEMCELL Technologies",
+      "display_name_zh": "",
+      "company_descriptor_zh": "细胞培养与干细胞研究工具",
       "business_role": "competitor",
       "role_label": "竞品 / 干细胞与细胞培养",
       "role_reason": "干细胞、免疫细胞、培养基、细胞分选与类器官方案和 ACRO 的细胞治疗及类器官产品场景重叠。",
@@ -461,6 +494,9 @@
     {
       "id": "sino_biological",
       "display_name": "Sino Biological / 义翘神州",
+      "display_name_en": "Sino Biological",
+      "display_name_zh": "义翘神州",
+      "company_descriptor_zh": "重组蛋白与抗体",
       "business_role": "competitor",
       "competitive_relevance_rank": 4,
       "competitive_relevance_scope": "primary",
@@ -476,6 +512,9 @@
     {
       "id": "takara_bio",
       "display_name": "Takara Bio / 宝生物",
+      "display_name_en": "Takara Bio",
+      "display_name_zh": "宝生物",
+      "company_descriptor_zh": "分子生物学与细胞技术",
       "business_role": "competitor",
       "role_label": "竞品 / 基因细胞治疗工具",
       "role_reason": "PCR、NGS、基因工程、细胞与基因治疗研发试剂和 CDMO 能力覆盖 ACRO 的 CGT 客户群。",
@@ -489,6 +528,9 @@
     {
       "id": "cytiva",
       "display_name": "Cytiva / 思拓凡",
+      "display_name_en": "Cytiva",
+      "display_name_zh": "思拓凡",
+      "company_descriptor_zh": "生物工艺与细胞基因治疗",
       "business_role": "competitor",
       "competitive_relevance_scope": "secondary",
       "role_label": "竞品 / 生物工艺与蛋白分析平台",
@@ -503,6 +545,9 @@
     {
       "id": "fujifilm_wako",
       "display_name": "FUJIFILM Wako Pure Chemical / 富士胶片和光纯药",
+      "display_name_en": "FUJIFILM Wako Pure Chemical",
+      "display_name_zh": "富士胶片和光纯药",
+      "company_descriptor_zh": "化学与生命科学试剂",
       "business_role": "competitor",
       "competitive_relevance_scope": "secondary",
       "role_label": "竞品 / 日本生命科学与质量检测试剂",
@@ -517,6 +562,9 @@
     {
       "id": "nacalai_tesque",
       "display_name": "Nacalai Tesque / ナカライテスク",
+      "display_name_en": "Nacalai Tesque",
+      "display_name_zh": "",
+      "company_descriptor_zh": "日本研究试剂与实验室耗材供应商",
       "business_role": "competitor",
       "competitive_relevance_scope": "secondary",
       "role_label": "竞品 / 日本研究试剂与渠道",
@@ -531,6 +579,9 @@
     {
       "id": "proteintech",
       "display_name": "Proteintech",
+      "display_name_en": "Proteintech",
+      "display_name_zh": "Proteintech 蛋白科技",
+      "company_descriptor_zh": "抗体、蛋白与免疫分析试剂",
       "business_role": "competitor",
       "competitive_relevance_rank": 1,
       "competitive_relevance_scope": "primary",
@@ -546,6 +597,9 @@
     {
       "id": "cellgenix",
       "display_name": "CellGenix",
+      "display_name_en": "CellGenix",
+      "display_name_zh": "",
+      "company_descriptor_zh": "细胞与基因治疗用 GMP 原料品牌",
       "business_role": "competitor",
       "competitive_relevance_rank": 5,
       "competitive_relevance_scope": "primary",
@@ -562,6 +616,9 @@
     {
       "id": "biolegend",
       "display_name": "BioLegend",
+      "display_name_en": "BioLegend",
+      "display_name_zh": "",
+      "company_descriptor_zh": "抗体、流式与免疫学试剂品牌",
       "business_role": "competitor",
       "competitive_relevance_rank": 6,
       "competitive_relevance_scope": "primary",
@@ -578,6 +635,9 @@
     {
       "id": "sigma_aldrich",
       "display_name": "Sigma-Aldrich",
+      "display_name_en": "Sigma-Aldrich",
+      "display_name_zh": "西格玛奥德里奇",
+      "company_descriptor_zh": "化学与生命科学试剂品牌",
       "business_role": "competitor",
       "competitive_relevance_rank": 7,
       "competitive_relevance_scope": "primary",
@@ -594,6 +654,9 @@
     {
       "id": "biotechne",
       "display_name": "Bio-Techne",
+      "display_name_en": "Bio-Techne",
+      "display_name_zh": "Bio-Techne 生物技术集团",
+      "company_descriptor_zh": "蛋白、抗体与分析平台",
       "business_role": "competitor",
       "competitive_relevance_rank": 9,
       "competitive_relevance_scope": "primary",
@@ -609,6 +672,9 @@
     {
       "id": "peprotech",
       "display_name": "PeproTech",
+      "display_name_en": "PeproTech",
+      "display_name_zh": "",
+      "company_descriptor_zh": "细胞因子与重组蛋白品牌",
       "business_role": "competitor",
       "competitive_relevance_rank": 10,
       "competitive_relevance_scope": "primary",
@@ -625,6 +691,9 @@
     {
       "id": "takeda_pharma",
       "display_name": "Takeda Pharmaceutical / 武田药品",
+      "display_name_en": "Takeda Pharmaceutical",
+      "display_name_zh": "武田药品工业",
+      "company_descriptor_zh": "综合制药企业",
       "business_role": "customer",
       "role_label": "公开关系重点账户 / 日本大型药企",
       "role_reason": "ACROBiosystems 公开产品目录将 Takeda 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
@@ -638,6 +707,9 @@
     {
       "id": "astellas_pharma",
       "display_name": "Astellas Pharma / 安斯泰来制药",
+      "display_name_en": "Astellas Pharma",
+      "display_name_zh": "安斯泰来制药",
+      "company_descriptor_zh": "综合制药企业",
       "business_role": "customer",
       "role_label": "公开关系重点账户 / 日本大型药企",
       "role_reason": "ACROBiosystems 公开产品目录将 Astellas 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
@@ -651,6 +723,9 @@
     {
       "id": "daiichi_sankyo",
       "display_name": "Daiichi Sankyo / 第一三共",
+      "display_name_en": "Daiichi Sankyo",
+      "display_name_zh": "第一三共",
+      "company_descriptor_zh": "综合制药企业",
       "business_role": "customer",
       "role_label": "公开关系重点账户 / 日本大型药企",
       "role_reason": "ACROBiosystems 公开产品目录将 Daiichi Sankyo 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",
@@ -664,6 +739,9 @@
     {
       "id": "eisai",
       "display_name": "Eisai / 卫材",
+      "display_name_en": "Eisai",
+      "display_name_zh": "卫材",
+      "company_descriptor_zh": "综合制药企业",
       "business_role": "customer",
       "role_label": "公开关系重点账户 / 日本大型药企",
       "role_reason": "ACROBiosystems 公开产品目录将 Eisai 列为客户示例；公开页面仅据此建立重点账户监测，不等同于披露内部成交状态。",

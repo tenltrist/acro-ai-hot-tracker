@@ -25,6 +25,8 @@
     {
       "id": "jp-account-efba2a5ff0",
       "name": "Astellas Pharma Inc",
+      "name_zh": "安斯泰来制药",
+      "logo_id": "astellas_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -46,6 +48,8 @@
     {
       "id": "jp-account-fafdc85610",
       "name": "Daiichi Sankyo Co Ltd",
+      "name_zh": "第一三共",
+      "logo_id": "daiichi_sankyo",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -67,6 +71,8 @@
     {
       "id": "jp-account-3f15ddb6b5",
       "name": "Eisai Co Ltd",
+      "name_zh": "卫材",
+      "logo_id": "eisai",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -88,6 +94,8 @@
     {
       "id": "jp-account-e40d855a05",
       "name": "Takeda Pharmaceutical Co Ltd",
+      "name_zh": "武田药品工业",
+      "logo_id": "takeda_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -529,6 +537,8 @@
     {
       "id": "jp-account-6a58fd2de4",
       "name": "Chugai Pharmaceutical Co Ltd",
+      "name_zh": "中外制药",
+      "logo_id": "chugai_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -997,6 +1007,8 @@
     {
       "id": "jp-account-7e3077f744",
       "name": "JCR Pharmaceuticals Co Ltd",
+      "name_zh": "JCR 制药",
+      "logo_id": "jcr_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -1117,6 +1129,8 @@
     {
       "id": "jp-account-112ee72d51",
       "name": "Kaken Pharmaceutical Co Ltd",
+      "name_zh": "科研制药",
+      "logo_id": "kaken_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -1237,6 +1251,8 @@
     {
       "id": "jp-account-6960049811",
       "name": "Kissei Pharmaceutical Co Ltd",
+      "name_zh": "Kissei 药品工业",
+      "logo_id": "kissei_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -1933,6 +1949,8 @@
     {
       "id": "jp-account-f95219d645",
       "name": "Ono Pharmaceutical Co Ltd",
+      "name_zh": "小野药品工业",
+      "logo_id": "ono_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -2077,6 +2095,7 @@
     {
       "id": "jp-account-c30f1cf46a",
       "name": "PeptiDream Inc",
+      "logo_id": "peptidream",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -2437,6 +2456,8 @@
     {
       "id": "jp-account-e1f2b6c9f0",
       "name": "Shionogi & Co Ltd",
+      "name_zh": "盐野义制药",
+      "logo_id": "shionogi",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -2569,6 +2590,8 @@
     {
       "id": "jp-account-83e92c2552",
       "name": "Tanabe Pharma Corp",
+      "name_zh": "田边制药",
+      "logo_id": "tanabe_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",

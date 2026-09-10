@@ -11041,6 +11041,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "ACROBiosystems",
+      "display_name_zh": "百普赛斯",
+      "company_descriptor_zh": "重组蛋白、抗体与生命科学试剂",
       "aliases": [
         "ACROBiosystems",
         "ACRO Biosystems",
@@ -11115,6 +11118,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Thermo Fisher Scientific",
+      "display_name_zh": "赛默飞世尔科技",
+      "company_descriptor_zh": "综合生命科学工具与服务",
       "aliases": [
         "Thermo Fisher",
         "Thermo Fisher Scientific",
@@ -11209,6 +11215,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Merck KGaA Life Science / MilliporeSigma",
+      "display_name_zh": "默克生命科学",
+      "company_descriptor_zh": "试剂、检测与生物工艺平台",
       "aliases": [
         "Merck KGaA",
         "Merck KGaA, Darmstadt, Germany",
@@ -11297,6 +11306,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Sartorius / Sartorius Stedim Biotech",
+      "display_name_zh": "赛多利斯",
+      "company_descriptor_zh": "生物工艺与实验室技术",
       "aliases": [
         "Sartorius",
         "Sartorius AG",
@@ -11371,6 +11383,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Miltenyi Biotec",
+      "display_name_zh": "美天旎生物技术",
+      "company_descriptor_zh": "细胞分选与细胞治疗技术",
       "aliases": [
         "Miltenyi Biotec",
         "Miltenyi Bioindustry",
@@ -11434,6 +11449,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Abcam",
+      "display_name_zh": "艾博抗",
+      "company_descriptor_zh": "抗体与蛋白试剂",
       "aliases": [
         "Abcam",
         "Abcam plc",
@@ -11491,6 +11509,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Promega",
+      "display_name_zh": "普洛麦格",
+      "company_descriptor_zh": "分子与细胞分析试剂",
       "aliases": [
         "Promega",
         "Promega Corporation",
@@ -11548,6 +11569,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "R&D Systems",
+      "display_name_zh": "",
+      "company_descriptor_zh": "蛋白、抗体与免疫分析品牌",
       "aliases": [
         "R&D Systems",
         "R and D Systems",
@@ -11605,6 +11629,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "BD Biosciences",
+      "display_name_zh": "碧迪生物科学",
+      "company_descriptor_zh": "流式细胞与生命科学工具",
       "aliases": [
         "BD Biosciences",
         "Becton Dickinson Biosciences",
@@ -11664,6 +11691,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "MedChemExpress / MCE",
+      "display_name_zh": "MCE",
+      "company_descriptor_zh": "小分子、重组蛋白与生命科学试剂",
       "aliases": [
         "MedChemExpress",
         "MedChem Express",
@@ -11722,6 +11752,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "STEMCELL Technologies",
+      "display_name_zh": "",
+      "company_descriptor_zh": "细胞培养与干细胞研究工具",
       "aliases": [
         "STEMCELL Technologies",
         "STEMCELL Technologies Inc.",
@@ -11779,6 +11812,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Sino Biological",
+      "display_name_zh": "义翘神州",
+      "company_descriptor_zh": "重组蛋白与抗体",
       "aliases": [
         "Sino Biological",
         "Sino Biological Inc.",
@@ -11839,6 +11875,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Takara Bio",
+      "display_name_zh": "宝生物",
+      "company_descriptor_zh": "分子生物学与细胞技术",
       "aliases": [
         "Takara Bio",
         "Takara Bio Inc.",
@@ -11903,6 +11942,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Cytiva",
+      "display_name_zh": "思拓凡",
+      "company_descriptor_zh": "生物工艺与细胞基因治疗",
       "aliases": [
         "Cytiva",
         "Cytiva Life Sciences",
@@ -11968,6 +12010,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "抗体",
         "細胞"
       ],
+      "display_name_en": "FUJIFILM Wako Pure Chemical",
+      "display_name_zh": "富士胶片和光纯药",
+      "company_descriptor_zh": "化学与生命科学试剂",
       "aliases": [
         "FUJIFILM Wako Pure Chemical",
         "FUJIFILM Wako Pure Chemical Corporation",
@@ -12040,6 +12085,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "細胞培養",
         "試薬"
       ],
+      "display_name_en": "Nacalai Tesque",
+      "display_name_zh": "",
+      "company_descriptor_zh": "日本研究试剂与实验室耗材供应商",
       "aliases": [
         "Nacalai Tesque",
         "Nacalai Tesque, Inc.",
@@ -12105,6 +12153,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Proteintech",
+      "display_name_zh": "Proteintech 蛋白科技",
+      "company_descriptor_zh": "抗体、蛋白与免疫分析试剂",
       "aliases": [
         "Proteintech",
         "Proteintech Group",
@@ -12158,6 +12209,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "ancillary material",
         "CGT"
       ],
+      "display_name_en": "CellGenix",
+      "display_name_zh": "",
+      "company_descriptor_zh": "细胞与基因治疗用 GMP 原料品牌",
       "aliases": [
         "CellGenix",
         "CellGenix GmbH",
@@ -12210,6 +12264,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "BioLegend",
+      "display_name_zh": "",
+      "company_descriptor_zh": "抗体、流式与免疫学试剂品牌",
       "aliases": [
         "BioLegend",
         "BioLegend, Inc.",
@@ -12261,6 +12318,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Sigma-Aldrich",
+      "display_name_zh": "西格玛奥德里奇",
+      "company_descriptor_zh": "化学与生命科学试剂品牌",
       "aliases": [
         "Sigma-Aldrich",
         "Sigma Aldrich",
@@ -12316,6 +12376,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Bio-Techne",
+      "display_name_zh": "Bio-Techne 生物技术集团",
+      "company_descriptor_zh": "蛋白、抗体与分析平台",
       "aliases": [
         "Bio-Techne",
         "Bio Techne",
@@ -12371,6 +12434,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "PeproTech",
+      "display_name_zh": "",
+      "company_descriptor_zh": "细胞因子与重组蛋白品牌",
       "aliases": [
         "PeproTech",
         "PeproTech, Inc.",
@@ -12425,6 +12491,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Takeda Pharmaceutical",
+      "display_name_zh": "武田药品工业",
+      "company_descriptor_zh": "综合制药企业",
       "aliases": [
         "Takeda Pharmaceutical",
         "Takeda Pharmaceutical Company",
@@ -12490,6 +12559,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Astellas Pharma",
+      "display_name_zh": "安斯泰来制药",
+      "company_descriptor_zh": "综合制药企业",
       "aliases": [
         "Astellas Pharma",
         "Astellas Pharma Inc.",
@@ -12554,6 +12626,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Daiichi Sankyo",
+      "display_name_zh": "第一三共",
+      "company_descriptor_zh": "综合制药企业",
       "aliases": [
         "Daiichi Sankyo",
         "Daiichi Sankyo Co.",
@@ -12617,6 +12692,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "Japan",
         "日本"
       ],
+      "display_name_en": "Eisai",
+      "display_name_zh": "卫材",
+      "company_descriptor_zh": "综合制药企业",
       "aliases": [
         "Eisai",
         "Eisai Co.",
@@ -12681,6 +12759,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "バイオマーカー",
         "臨床"
       ],
+      "display_name_en": "Chugai Pharmaceutical",
+      "display_name_zh": "中外制药",
+      "company_descriptor_zh": "抗体药与肿瘤研发制药企业",
       "aliases": [
         "Chugai Pharmaceutical",
         "Chugai Pharma",
@@ -12742,6 +12823,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "創薬",
         "研究開発"
       ],
+      "display_name_en": "Ono Pharmaceutical",
+      "display_name_zh": "小野药品工业",
+      "company_descriptor_zh": "肿瘤、免疫与新药研发制药企业",
       "aliases": [
         "Ono Pharmaceutical",
         "Ono Pharmaceutical Co.",
@@ -12803,6 +12887,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "創薬",
         "希少疾患"
       ],
+      "display_name_en": "Shionogi",
+      "display_name_zh": "盐野义制药",
+      "company_descriptor_zh": "感染、罕见病与新药研发制药企业",
       "aliases": [
         "Shionogi",
         "Shionogi & Co.",
@@ -12864,6 +12951,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "神経",
         "免疫"
       ],
+      "display_name_en": "Tanabe Pharma",
+      "display_name_zh": "田边制药",
+      "company_descriptor_zh": "罕见病、神经科学与免疫制药企业",
       "aliases": [
         "Tanabe Pharma",
         "Tanabe Pharma Corporation",
@@ -12926,6 +13016,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "希少疾患",
         "遺伝子治療"
       ],
+      "display_name_en": "JCR Pharmaceuticals",
+      "display_name_zh": "JCR 制药",
+      "company_descriptor_zh": "罕见病与生物药制药企业",
       "aliases": [
         "JCR Pharmaceuticals",
         "JCR Pharma",
@@ -12987,6 +13080,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "ペプチド",
         "放射性医药品"
       ],
+      "display_name_en": "PeptiDream",
+      "display_name_zh": "",
+      "company_descriptor_zh": "特殊环肽、放射性药物与平台研发企业",
       "aliases": [
         "PeptiDream",
         "PeptiDream Inc.",
@@ -13043,6 +13139,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "皮膚科",
         "研究開発"
       ],
+      "display_name_en": "Kaken Pharmaceutical",
+      "display_name_zh": "科研制药",
+      "company_descriptor_zh": "皮肤科、骨科与专科药制药企业",
       "aliases": [
         "Kaken Pharmaceutical",
         "KAKEN",
@@ -13101,6 +13200,9 @@ window.AIHOT_EMBEDDED_PAYLOAD = {
         "腎臓",
         "代謝"
       ],
+      "display_name_en": "Kissei Pharmaceutical",
+      "display_name_zh": "Kissei 药品工业",
+      "company_descriptor_zh": "肾脏、内分泌与罕见病制药企业",
       "aliases": [
         "Kissei Pharmaceutical",
         "Kissei",
@@ -276121,6 +276223,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-efba2a5ff0",
       "name": "Astellas Pharma Inc",
+      "name_zh": "安斯泰来制药",
+      "logo_id": "astellas_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -276142,6 +276246,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-fafdc85610",
       "name": "Daiichi Sankyo Co Ltd",
+      "name_zh": "第一三共",
+      "logo_id": "daiichi_sankyo",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -276163,6 +276269,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-3f15ddb6b5",
       "name": "Eisai Co Ltd",
+      "name_zh": "卫材",
+      "logo_id": "eisai",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -276184,6 +276292,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-e40d855a05",
       "name": "Takeda Pharmaceutical Co Ltd",
+      "name_zh": "武田药品工业",
+      "logo_id": "takeda_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -276625,6 +276735,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-6a58fd2de4",
       "name": "Chugai Pharmaceutical Co Ltd",
+      "name_zh": "中外制药",
+      "logo_id": "chugai_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -277093,6 +277205,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-7e3077f744",
       "name": "JCR Pharmaceuticals Co Ltd",
+      "name_zh": "JCR 制药",
+      "logo_id": "jcr_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -277213,6 +277327,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-112ee72d51",
       "name": "Kaken Pharmaceutical Co Ltd",
+      "name_zh": "科研制药",
+      "logo_id": "kaken_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -277333,6 +277449,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-6960049811",
       "name": "Kissei Pharmaceutical Co Ltd",
+      "name_zh": "Kissei 药品工业",
+      "logo_id": "kissei_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -278029,6 +278147,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-f95219d645",
       "name": "Ono Pharmaceutical Co Ltd",
+      "name_zh": "小野药品工业",
+      "logo_id": "ono_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -278173,6 +278293,7 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-c30f1cf46a",
       "name": "PeptiDream Inc",
+      "logo_id": "peptidream",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -278533,6 +278654,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-e1f2b6c9f0",
       "name": "Shionogi & Co Ltd",
+      "name_zh": "盐野义制药",
+      "logo_id": "shionogi",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",
@@ -278665,6 +278788,8 @@ window.AIHOT_JAPAN_ACCOUNTS = {
     {
       "id": "jp-account-83e92c2552",
       "name": "Tanabe Pharma Corp",
+      "name_zh": "田边制药",
+      "logo_id": "tanabe_pharma",
       "headquarters": "Japan",
       "region": "Japan",
       "country": "Japan",

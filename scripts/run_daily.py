@@ -2227,6 +2227,9 @@ def build_dashboard_payload(
             {
                 "id": company["id"],
                 "display_name": company["display_name"],
+                "display_name_en": company.get("display_name_en", company["display_name"]),
+                "display_name_zh": company.get("display_name_zh", ""),
+                "company_descriptor_zh": company.get("company_descriptor_zh", ""),
                 "business_role": company.get("business_role", "unclassified"),
                 "role_label": company.get("role_label", "待分类"),
                 "role_reason": company.get("role_reason", ""),
