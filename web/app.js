@@ -107,10 +107,10 @@ const methodologyDetailMeta = {
   "news-score": { family: "单篇信息判断", title: "信息筛选分" },
   "acro-relevance": { family: "单篇信息判断", title: "ACRO 相关性分" },
   "daily-admission": { family: "单篇信息判断", title: "信息准入与分流" },
-  "event-classification": { family: "分类与业务输出", title: "商业事件分类" },
-  "region-classification": { family: "分类与业务输出", title: "地区判读与统计" },
-  "action-routing": { family: "分类与业务输出", title: "建议动作与负责人" },
-  "summary-provenance": { family: "分类与业务输出", title: "摘要与证据溯源" },
+  "event-classification": { family: "分类与证据输出", title: "商业事件分类" },
+  "region-classification": { family: "分类与证据输出", title: "地区判读与统计" },
+  "action-routing": { family: "分类与证据输出", title: "内部规则路由（不自动派责）" },
+  "summary-provenance": { family: "分类与证据输出", title: "摘要与证据溯源" },
   "priority-index": { family: "公司与账户排序", title: "公开信号参考指数" },
   "relevance-density": { family: "公司与账户排序", title: "ACRO 关注内容占比" },
   "competitor-matrix": { family: "公司与账户排序", title: "竞品动作矩阵" },
@@ -2487,14 +2487,18 @@ function getVerifiedPublicRelationshipEvidence(account) {
   );
 }
 
-let japanAccountSignalCache = { payload: null, data: null, index: new Map() };
+let japanAccountSignalCache = { payload: null, data: null, items: null, index: new Map() };
 
-function getJapanAccountSignalIndex() {
+function getJapanAccountSignalIndex(inputItems = fusionDashboardItems()) {
   const data = getJapanAccountData();
-  if (japanAccountSignalCache.payload === state.payload && japanAccountSignalCache.data === data) {
+  if (
+    japanAccountSignalCache.payload === state.payload &&
+    japanAccountSignalCache.data === data &&
+    japanAccountSignalCache.items === inputItems
+  ) {
     return japanAccountSignalCache.index;
   }
-  const items = state.payload?.items || [];
+  const items = inputItems || [];
   const itemText = items.map((item) => normalizeCustomerMatchText([
     item.title,
     item.summary,
@@ -2508,13 +2512,13 @@ function getJapanAccountSignalIndex() {
     const matches = items.filter((item, itemIndex) => terms.some((term) => itemText[itemIndex].includes(term)));
     index.set(account.id, [...matches].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)));
   }
-  japanAccountSignalCache = { payload: state.payload, data, index };
+  japanAccountSignalCache = { payload: state.payload, data, items, index };
   return index;
 }
 
-function getJapanAccountMatchedItemIds() {
+function getJapanAccountMatchedItemIds(inputItems = fusionDashboardItems()) {
   const ids = new Set();
-  for (const matches of getJapanAccountSignalIndex().values()) {
+  for (const matches of getJapanAccountSignalIndex(inputItems).values()) {
     for (const item of matches) ids.add(item.id || item.url);
   }
   return ids;
@@ -6143,7 +6147,8 @@ function getFilteredItems(homeScope = fusionIsHomeContext(), dateMode = "period"
   const companyRoles = new Map(
     (state.payload.companies || []).map((company) => [company.id, company.business_role]),
   );
-  return fusionUniqueItems(state.payload.items)
+  const sourceItems = homeScope ? fusionDashboardItems() : fusionUniqueItems(state.payload.items);
+  return sourceItems
     .filter((item) =>
       dateMode === "unknown" ? !periodModel.publicationDate(item) : state.sourceOutputId !== "all" || (homeScope ? fusionWithinRange(item, state.timeRange) : itemIsWithinRange(item, state.timeRange)),
     )

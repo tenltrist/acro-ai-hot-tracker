@@ -1,5 +1,22 @@
 const fusion = { regions: [], topic: "all", regionMode: "reviewed", detail: null, homeScroll: 0, directoryScope: null };
 const fusionIsHomeContext = () => ["overview", "overview-metric", "fusion-evidence"].includes(state.page);
+let fusionDashboardCache = { payload: null, archive: null, items: [] };
+
+function fusionDashboardItems() {
+  const archive = state.eventArchive || window.AIHOT_EVENT_ARCHIVE || {};
+  if (fusionDashboardCache.payload === state.payload && fusionDashboardCache.archive === archive) {
+    return fusionDashboardCache.items;
+  }
+  const retained = Array.isArray(archive.items) ? archive.items : [];
+  const current = Array.isArray(state.payload?.items) ? state.payload.items : [];
+  fusionDashboardCache = {
+    payload: state.payload,
+    archive,
+    // A current record is the latest classification for a duplicated id.
+    items: fusionUniqueItems([...retained, ...current]),
+  };
+  return fusionDashboardCache.items;
+}
 
 function fusionRegionEvidence(item) {
   return window.AIHOT_REGION_MODEL.analyze(item, fusion.regionMode).evidence;
@@ -59,7 +76,7 @@ function fusionSyncControls(items) {
   document.querySelector("#fusionRegionMode").value = fusion.regionMode;
   document.querySelector("#fusionCategory").innerHTML = els.categoryFilter.innerHTML;
   document.querySelector("#fusionCategory").value = state.category;
-  const topics = [...new Set(state.payload.items.flatMap(fusionTopics))].sort((a, b) => Number(a === "unidentified") - Number(b === "unidentified") || a.localeCompare(b));
+  const topics = [...new Set(fusionDashboardItems().flatMap(fusionTopics))].sort((a, b) => Number(a === "unidentified") - Number(b === "unidentified") || a.localeCompare(b));
   document.querySelector("#fusionProduct").innerHTML = '<option value="all">全部产品 / 技术</option>' + topics.map(topic => `<option value="${escapeAttr(topic)}">${escapeHtml(boardTopicLabel(topic))}</option>`).join("");
   document.querySelector("#fusionProduct").value = fusion.topic;
   document.querySelectorAll("[data-fusion-region]").forEach(input => { input.checked = fusion.regions.includes(input.value); });
@@ -229,14 +246,15 @@ function fusionAssistantResponse(intent, items) {
 }
 
 function fusionDirectoryItems() {
-  if (!fusion.directoryScope) return fusionUniqueItems(state.payload.items);
+  const items = fusionDashboardItems();
+  if (!fusion.directoryScope) return items;
   const ids = new Set(fusion.directoryScope.ids);
-  return fusionUniqueItems(state.payload.items.filter(item => ids.has(item.id)));
+  return items.filter(item => ids.has(item.id));
 }
 
 function fusionScopedAccountIndex(items = fusionDirectoryItems()) {
   const allowed = new Set(items.map(item => item.id));
-  const index = new Map([...getJapanAccountSignalIndex()].map(([id, matches]) => [id, fusionUniqueItems(matches.filter(item => allowed.has(item.id)))]));
+  const index = new Map([...getJapanAccountSignalIndex(items)].map(([id, matches]) => [id, fusionUniqueItems(matches.filter(item => allowed.has(item.id)))]));
   for (const company of state.payload.companies.filter(company => company.business_role === "customer")) {
     const account = findAccountForCompany(company);
     if (!account) continue;
@@ -332,7 +350,7 @@ function renderFusionEvidence() {
   if (!fusion.detail) return;
   if (fusion.detail.kind === "region-rules") return renderFusionRegionRules();
   const ids = new Set(fusion.detail.ids);
-  const matches = fusionUniqueItems(state.payload.items.filter(item => ids.has(item.id)));
+  const matches = fusionDashboardItems().filter(item => ids.has(item.id));
   const items = fusion.detail.order === "date" ? fusionRecent(matches) : matches.sort((a, b) => b.score - a.score);
   document.querySelector("#fusionEvidence").innerHTML = `<div class="metric-detail-navigation"><button type="button" class="methodology-back-button" data-fusion-back>← 返回总看板</button><nav class="methodology-breadcrumb" aria-label="当前位置"><span>总看板</span><i>/</i><strong>${escapeHtml(fusion.detail.title)}</strong></nav></div><header class="fusion-evidence-heading"><h2>${escapeHtml(fusion.detail.title)}</h2><strong>${items.length} 条</strong><p>${escapeHtml(fusion.detail.scope)}</p></header><div class="signal-list" id="fusionEvidenceCards"></div>`;
   renderSignalCards(document.querySelector("#fusionEvidenceCards"), items, false);

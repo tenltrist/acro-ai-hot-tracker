@@ -8,6 +8,13 @@ FIELDS = (
     "summary_review", "summary_provider", "summary_model",
     "source_label", "source_ids", "source_labels", "source_trust", "related_urls",
     "signal_type", "category", "business_event_type", "intelligence", "evidence",
+    "tier", "score", "selection_reason", "reasons", "acro_relevance",
+    "recommended_action", "age_days", "days_until_event",
+)
+
+ADMISSION_FIELDS = (
+    "tier", "score", "selection_reason", "reasons", "acro_relevance",
+    "recommended_action", "age_days", "days_until_event",
 )
 
 
@@ -27,6 +34,11 @@ def update_archive(path, payload):
                 if item.get(key):
                     record[key] = item[key]
         old = records.get(item["id"], {})
+        # Preserve the latest known admission evidence when a legacy import
+        # omits fields that current tracker records always provide.
+        for key in ADMISSION_FIELDS:
+            if key not in record and key in old:
+                record[key] = old[key]
         for key in ("related_urls", "source_ids", "source_labels"):
             if old.get(key):
                 record[key] = list(dict.fromkeys(old[key] + record.get(key, [])))

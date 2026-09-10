@@ -1,6 +1,6 @@
 {
-  "version": "2026.09.09-preview",
-  "verified_at": "2026-09-09",
+  "version": "2026.09.10-continuity",
+  "verified_at": "2026-09-10",
   "strategy": {
     "automatic_summary": "rules_only",
     "automatic_llm_api": false,
@@ -36,7 +36,7 @@
     {"id": "relevance-density", "engine": "frontend", "implementation": "web/app.js:buildCustomerAccountPriorities"},
     {"id": "competitor-matrix", "engine": "manual_rank_and_frontend_count", "implementation": "config/companies.json and web/app.js:renderCompanyTopicMatrix"},
     {"id": "trend-counts", "engine": "frontend", "implementation": "web/app.js:getTrendAge and renderSignalTrend"},
-    {"id": "dashboard-counts", "engine": "frontend", "implementation": "web/app.js:renderOverviewScope"},
+    {"id": "dashboard-counts", "engine": "frontend", "implementation": "web/fusion.js:fusionDashboardItems and web/app.js:getFilteredItems/renderOverviewScope"},
     {"id": "source-health", "engine": "backend", "implementation": "scripts/run_daily.py:build_payload"},
     {"id": "source-coverage", "engine": "backend_and_frontend", "implementation": "data/latest_run.json:company_source_coverage and web/app.js"},
     {"id": "data-storage", "engine": "build", "implementation": "scripts/build_share_page.py"},
@@ -97,9 +97,30 @@
     "immediate_requires_high_relevance": true,
     "archive_only_source_archive": true
   },
+  "main_dashboard": {
+    "window_days": 90,
+    "window_control": "fixed",
+    "time_anchor": "data/latest_run.json generated_at",
+    "date_field": "credible publication date; unknown dates are excluded from period totals",
+    "record_scope": "tier is daily or immediate, using the latest known admission result",
+    "record_sources": ["latest snapshot", "retained event archive"],
+    "deduplication": "record id; the current snapshot overrides the retained record",
+    "retained_admission_policy": "when a record disappears from the latest source response, retain its last seen tier, score, relevance and admission reason; when it is still current, the latest classification wins",
+    "customer_directory": "the 232-account directory total is independent from the number of customer events in the current 90-day scope",
+    "automatic_assignment": false
+  },
+  "period_overview": {
+    "modes": ["natural_week", "calendar_month", "retained_history"],
+    "record_scope": "all retained public event records; selected and other retained material remain distinguishable",
+    "record_sources": ["latest snapshot", "retained event archive"],
+    "deduplication": "event clustering after record-id merge; the current snapshot overrides the retained record",
+    "coverage_start": "event archive retention_started_at",
+    "coverage_limit": "earlier source backfill is not a complete historical event database"
+  },
   "action_routing": {
     "precedence": ["self", "customer", "competitor_with_medium_or_high_relevance", "product_need_with_stage_or_action", "event", "regulatory", "target_or_modality", "archive"],
     "automatic_external_action": false,
+    "overview_usage": "route type remains an internal input to admission and business-event classification; owner, priority and task text are not displayed as assignments in the overview",
     "outputs": ["type", "label", "owner", "priority", "text"]
   },
   "business_event_classification": {
@@ -171,6 +192,7 @@
     "database": false,
     "latest_snapshot": "data/latest_run.json",
     "daily_history": "data/history/YYYY-MM-DD.json",
+    "event_archive": "data/event_archive.json",
     "deduplication_index": "data/seen_urls.json",
     "source_change_state": "data/source_snapshots.json",
     "public_api": "api/public/*.json",

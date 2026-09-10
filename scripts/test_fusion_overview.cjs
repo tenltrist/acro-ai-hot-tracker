@@ -38,6 +38,36 @@ async function verifyCounts(page) {
       await page.route(/^https?:/, route => route.abort());
       await page.goto(pathToFileURL(path.join(root, 'web/index.html')).href);
       await page.waitForFunction(() => document.querySelectorAll('#executivePoints li').length === 3);
+      const continuity = await page.evaluate(() => {
+        const currentIds = new Set((state.payload.items || []).map(item => item.id));
+        const retainedSelected = ((state.eventArchive || window.AIHOT_EVENT_ARCHIVE)?.items || [])
+          .filter(item => !currentIds.has(item.id) && ['daily', 'immediate'].includes(item.tier) && fusionWithinRange(item, 90))
+          .map(item => item.id);
+        const homeIds = new Set(getFilteredItems().map(item => item.id));
+        return {
+          directoryCount: getJapanAccountData().accounts.length,
+          retainedSelected,
+          missingFromHome: retainedSelected.filter(id => !homeIds.has(id)),
+        };
+      });
+      assert.equal(continuity.directoryCount, 232);
+      assert.deepEqual(continuity.missingFromHome, []);
+      const syntheticMerge = await page.evaluate(() => {
+        const payload = state.payload;
+        const archive = window.AIHOT_EVENT_ARCHIVE;
+        const cache = fusionDashboardCache;
+        try {
+          state.payload = { ...payload, items: [{ id: 'same', marker: 'current' }] };
+          window.AIHOT_EVENT_ARCHIVE = { items: [{ id: 'retained', marker: 'archive' }, { id: 'same', marker: 'archive' }] };
+          fusionDashboardCache = { payload: null, archive: null, items: [] };
+          return fusionDashboardItems().map(item => [item.id, item.marker]);
+        } finally {
+          state.payload = payload;
+          window.AIHOT_EVENT_ARCHIVE = archive;
+          fusionDashboardCache = cache;
+        }
+      });
+      assert.deepEqual(syntheticMerge, [['retained', 'archive'], ['same', 'current']]);
       const duplicateIds = await page.locator('[id]').evaluateAll(els => els.map(e => e.id).filter((id, index, ids) => ids.indexOf(id) !== index));
       assert.deepEqual(duplicateIds, []);
       assert.equal(await page.locator('#signalTrendChart svg polyline').count(), 4);

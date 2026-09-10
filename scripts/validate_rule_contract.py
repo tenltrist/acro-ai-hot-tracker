@@ -9,12 +9,14 @@ import subprocess
 from pathlib import Path
 
 import run_daily as tracker
+from event_archive import ADMISSION_FIELDS
 
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "config" / "rule_catalog.json"
 INDEX_PATH = ROOT / "web" / "index.html"
 APP_PATH = ROOT / "web" / "app.js"
+FUSION_PATH = ROOT / "web" / "fusion.js"
 
 EXPECTED_MODULES = {
     "deduplication",
@@ -71,6 +73,16 @@ def check_contract_shape(errors: list[str]) -> dict:
         errors.append("automatic LLM API must remain disabled for the current strategy")
     if strategy.get("manual_summary_tool") != "Codex 静态编辑":
         errors.append("manual summary tool must match the current Codex editorial workflow")
+    dashboard = catalog.get("main_dashboard", {})
+    if dashboard.get("window_days") != 90 or dashboard.get("window_control") != "fixed":
+        errors.append("main dashboard must remain a fixed 90-day view")
+    if dashboard.get("automatic_assignment") is not False:
+        errors.append("main dashboard must not claim automatic task assignment")
+    if catalog.get("storage", {}).get("event_archive") != "data/event_archive.json":
+        errors.append("event archive storage is missing from the public contract")
+    required_archive_fields = {"tier", "score", "selection_reason", "reasons", "acro_relevance"}
+    if not required_archive_fields.issubset(ADMISSION_FIELDS):
+        errors.append("event archive does not preserve the admission evidence required by the 90-day dashboard")
     region = catalog.get("region_classification", {})
     try:
         result = subprocess.run(["node", "-e", "const m=require('./web/region-model.js'); console.log(JSON.stringify({version:m.version,families:m.families.map(x=>x.id),count:m.definitions.length,global:m.analyze({id:'contract-case',title:'Worldwide licensing rights'}).regions}));"], cwd=ROOT, capture_output=True, text=True, check=True)
@@ -85,6 +97,7 @@ def check_contract_shape(errors: list[str]) -> dict:
 def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
     html = INDEX_PATH.read_text(encoding="utf-8")
     app = APP_PATH.read_text(encoding="utf-8")
+    fusion = FUSION_PATH.read_text(encoding="utf-8")
     detail_ids = set(re.findall(r'data-methodology-detail="([a-z-]+)"', html))
     if detail_ids != EXPECTED_MODULES:
         errors.append(
@@ -95,7 +108,7 @@ def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
     target_ids = set(re.findall(r'data-methodology-target="([a-z-]+)"', html))
     if not EXPECTED_MODULES.issubset(target_ids):
         errors.append(f"rule-center index is missing cards for {sorted(EXPECTED_MODULES - target_ids)}")
-    stale_phrases = ["本公司 29", "先决定是否入库", "两道门槛", 'data-page="structured-rules"']
+    stale_phrases = ["本公司 29", "先决定是否入库", "两道门槛", "建议动作与负责人", 'data-page="structured-rules"']
     for phrase in stale_phrases:
         if phrase in html:
             errors.append(f"rule-center still contains stale wording: {phrase}")
@@ -113,10 +126,14 @@ def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
         f"每命中 1 个 +{score['business_action']['per_hit']}，最多 +{score['business_action']['maximum']}",
         f"本公司 +{relevance['role_weights']['self']}；客户/账户 +{relevance['role_weights']['customer']}；竞品 +{relevance['role_weights']['competitor']}",
         f"≥{admission['immediate']} 为原即时层；≥{admission['daily']} 入选；自有/生态/媒体 ≥{admission['owned_ecosystem_media']} 可入选；命中评分动作 ≥{admission['business_action']} 可入选。",
-        f"log2(1 + 日报/即时数) × {priority['selected_log_weight']}",
+        f"log2(1 + daily/immediate tier 数) × {priority['selected_log_weight']}",
         f"log2(1 + 高相关数) × {priority['high_relevance_log_weight']}",
         f"ACRO 关注内容占比</dt><dd>占比 × {priority['density_weight']}",
         f"中相关</span><strong>{density['medium']:.2f}</strong>",
+        "总览 · 固定近 90 天",
+        "当前快照优先",
+        "232 家是日本账户目录的总量",
+        "不自动派责",
     ]
     for fragment in public_fragments:
         if fragment not in html:
@@ -129,6 +146,8 @@ def check_public_rule_center(catalog: dict, errors: list[str]) -> None:
     for fragment in required_frontend_contract_reads:
         if fragment not in app:
             errors.append(f"frontend rule calculation is not contract-driven: {fragment}")
+    if "fusionDashboardItems()" not in app or "fusionUniqueItems([...retained, ...current])" not in fusion:
+        errors.append("main dashboard does not merge retained events with current records using current-first precedence")
     evidence_helper = re.search(
         r"function getVerifiedPublicRelationshipEvidence\(account\) \{(?P<body>.*?)\n\}",
         app,
