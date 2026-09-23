@@ -27,6 +27,7 @@ EXPECTED_MODULES = {
     "daily-admission",
     "event-classification",
     "region-classification",
+    "product-classification",
     "action-routing",
     "summary-provenance",
     "priority-index",
@@ -84,11 +85,23 @@ def check_contract_shape(errors: list[str]) -> dict:
     if not required_archive_fields.issubset(ADMISSION_FIELDS):
         errors.append("event archive does not preserve the admission evidence required by the 90-day dashboard")
     region = catalog.get("region_classification", {})
+    product = catalog.get("product_classification", {})
+    try:
+        result = subprocess.run(["node", "-e", "const m=require('./web/product-model.js'); console.log(JSON.stringify({version:m.version,categories:m.definitions.map(x=>x.id),directions:Object.keys(m.directions)}));"], cwd=ROOT, capture_output=True, text=True, check=True)
+        if json.loads(result.stdout) != {"version": product.get("model_version"), "categories": product.get("categories"), "directions": product.get("directions")}:
+            errors.append("product categories or observation directions differ from the runtime")
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError) as exc:
+        errors.append(f"unable to verify product classification: {exc}")
     try:
         result = subprocess.run(["node", "-e", "const m=require('./web/region-model.js'); console.log(JSON.stringify({version:m.version,families:m.families.map(x=>x.id),count:m.definitions.length,global:m.analyze({id:'contract-case',title:'Worldwide licensing rights'}).regions}));"], cwd=ROOT, capture_output=True, text=True, check=True)
         runtime = json.loads(result.stdout)
-        if runtime != {"version": region.get("model_version"), "families": region.get("families"), "count": region.get("stored_region_count"), "global": ["global"]}:
-            errors.append("regional hierarchy or global-scope behavior differs from the public contract")
+        if runtime != {"version": region.get("model_version"), "families": region.get("families"), "count": region.get("stored_region_count"), "global": ["unknown"]}:
+            errors.append("business country taxonomy or unspecified-country behavior differs from the public contract")
+        expected_regions = ["all", "japan", "korea", "india", "singapore", "australia", "other"]
+        if region.get("public_order") != expected_regions or region.get("families") != expected_regions[1:]:
+            errors.append("public region categories must be total plus the six business categories")
+        if region.get("total_includes_pending") is not True or region.get("country_evidence_required") is not True:
+            errors.append("country evidence and inclusion of pending records must be explicit")
     except (OSError, subprocess.SubprocessError, json.JSONDecodeError) as exc:
         errors.append(f"unable to verify regional runtime: {exc}")
     return catalog

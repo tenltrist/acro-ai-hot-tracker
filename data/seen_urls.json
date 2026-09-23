@@ -124447,5 +124447,4486 @@
     "tier": "archive",
     "score": 30,
     "signal_type": "news"
+  },
+  "93abc83f1530a7ac": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "OSE Immunotherapeutics Announces Presentation of Combi-TED Phase 2 Topline Results of Tedopi® in Non-Small Cell Lung Cancer at the ESMO 2026 Meeting",
+    "url": "https://www.globenewswire.com/news-release/2026/09/23/3367083/0/en/ose-immunotherapeutics-announces-presentation-of-combi-ted-phase-2-topline-results-of-tedopi-in-non-small-cell-lung-cancer-at-the-esmo-2026-meeting.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "12fd930c677d1d88": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "OSE Immunotherapeutics annonce la présentation des principaux résultats de l'étude de Phase 2 Combi-TED de Tedopi® dans le cancer du poumon non à petites cellules au Congrès 2026 de l’ESMO",
+    "url": "https://www.globenewswire.com/news-release/2026/09/23/3367083/0/fr/ose-immunotherapeutics-annonce-la-pr%C3%A9sentation-des-principaux-r%C3%A9sultats-de-l-%C3%A9tude-de-phase-2-combi-ted-de-tedopi-dans-le-cancer-du-poumon-non-%C3%A0-petites-cellules-au-congr%C3%A8s-2026-de.html",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 16,
+    "signal_type": "news"
+  },
+  "597f917343769704": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ReCode CEO Suliman leaves cystic fibrosis mission in mentee’s hands",
+    "url": "https://www.biospace.com/business/recode-ceo-suliman-leaves-cystic-fibrosis-mission-in-mentees-hands",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 18,
+    "signal_type": "news"
+  },
+  "b54da8dc6dff27c6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "China’s surging biotech sector represents both competition and lifeline for the US",
+    "url": "https://www.biospace.com/business/chinas-surging-biotech-sector-represents-both-competition-and-lifeline-for-the-us",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "d634188c833c850a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Thermo Fisher Scientific stock slips 0.20 percent ahead of the open - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYWgxV2tCQWtoVm1HeVNiMTRGTTl1QWVBZ0w2THNTd28tempBZ0wzNmdkTngwYm5XNkxiNG5xQUtzLUstQzRBZzVRVzBHMG1ZWlgwVEdHdlQ0SzFhcDJpWlBpU1ZxZC1sVnBDZVJHS0pJQ29rSVp6ZWdNZ29tM3RqT3BvRWFVbWJJLWNQcW9GR2FITjRZZWtPckFCbVBnV3lPSVphSXFGOGxNUGxPZDdSNER1aFNhRTFySzZqZ0ItRjByZlFRTEVyem5R?oc=5",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "91700ba6e46f02ec": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ACROBiosystemsとSeromYx Systems、抗CD20モノクローナル抗体の包括的機能 ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab36ab97bbf4bee86dcace356eb718c&url=https%3A%2F%2Fjapan.cnet.com%2Frelease%2F31166247%2F&c=8193742174988905637&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "32858a7c72ee660c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ACROBiosystems、機能性HEK293細胞株のグローバル・ライセンス ...",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab36ab97bbf4bee86dcace356eb718c&url=https%3A%2F%2Fwww.kyodo.co.jp%2Fpr%2F2026-05-11_4010148%2F&c=7291193430946626862&mkt=ja-jp",
+    "company_id": "acro",
+    "matched_company_ids": [
+      "acro"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "089041b8f094a8fe": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Goldman Sachs Reaffirms Their Buy Rating on Thermo Fisher (TMO)",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab36ab9fb9f430cb1b02e5e2ff3c049&url=https%3A%2F%2Fwww.theglobeandmail.com%2Finvesting%2Fmarkets%2Fstocks%2FTMO%2Fpressreleases%2F4734183%2Fgoldman-sachs-reaffirms-their-buy-rating-on-thermo-fisher-tmo%2F&c=7539629436977066220&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "91987b65ae093d53": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Group Thermo Fisher Scientific, Inc.",
+    "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab36ab9fb9f430cb1b02e5e2ff3c049&url=https%3A%2F%2Fwww.marketscreener.com%2Fquote%2Fstock%2FTHERMO-FISHER-SCIENTIFIC--14623%2Fcompany-group%2F&c=7128593593813889935&mkt=ja-jp",
+    "company_id": "thermo_fisher",
+    "matched_company_ids": [
+      "thermo_fisher"
+    ],
+    "tier": "archive",
+    "score": 1,
+    "signal_type": "news"
+  },
+  "bb48a0fc007b628d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "【岡山大学】クライオ電子線トモグラフィーによる細胞内タンパク質のin situ構造解析法のハンズオントレーニング講習会を開催 - prtimes.jp",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZdXlkclhRakl5TGlOYnVibjJBcTgwZGJvaHN1ZTlFMTFxVUJPTnlFYnJxdWpUcEpKOU9HbVZFZExnTV9NVWdaUUcxMTlNX0Z1UnlrdzQxYXFHcGFVVDdsNmtLaTdtR3I3ZUE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "bf7bf253d0683f7a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "【岡山大学】令和8年版「科学技術・イノベーション白書」（文部科学省）において、岡山大学のJ-PEAKSの取り組みが紹介 - prtimes.jp",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UWWtTSWEyRWFjZG5ucXJic2J4X3IwNmFDM0RGcFlVOGhVYWNyWEpxNy0taGpwaWN2STJWXzJjdEcyQ0JqcG15NVRHTW9RNDgzVm9FOWpmdFBPRmgwd2tvMjhXWlRCNEtQUkE?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 8,
+    "signal_type": "news"
+  },
+  "0466285072222eba": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "生物医药产业加速成为国家新兴支柱产业，创新药相关基金产品选哪个？港股创新药ETF景顺(513780)把握港股创新药产业发展机会 - Jiemian.com",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KTlc3Z3V4dU5jZ2ctbGtxdXQzcVgtSzh5aFFUOXJSXzl3ZU82YWtSSG1iaFJwdmdVZldmeVR0X2xQOUtPUHpmYnppU056U2c1T2tmWmdPVmc?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 32,
+    "signal_type": "news"
+  },
+  "e42263dd8ddc9e55": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "最高60亿！创新药出海又传捷报！科创创新药ETF汇添富(589120)标的指数大涨2%！大模型与MNC加速入局 - Jiemian.com",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9zSEhmb05jc3k3dHNlbExkamVvZlAzd1AyaU84aDhCOVlTaTRkdExMR3V4c1hpaEJOX01UNDBaU0Q4QTU3aXRIV0tYWmRLS0MydV8wZm9YWUY?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "ef98e94f89734221": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年WCLC大会集中展示中国创新药临床成果，港股通创新药ETF嘉实(520970)囊括港股创新药龙头 - Jiemian.com",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEdGZydGpWb2dNN3VZVFFUMkRPczJ5R19idGh4aDNjeTQwVEViQnVHTjJiT0NyNTBoeXc0dXUxeUJOUHBTbUVWT2FKV21TclVZY28tT29n?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "4506ff10e8303690": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "科创医药ETF鹏华(588250)标的指数逆市涨超1.5%，创新药行业转向“质量竞赛” - Jiemian.com",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tOElJTG52V1E3Q0VmQVZocTc5X1BkT2hEZDB6ZVBTa2phVW5TMFAzb09JdFFSbmVOX1duTWVIQWp5X1R4bFB0cjVza2RGZ0JmWnU0VE9B?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 26,
+    "signal_type": "news"
+  },
+  "a02be7172a97ec60": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "英矽智能达成数千万美元合作协议，荣昌生物双抗启动新III期临床！港股通创新药ETF汇添富(159570)标的指数逆市涨超1%！ - Jiemian.com",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tWVVkYlJVMmNLTk9IQXFmSEN2c1hsN2lRLWVNZjh4czk5dGZqMHIxVngtRFdQT1lwVTZnNFV0RkswYTVJaFJmZWZXTGY3b0tkZG82dy13?oc=5",
+    "company_id": "",
+    "matched_company_ids": [],
+    "tier": "archive",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "89a5d7b2f15bd3e4": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "地場製薬、武田薬品のデング熱ワクチン販売へ - nna.jp",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwdmlTeWtoV3Q3RVp3djFsc29vMW8wLWtJY2VEc01NeDcwSzc0WVZtc0h3RUl4TDh0ZjRDVnA4aTZsOF84d0E?oc=5",
+    "company_id": "takeda_pharma",
+    "matched_company_ids": [
+      "takeda_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "df1c8c8e916650ea": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "キッセイ薬品工業[4547]：自己株式の取得及び自己株式の消却に関するお知らせ 2026年5月11日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84TXZRaVN4elFjdF9oMjhfdTY4WFdzb3VhOFpRcGRMTnplQ0pfcU03LXFPMjJrQVBxc29oYlM4c0hwYnVzeGRIa29pa0o3NEJfbnVEWE5sdHZUV3FBU0I1bWJ1Y2tlQUYzN1E?oc=5",
+    "company_id": "kissei_pharma",
+    "matched_company_ids": [
+      "kissei_pharma"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "560687901528be66": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "September 4 2026 Organizational Changes, Changes in Board Members’ and Corporate Officers’ Responsibilities, and Personnel Changes of ASKA Pharmaceutical",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=46d4712764bc94b38f4c8d78512c1100.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9fc3eac1e12ae450": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "August 17 2026 ASKA Pharmaceutical Subsidiary Receives Highest-Level “Eruboshi” Certification for Excellence in Promoting Women's Empowerment",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=1b148909485f9313692f0a3c7bae4fe0.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "03c5effa7407faf2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "June 29 2026 ASKA Pharmaceutical Announces FY2026 Call for Drug Discovery Research Proposals",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=eca8ba0d8429937d0c410eab29b8a732.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "2179e1369e706e46": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "June 24 2026 Personnel Assignments of Board Members and Corporate Officers of Subsidiaries",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=5d0984710b6078457de41c281f1834e9.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "bd13e203b28f53b6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "June 22 2026 ASKA Pharmaceutical Announces Phase 3 Clinical Trial Results for Relugolix Combination Therapy (AKP-022), Meeting Primary Endpoint in Patients with Uterine Fibroids",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=1d2b0dfa55eefa1df4bb5401268bbc52.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "daily",
+    "score": 44,
+    "signal_type": "news"
+  },
+  "e3811cd5c35e0a73": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "May 11 2026 Personnel Changes in Board Members and Corporate Officers of ASKA Pharmaceutical Holdings Subsidiaries",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=dba40687d77a4d19a2a409d039e522cf.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "fa781ce680307257": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "April 9 2026 ASKA Pharmaceutical Receives “Platinum Kurumin Plus” Certification",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=86cf787bebd492ad8216216f3f081318.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "64ffd6d5b65de2ca": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "March 24 2026 Insilico Medicine and ASKA Pharmaceutical Expand Partnership to Discover Novel Targets for Women’s Health",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=51be59014eb065b8d7a0facb55899542.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a6b605d3c4acdf95": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "March 9 2026 ASKA Pharmaceutical Holdings Group Recognized as Enterprise in Outstanding Organizations of KENKO Investment for Health Program",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=6d407325e5123bc1f896092ef7b108bd.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "607cf28c00a59e6e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "March 6 2026 Pfizer and ASKA Pharmaceutical Announce Co-promotion of RSV Vaccine ABRYSVO Intramuscular Injection",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=8d43cefde0ee6c4fe9122f2b164f9c83.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "c3b486ab19e0f19c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "March 6 2026 Personnel Change of ASKA Pharmaceutical",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=4fbbe91ab53ee4ac9edfbbea55822ddb.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "131c437c73acd6a0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "March 2 2026 Notice regarding Introduction of Restricted Stock Incentive Plan for Employee Stock Ownership Association",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=d350b68988845265f51799c2088cbbe2.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "9d898b62e0c6c745": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "February 20 2026 Personnel Change of ASKA Pharmaceutical",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=31e577994cddc9680452f9a6cf7bb40c.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "e4ed571a68dda134": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "February 19 2026 ASKA Pharmaceutical and SMFL MIRAI Partners Sign Heat Recovery Heat Pump Energy Service Contract",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=5753e44f098f4be130140fb0598a54e0.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "245c61cd71488d4d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "February 17 2026 Teijin Pharma and ASKA Pharmaceutical Enter Joint Research Agreement to Accelerate Discovery of Novel Small-Molecule Drug Candidates for Gynecological Diseases",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=632102fd7257e6cdb865408566516da4.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "082339e3fbe9739f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "December 4 2025 ASKA Pharmaceutical Launches LEUPRORELIN ACETATE SR FOR INJECTION KIT",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=e2c1b21f0c03bfc190ae01961e547f33.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "413850b4e8c128ee": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "November 5 2025 PPMX and ASKA Pharmaceutical Sign Joint Research Agreement to Aim to Create New Antibody Drugs",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=4039c56e59ea7f94f30e7ec2c3d442a1.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d9aedd533a28b8ae": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "October 20 2025 ASKA Obtains Marketing Authorization of Emergency Contraceptive Pill NORLEVO® as Switch to OTC Use and Daiichi Sankyo Healthcare Handles Distribution and Sales",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=9f1d1659c155221af8c8dd53e27b3597.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska",
+      "daiichi_sankyo"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "53f84b00fc46a89e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "September 24 2025 Personnel Change of ASKA Pharmaceutical",
+    "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=7c22194e1618960775ede8e866c81d99.pdf",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "34ee43abb5785add": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "あすか製薬ホールディングス[4886]：コーポレート・ガバナンスに関する報告書 2026/06/29 2026年6月29日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9raGNVU1RHemlLRFhSM1JqTU9Dd2kzaGVXUjNGMU5JTmotU0x2MUFFM1hZWUdQRlNBRGIzd01RZFBCOWZZeG1wd3l5dVUtQUNYMDhSQ1FSdmg0WFhPVFRCWmlwQlZOWnFPelE?oc=5",
+    "company_id": "aska",
+    "matched_company_ids": [
+      "aska"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "786babcc0eeaea50": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Expands Clinical iPSC and Stem Cell Solutions in China Through Strategic Collaboration with WEIPU Biotechnology",
+    "url": "https://www.reprocell.com/news/reprocell-expands-clinical-ipsc-and-stem-cell-solutions-in-china-through-strategic-collaboration-with-weipu-biotechnology",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "daily",
+    "score": 56,
+    "signal_type": "news"
+  },
+  "164619c559bf04db": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Submits Application for Manufacturing and Marketing Approval in Japan for Stem Cell Therapy Stemchymal® for Spinocerebellar Ataxia (SCA3 and SCA6)",
+    "url": "https://www.reprocell.com/news/reprocell-submits-application-for-manufacturing-and-marketing-approval-in-japan-for-stem-cell-therapy-stemchymal-for-spinocerebellar-ataxia-sca3-and-sca6",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "daily",
+    "score": 50,
+    "signal_type": "news"
+  },
+  "29e1d4f7a17f43df": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Receives Commercialization Award from Maryland Stem Cell Research Fund to Advance Universal, Hypoimmune iPSC Platforms",
+    "url": "https://www.reprocell.com/news/reprocell-receives-commercialization-award-from-maryland-stem-cell-research-fund-to-advance-universal-hypoimmune-ipsc-platforms",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "092cd09bb993ade6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Researchers Co-Author New Study Demonstrating the Potential of AI-Driven Drug Response Prediction for IBD Patients",
+    "url": "https://www.reprocell.com/news/reprocell-researchers-co-author-new-study-demonstrating-the-potential-of-ai-driven-drug-response-prediction-for-ibd-patients",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "8db757da374ab2be": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL USA Inaugurates GMP-Compliant Cell Culture Facility",
+    "url": "https://www.reprocell.com/news/reprocell-usa-inaugurates-gmp-compliant-cell-culture-facility",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6efb1f56d0e9f194": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Launches GMP Master Cell Bank Manufacturing for Clinical iPSCs",
+    "url": "https://www.reprocell.com/news/reprocell-launches-gmp-master-cell-bank-manufacturing-for-clinical-ipscs-integrated-workflow-including-clinical-seed-production-and-stemedit-gene-editing-services",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "c643f3a8b52c8374": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Expands Product Portfolio with Addition of BioThrust™ ComfyCell Incu Bioreactor Platform",
+    "url": "https://www.reprocell.com/news/reprocell-expands-product-portfolio-with-addition-of-biothrust-comfycell-incu-bioreactor-platform",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ba2285ae851976a3": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Launches StemEdit: Clinical Gene Editing Services and New iPSC Lines Using AI-Designed Editing System",
+    "url": "https://www.reprocell.com/news/reprocell-launches-stemedit-clinical-gene-editing-services-and-new-ipsc-lines-using-ai-designed-editing-tools",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "2d9954abe0092a4d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Announces the Commercial Launch of its StemEdit Hypoimmune hiPSC Lines Generated with Advanced Gene Editing Innovations",
+    "url": "https://www.reprocell.com/news/reprocell-announces-the-commercial-launch-of-its-stemedit-hypoimmune-hipsc-lines-generated-with-advanced-gene-editing-innovations",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "cc56c0b7ea082cc7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL USA Receives Funding from the Maryland Stem Cell Research Fund (MSCRF)",
+    "url": "https://www.reprocell.com/news/reprocell-usa-receives-funding-from-the-maryland-stem-cell-research-fund-mscrf",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "0dfb915fc9ca6f62": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL Launches Next-Generation System for 3D Bioengineered Tissues",
+    "url": "https://www.reprocell.com/news/reprocell-launches-next-generation-system-for-3d-bioengineered-tissues",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "0300693bc344006c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL and Histocell Achieve GMP Certification for Manufacturing Process of Clinical-Grade iPSC Master and Working Cell Banks Using StemRNA™ Clinical iPSCs",
+    "url": "https://www.reprocell.com/news/reprocell-and-histocell-achieve-gmp-certification-for-manufacturing-process-of-clinical-grade-ipsc-master-and-working-cell-banks-using-stemrna-clinical-ipscs",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "845cc41e89dce614": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "連結子会社REPROCELL USA Inc.におけるGMP準拠細胞加工施設の開設について - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1hakNQdUY2MXNVQW5PTk9FQ0t1M1pNVy1GODFETFRibzlLTVNNSWtYNVJxQUx0VGZDTnBMaEdOS0pyV0hvQm44NlFDMA?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "65e1f4b5215ac9d1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "REPROCELL、脊髄小脳性運動失調症（SCA3およびSCA6）を対象とした幹細胞治療薬「Stemchymal（R）」について、日本国内での製造・販売承認申請を提出 - 共同通信PRワイヤー",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QWHRzdHJFbDlVcGgyOW56OWxHckJBTHhCRHR1RmE3MzVsR3VwSkZ3Ty1hRXhuOVlwbEZZRE9PSmtfLUxDbndtWkVkSmZ2TkJ4THR4Smd2aE9yN00?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "4aa4d7c9c677dbc4": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "リプロセル---反落、連結子会社REPROCELL USAに対する補助金の交付決定も - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JaG1hZVdrejhnblZVS0VqRHdYcml5NjRTSzZfYlUtQVYwbWlFT1B2OFZXSUd5Z1U0UV9pb0R3R2JGcjJnSHo4bU02ckhhbV9SaEtZQzNlYkgtR3dnUWtNSw?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d9bf6d5ceca1c9c6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "当社子会社であるREPROCELL Europeの研究員らによる論文が、Scientific Reports誌に掲載されました - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8zYVJKZElJeFFrTlIySWRFeUhyMzVSTXJSaVBBYTRKOEtXNGFfUTNteFJfX2Z3TUozRmpuUkhHRWZjQjNoTW5lU1c0WQ?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6f4a4cf215f19266": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "議決権行使キャンペーン（Amazonギフトカード５００円進呈）のご案内 - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBBc0ZyZDVVWXczMTJsNWZaZ1J1T0hsODd1dFFYa3FKNVdMWW5RNjFXSG5TTnZyUlpHOUIxYndRUU5rMmpMUTg5WDNMNA?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9d4e23bb09bc88c0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "社員インタビュー | 経営管理部 - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52QUNSeVlFaTRIMnRqVDNSRWVDWjlhUExtSmJlNkVReF9XeHhDWl9iRDNDdmMtdFhlaWpZd1d2SkFKOW0xY2g1dWMxS0hkckVVVmc?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "8813f8626d940064": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "議決権行使に関する留意点 - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92TGVoMnBTMFlVLVlCOE1pMjNCamp3Y0EzQjVlNnRBZ2N1azVFejBaeUxrQUQyS3ZPZ21IZGRkb0ttVjFYVUgtVnYtTHR0dEdDSUJLZE1R?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "efb9dae559dd60cf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "第24回定時株主総会における御礼としてのアマゾンギフト券の発送完了について - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1OVkVISi1Ic3dFUk9QT3hfRmZPb09YWUE1S1JqbFlyM2diNUhJMXVYYk1XVnBMR1NBWFllUmhYaV9VWWlUWmxsem9PTQ?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "a09c9e8857ad78dc": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "第24回定時株主総会専用ページのお知らせ - 株式会社リプロセル",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9sMmVPTEc1cmZOZ2FNMUVxNFl2NXJKaExWcEg0dnNST1RSZjJ0Vm9iWnE2VDV3b2huTnZsWE1kcy1UdEZRZWhTR1JIZWhGamhjQk94OGdB?oc=5",
+    "company_id": "reprocell",
+    "matched_company_ids": [
+      "reprocell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "8fec7e5b986f8431": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN to Commence Promotion Activities for Allergic Conjunctivitis Treatment Alesion® Eyelid Cream 0.5%",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001934.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "69f5934461216aa9": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for the Three Months Ended June 30, 2026[Under Japanese GAAP]",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001931.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "95a4df5630165d07": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "First Quarter Consolidated Financial Results for the Fiscal Year Ending March 31, 2027",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001930.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "8486b09a2841f62d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Santen and KYORIN announce joint marketing agreement in Japan for allergic conjunctivitis treatment Alesion® Eyelid Cream 0.5%",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001926.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "4d3486595f2746f1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding the Initiation of a Confirmatory Study for \"KRP-DC125,\" a Digital Therapeutic (DTx) for Chronic Cough",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001923.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d4dfb37037714812": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice of Dividends from Retained Earnings",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001919.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "ac468635292c9c6d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for the Fiscal Year Ended March 31, 2026 [Under Japanese GAAP]",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001916.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "5254f5aab05d49bf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for the Fiscal Year Ended March 31, 2026",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001915.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "972f49b80922bf9d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding Difference Between Financial Forecast and Actual Results",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001914.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ce0aa1faec2265d0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Financial Results of Fiscal 2025",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001913.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "596948751a400445": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding the Formulation of the New Medium-Term Business Plan \"Vision 110－Stage2－\"",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001912.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "7baa284e933f47ed": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Announcement of Executive Personnel Changes",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001911.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "dd92895a0fa83cde": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice regarding Partial Revision of Performance-Linked Stock Compensation Plan",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001910.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "3fef395a1e5cd2d7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding the Initiation of a Phase 3 Clinical Trial for Overactive Bladder Treatment Vibegron (Development Code KRP-114VP)",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001927.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "daily",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "fe49b87ec9742f17": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding the Initiation of a Confirmatory Study for \"KRP-DT123,\" a Digital Therapeutic for Tinnitus",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001920.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "457901e2df709c11": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding Execution of a Memorandum of Understanding (MOU) for the Transfer of Generic Drug Business",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001899.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b75e755b6aea542e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN Enters into License Agreement with BIODOL for Novel Neuropathic Pain Treatment",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001892.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f56ab1acda9e776a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN Enter into Distribution and Promotion Agreement with Johnson & Johnson for SIRTURO",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001889.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "aa2e3bee5d2c9d6a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN and UBE Enter into License Agreement for Novel Drug Candidates",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001887.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f7bf0fe71566b283": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding the Introduction of a Mandate-Based Corporate Officer System and Changes in Corporate Officers",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001883.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9479990f7bb0da7c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for the Nine Months Ended December 31, 2025 [Japanese GAAP]",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001876.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "ccc99065b73b9870": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for the Nine Months Ended December 31, 2025 - Supplementary Information",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001875.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "3d08beb16225394b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN Receives Regulatory Approval for influenza virus nucleic acid kit, GeneSoC FluAB Detection Kit",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001874.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ee39d16fbc078745": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN and Lunatus Enter into Distribution Agreement for Lasvic Tablets in Nine Middle Eastern Countries",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001866.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ca08a67f29b8ecd5": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "World's First Mitochondrial Disease Treatment 'MA-5' Commences Phase II Clinical Trial",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001863.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b439881bd3bb7b5e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for the Six Months Ended September 30, 2025) [Japanese GAAP]",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001861.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "7c9c637dd58bc480": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Consolidated Financial Results for Second Quarter (Interim Period) of FY2025 - Supplementary Information",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001860.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "1d3ea1d6fa01cd73": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Announcement of Presentation in Academic Conference Regarding Result of Specified Clinical Trial using Digital Therapeutics for Tinnitus",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001855.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6b4e5cf03a7a10ec": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "KYORIN and Hinge Bio Enter into a Collaboration and License Agreement of HB2198 in Japan for SLE and other diseases",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001852.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a7961c3db423dca3": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Topline Results from Phase 3 Clinical Study of KRP-R120 for Interstitial Lung Disease",
+    "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001850.shtml",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "c820a4c395889905": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "รายงานการถือครองหุ้นจำนวนมาก: Kyorin Pharmaceutical (5.91%) โดย Akira Ogiwara และคณะ - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQ1diNlZVbTYxRm1ESE9sOWwwTnZ1dFVqeGtqXzlUUHY0UmtLUUNfT0tRU2JDTEh3ZWM1R0RUcTYwYmQxRXN1cU96WXJ4VTYzNUdVVzRrUk1XWXpvS09EeDRobnRBbW44RFB3NGpVRTE5R1JMN09LcS1ISXpuX2VlVmFEQVk1eWZ1QmNDZFhTQ0ZoUEQtRG1Jd0NpMW1WRTRMNkZwVDJ0cUhBQkUxUHdtUVo4ZDVCSlAwTncwUXBpcmE?oc=5",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "422d6d4c4234ee5e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "การโอนหุ้นจำนวนมากใน Kyorin Pharmaceutical (6.23% → 0.21%) โดย Toshi Ogihara และบุคคลอื่น ๆ - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWUdvWHBwaG9TaU1CemUtYjhUNENoSFRaODRkdDlWRzRUeGVvX0pzMXQ0SjJMbXB3anNxaFd5eE51X3dmVVlvZXdES1JuMDljQWoxQWpldlNjYlhfWTlJR09sYVE5YlVKRlhPQXd4WFRhd1dZYmZRZklWNDk2a3U0OUZJQVJ5dGRYNDkycWUwSmFEejBjTmtBcW45STdPanNXRkM2cU5ud1A0QQ?oc=5",
+    "company_id": "kyorin",
+    "matched_company_ids": [
+      "kyorin"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "423d765b068766d9": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年9月18日 製品・事業 「持続型×速攻型」2種のビタミンCを配合した美容サプリメント「THE LYPO®（ザリポ）」リニューアル",
+    "url": "https://www.rohto.co.jp/news/release/2026/0918_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "7c9a8df13213f202": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年9月16日 製品・事業 アライアンス バージャー病、膠原病により生じる難治性虚血性（非動脈硬化性）下肢潰瘍に対するRE-01細胞治療の第II相医師主導治験を開始",
+    "url": "https://www.rohto.co.jp/news/release/2026/0916_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "69c91e6e28e46329": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年8月18日 経営 サステナビリティ 「ROHTO Well-being Report～ロート製薬 統合レポート2026～」を発行",
+    "url": "https://www.rohto.co.jp/news/release/2026/0818_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "4d5420949d43aeae": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年8月4日 経営 アライアンス オーピーバイオファクトリーの子会社化に関するお知らせ",
+    "url": "https://www.rohto.co.jp/news/release/2026/0804_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2374c988e008c94e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月30日 研究開発 「一般社団法人 異所性脂肪（いしょせいしぼう）研究会」の設立を支援",
+    "url": "https://www.rohto.co.jp/news/release/2026/0730_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "98a2b1307335856f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月21日 製品・事業 アゼライン酸を日々のスキンケアに取り入れやすい美容液へ。医療機関専売ブランド「DRX®」より「AZAクリア®セラム」発売",
+    "url": "https://www.rohto.co.jp/news/release/2026/0721_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "806db0643a0586cb": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月17日 アライアンス ロート製薬「藻活（もかつ）®プロジェクト」に参画",
+    "url": "https://www.rohto.co.jp/news/release/2026/0717_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "b21ae9397c15d1ee": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月15日 経営 アライアンス ロート製薬とイーダームが独占評価およびライセンスオプションに関する契約を締結",
+    "url": "https://www.rohto.co.jp/news/release/2026/0715_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "a673c0d6bdbdb12d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月10日 経営 社内起業家支援制度「明日ニハ」が「ビジコンAWARDS 2026」にて審査員特別賞を受賞",
+    "url": "https://www.rohto.co.jp/news/release/2026/0710_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f29c14827ea5d28d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月9日 経営 セルビア共和国の化粧品代理店「Magic Cod d.o.o.」の持分取得（子会社化）に関するお知らせ",
+    "url": "https://www.rohto.co.jp/news/release/2026/0709_02",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7fca8025e4583351": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月9日 製品・事業 ロート製薬と大阪府が共同企画。母娘で学ぶフェムケアセミナー「母娘で正しく知る、女性のからだとセルフケア」を開催",
+    "url": "https://www.rohto.co.jp/news/release/2026/0709_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "bca6335a0c929a7a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月8日 製品・事業 ロート製薬×ユーヤンサン スキンケアで初のコラボレーション。医療機関専売ブランド「ダーマセプトRX® ステムアドバンス®」より新商品を発売",
+    "url": "https://www.rohto.co.jp/news/release/2026/0708_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "6d50e952c6287d13": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年6月30日 サステナビリティ 国境を越えて、世界中に“見える喜び”を！取引先10社と10年目を迎えた「アイケア支援活動」累計支援総額は約1,900万円に",
+    "url": "https://www.rohto.co.jp/news/release/2026/0630_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "47b2a1ea9e92fa99": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年6月29日 製品・事業 ロート製薬、T2の自動運転トラックでスキンケア関連製品等の輸送実証を開始",
+    "url": "https://www.rohto.co.jp/news/release/2026/0629_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "14908acca7af47ce": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年6月16日 製品・事業 日中の“うねり戻り”に着目した質感整形ヘアミルク「ギュット コルセットヘアミルク」 誕生",
+    "url": "https://www.rohto.co.jp/news/release/2026/0616_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "19f1c74020dee283": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年9月15日 当社システムにおける不正アクセスに関する調査状況について",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0915_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9a5938473bc99162": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年9月11日 当社システムにおける不正アクセスの可能性について",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0911_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "b82b0ef74d5a85d6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年8月28日 「ロート健康白書2026」発行のお知らせ",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0828_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "bb3f1babc6b6667a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年8月9日 米国におけるベトナム製目薬の自主回収に関するお知らせ",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0807_02",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "b6a78cde7ddc8ed2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年8月7日 令和8年熊本地震に対する支援について",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0807_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "abb2ca874d2477c2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年7月31日 医療従事者向けのウェブサイト「ロート メディカル・アイ」オープン",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0731_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2d61faa6cfd361cd": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年3月24日 旧DRXブランドサイトURLが不正サイトへ転送される事象について",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0324_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "8b070909ca2da8fd": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年3月17日 細胞治療における安全性への取り組みについて",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0317_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9c7af874eb904317": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年3月4日 環境配慮に伴う包装仕様変更のお知らせ",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2026/0304_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d8fe3e7b5b341773": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025年12月25日 「ロート健康白書2025」発行のお知らせ",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2025/1225_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9dda776021845112": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025年10月16日 オバジシリーズ 正規取扱店でのご購入のお願い",
+    "url": "https://www.rohto.co.jp/news/whatsnew/2025/1016_01",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6d49c39fac491b81": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "米国でロート製薬の目薬約1196万箱が自主回収、ベトナム工場の無菌性問題で - 財経新聞",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjMWk3QTctMjFHNm9qODNwQUM5M0tDU2s5dWJ0TUZxZGhlX0YwRzNHeEM4VmJ3UUJKb3J4bWpncC1zVXZlQlE3ZkZjN1IwVURlc1ptWUEzM01xd1lkclJfYU1XVdIBaEFVX3lxTFBHZWg4X1NvQ1M4RldoYWM2MVY5eTJEaG51YnBfTW5NSV9EZXhiamxqUzhlVGk4ODFPbndiVjV6NHNmRUUweUJRbEpRNFJTVlF1bjc4cDc1LV9JdnBBVjBGWFBNWGJvbjR6?oc=5",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7021e05e0e16e746": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Operating profit up 16.8%, net profit down 9.5%—Why did the 'profit gap' occur at Rohto Pharmaceutical (4527)? - note",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GSG1neklSVWEtaDBaWUg0QnVxTm0wdnZublFoVFBRUk1LeGZDZVkxbU5FdE9nZU1mY3RHZGxHOWprclJHb1p0VHYyOXNtVk9pNnpoc3B0NVpQa0tURWZoS3d2OA?oc=5",
+    "company_id": "rohto",
+    "matched_company_ids": [
+      "rohto"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f06e6f016b65db83": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年08月20日 アレルギー性結膜炎治療薬「SJP-0049 点眼液」の国内第Ⅲ相臨床試験開始のお知らせ（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-08/JPN_20260820.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "ace382bf4938b8cc": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年08月07日 令和8年熊本地震による災害に対する支援について（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-08/JPN_20260807.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e4e9ea8c311604b9": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年07月31日 【マイティア】SPACE SHOWER SWEET LOVE SHOWER 2026への協賛およびキャンペーンに関するお知らせ（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-07/JPN_20260731_4.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "88802d0e00e5b204": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年06月01日 医療機器 オートレフケラトトノメーター 3in1Smart及び スペキュラーマイクロスコープ SPM-700の販売開始について（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-06/JPN_20260601_0.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "e802fb23f3077e95": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年04月06日 世界初、TRPV1拮抗作用を持つドライアイ治療薬 「アバレプト®懸濁性点眼液0.3%」新発売について（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-04/JPN_20260406.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "92ef58401a69e900": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年03月12日 千寿製薬、世界緑内障週間に合わせ「GREEN CARE Fes! 2026」に参画 ― 眼の健康と点眼への理解促進のための啓発活動 ―（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-03/JPN_20260312_0.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "8060eb89244c0810": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年03月09日 【マイティア】目のホワイトデー記念！マイティアルミファイクイズキャンペーンに関するお知らせ（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-03/JPN_20260309.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "26607146cbf84663": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年03月02日 世界緑内障週間『ライトアップinグリーン運動』支援と緑内障啓発について（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-02/JPN_20260302.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "68898d5f8eb4cb6b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年02月02日 ノバルティス ファーマとの「ベオビュ® 硝子体内注射用キット120mg/mL」に関する プロモーション提携契約締結のお知らせ（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2026-01/JPN_20260202.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ba630d5c05b9ae2e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025年12月22日 世界初、TRPV1拮抗作用を持つドライアイ治療薬 「アバレプト®懸濁性点眼液0.3%」国内承認取得のお知らせ（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2025-12/JPN_20251222_0.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "130da84d6ba75203": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025年11月27日 アステラス製薬との「アイザベイTM硝子体内注射液20mg/mL」に関する 販売パートナーシップ契約締結のお知らせ（ PDF）",
+    "url": "https://www.senju.co.jp/system/files/content_news/2025-11/JPN_20251127.pdf",
+    "company_id": "senju",
+    "matched_company_ids": [
+      "senju",
+      "astellas_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "2185b4fd3d7ca8ab": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "低亜鉛血症治療剤「ジンタス®錠」 扶桑薬品工業株式会社とのコ・プロモーション契約締結について",
+    "url": "https://www.nobelpharma.co.jp/_cms/wp-content/uploads/2026/09/9f591f8b2e82c8f506ec20e145877ef8.pdf",
+    "company_id": "nobelpharma",
+    "matched_company_ids": [
+      "nobelpharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "a33f2ef780d161cc": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "子どもの『睡眠』と『発達』オンライン講演会 参加者アンケート結果",
+    "url": "https://www.nobelpharma.co.jp/_cms/wp-content/uploads/2026/08/4e80d823dbc20927bc54d731020c7d28.pdf",
+    "company_id": "nobelpharma",
+    "matched_company_ids": [
+      "nobelpharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "cf9cbd3c95a12573": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "低亜鉛血症治療剤『ジンタス®錠25mg』新発売のお知らせ",
+    "url": "https://www.nobelpharma.co.jp/_cms/wp-content/uploads/2026/06/ad3174d28b3bd200d2ed62447b7d7a0d.pdf",
+    "company_id": "nobelpharma",
+    "matched_company_ids": [
+      "nobelpharma"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "6c98f0ac71295f42": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "醋酸锌片『诺倍仁®』（ヌォベイレン）日本製品名『ノベルジン®錠25mg50mg』新発売のお知らせ（中国）",
+    "url": "https://www.nobelpharma.co.jp/_cms/wp-content/uploads/2026/06/6c72fe4c5321ac936d9d652121325f2b-2.pdf",
+    "company_id": "nobelpharma",
+    "matched_company_ids": [
+      "nobelpharma"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "dcbef71e403f860c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Markus spiske D Pd AG yv DQ unsplash",
+    "url": "https://investors.nxera.life/news",
+    "company_id": "nxera",
+    "matched_company_ids": [
+      "nxera"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2ab490c7e6d9b466": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ネクセラファーマ(株)【4565】：適時開示情報 - Yahoo!ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1RHdwelNIcWVwbmo1MjNGSXlweW9CUmNvZWhfaTFVQ01Hd0tZdnFzcDRZVUxVYXhjU2lKak1qeTdJYU50YkFWTUJpbTFBaUZDTEN5c0F1Y0Q0NGlNOWhxeg?oc=5",
+    "company_id": "nxera",
+    "matched_company_ids": [
+      "nxera"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "328eeef643b2ca53": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Nxera Pharmaがパテント侵害でOMass Therapeuticsを提訴 執筆 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE43R2NtMVdaLU5yWUZ5VUVBMmxxaEh3RFQ5TkZleVdVYjRfV0JwekVIN3Y3WE5veUhTQ3Rrcm9uclotcm1ZYTdRLWJuYmUzRnh6cVdpWFh0akEzYUdfc1VuVU9xSXRzTUR0cUYyOU5qQWU?oc=5",
+    "company_id": "nxera",
+    "matched_company_ids": [
+      "nxera"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ffb9dc22cf0f7836": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ネクセラファーマ---大幅続伸、提携先企業をイーライリリーが買収 | マーケット速報 | 企業情報FISCO - 投資情報のフィスコ",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObDE0VWw3MGRoTGozUnRFRk1fWUtyNUNmQ1psMWxjaFpXbzR0ODZ4ekV3WVBxZ1FSbEgzc2VfTmk0VGZrY3pRNlExcDczV2NMSW5ZZkJEZnhkYkl4MTBET2s5LXVWUm1JZlhJTmRRemtsRklRemR0ZE5ReS1iV0x2Qm1GRkk?oc=5",
+    "company_id": "nxera",
+    "matched_company_ids": [
+      "nxera"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ac88020409d3fb4c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "1Q FY2026 update from OMEGA Investment",
+    "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260908_EN01_8Dk37F.pdf",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "045026290f5a9811": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "SHED Clinical Study for Cerebral Palsy Data Safety Monitoring Board Confirms “No Safety Concerns” Across All Patients and Throughout the Full Observation Period",
+    "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260812_01EN_9He7Dj.pdf",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "71f28a1407c5dc4b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "4Q FY2025 update from OMEGA Investment",
+    "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260609_01EN_8Dkwn3.pdf",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9e2ce69f9cd1cf98": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "3Q FY2025 update from OMEGA Investment",
+    "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260310_01EN_9Dhen57.pdf",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b58072fd58498b55": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kidswell Bio and Treehill Partners launch US-based Newco to fast-track global clinical development of a novel cell and gene therapy for paediatric cerebral palsy",
+    "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260216_01EN_8fgSyej9x.pdf",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "bc8bdd4776fc43db": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Collaborative Research Results with S-Quatre to be Presented by Nagoya University at the 75th Congress of Neurological Surgeons in Los Angels (CNS 2025)",
+    "url": "https://www.kidswellbio.com/en/topics?itemid=1306&dispmid=584",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "0c1ec3c9f0d90a9b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "特別利益（投資有価証券売却益）の計上に関するお知らせ",
+    "url": "https://www.kidswellbio.com/LinkClick.aspx?fileticket=EMNpxFsQkuo%3D&tabid=106&mid=390",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "80367dd707be2e31": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "SHEDを活用した骨壊死研究の成果が国際学術誌に掲載 －難治性骨疾患への応用可能性を示す新たな知見を獲得－",
+    "url": "https://www.kidswellbio.com/LinkClick.aspx?fileticket=u7VwhKaSsqA%3D&tabid=106&mid=390",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "523431312a7a5d51": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "SHEDを用いた腫瘍溶解性ウイルス治療法 (SHED-OV療法) に関する研究成果が国際学術誌に掲載",
+    "url": "https://www.kidswellbio.com/LinkClick.aspx?fileticket=rTznzO9PTv4%3D&tabid=106&mid=390",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "23d54d11ba1043df": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "SHED投与による脳性麻痺（遠隔期）治療の臨床研究 独立安全性評価委員会が全症例・全観察期間において「安全性に問題なし」と評価",
+    "url": "https://www.kidswellbio.com/LinkClick.aspx?fileticket=bNK5RLuiTi8%3D&tabid=106&mid=390",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "bfb913806bf1ddc7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "腸管神経節細胞僅少症を対象として乳歯歯髄幹細胞を投与する臨床研究がAMEDに採択",
+    "url": "https://www.kidswellbio.com/LinkClick.aspx?fileticket=JCiKitp1zYI%3D&tabid=106&mid=390",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "52eedd27ae2be18c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "研究開発体制の再編に関するお知らせ",
+    "url": "https://www.kidswellbio.com/LinkClick.aspx?fileticket=%2BsQmqEFg7dI%3D&tabid=106&mid=390",
+    "company_id": "kidswell",
+    "matched_company_ids": [
+      "kidswell"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "644c69d20c49a6e8": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.08.21 Others CellSeed featured in the “The Los Angels Times Special Report” on August 14",
+    "url": "https://www.cellseed.com/en/news/2026/info/20260820172509.html",
+    "company_id": "cellseed",
+    "matched_company_ids": [
+      "cellseed"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ea306d14eb5c3511": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.08.13 IR Summary of Non-Consolidated Financial Results for the Six Months Ended June 30, 2026 (J-GAAP) [ 149863 ]",
+    "url": "https://www.cellseed.com/en/news/news_file/file/20260813_financialreport_en.pdf",
+    "company_id": "cellseed",
+    "matched_company_ids": [
+      "cellseed"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "1c4f9e457706b64b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.07.21 Event Thank you for visiting CellSeed’s Booth at ISSCR 2026 in Montréal!",
+    "url": "https://www.cellseed.com/en/news/2026/event/20260721130831.html",
+    "company_id": "cellseed",
+    "matched_company_ids": [
+      "cellseed"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "a216bf4efaa5b92f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.06.05 Event Participation in the ISSCR 2026 Annual Meeting (7/8-11, Montréal)",
+    "url": "https://www.cellseed.com/en/news/2026/event/20260605083629.html",
+    "company_id": "cellseed",
+    "matched_company_ids": [
+      "cellseed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "52a6dbbd45d71d14": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.05.29 IR Granted New Patents in Japan [ 234139 ]",
+    "url": "https://www.cellseed.com/en/news/news_file/file/20260526_ir_release_en_clean%20final.pdf",
+    "company_id": "cellseed",
+    "matched_company_ids": [
+      "cellseed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "56c2d0407bedab55": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Investor Library",
+    "url": "https://stemrim.com/english/investors/ir_library",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "a226c838e428dfcf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Fixed Details of the Issuance of Stock Options to Directors",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/09/140120260910534453.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "1bbef95ba7f04774": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Fixed Details of the Issuance of Stock Options to Employees",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/09/140120260910534429.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "fa2e080f17f9d5b5": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Non-consolidated Financial Results for the Fiscal Year Ended July 31, 2026 [Japanese GAAP]",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/09/140120260909533422.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "cc2e5e91432d08b8": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Issuance of Stock Acquisition Rights as Stock Options to Directors",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/09/140120260909533505.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "490234d0dda6c698": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Issuance of Stock Acquisition Rights as Stock Options to Employees",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/09/140120260909533513.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "5e7a204bedf80d74": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Patent Registration for SR-GT1 Aimed at Curative Treatment of Dystrophic Epidermolysis Bullosa in South Korea",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/08/140120260803507225.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "69ab034d3493f955": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Patent Registration (Mexico) for Redasemtide, as an Additional Therapeutic Indication of Cartilage Disorders",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/07/140120260722597650.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "c30d401448602c4f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Patent Registration (Canada) for Redasemtide, as an Additional Therapeutic Indication for Cardiomyopathy, Old Myocardial Infarction",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/07/140120260713592293.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "00d6396b23c95542": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Patent Registration for Stem Cell Gene Therapy Technology (SR-GT1) Aimed at Curative Treatment of DEB in ,South Korea",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/07/140120260708589829.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "d24c6a23982bba19": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Publication of a Paper on Novel Finding about Contribution of Ectomesenchyme for Epidermal Stem Cell Formation",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/07/StemRIM-Announces-Publication-of-a-Paper-on-Novel-Finding-about-Contribution-of-Ectomesenchyme-for-Epidermal-Stem-Cell-Formation.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "66f084be778a816a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Patent Registration (Australia) for Redasemtide, as an Additional Therapeutic Indication of Cartilage Disorders",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/06/140120260617572716.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "44d95e0cf7c029ac": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Patent Registration (Russia) for Redasemtide, as a Therapeutic Indication for Fatty Liver and Non-alcoholic Steatohepatitis",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/06/140120260616571941.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "6e6658490c0ca81d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Non-consolidated Financial Results for the Nine Months Ended April 30, 2026 [Japanese GAAP]",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/06/140120260610567378.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "31cfe129c1d1d53f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "StemRIM Announces Setting the Record Date and Holding for Extraordinary General Meeting of Shareholders and Reduction of Capital Stock",
+    "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/05/140120260513529688.pdf",
+    "company_id": "stemrim",
+    "matched_company_ids": [
+      "stemrim"
+    ],
+    "tier": "archive",
+    "score": 5,
+    "signal_type": "news"
+  },
+  "3564347fb95483bf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Novel Mechanism of Host Immune Activation by PRIME CAR-T Cells Uncovered: Findings Published in PLOS One Advance Next-Generation CAR-T Cell Therapy for Solid Tumors",
+    "url": "https://www.noile-immune.com/dcms_media/other/20260828_Novel_Mechanism_of_Host_Immune_Activation_by_PRIME_CAR-T_Cells_EN.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ea45a92acb4d2af2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "A Patent for Technology under Development Granted in EU",
+    "url": "https://www.noile-immune.com/dcms_media/other/20260806_Patent_for_Technology_Development_Granted_en_NIB_up.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "ab6a400e1647c92a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Joint Research Results on Swift PRIME CAR-T Cells Manufactured Using a Short-Term Culture Method Published in Molecular Cancer Therapeutics",
+    "url": "https://www.noile-immune.com/dcms_media/other/20260709_JResearch_Results_on_Swift_PRIME_CAR-T_Cells_Manufactured_Culture_Method_Noile_en.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "6f48a94b31b3628e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Joint Research Project on in vivo CAR-T Therapy Conducted by The University of Tokyo and Yamaguchi University, Collaborative Partners of Noile-Immune, Awarded AMED FY2026 “Project for Promotion of Cancer Research and Therapeutic Evolution”",
+    "url": "https://www.noile-immune.com/dcms_media/other/AMED_FY2026_Promotion_Cancer_Research_JRes_Project_YUTokyoU_En_NIB20260602.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ca6bf42e8a61d033": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "AMED FY2026 “Translational Research Project” Grant Awarded to a Joint Research and Development Project Conducted by Yamaguchi University and Kyushu University, Collaborative Partners of Noile-Immune",
+    "url": "https://www.noile-immune.com/dcms_media/other/AMED_FY2026_Translational_Research_Project_Grant104_eg_NIB20260601.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6b9246517273f8b2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice of Ending Collaboration Agreement with Adaptimmune Limited",
+    "url": "https://www.noile-immune.com/dcms_media/other/Notice_of_Ending_Collaboration_Agreement_with_Adaptimmune_Noile20260518_en_hp.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "6ed3069f16df2b68": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Our Position Regarding the Matter Disclosed by Takara Bio Inc.",
+    "url": "https://www.noile-immune.com/dcms_media/other/20260513_Our_Position_Disclosed_by_TakaraBio_eg_HP.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile",
+      "takara_bio"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "714ad994bed14805": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Development of Next-Generation T-Cell Gene Editing Technology Using CRISPR-Cas3",
+    "url": "https://www.noile-immune.com/dcms_media/other/Development_of_Next-Generation_T-Cell_Gene_Editing_Technology_Using_CRISPR-Cas3_20260421NIB_eng.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b1ce8d399a213182": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice From Noile about Impersonation Message",
+    "url": "https://www.noile-immune.com/dcms_media/other/Notice_from_Noile_about_Impersonation_Message_en_202512_hp.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "825b3308397c0a80": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Joint Research Commences Between Yamaguchi University and Hitachi, Ltd. on CAR-T Cell Technology Improvement Using CAR Sequences Provided by Noile-Immune",
+    "url": "https://www.noile-immune.com/dcms_media/other/Joint_Research_Between_Yamaguchi_Univ_and_Hitachi_eg_final_20251216_hp.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "27bf72742bcdbb6e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Registration of a Patent related to Noile-Immune's Developed Technology Completed in Japan",
+    "url": "https://www.noile-immune.com/dcms_media/other/Registration_of_a_Patent_eg_final_20251119_up.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "541382df85c92c62": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Policy for Against Anti-Social Forces",
+    "url": "https://www.noile-immune.com/dcms_media/other/Policy_Against_Anti-Social_Forces_2023June_en.pdf",
+    "company_id": "noile",
+    "matched_company_ids": [
+      "noile"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "0edcb630e412278e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Announcement of Issuance of Series 21 Moving Strike Warrants, Conclusion of a Warrant Purchase Agreement",
+    "url": "https://www.brightpathbio.com/english/news/Announcement%20of%20Issuance%20of%20Series%2021%20Moving%20Strike%20Warrants%2C%20Conclusion%20of%20a%20Warrant%20Purchase%20Agreement.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "eab130db5383d7d0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "BrightPath to Present Preclinical Data of iPSC-Derived BCMA CAR-iNKT Cell Therapy (BP2202) at IMS 2026",
+    "url": "https://www.brightpathbio.com/english/news/BrightPath%20to%20Present%20Preclinical%20Data%20of%20iPSC-Drived%20BCMA%20CAR-iNKT%20Cell%20Therapy%20%28BP2202%29%20at%20IMS%202026.pdf.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "c50d303ac81763f0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Financial Results for the Three Months ended June 30, 2026〔Japanese GAAP〕(non-consolidated)",
+    "url": "https://www.brightpathbio.com/english/news/Financial%20Results%20for%20the%20Three%20Months%20ended%20June%2030%2C%202026%20%5BJapanese%20GAAP%5D%20%28non-consolidated%29.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "8f9363b3ec85fcd7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "FDA Clearance of Investigational New Drug Application for BP2202",
+    "url": "https://www.brightpathbio.com/english/news/FDA%20Clearance%20of%20Investigational%20New%20Drug%20Application%20for%20BP2202.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "bab6748ef130a430": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "BrightPath Submits IND Application to U.S. FDA for the First-in-human Phase 1 Trial of BP2202",
+    "url": "https://www.brightpathbio.com/english/news/2c87582f4dfef1d8d870a93d2b7d81fa7e711c72.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "206ebfa6d5329acb": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Financial Results for the Fiscal Year ended March 31, 2026 [Japanese GAAP] (non-consolidated)",
+    "url": "https://www.brightpathbio.com/english/news/Financial%20Results%20for%20the%20Fiscal%20Year%20ended%20March%2031%2C%202026%20%5BJapanese%20GAAP%5D%20%28non-consolidated%29.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "df55a39c3803abd1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Financial Results for the Nine Months ended December 31, 2025 [Japanese GAAP] (non-consolidated)",
+    "url": "https://www.brightpathbio.com/english/news/f3bac2072774248d95ecdb2046b65525de25cbc3.pdf",
+    "company_id": "brightpath",
+    "matched_company_ids": [
+      "brightpath"
+    ],
+    "tier": "archive",
+    "score": 3,
+    "signal_type": "news"
+  },
+  "775a45206dae03e5": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "C-FORTE 主催の理学療法士向けウェビナーへの 当社社員登壇のお知らせをいたします。 - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBUUmRsd29SS0FOTS1FSDB3azAzQ2VleTFZZC1icWhQcFdoNG9pRnpCUTlCNEVyajNibldiZjJZS2FJR0xIbHd1NEdNdE14d1h2R3lWTEtWUDdvOXhsSGFqcFJFWXludTgzdk5MNkR3?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f792f8ad26141837": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "業績予想の修正に関するお知らせ - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ock1FeWdwUEt3NWNvUDQzUTZLUjNWX2NjZ1NFdEdjRmpZY0JZVWtCdUVDN0lqU1NnTTZuRzdGU3NpbnkwLW9vY1h4UTV1Y3dZQjVSQ2NBMDNrN3B1VUExUEZoYWM1VGdydGt0NXJR?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "621e253d6dc26536": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "主要株主である筆頭株主及び主要株主並びにその他の関係会社の異動（予定）並びに公開買付けに準ずる行為として政令で定める買集め行為に関するお知らせ｜セルソース株式会社 - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhRmZBbDZ5VXBYRUtabUkwYW1xbEZjaDBrVDRIbUxkcUI1c3NOMEk2eFRXV3BwRUIzeXMycGZFdm9lWG9JSmhVMUJ6SS1PRzdpOENvWFpGVjFYOEZmSjg3bFFaWjJjTWoyNGlGVA?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "32bc7a470d4d3e68": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "当社は本日、医療機関・医療従事者と共にひざの健康啓発に取り組む共同プロジェクト「ひざの悩みトリサル委員会」として啓発サイトを公開しました。 - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9fbkU1OWpjeUQ5eWxhV0lCdDNEYlJkUGxPY1IxaXhyd0JnMzY4eFZuLWhfTERiTGNYcXUxY1JGRnpCa2pJT2dnc0tWRXhqem5FLTAzVVB2TVNFc1ZmX05PbUZmajM4Q0NYei1yRQ?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "63ee4ee24804cbc9": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年10⽉期 6⽉度⽉次KPI速報を公開しました｜セルソース株式会社 - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhaVNvYjJXa2pIeGNBRTdRUVAyOHJTbC12a2hNX2lGWVo1a3g0dG1yam5YaUFQQjZjWnlHSm9hZWN3NkVjZmstd0diRmpVdGNPZ2lGTWNiNkRnS2FJQlZ1WWM0VzFINVZnMXZ1eg?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9d2f61cc4410648a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ファスト美容医療クリニック「FAST CLINIC」第一号医療機関への経営支援事業を6月1日より開始しました｜セルソース株式会社 - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5RN1NGZk1nVURVZktIZ2psbGJMT3o3cUNIaE5KQmxNUC01dTU0TklKQng0Wk1lOEdvMWQ4QmZVZ3V4STVYT0JkSDhrVE5jV29POFBjcWFILTZPdnJEZnlaQ0ZKMFNYaC1RNEhJ?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "753309ad6742772f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "セルソースとC-FORTE 再生医療×リハビリテーション領域における業務提携を開始｜セルソース株式会社 - cellsource.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mVTBVdkNwRkh4WGlMcUd0UG4zYlo2ck82LURtUHRuZmYxVmQ2MnNpNmJtVldRUGJ2dm92Wk5KcFcwbzUyTTFOV0xuZGRaWDR1d1E0WHZtVVo1UktzcXNKWG5MZWlQMUxHTjA0WQ?oc=5",
+    "company_id": "cellsource",
+    "matched_company_ids": [
+      "cellsource"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "3c227403639b2e35": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「ミヤBM細粒」限定出荷解除のお知らせ",
+    "url": "https://www.miyarisan.com/info/%e3%80%8c%e3%83%9f%e3%83%a4bm%e7%b4%b0%e7%b2%92%e3%80%8d%e9%99%90%e5%ae%9a%e5%87%ba%e8%8d%b7%e8%a7%a3%e9%99%a4%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "miyarisan",
+    "matched_company_ids": [
+      "miyarisan"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9f06e8f6d24a5c11": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「ミヤBM錠」限定出荷解除のお知らせ",
+    "url": "https://www.miyarisan.com/info/%e3%80%8c%e3%83%9f%e3%83%a4bm%e9%8c%a0%e3%80%8d%e9%99%90%e5%ae%9a%e5%87%ba%e8%8d%b7%e8%a7%a3%e9%99%a4%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "miyarisan",
+    "matched_company_ids": [
+      "miyarisan"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a2810e2df2ca5403": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「ミヤBM細粒」・「ミヤBM錠」限定出荷延長のお詫び",
+    "url": "https://www.miyarisan.com/info/%e3%80%8c%e3%83%9f%e3%83%a4bm%e7%b4%b0%e7%b2%92%e3%80%8d%e3%83%bb%e3%80%8c%e3%83%9f%e3%83%a4bm%e9%8c%a0%e3%80%8d%e9%99%90%e5%ae%9a%e5%87%ba%e8%8d%b7%e5%bb%b6%e9%95%b7%e3%81%ae%e3%81%8a%e8%a9%ab",
+    "company_id": "miyarisan",
+    "matched_company_ids": [
+      "miyarisan"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "81bf0ac5457468d1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「ミヤBM細粒」・「ミヤBM錠」の限定出荷について",
+    "url": "https://www.miyarisan.com/info/%e3%80%8c%e3%83%9f%e3%83%a4bm%e7%b4%b0%e7%b2%92%e3%80%8d%e3%83%bb%e3%80%8c%e3%83%9f%e3%83%a4bm%e9%8c%a0%e3%80%8d%e3%81%ae%e9%99%90%e5%ae%9a%e5%87%ba%e8%8d%b7%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6",
+    "company_id": "miyarisan",
+    "matched_company_ids": [
+      "miyarisan"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "009642d342706e3f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「ミヤBM錠」PTP包装の限定出荷について",
+    "url": "https://www.miyarisan.com/info/%e3%80%8c%e3%83%9f%e3%83%a4bm%e9%8c%a0%e3%80%8dptp%e5%8c%85%e8%a3%85%e3%81%ae%e9%99%90%e5%ae%9a%e5%87%ba%e8%8d%b7%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6",
+    "company_id": "miyarisan",
+    "matched_company_ids": [
+      "miyarisan"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f79b52bc7a7ffdd6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "需要急増に伴う「ミヤBM錠」PTP包装のお届けの遅延について",
+    "url": "https://www.miyarisan.com/info/%e9%9c%80%e8%a6%81%e6%80%a5%e5%a2%97%e3%81%ab%e4%bc%b4%e3%81%86%e3%80%8c%e3%83%9f%e3%83%a4bm%e9%8c%a0%e3%80%8dptp%e5%8c%85%e8%a3%85%e3%81%ae%e3%81%8a%e5%b1%8a%e3%81%91%e3%81%ae%e9%81%85%e5%bb%b6",
+    "company_id": "miyarisan",
+    "matched_company_ids": [
+      "miyarisan"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "e67e83514e2f969c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "【偽通販サイトにご注意ください】",
+    "url": "https://www.wakunaga.co.jp/news/%e3%80%90%e5%81%bd%e9%80%9a%e8%b2%a9%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ab%e3%81%94%e6%b3%a8%e6%84%8f%e3%81%8f%e3%81%a0%e3%81%95%e3%81%84%e3%80%91",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "710bb4cd7adb45f1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "美容ドリンク「艶美華Rich」発売のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e7%be%8e%e5%ae%b9%e3%83%89%e3%83%aa%e3%83%b3%e3%82%af%e3%80%8c%e8%89%b6%e7%be%8e%e8%8f%africh%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "8fa6a65e166a16f2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "6-7月わくわくフェア 終了のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/6-7%e6%9c%88%e3%82%8f%e3%81%8f%e3%82%8f%e3%81%8f%e3%83%95%e3%82%a7%e3%82%a2-%e7%b5%82%e4%ba%86%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "82be128c25b3ea65": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "健康情報「大元気」奥寺康彦さんのインタビュー掲載",
+    "url": "https://www.wakunaga.co.jp/news/%e5%81%a5%e5%ba%b7%e6%83%85%e5%a0%b1%e3%80%8c%e5%a4%a7%e5%85%83%e6%b0%97%e3%80%8d%e5%a5%a5%e5%af%ba%e5%ba%b7%e5%bd%a6%e3%81%95%e3%82%93%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%93%e3%83%a5%e3%83%bc",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f57f88f98078b35f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "湧永製薬株式会社と一般社団法人プロダクティブ・エイジング研究機構の共同研究論文が「Cell Metabolism」誌の「Most read(last 30 days)」に選出",
+    "url": "https://www.wakunaga.co.jp/news/%e6%b9%a7%e6%b0%b8%e8%a3%bd%e8%96%ac%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%81%a8%e4%b8%80%e8%88%ac%e7%a4%be%e5%9b%a3%e6%b3%95%e4%ba%ba%e3%83%97%e3%83%ad%e3%83%80%e3%82%af%e3%83%86%e3%82%a3%e3%83%96",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "939d34f8077c6155": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "産経新聞 記事広告掲載（7月17日(金)付）のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e7%94%a3%e7%b5%8c%e6%96%b0%e8%81%9e%e3%80%80%e8%a8%98%e4%ba%8b%e5%ba%83%e5%91%8a%e6%8e%b2%e8%bc%89%ef%bc%887%e6%9c%8817%e6%97%a5%e9%87%91%e4%bb%98%ef%bc%89%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "b5b0cffd18794122": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "5月8日(金)記者発表会の記事がyomiDr.（ヨミドクター）に掲載されました",
+    "url": "https://www.wakunaga.co.jp/news/5%e6%9c%888%e6%97%a5%e9%87%91%e8%a8%98%e8%80%85%e7%99%ba%e8%a1%a8%e4%bc%9a%e3%81%ae%e8%a8%98%e4%ba%8b%e3%81%8cyomidr-%ef%bc%88%e3%83%a8%e3%83%9f%e3%83%89%e3%82%af%e3%82%bf%e3%83%bc%ef%bc%89%e3%81%ab",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e14698516b37e2f5": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "讀賣新聞 記事広告掲載（6月12日(金)付）のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e8%ae%80%e8%b3%a3%e6%96%b0%e8%81%9e-%e8%a8%98%e4%ba%8b%e5%ba%83%e5%91%8a%e6%8e%b2%e8%bc%89%ef%bc%886%e6%9c%8812%e6%97%a5%e9%87%91%e4%bb%98%ef%bc%89%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9c14e5d3e61e410d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「キヨーレオピン」スポーツスペシャル 第71回早慶アイスホッケー定期戦の放映",
+    "url": "https://www.wakunaga.co.jp/news/%e3%80%8c%e3%82%ad%e3%83%a8%e3%83%bc%e3%83%ac%e3%82%aa%e3%83%94%e3%83%b3%e3%80%8d%e3%82%b9%e3%83%9d%e3%83%bc%e3%83%84%e3%82%b9%e3%83%9a%e3%82%b7%e3%83%a3%e3%83%ab-%e7%ac%ac69%e5%9b%9e%e6%97%a9-2",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "22f29e2ced6ea714": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "機能性表示食品「ラクッション極」発売のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e6%a9%9f%e8%83%bd%e6%80%a7%e8%a1%a8%e7%a4%ba%e9%a3%9f%e5%93%81%e3%80%8c%e3%83%a9%e3%82%af%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e6%a5%b5%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "00aed7b7db605127": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "6-7月わくわくフェアを開催中",
+    "url": "https://www.wakunaga.co.jp/news/6-7%e6%9c%88%e3%82%8f%e3%81%8f%e3%82%8f%e3%81%8f%e3%83%95%e3%82%a7%e3%82%a2%e3%82%92%e9%96%8b%e5%82%ac%e4%b8%ad-2",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "52111231a7c410e5": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "アンプティサッカー大会「第十一回 レオピン杯Copa Amputee」開催のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e3%82%a2%e3%83%b3%e3%83%97%e3%83%86%e3%82%a3%e3%82%b5%e3%83%83%e3%82%ab%e3%83%bc%e5%a4%a7%e4%bc%9a%e3%80%8c%e7%ac%ac%e5%8d%81%e4%b8%80%e5%9b%9e-%e3%83%ac%e3%82%aa%e3%83%94%e3%83%b3%e6%9d%afcopa-amput",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "11515166c3d34325": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "S1PC®研究成果の記者発表会を開催",
+    "url": "https://www.wakunaga.co.jp/news/s1pc%e7%a0%94%e7%a9%b6%e6%88%90%e6%9e%9c%e3%81%ae%e8%a8%98%e8%80%85%e7%99%ba%e8%a1%a8%e4%bc%9a%e3%82%92%e9%96%8b%e5%82%ac",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "eae3f5c08c1fc65a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "S1PC®の抗老化研究で新知見 Cell Metabolism掲載（5/8(JST)）のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/s1pc%e3%81%ae%e6%8a%97%e8%80%81%e5%8c%96%e7%a0%94%e7%a9%b6%e3%81%a7%e6%96%b0%e7%9f%a5%e8%a6%8b-cell-metabolism%e6%8e%b2%e8%bc%89%ef%bc%885-8jst%ef%bc%89%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "c4a0d7d2dcd0199d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "S1PC® ブランドサイトリリースのお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/s1pc-%e3%83%96%e3%83%a9%e3%83%b3%e3%83%89%e3%82%b5%e3%82%a4%e3%83%88%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "08f34245aac1f4fb": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "5月23日（土）「レオピン祭」開催のご案内",
+    "url": "https://www.wakunaga.co.jp/news/5%e6%9c%8823%e6%97%a5%ef%bc%88%e5%9c%9f%ef%bc%89%e3%80%8c%e3%83%ac%e3%82%aa%e3%83%94%e3%83%b3%e7%a5%ad%e3%80%8d%e9%96%8b%e5%82%ac%e3%81%ae%e3%81%94%e6%a1%88%e5%86%85",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "d3b882d00e99abf0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ゴールデンウィーク休業日のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%87%e3%83%b3%e3%82%a6%e3%82%a3%e3%83%bc%e3%82%af%e4%bc%91%e6%a5%ad%e6%97%a5%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b-2",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9296255226fa0811": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "第13回 小学生写生大会開催のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e7%ac%ac13%e5%9b%9e-%e5%b0%8f%e5%ad%a6%e7%94%9f%e5%86%99%e7%94%9f%e5%a4%a7%e4%bc%9a%e9%96%8b%e5%82%ac%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "8923fe6cb7727e40": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "湧永満之記念庭園「第22回フォトコンテスト」実施のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e6%b9%a7%e6%b0%b8%e6%ba%80%e4%b9%8b%e8%a8%98%e5%bf%b5%e5%ba%ad%e5%9c%92%e3%80%8c%e7%ac%ac22%e5%9b%9e%e3%83%95%e3%82%a9%e3%83%88%e3%82%b3%e3%83%b3%e3%83%86%e3%82%b9%e3%83%88%e3%80%8d%e5%ae%9f%e6%96%bd",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "dbfb2fe78e4c85d7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "シトリーヌα「ドラッグマガジン主催：第38回ヒット商品賞・話題商品賞2026」にノミネート",
+    "url": "https://www.wakunaga.co.jp/news/%e3%82%b7%e3%83%88%e3%83%aa%e3%83%bc%e3%83%8c%ce%b1%e3%80%8c%e3%83%89%e3%83%a9%e3%83%83%e3%82%b0%e3%83%9e%e3%82%ac%e3%82%b8%e3%83%b3%e4%b8%bb%e5%82%ac%ef%bc%9a%e7%ac%ac38%e5%9b%9e%e3%83%92%e3%83%83",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "977e993e3ae0e922": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026年 湧永満之記念庭園 開園のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/2026%e5%b9%b4-%e6%b9%a7%e6%b0%b8%e6%ba%80%e4%b9%8b%e8%a8%98%e5%bf%b5%e5%ba%ad%e5%9c%92-%e9%96%8b%e5%9c%92%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2af066236a5c7b93": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "アイスバックスJｒ 海外遠征のご報告",
+    "url": "https://www.wakunaga.co.jp/news/%e3%82%a2%e3%82%a4%e3%82%b9%e3%83%90%e3%83%83%e3%82%af%e3%82%b9j%ef%bd%92-%e6%b5%b7%e5%a4%96%e9%81%a0%e5%be%81%e3%81%ae%e3%81%94%e5%a0%b1%e5%91%8a-4",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "2bd904484961fcb6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025年度 湧永満之記念庭園 一般公開終了のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/2025%e5%b9%b4%e5%ba%a6-%e6%b9%a7%e6%b0%b8%e6%ba%80%e4%b9%8b%e8%a8%98%e5%bf%b5%e5%ba%ad%e5%9c%92-%e4%b8%80%e8%88%ac%e5%85%ac%e9%96%8b%e7%b5%82%e4%ba%86%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "0e81dcedfc3c9158": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "中国新聞朝刊（11/21付）「第12回小学生写生大会」社長賞授賞式 記事掲載のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e4%b8%ad%e5%9b%bd%e6%96%b0%e8%81%9e%e6%9c%9d%e5%88%8a%ef%bc%8811-21%e4%bb%98%ef%bc%89%e3%80%8c%e7%ac%ac12%e5%9b%9e%e5%b0%8f%e5%ad%a6%e7%94%9f%e5%86%99%e7%94%9f%e5%a4%a7%e4%bc%9a%e3%80%8d%e7%a4%be",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "308f463ea01e871d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "社長取材記事掲載のお知らせ（事業構想オンライン・Sales First Magazine）",
+    "url": "https://www.wakunaga.co.jp/news/%e7%a4%be%e9%95%b7%e5%8f%96%e6%9d%90%e8%a8%98%e4%ba%8b%e6%8e%b2%e8%bc%89%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%ef%bc%88%e4%ba%8b%e6%a5%ad%e6%a7%8b%e6%83%b3%e3%82%aa%e3%83%b3%e3%83%a9%e3%82%a4",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "41055dfaea62814e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "第12回小学生写生大会 応募期間延長のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e7%ac%ac12%e5%9b%9e%e5%b0%8f%e5%ad%a6%e7%94%9f%e5%86%99%e7%94%9f%e5%a4%a7%e4%bc%9a%e3%80%80%e5%bf%9c%e5%8b%9f%e6%9c%9f%e9%96%93%e5%bb%b6%e9%95%b7%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e715312c35342caa": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "安芸高田わくながハンドボールクラブ 公式アプリ 配信開始のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e5%ae%89%e8%8a%b8%e9%ab%98%e7%94%b0%e3%82%8f%e3%81%8f%e3%81%aa%e3%81%8c%e3%83%8f%e3%83%b3%e3%83%89%e3%83%9c%e3%83%bc%e3%83%ab%e3%82%af%e3%83%a9%e3%83%96%e3%80%80%e5%85%ac%e5%bc%8f%e3%82%a2%e3%83%97",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ad12d7be5dc50269": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「健康産業新聞」に弊社の創立70周年に関する記事掲載のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e3%80%8c%e5%81%a5%e5%ba%b7%e7%94%a3%e6%a5%ad%e6%96%b0%e8%81%9e%e3%80%8d%e3%81%ab%e5%bc%8a%e7%a4%be%e3%81%ae%e5%89%b5%e7%ab%8b70%e5%91%a8%e5%b9%b4%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e8%a8%98%e4%ba%8b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "5dc1f8b68dbfcb28": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「中国新聞デジタル」に弊社の創立70周年に関する記事掲載のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e3%80%8c%e4%b8%ad%e5%9b%bd%e6%96%b0%e8%81%9e%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e3%80%8d%e3%81%ab%e5%bc%8a%e7%a4%be%e3%81%ae%e5%89%b5%e7%ab%8b70%e5%91%a8%e5%b9%b4%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "8ae1c8828a7d9096": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「キヨーレオピンキャプレット4」発売のお知らせ",
+    "url": "https://www.wakunaga.co.jp/news/%e3%80%8c%e3%82%ad%e3%83%a8%e3%83%bc%e3%83%ac%e3%82%aa%e3%83%94%e3%83%b3%e3%82%ad%e3%83%a3%e3%83%97%e3%83%ac%e3%83%83%e3%83%884%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
+    "company_id": "wakunaga",
+    "matched_company_ids": [
+      "wakunaga"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "653b148a4f6f5963": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "再生医療等製品製造販売業許可の取得に関するお知らせ",
+    "url": "https://www.pharmabio.co.jp/news/view/61",
+    "company_id": "pharmabio",
+    "matched_company_ids": [
+      "pharmabio"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "85cd90ec5700c285": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "当社の間葉系幹細胞シート「PAL-222」に関する京都大学との共同研究成果が国際学術誌に掲載されました",
+    "url": "https://www.pharmabio.co.jp/news/view/60",
+    "company_id": "pharmabio",
+    "matched_company_ids": [
+      "pharmabio"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "2a48c7906a9c8ccf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ADDP_Logo_whites",
+    "url": "https://molcure.com/2026/09/08/molcure-26-09-08-en",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "3f2767657fcb384c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Hitachi Social Innovation Forum 2026 JAPAN Special Seminar Featured MOLCURE, September 4",
+    "url": "https://molcure.com/2026/09/15/molcure-26-09-15-en",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "fd9b57351f6c2878": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Hitachi Social Innovation Forum 2026 JAPAN 特別セミナーで講演, September 4",
+    "url": "https://molcure.com/2026/09/15/molcure-26-09-15-jp",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "18e45128714cd838": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Axcelead Drug Discovery PartnersとAI創薬技術を活用したペプチド創薬で協業を開始, September 8",
+    "url": "https://molcure.com/2026/09/08/molcure-26-09-08-jp",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "951d0751e1c66ec0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Innovation Tiger 2026: MOLCURE to Deliver a Finalist Pitch, September 15",
+    "url": "https://molcure.com/2026/09/01/molcure-26-09-01-en",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "6a9b8bbb1472593c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "「イノベーションタイガー2026」にMOLCUREがファイナリストとしてピッチ登壇, September 15",
+    "url": "https://molcure.com/2026/09/01/molcure-26-09-01-jp",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e252262efb5c3873": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "独自LLMでプロテインAIに挑むMOLCURE、「捨てていたデータも実は重要」 - xtech.nikkei.com",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xMFBoekZHR0pJNXJBT2hUNF8zMUxranZUSTNTa3VkS2dCeHo5UnNLckJoY2NBbnhPdWYxUHI0aGs1SFdMS1JWeXBKQ0dGSWp3UUpzS3pBRVdfV3V5Tjl0ZV9PQ21yOHoyZmYteQ?oc=5",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6b31b6f5da0de7a0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "メディパルHD、今川氏が社長に昇格…渡辺氏は会長に／MOLCURE、ペプチド創薬でAxcelead DDPと協業｜製薬業界きょうのニュースまとめ読み（2026年9月8日） - Answers（アンサーズ）",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9oWHVLX2ZMb0otYzhib0RRVWlNR19LTGFkanY4ZUlsaEc5TGNSSUxOV1B3TUZOdElpbUJLV0tXNlJLbjJvQXF1NUpwT21XRUlyUS03WmVoWQ?oc=5",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "64ba1e452b8bb036": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Axcelead Drug Discovery PartnersとAI創薬技..（株式会社MOLCURE プレスリリース） - 財経新聞",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE94MTdiOU1Ib0tpMUpVMjlJVGRjQUZYRUI3UURicHpaTl9Pd0k4b0ZmMTJCcVpBZFBNSDlENEdjYU9NOEp5dHV2aFZuWVMzdTVvWkpERA?oc=5",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "0b34d8e2098af1a1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "日立、オープンイノベーションによるAI創薬を加速する「秘匿AI基盤」を開発へ サービス提供に向けてMOLCUREと協創本格化 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5LS3RmQjBySXhHa0hQWFFXTDhUQkprX3Q4ZVROTVdiX0hyTmVQRGxjOXhuOWVSQlVxNUNmMFF5TDMzOFpScDRBZ29nQmZZOEJZX1NGS01PUnJwdXd6WWQ3Yk11WDV4QQ?oc=5",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f41324841651cd4b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "日立製作所、オープンイノベーションによる AI 創薬を加速する「秘匿AI基盤」を開発へ サービス提供に向けてMOLCUREと協創本格化 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZNjB5MzQxdGQ2aXZqX2pyZjE4eHprVUJsYW1lZUpldms5U1hjZ1V5SnJTVWV5Q0pIN1dOSWcxV2x1cE1JRmY3UUN4WGFjeUhnd29JWFhWV1dmMFloVklxbEhpZmltUQ?oc=5",
+    "company_id": "molcure",
+    "matched_company_ids": [
+      "molcure"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "2c211624796bea14": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Announcement regarding theNew Exective Leadership Structure.",
+    "url": "https://toregem.co.jp/en/archives/10477",
+    "company_id": "toregem",
+    "matched_company_ids": [
+      "toregem"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "64d72aca615db91b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Announcement for Completion of the PMDA Investigation of CTN (Clinical Trial Notification)for TRG035 Phase IIa Trial.",
+    "url": "https://toregem.co.jp/en/archives/10459",
+    "company_id": "toregem",
+    "matched_company_ids": [
+      "toregem"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "8c0c1a3a74232352": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Selected for the \"KYOTO overseas expansion challenging support subsidy program\" & \"Overseas Expansion Support Project for Startup in Kyoto (individual overseas Business Matching)\"",
+    "url": "https://toregem.co.jp/en/archives/10453",
+    "company_id": "toregem",
+    "matched_company_ids": [
+      "toregem"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "4cb9d5bcadcc1878": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Toregem attend to the NFED（National Foundation for Ectodermal Dysplasias）Family Conference in St.Luois.",
+    "url": "https://toregem.co.jp/en/archives/10451",
+    "company_id": "toregem",
+    "matched_company_ids": [
+      "toregem"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "431a0f55eb51dabf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Toregem Raises Approximately USD 5.3 Million (JPY 850 Million) in Pre-Series C Financing;Total Past Funding Exceeds USD 29 Million (JPY 4.6 Billion）With this fundinig, we will accelerate the clinical development of the world's first tooth regeneration treatment.",
+    "url": "https://toregem.co.jp/en/archives/10381",
+    "company_id": "toregem",
+    "matched_company_ids": [
+      "toregem"
+    ],
+    "tier": "daily",
+    "score": 46,
+    "signal_type": "news"
+  },
+  "c12481afbdc1733f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Investor Relations",
+    "url": "https://www.ppmx.com/en/ir",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "344d607c9cf55f31": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Management Policy/Strategy",
+    "url": "https://www.ppmx.com/en/ir/strategy/policy.html",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ba96d326b468317a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Management Policy/Strategy",
+    "url": "https://www.ppmx.com/en/ir/strategy",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "6cbd2648b6be398f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Corporate Governance",
+    "url": "https://www.ppmx.com/en/ir/strategy/governance.html",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "469b65eb8899fbaf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Disclosure Policy",
+    "url": "https://www.ppmx.com/en/ir/strategy/disclosure.html",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f90ef06ecb80e23b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Financial Highlights",
+    "url": "https://www.ppmx.com/en/ir/financial",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "fd8e5c7c0231608a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Business results",
+    "url": "https://www.ppmx.com/en/ir/library/results.html",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "de9037033548d3f8": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Presentation material",
+    "url": "https://www.ppmx.com/en/ir/library/presentations.html",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "c171bd3c9616dbcb": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "General Stock Information",
+    "url": "https://www.ppmx.com/en/ir/stock/info.html",
+    "company_id": "perseus",
+    "matched_company_ids": [
+      "perseus"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "b97b14fa13bb1848": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ビジネスニュース 2026年9月18日 サーバーダウンのお詫びと復旧のお知らせ（2026年9月16日発生）",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/09/260918_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2272be830da90ce9": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年8月28日 当社連結子会社における、国立大学法人東京大学および栄研化学株式会社との共同研究契約締結のお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/08/260828_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "afb44552c4a22943": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年8月7日 2027年3月期第1四半期決算短信〔日本基準〕（連結）",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/08/260807_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "ff65458906f5de58": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ビジネスニュース 2026年7月10日 当社連結子会社の第33回日本遺伝子診療学会大会における演題発表のお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260710_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "5c043ac86978482b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ビジネスニュース 2026年7月9日 当社連結子会社のウェビナーにおけるリキッドバイオプシー解析サービスに関するご紹介のお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260709_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "098e0dd27b0f2c85": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年7月1日 第三者割当による第38回新株予約権（行使価額修正条項付）の月間行使状況に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260701_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "446d035e221b74ec": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年6月26日 公益財団法人財務会計基準機構への加入状況及び加入に関する考え方等に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260626_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "82b2c62bbcab7652": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年6月23日 事業計画及び成⻑可能性に関する事項",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260623_02.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "81955bf82bb61f67": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年6月9日 第三者割当による第38回新株予約権（行使価額修正条項付）の大量行使に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260609_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7366d3881abed4de": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年5月19日 公認会計士等の異動に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/05/260519_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7a444c4d34e0041e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年5月8日 2026年3月期決算短信〔日本基準〕（連結）",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/05/260508_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "cb8aec8a7a37cb9b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年5月8日 営業外費用等の発生に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/05/260508_02.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7a0550449a8d7f74": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年5月8日 2026年3月期連結業績と前期実績との差異に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/05/260508_03.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "fb1d8a8de3bf7dc0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年5月1日 第三者割当による第38回新株予約権（行使価額修正条項付）の月間行使状況に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/05/260501_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "0810e476c9577ff4": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年4月16日 第三者割当による第38回新株予約権（行使価額修正条項付）の大量行使に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/04/260416_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "34226b17a12e69d1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年3月6日 新株予約権引受契約に基づく第38回新株予約権（行使価額修正条項付）の行使停止要請通知に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/03/260306_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "c19bd8270e23402b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年3月2日 第三者割当による第38回新株予約権（行使価額修正条項付）の月間行使状況に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/03/260302_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "45604ec82f0de6ad": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年2月6日 2026年3月期第3四半期決算短信〔日本基準〕（連結）",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/02/260206_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "d1be65d27cb71a73": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年2月6日 営業外費用の発生に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/02/260206_02.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "1101149fd4ede0e2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "IRニュース 2026年1月5日 第三者割当による第38回新株予約権（行使価額修正条項付）の月間行使状況に関するお知らせ",
+    "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/01/260105_01.pdf",
+    "company_id": "oncotherapy",
+    "matched_company_ids": [
+      "oncotherapy"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "d9e5ed467a8ae669": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "INFORMATION (0) 0 posts",
+    "url": "https://en.hanavax.co.jp/news/categories/information",
+    "company_id": "hanavax",
+    "matched_company_ids": [
+      "hanavax"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "78d917e58a4dc352": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "PRESS RELEASE (2) 2 posts",
+    "url": "https://en.hanavax.co.jp/news/categories/press-release",
+    "company_id": "hanavax",
+    "matched_company_ids": [
+      "hanavax"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "0344404b8fdcc2db": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "MEDIA (1) 1 post",
+    "url": "https://en.hanavax.co.jp/news/categories/media",
+    "company_id": "hanavax",
+    "matched_company_ids": [
+      "hanavax"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "5252690f5ff9ab63": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "CONFERENCE (0) 0 posts",
+    "url": "https://en.hanavax.co.jp/news/categories/conference",
+    "company_id": "hanavax",
+    "matched_company_ids": [
+      "hanavax"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "7c4343cd3023ae81": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "PAPERS (7) 7 posts",
+    "url": "https://en.hanavax.co.jp/news/categories/papers",
+    "company_id": "hanavax",
+    "matched_company_ids": [
+      "hanavax"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "4c038e76f23d0256": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ(株)【4884】：掲示板 - Yahoo!ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OeTlHUm9YdGlTSGJDOXNEYldtc2E2dUIyTi1CcmFUV0QyU1dkRFdVWHdmT0FZSWs1Z29fUjk1aHhpLS13U2cwU2RoYkVGOHF2TWhnM2FKcml0UQ?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "9552cb8899a3bbc7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ－買い気配 通期営業損益を上方修正 契約一時金の計上や費用の期ずれ - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1bmdLM0QtMFNMemhSWTJTMEloakxEdVBmZVJTaUh6ekNKZjBKdzYxdWlmWF8zbjZlc0pxLTU4YWd2ekYzZ1AzV3E4Z1V6Q0xVUjRlT1JLNmsyRkRadkxLRkktdXlEWVZ4VzRSUkZhWQ?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "cc467fcd5391640c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：執行役員制度導入に関するお知らせ 2026年9月16日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93ZjA3TGhqTWlZWm91OUQ1MHdDdVp3ZWFHemwyWjZzYkowR0d1RWhJNW5Yb1RxMkxlcFBLTHBCOFVUUU1SUS0wRThkejB5WnM5TEJSaTNUcmZRWjcxdDEzREt2ZmpmR3RLZVE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "d8e64a08c0e98ac1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "声帯瘢痕薬の独占的販売契約締結 クリングルファーマと丸石製薬 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Hb0NveXl1QjU0bUdjQ1NWVmZINW5Va1J2eV9NcXpkWW4yYWxTQVdndHBleXIzTHE0cWxsYUxzTm9sLUYyNWM2Qw?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "cd7bdf1ffa46c70f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ（4884）、脊髄損傷急性期の追加治験骨子でPMDAと合意 米国子会社を軸に海外展開を加速 - finance.logmi.jp",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nSjlid2JXemtXSEZlYmtsLUs0eDRtUGE2M1h6TVhEaWdsSW5rRjBpaDhZbjJUYWs5MUhGVkQ5cE1aY243WXpnenVyV2Z3SmdSeVE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9b9b382f8eab17d1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ、２６年９月期売上高を３３．１％上方修正、丸石製薬と声帯瘢痕薬の独占販売契約 - kabu-ir.com",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9HMmt0YnlsLTEtV2Y2ZS15dU5SQXVjTnBSWU9pX1pzQzRsakdNY1VXbW1fU1VmdVFZZk4wTjZ0VzJnZWEydnBvTFJlREpoZ3FYTldjZw?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "1d06af51c4ad31f6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：末梢神経障害に対する肝細胞増殖因子（HGF）の薬効評価試験に関する横浜市立大学との共同研究開始のお知らせ 2026年9月4日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9uZ01mdE5McTdUQmo2Ul9ZZHZWSXNmLVdMZkxpM3l5aHhkRWxyaDhDdVVjbUpkSEtfeWZuajFFbVc4OGtib2t5NUJKenRndF91a1h3eC1DNF8yQ2JKd240TEcydzVwSzhvSVE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "daily",
+    "score": 48,
+    "signal_type": "news"
+  },
+  "8fbad6dcbdc6d405": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ(株)【4884】：現物信用売買内訳時系列 - Yahoo!ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5CaWJKeWpETThkX3U5NWRRWHZUTzFXMGpoYVRXY0FGdnZJRGRsckd3QXJucl9EV01nTVhGcGJsZkYyV0JNNXhQRGFuZ3diNlUzc1BQR2JVV3o1cWFXTVVV?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "c4d841f5e0de8bac": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：脊髄損傷急性期患者を対象とした追加臨床試験に関するPMDAとの対面助言終了のお知らせ 2026年5月1日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UemEzN2R3OVNxQzFIeFNjWDJ6Q1hzYkh2R0gtYkI4anN1WGhUUXV1MS0teC0tYWw1SHFMQVRVSTZ4bDdSdTlXVC1aZi1LQmNleUZLOHBfQm5iT1JSOVdKc2xXVWY4RTVNQVE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "c3d1f37dd2a42a74": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：第三者割当により発行された第16回新株予約権（行使価額修正条項付）の行使完了及び月間行使状況に関するお知らせ 2026年8月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rWXFyTk1tZENPU3JoQTdUM1BCMHhfT1RLWmNxZmpZWEJBakJYOUtJb3B4bXZvLVRKYVlJRTFNWEJQQkdHeVM5LS1aa3h6UTV1TXI4bjFmQkFyOGZTNVJjN2IwVkd5VVRjLUE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "311c9b3929792fe0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：第三者割当により発行された第16回新株予約権（行使価額修正条項付）の月間行使状況に関するお知らせ 2026年8月3日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5DRDlGaVAtdlk1VHZKUWFaV2ZnbEtiQTFWY2lEbmVoVHYtdFhXa2FKN09zdm5oU2FZaHlHRkFVb09vcDNFbjBaWVRrOE53YVFlWnpnRWJmMF93OW9kVzZaWGhlNWpKVVJnTGc?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "6f001a68e4915048": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：慢性期脊髄損傷の治療剤に関する特許登録のお知らせ 2026年4月1日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6YWpEWjB3aEZmX3RQZ25tTW8wU2R3OFI2Q0x5TFU0MTMwQ2VHRDNSZjNHbDNkbHRDYVZDMzlzd2hEdHlYZnM5ODJId0k2T0l0YmVHTGsxRE5zbktKU2c4S3MwOTJDLUMyYlE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b32d088f951ba093": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "経営ひと言／クリングルファーマ・安達喜一社長「米事業に手応え」 - nikkan.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15N3BoZnctS2s5Qm9RTmpLUFhkR1U1bEtsemNIeXhQR0J4UHJ6Y2V6eTJmWnJtWjlTUzJ4aXVaTzlhV25qd01rM3R0T3J2TFAwcUNFVE16RGc?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "b40fde348451b0ee": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ[4884]：第三者割当により発行された第16回新株予約権（行使価額修正条項付）の大量行使に関するお知らせ 2026年8月27日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nRnpub003dHNJZ21kVjZUV1JpY25pRUVDaGMyZHFRZVkzTFV6b1RaejRTalczZVR0RlVMRExxa2pWMUxaN0pwZFhOQjN2eGlyX005cm5NSU8xWjR3eW5USUVPNnRDcGh2Q3c?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "9db5bbda6511f9d5": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "ステラファーマ、3Dマトリックス、ペルセウスプロテオミクスが上昇、サスメド、クリングルファーマ、シンバイオ製薬が下落 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xb25oS0VaZ1NjSXJNa3ExX0Q1eHd4TjBBNWRadUNFVTVnaU9IT09TY2F0bDBQOG9OeTZqcVpHZThUZVI5Nm1LblZHbkxxeVlZUU5KZGY3bS1xeWZpeUpuUnNfaV9wcUVSdjNvVUhaMA?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "ad6c61317a1b8c9e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "エボ ファンド(Evo Fund)がクリングルファーマ株式会社＜4884＞株式の変更報告書を提出（保有減少） - ｄメニューニュース",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMTdsMWdwX1g5M09nOGxkSk9sMXhjd2NjOUdZZzdlRTI2WXl3VHF4VG81RjJmMnR2dWJjTWtlZHhhUzZvb3dFLWZWeGtvOTI1dy1MdWp1cHk5dnJHclBtQ1hmMFJweHNkcnk2LWx0eE56UFNIamV0V1NDY2ExSWdvTmViZUjSAYoBQVVfeXFMTkR1OTUwMGpPNGVlNkJLRjVMT2wyUWt6SHZXQ0pGWU9XVjZsY19qZkN4bDk5Qkc3ak41UlhjTWlZZFZyZE5pZ1pacV9PTUU0dnNuRHNUWDZSQjJLckFjTzduQUNJSGdxSUpCVFpwUHFXUm4xblBRRmo4RHZlN1gxTVdFRl80dDRPbzdn?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "1a277eba5f6309df": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ、ネクセラ、OTSが上昇、ステラファーマ、メドレックス、ブライトパスが下落 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Oa1p6bmkybnYxUmVZZzYwS1FfWWJ6Und4WU9XekN3eUZCTHctU2d4V043emVHY29OWFVKOWQtQlNLa01RajA4NTZMZUVPWnJIVHlGX1RxdG0xcnV6UG4zZUcyMzVEU0hFT1VkWnB6cw?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "2f50e421994c1433": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "変革への道筋 製薬トップに聞く（10）クリングルファーマ社長・安達喜一氏 - nikkan.co.jp",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54eldBaXExQVFFR2NiWTAwSXQ3UjhYSEVCa2ZnTjdKbXpTNVRoN0hSQlE0blVWZGhyYy1lSTlXT2ttY24ySWtldTBXTVY3aEdKZFhGWlJwenA?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6cac8b1746331afe": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "声帯瘢痕薬の国内独占的販売で基本合意 クリングルファーマ/丸石製薬 | 日刊薬業 - 医薬品産業の総合情報サイト - 日刊薬業",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9NUVdrT2JGbUZ0cG9Dd0dHRW9JN3FuLWVCNFA5UXp2TEpfME1mTlN5Vk5mVFVIMzhrdmprSXFwNU90Z2V0SkF6NA?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "eef4adfb08e0f008": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "クリングルファーマ、脊髄損傷急性期追加第Ⅲ相を開始、声帯瘢痕第Ⅲ相は来年前半に速報結果、丸石製薬と販売基本合意 - newspicks.com",
+    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPR2VMbTlFQ29tVDR1WjNzS3pHRUtIU0RUNGRZQUZ4WjRXOE5VV0xfd0J3N1o4V0dhODdYQ3ZBWjFBWE9QbUxjbHRBRGNGT0xBc3ZLVVB5aWpZQWhaY0FmOWxWRlNuRlhpVFZDVW45ZERrMkpFSXNmN2NzVFZHb01SeERfZDNhT1k4ZGFsOVZUVnFNVjhrUkE2WjkwaVl1QzBkbnlzc01xd0g2U1dZaGFaRGJXbUotSTV4UnlkazJ3VVJXV2hBMWFaY2dUT3FKLVRfeUV0d0phdzdTR2lMZEhSQnRVbEtQWlg5TTJkc1VTQ3JTZXBuQW1YaXV4c25uTmpkZktLVTAyaXhDSFE?oc=5",
+    "company_id": "kringle",
+    "matched_company_ids": [
+      "kringle"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "6f4945fb8d4e05ec": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025. 12. 16 IR CLS001A 事業譲渡完了に関するお知らせ",
+    "url": "https://cellusion.jp/news/jp/3313",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "25768a5406b3757d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025. 02. 27 IR 経営体制に関するお知らせ",
+    "url": "https://cellusion.jp/news/jp/3278",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "17a6d45b58c3ac94": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025. 01. 24 PUBLICATION 「水疱性角膜症に対する iPS 細胞由来角膜内皮代替細胞を用いた臨床研究」に関する論文がCell Reports Medicineに掲載されました",
+    "url": "https://cellusion.jp/news/jp/3271",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "73a85557c7a6be22": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2024. 09. 26 EVENT セルージョン JHVS2024出展のお知らせ",
+    "url": "https://cellusion.jp/news/jp/3215",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "689539c475285d73": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2024. 09. 17 MEDIA セルージョン 週刊東洋経済「すごいベンチャー100」 2024年版に選定",
+    "url": "https://cellusion.jp/news/jp/3205",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ebacae3f5586374d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "解散したセルージョンの羽藤元社長、新会社・カクサスバイオを立ち上げてiPS細胞由来角膜内皮代替細胞の開発を継続 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wY0R6dHphLXRXT1NSbTlHX3hjdl9DeG5XRkNLQmNINVUxQzZhUXYwQ1hjcUhhZVU2U0UwTmwxX0Robng5cVVoUzV5NlMxMW9RS3ZLT0FDUmRURnpvZ3FtMkNIYklYUQ?oc=5",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "610a442d78717801": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "画像 | すごいベンチャー【32】セルージョン iPS細胞由来の角膜治療法 2ページ目 | ビジネス - 東洋経済オンライン",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5UTlRHaVZfTWZweEhUc3NtQlp0dHdUNTBGUlZFdHlqZXJkV1dUMHVVNWoxQ3MtaG1HdUF4U0U1N1preHlybndWMWlBb1hEYk83N0dQZTdRWkdxdEJVQkE?oc=5",
+    "company_id": "cellusion",
+    "matched_company_ids": [
+      "cellusion"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "e57ef4cdc5267d7f": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "GAIA-102の量産化に向けた改良製法に関する基礎研究論文が Journal for ImmunoTherapy of Cancer にオンライン公開",
+    "url": "https://gaia-biomed.com/11035",
+    "company_id": "gaia_biomed",
+    "matched_company_ids": [
+      "gaia_biomed"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "46efa9283c96b8e0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "GAIA-102、WHOの Recommended INN: List 95 に「fulamleucel」として掲載",
+    "url": "https://gaia-biomed.com/10814",
+    "company_id": "gaia_biomed",
+    "matched_company_ids": [
+      "gaia_biomed"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "2a185f5d2714d8ff": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "九州大学病院キャンパス内「エフラボ九大病院」にて独自の細胞培養加工施設（CPC）の整備を開始～革新的ながん治療薬の商用生産体制確立へ～",
+    "url": "https://gaia-biomed.com/10804",
+    "company_id": "gaia_biomed",
+    "matched_company_ids": [
+      "gaia_biomed"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "6be2811eed05bff4": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "小児神経芽腫を対象としたGAIA-102の中間データが第67回小児血液・がん学会学術集会にて報告されます",
+    "url": "https://gaia-biomed.com/10799",
+    "company_id": "gaia_biomed",
+    "matched_company_ids": [
+      "gaia_biomed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "322395a541081806": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "第97回日本胃癌学会総会にて、GAIA-102の腹膜播種（胃癌）の臨床試験に関する中間報告が優秀演題賞を受賞しました。",
+    "url": "https://gaia-biomed.com/10791",
+    "company_id": "gaia_biomed",
+    "matched_company_ids": [
+      "gaia_biomed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "70bafa63274a17e0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.7.8 研究員のインタビュー記事が掲載されました",
+    "url": "https://orizuru-therapeutics.com/newsroom/20260708654",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "e8de8a9bc94e032b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.5.8 湘南アイパークフェスタ2026にて講演会を開催します",
+    "url": "https://orizuru-therapeutics.com/newsroom/20260508644",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "fec2b5147593549e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.3.16 第25回日本再生医療学会総会にてポスター発表を行います",
+    "url": "https://orizuru-therapeutics.com/newsroom/20260316623",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f9912aae1a9a57f6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.2.24 令和7年度AMED再生・細胞医療・遺伝子治療公開シンポジウムに登壇します",
+    "url": "https://orizuru-therapeutics.com/newsroom/20260224610",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "e636f8ec29719981": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.2.3 第53回 日本膵・膵島移植学会学術集会にて特別講演を開催します",
+    "url": "https://orizuru-therapeutics.com/newsroom/20260203602",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "314e69b8255d1a0c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025.12.2 第10回DIA再生医療製品・遺伝子治療用製品シンポジウムに登壇します",
+    "url": "https://orizuru-therapeutics.com/newsroom/20251202595",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "fd406ee9eedcec47": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025.10.2 BioJapan 2025に登壇します",
+    "url": "https://orizuru-therapeutics.com/newsroom/20251002582",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a40fe19c90e94f21": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025.10.2 Nakanoshima Qross Future Medicine Forum in YOKOHAMAに登壇します",
+    "url": "https://orizuru-therapeutics.com/newsroom/20251002584",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9dece821afd481fe": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025.10.2 The 5th Annual iPSC Drug Development Summitに登壇しました",
+    "url": "https://orizuru-therapeutics.com/newsroom/20251002579",
+    "company_id": "orizuru",
+    "matched_company_ids": [
+      "orizuru"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "0d278e1a4bc686fe": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.06.08 パーキンソン病を対象としたGT0003Xについて、先駆的再生医療等製品指定を取得",
+    "url": "https://www.onodera-gtp.com/media/146",
+    "company_id": "onodera_gt",
+    "matched_company_ids": [
+      "onodera_gt"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a874124a619fbb12": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2026.04.14 「全国パーキンソン病友の会 2026年度国会請願集会」に登壇しました。",
+    "url": "https://www.onodera-gtp.com/media/123",
+    "company_id": "onodera_gt",
+    "matched_company_ids": [
+      "onodera_gt"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "5c5af5c707d476ea": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025年12月期（第12期）決算公告",
+    "url": "https://www.onodera-gtp.com/media/120",
+    "company_id": "onodera_gt",
+    "matched_company_ids": [
+      "onodera_gt"
+    ],
+    "tier": "archive",
+    "score": 0,
+    "signal_type": "news"
+  },
+  "6a367a32c7a18837": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "2025.10.28 「第1回メルクニューモダリティサミット2025」に参加しました。",
+    "url": "https://www.onodera-gtp.com/media/112",
+    "company_id": "onodera_gt",
+    "matched_company_ids": [
+      "onodera_gt"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "03792069910fcdb0": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Phase I Clinical Trial Results of ⁶⁴Cu-ATSM Radioligand Therapy for Recurrent Malignant Brain Tumors Published in ESMO Open, a Peer-Reviewed Journal",
+    "url": "https://linqmed.net/news/phase-i-clinical-trial-results-of-%e2%81%b6%e2%81%b4cu-atsm-radioligand-therapy-for-recurrent-malignant-brain-tumors-published-in-esmo-open-a-peer-reviewed-journal",
+    "company_id": "linqmed",
+    "matched_company_ids": [
+      "linqmed"
+    ],
+    "tier": "daily",
+    "score": 52,
+    "signal_type": "news"
+  },
+  "c2c452aabbe79783": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "LinqMed Selected for the UK Program Following the Pitch Contest at the Nakanoshima Qross Innovation Challenge",
+    "url": "https://linqmed.net/news/linqmed-selected-for-the-uk-program-following-the-pitch-contest-at-the-nakanoshima-qross-innovation-challenge",
+    "company_id": "linqmed",
+    "matched_company_ids": [
+      "linqmed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "1a5c2ad1165bea80": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Demonstration of the Efficacy of Hypoxia-Targeted Local Radiotherapy for Malignant Brain Tumors",
+    "url": "https://linqmed.net/news/demonstration-of-the-efficacy-of-hypoxia-targeted-local-radiotherapy-for-malignant-brain-tumors",
+    "company_id": "linqmed",
+    "matched_company_ids": [
+      "linqmed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f021070b4e5f9c11": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "LinqMed Announces Completion of the Chiba Factory",
+    "url": "https://linqmed.net/news/linqmed-announces-completion-of-the-chiba-factory",
+    "company_id": "linqmed",
+    "matched_company_ids": [
+      "linqmed"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "2903d599db6baa44": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Announcement of Change in Representative Director",
+    "url": "https://www.luca-science.com/news-release/260403-01",
+    "company_id": "luca_science",
+    "matched_company_ids": [
+      "luca_science"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "df884565fe2b512e": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Economic Loss Attributable to Myopia in Japan Estimated at Approximately JPY 4 Trillion Annually, with Scenario Analysis Estimating Up to JPY 10.7 Trillion by 2050",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/bd05e5e29b6dc5e6ade34628e908156805b96bcd.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "68038444b158736b": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Vision to Present Twelve-Month Pilot Study Results of Kubota Glass Technology in Combination with Low-Dose Atropine at the 2026 American Academy of Optometry Meeting in Anaheim",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/Kubota_Vision_Academy_2026_Press_Release_FINAL3_cl.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "daily",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "dfa1dbf921d7c056": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding Receipt of Milestone Payment Related to Manufacturing of Emixustat for Named Patient Program",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/20260702_KOL_Milestone%20Payment%20Announcement_draft_EN_Final.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 36,
+    "signal_type": "news"
+  },
+  "b7b71ad90feb9c97": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Vision to Present Subgroup Analysis from Phase 3 Clinical Trial for Emixustat at the ARVO 2026 Annual Meeting",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/14faf78b400eba0d5753c117d34baacf874a5b5d.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "daily",
+    "score": 44,
+    "signal_type": "news"
+  },
+  "928a090b10a65392": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Vision Inc. Initiates Clinical-Grade GMP Drug Substance Manufacturing for Emixustat Hydrochloride for the Compassionate Use Program in France",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/20260407_APIinitiation_FINAL.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "daily",
+    "score": 42,
+    "signal_type": "news"
+  },
+  "5ceca907e1707085": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Business Plan and Matters Related to Growth Potential",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/c0762b3d0ecb4d9e10c13a2e6c69743306bc8d9e.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "57bc792d66dc008a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding Conclusion of Discussions and Termination of the Sales Agreement for \"Kubota Glass®\" with Sakata Pharmaceutical Company",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/d199f84371efd811e069103c97840eea13f69abd.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6117b6ce6a1bfeec": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Notice Regarding Execution of Letter of Intent (LOI) for the Sale of \"Kubota Glass®\" in Taiwan",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/EN_20260318_LOI_KPH_FITGLASS_FINAL.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "045631d02d6e48f2": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Vision Inc. Signs Supply and Licensing Agreement with Laboratoires KÔL for Stargardt Disease Treatment Candidate Under Compassionate Use",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/2026-03-02_KOLPress%20Release_Final%20clean.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "e7349ece6979d170": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "(Progress of Matters Previously Disclosed) Status of Discussions Toward Execution of a License Agreement with Laboratoires KÔL regarding Emixustat Hydrochloride, a Treatment Candidate for Stargardt Disease, at a Consolidated Subsidiary, Kubota Vision Inc.",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/d9c3a36731e54f5c4164f40b4a7fccc69f7418ad.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a7fa1fd60a932d40": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "(Update on Disclosure Matters) Status of Discussions Toward Execution of a License Agreement with Laboratoires KÔL regarding Emixustat Hydrochloride, a Treatment Candidate for Stargardt Disease, at a Consolidated Subsidiary, Kubota Vision Inc.",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/b8b80e792c19f234a91eba3d19947739211d7398.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "7f88f8d5d82e28c1": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Pharmaceutical Holdings Announces Initiation of Clinical Trial by the Shanghai Eye Disease Prevention and Treatment Center for Pediatric Myopia Prevention Using \"Kubota Glass®\"",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/1f0948e9fed68dc7c1d748f4132e5fbd9025d856.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "9d813e63cd426acb": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Pharmaceutical Holdings Co., Ltd. Announces Signing of Sales and Distribution Agreements for \"Kubota Glass®\" with Wuhan Changjiu Vision Health Medical Equipment Co., Ltd. in China",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/36d63a690fed664667f028dfebb7383f33d1cb28.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "74d89cca09fa22e8": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Capital Increase through Third-Party Allotment and Commercialization of Stargardt Disease Treatment Candidate Emixustat Hydrochloride through the Compassionate Use Program",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/KPH%20Capital%20Increase%20through%20Third-Party%20Allotment%20ENG%20Ver.%201.10.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "f9015f6df3cc9cbf": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Vision Inc. Signs LOI to Explore Partnership with Laboratoires KÔL for Stargardt Disease Treatment Candidate, including Commercialization Collaboration",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/74f0cafe5412fa607f23c9519208a3631329b848.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "04309be1ebec20e6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Pharmaceutical Holdings Announces Technical Service Contract with Shanghai Eye Disease Prevention and Treatment Center for Pediatric Myopia Prevention Using Kubota Glass",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/EN_20251114_SEDPTC_finaldraft_1_final.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "bef9042129eb0904": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Pharmaceutical Holdings Co., Ltd. Announces Signing of Sales and Distribution Agreements for \"Kubota Glass®\" with Shandong Corell Medical Technology Co., Ltd. in China",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/f18f8f293c361eb8cec64a88616e787b51837cf6.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d919dcb690c217e6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Pharmaceutical Holdings Exhibits at \"WOF ASEAN Optical Fair 2025\" in Bangkok, Thailand",
+    "url": "https://www.kubotaholdings.co.jp/en/ir/docs/8ef8bc35b247b7fafd492d261c12a101ae617228.pdf",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "df7d5243f55b5836": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス(株)【4596】：掲示板 - Yahoo!ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HdVRMNndhcU1QdXBBb3ppU0x4bVVZVXU3N1VDRmkzRWl2OEoxdUdxU2FvSnYwRzM1NXJQM1ZpTFZRWkd2YWptdlJ4QlFaRnNobjdRdmpSUEpldw?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "a2a648a2f0dff0de": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ＨＤ - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6SkEzTVFEYlVrY2hqTTdHX1M3YTQxSlZkdzZxNi1GZ1R6cmcwcU9hMFBjR1VSeW1XTUpTNWlSUmNiZ1N4TjNvX1pBQ0tUSFFDbkR0dmk3ampIZGFZbEFfVlBBVFAxLTYtS0E?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "10df3caae312fd06": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ＨＤ、上期最終が赤字拡大で着地・4-6月期も赤字拡大 - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxS1Z6TlR3NHFscU0xeWdadDlsS0Z2d1dKczZ3MG95b0R2QjVCb0NteFVxWFpSZ0F0WU42N1Nzc29QY2tMSDAzNjVJUjBmQ2ZNZXc?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "c6537dc574ad560a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "PRISM、GEI、リボミックが上昇、窪田製薬HD、サスメド、イノバセルが下落 - 日経バイオテクONLINE",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQaHp1RXpDM0hNMTJTcFdDcUhWOXFyMXBrRW9xUVBhTkR6TlNOcHUwWlFoZTY0YlRURlNKX1ktalRKSmJaWDR1dTEyWDJxWWhDS1YzLU5tU1VvMHIzR1p3UG1kdGVDMFRUT0wzcjVkQQ?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "13bd1ac62a93d136": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス(株)【4596】：株主優待 - Yahoo!ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBOeTJZRGZaTXlHUjJ6NGNBa3k0dmg0Q05fWElvWGo2a25Cdk5sbl80dUJMQTUyNjFYaG54TDJYQXdOdnhVdnpZY1NSaUxWYXdaX0g5TEVBREpnZGNlR29R?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "5cb5d6b2ad89ea2d": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Glass® \"おうちで1週間無料トライアル\"を開始 | 窪田製薬ホールディングス株式会社のプレスリリース - prtimes.jp",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CaFBiOE1vS0pNeW5WYmZ0MlplaXdma01UMEhqU2pYVV9iTFM3YjlxTGY5OXZqQS1ZR2ZGM0t1Rk9yN0U1cF9KX0pSdXdlRnV5eXVYOEdHM1cyc3Jvc1lyREY4Yl9QTkxzOEE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "d5abacc8198d5d28": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：クボタメガネ・テクノロジーと低用量アトロピン併用療法に関する12か月パイロット試験結果を「Academy 2026 Anaheim」で発表 2026年9月9日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE81X3N5V1FvNEo4a3hoVzRfZnZOWi1uYW9JR3VzUThKY1NpWmFOeVRsemkwdUMtVE1WY0VYQzZ2SXh4NmltN2pTYk9pYTMxTnZPQnBWaWxUVVp5Z19CY1lRQlp6TlZFQUFHdHc?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "84bb0354a74cb39a": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "＜特別気配＞ 窪田製薬ＨＤ、テラドローン、日ギアが買い気配 - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE91Z2RfeF9CRmo3bDN3X2Vaa2s3ZlNEWDBacldMeGN1QVBXTmxjaXBnejFCVm5Qbjc0QzNvWHJDbFl5RWhjWnBybHJNMUF3eGs1bHA4SDUzWi11NHBZeV9Ccw?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "0d16d8e7529fa7df": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：第11期 定時株主総会招集ご通知 2026年4月3日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HWEk3ZzlRbF83eWRQX1F2aTVOZnJkeVlHUkwxTmFGVTAzR3lQNndDQUZUVVljcUMzMDJmYkI3ZkNXRC1YVUgtS042WjJ3UF9JS0F4Qk1oTVVBbWdwSjR2WTJqR1p5VTNyNkE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "efd4d80cec966a84": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "出来高変化率ランキング（14時台）～三井ハイテク、窪田製薬などがランクイン - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iRmhOdWVoblRSa3pWTnBkZVMwaXRNNmVpa1dIY1ZaMnA3TjJoUDRaRnd1QkM4Wjl3S3c1VmFWekRpWXRfMmdXZGJYVC1yNTVVa25VRWVDZTFLeEVfYUVDbQ?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "f500a76964aa17a7": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "出来高変化率ランキング（10時台）～pluszero、窪田製薬などがランクイン - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81WUxjZDB1aEFtZVk4anhxbW85QmRFMlVvUk5xTHZ5aU91LTc1OGVnZThjRUUwSUQ1dlU3aU5nSjNmbjM0THBFU1RkcHFtVFJsbm93MWVFUnotYngwZzg4Mw?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "ec99fb89a09f02cb": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス(株)【4596】：板気配 - Yahoo!ファイナンス",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1MM0dGWnkxdTlJMUZTWjI3ZUNYVnFERlA5OW9NZTA0WFlES0dPY0M2ZnJPNzVvSXhmeGNHQml3ZnAtRFVrS0VxbXNwbThER2dmQkt0UFI5bm9KWTJlWkcw?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "952fa581fe293782": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：確認書 (有価証券報告書) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96SVdXeDlsQVVJM29DVFlyRzR5YlNLRC1EMlI3M205VjJQTU0zRVBFVy1uZ2ZGbVN1cnp3YXg3bmZrVUhJVnl0Nl9peW43YkJ6S3VGb2YxdEJpb2tWVElhQ0RtVUJRVy0wVG5Veg?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 38,
+    "signal_type": "news"
+  },
+  "772ee83aa8403969": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：臨時報告書 臨時報告書の訂正および発行条件の決定など (有価証券報告書) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3RjR4eTM3a01IbmItRDJyYzFIX2xaY01Td0FrSmhQcXRyNk1RQUVJVGJ4bF9OaUNqTDBNdnNKTklXMFc5VVVfaGtkNkdxV0VTd2lhTUloVGtzbHRhS1BnWi0xMkVvRXFkMDJMaw?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "a7fbb992c505d8a6": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：第11期 定時株主総会招集ご通知に際しての電子提供措置事項 2026年4月3日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yVzNIMFkyYnBIOHIweWNJQ05rQm1UZXNLSGU1MUdwaWRxNnFCZDh4OUxRMUVkWnY3bXR0MWdQVTEwbDVyUDdNaURhcFQ4U3FNa2laSTdpUDhSOWszT3FOek5uOG5nbnFzblE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "698b00eebe866645": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "Kubota Glass® 「夏の”視”生活キャンペーン」開始 | 窪田製薬ホールディングス株式会社のプレスリリース - prtimes.jp",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBpcjBwWDVaQU1QMEctbU40ekZUenVBdG5hY0oyWGdWNC1EQmlacXRSNG10MERlN3JGQzJwQ01aUGxlbjFyRHRTZnBKS1k4Mzdpem1yN1BkUk5kU0FqTHNKUFRsV3pIcm9jdUE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "53eb8867e4d5790c": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：「Kubota Glass My Vision プログラム」スタート記念キャンペーンに関する広告およびプロモーション活動展開のお知らせ 2026年4月20日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sY3k1SjhvTS1hQmQ3OGh4SVRQVlI0czM1UGxJVUZwQ2g4empCS3B6cnBvMElFMHhHSHppMmxmQTJLd0dhOE1rVjc0R0VFcTN1emlFd2h3SWxJUVZmV3VuZHdLWVBDSTQzSFE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "d0abf9326a8251dd": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：ARVO（視覚と眼科学研究協会会議）2026年年次総会における エミクススタト塩酸塩の第３相臨床試験サブグループ解析結果発表のお知らせ 2026年4月22日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85bFRLZnY4dHRDaGlQbjE4a0x6MVl0anM0dHRmYlcxRkVISmdLN285NmhreGl6ejJjZGlzN1dOYm5EQ1VTOGxobTFPaW1TcnFkMTFWNFlaNTlNenE5NnljVG10eS1rOWFmQUE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "88ab9949844c1134": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "寄前【板状況】＜材料株＞動向 【買いトップ】窪田製薬ＨＤ 【売りトップ】アンドＳＴ [08:35] - 株探",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1tMVBXWFlqQmNWUVZJT2syU0F3Skw1OE5kMVdBTF9EYk5Md0ZBdExjRjFJdjQwMHQzUnBlNWFuLTh5aFdTbHVMQ1A4dXl0QXEyZGNWelJBNTd3dlptQzdRRA?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "d54154a44cdd3214": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "出来高変化率ランキング（10時台）～pluszero、窪田製薬などがランクイン 執筆： Fisco - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XZncxa29OOWZ5NzdTWkpkWVFxcnc1OVJURE1IcUQ1NFVTYmFsSFBDQmVMdlljRGstRlJpMTR2UzhFZU1yYUh1RlJMT1dzT0ZGUzhNVUFXVEtrb2ZhMXlVcU93NF9sWlFEcHJSQjh2MEs?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
+  },
+  "7ce96600ca8f7074": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬、眼病治療薬のマイルストーン受領で買い人気 速報 - kabushiki.jp",
+    "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5QMTBNUHl5NzNUNzNOWVBPal9fbGQ1RWVMVWlvaU9lWjl6Y2JydXVpdmlsWGtpMzNnZGJuRUIxVFdQcFUtME5F?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 40,
+    "signal_type": "news"
+  },
+  "3880949f37bbbeec": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬ホールディングス[4596]：「Kubota Glass」月額制サブスクリプションサービス開始のお知らせ 2026年4月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB3SzV4TTNRTm50U0FsZ2YxNUw2cE16VXBiMlQtUWhzekxkRWs3MW9Lc3ZTV0pQZDF4SFNYZHRud1RoTUdFWnlGYm5JNGNhTGFQSmhoVXpuZkpMVlBNdDVGRzBOUWNMZFRPSkE?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 25,
+    "signal_type": "news"
+  },
+  "6189fb10ecbadc35": {
+    "first_seen": "2026-09-23T15:02:10",
+    "title": "窪田製薬HD---続伸、クボタメガネ・テクノロジーと低用量アトロピン併用療法に関する試験結果を発表 執筆： Fisco - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBreE9sWGtCM1l6TkRCQ3F5clZtZTlXeTdFQTh0VmZ0MGJkTFR1clRUUkNfeDBJeEtfcC1tSE12ZDh2Q0pyWm16TXc3QjBPTENpc196RzFDT2NHMHFhUmdLb0psNjhjN2FHQ01mcmpwemI?oc=5",
+    "company_id": "kubota_pharma",
+    "matched_company_ids": [
+      "kubota_pharma"
+    ],
+    "tier": "archive",
+    "score": 30,
+    "signal_type": "news"
   }
 }

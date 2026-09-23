@@ -2,7 +2,7 @@
   "use strict";
   // Curated in this Codex session. This registry does not call a model at runtime.
   const evidence = (regions, url, quote, kind, quality = "explicit", contextUrl = "") => ({ regions, url, quote, kind, quality, contextUrl });
-  const review = (ids, guard, status, scope, note, sources, reason = null) => ({ ids, guard, status, scope, note, evidence: sources, reason, checkedAt: "2026-09-09", reviewer: "Codex", method: "source_backed_semantic_review" });
+  const review = (ids, guard, status, scope, note, sources, reason = null, checkedAt = "2026-09-09") => ({ ids, guard, status, scope, note, evidence: sources, reason, checkedAt, reviewer: "Codex", method: "source_backed_semantic_review" });
   const entries = [
     review(["7b5b1e59e7db16ce", "d50238d39d4b95e4"], /Astorg.*Microbiology/i, "identified", "已读 Astorg 同一交易的官网交割公告正文。", "交易标的是全球微生物业务。归类依据是被收购业务的范围，不是公告电头中的纽约、巴黎或卢森堡。", [
       evidence(["global"], "https://www.astorg.com/news/astorg-completes-acquisition-of-microbiology-business-from-thermo-fisher-scientific-establishing-an-independent-global-diagnostics-specialist", "acquisition of the global microbiology business", "收购业务范围"),
@@ -84,10 +84,21 @@
     review(["14f66fc10d29bdfc"], /次世代モダリティセミナーに村上/, "identified", "已读 PeptiDream 官网研讨会回顾正文。", "讲演涉及日本 RI 医药品支持政策和日本相关企业，因而归入日本产业议题。原文未给出会场地址，本判断不是声称会议在某个日本城市举办。泛称海外不展开。", [
       evidence(["japan"], "https://www.peptidream.com/ir/blog/000655.html", "日本での支援強化の動き", "明确的产业政策议题"),
     ]),
+    review(["8ee7111897daff75"], /LADEC 2026/, "identified", "已读 Nacalai Tesque 官方会议公告及主办方会议信息。", "公告列明 LADEC 2026 会场位于东京日本科学未来馆，因此按会议举办地归日本；7月2日至3日是会议日期，6月17日才是公告日期。", [
+      evidence(["japan"], "https://www.nacalai.co.jp/news/news/LADEC2026-20260617.html", "日本科学未来館（東京都江東区青海2-3-6）", "会议举办地"),
+    ], null, "2026-09-15"),
   ];
+  const quotedReviews = [
+    { ids: ["25585e893f5bb468", "34cd5c5b8acdd97b"], guard: /DS1025/i, regions: ["japan", "asia_unspecified", "europe"], quote: "日本を含むアジアおよび欧州", note: "DS1025 试验计划在这些地区招募患者，不代表每个中心已经启动。", url: "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260828_J.pdf", kind: "计划试验范围" },
+    { ids: ["10441cf2c0d6077f"], guard: /テセントリク/, regions: ["japan"], quote: "適応拡大の承認申請を、本日、厚生労働省に行いました", note: "向日本厚生劳动省提交适应证扩展申请，不等于获批。", url: "https://www.chugai-pharm.co.jp/news/detail/20260814153000_1606.html", kind: "申请监管辖区" },
+    { ids: ["35f39b631e792318", "4e98b27a0b73fe34", "ed04209a9d9a544f"], guard: /バミキバルト/, regions: ["japan"], quote: "厚生労働省に製造販売承認申請を行いました", note: "日本上市申请；通过原始公告核定‘国内’所指范围。", url: "https://www.chugai-pharm.co.jp/news/detail/20260825153000_1610.html", kind: "申请监管辖区" },
+    { ids: ["9e3775de960f2865"], guard: /AID351/, regions: ["global"], quote: "全世界における開発、製造", note: "全球许可的开发和制造权利范围，不代表已在全球上市。", url: "https://www.chugai-pharm.co.jp/news/detail/20260818113000_1599.html", kind: "许可地域范围" },
+    { ids: ["1e26832cc0109438"], guard: /Dato-DXd|DS-1062/, regions: ["japan", "asia_unspecified", "europe", "north_america", "latin_america"], quote: "日本を含むアジア、欧州、北米および南米", note: "第 3 相试验计划招募地区，不表示各地区已经完成入组。", url: "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202608/20260827_J.pdf", kind: "计划试验范围" },
+  ].map(entry => ({ ...entry, checkedAt: "2026-09-09" }));
+  entries.push(...quotedReviews.map(entry => review(entry.ids, entry.guard, "identified", "既有官方公告短引用；保留原核对日期与链接，按当前国家口径重新计算。", entry.note, [evidence(entry.regions, entry.url, entry.quote, entry.kind)], null, entry.checkedAt)));
   const batch = root.AIHOT_REGION_REVIEW_BATCH || (typeof module !== "undefined" && module.exports ? require("./region-review-batch.js") : { entries: [] });
   entries.push(...batch.entries.map(entry => ({ ...entry, guard: new RegExp(`^${entry.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`) })));
-  const registry = Object.freeze({ version: "2026-09-09.full1", entries, scope: batch.scope });
+  const registry = Object.freeze({ version: "2026-09-15.full2", entries, scope: batch.scope });
   root.AIHOT_REGION_REVIEWS = registry;
   if (typeof module !== "undefined" && module.exports) module.exports = registry;
 })(typeof window === "undefined" ? globalThis : window);

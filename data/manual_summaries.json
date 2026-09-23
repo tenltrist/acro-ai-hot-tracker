@@ -7939,8 +7939,8 @@
     },
     {
       "id": "1a645597c1b6f45e",
-      "title_zh": "Rohto Pharmaceutical 开发低浓度壬二酸制剂技术",
-      "summary": "Rohto Pharmaceutical 宣布开发了低浓度壬二酸制剂技术。当前 RSS 摘要未披露配方、给药形式或产品化计划。",
+      "title_zh": "乐敦开发低浓度壬二酸溶解型精华制剂技术",
+      "summary": "乐敦制药9月8日披露一种不经中和而溶解壬二酸的制剂技术。公司报告，在一项12周比较试验中，含3%壬二酸的溶解型精华与含20%壬二酸的分散型乳膏在总皮疹数下降方面相近，前者使用初期的瘙痒和刺激感较少。这里是公司披露的制剂研究结果，不能写成新药获批或已上市；这篇媒体报道的原文仍待打开。",
       "summary_en": "",
       "model": "Codex editorial translation",
       "review_status": "verified",
@@ -7950,17 +7950,22 @@
       "source_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5CbjJFamRtMXQ4c1RoM1RkZjhXUFF0RFdUWjBPdTZQaDRVYlhkUUJBby1JT08tNmRhSVBSbE5pU2xkSXpmTzUtag?oc=5",
       "imported_at": "2026-09-10",
       "review": {
-        "reviewed_at": "2026-09-10",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "translation:1a645597c1b6f45e",
-        "scope_zh": "依据当前保存的原标题与来源摘录翻译润色，未补写材料中没有披露的事实。",
-        "scope_en": "Translated and edited from the stored source title and excerpt without adding undisclosed facts.",
+        "scope_zh": "媒体报道原文未打开；已核对乐敦9月8日官方研究公告作为同事件旁证，试验结果按公司报告表述。",
+        "scope_en": "Media original unavailable; checked Rohto's September 8 research release as corroboration, attributing study findings to the company.",
         "kind": "codex_editorial_translation",
-        "material_level": "stored_source_material",
+        "material_level": "public_original_excerpt",
+        "source_verification_status": "verified_primary_corroboration",
         "evidence": [
           {
             "label": "Nikkan Yakugyo - life science indexed RSS",
             "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5CbjJFamRtMXQ4c1RoM1RkZjhXUFF0RFdUWjBPdTZQaDRVYlhkUUJBby1JT08tNmRhSVBSbE5pU2xkSXpmTzUtag?oc=5"
+          },
+          {
+            "label": "乐敦制药壬二酸研究公告 · 2026-09-08（同事件旁证，非媒体原文）",
+            "url": "https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01"
           }
         ]
       }
@@ -16487,22 +16492,23 @@
     {
       "id": "35f39b631e792318",
       "title_zh": "中外制药在日本申报抗IL-6抗体vamikibart，用于葡萄膜炎相关黄斑水肿",
-      "summary": "中外制药已向日本厚生劳动省提交vamikibart上市申请，拟用于非感染性葡萄膜炎相关黄斑水肿。该药为玻璃体内给药的抗IL-6单克隆抗体，申请依据包括全球III期MEERKAT与SANDCAT研究；若获批，有望成为日本首个用于该适应症的抗IL-6抗体疗法。当前状态是已申报而非已获批，适合持续跟踪审评节点和抗体相关研究需求。",
+      "summary": "中外制药8月25日宣布，已在日本申请vamikibart用于非感染性葡萄膜炎相关黄斑水肿。它是设计为玻璃体内给药的抗IL-6单克隆抗体，申请依据包括国际共同III期MEERKAT和SANDCAT研究；日本受试者参加了SANDCAT。该适应症6月23日获得日本希少疾病用医药品指定，当前仍是申报阶段，尚未获批。",
       "model": "ChatGPT Pro",
-      "reviewer_notes": "已核对中外制药2026年8月25日官方公告；与已精读条目统一口径",
+      "reviewer_notes": "2026-09-15重新核对中外制药官方公告正文；删除自动业务建议，保留申报与试验事实。",
       "review_status": "verified",
       "source_title": "バミキバルト、非感染性ぶどう膜炎に伴う黄斑浮腫に対し国内で製造販売承認申請",
       "source_url": "https://www.chugai-pharm.co.jp/news/detail/20260825153000_1610.html",
       "reviewed": true,
       "imported_at": "2026-09-01T16:31:57",
       "review": {
-        "reviewed_at": "2026-09-01T16:31:57",
-        "reviewer": "Historical editorial review",
+        "reviewed_at": "2026-09-15",
+        "reviewer": "Codex",
         "event_key": "legacy-editorial:35f39b631e792318",
-        "scope_zh": "保留此前依据公开来源整理并核验的中文标题与摘要；未新增来源材料未披露的事实。",
-        "scope_en": "Preserved a previously verified Chinese title and summary grounded in the public source.",
-        "kind": "legacy_source_review",
-        "material_level": "stored_source_material",
+        "scope_zh": "已核对官方公告正文；8月25日是申报公告日期，6月23日是孤儿药指定日期。",
+        "scope_en": "Checked the official announcement; August 25 is the application notice date, June 23 the orphan designation date.",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_official_announcement",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
             "label": "原始来源",
@@ -17856,24 +17862,25 @@
     },
     {
       "id": "3a566acc6b15d0ea",
-      "title_zh": "Nacalai Tesque 推出神经细胞培养用无血清补充剂 NSF-23 Supplement（50×）",
-      "summary": "Nacalai Tesque 官网将 NSF-23 Supplement（50×）列为神经细胞培养用无血清补充剂新品；本条未取得配方、适用细胞类型或验证数据。",
-      "summary_en": "Nacalai Tesque lists NSF-23 Supplement (50x) as a new serum-free supplement for neuronal cell culture. The captured material does not provide its formulation, supported cell types or validation data.",
+      "title_zh": "Nacalai Tesque 官网介绍神经元培养用无血清补充剂 NSF-23",
+      "summary": "Nacalai Tesque 的 NSF-23 Supplement（50×）用于初代神经元的无血清培养，也有不含维生素 A 的版本。官网展示了小鼠和大鼠初代神经元培养的显微观察及标志物染色比较，并列出成分表链接。产品页没有明确首次上市日期，这些示例也不等于对所有细胞类型的验证。",
+      "summary_en": "Nacalai Tesque describes NSF-23 Supplement (50x) for serum-free culture of primary neurons, with a vitamin A-free variant. Its product page shows comparative mouse and rat primary-neuron culture images and marker staining, and links to composition tables. The initial launch date is not stated, and the examples do not establish validation for every cell type.",
       "model": "Codex",
       "review_status": "verified",
       "reviewed": true,
-      "reviewer_notes": "有限核对：仅依据当前采集到的原标题及可用短摘录完成翻译和事实重述；未逐篇取得或核对全文，不视为全文精读。",
+      "reviewer_notes": "已核对 Nacalai 官方产品页；产品应用信息与首次上市日期分开记录。",
       "source_title": "新製品 神経細胞培養用無血清サプリメント NSF-23 Supplement (50×) 2026.07.31",
       "source_url": "https://www.nacalai.co.jp/products/459",
       "imported_at": "2026-09-10",
       "review": {
-        "reviewed_at": "2026-09-10",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "nacalai-nsf23-supplement-20260731",
-        "scope_zh": "有限核对：仅依据当前采集到的原标题及可用短摘录完成翻译和事实重述；未逐篇取得或核对全文，不视为全文精读。",
-        "scope_en": "Limited review: translation and factual restatement use the captured source title and any available short excerpt. Full text was not obtained or checked article by article.",
-        "kind": "translation_review",
-        "material_level": "title_or_excerpt",
+        "scope_zh": "已读取官方产品页的用途、维生素 A 版本和小鼠及大鼠培养示例；首次上市日期未见明确披露。",
+        "scope_en": "Checked the official product page for use, vitamin A variant and mouse/rat culture examples; initial launch date was not disclosed.",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_product_page",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
             "label": "Nacalai Tesque official new products",
@@ -19563,7 +19570,8 @@
     {
       "id": "3f312461934cd397",
       "title_zh": "田边制药拟向东和药品转让制药工厂及17个产品的日本制造销售许可",
-      "summary": "田边制药计划于2026年11月底将田边制药工厂全部股权转让给东和药品，小野田和吉富工厂将成为东和药品子公司；另有17个产品35个规格的日本制造销售许可及相关权利计划自2027年4月起陆续承接。田边制药将转向不持有主要自有工厂、更加聚焦研发和业务开发的模式。该事件是组织、供应链和产品权利重构信号，应持续跟踪交割条件与后续委托生产安排。",
+      "summary": "田边制药计划于2026年11月底将田边制药工厂全部股权转让给东和药品，小野田和吉富工厂将成为东和药品子公司；另有17个产品35个规格的日本制造销售许可及相关权利计划自2027年4月起陆续承接。上述安排是公告中的计划，尚不等于交割完成。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有官方复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对田边制药2026年7月3日官方公告",
       "review_status": "verified",
@@ -20120,23 +20128,24 @@
     {
       "id": "411e8520e5b8256c",
       "title_zh": "STEMCELL与CCRM合作提供配套的GMP和科研级iPSC细胞系",
-      "summary": "STEMCELL Technologies与CCRM合作，把同一来源的GMP级iPSC细胞系及其配套科研级版本提供给全球细胞治疗开发者。开发者可在早期研究阶段使用RUO细胞系，并以具有可比性和监管资料支持的GMP材料推进临床开发，从而降低中途更换起始细胞的风险。该模式值得ACRO对标其从科研级到GMP级原料的连续性设计、资料包和渠道覆盖。",
-      "model": "ChatGPT Pro",
-      "reviewer_notes": "已核对STEMCELL与CCRM官方联合新闻稿",
+      "summary": "STEMCELL Technologies与CCRM于7月8日宣布合作：STEMCELL将生产和销售与LineaBio的GMP级iPSC细胞系同源的科研级版本，并向全球开发者提供配套GMP级细胞系。双方计划在ISSCR 2026展示Linea 1的可比性和基因组一致性数据；合作还计划扩展至其他GMP细胞系。此项合作涉及起始材料供应，并非细胞治疗产品获批。",
+      "model": "Codex editorial translation",
+      "reviewer_notes": "2026-09-15已核对STEMCELL官网新闻稿，删除自动业务建议，区分现有供应和后续计划。",
       "review_status": "verified",
       "source_title": "STEMCELL Technologies and CCRM Partner to Expand Access to Matched GMP and RUO iPSC Lines for Cell Therapy Development - Business Wire",
       "source_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNWS1Yd1BjZDE4bjF3TzdsOXFiVGY0cDU0aEpnZklSZUhPUWVDMW15Qmxudlc2Sm13UXVpQjdiaXBrVEhsOUo1S2VpVWhhZDlJd0h6VWZJWVNuUGM5djJIS2o4VjNIWkJvR28yME84S3d1akpHaFh0YlptbDk2UUtDdHhGRDlZRGdZbndBTHFQd1JuRW5NSHBYNmw2eVhON1cxX2tMdWxtMkNCdXNlSklxeGUxZl96cmRxSFVERXA0aEJ3cWlxcklONGxucVliS0NDVEkyaTFEczRDMlZDZnJfTjViX2U2cXNabW4wbEhHMXRBdG01blVGZGp3aGwxck0zZ2dOMGdn?oc=5",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28",
       "review": {
-        "reviewed_at": "2026-09-01T15:56:28",
-        "reviewer": "Historical editorial review",
+        "reviewed_at": "2026-09-15",
+        "reviewer": "Codex",
         "event_key": "legacy-editorial:411e8520e5b8256c",
-        "scope_zh": "保留此前依据公开来源整理并核验的中文标题与摘要；未新增来源材料未披露的事实。",
-        "scope_en": "Preserved a previously verified Chinese title and summary grounded in the public source.",
-        "kind": "legacy_source_review",
-        "material_level": "stored_source_material",
+        "scope_zh": "依据STEMCELL官网2026年7月8日公告修订，区分已公布合作、会议计划和产品审批。",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_press_release",
+        "source_verification_status": "verified_original",
         "evidence": [
+          {"label": "STEMCELL Technologies 官网公告 · 2026-07-08", "url": "https://www.stemcell.com/stemcell-technologies-ccrm-partner-to-expand-access-to-matched-gmp-and-ruo-ipsc-lines-for-cell-therapy-development.html"},
           {
             "label": "原始来源",
             "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNWS1Yd1BjZDE4bjF3TzdsOXFiVGY0cDU0aEpnZklSZUhPUWVDMW15Qmxudlc2Sm13UXVpQjdiaXBrVEhsOUo1S2VpVWhhZDlJd0h6VWZJWVNuUGM5djJIS2o4VjNIWkJvR28yME84S3d1akpHaFh0YlptbDk2UUtDdHhGRDlZRGdZbndBTHFQd1JuRW5NSHBYNmw2eVhON1cxX2tMdWxtMkNCdXNlSklxeGUxZl96cmRxSFVERXA0aEJ3cWlxcklONGxucVliS0NDVEkyaTFEczRDMlZDZnJfTjViX2U2cXNabW4wbEhHMXRBdG01blVGZGp3aGwxck0zZ2dOMGdn?oc=5"
@@ -20157,9 +20166,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jRmstVDJ3SnU5RVVzZm83VENiWVA2Zk03QTMwbUtjenBsTUNoa1RibDZiSGVRa2M5eGMtNFV6Y1FNVElGR05PQXhneU1mVmtKSUJQMmZlemRLakk?oc=5",
       "imported_at": "2026-09-09",
       "review": {
-        "reviewed_at": "2026-09-09",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "eisai-leqembi-sc-china-20260903",
+        "source_verification_status": "verified_original",
+        "material_level": "public_original_excerpt",
         "scope_zh": "已读卫材与渤健联合官方公告。",
         "scope_en": "Joint Eisai and Biogen official announcement reviewed.",
         "evidence": [
@@ -21221,7 +21232,8 @@
     {
       "id": "447e26fb57557787",
       "title_zh": "AustinPx通过赛默飞Patheon合作扩大KinetiSol制剂技术的开发与商业化路径",
-      "summary": "AustinPx与赛默飞Patheon合作，把KinetiSol无定形固体分散技术从可行性筛选和原型验证进一步衔接到放大及商业生产，为难溶性小分子项目提供更连续的开发路径。该事件体现赛默飞通过合作补充口服制剂开发能力，但与ACRO蛋白和细胞治疗核心业务的直接重叠较低，适合作为邻近CDMO生态和合作模式案例归档。",
+      "summary": "AustinPx与赛默飞Patheon合作，扩大KinetiSol无定形固体分散技术的商业可及性；报道涉及从可行性筛选、原型验证到放大及商业生产的开发路径。该技术面向难溶性小分子制剂。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有来源复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对公开采访与AustinPx合作资料；与已精读条目统一口径",
       "review_status": "verified",
@@ -25498,7 +25510,8 @@
     {
       "id": "5341f96a97832ceb",
       "title_zh": "武田Mimrylo获FDA批准，用于真性红细胞增多症",
-      "summary": "美国FDA已批准武田的Mimrylo（rusfertide）用于治疗真性红细胞增多症。该药是每周一次皮下注射的hepcidin模拟肽，III期VERIFY研究显示其在标准治疗基础上可提高应答并减少放血治疗需求。这是上市批准节点；对ACRO的直接产品需求尚无公开证据，应继续跟踪上市后研究和检测需求。",
+      "summary": "美国FDA已批准武田的Mimrylo（rusfertide）用于治疗真性红细胞增多症。该药是每周一次皮下注射的hepcidin模拟肽，III期VERIFY研究显示其在标准治疗基础上可提高应答并减少放血治疗需求。这是上市批准节点，不能据此推断ACRO的产品采购需求。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有公告复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对武田公告及既有精读；与其他Mimrylo报道为同一事件",
       "review_status": "verified",
@@ -29118,7 +29131,8 @@
     {
       "id": "5f6aff94aa0a872a",
       "title_zh": "赛默飞推出Gibco CTS Compleo细胞治疗配制与灌装系统",
-      "summary": "Gibco CTS Compleo是一套功能封闭、模块化的自动配制与灌装系统，面向细胞治疗生产，可支持低至0.5毫升的灌装、灵活输入输出及与21 CFR Part 11合规系统连接。它试图减少人工操作带来的污染、偏差和细胞浪费。对ACRO而言，这是竞品在细胞治疗下游制造环节补齐自动化能力的明确信号，适合用于产品组合与合作生态对标。",
+      "summary": "赛默飞推出Gibco CTS Compleo细胞治疗自动配制与灌装系统。该系统采用封闭、模块化设计，可支持低至0.5毫升的灌装、灵活输入输出，并与21 CFR Part 11合规系统连接，面向细胞治疗生产的下游环节。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有官方复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对赛默飞产品页、规格表和官方新闻稿目录",
       "review_status": "verified",
@@ -30651,28 +30665,37 @@
     },
     {
       "id": "642f587400f37b40",
-      "title_zh": "Chugai 三名 Hemlibra 研究人员获得拉斯克奖",
-      "summary": "Chugai 官网宣布，三名参与血友病 A 药物 Hemlibra 创制的研究人员获得美国拉斯克奖，评审认可其双特异性抗体发明改变了血友病治疗体系。",
-      "summary_en": "",
+      "title_zh": "中外制药三名 Hemlibra 创制人员获拉斯克临床医学研究奖",
+      "summary": "中外制药9月9日公告，服部有宏、北泽刚久和井川智之获得拉斯克-德贝基临床医学研究奖。获奖成果是血友病A双特异性抗体emicizumab（Hemlibra）：通过连接凝血因子IXa与X，代替缺失的第VIII因子功能。公告称颁奖仪式计划于9月17日在纽约举行；这条信息是科研获奖，不是新药获批或新合作。",
+      "summary_en": "On September 9, Chugai announced that Kunihiro Hattori, Takehisa Kitazawa and Tomoyuki Igawa had won the Lasker-DeBakey Clinical Medical Research Award. The recognized work is emicizumab (Hemlibra), a bispecific antibody that bridges clotting factors IXa and X to substitute for the missing factor VIII function in hemophilia A. The award ceremony was scheduled for September 17 in New York; this is a research award, not a new drug approval or partnership.",
       "model": "Codex editorial translation",
       "review_status": "verified",
       "reviewed": true,
-      "reviewer_notes": "Codex translated and polished the available title and source excerpt; no new facts were added.",
+      "reviewer_notes": "2026-09-15已核对中外制药官方公告正文；奖项、人员、机制与计划颁奖日期分别来自公告。",
       "source_title": "血友病A治療薬ヘムライブラを創製した中外製薬の研究者3名が世界的権威のある米国の科学賞「ラスカー賞」を受賞 ～独自の着想で治療体系を変えたバイスペシフィック抗体の発明が評価～",
       "source_url": "https://www.chugai-pharm.co.jp/news/detail/20260909210000_1612.html",
       "imported_at": "2026-09-10",
       "review": {
-        "reviewed_at": "2026-09-10",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "translation:642f587400f37b40",
-        "scope_zh": "依据当前保存的原标题与来源摘录翻译润色，未补写材料中没有披露的事实。",
-        "scope_en": "Translated and edited from the stored source title and excerpt without adding undisclosed facts.",
+        "scope_zh": "已核对官方公告正文；9月9日为公告日期，9月17日为计划颁奖日期。",
+        "scope_en": "Checked the official announcement; September 9 is the notice date, September 17 the planned ceremony date.",
         "kind": "codex_editorial_translation",
-        "material_level": "stored_source_material",
+        "material_level": "source_official_announcement",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
-            "label": "Chugai newsroom - official RSS",
+            "label": "Chugai Japanese official announcement",
             "url": "https://www.chugai-pharm.co.jp/news/detail/20260909210000_1612.html"
+          },
+          {
+            "label": "Chugai English official announcement - romanized names",
+            "url": "https://www.chugai-pharm.co.jp/english/news/detail/20260909210000_1283.html"
+          },
+          {
+            "label": "Lasker Foundation 2026 winners",
+            "url": "https://laskerfoundation.org/winners/2026-winners/"
           }
         ]
       }
@@ -31990,9 +32013,11 @@
       "source_url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202609/20260901_J.pdf",
       "imported_at": "2026-09-09",
       "review": {
-        "reviewed_at": "2026-09-09",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "daiichi-enhertu-eu-20260901",
+        "source_verification_status": "verified_original",
+        "material_level": "public_original_excerpt",
         "scope_zh": "已读第一三共官方日文公告；批准地区、适应证及付款节点分开记录。",
         "scope_en": "Official Japanese release reviewed; approval scope and payment milestone distinguished.",
         "evidence": [
@@ -33500,14 +33525,15 @@
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28",
       "review": {
-        "reviewed_at": "2026-09-01T15:56:28",
-        "reviewer": "Historical editorial review",
+        "reviewed_at": "2026-09-15",
+        "reviewer": "Codex",
         "event_key": "legacy-editorial:6d3561c7f3242295",
-        "scope_zh": "保留此前依据公开来源整理并核验的中文标题与摘要；未新增来源材料未披露的事实。",
-        "scope_en": "Preserved a previously verified Chinese title and summary grounded in the public source.",
-        "kind": "legacy_source_review",
-        "material_level": "stored_source_material",
+        "scope_zh": "重新核对宝生物2026年7月21日官方英文公告，保留基本协议尚未形成最终交易的边界。",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_press_release",
+        "source_verification_status": "verified_original",
         "evidence": [
+          {"label": "Takara Bio 官网公告 · 2026-07-21", "url": "https://www.takara-bio.com/en/news/news_260721_tb1.html"},
           {
             "label": "原始来源",
             "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA3eTF2allmMmViRjJ0QUhGc0tXem5MWXNzNWZxZktqbWRwRkpuUlg3bHo4U3Z4RURrRW5pNXgtYTZmUDZCdXRNbFZoSFdtMFBwVUZrdkZvZlRTSVFCNTZ3UXZONExQUQ?oc=5"
@@ -34872,22 +34898,23 @@
     {
       "id": "70e9c4f46a142fe2",
       "title_zh": "小野药品与Mediar签署纤维炎症性疾病抗体发现合作及选择权协议",
-      "summary": "小野药品与Mediar Therapeutics将共同发现面向纤维炎症性疾病的新型抗体候选物。Mediar负责利用其抗体发现能力和纤维化研究平台开展研究，小野拥有对合作产生候选物进行全球独家开发、生产和商业化的选择权。该项目直接对应抗体早期发现和免疫炎症研究，可作为客户研发需求线索，但具体靶点、候选物和采购需求尚未公开。",
+      "summary": "小野药品8月6日公告，与美国Mediar Therapeutics签署纤维性炎症疾病抗体药物发现合作和选择权协议。双方共同探索抗体候选物，Mediar提供抗体发现及纤维化生物学能力；小野持有对合作产生的候选物在全球独家开发、制造和商业化的选择权。公告未披露具体靶点或候选物，选择权也不等于已完成授权或已有上市产品。",
       "model": "ChatGPT Pro",
-      "reviewer_notes": "已核对小野药品日文和英文官方新闻稿",
+      "reviewer_notes": "2026-09-15重新核对小野药品日文官方公告正文；删除未经证实的客户需求推断。",
       "review_status": "verified",
       "source_title": "2026.08.06 ライセンス 米国Mediar Therapeutics社と線維性炎症性疾患に対する新規抗体医薬品創製に向けた創薬提携・オプション契約を締結",
       "source_url": "https://www.ono-pharma.com/ja/news/20260806.html",
       "reviewed": true,
       "imported_at": "2026-09-01T15:56:28",
       "review": {
-        "reviewed_at": "2026-09-01T15:56:28",
-        "reviewer": "Historical editorial review",
+        "reviewed_at": "2026-09-15",
+        "reviewer": "Codex",
         "event_key": "legacy-editorial:70e9c4f46a142fe2",
-        "scope_zh": "保留此前依据公开来源整理并核验的中文标题与摘要；未新增来源材料未披露的事实。",
-        "scope_en": "Preserved a previously verified Chinese title and summary grounded in the public source.",
-        "kind": "legacy_source_review",
-        "material_level": "stored_source_material",
+        "scope_zh": "已核对日文官方公告正文；8月6日为公告日期，选择权尚非已行权。",
+        "scope_en": "Checked the Japanese official announcement; August 6 is the notice date and the option has not been reported as exercised.",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_official_announcement",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
             "label": "原始来源",
@@ -38030,7 +38057,8 @@
     {
       "id": "7b485a48b2cec143",
       "title_zh": "赛默飞推出面向规模化细胞治疗生产的一体化平台",
-      "summary": "赛默飞发布一体化细胞治疗制造平台，核心定位是把细胞处理、工艺自动化、分析检测和规模化生产能力串联起来，降低从开发到商业化生产之间的转换风险。该动作显示其竞争重点正从单个仪器或试剂扩展到完整工作流。ACRO可据此对照自身GMP细胞因子、原料与细胞治疗解决方案在端到端场景中的位置和差异化证据。",
+      "summary": "赛默飞发布面向规模化细胞治疗制造的一体化平台，将细胞处理、工艺自动化、分析检测和规模化生产环节串联，面向从开发到商业化生产的工作流。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有官方复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对赛默飞官方新闻稿目录及细胞治疗制造方案页面",
       "review_status": "verified",
@@ -38057,7 +38085,8 @@
     {
       "id": "7b5b1e59e7db16ce",
       "title_zh": "Astorg完成收购赛默飞全球微生物业务，将其拆分为独立诊断公司",
-      "summary": "Astorg已完成对赛默飞全球微生物业务的收购，该业务将由独立管理团队运营，并计划于2026年晚些时候启用新品牌，服务临床诊断、食品安全和制药市场。对ACRO而言，这是赛默飞调整业务组合的竞争环境信号，而非新品发布；应观察独立公司后续品牌、渠道与制药客户策略是否改变。",
+      "summary": "Astorg已完成对赛默飞全球微生物业务的收购。该业务将由独立管理团队运营，并计划于2026年晚些时候启用新品牌，服务临床诊断、食品安全和制药市场。新品牌仍是公告中的计划，不是已完成动作。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有官方复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对Astorg 2026年8月12日官方公告",
       "review_status": "verified",
@@ -38318,12 +38347,14 @@
       "source_url": "https://www.ono-pharma.com/ja/news/20260902.html",
       "imported_at": "2026-09-09",
       "review": {
-        "reviewed_at": "2026-09-09",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "ono-aitia-neurology-20260902",
         "scope_zh": "以小野官方公告核对合作事实；聚合报道不视为已阅读全文。",
         "scope_en": "Collaboration facts checked against Ono's announcement; indexed reports were not treated as fully reviewed articles.",
+        "source_verification_status": "verified_original",
         "evidence": [
+          {"label": "小野药品官方英文公告 · 2026-09-02", "url": "https://prd.ono-pharma.com/en/news/20260902.html"},
           {
             "label": "小野药品官方公告 · 2026-09-02",
             "url": "https://www.ono-pharma.com/ja/news/20260902.html"
@@ -44076,24 +44107,26 @@
     },
     {
       "id": "8ee7111897daff75",
-      "title_zh": "Nacalai Tesque 公布 LADEC 2026 短讲与圆桌讨论安排",
-      "summary": "Nacalai Tesque 官网公告涉及 LADEC 2026 的短讲与圆桌讨论；当前记录未取得议题、讲者及具体时间表。",
-      "summary_en": "Nacalai Tesque announced a short talk and panel discussion associated with LADEC 2026. The captured record does not provide the topics, speakers or detailed schedule.",
+      "event_start_at": "2026-07-03",
+      "title_zh": "Nacalai Tesque 将在 LADEC 2026 讨论细胞制造流程标准化",
+      "summary": "Nacalai Tesque 6月17日公告，研究人员将在7月2日至3日举办的 LADEC 2026 参加短讲与圆桌讨论。其场次“细胞奥运会：探索细胞制造流程的标准任务”定于7月3日 10:30–12:00，在东京日本科学未来馆举行；讨论涉及药物发现、细胞农业和再生医疗中的细胞制造研究自动化。公司以培养基生产商身份参与；公告是参会安排，不是新产品发布。",
+      "summary_en": "On June 17, Nacalai Tesque announced that its researchers would give a short talk and join a panel at LADEC 2026, held July 2–3. Their session on standard tasks for cell-manufacturing processes was scheduled for July 3, 10:30–12:00, at Tokyo's Miraikan. It covers research automation in drug discovery, cellular agriculture and regenerative medicine. The company participates as a culture-media manufacturer; this is an event announcement, not a product launch.",
       "model": "Codex",
       "review_status": "verified",
       "reviewed": true,
-      "reviewer_notes": "有限核对：仅依据当前采集到的原标题及可用短摘录完成翻译和事实重述；未逐篇取得或核对全文，不视为全文精读。",
+      "reviewer_notes": "已核对 Nacalai 官网公告正文；公告日期、会议日期、场次及东京会场分别记录。",
       "source_title": "お知らせ 「LADEC 2026（Laboratory Automation Developers Conference 2026）」ショートトーク・パネルディスカッションのお知らせ 2026.06.17",
       "source_url": "https://www.nacalai.co.jp/news/news/LADEC2026-20260617.html",
       "imported_at": "2026-09-10",
       "review": {
-        "reviewed_at": "2026-09-10",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "nacalai-ladec-2026-session-20260617",
-        "scope_zh": "有限核对：仅依据当前采集到的原标题及可用短摘录完成翻译和事实重述；未逐篇取得或核对全文，不视为全文精读。",
-        "scope_en": "Limited review: translation and factual restatement use the captured source title and any available short excerpt. Full text was not obtained or checked article by article.",
-        "kind": "translation_review",
-        "material_level": "title_or_excerpt",
+        "scope_zh": "已读取官方公告正文；6月17日为公告日期，7月2日至3日为会议日期，7月3日为该场次日期。",
+        "scope_en": "Checked the official announcement; June 17 is the notice date, July 2–3 the conference dates, and July 3 the session date.",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_official_announcement",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
             "label": "Nacalai Tesque official announcements",
@@ -44301,7 +44334,8 @@
     {
       "id": "8fa79b5800a33dfb",
       "title_zh": "MilliporeSigma在德国启用2500万欧元BioReliance检测中心，扩大欧洲放行与稳定性服务",
-      "summary": "Merck KGaA生命科学业务在达姆施塔特启用投资2500万欧元、面积约2000平方米的BioReliance检测设施，提供商业原液和制剂放行检测，以及符合GMP的稳定性研究，重点覆盖单抗和细胞治疗。新站点靠近欧洲临床试验枢纽，表明其正在加强从开发到商业化的本地检测服务。对ACRO而言，应将其视为质量检测和生物安全服务能力扩张，而不是一般办公设施投资。",
+      "summary": "Merck KGaA生命科学业务在德国达姆施塔特启用投资2500万欧元、面积约2000平方米的BioReliance检测设施，提供商业原液和制剂放行检测，以及符合GMP的稳定性研究，覆盖单抗和细胞治疗。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有官方复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对MilliporeSigma 2026年7月16日官方发布内容",
       "review_status": "verified",
@@ -45471,8 +45505,9 @@
     },
     {
       "id": "942ff818374f2c70",
-      "title_zh": "从概念到细胞系构建：先导抗体发现与细胞系开发线上讲座",
-      "summary": "LINK-J 发布线上讲座，内容覆盖先导抗体筛选、候选物评估到生产细胞系构建的流程，聚焦下一代生物药开发。",
+      "title_zh": "GenScript Japan 与 ProBio 举办先导抗体发现及细胞系开发线上讲座",
+      "summary": "LINK-J 刊载的活动页显示，GenScript Japan 与 ProBio 将于9月17日联合举办线上讲座，讨论杂交瘤、单 B 细胞筛选和噬菌体展示等先导抗体发现方法，以及面向双特异性抗体的细胞系构建和错配控制。9月17日是计划举办日，不是该页面的新闻发布日期；两个主办方目前均未纳入本平台监测公司池。",
+      "event_start_at": "2026-09-17",
       "summary_en": "",
       "model": "Codex editorial translation",
       "review_status": "verified",
@@ -45482,13 +45517,15 @@
       "source_url": "https://www.link-j.org/member_event/article-54015.html",
       "imported_at": "2026-09-10",
       "review": {
-        "reviewed_at": "2026-09-10",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "translation:942ff818374f2c70",
-        "scope_zh": "依据当前保存的原标题与来源摘录翻译润色，未补写材料中没有披露的事实。",
-        "scope_en": "Translated and edited from the stored source title and excerpt without adding undisclosed facts.",
+        "scope_zh": "已打开LINK-J活动原页核对主办方和计划举办日；页面未给出可信发布日期。",
+        "scope_en": "Checked the LINK-J event page for organizers and planned event date; publication date not stated.",
         "kind": "codex_editorial_translation",
-        "material_level": "stored_source_material",
+        "material_level": "public_original_excerpt",
+        "source_verification_status": "verified_original",
+        "unmonitored_organizers": ["GenScript Japan", "ProBio"],
         "evidence": [
           {
             "label": "LINK-J - life science ecosystem events",
@@ -52851,8 +52888,8 @@
     },
     {
       "id": "ad93efe134c3e6d4",
-      "title_zh": "头孢地尔在澳大利亚获批用于治疗革兰阴性菌感染",
-      "summary": "盐野义宣布抗革兰阴性菌药物头孢地尔已在澳大利亚获得批准；具体适应证及批准条件应以监管文件为准。",
+      "title_zh": "盐野义头孢地尔在澳大利亚获批，用于部分耐药革兰阴性菌感染",
+      "summary": "盐野义9月7日公告，澳大利亚 TGA 批准其抗菌药头孢地尔（cefiderocol），用于治疗选择有限、由耐碳青霉烯或高度疑似耐药革兰阴性菌引起的成人复杂性尿路感染（含肾盂肾炎）、院内肺炎及呼吸机相关肺炎。公告所述批准仅在澳大利亚；与 Link 的许可虽涵盖澳大利亚和新西兰，不能据此推断新西兰也已获批。",
       "summary_en": "",
       "model": "Codex editorial translation",
       "review_status": "verified",
@@ -52862,13 +52899,14 @@
       "source_url": "https://www.shionogi.com/jp/ja/news/2026/09/20260907.html",
       "imported_at": "2026-09-10",
       "review": {
-        "reviewed_at": "2026-09-10",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "translation:ad93efe134c3e6d4",
-        "scope_zh": "依据当前保存的原标题与来源摘录翻译润色，未补写材料中没有披露的事实。",
-        "scope_en": "Translated and edited from the stored source title and excerpt without adding undisclosed facts.",
+        "scope_zh": "已打开盐野义9月7日官方公告，核对TGA批准范围、适应证和Link许可地区；未核查监管文件全文。",
+        "scope_en": "Checked the September 7 Shionogi release for TGA approval, indications and Link licensing scope; regulator documents not reviewed.",
         "kind": "codex_editorial_translation",
-        "material_level": "stored_source_material",
+        "material_level": "public_original_excerpt",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
             "label": "Shionogi Japan news - official page",
@@ -54068,7 +54106,8 @@
     {
       "id": "b142009799e4474e",
       "title_zh": "Sartorius与LFB扩大合作，打通从细胞株开发到首批GMP原液的服务链",
-      "summary": "Sartorius与LFB Biomanufacturing扩大2024年启动的合作：Sartorius负责细胞株开发和主细胞库建立，LFB提供上下游工艺开发、分析检测及GMP原液生产，目标是减少项目交接并缩短从细胞株到临床的周期。对ACRO而言，这是竞品向端到端生物工艺服务整合的信号，应持续对比其在细胞株、培养基、质量检测和GMP原料环节的客户覆盖。",
+      "summary": "Sartorius与LFB Biomanufacturing扩大2024年启动的合作：Sartorius负责细胞株开发和主细胞库建立，LFB提供上下游工艺开发、分析检测及GMP原液生产。双方希望减少项目交接，缩短从细胞株到临床生产的周期。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有官方复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对Sartorius 2026年6月23日官方公告",
       "review_status": "verified",
@@ -58372,11 +58411,12 @@
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRmQwRVByMTl1bDAzNzVRcDJ1bndKbzZ6MldNNzZvUVVpZUprSUh1aURRQXBlUXFDdFNRYm1PcGhMcnJqQk5FbW1uUUF6ZDRBMW11SjFnXzF0dHMwR1FOd0xpR00zZXRERG90TEgxWDlxU01UMXg0MmEyV0RfYnZXMkVzVkNDZjkwdmltcG5iVTZiSWVvak1r?oc=5",
       "imported_at": "2026-09-09",
       "review": {
-        "reviewed_at": "2026-09-09",
+        "reviewed_at": "2026-09-15",
         "reviewer": "Codex",
         "event_key": "abcam-genedata-20260903",
         "scope_zh": "以 Abcam 官方公告核对；未把两条媒体索引当成独立合作。",
         "scope_en": "Checked against Abcam's official announcement; the two indexed reports describe the same collaboration.",
+        "source_verification_status": "verified_original",
         "evidence": [
           {
             "label": "Abcam 官方合作公告",
@@ -61743,14 +61783,24 @@
     {
       "id": "cb582bed07d28e07",
       "title_zh": "百普赛斯GMP级人IL-15获得日本PMDA再生医疗产品材料适用性确认",
-      "summary": "百普赛斯的GMP级人IL-15蛋白获得日本PMDA再生医疗产品材料适用性确认，适用场景涉及CAR-T、CAR-NK和TCR-T等再生医疗产品生产所需关键原料。该认定强化了产品在日本细胞治疗申报中的质量与合规证据，市场部可优先转化为日本客户沟通、销售培训和合规传播材料，并明确区分材料确认与药品本身获批。",
-      "model": "ChatGPT Pro",
-      "reviewer_notes": "已核对ACROBiosystems官网原文与证书说明",
+      "summary": "百普赛斯宣布，其GMP级人IL-15蛋白取得日本PMDA的再生医疗产品材料适用性确认。公告将该原料与CAR-T、CAR-NK和TCR-T等细胞治疗产品的生产场景联系起来。这是原材料适用性确认，不是药品或细胞治疗产品本身获批。",
+      "model": "Codex editorial translation",
+      "reviewer_notes": "已核对公司发布的PR Newswire新闻稿；移除自动派责，区分原料确认与药品批准。",
       "review_status": "verified",
       "source_title": "ACROBiosystems Secures Japan PMDA Confirmation for GMP-Grade IL-15 Used in Cell Therapy Manufacturing - BioPharma APAC",
       "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMk5BUy0tVFIzbU80NGM4UW05MFgtVy1xSkdIX09VX1NTTkJ1WEV1TUd5SDJKS0YtLVl0TVdNTkxWUGpvT1B5N1Q3ajF2alV0SnZEZFJHS2dhZWg4VEtIUElBeGc3RmpDLVVyM2FuWktQWnBDOF9aZnMtamcxQnp2ZDlOdmRoR1JzcnlUeWhUejFvRXBkQUp3WWctLXZmVHZOM0xWMDhYWlVsRU1tU3Q4OERKZlQxLTUxX2tRWFVnRFdWWXJYcnVneDNzaTZ5RHpCcTBHNF9iWm5EOU5Vd1E?oc=5",
       "reviewed": true,
-      "imported_at": "2026-09-01T15:56:28"
+      "imported_at": "2026-09-01T15:56:28",
+      "review": {
+        "reviewed_at": "2026-09-15",
+        "reviewer": "Codex",
+        "event_key": "source-review:cb582bed07d28e07",
+        "scope_zh": "依据百普赛斯公开发布的新闻稿修订摘要；仅陈述材料确认及公告披露的适用场景，不自动指定工作任务。",
+        "kind": "codex_editorial_translation",
+        "material_level": "source_press_release",
+        "source_verification_status": "verified_original",
+        "evidence": [{"label": "ACROBiosystems Group 新闻稿", "url": "https://www.prnewswire.com/news-releases/acrobiosystems-obtains-pmda-material-suitability-confirmation-for-gmp-grade-il-15-ensuring-reliable-quality-and-strengthening-the-biopharmaceutical-approval-process-302824902.html"}]
+      }
     },
     {
       "id": "cb7c1ecfb4e4fa6e",
@@ -70298,13 +70348,14 @@
       "reviewed": true,
       "imported_at": "2026-09-01T16:49:54",
       "review": {
-        "reviewed_at": "2026-09-01T16:49:54",
-        "reviewer": "Historical editorial review",
+        "reviewed_at": "2026-09-15",
+        "reviewer": "Codex",
         "event_key": "legacy-editorial:e787af7f45dbf4c8",
+        "source_verification_status": "verified_original",
         "scope_zh": "保留此前依据公开来源整理并核验的中文标题与摘要；未新增来源材料未披露的事实。",
         "scope_en": "Preserved a previously verified Chinese title and summary grounded in the public source.",
         "kind": "legacy_source_review",
-        "material_level": "stored_source_material",
+        "material_level": "public_original_excerpt",
         "evidence": [
           {
             "label": "原始来源",
@@ -75027,7 +75078,8 @@
     {
       "id": "f610ddd76a80d18c",
       "title_zh": "AustinPx通过与赛默飞合作扩大KinetiSol技术的商业化应用渠道",
-      "summary": "AustinPx与赛默飞合作，扩大KinetiSol无定形固体分散技术的商业可及性，使难溶性小分子项目可从可行性筛选和原型验证进一步衔接放大与商业生产。该事件体现赛默飞通过合作补充口服制剂开发能力，但与ACRO蛋白和细胞治疗核心业务的直接重叠较低，适合作为邻近CDMO生态和合作模式案例归档。",
+      "summary": "AustinPx与赛默飞合作，扩大KinetiSol无定形固体分散技术的商业可及性。该技术面向难溶性小分子制剂；报道描述从可行性验证到放大及商业生产的路径。",
+      "editorial_amendment": {"at": "2026-09-15", "reviewer": "Codex", "scope": "移除自动行动建议；保留原有来源复核记录，不声称本次全文精读。"},
       "model": "ChatGPT Pro",
       "reviewer_notes": "已核对AustinPx官方KinetiSol页面及公开合作说明",
       "review_status": "verified",

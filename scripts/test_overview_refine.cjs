@@ -90,6 +90,12 @@ async function verifyScope(page) {
         unknownTopics: fusionTopics({ title: 'Corporate bulletin' }),
         factualZh: fusionFactualText('公司发布新试剂。今天应安排销售必须联系该公司。'),
         factualEn: fusionFactualText('Aster released a reagent. The sales team should contact the company.'),
+        factualAdvice: fusionFactualText('公司发布新试剂。该模式值得ACRO对标研发渠道。'),
+        accountBoundary: [
+          accountTermOccurs('astellas pharma announced a new study', 'tella'),
+          accountTermOccurs('tella inc announced a new study', 'tella'),
+          accountTermOccurs('小野药品宣布合作', '小野药品'),
+        ],
       };
     });
     assert.deepEqual(units.latest, ['fresh', 'old']);
@@ -110,6 +116,8 @@ async function verifyScope(page) {
     assert.ok(!cases.sourceFallback.ai && !cases.sourceFallback.missing);
     assert.equal(units.factualZh, '公司发布新试剂。');
     assert.equal(units.factualEn, 'Aster released a reagent.');
+    assert.equal(units.factualAdvice, '公司发布新试剂。');
+    assert.deepEqual(units.accountBoundary, [false, true, true]);
     pass('bilingual, Chinese-only, English-only, missing and limited-material summaries; no title/template or task fallback');
     assert.equal(units.topicAliases.filter(topic => topic === '抗体').length, 1);
     assert.ok(units.topicAliases.includes('CGT'));

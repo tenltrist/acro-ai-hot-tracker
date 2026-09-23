@@ -109,6 +109,7 @@ const methodologyDetailMeta = {
   "daily-admission": { family: "单篇信息判断", title: "信息准入与分流" },
   "event-classification": { family: "分类与证据输出", title: "商业事件分类" },
   "region-classification": { family: "分类与证据输出", title: "地区判读与统计" },
+  "product-classification": { family: "分类与证据输出", title: "产品分类与观察方向" },
   "action-routing": { family: "分类与证据输出", title: "内部规则路由（不自动派责）" },
   "summary-provenance": { family: "分类与证据输出", title: "摘要与证据溯源" },
   "priority-index": { family: "公司与账户排序", title: "公开信号参考指数" },
@@ -1965,7 +1966,7 @@ const pageMeta = {
   "period-overview": ["Period Intelligence", "周 / 月市场事件"],
   "period-detail": ["Period Evidence", "周期事件与原文证据"],
   "fusion-evidence": ["Decision Evidence", "决策证据明细"],
-  overview: ["Market Intelligence Dashboard", "目标公司与行业热点雷达"],
+  overview: ["ACRO Market Intelligence", "ACRO 市场情报台"],
   "overview-metric": ["Dashboard Metric Detail", "总览指标明细"],
   companies: ["Company Pool", "目标公司池"],
   timeline: ["Company Timeline", "公司动态时间线与长期档案"],
@@ -1981,7 +1982,7 @@ const pageMeta = {
   "source-health": ["Source Operations", "数据源健康与产出质量"],
 };
 
-const overviewApacRegions = new Set(window.AIHOT_REGION_MODEL.apac);
+const overviewLocatedRegions = new Set(window.AIHOT_REGION_MODEL.businessDefinitions.map(row => row.id));
 
 const overviewMetricDefinitions = {
   critical: {
@@ -1996,7 +1997,7 @@ const overviewMetricDefinitions = {
     label: "竞品动态",
     pageTitle: "竞品动态明细",
     description: "当前筛选范围内，命中已确认竞品池公司的产品、技术、合作、区域和组织动态。",
-    boundary: "竞品命中来自公司角色配置；同一条新闻可能涉及多家公司，也可能同时计入重大信号或亚太地区动态。",
+    boundary: "竞品命中来自公司角色配置；同一条新闻可能涉及多家公司，也可能同时计入重大信号或地区已识别数量。",
     matches: (item, companyRoles) => getItemRole(item, companyRoles) === "competitor",
   },
   customer: {
@@ -2007,11 +2008,11 @@ const overviewMetricDefinitions = {
     matches: (item, companyRoles) => getItemRole(item, companyRoles) === "customer",
   },
   apac: {
-    label: "亚太地区动态",
-    pageTitle: "亚太地区动态明细",
-    description: "当前筛选范围内，涉及日本、中国及港澳台、韩国、东南亚、南亚、大洋洲或明确亚太的新闻，按记录去重。",
-    boundary: "地区由已保存的原文语义判读、标题与来源摘录中的明确线索共同决定；可切换为仅标题 / 摘录。不从已有摘要、媒体所在地或总部地址本身推断。泛称亚洲、全球、未限定地区和待确认不计入亚太；每条依据会区分部署、供应、试验、政策或参与机构等关系，不等于事件都在当地发生。",
-    matches: (item) => fusionRegions(item).some(region => overviewApacRegions.has(region)),
+    label: "地区已识别",
+    pageTitle: "地区已识别新闻",
+    description: "当前筛选范围内，具有明确国家或具体地点证据的新闻，按记录去重；一篇涉及多个国家也只计一次。",
+    boundary: "统一使用日本、韩国、印度、新加坡、澳大利亚、其他国家六类。只采用原文明确国家或地点证据，不根据公司或来源所在地推断；未明确国家的新闻仍保留在总计中。",
+    matches: (item) => fusionRegions(item).some(region => overviewLocatedRegions.has(region)),
   },
 };
 
@@ -2506,6 +2507,17 @@ function getAccountMatchTerms(account) {
   return [...terms];
 }
 
+function accountTermOccurs(text, term) {
+  let offset = 0;
+  while ((offset = text.indexOf(term, offset)) !== -1) {
+    const before = text[offset - 1] || "";
+    const after = text[offset + term.length] || "";
+    if (!/[a-z0-9]/.test(term) || (!/[a-z0-9]/.test(before) && !/[a-z0-9]/.test(after))) return true;
+    offset += term.length;
+  }
+  return false;
+}
+
 function findAccountForCompany(company, accounts = getJapanAccountData().accounts || []) {
   if (company.account_origin_id) {
     const linked = accounts.find((account) => account.id === company.account_origin_id);
@@ -2549,7 +2561,7 @@ function getJapanAccountSignalIndex(inputItems = fusionDashboardItems()) {
   const index = new Map();
   for (const account of data.accounts || []) {
     const terms = getAccountMatchTerms(account);
-    const matches = items.filter((item, itemIndex) => terms.some((term) => itemText[itemIndex].includes(term)));
+    const matches = items.filter((item, itemIndex) => terms.some((term) => accountTermOccurs(itemText[itemIndex], term)));
     index.set(account.id, [...matches].sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0)));
   }
   japanAccountSignalCache = { payload: state.payload, data, items, index };
@@ -2690,6 +2702,7 @@ function renderJapanAccountIntelligence() {
       <p>${escapeHtml(opportunityCopy)}</p>
     </div>
     ${evidenceMarkup}
+    ${productProfileMarkup(matches)}
     <div class="customer-signal-list"><span>关联外部动态 · ${matches.length} 条</span>${signalMarkup}<button type="button" class="text-button" data-fusion-account-news="${escapeAttr(selected.id)}">查看全部 ${matches.length} 条新闻 →</button></div>
     <footer>${escapeHtml(data.privacy_note || "内部销售状态不进入公开页面。")}</footer>`;
 }
@@ -2789,6 +2802,7 @@ function renderMethodology() {
   renderMethodologyView();
   if (!els.methodologyScopedCount || !state.payload) return;
   if (state.methodologyDetail === "region-classification") renderFusionRegionRules();
+  if (state.methodologyDetail === "product-classification") renderProductRules();
   const catalog = window.AIHOT_RULE_CATALOG || {};
   const storageProfile = window.AIHOT_STORAGE_PROFILE || {};
   const summaryPipeline = state.payload.summary_pipeline || {};
@@ -3536,7 +3550,7 @@ function inferSourceMethodCategory(sourceId, row = {}) {
   const id = String(sourceId).toLowerCase();
   const value = `${id} ${row.source_label || ""} ${row.source_type || ""}`.toLowerCase();
   let layer = "official";
-  if (/google_news|bing_news|news_search|aggregat/.test(id)) layer = "aggregator";
+  if (/news\.google\.com\/rss\/search/i.test(row.source_url || "") || /google_news|bing_news|news_search|aggregat/.test(id)) layer = "aggregator";
   else if (/crossref|pubmed|clinical|pmda|amed|openfda|patent|research|trial|regulat/.test(id)) layer = "research_regulatory";
   else if (/youtube|multimedia|video|linkedin|wechat|twitter|social/.test(id)) layer = "social_content";
   else if (/linkj|ispark|kinki|firm_|conference|exhibition|channel_event/.test(id)) layer = "market_channel";
@@ -3563,6 +3577,9 @@ function summarizeCoverageSource(row, companyId) {
   const daily = items.filter((item) => item.tier === "daily").length;
   const archive = items.filter((item) => item.tier === "archive").length;
   const selected = immediate + daily;
+  const datedSelected = items.filter((item) =>
+    ["immediate", "daily"].includes(item.tier) && Boolean(periodModel.publicationDate(item)),
+  ).length;
   const status = ["error", "pending"].includes(row.status)
     ? row.status
     : selected
@@ -3573,9 +3590,10 @@ function summarizeCoverageSource(row, companyId) {
   return {
     total: items.length,
     selected,
+    datedSelected,
     archive,
     status,
-    lastPublished: items.map((item) => item.published_at || item.published).filter(Boolean).sort().at(-1) || "",
+    lastPublished: items.map((item) => periodModel.publicationDate(item)).filter(Boolean).sort().at(-1) || "",
   };
 }
 
@@ -3587,10 +3605,18 @@ function renderCoverageSourceRow(row, companyId) {
     ? `${methodRecord.category.number} ${methodRecord.category.title}`
     : "来源方法待归类";
   const sourceLabel = row.source_label || row.source_id;
+  const googleSiteIndex = /news\.google\.com\/rss\/search/i.test(row.source_url || "") && /(?:site:|site%3a)/i.test(row.source_url || "");
   const outputDisabled = result.total ? "" : " disabled";
-  const sourceUrl = methodRecord?.method?.url
-    ? (/^https?:\/\//i.test(methodRecord.method.url) ? methodRecord.method.url : `https://${methodRecord.method.url}`)
+  const configuredUrl = row.source_url || methodRecord?.method?.url || "";
+  const sourceUrl = configuredUrl
+    ? (/^https?:\/\//i.test(configuredUrl) ? configuredUrl : `https://${configuredUrl}`)
     : "";
+  const alternatives = (row.alternative_source_ids || [])
+    .map((id) => getSourceHealthRows().find((source) => source.source_id === id))
+    .filter(Boolean);
+  const requestLabel = row.last_checked
+    ? `${row.request_succeeded ? "请求成功" : "请求失败"} · 检查 ${formatDateTime(row.last_checked)}`
+    : "已配置，尚未验证";
   return `
     <article class="coverage-source-row status-${escapeAttr(result.status)}">
       <header>
@@ -3602,19 +3628,29 @@ function renderCoverageSourceRow(row, companyId) {
       </header>
       <div class="coverage-source-route">
         <span>${escapeHtml(scopeLabel)}</span>
+        ${googleSiteIndex ? "<span>Google News 站点索引，非官网 RSS 直连</span>" : ""}
+        ${row.reported_entity ? `<span>发布主体：${escapeHtml(row.reported_entity)}</span>` : ""}
         <span>${escapeHtml(labelSignalType(row.signal_type || "news"))}</span>
         <span>${escapeHtml(row.source_type || "unknown")}</span>
         <b>${escapeHtml(methodLabel)}</b>
       </div>
       <div class="coverage-source-metrics">
-        <span><b>${result.total}</b>候选</span>
-        <span><b>${result.selected}</b>日报</span>
+        <span><b>${row.raw_link_count ?? row.raw_candidate_count ?? 0}</b>抓取链接</span>
+        <span><b>${result.total}</b>公司命中</span>
+        <span><b>${result.selected}</b>有效入选</span>
+        <span><b>${result.datedSelected}</b>有可信日期</span>
         <span><b>${result.archive}</b>归档</span>
         <span><b>${escapeHtml(result.lastPublished || "—")}</b>最后内容</span>
       </div>
+      <div class="coverage-source-route">
+        <span>${escapeHtml(requestLabel)}</span>
+        ${row.rejected_alias_count ? `<span>别名拒收 ${row.rejected_alias_count}</span>` : ""}
+        ${row.error ? `<span title="${escapeAttr(row.error)}">异常：${escapeHtml(row.error)}</span>` : ""}
+        ${alternatives.length ? `<span>其他可访问入口：${escapeHtml(alternatives.map((source) => source.source_label).join("、"))}</span>` : ""}
+      </div>
       <div class="coverage-source-actions">
         <button type="button" data-view-source-output-id="${escapeAttr(row.source_id)}" data-source-label="${escapeAttr(sourceLabel)}"${outputDisabled}>
-          ${result.total ? `查看 ${result.total} 条产出` : "暂无产出"}
+          ${result.total ? `查看 ${result.total} 条关联记录` : "暂无关联记录"}
         </button>
         ${sourceUrl ? `<a href="${escapeAttr(sourceUrl)}" target="_blank" rel="noreferrer">打开来源</a>` : ""}
         <button type="button" data-locate-source-id="${escapeAttr(row.source_id)}"${methodRecord ? "" : " disabled"}>在来源方法库定位</button>
@@ -3709,7 +3745,7 @@ function renderCompanySourceCoverage() {
       : summary.selected
         ? "有日报产出"
         : summary.total
-          ? "仅归档产出"
+          ? "有记录，未入选"
           : "本轮零命中";
     const result = hasConfiguredEntry
       ? summary.total
@@ -3964,6 +4000,7 @@ function getOverviewScopeLabel() {
   if (state.searchQuery) parts.push(`搜索：${state.searchQuery}`);
   if (fusion.regions.length) parts.push(fusion.regions.map(labelRegion).join(" / "));
   if (fusion.topic !== "all") parts.push(boardTopicLabel(fusion.topic));
+  if (productScopeText(fusion)) parts.push(productScopeText(fusion));
   return parts.join(" · ");
 }
 
@@ -5043,8 +5080,8 @@ function liveSourceResult(source) {
   if (!total && sitemapRow) {
     return `持续监控 ${sitemapRow.snapshot_count} 个 URL · 本轮新增 ${sitemapRow.new_urls || 0}`;
   }
-  if (!total) return `监控正在运行，时效窗口内 0 条，最后内容：${latest}`;
-  return `候选 ${total} 条 · 日报 ${selected} 条 · 归档 ${archive} 条 · 最后内容 ${latest}`;
+  if (!total) return `本轮已检查 · 时效窗口内 0 条 · 最后内容：${latest}`;
+  return `候选 ${total} 条 · 入选 ${selected} 条 · 归档 ${archive} 条 · 最后内容 ${latest}`;
 }
 
 const signalWorkflowDefinitions = {
@@ -5109,18 +5146,18 @@ function renderCompanyTimeline() {
     items = items.filter((item) => ["daily", "immediate"].includes(item.tier));
   }
   items.sort((a, b) => {
-    const dateDelta = String(b.event_start_at || b.published_at || b.published || "")
-      .localeCompare(String(a.event_start_at || a.published_at || a.published || ""));
+    const dateDelta = String(b.event_start_at || periodModel.publicationDate(b) || "")
+      .localeCompare(String(a.event_start_at || periodModel.publicationDate(a) || ""));
     return dateDelta || (Number(b.score) || 0) - (Number(a.score) || 0);
   });
   const visibleItems = items.slice(0, 80);
-  const sourceBacked = items.filter((item) => item.evidence?.verification_status === "source_backed").length;
+  const sourceExcerptCount = items.filter((item) => Boolean(item.evidence?.source_excerpt)).length;
   els.companyTimelineTimestamp.textContent = `${compactCompanyName(company)} · 更新 ${formatDateTime(state.payload.generated_at)}`;
   els.companyTimelineMetrics.innerHTML = `
     <article><span>累计信号</span><strong>${profile.item_count || 0}</strong><small>当前数据窗口全部记录</small></article>
-    <article><span>进入日报</span><strong>${profile.selected_count || 0}</strong><small>通过当前日报准入门槛</small></article>
+    <article><span>入选记录</span><strong>${profile.selected_count || 0}</strong><small>通过当前准入门槛</small></article>
     <article><span>运行来源</span><strong>${profile.source_count || 0}</strong><small>实际命中过该公司的入口</small></article>
-    <article><span>本页证据充分</span><strong>${sourceBacked}</strong><small>摘要包含独立原始信息</small></article>
+    <article><span>有来源摘录</span><strong>${sourceExcerptCount}</strong><small>不代表已核实全文</small></article>
   `;
 
   const topicMarkup = profile.top_topics?.length
@@ -5130,20 +5167,23 @@ function renderCompanyTimeline() {
     <header><span>${escapeHtml(company.role_label || "公司档案")}</span><h3 class="company-name-with-logo">${companyLogoMarkup(company, "profile")}${companyNameMarkup(company)}</h3></header>
     <div class="living-profile-block"><span>监测重点</span><p>${escapeHtml(company.monitoring_focus || "尚未配置监测重点。")}</p></div>
     <div class="living-profile-block"><span>持续出现的主题</span><div class="living-topic-list">${topicMarkup}</div></div>
+    ${productProfileMarkup(items)}
     <footer><span>最近动态</span><strong>${escapeHtml(profile.latest_activity || "暂无日期")}</strong></footer>
   `;
 
   if (!visibleItems.length) {
-    els.companyTimelineList.innerHTML = `<div class="empty">${state.timelineScope === "selected" ? "该公司暂时没有达到日报门槛的信号，可切换到“全部记录”查看归档。" : "该公司当前没有命中记录。"}</div>`;
+    els.companyTimelineList.innerHTML = `<div class="empty">${state.timelineScope === "selected" ? "该公司暂时没有达到入选门槛的信号，可切换到“全部记录”查看归档。" : "该公司当前没有命中记录。"}</div>`;
     return;
   }
   els.companyTimelineList.innerHTML = visibleItems.map((item) => {
     const evidence = item.evidence || {};
     const workflow = signalWorkflowDefinitions[getSignalWorkflowStatus(item)] || signalWorkflowDefinitions.new;
-    const date = item.event_start_at || item.published_at || item.published || "日期待核对";
+    const publicationDate = periodModel.publicationDate(item);
+    const date = item.event_start_at || publicationDate || "日期待核对";
+    const dateLabel = item.event_start_at ? "事件" : publicationDate ? "发布" : "";
     return `
       <article class="timeline-entry">
-        <div class="timeline-rail"><i></i><time>${escapeHtml(date)}</time></div>
+        <div class="timeline-rail"><i></i><time>${escapeHtml(dateLabel ? `${dateLabel} ${date}` : date)}</time></div>
         <div class="timeline-entry-body">
           <header>
             <div><span>${escapeHtml(labelBusinessEventLanguage(getBusinessEventType(item), true))}</span><b>${item.score} 分</b></div>
@@ -5151,6 +5191,7 @@ function renderCompanyTimeline() {
           </header>
           <a href="${escapeAttr(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(getDisplayTitle(item))}</a>
           <p>${escapeHtml(firstReadableSentence(getDisplaySummary(item), 150))}</p>
+          ${productEvidenceMarkup(item)}
           <footer>
             <span class="evidence-quality ${escapeAttr(evidence.verification_status || "needs_original_check")}">${escapeHtml(evidence.verification_label || "需打开原文核验")}</span>
           </footer>
@@ -5170,6 +5211,7 @@ function renderPage() {
     : pageMeta[state.page] || pageMeta.overview;
   els.pageEyebrow.textContent = eyebrow;
   els.pageTitle.textContent = title;
+  document.querySelector("#brandTagline").hidden = state.page !== "overview";
   if (state.page === "fusion-evidence" && fusion.detail?.kind === "region-rules") {
     els.pageEyebrow.textContent = "Regional Evidence Rules";
     els.pageTitle.textContent = "地区准入与划分";
@@ -5181,7 +5223,7 @@ function renderPage() {
   els.toolbar.hidden = !["overview", "signals"].includes(state.page);
   els.toolbar.classList.toggle("overview-toolbar", state.page === "overview");
   els.tierFilter.hidden = state.page !== "signals";
-  document.querySelectorAll("#fusionCategoryControl, #fusionProductControl, #fusionRegionControl").forEach(node => { node.hidden = state.page !== "overview"; });
+  document.querySelectorAll("#fusionCategoryControl, #fusionProductControl, #fusionProductCategories, #fusionProductDirectionControl, #fusionRegionControl").forEach(node => { node.hidden = state.page !== "overview"; });
   document.querySelector("#browseNavigation").hidden = !browseRoot;
   document.querySelectorAll("[data-browse]").forEach(button => {
     const active = state.page === "overview" ? "overview" : periodView.level === "records" ? "records" : periodView.mode;
@@ -5688,6 +5730,7 @@ function renderSignalCards(container, items, compact) {
         <span class="tag source-origin">${escapeHtml(getSourceLabelText(item))}</span>
       </div>
       ${renderBusinessSummary(item, compact)}
+      <div class="product-card-tags">${productEvidenceMarkup(item)}</div>
       ${renderBusinessInsight(item, compact)}
       ${compact ? "" : fusionIsHomeContext() ? renderEvidenceBlock(item) : renderSignalDecisionDetails(item)}
       ${compact ? "" : `
@@ -5924,7 +5967,7 @@ function getCompanyScopedHealthRows(rows, company) {
     const immediate = items.filter((item) => item.tier === "immediate").length;
     const daily = items.filter((item) => item.tier === "daily").length;
     const archive = items.filter((item) => item.tier === "archive").length;
-    const lastPublished = items.map((item) => item.published).filter(Boolean).sort().at(-1) || "";
+    const lastPublished = items.map((item) => periodModel.publicationDate(item)).filter(Boolean).sort().at(-1) || "";
     let status = row.status;
     if (!["error", "pending"].includes(status)) {
       status = immediate + daily > 0 ? "productive" : items.length ? "archive_only" : "quiet";
@@ -5933,6 +5976,9 @@ function getCompanyScopedHealthRows(rows, company) {
       ...row,
       scope: company.display_name,
       total: items.length,
+      actual_match_count: items.length,
+      valid_output_count: immediate + daily,
+      dated_valid_output_count: items.filter((item) => ["immediate", "daily"].includes(item.tier) && Boolean(periodModel.publicationDate(item))).length,
       immediate,
       daily,
       archive,
@@ -6004,20 +6050,26 @@ function renderSourceHealthPage() {
       const detail = row.error || row.note || healthStatusDescription(row.status);
       const operation = operationalStatus(row);
       const checkedLabel = row.last_checked
-        ? `检查 ${formatDateTime(row.last_checked)}`
-        : detail;
+        ? `${row.request_succeeded ? "请求成功" : "请求失败"} · 检查 ${formatDateTime(row.last_checked)}`
+        : "已配置，尚未验证";
+      const alternatives = (row.alternative_source_ids || [])
+        .map((id) => rows.find((source) => source.source_id === id))
+        .filter(Boolean)
+        .map((source) => source.source_label);
       return `<div class="health-table-row" role="row">
-        <span class="health-name"><strong>${escapeHtml(row.source_label)}</strong><small>监测范围：${escapeHtml(row.scope || row.company || "跨公司")}</small></span>
+        <span class="health-name"><strong>${escapeHtml(row.source_label)}</strong><small>监测范围：${escapeHtml(row.scope || row.company || "跨公司")}</small>${row.reported_entity ? `<small>发布主体：${escapeHtml(row.reported_entity)}</small>` : ""}${row.source_url ? `<a href="${escapeAttr(row.source_url)}" target="_blank" rel="noreferrer">来源入口 ↗</a>` : ""}</span>
         <span><span class="health-type">${escapeHtml(labelSignalType(row.signal_type))}</span><small>${escapeHtml(row.source_type)}</small></span>
-        <strong>${row.total}</strong>
-        <strong class="health-selected">${selected}</strong>
-        <span>${row.archive}</span>
-        <span>${row.selected_rate}%</span>
+        <strong>${row.raw_link_count ?? row.raw_candidate_count ?? 0}</strong>
+        <strong>${row.actual_match_count ?? row.total}</strong>
+        <strong class="health-selected">${row.valid_output_count ?? selected}</strong>
+        <span>${row.dated_valid_output_count ?? 0}</span>
         <span>${escapeHtml(row.last_published || "—")}</span>
         <span class="health-status-cell">
           <span class="health-state operational-${escapeAttr(operation)}">${escapeHtml(operationalStatusLabel(operation))}</span>
           <span class="health-state ${row.status}">${escapeHtml(healthStatusLabel(row.status))}</span>
           <small title="${escapeAttr(detail)}">${escapeHtml(checkedLabel)}</small>
+          ${row.error ? `<small title="${escapeAttr(row.error)}">${escapeHtml(row.error)}</small>` : ""}
+          ${alternatives.length ? `<small>其他入口：${escapeHtml(alternatives.join("、"))}</small>` : ""}
         </span>
       </div>`;
     })
@@ -6206,6 +6258,7 @@ function getFilteredItems(homeScope = fusionIsHomeContext(), dateMode = "period"
     .filter((item) => fusionMatchesRegion(item, homeScope))
     .filter((item) => state.category === "all" || getBusinessEventType(item) === state.category)
     .filter((item) => !homeScope || fusion.topic === "all" || fusionTopics(item).includes(fusion.topic))
+    .filter((item) => !homeScope || productMatches(item, fusion))
     .filter((item) => {
       if (!query) return true;
       const intelligenceText = Object.values(item.intelligence || {}).flat().join(" ");
@@ -6658,6 +6711,7 @@ els.pageButtons.forEach((button) => {
     }
     state.page = pageTarget;
     state.methodologyDetail = "";
+    if (pageTarget === "signals") renderSignals();
     renderPage();
     if (
       window.location.hash.startsWith("#metric-") ||

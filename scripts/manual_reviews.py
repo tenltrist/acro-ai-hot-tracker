@@ -42,14 +42,32 @@ def apply_review_metadata(payload, manual_map):
             or str(manual.get("model", "")).lower().startswith("codex")
             else "human_source_review"
         )
+        source_verified = (
+            (item.get("evidence") or {}).get("verification_status") == "source_backed"
+            or review.get("source_verification_status") == "verified_original"
+        )
+        material_level = review.get("material_level", "")
         update = {
             "title_zh": manual["title_zh"], "ai_summary": manual["summary"],
             "summary_method": "manual_ai",
             "summary_provider": provider, "summary_model": manual["model"],
-            "summary_quality": "source_backed", "summary_review": review,
+            "summary_quality": "source_backed" if source_verified else "source_limited",
+            "summary_review": {**review, **({"editorial_amendment": manual["editorial_amendment"]}
+                if manual.get("editorial_amendment") else {}), "source_verification_status": (
+                review["source_verification_status"]
+                if review.get("source_verification_status") in {"verified_original", "verified_primary_corroboration"}
+                else "source_backed" if source_verified else "needs_original_check"
+            ), "full_text_read": source_verified and material_level in {"full_text", "source_full_text"}},
         }
         if manual.get("summary_en"):
             update["ai_summary_en"] = manual["summary_en"]
+        if manual.get("event_start_at") and review.get("source_verification_status") == "verified_original":
+            update["event_start_at"] = manual["event_start_at"]
+            update["date_provenance"] = {
+                **(item.get("date_provenance") or {}),
+                "event_verified": True,
+                "event_source_url": manual.get("source_url", ""),
+            }
         item.update(update)
     reviewed = [item for item in payload.get("items", []) if item.get("summary_method") == "manual_ai"]
     pipeline = payload.setdefault("summary_pipeline", {})

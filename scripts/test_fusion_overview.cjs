@@ -18,7 +18,7 @@ async function verifyCounts(page) {
       trend: [...document.querySelectorAll('#trendLegend button')].reduce((sum, el) => sum + Number(el.textContent.match(/\d+$/)?.[0] || 0), 0),
       accounts: [...document.querySelectorAll('[data-fusion-account-row]')].map(el => ({ actual: Number(el.querySelector('.customer-priority-count strong').textContent), expected: fusionAccountRows(items).find(row => row.key === el.dataset.fusionAccountRow).items.length })),
       matrix: [...document.querySelectorAll('[data-matrix-company]')].map(el => ({ actual: Number(el.textContent), expected: items.filter(item => (item.matched_companies || []).includes(el.dataset.matrixCompany) && getBusinessEventType(item) === el.dataset.matrixCategory).length })),
-      regions: [...document.querySelectorAll('[data-fusion-region-detail]')].map(el => ({ actual: Number(el.querySelector('strong').textContent), expected: items.filter(item => fusionRegions(item).includes(el.dataset.fusionRegionDetail)).length })),
+      regions: [...document.querySelectorAll('[data-fusion-region-detail]')].map(el => ({ actual: Number(el.querySelector('strong').textContent), expected: el.dataset.fusionRegionDetail === 'all' ? items.length : items.filter(item => fusionRegions(item).includes(el.dataset.fusionRegionDetail)).length })),
     };
   });
   assert.deepEqual(result.metrics, result.expected);
@@ -78,6 +78,52 @@ async function verifyCounts(page) {
       assert.match(await page.locator('#customerPriorityScope').innerText(), /本期有动态.*232.*账户总库.*公开信息/);
       assert.equal(await page.locator('#topSignalList .signal-card').count(), 3);
       assert.ok(await page.locator('#topSignalList [data-company-logo]').count() > 0);
+      const topicContract = await page.evaluate(() => {
+        const items = getFilteredItems();
+        return [...document.querySelectorAll('#fusionTopicRows [data-fusion-topic]')].map(row => {
+          const topic = row.dataset.fusionTopic;
+          const matches = fusionTopicItems(items, topic);
+          const eventCount = fusionTopicEvents(matches).length;
+          const reportCount = fusionUniqueItems(matches).length;
+          return {
+            topic,
+            eventCount,
+            reportCount,
+            actualEvents: Number(row.querySelector('.fusion-topic-volume > strong, :scope > strong')?.textContent.match(/\d+/)?.[0] || 0),
+            actualReports: Number(row.querySelector('.fusion-topic-volume > em')?.textContent.match(/\d+/)?.[0] || reportCount),
+            hasImage: Boolean(row.querySelector('.fusion-topic-thumbnail')),
+          };
+        });
+      });
+      assert.ok(topicContract.length > 0);
+      for (const row of topicContract) {
+        assert.equal(row.actualEvents, row.eventCount);
+        assert.equal(row.actualReports, row.reportCount);
+        if (row.topic !== 'unidentified') assert.equal(row.hasImage, true);
+      }
+      assert.equal(await page.locator('.fusion-topic-more').count(), 0);
+      const topicImages = await page.locator('.fusion-topic-featured [data-fusion-topic] .fusion-topic-thumbnail').evaluateAll(images => images.map(img => img.getAttribute('src')));
+      assert.equal(topicImages.length, topicContract.filter(row => row.topic !== 'unidentified').length);
+      assert.equal(new Set(topicImages).size, topicImages.length);
+      const topicDefinitionImages = await page.evaluate(() => {
+        const filenames = Object.values(fusionTopicDefinitions).map(definition => definition.image);
+        const historicalTopics = [...new Set(fusionDashboardItems().flatMap(fusionTopics).filter(topic => topic !== 'unidentified'))];
+        return {
+          filenames,
+          missing: filenames.filter(filename => !window.AIHOT_TOPIC_IMAGES?.[filename]),
+          unmappedHistoricalTopics: historicalTopics.filter(topic => !fusionTopicDefinitions[topic]),
+        };
+      });
+      assert.equal(new Set(topicDefinitionImages.filenames).size, topicDefinitionImages.filenames.length);
+      assert.deepEqual(topicDefinitionImages.missing, []);
+      assert.deepEqual(topicDefinitionImages.unmappedHistoricalTopics, []);
+      const reviewedEventMerge = await page.evaluate(() => {
+        const base = { published: '2026-09-01', matched_company_ids: ['acro'], business_event_type: 'product_launch', summary_review: { event_key: 'test-reviewed-event' } };
+        const merged = fusionTopicEvents([{ ...base, id: 'topic-a', title: '抗体产品平台更新' }, { ...base, id: 'topic-b', title: '新的抗体研发试剂发布' }]);
+        const generic = fusionTopicEvents([{ ...base, id: 'generic-a', title: '抗体平台一', summary_review: { event_key: 'translation:shared' } }, { ...base, id: 'generic-b', title: '抗体平台二', summary_review: { event_key: 'translation:shared' } }]);
+        return { merged: merged.length, reports: merged[0]?.reports.length, generic: generic.length };
+      });
+      assert.deepEqual(reviewedEventMerge, { merged: 1, reports: 2, generic: 2 });
       await verifyCounts(page);
       await page.screenshot({ path: path.join(output, `home-${width}.png`) });
       await page.locator('#topSignalList').scrollIntoViewIfNeeded();
@@ -85,6 +131,18 @@ async function verifyCounts(page) {
       await page.screenshot({ path: path.join(output, `evidence-${width}.png`) });
       await page.locator('#topSignalList .signal-card').first().screenshot({ path: path.join(output, `news-card-${width}.png`) });
       await page.locator('.trend-panel').screenshot({ path: path.join(output, `trend-${width}.png`) });
+      const topicRow = page.locator('.fusion-topic-featured [data-fusion-topic]').first();
+      await topicRow.scrollIntoViewIfNeeded();
+      await page.locator('.fusion-topic-featured .fusion-topic-thumbnail').evaluateAll(images => Promise.all(images.map(img => img.decode())));
+      await page.locator('.fusion-topics-panel').screenshot({ path: path.join(output, `topics-${width}.png`) });
+      const topicEventCount = Number(await topicRow.locator('.fusion-topic-volume > strong').innerText());
+      const topicReportCount = Number((await topicRow.locator('.fusion-topic-volume > em').innerText()).match(/\d+/)?.[0]);
+      await topicRow.click();
+      assert.equal(await page.locator('#fusionEvidenceCards .fusion-topic-evidence-event').count(), topicEventCount);
+      assert.match(await page.locator('.fusion-evidence-heading > strong').innerText(), new RegExp(`^${topicEventCount} 个事件 · ${topicReportCount} 篇报道$`));
+      assert.ok(await page.locator('#fusionEvidenceCards a[target="_blank"]').count() > 0);
+      await page.screenshot({ path: path.join(output, `topic-evidence-${width}.png`) });
+      await page.locator('[data-fusion-back]').click();
       for (const [metric, countId] of [['critical', 'metricCandidates'], ['competitor', 'metricDaily'], ['customer', 'metricImmediate'], ['apac', 'metricArchive']]) {
         const count = Number(await page.locator(`#${countId}`).innerText());
         await page.locator(`[data-overview-metric="${metric}"]`).click();
@@ -126,7 +184,7 @@ async function verifyCounts(page) {
       await page.locator('[data-fusion-region][value="japan"]').check();
       await page.locator('[data-fusion-region][value="korea"]').check();
       await verifyCounts(page);
-      await page.locator('.region-family-breakdown:not([open]) > summary').first().click();
+      assert.equal(await page.locator('.region-family-breakdown').count(), 0);
       const region = page.locator('[data-fusion-region-detail]:not(:disabled):visible').first();
       const regionCount = Number(await region.locator('strong').innerText());
       await region.click();
@@ -154,6 +212,17 @@ async function verifyCounts(page) {
       assert.equal(await page.locator('#source-rules').isVisible(), true);
       await page.locator('.nav [data-page-target="company-sources"]').click();
       assert.match(await page.locator('#companyCoverageTitle').innerText(), /ACRO/);
+      await page.locator('#companyCoverageSelect').selectOption('interprotein');
+      const interproteinSource = page.locator('#companyCoverageGrid .coverage-source-row').filter({ hasText: 'interprotein_official_news_page' });
+      assert.ok(await interproteinSource.count() > 0);
+      for (const row of await interproteinSource.all()) {
+        assert.equal((await row.locator('.health-state').textContent()).trim(), '暂无内容');
+        const sourceText = await row.textContent();
+        assert.match(sourceText, /请求成功/);
+        assert.match(sourceText, /0\s*公司命中/);
+        assert.match(sourceText, /0\s*有效入选/);
+        assert.equal(await row.locator('a[href^="http://www.interprotein.com/"]').count(), 1);
+      }
       await page.locator('.nav [data-page-target="overview"]').click();
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
       assert.deepEqual(errors, []);
@@ -166,6 +235,9 @@ async function verifyCounts(page) {
     page.on('pageerror', e => errors.push(e.message));
     await page.goto(pathToFileURL(path.join(root, 'share/acro_ai_hot_tracker_dashboard.html')).href);
     await verifyCounts(page);
+    await page.locator('.fusion-topics-panel').scrollIntoViewIfNeeded();
+    await page.locator('.fusion-topic-featured .fusion-topic-thumbnail').evaluateAll(images => Promise.all(images.map(img => { img.loading = 'eager'; return img.decode(); })));
+    assert.ok(await page.locator('.fusion-topic-featured .fusion-topic-thumbnail').evaluateAll(images => images.length > 0 && images.every(img => img.naturalWidth > 0)));
     await page.locator('.nav [data-period-entry="week"]').click();
     assert.equal(await page.locator('#periodOverview').isVisible(), true);
     assert.deepEqual(errors, []);

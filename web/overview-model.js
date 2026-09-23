@@ -46,9 +46,12 @@
   }
   function publicationDate(item) {
     // Legacy event_start_at was copied from item.published, not verified as an event date.
-    if (item.signal_type === "event" && !item.date_provenance?.published) return "";
-    if ((item.evidence?.source_types || []).some(type => ["sitemap_urls", "clinical_trials"].includes(type)) && !item.date_provenance?.published) return "";
-    return date(item.published_at || item.published);
+    const verified = item.date_provenance?.published ||
+      (item.publication_date_status === "known" && Boolean(item.publication_date_evidence));
+    if (item.signal_type === "event" && !verified) return "";
+    if ((item.evidence?.source_types || []).some(type => ["sitemap_urls", "clinical_trials"].includes(type)) && !verified) return "";
+    const published = date(item.published_at || item.published);
+    return published === "1970-01-01" ? "" : published;
   }
   function eventDate(item) {
     return item.date_provenance?.event_verified ? date(item.event_start_at) : "";

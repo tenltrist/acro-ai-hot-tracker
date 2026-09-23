@@ -1,7 +1,7 @@
 const periodModel = window.AIHOT_OVERVIEW_MODEL;
 const periodView = {
   level: "main", mainDays: 30,
-  mode: "week", anchor: "", regions: [], category: "all", topic: "all", company: "all", signalType: "all", relevance: "all",
+  mode: "week", anchor: "", regions: [], products: [], productDirection: "all", category: "all", topic: "all", company: "all", signalType: "all", relevance: "all",
   role: "all", query: "", recordKind: "all", companyTab: "competitor", route: null, limit: 40,
   events: [], payload: null, archive: null, scroll: 0,
 };
@@ -62,7 +62,8 @@ function boardSelectionBreakdown(items) {
 }
 
 function boardItems(mode = "period", recordKind = periodView.recordKind) {
-  const items = periodModel.select(periodView.events, boardScope(), boardRange(), periodView.level === "records" && mode === "period" ? "history" : mode);
+  const items = periodModel.select(periodView.events, boardScope(), boardRange(), periodView.level === "records" && mode === "period" ? "history" : mode)
+    .filter(event => event.reports.some(item => productMatches(item, periodView)));
   return periodView.level === "records" && ["selected", "other"].includes(recordKind) ? items.filter(event => boardRecordKind(event) === recordKind) : items;
 }
 
@@ -109,12 +110,9 @@ function boardBars(items, field, labeler, limit = 9) {
 }
 
 function boardRegionBars(items) {
-  const model = window.AIHOT_REGION_MODEL;
-  const rows = model.families.map(family => ({ ...family, count: items.filter(event => event.regions.some(id => family.members.includes(id))).length })).sort((a, b) => b.count - a.count);
-  const max = Math.max(1, ...rows.map(row => row.count));
-  const row = (id, label, count, field = "regions") => `<button type="button" class="board-bar-row" data-board-field="${field}" data-board-value="${id}" ${count ? "" : "disabled"}><span>${escapeHtml(label)}</span><i><b style="width:${count / max * 100}%"></b></i><strong>${count}</strong></button>`;
-  const detail = id => row(id, boardRegionLabel(id), items.filter(event => event.regions.includes(id)).length);
-  return rows.filter(family => family.count).map(family => row(family.id, family.label, family.count, "regionGroup") + (family.id === "apac" ? `<details class="board-region-breakdown"><summary>日本等地区明细</summary>${family.members.map(detail).join("")}</details>` : "")).join("") + `<details class="board-region-breakdown"><summary>范围与未明确地区</summary>${[...model.scopeIds, "nonregional", "unknown"].map(detail).join("")}</details>`;
+  const rows = [{ id: 'all', label: '总计', count: items.length }, ...window.AIHOT_REGION_MODEL.businessDefinitions.map(row => ({ ...row, count: items.filter(event => event.regions.includes(row.id)).length }))];
+  const max = Math.max(1, items.length);
+  return rows.map(row => `<button type="button" class="board-bar-row" ${row.id === "all" ? 'data-board-list="all"' : `data-board-field="regions" data-board-value="${row.id}"`}><span>${row.label}</span><i><b style="width:${row.count / max * 100}%"></b></i><strong>${row.count}</strong></button>`).join("");
 }
 
 function renderBoardTrend(items) {
@@ -150,6 +148,7 @@ function boardFilterSummary(includeRange = true) {
   if (periodView.regions.length) values.push(periodView.regions.map(boardRegionLabel).join("、"));
   if (periodView.category !== "all") values.push(labelBusinessEvent(periodView.category));
   if (periodView.topic !== "all") values.push(boardTopicLabel(periodView.topic));
+  if (productScopeText(periodView)) values.push(productScopeText(periodView));
   if (periodView.role !== "all") values.push(labelRole(periodView.role));
   if (periodView.company !== "all") values.push(boardCompanyName(periodView.company));
   if (periodView.query) values.push(`搜索：${periodView.query}`);
@@ -159,6 +158,7 @@ function boardFilterSummary(includeRange = true) {
 }
 
 function syncBoardControls() {
+  syncProductControls("board", periodView);
   const root = document.querySelector("#periodControls");
   root.dataset.level = periodView.level;
   document.querySelector("#boardRecordModes").hidden = periodView.level !== "records";
@@ -216,7 +216,7 @@ function hydrateBoardFilters() {
   const categories = Object.keys(businessEventDefinitions);
   document.querySelector("#boardCategory").innerHTML = '<option value="all">全部商业事件</option>' + categories.map(value => `<option value="${value}">${escapeHtml(labelBusinessEvent(value))}</option>`).join("");
   const topics = [...new Set(periodView.events.flatMap(event => event.topics))].sort();
-  document.querySelector("#boardTopic").innerHTML = '<option value="all">全部产品 / 技术主题</option>' + topics.map(value => `<option value="${escapeAttr(value)}">${escapeHtml(boardTopicLabel(value))}</option>`).join("");
+  document.querySelector("#boardTopic").innerHTML = '<option value="all">全部技术 / 研究主题</option>' + topics.map(value => `<option value="${escapeAttr(value)}">${escapeHtml(boardTopicLabel(value))}</option>`).join("");
 }
 
 function renderPeriodOverview() {
@@ -263,6 +263,7 @@ function renderPeriodOverview() {
   document.querySelector("#boardTrend").innerHTML = renderBoardTrend(items);
   document.querySelector("#boardCategoryBars").innerHTML = boardBars(items, "category", labelBusinessEvent);
   document.querySelector("#boardTopicBars").innerHTML = boardBars(items, "topics", boardTopicLabel, 6);
+  document.querySelector("#boardProductCategoriesRows").innerHTML = productRowsMarkup(fusionUniqueItems(items.flatMap(event => event.reports)), "board");
   document.querySelector("#boardRegionBars").innerHTML = boardRegionBars(items);
   document.querySelector("#boardTimeline").innerHTML = boardEventRows(items, 6);
   document.querySelector("#boardProductRows").innerHTML = boardEventRows(products, 4);
@@ -291,17 +292,19 @@ function boardRouteLabel(route) {
   if (route.company && route.field === "category") return `${compactCompanyName(boardCompany(route.company))} · ${labelBusinessEvent(route.value)}`;
   if (route.type === "company") return compactCompanyName(boardCompany(route.value) || { id: route.value });
   if (route.type === "event") return "事件与证据";
+  if (route.product) return `${productLabel(route.product)}${route.productDirection && route.productDirection !== "all" ? ` / ${productModel.directions[route.productDirection]}` : ""}`;
   if (route.field === "category") return labelBusinessEvent(route.value);
   if (route.field === "topics") return boardTopicLabel(route.value);
   if (route.field === "published") return `${route.value} 发布记录`;
   if (route.field === "regions") return boardRegionLabel(route.value);
   if (route.field === "regionGroup") return window.AIHOT_REGION_MODEL.families.find(row => row.id === route.value)?.label || route.value;
   if (route.field === "roles") return labelRole(route.value);
-  return { all: "全部事件", critical: "重大信号", apac: "亚太地区动态", companies: "涉及公司", products: "产品与技术动态", partnerships: "合作与交易动态", unknown: "日期待核对" }[route.value] || "事件明细";
+  return { all: "全部事件", critical: "重大信号", apac: "地区已识别", companies: "涉及公司", products: "产品与技术动态", partnerships: "合作与交易动态", unknown: "日期待核对" }[route.value] || "事件明细";
 }
 
 function boardRouteItems(route, scoped) {
   let items = route.value === "unknown" ? boardItems("unknown") : scoped;
+  if (route.product) items = items.filter(event => event.reports.some(item => productModel.matches(productAnalysis(item), [route.product], route.productDirection || "all") && productMatches(item, periodView)));
   if (route.admissionReason) items = items.filter(event => boardAdmissionReason(event) === route.admissionReason);
   if (route.value === "admission-shadow") items = items.filter(event => {
     const reason = boardShadowReason(event);
@@ -323,7 +326,7 @@ function boardRouteItems(route, scoped) {
   if (route.value === "products") return items.filter(event => ["product_platform", "target_therapy"].includes(event.category));
   if (route.value === "partnerships") return items.filter(event => event.category === "partnership_deal");
   if (route.value === "critical") return items.filter(boardIsCritical);
-  if (route.value === "apac") return items.filter(event => event.regions.some(region => overviewApacRegions.has(region)));
+  if (route.value === "apac") return items.filter(event => event.regions.some(region => overviewLocatedRegions.has(region)));
   return items;
 }
 
@@ -350,6 +353,7 @@ function renderBoardDetail(scoped) {
         ${raw.title_zh && periodView.language !== "en" ? `<details class="board-original"><summary>原文标题</summary><p>${escapeHtml(raw.title)}</p></details>` : ""}
         <div class="board-company-links">${event.companyIds.map(id => `<button type="button" data-board-company="${escapeAttr(id)}" class="company-name-with-logo">${companyLogoMarkup(boardCompany(id))}${companyNameMarkup(boardCompany(id))}</button>`).join("") || "尚未命中监测公司"}</div>
         <dl class="board-facts">${periodView.level === "records" ? `<div><dt>保存状态</dt><dd>已留存</dd></div><div><dt>筛选结果</dt><dd>${boardRecordStatus(event)}</dd></div>` : ""}<div><dt>新闻发布时间</dt><dd>${event.published || "未确认"}</dd></div><div><dt>事件发生时间</dt><dd>${event.eventDate || "未确认，不以发布日期替代"}</dd></div><div><dt>产品 / 技术主题</dt><dd>${escapeHtml(event.topics.map(boardTopicLabel).join("、"))}</dd></div><div><dt>地区线索</dt><dd>${escapeHtml(event.regions.map(boardRegionLabel).join("、"))}<small>${fusion.regionMode === "reviewed" ? "标题 / 摘录的明确线索与已核对原文补证" : "仅标题 / 来源摘录的明确线索"}；不以总部或媒体所在地推定，不等于已在当地发生。</small></dd></div></dl>
+        <section class="product-detail-band"><h3>产品分类与观察方向</h3>${event.reports.map(productEvidenceMarkup).join("")}</section>
         ${event.reports.length === 1 ? fusionRegionMarkup(raw) : `<details class="board-original"><summary>各报道的地区依据 · ${event.reports.length} 条</summary>${event.reports.map(report => `<p>${escapeHtml(report.title)}</p>${fusionRegionMarkup(report)}`).join("")}</details>`}
         ${!event.published && sourceDate ? `<p class="board-notice">来源日期字段为 ${sourceDate}：${sourceDateMeaning}；不计入周期统计。</p>` : ""}
         ${periodView.level === "records" ? boardAdmissionDetail(event) : ""}
@@ -370,6 +374,7 @@ function renderBoardDetail(scoped) {
       ${route.value === "admission-shadow" ? boardShadowPanel(scoped, route) : ""}
       ${route.value === "admission-audit" ? boardAuditPanel(scoped, route) : ""}
       ${company ? `<div class="board-company-history"><div class="segmented-control"><button type="button" data-board-company-scope="period" class="${!route.history ? "active" : ""}">本期记录</button><button type="button" data-board-company-scope="history" class="${route.history ? "active" : ""}">已保留历史</button></div><button type="button" class="text-button" data-board-source-profile="${escapeAttr(company.id)}">数据源档案 →</button></div>` : ""}
+      ${company ? productProfileMarkup(fusionUniqueItems(items.flatMap(event => event.reports)), "board") : ""}
       ${route.value === "companies" ? `<div class="board-company-directory">${[...new Set(items.flatMap(event => event.companyIds))].map(id => `<button type="button" data-board-company="${escapeAttr(id)}" class="company-name-with-logo">${companyLogoMarkup(boardCompany(id))}${companyNameMarkup(boardCompany(id))}<span>${items.filter(event => event.companyIds.includes(id)).length} 条</span></button>`).join("")}</div>` : ""}
       ${route.value === "admission-audit" ? boardAuditList(items) : boardEventRows(items, periodView.limit)}${route.value !== "admission-audit" && items.length > periodView.limit ? `<button type="button" class="text-button board-load-more" data-board-more>再显示 ${Math.min(40, items.length - periodView.limit)} 条（已显示 ${periodView.limit} / ${items.length}）</button>` : ""}`;
   }
@@ -382,6 +387,8 @@ function writeBoardUrl(mode = "push") {
   if (periodView.level === "records" && ["selected", "other"].includes(periodView.recordKind)) query.set("records", periodView.recordKind);
   for (const key of ["category", "topic", "company", "role", "query", "signalType", "relevance"]) if (periodView[key] && periodView[key] !== "all") query.set(key, periodView[key]);
   if (periodView.regions.length) query.set("regions", periodView.regions.join(","));
+  if (periodView.products.length) query.set("products", periodView.products.join(","));
+  if (periodView.productDirection !== "all") query.set("productDirection", periodView.productDirection);
   if (periodView.route) query.set("view", JSON.stringify(periodView.route));
   const hash = `#${periodView.level === "records" ? "records" : periodView.level === "main" ? "home" : "board"}?${query}`;
   if (location.hash === hash) return;
@@ -398,6 +405,8 @@ function restoreBoardUrl() {
   periodView.language = ["en", "zh"].includes(params.get("lang")) ? params.get("lang") : state.translationLanguage;
   for (const key of ["category", "topic", "company", "role", "signalType", "relevance"]) periodView[key] = params.get(key) || "all";
   periodView.query = params.get("query") || "";
+  periodView.products = (params.get("products") || "").split(",").filter(id => id === "unidentified" || productModel.definitions.some(row => row.id === id));
+  periodView.productDirection = Object.hasOwn(productModel.directions, params.get("productDirection")) ? params.get("productDirection") : "all";
   periodView.recordKind = params.get("records") === "archive" ? "other" : ["selected", "other"].includes(params.get("records")) ? params.get("records") : "all";
   periodView.regions = (params.get("regions") || "").split(",").filter(id => boardRegions.some(([value]) => value === id));
   try { periodView.route = JSON.parse(params.get("view") || "null"); } catch { periodView.route = null; }
@@ -467,13 +476,13 @@ function renderMainOverview(items) {
   const competitorItems = items.filter(event => event.roles.includes("competitor"));
   const customerItems = items.filter(event => event.roles.includes("customer"));
   const partnerItems = items.filter(event => event.category === "partnership_deal");
-  const apacItems = items.filter(event => event.regions.some(region => overviewApacRegions.has(region)));
+  const apacItems = items.filter(event => event.regions.some(region => overviewLocatedRegions.has(region)));
   const critical = items.filter(boardIsCritical);
   const metrics = [
     ["critical", "重大信号", critical.length, "沿用入选且 ACRO 高相关规则", ""],
     ["competitor", "竞品动态", competitorItems.length, "命中竞品池的事件记录", "accent"],
     ["customer", "账户动态信号", customerItems.length, "监测账户，不代表已确认客户", "warn"],
-    ["apac", "亚太地区动态", apacItems.length, "东亚、东南亚、南亚、大洋洲及明确亚太", "regional"],
+    ["apac", "地区已识别", apacItems.length, "原文有明确国家或地点证据", "regional"],
   ];
   document.querySelector("#mainMetrics").innerHTML = metrics.map(([key, title, count, note, style]) => `<button type="button" class="metric executive main-metric ${style}" ${["competitor", "customer"].includes(key) ? `data-board-field="roles" data-board-value="${key}"` : `data-board-list="${key}"`} data-main-count="${key}"><span>${title}</span><strong>${count}</strong><small>${note}</small><i aria-hidden="true">→</i></button>`).join("");
   document.querySelector("#mainBrief").textContent = `${boardRangeText()} · ${items.length} 条事件记录 · ${companyIds.size} 家公司`;
@@ -546,7 +555,7 @@ function initPeriodOverview() {
     if (button.hasAttribute("data-board-shift")) periodView.anchor = periodModel.shift(boardRange(), Number(button.dataset.boardShift));
     if (button.hasAttribute("data-board-current")) periodView.anchor = boardToday();
     if (button.hasAttribute("data-board-regions-all")) periodView.regions = [];
-    if (button.hasAttribute("data-board-clear")) Object.assign(periodView, { regions: [], category: "all", topic: "all", company: "all", role: "all", query: "", relevance: "all", signalType: "all" });
+    if (button.hasAttribute("data-board-clear")) Object.assign(periodView, { regions: [], products: [], productDirection: "all", category: "all", topic: "all", company: "all", role: "all", query: "", relevance: "all", signalType: "all" });
     periodView.route = periodView.level === "records" ? { type: "list", value: "all", history: true } : null; state.page = periodView.route ? "period-detail" : boardRootPage(); writeBoardUrl(); renderPeriodOverview(); renderPage();
   });
   document.querySelector("#periodControls").addEventListener("change", event => {
@@ -557,7 +566,7 @@ function initPeriodOverview() {
     } else if (target.id === "boardMonthDate") {
       if (!periodModel.date(`${target.value}-01`)) return syncBoardControls();
       periodView.anchor = `${target.value}-01`;
-    } else if (target.hasAttribute("data-board-region") || target.hasAttribute("data-board-region-parent")) {
+    } else if (target.hasAttribute("data-board-region") || target.hasAttribute("data-board-region-total")) {
       fusionToggleRegionFamily("board", target);
       periodView.regions = [...document.querySelectorAll("[data-board-region]:checked")].map(input => input.value);
     } else {

@@ -187,7 +187,13 @@ def main() -> int:
         if item.get("tier") in {"daily", "immediate"} and item.get("acro_relevance", {}).get("level") == "low":
             errors.append(f"{item_id}: low-relevance item entered the daily feed")
         if item.get("event_start_at") and item.get("published_at"):
-            errors.append(f"{item_id}: event date is also marked as publication date")
+            event_provenance = item.get("date_provenance") or {}
+            if (item["event_start_at"] == item["published_at"]
+                    or not event_provenance.get("event_verified")
+                    or not event_provenance.get("event_source_url")
+                    or item.get("publication_date_status") != "known"
+                    or not item.get("publication_date_evidence")):
+                errors.append(f"{item_id}: publication and event dates are not independently evidenced")
         evidence = item.get("evidence", {})
         if evidence.get("kind") not in {"primary", "secondary", "index"}:
             errors.append(f"{item_id}: missing or invalid evidence kind")
@@ -247,13 +253,17 @@ def main() -> int:
             if unknown:
                 errors.append(f"coverage profile {profile.get('company_id')} has unknown sources {sorted(unknown)}")
 
+    checked_priority_ids = {
+        row.get("company_id") for row in health_rows if row.get("last_checked")
+    }
     for company_id in priority_customer_ids:
-        if not any(
+        has_record = any(
             item.get("company_id") == company_id
             or company_id in item.get("matched_company_ids", [])
             for item in items
-        ):
-            errors.append(f"{company_id}: priority account has no traceable monitoring records")
+        )
+        if not has_record and company_id not in checked_priority_ids:
+            errors.append(f"{company_id}: priority account has neither records nor a checked source")
 
     timelines = payload.get("company_timelines", [])
     timeline_company_ids = {timeline.get("company_id") for timeline in timelines}

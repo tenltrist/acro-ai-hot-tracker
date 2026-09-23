@@ -82,6 +82,45 @@ class ManualReviewTests(unittest.TestCase):
         apply_review_metadata({"items": [item]}, {record["id"]: record})
         self.assertEqual(item, {"id": record["id"], "summary_method": "rule"})
 
+    def test_editorial_review_does_not_claim_full_text_or_verified_source(self):
+        manual = {"id": "limited", "review_status": "verified", "title_zh": "中文标题",
+                  "summary": "依据摘录写成的具体摘要", "model": "Codex",
+                  "review": {"kind": "codex_editorial_translation", "material_level": "title_or_excerpt",
+                             "reviewed_at": "2026-09-15", "evidence": [{"url": "https://example.org/article"}]}}
+        item = {"id": "limited", "evidence": {"verification_status": "needs_original_check"}}
+        apply_review_metadata({"items": [item]}, {"limited": manual})
+        self.assertEqual(item["summary_quality"], "source_limited")
+        self.assertEqual(item["summary_review"]["source_verification_status"], "needs_original_check")
+        self.assertFalse(item["summary_review"]["full_text_read"])
+
+    def test_primary_corroboration_is_not_exact_article_verification(self):
+        manual = {"id": "media", "review_status": "verified", "title_zh": "具体标题",
+                  "summary": "以官网旁证核对媒体事件。", "model": "Codex",
+                  "review": {"kind": "codex_editorial_translation", "material_level": "public_original_excerpt",
+                             "reviewed_at": "2026-09-15",
+                             "source_verification_status": "verified_primary_corroboration",
+                             "evidence": [{"url": "https://example.org/official"}]}}
+        item = {"id": "media", "evidence": {"verification_status": "needs_original_check"}}
+        apply_review_metadata({"items": [item]}, {"media": manual})
+        self.assertEqual(item["summary_quality"], "source_limited")
+        self.assertEqual(item["summary_review"]["source_verification_status"], "verified_primary_corroboration")
+        self.assertFalse(item["summary_review"]["full_text_read"])
+
+    def test_verified_event_date_does_not_replace_publication_date(self):
+        manual = {"id": "official-event", "review_status": "verified", "title_zh": "会议公告",
+                  "summary": "官方公告发布会议场次安排。", "model": "Codex",
+                  "source_url": "https://example.org/news/session", "event_start_at": "2026-07-03",
+                  "review": {"kind": "codex_editorial_translation",
+                             "material_level": "source_official_announcement",
+                             "source_verification_status": "verified_original",
+                             "reviewed_at": "2026-09-15",
+                             "evidence": [{"url": "https://example.org/news/session"}]}}
+        item = {"id": "official-event", "published_at": "2026-06-17", "event_start_at": ""}
+        apply_review_metadata({"items": [item]}, {"official-event": manual})
+        self.assertEqual(item["published_at"], "2026-06-17")
+        self.assertEqual(item["event_start_at"], "2026-07-03")
+        self.assertTrue(item["date_provenance"]["event_verified"])
+
 
 class FollowupReviewTests(ManualReviewTests):
     batch_file = "2026-09-09-followup.json"

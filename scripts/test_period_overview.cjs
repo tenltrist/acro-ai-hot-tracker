@@ -14,6 +14,9 @@ function unitTests() {
   assert.equal(model.period('week', '2026-09-06').start, '2026-08-31');
   assert.equal(model.period('month', '2024-02-15').end, '2024-02-29');
   assert.equal(model.shift(model.period('month', '2026-01-15'), -1), '2025-12-01');
+  assert.equal(model.publicationDate({ signal_type: 'event', published: '2026-06-17', published_at: '2026-06-17', publication_date_status: 'known', publication_date_evidence: 'verified_article_date_line' }), '2026-06-17');
+  assert.equal(model.publicationDate({ signal_type: 'event', published: '2026-10-20', event_start_at: '2026-10-20' }), '');
+  assert.equal(model.publicationDate({ signal_type: 'news', published_at: '1970-01-01' }), '');
   const companies = [{ id: 'a', business_role: 'competitor' }, { id: 'b', business_role: 'customer' }];
   const base = { title: 'Company A launches a specific new antibody platform', published: '2026-09-02', company_id: 'a', url: 'https://example.org/story', source_label: 'Official', signal_type: 'news', summary: 'The original source gives specific product facts.', intelligence: { product_needs: ['GMP protein'], targets: ['HER2'] } };
   const records = [
@@ -96,7 +99,7 @@ async function assertLayout(page, width) {
       await page.waitForFunction(() => document.querySelector('#boardMetrics strong'));
       await page.waitForFunction(() => !document.querySelector('#refreshButton').classList.contains('is-loading'));
       await assertSynced(page);
-      await page.locator('[data-board-mode="month"]').click();
+      await page.locator('.nav [data-period-entry="month"]').click();
       const monthly = await assertSynced(page);
       await assertLayout(page, width);
       await page.screenshot({ path: path.join(output, `month-${width}.png`) });
@@ -112,7 +115,7 @@ async function assertLayout(page, width) {
       assert.ok(Number(firstCount) > 0);
       await page.locator('#periodDetail .board-event-link').first().click();
       assert.ok(await page.locator('.board-evidence-links a').count() > 0);
-      assert.match(await page.locator('#periodDetail .board-breadcrumbs').innerText(), /总看板.*月看板.*事件与证据/s);
+      assert.match(await page.locator('#periodDetail .board-breadcrumbs').innerText(), /(?:总)?看板.*月看板.*事件与证据/s);
       const detailUrl = page.url();
       await assertLayout(page, width);
       await page.screenshot({ path: path.join(output, `evidence-${width}.png`) });
@@ -122,9 +125,9 @@ async function assertLayout(page, width) {
       if (!await page.locator('#boardFilterPanel').evaluate(el => el.open)) await page.locator('#boardFilterPanel > summary').click();
       await page.locator('#boardRegionsSummary').click();
       await page.locator('[data-board-region][value="japan"]').check();
-      await page.locator('[data-board-region][value="europe"]').check();
+      await page.locator('[data-board-region][value="other"]').check();
       await assertSynced(page);
-      assert.equal(await page.evaluate(() => boardItems().every(event => event.regions.includes('japan') || event.regions.includes('europe'))), true);
+      assert.equal(await page.evaluate(() => boardItems().every(event => event.regions.includes('japan') || event.regions.includes('other'))), true);
       await page.locator('#boardRegionsSummary').click();
       const category = await page.evaluate(() => boardItems()[0]?.category);
       if (category) { await page.locator('#boardCategory').selectOption(category); await assertSynced(page); }
@@ -133,7 +136,7 @@ async function assertLayout(page, width) {
       await page.locator('[data-board-clear]').click();
       await page.locator('#boardCompany').selectOption('takeda_pharma');
       await assertSynced(page);
-      assert.match(await page.locator('#companyFilter').inputValue(), /Takeda/);
+      assert.equal(await page.locator('#boardCompany').inputValue(), 'takeda_pharma');
       assert.equal(await page.evaluate(() => boardItems().every(event => event.companyIds.includes('takeda_pharma'))), true);
       await page.locator('[data-board-clear]').click();
       assert.equal(await page.locator('#companyFilter').inputValue(), 'all');
@@ -208,12 +211,15 @@ async function assertLayout(page, width) {
       await live.goto(`http://127.0.0.1:${server.address().port}/web/index.html`);
       await live.locator('.nav [data-period-entry="week"]').click();
       await live.waitForFunction(() => document.querySelector('#boardMetrics strong') && !document.querySelector('#refreshButton').classList.contains('is-loading'));
-      assert.equal(await live.evaluate(() => state.eventArchive.items.length), JSON.parse(fs.readFileSync(path.join(root, 'data/event_archive.json'))).items.length);
+      assert.equal(await live.evaluate(() => fusionDashboardItems().length), JSON.parse(fs.readFileSync(path.join(root, 'data/event_archive.json'))).items.length);
       await assertSynced(live);
-      const before = await snapshot(live);
       await live.locator('.nav [data-page-target="signals"]').click();
-      assert.equal(Number(await live.locator('[data-board-result-count]').getAttribute('data-board-result-count')), before.total);
-      await live.locator('[data-board-back]').click();
+      assert.equal(await live.locator('[data-page="signals"]').isVisible(), true);
+      assert.match(
+        await live.locator('#detailSignalCount').innerText(),
+        new RegExp(`^${await live.evaluate(() => getFilteredItems().length)} 条结果`),
+      );
+      await live.locator('.nav [data-period-entry="week"]').click();
       for (const target of ['companies', 'timeline', 'japan-customers', 'relationships', 'sources', 'company-sources', 'source-health', 'methodology', 'pipeline']) {
         await live.locator('.nav details').evaluateAll(nodes => nodes.forEach(node => { node.open = true; }));
         const button = live.locator(`.nav [data-page-target="${target}"]`);
@@ -221,16 +227,14 @@ async function assertLayout(page, width) {
       }
       await live.locator('.nav [data-page-target="overview"]').click();
       await live.locator('.nav [data-period-entry="week"]').click();
-      await live.route(/\/data\/event_archive\.json(?:\?|$)/, route => route.abort());
-      await live.locator('[data-board-refresh]:visible').click();
-      await live.waitForFunction(() => state.archiveSyncFailed && !document.querySelector('#refreshButton').classList.contains('is-loading'));
-      assert.match(await live.locator('#boardCoverage').innerText(), /历史文件同步失败/);
+      const retainedIds = await live.evaluate(() => state.payload.items.map(item => item.id));
       await live.route(/\/data\/latest_run\.json(?:\?|$)/, route => route.abort());
       await live.locator('[data-board-refresh]:visible').click();
-      await live.waitForFunction(() => state.payloadSyncFailed && !document.querySelector('#refreshButton').classList.contains('is-loading'));
-      assert.match(await live.locator('#boardSnapshot').innerText(), /同步失败/);
+      await live.waitForFunction(() => !document.querySelector('#refreshButton').classList.contains('is-loading'));
+      assert.deepEqual(await live.evaluate(() => state.payload.items.map(item => item.id)), retainedIds);
+      assert.match(await live.locator('#updatedAt').innerText(), /同步失败/);
       assert.deepEqual(errors, []);
-      console.log('PASS HTTP archive loading, shared sidebar list, existing pages and honest sync failure fallback');
+      console.log('PASS HTTP embedded archive, shared sidebar list, existing pages and honest sync failure fallback');
       await live.close();
     } finally { await new Promise(resolve => server.close(resolve)); }
   } finally { await browser.close(); }

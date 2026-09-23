@@ -7,6 +7,21 @@ from event_archive import update_archive
 
 
 class ArchiveTests(unittest.TestCase):
+    def test_retained_item_rechecks_current_source_noise_terms(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "events.json"
+            first = {"generated_at": "2026-09-08T00:00:00", "items": [
+                {"id": "stock", "title": "Company approval and dilution analysis", "tier": "daily", "source_id": "stock_feed"},
+                {"id": "product", "title": "Company launches a new assay", "tier": "daily", "source_id": "stock_feed"},
+            ]}
+            update_archive(path, first)
+            refreshed = update_archive(path, {"generated_at": "2026-09-09T00:00:00", "items": []},
+                                     {"stock_feed": {"exclude_text_terms": ["dilution"]}})
+            by_id = {item["id"]: item for item in refreshed["items"]}
+            self.assertEqual(by_id["stock"]["tier"], "archive")
+            self.assertIn("dilution", by_id["stock"]["selection_reason"])
+            self.assertEqual(by_id["product"]["tier"], "daily")
+
     def test_retention_and_allowlist(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "events.json"

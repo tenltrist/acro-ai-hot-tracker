@@ -53,6 +53,7 @@ class Candidate:
     title: str
     url: str
     published: str = ""
+    publication_date_evidence: str = ""
     summary: str = ""
     score: int = 0
     tier: str = "archive"
@@ -96,10 +97,27 @@ class LinkExtractor(HTMLParser):
         self._active_title_attr = ""
         self._inside_heading = False
         self._inside_time = False
+        self._dl_date = ""
+        self._dl_date_parts: list[str] = []
+        self._inside_dl_date = False
+        self._active_associated_date = ""
+        self._li_date = ""
+        self._li_date_parts: list[str] = []
+        self._inside_li_date = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         lowered = tag.lower()
         attr_map = {k.lower(): v or "" for k, v in attrs}
+        if lowered == "dl":
+            self._dl_date = ""
+        elif lowered == "dt" and "rss_date" in attr_map.get("class", "").split():
+            self._inside_dl_date = True
+            self._dl_date_parts = []
+        elif lowered == "li":
+            self._li_date = ""
+        elif lowered == "p" and "newsDate" in attr_map.get("class", "").split():
+            self._inside_li_date = True
+            self._li_date_parts = []
         if lowered == "a":
             href = attr_map.get("href")
             if href:
@@ -109,6 +127,7 @@ class LinkExtractor(HTMLParser):
                 self._active_time = []
                 self._active_image_alt = []
                 self._active_title_attr = attr_map.get("title", "")
+                self._active_associated_date = self._li_date or self._dl_date
                 self._inside_heading = False
                 self._inside_time = False
             return
@@ -127,6 +146,10 @@ class LinkExtractor(HTMLParser):
                 self._active_image_alt.append(alt)
 
     def handle_data(self, data: str) -> None:
+        if self._inside_dl_date:
+            self._dl_date_parts.append(data)
+        if self._inside_li_date:
+            self._li_date_parts.append(data)
         if self._active_href:
             self._active_text.append(data)
             if self._inside_heading:
@@ -136,7 +159,19 @@ class LinkExtractor(HTMLParser):
 
     def handle_endtag(self, tag: str) -> None:
         lowered = tag.lower()
-        if lowered in {"h1", "h2", "h3", "h4"}:
+        if lowered == "dt" and self._inside_dl_date:
+            self._dl_date = clean_text(" ".join(self._dl_date_parts))
+            self._inside_dl_date = False
+            self._dl_date_parts = []
+        elif lowered == "p" and self._inside_li_date:
+            self._li_date = clean_text(" ".join(self._li_date_parts))
+            self._inside_li_date = False
+            self._li_date_parts = []
+        elif lowered == "dl":
+            self._dl_date = ""
+        elif lowered == "li":
+            self._li_date = ""
+        elif lowered in {"h1", "h2", "h3", "h4"}:
             self._inside_heading = False
         elif lowered == "time":
             self._inside_time = False
@@ -150,6 +185,7 @@ class LinkExtractor(HTMLParser):
                     "time": clean_text(" ".join(self._active_time)),
                     "image_alt": clean_text(" ".join(self._active_image_alt)),
                     "title_attr": clean_text(self._active_title_attr),
+                    "associated_date": self._active_associated_date,
                 }
             )
             self._active_href = None
@@ -158,6 +194,223 @@ class LinkExtractor(HTMLParser):
             self._active_time = []
             self._active_image_alt = []
             self._active_title_attr = ""
+            self._active_associated_date = ""
+
+
+class ArticleDateExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.meta_dates: list[str] = []
+        self.time_dates: list[str] = []
+        self.time_text_dates: list[str] = []
+        self.json_ld: list[str] = []
+        self._inside_json_ld = False
+        self._script_parts: list[str] = []
+        self._inside_published_time = False
+        self._time_parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = {name.lower(): value or "" for name, value in attrs}
+        if tag == "meta" and values.get("property", "").lower() in {"article:published_time", "article:published"}:
+            self.meta_dates.append(values.get("content", ""))
+        elif tag == "time" and values.get("datetime"):
+            marker = " ".join(values.get(key, "") for key in ("class", "id", "itemprop", "data-role"))
+            if re.search(r"publish|posted|pubdate|article.?date|news.?date", marker, flags=re.IGNORECASE):
+                self.time_dates.append(values["datetime"])
+        elif tag == "time" and not values.get("datetime"):
+            marker = " ".join(values.get(key, "") for key in ("class", "id", "itemprop", "data-role"))
+            if re.search(r"publish|posted|pubdate|article.?date|news.?date", marker, flags=re.IGNORECASE):
+                self._inside_published_time = True
+                self._time_parts = []
+        elif tag == "script" and values.get("type", "").lower() == "application/ld+json":
+            self._inside_json_ld = True
+            self._script_parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._inside_json_ld:
+            self._script_parts.append(data)
+        if self._inside_published_time:
+            self._time_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "time" and self._inside_published_time:
+            self.time_text_dates.append(clean_text(" ".join(self._time_parts)))
+            self._inside_published_time = False
+            self._time_parts = []
+        if tag == "script" and self._inside_json_ld:
+            self.json_ld.append("".join(self._script_parts))
+            self._inside_json_ld = False
+
+
+class NewsArchiveDateExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.rows: dict[str, str] = {}
+        self._depth = 0
+        self._href = ""
+        self._date_depth = 0
+        self._date_parts: list[str] = []
+        self._date = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = {key.lower(): value or "" for key, value in attrs}
+        if tag == "div":
+            classes = values.get("class", "").split()
+            if "news-item-archive" in classes and not self._depth:
+                self._depth = 1
+                self._href = ""
+                self._date = ""
+            elif self._depth:
+                self._depth += 1
+            if "news-pubdate" in classes and self._depth:
+                self._date_depth = self._depth
+                self._date_parts = []
+        elif tag == "a" and self._depth and not self._href:
+            self._href = values.get("href", "")
+
+    def handle_data(self, data: str) -> None:
+        if self._date_depth:
+            self._date_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag != "div" or not self._depth:
+            return
+        if self._date_depth == self._depth:
+            self._date = clean_text(" ".join(self._date_parts))
+            self._date_depth = 0
+            self._date_parts = []
+        self._depth -= 1
+        if not self._depth and self._href and self._date:
+            self.rows[self._href] = self._date
+
+
+class BlogArticleDateExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.rows: dict[str, str] = {}
+        self._inside_article = False
+        self._href = ""
+        self._inside_pubdate = False
+        self._date_parts: list[str] = []
+        self._date = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = {key.lower(): value or "" for key, value in attrs}
+        if tag == "article" and "blog-item" in values.get("class", "").split():
+            self._inside_article = True
+            self._href = ""
+            self._date = ""
+        elif self._inside_article and tag == "a" and not self._href:
+            self._href = values.get("href", "")
+        elif self._inside_article and tag == "time" and "pubdate" in values:
+            self._inside_pubdate = True
+            self._date_parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._inside_pubdate:
+            self._date_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "time" and self._inside_pubdate:
+            self._date = clean_text(" ".join(self._date_parts))
+            self._inside_pubdate = False
+        elif tag == "article" and self._inside_article:
+            if self._href and self._date:
+                self.rows[self._href] = self._date
+            self._inside_article = False
+
+
+class IrNewsDateExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.rows: dict[str, str] = {}
+        self._year = ""
+        self._inside_year = False
+        self._year_parts: list[str] = []
+        self._card_depth = 0
+        self._inside_date = False
+        self._date_parts: list[str] = []
+        self._month_day = ""
+        self._href = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = {key.lower(): value or "" for key, value in attrs}
+        classes = values.get("class", "").split()
+        if tag == "h4":
+            self._inside_year = True
+            self._year_parts = []
+        elif tag == "div" and "p-itemlist__item" in classes and not self._card_depth:
+            self._card_depth = 1
+            self._month_day = ""
+            self._href = ""
+        elif tag == "div" and self._card_depth:
+            self._card_depth += 1
+        elif tag == "span" and self._card_depth and "p-itemlist__itemDate" in classes:
+            self._inside_date = True
+            self._date_parts = []
+        elif tag == "a" and self._card_depth and not self._href:
+            self._href = values.get("href", "")
+
+    def handle_data(self, data: str) -> None:
+        if self._inside_year:
+            self._year_parts.append(data)
+        if self._inside_date:
+            self._date_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "h4" and self._inside_year:
+            value = clean_text(" ".join(self._year_parts))
+            if re.fullmatch(r"20\d{2}", value):
+                self._year = value
+            self._inside_year = False
+        elif tag == "span" and self._inside_date:
+            self._month_day = clean_text(" ".join(self._date_parts))
+            self._inside_date = False
+        elif tag == "div" and self._card_depth:
+            self._card_depth -= 1
+            if not self._card_depth and self._year and self._month_day and self._href:
+                self.rows[self._href] = f"{self._year}/{self._month_day}"
+
+
+def extract_article_publication_date(html_text: str) -> tuple[str, str]:
+    parser = ArticleDateExtractor()
+    parser.feed(html_text)
+    for raw in parser.meta_dates:
+        date = normalize_source_date(raw)
+        if date:
+            return date, "article_published_meta"
+    for raw_json in parser.json_ld:
+        try:
+            parsed = json.loads(raw_json)
+        except json.JSONDecodeError:
+            continue
+        stack = [parsed]
+        while stack:
+            node = stack.pop()
+            if isinstance(node, list):
+                stack.extend(node)
+            elif isinstance(node, dict):
+                raw = node.get("datePublished", "")
+                node_types = node.get("@type", [])
+                if isinstance(node_types, str):
+                    node_types = [node_types]
+                article_type = any(
+                    str(value).rsplit("/", 1)[-1].lower() in {"article", "newsarticle", "blogposting", "pressrelease"}
+                    for value in node_types
+                )
+                date = normalize_source_date(str(raw)) if raw and article_type else ""
+                if date:
+                    return date, "article_jsonld_datePublished"
+                stack.extend(value for value in node.values() if isinstance(value, (dict, list)))
+    for raw in parser.time_dates:
+        date = normalize_source_date(raw)
+        if date:
+            return date, "article_time_datetime"
+    for raw in parser.time_text_dates:
+        date = extract_calendar_date(raw)
+        if date:
+            return date, "article_time_datePublished_text"
+    return "", ""
 
 
 class TextExtractor(HTMLParser):
@@ -361,8 +614,16 @@ def load_runtime_configuration() -> tuple[
 
 def fetch_text(url: str, retry_http_codes: set[int] | None = None) -> str:
     retryable_codes = {429, 500, 502, 503, 504} | (retry_http_codes or set())
+    parsed = urllib.parse.urlsplit(url)
+    request_url = urllib.parse.urlunsplit((
+        parsed.scheme,
+        parsed.netloc,
+        urllib.parse.quote(parsed.path, safe="/%:@!$&'()*+,;=-._~"),
+        urllib.parse.quote(parsed.query, safe="=&;%+:/?@,[]-._~"),
+        "",
+    ))
     for attempt in range(3):
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        req = urllib.request.Request(request_url, headers={"User-Agent": USER_AGENT})
         try:
             with urllib.request.urlopen(req, timeout=20) as resp:
                 charset = resp.headers.get_content_charset() or "utf-8"
@@ -552,7 +813,8 @@ def parse_date(value: str) -> str:
             return cleaned
     if parsed.tzinfo is None:
         parsed = parsed.replace(tzinfo=dt.timezone.utc)
-    return parsed.astimezone().date().isoformat()
+    result = parsed.astimezone().date().isoformat()
+    return "" if result == "1970-01-01" else result
 
 
 def normalize_source_date(value: str) -> str:
@@ -561,52 +823,13 @@ def normalize_source_date(value: str) -> str:
     if not cleaned:
         return ""
     if re.fullmatch(r"\d{8}", cleaned):
-        return f"{cleaned[:4]}-{cleaned[4:6]}-{cleaned[6:8]}"
+        normalized = f"{cleaned[:4]}-{cleaned[4:6]}-{cleaned[6:8]}"
+        return "" if normalized == "1970-01-01" else normalized
     match = re.match(r"(\d{4})[/-](\d{2})[/-](\d{2})", cleaned)
     if match:
-        return "-".join(match.groups())
+        normalized = "-".join(match.groups())
+        return "" if normalized == "1970-01-01" else normalized
     return parse_date(cleaned)
-
-
-def parse_relative_date(value: str) -> str:
-    cleaned = clean_text(value).lower()
-    match = re.search(
-        r"(\d+)\s+(second|minute|hour|day|week|month|year)s?\s+ago",
-        cleaned,
-    )
-    if match:
-        amount = int(match.group(1))
-        unit = match.group(2)
-        days = {
-            "second": 0,
-            "minute": 0,
-            "hour": 0,
-            "day": amount,
-            "week": amount * 7,
-            "month": amount * 30,
-            "year": amount * 365,
-        }[unit]
-    else:
-        jp_match = re.search(
-            r"(\d+)\s*(秒|分|時間|日|週間|か月|ヶ月|月|年)前",
-            cleaned,
-        )
-        if not jp_match:
-            return ""
-        amount = int(jp_match.group(1))
-        unit = jp_match.group(2)
-        days = {
-            "秒": 0,
-            "分": 0,
-            "時間": 0,
-            "日": amount,
-            "週間": amount * 7,
-            "か月": amount * 30,
-            "ヶ月": amount * 30,
-            "月": amount * 30,
-            "年": amount * 365,
-        }[unit]
-    return (dt.date.today() - dt.timedelta(days=days)).isoformat()
 
 
 def extract_calendar_date(value: str) -> str:
@@ -616,7 +839,22 @@ def extract_calendar_date(value: str) -> str:
         cleaned,
     )
     if not match:
-        return ""
+        month_names = (
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December",
+        )
+        english = re.match(
+            rf"^(?P<month>{'|'.join(month_names)})\s+(?P<day>\d{{1,2}}),?\s+(?P<year>20\d{{2}})\b",
+            cleaned,
+            flags=re.IGNORECASE,
+        )
+        if not english:
+            return ""
+        try:
+            month = next(index for index, name in enumerate(month_names, 1) if name.lower() == english.group("month").lower())
+            return dt.date(int(english.group("year")), month, int(english.group("day"))).isoformat()
+        except ValueError:
+            return ""
     try:
         return dt.date(
             int(match.group("year")),
@@ -715,6 +953,56 @@ def extract_document_title(text: str) -> str:
     return ""
 
 
+def extract_leading_english_news_date(value: str) -> str:
+    full_month = re.match(
+        r"^\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+",
+        clean_text(value), re.IGNORECASE,
+    )
+    if full_month:
+        return extract_calendar_date(clean_text(value))
+    match = re.match(
+        r"^\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+"
+        r"(\d{1,2}),?\s+(20\d{2})(?:\b|\s)",
+        clean_text(value), re.IGNORECASE,
+    )
+    if not match:
+        return ""
+    month = {name: index for index, name in enumerate(
+        ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"), 1
+    )}[match.group(1)[:3].lower()]
+    try:
+        return dt.date(int(match.group(3)), month, int(match.group(2))).isoformat()
+    except ValueError:
+        return ""
+
+
+def extract_day_month_year_date(value: str) -> str:
+    match = re.match(
+        r"^\s*(\d{1,2})\s+"
+        r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+"
+        r"(20\d{2})\b", clean_text(value), re.IGNORECASE,
+    )
+    if not match:
+        return ""
+    months = ("january", "february", "march", "april", "may", "june", "july", "august",
+              "september", "october", "november", "december")
+    try:
+        return dt.date(int(match.group(3)), months.index(match.group(2).lower()) + 1,
+                       int(match.group(1))).isoformat()
+    except ValueError:
+        return ""
+
+
+def extract_short_us_news_date(value: str) -> str:
+    if not re.fullmatch(r"\d{1,2}/\d{1,2}/\d{2}", clean_text(value)):
+        return ""
+    try:
+        parsed = dt.datetime.strptime(clean_text(value), "%m/%d/%y").date()
+        return parsed.isoformat() if 2000 <= parsed.year <= dt.date.today().year + 1 else ""
+    except ValueError:
+        return ""
+
+
 def extract_meaningful_summary(raw_description: str, title: str) -> str:
     """Clean RSS description: strip HTML, remove title duplication, return first 2-3 sentences."""
     text = clean_text(raw_description)
@@ -769,6 +1057,7 @@ def parse_rss(source: dict[str, Any]) -> list[Candidate]:
             title=title,
             url=link,
             published=parse_date(item.findtext("pubDate", "")),
+            publication_date_evidence="rss_pubDate" if item.findtext("pubDate", "") else "",
             summary=extract_meaningful_summary(raw_desc, title),
             category_hint=source.get("category_hint", ""),
             signal_type=source.get("signal_type", "news"),
@@ -857,14 +1146,6 @@ def parse_youtube_channel(source: dict[str, Any]) -> list[Candidate]:
             clean_text(part.get("text", {}).get("content", ""))
             for part in metadata_parts
         ]
-        relative_date = next(
-            (
-                value
-                for value in metadata_text
-                if re.search(r"\bago\b", value.lower()) or value.endswith("前")
-            ),
-            "",
-        )
         candidate = Candidate(
             company_id=source.get("company_id", ""),
             source_id=source["id"],
@@ -872,7 +1153,7 @@ def parse_youtube_channel(source: dict[str, Any]) -> list[Candidate]:
             source_trust=source.get("trust", "owned"),
             title=title,
             url=f"https://www.youtube.com/watch?v={video_id}",
-            published=parse_relative_date(relative_date),
+            published="",
             summary="Official YouTube channel video. " + " · ".join(metadata_text),
             category_hint=source.get("category_hint", "video"),
             signal_type=source.get("signal_type", "video"),
@@ -934,7 +1215,7 @@ def parse_sitemap_urls(
             source_trust=source.get("trust", "owned"),
             title=f"{source.get('title_prefix', 'New official page')}: {sitemap_title(url)}",
             url=url,
-            published=last_modified or dt.date.today().isoformat(),
+            published="",
             summary="New URL detected in the official sitemap.",
             category_hint=source.get("category_hint", "product"),
             signal_type=source.get("signal_type", "news"),
@@ -1209,14 +1490,45 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
     parser = LinkExtractor()
     parser.feed(text)
     base_url = source["url"]
+    archive_dates: dict[str, str] = {}
+    if source.get("archive_news_pubdate"):
+        date_parser = NewsArchiveDateExtractor()
+        date_parser.feed(text)
+        archive_dates = {
+            normalize_url(urllib.parse.urljoin(base_url, href)): extract_day_month_year_date(raw)
+            for href, raw in date_parser.rows.items()
+        }
+    blog_dates: dict[str, str] = {}
+    if source.get("blog_article_pubdate"):
+        date_parser = BlogArticleDateExtractor()
+        date_parser.feed(text)
+        blog_dates = {
+            normalize_url(urllib.parse.urljoin(base_url, href)): extract_short_us_news_date(raw)
+            for href, raw in date_parser.rows.items()
+        }
+    ir_dates: dict[str, str] = {}
+    if source.get("ir_news_index_dates"):
+        date_parser = IrNewsDateExtractor()
+        date_parser.feed(text)
+        ir_dates = {
+            normalize_url(urllib.parse.urljoin(base_url, href)): extract_calendar_date(raw)
+            for href, raw in date_parser.rows.items()
+        }
     include_terms = [term.lower() for term in source.get("include_url_terms", [])]
     exclude_terms = [term.lower() for term in source.get("exclude_url_terms", [])]
+    include_pattern = source.get("include_url_pattern")
     rows_by_url: dict[str, dict[str, Any]] = {}
     detail_cache: dict[str, tuple[str, str]] = {}
+    date_cache: dict[str, tuple[str, str]] = {}
     for link in parser.links:
         absolute = urllib.parse.urljoin(base_url, link["href"])
+        parsed_link = urllib.parse.urlsplit(absolute)
+        if parsed_link.scheme not in {"http", "https"} or not parsed_link.netloc:
+            continue
         lowered_url = absolute.lower()
         if include_terms and not any(term in lowered_url for term in include_terms):
+            continue
+        if include_pattern and not re.search(include_pattern, absolute):
             continue
         if exclude_terms and any(term in lowered_url for term in exclude_terms):
             continue
@@ -1236,7 +1548,67 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
         )
         title = re.sub(r"^(?:icon\s+)+", "", title, flags=re.IGNORECASE)
         normalized = normalize_url(absolute)
-        published = extract_calendar_date(link.get("time") or link.get("text", ""))
+        time_date = extract_calendar_date(link.get("time", ""))
+        link_text = clean_text(link.get("text", ""))
+        leading_english_date = (
+            extract_leading_english_news_date(link_text)
+            if source.get("english_news_index_dates") else ""
+        )
+        trailing_index_date = ""
+        if source.get("trailing_news_index_dates"):
+            trailing_match = re.search(r"(20\d{2}[./-]\d{1,2}[./-]\d{1,2})\s*$", link_text)
+            if trailing_match:
+                trailing_index_date = extract_calendar_date(trailing_match.group(1))
+        leading_date = (
+            extract_calendar_date(link_text)
+            if re.match(r"^20\d{2}[./年-]\d{1,2}[./月-]\d{1,2}日?", link_text)
+            else leading_english_date
+        )
+        associated_index_date = (
+            extract_calendar_date(link.get("associated_date", ""))
+            if source.get("associated_rss_date_dt") or source.get("associated_newsdate_p") else ""
+        )
+        archive_pubdate = archive_dates.get(normalized, "")
+        blog_pubdate = blog_dates.get(normalized, "")
+        ir_pubdate = ir_dates.get(normalized, "")
+        published = (time_date or leading_date or trailing_index_date or associated_index_date
+                     or archive_pubdate or blog_pubdate or ir_pubdate)
+        date_evidence = (
+            "dated_news_index_link" if source.get("dated_news_index_links") and leading_date else
+            "index_time" if time_date else
+            "dated_news_index_link" if leading_english_date or trailing_index_date or (
+                source.get("dated_news_index_links") and leading_date) else
+            ("dated_news_index_associated_p" if source.get("associated_newsdate_p")
+             else "dated_news_index_associated_dt") if associated_index_date else
+            "verified_news_archive_pubdate" if archive_pubdate else
+            "verified_blog_card_pubdate" if blog_pubdate else
+            "verified_ir_news_index_date" if ir_pubdate else
+            "index_link_text" if published else ""
+        )
+        if not published and source.get("date_from_news_url"):
+            url_date = re.search(r"/20\d{2}/\d{2}/(20\d{6})(?:[_./-]|$)", absolute)
+            if url_date:
+                published = normalize_source_date(url_date.group(1))
+                date_evidence = "dated_official_news_url"
+        if not published and source.get("date_from_dated_pdf_url"):
+            pdf_date = re.search(r"/news_pdf/(20\d{6})(?:[_-][^/]*)?\.pdf(?:$|[?#])", absolute, re.IGNORECASE)
+            if pdf_date:
+                published = normalize_source_date(pdf_date.group(1))
+                date_evidence = "dated_official_news_pdf_url"
+        if not published and source.get("follow_detail_dates") and not lowered_url.endswith(".pdf"):
+            if normalized not in date_cache and len(date_cache) < source.get("max_detail_date_items", 30):
+                try:
+                    detail_html = fetch_text(absolute)
+                    detail_date, detail_evidence = extract_article_publication_date(detail_html)
+                    if not detail_date and source.get("detail_date_pattern"):
+                        detail_match = re.search(source["detail_date_pattern"], detail_html, flags=re.IGNORECASE)
+                        if detail_match:
+                            detail_date = extract_calendar_date(clean_text(detail_match.group(1)))
+                            detail_evidence = "verified_article_date_line" if detail_date else ""
+                    date_cache[normalized] = (detail_date, detail_evidence)
+                except (urllib.error.URLError, TimeoutError, OSError):
+                    date_cache[normalized] = ("", "")
+            published, date_evidence = date_cache.get(normalized, ("", ""))
         if not title and source.get("follow_detail_titles"):
             if normalized not in detail_cache:
                 if len(detail_cache) >= source.get("max_items", 1000):
@@ -1244,10 +1616,12 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
                 detail_text = fetch_text(absolute)
                 detail_cache[normalized] = (
                     extract_document_title(detail_text),
-                    extract_calendar_date(clean_text(detail_text)),
+                    extract_article_publication_date(detail_text)[0],
                 )
             title, detail_date = detail_cache[normalized]
             published = published or detail_date
+            if detail_date and not date_evidence:
+                date_evidence = "article_publication_metadata"
             quality = 5
         if not title or is_html_noise(title):
             continue
@@ -1260,10 +1634,12 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
             rows_by_url[normalized] = {
                 "title": title,
                 "published": published or (existing or {}).get("published", ""),
+                "publication_date_evidence": date_evidence or (existing or {}).get("publication_date_evidence", ""),
                 "quality": quality,
             }
         elif published and not existing.get("published"):
             existing["published"] = published
+            existing["publication_date_evidence"] = date_evidence
 
     items: list[Candidate] = []
     for absolute, row in rows_by_url.items():
@@ -1275,6 +1651,7 @@ def parse_html_links(source: dict[str, Any]) -> list[Candidate]:
             title=row["title"],
             url=absolute,
             published=row["published"],
+            publication_date_evidence=row.get("publication_date_evidence", ""),
             summary=source.get("item_summary", ""),
             category_hint=source.get("category_hint", ""),
             signal_type=source.get("signal_type", "news"),
@@ -1327,6 +1704,7 @@ def parse_json_announcements(source: dict[str, Any]) -> list[Candidate]:
                 title=title,
                 url=urllib.parse.urljoin(base_url, href),
                 published=published,
+                publication_date_evidence="announcement_api_date_field" if published else "",
                 summary=source.get("item_summary", ""),
                 category_hint=source.get("category_hint", ""),
                 signal_type=source.get("signal_type", "news"),
@@ -1353,6 +1731,8 @@ def collect_candidates(
         source_id = source["id"]
         runtime: dict[str, Any] = {
             "last_checked": dt.datetime.now().isoformat(timespec="seconds"),
+            "request_succeeded": False,
+            "rejected_alias_count": 0,
         }
         source_runtime[source_id] = runtime
         candidate_count_before = len(candidates)
@@ -1386,7 +1766,8 @@ def collect_candidates(
             elif source["type"] == "json_announcements":
                 candidates.extend(parse_json_announcements(source))
             else:
-                errors.append(f"{source['id']}: unsupported source type {source['type']}")
+                raise ValueError(f"unsupported source type {source['type']}")
+            source_runtime[source_id]["request_succeeded"] = True
         except (
             urllib.error.URLError,
             TimeoutError,
@@ -1438,6 +1819,7 @@ def dedupe(candidates: list[Candidate]) -> list[Candidate]:
                 existing.summary = item.summary
             if not existing.published and item.published:
                 existing.published = item.published
+                existing.publication_date_evidence = item.publication_date_evidence
             continue
         index = len(unique)
         url_index[url_key] = index
@@ -1606,6 +1988,26 @@ def term_matches(text: str, alias: str) -> bool:
     if re.fullmatch(r"[a-z0-9][a-z0-9 .+/-]*", term):
         return bool(re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", text))
     return term in text
+
+
+def filter_dedicated_aggregator_aliases(
+    candidates: list[Candidate],
+    source_lookup: dict[str, dict[str, Any]],
+    company_lookup: dict[str, dict[str, Any]],
+    source_runtime: dict[str, dict[str, Any]],
+) -> list[Candidate]:
+    kept: list[Candidate] = []
+    for item in candidates:
+        source = source_lookup.get(item.source_id, {})
+        company = company_lookup.get(item.company_id, {})
+        if source.get("trust") == "aggregator" and item.company_id:
+            text = clean_text(f"{item.title} {item.summary}").lower()
+            if not any(term_matches(text, alias) for alias in company.get("aliases", [])):
+                runtime = source_runtime.setdefault(item.source_id, {})
+                runtime["rejected_alias_count"] = runtime.get("rejected_alias_count", 0) + 1
+                continue
+        kept.append(item)
+    return kept
 
 
 def extract_intelligence(
@@ -1934,6 +2336,33 @@ def classify_tier(score: int, trust: str, has_action: bool = False) -> str:
     return "archive"
 
 
+PUBLICATION_DATE_EVIDENCE = {
+    "rss_pubDate", "verified_article_date_line", "article_published_meta",
+    "article_jsonld_datePublished", "article_time_datetime",
+    "announcement_api_date_field", "dated_news_index_link", "dated_official_news_pdf_url",
+    "dated_news_index_associated_p", "dated_news_index_associated_dt",
+    "verified_news_archive_pubdate", "verified_blog_card_pubdate",
+    "verified_ir_news_index_date", "article_time_datePublished_text",
+}
+
+
+def candidate_date_fields(item: Candidate) -> dict[str, Any]:
+    is_publication = bool(item.published) and (
+        item.signal_type != "event"
+        or item.publication_date_evidence in PUBLICATION_DATE_EVIDENCE
+    )
+    published_at = item.published if is_publication else ""
+    event_start_at = item.published if item.signal_type == "event" and not is_publication else ""
+    return {
+        "publication_date_status": "known" if is_publication else "unknown",
+        "publication_date_evidence": item.publication_date_evidence if is_publication else "",
+        "published_at": published_at,
+        "event_start_at": event_start_at,
+        "age_days": age_days(published_at) if published_at else None,
+        "days_until_event": days_until(event_start_at) if event_start_at else None,
+    }
+
+
 def build_evidence_record(
     item: Candidate,
     source_lookup: dict[str, dict[str, Any]],
@@ -1972,7 +2401,7 @@ def build_evidence_record(
         "source_labels": item.source_labels,
         "source_types": source_types,
         "source_trust": trust,
-        "published_at": item.published,
+        "published_at": candidate_date_fields(item)["published_at"],
         "checked_at": generated_at,
     }
 
@@ -2139,8 +2568,13 @@ def build_dashboard_payload(
     for source in source_config:
         source_items = [item for item in candidates if source["id"] in item.source_ids]
         runtime = source_runtime.get(source["id"], {})
+        source_company_id = source.get("company_id", "")
+        matched_items = [
+            item for item in source_items
+            if not source_company_id or source_company_id in item.matched_company_ids
+        ]
         tier_counts = {
-            tier: sum(1 for item in source_items if item.tier == tier)
+            tier: sum(1 for item in matched_items if item.tier == tier)
             for tier in ("immediate", "daily", "archive")
         }
         enabled = source.get("enabled", True) is not False
@@ -2148,7 +2582,7 @@ def build_dashboard_payload(
             status = "pending"
         elif source["id"] in errors_by_source:
             status = "error"
-        elif source_items:
+        elif matched_items:
             status = "productive" if tier_counts["immediate"] + tier_counts["daily"] else "archive_only"
         else:
             status = "quiet"
@@ -2159,8 +2593,8 @@ def build_dashboard_payload(
             if source["id"] in errors_by_source
             else "reachable"
         )
-        dated_items = [item.published for item in source_items if item.published]
-        source_company_id = source.get("company_id", "")
+        dated_items = [item.published for item in matched_items if item.published]
+        selected_items = [item for item in matched_items if item.tier in {"immediate", "daily"}]
         scope_label = (
             company_lookup.get(source_company_id, {}).get("display_name")
             if source_company_id
@@ -2174,18 +2608,28 @@ def build_dashboard_payload(
                 "company": scope_label,
                 "scope": scope_label,
                 "source_type": source["type"],
+                "source_url": source.get("url", ""),
+                "reported_entity": source.get("reported_entity", ""),
+                "source_scope": source.get("source_scope", "company"),
                 "signal_type": source.get("signal_type", "news"),
                 "enabled": enabled,
                 "status": status,
                 "operational_status": operational_status,
                 "output_status": status if status not in {"error", "pending"} else "none",
-                "total": len(source_items),
+                "request_succeeded": runtime.get("request_succeeded", False),
+                "total": len(matched_items),
+                "raw_link_count": runtime.get("raw_candidate_count", 0),
+                "actual_match_count": len(matched_items),
+                "valid_output_count": len(selected_items),
+                "dated_valid_output_count": sum(bool(item.published) for item in selected_items),
+                "unknown_publication_count": sum(not item.published for item in matched_items),
+                "rejected_alias_count": runtime.get("rejected_alias_count", 0),
                 "immediate": tier_counts["immediate"],
                 "daily": tier_counts["daily"],
                 "archive": tier_counts["archive"],
                 "selected_rate": round(
-                    ((tier_counts["immediate"] + tier_counts["daily"]) / len(source_items)) * 100
-                ) if source_items else 0,
+                    ((tier_counts["immediate"] + tier_counts["daily"]) / len(matched_items)) * 100
+                ) if matched_items else 0,
                 "last_published": latest_calendar_value(dated_items),
                 "error": errors_by_source.get(source["id"], ""),
                 "note": source.get("disabled_reason", "") or source.get("health_note", ""),
@@ -2193,9 +2637,18 @@ def build_dashboard_payload(
                 "new_urls": runtime.get("new_urls", 0),
                 "initial_snapshot": runtime.get("initial_snapshot", False),
                 "last_checked": runtime.get("last_checked", ""),
+                "last_success_at": runtime.get("last_checked", "") if runtime.get("request_succeeded") else "",
                 "raw_candidate_count": runtime.get("raw_candidate_count", 0),
             }
         )
+
+    for row in source_health:
+        row["alternative_source_ids"] = [
+            other["source_id"] for other in source_health
+            if row["company_id"] and other["company_id"] == row["company_id"]
+            and other["source_id"] != row["source_id"]
+            and other["operational_status"] == "reachable"
+        ]
 
     return {
         "generated_at": generated_at,
@@ -2229,6 +2682,16 @@ def build_dashboard_payload(
                 "display_name": company["display_name"],
                 "display_name_en": company.get("display_name_en", company["display_name"]),
                 "display_name_zh": company.get("display_name_zh", ""),
+                "display_name_ja": company.get("display_name_ja", ""),
+                "identity_evidence_url": company.get("identity_evidence_url", ""),
+                "japanese_aliases": [
+                    alias for alias in company.get("aliases", [])
+                    if re.search(r"[\u3040-\u30ff]", alias)
+                ],
+                "japanese_name_status": "official_profile_verified" if company.get("identity_evidence_url") else "alias_recorded" if any(
+                    re.search(r"[\u3040-\u30ff]", alias)
+                    for alias in company.get("aliases", [])
+                ) else "not_verified",
                 "company_descriptor_zh": company.get("company_descriptor_zh", ""),
                 "business_role": company.get("business_role", "unclassified"),
                 "role_label": company.get("role_label", "待分类"),
@@ -2269,6 +2732,8 @@ def build_dashboard_payload(
                 "source_labels": item.source_labels,
                 "related_urls": item.related_urls,
                 "source_trust": item.source_trust,
+                "reported_entity": source_lookup.get(item.source_id, {}).get("reported_entity", ""),
+                "source_scope": source_lookup.get(item.source_id, {}).get("source_scope", "company"),
                 "title": item.title,
                 "title_zh": translated_titles.get(item.key, ""),
                 "url": item.url,
@@ -2296,10 +2761,7 @@ def build_dashboard_payload(
                 "acro_relevance": item.acro_relevance,
                 "recommended_action": item.recommended_action,
                 "selection_reason": item.selection_reason,
-                "published_at": "" if item.signal_type == "event" else item.published,
-                "event_start_at": item.published if item.signal_type == "event" else "",
-                "age_days": None if item.signal_type == "event" else age_days(item.published),
-                "days_until_event": days_until(item.published) if item.signal_type == "event" else None,
+                **candidate_date_fields(item),
             }
             for item in sorted(candidates, key=lambda x: (x.tier != "immediate", -x.score))
         ],
@@ -2452,6 +2914,9 @@ def main() -> int:
     candidates, errors, snapshot_updates, source_runtime = collect_candidates(
         sources,
         source_snapshots,
+    )
+    candidates = filter_dedicated_aggregator_aliases(
+        candidates, source_lookup, company_lookup, source_runtime,
     )
     candidates = dedupe(candidates)
     scored: list[Candidate] = []
@@ -2628,11 +3093,6 @@ def main() -> int:
         "category_mix": payload["category_mix"],
         "source_mix": payload["source_mix"],
     })
-
-    # Keep only last 90 days of history
-    all_history = sorted(history_dir.glob("*.json"))
-    for old_file in all_history[:-90]:
-        old_file.unlink()
 
     if not args.dry_run:
         source_snapshots.update(snapshot_updates)

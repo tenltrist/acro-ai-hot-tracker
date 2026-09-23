@@ -1,6 +1,6 @@
 {
-  "version": "2026.09.10-continuity",
-  "verified_at": "2026-09-10",
+  "version": "2026.09.18-products",
+  "verified_at": "2026-09-18",
   "strategy": {
     "automatic_summary": "rules_only",
     "automatic_llm_api": false,
@@ -19,7 +19,7 @@
     "daily_admission",
     "source_archive_policy",
     "rule_summary_or_manual_summary",
-    "persist_json_and_publish"
+    "persist_json_and_build_static"
   ],
   "rule_modules": [
     {"id": "deduplication", "engine": "backend", "implementation": "scripts/run_daily.py:dedupe"},
@@ -30,6 +30,7 @@
     {"id": "daily-admission", "engine": "backend", "implementation": "scripts/run_daily.py:apply_daily_admission_policy"},
     {"id": "event-classification", "engine": "backend", "implementation": "scripts/run_daily.py:classify_business_event_type"},
     {"id": "region-classification", "engine": "frontend_and_saved_manual_review", "implementation": "web/region-model.js:analyze and distribution; web/region-reviews.js"},
+    {"id": "product-classification", "engine": "frontend", "implementation": "web/product-model.js:analyze and matches; web/product-ui.js"},
     {"id": "action-routing", "engine": "backend", "implementation": "scripts/run_daily.py:build_recommended_action"},
     {"id": "summary-provenance", "engine": "backend_and_manual", "implementation": "scripts/run_daily.py and scripts/import_manual_summaries.py"},
     {"id": "priority-index", "engine": "frontend", "implementation": "web/app.js:buildCustomerAccountPriorities"},
@@ -42,10 +43,30 @@
     {"id": "data-storage", "engine": "build", "implementation": "scripts/build_share_page.py"},
     {"id": "rule-governance", "engine": "validation", "implementation": "scripts/validate_rule_contract.py"}
   ],
+  "product_classification": {
+    "model_version": "2026-09-18.kaidi-products-v1",
+    "categories": ["drug", "protein", "antibody", "assay", "cell", "culture", "bead", "equipment", "service"],
+    "source": "ACRO产品与技术分类确认表-kaidi update.xlsx / 产品分类确认 + 业务补充说明",
+    "evidence_fields": ["title", "summary", "evidence.source_excerpt"],
+    "directions": ["customer", "competitor", "unspecified"],
+    "within_dimension": "union",
+    "between_dimensions": "intersection",
+    "changes_admission_or_scores": false,
+    "changes_company_identity": false,
+    "changes_technology_rules": false,
+    "unidentified_preserved": true,
+    "execution": "computed in the browser from retained records; no model API"
+  },
   "region_classification": {
-    "model_version": "2026-09-09.4",
-    "families": ["apac", "north_america", "europe", "latin_america", "middle_east", "africa"],
-    "stored_region_count": 16,
+    "model_version": "2026-09-16.business-countries",
+    "families": ["japan", "korea", "india", "singapore", "australia", "other"],
+    "public_order": ["all", "japan", "korea", "india", "singapore", "australia", "other"],
+    "stored_region_count": 7,
+    "country_evidence_required": true,
+    "total_includes_pending": true,
+    "pending_state": "unknown",
+    "within_dimension": "union",
+    "between_dimensions": "intersection",
     "default_mode": "reviewed",
     "count_key": "news_record_id",
     "scope_evidence_is_not_country_expansion": true,
@@ -60,10 +81,19 @@
   },
   "entity_matching": {
     "search_fields": ["title", "summary"],
-    "company_configuration": "config/companies.json aliases",
-    "dedicated_source_binding": "source company_id",
+    "company_configuration": "config/companies.json plus config/priority_account_monitoring.json aliases",
+    "dedicated_source_binding": "source company_id, subject to alias and page-noise checks",
     "multiple_company_matches": true,
     "relationship_inference": false
+  },
+  "publication_date_provenance": {
+    "publication_sources": ["RSS pubDate", "article published meta or NewsArticle datePublished", "marked article time text", "official announcement API date", "dated official news index link", "dated news card field", "verified news archive pubdate", "official IR index year heading plus card month/day"],
+    "event_date": "a conference/session date is event_start_at only when independently stated; it is not a news publication date",
+    "crawl_date": "last_checked or checked_at records the request time only and never fills published_at",
+    "unknown": "missing or invalid publication evidence stays unknown and is excluded from dated period totals",
+    "placeholder": "1970-01-01 is rejected as an epoch placeholder",
+    "historical_news": "official index dates outside the active time window remain in retained history, not the current period",
+    "official_index_noise": "category, tag and navigation URLs do not become news merely because they are under a news path"
   },
   "structured_extraction": {
     "input_fields": ["title", "summary"],
@@ -130,10 +160,12 @@
   "summary_provenance": {
     "default_method": "rule_extractive",
     "manual_method": "manual_ai",
-    "manual_provider": "chatgpt_pro_manual",
+    "manual_provider": "codex_source_review or human_source_review, according to the stored review",
     "legacy_api_method": "api_ai",
     "manual_store": "data/manual_summaries.json",
-    "manual_requires_human_source_review": true
+    "manual_requires_source_evidence": true,
+    "full_text_claim": "only when original verification and full_text material_level are both explicitly recorded",
+    "editorial_amendment": "stored inside summary_review, without changing item id, admission tier or score"
   },
   "account_priority": {
     "window_days": 90,
@@ -163,9 +195,10 @@
   "source_health": {
     "productive": "enabled, request completed, and at least one item entered daily or immediate",
     "archive_only": "enabled, request completed, and items were collected but none entered daily or immediate",
-    "quiet": "enabled, no request error, and no item was collected in the current run",
+    "quiet": "enabled and request succeeded, but no retained company-matched item; raw links may still exist",
     "pending": "source is registered with enabled=false and was not requested",
-    "error": "configuration, request, or parsing failed"
+    "error": "configuration, request, or parsing failed",
+    "request_success": "HTTP/parser access only; not proof of company hits or selected news"
   },
   "trend_counts": {
     "news_date": "age_days derived from publication date",
@@ -177,13 +210,23 @@
   "source_coverage": {
     "registered": "configured source entry, whether enabled or disabled",
     "enabled": "source enabled=true and eligible to be requested",
+    "raw_links": "links or rows returned by an accessible source before company matching",
     "actual_hits": "current-run items associated with the source and company",
     "selected": "actual hits whose tier is daily or immediate",
+    "dated_selected": "selected items with credible publication date evidence",
+    "site_index_route": "Google News site: RSS is an aggregator index, not a direct official RSS feed",
     "selection_rate": "selected / actual_hits when actual_hits > 0"
+  },
+  "publication_date": {
+    "separate_fields": ["item.event_start_at", "item.published_at", "payload.generated_at and source_health.last_checked"],
+    "credible_sources": ["RSS pubDate", "official announcement JSON date field", "official dated news URL", "explicit article-published meta or JSON-LD Article datePublished", "marked publication time", "dated news-index heading"],
+    "event_announcement_policy": "an official event announcement with an independently verified article publication date is counted by that publication date; the article date must not be copied into event_start_at",
+    "excluded_as_publication": ["fetch time", "first arbitrary body date", "unmarked event time", "future event date in title", "sitemap lastmod or newly observed URL time", "YouTube relative age such as two weeks ago", "1970-01-01 RSS default timestamp"],
+    "unknown_policy": "leave publication unknown and exclude from period totals; retain original record"
   },
   "rule_governance": {
     "catalog_is_machine_readable": true,
-    "detail_page_count": 19,
+    "detail_page_count": 20,
     "validation_command": "python3 scripts/validate_rule_contract.py",
     "publish_requires_validation": true
   },

@@ -4,6 +4,7 @@ import json
 FIELDS = (
     "id", "company_id", "company", "matched_company_ids", "matched_companies",
     "title", "title_zh", "url", "published", "published_at", "event_start_at",
+    "publication_date_status", "publication_date_evidence",
     "date_provenance", "summary", "summary_method", "summary_quality", "source_id",
     "summary_review", "summary_provider", "summary_model",
     "source_label", "source_ids", "source_labels", "source_trust", "related_urls",
@@ -18,7 +19,7 @@ ADMISSION_FIELDS = (
 )
 
 
-def update_archive(path, payload):
+def update_archive(path, payload, source_policies=None):
     previous = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
     if previous and previous.get("schema_version") != 1:
         raise ValueError("Unsupported event archive schema; refusing to overwrite")
@@ -45,6 +46,23 @@ def update_archive(path, payload):
         record["archive_first_seen"] = old.get("archive_first_seen", stamp)
         record["archive_last_seen"] = stamp
         records[item["id"]] = record
+    source_policies = source_policies or {}
+    for record in records.values():
+        if record.get("tier") not in {"daily", "immediate"}:
+            continue
+        source_ids = record.get("source_ids") or [record.get("source_id")]
+        blob = " ".join(str(record.get(key) or "") for key in ("title", "summary", "url")).lower()
+        exclusions = []
+        for source_id in source_ids:
+            source = source_policies.get(source_id) or {}
+            terms = [term for term in source.get("exclude_text_terms", []) if term.lower() in blob]
+            if not terms:
+                break
+            exclusions.extend(terms)
+        else:
+            if exclusions:
+                record["tier"] = "archive"
+                record["selection_reason"] = "当前来源排除词命中：" + "、".join(dict.fromkeys(exclusions))
     archived_items = sorted(records.values(), key=lambda item: item["id"])
     reviewed = [item for item in archived_items if item.get("summary_method") == "manual_ai"]
     summary_pipeline = dict(previous.get("summary_pipeline") or payload.get("summary_pipeline") or {})
