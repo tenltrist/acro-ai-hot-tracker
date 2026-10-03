@@ -19,7 +19,7 @@
     "eligible": 0,
     "generated": 0,
     "reused": 0,
-    "manual_imported": 1257,
+    "manual_imported": 1663,
     "manual_tool": "ChatGPT Pro / Codex / Codex editorial translation",
     "failed": 0,
     "error": ""
@@ -4171,15 +4171,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "REPROCELL Expands Clinical iPSC and Stem Cell Solutions in China Through Strategic Collaboration with WEIPU Biotechnology",
-      "title_zh": "",
+      "title_zh": "REPROCELL 与 WEIPU Biotechnology 合作，在中国扩展临床级 iPSC 与干细胞解决方案",
       "url": "https://www.reprocell.com/news/reprocell-expands-clinical-ipsc-and-stem-cell-solutions-in-china-through-strategic-collaboration-with-weipu-biotechnology",
       "published": "2026-07-27",
       "summary": "",
-      "ai_summary": "客户池公司 REPROCELL / ReproCELL再生细胞 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -4250,7 +4250,26 @@
       "published_at": "2026-07-27",
       "event_start_at": "",
       "age_days": 67,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:786babcc0eeaea50",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "259183dffb5bea31c2fde58cba42df282aec1706df7a0e9861deb8ac9f16397d",
+        "evidence": [
+          {
+            "label": "REPROCELL official news",
+            "url": "https://www.reprocell.com/news/reprocell-expands-clinical-ipsc-and-stem-cell-solutions-in-china-through-strategic-collaboration-with-weipu-biotechnology"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "19cb0c9b643e2576",
@@ -7512,15 +7531,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Announcement of Presentation in Academic Conference Regarding Result of Specified Clinical Trial using Digital Therapeutics for Tinnitus",
-      "title_zh": "",
+      "title_zh": "杏林将在学术会议报告耳鸣数字疗法的特定临床研究结果",
       "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001855.shtml",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 KYORIN Pharmaceutical / 杏林制药 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -7593,7 +7612,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:1d3ea1d6fa01cd73",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "03ed901dd13f046ebb5c893de479373a1e50f7f8f843d2277b888bc67bea4ec1",
+        "evidence": [
+          {
+            "label": "KYORIN Pharmaceutical official news",
+            "url": "https://www.kyorin-pharm.co.jp/en/news/2025/001855.shtml"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "6858bf4b793b0b96",
@@ -8474,15 +8512,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "世界肺がん学会（WCLC 2026）で発表したトラスツズマブ デルクステカン（T-DXd/DS-8201）のHER2遺伝子変異を有する非小細胞肺がん一次治療を対象とした第3相臨床試験の最新データについて",
-      "title_zh": "",
+      "title_zh": "第一三共公布 WCLC 2026 数据：T-DXd 用于 HER2 突变非小细胞肺癌一线治疗的三期进展",
       "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202609/20260914_J.pdf",
       "published": "2026-09-14",
       "summary": "",
-      "ai_summary": "客户池公司 Daiichi Sankyo / 第一三共 出现市场活动信息，重点涉及HER2。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -8556,7 +8594,26 @@
       "published_at": "2026-09-14",
       "event_start_at": "",
       "age_days": 18,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:a0a4672232044bc3",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "0307504ce12f793da8777259cadbdd53dd87f5d201649c590a71be1de46d63de",
+        "evidence": [
+          {
+            "label": "Daiichi Sankyo Japan press releases - official JSON",
+            "url": "https://www.daiichisankyo.co.jp/files/news/pressrelease/pdf/202609/20260914_J.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "79ab7bd03b8608f0",
@@ -8693,15 +8750,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "エンスプリングに関するロシュ社の発表について（MOG抗体関連疾患に対するFDAによる申請受理および優先審査指定）",
-      "title_zh": "",
+      "title_zh": "中外制药转发罗氏公告：FDA 受理 Enspryng 用于 MOG 抗体相关疾病的申请并授予优先审评",
       "url": "https://www.chugai-pharm.co.jp/news/detail/20260910180000_1611.html",
       "published": "2026-09-10",
       "summary": "",
-      "ai_summary": "客户池公司 Chugai Pharmaceutical / 中外制药 出现临床监管信号，重点涉及抗体。 客户池公司出现注册 / 审批信号，可评估抗体需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -8779,7 +8836,26 @@
       "published_at": "2026-09-10",
       "event_start_at": "",
       "age_days": 22,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:96f277f149fdfebd",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "8c45daec9e244e14f0ee50f6ca48fed1e84c7b38f068e718fce34d54d1b19192",
+        "evidence": [
+          {
+            "label": "Chugai newsroom - official RSS",
+            "url": "https://www.chugai-pharm.co.jp/news/detail/20260910180000_1611.html"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "4a2c0deb878bb6c4",
@@ -9513,15 +9589,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Announcement for Completion of the PMDA Investigation of CTN (Clinical Trial Notification)for TRG035 Phase IIa Trial.",
-      "title_zh": "",
+      "title_zh": "Toregem 宣布 PMDA 完成 TRG035 二期a试验临床试验备案审查",
       "url": "https://toregem.co.jp/en/archives/10459",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Toregem BioPharma / Toregem牙齿再生 出现临床监管信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -9594,7 +9670,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:64d72aca615db91b",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "a4f7c181d4479025328a608a998fcfcc0798a16814ed7116304100b9cd45b857",
+        "evidence": [
+          {
+            "label": "Toregem BioPharma official news",
+            "url": "https://toregem.co.jp/en/archives/10459"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "03792069910fcdb0",
@@ -9621,15 +9716,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Phase I Clinical Trial Results of ⁶⁴Cu-ATSM Radioligand Therapy for Recurrent Malignant Brain Tumors Published in ESMO Open, a Peer-Reviewed Journal",
-      "title_zh": "",
+      "title_zh": "铜-64 ATSM 放射性配体治疗复发性恶性脑肿瘤的一期结果发表于《ESMO Open》",
       "url": "https://linqmed.net/news/phase-i-clinical-trial-results-of-%e2%81%b6%e2%81%b4cu-atsm-radioligand-therapy-for-recurrent-malignant-brain-tumors-published-in-esmo-open-a-peer-reviewed-journal",
       "published": "2026-07-30",
       "summary": "",
-      "ai_summary": "客户池公司 Linqmed Inc / リンクメッド 出现临床监管信号，重点涉及放射性药物。 客户池公司出现I 期临床信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -9705,7 +9800,26 @@
       "published_at": "2026-07-30",
       "event_start_at": "",
       "age_days": 64,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:03792069910fcdb0",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "810c7b7684afd56de944de04f8238187d6d4d1f7b92bae313a40f60fc2f3c074",
+        "evidence": [
+          {
+            "label": "Linqmed Inc official news",
+            "url": "https://linqmed.net/news/phase-i-clinical-trial-results-of-%e2%81%b6%e2%81%b4cu-atsm-radioligand-therapy-for-recurrent-malignant-brain-tumors-published-in-esmo-open-a-peer-reviewed-journal"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "754b5e4f8a2ced57",
@@ -10608,15 +10722,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "REPROCELL Submits Application for Manufacturing and Marketing Approval in Japan for Stem Cell Therapy Stemchymal® for Spinocerebellar Ataxia (SCA3 and SCA6)",
-      "title_zh": "",
+      "title_zh": "REPROCELL 在日本申报 Stemchymal 干细胞疗法，拟用于 SCA3 和 SCA6 型脊髓小脑性共济失调",
       "url": "https://www.reprocell.com/news/reprocell-submits-application-for-manufacturing-and-marketing-approval-in-japan-for-stem-cell-therapy-stemchymal-for-spinocerebellar-ataxia-sca3-and-sca6",
       "published": "2026-06-24",
       "summary": "REPROCELL Submits Application for Manufacturing and Marketing Approval in Japan for Stem Cell Therapy Stemchymal® for Spinocerebellar Ataxia (SCA3 and SCA6) kyodonewsprwire.jp",
-      "ai_summary": "客户池公司 REPROCELL / ReproCELL再生细胞 出现市场与区域动态，重点涉及细胞治疗。 客户池公司出现注册 / 审批信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -10699,7 +10813,26 @@
       "published_at": "2026-06-24",
       "event_start_at": "",
       "age_days": 100,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:164619c559bf04db",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "bc04d47c9c1c27287e7a95f5ab30b369169c3b997dc1c7384aede86e8c03747e",
+        "evidence": [
+          {
+            "label": "REPROCELL official news",
+            "url": "https://www.reprocell.com/news/reprocell-submits-application-for-manufacturing-and-marketing-approval-in-japan-for-stem-cell-therapy-stemchymal-for-spinocerebellar-ataxia-sca3-and-sca6"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "083530f1f5161fdb",
@@ -10831,15 +10964,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform - Yahoo Finance",
-      "title_zh": "",
+      "title_zh": "投资者如何看待赛默飞新获 FDA 许可的多发性骨髓瘤平台",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5",
       "published": "2026-08-10",
       "summary": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform Yahoo Finance",
-      "ai_summary": "竞品 Thermo Fisher Scientific 出现产品与平台动态。 竞品正在推进product相关动作，值得对比产品定位、市场话术和区域覆盖。 建议按“竞品对比”处理：对比竞品的产品、技术、合作和区域动作，评估是否需要调整话术或销售材料。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "index",
         "kind_label": "聚合索引线索",
@@ -10909,7 +11042,26 @@
       "published_at": "2026-08-10",
       "event_start_at": "",
       "age_days": 53,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:c302686d90937569",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "226483411ffc727f4872943d9ef6a874010206266c33eced98adafcdb23d1906",
+        "evidence": [
+          {
+            "label": "Google News RSS - Thermo Fisher",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkhEUVBsejNJUU5FOFFXNm5sMGFUME9CMmxuXzBHRGJzdjBfZ1IyUjM5Vng5VTJXWHh2d1h3Ykp3S2pjVDZZbVRzbGE5WnNwVTUyazFyR19xV1pZQ29lclZNLWV4WVVtWDNjbER1R01CUjZwbzE0ZV8yOUJjYnp3VXdHZXpfRWp5ME9tdFRnM0xnLWp2SzBkVDZpelYzT19UQ0dhZnF0UQ?oc=5"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "92919e2b023b523c",
@@ -11391,15 +11543,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Eisai and Osaka Prefecture Enter into Collaboration to Promote Awareness of Dementia and Mild Cognitive Impairment (MCI) - Eisai Co., Ltd.",
-      "title_zh": "",
+      "title_zh": "卫材与大阪府合作，推动失智症及轻度认知障碍的公众认知",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RTXFGUkxSMXB3WVZ6dEJDSjRvdnptR2xTRmFZcFQ0bDN6OFZGTHptYUFRM0cyMlpSMlAzTUxYOGdOc3pxSEE2Ym83U0ItRTdBd2FXamN0ckpoSDQ?oc=5",
       "published": "2026-09-14",
       "summary": "Eisai and Osaka Prefecture Enter into Collaboration to Promote Awareness of Dementia and Mild Cognitive Impairment (MCI) Eisai Co., Ltd.",
-      "ai_summary": "客户池公司 Eisai / 卫材 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -11470,7 +11622,26 @@
       "published_at": "2026-09-14",
       "event_start_at": "",
       "age_days": 18,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:ad8ce209adaa3831",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "51b05c81d551152e43aa593b14bf202a1e1a1f0aed511aa3f07954c319cbc128",
+        "evidence": [
+          {
+            "label": "Eisai global news - official indexed RSS",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RTXFGUkxSMXB3WVZ6dEJDSjRvdnptR2xTRmFZcFQ0bDN6OFZGTHptYUFRM0cyMlpSMlAzTUxYOGdOc3pxSEE2Ym83U0ItRTdBd2FXamN0ckpoSDQ?oc=5"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "3315e5d591381584",
@@ -13837,15 +14008,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "湧永製薬株式会社と一般社団法人プロダクティブ・エイジング研究機構の共同研究論文が「Cell Metabolism」誌の「Most read(last 30 days)」に選出",
-      "title_zh": "",
+      "title_zh": "涌永制药与生产性老龄化研究机构的合作论文入选《Cell Metabolism》近30天最多阅读文章",
       "url": "https://www.wakunaga.co.jp/news/%e6%b9%a7%e6%b0%b8%e8%a3%bd%e8%96%ac%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%81%a8%e4%b8%80%e8%88%ac%e7%a4%be%e5%9b%a3%e6%b3%95%e4%ba%ba%e3%83%97%e3%83%ad%e3%83%80%e3%82%af%e3%83%86%e3%82%a3%e3%83%96",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Wakunaga Pharmaceutical / 湧永制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -13916,7 +14087,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:f57f88f98078b35f",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "139d06589d9bf270039404a1c6e585f4fa140b75771cc3f1b577c3f2d8ef0f1c",
+        "evidence": [
+          {
+            "label": "Wakunaga Pharmaceutical official news",
+            "url": "https://www.wakunaga.co.jp/news/%e6%b9%a7%e6%b0%b8%e8%a3%bd%e8%96%ac%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%81%a8%e4%b8%80%e8%88%ac%e7%a4%be%e5%9b%a3%e6%b3%95%e4%ba%ba%e3%83%97%e3%83%ad%e3%83%80%e3%82%af%e3%83%86%e3%82%a3%e3%83%96"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "2272be830da90ce9",
@@ -13943,15 +14133,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "IRニュース 2026年8月28日 当社連結子会社における、国立大学法人東京大学および栄研化学株式会社との共同研究契約締結のお知らせ",
-      "title_zh": "",
+      "title_zh": "OncoTherapy 子公司与东京大学、荣研化学签署共同研究协议",
       "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/08/260828_01.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 OncoTherapy Science / OncoTherapy肿瘤治疗 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -14022,7 +14212,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:2272be830da90ce9",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "32820902df3b4780c4533f08b05b397bf5e248cb0d780954f453000c05b18922",
+        "evidence": [
+          {
+            "label": "OncoTherapy Science official news",
+            "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/08/260828_01.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "893569e7c578cf32",
@@ -16363,15 +16572,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "米国感染症学会週間（IDWeek 2026）での発表について",
-      "title_zh": "",
+      "title_zh": "盐野义发布 IDWeek 2026 学术报告安排",
       "url": "https://www.shionogi.com/jp/ja/news/2026/09/20260910_1.html",
       "published": "2026-09-10",
       "summary": "",
-      "ai_summary": "客户池公司 Shionogi / 盐野义制药 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -16442,7 +16651,26 @@
       "published_at": "2026-09-10",
       "event_start_at": "",
       "age_days": 22,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:fae87a7e3319bf7d",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "37ac8a3270815d0b5422f3865991299f49bd8338ad80c8ec78dc636d9f04bdf6",
+        "evidence": [
+          {
+            "label": "Shionogi Japan news - official page",
+            "url": "https://www.shionogi.com/jp/ja/news/2026/09/20260910_1.html"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "414f565d94b900c7",
@@ -17525,15 +17753,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "SHED Clinical Study for Cerebral Palsy Data Safety Monitoring Board Confirms “No Safety Concerns” Across All Patients and Throughout the Full Observation Period",
-      "title_zh": "",
+      "title_zh": "SHED 脑瘫临床研究：数据安全监察委员会确认全体患者整个观察期未出现安全性疑虑",
       "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260812_01EN_9He7Dj.pdf",
       "published": "2026-08-12",
       "summary": "",
-      "ai_summary": "客户池公司 Kidswell Bio / Kidswell Bio 出现临床监管信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -17602,7 +17830,26 @@
       "published_at": "2026-08-12",
       "event_start_at": "",
       "age_days": 51,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:045026290f5a9811",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "11d3248134792bac4dada2c3e2a67da70d16a54abb536222ead331dd8bc17e07",
+        "evidence": [
+          {
+            "label": "Kidswell Bio official news",
+            "url": "https://www.kidswellbio.com/Portals/0/resources/pdf/en/Topics/2026/20260812_01EN_9He7Dj.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "9abf2a9a285b5521",
@@ -17742,15 +17989,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "BrightPath to Present Preclinical Data of iPSC-Derived BCMA CAR-iNKT Cell Therapy (BP2202) at IMS 2026",
-      "title_zh": "",
+      "title_zh": "BrightPath 将在 IMS 2026 展示 iPSC 来源 BCMA CAR-iNKT 细胞疗法 BP2202 的临床前数据",
       "url": "https://www.brightpathbio.com/english/news/BrightPath%20to%20Present%20Preclinical%20Data%20of%20iPSC-Drived%20BCMA%20CAR-iNKT%20Cell%20Therapy%20%28BP2202%29%20at%20IMS%202026.pdf.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 BrightPath Biotherapeutics / BrightPath免疫治疗 出现临床监管信号，重点涉及BCMA、细胞治疗。 客户池公司出现临床前信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -17827,7 +18074,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:eab130db5383d7d0",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "be34be44e2c9e6152ff2d6e26ea2b154781082e05871c30e74f81d4e44b32567",
+        "evidence": [
+          {
+            "label": "BrightPath Biotherapeutics official news",
+            "url": "https://www.brightpathbio.com/english/news/BrightPath%20to%20Present%20Preclinical%20Data%20of%20iPSC-Drived%20BCMA%20CAR-iNKT%20Cell%20Therapy%20%28BP2202%29%20at%20IMS%202026.pdf.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "8f9363b3ec85fcd7",
@@ -17854,15 +18120,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "FDA Clearance of Investigational New Drug Application for BP2202",
-      "title_zh": "",
+      "title_zh": "BP2202 新药临床试验申请获 FDA 放行",
       "url": "https://www.brightpathbio.com/english/news/FDA%20Clearance%20of%20Investigational%20New%20Drug%20Application%20for%20BP2202.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 BrightPath Biotherapeutics / BrightPath免疫治疗 出现临床监管信号。 客户池公司出现IND / 临床申报信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -17937,7 +18203,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:8f9363b3ec85fcd7",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "744672d25607dedab76052e72a4357e549d8fdb57b000a4b492296f239222842",
+        "evidence": [
+          {
+            "label": "BrightPath Biotherapeutics official news",
+            "url": "https://www.brightpathbio.com/english/news/FDA%20Clearance%20of%20Investigational%20New%20Drug%20Application%20for%20BP2202.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "bab6748ef130a430",
@@ -17964,15 +18249,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "BrightPath Submits IND Application to U.S. FDA for the First-in-human Phase 1 Trial of BP2202",
-      "title_zh": "",
+      "title_zh": "BrightPath 向美国 FDA 提交 BP2202 首次人体一期试验申请",
       "url": "https://www.brightpathbio.com/english/news/2c87582f4dfef1d8d870a93d2b7d81fa7e711c72.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 BrightPath Biotherapeutics / BrightPath免疫治疗 出现临床监管信号。 客户池公司出现IND / 临床申报信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -18048,7 +18333,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:bab6748ef130a430",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "e7ade1d6e8b699bfc7a3db7b84c4381c4b89e67d8abe2d0041612f4f267126e4",
+        "evidence": [
+          {
+            "label": "BrightPath Biotherapeutics official news",
+            "url": "https://www.brightpathbio.com/english/news/2c87582f4dfef1d8d870a93d2b7d81fa7e711c72.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "431a0f55eb51dabf",
@@ -18075,15 +18379,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Toregem Raises Approximately USD 5.3 Million (JPY 850 Million) in Pre-Series C Financing;Total Past Funding Exceeds USD 29 Million (JPY 4.6 Billion）With this fundinig, we will accelerate the clinical development of the world's first tooth regeneration treatment.",
-      "title_zh": "",
+      "title_zh": "Toregem 完成约530万美元 Pre-C 轮融资，加快牙齿再生疗法临床开发",
       "url": "https://toregem.co.jp/en/archives/10381",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Toregem BioPharma / Toregem牙齿再生 出现临床监管信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -18155,7 +18459,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:431a0f55eb51dabf",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "e8a0efa29e356363222978c461899a7645ec3483957dd39212754438d48d298a",
+        "evidence": [
+          {
+            "label": "Toregem BioPharma official news",
+            "url": "https://toregem.co.jp/en/archives/10381"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "1dea0a8b3e5033e9",
@@ -20356,15 +20679,15 @@
       "reported_entity": "ASKA Pharmaceutical Co., Ltd. / あすか製薬株式会社",
       "source_scope": "group_subsidiary",
       "title": "June 22 2026 ASKA Pharmaceutical Announces Phase 3 Clinical Trial Results for Relugolix Combination Therapy (AKP-022), Meeting Primary Endpoint in Patients with Uterine Fibroids",
-      "title_zh": "",
+      "title_zh": "ASKA 公布 relugolix 复方疗法 AKP-022 治疗子宫肌瘤的三期结果，达到主要终点",
       "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=1d2b0dfa55eefa1df4bb5401268bbc52.pdf",
       "published": "2026-06-22",
       "summary": "",
-      "ai_summary": "客户池公司 ASKA Pharmaceutical Holdings / あすか製薬HD 出现市场活动信息。 客户池公司出现III 期临床信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -20437,7 +20760,26 @@
       "published_at": "2026-06-22",
       "event_start_at": "",
       "age_days": 102,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:bd13e203b28f53b6",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "7a18d0c5abdacab4d6863bfbfd0760823dc4ec644a5edfe0f43cb7b89cd5ffe1",
+        "evidence": [
+          {
+            "label": "あすか製薬株式会社（集团子公司）官方新闻",
+            "url": "https://www.aska-pharma.co.jp/english/news/filedownload.php?name=1d2b0dfa55eefa1df4bb5401268bbc52.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "b7b71ad90feb9c97",
@@ -20464,15 +20806,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Kubota Vision to Present Subgroup Analysis from Phase 3 Clinical Trial for Emixustat at the ARVO 2026 Annual Meeting",
-      "title_zh": "",
+      "title_zh": "Kubota Vision 将在 ARVO 2026 公布 emixustat 三期试验亚组分析",
       "url": "https://www.kubotaholdings.co.jp/en/ir/docs/14faf78b400eba0d5753c117d34baacf874a5b5d.pdf",
       "published": "2026-04-22",
       "summary": "",
-      "ai_summary": "客户池公司 Kubota Pharmaceutical Holding / 窪田製薬 出现市场活动信息。 客户池公司出现III 期临床信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -20545,7 +20887,26 @@
       "published_at": "2026-04-22",
       "event_start_at": "",
       "age_days": 163,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:b7b71ad90feb9c97",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "34d0fe873f3dc6200fe3ae74a92fd0af812e0a801b19809944b6b625c5b41442",
+        "evidence": [
+          {
+            "label": "Kubota Pharmaceutical Holding official news",
+            "url": "https://www.kubotaholdings.co.jp/en/ir/docs/14faf78b400eba0d5753c117d34baacf874a5b5d.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "a881986027025ba6",
@@ -21178,15 +21539,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Notice Regarding the Initiation of a Phase 3 Clinical Trial for Overactive Bladder Treatment Vibegron (Development Code KRP-114VP)",
-      "title_zh": "",
+      "title_zh": "杏林启动膀胱过度活动症药物 vibegron（KRP-114VP）三期试验",
       "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001927.shtml",
       "published": "2026-05-07",
       "summary": "",
-      "ai_summary": "客户池公司 KYORIN Pharmaceutical / 杏林制药 出现临床监管信号。 客户池公司出现III 期临床信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -21260,7 +21621,26 @@
       "published_at": "2026-05-07",
       "event_start_at": "",
       "age_days": 148,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:3fef395a1e5cd2d7",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "b86b630aacf868e0807af2f28d06008e37dfecc7af348af1a99b011fb5510b73",
+        "evidence": [
+          {
+            "label": "KYORIN Pharmaceutical official news",
+            "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001927.shtml"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "928a090b10a65392",
@@ -21287,15 +21667,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Kubota Vision Inc. Initiates Clinical-Grade GMP Drug Substance Manufacturing for Emixustat Hydrochloride for the Compassionate Use Program in France",
-      "title_zh": "",
+      "title_zh": "Kubota Vision 启动盐酸 emixustat 临床级 GMP 原料药生产，用于法国同情用药项目",
       "url": "https://www.kubotaholdings.co.jp/en/ir/docs/20260407_APIinitiation_FINAL.pdf",
       "published": "2026-04-07",
       "summary": "",
-      "ai_summary": "客户池公司 Kubota Pharmaceutical Holding / 窪田製薬 出现临床监管信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -21366,7 +21746,26 @@
       "published_at": "2026-04-07",
       "event_start_at": "",
       "age_days": 178,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:928a090b10a65392",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "1573b99be26ff6ef466e2e552571e43f34b3089d90d0a0fabfc598b99fa65bfe",
+        "evidence": [
+          {
+            "label": "Kubota Pharmaceutical Holding official news",
+            "url": "https://www.kubotaholdings.co.jp/en/ir/docs/20260407_APIinitiation_FINAL.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "0f55d4c05aafba01",
@@ -21501,15 +21900,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "ASGCT Annual Meeting 2026 - ACROBiosystems",
-      "title_zh": "",
+      "title_zh": "ACROBiosystems：2026 年美国基因与细胞治疗学会年会",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TUFZFNEZiWmxaMFZXX01ndGtPTUg4ckZ3MGNJTndYaEFtbkwzZ2JTb25iYWhxTkVPZjdOSFJhSXIybVJqcmMtT3g1VHVRMENfQnFUaGo2TVBiU25oRkJOamlOSWlDVFgy?oc=5",
       "published": "2026-07-04",
       "summary": "ASGCT Annual Meeting 2026 ACROBiosystems",
-      "ai_summary": "ACROBiosystems / 百普赛斯更新了市场活动信息。 ACRO 自身公开动态，应核对对外口径并判断是否需要二次传播或内部同步。 建议按“口径与传播跟进”处理：核对官网口径，判断是否转化为 LinkedIn、Newsletter 或销售内部素材。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -21576,7 +21975,26 @@
       "published_at": "2026-07-04",
       "event_start_at": "",
       "age_days": 90,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:b9c3139a1c1c90b2",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "5f24a2084e840c88180a6178c0617b843a9e8022438cbfbb5b267abfcdd8390f",
+        "evidence": [
+          {
+            "label": "ACRO official Events and Webinars - indexed RSS",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TUFZFNEZiWmxaMFZXX01ndGtPTUg4ckZ3MGNJTndYaEFtbkwzZ2JTb25iYWhxTkVPZjdOSFJhSXIybVJqcmMtT3g1VHVRMENfQnFUaGo2TVBiU25oRkJOamlOSWlDVFgy?oc=5"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "f934f57e25353f69",
@@ -24959,15 +25377,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2026年9月15日 2型糖尿病治療薬「マンジャロ®皮下注」について SURPASS-CVOT試験の結果に基づき、電子添文を改訂",
-      "title_zh": "",
+      "title_zh": "田边制药依据 SURPASS-CVOT 结果更新二型糖尿病药 Mounjaro 皮下注射剂电子说明书",
       "url": "https://www.tanabe-pharma.com/ja/news/rel_260915.html",
       "published": "2026-09-15",
       "summary": "",
-      "ai_summary": "客户池公司 Tanabe Pharma / 田边制药 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -25034,7 +25452,26 @@
       "published_at": "2026-09-15",
       "event_start_at": "",
       "age_days": 17,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:788cfcb429b1275b",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "6323c87209751ed01695991ea0d482c08c1945b47d8dcdb37e0259453d23f930",
+        "evidence": [
+          {
+            "label": "Tanabe Pharma Japan news - official page",
+            "url": "https://www.tanabe-pharma.com/ja/news/rel_260915.html"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "f3a378508ed61b1a",
@@ -25534,15 +25971,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Santen and KYORIN announce joint marketing agreement in Japan for allergic conjunctivitis treatment Alesion® Eyelid Cream 0.5%",
-      "title_zh": "",
+      "title_zh": "参天与杏林签订日本联合推广协议，涉及过敏性结膜炎用药 Alesion 0.5%眼睑乳膏",
       "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001926.shtml",
       "published": "2026-07-13",
       "summary": "",
-      "ai_summary": "客户池公司 KYORIN Pharmaceutical / 杏林制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -25609,7 +26046,26 @@
       "published_at": "2026-07-13",
       "event_start_at": "",
       "age_days": 81,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:8486b09a2841f62d",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "91ad9f27ca6f59d0491af52cfaafd0e147932a70ead6302e4f60d2eff8b38f99",
+        "evidence": [
+          {
+            "label": "KYORIN Pharmaceutical official news",
+            "url": "https://www.kyorin-pharm.co.jp/en/news/2026/001926.shtml"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "9cfbbc40b656508b",
@@ -26050,15 +26506,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2026年7月21日 製品・事業 アゼライン酸を日々のスキンケアに取り入れやすい美容液へ。医療機関専売ブランド「DRX®」より「AZAクリア®セラム」発売",
-      "title_zh": "",
+      "title_zh": "乐敦医疗机构专售品牌 DRX 推出壬二酸护肤精华 AZA Clear Serum",
       "url": "https://www.rohto.co.jp/news/release/2026/0721_01",
       "published": "2026-07-21",
       "summary": "",
-      "ai_summary": "客户池公司 Rohto Pharmaceutical / 乐敦制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26131,7 +26587,26 @@
       "published_at": "2026-07-21",
       "event_start_at": "",
       "age_days": 73,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:98a2b1307335856f",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "4b01af5b77baf336b578c804ff12eeee922914a87e3e5f361e27aaf20b9b5fe3",
+        "evidence": [
+          {
+            "label": "Rohto Pharmaceutical official news",
+            "url": "https://www.rohto.co.jp/news/release/2026/0721_01"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "7fca8025e4583351",
@@ -26158,15 +26633,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2026年7月9日 製品・事業 ロート製薬と大阪府が共同企画。母娘で学ぶフェムケアセミナー「母娘で正しく知る、女性のからだとセルフケア」を開催",
-      "title_zh": "",
+      "title_zh": "乐敦制药与大阪府合办母女女性健康及自我护理讲座",
       "url": "https://www.rohto.co.jp/news/release/2026/0709_01",
       "published": "2026-07-09",
       "summary": "",
-      "ai_summary": "客户池公司 Rohto Pharmaceutical / 乐敦制药 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26233,7 +26708,26 @@
       "published_at": "2026-07-09",
       "event_start_at": "",
       "age_days": 85,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:7fca8025e4583351",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "3e7cf60408aba1d77ca7351d1c8fcefcaf0569133abf8d6e3d94ef258d7f8d51",
+        "evidence": [
+          {
+            "label": "Rohto Pharmaceutical official news",
+            "url": "https://www.rohto.co.jp/news/release/2026/0709_01"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "bca6335a0c929a7a",
@@ -26260,15 +26754,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2026年7月8日 製品・事業 ロート製薬×ユーヤンサン スキンケアで初のコラボレーション。医療機関専売ブランド「ダーマセプトRX® ステムアドバンス®」より新商品を発売",
-      "title_zh": "",
+      "title_zh": "乐敦制药与余仁生首次合作开发护肤品，推出 Dermacept RX Stem Advance 新产品",
       "url": "https://www.rohto.co.jp/news/release/2026/0708_01",
       "published": "2026-07-08",
       "summary": "",
-      "ai_summary": "客户池公司 Rohto Pharmaceutical / 乐敦制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26341,7 +26835,26 @@
       "published_at": "2026-07-08",
       "event_start_at": "",
       "age_days": 86,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:bca6335a0c929a7a",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "f52b2e8e1d60ac085aea28e4b0293366b75c3215c96acbc6a74996acc8cd6e15",
+        "evidence": [
+          {
+            "label": "Rohto Pharmaceutical official news",
+            "url": "https://www.rohto.co.jp/news/release/2026/0708_01"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "f06e6f016b65db83",
@@ -26368,15 +26881,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2026年08月20日 アレルギー性結膜炎治療薬「SJP-0049 点眼液」の国内第Ⅲ相臨床試験開始のお知らせ（ PDF）",
-      "title_zh": "",
+      "title_zh": "千寿制药在日本启动过敏性结膜炎药物 SJP-0049 滴眼液三期试验",
       "url": "https://www.senju.co.jp/system/files/content_news/2026-08/JPN_20260820.pdf",
       "published": "2026-08-20",
       "summary": "",
-      "ai_summary": "客户池公司 Senju Pharmaceutical / 千寿制药 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26443,7 +26956,26 @@
       "published_at": "2026-08-20",
       "event_start_at": "",
       "age_days": 43,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:f06e6f016b65db83",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "8fe94f015c821cda50b37a667a7e2ae5562976c981574a07e0065cac20b4c291",
+        "evidence": [
+          {
+            "label": "Senju Pharmaceutical official news",
+            "url": "https://www.senju.co.jp/system/files/content_news/2026-08/JPN_20260820.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "cf9cbd3c95a12573",
@@ -26470,15 +27002,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "低亜鉛血症治療剤『ジンタス®錠25mg』新発売のお知らせ",
-      "title_zh": "",
+      "title_zh": "Nobelpharma 宣布低锌血症治疗药 Zintus 25mg 片上市",
       "url": "https://www.nobelpharma.co.jp/_cms/wp-content/uploads/2026/06/ad3174d28b3bd200d2ed62447b7d7a0d.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Nobelpharma / 诺贝尔制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26551,7 +27083,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:cf9cbd3c95a12573",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "691cb8c9990e3ee526c88c7ebf2156b4f24eafc4f39d5a2c59dc8424bbbecdea",
+        "evidence": [
+          {
+            "label": "Nobelpharma official news",
+            "url": "https://www.nobelpharma.co.jp/_cms/wp-content/uploads/2026/06/ad3174d28b3bd200d2ed62447b7d7a0d.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "1c4f9e457706b64b",
@@ -26578,15 +27129,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2026.07.21 Event Thank you for visiting CellSeed’s Booth at ISSCR 2026 in Montréal!",
-      "title_zh": "",
+      "title_zh": "CellSeed 致谢蒙特利尔 ISSCR 2026 展位访客",
       "url": "https://www.cellseed.com/en/news/2026/event/20260721130831.html",
       "published": "2026-07-21",
       "summary": "",
-      "ai_summary": "客户池公司 CellSeed / CellSeed细胞片 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26656,7 +27207,26 @@
       "published_at": "2026-07-21",
       "event_start_at": "",
       "age_days": 73,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:1c4f9e457706b64b",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "ffedf5f37b33bf276411e6b3ad0ac10a57f6ac0d31cd47fe258840d18e3c5ca3",
+        "evidence": [
+          {
+            "label": "CellSeed official news",
+            "url": "https://www.cellseed.com/en/news/2026/event/20260721130831.html"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "00d6396b23c95542",
@@ -26683,15 +27253,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "StemRIM Announces Patent Registration for Stem Cell Gene Therapy Technology (SR-GT1) Aimed at Curative Treatment of DEB in ,South Korea",
-      "title_zh": "",
+      "title_zh": "StemRIM 用于营养不良型大疱性表皮松解症的干细胞基因治疗技术 SR-GT1 获韩国专利",
       "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/07/140120260708589829.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 StemRIM / StemRIM再生诱导 出现产品与平台动态，重点涉及基因治疗。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26761,7 +27331,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:00d6396b23c95542",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "4f6aebc63a51c3845c8fcf03d347cc870c65e980130f48a24e463030ecd92db0",
+        "evidence": [
+          {
+            "label": "StemRIM official news",
+            "url": "https://stemrim.com/english/wp/wp-content/uploads/2026/07/140120260708589829.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "ea45a92acb4d2af2",
@@ -26790,15 +27379,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "A Patent for Technology under Development Granted in EU",
-      "title_zh": "",
+      "title_zh": "Noile-Immune 在研技术获欧洲专利授权",
       "url": "https://www.noile-immune.com/dcms_media/other/20260806_Patent_for_Technology_Development_Granted_en_NIB_up.pdf",
       "published": "2026-08-06",
       "summary": "",
-      "ai_summary": "客户池公司 Noile-Immune Biotech / Noile免疫细胞治疗 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26867,7 +27456,26 @@
       "published_at": "2026-08-06",
       "event_start_at": "",
       "age_days": 57,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:ea45a92acb4d2af2",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "39cabac313c322a3285f12dfe3283b813521a51a25988b8d940b5cc755fa5940",
+        "evidence": [
+          {
+            "label": "Noile-Immune Biotech official news",
+            "url": "https://www.noile-immune.com/dcms_media/other/20260806_Patent_for_Technology_Development_Granted_en_NIB_up.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "6b9246517273f8b2",
@@ -26894,15 +27502,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Notice of Ending Collaboration Agreement with Adaptimmune Limited",
-      "title_zh": "",
+      "title_zh": "Noile-Immune 宣布终止与 Adaptimmune 的合作协议",
       "url": "https://www.noile-immune.com/dcms_media/other/Notice_of_Ending_Collaboration_Agreement_with_Adaptimmune_Noile20260518_en_hp.pdf",
       "published": "2026-05-18",
       "summary": "",
-      "ai_summary": "客户池公司 Noile-Immune Biotech / Noile免疫细胞治疗 出现合作或交易信号。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -26974,7 +27582,26 @@
       "published_at": "2026-05-18",
       "event_start_at": "",
       "age_days": 137,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:6b9246517273f8b2",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "8f4fa667797bc2a199ed2887041cebcb2d02823e084d560beb034c949a99aafd",
+        "evidence": [
+          {
+            "label": "Noile-Immune Biotech official news",
+            "url": "https://www.noile-immune.com/dcms_media/other/Notice_of_Ending_Collaboration_Agreement_with_Adaptimmune_Noile20260518_en_hp.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "0edcb630e412278e",
@@ -27103,15 +27730,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "美容ドリンク「艶美華Rich」発売のお知らせ",
-      "title_zh": "",
+      "title_zh": "涌永制药推出美容饮品“艳美华 Rich”",
       "url": "https://www.wakunaga.co.jp/news/%e7%be%8e%e5%ae%b9%e3%83%89%e3%83%aa%e3%83%b3%e3%82%af%e3%80%8c%e8%89%b6%e7%be%8e%e8%8f%africh%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Wakunaga Pharmaceutical / 湧永制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27184,7 +27811,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:710bb4cd7adb45f1",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "358f341022fdf9889994bb9ce701cb03b54f7eca6bdb44bba76fad081d49780f",
+        "evidence": [
+          {
+            "label": "Wakunaga Pharmaceutical official news",
+            "url": "https://www.wakunaga.co.jp/news/%e7%be%8e%e5%ae%b9%e3%83%89%e3%83%aa%e3%83%b3%e3%82%af%e3%80%8c%e8%89%b6%e7%be%8e%e8%8f%africh%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "22f29e2ced6ea714",
@@ -27211,15 +27857,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "機能性表示食品「ラクッション極」発売のお知らせ",
-      "title_zh": "",
+      "title_zh": "涌永制药推出功能性标示食品 Rakushion Kiwami",
       "url": "https://www.wakunaga.co.jp/news/%e6%a9%9f%e8%83%bd%e6%80%a7%e8%a1%a8%e7%a4%ba%e9%a3%9f%e5%93%81%e3%80%8c%e3%83%a9%e3%82%af%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e6%a5%b5%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Wakunaga Pharmaceutical / 湧永制药 出现产品与平台动态。 客户池公司出现上市 / 商业化信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27292,7 +27938,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:22f29e2ced6ea714",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "8cc32c49883b12d8db0832efda74fc2167bb37405886ac8eadb539ea4a2c2659",
+        "evidence": [
+          {
+            "label": "Wakunaga Pharmaceutical official news",
+            "url": "https://www.wakunaga.co.jp/news/%e6%a9%9f%e8%83%bd%e6%80%a7%e8%a1%a8%e7%a4%ba%e9%a3%9f%e5%93%81%e3%80%8c%e3%83%a9%e3%82%af%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e6%a5%b5%e3%80%8d%e7%99%ba%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "fd9b57351f6c2878",
@@ -27319,15 +27984,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Hitachi Social Innovation Forum 2026 JAPAN 特別セミナーで講演, September 4",
-      "title_zh": "",
+      "title_zh": "MOLCURE 在日立社会创新论坛2026日本站专题研讨会演讲",
       "url": "https://molcure.com/2026/09/15/molcure-26-09-15-jp",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 MOLCURE / MOLCURE人工智能创药 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27398,7 +28063,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:fd9b57351f6c2878",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "c7bb14981067fbae76f5ed17baa72d65ff9d8df19e53924927e8b8645e1f6824",
+        "evidence": [
+          {
+            "label": "MOLCURE official news",
+            "url": "https://molcure.com/2026/09/15/molcure-26-09-15-jp"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "18e45128714cd838",
@@ -27425,15 +28109,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Axcelead Drug Discovery PartnersとAI創薬技術を活用したペプチド創薬で協業を開始, September 8",
-      "title_zh": "",
+      "title_zh": "MOLCURE 与 Axcelead Drug Discovery Partners 启动 AI 多肽药物发现合作",
       "url": "https://molcure.com/2026/09/08/molcure-26-09-08-jp",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 MOLCURE / MOLCURE人工智能创药 出现合作或交易信号。 客户池公司出现早期发现信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27503,7 +28187,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:18e45128714cd838",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "21a9d2919e1650f4523724a4509a1392ce3637ddfb329c049977555e20556299",
+        "evidence": [
+          {
+            "label": "MOLCURE official news",
+            "url": "https://molcure.com/2026/09/08/molcure-26-09-08-jp"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "4cb9d5bcadcc1878",
@@ -27530,15 +28233,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Toregem attend to the NFED（National Foundation for Ectodermal Dysplasias）Family Conference in St.Luois.",
-      "title_zh": "",
+      "title_zh": "Toregem 参加圣路易斯美国外胚层发育不良基金会家庭会议",
       "url": "https://toregem.co.jp/en/archives/10451",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Toregem BioPharma / Toregem牙齿再生 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27608,7 +28311,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:4cb9d5bcadcc1878",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "ab4e6b12942313572f64728372332ac5924ac947ceb3f7a868487240a8761917",
+        "evidence": [
+          {
+            "label": "Toregem BioPharma official news",
+            "url": "https://toregem.co.jp/en/archives/10451"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "ff65458906f5de58",
@@ -27635,15 +28357,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "ビジネスニュース 2026年7月10日 当社連結子会社の第33回日本遺伝子診療学会大会における演題発表のお知らせ",
-      "title_zh": "",
+      "title_zh": "OncoTherapy 子公司将在第33届日本基因诊疗学会大会发表研究报告",
       "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260710_01.pdf",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 OncoTherapy Science / OncoTherapy肿瘤治疗 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27713,7 +28435,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:ff65458906f5de58",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "a3d20522f44b11bbe81384fe115dc8e3de602186a680620b74424a4ee2246742",
+        "evidence": [
+          {
+            "label": "OncoTherapy Science official news",
+            "url": "https://www.oncotherapy.co.jp/wp-content/uploads/2026/07/260710_01.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "78d917e58a4dc352",
@@ -27740,15 +28481,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "PRESS RELEASE (2) 2 posts",
-      "title_zh": "",
+      "title_zh": "HanaVax 新闻公告栏目：2篇内容",
       "url": "https://en.hanavax.co.jp/news/categories/press-release",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 HanaVax / HanaVax疫苗研发 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27818,7 +28559,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:78d917e58a4dc352",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "4981bf3673ced6ad4170c552bd976db9db47c78bbbeba9d8459304b450da93e7",
+        "evidence": [
+          {
+            "label": "HanaVax official news",
+            "url": "https://en.hanavax.co.jp/news/categories/press-release"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "5252690f5ff9ab63",
@@ -27845,15 +28605,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "CONFERENCE (0) 0 posts",
-      "title_zh": "",
+      "title_zh": "HanaVax 会议栏目：0篇内容",
       "url": "https://en.hanavax.co.jp/news/categories/conference",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 HanaVax / HanaVax疫苗研发 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -27923,7 +28683,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:5252690f5ff9ab63",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "a0ef0a5d578d8f1936a254c9d98ffb1cc7f86786be69232c64558933148cf974",
+        "evidence": [
+          {
+            "label": "HanaVax official news",
+            "url": "https://en.hanavax.co.jp/news/categories/conference"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "73a85557c7a6be22",
@@ -27950,15 +28729,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "2024. 09. 26 EVENT セルージョン JHVS2024出展のお知らせ",
-      "title_zh": "",
+      "title_zh": "Cellusion 宣布参展 JHVS 2024",
       "url": "https://cellusion.jp/news/jp/3215",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 Cellusion Inc / セルージョン 出现市场活动信息。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -28028,7 +28807,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:73a85557c7a6be22",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "1c727b2029a43da8d2e0926645b2e96022a6fc712f88fd4a3e19e8dc06cd7f73",
+        "evidence": [
+          {
+            "label": "Cellusion Inc official news",
+            "url": "https://cellusion.jp/news/jp/3215"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "2a185f5d2714d8ff",
@@ -28055,15 +28853,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "九州大学病院キャンパス内「エフラボ九大病院」にて独自の細胞培養加工施設（CPC）の整備を開始～革新的ながん治療薬の商用生産体制確立へ～",
-      "title_zh": "",
+      "title_zh": "GAIA BioMedicine 在九州大学医院园区启动细胞加工设施建设，面向癌症治疗药物商业化生产",
       "url": "https://gaia-biomed.com/10804",
       "published": "",
       "summary": "",
-      "ai_summary": "客户池公司 GAiA BioMedicine Inc / ガイアバイオメディシン 出现产品与平台动态，重点涉及细胞培养 / 培养基。 客户池公司出现新的研发信号，可评估细胞培养 / 培养基需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -28133,7 +28931,26 @@
       "published_at": "",
       "event_start_at": "",
       "age_days": null,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:2a185f5d2714d8ff",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "b036905e6d5a47a37e864ced7abced7eb3142b23c2a69d06c9f171bf16925e24",
+        "evidence": [
+          {
+            "label": "GAiA BioMedicine Inc official news",
+            "url": "https://gaia-biomed.com/10804"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     },
     {
       "id": "68038444b158736b",
@@ -28160,15 +28977,15 @@
       "reported_entity": "",
       "source_scope": "company",
       "title": "Kubota Vision to Present Twelve-Month Pilot Study Results of Kubota Glass Technology in Combination with Low-Dose Atropine at the 2026 American Academy of Optometry Meeting in Anaheim",
-      "title_zh": "",
+      "title_zh": "Kubota Vision 将在美国视光学会2026年会上公布 Kubota Glass 联合低剂量阿托品的12个月试点研究结果",
       "url": "https://www.kubotaholdings.co.jp/en/ir/docs/Kubota_Vision_Academy_2026_Press_Release_FINAL3_cl.pdf",
       "published": "2026-09-09",
       "summary": "",
-      "ai_summary": "客户池公司 Kubota Pharmaceutical Holding / 窪田製薬 出现产品与平台动态。 客户池公司出现新的研发信号，可评估相关试剂与服务需求。 建议按“客户需求跟进”处理：调取客户档案和既有沟通记录，核对产品需求与跟进时机。",
-      "summary_method": "rule",
-      "summary_provider": "rules",
-      "summary_model": "",
-      "summary_quality": "structured_inference",
+      "ai_summary": "原始记录未提供可用摘要，请通过原文入口查看具体内容。",
+      "summary_method": "manual_ai",
+      "summary_provider": "codex_source_review",
+      "summary_model": "Codex editorial translation",
+      "summary_quality": "source_limited",
       "evidence": {
         "kind": "primary",
         "kind_label": "一手或官方证据",
@@ -28235,7 +29052,26 @@
       "published_at": "2026-09-09",
       "event_start_at": "",
       "age_days": 23,
-      "days_until_event": null
+      "days_until_event": null,
+      "summary_review": {
+        "reviewed_at": "2026-10-03",
+        "reviewer": "Codex",
+        "event_key": "translation:68038444b158736b",
+        "kind": "codex_editorial_translation",
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read.",
+        "material_level": "title_only",
+        "summary_availability": "unavailable",
+        "source_material_sha256": "51830723f2a2bd35ce639ceaf76b11cc9280c7a1c1fa0776a3c8568db23c4dbd",
+        "evidence": [
+          {
+            "label": "Kubota Pharmaceutical Holding official news",
+            "url": "https://www.kubotaholdings.co.jp/en/ir/docs/Kubota_Vision_Academy_2026_Press_Release_FINAL3_cl.pdf"
+          }
+        ],
+        "source_verification_status": "needs_original_check",
+        "full_text_read": false
+      }
     }
   ]
 }

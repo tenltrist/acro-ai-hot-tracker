@@ -1,0 +1,1100 @@
+{
+  "latest_run": {
+    "records": 2505,
+    "new_translations_applied": 406,
+    "selected_records": 242,
+    "protected_data_unchanged": true
+  },
+  "event_archive": {
+    "records": 6678,
+    "new_translations_applied": 893,
+    "selected_records": 576,
+    "protected_data_unchanged": true
+  },
+  "batch_records": 1210,
+  "registry_records": 4020,
+  "registry_only": 317,
+  "batch_material_levels": {
+    "title_only": 914,
+    "title_and_excerpt": 273,
+    "stored_source_material": 23
+  },
+  "summary_unavailable_notices": 914,
+  "collection_time_unchanged": "2026-10-02T03:32:16",
+  "unchanged_old_registry": 2810,
+  "api_synchronized": true,
+  "source_reconciliation": {
+    "changed": [
+      {
+        "id": "3a1f0168bcf3faba",
+        "old_title": "厚労省・PMDA「Project Orbis」に正式参加…抗がん剤審査で国際協力／武田薬品元社長の長谷川閑史氏が死去 など｜製薬業界きょうのニュースまとめ読み（2026年9月11日）",
+        "new_title": "厚労省・PMDA「Project Orbis」に正式参加…抗がん剤審査で国際協力／武田薬品元社長の長谷川閑史氏が死去 など｜製薬業界きょうのニュースまとめ読み（2026年9月11日）",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "ad8ce209adaa3831",
+        "old_title": "Eisai and Osaka Prefecture Enter into Collaboration to Promote Awareness of Dementia and Mild Cognitive Impairment (MCI) | News ReleaseNews Release：2026 | Eisai Co., Ltd. - Eisai",
+        "new_title": "Eisai and Osaka Prefecture Enter into Collaboration to Promote Awareness of Dementia and Mild Cognitive Impairment (MCI) - Eisai Co., Ltd.",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "4277d3ede329dc18",
+        "old_title": "Merck gets $9.5bn underwritten facility for Bio-Techne acquisition - globalcapital.com",
+        "new_title": "Merck gets $9.5bn underwritten facility for Bio-Techne acquisition - Global Capital",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "65e1f4b5215ac9d1",
+        "old_title": "REPROCELL、脊髄小脳性運動失調症（SCA3およびSCA6）を対象とした幹細胞治療薬「Stemchymal（R）」について、日本国内での製造・販売承認申請を提出 - 共同通信PRワイヤー",
+        "new_title": "REPROCELL、脊髄小脳性運動失調症（SCA3およびSCA6）を対象とした幹細胞治療薬「Stemchymal（R）」について、日本国内での製造・販売承認申請を提出 - kyodonewsprwire.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "28b7b42245bc11d9",
+        "old_title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional expansion project - Richmond BizSense",
+        "new_title": "Pharma firm Thermo Fisher misses hiring goals, only gets partial incentives for regional expansion project - richmondbizsense.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c302686d90937569",
+        "old_title": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform - finance.yahoo.com",
+        "new_title": "How Investors Are Reacting To Thermo Fisher Scientific (TMO) New FDA-Cleared Multiple Myeloma Platform - Yahoo Finance",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "164619c559bf04db",
+        "old_title": "REPROCELL Submits Application for Manufacturing and Marketing Approval in Japan for Stem Cell Therapy Stemchymal® for Spinocerebellar Ataxia (SCA3 and SCA6)",
+        "new_title": "REPROCELL Submits Application for Manufacturing and Marketing Approval in Japan for Stem Cell Therapy Stemchymal® for Spinocerebellar Ataxia (SCA3 and SCA6)",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ccdfb3f35238d546",
+        "old_title": "TeSR™ Pluripotent Stem Cell Culture Media - stemcell.com",
+        "new_title": "TeSR™ Pluripotent Stem Cell Culture Media - STEMCELL Technologies",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "14d283e7e5767948",
+        "old_title": "中国创新药的出海叙事，两周后将迎来一个重大变量 - 36 Kr",
+        "new_title": "中国创新药的出海叙事，两周后将迎来一个重大变量 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "bc8fa9af4e11b1a2",
+        "old_title": "再造“增长极”，广州这次要“复制”上海？ - 36 Kr",
+        "new_title": "再造“增长极”，广州这次要“复制”上海？ - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "2654dce7c6c407cd",
+        "old_title": "9月加息快成明牌，后面看懂王了 - 36 Kr",
+        "new_title": "9月加息快成明牌，后面看懂王了 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "e77f90c47a3f2939",
+        "old_title": "深圳芯片“小巨人”重启IPO，雷军、华为、京东方持股 - 36 Kr",
+        "new_title": "深圳芯片“小巨人”重启IPO，雷军、华为、京东方持股 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "3c74d279aa335f43",
+        "old_title": "Anthropic是如何毁书来训练大模型的 - 36 Kr",
+        "new_title": "Anthropic是如何毁书来训练大模型的 - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "3e3ac53095570891",
+        "old_title": "AI辅助创新药，到底靠不靠谱？_精彩视频为您呈现_36氪 - 36 Kr",
+        "new_title": "AI辅助创新药，到底靠不靠谱？_精彩视频为您呈现_36氪 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "3fabb4220f5e4ea8",
+        "old_title": "36氪2026年度「产业投资行业」系列名册正式发布 - 36 Kr",
+        "new_title": "36氪2026年度「产业投资行业」系列名册正式发布 - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "69cff7746c2859b7",
+        "old_title": "北交所五年成长路 - 36 Kr",
+        "new_title": "北交所五年成长路 - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "88d4ffe3ca6fcb95",
+        "old_title": "准万亿城市，要造一个新支柱 - 36 Kr",
+        "new_title": "准万亿城市，要造一个新支柱 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "9bacae7b97982139",
+        "old_title": "3年赚了40多亿的和黄医药，李嘉诚才不肯卖 - 36 Kr",
+        "new_title": "3年赚了40多亿的和黄医药，李嘉诚才不肯卖 - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "acab9c2a27d36ffa",
+        "old_title": "圆桌：量智共振·多元路径：共筑中国量子产业下一个十年 | 36氪 2026产业未来大会 - 36 Kr",
+        "new_title": "圆桌：量智共振·多元路径：共筑中国量子产业下一个十年 | 36氪 2026产业未来大会 - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ada3d05d38eabcd1",
+        "old_title": "GPT-6登顶第一，AlphaFold之后最大震撼，成抗体预测最强AI - 36 Kr",
+        "new_title": "GPT-6登顶第一，AlphaFold之后最大震撼，成抗体预测最强AI - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "aebd9744666a70b3",
+        "old_title": "深圳激光雷达巨头冲刺IPO，供货小米、石头科技 - 36 Kr",
+        "new_title": "深圳激光雷达巨头冲刺IPO，供货小米、石头科技 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "b4d8e86e552cd5b1",
+        "old_title": "化疗“杀敌一千自损八百”、实体瘤耐药难破？艾欣达伟用SMDC小分子偶联，推进2亿C轮融资 - 36 Kr",
+        "new_title": "化疗“杀敌一千自损八百”、实体瘤耐药难破？艾欣达伟用SMDC小分子偶联，推进2亿C轮融资 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c7b577134077cf0c",
+        "old_title": "为什么中国只能有一个合肥？ - 36 Kr",
+        "new_title": "为什么中国只能有一个合肥？ - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "e18afa5e31b7777f",
+        "old_title": "“减肥神药”获批国内脂肪肝适应症后，GLP-1还有哪些潜能？ - 36 Kr",
+        "new_title": "“减肥神药”获批国内脂肪肝适应症后，GLP-1还有哪些潜能？ - 36Kr",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "efe9af54bc8916c6",
+        "old_title": "HARMONi-2读出OS阳性，中国数据亮眼 - 36 Kr",
+        "new_title": "HARMONi-2读出OS阳性，中国数据亮眼 - 36kr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "4289b6d713482af9",
+        "old_title": "发际线有救了！Bioactive Materials：核壳冷冻微针“快递”毛囊类器官，让秃皮长出单双根新头发- 干细胞&iPS专区 - news.bioon.com",
+        "new_title": "发际线有救了！Bioactive Materials：核壳冷冻微针“快递”毛囊类器官，让秃皮长出单双根新头发- 干细胞&iPS专区 - 生物谷",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "9166ef6d198bbd97",
+        "old_title": "Cancer Res：把EGFR抗体“钉”在肿瘤上：南方科技大学李志杰等发现IBI3019用三抗解决皮疹和耐药 - news.bioon.com",
+        "new_title": "Cancer Res：把EGFR抗体“钉”在肿瘤上：南方科技大学李志杰等发现IBI3019用三抗解决皮疹和耐药 - 生物谷",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "a7663d62ca6eb49b",
+        "old_title": "官宣| CPC Biotech正式成立：连接器+泵+传感器，整合生物制药流体管理解决方案- 市场专区 - news.bioon.com",
+        "new_title": "官宣| CPC Biotech正式成立：连接器+泵+传感器，整合生物制药流体管理解决方案- 市场专区 - 生物谷",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ac0040f878413e92",
+        "old_title": "Adv Sci：苏州大学钟志远/何欢开发口服水凝胶，让抗体药绕过胃酸直抵结肠，还能顺便清ROS调菌群 - news.bioon.com",
+        "new_title": "Adv Sci：苏州大学钟志远/何欢开发口服水凝胶，让抗体药绕过胃酸直抵结肠，还能顺便清ROS调菌群 - 生物谷",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "8d007de1b8dfa022",
+        "old_title": "Biotech's New Rules: Data, Discipline and the Return of Capital - BioSpectrum Asia",
+        "new_title": "Biotech's New Rules: Data, Discipline and the Return of Capital - biospectrumasia.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "649925961ce8ce38",
+        "old_title": "Thermo Fisher Scientific Completes Sale of its Microbiology Business to Astorg - Business Wire",
+        "new_title": "Thermo Fisher Scientific Completes Sale of its Microbiology Business to Astorg - Business Wire",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "8bc01d3333dd2f51",
+        "old_title": "【アナリスト予想】アステラス製薬、27年3月期経常予想。対前週3.8%上昇。(アイフィス株予報) - Yahoo!ファイナンス",
+        "new_title": "【アナリスト予想】アステラス製薬、27年3月期経常予想。対前週3.8%上昇。(アイフィス株予報) - finance.yahoo.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "621e253d6dc26536",
+        "old_title": "主要株主である筆頭株主及び主要株主並びにその他の関係会社の異動（予定）並びに公開買付けに準ずる行為として政令で定める買集め行為に関するお知らせをいたします。 - cellsource.co.jp",
+        "new_title": "主要株主である筆頭株主及び主要株主並びにその他の関係会社の異動（予定）並びに公開買付けに準ずる行為として政令で定める買集め行為に関するお知らせ｜セルソース株式会社 - cellsource.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ebacae3f5586374d",
+        "old_title": "解散したセルージョンの羽藤元社長、新会社・カクサスバイオを立ち上げてiPS細胞由来角膜内皮代替細胞の開発を継続 - 日経バイオテクONLINE",
+        "new_title": "解散したセルージョンの羽藤元社長、新会社・カクサスバイオを立ち上げてiPS細胞由来角膜内皮代替細胞の開発を継続 - bio.nikkeibp.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "15775822064f3723",
+        "old_title": "中外製薬の研究者と筑波大学の柳沢教授が2026年ラスカー賞を受賞｜Taro Watanabe - note.com",
+        "new_title": "中外製薬の研究者と筑波大学の柳沢教授が2026年ラスカー賞を受賞｜Taro Watanabe - note",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c831879e1ac0b78e",
+        "old_title": "服部元参与「創薬やりがいある」 中外製薬、「ラスカー賞」選出｜全国のニュース｜Web東奥 - 東奥日報社",
+        "new_title": "服部元参与「創薬やりがいある」 中外製薬、「ラスカー賞」選出｜全国のニュース｜Web東奥 - toonippo.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "de6cb216f96d57b6",
+        "old_title": "Chugai Pharmaceutical Researchers and Professor Yanagisawa of the University of Tsukuba Win the 2026 Lasker Award｜Taro Watanabe - note.com",
+        "new_title": "Chugai Pharmaceutical Researchers and Professor Yanagisawa of the University of Tsukuba Win the 2026 Lasker Award｜Taro Watanabe - note",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "e83fb128c3c472a1",
+        "old_title": "中外製薬の3氏がラスカー賞受賞で会見、プロジェクトの危機を乗り越えヘムライブラ創製に至る経緯を振り返る - 日経バイオテクONLINE",
+        "new_title": "中外製薬の3氏がラスカー賞受賞で会見、プロジェクトの危機を乗り越えヘムライブラ創製に至る経緯を振り返る - bio.nikkeibp.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "fb039632c14a180e",
+        "old_title": "服部元参与「創薬やりがいある」 - shimotsuke.co.jp",
+        "new_title": "服部元参与「創薬やりがいある」 - 下野新聞社",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c2925661a0e6867c",
+        "old_title": "Cytiva Launches Fibro dT Platform - Contract Pharma",
+        "new_title": "Cytiva Launches Fibro dT Platform - contractpharma.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "0f6d764366805d61",
+        "old_title": "Cytiva、「Cytiva Forum Japan 2026」を開催：バイオ医薬品の実用化を支える課題と技術動向を共有 - 産経ニュース",
+        "new_title": "Cytiva、「Cytiva Forum Japan 2026」を開催：バイオ医薬品の実用化を支える課題と技術動向を共有 - sankei.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "d465c456895714fc",
+        "old_title": "第一三共/アストラゼネカのエンハーツの肺がん1次治療データがPFS延長するもOSでネガティブな結果に｜Taro Watanabe - note.com",
+        "new_title": "第一三共/アストラゼネカのエンハーツの肺がん1次治療データがPFS延長するもOSでネガティブな結果に｜Taro Watanabe - note",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "de8285659d5ead39",
+        "old_title": "IHHのシンガポール子会社、第一三共相手の訴訟で敗訴 - asiainfonet.com",
+        "new_title": "IHHのシンガポール子会社、第一三共相手の訴訟で敗訴 - asia infonet.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "df5204efbbde7a47",
+        "old_title": "東京地裁が「FHLの株式公開買い付け停止」を巡るNTKの損害賠償等請求を棄却 第一三共が勝訴 - iyakutsushinsha.com",
+        "new_title": "東京地裁が「FHLの株式公開買い付け停止」を巡るNTKの損害賠償等請求を棄却 第一三共が勝訴 - 医薬通信社",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c9cc5e2267f68ee1",
+        "old_title": "エーザイ、AI対話型ロールプレイングサービス「エクサベース ロープレ」を導入 - PR TIMES",
+        "new_title": "対話型ロールプレイングサービス「エクサベース ロープレ」をエーザイが導入 - PR TIMES",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "99963a495b4164cb",
+        "old_title": "リレー・フォー・ライフ芦屋に協賛およびイベント参加 ＪＣＲファーマ - iyakutsushinsha.com",
+        "new_title": "リレー・フォー・ライフ芦屋に協賛およびイベント参加 ＪＣＲファーマ - 医薬通信社",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "a34d03ae5adb65e2",
+        "old_title": "JR-446 ムコ多糖症IIIB型に対するのグローバルP1/2試験開始 メディパルHとＪＣＲファーマ - iyakutsushinsha.com",
+        "new_title": "JR-446 ムコ多糖症IIIB型に対するのグローバルP1/2試験開始 メディパルHとＪＣＲファーマ - 医薬通信社",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "6b05a75e524feda3",
+        "old_title": "科研製薬 久光製薬 マルホ「汗で病院あたりまえに委員会」始動 多汗症で悩む人は抱え込まず意思に相談を 皮膚科専門医や山之内すず「もっと気軽に相談していい」 - ｄメニューニュース",
+        "new_title": "科研製薬 久光製薬 マルホ「汗で病院あたりまえに委員会」始動 多汗症で悩む人は抱え込まず意思に相談を 皮膚科専門医や山之内すず「もっと気軽に相談していい」 - ｄメニューニュース",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "2f50e421994c1433",
+        "old_title": "変革への道筋 製薬トップに聞く（10）クリングルファーマ社長・安達喜一氏 - 日刊工業新聞",
+        "new_title": "変革への道筋 製薬トップに聞く（10）クリングルファーマ社長・安達喜一氏 - nikkan.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ad6c61317a1b8c9e",
+        "old_title": "エボ ファンド(Evo Fund)がクリングルファーマ株式会社＜4884＞株式の変更報告書を提出（保有減少） - ｄメニューニュース",
+        "new_title": "エボ ファンド(Evo Fund)がクリングルファーマ株式会社＜4884＞株式の変更報告書を提出（保有減少） - ｄメニューニュース",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "7ce96600ca8f7074",
+        "old_title": "窪田製薬、眼病治療薬のマイルストーン受領で買い人気 速報 - kabushiki.jp",
+        "new_title": "窪田製薬、眼病治療薬のマイルストーン受領で買い人気 速報 - 株式新聞Web",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "a07d862664626ce7",
+        "old_title": "銘柄チェック～窪田製薬HD、イノバセル、デジプラ、Gモンスター、バードマン - online.nikkei-cnbc.co.jp",
+        "new_title": "銘柄チェック～窪田製薬HD、イノバセル、デジプラ、Gモンスター、バードマン - 日経CNBC online",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "d0abf9326a8251dd",
+        "old_title": "窪田製薬ＨＤ - 日本経済新聞",
+        "new_title": "窪田製薬ホールディングス[4596]：ARVO（視覚と眼科学研究協会会議）2026年年次総会における エミクススタト塩酸塩の第３相臨床試験サブグループ解析結果発表のお知らせ 2026年4月22日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "c6537dc574ad560a",
+        "old_title": "PRISM、GEI、リボミックが上昇、窪田製薬HD、サスメド、イノバセルが下落 - 日経バイオテクONLINE",
+        "new_title": "PRISM、GEI、リボミックが上昇、窪田製薬HD、サスメド、イノバセルが下落 - bio.nikkeibp.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "f500a76964aa17a7",
+        "old_title": "出来高変化率ランキング（10時台）～pluszero、窪田製薬などがランクイン - 株探",
+        "new_title": "出来高変化率ランキング（10時台）～pluszero、窪田製薬などがランクイン - 株探",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "fadbec58d889036e",
+        "old_title": "出来高変化率ランキング（14時台）～三井ハイテク、窪田製薬などがランクイン 執筆： Fisco - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
+        "new_title": "出来高変化率ランキング（14時台）～三井ハイテク、窪田製薬などがランクイン 執筆： Fisco - Investing.com 日本",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "e252262efb5c3873",
+        "old_title": "独自LLMでプロテインAIに挑むMOLCURE、「捨てていたデータも実は重要」 - 日経クロステック",
+        "new_title": "独自LLMでプロテインAIに挑むMOLCURE、「捨てていたデータも実は重要」 - 日経クロステック（xTECH）",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "f41324841651cd4b",
+        "old_title": "日立製作所、オープンイノベーションによる AI 創薬を加速する「秘匿AI基盤」を開発へ サービス提供に向けてMOLCUREと協創本格化 - 日経バイオテクONLINE",
+        "new_title": "日立製作所、オープンイノベーションによる AI 創薬を加速する「秘匿AI基盤」を開発へ サービス提供に向けてMOLCUREと協創本格化 - bio.nikkeibp.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "457a0f44d96cfe6b",
+        "old_title": "がん患者が直面する「3つの情報の壁」を打ち破る。小野薬品工業×michitekuが未来を共に創るパートナー企業を募集 - Creww",
+        "new_title": "がん患者が直面する「3つの情報の壁」を打ち破る。小野薬品工業×michitekuが未来を共に創るパートナー企業を募集 - port.creww.me",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "58d7dc3e732b3ef7",
+        "old_title": "小野薬品工業、エージェント型AIプラットフォームの創薬研究への活用でPhylo社と協業開始 - 日経バイオテクONLINE",
+        "new_title": "小野薬品工業、エージェント型AIプラットフォームの創薬研究への活用でPhylo社と協業開始 - bio.nikkeibp.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "59e6d31d7cefe28a",
+        "old_title": "がん治療のいま2 次世代の「主薬」、国産へ - nikkei.com",
+        "new_title": "がん治療のいま2 次世代の「主薬」、国産へ - 日本経済新聞",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "4aa4d7c9c677dbc4",
+        "old_title": "リプロセル---反落、連結子会社REPROCELL USAに対する補助金の交付決定も - 株探",
+        "new_title": "リプロセル---反落、連結子会社REPROCELL USAに対する補助金の交付決定も - 株探",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "6d49c39fac491b81",
+        "old_title": "米国でロート製薬の目薬約1196万箱が自主回収、ベトナム工場の無菌性問題で - 財経新聞",
+        "new_title": "米国でロート製薬の目薬約1196万箱が自主回収、ベトナム工場の無菌性問題で - zaikei.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "7021e05e0e16e746",
+        "old_title": "Operating profit up 16.8%, net profit down 9.5%—Why did the 'profit gap' occur at Rohto Pharmaceutical (4527)? - note.com",
+        "new_title": "Operating profit up 16.8%, net profit down 9.5%—Why did the 'profit gap' occur at Rohto Pharmaceutical (4527)? - note",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "1ae807864be118de",
+        "old_title": "IDWeek 2026でゾコーバ、セフィデロコルの新データ発表 塩野義製薬 - iyakutsushinsha.com",
+        "new_title": "IDWeek 2026でゾコーバ、セフィデロコルの新データ発表 塩野義製薬 - 医薬通信社",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "353e46c78e7ab4e7",
+        "old_title": "元武田薬品工業社長・元経済同友会代表幹事 長谷川閑史氏が死去 - 日刊工業新聞",
+        "new_title": "元武田薬品工業社長・元経済同友会代表幹事 長谷川閑史氏が死去 - nikkan.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "40788f77f00eaa4e",
+        "old_title": "武田薬品工業元社長の長谷川閑史氏が死去、８０歳…２０１１～１５年に経済同友会代表幹事 - 読売新聞",
+        "new_title": "武田薬品工業元社長の長谷川閑史氏が死去、８０歳…２０１１～１５年に経済同友会代表幹事 - 読売新聞",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "a072f4e2bcd370fa",
+        "old_title": "来年6月にアンドリュー・プランプ リサーチ＆デベロップメントプレジデント退任へ 武田薬品 - iyakutsushinsha.com",
+        "new_title": "来年6月にアンドリュー・プランプ リサーチ＆デベロップメントプレジデント退任へ 武田薬品 - 医薬通信社",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "be017e6b80eddffa",
+        "old_title": "【訃報】長谷川閑史氏（元武田薬品社長CEO）が死去 - sudoh.co.jp",
+        "new_title": "【訃報】長谷川閑史氏（元武田薬品社長CEO）が死去 - sekitei.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c038ee806627c791",
+        "old_title": "武田薬品、研究開発トップのプランプ氏が退任 - chemicaldaily.com",
+        "new_title": "武田薬品、研究開発トップのプランプ氏が退任 - 化学工業日報 電子版",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c13a87b11ad82b80",
+        "old_title": "長谷川閑史さん死去 80歳、武田薬品元社長 - tokyo-np.co.jp",
+        "new_title": "長谷川閑史さん死去 80歳、武田薬品元社長 - 東京新聞",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "0dd7c53ed73ae683",
+        "old_title": "What Makes Thermo Fisher Scientific (TMO) an Attractive Long-Term Bet? - finance.yahoo.com",
+        "new_title": "What Makes Thermo Fisher Scientific (TMO) an Attractive Long-Term Bet? - Yahoo Finance",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "8288eb3f2d21ce93",
+        "old_title": "Top Research Reports for Amgen, Thermo Fisher & Pepsi - finance.yahoo.com",
+        "new_title": "Top Research Reports for Amgen, Thermo Fisher & Pepsi - Yahoo Finance",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c5873faeafc7f6f8",
+        "old_title": "Routine Absorbance Assays: Simplified with Thermo Fisher's Multiskan Ease - Lab Manager",
+        "new_title": "Routine Absorbance Assays: Simplified with Thermo Fisher's Multiskan Ease - labmanager.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "d8a9100c84180991",
+        "old_title": "What Thermo Fisher CEO Said at Investor Day That the Market Is Still Processing - TIKR.com",
+        "new_title": "What Thermo Fisher CEO Said at Investor Day That the Market Is Still Processing - tikr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "78bb6e49df5dafcd",
+        "old_title": "聚焦科创小微盘·科创200ETF鹏华(588240)标的指数涨超1.2%，生物医药、网络安全、机器人等概念领涨市场，市场赚钱效应边际改善 - Jiemian.com",
+        "new_title": "聚焦科创小微盘·科创200ETF鹏华(588240)标的指数涨超1.2%，生物医药、网络安全、机器人等概念领涨市场，市场赚钱效应边际改善 - jiemian.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "970f7e1e60de7404",
+        "old_title": "【异动】药明康德新订单增超40%、泰格医药北美项目增45%！159849、561920联袂拉涨 - Jiemian.com",
+        "new_title": "【异动】药明康德新订单增超40%、泰格医药北美项目增45%！159849、561920联袂拉涨 - jiemian.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "0dfe0bf739ab4700",
+        "old_title": "Hexoprenaline: a review of its pharmacological properties and therapeutic efficacy with particular reference to asthma - medchemexpress.com",
+        "new_title": "Hexoprenaline: a review of its pharmacological properties and therapeutic efficacy with particular reference to asthma - MedChemExpress",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "0feca74130fa9805",
+        "old_title": "Human Skeletal Muscle Cells (HSkMC) Culture Protocol - merckmillipore.com",
+        "new_title": "Human Skeletal Muscle Cells (HSkMC) Culture Protocol - Merck Millipore",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "a8c098f5458f2329",
+        "old_title": "IFN-γ ELISpot Assays on MultiScreen® IP - merckmillipore.com",
+        "new_title": "IFN-γ ELISpot Assays on MultiScreen® IP - Merck Millipore",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "abb2edd246ef0687",
+        "old_title": "Organelle Isolation - merckmillipore.com",
+        "new_title": "Organelle Isolation - Merck Millipore",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "06cc71d9b80e2ad5",
+        "old_title": "DEMO Switch Tank Filling & Loading |Milli-Q® SQ 2Series",
+        "new_title": "DEMO Switch Tank Filling & Loading |Milli-Q® SQ 2Series",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "0a2e01743482d971",
+        "old_title": "Welcom to the Curiosity Cube",
+        "new_title": "Welcom to the Curiosity Cube",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "3f4ad55487363de9",
+        "old_title": "Introducing Milli-Q® SQ 2Series Lab Water Purification Systems",
+        "new_title": "Introducing Milli-Q® SQ 2Series Lab Water Purification Systems",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "51f3d26f703f52b0",
+        "old_title": "Installing Milli-Q® SQ 240C Lab Water System",
+        "new_title": "Installing Milli-Q® SQ 240C Lab Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "536410ba7fbb2131",
+        "old_title": "Installing Milli-Q® SQ 240L Lab Water System with Prefilter",
+        "new_title": "Installing Milli-Q® SQ 240L Lab Water System with Prefilter",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "67df835cb4c64d02",
+        "old_title": "Installing Milli-Q® SQ 240L Lab Water System",
+        "new_title": "Installing Milli-Q® SQ 240L Lab Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "6f37be5c3268b1f6",
+        "old_title": "Built to Last | Milli-Q® SQ 2Series Lab Water Systems",
+        "new_title": "Built to Last | Milli-Q® SQ 2Series Lab Water Systems",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "856139f4240ee10a",
+        "old_title": "World Standards Month Webinars: Be the Reference",
+        "new_title": "World Standards Month Webinars: Be the Reference",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "9340ccb96c28a598",
+        "old_title": "Installing Milli-Q® SQ 240CV Lab Water System",
+        "new_title": "Installing Milli-Q® SQ 240CV Lab Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "959838a7ba646b77",
+        "old_title": "Installing Milli-Q® SQ 200P Ultrapure Lab Water System",
+        "new_title": "Installing Milli-Q® SQ 200P Ultrapure Lab Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c5a98ab852497304",
+        "old_title": "Customer Testimonials Milli-Q® SQ 2Series Lab Water Systems",
+        "new_title": "Customer Testimonials Milli-Q® SQ 2Series Lab Water Systems",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "c6b8fd21adf35d39",
+        "old_title": "Installing Milli-Q® SQ 240XL Lab Water System with Prefilter",
+        "new_title": "Installing Milli-Q® SQ 240XL Lab Water System with Prefilter",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ca162e35ed377783",
+        "old_title": "DEMO Changing Cartridges & Filters | Milli-Q® SQ 2Series Water System",
+        "new_title": "DEMO Changing Cartridges & Filters | Milli-Q® SQ 2Series Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "cb27a8158b023207",
+        "old_title": "Installing Milli-Q® SQ 240 Lab Water System with Prefilter",
+        "new_title": "Installing Milli-Q® SQ 240 Lab Water System with Prefilter",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ce5f1f5dedffc033",
+        "old_title": "Installing Milli-Q® SQ 240XL Lab Water System",
+        "new_title": "Installing Milli-Q® SQ 240XL Lab Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "d45778547a76951f",
+        "old_title": "Retrosynthesis for Every Lab | Discover SYNTHIA® Lab",
+        "new_title": "Retrosynthesis for Every Lab | Discover SYNTHIA® Lab",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "f33f009ae5247030",
+        "old_title": "Installing Milli-Q® SQ 240 Lab Water System",
+        "new_title": "Installing Milli-Q® SQ 240 Lab Water System",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "229a0b5d3fa0f05c",
+        "old_title": "Miltenyi Science Slam 2026 – Basti & Dimas",
+        "new_title": "Miltenyi Science Slam 2026 – Basti & Dimas",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "ab3c49a19154276d",
+        "old_title": "Miltenyi Science Slam 2026 – Highlights",
+        "new_title": "Miltenyi Science Slam 2026 – Highlights",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "cb862beb3f23d319",
+        "old_title": "Miltenyi Science Slam 2026 – Roberto Paterna Ferron",
+        "new_title": "Miltenyi Science Slam 2026 – Roberto Paterna Ferron",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "cf8b0a43f6c7bf6c",
+        "old_title": "Miltenyi Science Slam 2026 – Verena Dzialas",
+        "new_title": "Miltenyi Science Slam 2026 – Verena Dzialas",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "76865cceb21e97aa",
+        "old_title": "ミリアド・ジェネティクス、MyChoice診断システム®の保険適用に前立腺癌を追加取得 - 日経バイオテクONLINE",
+        "new_title": "ミリアド・ジェネティクス、MyChoice診断システム®の保険適用に前立腺癌を追加取得 - bio.nikkeibp.co.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "d0fcaecbcf620950",
+        "old_title": "Protected: How DFE Pharma supports confident continuous manufacturing decisions - Pharmaceutical Technology",
+        "new_title": "How DFE Pharma supports confident continuous manufacturing decisions - Pharmaceutical Technology",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "fce16886f726b31f",
+        "old_title": "DKSH、日本における食品安全検査ソリューション提供に向け新たなパートナーシップを締結 - prtimes.jp",
+        "new_title": "DKSH、日本における食品安全検査ソリューション提供に向け新たなパートナーシップを締結 - PR TIMES",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "235eeb1cf3f290f1",
+        "old_title": "社外取締役対談：グループ成長戦略を策定した取締役会の姿 松井しのぶ氏 × 瀬戸潤子氏 - PR TIMES",
+        "new_title": "社外取締役対談：グループ成長戦略を策定した取締役会の姿 松井しのぶ氏 × 瀬戸潤子氏｜パナソニックグループのストーリー - PR TIMES",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "bb208bcfac8a2c4d",
+        "old_title": "「宇宙を、中四国の次の産業へ。」中四国宇宙産業コンソーシアム設立へ―若田光一氏らを迎え10月16日、広島でSPACE FORUM 2026開催 - PR TIMES",
+        "new_title": "若田光一氏らを迎え、10月16日に広島で「SPACE FORUM 2026」開催（参加無料） - PR TIMES",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "c9bdd8276c54c506",
+        "old_title": "「革新的医薬品等実用化支援基金 創薬クラスターキャンパス整備事業」にNakanoshima Qross（未来医療推進機構）の事業が採択されました - PR TIMES",
+        "new_title": "「革新的医薬品等実用化支援基金 創薬クラスターキャンパス整備事業」にNakanoshima Qross（未来医療推進機構）の事業が採択されました - prtimes.jp",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "0269d9ce54112bf0",
+        "old_title": "Your data is not the bottleneck. The decision is.",
+        "new_title": "Your data is not the bottleneck. The decision is.",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "a05c043a1116feff",
+        "old_title": "Automated packing from development to commercial phase",
+        "new_title": "Automated packing from development to commercial phase",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "7e67dd64dfbede54",
+        "old_title": "Amsbio launches synthetic cell mimics - SelectScience",
+        "new_title": "Amsbio launches synthetic cell mimics - Select Science",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "1361212d92cb77ab",
+        "old_title": "Analytical solutions to accelerate your cell and gene therapy pipeline - Miltenyi Biotec",
+        "new_title": "Miltenyi Biotec - Miltenyi Biotec",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "3c913de8a3de7829",
+        "old_title": "Japan's Hodogaya Chemical sets up Nucleic Acid CDMO subsidiary - BioSpectrum Asia",
+        "new_title": "Japan's Hodogaya Chemical sets up Nucleic Acid CDMO subsidiary - biospectrumasia.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "3d550a6d5b3ad26b",
+        "old_title": "Clinical-grade manufacturing of TILs for therapy - Miltenyi Biotec",
+        "new_title": "Clinical-grade manufacturing of TILs for therapy - miltenyibiotec.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "73a472d9a1b02b3b",
+        "old_title": "Research Use Recombinant Protein Market Report Now Available — Forecasts Market Growth from $1.11B (2026) to $1.55B by 2031, Profiling Thermo Fisher, Bio-Techne, Merck KGaA, Danaher, Revvity, and Others - Yahoo Finance UK",
+        "new_title": "Research Use Recombinant Protein Market Report Now Available — Forecasts Market Growth from $1.11B (2026) to $1.55B by 2031, Profiling Thermo Fisher, Bio-Techne, Merck KGaA, Danaher, Revvity, and Others - uk.finance.yahoo.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "81b9a12390dab947",
+        "old_title": "塩野義製薬｢実質的な定年廃止｣へ…《実質的》の但し書きに漂う大企業の\"シビアな本音\" 残る人､切られる人の違いは？ - 東洋経済オンライン",
+        "new_title": "塩野義製薬｢実質的な定年廃止｣へ…《実質的》の但し書きに漂う大企業の\"シビアな本音\" 残る人､切られる人の違いは？ - toyokeizai.net",
+        "action": "reviewed_publisher_or_metadata_change"
+      },
+      {
+        "id": "94a9c8dcb8621d64",
+        "old_title": "BCMA-Targeted Therapies: CAR-T Success, Bispecific Antibodies, and Future Immunotherapy Trends - ACROBiosystems",
+        "new_title": "BCMA‑Targeted Therapies: CAR‑T Success, Emerging Immunotherapy Platforms, and Future Trends - ACROBiosystems",
+        "action": "updated_chinese_content"
+      },
+      {
+        "id": "abb6fc62a343f3f1",
+        "old_title": "Thermo Fisher Is Up 23% in a Year. Is It Too Late to Buy at $622? - TIKR.com",
+        "new_title": "Thermo Fisher Is Up 23% in a Year. Is It Too Late to Buy at $622? - tikr.com",
+        "action": "reviewed_publisher_or_metadata_change"
+      }
+    ],
+    "registry_only_ids": [
+      "de6d36b955c0d1d9",
+      "f015773717506a78",
+      "2e71e28b2d9771a5",
+      "38b75b9d3d4c8633",
+      "44ab0579ed692779",
+      "8bfd433e17ad221e",
+      "964d390abce372c4",
+      "c93f31c64698bd3c",
+      "db2d616bcea3f9a3",
+      "e593556dc28ee911",
+      "0ed08bfe4d5293f2",
+      "0917d5b8e05659d4",
+      "1411835277f256e6",
+      "487575c1f7ad3f16",
+      "4c2c3bb968e88425",
+      "7cadfc0ae0fb0c69",
+      "ded5e5c07c255826",
+      "5b97c7dfec6b4e9a",
+      "003391cd1341ad72",
+      "19527bd51b905c3e",
+      "4b6f666dfe597d1e",
+      "4beaf0cacf48b427",
+      "51f12a854c419836",
+      "5c204b458b4a279c",
+      "7bd052e7887f404a",
+      "874a4ec34435695e",
+      "d5d1de78d6e3d155",
+      "d8c4e6e4bbf66fa1",
+      "f4412b615db34139",
+      "218813acbd39cf65",
+      "3dfd72f56a9ede23",
+      "3e8509af363a7cb7",
+      "add41d656ae52d3a",
+      "f2c752f70713a03c",
+      "024c5f99bb967e2c",
+      "06f944248e4eef1a",
+      "11efa023c3d6dd70",
+      "12e6f4df951342a6",
+      "1d78cb3d026c6681",
+      "209838ff635d41ca",
+      "226d06f06c676588",
+      "4817854e6e31ca0b",
+      "4a03e3044f563b5e",
+      "69428757849cd827",
+      "76d6d0cb34409b97",
+      "7e55c57bc1a88f72",
+      "9c5d02ad698f03ec",
+      "9c9934d87c674672",
+      "9d953f2f3317b220",
+      "a24f63240c1dc905",
+      "af39d8e4e859afb4",
+      "bc520d0d46848425",
+      "de67b2313f0f9b9a",
+      "e1913194bdbcd782",
+      "e399971e32786b6a",
+      "e487cb3f355f9dfd",
+      "f454f149b3fafdcd",
+      "1d7bea5704ca12b5",
+      "28ef448c3196ff08",
+      "2cf921b8e2431454",
+      "0c59edc5dfdea1d5",
+      "80e77b11db68a4cf",
+      "d2171a63454e22d1",
+      "eabd26cf8b590799",
+      "fe255127da329fca",
+      "0525f48c22bc8f1d",
+      "2c005e75cb883243",
+      "2d6f2db72c19cef8",
+      "3dc1d3c4bfab1d53",
+      "63c577402859cd1e",
+      "64a7a7cd28c86fb8",
+      "8812c66f0e2846c4",
+      "bcc94ef9e5987bb3",
+      "c949a6f683e850a7",
+      "f47cec4ca856eb3a",
+      "1973e9404733043f",
+      "1f0ed38dd238416e",
+      "45dcd1a58eb5acd7",
+      "8723afacde1b5fde",
+      "953aad381ba22e28",
+      "96e381796d136409",
+      "9a7eec890e080705",
+      "b8c4c2e1145a4bf9",
+      "b9e310bbcf2c8efa",
+      "a37deb135eda5d53",
+      "d54b3b57623bbb08",
+      "defa22720842eff6",
+      "02ad49aa373713f4",
+      "1e6f4d258e5a47c7",
+      "45163611720ad082",
+      "527a08db6c8c0555",
+      "96b5f9aeda4bb042",
+      "9ea813e6f8f3a3cc",
+      "ad0dd92518c3e18e",
+      "ba92a92e414bec1e",
+      "bc76480bba9aad56",
+      "c7b1d6d42937cfd8",
+      "08941d0ad75cf44e",
+      "58811eee033a9f4d",
+      "804f3ff32ffc3944",
+      "a25edddbd1738665",
+      "a2f1cf20546ecedd",
+      "a5e1fa0bda007145",
+      "b5caf1d32a62da7f",
+      "b6b1f80412112fa9",
+      "0d043d4cfdbfcdcc",
+      "3ae27f57805aa7ed",
+      "3ea8740bf0beef32",
+      "54e275de97f2c903",
+      "80ab7ad022dc2d14",
+      "abc5fae6fbb0a0fe",
+      "b2e46e6ec01d0806",
+      "bf9d297aa5c2a114",
+      "d604ecb9896d2811",
+      "dceca8d3a8531545",
+      "0d2b06cba0975751",
+      "3b140a3178d54e18",
+      "445ea6b7cceba574",
+      "6e502541cee459fa",
+      "8764609442af54cc",
+      "95dde5146044c152",
+      "a9b5f5f48131000d",
+      "ba28aece66dde423",
+      "da1fb1b3b5bd77f1",
+      "dbdb915dea78332a",
+      "1d07b2d75e2c5567",
+      "1e4ff430ec2a1bd4",
+      "2a23aa56b53077a0",
+      "3a408a0fa7ca08c7",
+      "58fea57961168484",
+      "6626fbb86b3c6393",
+      "8426c9dd0e5fb71f",
+      "dc5417d448c546b0",
+      "e7691bfcad93ccab",
+      "22dc63faabd815a2",
+      "303afb5194645a5d",
+      "440d3ac106d68f21",
+      "7665411154617755",
+      "942d3a87ba199e28",
+      "ae1ff4872732f2d5",
+      "c4127cf8ff393cac",
+      "da0311f31597616b",
+      "e9472ef20fbab027",
+      "23b4642950b0ac87",
+      "5850d0fc038219b5",
+      "5b148c63cdd949ab",
+      "84b17427fbc6d234",
+      "a6d71da13d0d49e8",
+      "a8da657757885e57",
+      "b346fdfaf8499b92",
+      "c25e72d223cc9918",
+      "d6ad2cd6cb5d5801",
+      "f33f09086e041033",
+      "390e503165671c13",
+      "9f5b5fdb205c173d",
+      "c838e0982050757f",
+      "5a5f943f30bc3425",
+      "60ef1b56c2ec30ef",
+      "6755f8382734e0a2",
+      "682d62be2816ef1b",
+      "b5d63456dc7d6f70",
+      "c92548d19a184c21",
+      "dc1ee44e669b8cff",
+      "dee3f093d0d87cde",
+      "ee63e2c659cdccac",
+      "db7a09accfc65c8d",
+      "05b578725f226895",
+      "55ec8cd8f97c1e52",
+      "0da9bd6d15dda5d3",
+      "20697ac41a3900d0",
+      "2fe93ab65d04d1f9",
+      "5e695bee379519e5",
+      "bef5bf3203e97a5b",
+      "d39f23ae2a750fae",
+      "1f063dc8e0ae38b6",
+      "45931038cbb03022",
+      "768813056be0045e",
+      "7f8cfac83abf603c",
+      "f008f56b55fc9efe",
+      "f97b271ef4b42593",
+      "01d3377b0ac23452",
+      "d475a1d6887390b0",
+      "fea71f4ea0e4f6fa",
+      "fef49b52cfbd0f60",
+      "19fb9ab334450b81",
+      "51ed0faa5733ef80",
+      "64070e809ffeb46c",
+      "a6e8bd739a876b7f",
+      "002e973097c675d4",
+      "01d0d49bb831b620",
+      "14fe7d1add1127e7",
+      "2263f0dc501e2876",
+      "75691bab25eef12c",
+      "8755a1f9e1c10723",
+      "915faae202d79e83",
+      "a1e870ada967adee",
+      "b24abb769164ff6b",
+      "c06497de472bb109",
+      "da443c85f7c446f7",
+      "f8ae203d18de6479",
+      "4e6f482186301c22",
+      "5109d3d565235778",
+      "890ff935b1729fb5",
+      "afda4b6cd12658c7",
+      "bb5f1fa104803b18",
+      "ebd7dba7c85f26d1",
+      "fb7d1a19959573b3",
+      "f8b3a62822631d5c",
+      "1de608ffdae11543",
+      "ef8a1db3acd8f5f2",
+      "33546570b513e566",
+      "3df7511dda0c2c17",
+      "6d7721d9cfd95c1d",
+      "88d29acee3252398",
+      "69ceab13d94d5220",
+      "7a5f283affb5427e",
+      "00cdfcf5a6a8c6f5",
+      "fb03500ca505c0b7",
+      "546f88c3e778abf1",
+      "a6e0aef43e97509f",
+      "3202eb4d845be064",
+      "5e6d5a7c75322d28",
+      "85efe4d435a6c8c8",
+      "6f52e12de83f4cb9",
+      "732ff7c732a71ae8",
+      "c149e19a44a37b19",
+      "fb36ce02bac62ac1",
+      "0bb7123305dd77d9",
+      "b8f77bc562354f19",
+      "a52cd7f9ee9614e6",
+      "df1f737deaa129d9",
+      "6d4ddb4d3dff2e1f",
+      "8a49fabf2f0d3df2",
+      "c97f0a74d8d2700f",
+      "dae8a113b5d5b8fd",
+      "118ca36193d8161c",
+      "4e1a109ace2407d6",
+      "4fc4a4939f3e7b06",
+      "e5d035fb71531b3f",
+      "0dbdeea30bf3a2eb",
+      "00c66e22cecf8931",
+      "084429e5548e6cf7",
+      "0b901b52b3b19d8c",
+      "17e4558d884b505c",
+      "2e42df6e2c1e2081",
+      "2f666bb5b6ec0147",
+      "43b88bb1333f99f2",
+      "479517b231da5114",
+      "69a6a19252cc3db8",
+      "6f45e50ede0d3b25",
+      "9722318666abcd3f",
+      "9d51456e79310448",
+      "a2d7935646d03cc7",
+      "c6356e08291c00c2",
+      "c6adae6c7b489823",
+      "d268b6b8c63e405f",
+      "dcc9fe245cbf69f3",
+      "f933c75f46b4f31a",
+      "327c1a05452d74c0",
+      "35244c827d5e829b",
+      "4ab28d13ee05835d",
+      "529262bac4441e27",
+      "693bb8fea46181b4",
+      "8a99452b9bee2684",
+      "a20b5d18a708f139",
+      "aec2694a99f9ad2a",
+      "c032ec340fafeb4f",
+      "ea3c7996ab593c3b",
+      "fd4af10c44c2ddc5",
+      "ec569375ff9a39f8",
+      "14d6d7a5583c3901",
+      "42f1d274c01dfe86",
+      "5c67b892a25278d0",
+      "94a1390714bc4eb1",
+      "ba16cc471009d8a5",
+      "d505ad35b1ba9385",
+      "44f7782cc9eabcd4",
+      "7792c929204af1a2",
+      "87cb73c23bcd15a6",
+      "8f5284769cbd6bc3",
+      "9dd08b84c5da18c8",
+      "d54cba0ea98dca71",
+      "1ad418c677471af4",
+      "1794dff82cc4832b",
+      "1dfaf7c677d84906",
+      "3cb62e64cd088c19",
+      "5695000cc17c32f0",
+      "5d6a65081c384f8b",
+      "6be0cf49108e9531",
+      "80f4b5f5441046cc",
+      "99810cdafe8288e1",
+      "9b01a5e76141a3d3",
+      "a28739a4be9e1bbb",
+      "f38e038b49d24249",
+      "f7b167d649246c7d",
+      "f91db2a1f0d16c41",
+      "02858a4830cb931d",
+      "06f6bc085fda823a",
+      "0fea42f98bed8c6c",
+      "32feaed7bb141ede",
+      "3db09cbe9c64d324",
+      "516e4c76f821a4e0",
+      "5eec95ffea614245",
+      "80afb0bf21ee618a",
+      "9605813e25bb52ba",
+      "9ba4f223812e56bb",
+      "a515103be2c2f173",
+      "d4750eb60828415b",
+      "a8108c05d98bd2bf",
+      "2185f15052498ecf",
+      "37424de9074e55dc",
+      "3a3ffe2b7f49250d",
+      "70bba96f9fc3b600",
+      "77c8fe8c44e6b446",
+      "8375cf9ec1adff2e",
+      "a7947d5479f951df",
+      "c4bdc71dece93557"
+    ]
+  },
+  "local_browser_checks": [
+    {
+      "target": "web/index.html",
+      "width": 1440,
+      "current": 2505,
+      "retained": 6678,
+      "generated": "2026-10-02T03:32:16",
+      "active": 893,
+      "mismatches": [],
+      "originalLinks": [],
+      "sourceBinding": [],
+      "pageOverflow": false,
+      "browserErrors": []
+    },
+    {
+      "target": "web/index.html",
+      "width": 390,
+      "current": 2505,
+      "retained": 6678,
+      "generated": "2026-10-02T03:32:16",
+      "active": 893,
+      "mismatches": [],
+      "originalLinks": [],
+      "sourceBinding": [],
+      "pageOverflow": false,
+      "browserErrors": []
+    },
+    {
+      "target": "share/acro_ai_hot_tracker_dashboard.html",
+      "width": 1440,
+      "current": 2505,
+      "retained": 6678,
+      "generated": "2026-10-02T03:32:16",
+      "active": 893,
+      "mismatches": [],
+      "originalLinks": [],
+      "sourceBinding": [],
+      "pageOverflow": false,
+      "browserErrors": []
+    }
+  ],
+  "base_commit": "b8841e2",
+  "publication_state": "local_validation_only; verify GitHub Pages separately"
+}

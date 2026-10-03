@@ -3,6 +3,7 @@
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 from pathlib import Path
 import shutil
@@ -12,6 +13,35 @@ from manual_reviews import apply_review_metadata
 from run_daily import write_static_api
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def editorial_scope(row, source):
+    level = row.get("material_level", "stored_source_material")
+    if level not in {"stored_source_material", "title_only", "title_and_excerpt"}:
+        raise ValueError(f"Unsupported translation material level: {level!r}")
+    availability = row.get("summary_availability", "available")
+    if availability not in {"available", "unavailable"}:
+        raise ValueError(f"Unsupported summary availability: {availability!r}")
+    if level == "title_and_excerpt" and not str(source.get("summary", "")).strip():
+        raise ValueError("Title-and-excerpt translation requires a stored excerpt")
+    title_only = level == "title_only"
+    material = json.dumps([source.get("title", ""), source.get("summary", "")], ensure_ascii=False)
+    return {
+        "scope_zh": "仅依据保存的原标题翻译；没有可用独立摘录，未读取全文。" if title_only else "依据当前保存的原标题与来源摘录翻译润色，未读取全文，未补写材料中没有披露的事实。",
+        "scope_en": "Translated the stored title only; no usable independent excerpt or full text was read." if title_only else "Translated the stored source title and excerpt; no full text was read and no undisclosed facts were added.",
+        "material_level": level,
+        "summary_availability": availability,
+        "source_material_sha256": hashlib.sha256(material.encode("utf-8")).hexdigest(),
+        **({"reused_from_id": row["reused_from_id"]} if row.get("reused_from_id") else {}),
+    }
+
+
+def source_record_map(payload, archive, source_archive=None):
+    # An older source snapshot can retain translations without restoring its news.
+    records = {item["id"]: item for item in (source_archive or {}).get("items", [])}
+    records.update({item["id"]: item for item in (archive or {}).get("items", [])})
+    records.update({item["id"]: item for item in payload["items"]})
+    return records
 
 
 def read_jsonl(paths):
@@ -30,6 +60,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="*", type=Path)
     parser.add_argument(
+        "--source-archive", type=Path,
+        help="Optional older evidence snapshot for registry-only translations; never restores news records.",
+    )
+    parser.add_argument(
+        "--batch-only", action="store_true",
+        help="Project only this imported batch, preserving all other editorial records unchanged.",
+    )
+    parser.add_argument(
         "--sync-only",
         action="store_true",
         help="Reproject existing verified editorial records into every data surface.",
@@ -42,15 +80,16 @@ def main():
     args = parser.parse_args()
     if not args.paths and not args.sync_only:
         parser.error("provide at least one JSONL batch, or use --sync-only")
+    if args.batch_only and args.sync_only:
+        parser.error("--batch-only cannot be combined with --sync-only")
     latest_path = ROOT / "data/latest_run.json"
     registry_path = ROOT / "data/manual_summaries.json"
     archive_path = ROOT / "data/event_archive.json"
     payload = json.loads(latest_path.read_text(encoding="utf-8"))
     registry = json.loads(registry_path.read_text(encoding="utf-8"))
     archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.exists() else None
-    current = {item["id"]: item for item in payload["items"]}
-    source_records = {item["id"]: item for item in (archive or {}).get("items", [])}
-    source_records.update(current)
+    source_archive = json.loads(args.source_archive.read_text(encoding="utf-8")) if args.source_archive else None
+    source_records = source_record_map(payload, archive, source_archive)
     reviews = {item["id"]: item for item in registry["items"]}
     imported = 0
     seen = set()
@@ -97,10 +136,8 @@ def main():
                 "reviewed_at": stamp,
                 "reviewer": "Codex",
                 "event_key": f"translation:{item_id}",
-                "scope_zh": "依据当前保存的原标题与来源摘录翻译润色，未补写材料中没有披露的事实。",
-                "scope_en": "Translated and edited from the stored source title and excerpt without adding undisclosed facts.",
                 "kind": "codex_editorial_translation",
-                "material_level": "stored_source_material",
+                **editorial_scope(row, source),
                 "evidence": [{"label": source.get("source_label") or source.get("source_id") or "原始来源", "url": url}],
             },
         }
@@ -109,9 +146,10 @@ def main():
     registry["items"] = sorted(reviews.values(), key=lambda item: item["id"])
     registry["updated_at"] = stamp
     registry["source"] = "Codex-edited translations plus historical source-grounded reviews"
-    apply_review_metadata(payload, reviews)
+    projection_reviews = {item_id: reviews[item_id] for item_id in seen} if args.batch_only else reviews
+    apply_review_metadata(payload, projection_reviews)
     if archive is not None:
-        apply_review_metadata(archive, reviews)
+        apply_review_metadata(archive, projection_reviews)
 
     backup = ROOT / "preview-checks" / f"translation-backup-{dt.datetime.now():%Y%m%dT%H%M%S}"
     for relative in (

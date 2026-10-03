@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import base64
+import argparse
 import json
 import mimetypes
 import re
@@ -85,6 +86,9 @@ def load_topic_images() -> dict:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--snapshot-only", action="store_true", help="Render the synchronized snapshot without updating retained news or admission fields.")
+    args = parser.parse_args()
     html = (WEB_DIR / "index.html").read_text(encoding="utf-8")
     css = (WEB_DIR / "styles.css").read_text(encoding="utf-8")
     js = (WEB_DIR / "app.js").read_text(encoding="utf-8")
@@ -137,7 +141,20 @@ def main() -> int:
     relationships_payload = json.dumps(company_relationships, ensure_ascii=False, indent=2)
     japan_accounts_payload = json.dumps(japan_accounts, ensure_ascii=False, indent=2)
     seen_urls = json.loads(SEEN_URLS_PATH.read_text(encoding="utf-8")) if SEEN_URLS_PATH.exists() else {}
-    archive = update_archive(EVENT_ARCHIVE_PATH, payload_data, {row["id"]: row for row in source_config})
+    if args.snapshot_only:
+        archive = json.loads(EVENT_ARCHIVE_PATH.read_text(encoding="utf-8"))
+        archived = {item["id"]: item for item in archive["items"]}
+        for item in payload_data.get("items", []):
+            fields = ("title_zh", "summary_review")
+            if item.get("summary_method") == "manual_ai":
+                fields += ("ai_summary",)
+            if item["id"] not in archived or any(
+                item.get(field) != archived[item["id"]].get(field)
+                for field in fields
+            ):
+                raise ValueError(f"Archive editorial fields are not synchronized: {item['id']}")
+    else:
+        archive = update_archive(EVENT_ARCHIVE_PATH, payload_data, {row["id"]: row for row in source_config})
     storage_profile = {
         "latest_snapshot_bytes": DATA_PATH.stat().st_size,
         "latest_item_count": len(payload_data.get("items", [])),
