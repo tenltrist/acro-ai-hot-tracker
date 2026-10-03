@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "baseline": "dcbfc2e38084af8c0e317b753b9db32453ebae04",
+  "unchangedGlobals": [
+    "AIHOT_EMBEDDED_PAYLOAD",
+    "AIHOT_EMBEDDED_HISTORY",
+    "AIHOT_INTELLIGENCE_RULES",
+    "AIHOT_RULE_CATALOG",
+    "AIHOT_STORAGE_PROFILE",
+    "AIHOT_COMPANY_RELATIONSHIPS",
+    "AIHOT_JAPAN_ACCOUNTS",
+    "AIHOT_TOPIC_IMAGES",
+    "AIHOT_EVENT_ARCHIVE"
+  ],
+  "unchangedPaths": [
+    "data",
+    "api/public",
+    "config/companies.json",
+    "config/japan_accounts.json",
+    "config/priority_account_monitoring.json",
+    "config/intelligence_rules.json",
+    "config/rule_catalog.json",
+    ".github/workflows"
+  ],
+  "current": 2505,
+  "selected": 242,
+  "history": 6678,
+  "historicalSelected": 576
+}

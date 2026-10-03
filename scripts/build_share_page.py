@@ -28,6 +28,7 @@ SHARE_DIR = ROOT / "share"
 OUT_PATH = SHARE_DIR / "acro_ai_hot_tracker_dashboard.html"
 EMBEDDED_DATA_PATH = WEB_DIR / "embedded-data.js"
 COMPANY_LOGOS_PATH = ROOT / "config" / "company_logos.json"
+COMPANY_PROFILES_PATH = ROOT / "config" / "company_profiles.json"
 EVENT_ARCHIVE_PATH = ROOT / "data" / "event_archive.json"
 TOPIC_THUMBNAIL_DIR = WEB_DIR / "assets" / "topic-thumbnails"
 
@@ -104,6 +105,7 @@ def main() -> int:
     rule_catalog = json.loads(RULE_CATALOG_PATH.read_text(encoding="utf-8"))
     company_relationships = json.loads(COMPANY_RELATIONSHIPS_PATH.read_text(encoding="utf-8"))
     japan_accounts = json.loads(JAPAN_ACCOUNTS_PATH.read_text(encoding="utf-8"))
+    company_profiles = json.loads(COMPANY_PROFILES_PATH.read_text(encoding="utf-8")) if COMPANY_PROFILES_PATH.exists() else {}
     company_metadata = {company["id"]: company for company in company_config["companies"]}
     for company in payload_data.get("companies", []):
         configured = company_metadata.get(company["id"], {})
@@ -170,6 +172,7 @@ def main() -> int:
     storage_profile_payload = json.dumps(storage_profile, ensure_ascii=False, indent=2)
     logos_payload = json.dumps(load_company_logos(), ensure_ascii=False)
     logo_audit_payload = json.dumps(load_company_logo_audit(), ensure_ascii=False)
+    company_profiles_payload = json.dumps(company_profiles, ensure_ascii=False, separators=(",", ":"))
     topic_images_payload = json.dumps(load_topic_images(), ensure_ascii=False)
     current_ids = {item["id"] for item in payload_data.get("items", [])}
     # Current items already exist in the embedded payload; embed only retained older items.
@@ -184,6 +187,7 @@ def main() -> int:
         f"window.AIHOT_JAPAN_ACCOUNTS = {japan_accounts_payload};\n"
         f"window.AIHOT_COMPANY_LOGOS = {logos_payload};\n"
         f"window.AIHOT_COMPANY_LOGO_AUDIT = {logo_audit_payload};\n"
+        f"window.AIHOT_COMPANY_PROFILES = {company_profiles_payload};\n"
         f"window.AIHOT_TOPIC_IMAGES = {topic_images_payload};\n"
         f"window.AIHOT_EVENT_ARCHIVE = {archive_payload};\n"
     )

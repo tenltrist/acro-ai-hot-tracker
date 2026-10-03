@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-10-03T07:10:56.968921+00:00",
   "usage_note": "公司识别用标识，权利归各品牌所有；不表示合作、客户认证或官方背书。未核实的标识不展示。",
   "companies": {
     "merck_life_science": {
@@ -1365,26 +1365,17 @@
       "verification_note": "官网页标题与公司英文名一致；Logo 直链由官网渲染后页眉图像核实。"
     },
     "jp-account-63f53c21c8": {
-      "account_name": "AdipoSeeds Co Ltd",
-      "website": "https://www.adiposeeds.co.jp/",
-      "source_url": "https://www.adiposeeds.co.jp/common/images/apple-touch-icon-76x76.png",
-      "resolved_url": "https://www.adiposeeds.co.jp/common/images/apple-touch-icon-76x76.png",
-      "asset": "web/assets/company-logos/jp-account-63f53c21c8.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "530da866c14057197ab1bf605d8fe867a2136776d46f523043bd84c1c59ebd52",
-      "evidence_page": "https://www.adiposeeds.co.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 158,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.adiposeeds.co.jp/",
+      "evidence_page": "https://www.adiposeeds.co.jp/",
+      "source_url": "https://www.adiposeeds.co.jp/common/images/logo_adiposeeds.svg",
+      "resolved_url": "https://www.adiposeeds.co.jp/common/images/logo_adiposeeds.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-63f53c21c8-verified.svg",
+      "background": "light",
+      "sha256": "42a3ec2824b73a41b08361f6a5e30f832dc025bc37cb74e602a41bb49d91d241",
+      "retrieved_at": "2026-10-03T07:04:24.877781+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-ae1a1021bc": {
       "account_name": "AIBIOS Co Ltd",
@@ -1519,26 +1510,17 @@
       ]
     },
     "jp-account-cf424f64aa": {
-      "account_name": "Arktus Therapeutics Inc",
-      "website": "https://arktustx.com/",
-      "source_url": "https://arktustx.com/cms/wp-content/uploads/2023/11/cropped-fab-180x180.jpg",
-      "resolved_url": "https://arktustx.com/cms/wp-content/uploads/2023/11/cropped-fab-180x180.jpg",
-      "asset": "web/assets/company-logos/jp-account-cf424f64aa.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "686ffcd2614662e72fd813c9ed4b2e367d61b73c989efdd9f416001f960700bb",
-      "evidence_page": "https://arktustx.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://arktustx.com/",
+      "evidence_page": "https://arktustx.com/",
+      "source_url": "https://arktustx.com/cms/wp-content/themes/arktus-child/img/logo.jpg",
+      "resolved_url": "https://arktustx.com/cms/wp-content/themes/arktus-child/img/logo.jpg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-cf424f64aa-verified.png",
+      "background": "light",
+      "sha256": "ca10b551f5c35a567b4e8cbeb02641ff024e2ba96715574722956d17d180d758",
+      "retrieved_at": "2026-10-03T07:04:25.057323+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-c650577a6a": {
       "account_name": "Arrowsmith Inc",
@@ -1674,28 +1656,17 @@
       ]
     },
     "jp-account-b20e945eeb": {
-      "account_name": "Biken Co Ltd",
-      "website": "https://www.biken-inc.co.jp/",
-      "source_url": "https://www.biken-inc.co.jp/img_corporate/logo_temp.png",
-      "resolved_url": "https://www.biken-inc.co.jp/img_corporate/logo_temp.png",
-      "asset": "web/assets/company-logos/jp-account-b20e945eeb.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "23d2d296aae7ddcfdadd13664bc5a0a88b788ba8bd401d509c8a31cf2a506492",
-      "evidence_page": "https://www.biken-inc.co.jp/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://www.biken.or.jp/about/biken_co/",
+      "evidence_page": "https://www.biken.or.jp/about/biken_co/",
+      "source_url": "https://www.biken.or.jp/common/img/logo.svg",
+      "resolved_url": "https://www.biken.or.jp/common/img/logo.svg",
+      "source_kind": "official_group_logo",
+      "asset": "web/assets/company-logos/jp-account-b20e945eeb-verified.svg",
+      "background": "light",
+      "sha256": "7967b72e4ee8cfec55e8fb22c51cc95bff63ce3911ab31131022d83e1b3a838d",
+      "retrieved_at": "2026-10-03T06:53:58.123368+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-563d2f24a6": {
       "account_name": "Bio Palette Co Ltd",
@@ -1780,71 +1751,43 @@
       ]
     },
     "jp-account-8b8cb96ec0": {
-      "account_name": "BrightPath Biotherapeutics Co Ltd",
-      "website": "https://www.brightpathbio.com/",
-      "source_url": "https://www.brightpathbio.com/file/apple-touch-icon.png",
-      "resolved_url": "https://www.brightpathbio.com/file/apple-touch-icon.png",
-      "asset": "web/assets/company-logos/jp-account-8b8cb96ec0.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "19c250978aa441e449649bce6b050de3b55cc2fc99c4f81981d770ae6b2fa686",
-      "evidence_page": "https://www.brightpathbio.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 110,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 2/2 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.brightpathbio.com/",
+      "evidence_page": "https://www.brightpathbio.com/",
+      "source_url": "https://www.brightpathbio.com/common/img/logo_color.svg",
+      "resolved_url": "https://www.brightpathbio.com/common/img/logo_color.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-8b8cb96ec0-verified.svg",
+      "background": "light",
+      "sha256": "c54ef84f73165f1a356f257ccf3aa4bba2d4db7fa6df4638be82047349744664",
+      "retrieved_at": "2026-10-03T07:04:25.135589+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-f5f910562c": {
-      "account_name": "CanBas Co Ltd",
-      "website": "https://www.canbas.co.jp/eng/company/about-canbas/",
-      "source_url": "https://www.canbas.co.jp/wp-content/themes/newCanbasTheme2021/assets/images/icon/apple-touch-icon.png",
-      "resolved_url": "https://www.canbas.co.jp/wp-content/themes/newCanbasTheme2021/assets/images/icon/apple-touch-icon.png",
-      "asset": "web/assets/company-logos/jp-account-f5f910562c.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "29deeefde6470eb921de86407057d881894f52992157ed68cb2275b89969f88b",
-      "evidence_page": "https://www.canbas.co.jp/eng/company/about-canbas/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.canbas.co.jp/",
+      "evidence_page": "https://www.canbas.co.jp/",
+      "source_url": "https://www.canbas.co.jp/wp-content/themes/newCanbasTheme2021/assets/images/logo/logo_footer.png",
+      "resolved_url": "https://www.canbas.co.jp/wp-content/themes/newCanbasTheme2021/assets/images/logo/logo_footer.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-f5f910562c-verified.png",
+      "background": "light",
+      "sha256": "bdce05ea13089f614f0190e5149ab81df6a0a34b33c09ae9cd68eb248885bb72",
+      "retrieved_at": "2026-10-03T07:04:25.223682+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-e89b9cb0cb": {
-      "account_name": "Celaid Therapeutics Inc",
-      "website": "https://celaidtx.com/en/about/",
-      "source_url": "https://celaidtx.com/favicon.ico",
-      "resolved_url": "https://celaidtx.com/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-e89b9cb0cb.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "959fbe4c7966bb16cd8e55bac0c59f3d2e1291854d8a3a08eac71b668a10de91",
-      "evidence_page": "https://celaidtx.com/en/about/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ],
-      "verification_note": "官网 About 页列明 Celaid Therapeutics Inc. 的公司信息。"
+      "website": "https://celaidtx.com/en/about/",
+      "evidence_page": "https://celaidtx.com/en/about/",
+      "source_url": "https://celaidtx.com/wp/wp-content/themes/celaid/img/i_logotype_wt.png?1007",
+      "resolved_url": "https://celaidtx.com/wp/wp-content/themes/celaid/img/i_logotype_wt.png?1007",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-e89b9cb0cb-verified.png",
+      "background": "light",
+      "sha256": "b98525ad6e3bc4a489cb80189a4afa18f78e3b78836a9be5feb229930028b8ba",
+      "retrieved_at": "2026-10-03T07:04:25.277124+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-94253d104c": {
       "account_name": "Cell Exosome Therapeutics Inc",
@@ -2010,25 +1953,17 @@
       "verification_note": "官网英文首页展示 Cellusion 公司身份与再生医疗业务。"
     },
     "jp-account-a1ca845874": {
-      "account_name": "Center for iPS Cell Research and Application",
-      "website": "https://s-mf.or.jp/english/charity/post_381.html",
-      "source_url": "https://s-mf.or.jp/favicon.ico",
-      "resolved_url": "https://s-mf.or.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-a1ca845874.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "1bceeeec46e9c77de63360fe23f2bde8ca579ca9b056d81cd51307a7b6219c29",
-      "evidence_page": "https://s-mf.or.jp/english/charity/post_381.html",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 130,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 5/5 个身份词"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.cira.kyoto-u.ac.jp/",
+      "evidence_page": "https://www.cira.kyoto-u.ac.jp/",
+      "source_url": "https://www.cira.kyoto-u.ac.jp/common/img/header/header_logo.svg",
+      "resolved_url": "https://www.cira.kyoto-u.ac.jp/common/img/header/header_logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-a1ca845874-verified.svg",
+      "background": "dark",
+      "sha256": "02b14014fa1d237598612f05b162adcbfc63d102d7b6cfa99df7a085e22acc20",
+      "retrieved_at": "2026-10-03T06:53:58.076322+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-0dc55bba53": {
       "account_name": "Change Cure",
@@ -2494,26 +2429,17 @@
       ]
     },
     "jp-account-e1c8247ed3": {
-      "account_name": "GlyTech Inc",
-      "website": "https://www.glytech.jp/",
-      "source_url": "https://www.glytech.jp/favicon.ico",
-      "resolved_url": "https://www.glytech.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-e1c8247ed3.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "d51e1f754aa9fcf19846dab3c67828ee18123b71b99f4f639a4fcaae7bafb528",
-      "evidence_page": "https://www.glytech.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 158,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ]
+      "website": "https://www.glytech.jp/",
+      "evidence_page": "https://www.glytech.jp/",
+      "source_url": "https://www.glytech.jp/wp-content/themes/glytech/images/logo.png",
+      "resolved_url": "https://www.glytech.jp/wp-content/themes/glytech/images/logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-e1c8247ed3-verified.png",
+      "background": "dark",
+      "sha256": "fe7ba325a2320c4900c0946c1b5db4ffaa77d7d839dfb5e685e0e442f64a6550",
+      "retrieved_at": "2026-10-03T07:05:36.928844+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-10385b1f3a": {
       "account_name": "GNI Group Ltd",
@@ -2565,25 +2491,17 @@
       ]
     },
     "jp-account-06059bdb35": {
-      "account_name": "HanaVax Inc",
-      "website": "https://en.hanavax.co.jp/",
-      "source_url": "https://static.wixstatic.com/media/283c65_8a638b3bebb7418199866822b7c627ca%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/283c65_8a638b3bebb7418199866822b7c627ca%7Emv2.png",
-      "resolved_url": "https://static.wixstatic.com/media/283c65_8a638b3bebb7418199866822b7c627ca~mv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/283c65_8a638b3bebb7418199866822b7c627ca~mv2.png",
-      "asset": "web/assets/company-logos/jp-account-06059bdb35.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "86d1f93150b1d95b5b20c162d64b19aae5a3e3dcc041355e3963b7fb20db24cf",
-      "evidence_page": "https://en.hanavax.co.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 136,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://en.hanavax.co.jp/",
+      "evidence_page": "https://en.hanavax.co.jp/",
+      "source_url": "https://static.wixstatic.com/media/283c65_53c5977b530e43c88929b2066c9b3767~mv2.png/v1/fill/w_216,h_56,al_c,q_85,enc_avif,quality_auto/logo.png",
+      "resolved_url": "https://static.wixstatic.com/media/283c65_53c5977b530e43c88929b2066c9b3767~mv2.png/v1/fill/w_216,h_56,al_c,q_85,enc_avif,quality_auto/logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-06059bdb35-verified.png",
+      "background": "light",
+      "sha256": "cd244d062a446762b4442e88e81649f4c27d93cce8bb622f3a487c0ea8866776",
+      "retrieved_at": "2026-10-03T07:04:25.859035+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-69ba09d5d0": {
       "account_name": "Healios KK",
@@ -2684,26 +2602,17 @@
       ]
     },
     "jp-account-175e8ff25f": {
-      "account_name": "Hokkaido University",
-      "website": "https://www.global.hokudai.ac.jp/",
-      "source_url": "https://www.global.hokudai.ac.jp/wp/wp-content/themes/HU_2510/assets/social/icon-180.png?v=e45c970e",
-      "resolved_url": "https://www.global.hokudai.ac.jp/wp/wp-content/themes/HU_2510/assets/social/icon-180.png?v=e45c970e",
-      "asset": "web/assets/company-logos/jp-account-175e8ff25f.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "9b928afa12a88b8dbd63e883e3bcf516587bed929690cfee1d77d8e12d118a7c",
-      "evidence_page": "https://www.global.hokudai.ac.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 146,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "日本高等教育机构域名"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.hokudai.ac.jp/",
+      "evidence_page": "https://www.hokudai.ac.jp/",
+      "source_url": "https://www.hokudai.ac.jp/common/img/h_logo.png",
+      "resolved_url": "https://www.hokudai.ac.jp/common/img/h_logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-175e8ff25f-verified.png",
+      "background": "light",
+      "sha256": "6caba3e1a5bad93b7c2b7320769d39bde8e4d675125096f1ab2bac8c4092d9b6",
+      "retrieved_at": "2026-10-03T07:04:25.976116+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-21d78ceab1": {
       "account_name": "Human Life CORD Japan Inc",
@@ -2929,48 +2838,30 @@
       "verification_note": "官网首页展示 iXgene 品牌与基因治疗相关公司信息。"
     },
     "jp-account-4f9acbfd72": {
-      "account_name": "J-mab Therapeutics Inc",
-      "website": "https://j-mab.co.jp/en/index.html",
-      "source_url": "https://j-mab.co.jp/favicon.ico",
-      "resolved_url": "https://j-mab.co.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-4f9acbfd72.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "fe036f73fd8ce1ae070fed82dad2b4cdf00a940fc1e3130cfc0cb0b41e7eb5f5",
-      "evidence_page": "https://j-mab.co.jp/en/index.html",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 136,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ]
+      "website": "https://j-mab.co.jp/index.html",
+      "evidence_page": "https://j-mab.co.jp/index.html",
+      "source_url": "https://j-mab.co.jp/images/jmabLogo.png",
+      "resolved_url": "https://j-mab.co.jp/images/jmabLogo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-4f9acbfd72-verified.png",
+      "background": "light",
+      "sha256": "4b7c83ebe6d333c2e245774ce9c5982df161370e03a725364adf2079e73fa57c",
+      "retrieved_at": "2026-10-03T07:04:26.202943+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-c058ffe5bc": {
-      "account_name": "Japan Institute for Health Security",
-      "website": "https://www.japaneselawtranslation.go.jp/en/laws/view/4898",
-      "source_url": "https://www.japaneselawtranslation.go.jp/favicon.ico",
-      "resolved_url": "https://www.japaneselawtranslation.go.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-c058ffe5bc.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "0d377d79d897b540bdcc8f75e64a00d6be6cab804d5614869797a43e5eab0d86",
-      "evidence_page": "https://www.japaneselawtranslation.go.jp/en/laws/view/4898",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 168,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 4/4 个身份词",
-        "官方域名与账户身份词一致",
-        "日本政府机构域名"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.jihs.go.jp/",
+      "evidence_page": "https://www.jihs.go.jp/",
+      "source_url": "https://www.jihs.go.jp/assets/img/common/logo.png",
+      "resolved_url": "https://www.jihs.go.jp/assets/img/common/logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-c058ffe5bc-verified.png",
+      "background": "light",
+      "sha256": "6bd547d6c65bca88c3158b5b681e1ebd422e79dac9a216b32fdd697643189057",
+      "retrieved_at": "2026-10-03T06:53:58.264928+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-c38f81d669": {
       "account_name": "Jichi Medical University Hospital",
@@ -2995,28 +2886,17 @@
       ]
     },
     "jp-account-bfea1e18b5": {
-      "account_name": "Jikei University School of Medicine",
-      "website": "https://jikei-pathology.jp/",
-      "source_url": "https://jikei-pathology.jp/wp-content/uploads/2024/04/brand.png",
-      "resolved_url": "https://jikei-pathology.jp/wp-content/uploads/2024/04/brand.png",
-      "asset": "web/assets/company-logos/jp-account-bfea1e18b5.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "1e3a7d65b5a43980246eef3e33e1e9d26ebaefaebd90d88de3ba392f381559a2",
-      "evidence_page": "https://jikei-pathology.jp/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 158,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://www.jikei.ac.jp/",
+      "evidence_page": "https://www.jikei.ac.jp/",
+      "source_url": "https://www.jikei.ac.jp/wp-content/themes/twentytwentyone_child/images/common/logo.png",
+      "resolved_url": "https://www.jikei.ac.jp/wp-content/themes/twentytwentyone_child/images/common/logo.png",
+      "source_kind": "official_group_logo",
+      "asset": "web/assets/company-logos/jp-account-bfea1e18b5-verified.png",
+      "background": "light",
+      "sha256": "71391974eabcd00ee1206c2e6c5341b0ad4a2d3e82a8e99fa06748b39ff73386",
+      "retrieved_at": "2026-10-03T06:53:58.776633+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-f7e56c9e25": {
       "account_name": "Jocavio Co Ltd",
@@ -3043,49 +2923,30 @@
       ]
     },
     "jp-account-51eefdced6": {
-      "account_name": "Juntendo University",
-      "website": "https://en.juntendo.ac.jp/",
-      "source_url": "https://en.juntendo.ac.jp/favicon.ico",
-      "resolved_url": "https://en.juntendo.ac.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-51eefdced6.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "dcd9a7c581207b05ccacf457531bcb462474a52375ae10f7eae8f46b24726880",
-      "evidence_page": "https://en.juntendo.ac.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 168,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致",
-        "日本高等教育机构域名"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://en.juntendo.ac.jp/",
+      "evidence_page": "https://en.juntendo.ac.jp/",
+      "source_url": "https://en.juntendo.ac.jp/albums/1624/abm00007085.svg",
+      "resolved_url": "https://en.juntendo.ac.jp/albums/1624/abm00007085.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-51eefdced6-verified.svg",
+      "background": "light",
+      "sha256": "492f5f9542be0b8046a93f5ecf602b1f6800393f0a62a7c8138b30ad78c952d7",
+      "retrieved_at": "2026-10-03T07:04:26.389530+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-e7b0299ed8": {
-      "account_name": "Juntendo University Hospital",
-      "website": "https://hosp.juntendo.ac.jp/",
-      "source_url": "https://hosp.juntendo.ac.jp/favicon.ico",
-      "resolved_url": "https://hosp.juntendo.ac.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-e7b0299ed8.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "dcd9a7c581207b05ccacf457531bcb462474a52375ae10f7eae8f46b24726880",
-      "evidence_page": "https://hosp.juntendo.ac.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 124,
-      "identity_reasons": [
-        "官网正文完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "日本高等教育机构域名"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://hosp.juntendo.ac.jp/",
+      "evidence_page": "https://hosp.juntendo.ac.jp/",
+      "source_url": "https://hosp.juntendo.ac.jp/albums/2403/abm00012922.svg",
+      "resolved_url": "https://hosp.juntendo.ac.jp/albums/2403/abm00012922.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-e7b0299ed8-verified.svg",
+      "background": "dark",
+      "sha256": "40f306ec2f050d5e30566db0556315be33db66bb8d91dfe0cbce5419a74a936c",
+      "retrieved_at": "2026-10-03T07:04:26.604566+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-2fe9615ec8": {
       "account_name": "Kagawa University",
@@ -3186,28 +3047,17 @@
       "verification_note": "金泽大学附属医院官网首页与机构名称一致；浏览器渲染确认 h1.svg 为医院页眉字标。"
     },
     "jp-account-89cf2527b9": {
-      "account_name": "Kawasaki Medical School Hospital",
-      "website": "https://m.kawasaki-m.ac.jp/",
-      "source_url": "https://m.kawasaki-m.ac.jp/img/logo/logo.svg",
-      "resolved_url": "https://m.kawasaki-m.ac.jp/img/logo/logo.svg",
-      "asset": "web/assets/company-logos/jp-account-89cf2527b9.svg",
-      "retrieved_at": "2026-09-10",
-      "sha256": "bb3c14da95d1ec400781f2e544f7bf1db5ec92c556f90128c4ada8aa305db2c9",
-      "evidence_page": "https://m.kawasaki-m.ac.jp/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 127,
-      "identity_reasons": [
-        "页面命中 1/1 个身份词",
-        "日本高等教育机构域名"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "位于官网页眉或主导航",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://h.kawasaki-m.ac.jp/",
+      "evidence_page": "https://h.kawasaki-m.ac.jp/",
+      "source_url": "https://h.kawasaki-m.ac.jp/img/header_logo.png",
+      "resolved_url": "https://h.kawasaki-m.ac.jp/img/header_logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-89cf2527b9-verified.png",
+      "background": "light",
+      "sha256": "4e2bb7e44528fa3ef1b593639fb3b6604255299f7d182f9d81ebc2e4cfbbf463",
+      "retrieved_at": "2026-10-03T06:53:58.635018+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-42ee40d664": {
       "account_name": "Keio University",
@@ -3462,49 +3312,30 @@
       ]
     },
     "jp-account-232de87411": {
-      "account_name": "LTT Bio-Pharma Co Ltd",
-      "website": "https://www.ltt.co.jp/",
-      "source_url": "https://www.ltt.co.jp/wp-content/uploads/2023/01/cropped-favicon-180x180.png",
-      "resolved_url": "https://www.ltt.co.jp/wp-content/uploads/2023/01/cropped-favicon-180x180.png",
-      "asset": "web/assets/company-logos/jp-account-232de87411.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "ebad3231709a95f6178704fd716cae294d7ced65e7385a8eda0c532808f9363d",
-      "evidence_page": "https://www.ltt.co.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 136,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 2/2 个身份词",
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ],
-      "verification_note": "LTT Bio-Pharma 官网展示公司品牌与药物开发业务。"
+      "website": "https://www.ltt.co.jp/",
+      "evidence_page": "https://www.ltt.co.jp/",
+      "source_url": "https://www.ltt.co.jp/wp-content/themes/ltt/assets/img/top/head_logo.png",
+      "resolved_url": "https://www.ltt.co.jp/wp-content/themes/ltt/assets/img/top/head_logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-232de87411-verified.png",
+      "background": "light",
+      "sha256": "ef4955037b0245f1535b385b6e580beff5003ced944c5d8243de1e2fa8ce4c0f",
+      "retrieved_at": "2026-10-03T07:04:26.745293+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-ffbcd4ec9c": {
-      "account_name": "Maruho Co Ltd",
-      "website": "https://www.maruho.co.jp:443/index.html",
-      "source_url": "https://www.maruho.co.jp:443/favicon.ico",
-      "resolved_url": "https://www.maruho.co.jp:443/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-ffbcd4ec9c.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "cf830ada44f63a290560eb874d93cdd7f643753d856a0b491e78b44ad5bc7310",
-      "evidence_page": "https://www.maruho.co.jp:443/index.html",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 158,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.maruho.co.jp:443/index.html",
+      "evidence_page": "https://www.maruho.co.jp:443/index.html",
+      "source_url": "https://www.maruho.co.jp:443/assets/images/common/sp/header_logo.png",
+      "resolved_url": "https://www.maruho.co.jp:443/assets/images/common/sp/header_logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-ffbcd4ec9c-verified.png",
+      "background": "light",
+      "sha256": "a52721fb989e604ee5f084e94a3313cdf8c918ee4ccaf9fe049775a4de4e45d0",
+      "retrieved_at": "2026-10-03T07:04:27.226290+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-49ec741afd": {
       "account_name": "Medinet Co Ltd",
@@ -3989,26 +3820,17 @@
       "verification_note": "大阪市立大学已于 2022 年与大阪府立大学合并为大阪公立大学；保留历史账户名称，不将大阪大学或继任机构 Logo 冒充原机构 Logo。"
     },
     "jp-account-7cc417a531": {
-      "account_name": "Osaka University",
-      "website": "https://www.osaka-u.ac.jp/ja",
-      "source_url": "https://www.osaka-u.ac.jp/touch_icon.png",
-      "resolved_url": "https://www.osaka-u.ac.jp/touch_icon.png",
-      "asset": "web/assets/company-logos/jp-account-7cc417a531.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "a0a218c97137ede5fa2d0656d756bdf3e47c64ebfdb8cd7b39a57522aadad9f7",
-      "evidence_page": "https://www.osaka-u.ac.jp/ja",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 133,
-      "identity_reasons": [
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致",
-        "日本高等教育机构域名"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.osaka-u.ac.jp/ja",
+      "evidence_page": "https://www.osaka-u.ac.jp/ja",
+      "source_url": "https://www.osaka-u.ac.jp/assets/images/footer/logo.svg",
+      "resolved_url": "https://www.osaka-u.ac.jp/assets/images/footer/logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-7cc417a531-verified.svg",
+      "background": "dark",
+      "sha256": "eb3a29cb4079bbfb78e934477a8b9762aac0cd34946a6a0dd31601b531605538",
+      "retrieved_at": "2026-10-03T07:04:28.002221+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-83c4c55495": {
       "account_name": "Otsuka Holdings Co Ltd",
@@ -4214,25 +4036,17 @@
       ]
     },
     "jp-account-d365207924": {
-      "account_name": "Shizuoka Cancer Center",
-      "website": "https://www.scchr.jp/index.html",
-      "source_url": "https://www.scchr.jp/favicon.ico",
-      "resolved_url": "https://www.scchr.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-d365207924.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "57ed426c42fae55302f1bc45946433fac2cb197cbc637723abfe3f84a25e0505",
-      "evidence_page": "https://www.scchr.jp/index.html",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 130,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 3/3 个身份词"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ]
+      "website": "https://www.scchr.jp/index.html",
+      "evidence_page": "https://www.scchr.jp/index.html",
+      "source_url": "https://www.scchr.jp/cms/wp-content/themes/scchr_master/images/logo_header.png",
+      "resolved_url": "https://www.scchr.jp/cms/wp-content/themes/scchr_master/images/logo_header.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-d365207924-verified.png",
+      "background": "light",
+      "sha256": "13644327ef498d028f3da65263e56bc4e44b8b98a1c755ab527fe926e2589489",
+      "retrieved_at": "2026-10-03T07:04:28.520253+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-9c33d97c70": {
       "account_name": "St. Marianna University School of Medicine",
@@ -4428,26 +4242,17 @@
       ]
     },
     "jp-account-0d19c45e01": {
-      "account_name": "Tokyo University of Agriculture and Technology",
-      "website": "https://www.tuat.ac.jp/",
-      "source_url": "https://www.tuat.ac.jp/favicon.ico",
-      "resolved_url": "https://www.tuat.ac.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-0d19c45e01.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "c7928cfccba672dd8e1cc7ac35b7bdd25690cec4cdc0c1a0ec34c45834a3f2bf",
-      "evidence_page": "https://www.tuat.ac.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 140,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 2/2 个身份词",
-        "日本高等教育机构域名"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ]
+      "website": "https://www.tuat.ac.jp/",
+      "evidence_page": "https://www.tuat.ac.jp/",
+      "source_url": "https://www.tuat.ac.jp/common/img/logo.svg",
+      "resolved_url": "https://www.tuat.ac.jp/common/img/logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-0d19c45e01-verified.svg",
+      "background": "light",
+      "sha256": "32ef1bdb8edd500a5df4b70a7ca7aa17ecdd775cf4c201dbfa6fecce31e6ab37",
+      "retrieved_at": "2026-10-03T07:04:29.104078+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-bbff458fc5": {
       "account_name": "Tokyo University of Science",
@@ -4971,49 +4776,30 @@
       ]
     },
     "jp-account-b40ed05c1d": {
-      "account_name": "M Bio Technology Inc",
-      "website": "https://www.mbiotechnology.com/",
-      "source_url": "https://static.wixstatic.com/media/c8096f_e3d7f4f9b8b14039acd434b98bb62e22%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/c8096f_e3d7f4f9b8b14039acd434b98bb62e22%7Emv2.png",
-      "resolved_url": "https://static.wixstatic.com/media/c8096f_e3d7f4f9b8b14039acd434b98bb62e22~mv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/c8096f_e3d7f4f9b8b14039acd434b98bb62e22~mv2.png",
-      "asset": "web/assets/company-logos/jp-account-b40ed05c1d.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "6e2f8cad98321e5f707a52a8a5d7fdc2eeeaa5838d0b6263e39de69e4dff0fea",
-      "evidence_page": "https://www.mbiotechnology.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 130,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.mbiotechnology.com/",
+      "evidence_page": "https://www.mbiotechnology.com/",
+      "source_url": "https://static.wixstatic.com/media/c8096f_e3d7f4f9b8b14039acd434b98bb62e22~mv2.png/v1/fill/w_60,h_57,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/M%20Biotech%20logo_jpg.png",
+      "resolved_url": "https://static.wixstatic.com/media/c8096f_e3d7f4f9b8b14039acd434b98bb62e22~mv2.png/v1/fill/w_60,h_57,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/M%20Biotech%20logo_jpg.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-b40ed05c1d-verified.png",
+      "background": "light",
+      "sha256": "44e253bd363586becffe27b29fc5b8a974939b3bd16e1f4638f05132658f2916",
+      "retrieved_at": "2026-10-03T07:04:27.105135+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-b0be772022": {
-      "account_name": "Medipreneur Co Ltd",
-      "website": "https://medipreneur-jp.com/company.html",
-      "source_url": "https://medipreneur-jp.com/apple-touch-icon.png",
-      "resolved_url": "https://medipreneur-jp.com/apple-touch-icon.png",
-      "asset": "web/assets/company-logos/jp-account-b0be772022.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "5d5bd3ff6940a6a4842a94191eed54c474f66c594101aadcc9af0b8a3630a587",
-      "evidence_page": "https://medipreneur-jp.com/company.html",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致",
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ],
-      "verification_note": "Medipreneur 官网公司页列明公司主体、代表与日本地址。"
+      "website": "https://medipreneur-jp.com/company.html",
+      "evidence_page": "https://medipreneur-jp.com/company.html",
+      "source_url": "https://medipreneur-jp.com/img/logo.svg",
+      "resolved_url": "https://medipreneur-jp.com/img/logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-b0be772022-verified.svg",
+      "background": "light",
+      "sha256": "b8d851272bdbc0d92c667da0cd64ee830c341c1ce9cbd85e91b44d63f588123f",
+      "retrieved_at": "2026-10-03T07:04:27.517844+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-cbb3de9017": {
       "account_name": "MeSCue-Janusys Inc",
@@ -5041,25 +4827,17 @@
       "background": "dark"
     },
     "jp-account-cc5ce125f2": {
-      "account_name": "Metabologenomics Inc",
-      "website": "https://metagen.co.jp/en-home/",
-      "source_url": "https://metagen.co.jp/images/favicon.ico",
-      "resolved_url": "https://metagen.co.jp/images/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-cc5ce125f2.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "7b8e9de2fe5443c72e6586106084903306eea1831c611a78872b00b0d5040e44",
-      "evidence_page": "https://metagen.co.jp/en-home/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 91,
-      "identity_reasons": [
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ],
-      "verification_note": "J-Startup 将 Metabologenomics, Inc. 对应到 metagen.co.jp；官网展示 Metagen 品牌及肠道设计业务。"
+      "website": "https://metagen.co.jp/en-home/",
+      "evidence_page": "https://metagen.co.jp/en-home/",
+      "source_url": "https://metagen.co.jp/images/logo_metagen.svg",
+      "resolved_url": "https://metagen.co.jp/images/logo_metagen.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-cc5ce125f2-verified.svg",
+      "background": "light",
+      "sha256": "e3c36e48232c46607ccec09091a7a4f0ac6c085d5d39f0c1a4bd03a4c4f162b9",
+      "retrieved_at": "2026-10-03T07:04:27.644266+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-d875fe9dc3": {
       "account_name": "Metcela Inc",
@@ -5136,28 +4914,17 @@
       ]
     },
     "jp-account-c55bc61029": {
-      "account_name": "Modalis Therapeutics Corp",
-      "website": "https://modalistx.com/en/",
-      "source_url": "https://modalistx.com/wp-content/uploads/2025/03/cropped-modalis-favicon-180x180.png",
-      "resolved_url": "https://modalistx.com/wp-content/uploads/2025/03/cropped-modalis-favicon-180x180.png",
-      "asset": "web/assets/company-logos/jp-account-c55bc61029.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "6cdbd5bc635078b8a0f2d0b1f0ffc5f072137c8c2f99a9482d376f0f4b61cff5",
-      "evidence_page": "https://modalistx.com/en/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致",
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ],
-      "verification_note": "Modalis Therapeutics 官网英文首页展示公司品牌与基因调控疗法业务。"
+      "website": "https://modalistx.com/en/",
+      "evidence_page": "https://modalistx.com/en/",
+      "source_url": "https://modalistx.com/wp-content/uploads/2025/01/modalis-logo.png",
+      "resolved_url": "https://modalistx.com/wp-content/uploads/2025/01/modalis-logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-c55bc61029-verified.png",
+      "background": "light",
+      "sha256": "4b10b1812623af895e2d2f49a9867871a172c51da6df9bbcd90c34512027f657",
+      "retrieved_at": "2026-10-03T07:04:27.758533+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-a6ac3f2289": {
       "account_name": "Molcure Inc",
@@ -5185,26 +4952,17 @@
       ]
     },
     "jp-account-893f420d9c": {
-      "account_name": "Momotaro-Gene Inc",
-      "website": "https://www.mt-gene.com/en/information/",
-      "source_url": "https://www.mt-gene.com/en/common/favicon/favicon.ico",
-      "resolved_url": "https://www.mt-gene.com/en/common/favicon/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-893f420d9c.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "00f361b92a54b5492d5d8b198e6dc89ab0a2c50d27851144034077546fc8602d",
-      "evidence_page": "https://www.mt-gene.com/en/information/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 120,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 2/2 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.mt-gene.com/information/",
+      "evidence_page": "https://www.mt-gene.com/information/",
+      "source_url": "https://www.mt-gene.com/common/image/head/logo.png",
+      "resolved_url": "https://www.mt-gene.com/common/image/head/logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-893f420d9c-verified.png",
+      "background": "light",
+      "sha256": "5cb2f26086fb44925c82721e1f4a56f437639eb52fc486d9083f6a59018c1e48",
+      "retrieved_at": "2026-10-03T07:04:27.852987+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-ede6ffd1f8": {
       "account_name": "National Cancer Center Hospital",
@@ -5279,25 +5037,17 @@
       "background": "dark"
     },
     "jp-account-e5226000a2": {
-      "account_name": "Neo-Precision Therapeutics Co Ltd",
-      "website": "https://neopt.jp/",
-      "source_url": "https://neopt.jp/wp-content/themes/npt2024/assets/images/common/cropped-neopure-180x180.png",
-      "resolved_url": "https://neopt.jp/wp-content/themes/npt2024/assets/images/common/cropped-neopure-180x180.png",
-      "asset": "web/assets/company-logos/jp-account-e5226000a2.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "8c978aa68e26250f78f8dcab85bdd3d426fb5810de053186139b61a3c81b4b68",
-      "evidence_page": "https://neopt.jp/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 82,
-      "identity_reasons": [
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ],
-      "verification_note": "NPT 官网明确展示 Neo-Precision Therapeutics 名称及现用 NPT 品牌。"
+      "website": "https://neopt.jp/",
+      "evidence_page": "https://neopt.jp/",
+      "source_url": "https://neopt.jp/wp-content/themes/npt2024/assets/images/common/logo.svg",
+      "resolved_url": "https://neopt.jp/wp-content/themes/npt2024/assets/images/common/logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-e5226000a2-verified.svg",
+      "background": "light",
+      "sha256": "ad601ff15dfd99c7f214320f82467c7c236ecb01a266b4bd0becf9b343474785",
+      "retrieved_at": "2026-10-03T07:04:27.943572+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-a8cdb36abd": {
       "account_name": "Nexuspiral Inc",
@@ -5335,28 +5085,17 @@
       ]
     },
     "jp-account-09810019e5": {
-      "account_name": "Nobelpharma Co Ltd",
-      "website": "https://www.nobelpharma-us.com/",
-      "source_url": "http://www.nobelpharma-us.com/wp-content/uploads/2019/12/logo.jpg",
-      "resolved_url": "https://www.nobelpharma-us.com:443/wp-content/uploads/2019/12/logo.jpg",
-      "asset": "web/assets/company-logos/jp-account-09810019e5.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "b73980a1a91d8a66f35c1cf358dfc9c7a2fefdf6107884e71c8fec2d1ac0c5e2",
-      "evidence_page": "https://www.nobelpharma-us.com/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://www.nobelpharma.co.jp/",
+      "evidence_page": "https://www.nobelpharma.co.jp/",
+      "source_url": "https://www.nobelpharma.co.jp/assets/images/common/logo.png",
+      "resolved_url": "https://www.nobelpharma.co.jp/assets/images/common/logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-09810019e5-verified.png",
+      "background": "light",
+      "sha256": "abce90509c67ebd33159394675bb7a255660697b79e79a1caa9477d62355d771",
+      "retrieved_at": "2026-10-03T06:53:58.363717+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-894704175a": {
       "account_name": "Noile-Immune Biotech Inc",
@@ -5433,54 +5172,30 @@
       ]
     },
     "jp-account-c684d2d966": {
-      "account_name": "ONODERA GT Pharma Co Ltd",
-      "website": "https://onodera-lifesupport.com/en/about/",
-      "source_url": "https://onodera-lifesupport.com/portal/img/common/logo_h.png",
-      "resolved_url": "https://onodera-lifesupport.com/portal/img/common/logo_h.png",
-      "asset": "web/assets/company-logos/jp-account-c684d2d966.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "83a5da183ff17e500eb7e14706963d05b4b4961168a75c1502f2c52fc406db11",
-      "evidence_page": "https://onodera-lifesupport.com/en/about/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 114,
-      "identity_reasons": [
-        "官网正文完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "位于官网页眉或主导航",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://www.onodera-gtp.com/",
+      "evidence_page": "https://www.onodera-gtp.com/",
+      "source_url": "https://www.onodera-gtp.com/img/common/logo.svg",
+      "resolved_url": "https://www.onodera-gtp.com/img/common/logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-c684d2d966-verified.svg",
+      "background": "light",
+      "sha256": "e7bb10a164ac7157e936b045446a02f821e7418387789674712c7cef47a03a26",
+      "retrieved_at": "2026-10-03T06:53:58.492050+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-4753704e5c": {
-      "account_name": "Onodera Medical Co Ltd",
-      "website": "https://onodera-lifesupport.com/en/about/",
-      "source_url": "https://onodera-lifesupport.com/portal/img/common/logo_h.png",
-      "resolved_url": "https://onodera-lifesupport.com/portal/img/common/logo_h.png",
-      "asset": "web/assets/company-logos/jp-account-4753704e5c.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "83a5da183ff17e500eb7e14706963d05b4b4961168a75c1502f2c52fc406db11",
-      "evidence_page": "https://onodera-lifesupport.com/en/about/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 114,
-      "identity_reasons": [
-        "官网正文完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "位于官网页眉或主导航",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://onodera-medical.co.jp/company/about/",
+      "evidence_page": "https://onodera-medical.co.jp/company/about/",
+      "source_url": "https://onodera-medical.co.jp/wp/wp-content/uploads/2022/05/logo.svg",
+      "resolved_url": "https://onodera-medical.co.jp/wp/wp-content/uploads/2022/05/logo.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-4753704e5c-verified.svg",
+      "background": "dark",
+      "sha256": "85b48e01e7d126e3af0804670ce632e861c8dd8266e017ce63da151a5b51135c",
+      "retrieved_at": "2026-10-03T06:53:58.574256+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-ecf460e341": {
       "account_name": "ONSSI Co Ltd",
@@ -5786,72 +5501,43 @@
       "verification_note": "Rebirthel 官网展示公司品牌与细胞治疗相关研发业务。"
     },
     "jp-account-1ca05c7e6c": {
-      "account_name": "Red Arrow Therapeutics Co Ltd",
-      "website": "https://redarrowtx.com/",
-      "source_url": "https://redarrowtx.com/favicon.ico",
-      "resolved_url": "https://redarrowtx.com/wp-includes/images/w-logo-gray-white-bg.png",
-      "asset": "web/assets/company-logos/jp-account-1ca05c7e6c.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "24a67115f4fa328c29971593c4b07be9c7ba0212e5c1fa28620c29e051b8ae6c",
-      "evidence_page": "https://redarrowtx.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 2/2 个身份词",
-        "官方域名与账户身份词一致",
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ],
-      "verification_note": "Red Arrow Therapeutics 官网展示公司品牌与药物递送业务。"
+      "website": "https://redarrowtx.com/",
+      "evidence_page": "https://redarrowtx.com/",
+      "source_url": "https://redarrowtx.com/wp-content/uploads/2022/08/1bf83a76-2871-46af-97c4-f6344fdf63db-1024x294.png",
+      "resolved_url": "https://redarrowtx.com/wp-content/uploads/2022/08/1bf83a76-2871-46af-97c4-f6344fdf63db-1024x294.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-1ca05c7e6c-verified.png",
+      "background": "light",
+      "sha256": "fc501da12cc109e7f955c7071b780a627d1f85f111e94e117b6b3f17f325150e",
+      "retrieved_at": "2026-10-03T07:10:56.834232+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-49028a1099": {
-      "account_name": "ReEir Co Ltd",
-      "website": "https://www.re-eir.com/",
-      "source_url": "https://static.wixstatic.com/media/6292d3_5c85072bb85a401586e4cd18ead13382%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/6292d3_5c85072bb85a401586e4cd18ead13382%7Emv2.png",
-      "resolved_url": "https://static.wixstatic.com/media/6292d3_5c85072bb85a401586e4cd18ead13382~mv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/6292d3_5c85072bb85a401586e4cd18ead13382~mv2.png",
-      "asset": "web/assets/company-logos/jp-account-49028a1099.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "543c9b2eabfef84d35fb1d79edc3258bf3fa2bd708f01ed79fa6d487955e3652",
-      "evidence_page": "https://www.re-eir.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://www.re-eir.com/",
+      "evidence_page": "https://www.re-eir.com/",
+      "source_url": "https://static.wixstatic.com/media/6292d3_cbd0a5015adc4a9896f4336cb2988372~mv2.png/v1/fill/w_121,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-slide.png",
+      "resolved_url": "https://static.wixstatic.com/media/6292d3_cbd0a5015adc4a9896f4336cb2988372~mv2.png/v1/fill/w_121,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-slide.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-49028a1099-verified.png",
+      "background": "light",
+      "sha256": "eaf8409cb1f6f56e0a435f30f9acc1e7a06969067702d8b03ef275fab7e70974",
+      "retrieved_at": "2026-10-03T07:04:28.386989+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-c129b2787e": {
-      "account_name": "Regcell Co Ltd",
-      "website": "https://regcell.jp/en/",
-      "source_url": "https://regcell.jp/favicon.ico",
-      "resolved_url": "https://regcell.jp/cms_Jq2zPEAH/wp-includes/images/w-logo-blue-white-bg.png",
-      "asset": "web/assets/company-logos/jp-account-c129b2787e.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "68fd5515bfeb38e85142747d0ec6fc29589260ebbc32331559222ccfab6bd719",
-      "evidence_page": "https://regcell.jp/en/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 158,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ]
+      "website": "https://regcellbio.com/",
+      "evidence_page": "https://regcellbio.com/",
+      "source_url": "https://regcellbio.com/wp-content/uploads/2025/03/regcell-logo-final.png",
+      "resolved_url": "https://regcellbio.com/wp-content/uploads/2025/03/regcell-logo-final.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-c129b2787e-verified.png",
+      "background": "light",
+      "sha256": "3d696f3fe2e5e6ab0914a345efbf3e059be1db9c77e8b1030f53e16b96ce8fa6",
+      "retrieved_at": "2026-10-03T07:10:56.892596+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-c9358b0d5a": {
       "account_name": "Rege Nephro Co Ltd",
@@ -5903,26 +5589,17 @@
       "verification_note": "Regene4T 官网首页展示公司名称与再生医疗业务；浏览器渲染确认页眉中的 Regene4T Logo 图像。"
     },
     "jp-account-5a2fd30e94": {
-      "account_name": "ReproCELL Inc",
-      "website": "https://www.reprocell.com/",
-      "source_url": "https://www.reprocell.com/hubfs/websites/fav.png",
-      "resolved_url": "https://www.reprocell.com/hubfs/websites/fav.png",
-      "asset": "web/assets/company-logos/jp-account-5a2fd30e94.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "3b41177307f352df7258856bc721c403eda775cdf5f473d1a0ffec5694385c7d",
-      "evidence_page": "https://www.reprocell.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 164,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网页面声明的站点图标"
-      ]
+      "website": "https://reprocell.co.jp/",
+      "evidence_page": "https://reprocell.co.jp/",
+      "source_url": "https://reprocell.co.jp/wp-content/uploads/2025/07/ad77ea1bbb986bae7e7b8fdceca94ea1.png",
+      "resolved_url": "https://reprocell.co.jp/wp-content/uploads/2025/07/ad77ea1bbb986bae7e7b8fdceca94ea1.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-5a2fd30e94-verified.png",
+      "background": "light",
+      "sha256": "b2c1e0e62b7acc702c9abc13fb5443a141a74490c30db24746c0764f1c183fdb",
+      "retrieved_at": "2026-10-03T07:04:28.460215+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-301b1fee9a": {
       "account_name": "ReqMed Co Ltd",
@@ -6000,52 +5677,30 @@
       ]
     },
     "jp-account-75dc94e8d2": {
-      "account_name": "Rin Institute Inc",
-      "website": "https://www.ncc.go.jp/en/ri/jimu/partners_laboratory/060/index.html",
-      "source_url": "https://www.ncc.go.jp/favicon.ico",
-      "resolved_url": "https://www.ncc.go.jp/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-75dc94e8d2.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "0356951ea2b089f707dfd3dfd19da607b394328e68ffe12e6243ec31ba574749",
-      "evidence_page": "https://www.ncc.go.jp/en/ri/jimu/partners_laboratory/060/index.html",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 146,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "日本政府机构域名"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ],
-      "background": "dark"
+      "website": "https://rinmab.co.jp/company",
+      "evidence_page": "https://rinmab.co.jp/company",
+      "source_url": "https://rinmab.co.jp/wp/wp-content/themes/rinmab/images/common/logo.png",
+      "resolved_url": "https://rinmab.co.jp/wp/wp-content/themes/rinmab/images/common/logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-75dc94e8d2-verified.png",
+      "background": "light",
+      "sha256": "7c8fe05972747404230416a5c786819e48b9fc1d0b33850e008b2191aeb71a56",
+      "retrieved_at": "2026-10-03T06:57:38.321029+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-77da7896f5": {
-      "account_name": "Rohto Pharmaceutical Co Ltd",
-      "website": "https://rohto-md.com/dermaceptrx/sitepolicy/",
-      "source_url": "https://rohto-md.com/dermaceptrx/assets/img/logo.svg",
-      "resolved_url": "https://rohto-md.com/dermaceptrx/assets/img/logo.svg",
-      "asset": "web/assets/company-logos/jp-account-77da7896f5.svg",
-      "retrieved_at": "2026-09-10",
-      "sha256": "b3cfa5674425ffcd1d6a684c58817a88e7493fc8f1fd2200bb5b67cc54f611e2",
-      "evidence_page": "https://rohto-md.com/dermaceptrx/sitepolicy/",
-      "source_kind": "official_website_logo",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 130,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "资源地址含 logo/brand 标识",
-        "图片属性声明 logo/brand",
-        "位于官网页眉或主导航",
-        "图片属性匹配账户身份"
-      ]
+      "website": "https://www.rohto.co.jp/",
+      "evidence_page": "https://www.rohto.co.jp/",
+      "source_url": "https://www.rohto.co.jp/-/media/common/images/logo_ogp.png?sc_lang=ja-jp",
+      "resolved_url": "https://www.rohto.co.jp/-/media/common/images/logo_ogp.png?sc_lang=ja-jp",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-77da7896f5-verified.png",
+      "background": "light",
+      "sha256": "56d902c31285dcb394dd50519443ddc3ecb9c6cf872fffda030634141aa7b8b6",
+      "retrieved_at": "2026-10-03T07:10:56.968905+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-b85a56b014": {
       "account_name": "SanBio Co Ltd",
@@ -6137,49 +5792,30 @@
       ]
     },
     "jp-account-97c09555b3": {
-      "account_name": "Stem Cell & Device Laboratory Inc",
-      "website": "https://scad-kyoto.com/",
-      "source_url": "https://scad-kyoto.com/favicon.ico",
-      "resolved_url": "https://scad-kyoto.com/images/favicon/favicon.ico",
-      "asset": "web/assets/company-logos/jp-account-97c09555b3.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "66a6d1b244fce96374ff5159cc7ec0b7bc2b7eac3c92e85100d6b128a07fe854",
-      "evidence_page": "https://scad-kyoto.com/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "reviewed_official_page",
-      "identity_score": 120,
-      "identity_reasons": [
-        "官网正文完整匹配账户名",
-        "页面命中 3/3 个身份词",
-        "已由官网公司信息页直接核实身份"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ],
-      "verification_note": "SCAD 官网展示 Stem Cell & Device Laboratory 公司身份与干细胞业务。"
+      "website": "https://scad-kyoto.com/",
+      "evidence_page": "https://scad-kyoto.com/",
+      "source_url": "https://scad-kyoto.com/images/common/hed_logo.png",
+      "resolved_url": "https://scad-kyoto.com/images/common/hed_logo.png",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-97c09555b3-verified.png",
+      "background": "light",
+      "sha256": "282c5a71cbb79c3e35f4b0bb8b68f474e7e18e8a417272217065ac7022e5a942",
+      "retrieved_at": "2026-10-03T07:04:28.752904+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-6c68f8c6c2": {
-      "account_name": "StemRIM Inc",
-      "website": "https://stemrim.com/investors/ir_question/",
-      "source_url": "https://stemrim.com/favicon.ico",
-      "resolved_url": "https://stemrim.com/wp/wp-includes/images/w-logo-blue-white-bg.png",
-      "asset": "web/assets/company-logos/jp-account-6c68f8c6c2.png",
-      "retrieved_at": "2026-09-10",
-      "sha256": "68fd5515bfeb38e85142747d0ec6fc29589260ebbc32331559222ccfab6bd719",
-      "evidence_page": "https://stemrim.com/investors/ir_question/",
-      "source_kind": "official_site_icon",
       "status": "available",
-      "verification_method": "official_page_identity_match",
-      "identity_score": 116,
-      "identity_reasons": [
-        "页面标题或页眉完整匹配账户名",
-        "页面命中 1/1 个身份词",
-        "官方域名与账户身份词一致"
-      ],
-      "asset_reasons": [
-        "官网根目录站点图标"
-      ]
+      "website": "https://stemrim.com/investors/ir_question/",
+      "evidence_page": "https://stemrim.com/investors/ir_question/",
+      "source_url": "https://stemrim.com/wp/wp-content/themes/stemrim/assets/dist/images/image/logo-color.svg",
+      "resolved_url": "https://stemrim.com/wp/wp-content/themes/stemrim/assets/dist/images/image/logo-color.svg",
+      "source_kind": "official_website_logo",
+      "asset": "web/assets/company-logos/jp-account-6c68f8c6c2-verified.svg",
+      "background": "light",
+      "sha256": "660e533635a341e3129b324a1c0609009c1eb130eadec4ee918d3156c0271589",
+      "retrieved_at": "2026-10-03T07:04:28.797297+00:00",
+      "verification_note": "本轮逐页核对的官方页眉品牌图片；集团共用标识单独标注。"
     },
     "jp-account-6e69574ac1": {
       "account_name": "Surv BioPharma Inc",

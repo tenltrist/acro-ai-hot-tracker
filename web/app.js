@@ -2329,6 +2329,12 @@ const companyRoleDockMeta = {
   customer: { label: "客户", empty: "账户目录待导入" },
 };
 
+function getCompanyIdentityProfile(company) {
+  const registry = window.AIHOT_COMPANY_PROFILES;
+  const identity = registry?.bindings?.[company?.id] || company?.id;
+  return registry?.records?.[identity] || null;
+}
+
 function compactCompanyName(company) {
   if (!company) return "未命名机构";
   if (company.id === "acro") return "ACROBiosystems";
@@ -2337,6 +2343,8 @@ function compactCompanyName(company) {
 
 function companyChineseLabel(company) {
   if (!company) return "";
+  const profile = getCompanyIdentityProfile(company);
+  if (profile?.name_zh) return profile.name_zh;
   const chineseName = String(company.display_name_zh || "").trim();
   const descriptor = String(company.company_descriptor_zh || "").trim();
   if (chineseName && descriptor && chineseName !== descriptor) return `${chineseName} · ${descriptor}`;
@@ -2351,7 +2359,7 @@ function companyNameMarkup(company) {
 
 function companySelectLabel(company) {
   const englishName = compactCompanyName(company);
-  const chineseHint = String(company?.display_name_zh || company?.company_descriptor_zh || "").trim();
+  const chineseHint = String(getCompanyIdentityProfile(company)?.name_zh || company?.display_name_zh || company?.company_descriptor_zh || "").trim();
   return chineseHint ? `${englishName} / ${chineseHint}` : englishName;
 }
 
@@ -2371,18 +2379,53 @@ function accountCompanyIdentity(account, company = null) {
 function companyLogoMarkup(company, size = "compact") {
   if (!company || company.entity_kind || company.customer_pool) return "";
   const name = compactCompanyName(company);
-  const logoId = company.logo_id || company.id;
+  const profile = getCompanyIdentityProfile(company);
+  const logoId = profile ? profile.logo_id : company.logo_id || company.id;
   const logo = window.AIHOT_COMPANY_LOGOS?.[logoId];
+  const logoBackground = profile?.logo_background || logo?.background;
   const logoAudit = window.AIHOT_COMPANY_LOGO_AUDIT?.[logoId];
   const initials = name.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, "").slice(0, 2).toUpperCase();
-  const sourceLabel = logo?.source_kind === "official_site_icon" ? "已核实官网站点图标" : "已核实官网 Logo";
-  const placeholderLabel = logoAudit?.note
+  const sourceLabel = profile?.logo_label || (logo?.source_kind === "official_site_icon" ? "官网站点图标，非品牌Logo" : logo?.source_kind === "official_press_release" ? "官方新闻稿品牌图片" : "官网品牌图片");
+  const placeholderLabel = profile?.identity_note || profile?.missing_fields?.find(note => /品牌|图片|Logo/.test(note)) || (logoAudit?.note
     ? `已核验：${logoAudit.note} 显示英文首字母占位。`
-    : "尚未找到可唯一核实的官网 Logo，显示英文首字母占位。";
-  return `<span class="company-logo company-logo--${size}${logo?.background === "dark" ? " company-logo--dark" : ""}${logo?.src ? "" : " company-logo--placeholder"}" data-company-logo="${escapeAttr(company.id)}" data-logo-id="${escapeAttr(logoId)}" data-logo-status="${logo?.src ? "official" : "placeholder"}" data-logo-kind="${escapeAttr(logo?.source_kind || logoAudit?.reason || "placeholder")}" title="${escapeAttr(name)} · ${escapeAttr(logo?.src ? sourceLabel : placeholderLabel)}" aria-hidden="true">
+    : "尚未取得可靠的独立品牌图片，显示英文首字母占位。并不表示公司没有Logo。");
+  return `<span class="company-logo company-logo--${size}${logoBackground === "dark" ? " company-logo--dark" : ""}${logo?.src ? "" : " company-logo--placeholder"}" data-company-logo="${escapeAttr(company.id)}" data-logo-id="${escapeAttr(logoId)}" data-logo-status="${logo?.src ? "official" : "placeholder"}" data-logo-kind="${escapeAttr(logo?.source_kind || logoAudit?.reason || "placeholder")}" title="${escapeAttr(name)} · ${escapeAttr(logo?.src ? sourceLabel : placeholderLabel)}" aria-hidden="true">
     <span class="company-logo-fallback">${escapeHtml(initials)}</span>
     ${logo?.src ? `<img src="${escapeAttr(logo.src)}" alt="" loading="lazy" decoding="async" data-company-logo-image />` : ""}
   </span>`;
+}
+
+function companyIdentityProfileMarkup(company) {
+  const profile = getCompanyIdentityProfile(company);
+  if (!profile) return "";
+  const states = {
+    site_checked: "官网已读取", verified: "资料已核对", access_blocked: "访问受限",
+    unreachable: "入口暂不可访问", identity_conflict: "主体待确认", identity_partial: "主体资料不完整",
+    historical: "历史主体", merged: "已整合的历史机构", reference_only: "仅有关联方资料",
+    subsidiary: "子公司资料", brand_changed: "品牌已发生变化",
+  };
+  const link = (url, label) => /^https?:\/\//i.test(url || "")
+    ? `<a href="${escapeAttr(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)} ↗</a>` : "";
+  const brand = profile.logo_status === "available"
+    ? profile.logo_label || (profile.logo_kind === "official_site_icon" ? "官网站点图标（非品牌Logo）" : profile.logo_kind === "official_press_release" ? "官方新闻稿品牌图片" : "官网品牌图片")
+    : "未取得可靠独立品牌图片";
+  const aliases = (profile.display_aliases || []).join(" / ");
+  return `<div class="company-identity-profile" data-company-profile="${escapeAttr(profile.id)}">
+    <p class="company-business-summary">${escapeHtml(profile.summary_zh)}</p>
+    <dl>
+      <div><dt>日文正式名</dt><dd>${escapeHtml(profile.name_ja || "未确认，不补猜")}</dd></div>
+      <div><dt>资料状态</dt><dd>${escapeHtml(states[profile.identity_status] || "待确认")}</dd></div>
+      <div><dt>品牌素材</dt><dd>${escapeHtml(brand)}</dd></div>
+    </dl>
+    <div class="company-identity-links">${link(profile.official_website, profile.website_label || "官网")}${link(profile.evidence_url, "资料依据")}${link(profile.logo_source_url, "图片出处")}</div>
+    <details class="company-identity-audit"><summary>名称与核对记录</summary>
+      <p>名称 / 别名：${escapeHtml(aliases)}</p>
+      <p>官网复查：${profile.request_success ? "已读取公开页面" : "本轮未成功读取"} · ${escapeHtml(profile.checked_at ? formatDateTime(profile.checked_at) : "尚无检查时间")}。此检查不代表新闻采集已有产出。</p>
+      ${profile.identity_note ? `<p>${escapeHtml(profile.identity_note)}</p>` : ""}
+      ${profile.missing_fields?.length ? `<p>未确认项：${escapeHtml(profile.missing_fields.join("；"))}</p>` : ""}
+      <p>中文名称或业务说明用于阅读参考，不作为新增新闻匹配别名，也不改变客户 / 竞品身份。</p>
+    </details>
+  </div>`;
 }
 
 document.addEventListener("error", (event) => {
@@ -2616,7 +2659,8 @@ function renderJapanAccountIntelligence() {
   const query = state.accountQuery.toLowerCase().trim();
   const matchingAccounts = accounts.filter((account) => {
     const matches = signalIndex.get(account.id) || [];
-    const haystack = `${account.name} ${account.name_zh || ""} ${(account.aliases || []).join(" ")}`.toLowerCase();
+    const identityProfile = getCompanyIdentityProfile(account);
+    const haystack = `${account.name} ${account.name_zh || ""} ${(account.aliases || []).join(" ")} ${(identityProfile?.display_aliases || []).join(" ")}`.toLowerCase();
     return (!query || haystack.includes(query)) &&
       (state.accountStage === "all" || account.account_stage === state.accountStage) &&
       (state.accountOrganizationType === "all" || account.organization_type === state.accountOrganizationType) &&
@@ -2695,6 +2739,7 @@ function renderJapanAccountIntelligence() {
       : "名单只负责建立公司锚点；没有外部信号时，不自动生成商业机会。";
   els.japanCustomerDetail.innerHTML = `${fusionDirectoryBanner()}
     <header><span>账户情报锚点</span><h3 class="company-name-with-logo">${companyLogoMarkup(selectedIdentity, "profile")}${companyNameMarkup(selectedIdentity)}</h3><p>${escapeHtml(data.semantics || "")}</p></header>
+    ${companyIdentityProfileMarkup(selectedIdentity)}
     <div class="customer-detail-fields">${fields}</div>
     <div class="customer-opportunity-state ${opportunityClass}">
       <span>建议动作</span>
@@ -3087,11 +3132,13 @@ function renderCompanyPools() {
               <div>
                 <small>判断依据</small>
                 <p>${escapeHtml(company.role_reason || "已由公司档案确定业务角色。")}</p>
+                ${companyIdentityProfileMarkup(company)}
               </div>
               <div>
                 <small>监测重点</small>
                 <p>${escapeHtml(company.monitoring_focus || (company.strategic_topics || []).slice(0, 5).join("、"))}</p>
               </div>
+              <div class="company-profile-actions">
               ${companies.some(entry => entry.id === company.id) ? `<button type="button" class="text-button fusion-pool-news" data-fusion-pool-news="${escapeAttr(company.id)}">${fusion.directoryScope ? "当前范围" : "全库"} ${fusionCompanyItems(company.id).length} 条新闻 →</button>` : ""}
               ${company.entity_kind === "relationship"
                 ? `<button class="company-profile-source-button" type="button" data-relationship-card-id="${escapeAttr(company.relationship_id)}">查看关系证据</button>`
@@ -3100,6 +3147,7 @@ function renderCompanyPools() {
                 : company.entity_kind === "segment"
                   ? '<span class="company-profile-state">名单发现中</span>'
                   : `<button class="company-profile-source-button" type="button" data-company-coverage-id="${escapeHtml(company.id)}">查看数据源</button>`}
+              </div>
             </article>
           `).join("")
         : `<div class="company-pool-empty"><strong>0 家</strong><p>${escapeHtml(role.empty)}</p></div>`;
@@ -3695,6 +3743,13 @@ function renderCompanySourceCoverage() {
   els.companyCoverageDescription.textContent = company?.monitoring_focus
     ? `监测重点：${company.monitoring_focus}。点开任一监测板块，可查看它实际使用的具体入口、所属来源方法和本轮产出。`
     : "监测板块回答看什么，实际入口回答具体用了哪些 RSS、官网和检索规则。";
+  let identityPanel = document.querySelector("#companyCoverageIdentity");
+  if (!identityPanel) {
+    identityPanel = document.createElement("div");
+    identityPanel.id = "companyCoverageIdentity";
+    els.companyCoverageDescription.insertAdjacentElement("afterend", identityPanel);
+  }
+  identityPanel.innerHTML = companyIdentityProfileMarkup(company);
   els.companyCoverageMetrics.innerHTML = `
     <article><span>专属配置入口</span><strong>${dedicatedIds.length}</strong><small>已登记，不代表有产出</small></article>
     <article><span>共享配置入口</span><strong>${sharedIds.length}</strong><small>可检索该公司，不代表命中</small></article>
@@ -5165,6 +5220,7 @@ function renderCompanyTimeline() {
     : "<small>当前还没有稳定形成的结构化主题。</small>";
   els.companyLivingProfile.innerHTML = `
     <header><span>${escapeHtml(company.role_label || "公司档案")}</span><h3 class="company-name-with-logo">${companyLogoMarkup(company, "profile")}${companyNameMarkup(company)}</h3></header>
+    ${companyIdentityProfileMarkup(company)}
     <div class="living-profile-block"><span>监测重点</span><p>${escapeHtml(company.monitoring_focus || "尚未配置监测重点。")}</p></div>
     <div class="living-profile-block"><span>持续出现的主题</span><div class="living-topic-list">${topicMarkup}</div></div>
     ${productProfileMarkup(items)}
