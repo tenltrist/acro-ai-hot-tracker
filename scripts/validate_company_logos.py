@@ -49,6 +49,8 @@ def main():
             "official_website_logo",
             "official_site_icon",
             "official_press_release",
+            # Shared group identities are explicitly recorded in the registry.
+            "official_group_logo",
         }, company_id
         path = ROOT / record["asset"]
         data = path.read_bytes()

@@ -7,10 +7,20 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,3 +45,17 @@ jobs:
         with:
           commit_message: "Update AI Hot Tracker dashboard data"
           file_pattern: "data/*.json data/history/*.json api/public/*.json reports/*.md share/*.html web/embedded-data.js"
+
+      # A commit made with GITHUB_TOKEN does not trigger the push deployment.
+      # Publish the validated files from this run in the same workflow instead.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload updated dashboard
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+      - name: Deploy updated dashboard
+        id: deployment
+        uses: actions/deploy-pages@v5
